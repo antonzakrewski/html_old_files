@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Satz von Cayley-Hamilton</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Satz von Cayley-Hamilton</h1>
+<div id="outline-container-org1936a44" class="outline-2">
+<h2 id="org1936a44"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei <img src="ltximg/20230222203639-satz_von_cayley_hamilton_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20230222203639-satz_von_cayley_hamilton_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> ein $n$-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit einem <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphism</a> <img src="ltximg/20230222203639-satz_von_cayley_hamilton_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20230222203639-satz_von_cayley_hamilton_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> <img src="ltximg/20230222203639-satz_von_cayley_hamilton_b66f145a89188d1f56207c7cfe8900663f9a9866.svg" alt="20230222203639-satz_von_cayley_hamilton_b66f145a89188d1f56207c7cfe8900663f9a9866.svg" class="org-svg" />.
+Dann gilt für den <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> :
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_46a4dc37dcc0764c3dd8023b9589ddccdd79f8fd.svg" alt="20230222203639-satz_von_cayley_hamilton_46a4dc37dcc0764c3dd8023b9589ddccdd79f8fd.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="outline-container-org4760947" class="outline-2">
+<h2 id="org4760947"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei <img src="ltximg/20230222203639-satz_von_cayley_hamilton_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20230222203639-satz_von_cayley_hamilton_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> bezüglich einer festen <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>.
+Sei im folgenden <img src="ltximg/20230222203639-satz_von_cayley_hamilton_d742e3e39c58583d29c04ae94ab9a99beaff7f91.svg" alt="20230222203639-satz_von_cayley_hamilton_d742e3e39c58583d29c04ae94ab9a99beaff7f91.svg" class="org-svg" />, d.h. es folgt <img src="ltximg/20230222203639-satz_von_cayley_hamilton_33242b551e22632d6edb4fff3204944a68baf487.svg" alt="20230222203639-satz_von_cayley_hamilton_33242b551e22632d6edb4fff3204944a68baf487.svg" class="org-svg" />
+Für die <a href="20230118135322-adjunkte_matrix.html#ID-6d0c6d49-b018-49cf-991a-465d7dfe17a1">Adjunkte</a> <img src="ltximg/20230222203639-satz_von_cayley_hamilton_8c2ae47d2b20894db2fabd6625e32f81c8e293b2.svg" alt="20230222203639-satz_von_cayley_hamilton_8c2ae47d2b20894db2fabd6625e32f81c8e293b2.svg" class="org-svg" /> gilt nach der <a href="20230131083334-multiplikation_einer_matrix_mit_der_adjunkte.html#ID-c9ff3ca9-2ea4-44d9-b05d-308524d47dc7">Multiplikation einer Matrix mit der Adjunkte</a> 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_998853791f3d7db2340bebcc7f7d23b67a0c2962.svg" alt="20230222203639-satz_von_cayley_hamilton_998853791f3d7db2340bebcc7f7d23b67a0c2962.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+2
+</span>
+</div>
+<p>
+Ferner gilt, dass <img src="ltximg/20230222203639-satz_von_cayley_hamilton_8c2ae47d2b20894db2fabd6625e32f81c8e293b2.svg" alt="20230222203639-satz_von_cayley_hamilton_8c2ae47d2b20894db2fabd6625e32f81c8e293b2.svg" class="org-svg" /> Einträge der <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> von untermatrizen der <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="ltximg/20230222203639-satz_von_cayley_hamilton_4f1ba5bf0b4f6a3a8874c8b27fe37993f4b87cd9.svg" alt="20230222203639-satz_von_cayley_hamilton_4f1ba5bf0b4f6a3a8874c8b27fe37993f4b87cd9.svg" class="org-svg" /> besitzt, d.h. damit <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> vom <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> <img src="ltximg/20230222203639-satz_von_cayley_hamilton_4f1ba5bf0b4f6a3a8874c8b27fe37993f4b87cd9.svg" alt="20230222203639-satz_von_cayley_hamilton_4f1ba5bf0b4f6a3a8874c8b27fe37993f4b87cd9.svg" class="org-svg" />
+Daraus erhalten wir eine Darstellung:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_04f677ad2bb556b2ffe729f9dedccb85ebce0403.svg" alt="20230222203639-satz_von_cayley_hamilton_04f677ad2bb556b2ffe729f9dedccb85ebce0403.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+3
+</span>
+</div>
+<p>
+Sei ferner <img src="ltximg/20230222203639-satz_von_cayley_hamilton_01579f3734176ea2d8b298f513af24f7f3dd70d6.svg" alt="20230222203639-satz_von_cayley_hamilton_01579f3734176ea2d8b298f513af24f7f3dd70d6.svg" class="org-svg" /> mit <img src="ltximg/20230222203639-satz_von_cayley_hamilton_6870f68ff7b72429b69d4f14e1fc0f5490711bd2.svg" alt="20230222203639-satz_von_cayley_hamilton_6870f68ff7b72429b69d4f14e1fc0f5490711bd2.svg" class="org-svg" />, so erhalten wir wegen <img src="ltximg/20230222203639-satz_von_cayley_hamilton_9697d89e8d33f45ce1aed4f6d22a678717660c4e.svg" alt="20230222203639-satz_von_cayley_hamilton_9697d89e8d33f45ce1aed4f6d22a678717660c4e.svg" class="org-svg" />:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_571c716c03752a2accdc64137c685a56cb8b9c25.svg" alt="20230222203639-satz_von_cayley_hamilton_571c716c03752a2accdc64137c685a56cb8b9c25.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+4
+</span>
+</div>
+<p>
+Durch einen Vergleich von Koeffizienten erhalten wir:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_25d7dbc1a5fb9113f0bbf2cadb6104b4c0b895ae.svg" alt="20230222203639-satz_von_cayley_hamilton_25d7dbc1a5fb9113f0bbf2cadb6104b4c0b895ae.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+5
+</span>
+</div>
+<p>
+Zudem gilt:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_3126112ca8b9d6ac2add6d16dd51ed48fc62f560.svg" alt="20230222203639-satz_von_cayley_hamilton_3126112ca8b9d6ac2add6d16dd51ed48fc62f560.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+6
+</span>
+</div>
+<p>
+Durch ersetzen der <img src="ltximg/20230222203639-satz_von_cayley_hamilton_cdfaba7d4eb8265e8f72eceaee6c74789cf3be66.svg" alt="20230222203639-satz_von_cayley_hamilton_cdfaba7d4eb8265e8f72eceaee6c74789cf3be66.svg" class="org-svg" /> durch die Ausdrücke oben erhalten wir eine <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a>:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230222203639-satz_von_cayley_hamilton_37d9cd997cce16f7b377d1c2ff0a0dfe41d56877.svg" alt="20230222203639-satz_von_cayley_hamilton_37d9cd997cce16f7b377d1c2ff0a0dfe41d56877.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+7
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

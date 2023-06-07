@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>multiplikative Inverse in einem Restklassenring</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">multiplikative Inverse in einem Restklassenring</h1>
+<div id="outline-container-org8ee9ab5" class="outline-2">
+<h2 id="org8ee9ab5"><span class="section-number-2">1.</span> Algorithmus</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" class="org-svg" /> und <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_e6d74f34c2a594b760202d94fe6cc57e8d9d9f92.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_e6d74f34c2a594b760202d94fe6cc57e8d9d9f92.svg" class="org-svg" /> für <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_ae16aa266ef3bb063cdd368ea507cf94d5952cd2.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_ae16aa266ef3bb063cdd368ea507cf94d5952cd2.svg" class="org-svg" />.
+Dann lässt sich das multiplikative <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">Inverse</a> durch den <a href="20230427134534-erweiterter_euklidischer_algorithmus.html#ID-29d60e8e-68dd-48c4-8fd6-def9d853294a">erweiterten euklidischer Algorithmus</a> berechnen:
+Falls <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" class="org-svg" />, so existieren nach dem <a href="20230427142833-lemma_von_bezout.html#ID-21bcd872-2b04-4642-8601-60e1f03f3901">Lemma von Bezout</a> <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" class="org-svg" /> mit 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_ddae9f3c26ae7ad3313d2b36dd8f27e4226f95f8.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_ddae9f3c26ae7ad3313d2b36dd8f27e4226f95f8.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+1
+</span>
+</div>
+<p>
+Damit folgt insbesondere
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_3d27e07807570d4b8f2fab040ffa8290ecb86d7d.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_3d27e07807570d4b8f2fab040ffa8290ecb86d7d.svg" class="org-svg" />
+</span>
+<span class="equation-label">
+2
+</span>
+</div>
+<p>
+Falls <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_e748931c1ad8c9765a3e1c854f97d6037e1376e2.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_e748931c1ad8c9765a3e1c854f97d6037e1376e2.svg" class="org-svg" />, so ist nach der Aussage über <a href="20230423224858-einheit_und_nullteiler.html#ID-2dab0c61-fa50-4755-a1b6-0294e5b02d2f">Nullteiler und Einheiten</a> <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> keine <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheit</a>
+Sonst ist <img src="ltximg/20230518181606-multiplikative_inverse_in_einem_restklassenring_a728aeb97cad799f4ef27b432a2136f3a63b0d04.svg" alt="20230518181606-multiplikative_inverse_in_einem_restklassenring_a728aeb97cad799f4ef27b432a2136f3a63b0d04.svg" class="org-svg" /> das evidente <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse Element</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

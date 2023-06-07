@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- 2023-05-15 Mo 10:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Irrationalität von Wurzel 2</title>
+<meta name="author" content="anton" />
+<meta name="generator" content="Org Mode" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Irrationalität von Wurzel 2</h1>
+<div id="outline-container-org9b5285d" class="outline-2">
+<h2 id="org9b5285d"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+\begin{align*}
+\sqrt{2} \not\in& \mathbb{Q} \Leftrightarrow \lnot(\exists p\exists q(\sqrt{2} = \frac{p}{q} \land p,q \in \mathbb{Z}))
+% \sqrt{2} \neq& \frac{p}{q} \quad p,q \in \mathbb{N}
+% \sqrt{2} \in& \mathbb{R} \\
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orgfd4495a" class="outline-2">
+<h2 id="orgfd4495a"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org52f448f" class="outline-3">
+<h3 id="org52f448f"><span class="section-number-3">2.1.</span> Lemma</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>\(a \mid 2 \Leftrightarrow a^2 \mid 2\) <a href="20211218181357-beweis_quadrat_einer_geraden_zahl_gerade.html#ID-ddb3418d-c629-4f33-a2da-1196c12ed710">(Quadrat einer geraden Zahl gerade)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1c3786" class="outline-3">
+<h3 id="orge1c3786"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Annahme: \(\sqrt{2}\) ließe sich vollständig gekürzt als \(\frac{p}{q}\) schreiben</li>
+</ul>
+\begin{align*}
+\sqrt{2} =& \frac{p}{q} \\
+2 =& \left(\frac{p}{q}\right)^2 \\
+2q^2 =& p^2  \Rightarrow p^2 = (2r)^2 \\
+2q^2 = 4r^2 \mid 2
+\end{align*}
+<ul class="org-ul">
+<li>Widerspruch zu: vollständig gekürzt</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: anton</p>
+<p class="date">Created: 2023-05-15 Mo 10:28</p>
+</div>
+</body>
+</html>
