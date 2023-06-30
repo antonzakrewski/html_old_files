@@ -9,94 +9,97 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit des Kartesischen Produkt von stetigen Abbildungen</h1>
-<div id="outline-container-orgb08a0f1" class="outline-2">
-<h2 id="orgb08a0f1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga93e306" class="outline-2">
+<h2 id="orga93e306"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_392014e18e66da333f05220ab6d1d102635ee75d.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_392014e18e66da333f05220ab6d1d102635ee75d.svg" class="org-svg" /> jeweils eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räumen</a> mit <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_5ac6685881a90110a5cbc8a19e2e388f5aac7a82.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_5ac6685881a90110a5cbc8a19e2e388f5aac7a82.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b1d2f1a4d586cd0db3e50db31451096850b41803.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b1d2f1a4d586cd0db3e50db31451096850b41803.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> 
-Dann ist das <a href="20230330185917-kartesische_produkt_von_abbildung.html#ID-f1da2392-1530-4ef2-8e07-0125d8a04a7f">kartesische Produkt der Abbildung</a> <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_f5160dcf9f5ca66f68f413ee8b375d262b67f739.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_f5160dcf9f5ca66f68f413ee8b375d262b67f739.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> gdw. <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" class="org-svg" /> für beliebiges <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Sei \((X_i, \mathcal{T}_i), (Y_i, \mathcal{T}_i')\) jeweils eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räumen</a> mit \(X_i,Y_i \neq \emptyset\) und \(f_i: X_i \rightarrow Y_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> 
+Dann ist das <a href="20230330185917-kartesische_produkt_von_abbildung.html#ID-f1da2392-1530-4ef2-8e07-0125d8a04a7f">kartesische Produkt der Abbildung</a> \(\prod f : \prod X_i \rightarrow \prod Y_i\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> gdw. \(f_i\) für beliebiges \(i \in I\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7e0f43" class="outline-2">
-<h2 id="orgb7e0f43"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org812cbb7" class="outline-2">
+<h2 id="org812cbb7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org779b120" class="outline-3">
-<h3 id="org779b120"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org5146c6b" class="outline-3">
+<h3 id="org5146c6b"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt für die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a>  <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_518b0f329e9d74e29fc6de0adfb3a774825c09a6.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_518b0f329e9d74e29fc6de0adfb3a774825c09a6.svg" class="org-svg" />, dass folgendes <a href="20230225171831-kommutatives_diagramm.html#ID-dec6825e-9e76-43d2-84af-db4360758ca2">Diagramm kommutiert</a>.
+Es gilt für die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a>  \(\pi_{X,i}, \pi_{Y,i}\), dass folgendes <a href="20230225171831-kommutatives_diagramm.html#ID-dec6825e-9e76-43d2-84af-db4360758ca2">Diagramm kommutiert</a>.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b799c535dd90d2a3d92d0c21477e4f0162d7458f.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b799c535dd90d2a3d92d0c21477e4f0162d7458f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzcd}
+\prod X_i \arrow{r}{f} \arrow{d}{\pi_{X,i}} & \prod Y_i \arrow{d}{\pi_{i,Y}} \\
+X_i \arrow{r}{f_i} & Y_i
+\end{tikzcd}
 <p>
-Dabei ist die <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion stetig</a> ebenso wie nach Annahme <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" class="org-svg" />.
-Damit ist <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_202706345a9b2f7177e85e26d5575971da788650.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_202706345a9b2f7177e85e26d5575971da788650.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und nach der Aussage über die <a href="20230313234419-stetige_abbildung_in_einen_produktraum_und_stetigkeit_der_verknupfung_mit_der_projektion.html#ID-4b408630-997d-4e32-8f33-c00597d31f06">Stetige Abbildung in einen Produktraum und Stetigkeit der Verknüpfung mit der Projektion</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Dabei ist die <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion stetig</a> ebenso wie nach Annahme \(f_i\).
+Damit ist \(f_i \circ \pi_{Y,i}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und nach der Aussage über die <a href="20230313234419-stetige_abbildung_in_einen_produktraum_und_stetigkeit_der_verknupfung_mit_der_projektion.html#ID-4b408630-997d-4e32-8f33-c00597d31f06">Stetige Abbildung in einen Produktraum und Stetigkeit der Verknüpfung mit der Projektion</a> folgt, dass \(f_i\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org6401474" class="outline-3">
-<h3 id="org6401474"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org102f1fd" class="outline-3">
+<h3 id="org102f1fd"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" class="org-svg" /> beliebig.
-Für <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_fb0ce84c9b08ee09defd8843de78433b897456b0.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_fb0ce84c9b08ee09defd8843de78433b897456b0.svg" class="org-svg" /> wähle man beliebiges <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_7886a3310df97d3db89d969ad737cd2979274568.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_7886a3310df97d3db89d969ad737cd2979274568.svg" class="org-svg" />  und konstruiere folgende <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
+Sei \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und \(j \in I\) beliebig.
+Für \(i \neq j\) wähle man beliebiges \(a_i \in X_i\)  und konstruiere folgende <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_6ff59fc48f822f60d734099c6400b7628a24f447.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_6ff59fc48f822f60d734099c6400b7628a24f447.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+s_j: X \rightarrow& \prod X_i \\
+a_j \mapsto \prod_{i \neq j} a_i \times a_j
+\end{align*}
 <p>
 Es gilt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a0a3eec7bc0d73d47fb2dfedcb4403c949af0fc3.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_a0a3eec7bc0d73d47fb2dfedcb4403c949af0fc3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzcd}
+\prod X_i \arrow[shift right]{r}{f} \arrow{d}{\pi_{X,j}} & \prod Y_i \arrow{d}{\pi_{Y,j}} \\
+X_j \arrow[shift left]{u}{s_j} \arrow{r}{f_j} & Y_j
+\end{tikzcd}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_4313d26c3a22f9498982daa0d999fce4336e76a2.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_4313d26c3a22f9498982daa0d999fce4336e76a2.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> wegen der Aussage über die <a href="20230313234419-stetige_abbildung_in_einen_produktraum_und_stetigkeit_der_verknupfung_mit_der_projektion.html#ID-4b408630-997d-4e32-8f33-c00597d31f06">Stetige Abbildung in einen Produktraum und Stetigkeit der Verknüpfung mit der Projektion</a>, da <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_3481016260af6c40704585019f7e3caf1058ac9a.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_3481016260af6c40704585019f7e3caf1058ac9a.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Dabei ist \(s_j\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> wegen der Aussage über die <a href="20230313234419-stetige_abbildung_in_einen_produktraum_und_stetigkeit_der_verknupfung_mit_der_projektion.html#ID-4b408630-997d-4e32-8f33-c00597d31f06">Stetige Abbildung in einen Produktraum und Stetigkeit der Verknüpfung mit der Projektion</a>, da \(\mathrm{id}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_8a5be1744cd853c4aa7301e87f081943b204b3c7.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_8a5be1744cd853c4aa7301e87f081943b204b3c7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzcd}
+X_j \arrow[swap]{rd}{\mathrm{id}} \arrow{r}{s_j} & \prod X_i \arrow{d}{\pi_{X,j}}\\
+& X_j
+\end{tikzcd}
 
 <p>
-Damit gilt dann <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_f183956b779e01ea66ceac9a7961b4b11b1a4e48.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_f183956b779e01ea66ceac9a7961b4b11b1a4e48.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_3a314013429adc6d4f9e0ddc769700984ba2cda5.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_3a314013429adc6d4f9e0ddc769700984ba2cda5.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> als <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Verknüpfung stetiger Abbildungen (topologisch)</a> 
+Damit gilt dann \(f_j = \pi_{Y,j} \circ f \circ s_j\), d.h. \(f_j\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> als <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Verknüpfung stetiger Abbildungen (topologisch)</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_89452dd057b1faf9807b07895e732938a65af0db.svg" alt="20230330190523-stetigkeit_des_kartesischen_produkt_von_stetigen_abbildungen_89452dd057b1faf9807b07895e732938a65af0db.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzcd}
+X_j \arrow{r}{s_j}\arrow[swap]{drr}{f_j} & \prod X_i \arrow{r}{f} & \prod Y_i \arrow{d}{\pi_{Y,j}} \\
+& & Y_j
+\end{tikzcd}
 </div>
 </div>
 </div>

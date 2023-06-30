@@ -9,28 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">feinere Überdeckung</h1>
-<div id="outline-container-org7b163ad" class="outline-2">
-<h2 id="org7b163ad"><span class="section-number-2">1.</span> Definitino</h2>
+<div id="outline-container-orgc01ba02" class="outline-2">
+<h2 id="orgc01ba02"><span class="section-number-2">1.</span> Definitino</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230227163354-feinere_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_c9034571446a33f6c8dcd374b1f304165db25f1e.svg" alt="20230227163354-feinere_uberdeckung_c9034571446a33f6c8dcd374b1f304165db25f1e.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_ae794d9eaea05a8cfb519c2f1d873bb31ab2d7df.svg" alt="20230227163354-feinere_uberdeckung_ae794d9eaea05a8cfb519c2f1d873bb31ab2d7df.svg" class="org-svg" /> <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckungen</a> von einer <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" alt="20230227163354-feinere_uberdeckung_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_3a39fd5a47804dcdd2f8ff370031fd695878435c.svg" alt="20230227163354-feinere_uberdeckung_3a39fd5a47804dcdd2f8ff370031fd695878435c.svg" class="org-svg" /> ist  eine feinere Überdeckung als <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_3add6517cb09d5811ae41c97791712e5c3d99e08.svg" alt="20230227163354-feinere_uberdeckung_3add6517cb09d5811ae41c97791712e5c3d99e08.svg" class="org-svg" />, falls für jedes <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_dbcad516a69ab734e52c7d4517e57f3ccea1d6f0.svg" alt="20230227163354-feinere_uberdeckung_dbcad516a69ab734e52c7d4517e57f3ccea1d6f0.svg" class="org-svg" />  ein <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230227163354-feinere_uberdeckung_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> existiert, so dass gilt:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((A_i)_{i \in I}\) sowie \((B_j)_{j \in J}\) <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckungen</a> von einer <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(Y \subseteq X\).
+\((B_j)\) ist  eine feinere Überdeckung als \((A_i)\), falls für jedes \(j \in J\)  ein \(i \in I\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_a61554e384ea41418eacea6892ae5b146ed99030.svg" alt="20230227163354-feinere_uberdeckung_a61554e384ea41418eacea6892ae5b146ed99030.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+B_j \subseteq A_i
+\end{align*}
 <p>
-Dann heißt <img src="file:///home/anton/html/ltximg/20230227163354-feinere_uberdeckung_3a39fd5a47804dcdd2f8ff370031fd695878435c.svg" alt="20230227163354-feinere_uberdeckung_3a39fd5a47804dcdd2f8ff370031fd695878435c.svg" class="org-svg" /> auch  Verfeinerungsüberdeckung von $(A<sub>i</sub>)wa
+Dann heißt \((B_j)\) auch  Verfeinerungsüberdeckung von $(A<sub>i</sub>)wa
 </p>
 </div>
 </div>

@@ -3,79 +3,88 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kriterium für eine Untergruppe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kriterium für eine Untergruppe</h1>
-<div id="outline-container-orgc7afcfb" class="outline-2">
-<h2 id="orgc7afcfb"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-org26d3d6b" class="outline-2">
+<h2 id="org26d3d6b"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_83f4e1059c386170bc6e828492fceb5b84ff5a32.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_83f4e1059c386170bc6e828492fceb5b84ff5a32.svg" class="org-svg" /> eine Gruppe und <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_383cb822a019485771be482d4564d16e7066f759.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_383cb822a019485771be482d4564d16e7066f759.svg" class="org-svg" /> mit <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_bbaeb6f5c952c54606058418c5cedb261339d51b.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_bbaeb6f5c952c54606058418c5cedb261339d51b.svg" class="org-svg" /> und <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_43a63bf9cfc984045dd5bab669b61f96ea270c0b.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_43a63bf9cfc984045dd5bab669b61f96ea270c0b.svg" class="org-svg" />
-<img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_383cb822a019485771be482d4564d16e7066f759.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_383cb822a019485771be482d4564d16e7066f759.svg" class="org-svg" /> ist genau dann eine Untergruppe, wenn gilt
+Sei \((G,\circ)\) eine Gruppe und \((U, \circ)\) mit \(U \subseteq G\) und \(U \neq \emptyset\)
+\((U, \circ)\) ist genau dann eine Untergruppe, wenn gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_3cdf3e877f11c06386bf0a7a015ad7e6cdb07299.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_3cdf3e877f11c06386bf0a7a015ad7e6cdb07299.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\forall a,b \in U \Rightarrow a \circ b^{-1} \in U
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org758be4b" class="outline-2">
-<h2 id="org758be4b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0dd36cd" class="outline-2">
+<h2 id="org0dd36cd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7a1cd3d" class="outline-3">
-<h3 id="org7a1cd3d"><span class="section-number-3">2.1.</span> existenz des neutralen Elements</h3>
+<div id="outline-container-orga181d22" class="outline-3">
+<h3 id="orga181d22"><span class="section-number-3">2.1.</span> existenz des neutralen Elements</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-für <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_5e07a039b08a3c137c53953541b7242742174908.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_5e07a039b08a3c137c53953541b7242742174908.svg" class="org-svg" /> folgt mit <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_f631aea91c0e5142a444d64b70d67f9ebbce0d8a.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_f631aea91c0e5142a444d64b70d67f9ebbce0d8a.svg" class="org-svg" />
-Demnach ist das neutrale element in <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" class="org-svg" />
+für \(a, a \in U\) folgt mit \(e = a \circ a^{-1}\)
+Demnach ist das neutrale element in \(U\)
 </p>
 </div>
 </div>
-<div id="outline-container-org59080b1" class="outline-3">
-<h3 id="org59080b1"><span class="section-number-3">2.2.</span> Existenz des Inversen elmeent</h3>
+<div id="outline-container-org42d0383" class="outline-3">
+<h3 id="org42d0383"><span class="section-number-3">2.2.</span> Existenz des Inversen elmeent</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-für beliebiges <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_ad0ee8cd0bd5ca347d260ccef1dff1f43f2cb19f.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_ad0ee8cd0bd5ca347d260ccef1dff1f43f2cb19f.svg" class="org-svg" /> folgt wegen <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_9839ac7cc60ae7bd9fd43da89e2a87394be590fa.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_9839ac7cc60ae7bd9fd43da89e2a87394be590fa.svg" class="org-svg" /> und der Aussage oben:
+für beliebiges \(a \in U\) folgt wegen \(e \in U\) und der Aussage oben:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_14694e0a8f198283e5007f1879a4b6913f4cf45c.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_14694e0a8f198283e5007f1879a4b6913f4cf45c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+e \circ a^{-1} = a^{-1} \in U
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org90c139d" class="outline-3">
-<h3 id="org90c139d"><span class="section-number-3">2.3.</span> abgeschlossenheit</h3>
+<div id="outline-container-orgee39610" class="outline-3">
+<h3 id="orgee39610"><span class="section-number-3">2.3.</span> abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-für beliebige <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_3b25450bdc1704854e644c7e9ab8a733c1bd09b0.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_3b25450bdc1704854e644c7e9ab8a733c1bd09b0.svg" class="org-svg" /> folgt wegen <img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_daaba30a10e9855d3fcf848fcbdf8dd1dc30a5f3.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_daaba30a10e9855d3fcf848fcbdf8dd1dc30a5f3.svg" class="org-svg" />
+für beliebige \(a,b \in U\) folgt wegen \(b^{-1} \in U\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221023183201-kriterium_fur_eine_untergruppe_38fc3fef267ad59eb7681b94e8c19a076954103a.svg" alt="20221023183201-kriterium_fur_eine_untergruppe_38fc3fef267ad59eb7681b94e8c19a076954103a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+a \circ b^{-1} \in U \Rightarrow a \circ (b^{-1})^{-1} = a\circ b \in U
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,38 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">algorithmischer Elementarteilersatz für Moduln über euklidische Ringe</h1>
-<div id="outline-container-orgdfb3d10" class="outline-2">
-<h2 id="orgdfb3d10"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0f3ce6b" class="outline-2">
+<h2 id="org0f3ce6b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> und <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugter</a> <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freier</a> $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a>.
-Dann existiert eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_be3b3918b2ae2f6353f27bde8f7b0cf8cf61152f.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_be3b3918b2ae2f6353f27bde8f7b0cf8cf61152f.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" />, so dass für eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_9472d226742ca80ae7f66532a3e859c8f0f06703.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_9472d226742ca80ae7f66532a3e859c8f0f06703.svg" class="org-svg" /> gilt:
+Sei \(R\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> und \(M\) ein <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugter</a> <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freier</a> $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie \(N\) ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a>.
+Dann existiert eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> \(\{v_1,...,v_n\}\) von \(N\), so dass für eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> \(\{u_1,...,u_n\}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_6a3e952b8fcb1588b37637ec9240aee7fb912d16.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_6a3e952b8fcb1588b37637ec9240aee7fb912d16.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+v_i =& \epsilon_i u_i \\
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_b6b297f32ced4369186e35a68f2ba6b848ba00e2.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_b6b297f32ced4369186e35a68f2ba6b848ba00e2.svg" class="org-svg" />
+mit \(\epsilon_i \mid \epsilon_{i+1}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org21b5ab6" class="outline-2">
-<h2 id="org21b5ab6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org99d3c37" class="outline-2">
+<h2 id="org99d3c37"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugt</a>, da ein <a href="20230531104014-untermodul_eines_freien_moduls_als_freier_modul.html#ID-fe66bdc9-7fcf-4d98-aea5-bdc56e8518eb">Untermodul eines endlichen, freien Moduls über einem Hauptidealring ein endlicher, freier Modul</a> ist.
-Somit existiert nach der Aussage über die <a href="20230612-existenz_einer_basis_fur_ein_freies_modul.html#ID-3d2f2211-d04b-42b8-b837-d2d432f1acc2">Existenz einer Basis für ein endlich erzeugtes, freies Modul</a> für <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_0831c14c59586e9ea917647086b9b41e048c98e4.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_0831c14c59586e9ea917647086b9b41e048c98e4.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" />.
-Sei die Inklusionsabbildung <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_1ae0b21ae83653a2b3f924bbf8165b8dcb3d94ff.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_1ae0b21ae83653a2b3f924bbf8165b8dcb3d94ff.svg" class="org-svg" /> gegeben sowie die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> <img src="file:///home/anton/html/ltximg/20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_fedee8deade0933cc2b6d178d6d70a65d91f2070.svg" alt="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe_fedee8deade0933cc2b6d178d6d70a65d91f2070.svg" class="org-svg" /> 
+Nach Annahme ist \(N\) <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugt</a>, da ein <a href="20230531104014-untermodul_eines_freien_moduls_als_freier_modul.html#ID-fe66bdc9-7fcf-4d98-aea5-bdc56e8518eb">Untermodul eines endlichen, freien Moduls über einem Hauptidealring ein endlicher, freier Modul</a> ist.
+Somit existiert nach der Aussage über die <a href="20230612-existenz_einer_basis_fur_ein_freies_modul.html#ID-3d2f2211-d04b-42b8-b837-d2d432f1acc2">Existenz einer Basis für ein endlich erzeugtes, freies Modul</a> für \(M\) eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> \(u_1,...,u_n\) bzw. \(v_1,...,v_n\) für \(N\).
+Sei die Inklusionsabbildung \(\iota: N \rightarrow M\) gegeben sowie die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> \(A_{\iota,N,M}\) 
 </p>
 </div>
 </div>

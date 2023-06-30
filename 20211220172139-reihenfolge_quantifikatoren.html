@@ -9,40 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Reihenfolge: Quantifikatoren</h1>
-<div id="outline-container-org1dddc0c" class="outline-2">
-<h2 id="org1dddc0c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgaa540e8" class="outline-2">
+<h2 id="orgaa540e8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 TODO
 </p>
 </div>
-<div id="outline-container-org0d19d7e" class="outline-3">
-<h3 id="org0d19d7e"><span class="section-number-3">1.1.</span> Egal</h3>
+<div id="outline-container-org27a7836" class="outline-3">
+<h3 id="org27a7836"><span class="section-number-3">1.1.</span> Egal</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Reihenfolge für 2 aufgeführte <a href="20210618082126-allquantor.html#ID-004532ff-eea7-4937-b1d5-2983f0afde4f">Allquantoren</a> bzw. <a href="20210618082131-existenzquantor.html#ID-1bbdd566-703c-4386-90a2-480a054c3922">Existenzquantoren</a> egal (sofern gleiche Art)</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211220172139-reihenfolge_quantifikatoren_ede0304639e305a52aacce64e383431c62c861f2.svg" alt="20211220172139-reihenfolge_quantifikatoren_ede0304639e305a52aacce64e383431c62c861f2.svg" class="org-svg" />
-</span>
+\begin{align*}
+\exists x \exists y V(x,y) \Leftrightarrow& \exists y \exists x V(x,y) \\
+\forall x \forall y V(x,y) \Leftrightarrow& \forall y \forall x V(x,y) \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgeae09ed" class="outline-3">
-<h3 id="orgeae09ed"><span class="section-number-3">1.2.</span> Relevant</h3>
+<div id="outline-container-org9e8e21c" class="outline-3">
+<h3 id="org9e8e21c"><span class="section-number-3">1.2.</span> Relevant</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211220172139-reihenfolge_quantifikatoren_26f700a06ca84c1e6dad1933088720d1c1e84676.svg" alt="20211220172139-reihenfolge_quantifikatoren_26f700a06ca84c1e6dad1933088720d1c1e84676.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x \exists y V(x,y) \\
+\exists x \forall y V(x,y) 
+\end{align*}
 </div>
 </div>
 </div>

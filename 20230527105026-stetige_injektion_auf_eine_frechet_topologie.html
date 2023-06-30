@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetige Injektion auf eine Frechet-Topologie</h1>
-<div id="outline-container-org999ece1" class="outline-2">
-<h2 id="org999ece1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org30b0dd8" class="outline-2">
+<h2 id="org30b0dd8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektion</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /> eine <a href="20230207113106-t1_raum.html#ID-0bc02ce3-dbb8-4a80-9a2b-53c3ac9393f1">Frechet-Topologie</a>, dann ist <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ebenfalls eine <a href="20230207113106-t1_raum.html#ID-0bc02ce3-dbb8-4a80-9a2b-53c3ac9393f1">Frechet-Topologie</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektion</a>.
+Sei \(X'\) eine <a href="20230207113106-t1_raum.html#ID-0bc02ce3-dbb8-4a80-9a2b-53c3ac9393f1">Frechet-Topologie</a>, dann ist \(X\) ebenfalls eine <a href="20230207113106-t1_raum.html#ID-0bc02ce3-dbb8-4a80-9a2b-53c3ac9393f1">Frechet-Topologie</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org656fe2c" class="outline-2">
-<h2 id="org656fe2c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga843ac9" class="outline-2">
+<h2 id="orga843ac9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />, so gilt <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" class="org-svg" />.
-Nach Annahme existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_763b98cf51e9568885d8ce866e7a48b5d54c16bc.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_763b98cf51e9568885d8ce866e7a48b5d54c16bc.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_df74b421cd48326011d87f130f1f17547b1b917a.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_df74b421cd48326011d87f130f1f17547b1b917a.svg" class="org-svg" />
-Da <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> wieder <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> sind, gilt <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_a6a906d01055c425e92eab031b1c03ef9113591d.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_a6a906d01055c425e92eab031b1c03ef9113591d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_416c412f39e1f29b80b133127bac08019c5f5966.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_416c412f39e1f29b80b133127bac08019c5f5966.svg" class="org-svg" /> da <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_df74b421cd48326011d87f130f1f17547b1b917a.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_df74b421cd48326011d87f130f1f17547b1b917a.svg" class="org-svg" /> gilt.
-Analog für <img src="file:///home/anton/html/ltximg/20230527105026-stetige_injektion_auf_eine_frechet_topologie_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230527105026-stetige_injektion_auf_eine_frechet_topologie_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" />
+Seien \(x,y \in X\) mit \(x \neq y\), so gilt \(f(x) \neq f(y)\).
+Nach Annahme existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_{f(x)}\) von \(f(x)\) mit \(f(y) \not\in U_{f(x)}\)
+Da <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> wieder <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> sind, gilt \(x \in f^{-1}[U_{f(x)}]\) mit \(y \not\in f^{-1}[U_{f(x)}]\) da \(f(y) \not\in U_{f(x)}\) gilt.
+Analog für \(y\)
 </p>
 </div>
 </div>

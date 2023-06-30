@@ -9,51 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ausklammern eines Faktors: Summenzeichen</h1>
-<div id="outline-container-orgbff06c8" class="outline-2">
-<h2 id="orgbff06c8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0e281a9" class="outline-2">
+<h2 id="org0e281a9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220526150505-ausklammern_summenzeichen_e8c7eb850c17948195a399a3ddd7b66955a99795.svg" alt="20220526150505-ausklammern_summenzeichen_e8c7eb850c17948195a399a3ddd7b66955a99795.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=m}^{n} b a_i =& b \sum_{i=m}^{n} a_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgca4a674" class="outline-2">
-<h2 id="orgca4a674"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org96ab828" class="outline-2">
+<h2 id="org96ab828"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über den <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>
 </p>
 </div>
-<div id="outline-container-org096c07e" class="outline-3">
-<h3 id="org096c07e"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
+<div id="outline-container-org7b316c0" class="outline-3">
+<h3 id="org7b316c0"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 über die <a href="20211228193106-leere_summe.html#ID-3fc1cdae-0ab4-4477-93c2-5234aa8a3947">Leere Summe</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220526150505-ausklammern_summenzeichen_95eb1579d37f53d2482b44ab686ea209baa68ebb.svg" alt="20220526150505-ausklammern_summenzeichen_95eb1579d37f53d2482b44ab686ea209baa68ebb.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=n}^{n-1} ba_i =& 0 \\
+=& b\cdot\sum_{i=n)}^{n-1} a_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd3ce9ab" class="outline-3">
-<h3 id="orgd3ce9ab"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
+<div id="outline-container-orgf8c58b1" class="outline-3">
+<h3 id="orgf8c58b1"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220526150505-ausklammern_summenzeichen_1215c039b60994e5a558a9592bb15bdc38ad13ba.svg" alt="20220526150505-ausklammern_summenzeichen_1215c039b60994e5a558a9592bb15bdc38ad13ba.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=m}^{n+1} ba_i =& \sum_{i=m}^n ba_i + ba_{n+1} \\
+=& b \cdot \sum_{i=m}^n a_i + b \cdot a_{n+1} \\
+=& b \cdot \left(\sum_{i=m}^n a_i + a_{n+1}\right) \\
+=& b \cdot \sum_{i=m}^{n+1} a_i
+\end{align*}
 </div>
 </div>
 </div>

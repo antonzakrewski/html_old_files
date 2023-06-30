@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">essentially surjective functor</h1>
-<div id="outline-container-org287d347" class="outline-2">
-<h2 id="org287d347"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org8a77932" class="outline-2">
+<h2 id="org8a77932"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" alt="20230420222307-essentially_surjective_functor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20230420222307-essentially_surjective_functor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> be a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a>.
-Then <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230420222307-essentially_surjective_functor_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> is said to be essentially surjective, if for any <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_207afd49d689a09b0b298abe0aab8de3e6e6741f.svg" alt="20230420222307-essentially_surjective_functor_207afd49d689a09b0b298abe0aab8de3e6e6741f.svg" class="org-svg" /> there exists an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_3cdd50207918ed74f43fa9c4831ff2c96dcf55f1.svg" alt="20230420222307-essentially_surjective_functor_3cdd50207918ed74f43fa9c4831ff2c96dcf55f1.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_fa89fb50e0239c9b9ee3a4620c4ac7f9f834ffd4.svg" alt="20230420222307-essentially_surjective_functor_fa89fb50e0239c9b9ee3a4620c4ac7f9f834ffd4.svg" class="org-svg" /> is <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorphic</a> to <img src="file:///home/anton/html/ltximg/20230420222307-essentially_surjective_functor_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230420222307-essentially_surjective_functor_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" />
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(F: \mathcal{C} \rightarrow \mathcal{D}\) be a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a>.
+Then \(F\) is said to be essentially surjective, if for any <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(y \in \mathrm{Ob}(\mathcal{D})\) there exists an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(x \in \mathrm{Ob}(\mathcal{C})\) such that \(F(x)\) is <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorphic</a> to \(y\)
 </p>
 </div>
 </div>

@@ -9,54 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Monomorphismus von einem Restklassenring auf die Rationalen Zahlen modulo die ganzen Zahlen</h1>
-<div id="outline-container-orga79318b" class="outline-2">
-<h2 id="orga79318b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdce00cb" class="outline-2">
+<h2 id="orgdce00cb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei der <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismus</a> über dem <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_c8b3c8f784e7e5afe89adef06d6c329929e69480.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_c8b3c8f784e7e5afe89adef06d6c329929e69480.svg" class="org-svg" /> 
+Sei der <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismus</a> über dem <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> \(\mathbb{Z} / n \mathbb{Z}\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_8ccb86bd4477d06a16646f9604a7ab9d7b010692.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_8ccb86bd4477d06a16646f9604a7ab9d7b010692.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi_m: \mathbb{Z} / n \mathbb{Z} \rightarrow& \mathbb{Q} / \mathbb{Z} \\
+k + n \mathbb{Z} \mapsto& \frac{mk}{n} + \mathbb{Z} 
+\end{align*}
 <p>
 gegeben.
-Dann ist <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_af6f9e6cffc5d6d8378dda15bf770c2dd966ab97.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_af6f9e6cffc5d6d8378dda15bf770c2dd966ab97.svg" class="org-svg" /> ein <a href="20230303170539-modulmonomorphismus.html#ID-bf69176f-1b85-40c5-a8b7-fb306539c238">Modulmonomorphismus</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_9c4786b5876da2a019a857080e3cb5d95210440c.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_9c4786b5876da2a019a857080e3cb5d95210440c.svg" class="org-svg" /> gilt.
+Dann ist \(\phi_m\) ein <a href="20230303170539-modulmonomorphismus.html#ID-bf69176f-1b85-40c5-a8b7-fb306539c238">Modulmonomorphismus</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(\mathrm{gcd}(m,n) = 1\) gilt.
 </p>
 </div>
 </div>
-<div id="outline-container-orga43be39" class="outline-2">
-<h2 id="orga43be39"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org631c2e5" class="outline-2">
+<h2 id="org631c2e5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc455d03" class="outline-3">
-<h3 id="orgc455d03"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org6317b05" class="outline-3">
+<h3 id="org6317b05"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_6135a37d089fa502c0d3b74d1951c09ee58cc1e2.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_6135a37d089fa502c0d3b74d1951c09ee58cc1e2.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_07f2bdee1521bab46dc4fbdb8a0a20b60dec7774.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_07f2bdee1521bab46dc4fbdb8a0a20b60dec7774.svg" class="org-svg" /> nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_8f5ef67b15058175a229fee9c734c8f9954fe5a1.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_8f5ef67b15058175a229fee9c734c8f9954fe5a1.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_30cb30c6e0266b2945df303ffc43ca73497aa73e.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_30cb30c6e0266b2945df303ffc43ca73497aa73e.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_640bfb67dc6583be6b3f01a6f5c31c71fcfc6c6d.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_640bfb67dc6583be6b3f01a6f5c31c71fcfc6c6d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_87ccee6eb030b606d2cc02fb803657af796763af.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_87ccee6eb030b606d2cc02fb803657af796763af.svg" class="org-svg" />.
+Sei \(m = 0\), so ist \(\phi_0(k + n \mathbb{Z}) = 0 + \mathbb{Z}\) nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>.
+Sei \(m \geq 2\) mit \(\mathrm{gcd}(m,n) \eqqcolon k \geq 2\), so existiert ein \(s \in \mathbb{N}\) mit \(k \cdot s \in n \mathbb{Z}\).
 Daraus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_cd28d732275e536305814f12ece8b933013fbcd6.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_cd28d732275e536305814f12ece8b933013fbcd6.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi_m(s) = 0 + \mathbb{Z} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8ffd723" class="outline-3">
-<h3 id="org8ffd723"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org0c1d163" class="outline-3">
+<h3 id="org0c1d163"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach dem <a href="20220911124052-lemma_von_bezout.html#ID-36a007b5-785e-4bb3-8664-334fd0369219">einfachen Lemma von Bezout</a> existieren <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_52efdea5fd13886f76dce9d592a2a6ce0b452f11.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_52efdea5fd13886f76dce9d592a2a6ce0b452f11.svg" class="org-svg" />
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_4bea3d173c5f4bfbbde070793742177f4ca60d04.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_4bea3d173c5f4bfbbde070793742177f4ca60d04.svg" class="org-svg" />, d.h. wir erhalten eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektion</a> auf <img src="file:///home/anton/html/ltximg/20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_c8b3c8f784e7e5afe89adef06d6c329929e69480.svg" alt="20230523171343-monomorphismus_von_einem_restklassenring_auf_die_rationalen_zahlen_modulo_die_ganzen_zahlen_c8b3c8f784e7e5afe89adef06d6c329929e69480.svg" class="org-svg" />.
+Nach dem <a href="20220911124052-lemma_von_bezout.html#ID-36a007b5-785e-4bb3-8664-334fd0369219">einfachen Lemma von Bezout</a> existieren \(s,t \in \mathbb{Z}\) mit \(1 = s \cdot m + t \cdot n\)
+Daraus folgt \(k \eqiuv s \cdot m \cdot k \mod{n}\), d.h. wir erhalten eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektion</a> auf \(\mathbb{Z} / n \mathbb{Z}\).
 Da die <a href="20211227215415-machtigkeit_menge.html#ID-a53ec5a2-0adb-4575-bf21-e3ac15eff75f">Mächtigkeit</a> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> ist, folgt, dass  <a href="20221022191921-lemma_uber_die_aquivalenz_von_bijektivitat_surjektivitat_und_injektivitat_bei_gleich_machtigen_mengen.html#ID-5fb6982e-e7b5-48be-9fd3-0b3a7a7b4499">Äquivalenz von Bijektivität, Surjektivität und Injektivität bei gleich mächtigen, endlichen Mengen</a> 
 </p>
 </div>

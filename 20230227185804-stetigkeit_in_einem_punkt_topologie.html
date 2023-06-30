@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit in einem Punkt (Topologie)</h1>
-<div id="outline-container-org33df3e1" class="outline-2">
-<h2 id="org33df3e1"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org19a46fc" class="outline-2">
+<h2 id="org19a46fc"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-<img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> in <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />, falls für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_15e9242b0aaa96c584458d96ac914c4af236b576.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_15e9242b0aaa96c584458d96ac914c4af236b576.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> existiert, so dass gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> in \(x \in X\), falls für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(V \in \mathcal{U}(f(x))\) von \(f(x)\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{U}(x)\) von \(x\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227185804-stetigkeit_in_einem_punkt_topologie_0be14d676a201d03d46efd1f4889948fb2d41dcd.svg" alt="20230227185804-stetigkeit_in_einem_punkt_topologie_0be14d676a201d03d46efd1f4889948fb2d41dcd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f[U] \subseteq V
+\end{align*}
 </div>
 </div>
 </div>

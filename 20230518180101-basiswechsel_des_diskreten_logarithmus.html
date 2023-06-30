@@ -3,49 +3,67 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Basiswechsel des diskreten Logarithmus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Basiswechsel des diskreten Logarithmus</h1>
-<div id="outline-container-org9470f30" class="outline-2">
-<h2 id="org9470f30"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd2702e9" class="outline-2">
+<h2 id="orgd2702e9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230518180101-basiswechsel_des_diskreten_logarithmus_7dda2ab21c9eccc179a4c597e5eca8f63505b558.svg" alt="20230518180101-basiswechsel_des_diskreten_logarithmus_7dda2ab21c9eccc179a4c597e5eca8f63505b558.svg" class="org-svg" /> eine <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklische Gruppe</a> mit <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">Erzeugern</a> <img src="ltximg/20230518180101-basiswechsel_des_diskreten_logarithmus_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230518180101-basiswechsel_des_diskreten_logarithmus_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> bzw. <img src="ltximg/20230518180101-basiswechsel_des_diskreten_logarithmus_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" alt="20230518180101-basiswechsel_des_diskreten_logarithmus_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" class="org-svg" />.
+Sei \((G,\cdot)\) eine <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklische Gruppe</a> mit <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">Erzeugern</a> \(g\) bzw. \(h\).
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230518180101-basiswechsel_des_diskreten_logarithmus_0af9bd70df8b64a8dfd42840277c07f5ff6d08dc.svg" alt="20230518180101-basiswechsel_des_diskreten_logarithmus_0af9bd70df8b64a8dfd42840277c07f5ff6d08dc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\log_{h}(x) = \log_g(x) \cdot \log_{h}(g) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc0f94be" class="outline-2">
-<h2 id="orgc0f94be"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbe56b39" class="outline-2">
+<h2 id="orgbe56b39"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230518180101-basiswechsel_des_diskreten_logarithmus_cef767c1707485d6518b833c7a07efce7bd2d913.svg" alt="20230518180101-basiswechsel_des_diskreten_logarithmus_cef767c1707485d6518b833c7a07efce7bd2d913.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+h^{\log_g(x) \cdot \log_h(g)} =& (h^{\log_h(g)})^{\log_g(x)} \\
+=&  g^{\log_g(x)} \\
+=&  x \\
+=& h^{\log_h(x)} 
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Länge einer Kurve</h1>
-<div id="outline-container-orge9603f0" class="outline-2">
-<h2 id="orge9603f0"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-org909910e" class="outline-2">
+<h2 id="org909910e"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei eine <a href="20221106115258-parametrisierung_einer_kurve.html#ID-dc61abb2-502c-4136-b116-4e72dd67396d">Parametrisierung einer Kurve</a> <img src="file:///home/anton/html/ltximg/20221106120354-lange_einer_kurve_8006eee02a35e615bea1e90c9a6a554f29303cdf.svg" alt="20221106120354-lange_einer_kurve_8006eee02a35e615bea1e90c9a6a554f29303cdf.svg" class="org-svg" /> gegeben:
-Dann ist die Länge der <a href="20221106115125-kurve_in_r_n.html#ID-9f8b7e77-baeb-4d66-a030-47cc0b6c7871">Kurve in R<sup>n</sup></a> von <img src="file:///home/anton/html/ltximg/20221106120354-lange_einer_kurve_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" alt="20221106120354-lange_einer_kurve_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" class="org-svg" /> bis <img src="file:///home/anton/html/ltximg/20221106120354-lange_einer_kurve_6e67e1c1b55f59cbf722e1da0d3f829cc566397e.svg" alt="20221106120354-lange_einer_kurve_6e67e1c1b55f59cbf722e1da0d3f829cc566397e.svg" class="org-svg" /> gegeben durch
+Sei eine <a href="20221106115258-parametrisierung_einer_kurve.html#ID-dc61abb2-502c-4136-b116-4e72dd67396d">Parametrisierung einer Kurve</a> \(r: I \rightarrow \mathbb{R}^n\) gegeben:
+Dann ist die Länge der <a href="20221106115125-kurve_in_r_n.html#ID-9f8b7e77-baeb-4d66-a030-47cc0b6c7871">Kurve in R<sup>n</sup></a> von \(a \in I\) bis \(b \in I\) gegeben durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106120354-lange_einer_kurve_91c90576c9d5b3751e16f94f08c82c645fcff977.svg" alt="20221106120354-lange_einer_kurve_91c90576c9d5b3751e16f94f08c82c645fcff977.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} \| \frac{\mathrm{d}}{\mathrm{d}t} r(t) \|
+\end{align*}
 </div>
 </div>
 </div>

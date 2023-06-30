@@ -3,49 +3,67 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neutrales Element - Multiplikation (komplexe Zahlen)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Neutrales Element - Multiplikation (komplexe Zahlen)</h1>
-<div id="outline-container-org2adddb0" class="outline-2">
-<h2 id="org2adddb0"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org026bac6" class="outline-2">
+<h2 id="org026bac6"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrale element</a>  für die <a href="20211230230303-multiplikation_komplexe_zahlen.html#ID-ce8fd7aa-386e-4627-9f50-db82af13a7ed">Multiplikation</a> <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahlen</a> ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211230232538-neutrales_element_multiplikation_komplexe_zahlen_b096f6f8b1532c70458becddbcff00fad023b995.svg" alt="20211230232538-neutrales_element_multiplikation_komplexe_zahlen_b096f6f8b1532c70458becddbcff00fad023b995.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+e \coloneqq& (1,0) \\
+=& 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org412975a" class="outline-2">
-<h2 id="org412975a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf871f44" class="outline-2">
+<h2 id="orgf871f44"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20211230232538-neutrales_element_multiplikation_komplexe_zahlen_86eedb1439937eefaf7e66d227a7f7bf34630b31.svg" alt="20211230232538-neutrales_element_multiplikation_komplexe_zahlen_86eedb1439937eefaf7e66d227a7f7bf34630b31.svg" class="org-svg" /> eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> mit <img src="ltximg/20211230232538-neutrales_element_multiplikation_komplexe_zahlen_626945927db96d02d43952d312b84bfd00158fe8.svg" alt="20211230232538-neutrales_element_multiplikation_komplexe_zahlen_626945927db96d02d43952d312b84bfd00158fe8.svg" class="org-svg" />.
+Sei \(z =& a + b \mathrm{i}\) eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> mit \(a,b \in \mathbb{R}\).
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211230232538-neutrales_element_multiplikation_komplexe_zahlen_88e59a9b080c22dd45ced2e08c093eab3ffaccc1.svg" alt="20211230232538-neutrales_element_multiplikation_komplexe_zahlen_88e59a9b080c22dd45ced2e08c093eab3ffaccc1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+z \cdot 1 =& (a + b \mathrm{i}) \cdot (1 + 0 \mathrm{i}) \\
+=& (a \cdot 1 - b \cdot 0) + (b \cdot 1 + a \cdot 0) \mathrm{i} \\
+=& a + b \mathrm{i}
+\end{align*}
 </div>
 </div>
 </div>

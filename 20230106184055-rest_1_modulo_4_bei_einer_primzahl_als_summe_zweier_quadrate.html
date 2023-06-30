@@ -9,28 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rest 1 modulo 4 bei einer Primzahl als Summe zweier Quadrate</h1>
-<div id="outline-container-org4b187be" class="outline-2">
-<h2 id="org4b187be"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge82f853" class="outline-2">
+<h2 id="orge82f853"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_7179412ad949b347e9294a020efb4204da8cbee0.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_7179412ad949b347e9294a020efb4204da8cbee0.svg" class="org-svg" /> <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a>.
-Eine Darstellung <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_7d42fedb7e050a39f50c2062ff805b686254ea67.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_7d42fedb7e050a39f50c2062ff805b686254ea67.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" class="org-svg" /> existiert <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_042fbcbb09ecb3f64e79b17a472f89781824a277.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_042fbcbb09ecb3f64e79b17a472f89781824a277.svg" class="org-svg" />
+Sei \(p \in \mathbb{P}\) <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a>.
+Eine Darstellung \(p = a^2 + b^2\) mit \(a,b \in \mathbb{Z}\) existiert <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(p \equiv 1 \mod{4}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org3070376" class="outline-2">
-<h2 id="org3070376"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org505ee71" class="outline-2">
+<h2 id="org505ee71"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgee34a3e" class="outline-3">
-<h3 id="orgee34a3e"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org8c65414" class="outline-3">
+<h3 id="org8c65414"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt insbesondere <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_eeaca763147b5b9afc4fad6cf1cf57e6aa0f39c8.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_eeaca763147b5b9afc4fad6cf1cf57e6aa0f39c8.svg" class="org-svg" /> und damit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_26ff4024f55e685a4aefb36adf3c846983475fc6.svg" alt="20230106184055-rest_1_modulo_4_bei_einer_primzahl_als_summe_zweier_quadrate_26ff4024f55e685a4aefb36adf3c846983475fc6.svg" class="org-svg" /> und $b &equiv; 1 "a
+Es gilt insbesondere \(p \not\equiv 0 \mod{2}\) und damit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a \equiv 0\mod{2}\) und $b &equiv; 1 \mod{2}"a
 </p>
 </div>
 </div>

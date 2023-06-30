@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konjugation (Gruppe)</h1>
-<div id="outline-container-org0820227" class="outline-2">
-<h2 id="org0820227"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org42bb27c" class="outline-2">
+<h2 id="org42bb27c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210184513-konjugation_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20221210184513-konjugation_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221210184513-konjugation_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" alt="20221210184513-konjugation_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" class="org-svg" />
-Dann ist die Konjugation mit <img src="file:///home/anton/html/ltximg/20221210184513-konjugation_gruppe_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221210184513-konjugation_gruppe_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> definiert als <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(a \in G\)
+Dann ist die Konjugation mit \(a\) definiert als <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210184513-konjugation_gruppe_d628826e756a46fe6182deccb2230fcc879040b2.svg" alt="20221210184513-konjugation_gruppe_d628826e756a46fe6182deccb2230fcc879040b2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_a: G \rightarrow G \\
+g \rightarrow a^{-1}ga
+\end{align*}
 </div>
 </div>
 </div>

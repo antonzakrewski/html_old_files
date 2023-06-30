@@ -3,38 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Produktregel (Q11)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produktregel (Q11)</h1>
-<div id="outline-container-org7303fd8" class="outline-2">
-<h2 id="org7303fd8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0a868ca" class="outline-2">
+<h2 id="org0a868ca"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> g und h <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a>, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20210217213908-produktregel_e34813c8b81c87d32eb60c7ddc054fb324ac91ba.svg" alt="20210217213908-produktregel_e34813c8b81c87d32eb60c7ddc054fb324ac91ba.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(x) \coloneqq& g(x) \cdot h(x) \\
+ \Rightarrow f'(x) =& g'(x) \cdot h(x) + h'(x) \cdot g(x)
+\end{align*}
 <ul class="org-ul">
 <li><a href="20220401220335-produktregel_mehrere_faktoren.html#ID-f15a1926-ecba-455d-a71d-a9fc41281538">Produktregel: mehrere Faktoren</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc321146" class="outline-2">
-<h2 id="orgc321146"><span class="section-number-2">2.</span> <a href="20220401202407-beweis_produktregel.html#ID-4be5c492-8fe6-44b1-9dd8-d4ef721426f1">Beweis: Produktregel</a></h2>
+<div id="outline-container-orga00f655" class="outline-2">
+<h2 id="orga00f655"><span class="section-number-2">2.</span> <a href="20220401202407-beweis_produktregel.html#ID-4be5c492-8fe6-44b1-9dd8-d4ef721426f1">Beweis: Produktregel</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

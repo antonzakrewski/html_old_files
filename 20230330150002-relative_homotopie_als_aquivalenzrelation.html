@@ -3,92 +3,109 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>relative Homotopie als Äquivalenzrelation</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">relative Homotopie als Äquivalenzrelation</h1>
-<div id="outline-container-orgca66d6a" class="outline-2">
-<h2 id="orgca66d6a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8c147be" class="outline-2">
+<h2 id="org8c147be"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_23118262bfaa716f627bc572c1f782c46347a769.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_23118262bfaa716f627bc572c1f782c46347a769.svg" class="org-svg" />
-Dann ist die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relative Homotopie</a>  <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_fd84f551a9228db62375910987a2a322c0e3502c.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_fd84f551a9228db62375910987a2a322c0e3502c.svg" class="org-svg" /> bezüglich <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" />  eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> auf der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_2de4b930df5cddc060c25e9c74499de96f987a03.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_2de4b930df5cddc060c25e9c74499de96f987a03.svg" class="org-svg" />.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(A \subseteq X\)
+Dann ist die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relative Homotopie</a>  \(f \simeq f'\) bezüglich \(A\)  eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> auf der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> \(C(X,X')\).
 </p>
 </div>
 </div>
-<div id="outline-container-org9600f98" class="outline-2">
-<h2 id="org9600f98"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc407bdd" class="outline-2">
+<h2 id="orgc407bdd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7f29fb7" class="outline-3">
-<h3 id="org7f29fb7"><span class="section-number-3">2.1.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexiv</a></h3>
+<div id="outline-container-org390620d" class="outline-3">
+<h3 id="org390620d"><span class="section-number-3">2.1.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexiv</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20230330144948-konstante_homotopie.html#ID-ed4c6850-3160-40d8-ac70-f9698096b38b">konstanten Homotopie</a>; 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc28350a" class="outline-3">
-<h3 id="orgc28350a"><span class="section-number-3">2.2.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
+<div id="outline-container-org919e434" class="outline-3">
+<h3 id="org919e434"><span class="section-number-3">2.2.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_84d33aab3a0a08eb1b7790ba7eeccc1dce2f5db7.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_84d33aab3a0a08eb1b7790ba7eeccc1dce2f5db7.svg" class="org-svg" /> eine <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">Homotopieabbildung</a> mit <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_8389e521c933a7e980ff3518e3fa6617a29e74a1.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_8389e521c933a7e980ff3518e3fa6617a29e74a1.svg" class="org-svg" />, so ist <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_92aa0987362db0280c41fb457fec9f306ab82e8b.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_92aa0987362db0280c41fb457fec9f306ab82e8b.svg" class="org-svg" /> ebenfalls eine Homotopieabbildung mit <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_2d30a5a3e0d7155ca0787984dca7e3364f6dff4f.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_2d30a5a3e0d7155ca0787984dca7e3364f6dff4f.svg" class="org-svg" />:
+Sei \(h: I \times X \rightarrow X'\) eine <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">Homotopieabbildung</a> mit \(f \overset{h}{\simeq} f'\), so ist \(h'(s,x) = h((1-s),x)\) ebenfalls eine Homotopieabbildung mit \(f' \overset{h'}{\simeq} f\):
 die Bedingung für die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relative</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist dabei trivialerweise erfüllt.
-Bleibt zu zeigen, dass <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_4d1a5827c50e6b9cef96af698c7c8e11af19ee67.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_4d1a5827c50e6b9cef96af698c7c8e11af19ee67.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist. 
-Wir wissen, dass für <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_738210018e4a95d4471a9b05c11cac2c11f2c8aa.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_738210018e4a95d4471a9b05c11cac2c11f2c8aa.svg" class="org-svg" /> für <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_546da6bec5fdb0a7ec5680a10bb0d07227f57c54.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_546da6bec5fdb0a7ec5680a10bb0d07227f57c54.svg" class="org-svg" /> und nach der <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Verknüpfung stetiger Funktionen</a> ist zu zeigen, dass <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
-Sei <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_c4b277f93cdb464463505af7ea96411dadb7d294.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_c4b277f93cdb464463505af7ea96411dadb7d294.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> so ist auch <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_d5b68a1c618e014ed4c6ae01372ae8e1bbfb947e.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_d5b68a1c618e014ed4c6ae01372ae8e1bbfb947e.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Bleibt zu zeigen, dass \(h'\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist. 
+Wir wissen, dass für \(h' = h \circ f\) für \(f: (s,x) \rightarrow ((1-s),x)\) und nach der <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Verknüpfung stetiger Funktionen</a> ist zu zeigen, dass \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Sei \(((a,b),O) \in I \times X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> so ist auch \(f^{-1}[((a,b),O)] = ((1 - b, 1 - a), O)\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org2a06df8" class="outline-3">
-<h3 id="org2a06df8"><span class="section-number-3">2.3.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
+<div id="outline-container-orgec6b5c0" class="outline-3">
+<h3 id="orgec6b5c0"><span class="section-number-3">2.3.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Seien <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_471616b530e7b4a82be78475911bae97ce813dea.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_471616b530e7b4a82be78475911bae97ce813dea.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_c363eb2dcf51a64285bc85ff9609bfea156c93b0.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_c363eb2dcf51a64285bc85ff9609bfea156c93b0.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_44a843bf129be55f4188c7a34156a7a58c4691fc.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_44a843bf129be55f4188c7a34156a7a58c4691fc.svg" class="org-svg" /> gilt.
-Dann seien <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_ae2095334c18f7f9e2f353250ee728b3ad9c0ad7.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_ae2095334c18f7f9e2f353250ee728b3ad9c0ad7.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_32b4713ebb158c2cd6ff3350abcf3c20b8117d64.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_32b4713ebb158c2cd6ff3350abcf3c20b8117d64.svg" class="org-svg" /> mit <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_b063707ea72ec222c4eb9b2952e0cb66be5698bb.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_b063707ea72ec222c4eb9b2952e0cb66be5698bb.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_9b0fca3a83dd3344c1642e6c66674db824609472.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_9b0fca3a83dd3344c1642e6c66674db824609472.svg" class="org-svg" />
-<img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_8580e56c1b07bb784c8c34d022e356bbcf2702a4.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_8580e56c1b07bb784c8c34d022e356bbcf2702a4.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_0a76868533e2f2e26f3c9f747b7552950a717478.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_0a76868533e2f2e26f3c9f747b7552950a717478.svg" class="org-svg" /> sind als <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> selbst <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> (vgl. <a href="20221222102607-lipschitzstetigkeit_als_verscharfte_bedingung.html#ID-c43f5ba6-aaf7-4fc0-9e9f-b489e0056a79">Lipschitzstetigkeit als verschärfte Bedingung</a>) und nach der <a href="20230211130611-verknupfung_stetiger_funktionen_metrisch.html#ID-7fe7cd29-26c2-4e4f-ad84-023041d51a7f">Verknüpfung stetiger Abbildungen</a> ist <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_9c055caa302a869a17b384d3fe2fc6ef0dcf1546.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_9c055caa302a869a17b384d3fe2fc6ef0dcf1546.svg" class="org-svg" /> und <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_7c8214549eb97c211eaca37e0b68babe22c6cfc6.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_7c8214549eb97c211eaca37e0b68babe22c6cfc6.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
-Desweiteren gilt: <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_96bd0446cca84be13441cdfe7dbe96a564d19cfb.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_96bd0446cca84be13441cdfe7dbe96a564d19cfb.svg" class="org-svg" />
+Seien \(f_1,f_2,f_3: X \rightarrow X'\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass \(f_1 \overset{h_1}{\simeq} f_2\) und \(f_2 \overset{h_2}{\simeq} f_3\) gilt.
+Dann seien \(g_1: [0,0.5] \rightarrow [0,1]\) und \(g_2: [0.5,1] \rightarrow [0,1]\) mit \(g_1(x) = 2x\) und \(g_2(x) = 2x - 1\)
+\(g_1\) und \(g_2\) sind als <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> selbst <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> (vgl. <a href="20221222102607-lipschitzstetigkeit_als_verscharfte_bedingung.html#ID-c43f5ba6-aaf7-4fc0-9e9f-b489e0056a79">Lipschitzstetigkeit als verschärfte Bedingung</a>) und nach der <a href="20230211130611-verknupfung_stetiger_funktionen_metrisch.html#ID-7fe7cd29-26c2-4e4f-ad84-023041d51a7f">Verknüpfung stetiger Abbildungen</a> ist \(h_1 \circ g_1\) und \(h_2 \circ g_2\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
+Desweiteren gilt: \((h_1 \circ g_1)(0.5,x) = h_1(1,x) = f_2(x) = h_2(0,x) = (h_2 \circ g_1)(0.5,x)\)
 Dann lässt sich nach der <a href="20230330151432-stetige_fortsetzung_zweier_abbildungen_von_einer_uberdeckung.html#ID-43361c3e-7e6f-4ffb-a0ec-7988d859da0d">stetigen Fortsetzung zweier Abbildungen von einer endlichen abgeschlossenen Überdeckung</a> folgende <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> definieren:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_7ec718ca5e25bc77074601bfe11aa4f653e9f1c6.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_7ec718ca5e25bc77074601bfe11aa4f653e9f1c6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+h(s,x) := 
+\begin{cases}
+(h_1 \circ g_1)(s,x) & \mbox{if } s \leq 0.5 \\
+(h_2 \circ g_2)(s,x) & \mbox{if } s > 0.5
+\end{cases}
+\end{align*}
 <p>
 Dabei gilt insbesondere:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_b77be89a0bf717e97f5d1fe32fed2c1418fded34.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_b77be89a0bf717e97f5d1fe32fed2c1418fded34.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+h(0,x) =& h_1(0,x) \\
+=& f_1(x) \\
+h(1,x) =& h_2(1,x) \\
+=& f_3(x)
+\end{align*}
 <p>
-Die Bedingung für die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relative</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist dabei wieder trivialerweise erfüllt, da gilt für <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_bca22162e7af19d641978ab3dcd5b2679c548b3e.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_bca22162e7af19d641978ab3dcd5b2679c548b3e.svg" class="org-svg" /> und: <img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_0ef66021e83b22fa71874f231a2a4d8d3b51b7e3.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_0ef66021e83b22fa71874f231a2a4d8d3b51b7e3.svg" class="org-svg" /> gilt:
+Die Bedingung für die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relative</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist dabei wieder trivialerweise erfüllt, da gilt für \(a \in A\) und: \(s \in [0,0.5], s' \in [0.5,1]\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230330150002-relative_homotopie_als_aquivalenzrelation_2d3697f71f9f6335ff7f2bdbfc58f59561cd32ac.svg" alt="20230330150002-relative_homotopie_als_aquivalenzrelation_2d3697f71f9f6335ff7f2bdbfc58f59561cd32ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+h(s,a) =& f_1(g_1(s),a) \\
+=& f_2(g_2(s'),a)
+\end{align*}
 </div>
 </div>
 </div>

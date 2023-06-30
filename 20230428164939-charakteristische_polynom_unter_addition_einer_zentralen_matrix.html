@@ -9,46 +9,65 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristische Polynom unter Addition einer zentralen Matrix</h1>
-<div id="outline-container-org16b2134" class="outline-2">
-<h2 id="org16b2134"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc148b0c" class="outline-2">
+<h2 id="orgc148b0c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" />
+Sei \(A \in K^{n \times n}\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_4f95b17793e26df1e54c0f752a796ee59240ab3e.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_4f95b17793e26df1e54c0f752a796ee59240ab3e.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{A+\mu E} = f_A(x - \mu)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgae83d28" class="outline-2">
-<h2 id="orgae83d28"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcd3b0ca" class="outline-2">
+<h2 id="orgcd3b0ca"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 es gilt nach Definition:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_6dd041cac0f59669b88209f33bb954a4bbd1d715.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_6dd041cac0f59669b88209f33bb954a4bbd1d715.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{A + \mu E} =& \det(xE - A - \mu E) \\
+=& \det((x - \mu)E - A)
+\end{align*}
 <p>
-Durch Substitution <img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_bbcdde5a1c23f1c25051e0366f7bb53327a0402c.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_bbcdde5a1c23f1c25051e0366f7bb53327a0402c.svg" class="org-svg" /> folgt dann:
+Durch Substitution \(x'  \coloneqq x - \mu\) folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_a18886822f3e20bc6d0e46f4556467857b9ec01a.svg" alt="20230428164939-charakteristische_polynom_unter_addition_einer_zentralen_matrix_a18886822f3e20bc6d0e46f4556467857b9ec01a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det((x - \mu)E - A) =& \det(x'E - A) \\
+=& f_A(x') \\
+=& f_A(x-\mu)
+\end{align*}
 </div>
 </div>
 </div>

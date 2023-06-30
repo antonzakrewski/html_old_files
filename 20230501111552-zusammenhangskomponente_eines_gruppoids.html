@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhangskomponente eines Gruppoids</h1>
-<div id="outline-container-org2aa4fb8" class="outline-2">
-<h2 id="org2aa4fb8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org976bea0" class="outline-2">
+<h2 id="org976bea0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" class="org-svg" /> ein <a href="20230225171739-gruppoid.html#ID-2ec756c2-bea0-454f-8fc0-e5a23f080d1b">Gruppoid</a>, <img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_a45d8587ef8a2b2d6e5b79d1b6353a9c48a03924.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_a45d8587ef8a2b2d6e5b79d1b6353a9c48a03924.svg" class="org-svg" />.
-Die Zusammenhangskomponente von <img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" class="org-svg" /> ist das Groppoid <img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_d7ea5cc304c782ef33b0ed6580983217b3c58ce1.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_d7ea5cc304c782ef33b0ed6580983217b3c58ce1.svg" class="org-svg" /> mit 
+Sei \(\mathcal{G}\) ein <a href="20230225171739-gruppoid.html#ID-2ec756c2-bea0-454f-8fc0-e5a23f080d1b">Gruppoid</a>, \(x \in \mathrm{ob}(\mathcal{G})\).
+Die Zusammenhangskomponente von \(x\) in \(\mathcal{G}\) ist das Groppoid \(\mathcal{G}_(x)\) mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501111552-zusammenhangskomponente_eines_gruppoids_2338aae2ed6683a4c21748020de86d955d6b8a67.svg" alt="20230501111552-zusammenhangskomponente_eines_gruppoids_2338aae2ed6683a4c21748020de86d955d6b8a67.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{ob}(\mathcal{G}_{(x)}) = \{x' \in \mathrm{Ob}(\mathcal{G}) \vert \mathrm{Iso}(x,x') \neq \emptyset\} \\
+\mathrm{Iso}_{\mathcal{G}_{(x)}}(x_1,x_2)  = \mathrm{Iso}_{\mathcal{G}}(x_1,x_2)
+\end{align*}
 </div>
 </div>
 </div>

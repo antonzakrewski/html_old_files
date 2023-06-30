@@ -9,33 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Positive Definitheit einer Norm</h1>
-<div id="outline-container-org5f67682" class="outline-2">
-<h2 id="org5f67682"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd75c163" class="outline-2">
+<h2 id="orgd75c163"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221003143637-definitheit_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" alt="20221003143637-definitheit_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" class="org-svg" /> eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> auf einem <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> <img src="file:///home/anton/html/ltximg/20221003143637-definitheit_einer_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221003143637-definitheit_einer_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221003143637-definitheit_einer_norm_d24bd66a2b5abda1ed0d7ce1115c5835f2d17ddc.svg" alt="20221003143637-definitheit_einer_norm_d24bd66a2b5abda1ed0d7ce1115c5835f2d17ddc.svg" class="org-svg" />
+Sei \(\| \cdot \|\) eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> auf einem <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> \(V\) mit \(x \in V\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003143637-definitheit_einer_norm_858f61675245c931d0368ff7e0da4f8acfa8075e.svg" alt="20221003143637-definitheit_einer_norm_858f61675245c931d0368ff7e0da4f8acfa8075e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| x \| \geq 0
+\end{align*}
 
 <p>
 mit gleichheit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003143637-definitheit_einer_norm_a42e45ab125086381ac9bdd478ef06a4d7c3280d.svg" alt="20221003143637-definitheit_einer_norm_a42e45ab125086381ac9bdd478ef06a4d7c3280d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| x \| = 0 \Rightarrow x = 0
+\end{align*}
 </div>
 </div>
 </div>

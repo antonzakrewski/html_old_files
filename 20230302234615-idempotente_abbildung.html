@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">idempotente Abbildung</h1>
-<div id="outline-container-org9ccb4ce" class="outline-2">
-<h2 id="org9ccb4ce"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3f7b932" class="outline-2">
+<h2 id="org3f7b932"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230302234615-idempotente_abbildung_4e38915096989d8f5d5aafbbb1165855ba4b7ac8.svg" alt="20230302234615-idempotente_abbildung_4e38915096989d8f5d5aafbbb1165855ba4b7ac8.svg" class="org-svg" /> auf einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230302234615-idempotente_abbildung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230302234615-idempotente_abbildung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist idempotent, falls gilt:
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: M \rightarrow M\) auf einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M\) ist idempotent, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230302234615-idempotente_abbildung_5ca8d8e68da3e2840f4c684c57be1235409d8d72.svg" alt="20230302234615-idempotente_abbildung_5ca8d8e68da3e2840f4c684c57be1235409d8d72.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f \circ f = f
+\end{align*}
 </div>
 </div>
 </div>

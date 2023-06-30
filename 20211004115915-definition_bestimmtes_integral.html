@@ -9,24 +9,43 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bestimmtes Integral</h1>
-<div id="outline-container-orgee48ced" class="outline-2">
-<h2 id="orgee48ced"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org121611d" class="outline-2">
+<h2 id="org121611d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211004115915-definition_bestimmtes_integral_3a81ff2affbcf271adbc579f1d05cfa89ac82749.svg" alt="20211004115915-definition_bestimmtes_integral_3a81ff2affbcf271adbc579f1d05cfa89ac82749.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{equation}
+\int_a^b f(x) \mathrm{d}x 
+\end{equation}
 <p>
-heißt bestimmtes Integral von <img src="file:///home/anton/html/ltximg/20211004115915-definition_bestimmtes_integral_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20211004115915-definition_bestimmtes_integral_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> zwischen den Grenzen <img src="file:///home/anton/html/ltximg/20211004115915-definition_bestimmtes_integral_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20211004115915-definition_bestimmtes_integral_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20211004115915-definition_bestimmtes_integral_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20211004115915-definition_bestimmtes_integral_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" />.
+heißt bestimmtes Integral von \(f\) zwischen den Grenzen \(a\) und \(b\).
 Es ist definiert als gemeinsamer Grenzwert der Ober- und der Untersumme bei der Streifenmethode.
 </p>
 </div>

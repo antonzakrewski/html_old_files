@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rekurrenz irreduzibler Markovketten</h1>
-<div id="outline-container-orgc54cf7e" class="outline-2">
-<h2 id="orgc54cf7e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge14a70f" class="outline-2">
+<h2 id="orge14a70f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine irreduzible Markovkette mit abzählbarem Zustandsraum <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" class="org-svg" />
-Dann ist für alle <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_6a14327bef2deed451a690946f018e92d5d033ab.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_6a14327bef2deed451a690946f018e92d5d033ab.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_e9df6d47e08d89526232a723d6ecc30c8dd35655.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_e9df6d47e08d89526232a723d6ecc30c8dd35655.svg" class="org-svg" /> genau dann rekurrent, wenn die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> rekurrent ist. 
+Sei \(X\) eine irreduzible Markovkette mit abzählbarem Zustandsraum \(S\)
+Dann ist für alle \(x,y \in S\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \({x}\) genau dann rekurrent, wenn die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(y\) rekurrent ist. 
 Außerdem sind die folgenden Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li>Es gibt eine endliche rekurrente <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_56a1027eaaa32baf63108e207e6aa9e696614c7c.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_56a1027eaaa32baf63108e207e6aa9e696614c7c.svg" class="org-svg" /></li>
-<li>Es gibt ein <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_1f63265f4d44da53f16d9981d9052f59e8bfa897.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_1f63265f4d44da53f16d9981d9052f59e8bfa897.svg" class="org-svg" />, sodass <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_b2f306aee1fa5a3f8064ad1ea641f598fb98b27e.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_b2f306aee1fa5a3f8064ad1ea641f598fb98b27e.svg" class="org-svg" /> rekurrent ist</li>
-<li>Alle <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der Form <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_b2f306aee1fa5a3f8064ad1ea641f598fb98b27e.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_b2f306aee1fa5a3f8064ad1ea641f598fb98b27e.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_1f63265f4d44da53f16d9981d9052f59e8bfa897.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_1f63265f4d44da53f16d9981d9052f59e8bfa897.svg" class="org-svg" /> sind rekurrent</li>
+<li>Es gibt eine endliche rekurrente <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A \subseteq S\)</li>
+<li>Es gibt ein \(x \in S\), sodass \(\{x\}\) rekurrent ist</li>
+<li>Alle <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der Form \(\{x\}\) für \(x \in S\) sind rekurrent</li>
 <li>in diskreter Zeit:</li>
-<li>Für <img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_28b2c7cb0ca863a6a039d668a4e6f40ac38c39e2.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_28b2c7cb0ca863a6a039d668a4e6f40ac38c39e2.svg" class="org-svg" /> ist</li>
+<li>Für \(x, \in S\) ist</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_8f292b3b2e362e165c99eb8190352601c299a417.svg" alt="20220908094848-satz_uber_die_rekurrenz_irreduzibler_markovketten_8f292b3b2e362e165c99eb8190352601c299a417.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathbb{P}_x[x_n = y \text{unendlich oft}] = 1
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zeilenrang</h1>
-<div id="outline-container-org7406bdf" class="outline-2">
-<h2 id="org7406bdf"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org02e94e2" class="outline-2">
+<h2 id="org02e94e2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei K ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20221129184813-zeilenrang_2a090dce8cae14cdbcaf2eb7a8bf5cf6f41fecdf.svg" alt="20221129184813-zeilenrang_2a090dce8cae14cdbcaf2eb7a8bf5cf6f41fecdf.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
-Man betrachte die <a href="20220514143540-zeilenvektor.html#ID-e6cf4532-c660-47d0-b9fa-8829caa03f8f">Zeilenvektoren</a> <img src="file:///home/anton/html/ltximg/20221129184813-zeilenrang_968e7e54b8d22ca205aff05b5f470df8ea56d7c8.svg" alt="20221129184813-zeilenrang_968e7e54b8d22ca205aff05b5f470df8ea56d7c8.svg" class="org-svg" /> als <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elemente</a> von <img src="file:///home/anton/html/ltximg/20221129184813-zeilenrang_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" alt="20221129184813-zeilenrang_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" class="org-svg" />
-Dann ist der Zeilenrang <img src="file:///home/anton/html/ltximg/20221129184813-zeilenrang_64d6bc5139ec83f921569f05c03cba09ba84b626.svg" alt="20221129184813-zeilenrang_64d6bc5139ec83f921569f05c03cba09ba84b626.svg" class="org-svg" /> die Anzahl <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängiger</a> <a href="20220514143540-zeilenvektor.html#ID-e6cf4532-c660-47d0-b9fa-8829caa03f8f">Zeilenvektoren</a> , d.h.
+Sei K ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \((\alpha_{ij}) = A \in K^{m \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Man betrachte die <a href="20220514143540-zeilenvektor.html#ID-e6cf4532-c660-47d0-b9fa-8829caa03f8f">Zeilenvektoren</a> \(z_i = ( \alpha_{i1}, ..., \alpha_{in}) \quad i = 1,...,m\) als <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elemente</a> von \(K^n\)
+Dann ist der Zeilenrang \(r_z(A)\) die Anzahl <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängiger</a> <a href="20220514143540-zeilenvektor.html#ID-e6cf4532-c660-47d0-b9fa-8829caa03f8f">Zeilenvektoren</a> , d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129184813-zeilenrang_1bc49090ab635068f88babbca069f53be113a6ad.svg" alt="20221129184813-zeilenrang_1bc49090ab635068f88babbca069f53be113a6ad.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r_z(A) = \mathrm{dim}_{K}( \langle z_1,...,z_m\rangle)
+\end{align*}
 </div>
 </div>
 </div>

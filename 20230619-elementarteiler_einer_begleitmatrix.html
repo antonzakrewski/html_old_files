@@ -9,81 +9,107 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elementarteiler einer Begleitmatrix</h1>
-<div id="outline-container-orgb1ad96a" class="outline-2">
-<h2 id="orgb1ad96a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org095a914" class="outline-2">
+<h2 id="org095a914"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230619-elementarteiler_einer_begleitmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_a7884967688bb00cf716853d5aad8655852ba868.svg" alt="20230619-elementarteiler_einer_begleitmatrix_a7884967688bb00cf716853d5aad8655852ba868.svg" class="org-svg" /> ein <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normiertes</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> sowie <img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_cf583af3e08c89c8749ce445981e015c0eefea5c.svg" alt="20230619-elementarteiler_einer_begleitmatrix_cf583af3e08c89c8749ce445981e015c0eefea5c.svg" class="org-svg" /> die dazugehörige <a href="20230609-begleitmatrix.html#ID-66139441-0ee0-4b85-b825-cc1f24a59622">Begleitmatrix</a>.
-Dann gilt für die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a> von <img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_cf583af3e08c89c8749ce445981e015c0eefea5c.svg" alt="20230619-elementarteiler_einer_begleitmatrix_cf583af3e08c89c8749ce445981e015c0eefea5c.svg" class="org-svg" />
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(g \in K[X]\) ein <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normiertes</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> sowie \(B_g\) die dazugehörige <a href="20230609-begleitmatrix.html#ID-66139441-0ee0-4b85-b825-cc1f24a59622">Begleitmatrix</a>.
+Dann gilt für die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a> von \(B_g\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_e09c3aa72bbaa6c64579119cc9841b1430484ef0.svg" alt="20230619-elementarteiler_einer_begleitmatrix_e09c3aa72bbaa6c64579119cc9841b1430484ef0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+M_{B_g} \sim \begin{pmatrix}
+1 & & & \\
+  & \vdots & & \\
+  & & 1 & \\
+  & & & g \\
+\end{pmatrix} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdbc28c2" class="outline-2">
-<h2 id="orgdbc28c2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb048a13" class="outline-2">
+<h2 id="orgb048a13"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei $g = x<sup>n</sup> + &sum;<sub>i=0</sub><sup>n-1</sup> &alpha;<sub>i</sub> x<sup>i</sup>
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_d5b4f95281425e05d6217bd417b8efb5ae5cb1cf.svg" alt="20230619-elementarteiler_einer_begleitmatrix_d5b4f95281425e05d6217bd417b8efb5ae5cb1cf.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+xE - B_g =&
+\begin{pmatrix}
+x & 0 & 0      & 0  & - a_0 \\
+-1 & x & 0      & 0 & - a_{1} \\
+0 & 0 & \ddots & 0  & \vdots \\
+0 & 0 & -1      & x & - a_{n-2} \\
+0 & 0 & 0      & -1 & x - \alpha_{n-1}\\
+ \end{pmatrix} 
+\end{align*}
 <p>
 Durch sukzessive addition vom $x$-Fachen der $n$-ten Zeile zur $n-1$-ten Zeile erhält man
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_7055a0b5cb7ca5b006e95888496fa67a2fcca64a.svg" alt="20230619-elementarteiler_einer_begleitmatrix_7055a0b5cb7ca5b006e95888496fa67a2fcca64a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+xE - B_g =&
+\begin{pmatrix}
+0 & 0 & 0      & 0  & -x^{n} - \sum_{i=0}^{n-1} \alpha_{i} x^i - a_0 \\
+-1 & 0 & 0      & 0 & -x^{n-1} - \sum_{i=0}^{n-2} \alpha_{i+1} x^{i} - a_{1} \\
+0 & 0 & \ddots & 0  & \vdots \\
+0 & 0 & -1      & 0 & -x^2 - \alpha_{n-1} x^1 - a_{n-2} \\
+0 & 0 & 0      & -1 & x - \alpha_{n-1}\\
+ \end{pmatrix} 
+\end{align*}
 <p>
 Addition mit passenden Skalaren der $1,&#x2026;,n-1$-ten Spalte zur $n$-ten Spalte ergibt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_7950db7a822c3f2761116e87aa9792526f34e210.svg" alt="20230619-elementarteiler_einer_begleitmatrix_7950db7a822c3f2761116e87aa9792526f34e210.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{pmatrix}
+0 & 0 & 0      & 0  & -x^{n} - \sum_{i=0}^{n-1} \alpha_{i} x^i - a_0 \\
+-1 & 0 & 0      & 0 & 0 \\
+0 & 0 & \ddots & 0  & \vdots \\
+0 & 0 & -1      & 0 & 0 \\
+0 & 0 & 0      & -1 & 0 \\
+ \end{pmatrix} 
 <p>
-
+\end{align*}
 durch normierung und vertauschung erhält man dann so
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230619-elementarteiler_einer_begleitmatrix_f614961f01c0fec82ddf57cb73e61f702a7e15ee.svg" alt="20230619-elementarteiler_einer_begleitmatrix_f614961f01c0fec82ddf57cb73e61f702a7e15ee.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix}
+1 & 0 & 0      & 0 & 0 \\
+0 & 0 & \ddots & 0  & \vdots \\
+0 & 0 & 1      & 0 & 0 \\
+0 & 0 & 0      & 1 & 0 \\
+0 & 0 & 0      & 0  & x^{n} + \sum_{i=0}^{n-1} \alpha_{i} x^i + a_0 \\
+ \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

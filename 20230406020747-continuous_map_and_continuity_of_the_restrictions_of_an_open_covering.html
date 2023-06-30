@@ -9,39 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">continuous map and continuity of the restrictions of an open covering</h1>
-<div id="outline-container-org6737ddc" class="outline-2">
-<h2 id="org6737ddc"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orgf736e82" class="outline-2">
+<h2 id="orgf736e82"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_d43c043e79dd97009b3397e80dc89c59deea1e08.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_d43c043e79dd97009b3397e80dc89c59deea1e08.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_cfed4812cfa49dc30187a07a40f47b89d614971a.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_cfed4812cfa49dc30187a07a40f47b89d614971a.svg" class="org-svg" /> be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>, <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c2a3736cfc715906ec920db98496c243d1cb0cb7.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c2a3736cfc715906ec920db98496c243d1cb0cb7.svg" class="org-svg" /> an <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">open covering</a>  of <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> a <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a>.
+Let \((X,\mathcal{T})\) and \((X',\mathcal{T}')\) be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>, \(\bigcup_{i \in I} O_i = X\) an <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">open covering</a>  of \(X\) and \(f: X \rightarrow X'\) a <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a>.
 Then the following statements are equivalent
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" />  is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
-<li>each <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">restriction</a> <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_1581e1f53254f92396f59c01ad8a4968062120a1.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_1581e1f53254f92396f59c01ad8a4968062120a1.svg" class="org-svg" /> is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
+<li>\(f: X \rightarrow X'\)  is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
+<li>each <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">restriction</a> \(f_{O_i}: O_i \rightarrow X'\) is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6b22722" class="outline-2">
-<h2 id="org6b22722"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org547e72d" class="outline-2">
+<h2 id="org547e72d"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org1d0c607" class="outline-3">
-<h3 id="org1d0c607"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org4cd6d2a" class="outline-3">
+<h3 id="org4cd6d2a"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_21cc198b9e978a5e622c549e8e68a78beca749aa.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_21cc198b9e978a5e622c549e8e68a78beca749aa.svg" class="org-svg" /> be an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>.
-Then <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_90c6e51267564e602d454cb9f1fa586631b36ba1.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_90c6e51267564e602d454cb9f1fa586631b36ba1.svg" class="org-svg" /> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>.
-Therefore it follows from the <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a>, that <img src="file:///home/anton/html/ltximg/20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_d36339543ebe1b48321d3a5e3a079c86dbfd982b.svg" alt="20230406020747-continuous_map_and_continuity_of_the_restrictions_of_an_open_covering_d36339543ebe1b48321d3a5e3a079c86dbfd982b.svg" class="org-svg" /> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
+Let \(O' \subseteq X'\) be an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>.
+Then \(O := f^{-1}[O']\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>.
+Therefore it follows from the <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a>, that \(O \cap O_i\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org63b1ed4" class="outline-3">
-<h3 id="org63b1ed4"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org43c890e" class="outline-3">
+<h3 id="org43c890e"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 follows from the <a href="20230330152507-stetige_fortsetzung_von_abbildungen_einer_offenen_uberdeckung.html#ID-abdabede-ed97-4e05-9b53-a6c3184614e6">glueing lemma for an open covering</a> 

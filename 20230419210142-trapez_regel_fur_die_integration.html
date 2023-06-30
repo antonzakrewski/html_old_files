@@ -9,48 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Trapez-Regel der 2. Ableitung für die Riemann-Integration</h1>
-<div id="outline-container-org340e38b" class="outline-2">
-<h2 id="org340e38b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org76719c0" class="outline-2">
+<h2 id="org76719c0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_496eda5972cd61b69616b1d76c76d67a62ec274b.svg" alt="20230419210142-trapez_regel_fur_die_integration_496eda5972cd61b69616b1d76c76d67a62ec274b.svg" class="org-svg" /> eine zweifach <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> so gilt:
+Sei \(f: [a,b] \rightarrow \mathbb{R}\) eine zweifach <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_e6603de021406c18a9d39534dcb932589e63d2a6.svg" alt="20230419210142-trapez_regel_fur_die_integration_e6603de021406c18a9d39534dcb932589e63d2a6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} f(x) \mathrm{d}x - \frac{f(a) + f(b)}{2} (b - a) =& \int_{a}^{b} f''(x) \cdot h_2(x) \mathrm{d}x \\
+=& \int_{a}^{b} f''(x) \cdot \frac{1}{2} \left(x^2 - x \cdot (b + a) + ab\right)\mathrm{d}x
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_af1af45cc3ad4f3779cb36611db7f783fae6cccf.svg" alt="20230419210142-trapez_regel_fur_die_integration_af1af45cc3ad4f3779cb36611db7f783fae6cccf.svg" class="org-svg" /> 
+für \(x_2(x)  \coloneqq \frac{1}{2} (x - a) (x - b)\) 
 </p>
 </div>
 </div>
-<div id="outline-container-orgbe43b14" class="outline-2">
-<h2 id="orgbe43b14"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc085e97" class="outline-2">
+<h2 id="orgc085e97"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach der <a href="20230419210152-einfachste_trapez_regel_fur_die_riemann_integration.html#ID-938756c9-c1b3-4ea7-a917-70efdeecdf5a">Trapez-Regel der 1. Ableitung für die Riemann-Integration</a> gilt für <img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_cd59bba7a866586e21cb4efe5cf27348b55b2b7d.svg" alt="20230419210142-trapez_regel_fur_die_integration_cd59bba7a866586e21cb4efe5cf27348b55b2b7d.svg" class="org-svg" />
+Nach der <a href="20230419210152-einfachste_trapez_regel_fur_die_riemann_integration.html#ID-938756c9-c1b3-4ea7-a917-70efdeecdf5a">Trapez-Regel der 1. Ableitung für die Riemann-Integration</a> gilt für \(h_1  \coloneqq x - \frac{a+b}{2}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_e094fef6f50d474036492ca5013b90cb82eea8fa.svg" alt="20230419210142-trapez_regel_fur_die_integration_e094fef6f50d474036492ca5013b90cb82eea8fa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} f(x) \mathrm{d}x - \frac{f(a) + f(b)}{2}(b-a) =& - \int_{a}^{b} f' h_1(x) \mathrm{d}x 
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_b3110cbfea93895c707e010d11246dbcb5d53cf3.svg" alt="20230419210142-trapez_regel_fur_die_integration_b3110cbfea93895c707e010d11246dbcb5d53cf3.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_a29193e97cf2136f75b0e39962ff382120690dc2.svg" alt="20230419210142-trapez_regel_fur_die_integration_a29193e97cf2136f75b0e39962ff382120690dc2.svg" class="org-svg" /> folgt dann durch <a href="20211120184654-partielle_integration.html#ID-7a87fe70-9eb8-44e5-a684-1db6004df282">Partielle Integration</a>:
+Für \(h_2(x)  \coloneqq \frac{1}{2} (x - a) (x - b)\) mit \(h_(x)' = x - \frac{a+b}{2}\) folgt dann durch <a href="20211120184654-partielle_integration.html#ID-7a87fe70-9eb8-44e5-a684-1db6004df282">Partielle Integration</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419210142-trapez_regel_fur_die_integration_d409b997d80cbc2626181b7169960add4b374fb6.svg" alt="20230419210142-trapez_regel_fur_die_integration_d409b997d80cbc2626181b7169960add4b374fb6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+- \int_{a}^{b} f' h_1(x) \mathrm{d}x =& - \int_{a}^{b} f' h_2(x)' \mathrm{d}x \\
+=& [-f'h_2]_a^b + \int_{a}^{b} f''(x)h_2(x) \mathrm{d}x \\
+=& 0 + \int_{a}^{b} f''(x)h_2(x) \mathrm{d}x \\
+=& \int_{a}^{b} f''(x)h_2(x) \mathrm{d}x
+\end{align*}
 </div>
 </div>
 </div>

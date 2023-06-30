@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">isometrische Einbettungen als Injektion</h1>
-<div id="outline-container-org7559a19" class="outline-2">
-<h2 id="org7559a19"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge086b9c" class="outline-2">
+<h2 id="orge086b9c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Eine <a href="20230420124409-isometrische_einbettung.html#ID-b394c6cc-a4c6-421b-a0a5-711f841db54f">Isometrische Einbettung</a> ist <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org7c7140f" class="outline-2">
-<h2 id="org7c7140f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5f0b78d" class="outline-2">
+<h2 id="org5f0b78d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt aus der forderung der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a>:
-Sei <img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_4147590a483b926f640e518931b3b6436dc5a632.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_4147590a483b926f640e518931b3b6436dc5a632.svg" class="org-svg" /> eine <a href="20230420124409-isometrische_einbettung.html#ID-b394c6cc-a4c6-421b-a0a5-711f841db54f">Isometrische Einbettung</a>, so gilt für verschiedene <img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_32b8da9430fc784814d0557d8489269940e42943.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_32b8da9430fc784814d0557d8489269940e42943.svg" class="org-svg" /> wegen der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">positiven Definitheit</a> 
+Sei \(f: M \rightarrow M'\) eine <a href="20230420124409-isometrische_einbettung.html#ID-b394c6cc-a4c6-421b-a0a5-711f841db54f">Isometrische Einbettung</a>, so gilt für verschiedene \(m,m' \in M\) wegen der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">positiven Definitheit</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_1d4f0e18b30fe34e512276468e6ceb8d915160d3.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_1d4f0e18b30fe34e512276468e6ceb8d915160d3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(m,m') > 0
+\end{align*}
 <p>
-Falls <img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a> wäre, so folgt aber <img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_1746fa9aa2acf7d68bfd5f7f7fcbc17ed0d74ea6.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_1746fa9aa2acf7d68bfd5f7f7fcbc17ed0d74ea6.svg" class="org-svg" />, was die Annahme, <img src="file:///home/anton/html/ltximg/20230420124425-isometrische_einbettungen_als_injektion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230420124425-isometrische_einbettungen_als_injektion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> sei eine isometrische Einbettung, verletzen ẁürde
+Falls \(f\) nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a> wäre, so folgt aber \(d(f(m),f(m')) = d(f(m),f(m)) = 0\), was die Annahme, \(f\) sei eine isometrische Einbettung, verletzen ẁürde
 </p>
 </div>
 </div>

@@ -9,38 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Logarithmus: Ausklammern eines Produkts</h1>
-<div id="outline-container-orgaaaab56" class="outline-2">
-<h2 id="orgaaaab56"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0b9eca4" class="outline-2">
+<h2 id="org0b9eca4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122083018-logarithmus_produkt_ausklammern_ce12080bf8b9910060fadeab141ba2c2d749ea56.svg" alt="20220122083018-logarithmus_produkt_ausklammern_ce12080bf8b9910060fadeab141ba2c2d749ea56.svg" class="org-svg" />
-</span>
+\begin{align*}
+\log_a(b\cdot c) = \log_a(b) + \log_a(c) \\
+\log_a\left(\frac{b}{c}\right) = \log_a(b) - \log_a(c)
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org95327bf" class="outline-3">
-<h3 id="org95327bf"><span class="section-number-3">1.1.</span> Einschränkung</h3>
+<div id="outline-container-org678ddaa" class="outline-3">
+<h3 id="org678ddaa"><span class="section-number-3">1.1.</span> Einschränkung</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Gegebenfalls verändert sich der Definitionsbereich:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122083018-logarithmus_produkt_ausklammern_e105bda349c75de272b89babf4310b4d7b4cb844.svg" alt="20220122083018-logarithmus_produkt_ausklammern_e105bda349c75de272b89babf4310b4d7b4cb844.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\log_2(-2 \cdot -4) = 3\\
+\log_2(-2) + \log_2(-4) = undef.
+\end{align*}
 </div>
 </div>
 </div>
 
-<div id="outline-container-org916f08d" class="outline-2">
-<h2 id="org916f08d"><span class="section-number-2">2.</span> <a href="20220821090214-beweis_logarithmus_ausklammern_eines_produkts.html#ID-ba619ed4-504d-47d1-aede-b8af3771c36f">Beweis: Logarithmus: Ausklammern eines Produkts</a></h2>
+<div id="outline-container-orgcf37a83" class="outline-2">
+<h2 id="orgcf37a83"><span class="section-number-2">2.</span> <a href="20220821090214-beweis_logarithmus_ausklammern_eines_produkts.html#ID-ba619ed4-504d-47d1-aede-b8af3771c36f">Beweis: Logarithmus: Ausklammern eines Produkts</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -9,39 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wurzel-Kriterium für Divergenz</h1>
-<div id="outline-container-org115fc72" class="outline-2">
-<h2 id="org115fc72"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8c417fb" class="outline-2">
+<h2 id="org8c417fb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221212101553-wurzel_kriterium_fur_divergenz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212101553-wurzel_kriterium_fur_divergenz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so dass für  <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele <img src="file:///home/anton/html/ltximg/20221212101553-wurzel_kriterium_fur_divergenz_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20221212101553-wurzel_kriterium_fur_divergenz_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> gilt:
+Sei \(\sum_{n=1}^{\infty} a_n\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so dass für  <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele \(n\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221212101553-wurzel_kriterium_fur_divergenz_a96617e8f947d4f369656ea638e3baa2c8d5efeb.svg" alt="20221212101553-wurzel_kriterium_fur_divergenz_a96617e8f947d4f369656ea638e3baa2c8d5efeb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left(\sup \sqrt[n]{\vert a_n \vert} \right) \geq 1
+\end{align*}
 <p>
-Dann <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> <img src="file:///home/anton/html/ltximg/20221212101553-wurzel_kriterium_fur_divergenz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212101553-wurzel_kriterium_fur_divergenz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" />
+Dann <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> \(\sum_{n=1}^{\infty} a_n\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2e44d8d" class="outline-2">
-<h2 id="org2e44d8d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org02e8438" class="outline-2">
+<h2 id="org02e8438"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt, dass eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> existiert, welche wegen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221212101553-wurzel_kriterium_fur_divergenz_0a0b014e573084281eb06f40b32b8d946cdc2aa6.svg" alt="20221212101553-wurzel_kriterium_fur_divergenz_0a0b014e573084281eb06f40b32b8d946cdc2aa6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sqrt[n]{ \vert a_n \vert} \geq 1 && \vert ^n \\
+\vert a_n \vert \geq 1
+\end{align*}
 <p>
 keine <a href="20220105153234-nullfolge.html#ID-7249b9ac-2afc-4157-9427-c368e5d287d3">Nullfolge</a> ist, d.h. <a href="20220527114556-nullfolgenkriterium.html#ID-c025c821-0f3d-48e4-a186-f7cc4b9b169d">Nullfolgenkriterium</a> greift
 </p>

@@ -9,34 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexe Zahlen: Distributivgesetz</h1>
-<div id="outline-container-orga311c44" class="outline-2">
-<h2 id="orga311c44"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2817a78" class="outline-2">
+<h2 id="org2817a78"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220304142545-komplexe_zahlen_distributivgesetz_26b33af2b093168ff0bff401d5a0f5cb8b71b2ab.svg" alt="20220304142545-komplexe_zahlen_distributivgesetz_26b33af2b093168ff0bff401d5a0f5cb8b71b2ab.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220304142545-komplexe_zahlen_distributivgesetz_9d3d37e52e80263d83ad469150ab600cd35c39dc.svg" alt="20220304142545-komplexe_zahlen_distributivgesetz_9d3d37e52e80263d83ad469150ab600cd35c39dc.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220304142545-komplexe_zahlen_distributivgesetz_1d1c65d1afbcfd645f79c7b0ae168f9b00306ac5.svg" alt="20220304142545-komplexe_zahlen_distributivgesetz_1d1c65d1afbcfd645f79c7b0ae168f9b00306ac5.svg" class="org-svg" /> <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahlen</a>.
+Seien \(z_1 = a_1 + \mathrm{i}b_1\), \(z_2 = a_2 + \mathrm{i}b_2\), \(z_3 = a_3 + \mathrm{i}b_3\) <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahlen</a>.
 Dann gilt das <a href="20211218210925-distributivgesetz.html#ID-3f15be90-7d67-4ab7-bdd0-cace7ebe5c2a">Distributivgesetz</a>, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220304142545-komplexe_zahlen_distributivgesetz_29413dd2cb67f49d5a3b76d4dd832f39cfe43a16.svg" alt="20220304142545-komplexe_zahlen_distributivgesetz_29413dd2cb67f49d5a3b76d4dd832f39cfe43a16.svg" class="org-svg" />
-</span>
+\begin{align*}
+z_1 \cdot (z_2 + z_3) = z_1z_2 + z_1z_3
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd54a783" class="outline-2">
-<h2 id="orgd54a783"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7de8343" class="outline-2">
+<h2 id="org7de8343"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220304142545-komplexe_zahlen_distributivgesetz_eb16ee18b518bed30e9b54509d71853e96cb575c.svg" alt="20220304142545-komplexe_zahlen_distributivgesetz_eb16ee18b518bed30e9b54509d71853e96cb575c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z_1 \cdot (z_2 + z_3) =& (a_1 + \mathrm{i}b_1) \cdot ((a_2 + a_3) + \mathrm{i}(b_2 + b_3)) \\
+=& (a_1a_2 + a_1a_3 - b_1b_2 - b_1b_3) + \mathrm{i}((a_1b_2 + a_1b_3) + (b_1a_2 + b_1a_3)) \\
+=& ((a_1a_2 - b_1b_2) + \mathrm{i}(a_1b_2 + b_1a_2)) + ((a_1a_3 - b_1b_3) + \mathrm{i}(a_1b_3 + b_1a_3)) \\
+=& (a_1 + \mathrm{i}b_1) (a_2 + \mathrm{i}b_2) + (a_1 + \mathrm{i}b_1) (a_3 + \mathrm{i}b_3) \\
+=& z_1z_2 + z_1z_3
+\end{align*}
 <p>
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>
 </p>

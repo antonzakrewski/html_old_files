@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vertauschbarkeit von Limes und Integral</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vertauschbarkeit von Limes und Integral</h1>
-<div id="outline-container-org7934702" class="outline-2">
-<h2 id="org7934702"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7464fc7" class="outline-2">
+<h2 id="org7464fc7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230204195006-vertauschbarkeit_von_limes_und_integral_aae11f1f9966755ede6068bdc938faa233141a11.svg" alt="20230204195006-vertauschbarkeit_von_limes_und_integral_aae11f1f9966755ede6068bdc938faa233141a11.svg" class="org-svg" /> eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> von <a href="20220819232744-treppenfunktion.html#ID-44a46263-b27e-4186-86da-d7a82b58b01b">Treppenfunktionen</a> mit <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßiger Konvergenz</a> <img src="ltximg/20230204195006-vertauschbarkeit_von_limes_und_integral_9d97c71f41df9207da2a6f43cd24afddb4a44655.svg" alt="20230204195006-vertauschbarkeit_von_limes_und_integral_9d97c71f41df9207da2a6f43cd24afddb4a44655.svg" class="org-svg" /> 
-Dann ist <img src="ltximg/20230204195006-vertauschbarkeit_von_limes_und_integral_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230204195006-vertauschbarkeit_von_limes_und_integral_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230204190323-treppenapproximierbare_funktion.html#ID-98db293d-c933-4d6f-bd2e-15c6764a88ac">treppenapproximierbar</a> und es gilt
+Sei \((f_n)_{n \in \mathbb{N}}\) eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> von <a href="20220819232744-treppenfunktion.html#ID-44a46263-b27e-4186-86da-d7a82b58b01b">Treppenfunktionen</a> mit <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßiger Konvergenz</a> \(f_n \rightarrow f\) 
+Dann ist \(f\) <a href="20230204190323-treppenapproximierbare_funktion.html#ID-98db293d-c933-4d6f-bd2e-15c6764a88ac">treppenapproximierbar</a> und es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230204195006-vertauschbarkeit_von_limes_und_integral_3d44a45b140a5abef7464eafa02198e99720b1b6.svg" alt="20230204195006-vertauschbarkeit_von_limes_und_integral_3d44a45b140a5abef7464eafa02198e99720b1b6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} f \mathrm{d}x = \lim_{n \to \infty} \int_{a}^{b} f_n \mathrm{d}x 
+\end{align*}
 </div>
 </div>
 </div>

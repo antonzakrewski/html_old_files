@@ -9,34 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Kreiswinkelsatz: Mittelpunkt auf einer Seite</h1>
-<div id="outline-container-org5351ab0" class="outline-2">
-<h2 id="org5351ab0"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-org203c1ad" class="outline-2">
+<h2 id="org203c1ad"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für <img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_48c5fe3510436f7effbefc599ebef196287e5f4c.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_48c5fe3510436f7effbefc599ebef196287e5f4c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_31e1d89dbdb26fbc340fee63eb7cd246bd0bcc16.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_31e1d89dbdb26fbc340fee63eb7cd246bd0bcc16.svg" class="org-svg" />:
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(\angle AMB\) und \(\angle BMC\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_381b2bed70471475d24b2bd9305b88a2837e4a39.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_381b2bed70471475d24b2bd9305b88a2837e4a39.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzpicture}
+\draw[] (0,0) circle (1cm);
+\coordinate (a) at (350:1cm);
+\coordinate (b) at (70:1cm);
+\coordinate (c) at (170:1cm);
+\coordinate (m) at (0,0);
+\node[right] (A) at (a) {A};
+\node[above] (B) at (b) {B};
+\node[left] (C) at (c) {C};
+\draw (a) -- (b) -- (c) -- cycle;
+\node[above] (M) at (m) {M};
+\foreach \n in {a,b,c,i}
+    \node at (\n)[circle, fill, inner sep=1pt]{};
+\draw (m) -- (a);
+\draw (m) -- (b);
+% \draw[dashed] (m) -- (c);
+\end{tikzpicture}
 <p>
-Aufgrund des <a href="20220713211715-gleichseitiges_dreieck.html#ID-92e1b22c-ea7d-4b3c-a726-e537569e8740">Gleichseitigen Dreieckes</a> <img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_1f5bae936f6bbbeb2573158706ba14d247f3c61c.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_1f5bae936f6bbbeb2573158706ba14d247f3c61c.svg" class="org-svg" />  folgt: <img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_4a010736960aabedb5e33eab02803d9bd922a16c.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_4a010736960aabedb5e33eab02803d9bd922a16c.svg" class="org-svg" /> 
+Aufgrund des <a href="20220713211715-gleichseitiges_dreieck.html#ID-92e1b22c-ea7d-4b3c-a726-e537569e8740">Gleichseitigen Dreieckes</a> \(\triangle AMB\)  folgt: \(m\angle BAM = m\angle MBA\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_4f0f27e91333115a5ed14a8000008ab1290e636f.svg" alt="20220714003749-beweis_kreiswinkelsatz_mittelpunkt_auf_einer_seite_4f0f27e91333115a5ed14a8000008ab1290e636f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+180^\circ =& m\angle BMC + m\angle AMB \\
+180^\circ =& 2 \cdot m\angle BAM + m\angle AMB \\
+\Rightarrow m\angle BMC =& 2 \cdot m\angle BAM
+\end{align*}
 </div>
 </div>
 </div>

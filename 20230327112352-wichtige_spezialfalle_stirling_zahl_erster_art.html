@@ -9,68 +9,93 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wichtige Spezialfälle: Stirling Zahl erster Art</h1>
-<div id="outline-container-org8cab348" class="outline-2">
-<h2 id="org8cab348"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcf06730" class="outline-2">
+<h2 id="orgcf06730"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Es gelten folgende Aussagen zur <a href="20230327104607-stirling_zahl_erster_art.html#ID-7133e309-606f-408d-8a8e-85d27c0aa9ea">Stirling Zahl erster Art</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_7b4a520fc7bf48d3bdba5b96a2a6b926ccc5e7f0.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_7b4a520fc7bf48d3bdba5b96a2a6b926ccc5e7f0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{S}_{n,1} =& (n-1)! \\
+\overline{S}_{n,n} =& 1 \\
+\overline{S}_{n,n-1} =& \binom{n}{2}
+\end{align*}
 <p>
 sowie:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_df15fcec72d19decf14b60701811a174a3407723.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_df15fcec72d19decf14b60701811a174a3407723.svg" class="org-svg" />
-</span>
+\begin{align*}
+\overline{S}_{n,0} = 
+\begin{cases}
+1 & \mbox{if } n = 0 \\
+0 & \mbox{else } \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd6fbc14" class="outline-2">
-<h2 id="orgd6fbc14"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2d0a13c" class="outline-2">
+<h2 id="org2d0a13c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org953c351" class="outline-3">
-<h3 id="org953c351"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org3e457cf" class="outline-3">
+<h3 id="org3e457cf"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gibt <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_7322650109d92f4f78cf139e5e8d239c08d40869.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_7322650109d92f4f78cf139e5e8d239c08d40869.svg" class="org-svg" /> Möglichkeiten, eine Reihenfolge der <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> Elemente festzusetzen (vgl. <a href="20211228212511-kombinatorische_bedeutung_fakultat.html#ID-fabe6097-ea34-4b98-b5d8-1b3109f27cc1">Kombinatorische Bedeutung: Fakultät</a>)
-Dabei lässt sich jeder <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> Zykel durch $n$-viele dieser $n$-tupel darstellen, da man bei einem Zykel alle Element um eins verschieben kann, ohne diesen zu ändern und somit durch Widerholung <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> verschiedene Darstellungen erhält.
+Es gibt \(n!\) Möglichkeiten, eine Reihenfolge der \(n\) Elemente festzusetzen (vgl. <a href="20211228212511-kombinatorische_bedeutung_fakultat.html#ID-fabe6097-ea34-4b98-b5d8-1b3109f27cc1">Kombinatorische Bedeutung: Fakultät</a>)
+Dabei lässt sich jeder \(n\) Zykel durch $n$-viele dieser $n$-tupel darstellen, da man bei einem Zykel alle Element um eins verschieben kann, ohne diesen zu ändern und somit durch Widerholung \(n\) verschiedene Darstellungen erhält.
 </p>
 </div>
 </div>
-<div id="outline-container-org971c6bc" class="outline-3">
-<h3 id="org971c6bc"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgd173b93" class="outline-3">
+<h3 id="orgd173b93"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme muss jedes Element ein Zykel sein, da sonst weniger als <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> Zykel vorhanden sind
+Nach Annahme muss jedes Element ein Zykel sein, da sonst weniger als \(n\) Zykel vorhanden sind
 </p>
 </div>
 </div>
-<div id="outline-container-org6d21257" class="outline-3">
-<h3 id="org6d21257"><span class="section-number-3">2.3.</span> c)</h3>
+<div id="outline-container-org78db4eb" class="outline-3">
+<h3 id="org78db4eb"><span class="section-number-3">2.3.</span> c)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der <a href="20220104211627-kombinatorische_bedeutung_binomialkoeffizient.html#ID-f23c84a5-bacd-4339-b9c9-d41c20fb14a1">Kombinatorische Bedeutung des Binomialkoeffizienten</a>:
-Für den $2$-Zykel existieren <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_a8c66db039137c05bf0ad7d058352c5b5b0b4b86.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_a8c66db039137c05bf0ad7d058352c5b5b0b4b86.svg" class="org-svg" /> Möglichkeiten (Reihenfolge ist egal; man wähle 2 Elemente aus) und die restlichen Elemente müssen einen $1$-zykel bilden, d.h. sind festgelegt.
+Für den $2$-Zykel existieren \(\binom{n}{2}\) Möglichkeiten (Reihenfolge ist egal; man wähle 2 Elemente aus) und die restlichen Elemente müssen einen $1$-zykel bilden, d.h. sind festgelegt.
 </p>
 </div>
 </div>
-<div id="outline-container-org98fe234" class="outline-3">
-<h3 id="org98fe234"><span class="section-number-3">2.4.</span> d)</h3>
+<div id="outline-container-org056a66b" class="outline-3">
+<h3 id="org056a66b"><span class="section-number-3">2.4.</span> d)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_e77f28b5feced9570ec67066dad0193ae4375135.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_e77f28b5feced9570ec67066dad0193ae4375135.svg" class="org-svg" /> existiert die leere Menge, für <img src="file:///home/anton/html/ltximg/20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_f944c4373a15ccbe4e32b63b206d74d4fff09c91.svg" alt="20230327112352-wichtige_spezialfalle_stirling_zahl_erster_art_f944c4373a15ccbe4e32b63b206d74d4fff09c91.svg" class="org-svg" /> ist die leere Menge keine Partition
+Für \(n = 0\) existiert die leere Menge, für \(n > 0\) ist die leere Menge keine Partition
 </p>
 </div>
 </div>

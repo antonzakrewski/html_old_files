@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vollständigkeit einer Menge von Vektoren</h1>
-<div id="outline-container-orga5ff460" class="outline-2">
-<h2 id="orga5ff460"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgeb80a14" class="outline-2">
+<h2 id="orgeb80a14"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221009093124-vollstandigkeit_einer_menge_von_vektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221009093124-vollstandigkeit_einer_menge_von_vektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20221009093124-vollstandigkeit_einer_menge_von_vektoren_4755eb98fb46a5d285f6c42c6df7630554b78d80.svg" alt="20221009093124-vollstandigkeit_einer_menge_von_vektoren_4755eb98fb46a5d285f6c42c6df7630554b78d80.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20221009093124-vollstandigkeit_einer_menge_von_vektoren_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" alt="20221009093124-vollstandigkeit_einer_menge_von_vektoren_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" class="org-svg" /> ist vollständig, wenn gilt
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und \(S \subseteq V\).
+\(S\) ist vollständig, wenn gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009093124-vollstandigkeit_einer_menge_von_vektoren_376046f148583b651b06985623c088d5ff0de25d.svg" alt="20221009093124-vollstandigkeit_einer_menge_von_vektoren_376046f148583b651b06985623c088d5ff0de25d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{span}(S) = V
+\end{align*}
 <p>
 siehe: <a href="20221009093139-span.html#ID-bdaacf9b-3be3-45ef-89c0-18c72b3b1699">Span</a> 
 </p>

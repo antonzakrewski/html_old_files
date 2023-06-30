@@ -9,32 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Projektionsabbildung i.A. nicht abgeschlossen</h1>
-<div id="outline-container-orgad13c87" class="outline-2">
-<h2 id="orgad13c87"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb43c543" class="outline-2">
+<h2 id="orgb43c543"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230615-projektionsabbildung_i_a_nicht_abgeschlossen_7fe1ceeff0979587d8cadbaf2580d775c81781ae.svg" alt="20230615-projektionsabbildung_i_a_nicht_abgeschlossen_7fe1ceeff0979587d8cadbaf2580d775c81781ae.svg" class="org-svg" /> eine <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> und <img src="file:///home/anton/html/ltximg/20230615-projektionsabbildung_i_a_nicht_abgeschlossen_e564a8b0eb9a51c23a70eb7707dd9b830cb5e6f2.svg" alt="20230615-projektionsabbildung_i_a_nicht_abgeschlossen_e564a8b0eb9a51c23a70eb7707dd9b830cb5e6f2.svg" class="org-svg" /> die Projektion, dann ist <img src="file:///home/anton/html/ltximg/20230615-projektionsabbildung_i_a_nicht_abgeschlossen_b6eafd561ba460526cc2a2f1825908ea98dcf211.svg" alt="20230615-projektionsabbildung_i_a_nicht_abgeschlossen_b6eafd561ba460526cc2a2f1825908ea98dcf211.svg" class="org-svg" /> im allgemeinen keine <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> 
+Sei \(X \times Y\) eine <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> und \(\pi_1: X \times Y \rightarrow X\) die Projektion, dann ist \(\pi_1\) im allgemeinen keine <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org4043b0b" class="outline-2">
-<h2 id="org4043b0b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0e64891" class="outline-2">
+<h2 id="org0e64891"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230615-projektionsabbildung_i_a_nicht_abgeschlossen_b67723ed511ccc7d23eff12f005653e4fcf3b3ae.svg" alt="20230615-projektionsabbildung_i_a_nicht_abgeschlossen_b67723ed511ccc7d23eff12f005653e4fcf3b3ae.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H  \coloneqq \{(x,\frac{1}{x}) \vert x > 0 \} \subesteq \mathbb{R}^2
+\end{align*}
 <p>
-und <img src="file:///home/anton/html/ltximg/20230615-projektionsabbildung_i_a_nicht_abgeschlossen_df39009141c65f36dea4ebe37e25f17297526453.svg" alt="20230615-projektionsabbildung_i_a_nicht_abgeschlossen_df39009141c65f36dea4ebe37e25f17297526453.svg" class="org-svg" />
+und \(\pi_1[H] = (0,\infty)\)
 </p>
 </div>
 </div>

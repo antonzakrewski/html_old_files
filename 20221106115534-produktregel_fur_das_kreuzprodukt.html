@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produktregel für das Kreuzprodukt</h1>
-<div id="outline-container-org58d4b91" class="outline-2">
-<h2 id="org58d4b91"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-org0a193f1" class="outline-2">
+<h2 id="org0a193f1"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221106115534-produktregel_fur_das_kreuzprodukt_55105d5cd00c67348d090d418a04676cdd0e793f.svg" alt="20221106115534-produktregel_fur_das_kreuzprodukt_55105d5cd00c67348d090d418a04676cdd0e793f.svg" class="org-svg" />.
+Seien \(\vec{a}(t),\vec{b}(t) : \mathbb{R} \rightarrow \mathbb{R}^n\).
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106115534-produktregel_fur_das_kreuzprodukt_cf249a44b3559c2fa13097c959f423d90e41632c.svg" alt="20221106115534-produktregel_fur_das_kreuzprodukt_cf249a44b3559c2fa13097c959f423d90e41632c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}t} \left(\vec{a}(t) \times \vec{b}(t)\right) =& \vec{a}(t) \times \frac{\mathrm{d}}{\mathrm{d}t}\vec{b}(t) + \vec{b}(t) \times \frac{\mathrm{d}}{\mathrm{d}t}\vec{a}(t)
+\end{align*}
 </div>
 </div>
 </div>

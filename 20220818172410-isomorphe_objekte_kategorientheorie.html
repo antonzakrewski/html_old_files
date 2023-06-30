@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphe Objekte (Kategorientheorie)</h1>
-<div id="outline-container-org5ca9c63" class="outline-2">
-<h2 id="org5ca9c63"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1e92721" class="outline-2">
+<h2 id="org1e92721"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Zwei <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekte</a> <img src="file:///home/anton/html/ltximg/20220818172410-isomorphe_objekte_kategorientheorie_5f374f58206d36cba1bae694ef219f495b65edc3.svg" alt="20220818172410-isomorphe_objekte_kategorientheorie_5f374f58206d36cba1bae694ef219f495b65edc3.svg" class="org-svg" /> sind isomorph, sofern es <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> <img src="file:///home/anton/html/ltximg/20220818172410-isomorphe_objekte_kategorientheorie_2c4ec42fb63549cfe51955913678c49e0e53c405.svg" alt="20220818172410-isomorphe_objekte_kategorientheorie_2c4ec42fb63549cfe51955913678c49e0e53c405.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220818172410-isomorphe_objekte_kategorientheorie_688a09972376175bcd0226ac4caef89bccf4179e.svg" alt="20220818172410-isomorphe_objekte_kategorientheorie_688a09972376175bcd0226ac4caef89bccf4179e.svg" class="org-svg" /> 
+Zwei <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekte</a> \(A_1, A_2\) sind isomorph, sofern es <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> \(f_{12} : A_1 \rightarrow A_2\) und \(f_{21}: A_2 \rightarrow A_1\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220818172410-isomorphe_objekte_kategorientheorie_30b8793ab3548f6bbdd72d085f2bf5df91e391cc.svg" alt="20220818172410-isomorphe_objekte_kategorientheorie_30b8793ab3548f6bbdd72d085f2bf5df91e391cc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{21} \circ f_{12} = id_{A_1} \\
+f_{12} \circ f_{21} = id_{A_2}
+\end{align*}
 </div>
 </div>
 </div>

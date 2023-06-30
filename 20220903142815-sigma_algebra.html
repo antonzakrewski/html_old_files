@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>$\sigma$-Algebra</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">$&sigma;$-Algebra</h1>
-<div id="outline-container-orgce24428" class="outline-2">
-<h2 id="orgce24428"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd4e41ae" class="outline-2">
+<h2 id="orgd4e41ae"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20220903142815-sigma_algebra_2f663c244607697219a7ee4715da5deed580e87a.svg" alt="20220903142815-sigma_algebra_2f663c244607697219a7ee4715da5deed580e87a.svg" class="org-svg" /> eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere Menge</a> und sei <img src="ltximg/20220903142815-sigma_algebra_b843d7c1c57e06bf33678050a3fd35d99b9cf25f.svg" alt="20220903142815-sigma_algebra_b843d7c1c57e06bf33678050a3fd35d99b9cf25f.svg" class="org-svg" /> die <a href="20220108205337-potenzmenge.html#ID-2615a647-bca5-49f5-919d-cf131c750c2b">Potenzmenge</a> dieser <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-Ein  <img src="ltximg/20220903142815-sigma_algebra_18a179ca272f952bae26c37c7bf5f10b8c9c1530.svg" alt="20220903142815-sigma_algebra_18a179ca272f952bae26c37c7bf5f10b8c9c1530.svg" class="org-svg" /> heißt $&sigma;$-Algebra, wenn gilt
+Sei \(\Omega\) eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere Menge</a> und sei \(P(\Omega)\) die <a href="20220108205337-potenzmenge.html#ID-2615a647-bca5-49f5-919d-cf131c750c2b">Potenzmenge</a> dieser <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Ein  \(\mathcal{A} \subseteq P(\Omega)\) heißt $&sigma;$-Algebra, wenn gilt
 </p>
 
 <ul class="org-ul">

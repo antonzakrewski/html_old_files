@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">relative homotopy</h1>
-<div id="outline-container-org298298f" class="outline-2">
-<h2 id="org298298f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org46f791e" class="outline-2">
+<h2 id="org46f791e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230330144151-relative_homotopie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230330144151-relative_homotopie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_3d998204c39b575ccc0225bb7285952511c6fde4.svg" alt="20230330144151-relative_homotopie_3d998204c39b575ccc0225bb7285952511c6fde4.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
-<img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230330144151-relative_homotopie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_5b3bba3f577d0d72a01581718cbac4013dfec25c.svg" alt="20230330144151-relative_homotopie_5b3bba3f577d0d72a01581718cbac4013dfec25c.svg" class="org-svg" /> sind relativ zu einer <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230330144151-relative_homotopie_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">homotop</a>, falls zusätzlich zu <img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_595159bad02fd6b97948585917d20983d38af5da.svg" alt="20230330144151-relative_homotopie_595159bad02fd6b97948585917d20983d38af5da.svg" class="org-svg" /> gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, \(f,f': X \rightarrow X'\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
+\(f\) und \(f'\) sind relativ zu einer <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(A \subseteq X\) <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">homotop</a>, falls zusätzlich zu \(f \overset{h}{\simeq} f'\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330144151-relative_homotopie_aadce764a82ea84bfb630960c18cf65ea3e1ffa9.svg" alt="20230330144151-relative_homotopie_aadce764a82ea84bfb630960c18cf65ea3e1ffa9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall a \in A \forall t \in [0,1] : h(t,a) = h(0,a)
+\end{align*}
 </div>
 </div>
 </div>

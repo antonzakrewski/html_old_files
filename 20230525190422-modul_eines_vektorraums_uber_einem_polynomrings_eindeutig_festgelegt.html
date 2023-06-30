@@ -9,55 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Modul eines Vektorraums über einem Polynomrings eindeutig durch einen Endomorphismus festgelegt</h1>
-<div id="outline-container-org7f85057" class="outline-2">
-<h2 id="org7f85057"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbfcc035" class="outline-2">
+<h2 id="orgbfcc035"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Vektorraumendomorphismus</a>.
-Dann existiert ein eindeutige $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modulstruktur</a> auf <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />, die mit <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> als <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> verträglich ist und so dass gilt:
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in \mathrm{End}_K(V)\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Vektorraumendomorphismus</a>.
+Dann existiert ein eindeutige $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modulstruktur</a> auf \(V\), die mit \(V\) als <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> verträglich ist und so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_e448a306ebb8c6d37f0fa59e9e936de8b4a01451.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_e448a306ebb8c6d37f0fa59e9e936de8b4a01451.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+x \cdot v = A(v)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2509163" class="outline-2">
-<h2 id="org2509163"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5105bf9" class="outline-2">
+<h2 id="org5105bf9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org55c0c5b" class="outline-3">
-<h3 id="org55c0c5b"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
+<div id="outline-container-orgba963a8" class="outline-3">
+<h3 id="orgba963a8"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt nach Annahme, dass additive Gruppe vom Vektorraum <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> bzw. Modul <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> übereinstimmt
+Es gilt nach Annahme, dass additive Gruppe vom Vektorraum \(V\) bzw. Modul \(V\) übereinstimmt
 </p>
 </div>
 </div>
-<div id="outline-container-orgccd6aa2" class="outline-3">
-<h3 id="orgccd6aa2"><span class="section-number-3">2.2.</span> Skalarmultiplikation</h3>
+<div id="outline-container-org0f00118" class="outline-3">
+<h3 id="org0f00118"><span class="section-number-3">2.2.</span> Skalarmultiplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_205eaa061f9219a0abceb1e3156332f0ce754dc5.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_205eaa061f9219a0abceb1e3156332f0ce754dc5.svg" class="org-svg" /> fest, so induzieren die Moduleigenschaften für ein <img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_c7b2aec27fe81f40803d94a7928d6bf8a1930e80.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_c7b2aec27fe81f40803d94a7928d6bf8a1930e80.svg" class="org-svg" />
+Sei \(f = \sum_{i=0}^{n} \alpha_i X^i\) fest, so induzieren die Moduleigenschaften für ein \(m \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_6a61761e19e61ea56f3fd38767aa2eb2046d0fc6.svg" alt="20230525190422-modul_eines_vektorraums_uber_einem_polynomrings_eindeutig_festgelegt_6a61761e19e61ea56f3fd38767aa2eb2046d0fc6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+f \cdot m =& (\sum_{i=0}^{n} \alpha_i X^i) \cdot m \\
+=& \sum_{i=0}^{n} \alpha_i X^i \cdot m \\
+=& \sum_{i=0}^{n} \alpha_i \prod_{j=1}^i X \cdot m \\
+=& \sum_{i=0}^{n} \alpha_i A^i(v)
+\end{align*}
 </div>
 </div>
 </div>

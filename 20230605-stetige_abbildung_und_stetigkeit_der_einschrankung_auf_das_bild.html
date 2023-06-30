@@ -9,50 +9,75 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">stetige Abbildung und stetigkeit der Einschränkung auf das Bild</h1>
-<div id="outline-container-org9b95541" class="outline-2">
-<h2 id="org9b95541"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf7f674d" class="outline-2">
+<h2 id="orgf7f674d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a></li>
-<li>die <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">Restriktion</a> der <a href="20220923144600-zielmenge.html#ID-d85b1698-8fce-41bb-a46d-947b20a638f6">Codomain</a> auf das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> bezüglich der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_b13d4a5eac7af56b7a6211fe965628da05c1f03c.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_b13d4a5eac7af56b7a6211fe965628da05c1f03c.svg" class="org-svg" /></li>
+<li>\(f\) ist <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a></li>
+<li>die <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">Restriktion</a> der <a href="20220923144600-zielmenge.html#ID-d85b1698-8fce-41bb-a46d-947b20a638f6">Codomain</a> auf das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> bezüglich der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von \(f[X] \subseteq X'\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org54b21c5" class="outline-2">
-<h2 id="org54b21c5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org625b0c0" class="outline-2">
+<h2 id="org625b0c0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4f43257" class="outline-3">
-<h3 id="org4f43257"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org238fb98" class="outline-3">
+<h3 id="org238fb98"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus <a href="20230509104846-stetigkeit_einer_einschrankung.html#ID-e626f952-da99-478f-a548-faf562f76266">Stetigkeit einer Einschränkung</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org47d4e16" class="outline-3">
-<h3 id="org47d4e16"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-org4c0b31e" class="outline-3">
+<h3 id="org4c0b31e"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_27426a3d421c9bea5062b2282af13015f26104b0.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_27426a3d421c9bea5062b2282af13015f26104b0.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so ist <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_b0816856042eb6617f3babfe4430ed2e0c6bd1bd.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_b0816856042eb6617f3babfe4430ed2e0c6bd1bd.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_8e2c542f7e22c6065093f8071a215b84818dc78b.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_8e2c542f7e22c6065093f8071a215b84818dc78b.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und es folgt wegen der Aussage über das <a href="20230228184501-urbild_von_der_vereinigung.html#ID-ef62accd-bba7-4498-b471-ae964570b67e">Urbild von der Vereinigung</a> 
+Sei \(O \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so ist \(O'  \coloneqq O \cap f[X]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
+Nach Annahme ist \(f^{-1}[O']\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und es folgt wegen der Aussage über das <a href="20230228184501-urbild_von_der_vereinigung.html#ID-ef62accd-bba7-4498-b471-ae964570b67e">Urbild von der Vereinigung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_890de87d9408e474dcbca85cacae6b661b5bf4ea.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_890de87d9408e474dcbca85cacae6b661b5bf4ea.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1}[O] =& f^{-1}[(O \cap f[X]) \sqcup (O \cap X' \setminus f[X])] \\
+=& f^{-1}[O \cap f[X]] \cup f^{-1}[O \cap X' \setminus f[X]] \\
+=& f^{-1}[O] \cup \emptyset \\
+=& f^{-1}[O]
+\end{align*}
 <p>
-damit ist <img src="file:///home/anton/html/ltximg/20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230605-stetige_abbildung_und_stetigkeit_der_einschrankung_auf_das_bild_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
+damit ist \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
 </p>
 </div>
 </div>

@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">terminal object</h1>
-<div id="outline-container-orgca32ef4" class="outline-2">
-<h2 id="orgca32ef4"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0f93925" class="outline-2">
+<h2 id="org0f93925"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20220825145511-terminales_objekt_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20220825145511-terminales_objekt_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and <img src="file:///home/anton/html/ltximg/20220825145511-terminales_objekt_0956ded92ae7fb388d9033dc65c472417990cfb3.svg" alt="20220825145511-terminales_objekt_0956ded92ae7fb388d9033dc65c472417990cfb3.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20220825145511-terminales_objekt_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20220825145511-terminales_objekt_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> is said to be an terminal object, if for each <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="file:///home/anton/html/ltximg/20220825145511-terminales_objekt_269fc2b94ede73c94673480b3150a5fdd595e0e8.svg" alt="20220825145511-terminales_objekt_269fc2b94ede73c94673480b3150a5fdd595e0e8.svg" class="org-svg" />, there is exactly one <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> <img src="file:///home/anton/html/ltximg/20220825145511-terminales_objekt_db4a544e17e82c4c98d4aef73696f2e2e5a6c8fe.svg" alt="20220825145511-terminales_objekt_db4a544e17e82c4c98d4aef73696f2e2e5a6c8fe.svg" class="org-svg" />
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(T \in \mathrm{Ob}(\mathcal{C})\).
+\(T\) is said to be an terminal object, if for each <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(A \in \mathrm{Ob}(\mathcal{C})\), there is exactly one <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(f: A \rightarrow T\)
 </p>
 </div>
 </div>

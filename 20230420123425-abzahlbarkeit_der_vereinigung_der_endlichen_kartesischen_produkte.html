@@ -9,29 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abzählbarkeit der Vereinigung der endlichen kartesischen Produkte</h1>
-<div id="outline-container-org20c4ec5" class="outline-2">
-<h2 id="org20c4ec5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga64d0e5" class="outline-2">
+<h2 id="orga64d0e5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230420123425-abzahlbarkeit_der_vereinigung_der_endlichen_kartesischen_produkte_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230420123425-abzahlbarkeit_der_vereinigung_der_endlichen_kartesischen_produkte_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist 
+Sei \(M\) eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420123425-abzahlbarkeit_der_vereinigung_der_endlichen_kartesischen_produkte_3a15dc7434c6e781e31009e9103a0fc0b842b1e6.svg" alt="20230420123425-abzahlbarkeit_der_vereinigung_der_endlichen_kartesischen_produkte_3a15dc7434c6e781e31009e9103a0fc0b842b1e6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in \mathbb{N}} M^{i}
+\end{align*}
 <p>
 eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbar</a> e <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org32e8c3a" class="outline-2">
-<h2 id="org32e8c3a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org212cb63" class="outline-2">
+<h2 id="org212cb63"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230321174223-abzahlbarkeit_des_endlichen_kartesischen_produkts_einer_abzahlbaren_menge.html#ID-5716ca51-0f9f-4f43-afe3-fcce2054d7e9">Abzählbarkeit des endlichen kartesischen Produkts einer abzählbaren Menge</a> und der <a href="20221211114037-abzahlbarkeit_von_abzahlbar_vielen_vereinigungen_abzahlbarer_mengen.html#ID-9847a3d2-4b6c-417e-9f5f-b7d30613edb3">Abzählbarkeit von abzählbar vielen Vereinigungen abzählbarer Mengen</a> 

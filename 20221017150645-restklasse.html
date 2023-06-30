@@ -3,34 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Residue Class</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Residue Class</h1>
-<div id="outline-container-orgd774edd" class="outline-2">
-<h2 id="orgd774edd"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5da5554" class="outline-2">
+<h2 id="org5da5554"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221017150645-restklasse_704030ffdcaf61ea3308fbe69b5e0fbcb54f32c5.svg" alt="20221017150645-restklasse_704030ffdcaf61ea3308fbe69b5e0fbcb54f32c5.svg" class="org-svg" />.
-Die Restklasse von <img src="ltximg/20221017150645-restklasse_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" alt="20221017150645-restklasse_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" class="org-svg" /> modulo <img src="ltximg/20221017150645-restklasse_0451b41404c0cebe4153104a0b7f906cc9400d93.svg" alt="20221017150645-restklasse_0451b41404c0cebe4153104a0b7f906cc9400d93.svg" class="org-svg" />
+Sei \(m \in \mathbb{Z} \setminus \{0\}\).
+Die Restklasse von \(a\) modulo \(m\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221017150645-restklasse_14932ded24fa0570d1e4e157cfc90fcc2fc29060.svg" alt="20221017150645-restklasse_14932ded24fa0570d1e4e157cfc90fcc2fc29060.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\overline{a}
+% =& a + m \mathbb{Z} \\
+=& \{b \vert b = a + k \cdot m, k \in \mathbb{Z}\}
+\end{align*}
 <p>
-ist die <a href="20211230190101-aquivalenzklasse.html#ID-5ee76318-ae03-4cb3-877f-6b6ff88ad6fa">Äquivalenzklasse</a> von <img src="ltximg/20221017150645-restklasse_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" alt="20221017150645-restklasse_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" class="org-svg" /> bezüglich der <a href="20220304180058-kongruenz_zahlentheorie.html#ID-c5f66615-7d0e-43db-b6ad-abad6fbc3658">Kongruenz</a> modulo <img src="ltximg/20221017150645-restklasse_0451b41404c0cebe4153104a0b7f906cc9400d93.svg" alt="20221017150645-restklasse_0451b41404c0cebe4153104a0b7f906cc9400d93.svg" class="org-svg" />
+ist die <a href="20211230190101-aquivalenzklasse.html#ID-5ee76318-ae03-4cb3-877f-6b6ff88ad6fa">Äquivalenzklasse</a> von \(a\) bezüglich der <a href="20220304180058-kongruenz_zahlentheorie.html#ID-c5f66615-7d0e-43db-b6ad-abad6fbc3658">Kongruenz</a> modulo \(m\)
 </p>
 </div>
 </div>

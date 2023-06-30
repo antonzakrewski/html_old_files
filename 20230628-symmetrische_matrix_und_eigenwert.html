@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>selbstadjungierter Endomorphismus und Existenz reeller Eigenwert</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">selbstadjungierter Endomorphismus und Existenz reeller Eigenwert</h1>
+<div id="outline-container-org596f159" class="outline-2">
+<h2 id="org596f159"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(A \in \mathbb{R}^{n \times n}\) eine <a href="20230303174217-selbstadjungierter_endomorphismus.html#ID-31005da0-e759-49d6-aabd-ce153e2574ea">Selbstadjungierte</a>  <a href="20230626-symmetrische_matrix.html#ID-bd9b88d8-cc80-4c54-ad93-f75e68d1695b">symmetrische Matrix</a>, so existieren reelle <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgb3c0328" class="outline-2">
+<h2 id="orgb3c0328"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei \(\lambda \in \mathbb{C}\) ein <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a> von \(A\) (vgl. <a href="20230628-existenz_eines_eigenwerts_in_algebraisch_abgeschlossenen_korpern.html#ID-75316c9e-1e1d-4793-8cc0-12d36492428e">Existenz eines Eigenwerts in algebraisch abgeschlossenen Körpern</a>), so gilt
+</p>
+\begin{align*}
+\lambda \langle x,x\rangle =& \langle \lambda x, x\rangle \\
+=& \langle Ax, x\rangle \\
+=& \langle x, Ax\rangle \\
+=& \langle x, \lambda x\rangle \\
+=& \overline{\lambda} \langle x,x\rangle
+\end{align*}
+<p>
+Damit folgt
+</p>
+\begin{align*}
+\lambda =& \overline{\lambda} \\
+\Rightarrow \lambda \in \mathbb{R}
+\end{align*}
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

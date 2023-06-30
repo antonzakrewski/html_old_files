@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Raum der Cauchyfolgen</h1>
-<div id="outline-container-orga301150" class="outline-2">
-<h2 id="orga301150"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org9d802e8" class="outline-2">
+<h2 id="org9d802e8"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223234825-raum_der_cauchyfolgen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230223234825-raum_der_cauchyfolgen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230223234825-raum_der_cauchyfolgen_973893628b4dd2a75f7e497c45723dfa220fd43e.svg" alt="20230223234825-raum_der_cauchyfolgen_973893628b4dd2a75f7e497c45723dfa220fd43e.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> aller <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy-Folge</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230223234825-raum_der_cauchyfolgen_148ee39c3705ff15a54cebe72ff9cb9d8b8fed2e.svg" alt="20230223234825-raum_der_cauchyfolgen_148ee39c3705ff15a54cebe72ff9cb9d8b8fed2e.svg" class="org-svg" />  ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a> mit der <a href="20221115113143-pseudometrik.html#ID-85960f3d-c84e-4099-ab8f-f7ab99f228f5">Semimetrik</a>:
+Sei \((M,d)\) ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a> und \(\mathrm{CF}_M\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> aller <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy-Folge</a>.
+Dann ist \((\mathrm{CF}_M, d_{\mathrm{CF}})\)  ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a> mit der <a href="20221115113143-pseudometrik.html#ID-85960f3d-c84e-4099-ab8f-f7ab99f228f5">Semimetrik</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223234825-raum_der_cauchyfolgen_2ed0d34fddc0ef36932a6a75d61610abfbb78051.svg" alt="20230223234825-raum_der_cauchyfolgen_2ed0d34fddc0ef36932a6a75d61610abfbb78051.svg" class="org-svg" />
-</span>
+\begin{align*}
+d_{\mathrm{CF}}: \mathrm{CF}_M \times \mathrm{CF}_M \rightarrow \mathbb{R} \\
+((x_n), (y_n)) \mapsto \lim_{n \to \infty}\left(d(x_n, y_n\right) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org87d4a9b" class="outline-2">
-<h2 id="org87d4a9b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf88244a" class="outline-2">
+<h2 id="orgf88244a"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

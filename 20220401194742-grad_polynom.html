@@ -9,31 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">degree (polynomial)</h1>
-<div id="outline-container-orgbf7a160" class="outline-2">
-<h2 id="orgbf7a160"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3e21ed2" class="outline-2">
+<h2 id="org3e21ed2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20220401194742-grad_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und sei <img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_999c7dd34c50d9a1bd6848163e959a53ce5077b6.svg" alt="20220401194742-grad_polynom_999c7dd34c50d9a1bd6848163e959a53ce5077b6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" alt="20220401194742-grad_polynom_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" class="org-svg" />
-Dann ist der Grad von <img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20220401194742-grad_polynom_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> definiert als:
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und sei \(f = \sum_{j=0}^{n} a_jx^j \in K[x]\) mit \(a_n \neq 0\)
+Dann ist der Grad von \(f\) definiert als:
 </p>
+\begin{align*}
+\mathrm{deg}(f)  \coloneqq 
+\begin{cases}
+- \infty & \mbox{if } f = 0  \\
+n & \mbox{else}  \\ 
+\end{cases}
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_5ac7628be07e68d9d051a197cc04d0e4d8ab34d2.svg" alt="20220401194742-grad_polynom_5ac7628be07e68d9d051a197cc04d0e4d8ab34d2.svg" class="org-svg" />
-</span>
-</div>
 
+\begin{align*}
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220401194742-grad_polynom_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" alt="20220401194742-grad_polynom_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" class="org-svg" />
-</span>
-</div>
+\end{align*}
 </div>
 </div>
 </div>

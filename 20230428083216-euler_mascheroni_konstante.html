@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Euler-Mascheroni-Konstante</h1>
-<div id="outline-container-org4c8ce5b" class="outline-2">
-<h2 id="org4c8ce5b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org76c5462" class="outline-2">
+<h2 id="org76c5462"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die Euler-Mascheroni-Konstante ist definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083216-euler_mascheroni_konstante_eea14746249a65cfe50b49df661cd21642c958eb.svg" alt="20230428083216-euler_mascheroni_konstante_eea14746249a65cfe50b49df661cd21642c958eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\gamma =& 1 - \sum_{k \geq 2}^{}  \frac{1}{k} (\mathcal{S}(k) - 1) \\
+\approx 0.577
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230428083216-euler_mascheroni_konstante_08e42b90af579606179d98bf7095ba1578c69df0.svg" alt="20230428083216-euler_mascheroni_konstante_08e42b90af579606179d98bf7095ba1578c69df0.svg" class="org-svg" /> 
+mit \(\mathcal{S}(k) = \sum_{i \geq 1} \frac{1}{i^k}\) 
 </p>
 </div>
 </div>

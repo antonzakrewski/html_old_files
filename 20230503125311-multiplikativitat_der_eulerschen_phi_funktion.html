@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikativität der eulerschen Phi Funktion</h1>
-<div id="outline-container-org6097f5f" class="outline-2">
-<h2 id="org6097f5f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcef7bd2" class="outline-2">
+<h2 id="orgcef7bd2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230503125311-multiplikativitat_der_eulerschen_phi_funktion_989ae9f21e721d2895deebbec2dba593f2f6f661.svg" alt="20230503125311-multiplikativitat_der_eulerschen_phi_funktion_989ae9f21e721d2895deebbec2dba593f2f6f661.svg" class="org-svg" /> zueinander teilerfremd, so gilt für die <a href="20230503124954-eulersche_phi_funktion.html#ID-58c2b701-cb10-4918-89d7-cbdef5169ca1">Eulersche Phi Funktion</a>:
+Seien \(m,n \in \mathbb{N}\) zueinander teilerfremd, so gilt für die <a href="20230503124954-eulersche_phi_funktion.html#ID-58c2b701-cb10-4918-89d7-cbdef5169ca1">Eulersche Phi Funktion</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503125311-multiplikativitat_der_eulerschen_phi_funktion_38e1cab31fcdcfc7c92a772226c0c252ce01eba7.svg" alt="20230503125311-multiplikativitat_der_eulerschen_phi_funktion_38e1cab31fcdcfc7c92a772226c0c252ce01eba7.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi(mn) = \phi(m) \cdot \phi(n)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org01f5567" class="outline-2">
-<h2 id="org01f5567"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org096c383" class="outline-2">
+<h2 id="org096c383"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus dem <a href="20221125102140-chinesischer_restsatz.html#ID-05fc3ed5-7651-4d5e-a7b9-9680b34859bc">Chinese Remainder Theorem</a> &lt;todo&gt;

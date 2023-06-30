@@ -9,42 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">endliche Menge als abgeschlossene Menge in einem metrischen Raum</h1>
-<div id="outline-container-org7a7f066" class="outline-2">
-<h2 id="org7a7f066"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbf35d83" class="outline-2">
+<h2 id="orgbf35d83"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" class="org-svg" /> eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">induzierten Topologie</a> 
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(A \subseteq M\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist \(A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">induzierten Topologie</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb9e8e2c" class="outline-2">
-<h2 id="orgb9e8e2c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2abc1fe" class="outline-2">
+<h2 id="org2abc1fe"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Wir zeigen, dass ein <a href="20220818180533-einselementige_menge.html#ID-7f90b39c-62bc-438f-b28f-82742cda6401">singleton</a> <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_f7492c596e2ce4e2f9cefce41618c2c3e47e12e4.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_f7492c596e2ce4e2f9cefce41618c2c3e47e12e4.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
-Sei <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_5d582e7a0ba57e8f7afcf24599ed56f52a57aebf.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_5d582e7a0ba57e8f7afcf24599ed56f52a57aebf.svg" class="org-svg" />, so gilt wegen der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positiven Definitheit</a> <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_72457ef2beaf9fa6b376dcbffa21a3c679902069.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_72457ef2beaf9fa6b376dcbffa21a3c679902069.svg" class="org-svg" />.
-Somit <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">vereinigen</a> wir die <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_59cc7ff0270a4df86578a7c1284412efe549c87a.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_59cc7ff0270a4df86578a7c1284412efe549c87a.svg" class="org-svg" /> <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> aller <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_e6919c5e1b0fefd862713d1a1682ca500edb7fa6.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_e6919c5e1b0fefd862713d1a1682ca500edb7fa6.svg" class="org-svg" /> und erhalten dann die offene <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_9f0a31a59b13f3ea40f9e645edf1fb0dbc4a50a1.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_9f0a31a59b13f3ea40f9e645edf1fb0dbc4a50a1.svg" class="org-svg" />:
+Wir zeigen, dass ein <a href="20220818180533-einselementige_menge.html#ID-7f90b39c-62bc-438f-b28f-82742cda6401">singleton</a> \(\{m\}\) für \(m \in M\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Sei \(m' \not \in A\), so gilt wegen der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positiven Definitheit</a> \(\delta_{m'}  \coloneqq d(m',m)> 0\).
+Somit <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">vereinigen</a> wir die \(\frac{1}{2}\delta_{m'}\) <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> aller \(m' \neq m\) und erhalten dann die offene <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M \setminus \{m\}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_610a41b3c97dea1eeaac0992a05d73efc8d5bed0.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_610a41b3c97dea1eeaac0992a05d73efc8d5bed0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M \setminus \{m\} = \bigcup_{m' \in M \setminus \{m\}} B_{\frac{1}{2} \delta_{m'}}(m')
+\end{align*}
 <p>
-Damit folgt, dass <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_57aac0c6511d292499eb5ab89d6489b2077611c1.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_57aac0c6511d292499eb5ab89d6489b2077611c1.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
-Aus der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> folgt, dass dann auch die endliche menge <img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist wegen:
+Damit folgt, dass \(M \setminus (M \setminus \{m\}) = \{m\}\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Aus der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> folgt, dass dann auch die endliche menge \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist wegen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_bd87e9ce44d865c91a52940ec9dff957e15fdc0c.svg" alt="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum_bd87e9ce44d865c91a52940ec9dff957e15fdc0c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A = \bigcup_{m \in A} \{m\}
+\end{align*}
 </div>
 </div>
 </div>

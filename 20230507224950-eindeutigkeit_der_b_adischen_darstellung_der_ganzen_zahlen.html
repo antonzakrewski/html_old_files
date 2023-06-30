@@ -9,76 +9,96 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit der B-Adischen Darstellung der ganzen Zahlen</h1>
-<div id="outline-container-org566fef7" class="outline-2">
-<h2 id="org566fef7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb16faa4" class="outline-2">
+<h2 id="orgb16faa4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" class="org-svg" />.
-Dann ist für <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_31ea17a9cd9961226ea2324d46b40b8b99b4965d.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_31ea17a9cd9961226ea2324d46b40b8b99b4965d.svg" class="org-svg" /> die Darstellung eindeutig
+Sei \(B \geq 3\) und \(a < 0 < b\) mit \(\vert \{a,...,b\} \vert = B\).
+Dann ist für \(k = \sum_{i=0}^{\infty} x_i B^i\) die Darstellung eindeutig
 </p>
 </div>
 </div>
-<div id="outline-container-orge416ad6" class="outline-2">
-<h2 id="orge416ad6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org38dac69" class="outline-2">
+<h2 id="org38dac69"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> und <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Widerspruch</a> 
 </p>
 </div>
-<div id="outline-container-orge700d94" class="outline-3">
-<h3 id="orge700d94"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" class="org-svg" /></h3>
+<div id="outline-container-orgc79da43" class="outline-3">
+<h3 id="orgc79da43"><span class="section-number-3">2.1.</span> \(k = 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_91de8a02bf16aa5f9fc8b8966d9196ffc17756f3.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_91de8a02bf16aa5f9fc8b8966d9196ffc17756f3.svg" class="org-svg" /> so für <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> auch:
+Sei \(k = 0 = \sum_{i=0}^{\infty} x_i B^i\) so für \(n \in \mathbb{N}\) auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_95853dae2a8d443ab93f52c7b0def45c6fbb9ff0.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_95853dae2a8d443ab93f52c7b0def45c6fbb9ff0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=0}^{\infty} x_i B^i \equiv 0 \mod{n}
+\end{align*}
 <p>
-und damit insbesondere auch für <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_3316ec1800d9c374d9668a87b51905cd92d46c4c.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_3316ec1800d9c374d9668a87b51905cd92d46c4c.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_d5d419b4369899154fd50fc326a46e0ac1b27156.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_d5d419b4369899154fd50fc326a46e0ac1b27156.svg" class="org-svg" />
+und damit insbesondere auch für \(n = B^j\) für \(j \geq 1\)
 Damit folgt induktiv:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_30b35ed89a08679edbc64fc87cb2d7ea9c527486.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_30b35ed89a08679edbc64fc87cb2d7ea9c527486.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=0}^{\infty} x_i B^i \equiv x_0 \equiv 0 \mod{B} \\
+x_0 = 0
+\end{align*}
 <p>
 bzw.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_cf5f7a366fb5dbe1fc9eb10505c87e1974610993.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_cf5f7a366fb5dbe1fc9eb10505c87e1974610993.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=0}^{\infty} x_i B^i \equiv& \sum_{i=0}^{j-1} x_i B^i \mod{B^j}  \\
+\equiv& x_{j-1} B^{j-1} \mod{B^j} \\
+\equiv& 0 \mod{B^j} \\
+\Rightarrow x_{j-1} = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd168da2" class="outline-3">
-<h3 id="orgd168da2"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_2d5c1dfd0d6a2ddf5270073804562195f6756de8.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_2d5c1dfd0d6a2ddf5270073804562195f6756de8.svg" class="org-svg" /></h3>
+<div id="outline-container-org87cbef2" class="outline-3">
+<h3 id="org87cbef2"><span class="section-number-3">2.2.</span> \(k \Rightarrow k - 1\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5abab83c8e70c21b25ad5a7602ca95122d9013bc.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5abab83c8e70c21b25ad5a7602ca95122d9013bc.svg" class="org-svg" /> mit zwei verschiedenen Darstellungen <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_59a7573fbefaec42b612373d8726357b657e9cab.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_59a7573fbefaec42b612373d8726357b657e9cab.svg" class="org-svg" /> gegeben.
-Insbesondere existiert ein erster index <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_689d3e90d0637f6fbd81acf72f78f98a5ac02345.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_689d3e90d0637f6fbd81acf72f78f98a5ac02345.svg" class="org-svg" />, so dass gilt <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_bb9f3fa68fce20e46fd79f9bb7db4e8795faed32.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_bb9f3fa68fce20e46fd79f9bb7db4e8795faed32.svg" class="org-svg" />
-Sei ferner <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" class="org-svg" /> nach Induktionsannahme eindeutig, so können wir <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_3e0dcfcb9b219cfa62c97a1d239fc25627073164.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_3e0dcfcb9b219cfa62c97a1d239fc25627073164.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_92304fd33e9dd3433d97bfac220f2cf4e5d588c2.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_92304fd33e9dd3433d97bfac220f2cf4e5d588c2.svg" class="org-svg" /> addieren und es folgt für die neuen <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_9fbf4218cd110325c577f6d77e98aa025296c58e.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_9fbf4218cd110325c577f6d77e98aa025296c58e.svg" class="org-svg" />, dass sie verschieden sind.
+Sei \(k - 1 < 0\) mit zwei verschiedenen Darstellungen \(\sum_{i=0}^{\infty} x_i B^i = \sum_{i=0}^{\infty} x_i' B^i\) gegeben.
+Insbesondere existiert ein erster index \(j \in \mathbb{N}_0\), so dass gilt \(x_j \neq x_j'\)
+Sei ferner \(k\) nach Induktionsannahme eindeutig, so können wir \(1\) auf \(\sum_{i=0}^{\infty} x_i B^i\) bzw. \(\sum_{i=0}^{\infty} x_i' B^i\) addieren und es folgt für die neuen \(x_j, x_j'\), dass sie verschieden sind.
 Widerspruch.
 </p>
 </div>
 </div>
-<div id="outline-container-org6d5be59" class="outline-3">
-<h3 id="org6d5be59"><span class="section-number-3">2.3.</span> positive Zahlen</h3>
+<div id="outline-container-org2e65a81" class="outline-3">
+<h3 id="org2e65a81"><span class="section-number-3">2.3.</span> positive Zahlen</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_9b104188bf82dcef1a1bd1e39d4cecc948a17903.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_9b104188bf82dcef1a1bd1e39d4cecc948a17903.svg" class="org-svg" />, so ist nach obigem Argument in <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5964b80b552798208ef6a88511315d7488f2a05d.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_5964b80b552798208ef6a88511315d7488f2a05d.svg" class="org-svg" /> die Zahl <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" class="org-svg" /> eindeutig.
-Damit ist aber <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_873b4939df938f413f2114f10e3a3ecaf08d06cc.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_873b4939df938f413f2114f10e3a3ecaf08d06cc.svg" class="org-svg" /> eindeutig, da sonst durch Multiplikation mit <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_957b9968372a73b42526338dd57e81391ecbc68b.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_957b9968372a73b42526338dd57e81391ecbc68b.svg" class="org-svg" /> die Zahl <img src="file:///home/anton/html/ltximg/20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" alt="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" class="org-svg" /> nicht eindeutig wäre.
+Sei \(k > 0\), so ist nach obigem Argument in \(\{-b,...,-a\}\) die Zahl \(-k\) eindeutig.
+Damit ist aber \(k\) in \(\{a,...,b\}\) eindeutig, da sonst durch Multiplikation mit \(-1\) die Zahl \(-k\) nicht eindeutig wäre.
 </p>
 </div>
 </div>

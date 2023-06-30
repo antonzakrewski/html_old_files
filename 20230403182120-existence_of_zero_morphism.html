@@ -9,32 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existence of zero morphism</h1>
-<div id="outline-container-orge855b93" class="outline-2">
-<h2 id="orge855b93"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orgab516be" class="outline-2">
+<h2 id="orgab516be"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230403182120-existence_of_zero_morphism_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> with a <a href="20230402213821-zero_object.html#ID-9ea95c71-2120-411e-8447-87c82ba32c98">zero object</a> <img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230403182120-existence_of_zero_morphism_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" />
-Then for <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> <img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_4769d730282e544e547d317605fe649ad7d671f0.svg" alt="20230403182120-existence_of_zero_morphism_4769d730282e544e547d317605fe649ad7d671f0.svg" class="org-svg" /> there exists a <a href="20230402144657-zero_morphism.html#ID-6cb7ce09-7038-4581-bc67-91d231a2be10">zero morphism</a>.
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> with a <a href="20230402213821-zero_object.html#ID-9ea95c71-2120-411e-8447-87c82ba32c98">zero object</a> \(0\)
+Then for <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> \(A,B \in \mathcal{C}\) there exists a <a href="20230402144657-zero_morphism.html#ID-6cb7ce09-7038-4581-bc67-91d231a2be10">zero morphism</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb0f94df" class="outline-2">
-<h2 id="orgb0f94df"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgd16f8f9" class="outline-2">
+<h2 id="orgd16f8f9"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-By Assumption there exists an <a href="20230404183731-terminal_morphism.html#ID-ad3ab3aa-eac9-4e11-8a03-6a8e703aefdf">terminal morphism</a> <img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_714178a9d928c42e404b465094657100cc93a129.svg" alt="20230403182120-existence_of_zero_morphism_714178a9d928c42e404b465094657100cc93a129.svg" class="org-svg" /> and an <a href="20230404183726-initial_morphism.html#ID-95a8bd02-e32c-4eaf-a0e5-e0b8de53fb59">initial morphism</a> <img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_1afb2b1ac2a07c048c4bc69368c44fc170ca0930.svg" alt="20230403182120-existence_of_zero_morphism_1afb2b1ac2a07c048c4bc69368c44fc170ca0930.svg" class="org-svg" />
+By Assumption there exists an <a href="20230404183731-terminal_morphism.html#ID-ad3ab3aa-eac9-4e11-8a03-6a8e703aefdf">terminal morphism</a> \(t_A: A \rightarrow 0\) and an <a href="20230404183726-initial_morphism.html#ID-95a8bd02-e32c-4eaf-a0e5-e0b8de53fb59">initial morphism</a> \(i_B: 0 \rightarrow A\)
 By <a href="20220817221033-komposition_von_morphismen.html#ID-72b71b59-7fac-4516-9115-9d589b47e0c3">composition of morphisms</a> we obtain:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230403182120-existence_of_zero_morphism_dafb1da63ab8d921b1fd9c3f2a6493fca5adda31.svg" alt="20230403182120-existence_of_zero_morphism_dafb1da63ab8d921b1fd9c3f2a6493fca5adda31.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+i_B \circ t_A: A \rightarrow B
+\end{align*}
 <p>
 and by construction a <a href="20230402144657-zero_morphism.html#ID-6cb7ce09-7038-4581-bc67-91d231a2be10">zero morphism</a> 
 </p>

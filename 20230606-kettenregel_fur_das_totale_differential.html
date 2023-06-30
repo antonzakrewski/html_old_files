@@ -3,128 +3,112 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kettenregel für das totale Differential</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel für das totale Differential</h1>
-<div id="outline-container-orgd3ef447" class="outline-2">
-<h2 id="orgd3ef447"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa0d66e" class="outline-2">
+<h2 id="orgaa0d66e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230606-kettenregel_fur_das_totale_differential_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> und <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_37c65cf8e9fba923f6ce6c207182025319d3fdc4.svg" alt="20230606-kettenregel_fur_das_totale_differential_37c65cf8e9fba923f6ce6c207182025319d3fdc4.svg" class="org-svg" /> gegeben und <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sowie <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_e2ec989793494dfbe04682178ea00459c9079e70.svg" alt="20230606-kettenregel_fur_das_totale_differential_e2ec989793494dfbe04682178ea00459c9079e70.svg" class="org-svg" /> und <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_ead6324281e05f0ed95995b9a97889035aa79141.svg" alt="20230606-kettenregel_fur_das_totale_differential_ead6324281e05f0ed95995b9a97889035aa79141.svg" class="org-svg" /> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230606-kettenregel_fur_das_totale_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230606-kettenregel_fur_das_totale_differential_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> und <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230606-kettenregel_fur_das_totale_differential_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_d046bb50bfdad71ff4b496d52bc54fe80a61bde2.svg" alt="20230606-kettenregel_fur_das_totale_differential_d046bb50bfdad71ff4b496d52bc54fe80a61bde2.svg" class="org-svg" /> ist.
-Dann ist <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_49c64bca57294db496518aed69a96b61791b268e.svg" alt="20230606-kettenregel_fur_das_totale_differential_49c64bca57294db496518aed69a96b61791b268e.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in <img src="ltximg/20230606-kettenregel_fur_das_totale_differential_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230606-kettenregel_fur_das_totale_differential_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> mit <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totalem Differential</a>:
+Seien \(U \subseteq \mathbb{R}^n\) und \(V \subseteq \mathbb{R}^m\) gegeben und <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sowie \(F: U \rightarrow V\) und \(G: V \rightarrow \mathbb{R}^k\) <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass \(F\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in \(x_0\) und \(G\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in \(F(x_0)\) ist.
+Dann ist \(G \circ F\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in \(x_0\) mit <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totalem Differential</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_10be765e1d925e3d76b94c9dbcdba40b89433f43.svg" alt="20230606-kettenregel_fur_das_totale_differential_10be765e1d925e3d76b94c9dbcdba40b89433f43.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mathrm{d} (G \circ F)_{x_0} = \mathrm{d} G_{F(x_0)} \circ \mathrm{d}F_{x_0}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfd26591" class="outline-2">
-<h2 id="orgfd26591"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1aefff1" class="outline-2">
+<h2 id="org1aefff1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3ecc77b" class="outline-3">
-<h3 id="org3ecc77b"><span class="section-number-3">2.1.</span> Umformungen</h3>
+<div id="outline-container-org58747df" class="outline-3">
+<h3 id="org58747df"><span class="section-number-3">2.1.</span> Umformungen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach Annahme sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_57200e430c9b75ecdc9f55c994d583d15081ad53.svg" alt="20230606-kettenregel_fur_das_totale_differential_57200e430c9b75ecdc9f55c994d583d15081ad53.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+F(x) =& F(x_0) + \mathrm{d} F_{x_0}(x - x_0) + r_{F,x_0}(x) \\
+G(x) =& G(F(x_0)) + \mathrm{d} G_{F(x_0)} (y - F(x_0) + r_{G,F(x_0)}(y) 
+\end{align*}
 <p>
 Somit folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_425c3758dd7f95c6e03426bd4bc23ea713c40bb8.svg" alt="20230606-kettenregel_fur_das_totale_differential_425c3758dd7f95c6e03426bd4bc23ea713c40bb8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+(G \circ F) \cdot x =& G(F(x)) \\
+=& G(F(x_0)) + \mathrm{d} G_{F(x_0)}(F(x) - F(x_0)) + r_{G,F(x_0)}(F(x))
+\end{align*}
 <p>
 Ferner gilt nach Annahme
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_568530f2546c52613869779f5399b5084f39611e.svg" alt="20230606-kettenregel_fur_das_totale_differential_568530f2546c52613869779f5399b5084f39611e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+(F(x) - F(x_0)) = \mathrm{d} F_{x_0}(x - x_0) + r_{F,x_0}(x)
+\end{align*}
 <p>
 D.h. durch Einsetzen folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_7c5a20315edd7c276b8033245cc86a41fd791354.svg" alt="20230606-kettenregel_fur_das_totale_differential_7c5a20315edd7c276b8033245cc86a41fd791354.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
+\begin{align*}
+G(F(x_0)) + \mathrm{d} G_{F(x_0)}(F(x) - F(x_0)) + r_{G,F(x_0)}(F(x)) =& G(F(x_0)) + (\mathrm{d} G_{F(x_0)} \circ \mathrm{d} F_{x_0})(x - x_0) + \mathrm{d}G_{F(x_0)}(r_{F,x_0}(x)) + r_{G,F(x_0)}(F(x))
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9e8f4a3" class="outline-3">
-<h3 id="org9e8f4a3"><span class="section-number-3">2.2.</span> abschätzung des Restglieds</h3>
+<div id="outline-container-orgd01e247" class="outline-3">
+<h3 id="orgd01e247"><span class="section-number-3">2.2.</span> abschätzung des Restglieds</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_bbc4bf8f7f4e8c00b91617cb0b2a92060f4aa1c8.svg" alt="20230606-kettenregel_fur_das_totale_differential_bbc4bf8f7f4e8c00b91617cb0b2a92060f4aa1c8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+\| \mathrm{d} G_{F(x_0)}(r_{F,x_0}(x)) \| \leq& \| d G_{F(x_0)} \| \cdot \| r_{F,x_0}(x) \| \\
+=& o(\| x - x_0\|)
+\end{align*}
 <p>
 Dabei sei <a href="20230228183044-operatornorm_als_echte_norm.html#ID-ee5d7893-af98-4807-8118-00bde790b509">Operatornorm</a> als Lipschitzkonstante
 Desweiteren gilt aufgrund der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_72b06e9301393ddf0ef07b0e3162f314322da3b4.svg" alt="20230606-kettenregel_fur_das_totale_differential_72b06e9301393ddf0ef07b0e3162f314322da3b4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-7
-</span>
-</div>
+\begin{align*}
+r_{G,F(x_0)}(F(x)) =& o(\| F(x) - F(x_0) \|) \\
+\leq& \| d F_{x_0} \| \cdot \| x - x_0 \| + \| r_{F,x_0}(x) \| \\
+=& O(\| x - x_0 \|
+\end{align*}
 <p>
 Daraus folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230606-kettenregel_fur_das_totale_differential_492e87693af7c9cb1d04d26b45dd3f8e6803aaa3.svg" alt="20230606-kettenregel_fur_das_totale_differential_492e87693af7c9cb1d04d26b45dd3f8e6803aaa3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-8
-</span>
-</div>
+\begin{align*}
+r_{G,F(x_0)}(F(x)) = o(\| x - x_0 \|)
+\end{align*}
 
 <p>
 Durch die <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung</a> folgt dann auch

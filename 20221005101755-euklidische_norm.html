@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Euklidische Norm</h1>
-<div id="outline-container-org25b55a4" class="outline-2">
-<h2 id="org25b55a4"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6f0fda4" class="outline-2">
+<h2 id="org6f0fda4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221005101755-euklidische_norm_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20221005101755-euklidische_norm_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221005101755-euklidische_norm_7ea8fc66aba601f37cb2c55fccd26b38557568c4.svg" alt="20221005101755-euklidische_norm_7ea8fc66aba601f37cb2c55fccd26b38557568c4.svg" class="org-svg" /> ein <a href="20221003093842-euklidischer_vektorraum.html#ID-1296acb5-82e7-4065-bfdf-ed44cd6708d4">Euklidischer Vektorraum</a>  und <img src="file:///home/anton/html/ltximg/20221005101755-euklidische_norm_5ebf1ad99d6c5b4eeef257078e63b79168f66f38.svg" alt="20221005101755-euklidische_norm_5ebf1ad99d6c5b4eeef257078e63b79168f66f38.svg" class="org-svg" /> ein <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a>.
+Sei \(\mathbb{R}^n\) mit \(n \in \mathbb{N}^+\) ein <a href="20221003093842-euklidischer_vektorraum.html#ID-1296acb5-82e7-4065-bfdf-ed44cd6708d4">Euklidischer Vektorraum</a>  und \(\vec{v} \in \mathbb{R}^n\) ein <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a>.
 Die Euklidische Norm für den <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> ist folgendermaßen definiert:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221005101755-euklidische_norm_fa9cdd986ceca569150b38915af4ed45ad0b77de.svg" alt="20221005101755-euklidische_norm_fa9cdd986ceca569150b38915af4ed45ad0b77de.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \vec{v} \| = \sqrt{\sum_{i=1}^n v_i}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Majorantenkriterium</h1>
-<div id="outline-container-orgbf6b641" class="outline-2">
-<h2 id="orgbf6b641"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd9f5133" class="outline-2">
+<h2 id="orgd9f5133"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" alt="20221204223400-majorantenkriterium_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so dass für eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_80b99b2f59976bad7d89397cb2b2cc82fbe67672.svg" alt="20221204223400-majorantenkriterium_80b99b2f59976bad7d89397cb2b2cc82fbe67672.svg" class="org-svg" /> für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20221204223400-majorantenkriterium_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> gilt: <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_81d1bc39a9bb37091b9021946b1bb7b8ed7f4921.svg" alt="20221204223400-majorantenkriterium_81d1bc39a9bb37091b9021946b1bb7b8ed7f4921.svg" class="org-svg" />  
-Dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" alt="20221204223400-majorantenkriterium_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" class="org-svg" />  <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a> und für den <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> gilt, unter der Annahme, dass für alle <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_eedc0d16ae3ab6d25e4a0229b0a6cc1fa4d64777.svg" alt="20221204223400-majorantenkriterium_eedc0d16ae3ab6d25e4a0229b0a6cc1fa4d64777.svg" class="org-svg" />  gilt <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_81d1bc39a9bb37091b9021946b1bb7b8ed7f4921.svg" alt="20221204223400-majorantenkriterium_81d1bc39a9bb37091b9021946b1bb7b8ed7f4921.svg" class="org-svg" />
+Sei \(\sum_{i=1}^{\infty} a_i\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so dass für eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> \(\sum_{i=1}^{\infty} c_i\) für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(i\) gilt: \(\vert a_i \vert \leq c_i\)  
+Dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(\sum_{i=1}^{\infty} a_i\)  <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a> und für den <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> gilt, unter der Annahme, dass für alle \(i \geq k\)  gilt \(\vert a_i \vert \leq c_i\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_0566e6598de6fd96615e8d64183320fc8c8e3449.svg" alt="20221204223400-majorantenkriterium_0566e6598de6fd96615e8d64183320fc8c8e3449.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{n=k}^{\infty} \vert a_n \vert \leq \sum_{n=k}^{\infty} c_n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6a11c1f" class="outline-2">
-<h2 id="org6a11c1f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc32dc4e" class="outline-2">
+<h2 id="orgc32dc4e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt, dass <img src="file:///home/anton/html/ltximg/20221204223400-majorantenkriterium_2fe512faa48c864407058f2723b441efd5a3ce70.svg" alt="20221204223400-majorantenkriterium_2fe512faa48c864407058f2723b441efd5a3ce70.svg" class="org-svg" /> <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkt</a> ist und <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monoton</a>, so dass die <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner beschränkter Folgen</a> folgt.
+Es gilt, dass \(\sum_{n=1}^{\infty} \vert a_i \vert\) <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkt</a> ist und <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monoton</a>, so dass die <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner beschränkter Folgen</a> folgt.
 Die Abschätzung folgt aus dem <a href="20221124134600-vergleichsprinzip.html#ID-4c135605-2a04-4e05-8198-296eb8cda04d">Vergleichsprinzip</a> für <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> 
 </p>
 </div>

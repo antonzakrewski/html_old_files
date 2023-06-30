@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">gleichmäßige stetigkeit eines Wegs</h1>
-<div id="outline-container-orga819479" class="outline-2">
-<h2 id="orga819479"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9af36db" class="outline-2">
+<h2 id="org9af36db"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511073850-gleichmaßige_stetigkeit_eines_wegs_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230511073850-gleichmaßige_stetigkeit_eines_wegs_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230511073850-gleichmaßige_stetigkeit_eines_wegs_d91352e802a7a71d0c1619c49eb248576d836fcd.svg" alt="20230511073850-gleichmaßige_stetigkeit_eines_wegs_d91352e802a7a71d0c1619c49eb248576d836fcd.svg" class="org-svg" /> ein <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230511073850-gleichmaßige_stetigkeit_eines_wegs_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" alt="20230511073850-gleichmaßige_stetigkeit_eines_wegs_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" class="org-svg" /> <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig Stetigkeit</a>
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\gamma: [0,1] \rightarrow X\) ein <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a>.
+Dann ist \(\gamma\) <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig Stetigkeit</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org7e1bcc3" class="outline-2">
-<h2 id="org7e1bcc3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org22f02f6" class="outline-2">
+<h2 id="org22f02f6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus dem <a href="20230120194529-satz_von_heine.html#ID-63bbd543-c95b-4503-9b4a-ff170c35f194">Satz von Heine (Analysis)</a> 

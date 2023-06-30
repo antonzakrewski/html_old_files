@@ -9,24 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss als idempotente Abbildung</h1>
-<div id="outline-container-orge01a90d" class="outline-2">
-<h2 id="orge01a90d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6ecce0c" class="outline-2">
+<h2 id="org6ecce0c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20230302234546-abbildung_auf_den_abschluss_topologie.html#ID-84c18959-1c23-4705-9ea3-b165aa307c67">Abbildung auf den Abschluss</a> ist <a href="20230302234615-idempotente_abbildung.html#ID-563e6e6d-7d44-4cb0-a1c7-ec0debf47ac3">idempotent</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org9e9739f" class="outline-2">
-<h2 id="org9e9739f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org525db30" class="outline-2">
+<h2 id="org525db30"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach dem Satz über den <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss als abgeschlossene Menge</a> gilt <img src="file:///home/anton/html/ltximg/20230302231204-abschluss_als_idempotente_abbildung_14a9f6a55766bc4bc58bce8d4a3bb565a6ed7345.svg" alt="20230302231204-abschluss_als_idempotente_abbildung_14a9f6a55766bc4bc58bce8d4a3bb565a6ed7345.svg" class="org-svg" />
-Desweiteren folgt aus dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a> <img src="file:///home/anton/html/ltximg/20230302231204-abschluss_als_idempotente_abbildung_04d6445c56b06083bcaf855657115c01c4cb4171.svg" alt="20230302231204-abschluss_als_idempotente_abbildung_04d6445c56b06083bcaf855657115c01c4cb4171.svg" class="org-svg" />
+Nach dem Satz über den <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss als abgeschlossene Menge</a> gilt \(X \setminus \overline{A} \in \mathcal{T}\)
+Desweiteren folgt aus dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a> \(\overline{\overline{A}} = \overline{A}\)
 </p>
 </div>
 </div>

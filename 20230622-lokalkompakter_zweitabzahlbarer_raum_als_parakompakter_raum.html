@@ -9,48 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">lokalkompakter, zweitabzählbarer Raum als parakompakter Raum</h1>
-<div id="outline-container-orga8011f0" class="outline-2">
-<h2 id="orga8011f0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org065699d" class="outline-2">
+<h2 id="org065699d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakter</a>, <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">hausdorffscher</a>, <a href="20230211132410-zweite_abzahlbarkeitsaxiom.html#ID-155a3f29-5e48-4647-a11e-5bc32b501755">zweitabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakter</a>, <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">hausdorffscher</a>, <a href="20230211132410-zweite_abzahlbarkeitsaxiom.html#ID-155a3f29-5e48-4647-a11e-5bc32b501755">zweitabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Dann ist \(X\) <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org61d5c55" class="outline-2">
-<h2 id="org61d5c55"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5b95282" class="outline-2">
+<h2 id="org5b95282"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_3e80a569c5a0945dc12d6baa456aea23dc18d897.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_3e80a569c5a0945dc12d6baa456aea23dc18d897.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> und <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_908a682004a4b68623c0f3b4467fa79573a3f0a3.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_908a682004a4b68623c0f3b4467fa79573a3f0a3.svg" class="org-svg" /> eine <a href="20230620-kompakte_ausschopfung.html#ID-6565290e-a5f3-4db6-80d5-a5cc40cd0823">kompakte Ausschöpfung</a> (vgl. <a href="20230622-existenz_einer_kompakten_ausschopfung_in_einem_hausdorffschen_lokalkompakten_zweitabzahlbaren_raum.html#ID-f7870a3a-c6f4-447c-acd8-561a059800dd">Existenz einer kompakten Ausschöpfung in einem hausdorffschen, lokalkompakten, zweitabzählbaren Raum</a>).
-Für alle <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_dccee75323723cf12b7313279a0c7802bdb3809b.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_dccee75323723cf12b7313279a0c7802bdb3809b.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> (vgl. <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">Abgeschlossene Mengen kompakter Räume sind kompakt</a>) und
+Sei \(\mathcal{U} = (U_i)_{i \in I}\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> und \((K_n)_{n \in \mathbb{N}}\) eine <a href="20230620-kompakte_ausschopfung.html#ID-6565290e-a5f3-4db6-80d5-a5cc40cd0823">kompakte Ausschöpfung</a> (vgl. <a href="20230622-existenz_einer_kompakten_ausschopfung_in_einem_hausdorffschen_lokalkompakten_zweitabzahlbaren_raum.html#ID-f7870a3a-c6f4-447c-acd8-561a059800dd">Existenz einer kompakten Ausschöpfung in einem hausdorffschen, lokalkompakten, zweitabzählbaren Raum</a>).
+Für alle \(n \in \mathbb{N}\) ist \(K_{n + 1} \setminus \mathring{K_{n-1}}\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> (vgl. <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">Abgeschlossene Mengen kompakter Räume sind kompakt</a>) und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_1047af11d18156e001a45df5289b9723d1e05cac.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_1047af11d18156e001a45df5289b9723d1e05cac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+V_n \coloneqq \{U_i \cap \mathring{K_{n+1}} \setminus K_{n-2}\vert U_i \in \mathcal{U}\}
+\end{align*}
 <p>
 ist eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von 
 </p>
 
 
 <p>
-Weil <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_f05ba1aafe8336c44e9885202469201b77955a9a.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_f05ba1aafe8336c44e9885202469201b77955a9a.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist, reichen <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> aus <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_fcc95ce7dcc549ef8ce573f0edd4d2742c390750.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_fcc95ce7dcc549ef8ce573f0edd4d2742c390750.svg" class="org-svg" />, um <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_7a0e5e4e4913d2461f5a66cabe3dff46133a0c26.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_7a0e5e4e4913d2461f5a66cabe3dff46133a0c26.svg" class="org-svg" /> zu überdecken,
-<img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_9602115294c41f39c133e1188117f02b0adcfeec.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_9602115294c41f39c133e1188117f02b0adcfeec.svg" class="org-svg" />
+Weil \(K_{n} \setminus \mathring{K_{n-1}}\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist, reichen <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> aus \(V_n\), um \(K_n \setminus \mathring{K_{n-1}}\) zu überdecken,
+\(V_1^{(n)}, ..., V_n^{(n)}\)
 </p>
 
 <p>
-Wähle <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_bf69d2e4df1d5df0507b18907a0c3744b031c055.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_bf69d2e4df1d5df0507b18907a0c3744b031c055.svg" class="org-svg" />
-überdeckt ganz <img src="file:///home/anton/html/ltximg/20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230622-lokalkompakter_zweitabzahlbarer_raum_als_parakompakter_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, und ist lokal endlich
+Wähle \(V = \bigcup_{n} \{V_{1}^{n),...,V_{k(n)}^{n}\}\)
+überdeckt ganz \(X\), und ist lokal endlich
 </p>
 
 <ul class="org-ul">

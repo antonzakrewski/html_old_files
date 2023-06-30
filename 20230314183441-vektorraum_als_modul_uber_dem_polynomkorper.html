@@ -9,69 +9,91 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Modul als Modul über dem Polynomring</h1>
-<div id="outline-container-org0faae01" class="outline-2">
-<h2 id="org0faae01"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6d8e4e2" class="outline-2">
+<h2 id="org6d8e4e2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_39f23adcd62fb3b582f00f26a9f540ded96042bd.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_39f23adcd62fb3b582f00f26a9f540ded96042bd.svg" class="org-svg" /> (fest), so ist <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> auch ein <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> mit der Skalarmultiplikation des <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> 
+Sei \(M\) ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> \(R\) und \(A \in \mathrm{End}_{R}(V)\) (fest), so ist \(M\) auch ein \(R[X]\) <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> mit der Skalarmultiplikation des <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_0afac7d273159b8cbc283bf98e941f4c8cce8133.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_0afac7d273159b8cbc283bf98e941f4c8cce8133.svg" class="org-svg" />
-</span>
+\begin{align*}
+K[X] \times V \rightarrow& V \\
+(f,v) \mapsto& f(A)v
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgedccf70" class="outline-2">
-<h2 id="orgedccf70"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge1c686b" class="outline-2">
+<h2 id="orge1c686b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2d51b5d" class="outline-3">
-<h3 id="org2d51b5d"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
+<div id="outline-container-orga0a01b6" class="outline-3">
+<h3 id="orga0a01b6"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der forderung
 </p>
 </div>
 </div>
-<div id="outline-container-org34d8f28" class="outline-3">
-<h3 id="org34d8f28"><span class="section-number-3">2.2.</span> distributivgesetz</h3>
+<div id="outline-container-orgc0683e1" class="outline-3">
+<h3 id="orgc0683e1"><span class="section-number-3">2.2.</span> distributivgesetz</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_14b1c5da53cf4bce7d87f073e121e8b93e8095f3.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_14b1c5da53cf4bce7d87f073e121e8b93e8095f3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" class="org-svg" /> gilt:
+Für \(f,f' \in K[X]\) und \(v,v' \in V\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_73d2fc8e7892b1b3bc0ac9262da4b6ef168ca7a9.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_73d2fc8e7892b1b3bc0ac9262da4b6ef168ca7a9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f \cdot (v + v') =& f(A)(v + v') \\
+=& f(A)(v) + f(A)(v') \\
+(f + f') \cdot (v) =& (f + f')(A) \circ (v) \\
+=& f(A)(v) + f'(A)(v)
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_3d892825a0b140e7088f75427c59ecd0f6b7face.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_3d892825a0b140e7088f75427c59ecd0f6b7face.svg" class="org-svg" />
+Dabei ist \(f(A) \in \mathrm{End}_K(V)\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb8b76b4" class="outline-3">
-<h3 id="orgb8b76b4"><span class="section-number-3">2.3.</span> assoziativität</h3>
+<div id="outline-container-org0d50da6" class="outline-3">
+<h3 id="org0d50da6"><span class="section-number-3">2.3.</span> assoziativität</h3>
 <div class="outline-text-3" id="text-2-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_845e5247aa465cd36cc64b02d3abc848bf6d8a54.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_845e5247aa465cd36cc64b02d3abc848bf6d8a54.svg" class="org-svg" />
-</span>
+\begin{align*}
+f \cdot (f' \cdot v) =& f(A) (f'(A) \cdot v) \\
+=& f(A) \cdot f'(A) \cdot v \\
+=& (f \cdot f')(A)(v)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7b152bb" class="outline-3">
-<h3 id="org7b152bb"><span class="section-number-3">2.4.</span> existenz neutralen skalars</h3>
+<div id="outline-container-org8dcf8ec" class="outline-3">
+<h3 id="org8dcf8ec"><span class="section-number-3">2.4.</span> existenz neutralen skalars</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-folgt für <img src="file:///home/anton/html/ltximg/20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_c32b4146956890a34ba24314c54d2266dc5e57f5.svg" alt="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper_c32b4146956890a34ba24314c54d2266dc5e57f5.svg" class="org-svg" />
+folgt für \(f(x) = 1\)
 </p>
 </div>
 </div>

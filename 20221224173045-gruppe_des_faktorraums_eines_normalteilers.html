@@ -9,80 +9,97 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gruppe des Faktorraums eines Normalteilers</h1>
-<div id="outline-container-orge8b4ae5" class="outline-2">
-<h2 id="orge8b4ae5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc845d82" class="outline-2">
+<h2 id="orgc845d82"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a>.
-Dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_c76eac7b936e962cf6fc46722d293b6b7cacd807.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_c76eac7b936e962cf6fc46722d293b6b7cacd807.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> für <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_fed64f3840d1c33928d762f4179b19ca13df2b50.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_fed64f3840d1c33928d762f4179b19ca13df2b50.svg" class="org-svg" />
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(N\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a>.
+Dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(G / N\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> für \(g_1,g_2 \in G\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_f4102692aefe2b66f738c3f901d9a9a4c4c2da91.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_f4102692aefe2b66f738c3f901d9a9a4c4c2da91.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_1N \cdot g_2N =& gg'N 
+\end{align*}
 <p>
-und das <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrale element</a>  ist <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" />
+und das <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrale element</a>  ist \(N\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgcc636c7" class="outline-2">
-<h2 id="orgcc636c7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org73553c1" class="outline-2">
+<h2 id="org73553c1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org1e71909" class="outline-3">
-<h3 id="org1e71909"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a></h3>
+<div id="outline-container-org52dd5fe" class="outline-3">
+<h3 id="org52dd5fe"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_be67ecd44fee2f129ba103305cb9ee015ee44779.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_be67ecd44fee2f129ba103305cb9ee015ee44779.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_bb08ba0e7f732194dbd7fd6c775956bc212e42b1.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_bb08ba0e7f732194dbd7fd6c775956bc212e42b1.svg" class="org-svg" />, 
-Dann existieret <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_a669ce072f505a685f928612599a6627832389e3.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_a669ce072f505a685f928612599a6627832389e3.svg" class="org-svg" />, so dass gilt
+Seien \(g_1N = g_1'N\), \(g_2N = g_2'N\), 
+Dann existieret \(n_1,n_2 \in N\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_37625ac0a15870129b4a7c71ec3bc1022ddd4aec.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_37625ac0a15870129b4a7c71ec3bc1022ddd4aec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_1n_1 =& g_1'  \\
+g_2n_2 =& g_2' 
+\end{align*}
 <p>
-es folgt wegen <img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_0aa073fabe64530707f1d8a775ca0b334a985722.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_0aa073fabe64530707f1d8a775ca0b334a985722.svg" class="org-svg" />:
+es folgt wegen \(g_2^{-1} n_1 g_{2} =: n_3 \in N\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_503d4b6b0d4a53df5021953307ef5052b4e4d9d4.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_503d4b6b0d4a53df5021953307ef5052b4e4d9d4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_1'g_2' =& g_1n_1 g_2n_2 \\
+=& g_1g_2 (g_2^{-1} n_1 g_2) n_2 \\
+=& g_1g_2 n_3
+\end{align*}
 <p>
 und damit ist auch der ausdruck
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_91b03349411c080a9b06472f3d3c35019c191a35.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_91b03349411c080a9b06472f3d3c35019c191a35.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_1N \cdot g_2N = g_1g_2N
+\end{align*}
 <p>
 <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org0760cf5" class="outline-3">
-<h3 id="org0760cf5"><span class="section-number-3">2.2.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a></h3>
+<div id="outline-container-orgda701ca" class="outline-3">
+<h3 id="orgda701ca"><span class="section-number-3">2.2.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224173045-gruppe_des_faktorraums_eines_normalteilers_ba9108b110f6c1555b5f9b32c41e9c94d0f500ee.svg" alt="20221224173045-gruppe_des_faktorraums_eines_normalteilers_ba9108b110f6c1555b5f9b32c41e9c94d0f500ee.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+N =& 1N \\
+1N \cdot gN =& 1gN \\
+=& gN \\
+=& g1N \\
+=& gN \cdot 1N 
+\end{align*}
 </div>
 </div>
 </div>

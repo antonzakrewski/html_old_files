@@ -3,63 +3,78 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ordnung eines Gruppenelements und Gruppenordnung der zyklischen Gruppe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ordnung eines Gruppenelements und Gruppenordnung der zyklischen Gruppe</h1>
-<div id="outline-container-orgee980ff" class="outline-2">
-<h2 id="orgee980ff"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8b8ca8d" class="outline-2">
+<h2 id="org8b8ca8d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_68fc17dcbcbbaa2bd37772301fed086b5e25285d.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_68fc17dcbcbbaa2bd37772301fed086b5e25285d.svg" class="org-svg" /> ein Element 
-Dann gilt für die <a href="20230110165441-ordnung_eines_gruppenelements.html#ID-c88f2185-0bf2-4292-8a15-8ea97181af4f">Ordnung eines Gruppenelements</a> und die <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Gruppenordnung</a> der von <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" class="org-svg" /> erzeugten <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">Zyklischen Untergruppe</a>:
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, \(g \in G\) ein Element 
+Dann gilt für die <a href="20230110165441-ordnung_eines_gruppenelements.html#ID-c88f2185-0bf2-4292-8a15-8ea97181af4f">Ordnung eines Gruppenelements</a> und die <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Gruppenordnung</a> der von \(g\) erzeugten <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">Zyklischen Untergruppe</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_f6d9e6e08381f5b54563dba350165b3ec0a0a2a5.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_f6d9e6e08381f5b54563dba350165b3ec0a0a2a5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mathrm{ord}(g) = \vert \langle g\rangle \vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3c4486e" class="outline-2">
-<h2 id="org3c4486e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3c7fd13" class="outline-2">
+<h2 id="org3c7fd13"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org090b50d" class="outline-3">
-<h3 id="org090b50d"><span class="section-number-3">2.1.</span> <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_b035aae7a85edcce562dfd3d11b52aab6da6803e.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_b035aae7a85edcce562dfd3d11b52aab6da6803e.svg" class="org-svg" /></h3>
+<div id="outline-container-org4de16bb" class="outline-3">
+<h3 id="org4de16bb"><span class="section-number-3">2.1.</span> \(\mathrm{ord}(g) < \infty\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_f49523a3bf265e569f6207d349b94809580389e1.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_f49523a3bf265e569f6207d349b94809580389e1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\langle g\rangle = \{g^{1}, g^{2}, ..., g^{m-1}, g^{m} = e\}
+\end{align*}
 <p>
-und damit folgt <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_10f5c14f9ef5adbfe081d7d7b9f44084a5a3af3d.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_10f5c14f9ef5adbfe081d7d7b9f44084a5a3af3d.svg" class="org-svg" />
+und damit folgt \(\vert \langle g\rangle \vert = m\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc064463" class="outline-3">
-<h3 id="orgc064463"><span class="section-number-3">2.2.</span> <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_ff7d7e9681f41cefab9a9d18bffb8cec38e3e2c8.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_ff7d7e9681f41cefab9a9d18bffb8cec38e3e2c8.svg" class="org-svg" /></h3>
+<div id="outline-container-orge3bd2f3" class="outline-3">
+<h3 id="orge3bd2f3"><span class="section-number-3">2.2.</span> \(\mathrm{ord}(g) = \infty\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Dann ist <img src="ltximg/20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_5279475b7c8f363cd4dbb56841ac3f97cb790418.svg" alt="20230503130350-ordnung_eines_gruppenelements_und_gruppenordnung_der_zyklischen_gruppe_5279475b7c8f363cd4dbb56841ac3f97cb790418.svg" class="org-svg" />
+Dann ist \(\langle g\rangle \simeq \mathbb{Z}\)
 </p>
 </div>
 </div>

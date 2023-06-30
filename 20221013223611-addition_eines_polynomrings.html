@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Addition in einem Polynomring</h1>
-<div id="outline-container-org345203f" class="outline-2">
-<h2 id="org345203f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge5956b9" class="outline-2">
+<h2 id="orge5956b9"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221013223611-addition_eines_polynomrings_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20221013223611-addition_eines_polynomrings_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> ein <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> und seien <img src="file:///home/anton/html/ltximg/20221013223611-addition_eines_polynomrings_0fc7fa409bcfc7dcc1d94c6d4e46902539188448.svg" alt="20221013223611-addition_eines_polynomrings_0fc7fa409bcfc7dcc1d94c6d4e46902539188448.svg" class="org-svg" /> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a>. 
+Sei \(R[X]\) ein <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> und seien \((a_i)_{i \in \mathbb{N}_0}, (b_i)_{i \in \mathbb{N}} \in R[X]\) <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a>. 
 Dann ist die <a href="20210618084656-addition.html#ID-d9bb4990-4623-4957-bf16-ff3483acb12c">Addition</a> folgendermaßen definiert:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221013223611-addition_eines_polynomrings_bfaa929995671afe9d0d3d3989a085b53ec06f6a.svg" alt="20221013223611-addition_eines_polynomrings_bfaa929995671afe9d0d3d3989a085b53ec06f6a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a_i)_{i \in \mathbb{N}_0 } + (b_i)_{i \in \mathbb{N}_0 } = (a_i + b_i)_{i \in \mathbb{N}_0 }
+\end{align*}
 </div>
 </div>
 </div>

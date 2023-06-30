@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zweiter Hauptsatz der Differential- und Integralrechnung (ana)</h1>
-<div id="outline-container-org8137919" class="outline-2">
-<h2 id="org8137919"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4881af4" class="outline-2">
+<h2 id="org4881af4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_03a5caf7fad1d6f10345063c1d210336ffef9a8a.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_03a5caf7fad1d6f10345063c1d210336ffef9a8a.svg" class="org-svg" /> eine <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">Regelfunktion</a> mit <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_6c7801e4e755832c882e4b952ec2e5f9d58c69ed.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_6c7801e4e755832c882e4b952ec2e5f9d58c69ed.svg" class="org-svg" />:
+Sei \(f: I \rightarrow \mathbb{C}\) eine <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">Regelfunktion</a> mit <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> \(F\), so gilt für \(a,b \in I\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_335b88cdc0ff31945fb1f07edbcc9ef3803bdff4.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_335b88cdc0ff31945fb1f07edbcc9ef3803bdff4.svg" class="org-svg" />
-</span>
+\begin{align*}
+\int_{a}^{b} f(x) \mathrm{d}x = F(b) - F(a) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb73c465" class="outline-2">
-<h2 id="orgb73c465"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3e692c5" class="outline-2">
+<h2 id="org3e692c5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_175b037e1f9b3eb3920c169b63554b5ca6862f8d.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_175b037e1f9b3eb3920c169b63554b5ca6862f8d.svg" class="org-svg" />.
-Wir wissen nach dem <a href="20230208220602-erster_hauptsatz_der_differential_und_integralrechnung_ana.html#ID-c5597a0f-6487-487b-8cc2-8ea45e926647">Ersten Hauptsatz der Differential- und Integralrechnung</a>, dass <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_59efea41ff3fcad4cefbb4be899765e53f9dfe8b.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_59efea41ff3fcad4cefbb4be899765e53f9dfe8b.svg" class="org-svg" /> eine <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> ist.
+Sei \(F_2(x) = \int_{a}^{x} f(x) \mathrm{d}x\).
+Wir wissen nach dem <a href="20230208220602-erster_hauptsatz_der_differential_und_integralrechnung_ana.html#ID-c5597a0f-6487-487b-8cc2-8ea45e926647">Ersten Hauptsatz der Differential- und Integralrechnung</a>, dass \(F_2\) eine <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> ist.
 Nach der <a href="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante.html#ID-1d16e6eb-e7cc-489a-bdfd-19c843b6b058">Eindeutigkeit der Stammfunktion bis auf eine Konstante</a> gilt zudem:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_2156418588dfb6fa91122fa0d20bfd4df462afdf.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_2156418588dfb6fa91122fa0d20bfd4df462afdf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F_2(x) = F(x) + c
+\end{align*}
 <p>
-Zudem gilt wegen <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_835d153a7ab6dcaff81de5ec747c1312f254a163.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_835d153a7ab6dcaff81de5ec747c1312f254a163.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_47931f74756a7ba4247ac07d7edbb151419b8e68.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_47931f74756a7ba4247ac07d7edbb151419b8e68.svg" class="org-svg" /> 
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_f91c3bbb21ec21d0b067c50ca274279318a2b357.svg" alt="20230208220620-zweiter_hauptsatz_der_differential_und_integralrechnung_ana_f91c3bbb21ec21d0b067c50ca274279318a2b357.svg" class="org-svg" /> 
+Zudem gilt wegen \(F_2(a) = 0\) auch \(c = - F(a)\) 
+Daraus folgt \(F_2(b) = \int_{a}^{b} f(x) \mathrm{d}x = F(x) - F(a)\) 
 </p>
 </div>
 </div>

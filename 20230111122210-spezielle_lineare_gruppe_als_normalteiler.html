@@ -9,48 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Spezielle lineare Gruppe als Normalteiler</h1>
-<div id="outline-container-orgafdfa7d" class="outline-2">
-<h2 id="orgafdfa7d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7a2fd53" class="outline-2">
+<h2 id="org7a2fd53"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_ef564d550b2e19ffb9a1387df98474a1f4f8d250.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_ef564d550b2e19ffb9a1387df98474a1f4f8d250.svg" class="org-svg" /> die <a href="20230111121938-spezielle_lineare_gruppe.html#ID-47dc2fca-a551-4f15-84c1-47638b39a931">Spezielle lineare Gruppe</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_ef564d550b2e19ffb9a1387df98474a1f4f8d250.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_ef564d550b2e19ffb9a1387df98474a1f4f8d250.svg" class="org-svg" /> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> von der <a href="20221125172149-general_linear_group.html#ID-4ccb8f16-ca9c-4ec3-ba63-d1950d5bec89">General Linear Group</a>
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(\mathrm{SL}_n(K)\) die <a href="20230111121938-spezielle_lineare_gruppe.html#ID-47dc2fca-a551-4f15-84c1-47638b39a931">Spezielle lineare Gruppe</a>.
+Dann ist \(\mathrm{SL}_n(K)\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> von der <a href="20221125172149-general_linear_group.html#ID-4ccb8f16-ca9c-4ec3-ba63-d1950d5bec89">General Linear Group</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_4c3ee161166d57113e3b278f59e2cca0ec55f1ea.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_4c3ee161166d57113e3b278f59e2cca0ec55f1ea.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{SL}_n(K) \trianglelefteq \mathrm{GL}_n(K)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2f6e7a7" class="outline-2">
-<h2 id="org2f6e7a7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org513fa3d" class="outline-2">
+<h2 id="org513fa3d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Wegen der <a href="20230111122313-determinante_einer_inversen_matrix.html#ID-4066b73d-3c9a-4a21-9edd-56bb27a54b52">Determinante einer inversen Matrix</a> und der <a href="20221224180209-multiplikativitat_der_determinante.html#ID-3755c9f1-a210-4ed2-981d-efabc6596635">Multiplikativität der Determinante</a> gilt:
-Sei <img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_442608ec61932aaa71c842bf41d4dd21c22019ce.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_442608ec61932aaa71c842bf41d4dd21c22019ce.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_b5dad1b01e78346662751180abdb0bd49e764390.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_b5dad1b01e78346662751180abdb0bd49e764390.svg" class="org-svg" />
+Sei \(A \in \mathrm{GL}_n(K)\) und \(S \in \mathrm{SL}_n(K)\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_6c4ecf6b378426ee65a7b042ea60ee76cb731f18.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_6c4ecf6b378426ee65a7b042ea60ee76cb731f18.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{det}(A^{-1} \cdot S \cdot A) =& \mathrm{det}(A^{-1}) \cdot \mathrm{det}(S) \cdot \mathrm{det}(A) \\
+=& \mathrm{det}(A)^{-1} \cdot \mathrm{det}(A) \\
+=& 1
+\end{align*}
 <p>
 und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111122210-spezielle_lineare_gruppe_als_normalteiler_8a8eed4d3b5e3443045da4617bf04f0062ca29dd.svg" alt="20230111122210-spezielle_lineare_gruppe_als_normalteiler_8a8eed4d3b5e3443045da4617bf04f0062ca29dd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(A^{-1} \cdot S \cdot A) \in \mathrm{SL}_{n}(K)
+\end{align*}
 </div>
 </div>
 </div>

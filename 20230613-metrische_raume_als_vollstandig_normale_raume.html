@@ -9,25 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">metrische Räume als vollständig normale Räume</h1>
-<div id="outline-container-org13315a6" class="outline-2">
-<h2 id="org13315a6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org31be00d" class="outline-2">
+<h2 id="org31be00d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-metrische_raume_als_vollstandig_normale_raume_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230613-metrische_raume_als_vollstandig_normale_raume_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230613-metrische_raume_als_vollstandig_normale_raume_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230613-metrische_raume_als_vollstandig_normale_raume_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20230227205538-vollstandig_normaler_raum_topologie.html#ID-481f3549-db51-4ece-ad88-73dd7a36981f">vollständig normaler Raum</a> 
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Dann ist \((M,d)\) ein <a href="20230227205538-vollstandig_normaler_raum_topologie.html#ID-481f3549-db51-4ece-ad88-73dd7a36981f">vollständig normaler Raum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcdccfe4" class="outline-2">
-<h2 id="orgcdccfe4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbc78fd8" class="outline-2">
+<h2 id="orgbc78fd8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-metrische_raume_als_vollstandig_normale_raume_513f6e720deb135f40ed2c862d968500ed25b1bd.svg" alt="20230613-metrische_raume_als_vollstandig_normale_raume_513f6e720deb135f40ed2c862d968500ed25b1bd.svg" class="org-svg" /> ein <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraum</a>, so ist <img src="file:///home/anton/html/ltximg/20230613-metrische_raume_als_vollstandig_normale_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230613-metrische_raume_als_vollstandig_normale_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> insbesondere ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Somit folgt aus der Aussage über <a href="20230604-metrischer_raum_als_normaler_raum.html#ID-d0111714-96e2-48df-8897-e056b6de0130">metrische Räume als normale Räume</a>, dass <img src="file:///home/anton/html/ltximg/20230613-metrische_raume_als_vollstandig_normale_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230613-metrische_raume_als_vollstandig_normale_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normal</a> ist und 
+Sei \((U,d_{\vert U})\) ein <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraum</a>, so ist \(U\) insbesondere ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Somit folgt aus der Aussage über <a href="20230604-metrischer_raum_als_normaler_raum.html#ID-d0111714-96e2-48df-8897-e056b6de0130">metrische Räume als normale Räume</a>, dass \(U\) <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normal</a> ist und 
 </p>
 </div>
 </div>

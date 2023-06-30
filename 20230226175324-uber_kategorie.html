@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Über-A-Kategorie</h1>
-<div id="outline-container-orgaa268fa" class="outline-2">
-<h2 id="orgaa268fa"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org9509333" class="outline-2">
+<h2 id="org9509333"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230226175324-uber_kategorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_c311426c52cde04e26dc8c51711a3fb62b5ec522.svg" alt="20230226175324-uber_kategorie_c311426c52cde04e26dc8c51711a3fb62b5ec522.svg" class="org-svg" />.
-Dann ist die Über-A-Kategorie <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_1ef9a95363f422fc1e5c0682946c79e3f97cdef5.svg" alt="20230226175324-uber_kategorie_1ef9a95363f422fc1e5c0682946c79e3f97cdef5.svg" class="org-svg" /> definiert durch:
+Sei \(\mathcal{C}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und \(A \in \mathrm{Ob}(\mathcal{C}\).
+Dann ist die Über-A-Kategorie \(\mathcal{C} / A\) definiert durch:
 </p>
 <ul class="org-ul">
-<li>die <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_86173ccece5b947fab1ba93fbd51e44e301dec9a.svg" alt="20230226175324-uber_kategorie_86173ccece5b947fab1ba93fbd51e44e301dec9a.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_cc675f2d8911f8333e0e5e72cce48dce37e9b361.svg" alt="20230226175324-uber_kategorie_cc675f2d8911f8333e0e5e72cce48dce37e9b361.svg" class="org-svg" /> als <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekte</a></li>
-<li>für <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20230226175324-uber_kategorie_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_2a0097e5891a0f65f702a8557252116f350f2145.svg" alt="20230226175324-uber_kategorie_2a0097e5891a0f65f702a8557252116f350f2145.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_1700271f3c27156533f0b324e93dd5526f2d3283.svg" alt="20230226175324-uber_kategorie_1700271f3c27156533f0b324e93dd5526f2d3283.svg" class="org-svg" /> ist ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_76d2d2fa7091865d72999735791c1201e543ec20.svg" alt="20230226175324-uber_kategorie_76d2d2fa7091865d72999735791c1201e543ec20.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230226175324-uber_kategorie_a68604ec3cc3edd64616377d09da5c76fce3aa42.svg" alt="20230226175324-uber_kategorie_a68604ec3cc3edd64616377d09da5c76fce3aa42.svg" class="org-svg" /></li>
+<li>die <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> \(f \in \mathrm{Hom}_{\mathcal{C}}(B,A)\) für \(b \in \mathrm{Ob}(\mathcal{C})\) als <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekte</a></li>
+<li>für \(f: A \rightarrow B\) und \(f: A \rightarrow B'\) mit \(f,f' \in \mathrm{Ob}(\mathcal{C} / A)\) ist ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(g: B \rightarrow B'\) mit \(f' = g \circ f'\)</li>
 <li>der <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">Identitätsmorphismus</a> als</li>
 </ul>
 </div>

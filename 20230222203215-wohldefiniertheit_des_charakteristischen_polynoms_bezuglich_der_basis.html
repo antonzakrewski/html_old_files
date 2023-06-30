@@ -9,50 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wohldefiniertheit des charakteristischen Polynoms bezüglich der Basis</h1>
-<div id="outline-container-org82dd52e" class="outline-2">
-<h2 id="org82dd52e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9634c5f" class="outline-2">
+<h2 id="org9634c5f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a> ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a> bezüglich der Wahl der <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org576af76" class="outline-2">
-<h2 id="org576af76"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbdba3f8" class="outline-2">
+<h2 id="orgbdba3f8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_72a3f3bef95a33ab14c45daf6f816e96fdaaa2b0.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_72a3f3bef95a33ab14c45daf6f816e96fdaaa2b0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_243405c13aca2635c343dcf78e732f3d98b16968.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_243405c13aca2635c343dcf78e732f3d98b16968.svg" class="org-svg" /> für gegebenfalls verschiedene <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basen</a>  <img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_f1f1e5934f38781132ab2ff7f4ac9d522d11149c.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_f1f1e5934f38781132ab2ff7f4ac9d522d11149c.svg" class="org-svg" />
-Dann existiert eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> für den <a href="20221210160045-satz_uber_den_basiswechsel.html#ID-b624872f-ba84-4d92-bfdb-930136bbb24a">Basiswechsel</a> <img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_e2bc104960f8eedbb1689168fb30429fea7ab3ec.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_e2bc104960f8eedbb1689168fb30429fea7ab3ec.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_204e33d1f8e83928a08a8929481890aaed56b663.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_204e33d1f8e83928a08a8929481890aaed56b663.svg" class="org-svg" />  
+Sei \(f \in \mathrm{End}_K(V)\) und \(A_{f, B,B}, A'{f,B',B'} \in K^{n \times n}\) für gegebenfalls verschiedene <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basen</a>  \(B,B'\)
+Dann existiert eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> für den <a href="20221210160045-satz_uber_den_basiswechsel.html#ID-b624872f-ba84-4d92-bfdb-930136bbb24a">Basiswechsel</a> \(C_{\mathrm{id}_{}, B,B'}\) bzw. \(C_{\mathrm{id}_{}, B', B} = C_{\mathrm{id}_{}, B,B'}^{-1}\)  
 Es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_b9dba12e3f3b92d2cf46a927efda15f924acf3d0.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_b9dba12e3f3b92d2cf46a927efda15f924acf3d0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A_{f,B,B} =& C_{\mathrm{id}_{}, B',B} A_{f, B',B'} C_{\mathrm{id}_{}, B,B'}
+\end{align*}
 <p>
 und wegen der <a href="20221128194935-distributivitat_des_matrixprodukts.html#ID-4bbfac39-ca02-4d2b-b25d-595a0e7eda62">Distributivität des Matrixprodukts</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_cc533f592af0f4756614e6826ac8fd86ee02ece6.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_cc533f592af0f4756614e6826ac8fd86ee02ece6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+C_{\mathrm{id}_{}, B',B} (xE - A_{f, B',B'}) C_{\mathrm{id}_{}, B,B'} =& C_{\mathrm{id}_{}, B',B} x \cdot E C_{\mathrm{id}_{}, B,B'} - C_{\mathrm{id}_{}, B',B} A_{f, B',B'}) C_{\mathrm{id}_{}, B,B'} \\
+=&  x \cdot C_{\mathrm{id}_{}, B',B}  \cdot E C_{\mathrm{id}_{}, B,B'} - A_{f,B,B}  \\
+=&  x \cdot C_{\mathrm{id}_{}, B',B} \cdot C_{\mathrm{id}_{}, B,B'} - A_{f,B,B}  \\
+=& xE - A_{f,B,B} 
+\end{align*}
 <p>
 Daraus folgt aus dem <a href="20221224180209-multiplikativitat_der_determinante.html#ID-3755c9f1-a210-4ed2-981d-efabc6596635">Determinantenproduktsatz</a>: 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_487395a99ee227309e705129c375a266f83ade9e.svg" alt="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis_487395a99ee227309e705129c375a266f83ade9e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(C_{\mathrm{id}_{}, B',B} (xE - A_{f, B',B'}) C_{\mathrm{id}_{}, B,B'} ) =& \det(C_{\mathrm{id}_{}, B',B} \det(xE - A_{f, B',B'}) \det(C_{\mathrm{id}_{}, B,B'} ) \\
+=& \det(C_{\mathrm{id}_{}, B',B}  \det(C_{\mathrm{id}_{}, B',B}^{-1}) \det(xE - A_{f, B',B'}) \\
+=& \det(C_{\mathrm{id}_{}, B',B}  \det(C_{\mathrm{id}_{}, B',B})^{-1} \det(xE - A_{f, B',B'}) \\
+=& 1 \cdot \det(xE - A_{f, B',B'}) \\
+=& \det(xE - A_{f, B',B'})
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,32 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ringhomomorphismus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ringhomomorphismus</h1>
-<div id="outline-container-orgcd17fd3" class="outline-2">
-<h2 id="orgcd17fd3"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgaf119f4" class="outline-2">
+<h2 id="orgaf119f4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221226010233-ringhomomorphismus_565416dd8d5e7d84ba5d98fdee4aeab76b02238f.svg" alt="20221226010233-ringhomomorphismus_565416dd8d5e7d84ba5d98fdee4aeab76b02238f.svg" class="org-svg" /> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ringe</a>.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="ltximg/20221226010233-ringhomomorphismus_bac2fc57f4aada38f7b5e64a86ecd57adaaea5b9.svg" alt="20221226010233-ringhomomorphismus_bac2fc57f4aada38f7b5e64a86ecd57adaaea5b9.svg" class="org-svg" /> ist ein Ringhomomorphismus, falls für <img src="ltximg/20221226010233-ringhomomorphismus_bf8909c0c02a46fdd92b36d8cf5ea315d6e4e733.svg" alt="20221226010233-ringhomomorphismus_bf8909c0c02a46fdd92b36d8cf5ea315d6e4e733.svg" class="org-svg" /> gilt
+Seien \(R,S\) <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ringe</a>.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: R \rightarrow S\) ist ein Ringhomomorphismus, falls für \(r,r'\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221226010233-ringhomomorphismus_cea0a77d96a02a5c68d54521bf35a367685f7eaa.svg" alt="20221226010233-ringhomomorphismus_cea0a77d96a02a5c68d54521bf35a367685f7eaa.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(r + r') =& f(r) + f(r') \\
+f(r \cdot r') =& f(r) \cdot f(r')
+\end{align*}
 </div>
 </div>
 </div>

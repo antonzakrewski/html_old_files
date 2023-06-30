@@ -9,32 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Definition by induction</h1>
 
-<div id="outline-container-org2c7b5ff" class="outline-2">
-<h2 id="org2c7b5ff"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4fb74e4" class="outline-2">
+<h2 id="org4fb74e4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>durch angabe von:
 <ul class="org-ul">
 <li>induktionsanfang</li>
 <li>induktionsschritt
-<img src="file:///home/anton/html/ltximg/20220104174716-definition_durch_vollstandige_induktion_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20220104174716-definition_durch_vollstandige_induktion_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> vollständige Definition: analog zum <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></li>
+\(\Rightarrow\) vollständige Definition: analog zum <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf0059a8" class="outline-2">
-<h2 id="orgf0059a8"><span class="section-number-2">2.</span> Beispiel:</h2>
+<div id="outline-container-org5ce26e7" class="outline-2">
+<h2 id="org5ce26e7"><span class="section-number-2">2.</span> Beispiel:</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>nach <a href="20220104175248-peano_axiome.html#ID-808d1ce2-9ae4-4b37-9078-cbef644bfa25">Peano Axiome</a>:
 <ul class="org-ul">
 <li>0 als induktionsanfang</li>
-<li><img src="file:///home/anton/html/ltximg/20220104174716-definition_durch_vollstandige_induktion_56680f6adc5fc5b569e4805b70f2875b903c3e75.svg" alt="20220104174716-definition_durch_vollstandige_induktion_56680f6adc5fc5b569e4805b70f2875b903c3e75.svg" class="org-svg" /></li>
+<li>\(\forall x(x \in \mathbb{N} \Rightarrow x + 1 \in \mathbb{N}\)</li>
 </ul></li>
 </ul>
 <p>

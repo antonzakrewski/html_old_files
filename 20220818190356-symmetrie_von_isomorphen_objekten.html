@@ -9,63 +9,84 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Symmetrie von Isomorphen Objekten</h1>
-<div id="outline-container-org8037540" class="outline-2">
-<h2 id="org8037540"><span class="section-number-2">1.</span> Discaimer</h2>
+<div id="outline-container-org93ee156" class="outline-2">
+<h2 id="org93ee156"><span class="section-number-2">1.</span> Discaimer</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Richtige Bezeichnung ? 
 </p>
 </div>
 </div>
-<div id="outline-container-org68b248d" class="outline-2">
-<h2 id="org68b248d"><span class="section-number-2">2.</span> Satz</h2>
+<div id="outline-container-org56500f0" class="outline-2">
+<h2 id="org56500f0"><span class="section-number-2">2.</span> Satz</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_2cadb33e080454aa92c8bec658674bf2454b7827.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_2cadb33e080454aa92c8bec658674bf2454b7827.svg" class="org-svg" /> ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>  mit 
+Sei \(f_{AB}: A \rightarrow B\) ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>  mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_a899d9e5b2dc8e4dd89d8560996aea46d5059fc2.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_a899d9e5b2dc8e4dd89d8560996aea46d5059fc2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{AB} \circ f_{BA} = id_B
+\end{align*}
 <p>
-Dann ist <img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_a3cce35cfb79c9d73a30cf89fa6c07e9bb19954a.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_a3cce35cfb79c9d73a30cf89fa6c07e9bb19954a.svg" class="org-svg" /> ebenfalls ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
+Dann ist \(f_{BA}: B \rightarrow A\) ebenfalls ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_360bf58e48a2552d43536d98df18fde8ffee4a08.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_360bf58e48a2552d43536d98df18fde8ffee4a08.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{BA} \circ f_{AB} = id_A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgec5a2b9" class="outline-2">
-<h2 id="orgec5a2b9"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-orge081960" class="outline-2">
+<h2 id="orge081960"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Nach der Definition des <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">Identitätsmorphismus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_c3b0eec450c18901cb4e0673cbffe401e2f64295.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_c3b0eec450c18901cb4e0673cbffe401e2f64295.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{BA} =& \\
+=& id_A \circ f_{BA} \\
+=& f_{BA} \circ id_{B} 
+\end{align*}
 
 <p>
 Aufgrund der <a href="20220817221258-assoziativitat_von_morphismen.html#ID-6e4a49da-dad1-4aaa-b86c-6ac18cc77d84">Assoziativität von Kompositionen</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220818190356-symmetrie_von_isomorphen_objekten_5654429d10ccd400fe8442a810433172c8e46332.svg" alt="20220818190356-symmetrie_von_isomorphen_objekten_5654429d10ccd400fe8442a810433172c8e46332.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{BA} =& \\
+=& id_A \circ f_{BA} \\
+=& \left(f_{BA} \circ f_{AB}\right) \circ f_{BA} \\
+=& f_{BA} \circ f_{AB} \circ f_{BA} \\
+=& f_{BA} \circ \left(f_{AB} \circ f_{BA} \right) \\
+=& f_{BA} \\
+\Rightarrow \left(f_{AB} \circ f_{BA}\right) =& id_{B}
+\end{align*}
 </div>
 </div>
 </div>

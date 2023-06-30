@@ -3,25 +3,31 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>merkl ana2: Differentialrechnung mehrerer Variablen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">merkl ana2: Differentialrechnung mehrerer Variablen</h1>
-<div id="outline-container-orgf041032" class="outline-2">
-<h2 id="orgf041032"><span class="section-number-2">1.</span> Aspekte</h2>
+<div id="outline-container-org960a038" class="outline-2">
+<h2 id="org960a038"><span class="section-number-2">1.</span> Aspekte</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org680332e" class="outline-3">
-<h3 id="org680332e"><span class="section-number-3">1.1.</span> <a href="20230228185101-visualisierung_von_reellwertigen_funktionen.html#ID-aee92d4b-3e6e-46b0-b178-0221a0e6376c">Visualisierung von reellwertigen Funktionen</a></h3>
+<div id="outline-container-org919ef6b" class="outline-3">
+<h3 id="org919ef6b"><span class="section-number-3">1.1.</span> <a href="20230228185101-visualisierung_von_reellwertigen_funktionen.html#ID-aee92d4b-3e6e-46b0-b178-0221a0e6376c">Visualisierung von reellwertigen Funktionen</a></h3>
 </div>
-<div id="outline-container-org826bb4f" class="outline-3">
-<h3 id="org826bb4f"><span class="section-number-3">1.2.</span> Partielle Ableitung TODO</h3>
+<div id="outline-container-org20ab4c7" class="outline-3">
+<h3 id="org20ab4c7"><span class="section-number-3">1.2.</span> Partielle Ableitung TODO</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li><a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a></li>
@@ -35,8 +41,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org40fd2d8" class="outline-3">
-<h3 id="org40fd2d8"><span class="section-number-3">1.3.</span> Differenzierbarkeit und Ableitung</h3>
+<div id="outline-container-org4e5e756" class="outline-3">
+<h3 id="org4e5e756"><span class="section-number-3">1.3.</span> Differenzierbarkeit und Ableitung</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="20230228185630-differenzierbarkeit_in_normierten_raumen.html#ID-641e1a60-353c-440e-b5a5-74e15f9d1def">differenzierbarkeit in normierten Räumen</a></li>
@@ -49,16 +55,16 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orge725b22" class="outline-3">
-<h3 id="orge725b22"><span class="section-number-3">1.4.</span> Veranschaulichung der Ableitung mit Tangentialräumen</h3>
+<div id="outline-container-orgcb9212d" class="outline-3">
+<h3 id="orgcb9212d"><span class="section-number-3">1.4.</span> Veranschaulichung der Ableitung mit Tangentialräumen</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li><a href="20230301044425-tangentialraum.html#ID-230922aa-69cc-4795-a3aa-f23d1b7d1a3e">Tangentialraum</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org67dd0d1" class="outline-3">
-<h3 id="org67dd0d1"><span class="section-number-3">1.5.</span> Kettenregel</h3>
+<div id="outline-container-org5c7e733" class="outline-3">
+<h3 id="org5c7e733"><span class="section-number-3">1.5.</span> Kettenregel</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li><a href="20230301044656-allgemeine_kettenregel.html#ID-f3221b38-dd9e-4905-9c29-25b9e4b3713b">allgemeine Kettenregel</a></li>
@@ -66,26 +72,26 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org66dee7d" class="outline-3">
-<h3 id="org66dee7d"><span class="section-number-3">1.6.</span> multidimensionale Taylorformel</h3>
+<div id="outline-container-orgf490835" class="outline-3">
+<h3 id="orgf490835"><span class="section-number-3">1.6.</span> multidimensionale Taylorformel</h3>
 </div>
-<div id="outline-container-org83fe002" class="outline-3">
-<h3 id="org83fe002"><span class="section-number-3">1.7.</span> Stationäre Punkte und lokale Extrema</h3>
+<div id="outline-container-orgae5e7c0" class="outline-3">
+<h3 id="orgae5e7c0"><span class="section-number-3">1.7.</span> Stationäre Punkte und lokale Extrema</h3>
 </div>
-<div id="outline-container-org045a101" class="outline-3">
-<h3 id="org045a101"><span class="section-number-3">1.8.</span> Die Räume</h3>
+<div id="outline-container-org5dedaae" class="outline-3">
+<h3 id="org5dedaae"><span class="section-number-3">1.8.</span> Die Räume</h3>
 </div>
-<div id="outline-container-org6fbe7d9" class="outline-3">
-<h3 id="org6fbe7d9"><span class="section-number-3">1.9.</span> Der lokale Umkehrsatz</h3>
+<div id="outline-container-orgba6487d" class="outline-3">
+<h3 id="orgba6487d"><span class="section-number-3">1.9.</span> Der lokale Umkehrsatz</h3>
 </div>
-<div id="outline-container-orge3da08a" class="outline-3">
-<h3 id="orge3da08a"><span class="section-number-3">1.10.</span> Umplizit definierte Funktionen</h3>
+<div id="outline-container-org974cc39" class="outline-3">
+<h3 id="org974cc39"><span class="section-number-3">1.10.</span> Umplizit definierte Funktionen</h3>
 </div>
-<div id="outline-container-orgbc26d29" class="outline-3">
-<h3 id="orgbc26d29"><span class="section-number-3">1.11.</span> Untermannigfaltigkeiten</h3>
+<div id="outline-container-orge78acf6" class="outline-3">
+<h3 id="orge78acf6"><span class="section-number-3">1.11.</span> Untermannigfaltigkeiten</h3>
 </div>
-<div id="outline-container-orgefcfb43" class="outline-3">
-<h3 id="orgefcfb43"><span class="section-number-3">1.12.</span> Stationäre Punkte unter Nebenbedingungen</h3>
+<div id="outline-container-orge9682d3" class="outline-3">
+<h3 id="orge9682d3"><span class="section-number-3">1.12.</span> Stationäre Punkte unter Nebenbedingungen</h3>
 <div class="outline-text-3" id="text-1-12">
 <ul class="org-ul">
 <li><a href="20230120064714-lokales_minimum.html#ID-81c00b42-b645-4421-b6e4-38cf11933365">lokales Minimum</a></li>
@@ -95,8 +101,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org466959d" class="outline-3">
-<h3 id="org466959d"><span class="section-number-3">1.13.</span> 1-Formen und Kurvenintegrale</h3>
+<div id="outline-container-orgcb74f90" class="outline-3">
+<h3 id="orgcb74f90"><span class="section-number-3">1.13.</span> 1-Formen und Kurvenintegrale</h3>
 <div class="outline-text-3" id="text-1-13">
 <ul class="org-ul">
 <li><a href="20230301045631-1_form.html#ID-2ecb6a9e-3db6-458d-9236-0496fd789bfb">1-Form</a></li>
@@ -108,8 +114,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org7677bf7" class="outline-3">
-<h3 id="org7677bf7"><span class="section-number-3">1.14.</span> Das Lemma von Poincare und die erse de-Rham Kohomologie</h3>
+<div id="outline-container-orgcbbc6db" class="outline-3">
+<h3 id="orgcbbc6db"><span class="section-number-3">1.14.</span> Das Lemma von Poincare und die erse de-Rham Kohomologie</h3>
 </div>
 </div>
 </div>

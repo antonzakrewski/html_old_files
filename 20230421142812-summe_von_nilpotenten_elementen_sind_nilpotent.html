@@ -3,43 +3,64 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Summe von nilpotenten Elementen sind nilpotent</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summe von nilpotenten Elementen sind nilpotent</h1>
-<div id="outline-container-org368e355" class="outline-2">
-<h2 id="org368e355"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf448d48" class="outline-2">
+<h2 id="orgf448d48"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_82c97d9fac6d1ccc9fb8991587716b6a74a94df9.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_82c97d9fac6d1ccc9fb8991587716b6a74a94df9.svg" class="org-svg" /> <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotente</a> Elemente.
-Dann ist <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_eb88dba789c951500a639aa09600a516bf220aa9.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_eb88dba789c951500a639aa09600a516bf220aa9.svg" class="org-svg" /> ebenfalls ein nilpotentes Element
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(a,b \in R\) <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotente</a> Elemente.
+Dann ist \(a + b \in R\) ebenfalls ein nilpotentes Element
 </p>
 </div>
 </div>
-<div id="outline-container-org768d445" class="outline-2">
-<h2 id="org768d445"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf5abcd3" class="outline-2">
+<h2 id="orgf5abcd3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existieren <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_cf695d9781b44f8c6ac1084c392076b0c1ade58c.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_cf695d9781b44f8c6ac1084c392076b0c1ade58c.svg" class="org-svg" /> mit <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_d4bf142a16357b48605dd1072917793b01b89e3d.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_d4bf142a16357b48605dd1072917793b01b89e3d.svg" class="org-svg" />
+Nach Annahme existieren \(n,m \in \mathbb{N}\) mit \(a^n = b^n = 0\)
 aus dem <a href="20220104220747-binomischer_lehrsatz.html#ID-93572b6e-6e51-486b-bf69-476329e57614">Binomischer Lehrsatz</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_bc5ad73f1e34c941e322d29a38cd051f50c6513b.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_bc5ad73f1e34c941e322d29a38cd051f50c6513b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(a + b)^{n+m} = \sum_{i=0}^{n + m} \binom{n+m}{i} a^{n + m - i} \cdot b^{i}
+\end{align*}
 <p>
-wobei jeder einzelne Summand gleich 0 ist: <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_deb5d993eac94293e0b2795021c5e4d72199732d.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_deb5d993eac94293e0b2795021c5e4d72199732d.svg" class="org-svg" />, so folgt <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_d8ad17c0d2abc9551e7c7c370a78d13b2a46b535.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_d8ad17c0d2abc9551e7c7c370a78d13b2a46b535.svg" class="org-svg" /> und damit <img src="ltximg/20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_1454dde55d629e89f38b238ae973449847f9a634.svg" alt="20230421142812-summe_von_nilpotenten_elementen_sind_nilpotent_1454dde55d629e89f38b238ae973449847f9a634.svg" class="org-svg" />
+wobei jeder einzelne Summand gleich 0 ist: <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(n + m - i < n\), so folgt \(i > m\) und damit \(b^{i} = 0\)
 </p>
 </div>
 </div>

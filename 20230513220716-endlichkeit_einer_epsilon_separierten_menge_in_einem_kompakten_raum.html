@@ -9,27 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Endlichkeit einer epsilon-separierten Menge in einem kompakten Raum</h1>
-<div id="outline-container-org2395250" class="outline-2">
-<h2 id="org2395250"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgde097ad" class="outline-2">
+<h2 id="orgde097ad"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakte</a>, <a href="20230513220424-epsilon_separierte_menge.html#ID-7249f4be-213f-4e5e-8ed2-d86fdbf2f210">epsilon-separierte Menge</a>, so ist <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_e7470636938b5903f6883556390a92f2923d9c07.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_e7470636938b5903f6883556390a92f2923d9c07.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Sei \(X\) eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakte</a>, <a href="20230513220424-epsilon_separierte_menge.html#ID-7249f4be-213f-4e5e-8ed2-d86fdbf2f210">epsilon-separierte Menge</a>, so ist \(\vert X \vert\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org40add6a" class="outline-2">
-<h2 id="org40add6a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcc8222b" class="outline-2">
+<h2 id="orgcc8222b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien für <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> die jeweiligen <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_1915f2e673cc607c8a61b36692d8354ddb51432b.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_1915f2e673cc607c8a61b36692d8354ddb51432b.svg" class="org-svg" /><a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">-Umgebungen</a> gegeben.
-Dabei gilt für verschiedene <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d89fbb8e4af98c21a1f1cdf4133b1d34128126db.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d89fbb8e4af98c21a1f1cdf4133b1d34128126db.svg" class="org-svg" /> nach Annahme: <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_1a9cf5276ae4f5195b65c862d3b37a1689b1180e.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_1a9cf5276ae4f5195b65c862d3b37a1689b1180e.svg" class="org-svg" />.
-Nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> und es gilt, dass pro <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> genau ein <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> vorhanden ist.
-Damit ist <img src="file:///home/anton/html/ltximg/20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_e7470636938b5903f6883556390a92f2923d9c07.svg" alt="20230513220716-endlichkeit_einer_epsilon_separierten_menge_in_einem_kompakten_raum_e7470636938b5903f6883556390a92f2923d9c07.svg" class="org-svg" /> endlich.
+Seien für \(x \in X\) die jeweiligen \(\frac{\varepsilon}{2}\)<a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">-Umgebungen</a> gegeben.
+Dabei gilt für verschiedene \(x,x' \in X\) nach Annahme: \(U_x \cap U_{x'} \cap X = \emptyset\).
+Nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> und es gilt, dass pro <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> genau ein \(x \in X\) vorhanden ist.
+Damit ist \(\vert X \vert\) endlich.
 </p>
 </div>
 </div>

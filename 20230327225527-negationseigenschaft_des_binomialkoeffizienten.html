@@ -3,61 +3,80 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Negationseigenschaft des Binomialkoeffizienten</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Negationseigenschaft des Binomialkoeffizienten</h1>
-<div id="outline-container-org9825d63" class="outline-2">
-<h2 id="org9825d63"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org670f02f" class="outline-2">
+<h2 id="org670f02f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_3517b2929844586aa3810d7490d4b5b0b3f29628.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_3517b2929844586aa3810d7490d4b5b0b3f29628.svg" class="org-svg" /> und k &isin; <img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_8f7c9caa8b5cc708cb87e63c66488adcfc74873b.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_8f7c9caa8b5cc708cb87e63c66488adcfc74873b.svg" class="org-svg" /> gilt:
+Für \(r \in \mathbb{R}\) und k &isin; \(\mathbb{Z}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_81b5ee1a8e063497737f5c6dcacdb54b915a94e4.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_81b5ee1a8e063497737f5c6dcacdb54b915a94e4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\binom{r}{k} &= (-1)^k \binom{k-r-1}{k}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org56e7e41" class="outline-2">
-<h2 id="org56e7e41"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org198d875" class="outline-2">
+<h2 id="org198d875"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für <img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_fdf4208ee88bfc99a88c85cececa23b543c4a90a.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_fdf4208ee88bfc99a88c85cececa23b543c4a90a.svg" class="org-svg" /> sind beide Seiten nach Definition <img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" class="org-svg" />
+Für \(k < 0\) sind beide Seiten nach Definition \(0\)
 </p>
 </div>
-<div id="outline-container-org8a25889" class="outline-3">
-<h3 id="org8a25889"><span class="section-number-3">2.1.</span> natürliche Zahlen</h3>
+<div id="outline-container-org6d5084e" class="outline-3">
+<h3 id="org6d5084e"><span class="section-number-3">2.1.</span> natürliche Zahlen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-für <img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_d6a4afd2460d5caa961985da4645f7737a0667b9.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_d6a4afd2460d5caa961985da4645f7737a0667b9.svg" class="org-svg" /> sind beide Seiten gleich.
+für \(k > r\) sind beide Seiten gleich.
 Sonst gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327225527-negationseigenschaft_des_binomialkoeffizienten_e736191cc588883b3dd8c944771cb41bd8164ac5.svg" alt="20230327225527-negationseigenschaft_des_binomialkoeffizienten_e736191cc588883b3dd8c944771cb41bd8164ac5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\binom{r}{k} =& \frac{r^{\underline{k}}}{k!} \\
+=& \frac{r \cdot (r-1) \cdot ... \cdot (r-k+1)}{k!} \\
+=& (-1)^k \cdot \frac{(k-r-1) \cdot ... \cdot r}{k!}
+=& (-1)^k \frac{(k - r-1)^{\underline{k}}}{k!} \\
+=& (-1)^k \binom{k-r-1}{k}
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-org4e382af" class="outline-3">
-<h3 id="org4e382af"><span class="section-number-3">2.2.</span> reelle Zahlen</h3>
+<div id="outline-container-orgf00cc0f" class="outline-3">
+<h3 id="orgf00cc0f"><span class="section-number-3">2.2.</span> reelle Zahlen</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus der <a href="20221223182341-beweisstruktur_kombinatorik_binomialkoeffizient_als_polynom.html#ID-d55f5b8e-26c3-44e1-b4a9-67e9b26a3a3f">Beweisstruktur: Kombinatorik - Binomialkoeffizient als Polynom</a>

@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">m-fache Ableitung einer m-fachen Nullstelle</h1>
-<div id="outline-container-org373f451" class="outline-2">
-<h2 id="org373f451"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf1e653b" class="outline-2">
+<h2 id="orgf1e653b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_ab1ab1b13c36840490a8c3c2297dbfc09b607768.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_ab1ab1b13c36840490a8c3c2297dbfc09b607768.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_de1516bc005936e8e551400a7cd8e3402dd65907.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_de1516bc005936e8e551400a7cd8e3402dd65907.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_00388df9d16a5d4f1b691a82cd18308b6872e831.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_00388df9d16a5d4f1b691a82cd18308b6872e831.svg" class="org-svg" />.
-Für <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_9e35b951f7ee8417c2ff45926398ab6de2f515d7.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_9e35b951f7ee8417c2ff45926398ab6de2f515d7.svg" class="org-svg" /> sei <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_7e0ac5f4fa925d1232ea9f73967b81c928b2fa6a.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_7e0ac5f4fa925d1232ea9f73967b81c928b2fa6a.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_338a3e86d3f4e904b9dcbd7ba37d6c90a236377a.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_338a3e86d3f4e904b9dcbd7ba37d6c90a236377a.svg" class="org-svg" /> 
+Sei \(f \in K[x]\) mit \(\mathrm{deg}(f) \geq 1\) und \(c \in K\).
+Für \(m \geq 1\) sei \(\mathrm{char}(K) = 0\) oder \(\mathrm{char}(K) > m\) 
 Dann sind folgenda Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_9501c066e87067cce0dbea8d9af7996be7eb80b0.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_9501c066e87067cce0dbea8d9af7996be7eb80b0.svg" class="org-svg" /> ist eine $m$-fache <a href="20220320113706-nullstelle.html#ID-b094e637-5f3c-42a2-a2c2-ae73bbbe29a2">Nullstelle</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_c74e5f3eef603bb130a59961238de4065d57b14f.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_c74e5f3eef603bb130a59961238de4065d57b14f.svg" class="org-svg" />  und <img src="file:///home/anton/html/ltximg/20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_00fffe5986074c7a33921833b0ec69f754778bf7.svg" alt="20230110204536-m_fache_ableitung_einer_m_fachen_nullstelle_00fffe5986074c7a33921833b0ec69f754778bf7.svg" class="org-svg" /></li>
+<li>\(c\) ist eine $m$-fache <a href="20220320113706-nullstelle.html#ID-b094e637-5f3c-42a2-a2c2-ae73bbbe29a2">Nullstelle</a></li>
+<li>\(f(c) = f'(c) = ... = f^{m-1}(c) = 0\)  und \(f^{m}(c) \neq 0\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgccce7c9" class="outline-2">
-<h2 id="orgccce7c9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org48c8b19" class="outline-2">
+<h2 id="org48c8b19"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -9,40 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verknüpfung von Isomorphismen als Isomorphismus</h1>
-<div id="outline-container-org86982dd" class="outline-2">
-<h2 id="org86982dd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge03f726" class="outline-2">
+<h2 id="orge03f726"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_005d876c82104e0be83e55ce0dac08bde8bd7856.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_005d876c82104e0be83e55ce0dac08bde8bd7856.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_1dac3f0c8e31ba6e1829b9a7a484d024519a8c8e.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_1dac3f0c8e31ba6e1829b9a7a484d024519a8c8e.svg" class="org-svg" /> als <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist
+Sei \(\mathcal{C}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und \(A,B,C \in \mathrm{Ob}(\mathcal{C})\) mit \(f: A \rightarrow B\) und \(g: B \rightarrow C\) als <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_9c981e23f24f35bdda569b6b0e221cea91af1c3e.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_9c981e23f24f35bdda569b6b0e221cea91af1c3e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \circ f: A \rightarrow C
+\end{align*}
 <p>
 ebenfalls <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orge7a20ed" class="outline-2">
-<h2 id="orge7a20ed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org59eae63" class="outline-2">
+<h2 id="org59eae63"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existieren <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_4a2acdb2c0118c91645288a51267d42146b313a9.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_4a2acdb2c0118c91645288a51267d42146b313a9.svg" class="org-svg" />.
-Daraus folgt für <img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_e4cc1e66e72f607904c69ba95f6bd356a429aaf1.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_e4cc1e66e72f607904c69ba95f6bd356a429aaf1.svg" class="org-svg" />:
+Nach Annahme existieren \(f^{-1}: B \rightarrow A\) und \(g^{-1}: C \rightarrow B\).
+Daraus folgt für \(f^{-1} \circ g^{-1}: C \rightarrow A\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_7a1f209b6a3385c7102c02b016f7345ef5d0a60b.svg" alt="20230302133446-verknupfung_von_isomorphismen_als_isomorphismus_7a1f209b6a3385c7102c02b016f7345ef5d0a60b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1} \circ g^{-1} \circ g \circ f =& f^{-1} \circ \mathrm{id}_{B} \circ f \\
+=& f^{-1} \circ f \\
+=& \mathrm{id}_{A} \\
+g \circ f \circ f^{-1} \circ g^{-1} =& g \circ \mathrm{id}_{B} \circ g^{-1} \\
+=& g \circ g^{-1} \\
+=& \mathrm{id}_{C} 
+\end{align*}
 </div>
 </div>
 </div>

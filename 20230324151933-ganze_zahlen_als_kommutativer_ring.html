@@ -3,94 +3,101 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ganze Zahlen als kommutativer Ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ganze Zahlen als kommutativer Ring</h1>
-<div id="outline-container-org372ed89" class="outline-2">
-<h2 id="org372ed89"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1f05ded" class="outline-2">
+<h2 id="org1f05ded"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20210702104458-ganze_zahlen.html#ID-179209f5-5cb0-426c-b035-470f9b3935a8">Ganze Zahlen</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_eac248fe0367b27a022445f1bbffd78e7907cfe2.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_eac248fe0367b27a022445f1bbffd78e7907cfe2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(a,b) + (a',b') =& (a + a',b + b') \\
+(a,b) \cdot (a',b') =& (aa' + bb', ab' + a'b)
+\end{align*}
 
 <p>
 ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org2ae1065" class="outline-2">
-<h2 id="org2ae1065"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5d60650" class="outline-2">
+<h2 id="org5d60650"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgafcca51" class="outline-3">
-<h3 id="orgafcca51"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
+<div id="outline-container-orgc0fef6d" class="outline-3">
+<h3 id="orgc0fef6d"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_0c07cacdc0246ce2bff2f5db7b8ba916a0bf4c5e.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_0c07cacdc0246ce2bff2f5db7b8ba916a0bf4c5e.svg" class="org-svg" /> und <img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_c8335a0cdd02a00ad559fbbb67191de8f178f153.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_c8335a0cdd02a00ad559fbbb67191de8f178f153.svg" class="org-svg" /> so folgt:
+Sei \((a,b) \sim (a',b')\) und \((c,d) \sim (c',d')\) so folgt:
 </p>
 </div>
-<div id="outline-container-org2df43f8" class="outline-4">
-<h4 id="org2df43f8"><span class="section-number-4">2.1.1.</span> Addition</h4>
+<div id="outline-container-orga03913b" class="outline-4">
+<h4 id="orga03913b"><span class="section-number-4">2.1.1.</span> Addition</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 Es gilt damit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_70e6d87911547f6d6f95f88b50d425463e8ad027.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_70e6d87911547f6d6f95f88b50d425463e8ad027.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+a + b' =& a' + b \\
+c + d' =& c' + d 
+\end{align*}
 <p>
 Addition der beiden Seiten ergibt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_13ece769e8c7f4f394b1ca9154dd7909370bfc24.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_13ece769e8c7f4f394b1ca9154dd7909370bfc24.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+a + b' + c + d' =& a' + b + c' + d \\
+(a + c) + (b' + d') =& (a' + c') + (b + d)
+\end{align*}
 <p>
 Es folgt aus der Addition
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_65f6a1128f2d36f172fc10cb45c9906e237e45e6.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_65f6a1128f2d36f172fc10cb45c9906e237e45e6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+(a,b) + (c,d) =& (a + c, b + d) \\
+(a',b') + (c',d') =& (a' + c', b' + d')
+\end{align*}
 <p>
-Insgesamt folgt dadurch <img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_300ebf653e42f1738424afb7587dde53d81f9e2a.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_300ebf653e42f1738424afb7587dde53d81f9e2a.svg" class="org-svg" />, was zu zeigen war
+Insgesamt folgt dadurch \((a + c, b + d) \sim (a' + c', b' + d')\), was zu zeigen war
 </p>
 </div>
 </div>
-<div id="outline-container-org9b42617" class="outline-4">
-<h4 id="org9b42617"><span class="section-number-4">2.1.2.</span> Multiplikation</h4>
+<div id="outline-container-orgd694ba1" class="outline-4">
+<h4 id="orgd694ba1"><span class="section-number-4">2.1.2.</span> Multiplikation</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 todo
@@ -98,87 +105,72 @@ todo
 </div>
 </div>
 </div>
-<div id="outline-container-orgb730878" class="outline-3">
-<h3 id="orgb730878"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich Addition</h3>
+<div id="outline-container-org7948141" class="outline-3">
+<h3 id="org7948141"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich Addition</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgeb75cf3" class="outline-4">
-<h4 id="orgeb75cf3"><span class="section-number-4">2.2.1.</span> Kommutativ</h4>
+<div id="outline-container-orgb3d4d4b" class="outline-4">
+<h4 id="orgb3d4d4b"><span class="section-number-4">2.2.1.</span> Kommutativ</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 folgt aus den <a href="20230324155712-naturliche_zahlen_als_kommutativer_halbring.html#ID-9325ce85-d826-47bb-bc08-48d95e0ad33e">Natürliche Zahlen als kommutativer Halbring</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_25b07e6f2cbe3e724e50fec945c7a4db81cdba37.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_25b07e6f2cbe3e724e50fec945c7a4db81cdba37.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
+\begin{align*}
+(a,b) + (a',b') =& (a + a', b + b') \\
+=& (a' + a, b' + b) \\
+=& (a',b') + (a,b)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdb97f0c" class="outline-4">
-<h4 id="orgdb97f0c"><span class="section-number-4">2.2.2.</span> neutrales Element</h4>
+<div id="outline-container-org5cd51b4" class="outline-4">
+<h4 id="org5cd51b4"><span class="section-number-4">2.2.2.</span> neutrales Element</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_a311d13267d145b00a1ff63b99b3a366e533e18f.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_a311d13267d145b00a1ff63b99b3a366e533e18f.svg" class="org-svg" /> ist das evidente neutrale Element:
+\((a,a)\) ist das evidente neutrale Element:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_21c40716963d47bca1c66c4a3fa318b9d7d7b18d.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_21c40716963d47bca1c66c4a3fa318b9d7d7b18d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
+\begin{align*}
+(a, a) + (a',b') =& (a + a', a + b') \\
+(a + a') + b' =& a' + (a + b') 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org34fa7c5" class="outline-4">
-<h4 id="org34fa7c5"><span class="section-number-4">2.2.3.</span> inverses element</h4>
+<div id="outline-container-org7d8a412" class="outline-4">
+<h4 id="org7d8a412"><span class="section-number-4">2.2.3.</span> inverses element</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_8510a30eedce21dec4c50fdd6c21f87f926b7650.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_8510a30eedce21dec4c50fdd6c21f87f926b7650.svg" class="org-svg" /> ist das evidente inverse Element für <img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_d12ff107738f1a741ed82478d793ce0075a61440.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_d12ff107738f1a741ed82478d793ce0075a61440.svg" class="org-svg" />
+\((b,a)\) ist das evidente inverse Element für \((a,b)\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_af7fa2a87060c889bd9061b164b37e0771d8a3b3.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_af7fa2a87060c889bd9061b164b37e0771d8a3b3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-7
-</span>
+\begin{align*}
+(b,a) + (a,b) = (b + a, a + b)
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-org8106b84" class="outline-3">
-<h3 id="org8106b84"><span class="section-number-3">2.3.</span> <a href="20210702075732-kommutative_halbgruppe.html#ID-3129b3de-8dee-454a-8bea-cbb7b6294418">Kommutative Halbgruppe</a>  bezüglich Multiplikation</h3>
+<div id="outline-container-org1147172" class="outline-3">
+<h3 id="org1147172"><span class="section-number-3">2.3.</span> <a href="20210702075732-kommutative_halbgruppe.html#ID-3129b3de-8dee-454a-8bea-cbb7b6294418">Kommutative Halbgruppe</a>  bezüglich Multiplikation</h3>
 <div class="outline-text-3" id="text-2-3">
 </div>
-<div id="outline-container-org061aa76" class="outline-4">
-<h4 id="org061aa76"><span class="section-number-4">2.3.1.</span> kommutativ</h4>
+<div id="outline-container-orgd334fb2" class="outline-4">
+<h4 id="orgd334fb2"><span class="section-number-4">2.3.1.</span> kommutativ</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
 folgt aus den <a href="20230324155712-naturliche_zahlen_als_kommutativer_halbring.html#ID-9325ce85-d826-47bb-bc08-48d95e0ad33e">Natürliche Zahlen als kommutativer Halbring</a>:
 </p>
 </div>
 </div>
-<div id="outline-container-org519d5ff" class="outline-4">
-<h4 id="org519d5ff"><span class="section-number-4">2.3.2.</span> abgeschlossenheit</h4>
+<div id="outline-container-orgd837fe4" class="outline-4">
+<h4 id="orgd837fe4"><span class="section-number-4">2.3.2.</span> abgeschlossenheit</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 folgt aus der abgeschlossenheit 
 </p>
 </div>
 </div>
-<div id="outline-container-orgf6b0498" class="outline-4">
-<h4 id="orgf6b0498"><span class="section-number-4">2.3.3.</span> neutrale element</h4>
+<div id="outline-container-org7c533f2" class="outline-4">
+<h4 id="org7c533f2"><span class="section-number-4">2.3.3.</span> neutrale element</h4>
 <div class="outline-text-4" id="text-2-3-3">
 <p>
-Das neutrale Element ist <img src="ltximg/20230324151933-ganze_zahlen_als_kommutativer_ring_0121a82396fedf6a8af3604a2f5c68591e69125d.svg" alt="20230324151933-ganze_zahlen_als_kommutativer_ring_0121a82396fedf6a8af3604a2f5c68591e69125d.svg" class="org-svg" />
+Das neutrale Element ist \((1,0)\)
 </p>
 </div>
 </div>

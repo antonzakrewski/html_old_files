@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">relative Homotopie bezüglich der leeren Menge</h1>
-<div id="outline-container-org5ef5606" class="outline-2">
-<h2 id="org5ef5606"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7d6a9f3" class="outline-2">
+<h2 id="org7d6a9f3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Zwei zueinander <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">homotope</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> sind <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-4873-b52b-07908f57dd75">relativ</a> zur <a href="20211226215449-leere_menge.html#ID-abf22513-8cde-4019-8690-8b02edd4337d">Leere Menge</a> homotop.
 </p>
 </div>
 </div>
-<div id="outline-container-org0b222f8" class="outline-2">
-<h2 id="org0b222f8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc80c3b3" class="outline-2">
+<h2 id="orgc80c3b3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Definition der relativen Homotopie:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330150019-relative_homotopie_bezuglich_der_leeren_menge_30910c89f2413c72fc68cf5dbb72464d5facdaaa.svg" alt="20230330150019-relative_homotopie_bezuglich_der_leeren_menge_30910c89f2413c72fc68cf5dbb72464d5facdaaa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall s \in I \forall a \in \emptyset : h(s,a) = f(a)
+\end{align*}
 <p>
 ist trivialerweise erfüllt
 </p>

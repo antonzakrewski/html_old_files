@@ -9,34 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Punktsymmetrie des Einheitsballes</h1>
-<div id="outline-container-orgb5a514c" class="outline-2">
-<h2 id="orgb5a514c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf8c0ca2" class="outline-2">
+<h2 id="orgf8c0ca2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Der <a href="20230426085945-einheitsball.html#ID-cbaf30c1-7bec-4cb0-9179-72441c542c40">Einheitsball</a> ist <a href="20230426091102-punktsymmetrie.html#ID-4e86ccc3-54f7-49d4-a701-2be1f44965ca">punktsymmetrisch</a> zum Ursprung
 </p>
 </div>
 </div>
-<div id="outline-container-orge46aeee" class="outline-2">
-<h2 id="orge46aeee"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orged5749f" class="outline-2">
+<h2 id="orged5749f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">Homogenität einer Norm</a>:
-Sei <img src="file:///home/anton/html/ltximg/20230426091031-punktsymmetrie_des_einheitsballes_b2955bf60c98cb37a39b7910c8b92ce855e07de1.svg" alt="20230426091031-punktsymmetrie_des_einheitsballes_b2955bf60c98cb37a39b7910c8b92ce855e07de1.svg" class="org-svg" /> so gilt <img src="file:///home/anton/html/ltximg/20230426091031-punktsymmetrie_des_einheitsballes_9b29654b753ad1aee749bd454c588bdc0dd1ce6f.svg" alt="20230426091031-punktsymmetrie_des_einheitsballes_9b29654b753ad1aee749bd454c588bdc0dd1ce6f.svg" class="org-svg" />
+Sei \(v \in B_1[0]\) so gilt \(\| v \| \leq 1\)
 Damit folgt auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091031-punktsymmetrie_des_einheitsballes_ebceb0f3baf034768ddc7736911774aa7a290905.svg" alt="20230426091031-punktsymmetrie_des_einheitsballes_ebceb0f3baf034768ddc7736911774aa7a290905.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| - v \| = \vert - 1 \vert \| v \| \\
+\leq 1
+\end{align*}
 <p>
-und somit <img src="file:///home/anton/html/ltximg/20230426091031-punktsymmetrie_des_einheitsballes_8f4b57ffa5c957c892bd21ce316b778688e4c1c6.svg" alt="20230426091031-punktsymmetrie_des_einheitsballes_8f4b57ffa5c957c892bd21ce316b778688e4c1c6.svg" class="org-svg" />
+und somit \(-v \in B_1[0]\)
 </p>
 </div>
 </div>

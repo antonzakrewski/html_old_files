@@ -9,42 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang eines endlichen Produktraums und Zusammenhang der Räume</h1>
-<div id="outline-container-org5cb51ee" class="outline-2">
-<h2 id="org5cb51ee"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9532426" class="outline-2">
+<h2 id="org9532426"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_88c631461572a03f0c67d79117d49bc6f1f1dd1a.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_88c631461572a03f0c67d79117d49bc6f1f1dd1a.svg" class="org-svg" /> und die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" class="org-svg" /> gegeben.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit \(X_i \neq \emptyset\) und die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> \(X  \coloneqq \prod X_i\) gegeben.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" class="org-svg" /> ist für beliebiges <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
+<li>\(X\) ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
+<li>\(X_i\) ist für beliebiges \(i\) <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org263ccfb" class="outline-2">
-<h2 id="org263ccfb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1848093" class="outline-2">
+<h2 id="org1848093"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8917804" class="outline-3">
-<h3 id="org8917804"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org6391eca" class="outline-3">
+<h3 id="org6391eca"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> zusammenhängend, dann ist <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_2f4a1cb09d84a5b5d0ab76b747f13dd264e9d3b8.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_2f4a1cb09d84a5b5d0ab76b747f13dd264e9d3b8.svg" class="org-svg" /> und nach der Aussage über den <a href="20230509121156-zusammenhang_des_bilds_einer_stetigen_menge.html#ID-cfd2871b-85a4-4110-aa50-8f650e4050d3">Zusammenhang des Bilds einer stetigen Menge</a> ist <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_bfd962ef8c6c229a9d815ea2e79fe79a3a8bea45.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_bfd962ef8c6c229a9d815ea2e79fe79a3a8bea45.svg" class="org-svg" /> zusammenhängend.
+Sei \(X\) zusammenhängend, dann ist \(X_j = p_j[X]\) und nach der Aussage über den <a href="20230509121156-zusammenhang_des_bilds_einer_stetigen_menge.html#ID-cfd2871b-85a4-4110-aa50-8f650e4050d3">Zusammenhang des Bilds einer stetigen Menge</a> ist \(X_j\) zusammenhängend.
 </p>
 </div>
 </div>
-<div id="outline-container-org561e804" class="outline-3">
-<h3 id="org561e804"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org0dbee5f" class="outline-3">
+<h3 id="org0dbee5f"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_920bd63bdb218026cf72b4352c0c2930ef568bd0.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_920bd63bdb218026cf72b4352c0c2930ef568bd0.svg" class="org-svg" /> gegeben
-Sei eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> gegeben, dann ist <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_18b895c21a2c1b8dc162308f30fce23d9f7857be.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_18b895c21a2c1b8dc162308f30fce23d9f7857be.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der geeigneten <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_c2c89504493a03c602510077655ac8407d51b013.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_c2c89504493a03c602510077655ac8407d51b013.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_69e621747b583f891e7bd03c1e7504d95ef8392b.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_69e621747b583f891e7bd03c1e7504d95ef8392b.svg" class="org-svg" /> als <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion von einer Produkttopologie eine stetig offene Abbildung</a> und somit <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_69e621747b583f891e7bd03c1e7504d95ef8392b.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_69e621747b583f891e7bd03c1e7504d95ef8392b.svg" class="org-svg" /> ebenfalls eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a>.
-Damit existiert eine geeignete Kette (siehe: <a href="20230511091936-zusammenhang_und_endliche_kette_von_einer_uberlappenden_uberdeckung.html#ID-d927155d-f45d-4a8c-b70d-2c310662213f">Zusammenhang und endliche Kette von einer überlappenden Überdeckung</a>) und dies kann man für alle <img src="file:///home/anton/html/ltximg/20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_4ba6ca14863b8bca3bd27cf7c6ae35a163cb4cdf.svg" alt="20230605-zusammenhang_eines_endlichen_produktraums_und_zusammenhang_der_raume_4ba6ca14863b8bca3bd27cf7c6ae35a163cb4cdf.svg" class="org-svg" /> wiederholen und erhält insgesamt eine geeignete Kette
+Seien \(x = (x_i), y = (y_i)\) gegeben
+Sei eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a> \(O_i\) gegeben, dann ist \(O_i \bigcap_{j \neq i} \{x_i\}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in der geeigneten <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> \(X_i \times \prod_{j \neq i} \{x_j\}\) und \(\pi_j[O_i]\) als <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion von einer Produkttopologie eine stetig offene Abbildung</a> und somit \(\pi_j[O_i]\) ebenfalls eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a>.
+Damit existiert eine geeignete Kette (siehe: <a href="20230511091936-zusammenhang_und_endliche_kette_von_einer_uberlappenden_uberdeckung.html#ID-d927155d-f45d-4a8c-b70d-2c310662213f">Zusammenhang und endliche Kette von einer überlappenden Überdeckung</a>) und dies kann man für alle \(j \neq i\) wiederholen und erhält insgesamt eine geeignete Kette
 </p>
 
 <p>

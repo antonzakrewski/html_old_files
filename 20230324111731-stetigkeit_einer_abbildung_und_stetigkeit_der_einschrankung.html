@@ -3,111 +3,127 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stetigkeit einer Abbildung und Stetigkeit der Einschränkungen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit einer Abbildung und Stetigkeit der Einschränkungen</h1>
-<div id="outline-container-org079a7f7" class="outline-2">
-<h2 id="org079a7f7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd0967d0" class="outline-2">
+<h2 id="orgd0967d0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> und <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Seien zudem <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_6ff1fa614139d21a5c1b0a09918b74636d04d8f8.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_6ff1fa614139d21a5c1b0a09918b74636d04d8f8.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_3a7949c9119dfb24f44b0ce97ccd9541c5b35484.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_3a7949c9119dfb24f44b0ce97ccd9541c5b35484.svg" class="org-svg" /> beliebig viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so dass gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien zudem \(A_i \subseteq X\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und \(O_i \subseteq X\) beliebig viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_74f85f6c62d8dc89fcbfb43eafe69c36401fd05b.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_74f85f6c62d8dc89fcbfb43eafe69c36401fd05b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\bigcup_{i = 1}^{n} A_i =& X \\
+\bigcup_{i \in I} O_i =& X
+\end{align*}
 <p>
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ol class="org-ol">
-<li><img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 <li>die <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">Einschränkungen</a> mit den daraus resultierenden <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologien</a>
-a) <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a3db13638d7483e537b596602c00662ef6f2d18b.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a3db13638d7483e537b596602c00662ef6f2d18b.svg" class="org-svg" /> für <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_ce5275234f50e211823512671650e52ebc895a9a.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_ce5275234f50e211823512671650e52ebc895a9a.svg" class="org-svg" /> sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
-b) <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_b9486058e1bbe9615c6c02f28cbeae9ebf4f0087.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_b9486058e1bbe9615c6c02f28cbeae9ebf4f0087.svg" class="org-svg" /> für <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_dff593043603ff98da9c0013149e984ec3125edc.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_dff593043603ff98da9c0013149e984ec3125edc.svg" class="org-svg" /> sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+a) \(f_{A_i}: A_i \rightarrow X'\) für \(i \in \{1,...,n\}\) sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
+b) \(f_{O_i}: O_i \rightarrow X'\) für \(i \in I\) sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc398a8c" class="outline-2">
-<h2 id="orgc398a8c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org78bea0e" class="outline-2">
+<h2 id="org78bea0e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge08f7a9" class="outline-3">
-<h3 id="orge08f7a9"><span class="section-number-3">2.1.</span> i)</h3>
+<div id="outline-container-org8da0c27" class="outline-3">
+<h3 id="org8da0c27"><span class="section-number-3">2.1.</span> i)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_fe529864b64456d9259844d15fab8087748faa84.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_fe529864b64456d9259844d15fab8087748faa84.svg" class="org-svg" /> eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0280217612cfa4faf22e9646ac4c4b2904a382d7.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0280217612cfa4faf22e9646ac4c4b2904a382d7.svg" class="org-svg" />
+Sei \(A' \subseteq X'\) eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A \coloneqq f^{-1}[A']\)
 </p>
 </div>
-<div id="outline-container-org2dfd2d4" class="outline-4">
-<h4 id="org2dfd2d4"><span class="section-number-4">2.1.1.</span> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /></h4>
+<div id="outline-container-org8895e5d" class="outline-4">
+<h4 id="org8895e5d"><span class="section-number-4">2.1.1.</span> \(\Rightarrow\)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>:
-Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_c485f624d7993660600c89f0da7019c3ba9bf9f0.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_c485f624d7993660600c89f0da7019c3ba9bf9f0.svg" class="org-svg" /> ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Aus der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit vom Durchschnitt abgeschlossener Mengen</a> folgt, dass <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_dcca1cedb1dada0f14a8c7329d2f3617442cfdd5.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_dcca1cedb1dada0f14a8c7329d2f3617442cfdd5.svg" class="org-svg" /> ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
-Wegen <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_cc073c12e1ae2167434e54b32e52e9ede70d221f.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_cc073c12e1ae2167434e54b32e52e9ede70d221f.svg" class="org-svg" /> folgt, dass <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_12cdacfb023201940db529ccaf43ac302f1bd362.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_12cdacfb023201940db529ccaf43ac302f1bd362.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Sei \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>:
+Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(f^{-1}[A'] =: A\) ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Aus der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit vom Durchschnitt abgeschlossener Mengen</a> folgt, dass \(A_i \cap A\) ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Wegen \(f_{A_i}^{-1}[A'] = A_i \cap A\) folgt, dass \(f_{A_i}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orge83f85e" class="outline-4">
-<h4 id="orge83f85e"><span class="section-number-4">2.1.2.</span> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_476fcdf9f65e041352511134bb1c7e123b40cfb7.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_476fcdf9f65e041352511134bb1c7e123b40cfb7.svg" class="org-svg" /></h4>
+<div id="outline-container-org344ade2" class="outline-4">
+<h4 id="org344ade2"><span class="section-number-4">2.1.2.</span> \(\Leftarrow\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_12cdacfb023201940db529ccaf43ac302f1bd362.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_12cdacfb023201940db529ccaf43ac302f1bd362.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
-Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a72758914d863257c30cdd3baadfb565610e0dc1.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a72758914d863257c30cdd3baadfb565610e0dc1.svg" class="org-svg" /> ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Aus der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> folgt, dass <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_74bdae781507bf68558b9f96af0fe18e7c12012b.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_74bdae781507bf68558b9f96af0fe18e7c12012b.svg" class="org-svg" /> ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, was zu zeigen war
+Sei \(f_{A_i}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
+Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(f^{-1}_{A_i}[A'] = A \cap A_i\) ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Aus der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> folgt, dass \(\bigcup_{i = 1}^{n} A \cap A_i = A_i\) ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, was zu zeigen war
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org94c30d2" class="outline-3">
-<h3 id="org94c30d2"><span class="section-number-3">2.2.</span> ii)</h3>
+<div id="outline-container-orgb3b4ab2" class="outline-3">
+<h3 id="orgb3b4ab2"><span class="section-number-3">2.2.</span> ii)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a8d3ff73db7ce4b719757433c72ffd56544d4d9c.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_a8d3ff73db7ce4b719757433c72ffd56544d4d9c.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_d39bc1e39f4f147d228bd58322e28e4b5561e201.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_d39bc1e39f4f147d228bd58322e28e4b5561e201.svg" class="org-svg" />
+Sei \(O' \subseteq X'\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(O \coloneqq f^{-1}[O']\)
 </p>
 </div>
-<div id="outline-container-org0ee27d8" class="outline-4">
-<h4 id="org0ee27d8"><span class="section-number-4">2.2.1.</span> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /></h4>
+<div id="outline-container-org14c8ed6" class="outline-4">
+<h4 id="org14c8ed6"><span class="section-number-4">2.2.1.</span> \(\Rightarrow\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>:
-Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_7f6bc0ad406b2572cb1e06270a5bb675fd033361.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_7f6bc0ad406b2572cb1e06270a5bb675fd033361.svg" class="org-svg" /> ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
-Aus der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten (Topologie)</a> folgt, dass <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_4c2d75c3ed30a39062ce84017243f65ab010016d.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_4c2d75c3ed30a39062ce84017243f65ab010016d.svg" class="org-svg" /> ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
-Damit folgt, dass <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_96c6154a3c1577698fa35860da92c2092a9e92b3.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_96c6154a3c1577698fa35860da92c2092a9e92b3.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Sei \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>:
+Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(O\) ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Aus der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten (Topologie)</a> folgt, dass \(f_{O_i}^{-1}[O'] = O \cap O_i\) ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Damit folgt, dass \(f_{O_i]\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org5f42612" class="outline-4">
-<h4 id="org5f42612"><span class="section-number-4">2.2.2.</span> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_476fcdf9f65e041352511134bb1c7e123b40cfb7.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_476fcdf9f65e041352511134bb1c7e123b40cfb7.svg" class="org-svg" /></h4>
+<div id="outline-container-org393695c" class="outline-4">
+<h4 id="org393695c"><span class="section-number-4">2.2.2.</span> \(\Leftarrow\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_3b3b08952db73e3b1cfe55b1d57047ffe420be4b.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_3b3b08952db73e3b1cfe55b1d57047ffe420be4b.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
-Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_448e8fef73a07633a2584f37667e956d324259de.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_448e8fef73a07633a2584f37667e956d324259de.svg" class="org-svg" /> ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Sei \(f_{O_i}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
+Dann ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(f^{-1}_{O_i}[O'] = O \cap O_i\) ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
 Aus der <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit gegenüber Vereinigung (Topologie)</a> folgt, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_cbab282c1fbe069799dfa181556ee7eb27f70ec7.svg" alt="20230324111731-stetigkeit_einer_abbildung_und_stetigkeit_der_einschrankung_cbab282c1fbe069799dfa181556ee7eb27f70ec7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in I} f^{-1}_{O_i}[O'] = \bigcup_{i \in I} (O \cap O_i) = O
+\end{align*}
 </div>
 </div>
 </div>

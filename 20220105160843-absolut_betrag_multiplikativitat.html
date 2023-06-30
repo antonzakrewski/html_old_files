@@ -9,49 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Absolut-Betrag Multiplikativität</h1>
 
-<div id="outline-container-org036abfe" class="outline-2">
-<h2 id="org036abfe"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org76176eb" class="outline-2">
+<h2 id="org76176eb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105160843-absolut_betrag_multiplikativitat_4a50a462153e983b896717aed93a0902cc496888.svg" alt="20220105160843-absolut_betrag_multiplikativitat_4a50a462153e983b896717aed93a0902cc496888.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert xy\vert = \vert x\vert \cdot \vert y\vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge264688" class="outline-2">
-<h2 id="orge264688"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8a350e7" class="outline-2">
+<h2 id="org8a350e7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga2c8c28" class="outline-3">
-<h3 id="orga2c8c28"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20220105160843-absolut_betrag_multiplikativitat_16fbd213a648525b9f21743d9834335878c32757.svg" alt="20220105160843-absolut_betrag_multiplikativitat_16fbd213a648525b9f21743d9834335878c32757.svg" class="org-svg" /></h3>
+<div id="outline-container-org62aa63a" class="outline-3">
+<h3 id="org62aa63a"><span class="section-number-3">2.1.</span> \(x,y \geq 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>trivial</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2a7d0bf" class="outline-3">
-<h3 id="org2a7d0bf"><span class="section-number-3">2.2.</span> sonst</h3>
+<div id="outline-container-org8e494f6" class="outline-3">
+<h3 id="org8e494f6"><span class="section-number-3">2.2.</span> sonst</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105160843-absolut_betrag_multiplikativitat_3ce4d3c7cfd5ca9ca4715cb11ca7d4b8f97c49b1.svg" alt="20220105160843-absolut_betrag_multiplikativitat_3ce4d3c7cfd5ca9ca4715cb11ca7d4b8f97c49b1.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105160843-absolut_betrag_multiplikativitat_7786133244eda69dc6c93cf27fb21fbcac200d58.svg" alt="20220105160843-absolut_betrag_multiplikativitat_7786133244eda69dc6c93cf27fb21fbcac200d58.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x =& \pm x_0 \\
+y =& \pm y_0 \\
+x_0,y_0 \geq 0
+\end{align*}
+\begin{align*}
+\vert xy \vert = \vert \pm xy \vert = x_0 \cdot y_0 = \\
+= \vert \pm x_0 \vert \cdot \vert \pm y_0 \vert = \vert x \vert \cdot \vert y \vert
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

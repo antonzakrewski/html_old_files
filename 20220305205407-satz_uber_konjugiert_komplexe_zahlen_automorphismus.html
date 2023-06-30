@@ -3,31 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Automurphismus der konjugiert-komplexen Zahlen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Automurphismus der konjugiert-komplexen Zahlen</h1>
-<div id="outline-container-org80fdcb1" class="outline-2">
-<h2 id="org80fdcb1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge57647f" class="outline-2">
+<h2 id="orge57647f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die Abbildung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_2333b11bdcc908155ea6ff923a707247596170c8.svg" alt="20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_2333b11bdcc908155ea6ff923a707247596170c8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+% z \coloneqq& a + ib \\
+f: \mathbb{C} \rightarrow \mathbb{C} \\
+f(z) = f(a + ib) \coloneqq a - ib
+\end{align*}
 <ul class="org-ul">
 <li>siehe:</li>
 <li><a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexe Zahlen</a></li>
@@ -35,27 +58,22 @@ Die Abbildung:
 </ul>
 </div>
 </div>
-<div id="outline-container-org012902c" class="outline-2">
-<h2 id="org012902c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org251e73a" class="outline-2">
+<h2 id="org251e73a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_bff02d2c5fcb2a4070cd05a23cc8ae9cd7429c97.svg" alt="20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_bff02d2c5fcb2a4070cd05a23cc8ae9cd7429c97.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_841a464980a7ef92ea956b0cf39c12294c0e7347.svg" alt="20220305205407-satz_uber_konjugiert_komplexe_zahlen_automorphismus_841a464980a7ef92ea956b0cf39c12294c0e7347.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+f(z + z') =& f(a + a' + i(b + b')) \\
+=& a + a' - i(b + b') \\
+=& a - ib + a' - ib' \\
+=& f(z) + f(z')
+\end{align*}
+\begin{align*}
+f(zz') =& f((a + ib)(a' + ib')) \\
+=& f(aa' - bb' + i(ab' + a'b)) \\
+=& aa' - bb' - i(ab' + a'b) \\
+=& (a - ib) (a' - ib') \\
+=& f(z)f(z')
+\end{align*}
 
 
 <p>

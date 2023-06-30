@@ -9,29 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Urbilder offener Mengen als Subbasis und offene Abbildung</h1>
-<div id="outline-container-orgdf4e2b4" class="outline-2">
-<h2 id="orgdf4e2b4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org565162e" class="outline-2">
+<h2 id="org565162e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_549ef832452186a7de6b651c8890117b703a24a4.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_549ef832452186a7de6b651c8890117b703a24a4.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_4cd1b18273fad426297951c5b337591199b87bef.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_4cd1b18273fad426297951c5b337591199b87bef.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>, so dass <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_d1cf84bdf34586f1b3d2bcf5dd28fed1bdbc4981.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_d1cf84bdf34586f1b3d2bcf5dd28fed1bdbc4981.svg" class="org-svg" /> eine <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a> ist.
-Dann ist <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Seien \((X, \mathcal{T}_X)\) und \((Y, \mathcal{T}_Y)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow Y'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>, so dass \(\mathcal{S}  \coloneqq \{f^{-1}[O_i] \vert O_i \in \mathcal{T}_Y\}\) eine <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a> ist.
+Dann ist \(f\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org49edd4a" class="outline-2">
-<h2 id="org49edd4a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb758162" class="outline-2">
+<h2 id="orgb758162"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach der Aussage über die <a href="20230625-urbilder_offener_als_mengen_als_subbasis_ist_auch_eine_basis.html#ID-8380d7b4-c82e-4858-ba20-8b2d5b0c5031">Urbilder offener als Mengen als Subbasis ist auch eine Basis</a>, dürfen wir annehmen, <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" class="org-svg" /> ist eine <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a>
+Nach der Aussage über die <a href="20230625-urbilder_offener_als_mengen_als_subbasis_ist_auch_eine_basis.html#ID-8380d7b4-c82e-4858-ba20-8b2d5b0c5031">Urbilder offener als Mengen als Subbasis ist auch eine Basis</a>, dürfen wir annehmen, \(\mathcal{S}\) ist eine <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a>
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_2c89e63b37a41381462a77641f7e9ddfa7a38aa3.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_2c89e63b37a41381462a77641f7e9ddfa7a38aa3.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existieren nach Annahme <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_3859cfa15838a52155e8d2201d1318f9070161c6.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_3859cfa15838a52155e8d2201d1318f9070161c6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_9c91d98331c1b9f6f6f49194fa94fca840018228.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_9c91d98331c1b9f6f6f49194fa94fca840018228.svg" class="org-svg" />.
-Damit folgt <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_398d12c71fd220e107c8e0dd5997641a0a329431.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_398d12c71fd220e107c8e0dd5997641a0a329431.svg" class="org-svg" />, wobei <img src="file:///home/anton/html/ltximg/20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_8d5a27422776ed2d6070653fb4087d3d4bf243fb.svg" alt="20230625-urbilder_offener_mengen_als_subbasis_und_offene_abbildung_8d5a27422776ed2d6070653fb4087d3d4bf243fb.svg" class="org-svg" /> als <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Vereinigung offener Mengen offen ist</a>.
+Sei \(O_x \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existieren nach Annahme <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_i \subseteq Y\) mit \(O_x =& \bigcup_{i \in I} f^{-1}[O_i]\).
+Damit folgt \(f[O_x] = f[\bigcup_{i \in I} O_i]\), wobei \(\bigcup_{i \in I}\) als <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Vereinigung offener Mengen offen ist</a>.
 (vgl. <a href="20230522165952-bild_und_vereinigung.html#ID-e5d426be-3447-44f8-97f4-4b9c6d0f8f0b">Bild und Vereinigung</a>)
 </p>
 </div>

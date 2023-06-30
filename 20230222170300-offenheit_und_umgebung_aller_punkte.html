@@ -9,49 +9,76 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">openness and neighbourhood for all points</h1>
-<div id="outline-container-org1920335" class="outline-2">
-<h2 id="org1920335"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7e887cf" class="outline-2">
+<h2 id="org7e887cf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann sind folgende aussagen äquivalent:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann sind folgende aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_27426a3d421c9bea5062b2282af13015f26104b0.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_27426a3d421c9bea5062b2282af13015f26104b0.svg" class="org-svg" /> ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> ist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> jedes seiner Punkte</li>
-<li>Für alle <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_e12489c8838a95db3ec009871de1f6776850d311.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_e12489c8838a95db3ec009871de1f6776850d311.svg" class="org-svg" /> existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_c0a3e2c82704389c23bf631d5e8d9ffb91666d66.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_c0a3e2c82704389c23bf631d5e8d9ffb91666d66.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_62882eb8a465242cb77d108f2119577431e8db68.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_62882eb8a465242cb77d108f2119577431e8db68.svg" class="org-svg" /></li>
+<li>\(O \subseteq X\) ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
+<li>\(O\) ist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> jedes seiner Punkte</li>
+<li>Für alle \(x \in O\) existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in U(x)\) mit \(U \subseteq O\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5bbc84d" class="outline-2">
-<h2 id="org5bbc84d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb928980" class="outline-2">
+<h2 id="orgb928980"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4f9f852" class="outline-3">
-<h3 id="org4f9f852"><span class="section-number-3">2.1.</span> a) <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> b)</h3>
+<div id="outline-container-org1bfc303" class="outline-3">
+<h3 id="org1bfc303"><span class="section-number-3">2.1.</span> a) \(\Rightarrow\) b)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Man wähle <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> als <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> - folgt aus der Definition.
+Man wähle \(O\) als <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> - folgt aus der Definition.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc19110e" class="outline-3">
-<h3 id="orgc19110e"><span class="section-number-3">2.2.</span> b) <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> c)</h3>
+<div id="outline-container-orgfd80d56" class="outline-3">
+<h3 id="orgfd80d56"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) c)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-trivial, z.B. <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> selbst
+trivial, z.B. \(U\) selbst
 </p>
 </div>
 </div>
-<div id="outline-container-org9a2d7a2" class="outline-3">
-<h3 id="org9a2d7a2"><span class="section-number-3">2.3.</span> c) <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> b)</h3>
+<div id="outline-container-org67dfe1d" class="outline-3">
+<h3 id="org67dfe1d"><span class="section-number-3">2.3.</span> c) \(\Rightarrow\) b)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Man wähle für <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a> <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_1a97400abd03eebf0c5bd6655a4be8de73b2d337.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_1a97400abd03eebf0c5bd6655a4be8de73b2d337.svg" class="org-svg" /> aus und nach der <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit</a> von <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigungen</a> folgt <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_c17507fb0280ac4084d6dd0de45c2d148c3cfa88.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_c17507fb0280ac4084d6dd0de45c2d148c3cfa88.svg" class="org-svg" />.
-Insbesondere gilt <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_f767b8dfb4f4624a1f43a4fd06bb4cdebd80f057.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_f767b8dfb4f4624a1f43a4fd06bb4cdebd80f057.svg" class="org-svg" />, da für <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_e12489c8838a95db3ec009871de1f6776850d311.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_e12489c8838a95db3ec009871de1f6776850d311.svg" class="org-svg" /> mind. <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" class="org-svg" /> existiert und für alle <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" class="org-svg" /> gilt: <img src="file:///home/anton/html/ltximg/20230222170300-offenheit_und_umgebung_aller_punkte_5b58c47e7ecaca65e5872ee55c63c6b33f40ba1a.svg" alt="20230222170300-offenheit_und_umgebung_aller_punkte_5b58c47e7ecaca65e5872ee55c63c6b33f40ba1a.svg" class="org-svg" />
+Man wähle für \(x\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a> \(x \in O_x \subseteq U_x\) aus und nach der <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit</a> von <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigungen</a> folgt \(\bigcup_{x \in O} O_x \in \mathcal{T}\).
+Insbesondere gilt \(\bigcup_{x \in O} O_x = O\), da für \(x \in O\) mind. \(O_x\) existiert und für alle \(O_x\) gilt: \(O_x \subseteq U_x \subseteq O\)
 </p>
 </div>
 </div>

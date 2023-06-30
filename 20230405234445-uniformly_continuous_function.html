@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>uniformly continuous function</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">uniformly continuous function</h1>
-<div id="outline-container-orgd011b35" class="outline-2">
-<h2 id="orgd011b35"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1dcd934" class="outline-2">
+<h2 id="org1dcd934"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230405234445-uniformly_continuous_function_63e3b572aa1365f21840c5e96b1abfa03aa3f7a8.svg" alt="20230405234445-uniformly_continuous_function_63e3b572aa1365f21840c5e96b1abfa03aa3f7a8.svg" class="org-svg" /> be <a href="20230405231220-uniform_space.html#ID-2968af6c-25f2-4ad4-b884-84e76895a183">uniform spaces</a>.
-A <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">function</a> <img src="ltximg/20230405234445-uniformly_continuous_function_b85df24f8857bec46b90583def851b135724a2d9.svg" alt="20230405234445-uniformly_continuous_function_b85df24f8857bec46b90583def851b135724a2d9.svg" class="org-svg" /> is uniformly continuous, if for every <a href="20230405233409-entourage.html#ID-1b91514a-75f8-48b2-ae32-636fa6f55e45">entourage</a> <img src="ltximg/20230405234445-uniformly_continuous_function_e716ef0caa9f8576a917de5089133791775aa7ba.svg" alt="20230405234445-uniformly_continuous_function_e716ef0caa9f8576a917de5089133791775aa7ba.svg" class="org-svg" /> there exists an <a href="20230405233409-entourage.html#ID-1b91514a-75f8-48b2-ae32-636fa6f55e45">entourage</a> <img src="ltximg/20230405234445-uniformly_continuous_function_6098696bc13b6b2bc0a50e8d44482ee1d85a0ea5.svg" alt="20230405234445-uniformly_continuous_function_6098696bc13b6b2bc0a50e8d44482ee1d85a0ea5.svg" class="org-svg" /> such that for <img src="ltximg/20230405234445-uniformly_continuous_function_6b9596ae15a98b9c189099d8207fa2c73f6aed8a.svg" alt="20230405234445-uniformly_continuous_function_6b9596ae15a98b9c189099d8207fa2c73f6aed8a.svg" class="org-svg" /> it follows that:
+Let \((X, \Phi), (Y,\Phi')\) be <a href="20230405231220-uniform_space.html#ID-2968af6c-25f2-4ad4-b884-84e76895a183">uniform spaces</a>.
+A <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">function</a> \(f: X \rightarrow Y\) is uniformly continuous, if for every <a href="20230405233409-entourage.html#ID-1b91514a-75f8-48b2-ae32-636fa6f55e45">entourage</a> \(V_y \in \Phi'\) there exists an <a href="20230405233409-entourage.html#ID-1b91514a-75f8-48b2-ae32-636fa6f55e45">entourage</a> \(V_x \in \Phi\) such that for \((x,y) \in V_x\) it follows that:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230405234445-uniformly_continuous_function_5a1c9c9d79e0bce13a6ef10592b3dccd7f7fc72e.svg" alt="20230405234445-uniformly_continuous_function_5a1c9c9d79e0bce13a6ef10592b3dccd7f7fc72e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(f(x),f(y)) \in V_y
+\end{align*}
 </div>
 </div>
 </div>

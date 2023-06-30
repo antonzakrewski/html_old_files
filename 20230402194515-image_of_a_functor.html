@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Image of a functor</h1>
-<div id="outline-container-orgc75e4f5" class="outline-2">
-<h2 id="orgc75e4f5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org136b655" class="outline-2">
+<h2 id="org136b655"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230402194515-image_of_a_functor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" alt="20230402194515-image_of_a_functor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and <img src="file:///home/anton/html/ltximg/20230402194515-image_of_a_functor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20230402194515-image_of_a_functor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a>.
-The Image of the <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> consists the <a href="20220819181756-klasse_mengenlehre.html#ID-998a9e01-e369-490b-bb26-657678f61d7a">classes</a> of all <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> and <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> in <img src="file:///home/anton/html/ltximg/20230402194515-image_of_a_functor_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" alt="20230402194515-image_of_a_functor_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" class="org-svg" />, namely <img src="file:///home/anton/html/ltximg/20230402194515-image_of_a_functor_39578070f0928a66c969b0acbdf06001748f6761.svg" alt="20230402194515-image_of_a_functor_39578070f0928a66c969b0acbdf06001748f6761.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230402194515-image_of_a_functor_78407b5df53674a643597afe46e396e35fe7d1f1.svg" alt="20230402194515-image_of_a_functor_78407b5df53674a643597afe46e396e35fe7d1f1.svg" class="org-svg" />
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(F: \mathcal{C} \rightarrow \mathcal{D}\) a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a>.
+The Image of the <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> consists the <a href="20220819181756-klasse_mengenlehre.html#ID-998a9e01-e369-490b-bb26-657678f61d7a">classes</a> of all <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> and <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> in \(\mathcal{D}\), namely \(\{FA \vert A \in \mathcal{C}\}\) and \(\{F f \vert f \in \mathrm{Hom}_{\mathcal{C}}(A,B)\}\)
 </p>
 </div>
 </div>

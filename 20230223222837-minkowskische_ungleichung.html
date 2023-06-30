@@ -9,45 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Minkowskische Ungleichung</h1>
-<div id="outline-container-orgaa48b5f" class="outline-2">
-<h2 id="orgaa48b5f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1eadcd6" class="outline-2">
+<h2 id="org1eadcd6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223222837-minkowskische_ungleichung_b1fee8ee61fc92d9dbb58bf69c004795e433ad82.svg" alt="20230223222837-minkowskische_ungleichung_b1fee8ee61fc92d9dbb58bf69c004795e433ad82.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230223222837-minkowskische_ungleichung_a73bffd7bcdeaea4ba0e5271cd12480278f23195.svg" alt="20230223222837-minkowskische_ungleichung_a73bffd7bcdeaea4ba0e5271cd12480278f23195.svg" class="org-svg" />, so gilt
+Sei \(p \geq 1\) und \(z,w \in \mathbb{C}^n\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222837-minkowskische_ungleichung_1ec8c38fdb267bdf4813b10e03073b1a459eda3a.svg" alt="20230223222837-minkowskische_ungleichung_1ec8c38fdb267bdf4813b10e03073b1a459eda3a.svg" class="org-svg" />
-</span>
+\begin{align*}
+\| z + w \|_p \leq \| z \|_p + \| w \|_p
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2d769c1" class="outline-2">
-<h2 id="org2d769c1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6c1a908" class="outline-2">
+<h2 id="org6c1a908"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt durch Anwendung der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222837-minkowskische_ungleichung_9d2e6672d13f6e576805550de2f38ff7a4ce1332.svg" alt="20230223222837-minkowskische_ungleichung_9d2e6672d13f6e576805550de2f38ff7a4ce1332.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{j=1}^{n} \vert z_j + w_j \vert^p =& \sum_{j=1}^{n} \vert z_j + w_j \vert \cdot \vert z_j + w_j \vert^{p-1} \\
+\sum_{j=1}^{n} \vert z_j + w_j \vert^p \leq& \sum_{j=1}^{n} \vert z_j \vert \cdot \vert z_j + w_j \vert^{p-1} + \sum_{j=1}^{n} \vert w_; \vert \cdot \vert z_j + w_j \vert^{p-1}
+\end{align*}
 <p>
 Nach der <a href="20230228170409-holder_ungleichung.html#ID-e1569ceb-c30b-4417-920e-e89d1fcf7ed4">Hölder-Ungleichung</a> gilt zusätzlich:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222837-minkowskische_ungleichung_650d9efce7bc7a0a2ffe7682b87ceaca645af6f5.svg" alt="20230223222837-minkowskische_ungleichung_650d9efce7bc7a0a2ffe7682b87ceaca645af6f5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{j=1}^{n} \vert z_j \vert \cdot \vert z_j + w_j \vert^{p-1} \leq& \sqrt[p]{\sum_{j=1}^{n} \vert z_j \vert^p} \cdot \sqrt[\left(\frac{p}{p-1}\right)]{\sum_{j=1}^{n} (\vert z_j + w_j \vert^{p-1})^{\frac{p}{p-1}}}
+=& \| z \|_p \cdot \sqrt[ \left(\frac{p}{p-1}\right)]{ \sum_{j=1}^{n} \vert z_j + w_j \vert^p}
+\end{align*}
 <p>
 Analog auch für
 </p>

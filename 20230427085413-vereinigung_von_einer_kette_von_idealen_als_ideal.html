@@ -9,46 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vereinigung von einer Kette von Idealen als Ideal</h1>
-<div id="outline-container-org3b9b362" class="outline-2">
-<h2 id="org3b9b362"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb2ea2d7" class="outline-2">
+<h2 id="orgb2ea2d7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Idealen</a> mit <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_42f1ac2268452348eefb5a989a2cdf5887302f2b.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_42f1ac2268452348eefb5a989a2cdf5887302f2b.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(I_i\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Idealen</a> mit \(I_i \subseteq I_{i+1}\)
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_b69db5c44243434cc2bfa0f620862b413884a4d8.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_b69db5c44243434cc2bfa0f620862b413884a4d8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i = 1}^{\infty} I_i
+\end{align*}
 <p>
 ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3ed38d" class="outline-2">
-<h2 id="orgc3ed38d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb8e39a4" class="outline-2">
+<h2 id="orgb8e39a4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfd9b518" class="outline-3">
-<h3 id="orgfd9b518"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
+<div id="outline-container-org02177e0" class="outline-3">
+<h3 id="org02177e0"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-folgt aus <a href="20230427085718-vereinigung_von_einer_kette_von_gruppen_als_gruppe.html#ID-f31a16fd-44f7-42df-81f0-381e805196f6">Vereinigung von einer Kette von Gruppen als Gruppe</a> und der vererbung der kommutativität von <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" />
+folgt aus <a href="20230427085718-vereinigung_von_einer_kette_von_gruppen_als_gruppe.html#ID-f31a16fd-44f7-42df-81f0-381e805196f6">Vereinigung von einer Kette von Gruppen als Gruppe</a> und der vererbung der kommutativität von \(R\)
 </p>
 </div>
 </div>
-<div id="outline-container-org4a15642" class="outline-3">
-<h3 id="org4a15642"><span class="section-number-3">2.2.</span> absorption</h3>
+<div id="outline-container-org2332ae6" class="outline-3">
+<h3 id="org2332ae6"><span class="section-number-3">2.2.</span> absorption</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_e0de8fc66248227488872c103b928d4e0ebc8c98.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_e0de8fc66248227488872c103b928d4e0ebc8c98.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c5d86e8aaa8a1382bf621ddfe5bba78c3b0b2a88.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_c5d86e8aaa8a1382bf621ddfe5bba78c3b0b2a88.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_216203bdf436936eb412c03302a530222dffd051.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> ist, folgt auch, dass <img src="file:///home/anton/html/ltximg/20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_fbdac1c8773404f36bb3d2483c8ff47acf39a010.svg" alt="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal_fbdac1c8773404f36bb3d2483c8ff47acf39a010.svg" class="org-svg" /> und damit auch in der Vereinigung liegt.
+Sei \(r \in R\) und \(u \in \bigcup_{i  =1}^{\infty} I_i\), so existiert ein \(I_i\) mit \(u \in I_i\).
+Da \(I_i\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> ist, folgt auch, dass \(r \cdot u, u \cdot r \in I_i\) und damit auch in der Vereinigung liegt.
 </p>
 </div>
 </div>

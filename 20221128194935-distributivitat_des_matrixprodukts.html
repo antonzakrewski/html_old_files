@@ -9,36 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Distributivität des Matrixprodukts</h1>
-<div id="outline-container-orgbce989b" class="outline-2">
-<h2 id="orgbce989b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org47dc835" class="outline-2">
+<h2 id="org47dc835"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221128194935-distributivitat_des_matrixprodukts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und seien <img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_d856ab84dc4a12289cf3a68e2e9c20ca15a65316.svg" alt="20221128194935-distributivitat_des_matrixprodukts_d856ab84dc4a12289cf3a68e2e9c20ca15a65316.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_5bb97dd674bca563db84b3010593a4453e489d24.svg" alt="20221128194935-distributivitat_des_matrixprodukts_5bb97dd674bca563db84b3010593a4453e489d24.svg" class="org-svg" /> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> so folgt:
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und seien \(A,A' \in R^{m \times l}\) sowie \(B,B' \in R^{l \times n}\) <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_245a92b599208ab1cfcb75bb0453925bd7a3db1c.svg" alt="20221128194935-distributivitat_des_matrixprodukts_245a92b599208ab1cfcb75bb0453925bd7a3db1c.svg" class="org-svg" />
-</span>
+\begin{align*}
+(A + A') B =& AB + A'B \\
+A (B + B') =& AB + AB' \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1d55781" class="outline-2">
-<h2 id="org1d55781"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgeb24974" class="outline-2">
+<h2 id="orgeb24974"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_82a28bbd8d45a3af3b6c89aa0f04a03f6da3be80.svg" alt="20221128194935-distributivitat_des_matrixprodukts_82a28bbd8d45a3af3b6c89aa0f04a03f6da3be80.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_1b0352fc8585e58e008ff6d406ac4c92fc6f7664.svg" alt="20221128194935-distributivitat_des_matrixprodukts_1b0352fc8585e58e008ff6d406ac4c92fc6f7664.svg" class="org-svg" />  so folgt:
+Seien \(A = (\alpha_{ij}), A' = (\alpha_{ij}')\) und \(B = (\beta_{jl})\)  so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221128194935-distributivitat_des_matrixprodukts_259e2c1520bf944182eb2c332212963a8990b464.svg" alt="20221128194935-distributivitat_des_matrixprodukts_259e2c1520bf944182eb2c332212963a8990b464.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c_{il} =& \sum_{j=1}^{n} (\alpha_{ij} + \alpha_{ij}') \beta_{jl} \\
+=& \sum_{j=1}^{n} (\alpha_{ij} \beta_{jl} + \alpha_{ij}') \beta_{jl} \\
+=& \sum_{j=1}^{n} (\alpha_{ij} \beta_{jl} + \sum_{j=1}^{n} \alpha_{ij}') \beta_{jl} \\
+=& AB + A'B
+\end{align*}
 
 <p>
 analog für die andere Seite

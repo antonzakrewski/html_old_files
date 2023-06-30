@@ -9,44 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hölderstetigkeit impliziert gleichmäßige Stetigkeit</h1>
-<div id="outline-container-org91097b2" class="outline-2">
-<h2 id="org91097b2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org012e652" class="outline-2">
+<h2 id="org012e652"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" class="org-svg" /> eine <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölderstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
-Dann ist <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
+Seien \(M,N\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und \(f: M \rightarrow N\) eine <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölderstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Dann ist \(f\) auch <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgda1b54b" class="outline-2">
-<h2 id="orgda1b54b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga036019" class="outline-2">
+<h2 id="orga036019"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />
-Nach Annahme existieren <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_e324aed748192d1e3139927615aaedddde39fd03.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_e324aed748192d1e3139927615aaedddde39fd03.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_fe908866e2a84557dfdc041ee5c045efa6339fd7.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_fe908866e2a84557dfdc041ee5c045efa6339fd7.svg" class="org-svg" />  mit 
+Sei \(\varepsilon > 0\)
+Nach Annahme existieren \(\alpha > 0\), \(C \in \mathbb{R}^+_0\)  mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_f0f068bae8b371e4768c59961a743cdd702d213a.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_f0f068bae8b371e4768c59961a743cdd702d213a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert f(x_0) - f(x) \vert \leq C \cdot \vert x - x_0 \vert^{\alpha}
+\end{align*}
 <p>
-sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_07f1795a59792986a2e133f7876e4ba2e0a3d4cd.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_07f1795a59792986a2e133f7876e4ba2e0a3d4cd.svg" class="org-svg" /> (sonst gilt <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_024592c1fa049ccb5440d4e346e53fc9e07ce66d.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_024592c1fa049ccb5440d4e346e53fc9e07ce66d.svg" class="org-svg" /> )
-Insbesondere gilt dann auch für <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_e4f467c68972be2c2dcf3983f1e3a2204da07e6c.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_e4f467c68972be2c2dcf3983f1e3a2204da07e6c.svg" class="org-svg" />
+sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(C \neq 0\) (sonst gilt \(\vert f(x_0) - f(x) \vert = 0 \Rightarrow f(x_0) = f(x)\) )
+Insbesondere gilt dann auch für \(\delta' =: \sqrt[\alpha]{\frac{\varepsilon}{C}}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_078a3f414ea706310e93cc1b27fb1bb7fac3ae81.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_078a3f414ea706310e93cc1b27fb1bb7fac3ae81.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert f(x_0) - f(x) \vert \leq& C \cdot \delta'^\alpha \\
+=& \varepsilon
+\end{align*}
 <p>
-Optional wähle man ein etwas kleineres <img src="file:///home/anton/html/ltximg/20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_4f37e42672bc60ef403f6eb24b9e7df2869121fc.svg" alt="20230112113551-holderstetigkeit_impliziert_gleichmaßige_konvergenz_4f37e42672bc60ef403f6eb24b9e7df2869121fc.svg" class="org-svg" />, um eine echte Ungleichung zu erhalten
+Optional wähle man ein etwas kleineres \(\delta'\), um eine echte Ungleichung zu erhalten
 </p>
 </div>
 </div>

@@ -9,39 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhängende Teilmenge und Zusammenhang des Abschluss</h1>
-<div id="outline-container-orga225e3f" class="outline-2">
-<h2 id="orga225e3f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0ebd208" class="outline-2">
+<h2 id="org0ebd208"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> eine <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängende</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>.
-Dann gilt für eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_7153fdb3e2e900ef4fd3536b6c89c09903f4f592.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_7153fdb3e2e900ef4fd3536b6c89c09903f4f592.svg" class="org-svg" />, dass <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq X\) eine <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängende</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>.
+Dann gilt für eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A \subseteq B \subseteq \overline{A}\), dass \(B\) <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org414ed11" class="outline-2">
-<h2 id="org414ed11"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge377054" class="outline-2">
+<h2 id="orge377054"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Angenommen nicht, so existieren <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_6134e5f192180927eed3b107bcd988045d1eaf91.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_6134e5f192180927eed3b107bcd988045d1eaf91.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so dass gilt:
+Angenommen nicht, so existieren \(U,V \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so dass gilt:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_45ae667ed3412f6801b9e4f7d9ccd19052b38d79.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_45ae667ed3412f6801b9e4f7d9ccd19052b38d79.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(U \cap B) \cup (V \cap B) = B \\
+(U \cap B) \cap (V \cap B) = \emptyset
+\end{align*}
 <p>
-Damit folgt <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_2258b4a1922130c2154d994ddfcc49359abda6b4.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_2258b4a1922130c2154d994ddfcc49359abda6b4.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_a73fcc989a79866408ccf34e4b525c944b99a09a.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_a73fcc989a79866408ccf34e4b525c944b99a09a.svg" class="org-svg" />
-Zudem gilt <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_0e89833110f7122deb47eae3d74cc72837482e0b.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_0e89833110f7122deb47eae3d74cc72837482e0b.svg" class="org-svg" />, d.h. für <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_47b2717bbe726e8cd3fcad505acef030521a1a23.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_47b2717bbe726e8cd3fcad505acef030521a1a23.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_001b3bf6b9e07609e0aed0454dfc23ca001cf96c.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_001b3bf6b9e07609e0aed0454dfc23ca001cf96c.svg" class="org-svg" /> und damit schneidet jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" /> - insbesondere <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> - die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />.
-Damit gilt aber <img src="file:///home/anton/html/ltximg/20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_f9083684f7ce65ad6fabc5c69ccbb2eb90fe32d3.svg" alt="20230509120727-zusammenhangende_teilmenge_und_zusammenhang_des_abschluss_f9083684f7ce65ad6fabc5c69ccbb2eb90fe32d3.svg" class="org-svg" />, Widerspruch
+Damit folgt \((U \cap A) \cup (V \cap A) = A\) mit \(U \cap A \cap V = \emptyset\)
+Zudem gilt \(U \cap B \neq \emptyset\), d.h. für \(b \in U \cap B\) gilt \(b \in \overline{A}\) und damit schneidet jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(b\) - insbesondere \(U\) - die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A\).
+Damit gilt aber \(U \cap A \neq \emptyset\), Widerspruch
 </p>
 </div>
 </div>

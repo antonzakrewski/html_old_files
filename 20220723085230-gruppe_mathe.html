@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gruppe (Mathe)</h1>
-<div id="outline-container-org3726b41" class="outline-2">
-<h2 id="org3726b41"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge8cda98" class="outline-2">
+<h2 id="orge8cda98"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine Gruppe ist ein Paar <img src="file:///home/anton/html/ltximg/20220723085230-gruppe_mathe_7dda2ab21c9eccc179a4c597e5eca8f63505b558.svg" alt="20220723085230-gruppe_mathe_7dda2ab21c9eccc179a4c597e5eca8f63505b558.svg" class="org-svg" /> bestehend aus einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  G und einer <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> 
+Eine Gruppe ist ein Paar \((G,\cdot)\) bestehend aus einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  G und einer <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220723085230-gruppe_mathe_71fed5b83e47f4278a475bdc4826d979b2a3bfca.svg" alt="20220723085230-gruppe_mathe_71fed5b83e47f4278a475bdc4826d979b2a3bfca.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \cdot : G \times G \rightarrow& G \\
+(a,b) \mapsto& a \cdot b
+\end{align*}
 <p>
 welche folgende Axiome erfüllt:
 </p>

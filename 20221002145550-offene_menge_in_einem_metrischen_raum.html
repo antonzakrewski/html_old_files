@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">offene Menge in einem metrischen Raum</h1>
-<div id="outline-container-org152c98c" class="outline-2">
-<h2 id="org152c98c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge1d4cad" class="outline-2">
+<h2 id="orge1d4cad"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221002145550-offene_menge_in_einem_metrischen_raum_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" alt="20221002145550-offene_menge_in_einem_metrischen_raum_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20221002145550-offene_menge_in_einem_metrischen_raum_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" alt="20221002145550-offene_menge_in_einem_metrischen_raum_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20221002145550-offene_menge_in_einem_metrischen_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20221002145550-offene_menge_in_einem_metrischen_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ist offen (bezüglich der von <img src="file:///home/anton/html/ltximg/20221002145550-offene_menge_in_einem_metrischen_raum_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20221002145550-offene_menge_in_einem_metrischen_raum_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> induzierten <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a>), wenn gilt:
+Sei \((X,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(U \subseteq X\).
+\(U\) ist offen (bezüglich der von \(d\) induzierten <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a>), wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002145550-offene_menge_in_einem_metrischen_raum_c8ea2152db7bebd66bdfb58534087dda84172c6d.svg" alt="20221002145550-offene_menge_in_einem_metrischen_raum_c8ea2152db7bebd66bdfb58534087dda84172c6d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\forall u \in U \exists \varepsilon \in \mathbb{R}^{+} \forall x \in X : d(x,u) < \epsilon \Rightarrow x \in U
+\end{align*}
 </div>
 </div>
 </div>

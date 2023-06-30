@@ -3,48 +3,69 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Erwartungswert einer Binomialverteilung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Erwartungswert einer Binomialverteilung</h1>
 
-<div id="outline-container-orgfa000c1" class="outline-2">
-<h2 id="orgfa000c1"><span class="section-number-2">1.</span> Theroem</h2>
+<div id="outline-container-orgf01f92c" class="outline-2">
+<h2 id="orgf01f92c"><span class="section-number-2">1.</span> Theroem</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220118082615-erwartungswert_binomialverteilung_8a9c0ad72cf62ad92a3276f01d13a18032390287.svg" alt="20220118082615-erwartungswert_binomialverteilung_8a9c0ad72cf62ad92a3276f01d13a18032390287.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mu = \sum_{k = 0}^z k \cdot P_p^z(Z=k) = p \cdot z
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf467fd4" class="outline-2">
-<h2 id="orgf467fd4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge2287f7" class="outline-2">
+<h2 id="orge2287f7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>todo :)</li>
 </ul>
 </div>
-<div id="outline-container-orgf1ad7f2" class="outline-3">
-<h3 id="orgf1ad7f2"><span class="section-number-3">2.1.</span> Lemma</h3>
+<div id="outline-container-org7156894" class="outline-3">
+<h3 id="org7156894"><span class="section-number-3">2.1.</span> Lemma</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Summe der Erwartungswerte = Erwartungswert für zusammengesetztes Experiment</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0eb16ee" class="outline-3">
-<h3 id="org0eb16ee"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div id="outline-container-orgff875ea" class="outline-3">
+<h3 id="orgff875ea"><span class="section-number-3">2.2.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Betrachtung der <a href="20211221082504-bernoulli_kette.html#ID-21266f90-2582-423d-8c35-d74a3548f0fb">Bernoulli-Kette</a></li>

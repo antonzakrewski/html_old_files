@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Maximumsnorm</h1>
-<div id="outline-container-org241fe40" class="outline-2">
-<h2 id="org241fe40"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org8cf4f31" class="outline-2">
+<h2 id="org8cf4f31"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230301102039-maximumsnorm_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" alt="20230301102039-maximumsnorm_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" class="org-svg" /> ein <a href="20230301102114-kompakter_raum.html#ID-42e72d20-188a-4a96-b46c-f62f622ff9c7">kompakter Raum</a> und <img src="file:///home/anton/html/ltximg/20230301102039-maximumsnorm_6e75e45d051ef304e232cbf405e181ae1cd7d488.svg" alt="20230301102039-maximumsnorm_6e75e45d051ef304e232cbf405e181ae1cd7d488.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> <img src="file:///home/anton/html/ltximg/20230301102039-maximumsnorm_19e31b13338570818198705d065632e532c7a189.svg" alt="20230301102039-maximumsnorm_19e31b13338570818198705d065632e532c7a189.svg" class="org-svg" />
+Sei \(\tau\) ein <a href="20230301102114-kompakter_raum.html#ID-42e72d20-188a-4a96-b46c-f62f622ff9c7">kompakter Raum</a> und \(C(B)\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> \(f: \tau \rightarrow \mathbb{C}\)
 Dann ist die Maximumsnorm definiert durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230301102039-maximumsnorm_25260456aebd9575a0d1211e7b50b91c55cc9c40.svg" alt="20230301102039-maximumsnorm_25260456aebd9575a0d1211e7b50b91c55cc9c40.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f \|_{\infty}  \coloneqq \| f \|_{\mathrm{max}}  \coloneqq \mathrm{max}_{t \in \tau}(f(t))
+\end{align*}
 </div>
 </div>
 </div>

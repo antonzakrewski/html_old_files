@@ -9,34 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Maclaurinsche Reihe: Cosinus</h1>
 
-<div id="outline-container-orgfb39634" class="outline-2">
-<h2 id="orgfb39634"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1bb9b6b" class="outline-2">
+<h2 id="org1bb9b6b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302174558-maclaurinsche_reihe_cosinus_ca1bc51c3a9d41ae4711b2ffc80815a875a213e6.svg" alt="20220302174558-maclaurinsche_reihe_cosinus_ca1bc51c3a9d41ae4711b2ffc80815a875a213e6.svg" class="org-svg" />
-</span>
+\begin{align*}
+\cos(x) =& 1 - \frac{1}{2!} x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8 ...
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0d6e936" class="outline-2">
-<h2 id="org0d6e936"><span class="section-number-2">2.</span> Herleitung</h2>
+<div id="outline-container-org5770bbc" class="outline-2">
+<h2 id="org5770bbc"><span class="section-number-2">2.</span> Herleitung</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20210318211015-ableitung_sinus_cosinus.html#ID-9452bc6c-1da3-4faa-b466-2e2d141ed9ca">Ableitung Sinus/Cosinus</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302174558-maclaurinsche_reihe_cosinus_2deb101de12edc5f2227cdac2ec943d10f5a5c49.svg" alt="20220302174558-maclaurinsche_reihe_cosinus_2deb101de12edc5f2227cdac2ec943d10f5a5c49.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cos(x) =& 1 + \frac{0}{1!}x + \frac{-1}{2!}x^2 + \frac{0}{3!}x^3 + \frac{1}{4!}x^4 ... \\
+=& 1 - \frac{1}{2!} x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8 ...
+\end{align*}
 </div>
 </div>
 </div>

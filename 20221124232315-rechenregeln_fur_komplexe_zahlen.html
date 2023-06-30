@@ -9,28 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rechenregeln für Komplexe Zahlen</h1>
-<div id="outline-container-org6ee2d6a" class="outline-2">
-<h2 id="org6ee2d6a"><span class="section-number-2">1.</span> Aspekte</h2>
+<div id="outline-container-orgf322370" class="outline-2">
+<h2 id="orgf322370"><span class="section-number-2">1.</span> Aspekte</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Es seien <img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_6aa50213ba3d0571d2d7d5dc6a201ac4e53383c8.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_6aa50213ba3d0571d2d7d5dc6a201ac4e53383c8.svg" class="org-svg" />.
+Es seien \(z,w \in \mathbb{C}\).
 Dann folgt:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_ae0c72da6c79aacdc18c76188dd84049092a4b23.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_ae0c72da6c79aacdc18c76188dd84049092a4b23.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_eb0833f3d946ce3f17e2ca3880abf4f462f803d6.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_eb0833f3d946ce3f17e2ca3880abf4f462f803d6.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_9f7994124a9d1a78e356014f461a5cb4f156cbf0.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_9f7994124a9d1a78e356014f461a5cb4f156cbf0.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_550de235f1a88bf612d2f31f8281d5ef868e02f4.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_550de235f1a88bf612d2f31f8281d5ef868e02f4.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20221124232315-rechenregeln_fur_komplexe_zahlen_0520c6e0e77268cc4f59cea45bce28d14f521737.svg" alt="20221124232315-rechenregeln_fur_komplexe_zahlen_0520c6e0e77268cc4f59cea45bce28d14f521737.svg" class="org-svg" /></li>
+<li>\(\overline{zw} = \overline{z}\cdot \overline{w}\)</li>
+<li>\(\overline{ \left(\frac{z}{w} \right)} =& \frac{\overline{z}}{\overline{w}} \quad w \neq 0\)</li>
+<li>\(\overline{z \pm w} =& \overline{z} \pm \overline{w}\)</li>
+<li>\(z + \overline{z} =& 2 \mathrm{Re}(z)\)</li>
+<li>\(z - \overline{z} =& 2 \mathrm{i} \mathrm{Im}(z)\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgdd555ed" class="outline-2">
-<h2 id="orgdd555ed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org48f248f" class="outline-2">
+<h2 id="org48f248f"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

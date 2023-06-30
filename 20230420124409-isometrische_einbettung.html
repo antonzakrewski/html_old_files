@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isometrische Einbettung</h1>
-<div id="outline-container-org2da4c7a" class="outline-2">
-<h2 id="org2da4c7a"><span class="section-number-2">1.</span> Definiton</h2>
+<div id="outline-container-orgf9bc8ec" class="outline-2">
+<h2 id="orgf9bc8ec"><span class="section-number-2">1.</span> Definiton</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230420124409-isometrische_einbettung_f0c20251a25b587e7d534414af18e347a296327c.svg" alt="20230420124409-isometrische_einbettung_f0c20251a25b587e7d534414af18e347a296327c.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  <img src="file:///home/anton/html/ltximg/20230420124409-isometrische_einbettung_f35ee6d509576fee4a0cddc8372d46169ad7b8e7.svg" alt="20230420124409-isometrische_einbettung_f35ee6d509576fee4a0cddc8372d46169ad7b8e7.svg" class="org-svg" />, ist eine Isometrie, falls für <img src="file:///home/anton/html/ltximg/20230420124409-isometrische_einbettung_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" alt="20230420124409-isometrische_einbettung_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" class="org-svg" /> gilt:
+Seien \((V,d),(W,d)\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  \(\phi: V \rightarrow W\), ist eine Isometrie, falls für \(v,v' \in V\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420124409-isometrische_einbettung_d0babbcde1156c4f4b433c9c0fd1a911aa1201af.svg" alt="20230420124409-isometrische_einbettung_d0babbcde1156c4f4b433c9c0fd1a911aa1201af.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(v,v') = d(f(v),f(v'))
+\end{align*}
 <p>
 d.h. die Abbildung ist abstandserhaltend
 </p>

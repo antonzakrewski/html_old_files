@@ -9,23 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Jordan-Normalform</h1>
-<div id="outline-container-orgbb35800" class="outline-2">
-<h2 id="orgbb35800"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd2598b5" class="outline-2">
+<h2 id="orgd2598b5"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-jordan_normalform_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" alt="20230616-jordan_normalform_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230616-jordan_normalform_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230616-jordan_normalform_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" />.
+Sei \(V \simeq K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\).
 Dann ist eine Jordan-Normalform eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-jordan_normalform_c95eca2aaea769e707a7bf6a6a978e2995212e10.svg" alt="20230616-jordan_normalform_c95eca2aaea769e707a7bf6a6a978e2995212e10.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix}
+ J_1 & & \\
+& \ddots & \\
+ & & J_n  \\
+ \end{pmatrix} 
+\end{align*}
 <p>
 welche aus <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblöcken</a> besteht
 </p>

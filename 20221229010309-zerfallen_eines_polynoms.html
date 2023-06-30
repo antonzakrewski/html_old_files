@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">splitting of a polynomial</h1>
-<div id="outline-container-orgb8c8874" class="outline-2">
-<h2 id="orgb8c8874"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org69a8f88" class="outline-2">
+<h2 id="org69a8f88"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_b50137754b709da745b86e01b7f5ea11931b506f.svg" alt="20221229010309-zerfallen_eines_polynoms_b50137754b709da745b86e01b7f5ea11931b506f.svg" class="org-svg" /> <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_ab1ab1b13c36840490a8c3c2297dbfc09b607768.svg" alt="20221229010309-zerfallen_eines_polynoms_ab1ab1b13c36840490a8c3c2297dbfc09b607768.svg" class="org-svg" />.
-Das <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221229010309-zerfallen_eines_polynoms_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> zerfällt über <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_781c390874fa49bbed1672f080fe921accb28334.svg" alt="20221229010309-zerfallen_eines_polynoms_781c390874fa49bbed1672f080fe921accb28334.svg" class="org-svg" />, falls <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_b895071932b66158aa1475cf4267783f64810510.svg" alt="20221229010309-zerfallen_eines_polynoms_b895071932b66158aa1475cf4267783f64810510.svg" class="org-svg" /> existieen, so dass (in <img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_9750dc462744de4d2835904e8a863956f88e6b3b.svg" alt="20221229010309-zerfallen_eines_polynoms_9750dc462744de4d2835904e8a863956f88e6b3b.svg" class="org-svg" />) gilt:
+Seien \(K \subseteq L\) <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(f \in K[x]\).
+Das <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> \(f\) zerfällt über \(L\), falls \(a,c_1,...,c_n \in L\) existieen, so dass (in \(L[x]\)) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221229010309-zerfallen_eines_polynoms_fc61da34ab1ab22524096d35a2510a1186b949f6.svg" alt="20221229010309-zerfallen_eines_polynoms_fc61da34ab1ab22524096d35a2510a1186b949f6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f = a \cdot \prod_{j=1}^{n} (x - c_j)
+\end{align*}
 </div>
 </div>
 </div>

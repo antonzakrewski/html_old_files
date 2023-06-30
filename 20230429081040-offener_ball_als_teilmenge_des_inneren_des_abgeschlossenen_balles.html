@@ -3,74 +3,78 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>offener Ball als Teilmenge des inneren des Abgeschlossenen Balles</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">offener Ball als Teilmenge des inneren des Abgeschlossenen Balles</h1>
-<div id="outline-container-org1916821" class="outline-2">
-<h2 id="org1916821"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org03478c4" class="outline-2">
+<h2 id="org03478c4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" class="org-svg" />.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x \in X\).
 Dann gilt für den <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">offenen Ball</a> und das <a href="20230222172752-inneres_einer_topologie.html#ID-14daf62f-ca16-4f9a-a71f-a84e86b23c1c">Innere</a> des <a href="20230422114730-abgeschlossener_ball.html#ID-f08b45bd-f778-4858-948e-77c15e566788">abgeschlossenen Ball</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_aefd349b346867db6e1c85bf5d12cb7c604e0f13.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_aefd349b346867db6e1c85bf5d12cb7c604e0f13.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+B(r)(x) \subseteq \mathring{B_r[x]}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org184f936" class="outline-2">
-<h2 id="org184f936"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0975104" class="outline-2">
+<h2 id="org0975104"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_506c3f77bc35a2fc7e404b850d1c7bce586ec038.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_506c3f77bc35a2fc7e404b850d1c7bce586ec038.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+B_r(x) \subseteq B_r[x]
+\end{align*}
 <p>
 Nach der Aussage über das <a href="20230405122521-inneres_einer_topologie_erhalt_teilmengenrelation.html#ID-bf607fec-4953-4a10-99a4-79584cff9664">Inneres einer Teilmenge</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_c3d4d8bb79f161fc7448b28c63bbb4f0907a1f64.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_c3d4d8bb79f161fc7448b28c63bbb4f0907a1f64.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\mathring{B_r(x)} \subseteq B_r[x]
+\end{align*}
 <p>
-Ferner gilt nach der Aussage über das <a href="20230305171030-innere_einer_offenen_menge.html#ID-5fc0946b-8494-49e9-86a8-1dc0aa6cafa6">Innere einer offenen Menge</a> <img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_036b4c769531574ac22875f75b7d8c08fcbe9df5.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_036b4c769531574ac22875f75b7d8c08fcbe9df5.svg" class="org-svg" />
+Ferner gilt nach der Aussage über das <a href="20230305171030-innere_einer_offenen_menge.html#ID-5fc0946b-8494-49e9-86a8-1dc0aa6cafa6">Innere einer offenen Menge</a> \(\mathring{B_r(x)} \subseteq B_r[x]\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_ce4063209c8e3e928997b7331e3a9075b92bf467.svg" alt="20230429081040-offener_ball_als_teilmenge_des_inneren_des_abgeschlossenen_balles_ce4063209c8e3e928997b7331e3a9075b92bf467.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\mathring{B_r(x)} \subseteq& B_r[x] \\
+B_r(x) \subseteq& B_r[x]
+\end{align*}
 </div>
 </div>
 </div>

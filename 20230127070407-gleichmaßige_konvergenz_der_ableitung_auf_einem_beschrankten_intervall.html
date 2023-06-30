@@ -9,72 +9,80 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">gleichmäßige Konvergenz der Ableitung auf einem beschränkten Intervall</h1>
-<div id="outline-container-orgb33aea7" class="outline-2">
-<h2 id="orgb33aea7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4ce910b" class="outline-2">
+<h2 id="org4ce910b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" class="org-svg" />  eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_74b44eefb4fa99a0d47246e950539a9c0bc32b5f.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_74b44eefb4fa99a0d47246e950539a9c0bc32b5f.svg" class="org-svg" /> mit dem <a href="20220928224632-beschrankte_menge.html#ID-fe3946eb-ee47-477f-9d28-9ec919c3ce88">beschränkten Menge</a> <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_99ba4be5761f1a1f61941e232fef815e172f2876.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_99ba4be5761f1a1f61941e232fef815e172f2876.svg" class="org-svg" />  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitungen</a>.
-Falls <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" class="org-svg" /> <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweise konvergiert</a> und <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" class="org-svg" /> <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a> und <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_de421e8b9b5062f14e2d5372b7ef6bffc5972e97.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_de421e8b9b5062f14e2d5372b7ef6bffc5972e97.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so gilt
+Sei \((f_n)_{n \in \mathbb{N}}\)  eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f_i: D \rightarrow \mathbb{C}\) mit dem <a href="20220928224632-beschrankte_menge.html#ID-fe3946eb-ee47-477f-9d28-9ec919c3ce88">beschränkten Menge</a> \(D \subseteq \mathbb{R}\) und \((f_n')_{n \in \mathbb{N}}\)  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitungen</a>.
+Falls \(f_n \rightarrow f\) <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweise konvergiert</a> und \(f_n' \rightarrow g\) <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a> und \(f_i'\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_79da2af8e99b9a87aa3f7169d9d64f404f555da3.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_79da2af8e99b9a87aa3f7169d9d64f404f555da3.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_2c9ad2916837210b7fbc6df6ca3f80e8ce99a198.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_2c9ad2916837210b7fbc6df6ca3f80e8ce99a198.svg" class="org-svg" />
-</span>
+\begin{align*}
+f' = g
+\end{align*}
+\begin{align*}
+\left(\lim_{n \to \infty}f_n\right)' = \lim_{n \to \infty}\left(f_n'\right) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1af2bcd" class="outline-2">
-<h2 id="org1af2bcd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org66e311d" class="outline-2">
+<h2 id="org66e311d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_6f744dd9b65a1ac0fc9680032d1501cb2fed363d.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_6f744dd9b65a1ac0fc9680032d1501cb2fed363d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_3a49af2c91e0530e335b4c45a165eda904a8af20.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_3a49af2c91e0530e335b4c45a165eda904a8af20.svg" class="org-svg" />
-aus dem <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> für <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_7565a4ffea598e454500c4156494999f21dba62d.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_7565a4ffea598e454500c4156494999f21dba62d.svg" class="org-svg" /> folgt, dass ein ein <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_2099cd6601bd2fb0012d25573ef82d2a113bd4d9.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_2099cd6601bd2fb0012d25573ef82d2a113bd4d9.svg" class="org-svg" /> existiert, so dass gilt
+Seien \(x,x_0 \in D\) mit \(x \neq x_0\)
+aus dem <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> für \(f_m - f_n\) folgt, dass ein ein \(\xi_{m,n}(x)\) existiert, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_450079a523cbfceee2c645a867eab7947793eda6.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_450079a523cbfceee2c645a867eab7947793eda6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))}{x - x_0} =& f_m(\xi_{m,n}(x)) - f_m(\xi_{m,n}(x)) \\
+f_m(x) - f_n(x) =& (f_m(x_0) - f_n(x_0)) + (x - x_0)\left(f_m(\xi_{m,n}(x)) - f_m(\xi_{m,n}(x)) \right)
+\end{align*}
 <p>
 Daraus folgt die Ungleichung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_0249c544cc3482f7bd9353fd97d1a026d4a99ce0.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_0249c544cc3482f7bd9353fd97d1a026d4a99ce0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f_m(x) - f_n(x) \| \leq \| f_m(x_0) - f_n(x_0) \| + \vert x - x_0 \vert \cdot \|f_m'(\xi_{m,n}(x)) - f_n'(\xi_{m,n}(x)) \|
+\end{align*}
 <p>
 Nach der <a href="20230127071541-cauchyeigenschaft_der_supremumsnorm.html#ID-4faaa24a-e545-4cd9-9f65-651336fd272d">Cauchyeigenschaft der Supremumsnorm</a> folgt auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_cba7cbea6d8159f5856fa97714d1d80a29c8b4e3.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_cba7cbea6d8159f5856fa97714d1d80a29c8b4e3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f_m'(\xi_{m,n}(x)) - f_n'(\xi_{m,n}(x)) \| \rightarrow 0 \\
+\end{align*}
 <p>
-Wegen der <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweisen Konvergenz</a> gilt auch <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_e62fd74751ef32fcb98aa0c22840385f7e8cca41.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_e62fd74751ef32fcb98aa0c22840385f7e8cca41.svg" class="org-svg" /> und zudem ist <img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_0f454c362be3e545ede2ec85d86a2e5efe73a39f.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_0f454c362be3e545ede2ec85d86a2e5efe73a39f.svg" class="org-svg" /> beschränkt
+Wegen der <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweisen Konvergenz</a> gilt auch \(\| f_m(x_0) - f_n(x_0) \| \rightarrow 0\) und zudem ist \(\vert x - x_0 \vert\) beschränkt
 Daraus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_f0b4c37da6ecf0674b242984d5892717bb9d17d5.svg" alt="20230127070407-gleichmaßige_konvergenz_der_ableitung_auf_einem_beschrankten_intervall_f0b4c37da6ecf0674b242984d5892717bb9d17d5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f_m(x) - f_n(x) \| \rightarrow 0
+\end{align*}
 </div>
 </div>
 </div>

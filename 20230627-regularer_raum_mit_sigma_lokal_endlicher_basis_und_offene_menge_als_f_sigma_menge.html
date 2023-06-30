@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">regulärer Raum mit sigma-lokal endlicher Basis und offene Menge als F-sigma Menge</h1>
-<div id="outline-container-org8375d57" class="outline-2">
-<h2 id="org8375d57"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0c8c0b0" class="outline-2">
+<h2 id="org0c8c0b0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulärer</a>, <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> mit einer <a href="20230627-sigma_lokalendliche_basis.html#ID-6fd9e1d8-1a41-4431-ad26-4637a1da8044">sigma lokalendlichen Basis</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulärer</a>, <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> mit einer <a href="20230627-sigma_lokalendliche_basis.html#ID-6fd9e1d8-1a41-4431-ad26-4637a1da8044">sigma lokalendlichen Basis</a>.
 Dann ist jede <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ein $F<sub>&sigma;</sub>$-<a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> (vgl. <a href="20230614-f_sigma_menge.html#ID-7a904f2e-2ec3-418e-a97c-9654839a7554">F-Sigma Menge</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-org10435c0" class="outline-2">
-<h2 id="org10435c0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6dca0b1" class="outline-2">
+<h2 id="org6dca0b1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_efb8a5bb2c36b1df0be399609e415c3d11be4e74.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_efb8a5bb2c36b1df0be399609e415c3d11be4e74.svg" class="org-svg" /> eine <a href="20230627-sigma_lokalendliche_basis.html#ID-6fd9e1d8-1a41-4431-ad26-4637a1da8044">sigma lokalendliche Basis</a> und <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Weil <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulär</a> ist, existiert eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d24bd66a2b5abda1ed0d7ce1115c5835f2d17ddc.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d24bd66a2b5abda1ed0d7ce1115c5835f2d17ddc.svg" class="org-svg" />.
-Wir wählen für beliebiges <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_1cd161e60b3c11f230e9f4f701d5c7b74652fb81.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_1cd161e60b3c11f230e9f4f701d5c7b74652fb81.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_a003e9f9488828646ef7a83291d84e8c152a13f4.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_a003e9f9488828646ef7a83291d84e8c152a13f4.svg" class="org-svg" />.
+Sei \(\mathcal{l} = \bigcup_{n} \mathcal{l}_n\) eine <a href="20230627-sigma_lokalendliche_basis.html#ID-6fd9e1d8-1a41-4431-ad26-4637a1da8044">sigma lokalendliche Basis</a> und \(x \in U\) mit \(U\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Weil \(X\) <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulär</a> ist, existiert eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(V \subseteq U\) mit \(x \in V\).
+Wir wählen für beliebiges \(x \in X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> \(V_{x,n}\) mit \(x \in V_{x,n} \subseteq V\).
 Dann gilt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d859b4154d728684d4d449f1facff2561e67fd7b.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_d859b4154d728684d4d449f1facff2561e67fd7b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{U}  \coloneqq \bigcup_{N \in \mathbb{N}}(\bigcup_{x \in X, n \leq N} \overline{V}_{x,n})
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_1cd161e60b3c11f230e9f4f701d5c7b74652fb81.svg" alt="20230627-regularer_raum_mit_sigma_lokal_endlicher_basis_und_offene_menge_als_f_sigma_menge_1cd161e60b3c11f230e9f4f701d5c7b74652fb81.svg" class="org-svg" /> <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendlich</a> ist, 
+Da \(V_{x,n}\) <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendlich</a> ist, 
 </p>
 </div>
 </div>

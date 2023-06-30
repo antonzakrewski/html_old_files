@@ -3,60 +3,83 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Äquivalenz von Faser und affiner Unterraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Faser und affiner Unterraum</h1>
-<div id="outline-container-org13eb4dd" class="outline-2">
-<h2 id="org13eb4dd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org96db3b5" class="outline-2">
+<h2 id="org96db3b5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_ec0b1949b793ae3a1e1fc7b0114db496d6efe36c.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_ec0b1949b793ae3a1e1fc7b0114db496d6efe36c.svg" class="org-svg" /> eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(\emptyset \neq A \subseteq V\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> ist ein  <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a>, d.h. es gibt  einen <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_43c128cede9053e089b5c8ef478102684425f5d9.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_43c128cede9053e089b5c8ef478102684425f5d9.svg" class="org-svg" /> und ein <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_2d677c486eadb47ec0985088c828375ee09fb5a3.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_2d677c486eadb47ec0985088c828375ee09fb5a3.svg" class="org-svg" /> mit <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_c273257414c0e1ab652f5aacc8a2da557789622a.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_c273257414c0e1ab652f5aacc8a2da557789622a.svg" class="org-svg" /></li>
-<li>Es existiert ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>  <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_bc50452c769e7fc3a7d224b32f52148ad676bf93.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_bc50452c769e7fc3a7d224b32f52148ad676bf93.svg" class="org-svg" />, sodass <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> eine <a href="20221123093723-faser.html#ID-9b32e273-b901-4767-9b2d-afdfba369c29">Faser</a> von <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist, d.h. <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_42a9ac247e25259e4062f434fc9c38f001c4526a.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_42a9ac247e25259e4062f434fc9c38f001c4526a.svg" class="org-svg" /> für ein <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_eea3ebe41f9b31f53f827992d8b8870e0b59187b.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_eea3ebe41f9b31f53f827992d8b8870e0b59187b.svg" class="org-svg" /></li>
-<li>Seien <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_02a9e46f45213d3d4ec8902675fba382ea2abd25.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_02a9e46f45213d3d4ec8902675fba382ea2abd25.svg" class="org-svg" /> und <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_06ce29854c6c4a0a8ec1b3d2a6db302f37c96f2f.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_06ce29854c6c4a0a8ec1b3d2a6db302f37c96f2f.svg" class="org-svg" /> mit <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_95e7d1a34ca76114d8013157678800b91cd4caa0.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_95e7d1a34ca76114d8013157678800b91cd4caa0.svg" class="org-svg" />. Dann ist <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_7e249f850e7946d5a72cd674e2ff49af90e10600.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_7e249f850e7946d5a72cd674e2ff49af90e10600.svg" class="org-svg" /></li>
+<li>\(A\) ist ein  <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a>, d.h. es gibt  einen <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> \(U \subseteq V\) und ein \(a \in V\) mit \(A = a + U\)</li>
+<li>Es existiert ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>  \(f: v \rightarrow W\), sodass \(A\) eine <a href="20221123093723-faser.html#ID-9b32e273-b901-4767-9b2d-afdfba369c29">Faser</a> von \(f\) ist, d.h. \(A = f^{-1}[b]\) für ein \(b \in W\)</li>
+<li>Seien \(a_0,...,a_k \in A\) und \(\alpha_0,...,\alpha_k \in K\) mit \(\sum_{i=0}^{k} \alpha_i = 1\). Dann ist \(\sum_{i=0}^{k} \alpha_i a_i \in A\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2e169db" class="outline-2">
-<h2 id="org2e169db"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org120d9a0" class="outline-2">
+<h2 id="org120d9a0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Durch <a href="20211230231638-ringschluss_beweistechnik.html#ID-f53319cd-0fbf-41ed-b456-9e3fab321446">Ringschluss</a>
 </p>
 </div>
-<div id="outline-container-org0ac606c" class="outline-3">
-<h3 id="org0ac606c"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org61dac2e" class="outline-3">
+<h3 id="org61dac2e"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_c273257414c0e1ab652f5aacc8a2da557789622a.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_c273257414c0e1ab652f5aacc8a2da557789622a.svg" class="org-svg" />.
-für den <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a> (siehe <a href="20221119134421-abbildung_auf_den_zugehorigen_faktorraum_als_epimorphismus.html#ID-2847ebc2-0305-43b7-bca1-c866bcd1db21">Lemma</a>) <img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_e031409e39cf27f8335e5f9611fd93768989b9a4.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_e031409e39cf27f8335e5f9611fd93768989b9a4.svg" class="org-svg" />  gilt:
+Sei \(A = a + U\).
+für den <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a> (siehe <a href="20221119134421-abbildung_auf_den_zugehorigen_faktorraum_als_epimorphismus.html#ID-2847ebc2-0305-43b7-bca1-c866bcd1db21">Lemma</a>) \(f: v \rightarrow V / U, a \mapsto a + U\)  gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_73c8edd3f1cbfa0df2cfd76e4bb064b7ba04f1c4.svg" alt="20221211175647-lemma_uber_die_aquivalenz_von_faser_und_affiner_unterraum_73c8edd3f1cbfa0df2cfd76e4bb064b7ba04f1c4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+f^{-1}[f(a)] =& a + \mathrm{ker}(f)  \\
+=& a + U \\
+=& A
+\end{align*}
 </div>
 </div>
+<div id="outline-container-org17d37a8" class="outline-3">
+<h3 id="org17d37a8"><span class="section-number-3">2.2.</span> b)</h3>
 </div>
-<div id="outline-container-orgae48877" class="outline-3">
-<h3 id="orgae48877"><span class="section-number-3">2.2.</span> b)</h3>
-</div>
-<div id="outline-container-org452830e" class="outline-3">
-<h3 id="org452830e"><span class="section-number-3">2.3.</span> c)</h3>
+<div id="outline-container-orga854370" class="outline-3">
+<h3 id="orga854370"><span class="section-number-3">2.3.</span> c)</h3>
 </div>
 </div>
 </div>

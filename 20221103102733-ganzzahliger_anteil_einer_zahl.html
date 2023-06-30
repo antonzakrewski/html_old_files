@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">ganzzahliger Anteil einer Zahl</h1>
-<div id="outline-container-org03c2dcb" class="outline-2">
-<h2 id="org03c2dcb"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1eb85dc" class="outline-2">
+<h2 id="org1eb85dc"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221103102733-ganzzahliger_anteil_einer_zahl_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20221103102733-ganzzahliger_anteil_einer_zahl_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" />.
-Dann ist der ganzzahlige <img src="file:///home/anton/html/ltximg/20221103102733-ganzzahliger_anteil_einer_zahl_70dfb2149f496a53108b26b3a8a81e782f0948cf.svg" alt="20221103102733-ganzzahliger_anteil_einer_zahl_70dfb2149f496a53108b26b3a8a81e782f0948cf.svg" class="org-svg" /> Anteil von <img src="file:///home/anton/html/ltximg/20221103102733-ganzzahliger_anteil_einer_zahl_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20221103102733-ganzzahliger_anteil_einer_zahl_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> definiert als
+Sei \(x \in \mathbb{R}\).
+Dann ist der ganzzahlige \([x]\) Anteil von \(x\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221103102733-ganzzahliger_anteil_einer_zahl_c787c139ee9cc0e4ee9ba754ea8001338a540eab.svg" alt="20221103102733-ganzzahliger_anteil_einer_zahl_c787c139ee9cc0e4ee9ba754ea8001338a540eab.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+[x] \leq a < [x] + 1
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20221103102733-ganzzahliger_anteil_einer_zahl_a50b985b5301157a5f174c5dfcfce0f1bf970435.svg" alt="20221103102733-ganzzahliger_anteil_einer_zahl_a50b985b5301157a5f174c5dfcfce0f1bf970435.svg" class="org-svg" />
+mit \([x] \in \mathbb{Z}\)
 </p>
 </div>
 </div>

@@ -3,70 +3,86 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>offene Abbildung und Basis</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">offene Abbildung und Basis</h1>
-<div id="outline-container-org8d9f868" class="outline-2">
-<h2 id="org8d9f868"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org386bdb6" class="outline-2">
+<h2 id="org386bdb6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230522165013-offene_abbildung_und_basis_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230522165013-offene_abbildung_und_basis_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="ltximg/20230522165013-offene_abbildung_und_basis_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230522165013-offene_abbildung_und_basis_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230522165013-offene_abbildung_und_basis_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230522165013-offene_abbildung_und_basis_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230522165013-offene_abbildung_und_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230522165013-offene_abbildung_und_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist eine <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></li>
-<li>Für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="ltximg/20230522165013-offene_abbildung_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230522165013-offene_abbildung_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> und eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="ltximg/20230522165013-offene_abbildung_und_basis_b1f98ff8aa8818016a9a1365d956ebf34ca64c07.svg" alt="20230522165013-offene_abbildung_und_basis_b1f98ff8aa8818016a9a1365d956ebf34ca64c07.svg" class="org-svg" /> ist <img src="ltximg/20230522165013-offene_abbildung_und_basis_b2f12c8db0b0cbf3dbae3c43148e047b9d983cda.svg" alt="20230522165013-offene_abbildung_und_basis_b2f12c8db0b0cbf3dbae3c43148e047b9d983cda.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
+<li>\(f\) ist eine <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></li>
+<li>Für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(\mathcal{B}\) und eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(B \in \mathcal{B}\) ist \(f[B] \in \mathcal{T}'\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaafbe62" class="outline-2">
-<h2 id="orgaafbe62"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org27c897b" class="outline-2">
+<h2 id="org27c897b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga25d3b1" class="outline-3">
-<h3 id="orga25d3b1"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgbb6c350" class="outline-3">
+<h3 id="orgbb6c350"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230522165013-offene_abbildung_und_basis_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230522165013-offene_abbildung_und_basis_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existieren <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="ltximg/20230522165013-offene_abbildung_und_basis_3a4de5c6b0274fafa7b7b7a56b005cf7393dff14.svg" alt="20230522165013-offene_abbildung_und_basis_3a4de5c6b0274fafa7b7b7a56b005cf7393dff14.svg" class="org-svg" /> für <img src="ltximg/20230522165013-offene_abbildung_und_basis_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230522165013-offene_abbildung_und_basis_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" />, so dass gilt
+Sei \(O\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existieren <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_{i}\) für \(i \in I\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230522165013-offene_abbildung_und_basis_302ff01e68867de9a7930566140cea9824bdce30.svg" alt="20230522165013-offene_abbildung_und_basis_302ff01e68867de9a7930566140cea9824bdce30.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+O = \bigcup_{i \in I} O_i
+\end{align*}
 <p>
 Dabei folgt dann nach der Aussage über das <a href="20230522165952-bild_und_vereinigung.html#ID-e5d426be-3447-44f8-97f4-4b9c6d0f8f0b">Bild und Vereinigung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230522165013-offene_abbildung_und_basis_1d22fe4e86e57ae2a2c600d49899c48700fb6412.svg" alt="20230522165013-offene_abbildung_und_basis_1d22fe4e86e57ae2a2c600d49899c48700fb6412.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+f[0] =& f[\bigcup_{i \in I} O_i] \\
+=& \bigcup_{i \in I} f[O_i]
+\end{align*}
 <p>
-Da <img src="ltximg/20230522165013-offene_abbildung_und_basis_4bda59a649e28bf2350e26479fb24cc88bbb66f2.svg" alt="20230522165013-offene_abbildung_und_basis_4bda59a649e28bf2350e26479fb24cc88bbb66f2.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt aus der <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a>, dass <img src="ltximg/20230522165013-offene_abbildung_und_basis_5e48690cbdd5ee6ce87ee0e0c5252501de0ce7f6.svg" alt="20230522165013-offene_abbildung_und_basis_5e48690cbdd5ee6ce87ee0e0c5252501de0ce7f6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Da \(f[O_i]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt aus der <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a>, dass \(f[O]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd711346" class="outline-3">
-<h3 id="orgd711346"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org92d65b6" class="outline-3">
+<h3 id="org92d65b6"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-folgt als Spezialfall, da gilt: <img src="ltximg/20230522165013-offene_abbildung_und_basis_073ff3c16ba554aab1f0acf06d66127966d20cf4.svg" alt="20230522165013-offene_abbildung_und_basis_073ff3c16ba554aab1f0acf06d66127966d20cf4.svg" class="org-svg" />
+folgt als Spezialfall, da gilt: \(\mathcal{B} \subseteq \mathcal{T}\)
 </p>
 </div>
 </div>

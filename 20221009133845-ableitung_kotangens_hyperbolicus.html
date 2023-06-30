@@ -9,42 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung Kotangens hyperbolicus</h1>
-<div id="outline-container-orgf7f4eb7" class="outline-2">
-<h2 id="orgf7f4eb7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdedc19e" class="outline-2">
+<h2 id="orgdedc19e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133845-ableitung_kotangens_hyperbolicus_36ec75a847586555226c7881785dcc41f7a8c42b.svg" alt="20221009133845-ableitung_kotangens_hyperbolicus_36ec75a847586555226c7881785dcc41f7a8c42b.svg" class="org-svg" />
-</span>
+\begin{align*}
+\coth'(x) =& - \frac{1}{\sinh(x)^2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf8c014e" class="outline-2">
-<h2 id="orgf8c014e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org578cd01" class="outline-2">
+<h2 id="org578cd01"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der Definition des <a href="20221009060854-kotangens_hyperbolicus.html#ID-aca02868-aa4d-491e-9584-68bdb565a8fe">Kotangens hyperbolicus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133845-ableitung_kotangens_hyperbolicus_89c7af61c895b5460f029c75035d8e060d505d0a.svg" alt="20221009133845-ableitung_kotangens_hyperbolicus_89c7af61c895b5460f029c75035d8e060d505d0a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\coth(x) =& \frac{\cosh(x)}{\sinh(x)}
+\end{align*}
 <p>
 Aufgrund der <a href="20210217213918-quotientenregel.html#ID-6b07168c-c2fd-4a8e-a0c6-1cbf4f462118">Quotientenregel</a> und der <a href="20221009133840-ableitung_tangens_hyperbolicus.html#ID-d9758234-31b1-4c2f-86f4-37895dc1f175">Ableitung des Tangens hyperbolicus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133845-ableitung_kotangens_hyperbolicus_ba269a6d2a24850073bcdb83a1e240a4afd16ef2.svg" alt="20221009133845-ableitung_kotangens_hyperbolicus_ba269a6d2a24850073bcdb83a1e240a4afd16ef2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\coth(x)' =& \left(\frac{1}{\tanh(x)}\right)' \\
+=& - \frac{\tanh(x)'}{\tanh(x)^2} \\
+=& - \frac{\frac{1}{\cosh(x)^2}}{\frac{\sinh(x)^2}{\cosh(x)^2}} \\
+=& - \frac{1}{\sinh(x)^2}
+\end{align*}
 </div>
 </div>
 </div>

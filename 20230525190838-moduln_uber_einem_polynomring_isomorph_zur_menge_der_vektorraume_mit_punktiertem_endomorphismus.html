@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Moduln über einem Polynomring isomorph zur Menge der Vektorräume mit punktiertem Endomorphismus</h1>
-<div id="outline-container-org248c4ce" class="outline-2">
-<h2 id="org248c4ce"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd0fdaee" class="outline-2">
+<h2 id="orgd0fdaee"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_38c62d74f4408c9c9dace9166f78780d1834d8cf.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_38c62d74f4408c9c9dace9166f78780d1834d8cf.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_12333ed84512eb332843ef762fe4b50fe1c6828c.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_12333ed84512eb332843ef762fe4b50fe1c6828c.svg" class="org-svg" /> ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über dem <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_73ed0d0592f419464102f7eb72ddd500426c3202.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_73ed0d0592f419464102f7eb72ddd500426c3202.svg" class="org-svg" />
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, \((V, +_{v}, \cdot_v)\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \((V, +_{m}, \cdot_m)\) ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über dem <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> \(K[X]\)
 Dann 
 </p>
 </div>
 </div>
-<div id="outline-container-orgbed72b1" class="outline-2">
-<h2 id="orgbed72b1"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-orgcf17fcc" class="outline-2">
+<h2 id="orgcf17fcc"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> folgt aus:
@@ -38,24 +63,22 @@ Wir zeigen im folgenden Umkehrbarkeit und damit Bijektivität:
 </p>
 
 <p>
-Wir erhalten <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> (vgl. i), indem wir <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_8e264bba5bbb0fbc02a8c85c9eac2ce08340d9ce.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_8e264bba5bbb0fbc02a8c85c9eac2ce08340d9ce.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> auswerten.
-Daraus folgt dann durch Anwendung von ii) <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_026a16923ab7c8ac049d2aed7436be352c9d95cf.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_026a16923ab7c8ac049d2aed7436be352c9d95cf.svg" class="org-svg" /> für ein ursprüngliches <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> und ein <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_823e010e08a5d7ff91089bd1a18c8beb3b76deaf.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_823e010e08a5d7ff91089bd1a18c8beb3b76deaf.svg" class="org-svg" /> nach Auswertung vom Morphismus und Umkehrmorphismus.
-Damit folgt dann, dass <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_90f869da672adb8042660cc4df70d31a5f6c96bc.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_90f869da672adb8042660cc4df70d31a5f6c96bc.svg" class="org-svg" /> eine Eindeutige Skalarmultiplikation induzieren.
+Wir erhalten \(A \in \mathrm{End}_K(V)\) (vgl. i), indem wir \(x \cdot v\) für \(v \in V\) auswerten.
+Daraus folgt dann durch Anwendung von ii) \(x' \cdot v = A(v) = x \cdot v\) für ein ursprüngliches \(x\) und ein \(x'\) nach Auswertung vom Morphismus und Umkehrmorphismus.
+Damit folgt dann, dass \(x \cdot v = x' \cdot v\) eine Eindeutige Skalarmultiplikation induzieren.
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> gegeben, so erhalten wir nach ii) eine eindeutige Skalarmultiplikation.
-Indem wir die Skalarmultiplikation mit <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_8e264bba5bbb0fbc02a8c85c9eac2ce08340d9ce.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_8e264bba5bbb0fbc02a8c85c9eac2ce08340d9ce.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> auswerten, erhalten wir nach i) eine eindeutigen VR-homomorphismus.
+Sei \(A \in \mathrm{End}_K(V)\) gegeben, so erhalten wir nach ii) eine eindeutige Skalarmultiplikation.
+Indem wir die Skalarmultiplikation mit \(x \cdot v\) für \(v \in V\) auswerten, erhalten wir nach i) eine eindeutigen VR-homomorphismus.
 Es gilt ferner:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_ca38ed8debed3cadd57a485797509337550b9260.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_ca38ed8debed3cadd57a485797509337550b9260.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \cdot v  \coloneqq& A(v) \\
+A'(v)  \coloneqq& x \cdot v
+\end{align*}
 <p>
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_90f869da672adb8042660cc4df70d31a5f6c96bc.svg" alt="20230525190838-moduln_uber_einem_polynomring_isomorph_zur_menge_der_vektorraume_mit_punktiertem_endomorphismus_90f869da672adb8042660cc4df70d31a5f6c96bc.svg" class="org-svg" /> und die induzierte Skalarmultiplikation stimmt jeweils überein
+Daraus folgt \(x \cdot v = x' \cdot v\) und die induzierte Skalarmultiplikation stimmt jeweils überein
 </p>
 </div>
 </div>

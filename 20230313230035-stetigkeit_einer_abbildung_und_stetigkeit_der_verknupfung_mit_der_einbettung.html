@@ -9,35 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit einer Abbildung und Stetigkeit der Verknüpfung mit der Einbettung</h1>
-<div id="outline-container-org4554c41" class="outline-2">
-<h2 id="org4554c41"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgda7bb41" class="outline-2">
+<h2 id="orgda7bb41"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" class="org-svg" /> eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> sowie <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_b117e9eb5ab5f6e7db16c705207685d059469492.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_b117e9eb5ab5f6e7db16c705207685d059469492.svg" class="org-svg" /> die <a href="20230222165518-inklusionsabbildung_topologie.html#ID-773a9344-dbc5-4220-83f1-ed1bb161b7d4">Inklusionsabbildung</a>.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_0f242940dca25a348ffe27dccd376e163ec1e769.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_0f242940dca25a348ffe27dccd376e163ec1e769.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_e3c9844c08d5e2dc930ffc173dcef143ca2783ee.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_e3c9844c08d5e2dc930ffc173dcef143ca2783ee.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist. (siehe <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>)
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(U \subseteq X\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> sowie \(j: U \rightarrow X\) die <a href="20230222165518-inklusionsabbildung_topologie.html#ID-773a9344-dbc5-4220-83f1-ed1bb161b7d4">Inklusionsabbildung</a>.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(g: X' \rightarrow U\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(j \circ g: X' \rightarrow X\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist. (siehe <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-org8126405" class="outline-2">
-<h2 id="org8126405"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org31f7cdc" class="outline-2">
+<h2 id="org31f7cdc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_96d2d62026296dd990fde298ce9dd3e67a4aad49.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_96d2d62026296dd990fde298ce9dd3e67a4aad49.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_77f8d99eb65cfa207477d89d1ba53a2182b6d70a.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_77f8d99eb65cfa207477d89d1ba53a2182b6d70a.svg" class="org-svg" /> das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_5d325edc7d499b91f388e50df6e0c337d0c084e6.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_5d325edc7d499b91f388e50df6e0c337d0c084e6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(j \circ g\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(O \in \mathcal{T}\) das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \((j \circ g)^{-1}[O]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
 Dabei gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_be267e345a3c4fa4c96e99d48260323989dd25a1.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_be267e345a3c4fa4c96e99d48260323989dd25a1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(j \circ g)^{-1}[O] =& g^{-1}[j^{-1}[O]] \\
+=& g^{-1}[O \cap U]
+\end{align*}
 <p>
-d.h. <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_1bea5b5077dfa47f4743ac6ac861a920a5f26c9c.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_1bea5b5077dfa47f4743ac6ac861a920a5f26c9c.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> ist.
-Dies ist äquivalent dazu, dass <img src="file:///home/anton/html/ltximg/20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_0f242940dca25a348ffe27dccd376e163ec1e769.svg" alt="20230313230035-stetigkeit_einer_abbildung_und_stetigkeit_der_verknupfung_mit_der_einbettung_0f242940dca25a348ffe27dccd376e163ec1e769.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+d.h. <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(g^{-1}[O \cap U]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in \(\mathcal{T}\) ist.
+Dies ist äquivalent dazu, dass \(g: X' \rightarrow U\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>

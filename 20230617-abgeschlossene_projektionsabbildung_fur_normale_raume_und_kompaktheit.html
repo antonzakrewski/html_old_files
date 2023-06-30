@@ -9,98 +9,114 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">abgeschlossene Projektionsabbildung für normale Räume und Kompaktheit</h1>
-<div id="outline-container-org32ef83a" class="outline-2">
-<h2 id="org32ef83a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org10e760c" class="outline-2">
+<h2 id="org10e760c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a></li>
-<li>für einen <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normalen</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischen Raum</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" /> ist die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_5490781b7fdede9d55e03699763b339b5d3b8dab.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_5490781b7fdede9d55e03699763b339b5d3b8dab.svg" class="org-svg" /> eine <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> N</li>
+<li>\(X\) ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a></li>
+<li>für einen <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normalen</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischen Raum</a> \(Y\) ist die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> \(\pi_Y: X \times Y \rightarrow Y\) eine <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> N</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org5715843" class="outline-2">
-<h2 id="org5715843"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org53c21a3" class="outline-2">
+<h2 id="org53c21a3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0f230f9" class="outline-3">
-<h3 id="org0f230f9"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orgcf3e6f0" class="outline-3">
+<h3 id="orgcf3e6f0"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20230615-abgeschlossene_projektionsabbildung_und_kompaktheit.html#ID-65a036f1-62a7-42c3-a4f7-416cb65697de">abgeschlossene Projektionsabbildung und Kompaktheit</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orged63974" class="outline-3">
-<h3 id="orged63974"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgac02fc9" class="outline-3">
+<h3 id="orgac02fc9"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>:
 </p>
 </div>
-<div id="outline-container-org033b4a0" class="outline-4">
-<h4 id="org033b4a0"><span class="section-number-4">2.2.1.</span> Konstruktion</h4>
+<div id="outline-container-org30c8bc7" class="outline-4">
+<h4 id="org30c8bc7"><span class="section-number-4">2.2.1.</span> Konstruktion</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> nicht <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> und <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_c5097745f5ca38ccfed5f8bdaddacd152441ba5f.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_c5097745f5ca38ccfed5f8bdaddacd152441ba5f.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d72752d68665af6ade7d076e052b10218b3a58e0.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d72752d68665af6ade7d076e052b10218b3a58e0.svg" class="org-svg" />
-Dann existiert nach Annahme kein <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> mit <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_08518c2c4940e0221eac96209b218397458b2733.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_08518c2c4940e0221eac96209b218397458b2733.svg" class="org-svg" /> (vgl. <a href="20230606-aquivalente_charakterisierungen_eines_kompakten_raums.html#ID-fc901357-bff9-40fb-a460-d1a20ce81368">Äquivalente Charakterisierungen eines kompakten Raums</a>)
+Sei \(X\) nicht <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> und \((F_i)\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit \(\bigcap_{i \in I} F_i = \emptyset\)
+Dann existiert nach Annahme kein <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> mit \(\bigcap_{i = 1}^{n} F_i = \emptyset\) (vgl. <a href="20230606-aquivalente_charakterisierungen_eines_kompakten_raums.html#ID-fc901357-bff9-40fb-a460-d1a20ce81368">Äquivalente Charakterisierungen eines kompakten Raums</a>)
 Sei dann 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_e9d3e4f624501d72b5019d40c50eaf563fd30c1f.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_e9d3e4f624501d72b5019d40c50eaf563fd30c1f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+Y = \{\infty\} \sqcup X
+\end{align*}
 <p>
 mit der <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_5252add4f63a9e8509cf28f48769beca4fdbdf47.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_5252add4f63a9e8509cf28f48769beca4fdbdf47.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathcal{T} \sqcup \{ \{\infty\} \cup \bigcap_{j = 1}^{n} F_{i(j)}\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6cba5fa" class="outline-4">
-<h4 id="org6cba5fa"><span class="section-number-4">2.2.2.</span> <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normal</a></h4>
+<div id="outline-container-org3777549" class="outline-4">
+<h4 id="org3777549"><span class="section-number-4">2.2.2.</span> <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normal</a></h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Seien <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a555b67500797cd507006bb5eabc5e35be19dbde.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_a555b67500797cd507006bb5eabc5e35be19dbde.svg" class="org-svg" /> gegeben.
-Dann gilt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_dd6c875a70b05f8a59d4f5dae7071464aff9fc43.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_dd6c875a70b05f8a59d4f5dae7071464aff9fc43.svg" class="org-svg" /> und es folgt, dass <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d42fd608a567a50a32e4a0e455a6b1df73046553.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d42fd608a567a50a32e4a0e455a6b1df73046553.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_446a8cfcb2639baca9eab0fc18ad2fe547e557b1.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_446a8cfcb2639baca9eab0fc18ad2fe547e557b1.svg" class="org-svg" /> als <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> 
+Seien <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(A_1,A_2 \subseteq Y\) gegeben.
+Dann gilt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(\infty \not\in A_1\) und es folgt, dass \(\{\infty\} \sqcup A_2\), \(X \setminus A_2\) als <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgfe3a15d" class="outline-4">
-<h4 id="orgfe3a15d"><span class="section-number-4">2.2.3.</span> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a></h4>
+<div id="outline-container-org62bc781" class="outline-4">
+<h4 id="org62bc781"><span class="section-number-4">2.2.3.</span> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a></h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
-Sei eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" class="org-svg" /> gegeben, so existiert nach Annamhe eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_1e41911e85ec875359ceef4eb2f8248d497a748d.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_1e41911e85ec875359ceef4eb2f8248d497a748d.svg" class="org-svg" />.
-Damit folgt <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_ab8943a93b8f5b3befc1adea021e706456362539.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_ab8943a93b8f5b3befc1adea021e706456362539.svg" class="org-svg" /> und somit folgt <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_7c05cf1eb35fb5167b723b813e2b2651d7ec57e8.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_7c05cf1eb35fb5167b723b813e2b2651d7ec57e8.svg" class="org-svg" />.
+Sei eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) von \(\infty\) gegeben, so existiert nach Annamhe eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit \(\infty \sqcup F_i \subseteq U\).
+Damit folgt \(U \cap X \supseteq F_i\) und somit folgt \(\overline{X} = Y\).
 </p>
 </div>
 </div>
-<div id="outline-container-org8b24299" class="outline-4">
-<h4 id="org8b24299"><span class="section-number-4">2.2.4.</span> nicht <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossen</a></h4>
+<div id="outline-container-org727b73a" class="outline-4">
+<h4 id="org727b73a"><span class="section-number-4">2.2.4.</span> nicht <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossen</a></h4>
 <div class="outline-text-4" id="text-2-2-4">
 <p>
-für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> der <a href="20230330175154-diagonalabbildung.html#ID-d79d9003-736d-4f2e-b6e6-d2c6c636e4c2">Diagonale</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_4bf0a81cb4887368a0444f989053a601ae77cf9d.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_4bf0a81cb4887368a0444f989053a601ae77cf9d.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_8eaf07488b2d01cda98c675f1f10bf9e7a3a5495.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_8eaf07488b2d01cda98c675f1f10bf9e7a3a5495.svg" class="org-svg" />, da für <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d450ab5968a1e3446713000e855ba09076fdd0f9.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_d450ab5968a1e3446713000e855ba09076fdd0f9.svg" class="org-svg" /> und ein <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenes</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_0909055633ba92e1dcde426715a4aacd42f6d411.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_0909055633ba92e1dcde426715a4aacd42f6d411.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_026e5c629899198b7c32344d3820a161b4164876.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_026e5c629899198b7c32344d3820a161b4164876.svg" class="org-svg" /> nach Konstruktion einen leeren Schnitt mit der Diagonale hat.
+für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> der <a href="20230330175154-diagonalabbildung.html#ID-d79d9003-736d-4f2e-b6e6-d2c6c636e4c2">Diagonale</a> \(\triangle X\) gilt \(X \times \{\infty\} \not\in \overline{\triangle X}\), da für \((x,\infty)\) und ein <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenes</a> \(F\) mit \(x \not\in F\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(X \setminus F \times (\{\infty\} \cup F\) nach Konstruktion einen leeren Schnitt mit der Diagonale hat.
 Damit folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_82b743d93510259323d675b1bb7fb1dc9a2f4b4a.svg" alt="20230617-abgeschlossene_projektionsabbildung_fur_normale_raume_und_kompaktheit_82b743d93510259323d675b1bb7fb1dc9a2f4b4a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\pi_2[\overline{\triangle X}] = X
+\end{align*}
 <p>
 d.h. die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> ist nicht <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> (vgl. <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a>)
 </p>

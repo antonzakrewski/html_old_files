@@ -9,37 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Regel von de L'Hospital (Q11)</h1>
-<div id="outline-container-org36fd5fd" class="outline-2">
-<h2 id="org36fd5fd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3be50d0" class="outline-2">
+<h2 id="org3be50d0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>für <a href="20220122185833-unbestimmter_ausdruck.html#ID-ba59cdb9-d017-4e04-8d0b-7f80c977df25">unbestimmte Ausdrücke</a> <img src="file:///home/anton/html/ltximg/20220122185703-regel_von_de_l_hospital_7790312dcfeb44240817a548abab14f060e7bf5d.svg" alt="20220122185703-regel_von_de_l_hospital_7790312dcfeb44240817a548abab14f060e7bf5d.svg" class="org-svg" /></li>
+<li>für <a href="20220122185833-unbestimmter_ausdruck.html#ID-ba59cdb9-d017-4e04-8d0b-7f80c977df25">unbestimmte Ausdrücke</a> \(\lim(\frac{g(x)}{h(x)})\)</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122185703-regel_von_de_l_hospital_01a6f064036b5a66247fd0ea431bc60ce8b7e175.svg" alt="20220122185703-regel_von_de_l_hospital_01a6f064036b5a66247fd0ea431bc60ce8b7e175.svg" class="org-svg" />
-</span>
+\begin{align*}
+f(x)  \coloneqq& \frac{g(x)}{h(x)} \\
+\lim f(x) =& \lim \left(\frac{g(x)}{h(x)}\right) = \lim\left(\frac{g'(x)}{h'(x)}\right)
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org8d01e55" class="outline-3">
-<h3 id="org8d01e55"><span class="section-number-3">1.1.</span> Beispiel</h3>
+<div id="outline-container-orgd33c318" class="outline-3">
+<h3 id="orgd33c318"><span class="section-number-3">1.1.</span> Beispiel</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122185703-regel_von_de_l_hospital_fefb9596f909ec118a9f6bd6ca7e7677f59f010d.svg" alt="20220122185703-regel_von_de_l_hospital_fefb9596f909ec118a9f6bd6ca7e7677f59f010d.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim_{x \to \infty}\frac{e^x}{x^2} =& \lim_{x \to \infty}\frac{e^x}{2x} \\
+\lim_{x \to \infty}\frac{e^x}{2} =& \infty
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-org3f3a10b" class="outline-2">
-<h2 id="org3f3a10b"><span class="section-number-2">2.</span> <a href="20220527104520-beweis_regel_von_de_l_hospital.html#ID-59ea7b15-d76d-4b0a-ade1-c6bac76c9156">Beweis: Regel von de L'Hospital</a></h2>
+<div id="outline-container-org25d51bb" class="outline-2">
+<h2 id="org25d51bb"><span class="section-number-2">2.</span> <a href="20220527104520-beweis_regel_von_de_l_hospital.html#ID-59ea7b15-d76d-4b0a-ade1-c6bac76c9156">Beweis: Regel von de L'Hospital</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

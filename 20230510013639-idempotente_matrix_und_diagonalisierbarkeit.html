@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">idempotente Matrix und diagonalisierbarkeit</h1>
-<div id="outline-container-org7ffb77a" class="outline-2">
-<h2 id="org7ffb77a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4de8b99" class="outline-2">
+<h2 id="org4de8b99"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_5208a619c62a00734f94e09eb12dda557dd6d901.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_5208a619c62a00734f94e09eb12dda557dd6d901.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> sowie <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> ein <a href="20230302234615-idempotente_abbildung.html#ID-563e6e6d-7d44-4cb0-a1c7-ec0debf47ac3">idempotenter</a> <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_df9333efd5cbba068f8ca79d283aad11dc6ed095.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_df9333efd5cbba068f8ca79d283aad11dc6ed095.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a>.
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(V \simeq K^n\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> sowie \(A \in \mathrm{End}_K(V)\) ein <a href="20230302234615-idempotente_abbildung.html#ID-563e6e6d-7d44-4cb0-a1c7-ec0debf47ac3">idempotenter</a> <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> \(\overline{A} \in K^{n\times n}\)
+Dann ist \(A\) <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgae8a658" class="outline-2">
-<h2 id="orgae8a658"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org32f792e" class="outline-2">
+<h2 id="org32f792e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_8e3eda6cb8007567b5e75b4433c61caaa5ec73fa.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_8e3eda6cb8007567b5e75b4433c61caaa5ec73fa.svg" class="org-svg" /> und damit <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_7c9ed7b227f1bd7043b6b281cfbef84cf5408fa2.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_7c9ed7b227f1bd7043b6b281cfbef84cf5408fa2.svg" class="org-svg" />.
-Ferner gilt für das <a href="20230222203528-minimalpolynom.html#ID-6ec50a2e-09e0-4866-a0f6-acae544923f8">Minimalpolynom</a> <img src="file:///home/anton/html/ltximg/20230510013639-idempotente_matrix_und_diagonalisierbarkeit_ee638e16e0f9071a36db1828ab309559ebf28c93.svg" alt="20230510013639-idempotente_matrix_und_diagonalisierbarkeit_ee638e16e0f9071a36db1828ab309559ebf28c93.svg" class="org-svg" />, d.h. die Aussage folgt aus der <a href="20230509153917-diagonalisierbarkeit_und_zerfallen_des_minimalpolynoms.html#ID-2d49dd32-2436-4fce-a6d7-b931286ec3bd">Diagonalisierbarkeit und Zerfallen des Minimalpolynoms</a> 
+Es gilt \(\overline{A}^2 = \overline{A}\) und damit \(\overline{A}^2 - \overline{A}\).
+Ferner gilt für das <a href="20230222203528-minimalpolynom.html#ID-6ec50a2e-09e0-4866-a0f6-acae544923f8">Minimalpolynom</a> \(\mu_A \mid x^2 - x = (x-1) \cdot x\), d.h. die Aussage folgt aus der <a href="20230509153917-diagonalisierbarkeit_und_zerfallen_des_minimalpolynoms.html#ID-2d49dd32-2436-4fce-a6d7-b931286ec3bd">Diagonalisierbarkeit und Zerfallen des Minimalpolynoms</a> 
 </p>
 </div>
 </div>

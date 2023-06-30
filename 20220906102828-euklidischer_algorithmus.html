@@ -3,70 +3,91 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>euklidischer Algorithmus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">euklidischer Algorithmus</h1>
-<div id="outline-container-org46357ad" class="outline-2">
-<h2 id="org46357ad"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga7f2de2" class="outline-2">
+<h2 id="orga7f2de2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20220906102828-euklidischer_algorithmus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220906102828-euklidischer_algorithmus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> 
-Sei <img src="ltximg/20220906102828-euklidischer_algorithmus_16ea502ef9a16c097531a07f808407ee031a68ab.svg" alt="20220906102828-euklidischer_algorithmus_16ea502ef9a16c097531a07f808407ee031a68ab.svg" class="org-svg" />, <img src="ltximg/20220906102828-euklidischer_algorithmus_c4be91d2d366d54fed702f9fc7dcd219e58563bd.svg" alt="20220906102828-euklidischer_algorithmus_c4be91d2d366d54fed702f9fc7dcd219e58563bd.svg" class="org-svg" /> so liefert der Algorithmus: 
+Sei \(R\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> 
+Sei \(r_0 \coloneqq a\), \(r_1 \coloneqq b\) so liefert der Algorithmus: 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220906102828-euklidischer_algorithmus_1ff53395de3d0269692f6174e4e7d41b08cbf8da.svg" alt="20220906102828-euklidischer_algorithmus_1ff53395de3d0269692f6174e4e7d41b08cbf8da.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+r_0 =& r_1 \cdot q_1 + r_2 \\
+& \vdots \\ 
+r_{i+1} =& r_{i} \cdot q_{i} + r_{i-1} \\
+& \vdots \\
+r_{n-2} =& r_{n-1} \cdot q_{n-1} + r_{n} \\
+r_{n-1} =& r_{n} \cdot q_{n} + 0 \\
+\end{align*}
 <p>
-Wobei <img src="ltximg/20220906102828-euklidischer_algorithmus_27407413531ec157a15159cd9da57563098fc44f.svg" alt="20220906102828-euklidischer_algorithmus_27407413531ec157a15159cd9da57563098fc44f.svg" class="org-svg" /> die Bedingung für die euklidische Division erfüllen
-Dann ist der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> <img src="ltximg/20220906102828-euklidischer_algorithmus_2a5e31854790210661b7352bfca7bcfa7fa22a73.svg" alt="20220906102828-euklidischer_algorithmus_2a5e31854790210661b7352bfca7bcfa7fa22a73.svg" class="org-svg" /> mit <img src="ltximg/20220906102828-euklidischer_algorithmus_2e003e515b9b77d6f56a1f30b0820c4c52ad1aea.svg" alt="20220906102828-euklidischer_algorithmus_2e003e515b9b77d6f56a1f30b0820c4c52ad1aea.svg" class="org-svg" />
+Wobei \(q_{i+1}, r_{i+2}\) die Bedingung für die euklidische Division erfüllen
+Dann ist der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> \(r_{n} \neq 0\) mit \(r_{n+1} = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb48ab6f" class="outline-2">
-<h2 id="orgb48ab6f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org599fa20" class="outline-2">
+<h2 id="org599fa20"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org94a5bd5" class="outline-3">
-<h3 id="org94a5bd5"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
+<div id="outline-container-orgfbeed9c" class="outline-3">
+<h3 id="orgfbeed9c"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-<img src="ltximg/20220906102828-euklidischer_algorithmus_7a13f89fb4f028dfcf5afa9d31db19673d7c6e45.svg" alt="20220906102828-euklidischer_algorithmus_7a13f89fb4f028dfcf5afa9d31db19673d7c6e45.svg" class="org-svg" /> teilt <img src="ltximg/20220906102828-euklidischer_algorithmus_1e69e58618021ee88209dff91a9a2863ee0df196.svg" alt="20220906102828-euklidischer_algorithmus_1e69e58618021ee88209dff91a9a2863ee0df196.svg" class="org-svg" />.
-Damit teilt <img src="ltximg/20220906102828-euklidischer_algorithmus_0d06126cb5c514216ecffd3b4ff89ae1d20af579.svg" alt="20220906102828-euklidischer_algorithmus_0d06126cb5c514216ecffd3b4ff89ae1d20af579.svg" class="org-svg" /> auch <img src="ltximg/20220906102828-euklidischer_algorithmus_77111ed24cbb31c126cade4aa991f393aad5afa8.svg" alt="20220906102828-euklidischer_algorithmus_77111ed24cbb31c126cade4aa991f393aad5afa8.svg" class="org-svg" /> wegen <img src="ltximg/20220906102828-euklidischer_algorithmus_016d045da490d3302a1e7fef3cc2e761a2af4045.svg" alt="20220906102828-euklidischer_algorithmus_016d045da490d3302a1e7fef3cc2e761a2af4045.svg" class="org-svg" />
-Analog für <img src="ltximg/20220906102828-euklidischer_algorithmus_d22a6b3c9bb3f8b09e52393be608d5871a94edf3.svg" alt="20220906102828-euklidischer_algorithmus_d22a6b3c9bb3f8b09e52393be608d5871a94edf3.svg" class="org-svg" /> und damit auch <img src="ltximg/20220906102828-euklidischer_algorithmus_cfef7f7fec848448459d9f8e163ec5be9430cbd0.svg" alt="20220906102828-euklidischer_algorithmus_cfef7f7fec848448459d9f8e163ec5be9430cbd0.svg" class="org-svg" />
+\(r_{n}\) teilt \(r_{n-1}\).
+Damit teilt \(r_n\) auch \(r_{n-2}\) wegen \(r_{n-2} = r_{n-1} \cdot q_{n-1} + r_n = r_{n} \cdot q_{n-2} q_{n-1} + r_n\)
+Analog für \(r_{n-3},...,r_0\) und damit auch \(r_{0} = a, r_1 = b\)
 </p>
 </div>
 </div>
-<div id="outline-container-org15d04e9" class="outline-3">
-<h3 id="org15d04e9"><span class="section-number-3">2.2.</span> größter Teiler</h3>
+<div id="outline-container-org521929e" class="outline-3">
+<h3 id="org521929e"><span class="section-number-3">2.2.</span> größter Teiler</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20220906102828-euklidischer_algorithmus_5477f32dc8782e05f7e4cae90fc904bc31e22851.svg" alt="20220906102828-euklidischer_algorithmus_5477f32dc8782e05f7e4cae90fc904bc31e22851.svg" class="org-svg" /> mit <img src="ltximg/20220906102828-euklidischer_algorithmus_0d52f07cd453f01fd3c7411d95337a76dc9bf1c3.svg" alt="20220906102828-euklidischer_algorithmus_0d52f07cd453f01fd3c7411d95337a76dc9bf1c3.svg" class="org-svg" />, so gilt <img src="ltximg/20220906102828-euklidischer_algorithmus_154eee9ae31b174feaee62f4d3cb4988bf065e92.svg" alt="20220906102828-euklidischer_algorithmus_154eee9ae31b174feaee62f4d3cb4988bf065e92.svg" class="org-svg" />.
-Damit gilt dann auch <img src="ltximg/20220906102828-euklidischer_algorithmus_adab02530c6a7103bf715e3d7d71043afcc436c5.svg" alt="20220906102828-euklidischer_algorithmus_adab02530c6a7103bf715e3d7d71043afcc436c5.svg" class="org-svg" /> bzw. <img src="ltximg/20220906102828-euklidischer_algorithmus_b67345662c87133b3e56ca953bab9e4e5b6f44a7.svg" alt="20220906102828-euklidischer_algorithmus_b67345662c87133b3e56ca953bab9e4e5b6f44a7.svg" class="org-svg" /> und allgemein
+Sei \(g \in R\) mit \(g \mid a, g \mid b\), so gilt \(g \mid r_0, g \mid r_1\).
+Damit gilt dann auch \(r_2 = r_0 - r_1 \cdot q_1\) bzw. \(g \mid r_2\) und allgemein
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220906102828-euklidischer_algorithmus_96d563d2648325bca7ce81aab690b7c11a792f2d.svg" alt="20220906102828-euklidischer_algorithmus_96d563d2648325bca7ce81aab690b7c11a792f2d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+r_{i+2} =& r_{i} - r_{i} \cdot q_i \\
+g \mid r_{i+2}
+\end{align*}
 <p>
-und insbesondere auch <img src="ltximg/20220906102828-euklidischer_algorithmus_7c97684befae81feea8c3c910fc8be1111027b82.svg" alt="20220906102828-euklidischer_algorithmus_7c97684befae81feea8c3c910fc8be1111027b82.svg" class="org-svg" />
+und insbesondere auch \(g \mid r_{n}\)
 </p>
 </div>
 </div>

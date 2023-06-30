@@ -9,52 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bedingung für einen Urbildfilter</h1>
-<div id="outline-container-org7206622" class="outline-2">
-<h2 id="org7206622"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbadc666" class="outline-2">
+<h2 id="orgbadc666"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" alt="20230616-bedingung_fur_einen_urbildfilter_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_a00f1697b4e4395dc0d73fab039a18db32840334.svg" alt="20230616-bedingung_fur_einen_urbildfilter_a00f1697b4e4395dc0d73fab039a18db32840334.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230616-bedingung_fur_einen_urbildfilter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> auf <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230616-bedingung_fur_einen_urbildfilter_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" />.
-Dann ist der <a href="20230616-urbildfilter.html#ID-d4cb689c-b2b7-4493-a64b-73283e71f8ae">Urbildfilter</a> <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_131d4923a0b23758541e95d5db5d6dfda23a54a1.svg" alt="20230616-bedingung_fur_einen_urbildfilter_131d4923a0b23758541e95d5db5d6dfda23a54a1.svg" class="org-svg" /> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_e8b7b31c100b78cdb33e7f4fff4add10786534f4.svg" alt="20230616-bedingung_fur_einen_urbildfilter_e8b7b31c100b78cdb33e7f4fff4add10786534f4.svg" class="org-svg" /> folgt:
+Seien \(X,Y\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und \(f: X \rightarrow Y\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> auf \(Y\).
+Dann ist der <a href="20230616-urbildfilter.html#ID-d4cb689c-b2b7-4493-a64b-73283e71f8ae">Urbildfilter</a> \(\mathcal{G}  \coloneqq f^{-1}[\mathcal{F}]\) <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für \(A \in \mathcal{F}\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_404bba6b98feaa67957989091de628fafb2ce8fc.svg" alt="20230616-bedingung_fur_einen_urbildfilter_404bba6b98feaa67957989091de628fafb2ce8fc.svg" class="org-svg" />
-</span>
+\begin{align*}
+f^{-1}[A] \neq \emptyset
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0efbf63" class="outline-2">
-<h2 id="org0efbf63"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge3ee730" class="outline-2">
+<h2 id="orge3ee730"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge2b9810" class="outline-3">
-<h3 id="orge2b9810"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
+<div id="outline-container-org043e0bf" class="outline-3">
+<h3 id="org043e0bf"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Folgt aus der Annahme
 </p>
 </div>
 </div>
-<div id="outline-container-orgb6d171c" class="outline-3">
-<h3 id="orgb6d171c"><span class="section-number-3">2.2.</span> abgeschlossen gegenüber endlichem Schnitt</h3>
+<div id="outline-container-org66ccea8" class="outline-3">
+<h3 id="org66ccea8"><span class="section-number-3">2.2.</span> abgeschlossen gegenüber endlichem Schnitt</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_22fcabf5a1562328b3f7fd3bf09fd12db6ec6151.svg" alt="20230616-bedingung_fur_einen_urbildfilter_22fcabf5a1562328b3f7fd3bf09fd12db6ec6151.svg" class="org-svg" />, so existieren <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_5aefd3cddbc2a1a2c20e26fff82c0ddd23df9aff.svg" alt="20230616-bedingung_fur_einen_urbildfilter_5aefd3cddbc2a1a2c20e26fff82c0ddd23df9aff.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_5f1ab2af65592a39dacbe78718468a5bd6beb455.svg" alt="20230616-bedingung_fur_einen_urbildfilter_5f1ab2af65592a39dacbe78718468a5bd6beb455.svg" class="org-svg" />.
+Seien \(G,G' \in \mathcal{G}\), so existieren \(F,F' \in \mathcal{F}\) mit \(f^{-1}[F] = G, f^{-1}[F'] = G'\).
 Aus der Aussage über das <a href="20230228184214-urbild_vom_durchschnitt.html#ID-55918080-5c82-4743-9578-74dda4c85693">Urbild des Durchschnitts</a> folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_2ecbcb98405d514df012088342185b9d7b89e100.svg" alt="20230616-bedingung_fur_einen_urbildfilter_2ecbcb98405d514df012088342185b9d7b89e100.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+G \cap G' =& f^{-1}[F] \cap f^{-1}[F'] \\
+=& f^{-1}[F \cap F']
+\end{align*}
 <p>
-und wegen <img src="file:///home/anton/html/ltximg/20230616-bedingung_fur_einen_urbildfilter_8bc00a8f76253c728e92b8721891afa6e9ab4ba2.svg" alt="20230616-bedingung_fur_einen_urbildfilter_8bc00a8f76253c728e92b8721891afa6e9ab4ba2.svg" class="org-svg" /> folgt auch $f<sup>-1</sup>[F &cap; F'] &isin; 
+und wegen \(F \cap F' \in \mathcal{F}\) folgt auch $f<sup>-1</sup>[F &cap; F'] &isin; 
 </p>
 </div>
 </div>

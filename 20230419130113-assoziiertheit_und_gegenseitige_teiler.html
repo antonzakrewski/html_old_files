@@ -3,58 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Assoziiertheit und gegenseitige Teiler</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Assoziiertheit und gegenseitige Teiler</h1>
-<div id="outline-container-org2404fac" class="outline-2">
-<h2 id="org2404fac"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org02b8141" class="outline-2">
+<h2 id="org02b8141"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_5772b78177c8cff8e7a638c496c4e8be701fc302.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_5772b78177c8cff8e7a638c496c4e8be701fc302.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(x,y \in R \setminus \{0\}\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_f569678cd983ab22000c43645978ca03e97b356f.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_f569678cd983ab22000c43645978ca03e97b356f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+x \mid y \land y \mid x \Leftrightarrow x \sim y
+\end{align*}
 <p>
 siehe: <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziierte Elemente</a> und <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org9b33da4" class="outline-2">
-<h2 id="org9b33da4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga498610" class="outline-2">
+<h2 id="orga498610"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0a002dc" class="outline-3">
-<h3 id="org0a002dc"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org5078ad1" class="outline-3">
+<h3 id="org5078ad1"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme gilt <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_500bd3a6e79faaa4fac990968b873f38fe045641.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_500bd3a6e79faaa4fac990968b873f38fe045641.svg" class="org-svg" /> und <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_c02646fd5f1e74f06c4ef601fff4d2c289557f93.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_c02646fd5f1e74f06c4ef601fff4d2c289557f93.svg" class="org-svg" />
-Daraus folgt <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_9c27efe469fe67c2b87d3169615a7187e1e976df.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_9c27efe469fe67c2b87d3169615a7187e1e976df.svg" class="org-svg" /> und somit auch <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_6ab948b9d3885b9be34ad94c266bb948fd4f0796.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_6ab948b9d3885b9be34ad94c266bb948fd4f0796.svg" class="org-svg" />
-Aus der <a href="20221226125328-nullteiler.html#ID-dc985755-3df5-4b03-929e-659ee65ad000">Nullteilerfreiheit</a> folgt wegen <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_c02646fd5f1e74f06c4ef601fff4d2c289557f93.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_c02646fd5f1e74f06c4ef601fff4d2c289557f93.svg" class="org-svg" /> auch <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_d44c544184f051abed16b82fbebfc0dfc1fd5c7e.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_d44c544184f051abed16b82fbebfc0dfc1fd5c7e.svg" class="org-svg" /> und damit folgt <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_4abcff945f138235c3307511a3bddfeced902118.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_4abcff945f138235c3307511a3bddfeced902118.svg" class="org-svg" />, d.h. <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_ce49dad4dba88929592066b9874ff01a80c9fa35.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_ce49dad4dba88929592066b9874ff01a80c9fa35.svg" class="org-svg" /> sind <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziiert</a> 
+Nach Annahme gilt \(y = ax, x = by\) und \(y \neq 0\)
+Daraus folgt \(y = a \cdot b y\) und somit auch \(y \cdot (1 - ab) = 0\)
+Aus der <a href="20221226125328-nullteiler.html#ID-dc985755-3df5-4b03-929e-659ee65ad000">Nullteilerfreiheit</a> folgt wegen \(y \neq 0\) auch \(1 = ab\) und damit folgt \(a,b \in R^{\times}\), d.h. \(x,y\) sind <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziiert</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org5be72d4" class="outline-3">
-<h3 id="org5be72d4"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org260c08d" class="outline-3">
+<h3 id="org260c08d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme existiert ein <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_2671ebf7027bd0e0821ffc12dc55bcaed5c6dc62.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_2671ebf7027bd0e0821ffc12dc55bcaed5c6dc62.svg" class="org-svg" />, so dass gilt <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_05233fdd2a330cca97fa51b8d2da8d82ed11f3f2.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_05233fdd2a330cca97fa51b8d2da8d82ed11f3f2.svg" class="org-svg" />.
-Damit gilt auch <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_b5e44d55ec63ccffa00eb983cc0e601ce178675d.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_b5e44d55ec63ccffa00eb983cc0e601ce178675d.svg" class="org-svg" />
-Aufgrund der <a href="20230419125906-assoziiertheit_von_elementen_als_aquivalenzrelation.html#ID-1e339089-f304-4d93-aca2-cb01e2ae2b3f">Assoziiertheit als Äquivalenzrelation</a> gilt damit auch <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_abf3023d95689648a2630b73a9d7bc27d1e1ce0c.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_abf3023d95689648a2630b73a9d7bc27d1e1ce0c.svg" class="org-svg" />, d.h. aus analogen Gründen folgt <img src="ltximg/20230419130113-assoziiertheit_und_gegenseitige_teiler_7aa19aac5920c7745d39b80e44e41d06bfce17a2.svg" alt="20230419130113-assoziiertheit_und_gegenseitige_teiler_7aa19aac5920c7745d39b80e44e41d06bfce17a2.svg" class="org-svg" />
+Nach Annahme existiert ein \(u \in R^{\times}\), so dass gilt \(x = u \cdot y\).
+Damit gilt auch \(y \mid x\)
+Aufgrund der <a href="20230419125906-assoziiertheit_von_elementen_als_aquivalenzrelation.html#ID-1e339089-f304-4d93-aca2-cb01e2ae2b3f">Assoziiertheit als Äquivalenzrelation</a> gilt damit auch \(y \sim x\), d.h. aus analogen Gründen folgt \(x \mid y\)
 </p>
 </div>
 </div>

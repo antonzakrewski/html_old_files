@@ -9,39 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Entfernen von Blättern eines Baums</h1>
-<div id="outline-container-orgc67522c" class="outline-2">
-<h2 id="orgc67522c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdb69b43" class="outline-2">
+<h2 id="orgdb69b43"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_7ed4cfcbd64f4545077d72e91efea4d0491f6d58.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_7ed4cfcbd64f4545077d72e91efea4d0491f6d58.svg" class="org-svg" /> ein <a href="20221024152607-baum.html#ID-b2969a00-e313-42e8-afe1-62a33cb45013">Baum</a> mit <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_2e3ddaab79a4970dc52e0707cadd2d14d4c14339.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_2e3ddaab79a4970dc52e0707cadd2d14d4c14339.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> ein <a href="20230327231133-blatt_graph.html#ID-71b73961-4304-4a0a-a379-14f1cb91fac3">Blatt</a>.
+Sei \(T(V,E)\) ein <a href="20221024152607-baum.html#ID-b2969a00-e313-42e8-afe1-62a33cb45013">Baum</a> mit \(\vert V \vert \geq 2\) und \(v \in V\) ein <a href="20230327231133-blatt_graph.html#ID-71b73961-4304-4a0a-a379-14f1cb91fac3">Blatt</a>.
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_9d25b0745f8356cc11385881eea2041b39056d9a.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_9d25b0745f8356cc11385881eea2041b39056d9a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+T' = T[v \setminus \{v\}]
+\end{align*}
 <p>
 auch ein <a href="20221024152607-baum.html#ID-b2969a00-e313-42e8-afe1-62a33cb45013">Baum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org359a63b" class="outline-2">
-<h2 id="org359a63b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3c8c9a1" class="outline-2">
+<h2 id="org3c8c9a1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach definition ist zu zeigen:
-a) <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> ist <a href="20221024152649-zusammenhangender_graph.html#ID-5c0f8ef4-52f7-4762-a4dd-8772c7ea392c">zusammenhängend</a> 
-b) <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> ist <a href="20221024152749-kreisgraph.html#ID-5c32c32f-6f4d-4101-acc9-5cb536c71c42">kreisfrei</a> 
+a) \(T\) ist <a href="20221024152649-zusammenhangender_graph.html#ID-5c0f8ef4-52f7-4762-a4dd-8772c7ea392c">zusammenhängend</a> 
+b) \(T\) ist <a href="20221024152749-kreisgraph.html#ID-5c32c32f-6f4d-4101-acc9-5cb536c71c42">kreisfrei</a> 
 </p>
 
 <p>
-Dabei folgt a) aus dem <a href="20230327232147-entfernen_vno_blattern_eines_zusammenhangenden_graphens.html#ID-f54df443-9396-4af6-aa4d-dd8ad5e56422">Entfernen von Blättern eines zusammenhängenden Graphens</a> und b) daraus, dass <img src="file:///home/anton/html/ltximg/20230327232136-entfernen_von_blattern_eines_baums_c447a7bf54554c8af940322eea80e80efc5c41df.svg" alt="20230327232136-entfernen_von_blattern_eines_baums_c447a7bf54554c8af940322eea80e80efc5c41df.svg" class="org-svg" /> ein <a href="20220904224255-teilgraph.html#ID-2af9ea61-d5b9-4486-b588-218351f44730">Teilgraph</a> ist
+Dabei folgt a) aus dem <a href="20230327232147-entfernen_vno_blattern_eines_zusammenhangenden_graphens.html#ID-f54df443-9396-4af6-aa4d-dd8ad5e56422">Entfernen von Blättern eines zusammenhängenden Graphens</a> und b) daraus, dass \(T'\) ein <a href="20220904224255-teilgraph.html#ID-2af9ea61-d5b9-4486-b588-218351f44730">Teilgraph</a> ist
 </p>
 </div>
 </div>

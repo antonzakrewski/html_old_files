@@ -9,24 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Schubfachprinzip für überabzählbare Mengen</h1>
-<div id="outline-container-orgc9bdfd3" class="outline-2">
-<h2 id="orgc9bdfd3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfde1d92" class="outline-2">
+<h2 id="orgfde1d92"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">Überabzählbare</a> und <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_b0fcfa021fd6de5c3ec46af5ceca99f9ab3f4245.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_b0fcfa021fd6de5c3ec46af5ceca99f9ab3f4245.svg" class="org-svg" /> eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_69cd2b1421cb9e7e0326bb0b3389eec17ac5bed2.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_69cd2b1421cb9e7e0326bb0b3389eec17ac5bed2.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Dann existiert ein <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_0264a5d6b4ceaf652b5f66a7423f707f60d6dc67.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_0264a5d6b4ceaf652b5f66a7423f707f60d6dc67.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_798f7655e1a41f7292fd0c82482f4affcddaab1b.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_798f7655e1a41f7292fd0c82482f4affcddaab1b.svg" class="org-svg" /> <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">Überabzählbar</a> ist.
+Sei \(U\) eine <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">Überabzählbare</a> und \(C\) eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(f: U \rightarrow C\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Dann existiert ein \(c \in C\), so dass \(f^{-1}[\{c\}]\) <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">Überabzählbar</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org4c0119a" class="outline-2">
-<h2 id="org4c0119a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb45d4a8" class="outline-2">
+<h2 id="orgb45d4a8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Angenommen nicht, so ist <img src="file:///home/anton/html/ltximg/20230613-schubfachprinzip_fur_uberabzahlbare_mengen_c4530f522697781785835c1d777c8bee6f085bd1.svg" alt="20230613-schubfachprinzip_fur_uberabzahlbare_mengen_c4530f522697781785835c1d777c8bee6f085bd1.svg" class="org-svg" /> eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> von abzählbaren <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und damit auch  abzählbar (vgl. <a href="20221211114037-abzahlbarkeit_von_abzahlbar_vielen_vereinigungen_abzahlbarer_mengen.html#ID-9847a3d2-4b6c-417e-9f5f-b7d30613edb3">Abzählbarkeit von abzählbar vielen Vereinigungen abzählbarer Mengen</a>)
+Angenommen nicht, so ist \(\bigcup_{c \in C} f^{-1}[ \{c\}] = U\) eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> von abzählbaren <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und damit auch  abzählbar (vgl. <a href="20221211114037-abzahlbarkeit_von_abzahlbar_vielen_vereinigungen_abzahlbarer_mengen.html#ID-9847a3d2-4b6c-417e-9f5f-b7d30613edb3">Abzählbarkeit von abzählbar vielen Vereinigungen abzählbarer Mengen</a>)
 Widerspruch.
 </p>
 </div>

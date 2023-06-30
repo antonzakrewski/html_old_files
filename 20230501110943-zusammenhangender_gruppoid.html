@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">zusammenhängender Gruppoid</h1>
-<div id="outline-container-org185f635" class="outline-2">
-<h2 id="org185f635"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org431448b" class="outline-2">
+<h2 id="org431448b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20230225171739-gruppoid.html#ID-2ec756c2-bea0-454f-8fc0-e5a23f080d1b">Gruppoid</a> <img src="file:///home/anton/html/ltximg/20230501110943-zusammenhangender_gruppoid_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" alt="20230501110943-zusammenhangender_gruppoid_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" class="org-svg" /> heißt zusammenhängend, wenn <img src="file:///home/anton/html/ltximg/20230501110943-zusammenhangender_gruppoid_e645575c6e704459be5f53a1016e55a4cb2c40d6.svg" alt="20230501110943-zusammenhangender_gruppoid_e645575c6e704459be5f53a1016e55a4cb2c40d6.svg" class="org-svg" /> gilt: <img src="file:///home/anton/html/ltximg/20230501110943-zusammenhangender_gruppoid_73b8f122b4dc6791d7c4b7accd2b9bfbc858cf3d.svg" alt="20230501110943-zusammenhangender_gruppoid_73b8f122b4dc6791d7c4b7accd2b9bfbc858cf3d.svg" class="org-svg" /> 
+Ein <a href="20230225171739-gruppoid.html#ID-2ec756c2-bea0-454f-8fc0-e5a23f080d1b">Gruppoid</a> \(\mathcal{G}\) heißt zusammenhängend, wenn \(\forall x,y \in \mathrm{Ob}(\mathcal{G})\) gilt: \(\mathrm{Iso}(x,y) \neq \emptyset\) 
 </p>
 </div>
 </div>

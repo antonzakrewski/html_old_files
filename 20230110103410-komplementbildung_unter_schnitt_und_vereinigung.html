@@ -9,49 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplementbildung unter Schnitt und Vereinigung</h1>
-<div id="outline-container-org82a7f06" class="outline-2">
-<h2 id="org82a7f06"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd3a73ce" class="outline-2">
+<h2 id="orgd3a73ce"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110103410-komplementbildung_unter_schnitt_und_vereinigung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230110103410-komplementbildung_unter_schnitt_und_vereinigung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230110103410-komplementbildung_unter_schnitt_und_vereinigung_481322d5c77f5cd3f1dd26657c78c5d16f517f1b.svg" alt="20230110103410-komplementbildung_unter_schnitt_und_vereinigung_481322d5c77f5cd3f1dd26657c78c5d16f517f1b.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a>.
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A_i \subseteq M\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a>.
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230110103410-komplementbildung_unter_schnitt_und_vereinigung_d79137cf808eddfeb7eabb62ab53b03e1c3ff392.svg" alt="20230110103410-komplementbildung_unter_schnitt_und_vereinigung_d79137cf808eddfeb7eabb62ab53b03e1c3ff392.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{i \in I} M \setminus A_i =& M \setminus \bigcap_{i \in I} A_i  \\
+\bigcap_{i \in I} M \setminus A_i =& M \setminus \bigcup_{i \in I} A_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org49d9d21" class="outline-2">
-<h2 id="org49d9d21"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0fad408" class="outline-2">
+<h2 id="org0fad408"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0c2f07c" class="outline-3">
-<h3 id="org0c2f07c"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org769937e" class="outline-3">
+<h3 id="org769937e"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230110103410-komplementbildung_unter_schnitt_und_vereinigung_076a8904725e8dc5eed9864932d782ce6d0819a0.svg" alt="20230110103410-komplementbildung_unter_schnitt_und_vereinigung_076a8904725e8dc5eed9864932d782ce6d0819a0.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{i \in I} M \setminus A_i =& \{m \in M \vert \exists i \in I : m \in M \setminus A_i \} \\
+=& \{m \in M \vert \exists i \in I : m \not\in A_i \} \\
+=& \{m \in M \vert \lnot \forall i \in I m \in A_i \} \\
+=& M \setminus \{m \in M \vert \forall i \in I m \in A_i \} \\
+=& M \setminus \bigcap_{i \in I} A_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb34d407" class="outline-3">
-<h3 id="orgb34d407"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org27eff42" class="outline-3">
+<h3 id="org27eff42"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230110103410-komplementbildung_unter_schnitt_und_vereinigung_91a0b33ca65e46316ee00de8f5af1c6852ce96ee.svg" alt="20230110103410-komplementbildung_unter_schnitt_und_vereinigung_91a0b33ca65e46316ee00de8f5af1c6852ce96ee.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{i \in I} M \setminus A_i =& \{m \in M \vert \forall i \in I m \in M \setminus A_i\} \\
+=& \{m \in M \vert \forall i \in I m \not\in A_i \} \\
+=& M \setminus \{m \in M \vert \forall i \in I : m \in A_i \} \\
+=& M \setminus \bigcup_{i \in I} A_i
+\end{align*}
 </div>
 </div>
 </div>

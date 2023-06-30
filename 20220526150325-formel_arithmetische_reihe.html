@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel: Arithmetische Reihe</h1>
-<div id="outline-container-org97fd35a" class="outline-2">
-<h2 id="org97fd35a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org60481d5" class="outline-2">
+<h2 id="org60481d5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220526150325-formel_arithmetische_reihe_4f26d2082d8e7521c4bc43240f25ace6849ec984.svg" alt="20220526150325-formel_arithmetische_reihe_4f26d2082d8e7521c4bc43240f25ace6849ec984.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=0}^n \left(i \cdot a + c\right) =& c \cdot n + a \cdot \frac{n^2 + n}{2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdd659f1" class="outline-2">
-<h2 id="orgdd659f1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6522f30" class="outline-2">
+<h2 id="org6522f30"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Anwendung:
@@ -34,12 +56,10 @@ Anwendung:
 <li><a href="20220526150505-ausklammern_summenzeichen.html#ID-e8e30573-6cc8-4a54-a1fa-5db34225ac07">Ausklammern: Summenzeichen</a></li>
 <li><a href="20211228190928-gaußsche_summenformel.html#ID-f1981873-eaee-4f11-bb5b-9c56497377bf">Gaußsche Summenformel</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220526150325-formel_arithmetische_reihe_a472c67df9c3e3458323aaa38953714e231697b3.svg" alt="20220526150325-formel_arithmetische_reihe_a472c67df9c3e3458323aaa38953714e231697b3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=0}^n \left( c + i \cdot a \right) =& c \cdot n + a \cdot \sum_{i=0}^n i \\
+=& c \cdot n + a \cdot \frac{n^2 + n}{2}
+\end{align*}
 </div>
 </div>
 </div>

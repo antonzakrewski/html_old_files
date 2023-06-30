@@ -3,76 +3,81 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Reelles Ergebnis einer symmetrischen, hermiteschen Sesquilinearform</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Reelles Ergebnis einer symmetrischen, hermiteschen Sesquilinearform</h1>
-<div id="outline-container-orgf5eb556" class="outline-2">
-<h2 id="orgf5eb556"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4901ea8" class="outline-2">
+<h2 id="org4901ea8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexen Zahlen</a> und <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_eee48f2930d02ffe25797f6b84780a96b1f83773.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_eee48f2930d02ffe25797f6b84780a96b1f83773.svg" class="org-svg" /> <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">hermiteschen Sesquilinearform</a>.
-Dann gilt für alle <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_e8a9abe7b2886b61dc09c917ff5313715428d9c8.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_e8a9abe7b2886b61dc09c917ff5313715428d9c8.svg" class="org-svg" />
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexen Zahlen</a> und \(\langle , \rangle: V \times V \rightarrow   \mathbb{C}\) <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">hermiteschen Sesquilinearform</a>.
+Dann gilt für alle \(v \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_d2bf2caaaa8945652eafc006c6bcc7c43e1792f3.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_d2bf2caaaa8945652eafc006c6bcc7c43e1792f3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\langle v, v \rangle \in \mathbb{R}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9f77747" class="outline-2">
-<h2 id="org9f77747"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org80448b1" class="outline-2">
+<h2 id="org80448b1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach der <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermitesche Symmetrie</a> gilt für alle <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_d8cdb6b72967c9743dd3f000a6d5de768789c097.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_d8cdb6b72967c9743dd3f000a6d5de768789c097.svg" class="org-svg" />
+Nach der <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermitesche Symmetrie</a> gilt für alle \(v,w \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_750334c8150dc1389a138fc7dd4c97f2f01a2504.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_750334c8150dc1389a138fc7dd4c97f2f01a2504.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\langle v,w \rangle = \overline{\langle w,v \rangle} 
+\end{align*}
 <p>
 und damit auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_41324a433b1344e08709a2becc4d377427ee02d2.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_41324a433b1344e08709a2becc4d377427ee02d2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\langle v,v\rangle = \overline{\langle v,v\rangle} 
+\end{align*}
 <p>
-Aufgrund von <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_85cbeeb9e5781f4c80131b1d04fe231f970e489c.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_85cbeeb9e5781f4c80131b1d04fe231f970e489c.svg" class="org-svg" /> lässt sich <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_23d13ef05c88d3946a36f0731ec680a7343da6f3.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_23d13ef05c88d3946a36f0731ec680a7343da6f3.svg" class="org-svg" /> auch als <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_f36c7f94d3b6586cb03eb75bb6b416db6d1e8ec6.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_f36c7f94d3b6586cb03eb75bb6b416db6d1e8ec6.svg" class="org-svg" /> darstellen.
+Aufgrund von \(\langle v,v\rangle \in  \mathbb{C}\) lässt sich \(\langle v,v\rangle\) auch als \(a + b \mathrm{i}\) darstellen.
 Nach der <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">komplexen Konjugation</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_a316a65e7add227776579b6e8d7e90bce5f710b0.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_a316a65e7add227776579b6e8d7e90bce5f710b0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+a + b \mathrm{i} =& a - b \mathrm{i} \vert - a + b \mathrm{i}\\
+2b \mathrm{i} =& 0 \\
+\Rightarrow b =& 0
+\end{align*}
 <p>
-Somit ist auch <img src="ltximg/20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_77776fad21abe18a20d573105fb034a444cc3918.svg" alt="20221003172323-reelles_ergebnis_einer_symmetrischen_hermiteschen_sesquilinearform_77776fad21abe18a20d573105fb034a444cc3918.svg" class="org-svg" />
+Somit ist auch \(\langle v,v\rangle \in \mathbb{R}\)
 </p>
 </div>
 </div>

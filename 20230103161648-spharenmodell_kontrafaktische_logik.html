@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sphärenmodell (Kontrafaktische Logik)</h1>
-<div id="outline-container-org2b5ed43" class="outline-2">
-<h2 id="org2b5ed43"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb94190a" class="outline-2">
+<h2 id="orgb94190a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein Sphärenmodell ist ein Tripel <img src="file:///home/anton/html/ltximg/20230103161648-spharenmodell_kontrafaktische_logik_f4cfad4950a7e6182482745b94eff7d595bfd615.svg" alt="20230103161648-spharenmodell_kontrafaktische_logik_f4cfad4950a7e6182482745b94eff7d595bfd615.svg" class="org-svg" />, wobei <img src="file:///home/anton/html/ltximg/20230103161648-spharenmodell_kontrafaktische_logik_a76a8e403307daffa4b81d557d1113d7fdbf04ca.svg" alt="20230103161648-spharenmodell_kontrafaktische_logik_a76a8e403307daffa4b81d557d1113d7fdbf04ca.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> von <a href="20230103161242-welt_modallogik.html#ID-0e817fc8-503e-457a-9f4c-766c37da2076">Welten</a>, <img src="file:///home/anton/html/ltximg/20230103161648-spharenmodell_kontrafaktische_logik_a5abfe3abc7bac28eff6afeb1c60fc8e2b1b844d.svg" alt="20230103161648-spharenmodell_kontrafaktische_logik_a5abfe3abc7bac28eff6afeb1c60fc8e2b1b844d.svg" class="org-svg" /> die <a href="20230103161933-bewertungsfunktion_logik.html#ID-3c842508-f441-4d01-903f-ff9d4fd9a18a">Bewertungsfunktion</a> und $O: W &rarr; ((W))
+Ein Sphärenmodell ist ein Tripel \((W,O, \nu)\), wobei \(W\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> von <a href="20230103161242-welt_modallogik.html#ID-0e817fc8-503e-457a-9f4c-766c37da2076">Welten</a>, \(\nu\) die <a href="20230103161933-bewertungsfunktion_logik.html#ID-3c842508-f441-4d01-903f-ff9d4fd9a18a">Bewertungsfunktion</a> und $O: W &rarr; \mathbb{P}(\mathbb{P}(W))
 </p>
 </div>
 </div>

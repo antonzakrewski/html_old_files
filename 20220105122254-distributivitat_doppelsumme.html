@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Distributivgesetz für Doppelsumme</h1>
-<div id="outline-container-orgc7ea788" class="outline-2">
-<h2 id="orgc7ea788"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0b644c6" class="outline-2">
+<h2 id="org0b644c6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105122254-distributivitat_doppelsumme_7323ca8ee71e9f30e777018177a12eca103f48c3.svg" alt="20220105122254-distributivitat_doppelsumme_7323ca8ee71e9f30e777018177a12eca103f48c3.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{j=1}^{n} a_j \sum_{i=1}^{m} a_i = \sum_{j=1}^{n} \sum_{i=1}^{m} a_ja_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb336962" class="outline-2">
-<h2 id="orgb336962"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org554925a" class="outline-2">
+<h2 id="org554925a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 TODO  

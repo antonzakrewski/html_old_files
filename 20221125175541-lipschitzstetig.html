@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lipschitzstetig</h1>
-<div id="outline-container-orgcdda0fa" class="outline-2">
-<h2 id="orgcdda0fa"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb43caa7" class="outline-2">
+<h2 id="orgb43caa7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221125175541-lipschitzstetig_f6b19781cede437813628f24deaf648b4f4e318d.svg" alt="20221125175541-lipschitzstetig_f6b19781cede437813628f24deaf648b4f4e318d.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221125175541-lipschitzstetig_bf0e0a9793ebf21cc04f7106eb6d0fe47f5ac1b5.svg" alt="20221125175541-lipschitzstetig_bf0e0a9793ebf21cc04f7106eb6d0fe47f5ac1b5.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221125175541-lipschitzstetig_a00f1697b4e4395dc0d73fab039a18db32840334.svg" alt="20221125175541-lipschitzstetig_a00f1697b4e4395dc0d73fab039a18db32840334.svg" class="org-svg" /> heißt lipschitzstetig, falls ein <img src="file:///home/anton/html/ltximg/20221125175541-lipschitzstetig_3acb94def8a15fd3453ee6913f5f314a55d5f3ee.svg" alt="20221125175541-lipschitzstetig_3acb94def8a15fd3453ee6913f5f314a55d5f3ee.svg" class="org-svg" /> existiert, sodass gilt  
+Seien \((X,d_x)\) und \((Y, d_y)\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: X \rightarrow Y\) heißt lipschitzstetig, falls ein \(L \in \mathbb{R}\) existiert, sodass gilt  
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221125175541-lipschitzstetig_34416a30a63fceb7ca28c11e05f47f204531cd9d.svg" alt="20221125175541-lipschitzstetig_34416a30a63fceb7ca28c11e05f47f204531cd9d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x,x' \in X : d_Y(f(x_1),f(x_2)) \leq L \cdot d_X(x_1,x_2)
+\end{align*}
 </div>
 </div>
 </div>

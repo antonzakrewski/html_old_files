@@ -3,34 +3,55 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Homotopy</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Homotopy</h1>
-<div id="outline-container-orgef65bbd" class="outline-2">
-<h2 id="orgef65bbd"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb55d5c3" class="outline-2">
+<h2 id="orgb55d5c3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230302094002-homotopie_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230302094002-homotopie_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> und <img src="ltximg/20230302094002-homotopie_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" alt="20230302094002-homotopie_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, <img src="ltximg/20230302094002-homotopie_6b43ce3a483afd5c0dd538e57373d04a5a12d628.svg" alt="20230302094002-homotopie_6b43ce3a483afd5c0dd538e57373d04a5a12d628.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> und <img src="ltximg/20230302094002-homotopie_48e5dd3bfeddf414d50b2422b82abada203e5db1.svg" alt="20230302094002-homotopie_48e5dd3bfeddf414d50b2422b82abada203e5db1.svg" class="org-svg" /> das Einheitsintervall mit der <a href="20230227174434-naturliche_topologie.html#ID-956b4fb0-31c8-4401-a276-04d1e04a0d36">natürliche Topologie</a>.
-<img src="ltximg/20230302094002-homotopie_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230302094002-homotopie_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> und <img src="ltximg/20230302094002-homotopie_028941f6548a5305c4872d2dc34aba3014b33339.svg" alt="20230302094002-homotopie_028941f6548a5305c4872d2dc34aba3014b33339.svg" class="org-svg" /> sind homotop - man schreibt auch <img src="ltximg/20230302094002-homotopie_fd84f551a9228db62375910987a2a322c0e3502c.svg" alt="20230302094002-homotopie_fd84f551a9228db62375910987a2a322c0e3502c.svg" class="org-svg" /> - zueinander, falls eine bezüglich der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, \(f,f': X \rightarrow X'\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> und \(I = [0,1]\) das Einheitsintervall mit der <a href="20230227174434-naturliche_topologie.html#ID-956b4fb0-31c8-4401-a276-04d1e04a0d36">natürliche Topologie</a>.
+\(f\) und \(f'\) sind homotop - man schreibt auch \(f \simeq f'\) - zueinander, falls eine bezüglich der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302094002-homotopie_b5d4ccf78c364a17cad087462cff120b20c4e9c1.svg" alt="20230302094002-homotopie_b5d4ccf78c364a17cad087462cff120b20c4e9c1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+h: I \times X \rightarrow X'
+\end{align*}
 <p>
-mit <img src="ltximg/20230302094002-homotopie_d8847e38cc28284c7f6b7cce591cf46f22bf8419.svg" alt="20230302094002-homotopie_d8847e38cc28284c7f6b7cce591cf46f22bf8419.svg" class="org-svg" /> und <img src="ltximg/20230302094002-homotopie_4372de54f0ff89b16f55317bdfe27905e40bf3c2.svg" alt="20230302094002-homotopie_4372de54f0ff89b16f55317bdfe27905e40bf3c2.svg" class="org-svg" /> existiert
+mit \(h(0,x) = f(x)\) und \(h(1,x) = f'(x)\) existiert
 </p>
 </div>
 </div>

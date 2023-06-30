@@ -3,57 +3,68 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Differenz zweier Zahlen zwischen 0 und s kleiner s</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Differenz zweier Zahlen zwischen 0 und s kleiner s</h1>
-<div id="outline-container-org91c080d" class="outline-2">
-<h2 id="org91c080d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6e1f866" class="outline-2">
+<h2 id="org6e1f866"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien  <img src="ltximg/20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_ce49dad4dba88929592066b9874ff01a80c9fa35.svg" alt="20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_ce49dad4dba88929592066b9874ff01a80c9fa35.svg" class="org-svg" /> zwei Zahlen mit
+Seien  \(x,y\) zwei Zahlen mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_7aac2abeb63730a73818a6d4207d8cbdd0cfa013.svg" alt="20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_7aac2abeb63730a73818a6d4207d8cbdd0cfa013.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+0 \leq x,y < s
+\end{align*}
 <p>
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_4714274d5eee2da912e9205ed6e7d8e465d48050.svg" alt="20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_4714274d5eee2da912e9205ed6e7d8e465d48050.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+x - y < s
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdf9442c" class="outline-2">
-<h2 id="orgdf9442c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org043a6a9" class="outline-2">
+<h2 id="org043a6a9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_a65944c65edbb4fabfd0c584ae97e520404e69ab.svg" alt="20220922203259-betrag_der_differenz_zweier_zahlen_kleiner_s_kleiner_s_a65944c65edbb4fabfd0c584ae97e520404e69ab.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+x \leq x + y < s + y \\
+x < s + y \vert -y \\
+x - y < s 
+\end{align*}
 </div>
 </div>
 </div>

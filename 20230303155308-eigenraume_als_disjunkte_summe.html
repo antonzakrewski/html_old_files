@@ -9,32 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eigenräume als disjunkte Summe</h1>
-<div id="outline-container-org843406d" class="outline-2">
-<h2 id="org843406d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4660fb7" class="outline-2">
+<h2 id="org4660fb7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_ced91cebe29abb4e9e82187ee9d0264c6d22c3a5.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_ced91cebe29abb4e9e82187ee9d0264c6d22c3a5.svg" class="org-svg" /> <a href="20230222202719-eigenraum.html#ID-7b4ccb37-5162-4759-a114-c7985217ebd6">Eigenräume</a> für <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_71bf77700edd02ed0ffded84e9a63dff53c528b9.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_71bf77700edd02ed0ffded84e9a63dff53c528b9.svg" class="org-svg" />, so gilt <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_985bd0d08a5029d339908a14ab1d25c9e19c6958.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_985bd0d08a5029d339908a14ab1d25c9e19c6958.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_8ac7c7092af8bd583b312b23c4e548ac8ba62778.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_8ac7c7092af8bd583b312b23c4e548ac8ba62778.svg" class="org-svg" />
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(V(\alpha), V(\alpha')\) <a href="20230222202719-eigenraum.html#ID-7b4ccb37-5162-4759-a114-c7985217ebd6">Eigenräume</a> für \(\alpha \neq \alpha'\), so gilt \(V(\alpha) \oplus V(\alpha')\) bzw. \(V(\alpha) \cap V(\alpha') = \{0\}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org61a24a3" class="outline-2">
-<h2 id="org61a24a3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0f35416" class="outline-2">
+<h2 id="org0f35416"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Definition gilt für <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_2f2ddaac195eb9c4dc541cb6829e201fc4c76d35.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_2f2ddaac195eb9c4dc541cb6829e201fc4c76d35.svg" class="org-svg" />:
+Nach Definition gilt für \(v \in V(\alpha) \land v \in V(\alpha')\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_0a3542a460c4a2d332fe8da1447b098967758ae3.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_0a3542a460c4a2d332fe8da1447b098967758ae3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+Av = \alpha v \\
+=& \alpha' v
+\end{align*}
 <p>
-wegen <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_71bf77700edd02ed0ffded84e9a63dff53c528b9.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_71bf77700edd02ed0ffded84e9a63dff53c528b9.svg" class="org-svg" /> folgt <img src="file:///home/anton/html/ltximg/20230303155308-eigenraume_als_disjunkte_summe_f92e3f6a0a4864d264158373b82476e30edf2882.svg" alt="20230303155308-eigenraume_als_disjunkte_summe_f92e3f6a0a4864d264158373b82476e30edf2882.svg" class="org-svg" />
+wegen \(\alpha \neq \alpha'\) folgt \(v = 0\)
 </p>
 </div>
 </div>

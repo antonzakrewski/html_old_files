@@ -9,38 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Injektivität und der Komposition zu einer Identitätsabbildung</h1>
-<div id="outline-container-orga6e9e83" class="outline-2">
-<h2 id="orga6e9e83"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1fb579c" class="outline-2">
+<h2 id="org1fb579c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a00f1697b4e4395dc0d73fab039a18db32840334.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a00f1697b4e4395dc0d73fab039a18db32840334.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Sei \(f: X \rightarrow Y\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></li>
-<li>Es existiert eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a4cbf5ceae88d53d4ea9a6dd382899bf89f40252.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_a4cbf5ceae88d53d4ea9a6dd382899bf89f40252.svg" class="org-svg" />, so dass gilt: <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_286a6b9a86ca2806f3c9c4566200a52fb4f7668a.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_286a6b9a86ca2806f3c9c4566200a52fb4f7668a.svg" class="org-svg" /></li>
+<li>\(f\) ist <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></li>
+<li>Es existiert eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(g: Y \rightarrow X\), so dass gilt: \(g \circ f = \mathrm{id}_{X}\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org0351d51" class="outline-2">
-<h2 id="org0351d51"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc57010a" class="outline-2">
+<h2 id="orgc57010a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org74c27e5" class="outline-3">
-<h3 id="org74c27e5"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org2961755" class="outline-3">
+<h3 id="org2961755"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> beliebig, dann folgt, dass kein <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_37cd5f14435f80784e03bdf2eec210f2abd1d299.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_37cd5f14435f80784e03bdf2eec210f2abd1d299.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_003dbcb343479b81371bd1e2df09938d3d859064.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_003dbcb343479b81371bd1e2df09938d3d859064.svg" class="org-svg" />.
-Daraus folgt, dass die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_d2281ddf7ac4a7f621412bee928dffa44d5ea1a8.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_d2281ddf7ac4a7f621412bee928dffa44d5ea1a8.svg" class="org-svg" /> <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">rechtseindeutig</a> ist; für andere Werte <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_7570ab04527b946d2e3964ab68cf1c665ec9dc07.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_7570ab04527b946d2e3964ab68cf1c665ec9dc07.svg" class="org-svg" /> wähle man die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> beliebig.
+Sei \(x \in X\) beliebig, dann folgt, dass kein \(x' \neq x\) existiert mit \(f(x) = f(x')\).
+Daraus folgt, dass die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(g(x): f(x) \mapsto x\) <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">rechtseindeutig</a> ist; für andere Werte \(y \in Y\) wähle man die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> beliebig.
 </p>
 </div>
 </div>
-<div id="outline-container-org0786789" class="outline-3">
-<h3 id="org0786789"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221022191330-aquivalenz_von_injektivitat_und_der_komposition_zu_einer_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgda73e95" class="outline-3">
+<h3 id="orgda73e95"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>

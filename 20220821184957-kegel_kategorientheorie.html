@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kegel (Kategorientheorie)</h1>
-<div id="outline-container-orge2ee347" class="outline-2">
-<h2 id="orge2ee347"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd1eaabe" class="outline-2">
+<h2 id="orgd1eaabe"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein Kegel über einem <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">Diagramm</a> <img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_042620ed6cbf8773ec46f28e40c5180925767659.svg" alt="20220821184957-kegel_kategorientheorie_042620ed6cbf8773ec46f28e40c5180925767659.svg" class="org-svg" /> besteht aus einem <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> <img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_b0fcfa021fd6de5c3ec46af5ceca99f9ab3f4245.svg" alt="20220821184957-kegel_kategorientheorie_b0fcfa021fd6de5c3ec46af5ceca99f9ab3f4245.svg" class="org-svg" /> aus der <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> <img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_a7ffc16180590e4d295fefc171d6e3fbcb0d58bc.svg" alt="20220821184957-kegel_kategorientheorie_a7ffc16180590e4d295fefc171d6e3fbcb0d58bc.svg" class="org-svg" /> (nicht die <a href="20220821183538-indexmenge.html#ID-0facf307-a830-4bf8-aeab-1aa67c3cced2">Indexmenge</a>) und einer <a href="20220821185245-familie_kategorientheorie.html#ID-07e37db4-7743-42a3-a3d5-540760ca7d33">Familie</a> von Pfeilen
+Ein Kegel über einem <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">Diagramm</a> \(D\) besteht aus einem <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> \(C\) aus der <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> \(\mathbf{C}\) (nicht die <a href="20220821183538-indexmenge.html#ID-0facf307-a830-4bf8-aeab-1aa67c3cced2">Indexmenge</a>) und einer <a href="20220821185245-familie_kategorientheorie.html#ID-07e37db4-7743-42a3-a3d5-540760ca7d33">Familie</a> von Pfeilen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_4c338cbbfd2923d01a54cc5194ed7b6caa50fcab.svg" alt="20220821184957-kegel_kategorientheorie_4c338cbbfd2923d01a54cc5194ed7b6caa50fcab.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c_i: \mathbf{C} \rightarrow D_i \quad i \in \mathbf{I}
+\end{align*}
 <p>
-mit der Eigenschaft, dass für jeden Pfeil <img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_01465f1e6c94656acf3b9c73eff56be3f782f9d0.svg" alt="20220821184957-kegel_kategorientheorie_01465f1e6c94656acf3b9c73eff56be3f782f9d0.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20220821184957-kegel_kategorientheorie_42ebdfb221f7b473f0ce8d5e566cc6203893da47.svg" alt="20220821184957-kegel_kategorientheorie_42ebdfb221f7b473f0ce8d5e566cc6203893da47.svg" class="org-svg" /> das <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">Diagramm</a>  &lt;kommutiert&gt;
+mit der Eigenschaft, dass für jeden Pfeil \(i \rightarrow j\) in \(\mathbf{I}\) das <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">Diagramm</a>  &lt;kommutiert&gt;
 </p>
 </div>
 </div>

@@ -9,63 +9,76 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Imaginärteil und Multiplikation mit i für den Realteil</h1>
-<div id="outline-container-orgfbbc9e6" class="outline-2">
-<h2 id="orgfbbc9e6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org48dcf63" class="outline-2">
+<h2 id="org48dcf63"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_26efff9e222f557969ccce389220e8d74a762eed.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_26efff9e222f557969ccce389220e8d74a762eed.svg" class="org-svg" />, so gilt für den <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> und <a href="20211231000354-imaginarteil.html#ID-8267ad48-49dc-48a8-a7d0-e1b3e1d502fc">Imaginärteil</a>:
+Sei \(z \in \mathbb{C}\), so gilt für den <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> und <a href="20211231000354-imaginarteil.html#ID-8267ad48-49dc-48a8-a7d0-e1b3e1d502fc">Imaginärteil</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_2de65958e71602f76b030ed417f5fb9618f5de4c.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_2de65958e71602f76b030ed417f5fb9618f5de4c.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{Im}(z) = \mathrm{Re}(-\mathrm{i} z)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc4c5881" class="outline-2">
-<h2 id="orgc4c5881"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org46ae295" class="outline-2">
+<h2 id="org46ae295"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20220225202318-eulersche_formel.html#ID-a44af9b5-a187-4031-a3a1-06a464bbe064">eulerschen Formel</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_ad4937429f85c5700ced4ceae08cde64bc3db027.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_ad4937429f85c5700ced4ceae08cde64bc3db027.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z =& \vert z \vert e^{\mathrm{i} \phi} \\
+=& \vert z \vert (\mathrm{i} \sin(\phi) + \cos(\phi))
+\end{align*}
 <p>
 und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_d5525338956326ddd487ddeb38703c6c3d5da845.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_d5525338956326ddd487ddeb38703c6c3d5da845.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+- \mathrm{i} z =& e^{1.5 \pi \mathrm{i}} \cdot \vert z \vert e^{\mathrm{i} \phi} \\
+=& \vert z \vert e^{\mathrm{i} (1.5 \pi + \phi)} \\
+=& \vert z \vert (\mathrm{i} \sin(1.5 \pi + \phi) + \cos(1.5 \pi + \phi))
+\end{align*}
 <p>
 Nach der <a href="20230624-verschiebung_von_sinus_cosinus.html#ID-0865e456-073b-4c1d-aa3e-65f65333e63b">Verschiebung von Sinus / Kosinus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_375e9f63b76d1f910aca7a730441a254691efe51.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_375e9f63b76d1f910aca7a730441a254691efe51.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cos(1.5 \pi + \phi)) =& \sin(\phi)  
+\end{align*}
 <p>
 und damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_f9cd345862b4aac2510ad83418105ee93d1b9cf4.svg" alt="20230624-imaginarteil_und_multiplikation_mit_i_fur_den_realteil_f9cd345862b4aac2510ad83418105ee93d1b9cf4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert z \vert \sin(\phi) =& \vert z \vert \cdot \cos(1.5 \pi + \phi)
+\end{align*}
 </div>
 </div>
 </div>

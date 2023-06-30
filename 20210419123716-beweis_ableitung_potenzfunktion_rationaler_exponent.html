@@ -9,62 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Ableitung Potenzfunktion (rationaler Exponent)</h1>
-<div id="outline-container-org6862f8c" class="outline-2">
-<h2 id="org6862f8c"><span class="section-number-2">1.</span> Zu Zeigen</h2>
+<div id="outline-container-org28e06f3" class="outline-2">
+<h2 id="org28e06f3"><span class="section-number-2">1.</span> Zu Zeigen</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_b618f5fd5f1c4dfdedd9a76ae6d9f7ec6efe4564.svg" alt="20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_b618f5fd5f1c4dfdedd9a76ae6d9f7ec6efe4564.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{gather}
+g:x \mapsto x^{\frac{1}{n}}, n \in \mathbb{N}, \mathbb{D}_g = \mathbb{R}^{+}_0 \\
+g'(x) = \frac{1}{n} \cdot x^{\frac{1}{n}-1}
+\end{gather}
 </div>
 </div>
-</div>
-<div id="outline-container-org05b1abc" class="outline-2">
-<h2 id="org05b1abc"><span class="section-number-2">2.</span> Lemma</h2>
+<div id="outline-container-org51aed5b" class="outline-2">
+<h2 id="org51aed5b"><span class="section-number-2">2.</span> Lemma</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>Umkehrfunktion von g:</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_62406ff47e35194cf0323936804bb0f19b86a53a.svg" alt="20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_62406ff47e35194cf0323936804bb0f19b86a53a.svg" class="org-svg" />
-</span>
-</div>
+\begin{equation*}
+f:x \mapsto x^n, \mathbb{D}_f = \mathbb{R}^{+}_0
+\end{equation*}
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_17360053c0fb563dbef9b235b88e902973ff0eb7.svg" alt="20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_17360053c0fb563dbef9b235b88e902973ff0eb7.svg" class="org-svg" />
-</span>
+\begin{equation*}
+f(g(x)) = (x^{\frac{1}{n}})^n = x
+\end{equation*}
 </div>
 </div>
-</div>
-<div id="outline-container-org86039b2" class="outline-2">
-<h2 id="org86039b2"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-orgf2c2f8f" class="outline-2">
+<h2 id="orgf2c2f8f"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
-<li>gleiche Funktion <img src="file:///home/anton/html/ltximg/20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> gleiche Ableitung</li>
+<li>gleiche Funktion \(\Rightarrow\) gleiche Ableitung</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_0f14946304f0d869016e54e3b80c3cb6e9132165.svg" alt="20210419123716-beweis_ableitung_potenzfunktion_rationaler_exponent_0f14946304f0d869016e54e3b80c3cb6e9132165.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{equation}
+f'(g(x)) \cdot g'(x) = 1 \\
+g'(x) = \frac{1}{f'(g(x))} = \frac{1}{n\cdot g(x)^{n-1}} = \frac{1}{n \cdot (x^{\frac{1}{n}})^{n-1} } = \frac{1}{n} \cdot \frac{1}{x^{\frac{n-1}{n}} = \frac{1}{n} \cdot x^{\frac{1}{n} - 1}
+\end{equation}
 </div>
 </div>
 </div>

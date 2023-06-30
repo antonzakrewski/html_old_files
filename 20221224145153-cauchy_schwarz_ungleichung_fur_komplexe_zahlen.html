@@ -3,45 +3,64 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cauchy-Schwarz Ungleichung für komplexe Zahlen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Cauchy-Schwarz Ungleichung für komplexe Zahlen</h1>
-<div id="outline-container-org0e7c771" class="outline-2">
-<h2 id="org0e7c771"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org38837f0" class="outline-2">
+<h2 id="org38837f0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für alle <img src="ltximg/20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_7eb34d9a788a8659a99a91b9f55c71f0f170bbf1.svg" alt="20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_7eb34d9a788a8659a99a91b9f55c71f0f170bbf1.svg" class="org-svg" />  gilt:
+Für alle \(z,w \in \mathbb{C}\)  gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_e52959f7d165b584b55c13c29c28a170bb37e7a9.svg" alt="20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_e52959f7d165b584b55c13c29c28a170bb37e7a9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\vert z \vert \vert w \vert \geq& \vert \mathrm{Re}(z \cdot \overline{w})\vert \\
+\vert z \vert \vert w \vert \geq& \vert \mathrm{Im}(z \cdot \overline{w})\vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd96eb63" class="outline-2">
-<h2 id="orgd96eb63"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org595be92" class="outline-2">
+<h2 id="org595be92"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_47105f039a8052227bdf1ba403491bb4c802de67.svg" alt="20221224145153-cauchy_schwarz_ungleichung_fur_komplexe_zahlen_47105f039a8052227bdf1ba403491bb4c802de67.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\left(\vert z \vert \vert w \vert\right)^2 =& \vert z \cdot \overline{w} \vert^2 \\
+=& \vert \mathrm{Re}(z \cdot \overline{w}) \vert^2 + \vert \mathrm{Im}(z \cdot \overline{w})\vert^2 \\
+0 \leq& \vert \mathrm{Re}(z \cdot \overline{w}) \vert^2, \vert \mathrm{Im}(z \cdot \overline{w})\vert^2 \\
+\Rightarrow \vert z \vert \vert w \vert \geq& \vert \mathrm{Re}(z \cdot \overline{w})\vert, \vert \mathrm{Im}(z \cdot \overline{w})\vert, 
+\end{align*}
 </div>
 </div>
 </div>

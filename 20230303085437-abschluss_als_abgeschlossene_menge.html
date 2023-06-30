@@ -9,35 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Closure as a closed Set</h1>
-<div id="outline-container-org9018e09" class="outline-2">
-<h2 id="org9018e09"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6f7c4a5" class="outline-2">
+<h2 id="org6f7c4a5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />, so folgt, dass der <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_fc850a2af34d2b23b8246fe3b462f8038b05400d.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_fc850a2af34d2b23b8246fe3b462f8038b05400d.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq X\), so folgt, dass der <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> \(\overline{A}\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgad2dd35" class="outline-2">
-<h2 id="orgad2dd35"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgae51f61" class="outline-2">
+<h2 id="orgae51f61"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Wegen der äquivalenz von <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a> ist zu zeigen:
-<img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_060de3c0b49072fced4d13d0fd16a058e1b4b93a.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_060de3c0b49072fced4d13d0fd16a058e1b4b93a.svg" class="org-svg" /> ist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> aller seiner Punkte:
+\(X \setminus \overline{A}\) ist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> aller seiner Punkte:
 Mithilfe eines <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Widerspruchsbeweis</a> gilt:
-Falls ein <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_3b39a7a31f529ff5cbc8f733400cb0545f15a4d6.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_3b39a7a31f529ff5cbc8f733400cb0545f15a4d6.svg" class="org-svg" /> existiert, so dass <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_060de3c0b49072fced4d13d0fd16a058e1b4b93a.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_060de3c0b49072fced4d13d0fd16a058e1b4b93a.svg" class="org-svg" /> keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> ist, so folgt, dass keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_3f9a41836f6764e779c839782a5202bf599c77d3.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_3f9a41836f6764e779c839782a5202bf599c77d3.svg" class="org-svg" />  von <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> existiert und somit für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> gilt:
+Falls ein \(x \in X \setminus \overline{A}\) existiert, so dass \(X \setminus \overline{A}\) keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) ist, so folgt, dass keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \subseteq X \setminus \overline{A}\)  von \(x\) existiert und somit für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_531ef7af2085bd262473b7b75aa7bad5e2b87bfe.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_531ef7af2085bd262473b7b75aa7bad5e2b87bfe.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+X \setminus A \subsetneq U_x 
+\end{align*}
 <p>
-Daraus folgt, dass auch der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> mit einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> ist, und somit nach Konstruktion <img src="file:///home/anton/html/ltximg/20230303085437-abschluss_als_abgeschlossene_menge_b1b670d5f25bb87573df1779c7e2b428d748abfb.svg" alt="20230303085437-abschluss_als_abgeschlossene_menge_b1b670d5f25bb87573df1779c7e2b428d748abfb.svg" class="org-svg" />, was ein widerspruch zur Annahme ist.
+Daraus folgt, dass auch der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> mit einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> ist, und somit nach Konstruktion \(x \in \overline{A}\), was ein widerspruch zur Annahme ist.
 </p>
 </div>
 </div>

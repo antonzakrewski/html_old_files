@@ -9,44 +9,65 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">mehrdimensionaler Schrankensatz</h1>
-<div id="outline-container-org7d79164" class="outline-2">
-<h2 id="org7d79164"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9d5fa06" class="outline-2">
+<h2 id="org9d5fa06"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230615-mehrdimensionaler_schrankensatz_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" alt="20230615-mehrdimensionaler_schrankensatz_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" class="org-svg" /> eine <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_8ac44c1ef4d6960bd53084baa904b6494e82afa6.svg" alt="20230615-mehrdimensionaler_schrankensatz_8ac44c1ef4d6960bd53084baa904b6494e82afa6.svg" class="org-svg" /> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> (vgl. <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>).
-Sei <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_dcd06a8b2aef901d71084a10580e7332729710ee.svg" alt="20230615-mehrdimensionaler_schrankensatz_dcd06a8b2aef901d71084a10580e7332729710ee.svg" class="org-svg" /> <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvex</a> mit <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_5a278725486a43df162a2fa084b57cdea3e04605.svg" alt="20230615-mehrdimensionaler_schrankensatz_5a278725486a43df162a2fa084b57cdea3e04605.svg" class="org-svg" /> (vgl. <a href="20230228183044-operatornorm_als_echte_norm.html#ID-ee5d7893-af98-4807-8118-00bde790b509">Operatornorm</a>)
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^m\) eine \(\mathcal{C}^1\) <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> (vgl. <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>).
+Sei \(K \subseteq U\) <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvex</a> mit \(\| d F_x \|_{\mathrm{op}} \leq L \forall x \in K\) (vgl. <a href="20230228183044-operatornorm_als_echte_norm.html#ID-ee5d7893-af98-4807-8118-00bde790b509">Operatornorm</a>)
 </p>
 
 <p>
-Dann gilt <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_dabdb04e09eb959fc1b8d3a3cf17f2b30e3c873f.svg" alt="20230615-mehrdimensionaler_schrankensatz_dabdb04e09eb959fc1b8d3a3cf17f2b30e3c873f.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_c530230daa429259cfb564f694aceb7396934e0f.svg" alt="20230615-mehrdimensionaler_schrankensatz_c530230daa429259cfb564f694aceb7396934e0f.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_df82f6494b60bdc364d9a53812b3bab814f9cbee.svg" alt="20230615-mehrdimensionaler_schrankensatz_df82f6494b60bdc364d9a53812b3bab814f9cbee.svg" class="org-svg" /> ist <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">lipschitzstetig</a> 
+Dann gilt \(\| F(b) - F(a) \| \leq L \cdot \| b - a \|\) für \(a,b \in K\), d.h. \(F_{\vert K}\) ist <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">lipschitzstetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org7089ab7" class="outline-2">
-<h2 id="org7089ab7"><span class="section-number-2">2.</span> Bewesi</h2>
+<div id="outline-container-org9eab743" class="outline-2">
+<h2 id="org9eab743"><span class="section-number-2">2.</span> Bewesi</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Wegen der Konvexität von <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230615-mehrdimensionaler_schrankensatz_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> verläuft das Segment von <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230615-mehrdimensionaler_schrankensatz_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20230615-mehrdimensionaler_schrankensatz_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230615-mehrdimensionaler_schrankensatz_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und wir können nach dem <a href="20230615-mittelwertsatz_fur_reellwertige_mehrdimensionale_funktionen.html#ID-80819ad0-a01c-4087-88a7-c300ab51f209">Mittelwertsatz für reellwertige, mehrdimensionale Funktionen</a> abschätzen:
+Wegen der Konvexität von \(K\) verläuft das Segment von \(a\) nach \(b\) in \(K\) und wir können nach dem <a href="20230615-mittelwertsatz_fur_reellwertige_mehrdimensionale_funktionen.html#ID-80819ad0-a01c-4087-88a7-c300ab51f209">Mittelwertsatz für reellwertige, mehrdimensionale Funktionen</a> abschätzen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_68786684e2efb1c09a42252f5753fa21c4ec1393.svg" alt="20230615-mehrdimensionaler_schrankensatz_68786684e2efb1c09a42252f5753fa21c4ec1393.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| F(b) - F(a) \| = \| \int_0^1 \mathrm{d} F_{(1 - t)a + tb} (b - a) \mathrm{d}t \| 
+\end{align*}
 <p>
 nach der <a href="20230615-kontinuierliche_dreiecksungleichung.html#ID-1264ae46-8e94-485f-948a-944859161e97">kontinuierlichen Dreiecksungleichung</a> gilt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230615-mehrdimensionaler_schrankensatz_6a68ed4f34c4ca5cae7c62bc314620fed59d5dc0.svg" alt="20230615-mehrdimensionaler_schrankensatz_6a68ed4f34c4ca5cae7c62bc314620fed59d5dc0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \int \mathrm{d} F_{(1 - t)a + tb} (b - a) \mathrm{d}t \| \leq& \int_0^1 \| \mathrm{d}F (b - a) \| \mathrm{d}t \\
+\leq& \int_0^1 \| \mathrm{d}F \|_{\mathrm{op}, K} \cdot \|b - a \| \\
+\leq& L \cdot \|b - a\|
+\end{align*}
 </div>
 </div>
 </div>

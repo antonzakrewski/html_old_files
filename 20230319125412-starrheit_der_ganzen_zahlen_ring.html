@@ -9,44 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Starrheit der ganzen Zahlen (Ring)</h1>
-<div id="outline-container-orgc5ef16a" class="outline-2">
-<h2 id="orgc5ef16a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org908d690" class="outline-2">
+<h2 id="org908d690"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20210702104458-ganze_zahlen.html#ID-179209f5-5cb0-426c-b035-470f9b3935a8">Ganze Zahlen</a> besitzen keinen nichttrivialen <a href="20230305163710-ringautomorphismus.html#ID-6796e8c8-bbe0-4d48-8492-ca399d08ab74">Ringautomorphismus</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org8b74445" class="outline-2">
-<h2 id="org8b74445"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org944d952" class="outline-2">
+<h2 id="org944d952"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ein <a href="20230305163710-ringautomorphismus.html#ID-6796e8c8-bbe0-4d48-8492-ca399d08ab74">Automorphismus</a>.
+Sei \(f\) ein <a href="20230305163710-ringautomorphismus.html#ID-6796e8c8-bbe0-4d48-8492-ca399d08ab74">Automorphismus</a>.
 Nach Annahme gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_f4f8adcfd006478195d205477910b45cd7fc6c67.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_f4f8adcfd006478195d205477910b45cd7fc6c67.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(0) =& 0 \\
+f(1) =& 1
+\end{align*}
 <p>
-Daraus folgt auch <img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_554cca4500c6c0b2e49d8f7a7d6a820c7fec34d1.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_554cca4500c6c0b2e49d8f7a7d6a820c7fec34d1.svg" class="org-svg" /> wegen <img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_3bd5de272a7066244ffe70b5b889f1c5700fe784.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_3bd5de272a7066244ffe70b5b889f1c5700fe784.svg" class="org-svg" /> 
+Daraus folgt auch \(f(-1) = -1\) wegen \(0 = f(0) = f(1 - 1) = f(1) - f(1) = 1 - f(1)\) 
 (vgl. Abbildung der neutralen Elmenet)
-Daraus folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> für <img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_9192c3112e0b6d3617902a49104f4a3566fde9d5.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_9192c3112e0b6d3617902a49104f4a3566fde9d5.svg" class="org-svg" />
+Daraus folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> für \(z \in \mathbb{Z}^+\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_c6d2e4fd17fa5b4f7d5434fc56adc7ce78c79147.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_c6d2e4fd17fa5b4f7d5434fc56adc7ce78c79147.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(z) =& f(\sum_{i=1}^{z} 1) \\
+=& \sum_{i=1}^{z} f(1) \\
+=& z
+\end{align*}
 <p>
-Analog für <img src="file:///home/anton/html/ltximg/20230319125412-starrheit_der_ganzen_zahlen_ring_ee8c313eba8f5d3926733dd26c44086737d97623.svg" alt="20230319125412-starrheit_der_ganzen_zahlen_ring_ee8c313eba8f5d3926733dd26c44086737d97623.svg" class="org-svg" />
+Analog für \(z \in \mathbb{Z}^{-}\)
 </p>
 </div>
 </div>

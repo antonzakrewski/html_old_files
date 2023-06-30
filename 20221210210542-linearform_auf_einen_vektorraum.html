@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linearform auf einen Vektorraum</h1>
-<div id="outline-container-orga0ef51d" class="outline-2">
-<h2 id="orga0ef51d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf440938" class="outline-2">
+<h2 id="orgf440938"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210210542-linearform_auf_einen_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221210210542-linearform_auf_einen_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
-Eine Linearform auf <img src="file:///home/anton/html/ltximg/20221210210542-linearform_auf_einen_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221210210542-linearform_auf_einen_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ist ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
+Eine Linearform auf \(V\) ist ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210210542-linearform_auf_einen_vektorraum_8fc6a1602f434cae6a35da82c688a9bd4de31354.svg" alt="20221210210542-linearform_auf_einen_vektorraum_8fc6a1602f434cae6a35da82c688a9bd4de31354.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: V \rightarrow K
+\end{align*}
 <p>
 bzw. ein <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Element</a> des <a href="20221210210302-dualraum.html#ID-9ace6f30-29f8-4e46-82c2-875f67c452fc">Dualraums</a> 
 </p>

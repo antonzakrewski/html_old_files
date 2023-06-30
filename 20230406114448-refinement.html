@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">refinement</h1>
-<div id="outline-container-orgbe8fc58" class="outline-2">
-<h2 id="orgbe8fc58"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5c8eab8" class="outline-2">
+<h2 id="org5c8eab8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230406114448-refinement_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230406114448-refinement_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and <img src="file:///home/anton/html/ltximg/20230406114448-refinement_53210a18bbfba2b977e6e183ea6a17d23e2a2f82.svg" alt="20230406114448-refinement_53210a18bbfba2b977e6e183ea6a17d23e2a2f82.svg" class="org-svg" /> be a <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Covering</a>.
-A <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Covering</a> <img src="file:///home/anton/html/ltximg/20230406114448-refinement_c07a46f75bc041f4c491fded413d74e5385ff1aa.svg" alt="20230406114448-refinement_c07a46f75bc041f4c491fded413d74e5385ff1aa.svg" class="org-svg" /> is said to be a refinement, if for every <img src="file:///home/anton/html/ltximg/20230406114448-refinement_b19d9ba223e19040d6db6ec1bc7e0622057165d1.svg" alt="20230406114448-refinement_b19d9ba223e19040d6db6ec1bc7e0622057165d1.svg" class="org-svg" /> there exists an <img src="file:///home/anton/html/ltximg/20230406114448-refinement_4ae82f43a922a0b0cfaa47ff00f54c1f8c6d750f.svg" alt="20230406114448-refinement_4ae82f43a922a0b0cfaa47ff00f54c1f8c6d750f.svg" class="org-svg" /> such that:
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(\mathcal{A} := A_i \subseteq X\) be a <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Covering</a>.
+A <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Covering</a> \(\mathcal{B} := B_i \subseteq X\) is said to be a refinement, if for every \(B_i\) there exists an \(A_{j}\) such that:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230406114448-refinement_03d18a8375913512e09fa2f62a6d2bf4fbc902cc.svg" alt="20230406114448-refinement_03d18a8375913512e09fa2f62a6d2bf4fbc902cc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+B_i \subseteq A_j
+\end{align*}
 </div>
 </div>
 </div>

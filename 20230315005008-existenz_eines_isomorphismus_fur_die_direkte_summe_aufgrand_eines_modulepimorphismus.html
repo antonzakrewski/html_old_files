@@ -9,79 +9,100 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines Isomorphismus für die direkte Summe aufgrund eines Modulepimorphismus</h1>
-<div id="outline-container-org725d9bf" class="outline-2">
-<h2 id="org725d9bf"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org682bfa4" class="outline-2">
+<h2 id="org682bfa4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_5a0991b161eb53c7eba3454cd1d210335d68b971.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_5a0991b161eb53c7eba3454cd1d210335d68b971.svg" class="org-svg" /> ein <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freies Modul</a> und <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6b2dc7c77ade122dd9c76576bb57f3ea6e164ecf.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6b2dc7c77ade122dd9c76576bb57f3ea6e164ecf.svg" class="org-svg" /> ein <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">Modulepimorphismus</a>.
+Sei \(R^I\) ein <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freies Modul</a> und \(M\) ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie \(f: M \rightarrow R^I\) ein <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">Modulepimorphismus</a>.
 Dann existiert ein <a href="20230303170548-modulisomorphismus.html#ID-808e406f-ac3b-433c-a704-4f83909ef60d">Modulisomorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_97e7e6730e474712f8e6cf8e4c07f4c9b89a5df1.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_97e7e6730e474712f8e6cf8e4c07f4c9b89a5df1.svg" class="org-svg" />
-</span>
+\begin{align*}
+M \simeq \mathrm{ker}(f) \oplus R^I
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5e0694a" class="outline-2">
-<h2 id="org5e0694a"><span class="section-number-2">2.</span> Beewis</h2>
+<div id="outline-container-orgdd13b83" class="outline-2">
+<h2 id="orgdd13b83"><span class="section-number-2">2.</span> Beewis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_1fc4a9233489d75979eb66f42f9acb982ac45bed.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_1fc4a9233489d75979eb66f42f9acb982ac45bed.svg" class="org-svg" /> als <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> gegeben.
-Da <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, existiert für ein <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_f17e09a21f9263b3b628e67a8cb341c4b450f6eb.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_f17e09a21f9263b3b628e67a8cb341c4b450f6eb.svg" class="org-svg" /> mind. ein <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_5af0d379f3315272a648ba6897e679798d7671b6.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_5af0d379f3315272a648ba6897e679798d7671b6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_a547ce4314793e31e676bdbd3a83d85c7e028457.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_a547ce4314793e31e676bdbd3a83d85c7e028457.svg" class="org-svg" />
+Sei \(\{e_i\} \subseteq R^I\) als <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> gegeben.
+Da \(f\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, existiert für ein \(e_i \in R^I\) mind. ein \(m_i \in M\) mit \(f(m_i) = e_i\)
 Nach <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f86-a90b-7a269c9fd21e">Axiom of choice</a> und der Aussage über <a href="20230315004410-existenz_eines_eindeutigen_modulhomomorphismus_von_einem_freien_r_modul.html#ID-314d3db0-a044-4588-aca6-c289620cc3c7">Existenz eines eindeutigen Modulhomomorphismus von einem freien R-Modul auf ein beliebigen Modul</a> konstruieren wir einen <a href="20230303170539-modulmonomorphismus.html#ID-bf69176f-1b85-40c5-a8b7-fb306539c238">Modulmonomorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_81966dd704c8e2aa26b6cf0ac344e0594a16a540.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_81966dd704c8e2aa26b6cf0ac344e0594a16a540.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g: R^I \rightarrow& M \\
+e_i \mapsto& m_i
+\end{align*}
 <p>
-Dann gilt <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_509975f17ecfe93aca36daf3889790be475399af.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_509975f17ecfe93aca36daf3889790be475399af.svg" class="org-svg" /> und es folgt durch Einschräknung auf das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_39c92b3f47dab6fba3147c656a8bb86147fa86e3.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_39c92b3f47dab6fba3147c656a8bb86147fa86e3.svg" class="org-svg" />.
+Dann gilt \((f \circ g) = \mathrm{id}_{R^I}\) und es folgt durch Einschräknung auf das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> \(R^I \simeq g[R^I]\).
 </p>
 </div>
-<div id="outline-container-org9044a6f" class="outline-3">
-<h3 id="org9044a6f"><span class="section-number-3">2.1.</span> summe</h3>
+<div id="outline-container-orgb6939ea" class="outline-3">
+<h3 id="orgb6939ea"><span class="section-number-3">2.1.</span> summe</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_e6569cfac1066412fc42531508efeff486d9a1eb.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_e6569cfac1066412fc42531508efeff486d9a1eb.svg" class="org-svg" /> so existieren eindeutige <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_eeb854066f1e75d56c54b8bc91cb649d6f3a29ea.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_eeb854066f1e75d56c54b8bc91cb649d6f3a29ea.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_cba8c67c8a0814b7350993e13f8d4d03dde22869.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_cba8c67c8a0814b7350993e13f8d4d03dde22869.svg" class="org-svg" />.
-Ferner definieren die <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_7a082b918404fcc1f67b3e97b23c6fbb5891e6e6.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_7a082b918404fcc1f67b3e97b23c6fbb5891e6e6.svg" class="org-svg" /> ein eindeutiges Element <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6c50f7daf7b6d43acf224ae7c9ac514e1a312cf1.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6c50f7daf7b6d43acf224ae7c9ac514e1a312cf1.svg" class="org-svg" />
+Sei \(m \in M\) mit \(f(m) = r\) so existieren eindeutige \(r_i \in R\) mit \(\sum_{i=1}^{k} r_i e_i\).
+Ferner definieren die \(r_i\) ein eindeutiges Element \(m' = g(r) = g(\sum_{i=1}^{k} r_i e_i)\)
 Es folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_32836e6da62612ab2da8d27eeedd1c7772e695e2.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_32836e6da62612ab2da8d27eeedd1c7772e695e2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(m - m') =& \sum_{i=1}^{k} r_i e_i - f(g(\sum_{i=1}^{k} r_i e_i) \\
+=& \sum_{i=1}^{k} r_i e_i - (f \circ g)(\sum_{i=1}^{k} r_i e_i) \\
+=& \sum_{i=1}^{k} r_i e_i - \mathrm{id}_{R^I} (\sum_{i=1}^{k} r_i e_i) \\
+=&  \sum_{i=1}^{k} r_i e_i -  \sum_{i=1}^{k} r_i e_i \\
+=& 0
+\end{align*}
 <p>
-Damit gilt <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_ca06ba8230197ecc1ec5361d555aec03c65456e7.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_ca06ba8230197ecc1ec5361d555aec03c65456e7.svg" class="org-svg" />.
+Damit gilt \(m \in \mathrm{ker}(f) + g[R^I]\).
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org4abb7be" class="outline-3">
-<h3 id="org4abb7be"><span class="section-number-3">2.2.</span> direkt</h3>
+<div id="outline-container-orgc7d1d68" class="outline-3">
+<h3 id="orgc7d1d68"><span class="section-number-3">2.2.</span> direkt</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_c3a42d88ba7d557e4685a776d0ebaa9bc8af350d.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_c3a42d88ba7d557e4685a776d0ebaa9bc8af350d.svg" class="org-svg" />, so gilt nach Annahme <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_c4c5300c8ff820715f5c2b3377a25efb515b2e5d.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_c4c5300c8ff820715f5c2b3377a25efb515b2e5d.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_385b23e16fa9e91fed3f786132322f99444856d7.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_385b23e16fa9e91fed3f786132322f99444856d7.svg" class="org-svg" />
+Sei \(m \in \mathrm{ker}(f) \cap g[R^I]\), so gilt nach Annahme \(m = \sum_{i=1}^{k} r_i g(e_i) =  \sum_{i=1}^{k} r_i m_i\) und \(f(m) = 0\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_2149d57059e7696559fcf114d31925cfbbb1fa23.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_2149d57059e7696559fcf114d31925cfbbb1fa23.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& f(m) \\
+=& f(\sum_{i=1}^{k} r_i m_i) \\
+=& \sum_{i=1}^{k} r_i f(m_i) \\
+=& \sum_{i=1}^{k} r_i e_i
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" class="org-svg" /> als <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>, d.h. es folgt <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_4a206d4eddf0b249c48bc4f93ba80927f01a3125.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_4a206d4eddf0b249c48bc4f93ba80927f01a3125.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6135a37d089fa502c0d3b74d1951c09ee58cc1e2.svg" alt="20230315005008-existenz_eines_isomorphismus_fur_die_direkte_summe_aufgrand_eines_modulepimorphismus_6135a37d089fa502c0d3b74d1951c09ee58cc1e2.svg" class="org-svg" />
+Dabei ist \(e_i\) als <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>, d.h. es folgt \(r_i = 0\) und damit auch \(m = 0\)
 </p>
 </div>
 </div>

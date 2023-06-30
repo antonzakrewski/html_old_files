@@ -9,28 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elliptische Kurve</h1>
-<div id="outline-container-org2b7920a" class="outline-2">
-<h2 id="org2b7920a"><span class="section-number-2">1.</span> informell Definition</h2>
+<div id="outline-container-orgff2ca20" class="outline-2">
+<h2 id="orgff2ca20"><span class="section-number-2">1.</span> informell Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die Lösungen <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_4830b1e4c2b1fc9e9c9d4ea847b0e21c9d52483c.svg" alt="20230428150537-elliptische_kurve_4830b1e4c2b1fc9e9c9d4ea847b0e21c9d52483c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_18afd633518418c347d7505e737585b3c6b7f486.svg" alt="20230428150537-elliptische_kurve_18afd633518418c347d7505e737585b3c6b7f486.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230428150537-elliptische_kurve_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /> einer gleichung der Form
+Die Lösungen \((x,y)\) mit \(x,y \in \mathbb{Q}\) bzw. \(\mathbb{R}\) einer gleichung der Form
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_6d765d4035cd7b1e26173d986cb7eb8be46cac01.svg" alt="20230428150537-elliptische_kurve_6d765d4035cd7b1e26173d986cb7eb8be46cac01.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+y^2 = x^3 + ax + b
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" alt="20230428150537-elliptische_kurve_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_e8ba64e202ff6358b544e736cb19a982d225d625.svg" alt="20230428150537-elliptische_kurve_e8ba64e202ff6358b544e736cb19a982d225d625.svg" class="org-svg" />
+mit \(a,b \in \mathbb{Z}\) sowie \(4a^3 + 27 b^2 \neq 0\)
 </p>
 
 <p>
-zusammen mit einem Punkt <img src="file:///home/anton/html/ltximg/20230428150537-elliptische_kurve_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" alt="20230428150537-elliptische_kurve_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" class="org-svg" /> - ein punkt, der genau in jeder senkrechten gerade enthalten ist.
+zusammen mit einem Punkt \(\infty\) - ein punkt, der genau in jeder senkrechten gerade enthalten ist.
 </p>
 </div>
 </div>

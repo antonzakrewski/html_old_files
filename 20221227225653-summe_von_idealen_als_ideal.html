@@ -9,48 +9,70 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summe von Idealen als Ideal</h1>
-<div id="outline-container-org30bc04e" class="outline-2">
-<h2 id="org30bc04e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgacccadb" class="outline-2">
+<h2 id="orgacccadb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221227225653-summe_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_758fd258cb0820ef4ed501357b28038adc184988.svg" alt="20221227225653-summe_von_idealen_als_ideal_758fd258cb0820ef4ed501357b28038adc184988.svg" class="org-svg" /> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a>.
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(I,J \subseteq R\) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a>.
 Dann folgt, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_32c50e8ef469642918349b2a235a59d1338d2b0b.svg" alt="20221227225653-summe_von_idealen_als_ideal_32c50e8ef469642918349b2a235a59d1338d2b0b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+I + J  = \{x + y \vert x \in I, y \in J\}
+\end{align*}
 <p>
 auch ein Ideal ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org49729b4" class="outline-2">
-<h2 id="org49729b4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org77500d9" class="outline-2">
+<h2 id="org77500d9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7449534" class="outline-3">
-<h3 id="org7449534"><span class="section-number-3">2.1.</span> <a href="20221228145140-summe_von_untergruppen_als_untergrupp.html#ID-d12eb94d-8f48-4552-94c7-e1988216ad95">Summe von Untergruppen als Untergruppe</a></h3>
+<div id="outline-container-orgb156231" class="outline-3">
+<h3 id="orgb156231"><span class="section-number-3">2.1.</span> <a href="20221228145140-summe_von_untergruppen_als_untergrupp.html#ID-d12eb94d-8f48-4552-94c7-e1988216ad95">Summe von Untergruppen als Untergruppe</a></h3>
 </div>
-<div id="outline-container-org3402475" class="outline-3">
-<h3 id="org3402475"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
+<div id="outline-container-org0b2af48" class="outline-3">
+<h3 id="org0b2af48"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_1125d444657a97246340531d3b484ea681b2787a.svg" alt="20221227225653-summe_von_idealen_als_ideal_1125d444657a97246340531d3b484ea681b2787a.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_f7cda1ed14bfb15c6396f4c06a0e514854e9c100.svg" alt="20221227225653-summe_von_idealen_als_ideal_f7cda1ed14bfb15c6396f4c06a0e514854e9c100.svg" class="org-svg" />.
+Sei \(r,r' \in R\) und \(x + y \in I\).
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225653-summe_von_idealen_als_ideal_ba918b6ac16104f6a066ecef3067833d3c2c59fe.svg" alt="20221227225653-summe_von_idealen_als_ideal_ba918b6ac16104f6a066ecef3067833d3c2c59fe.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r \cdot (x + y) \cdot r' =& (rx + ry) \cdot r' \\
+=& rxr' + ryr' \\
+rxr' \in& I \\
+ryr' \in& J
+\end{align*}
 </div>
 </div>
 </div>

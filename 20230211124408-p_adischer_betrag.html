@@ -9,41 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">p-adischer Betrag</h1>
-<div id="outline-container-org0ed5cb3" class="outline-2">
-<h2 id="org0ed5cb3"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org975b2bf" class="outline-2">
+<h2 id="org975b2bf"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> und <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_4f0d56346ce4f087738e731e2a1f516e52f64d6c.svg" alt="20230211124408-p_adischer_betrag_4f0d56346ce4f087738e731e2a1f516e52f64d6c.svg" class="org-svg" />.
-Dann existiert eine Darstellung von <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230211124408-p_adischer_betrag_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> als <a href="20220820194405-vollstandig_gekurzt.html#ID-755d7856-bb12-4578-be98-4e1c8433f8c6">vollständig gekürzter</a> Bruch und durch Ausklammern von <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> erhält man
+Sei \(p\) <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> und \(x \in \mathbb{Q} \setminus \{0\}\).
+Dann existiert eine Darstellung von \(x\) als <a href="20220820194405-vollstandig_gekurzt.html#ID-755d7856-bb12-4578-be98-4e1c8433f8c6">vollständig gekürzter</a> Bruch und durch Ausklammern von \(p\) erhält man
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_a96f477d1e2b016a1bba3a514e25b6c6b614cecf.svg" alt="20230211124408-p_adischer_betrag_a96f477d1e2b016a1bba3a514e25b6c6b614cecf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x = \frac{a}{b} p^{n} && n \nmid a,b
+\end{align*}
 <p>
-Dann ist der <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230211124408-p_adischer_betrag_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> -adische Betrag von <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230211124408-p_adischer_betrag_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> definiert als:
+Dann ist der \(p\) -adische Betrag von \(x\) definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_5b7cbca025366db0e20e85cae42603b6d8701498.svg" alt="20230211124408-p_adischer_betrag_5b7cbca025366db0e20e85cae42603b6d8701498.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert x \vert_p = p^{-n}
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_b4fad9f40e5c4f22f3cc260d7d47633a65a3cc39.svg" alt="20230211124408-p_adischer_betrag_b4fad9f40e5c4f22f3cc260d7d47633a65a3cc39.svg" class="org-svg" /> ist der $p$-adische betrag definiert als
+Für \(x = 0\) ist der $p$-adische betrag definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230211124408-p_adischer_betrag_29e03cf7322ba6556f20a793b6bf8c87170c3368.svg" alt="20230211124408-p_adischer_betrag_29e03cf7322ba6556f20a793b6bf8c87170c3368.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert 0 \vert_p = 0
+\end{align*}
 </div>
 </div>
 </div>

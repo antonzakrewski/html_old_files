@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">fallende Faktorielle</h1>
-<div id="outline-container-orgbb8aac5" class="outline-2">
-<h2 id="orgbb8aac5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1bbded2" class="outline-2">
+<h2 id="org1bbded2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230327221510-fallende_faktorielle_e89c94cf4e81d1feb65637115c91cebae424d267.svg" alt="20230327221510-fallende_faktorielle_e89c94cf4e81d1feb65637115c91cebae424d267.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230327221510-fallende_faktorielle_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" alt="20230327221510-fallende_faktorielle_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" class="org-svg" />, so ist die fallende Faktorielle definiert als:
+Sei \(x \in \mathbb{C}\) und \(k \in \mathbb{N}\), so ist die fallende Faktorielle definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327221510-fallende_faktorielle_6071aaadb10121512f558b8c89dbb17c18da3ab0.svg" alt="20230327221510-fallende_faktorielle_6071aaadb10121512f558b8c89dbb17c18da3ab0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^{\underline{k}}  \coloneqq \prod_{i=0}^{k-1} (x-i)
+\end{align*}
 </div>
 </div>
 </div>

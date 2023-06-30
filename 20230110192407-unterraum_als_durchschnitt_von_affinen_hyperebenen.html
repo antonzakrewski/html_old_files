@@ -9,39 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Unterraum als Durchschnitt von affinen Hyperebenen</h1>
-<div id="outline-container-orgffdc1d8" class="outline-2">
-<h2 id="orgffdc1d8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7100fac" class="outline-2">
+<h2 id="org7100fac"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
-Dann ist jeder $m$-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionale</a> <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> von <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_61951ebd06cc94056c6c4c4966793a7c6cb79b4c.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_61951ebd06cc94056c6c4c4966793a7c6cb79b4c.svg" class="org-svg" /> <a href="20230108202541-affine_hyperebene.html#ID-3810c8b1-0a6d-41a2-8949-2a78a1c82e69">affine Hyperebene</a> 
+Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
+Dann ist jeder $m$-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionale</a> <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> von \(n - m\) <a href="20230108202541-affine_hyperebene.html#ID-3810c8b1-0a6d-41a2-8949-2a78a1c82e69">affine Hyperebene</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org97cc7ce" class="outline-2">
-<h2 id="org97cc7ce"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org22201c8" class="outline-2">
+<h2 id="org22201c8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_00808e7b431822c56011f457715b61b33a883f1b.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_00808e7b431822c56011f457715b61b33a883f1b.svg" class="org-svg" /> ein <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> mit <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> als m-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionalen</a> <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a>.
-Nach der <a href="20221226135953-dimension_der_annullierung_der_linearformen.html#ID-7af7ba98-6da8-4273-8c02-28a60ac967b7">Dimension der Annullierung der Linearformen</a> gilt <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_1d025a567846d2c0f60ef89bd1210e349aad1191.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_1d025a567846d2c0f60ef89bd1210e349aad1191.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8dc7507643095e663a7cd27da223f796b73ab967.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8dc7507643095e663a7cd27da223f796b73ab967.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_aec26b0bf520d8e043df12dbbfef17f0732a1ce0.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_aec26b0bf520d8e043df12dbbfef17f0732a1ce0.svg" class="org-svg" />.
-Evaluierung liefert <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_85dc2b729dadc4057d2e57734bddac5a58a1e63b.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_85dc2b729dadc4057d2e57734bddac5a58a1e63b.svg" class="org-svg" /> und affine <a href="20230108202541-affine_hyperebene.html#ID-3810c8b1-0a6d-41a2-8949-2a78a1c82e69">affine Hyperebenen</a> <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_ae301f6370d3db86bdd2b03d64f57a88068c9d92.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_ae301f6370d3db86bdd2b03d64f57a88068c9d92.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_1c6b0cfc9a383b268a9a6f8c3b0ccdc00e618dfe.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_1c6b0cfc9a383b268a9a6f8c3b0ccdc00e618dfe.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_6a6791ff08447affad3bc81615639fd442226b04.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_6a6791ff08447affad3bc81615639fd442226b04.svg" class="org-svg" /> nach Definition
+Sei \(H = a + U\) ein <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> mit \(U \subseteq V\) als m-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionalen</a> <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a>.
+Nach der <a href="20221226135953-dimension_der_annullierung_der_linearformen.html#ID-7af7ba98-6da8-4273-8c02-28a60ac967b7">Dimension der Annullierung der Linearformen</a> gilt \(\mathrm{dim}_{K}(U^{\bot}) = n - m\).
+Sei \(\{f_1,...,f_{n-m}\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(U^\bot\).
+Evaluierung liefert \(f_i(a) = \alpha_i\) und affine <a href="20230108202541-affine_hyperebene.html#ID-3810c8b1-0a6d-41a2-8949-2a78a1c82e69">affine Hyperebenen</a> \(H_{f_i,\alpha_i}\)
+Sei \(v = a + u \in H\), so gilt für \(i = 1,...,n-m\) nach Definition
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_9ac21046567c027409229b16a3532eb257600225.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_9ac21046567c027409229b16a3532eb257600225.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_i(v) =& f_i(a) + f_i(u) \\
+=& f_i(a) + 0 \\
+=& \alpha_i
+\end{align*}
 <p>
-Aslo folgt <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_2fe9c46642fa3d18588ce1b4c0cdd103cbc120b2.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_2fe9c46642fa3d18588ce1b4c0cdd103cbc120b2.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_0ff1dfe427d7d0796a3a07bbff6db6cb53436a40.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_0ff1dfe427d7d0796a3a07bbff6db6cb53436a40.svg" class="org-svg" />, so folgt wegen <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8d956960c4dd519c5b7eb43b478b058858a18533.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_8d956960c4dd519c5b7eb43b478b058858a18533.svg" class="org-svg" /> dann <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_5b248c7e09327783b953d0663b99656808c662c0.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_5b248c7e09327783b953d0663b99656808c662c0.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_c76ff09250b8046148a3a7f34f2b42ad1704f205.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_c76ff09250b8046148a3a7f34f2b42ad1704f205.svg" class="org-svg" /> 
-Nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gilt <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_f1c815c86142709f03c4527236699781e3663434.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_f1c815c86142709f03c4527236699781e3663434.svg" class="org-svg" /> und damit gilt <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_55705b63141e7c8d6d4f8a15130a86ee9e6a45f8.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_55705b63141e7c8d6d4f8a15130a86ee9e6a45f8.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_ad60ac391f6950b5b866605f0a80e51a61566c7f.svg" alt="20230110192407-unterraum_als_durchschnitt_von_affinen_hyperebenen_ad60ac391f6950b5b866605f0a80e51a61566c7f.svg" class="org-svg" />
+Aslo folgt \(v \in \bigcap_{i=1}^{n-m} H_{f_i,\alpha_i}\)
+Sei \(v \in \bigcap_{i=1}^{n - m} H_{f_i,\alpha_i}\), so folgt wegen \(f_i(v - a) = 0\) dann \(v - a \in f_1^{\bot}\) und damit auch \(v - a \in \langle f_1,...,f_{n-m}\rangle^{\bot}\) 
+Nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gilt \(\langle f_1,...,f_{n-m}\rangle^{\top} = U^{\bot \top} = U\) und damit gilt \(v - a \in U\) und \(v \in a + U = H\)
 </p>
 </div>
 </div>

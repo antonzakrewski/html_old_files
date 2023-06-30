@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wachstum eines Polynoms verglichen mit einer Exponentialfunktion</h1>
-<div id="outline-container-orgcdf623c" class="outline-2">
-<h2 id="orgcdf623c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcb2ca01" class="outline-2">
+<h2 id="orgcb2ca01"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_d79128eb2baaad4c643388a1f02d8041f4338586.svg" alt="20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_d79128eb2baaad4c643388a1f02d8041f4338586.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_14c7ccc580490bfc7f56a4f9a8c455c5c58f83a3.svg" alt="20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_14c7ccc580490bfc7f56a4f9a8c455c5c58f83a3.svg" class="org-svg" /> dann folgt:
+Sei \(a > 1\), \(k \in \mathbb{R}\) dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_f9ecadb709a5adc845ff891807d80d1e2c43a922.svg" alt="20221222100304-wachstum_eines_polynoms_verglichen_mit_einer_exponentialfunktion_f9ecadb709a5adc845ff891807d80d1e2c43a922.svg" class="org-svg" />
-</span>
+\begin{align*}
+ \lim_{n \to \infty}\left(\frac{n^k}{a^n}\right) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga14dcbc" class="outline-2">
-<h2 id="orga14dcbc"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaf89bc4" class="outline-2">
+<h2 id="orgaf89bc4"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Codimension</h1>
-<div id="outline-container-orgaca30cb" class="outline-2">
-<h2 id="orgaca30cb"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbb2ba0f" class="outline-2">
+<h2 id="orgbb2ba0f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230420125653-codimension_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230420125653-codimension_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230420125653-codimension_7bb29257cb2fb7acce77bc5dd116a9618682b37c.svg" alt="20230420125653-codimension_7bb29257cb2fb7acce77bc5dd116a9618682b37c.svg" class="org-svg" /> ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a>.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(U \leq V\) ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a>.
 Dann ist die Codimension definiert als <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimension</a> des <a href="20220911121731-faktorraum.html#ID-d2c3fc95-35f3-4882-8c30-06959d0b1f79">Faktorraum</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420125653-codimension_9960d45470b27da72802d1435d9b49d83fdd5b6b.svg" alt="20230420125653-codimension_9960d45470b27da72802d1435d9b49d83fdd5b6b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{codim}(U) = \mathrm{dim}_{K}(V/U)
+\end{align*}
 </div>
 </div>
 </div>

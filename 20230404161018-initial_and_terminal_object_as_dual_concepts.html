@@ -9,35 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">initial and terminal object as dual concepts</h1>
-<div id="outline-container-org4cdc3cd" class="outline-2">
-<h2 id="org4cdc3cd"><span class="section-number-2">1.</span> proposition</h2>
+<div id="outline-container-org7d7e27e" class="outline-2">
+<h2 id="org7d7e27e"><span class="section-number-2">1.</span> proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and <img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> an <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a> or <img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> a <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminal object</a>.
-Then for the <a href="20220830192239-duale_kategorie.html#ID-711d7a6e-e765-4a59-90a2-baeee955dea1">dual category</a> <img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_d2f839c5e06c853c94e04cf40005cb1515ec6569.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_d2f839c5e06c853c94e04cf40005cb1515ec6569.svg" class="org-svg" />:
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(I\) an <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a> or \(T\) a <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminal object</a>.
+Then for the <a href="20220830192239-duale_kategorie.html#ID-711d7a6e-e765-4a59-90a2-baeee955dea1">dual category</a> \(\mathcal{C}^{\mathrm{op}}\):
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> is a <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminal object</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230404161018-initial_and_terminal_object_as_dual_concepts_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20230404161018-initial_and_terminal_object_as_dual_concepts_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> is an <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a></li>
+<li>\(I\) is a <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminal object</a></li>
+<li>\(T\) is an <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9cae47d" class="outline-2">
-<h2 id="org9cae47d"><span class="section-number-2">2.</span> proof</h2>
+<div id="outline-container-orgf6f6fd4" class="outline-2">
+<h2 id="orgf6f6fd4"><span class="section-number-2">2.</span> proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 follows from the definition ?
 </p>
 </div>
-<div id="outline-container-org0f0d91c" class="outline-3">
-<h3 id="org0f0d91c"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org8ea8c27" class="outline-3">
+<h3 id="org8ea8c27"><span class="section-number-3">2.1.</span> a)</h3>
 </div>
-<div id="outline-container-org2686201" class="outline-3">
-<h3 id="org2686201"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org4c79e2b" class="outline-3">
+<h3 id="org4c79e2b"><span class="section-number-3">2.2.</span> b)</h3>
 </div>
 </div>
 </div>

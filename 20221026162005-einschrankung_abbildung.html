@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">restriction of a map</h1>
-<div id="outline-container-org90e5d0d" class="outline-2">
-<h2 id="org90e5d0d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgecc3d26" class="outline-2">
+<h2 id="orgecc3d26"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_efba4fa1aa7633b69e95ff6d74f27f31766581d6.svg" alt="20221026162005-einschrankung_abbildung_efba4fa1aa7633b69e95ff6d74f27f31766581d6.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_0d4380cda56523b09378c553e4af48b27a69c34a.svg" alt="20221026162005-einschrankung_abbildung_0d4380cda56523b09378c553e4af48b27a69c34a.svg" class="org-svg" />  und sei <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20221026162005-einschrankung_abbildung_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine Abbildung
-Die Abbildung <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_14b375691798e9c6edd3e5f7b02a6c32e217c16b.svg" alt="20221026162005-einschrankung_abbildung_14b375691798e9c6edd3e5f7b02a6c32e217c16b.svg" class="org-svg" /> ist dann eine Einschränkung oder Restriktion der Abbildung <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221026162005-einschrankung_abbildung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auf die Teilmenge <img src="file:///home/anton/html/ltximg/20221026162005-einschrankung_abbildung_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20221026162005-einschrankung_abbildung_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> 
+Seien \(A,B,T\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit \(T \subseteq B\)  und sei \(f: A \rightarrow B\) eine Abbildung
+Die Abbildung \(f_{\vert T} T \rightarrow B\) ist dann eine Einschränkung oder Restriktion der Abbildung \(f\) auf die Teilmenge \(T\) 
 </p>
 </div>
 </div>

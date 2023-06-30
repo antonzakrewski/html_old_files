@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">linksseitiger Grenzwert</h1>
-<div id="outline-container-org83ba6be" class="outline-2">
-<h2 id="org83ba6be"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgff50ee8" class="outline-2">
+<h2 id="orgff50ee8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230116160427-linksseitiger_grenzwert_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_af3ef0b5c00b2f6382744fac1b277f3f72f6eff9.svg" alt="20230116160427-linksseitiger_grenzwert_af3ef0b5c00b2f6382744fac1b277f3f72f6eff9.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20230116160427-linksseitiger_grenzwert_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Sei \(M\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(f: D \rightarrow M\) für \(D \subseteq \mathbb{R}\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
 Der linksseitige <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> ist - sofern  <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> - definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_adc0f55223e29ccd48389b515573914bf5b14200.svg" alt="20230116160427-linksseitiger_grenzwert_adc0f55223e29ccd48389b515573914bf5b14200.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \lim_{x \to x_0}\left(f(x)\right) 
+\end{align*}
 <p>
-für eine <a href="20220105225356-streng_monoton_wachsende_folge.html#ID-b03a5468-9d66-4449-becc-de190ba56fca">streng monoton wachsende Folge</a> <img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230116160427-linksseitiger_grenzwert_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230116160427-linksseitiger_grenzwert_59606390fe861961a3a1fb76943b52d00ed52f23.svg" alt="20230116160427-linksseitiger_grenzwert_59606390fe861961a3a1fb76943b52d00ed52f23.svg" class="org-svg" />
+für eine <a href="20220105225356-streng_monoton_wachsende_folge.html#ID-b03a5468-9d66-4449-becc-de190ba56fca">streng monoton wachsende Folge</a> \(x\) in \(D \cap (- \infty, x_0)\)
 </p>
 </div>
 </div>

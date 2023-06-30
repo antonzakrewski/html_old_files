@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschätzung der 1-,2- und Maximumsnorm</h1>
-<div id="outline-container-org6283181" class="outline-2">
-<h2 id="org6283181"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd8b6117" class="outline-2">
+<h2 id="orgd8b6117"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller,</a> <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter Vektorraum</a> <img src="file:///home/anton/html/ltximg/20230428171320-abschatzung_der_1_2_und_maximumsnorm_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20230428171320-abschatzung_der_1_2_und_maximumsnorm_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> gegeben, dann gilt für die <a href="20230224165655-p_norm.html#ID-3c5b1d2d-114c-4629-bde4-0418eea708e1">p-Normen</a>:
+Sei ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller,</a> <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter Vektorraum</a> \(\mathbb{R}^n\) gegeben, dann gilt für die <a href="20230224165655-p_norm.html#ID-3c5b1d2d-114c-4629-bde4-0418eea708e1">p-Normen</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428171320-abschatzung_der_1_2_und_maximumsnorm_d337b64c757ce964a33542a379dfb8a1e1a43b26.svg" alt="20230428171320-abschatzung_der_1_2_und_maximumsnorm_d337b64c757ce964a33542a379dfb8a1e1a43b26.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \cdot \|_2 \leq& \| \cdot \|_1 \leq \sqrt{n} \| \cdot \|_{\infty} \\
+\| \cdot \|_{\infty} \leq& \| \cdot \|_{2} \leq \sqrt{n} \| \cdot \|_{\infty}
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-orga1c0f2b" class="outline-2">
-<h2 id="orga1c0f2b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge02efee" class="outline-2">
+<h2 id="orge02efee"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

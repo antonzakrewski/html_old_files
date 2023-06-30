@@ -9,68 +9,89 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation von Binomialkoeffizienten mit gleichem oberen/unteren Wert</h1>
-<div id="outline-container-org3b4e025" class="outline-2">
-<h2 id="org3b4e025"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org616b4be" class="outline-2">
+<h2 id="org616b4be"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_bb471ec776e378be30ab52041d29c61e00fde9f8.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_bb471ec776e378be30ab52041d29c61e00fde9f8.svg" class="org-svg" />, so folgt:
+Sei \(r \in \mathbb{R}\) und \(m,k \in \mathbb{Z}\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_ffc5c28f2d50847958b21a780603c32bf0b10aa0.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_ffc5c28f2d50847958b21a780603c32bf0b10aa0.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{r}{m} \binom{m}{k} = \binom{r}{k} \cdot \binom{r-k}{m-k}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgde20082" class="outline-2">
-<h2 id="orgde20082"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf1716af" class="outline-2">
+<h2 id="orgf1716af"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org17e2962" class="outline-3">
-<h3 id="org17e2962"><span class="section-number-3">2.1.</span> Fallunterscheidung</h3>
+<div id="outline-container-org445887b" class="outline-3">
+<h3 id="org445887b"><span class="section-number-3">2.1.</span> Fallunterscheidung</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Falls <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_84c272fda51be4a7b8549ebaa3641708446837c5.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_84c272fda51be4a7b8549ebaa3641708446837c5.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_09922a29d9581d7eeb6f02aa453c6aec88c36149.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_09922a29d9581d7eeb6f02aa453c6aec88c36149.svg" class="org-svg" /> gilt, so folgt
+Falls \(k < 0, m < 0\) oder \(k > m\) gilt, so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_b8f6251c5b02b98eaed24822df1f3435f9c59cfb.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_b8f6251c5b02b98eaed24822df1f3435f9c59cfb.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{r}{k} \binom{m}{k} =& \binom{r}{k} \binom{r-k}{m-k} \\
+0 =& 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org56c1979" class="outline-3">
-<h3 id="org56c1979"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" class="org-svg" /></h3>
+<div id="outline-container-orga075f03" class="outline-3">
+<h3 id="orga075f03"><span class="section-number-3">2.2.</span> \(r \in \mathbb{N}\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt nach der Darstellung des <a href="20220106223354-handubliche_formel_binomialkoeffizient.html#ID-a5f59058-3c32-430e-a346-4ecc73f2afe7">Binomialkoeffizient durch Fakultäten</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_792836e6e7f96fd2698f4d7c728bb31466d2014f.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_792836e6e7f96fd2698f4d7c728bb31466d2014f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{r}{m} =& \frac{r!}{m! \cdot (r-m)!} \\
+\binom{m}{k} =& \frac{m!}{k! \cdot (m-k)!} \\
+\binom{r}{k} =& \frac{r!}{k! \cdot (r-k)!} \\
+\binom{r-k}{m-k} =& \frac{(r-k)!}{(m-k)! \cdot (r-k - m +k)!} \\
+=& \frac{(r-k)!}{(m-k)!(r - m)!}
+\end{align*}
 <p>
 Damit folgt:
 </p>
+\begin{align*}
+\binom{r}{m} \binom{m}{k} =& \frac{r!}{m! \cdot (r-m)!} \cdot \frac{m!}{k! \cdot (m-k)!} \\
+=& \frac{r!}{(r-m)! \cdot k! \cdot (m-k)!} \cdot \frac{(r-k)!}{(r-k)!} \\
+=& \frac{r!}{(r-k)! \cdot k!} \cdot \frac{(r-k)!}{(m-k)! \cdot (r-m)!} \\
+=& \binom{r}{k} \>dot \binom{r-k}{m-k}
+\end{align*}
+</div>
+</div>
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_faf8fa59d47bb850985370317695df628b58d7e6.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_faf8fa59d47bb850985370317695df628b58d7e6.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org7ef21bf" class="outline-3">
-<h3 id="org7ef21bf"><span class="section-number-3">2.3.</span> <img src="file:///home/anton/html/ltximg/20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /></h3>
+<div id="outline-container-org72263aa" class="outline-3">
+<h3 id="org72263aa"><span class="section-number-3">2.3.</span> \(r \in \mathbb{R}\)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus dem <a href="20221223182341-beweisstruktur_kombinatorik_binomialkoeffizient_als_polynom.html#ID-d55f5b8e-26c3-44e1-b4a9-67e9b26a3a3f">Polynomargument des Binomialkoeffizienten</a> 

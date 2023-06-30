@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Endomorphismus für den Eigenraum</h1>
-<div id="outline-container-org961aaa8" class="outline-2">
-<h2 id="org961aaa8"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org65b29e7" class="outline-2">
+<h2 id="org65b29e7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303154720-endomorphismus_fur_den_eigenraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230303154720-endomorphismus_fur_den_eigenraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230303154720-endomorphismus_fur_den_eigenraum_ba513dd7b444279a0dbe8ed44fb057f22d089362.svg" alt="20230303154720-endomorphismus_fur_den_eigenraum_ba513dd7b444279a0dbe8ed44fb057f22d089362.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230303154720-endomorphismus_fur_den_eigenraum_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" alt="20230303154720-endomorphismus_fur_den_eigenraum_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" class="org-svg" /> ein <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a> von <img src="file:///home/anton/html/ltximg/20230303154720-endomorphismus_fur_den_eigenraum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230303154720-endomorphismus_fur_den_eigenraum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230303154720-endomorphismus_fur_den_eigenraum_1bb93ac37dc733b93ab282c7a002d3989f098a5d.svg" alt="20230303154720-endomorphismus_fur_den_eigenraum_1bb93ac37dc733b93ab282c7a002d3989f098a5d.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Vektorraumendomorphismus</a>.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in \mathrm{End}_{K}(V)\).
+Sei \(\alpha\) ein <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a> von \(A\), so ist \(\alpha \mathrm{id}_{V} - A: V \rightarrow V\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Vektorraumendomorphismus</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orge8cb431" class="outline-2">
-<h2 id="orge8cb431"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgff4c36e" class="outline-2">
+<h2 id="orgff4c36e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20221125134219-menge_der_matrizen_als_vektorraum.html#ID-f91c9c3e-a599-4e0f-885f-5529372bc48f">Menge der Matrizen als Vektorraum</a> (und der Abgeschlossenheit)

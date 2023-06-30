@@ -3,61 +3,81 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>sequent Fibonacci Numbers are coprime</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">sequent Fibonacci Numbers are coprime</h1>
-<div id="outline-container-orgfdef53d" class="outline-2">
-<h2 id="orgfdef53d"><span class="section-number-2">1.</span> Therem</h2>
+<div id="outline-container-org9b4d23f" class="outline-2">
+<h2 id="org9b4d23f"><span class="section-number-2">1.</span> Therem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" />, then the <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">greatest common divisor</a> of sequent <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci numbers</a> is <img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_eaa67059dbfe8ca6838b0a04516f94cd41f4ea83.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_eaa67059dbfe8ca6838b0a04516f94cd41f4ea83.svg" class="org-svg" />
+Let \(n \in \mathbb{N}\), then the <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">greatest common divisor</a> of sequent <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci numbers</a> is \(\mathrm{gcd}(f_n,f_{n+1}) = 1\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc8eaa08" class="outline-2">
-<h2 id="orgc8eaa08"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org5b85cc9" class="outline-2">
+<h2 id="org5b85cc9"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">proof by induction</a>:
 </p>
 </div>
-<div id="outline-container-org1309f9f" class="outline-3">
-<h3 id="org1309f9f"><span class="section-number-3">2.1.</span> Basis</h3>
+<div id="outline-container-orgc87a7db" class="outline-3">
+<h3 id="orgc87a7db"><span class="section-number-3">2.1.</span> Basis</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_87c024a8c6d360c1d33518568ec6206370caf8a4.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_87c024a8c6d360c1d33518568ec6206370caf8a4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mathrm{gcd}(f_0,f_1) =& \mathrm{gcd}(0,1) \\
+=& 1 \\
+\mathrm{gcd}(f_1,f_2) =& \mathrm{gcd}(1,1) \\
+=& 1 \\
+\mathrm{gcd}(f_2,f_3) =& \mathrm{gcd}(1,2) \\
+=& 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9a7d57b" class="outline-3">
-<h3 id="org9a7d57b"><span class="section-number-3">2.2.</span> Step</h3>
+<div id="outline-container-orgd6f1a81" class="outline-3">
+<h3 id="orgd6f1a81"><span class="section-number-3">2.2.</span> Step</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-For <img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_e3806e3bbd506cf40420c1e33e334b406b8f1bba.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_e3806e3bbd506cf40420c1e33e334b406b8f1bba.svg" class="org-svg" /> we can assume, that <img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_36cf4f6459cd356bb2a70b61dad8dda8cc2ff37d.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_36cf4f6459cd356bb2a70b61dad8dda8cc2ff37d.svg" class="org-svg" /> .
+For \(n \geq 2\) we can assume, that \(F_{n+1} \geq F_{n}\) .
 Using <a href="20220303185559-euklidische_algorithmus.html#ID-f463ff77-d485-4ae8-a415-a64351073d01">euclids algorithms</a> we conclude:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_2e0e56f3ea12ea11886ba5738c88e03053d613cd.svg" alt="20230421133104-greatest_common_divisor_of_sequent_fibonacci_numbers_2e0e56f3ea12ea11886ba5738c88e03053d613cd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+F_{n+1} =& F_n + F_{n-1}
+\end{align*}
 </div>
 </div>
 </div>

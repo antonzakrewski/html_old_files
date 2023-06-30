@@ -9,23 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mächtigkeit des Spektrums als hinreichendes Kriterium für die Diagonalisierbarkeit</h1>
-<div id="outline-container-orgd06b66e" class="outline-2">
-<h2 id="orgd06b66e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb79ae2c" class="outline-2">
+<h2 id="orgb79ae2c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_5208a619c62a00734f94e09eb12dda557dd6d901.svg" alt="20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_5208a619c62a00734f94e09eb12dda557dd6d901.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" />, so dass für das <a href="20230222202647-spektrum_eigenwert.html#ID-c96aba86-5bd4-4e5d-8bc1-b4dc31c38f63">Spektrum</a> <img src="file:///home/anton/html/ltximg/20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_b79c6a4bf831a2dfbea6a5c93fada4ff44dae75b.svg" alt="20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_b79c6a4bf831a2dfbea6a5c93fada4ff44dae75b.svg" class="org-svg" /> gilt, dann ist <img src="file:///home/anton/html/ltximg/20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> 
+Sei \(V \simeq K^n\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in K^{n \times n}\), so dass für das <a href="20230222202647-spektrum_eigenwert.html#ID-c96aba86-5bd4-4e5d-8bc1-b4dc31c38f63">Spektrum</a> \(\vert \sigma(A) \vert = n\) gilt, dann ist \(A\) <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org6324127" class="outline-2">
-<h2 id="org6324127"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7971c68" class="outline-2">
+<h2 id="org7971c68"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-folgt aus den <a href="20230303155308-eigenraume_als_disjunkte_summe.html#ID-e18a9966-291c-4b1c-bbf1-4ede9a9c478c">Eigenräumen als disjunkte Summe</a> und der definition mit <img src="file:///home/anton/html/ltximg/20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" alt="20230303160251-hinreichendes_kriterium_fur_die_diagonalisierbarkeit_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" class="org-svg" />
+folgt aus den <a href="20230303155308-eigenraume_als_disjunkte_summe.html#ID-e18a9966-291c-4b1c-bbf1-4ede9a9c478c">Eigenräumen als disjunkte Summe</a> und der definition mit \(v \neq 0\)
 </p>
 </div>
 </div>

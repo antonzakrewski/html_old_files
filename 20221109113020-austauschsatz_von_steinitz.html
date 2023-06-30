@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Austauschsatz von Steinitz</h1>
-<div id="outline-container-orgeb02e0c" class="outline-2">
-<h2 id="orgeb02e0c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge942a82" class="outline-2">
+<h2 id="orge942a82"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_f09be4b5c1c76ad2451288ba82ea9694b9c1896c.svg" alt="20221109113020-austauschsatz_von_steinitz_f09be4b5c1c76ad2451288ba82ea9694b9c1896c.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
-Ist <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8a5026162accd8fe855acf60e5dd1d76fd206151.svg" alt="20221109113020-austauschsatz_von_steinitz_8a5026162accd8fe855acf60e5dd1d76fd206151.svg" class="org-svg" /> eine linear unabhängige <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>, so ist mit geeigneter Nummerierung der <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elemente</a>  <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_1afa7425421ab2c1ad87964f0c32f45350634b11.svg" alt="20221109113020-austauschsatz_von_steinitz_1afa7425421ab2c1ad87964f0c32f45350634b11.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_febab474007bac9f13656b7f5eb028981653acb0.svg" alt="20221109113020-austauschsatz_von_steinitz_febab474007bac9f13656b7f5eb028981653acb0.svg" class="org-svg" /> auch eine Basis von <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und \(\{b_1,...,b_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\).
+Ist \(\{a_1,...,a_m\} \subseteq V\) eine linear unabhängige <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>, so ist mit geeigneter Nummerierung der <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elemente</a>  \(b_i\) ist \(\{a_1,...,a_m,b_{m+1},...,b_n\}\) auch eine Basis von \(V\).
 </p>
 </div>
-<div id="outline-container-org41cbe43" class="outline-3">
-<h3 id="org41cbe43"><span class="section-number-3">1.1.</span> Folgerung</h3>
+<div id="outline-container-org80d6568" class="outline-3">
+<h3 id="org80d6568"><span class="section-number-3">1.1.</span> Folgerung</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Insbesondere folgt, dass jede <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängiger</a> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> erweitert werden kann
@@ -30,56 +55,48 @@ Insbesondere folgt, dass jede <a href="20211008171333-menge.html#ID-30e3fc7a-737
 </div>
 </div>
 </div>
-<div id="outline-container-org5a9d332" class="outline-2">
-<h2 id="org5a9d332"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbb9a248" class="outline-2">
+<h2 id="orgbb9a248"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>:
 </p>
 </div>
-<div id="outline-container-org18a96f8" class="outline-3">
-<h3 id="org18a96f8"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org6fb8d4f" class="outline-3">
+<h3 id="org6fb8d4f"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Ist <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_bac509cc0ce470ccc9c501c95bcd8e2187f9dfcc.svg" alt="20221109113020-austauschsatz_von_steinitz_bac509cc0ce470ccc9c501c95bcd8e2187f9dfcc.svg" class="org-svg" />, so ist auch <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_b7769ea0deb0ce686c1435467d6cc6dc456c13d7.svg" alt="20221109113020-austauschsatz_von_steinitz_b7769ea0deb0ce686c1435467d6cc6dc456c13d7.svg" class="org-svg" /> und es existiert ein <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" alt="20221109113020-austauschsatz_von_steinitz_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" class="org-svg" /> , sodass für <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_65e071989bf4818c3b860ccbbf2db5ea93568211.svg" alt="20221109113020-austauschsatz_von_steinitz_65e071989bf4818c3b860ccbbf2db5ea93568211.svg" class="org-svg" /> gilt
+Ist \(m =1\), so ist auch \(a_1 \neq 0\) und es existiert ein \(k\) , sodass für \(a_1 =& \sum_{i=1}^{n} \alpha_i b_i\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_b1553ae9ad999061a47f34eb34fdeec1fd4cb43b.svg" alt="20221109113020-austauschsatz_von_steinitz_b1553ae9ad999061a47f34eb34fdeec1fd4cb43b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\alpha_k \neq 0
+\end{align*}
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" alt="20221109113020-austauschsatz_von_steinitz_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" class="org-svg" />
-Nach dem <a href="20221109111900-austauschlemma_einer_basis.html#ID-53f7b204-62ec-401e-96c1-bbc1cdd7bbec">Austauschlemma</a> ist <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_6e2fb9fbcc725bbf9f48022816f822823f2a4121.svg" alt="20221109113020-austauschsatz_von_steinitz_6e2fb9fbcc725bbf9f48022816f822823f2a4121.svg" class="org-svg" /> wieder eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> für <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(k = 1\)
+Nach dem <a href="20221109111900-austauschlemma_einer_basis.html#ID-53f7b204-62ec-401e-96c1-bbc1cdd7bbec">Austauschlemma</a> ist \(\{a_1,b_2,...,m_n\}\) wieder eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> für \(V\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgdc2b641" class="outline-3">
-<h3 id="orgdc2b641"><span class="section-number-3">2.2.</span> IS</h3>
+<div id="outline-container-org06aa270" class="outline-3">
+<h3 id="org06aa270"><span class="section-number-3">2.2.</span> IS</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_ffb5eca258520e643fbdc6a2d9ee081f75beae04.svg" alt="20221109113020-austauschsatz_von_steinitz_ffb5eca258520e643fbdc6a2d9ee081f75beae04.svg" class="org-svg" />
-Nach dem Induktionsanfang sei <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_e34949cae2828d3a5bdddc7a12009a1d46e052d1.svg" alt="20221109113020-austauschsatz_von_steinitz_e34949cae2828d3a5bdddc7a12009a1d46e052d1.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109113020-austauschsatz_von_steinitz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
+Sei \(1 < m \leq n\)
+Nach dem Induktionsanfang sei \(\{a_1,...,a_{m-1},b_m,...,b_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\).
 Dementsprechend sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_6f7460152b9659d7fd0aa26f5273171d65df0676.svg" alt="20221109113020-austauschsatz_von_steinitz_6f7460152b9659d7fd0aa26f5273171d65df0676.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_m =& \sum_{j=1}^{m-1} \beta_{j} a_j + \sum_{i=m}^{n} \gamma_ib_i
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_eb9ccf196d9112b13f08d2353e69165658f99251.svg" alt="20221109113020-austauschsatz_von_steinitz_eb9ccf196d9112b13f08d2353e69165658f99251.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhäng</a> sind, existiert ein <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_8f502caa41f844779f0b86fc797807c5f41377e5.svg" alt="20221109113020-austauschsatz_von_steinitz_8f502caa41f844779f0b86fc797807c5f41377e5.svg" class="org-svg" /> , da sonst gelten würde
+Da \(\{a_1,...,a_m\}\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhäng</a> sind, existiert ein \(\gamma_k \neq 0\) , da sonst gelten würde
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_cd81d00e811908e04718ff48e86bac45bcd037a7.svg" alt="20221109113020-austauschsatz_von_steinitz_cd81d00e811908e04718ff48e86bac45bcd037a7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_{m} =& \sum_{j=1}^{m-1} \beta_j a_j \\
+0 =& \sum_{j=1}^{m-1} \beta_j a_j - a_m
+\end{align*}
 <p>
-Aufgrund des <a href="20221109111900-austauschlemma_einer_basis.html#ID-53f7b204-62ec-401e-96c1-bbc1cdd7bbec">Austauschlemma</a> folgt somit, dass <img src="file:///home/anton/html/ltximg/20221109113020-austauschsatz_von_steinitz_aceefb117c4322f9de41500d112ba6cc7d19099c.svg" alt="20221109113020-austauschsatz_von_steinitz_aceefb117c4322f9de41500d112ba6cc7d19099c.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> ist.
+Aufgrund des <a href="20221109111900-austauschlemma_einer_basis.html#ID-53f7b204-62ec-401e-96c1-bbc1cdd7bbec">Austauschlemma</a> folgt somit, dass \(\{a_1,...,a_m,...,b_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> ist.
 </p>
 </div>
 </div>

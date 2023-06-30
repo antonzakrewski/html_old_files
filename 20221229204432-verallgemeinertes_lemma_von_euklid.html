@@ -3,72 +3,88 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verallgemeinertes Lemma von Euklid</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verallgemeinertes Lemma von Euklid</h1>
-<div id="outline-container-org1d53085" class="outline-2">
-<h2 id="org1d53085"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf820d3f" class="outline-2">
+<h2 id="orgf820d3f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_f5c1d2d8c649b88449645902859f711e7e159235.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_f5c1d2d8c649b88449645902859f711e7e159235.svg" class="org-svg" /> ein <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibles Element</a>.
-Seien <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_acc11dbe3b70fda5a73a5e28119a28528d32c710.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_acc11dbe3b70fda5a73a5e28119a28528d32c710.svg" class="org-svg" />  mit <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_1e811a448b3cb8c5c907740dd2606b6969ee5c10.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_1e811a448b3cb8c5c907740dd2606b6969ee5c10.svg" class="org-svg" /> , so folgt:
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und \(p\) ein <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibles Element</a>.
+Seien \(x_1,x_2 \in R\)  mit \(p \mid x_1x_2\) , so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_c37d3a9fc577a7468949f2bae5ff330d9a9b8492.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_c37d3a9fc577a7468949f2bae5ff330d9a9b8492.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+p \mid x_1 \lor p \mid x_2
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3f879c6" class="outline-2">
-<h2 id="org3f879c6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge8f8d31" class="outline-2">
+<h2 id="orge8f8d31"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_841af2971a7610d6a15909b37bcccd81c727eb57.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_841af2971a7610d6a15909b37bcccd81c727eb57.svg" class="org-svg" />.
-Für das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">von den Elementen erzeugte Ideal</a> <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_00e3bbe6b3e0efb82aa57f6bc448bb9c024c85de.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_00e3bbe6b3e0efb82aa57f6bc448bb9c024c85de.svg" class="org-svg" /> existiert nach dem Lemma über den <a href="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings.html#ID-5e702b9d-d270-4a05-9de7-c691b655a544">größter gemeinsamer Teiler in einem Ideal eines Hauptidealrings</a> ein <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_988f5bb389b6f261f7c2f5493cd987112e7230f8.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_988f5bb389b6f261f7c2f5493cd987112e7230f8.svg" class="org-svg" />
-Wir zeigen: <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_8309dc478ca78f63b02090768848e6417d6e2476.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_8309dc478ca78f63b02090768848e6417d6e2476.svg" class="org-svg" />
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(p \nmid x_1\).
+Für das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">von den Elementen erzeugte Ideal</a> \((p,x_1)\) existiert nach dem Lemma über den <a href="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings.html#ID-5e702b9d-d270-4a05-9de7-c691b655a544">größter gemeinsamer Teiler in einem Ideal eines Hauptidealrings</a> ein \(d = \mathrm{ggT}(p,x_1) \in R\)
+Wir zeigen: \(d \in R^{\times}\)
 </p>
 </div>
-<div id="outline-container-orgd5602d5" class="outline-3">
-<h3 id="orgd5602d5"><span class="section-number-3">2.1.</span> <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:</h3>
+<div id="outline-container-orgd9b1f1c" class="outline-3">
+<h3 id="orgd9b1f1c"><span class="section-number-3">2.1.</span> <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_e973d15bc5c3340b0bc75f3a39cfff63af9300f2.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_e973d15bc5c3340b0bc75f3a39cfff63af9300f2.svg" class="org-svg" />, so folgt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_d6724684d2147867becab014167ae3425ed8fc14.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_d6724684d2147867becab014167ae3425ed8fc14.svg" class="org-svg" /> und <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_3b72f303d63e49a541c27490f8858464021ef2a6.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_3b72f303d63e49a541c27490f8858464021ef2a6.svg" class="org-svg" />.
-Somit existieren <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_561d7a8c8285c13a0523facc37ebaa6a3b2b746c.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_561d7a8c8285c13a0523facc37ebaa6a3b2b746c.svg" class="org-svg" /> mit <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_2eeaf032c7b09c7572882264d95ea067ef5ea38d.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_2eeaf032c7b09c7572882264d95ea067ef5ea38d.svg" class="org-svg" /> und <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_3949d3405e5eca130bc151945dadeeb3aebae360.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_3949d3405e5eca130bc151945dadeeb3aebae360.svg" class="org-svg" />.
-Da <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_f5c1d2d8c649b88449645902859f711e7e159235.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_f5c1d2d8c649b88449645902859f711e7e159235.svg" class="org-svg" /> <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibel</a> ist und <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_e973d15bc5c3340b0bc75f3a39cfff63af9300f2.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_e973d15bc5c3340b0bc75f3a39cfff63af9300f2.svg" class="org-svg" />, so folgt dann <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_295f58653e6775d8767f07cf2668791cdf859472.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_295f58653e6775d8767f07cf2668791cdf859472.svg" class="org-svg" />, d.h. es existiert insbesondere ein <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_c0e2f46f6f0c4f785c7c2a95f79a6384d81290e3.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_c0e2f46f6f0c4f785c7c2a95f79a6384d81290e3.svg" class="org-svg" /> und ferner gilt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_c38517e5e2513455b4a3c56e7651d39c45de49a5.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_c38517e5e2513455b4a3c56e7651d39c45de49a5.svg" class="org-svg" />
-Daraus folgt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_dd2f7b6c8fd879f320eb01f2a19c692d81914e1e.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_dd2f7b6c8fd879f320eb01f2a19c692d81914e1e.svg" class="org-svg" />, was ein Widerspruch zu <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_841af2971a7610d6a15909b37bcccd81c727eb57.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_841af2971a7610d6a15909b37bcccd81c727eb57.svg" class="org-svg" />
-Also folgt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_8309dc478ca78f63b02090768848e6417d6e2476.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_8309dc478ca78f63b02090768848e6417d6e2476.svg" class="org-svg" /> und wegen des <a href="20230314174015-von_einer_einheit_erzeugtes_ideal.html#ID-cf419725-19a8-46df-bd48-e2b7c58b7996">von einer Einheit erzeugtes Ideals</a> gilt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_60c0894317cc41ae16cdf1c8f442e81896a11019.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_60c0894317cc41ae16cdf1c8f442e81896a11019.svg" class="org-svg" />.
+Sei \(d \not\in R^{\times}\), so folgt \(d \mid p\) und \(d \mid x_1\).
+Somit existieren \(s,t \in R\) mit \(p = sd\) und \(x_1 = td\).
+Da \(p\) <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibel</a> ist und \(d \not\in R^{\times}\), so folgt dann \(s \in R^{\times}\), d.h. es existiert insbesondere ein \(s^{-1} \in R^{\times}\) und ferner gilt \(d = s^{-1} p\)
+Daraus folgt \(x_1 = td = t s^{-1} p\), was ein Widerspruch zu \(p \nmid x_1\)
+Also folgt \(d \in R^{\times}\) und wegen des <a href="20230314174015-von_einer_einheit_erzeugtes_ideal.html#ID-cf419725-19a8-46df-bd48-e2b7c58b7996">von einer Einheit erzeugtes Ideals</a> gilt \(R = (d)\).
 </p>
 
 <p>
-Da gilt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_83635062300d486a5c24291fa399e9ae02472426.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_83635062300d486a5c24291fa399e9ae02472426.svg" class="org-svg" /> existieren somit <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_d2ee780c46c234f65777eb93a8f5be5b0ed16517.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_d2ee780c46c234f65777eb93a8f5be5b0ed16517.svg" class="org-svg" /> mit <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_25bf6314228314eb3e2525e4693bc8fe871c8f27.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_25bf6314228314eb3e2525e4693bc8fe871c8f27.svg" class="org-svg" />
+Da gilt \(R = (d) = (p,x_1)\) existieren somit \(a,b  \in R\) mit \(1 = a \cdot p + b \cdot x_1\)
 </p>
 
 <p>
-Daraus folgt <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_e3d97d38f64b27455026b6a974f6986fd3321b4e.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_e3d97d38f64b27455026b6a974f6986fd3321b4e.svg" class="org-svg" /> und wegen <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_b58a905606f2ab595655e07354fd4e5534ba3844.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_b58a905606f2ab595655e07354fd4e5534ba3844.svg" class="org-svg" /> existiert ein <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_023f8d605ee00541f094d84a5925b2a65bed4587.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_023f8d605ee00541f094d84a5925b2a65bed4587.svg" class="org-svg" /> mit <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_83f304a475cb4a85a5620a2649b90eab2ab38060.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_83f304a475cb4a85a5620a2649b90eab2ab38060.svg" class="org-svg" /> und es folgt dadurch:
+Daraus folgt \(x_2 = 1 \cdot x_2 = apx_2 + bx_1 x_2\) und wegen \(p \mid x_1 \cdot x_2\) existiert ein \(r \in R\) mit \(p \cdot r = x_1 x_2\) und es folgt dadurch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_7633a52082a567882e7918463e073099576b4972.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_7633a52082a567882e7918463e073099576b4972.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+x_2 =& apx_2 + brp \\
+=& p(ax_2 + br)
+\end{align*}
 <p>
-Daraus folgt dann auch <img src="ltximg/20221229204432-verallgemeinertes_lemma_von_euklid_b21a15b7070b9a9a4fbf8ccc5f02cd1ac2ee2791.svg" alt="20221229204432-verallgemeinertes_lemma_von_euklid_b21a15b7070b9a9a4fbf8ccc5f02cd1ac2ee2791.svg" class="org-svg" />
+Daraus folgt dann auch \(p \mid x_2\)
 </p>
 </div>
 </div>

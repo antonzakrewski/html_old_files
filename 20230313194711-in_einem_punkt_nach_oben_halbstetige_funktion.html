@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>in einem Punkt nach oben halbstetige Funktion</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">in einem Punkt nach oben halbstetige Funktion</h1>
-<div id="outline-container-orgc802d78" class="outline-2">
-<h2 id="orgc802d78"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1884744" class="outline-2">
+<h2 id="org1884744"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" class="org-svg" /> mit der <a href="20230227174434-naturliche_topologie.html#ID-956b4fb0-31c8-4401-a276-04d1e04a0d36">natürlichen Topologie</a> versehen.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_d56f583badca7ef48b7845d0bf44d05aa51f953d.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_d56f583badca7ef48b7845d0bf44d05aa51f953d.svg" class="org-svg" /> ist in <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" class="org-svg" /> nach oben halbstetig, falls für <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_90ff5ab0f670b4cd475a9d41c807256c56dab554.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_90ff5ab0f670b4cd475a9d41c807256c56dab554.svg" class="org-svg" /> existiert, so dass gilt:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathbb{R}\) mit der <a href="20230227174434-naturliche_topologie.html#ID-956b4fb0-31c8-4401-a276-04d1e04a0d36">natürlichen Topologie</a> versehen.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: X \rightarrow \mathbb{R}\) ist in \(x_0 \in X\) nach oben halbstetig, falls für \(\varepsilon > 0\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U_{\varepsilon} \in \mathcal{U}(x_0)\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_a4840336eb896bf6d1431065ba0b99c841ff7edc.svg" alt="20230313194711-in_einem_punkt_nach_oben_halbstetige_funktion_a4840336eb896bf6d1431065ba0b99c841ff7edc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(x) < f(x_0) + \varepsilon && \forall x \in U_{\varepsilon}
+\end{align*}
 </div>
 </div>
 </div>

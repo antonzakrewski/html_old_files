@@ -9,70 +9,95 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">evaluation homomorphism</h1>
-<div id="outline-container-org062f651" class="outline-2">
-<h2 id="org062f651"><span class="section-number-2">1.</span> Definitione / Satz</h2>
+<div id="outline-container-orgdc031b9" class="outline-2">
+<h2 id="orgdc031b9"><span class="section-number-2">1.</span> Definitione / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_4107e281880d0fd71eaf6ab2d713ad3d5761d973.svg" alt="20221226010643-einsetzungshomomorphismus_4107e281880d0fd71eaf6ab2d713ad3d5761d973.svg" class="org-svg" /> <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitäre</a> <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutative</a> (!) <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ringe</a> und <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_0306d61dfff1fa0da6467e22ef3ec068ef44f991.svg" alt="20221226010643-einsetzungshomomorphismus_0306d61dfff1fa0da6467e22ef3ec068ef44f991.svg" class="org-svg" /> ein <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> sowie <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226010643-einsetzungshomomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ein <a href="20221228202836-r_algebra.html#ID-f1401a23-6bbb-4e91-812e-071fddeb1e67">R'-Algebra</a>.
-Für ein <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_ff56f6e83630bbfc3db31d77605dfa56f431186e.svg" alt="20221226010643-einsetzungshomomorphismus_ff56f6e83630bbfc3db31d77605dfa56f431186e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_c57987a76e1bfd07746a78d079bed2dd97e8db61.svg" alt="20221226010643-einsetzungshomomorphismus_c57987a76e1bfd07746a78d079bed2dd97e8db61.svg" class="org-svg" /> ist der Einsetzungshomomorphismus als <a href="20230304230206-r_algebrahomomorphismus.html#ID-fd85ff74-2af9-4617-9f4a-280b9d6a4a18">R-Algebrahomomorphismus</a>  <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_b0edb37aee5d5475032f68dc8670adb3b3057e35.svg" alt="20221226010643-einsetzungshomomorphismus_b0edb37aee5d5475032f68dc8670adb3b3057e35.svg" class="org-svg" /> definiert durch:
+Seien \(R,R'\) <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitäre</a> <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutative</a> (!) <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ringe</a> und \(\phi: R \rightarrow R'\) ein <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> sowie \(A\) ein <a href="20221228202836-r_algebra.html#ID-f1401a23-6bbb-4e91-812e-071fddeb1e67">R'-Algebra</a>.
+Für ein \(b \in A\) und \(\sum_{i=0}^{n} \alpha_i X^i \in R[X]\) ist der Einsetzungshomomorphismus als <a href="20230304230206-r_algebrahomomorphismus.html#ID-fd85ff74-2af9-4617-9f4a-280b9d6a4a18">R-Algebrahomomorphismus</a>  \(\phi_{b}\) definiert durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_4ee191e65b6cee81ab1af37af8133957879f4421.svg" alt="20221226010643-einsetzungshomomorphismus_4ee191e65b6cee81ab1af37af8133957879f4421.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi_b : R[X] \rightarrow& A \\
+\sum_{i=0}^{n} \alpha_i X^i \mapsto& \sum_{i=0}^{n} \phi(\alpha_i) b^i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2465b02" class="outline-2">
-<h2 id="org2465b02"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org22de682" class="outline-2">
+<h2 id="org22de682"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org542e7c9" class="outline-3">
-<h3 id="org542e7c9"><span class="section-number-3">2.1.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a></h3>
+<div id="outline-container-org6c28411" class="outline-3">
+<h3 id="org6c28411"><span class="section-number-3">2.1.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org1aa02e9" class="outline-4">
-<h4 id="org1aa02e9"><span class="section-number-4">2.1.1.</span> additiv</h4>
+<div id="outline-container-org113f4c1" class="outline-4">
+<h4 id="org113f4c1"><span class="section-number-4">2.1.1.</span> additiv</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-für <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_6ff6b4ce18304ed90ddab77e968e074d59692547.svg" alt="20221226010643-einsetzungshomomorphismus_6ff6b4ce18304ed90ddab77e968e074d59692547.svg" class="org-svg" /> gilt:
+für \(\sum_{i=0}^{n} (\alpha_i + \beta_i) X^i\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_358068cfa4f56e5780a815ace499eb9dccd398a1.svg" alt="20221226010643-einsetzungshomomorphismus_358068cfa4f56e5780a815ace499eb9dccd398a1.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi_b(\sum_{i=0}^{n} (\alpha_i + \beta_i) X^i) =& \sum_{i=1}^{n} \phi(\alpha_i + \beta_i) b^i \\
+=& \sum_{i=1}^{n} \phi(\alpha_i) b^i + \sum_{i=1}^{n} \phi(\beta_i) b^i 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbe84ee2" class="outline-4">
-<h4 id="orgbe84ee2"><span class="section-number-4">2.1.2.</span> multiplikation mit <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226010643-einsetzungshomomorphismus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /></h4>
+<div id="outline-container-org9a6e48b" class="outline-4">
+<h4 id="org9a6e48b"><span class="section-number-4">2.1.2.</span> multiplikation mit \(R\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_623d96d537d09d0296f538841251a49fafcf802c.svg" alt="20221226010643-einsetzungshomomorphismus_623d96d537d09d0296f538841251a49fafcf802c.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi_b(r \cdot \sum_{i=0}^{n} \alpha_i X^i) =& \phi_b(\sum_{i=0}^{n} r \cdot \alpha_i X^i )\\
+=& \sum_{i=0}^{n} \phi(r \cdot \alpha_i) b^i \\
+=& \sum_{i=0}^{n} \phi(r) \cdot \phi(\alpha_i) b^i \\
+=& \phi(r) \cdot \sum_{i=0}^{n} \phi(\alpha_i) b^i \\
+=& \phi_b(r \cdot X^0) \cdot \phi_b(\sum_{i=0}^{n} \alpha_i X^i) \\
+=& \phi_b(r) \cdot \phi_b(\sum_{i=0}^{n} \alpha_i X^i) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9078270" class="outline-4">
-<h4 id="org9078270"><span class="section-number-4">2.1.3.</span> multiplikation in <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20221226010643-einsetzungshomomorphismus_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /></h4>
+<div id="outline-container-orgddf9b27" class="outline-4">
+<h4 id="orgddf9b27"><span class="section-number-4">2.1.3.</span> multiplikation in \(R[X]\)</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> gilt <img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_3449c29c7792943d4295b75eb28f1624033e1aa1.svg" alt="20221226010643-einsetzungshomomorphismus_3449c29c7792943d4295b75eb28f1624033e1aa1.svg" class="org-svg" />.
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> gilt \(\mathrm{deg}(\sum_{i=0}^{n} \alpha_i X^i), \mathrm{deg}(\sum_{i=0}^{n} \beta_i X^i) \leq n\).
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226010643-einsetzungshomomorphismus_95c3c64e647ed2328a03e849016c941414a3d1fa.svg" alt="20221226010643-einsetzungshomomorphismus_95c3c64e647ed2328a03e849016c941414a3d1fa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi_b(\sum_{i=0}^{n} \alpha_i X^i) \cdot \phi_b(\sum_{i=0}^{n} \beta_i X^i) =& ( \sum_{i=0}^{n} \phi(\alpha_i) b^i ) \cdot (\sum_{i=0}^{n} \phi(\beta_i) b^i ) \\
+=& \sum_{i=0}^{2n} \sum_{j=0}^{i} \phi(\alpha_j) b^j \phi(\beta_{i - j}) b^{i - j} \\
+=& \sum_{i=0}^{2n} \sum_{j=0}^{i} \phi(\alpha_j) \phi(\beta_{i - j}) b^{j} b^{i - j} \\
+=& \sum_{i=0}^{2n} \sum_{j=0}^{i} \phi(\alpha_j \cdot \beta_{i - j}) b^{i} \\
+=& \phi_b( \sum_{i=0}^{2n} \sum_{j=0}^{i} \alpha_j \cdot \beta_{i - j} X^{i} ) \\
+=& \phi_b( (\sum_{i=0}^{n} \alpha_i X^i) \cdot (\sum_{i=0}^{n} \beta_i X^i))
+\end{align*}
 </div>
 </div>
 </div>

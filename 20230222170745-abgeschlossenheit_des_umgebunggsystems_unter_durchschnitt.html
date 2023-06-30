@@ -9,33 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Closure of the neighbourhood system under finite intersection</h1>
-<div id="outline-container-org6e42b5b" class="outline-2">
-<h2 id="org6e42b5b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgccd39ef" class="outline-2">
+<h2 id="orgccd39ef"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> ein Punkt, so gilt für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_9e5603d867038407a95f9e5c44694d2fb5879904.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_9e5603d867038407a95f9e5c44694d2fb5879904.svg" class="org-svg" />
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(x \in X\) ein Punkt, so gilt für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_i \in \mathcal{U}(x)\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_7035300c60f5dfbbc6f19fb38a6b9a5d02f1f0c1.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_7035300c60f5dfbbc6f19fb38a6b9a5d02f1f0c1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\bigcap_{j=1}^n U_j \in U(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org87dae6b" class="outline-2">
-<h2 id="org87dae6b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org927910b" class="outline-2">
+<h2 id="org927910b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existieren <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Mengen</a> <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_aebfe9456eced9f72cf1ab6553031053626a7e63.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_aebfe9456eced9f72cf1ab6553031053626a7e63.svg" class="org-svg" /> und wegen der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber Schnitten</a> ist <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_02c0e936590eb231055a014d384b832112f74e47.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_02c0e936590eb231055a014d384b832112f74e47.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
-Wegen <img src="file:///home/anton/html/ltximg/20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_ae4ef051c217bc09afee16d895f0fc25af7f8b2d.svg" alt="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt_ae4ef051c217bc09afee16d895f0fc25af7f8b2d.svg" class="org-svg" /> ist somit auch der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> 
+Nach Annahme existieren <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Mengen</a> \(O_i \subseteq U_i\) und wegen der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber Schnitten</a> ist \(\bigcup_{j =1}^n O_i\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Wegen \(\bigcup_{j=1}^{n} O_i \subseteq \bigcup_{j=1}^n U_j\) ist somit auch der <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> 
 </p>
 </div>
 </div>

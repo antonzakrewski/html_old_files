@@ -9,56 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">adjungierte Matrix als adjungierte Abbildung</h1>
-<div id="outline-container-org691dfe5" class="outline-2">
-<h2 id="org691dfe5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb543464" class="outline-2">
+<h2 id="orgb543464"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_50221a0b5c7b064d3a1f763d25e63c8d8e627136.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_50221a0b5c7b064d3a1f763d25e63c8d8e627136.svg" class="org-svg" /> ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_1f1fb5530ee94fbd0e89307f87c0d2f31e994787.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_1f1fb5530ee94fbd0e89307f87c0d2f31e994787.svg" class="org-svg" /> eine <a href="20221113213002-orthonormalbasis.html#ID-0b12dce4-b595-4efc-9eec-157043948f68">Orthonormalbasis</a> und <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_12af87ae65f37cd0137c32d3c1e873c651713d94.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_12af87ae65f37cd0137c32d3c1e873c651713d94.svg" class="org-svg" /> mit <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_ef79628c28715136b47d55d4e3975cf4c36bc01a.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_ef79628c28715136b47d55d4e3975cf4c36bc01a.svg" class="org-svg" />
+Sei \((V, (\cdot, \cdot))\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(a_1,...,a_n\) eine <a href="20221113213002-orthonormalbasis.html#ID-0b12dce4-b595-4efc-9eec-157043948f68">Orthonormalbasis</a> und \(f \in \mathrm{End}(V)\) mit <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(A = (\alpha_{i,j})\)
 Dann gilt für die <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Matrixdarstellung</a> der <a href="20230623-adjungierte_abbildung.html#ID-056e5a29-654d-4425-9266-70839a36a082">adjungierten Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_00510da1d824dd3fa07c5d8a5d134f579c18d0db.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_00510da1d824dd3fa07c5d8a5d134f579c18d0db.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+A^{*} =& (\overline{\alpha_{i,j}})^{t}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org224f529" class="outline-2">
-<h2 id="org224f529"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc83c4b9" class="outline-2">
+<h2 id="orgc83c4b9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_f4dcf4441e4ebd73e6e11e6d27508c7ddcca2de4.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_f4dcf4441e4ebd73e6e11e6d27508c7ddcca2de4.svg" class="org-svg" />.
+Sei \(A^{*} =& (\beta_{i,j})\).
 Nach der Aussage über die <a href="20230624-matrix_und_orthonormalbasis.html#ID-bbad76c9-3f31-4566-8792-4f8ccee7df9d">Matrix und eine Orthonormalbasis</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_3862dbd73d460481c31ed971d962137d106c202e.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_3862dbd73d460481c31ed971d962137d106c202e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\alpha_{i,j} =& (f(a_j),a_i) \\
+\beta_{i,j} =& (f^{*}(a_j), a_i)
+\end{align*}
 <p>
-Nach Definition von <img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_162930dd35ff7320bbb4841783f5ffc90b025edc.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_162930dd35ff7320bbb4841783f5ffc90b025edc.svg" class="org-svg" /> gilt:
+Nach Definition von \(f^{*}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-adjungierte_matrix_als_adjungierte_abbildung_fe640380e9c16f2a92ce361a5ea9b340f6e08648.svg" alt="20230624-adjungierte_matrix_als_adjungierte_abbildung_fe640380e9c16f2a92ce361a5ea9b340f6e08648.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\beta_{i,j} =& (f^{*}(a_j),a_i) \\
+=& \overline{(a_i,f^{*}(a_j))} \\
+=& \overline{(f(a_i),a_j)} \\
+=& \overline{\alpha_{j,i}}
+\end{align*}
 </div>
 </div>
 </div>

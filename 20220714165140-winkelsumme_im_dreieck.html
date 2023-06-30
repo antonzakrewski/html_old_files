@@ -9,36 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Winkelsumme im Dreieck</h1>
-<div id="outline-container-org7a201dc" class="outline-2">
-<h2 id="org7a201dc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgeff56ae" class="outline-2">
+<h2 id="orgeff56ae"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220714165140-winkelsumme_im_dreieck_859e70d6b6e499a11a388fa0aa022e304310c569.svg" alt="20220714165140-winkelsumme_im_dreieck_859e70d6b6e499a11a388fa0aa022e304310c569.svg" class="org-svg" /> dann gilt für die Innenwinkel <img src="file:///home/anton/html/ltximg/20220714165140-winkelsumme_im_dreieck_82494b1e5d16e082c4dc9dbc368d15bab841ce6f.svg" alt="20220714165140-winkelsumme_im_dreieck_82494b1e5d16e082c4dc9dbc368d15bab841ce6f.svg" class="org-svg" />
+Sei \(\triangle ABC\) dann gilt für die Innenwinkel \(\alpha, \beta, \gamma\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714165140-winkelsumme_im_dreieck_3e3977241c83718b11cfe313cc7a538686811559.svg" alt="20220714165140-winkelsumme_im_dreieck_3e3977241c83718b11cfe313cc7a538686811559.svg" class="org-svg" />
-</span>
+\begin{align*}
+\alpha + \beta + \gamma = 180^\circ
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9016681" class="outline-2">
-<h2 id="org9016681"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org219ae8c" class="outline-2">
+<h2 id="org219ae8c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714165140-winkelsumme_im_dreieck_bb175c81a0e2234029cc22b667182fdea8926429.svg" alt="20220714165140-winkelsumme_im_dreieck_bb175c81a0e2234029cc22b667182fdea8926429.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzpicture}
+\coordinate (A) at (0,0);
+\coordinate (B) at (4,0);
+\coordinate (C) at (3,2);
+\draw[] (A) -- (B) -- (C) -- cycle ;
+\draw[dashed] (-2,0) -- (6,0);
+\draw[dashed] (-2,2) -- (6,2);
+\draw[dashed] (2,4) -- (5,-2) ;
+\draw[dashed] (6,4) -- (-3,-2) ;
+\end{tikzpicture}
 </div>
 </div>
 </div>

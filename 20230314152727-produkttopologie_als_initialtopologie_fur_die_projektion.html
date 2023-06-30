@@ -9,32 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produkttopologie als Initialtopologie für die Projektion</h1>
-<div id="outline-container-org0118c72" class="outline-2">
-<h2 id="org0118c72"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org45fad3d" class="outline-2">
+<h2 id="org45fad3d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und <img src="file:///home/anton/html/ltximg/20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_aa546c4734db44ccffdea73c73f7b70040f369f3.svg" alt="20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_aa546c4734db44ccffdea73c73f7b70040f369f3.svg" class="org-svg" /> das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> 
+Seien \((X_i, \mathcal{T}_i)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X = \prod X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> 
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> trägt die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230314152727-produkttopologie_als_initialtopologie_fur_die_projektion_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> trägt die <a href="20230223225929-initialtopologie.html#ID-c3a212d4-4f8e-44b6-a3e6-91932f8ea153">Initialtopologie</a> bezüglich der <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektionen</a></li>
+<li>\(X\) trägt die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a></li>
+<li>\(X\) trägt die <a href="20230223225929-initialtopologie.html#ID-c3a212d4-4f8e-44b6-a3e6-91932f8ea153">Initialtopologie</a> bezüglich der <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektionen</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6d9f4d3" class="outline-2">
-<h2 id="org6d9f4d3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org751b879" class="outline-2">
+<h2 id="org751b879"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org773cc21" class="outline-3">
-<h3 id="org773cc21"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgcee0c84" class="outline-3">
+<h3 id="orgcee0c84"><span class="section-number-3">2.1.</span> a)</h3>
 </div>
-<div id="outline-container-org7418dbd" class="outline-3">
-<h3 id="org7418dbd"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9adc85e" class="outline-3">
+<h3 id="org9adc85e"><span class="section-number-3">2.2.</span> b)</h3>
 </div>
 </div>
 </div>

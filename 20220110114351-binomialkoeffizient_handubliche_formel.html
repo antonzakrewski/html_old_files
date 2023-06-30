@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Formel des Binomialkoeffizienten durch Fakultät</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel des Binomialkoeffizienten durch Fakultät</h1>
-<div id="outline-container-orga6c48d9" class="outline-2">
-<h2 id="orga6c48d9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc1397a8" class="outline-2">
+<h2 id="orgc1397a8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="ltximg/20220110114351-binomialkoeffizient_handubliche_formel_2c38673333303383e4de9468c7d990d33119d280.svg" alt="20220110114351-binomialkoeffizient_handubliche_formel_2c38673333303383e4de9468c7d990d33119d280.svg" class="org-svg" /> gilt für den <a href="20211216205729-binomialkoeffizient.html#ID-89b0e19a-c480-407f-8939-1074be74e04d">Binomialkoeffizienten</a>:
+Für \(n,k \in \mathbb{N}\) gilt für den <a href="20211216205729-binomialkoeffizient.html#ID-89b0e19a-c480-407f-8939-1074be74e04d">Binomialkoeffizienten</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220110114351-binomialkoeffizient_handubliche_formel_2a39327739472a62082bb487e58e303f6bb03c6f.svg" alt="20220110114351-binomialkoeffizient_handubliche_formel_2a39327739472a62082bb487e58e303f6bb03c6f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\binom{n}{k} = \frac{n!}{k! \cdot (n-k)!} \quad (\text{für } n > k \land n,k \in \mathbb{N} )
+\end{align*}
 </div>
 </div>
 </div>

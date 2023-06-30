@@ -9,24 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz von beliebig langen Intervallen ohne Primzahlen</h1>
-<div id="outline-container-org1b9d3b0" class="outline-2">
-<h2 id="org1b9d3b0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8bcb43a" class="outline-2">
+<h2 id="org8bcb43a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" />, so existiert ein <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_7b9d16bf1fa55948af809a467128d45ea18a5903.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_7b9d16bf1fa55948af809a467128d45ea18a5903.svg" class="org-svg" /> mit Länge <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" />, so dass keine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a>
+Sei \(n \in \mathbb{N}\), so existiert ein <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> \(I \subseteq \mathbb{N}\) mit Länge \(n\), so dass keine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc22c505" class="outline-2">
-<h2 id="orgc22c505"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2cd8282" class="outline-2">
+<h2 id="org2cd8282"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Man wähle dass Intervall <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_33d1c2bdd1752b581d63f7504f03cf63727f9956.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_33d1c2bdd1752b581d63f7504f03cf63727f9956.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_6530a61dff63c73a85966960c104c35b89514fbf.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_6530a61dff63c73a85966960c104c35b89514fbf.svg" class="org-svg" /> beliebig, so gilt <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_fe9b3a149a83b783a8e1c85fec96d7d12d738a0e.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_fe9b3a149a83b783a8e1c85fec96d7d12d738a0e.svg" class="org-svg" /> und daraus folgt <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_323af836ae7aa4d0919b547fa606e8aedae57821.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_323af836ae7aa4d0919b547fa606e8aedae57821.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230127134502-lange_eines_intervalls_ohne_primzahlen_982c8cb6d0b5a529ab6ff80e27a83286e6a70098.svg" alt="20230127134502-lange_eines_intervalls_ohne_primzahlen_982c8cb6d0b5a529ab6ff80e27a83286e6a70098.svg" class="org-svg" />
+Man wähle dass Intervall \([n!,n!+n]\)
+Sei \(x = n! + k \in [n!,n!+n]\) beliebig, so gilt \(k \leq n\) und daraus folgt \(k \mid n!, k \mid k\) und damit auch \(k \mid n! + k\)
 </p>
 </div>
 </div>

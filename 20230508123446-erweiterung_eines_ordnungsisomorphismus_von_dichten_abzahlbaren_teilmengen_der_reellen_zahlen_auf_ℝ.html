@@ -3,78 +3,100 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Erweiterung eines Ordnungsisomorphismus von dichten, abzählbaren Teilmengen der reellen Zahlen auf ℝ</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Erweiterung eines Ordnungsisomorphismus von dichten, abzählbaren Teilmengen der reellen Zahlen auf ℝ</h1>
-<div id="outline-container-orge183e1a" class="outline-2">
-<h2 id="orge183e1a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd5224dc" class="outline-2">
+<h2 id="orgd5224dc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_59f9c25f81cb709df9f635176757298d4c2a2c21.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_59f9c25f81cb709df9f635176757298d4c2a2c21.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dichte</a>, <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit einem <a href="20230507232220-ordnungsisomorphismus.html#ID-348d7f3c-1eb8-43cf-bbeb-d01096a4674b">Ordnungsisomorphismus</a> <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" />, so ist 
+Seien \(A,B \subseteq \mathbb{R}\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dichte</a>, <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit einem <a href="20230507232220-ordnungsisomorphismus.html#ID-348d7f3c-1eb8-43cf-bbeb-d01096a4674b">Ordnungsisomorphismus</a> \(f: A \rightarrow B\), so ist 
 Dann ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_febc41039a969ec8368cac7e236c16acab46d473.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_febc41039a969ec8368cac7e236c16acab46d473.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f': \overline{A} \rightarrow \overline{B} \\
+x \mapsto \sup_{a \leq x} f(a)
+\end{align*}
 <p>
-ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a> auf den <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologien</a> <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_45bcde89cf0fa3dfe804498ece03aae91ee386f8.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_45bcde89cf0fa3dfe804498ece03aae91ee386f8.svg" class="org-svg" />.
+ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a> auf den <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologien</a> \(\overline{A}, \overline{B}\).
 </p>
 </div>
 </div>
-<div id="outline-container-orgf90ace5" class="outline-2">
-<h2 id="orgf90ace5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org52b8a8e" class="outline-2">
+<h2 id="org52b8a8e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgde4a83d" class="outline-3">
-<h3 id="orgde4a83d"><span class="section-number-3">2.1.</span> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></h3>
+<div id="outline-container-orgfcd29d2" class="outline-3">
+<h3 id="orgfcd29d2"><span class="section-number-3">2.1.</span> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_2854854c88e042f7756e72c67e306f6609cd72c6.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_2854854c88e042f7756e72c67e306f6609cd72c6.svg" class="org-svg" /> verschieden, so existiert aufgrund der <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">Dichtheit</a> von <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> ein <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_1ac2de8b97bdc355ab9140e2e9c7f549f2a6d085.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_1ac2de8b97bdc355ab9140e2e9c7f549f2a6d085.svg" class="org-svg" /> mit  <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_fb2adbe77c369002e9ec248ddb0ba560f0d03ed0.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_fb2adbe77c369002e9ec248ddb0ba560f0d03ed0.svg" class="org-svg" />.
-Daraus folgt <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_8338b7306e842655cd7581cf8d840e2b8eaee223.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_8338b7306e842655cd7581cf8d840e2b8eaee223.svg" class="org-svg" />.
+Seien \(a,a' \in \overline{A}\) verschieden, so existiert aufgrund der <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">Dichtheit</a> von \(A\) ein \(\tilde{a}, \tilde{a}' \in A\) mit  \(a < ... < \tilde{a} < ... <  \tilde{a}' < ... < a'\).
+Daraus folgt \(f(a) < ... < f(\tilde{a}') < ... < f(a')\).
 </p>
 </div>
 </div>
-<div id="outline-container-orga02c356" class="outline-3">
-<h3 id="orga02c356"><span class="section-number-3">2.2.</span> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a></h3>
+<div id="outline-container-org01385e5" class="outline-3">
+<h3 id="org01385e5"><span class="section-number-3">2.2.</span> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_b0f13fa782a9c120d63992a199fd375dbc9fede8.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_b0f13fa782a9c120d63992a199fd375dbc9fede8.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_ee725c648e236d372c52b78b900d696b9b63a017.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_ee725c648e236d372c52b78b900d696b9b63a017.svg" class="org-svg" />, <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" class="org-svg" /> nicht Maximum/Minimum so existiert nach Annahme <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_cda497f110611c6e7c170fd8b0f03ed62f388f6d.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_cda497f110611c6e7c170fd8b0f03ed62f388f6d.svg" class="org-svg" /> mit $b<sub>i</sub> &isin; B"a
-Damit folgt <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_9dca9131a200c2c2b737be27920880a608b07051.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_9dca9131a200c2c2b737be27920880a608b07051.svg" class="org-svg" />, da <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_1804a65c16a9af1898453ee518ba5b00adefef27.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_1804a65c16a9af1898453ee518ba5b00adefef27.svg" class="org-svg" /> <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">monoton und beschränkt</a> ist und damit <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
-Analog für <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_914ff1424bf452ff21f9c2c324f59e62361071ea.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_914ff1424bf452ff21f9c2c324f59e62361071ea.svg" class="org-svg" /> und wir zeigen, dass <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_584f5c7ad4e14b69475d1c1b8928e0a7725522f1.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_584f5c7ad4e14b69475d1c1b8928e0a7725522f1.svg" class="org-svg" />.
-Angenommen nicht, so existiert wegen der Dichtheit ein <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_75dff96659e6d6502aa53bf00ef6c42f3bb18139.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_75dff96659e6d6502aa53bf00ef6c42f3bb18139.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_8a2a1fbf15bb555f429cc2fa44a04f2a99494bdf.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_8a2a1fbf15bb555f429cc2fa44a04f2a99494bdf.svg" class="org-svg" />. Dabei existiert ein <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_919fa9e6cbf8f09256a51eeb0c0b4f13c40cb985.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_919fa9e6cbf8f09256a51eeb0c0b4f13c40cb985.svg" class="org-svg" /> 
+Sei \(b \in \overline{B}\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(b \not \in B\), \(b\) nicht Maximum/Minimum so existiert nach Annahme <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> \(b_i^+ \nearrow b, b_i^- \searrow b\) mit $b<sub>i</sub> &isin; B"a
+Damit folgt \(\lim_{i \to \infty}\left(f^{-1}(b_i^{-})\right) \eqqcolon a^{-}\), da \(f^{-1}(b_i)\) <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">monoton und beschränkt</a> ist und damit <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
+Analog für \(a^{+}\) und wir zeigen, dass \(a^- = a^+\).
+Angenommen nicht, so existiert wegen der Dichtheit ein \(a' \in (a^{-1},a^{+})\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f(a') \geq b\). Dabei existiert ein \(a'' \in (a'',a^{ +})\) 
 </p>
 
 <p>
-Für das Maximum/Minimum <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" class="org-svg" />, sofern es existiert, reicht dabei eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, die gegen <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_d458624ba681b728bdeeb02a264d566240c40eca.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
+Für das Maximum/Minimum \(b\), sofern es existiert, reicht dabei eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, die gegen \(b\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org3bffcac" class="outline-3">
-<h3 id="org3bffcac"><span class="section-number-3">2.3.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
+<div id="outline-container-orgc097c28" class="outline-3">
+<h3 id="orgc097c28"><span class="section-number-3">2.3.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_bff2d3f2c6209df68aa5edb6d705da8147e27a24.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_bff2d3f2c6209df68aa5edb6d705da8147e27a24.svg" class="org-svg" /> gegeben, so ist wegen der Ordnungserhaltung <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_c77d2cee702c78b2cfa0ebbd7cd93f05bf798ede.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_c77d2cee702c78b2cfa0ebbd7cd93f05bf798ede.svg" class="org-svg" /> und damit <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Sei \((b,b') \subseteq \overline{B}\) gegeben, so ist wegen der Ordnungserhaltung \(f^{-1}[(b,b')] = (f^{-1}(b),f^{-1}(b'))\) und damit <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc82fe5b" class="outline-3">
-<h3 id="orgc82fe5b"><span class="section-number-3">2.4.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
+<div id="outline-container-orgf255a2c" class="outline-3">
+<h3 id="orgf255a2c"><span class="section-number-3">2.4.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-Sei <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_6d6c7f42712f08c2d2e4f47cf3376e1fe7d236f9.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_6d6c7f42712f08c2d2e4f47cf3376e1fe7d236f9.svg" class="org-svg" />, so gilt wegen der Ordnungserhaltung: <img src="ltximg/20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_33af8dfb229f1740041b8517c371d7adbf6c73aa.svg" alt="20230508123446-erweiterung_eines_ordnungsisomorphismus_von_dichten_abzahlbaren_teilmengen_der_reellen_zahlen_auf_ℝ_33af8dfb229f1740041b8517c371d7adbf6c73aa.svg" class="org-svg" />.
+Sei \((a,a') \subseteq \overline{A}\), so gilt wegen der Ordnungserhaltung: \(f[(a,a')] = (f(a),f(a'))\).
 </p>
 </div>
 </div>

@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quadratischer Zahlkörper</h1>
-<div id="outline-container-orgd4e8889" class="outline-2">
-<h2 id="orgd4e8889"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0670a31" class="outline-2">
+<h2 id="org0670a31"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-sei <img src="file:///home/anton/html/ltximg/20220723091004-quadratischer_zahlkorper_727d14561d98ba09ca94ab68bd12b38dc8f9935b.svg" alt="20220723091004-quadratischer_zahlkorper_727d14561d98ba09ca94ab68bd12b38dc8f9935b.svg" class="org-svg" /> eine    Zahl.
+sei \(m \in \mathbb{Z}\setminus {0,1}\) eine    Zahl.
 Dann nennt man
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220723091004-quadratischer_zahlkorper_b9b65dfbe66a4089e9b1b7e241f79e1cfc0da8c0.svg" alt="20220723091004-quadratischer_zahlkorper_b9b65dfbe66a4089e9b1b7e241f79e1cfc0da8c0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathbb{Q}(\sqrt{m})  \coloneqq \{ a + b\sqrt{m} \vert a,b \in \mathbb{Q}\} \subseteq \mathbb{C}  
+\end{align*}
 
 <p>
 einen quadratischen Zahlkörper
 </p>
 </div>
 </div>
-<div id="outline-container-orgfcfe117" class="outline-2">
-<h2 id="orgfcfe117"><span class="section-number-2">2.</span> Unterteilung</h2>
+<div id="outline-container-org9b83763" class="outline-2">
+<h2 id="org9b83763"><span class="section-number-2">2.</span> Unterteilung</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220723091338-reell_quadratischer_zahlkorper.html#ID-d843da57-511a-4c63-9eef-34985fe56b10">reell-quadratischer Zahlkörper</a></li>

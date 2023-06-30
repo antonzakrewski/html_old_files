@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">4. Grothendieck-Universums Axiom</h1>
-<div id="outline-container-org1d2b7a7" class="outline-2">
-<h2 id="org1d2b7a7"><span class="section-number-2">1.</span> Axiom</h2>
+<div id="outline-container-org7526c21" class="outline-2">
+<h2 id="org7526c21"><span class="section-number-2">1.</span> Axiom</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für jede Familie ${x<sub>i</sub>}<sub>i&isin; I</sub> mit <img src="file:///home/anton/html/ltximg/20220823154502-4_grothendieck_universums_axiom_e16c22ea51e9e6d478695c3434eed10539a5911c.svg" alt="20220823154502-4_grothendieck_universums_axiom_e16c22ea51e9e6d478695c3434eed10539a5911c.svg" class="org-svg" />  und <img src="file:///home/anton/html/ltximg/20220823154502-4_grothendieck_universums_axiom_00d1b5c460b5c6a46e3a7205cc4caa4353e381c8.svg" alt="20220823154502-4_grothendieck_universums_axiom_00d1b5c460b5c6a46e3a7205cc4caa4353e381c8.svg" class="org-svg" /> gilt
+Für jede Familie ${x<sub>i</sub>}<sub>i&isin; I</sub> mit \(I \in U\)  und \(x_i \in U \forall i \in I\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220823154502-4_grothendieck_universums_axiom_c79077a238026e5e9292803a624e4f4970a6009c.svg" alt="20220823154502-4_grothendieck_universums_axiom_c79077a238026e5e9292803a624e4f4970a6009c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cup\{x_i\}_{i\in I} \in U
+\end{align*}
 </div>
 </div>
 </div>

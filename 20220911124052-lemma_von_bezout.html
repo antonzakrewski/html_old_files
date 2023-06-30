@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">einfaches Lemma von Bezout</h1>
-<div id="outline-container-org7d1b14e" class="outline-2">
-<h2 id="org7d1b14e"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org9af9ab3" class="outline-2">
+<h2 id="org9af9ab3"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Es seien <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" alt="20220911124052-lemma_von_bezout_90f58e7fdf9751cc6d0c84403f3519465e9b112f.svg" class="org-svg" />.
-Dann existieren <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" alt="20220911124052-lemma_von_bezout_db463fdd033c6af3b5fcbed0e458cf30bc9f338a.svg" class="org-svg" />, so dass für den <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größten gemeinsamer Teiler</a> gilt
+Es seien \(a,b \in \mathbb{Z}\).
+Dann existieren \(s,t \in \mathbb{Z}\), so dass für den <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größten gemeinsamer Teiler</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_1dbb3db088520210568e5441ffa702185251d9c6.svg" alt="20220911124052-lemma_von_bezout_1dbb3db088520210568e5441ffa702185251d9c6.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{gcd}(a,b) = a \cdot s + b \cdot t
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd5ac953" class="outline-2">
-<h2 id="orgd5ac953"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org351f964" class="outline-2">
+<h2 id="org351f964"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus dem <a href="20230427134534-erweiterter_euklidischer_algorithmus.html#ID-29d60e8e-68dd-48c4-8fd6-def9d853294a">erweiterter euklidischer Algorithmus</a> 
@@ -37,32 +59,29 @@ folgt aus dem <a href="20230427134534-erweiterter_euklidischer_algorithmus.html#
 
 <p>
 schöner:
-Sei <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_1f34e720166681eb350539281ba17f612341dbc2.svg" alt="20220911124052-lemma_von_bezout_1f34e720166681eb350539281ba17f612341dbc2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_15ec24cf9a6c173b7c40b3d43ddf5743646d7a72.svg" alt="20220911124052-lemma_von_bezout_15ec24cf9a6c173b7c40b3d43ddf5743646d7a72.svg" class="org-svg" />
-Diese <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> wegen <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_0f87b7c67ce3719ebf4daf62858203e223c63b72.svg" alt="20220911124052-lemma_von_bezout_0f87b7c67ce3719ebf4daf62858203e223c63b72.svg" class="org-svg" />, d.h. auch <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a>.
+Sei \(M  \coloneqq \{a \cdot s + b \cdot t) \cap \mathbb{N}\}\) und \(x  \coloneqq \mathrm{min}(M)\)
+Diese <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> wegen \(a,b \in M\), d.h. auch <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a>.
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_4b0ca073473fbc1bbb0c6a4ab3e00ef538b25580.svg" alt="20220911124052-lemma_von_bezout_4b0ca073473fbc1bbb0c6a4ab3e00ef538b25580.svg" class="org-svg" /> und angenommen <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_74bf9179861e206b2385134d1fddd050e3dc18a7.svg" alt="20220911124052-lemma_von_bezout_74bf9179861e206b2385134d1fddd050e3dc18a7.svg" class="org-svg" />, so können wir annehmen:
+Sei \(d  \coloneqq \mathrm{gcd}(a,b)\) und angenommen \(x < d\), so können wir annehmen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_a413ce801d1354c0ea9b01078f10d379481f24e5.svg" alt="20220911124052-lemma_von_bezout_a413ce801d1354c0ea9b01078f10d379481f24e5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \leq& a \\
+x \leq& b
+\end{align*}
 <p>
-Ferner gilt <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_24556c3ddb905f7264236234aa0e1dd028b0baec.svg" alt="20220911124052-lemma_von_bezout_24556c3ddb905f7264236234aa0e1dd028b0baec.svg" class="org-svg" /> (aussschreiben) und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_b2800ce2f8aa801efa520ebcc023eb1e75a03255.svg" alt="20220911124052-lemma_von_bezout_b2800ce2f8aa801efa520ebcc023eb1e75a03255.svg" class="org-svg" />, da sonst <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20220911124052-lemma_von_bezout_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">ggT</a> wäre.
-Damit folgt <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_996196f31b0523fcb0c81a25fc15cf4ed5d25b5b.svg" alt="20220911124052-lemma_von_bezout_996196f31b0523fcb0c81a25fc15cf4ed5d25b5b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_7c99bf596a165e0c7e7a907213cb807125a2ddef.svg" alt="20220911124052-lemma_von_bezout_7c99bf596a165e0c7e7a907213cb807125a2ddef.svg" class="org-svg" />.
+Ferner gilt \(d \mid x\) (aussschreiben) und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(x \not\mid a\), da sonst \(x\) der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">ggT</a> wäre.
+Damit folgt \(a = q \cdot x + r\) mit \(1 \leq r < x\).
 Zudem gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_cdb83bd174207c6b09d84e473d7e2ff43487e29f.svg" alt="20220911124052-lemma_von_bezout_cdb83bd174207c6b09d84e473d7e2ff43487e29f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r =& a - qx \\
+=& a - q(as + bt) \\
+=& a(1 - qs) + n(-qb)
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_366f7a7f0b8040e9adb2c1137849a7e66a337421.svg" alt="20220911124052-lemma_von_bezout_366f7a7f0b8040e9adb2c1137849a7e66a337421.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220911124052-lemma_von_bezout_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" alt="20220911124052-lemma_von_bezout_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" class="org-svg" /> 
+mit \((1-qs), (-qb) \in \mathbb{Z}\) und \(r\) 
 </p>
 </div>
 </div>

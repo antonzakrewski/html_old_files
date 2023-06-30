@@ -9,30 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Approximation: eulersche Zahl</h1>
-<div id="outline-container-org76434f8" class="outline-2">
-<h2 id="org76434f8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org98e4709" class="outline-2">
+<h2 id="org98e4709"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220403190612-approximation_eulersche_zahl_c8a60ab9c528c16e75f13b2d62672739007a7852.svg" alt="20220403190612-approximation_eulersche_zahl_c8a60ab9c528c16e75f13b2d62672739007a7852.svg" class="org-svg" />
-</span>
+\begin{align*}
+e = \lim_{x \to \infty}(1 + \frac{1}{x})^x
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5971030" class="outline-2">
-<h2 id="org5971030"><span class="section-number-2">2.</span> Begründung</h2>
+<div id="outline-container-orgf887dfa" class="outline-2">
+<h2 id="orgf887dfa"><span class="section-number-2">2.</span> Begründung</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220403190612-approximation_eulersche_zahl_42f6935064224ead3cdfdf64a455c2df26cb2fe0.svg" alt="20220403190612-approximation_eulersche_zahl_42f6935064224ead3cdfdf64a455c2df26cb2fe0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e^0' =& 1 \\
+e^x \approx& f(x) + x \cdot f'(x) && \vert x \vert << 1 \\
+\approx& 1 + x \\
+e =& e^1 \\
+=& e^{\frac{n}{n}} \\
+=& e^{\left(\frac{1}{n}\right)^n} \\
+\approx& \lim_{x \to \infty}\left((1 + x)^x\right) \\
+\approx& 2,718281828459045
+\end{align*}
 </div>
 </div>
 </div>

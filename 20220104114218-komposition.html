@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Function composition</h1>
-<div id="outline-container-org0131d56" class="outline-2">
-<h2 id="org0131d56"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga639aab" class="outline-2">
+<h2 id="orga639aab"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220104114218-komposition_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" alt="20220104114218-komposition_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und <img src="file:///home/anton/html/ltximg/20220104114218-komposition_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20220104114218-komposition_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220104114218-komposition_1dac3f0c8e31ba6e1829b9a7a484d024519a8c8e.svg" alt="20220104114218-komposition_1dac3f0c8e31ba6e1829b9a7a484d024519a8c8e.svg" class="org-svg" /> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> 
+Seien \(A,B,C\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und \(f: A \rightarrow B\), \(g: B \rightarrow C\) <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104114218-komposition_6eae30962f0d67c2cf70ffd1942dee4e07f41e71.svg" alt="20220104114218-komposition_6eae30962f0d67c2cf70ffd1942dee4e07f41e71.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \circ f: A \rightarrow C
+g \circ f: a \mapsto g(f(a))
+\end{align*}
 <p>
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>
 </p>

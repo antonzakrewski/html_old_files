@@ -3,57 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Satz von Eudoxos</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Eudoxos</h1>
-<div id="outline-container-orga0ee1e4" class="outline-2">
-<h2 id="orga0ee1e4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org39024bc" class="outline-2">
+<h2 id="org39024bc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221031114427-satz_von_eudoxos_ae32f2e072b6a2ecbbe3833f17fa28d874155c68.svg" alt="20221031114427-satz_von_eudoxos_ae32f2e072b6a2ecbbe3833f17fa28d874155c68.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\forall \varepsilon \in \mathbb{R}^+ \exists n \in \mathbb{N} : \frac{1}{n} < \varepsilon
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6cde240" class="outline-2">
-<h2 id="org6cde240"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaa43575" class="outline-2">
+<h2 id="orgaa43575"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Aus dem <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedischen Axiom</a> folgt, dass für <img src="ltximg/20221031114427-satz_von_eudoxos_f04e31914d52f6c40846592d82adcd17fa295c42.svg" alt="20221031114427-satz_von_eudoxos_f04e31914d52f6c40846592d82adcd17fa295c42.svg" class="org-svg" />   eine natürliche zahl <img src="ltximg/20221031114427-satz_von_eudoxos_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20221031114427-satz_von_eudoxos_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" /> existiert, so dass gilt:
+Aus dem <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedischen Axiom</a> folgt, dass für \(\frac{1}{\varepsilon} \in \mathbb{R}\)   eine natürliche zahl \(n \in \mathbb{N}\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221031114427-satz_von_eudoxos_8cb417b2780f00b8db641f69f56ef0375139b24f.svg" alt="20221031114427-satz_von_eudoxos_8cb417b2780f00b8db641f69f56ef0375139b24f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\frac{1}{\varepsilon} < n
+\end{align*}
 <p>
 nach der <a href="20220121083340-umkehrung_von_relation_bei_bruch_2_zahlen_ungleich_0.html#ID-e3cb0426-2fc9-4545-a594-6f4d7e15b9d1">Umkehrung von Relation bei Bruch auf beiden Seiten(x &gt; y)</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221031114427-satz_von_eudoxos_9759ce9dca5f63900b33eb52792ff9f45c855954.svg" alt="20221031114427-satz_von_eudoxos_9759ce9dca5f63900b33eb52792ff9f45c855954.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\varepsilon > \frac{1}{n}
+\end{align*}
 </div>
 </div>
 </div>

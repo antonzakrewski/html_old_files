@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Algebra-Einsetzungshomomorphismus</h1>
-<div id="outline-container-org25e29ae" class="outline-2">
-<h2 id="org25e29ae"><span class="section-number-2">1.</span> Definitione / satz</h2>
+<div id="outline-container-org7ab2454" class="outline-2">
+<h2 id="org7ab2454"><span class="section-number-2">1.</span> Definitione / satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230304193911-algebra_einsetzungshomomorphismus_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230304193911-algebra_einsetzungshomomorphismus_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, <img src="file:///home/anton/html/ltximg/20230304193911-algebra_einsetzungshomomorphismus_af47230829264cd3811de6aaa7ed5ea1e1c50b37.svg" alt="20230304193911-algebra_einsetzungshomomorphismus_af47230829264cd3811de6aaa7ed5ea1e1c50b37.svg" class="org-svg" /> eine <a href="20221125133249-k_algebra.html#ID-74ada59f-7a40-49a2-b525-be8af0628fe9">K-Algebra</a> und <img src="file:///home/anton/html/ltximg/20230304193911-algebra_einsetzungshomomorphismus_4e4b1eebc7c81fe6c0099695829e627e0e9e13f3.svg" alt="20230304193911-algebra_einsetzungshomomorphismus_4e4b1eebc7c81fe6c0099695829e627e0e9e13f3.svg" class="org-svg" />.
-Für <img src="file:///home/anton/html/ltximg/20230304193911-algebra_einsetzungshomomorphismus_999c7dd34c50d9a1bd6848163e959a53ce5077b6.svg" alt="20230304193911-algebra_einsetzungshomomorphismus_999c7dd34c50d9a1bd6848163e959a53ce5077b6.svg" class="org-svg" /> ist der Einsetzungshomomorphismus definiert als folgender <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> 
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, \(\mathcal{A}\) eine <a href="20221125133249-k_algebra.html#ID-74ada59f-7a40-49a2-b525-be8af0628fe9">K-Algebra</a> und \(c \in \mathcal{A}\).
+Für \(f = \sum_{j=0}^{n} a_jx^j \in K[x]\) ist der Einsetzungshomomorphismus definiert als folgender <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230304193911-algebra_einsetzungshomomorphismus_10cf589faf8559c45ca8775ddcfcd06dcb108771.svg" alt="20230304193911-algebra_einsetzungshomomorphismus_10cf589faf8559c45ca8775ddcfcd06dcb108771.svg" class="org-svg" />
-</span>
+\begin{align*}
+\alpha_c : K[x] \rightarrow& \mathcal{A} \\
+f \mapsto& f(c)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9796b14" class="outline-2">
-<h2 id="org9796b14"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3210da0" class="outline-2">
+<h2 id="org3210da0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 analog zum <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> bzw. folgt daraus, da jeder <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> auch ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> ist und jede <a href="20221125133249-k_algebra.html#ID-74ada59f-7a40-49a2-b525-be8af0628fe9">K-Algebra</a> auch ein <a href="20221228202836-r_algebra.html#ID-f1401a23-6bbb-4e91-812e-071fddeb1e67">R-Algebra</a> 

@@ -9,49 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Nullfolge durch Beschränktheit multipliziert mit einer divergenten Folge</h1>
-<div id="outline-container-org4b41656" class="outline-2">
-<h2 id="org4b41656"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9d4d08c" class="outline-2">
+<h2 id="org9d4d08c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_285928b14d66a617be2bbae27feed95c390eda82.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_285928b14d66a617be2bbae27feed95c390eda82.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> in <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" />, so dass gilt
+Seien \(a_n,b_n\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> in \(\mathbb{R}\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_fd9a00788506b6c7f6a1d1497d86be1b8064fa29.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_fd9a00788506b6c7f6a1d1497d86be1b8064fa29.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+b_n \rightarrow + \infty 
+\end{align*}
 <p>
-und die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_2b4f0f23c5e967ee9bd68e5d101654c4113d97fc.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_2b4f0f23c5e967ee9bd68e5d101654c4113d97fc.svg" class="org-svg" /> beschränkt sei mit <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_1cf9f67e8c979c05149ce400bd4dde02a9ff488c.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_1cf9f67e8c979c05149ce400bd4dde02a9ff488c.svg" class="org-svg" />, dann gilt
+und die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \(c_n = a_n \cdot b_n\) beschränkt sei mit \(c_n < s\), dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_38510754ec70f935d7d758e0041ff8ab3287a207.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_38510754ec70f935d7d758e0041ff8ab3287a207.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_n \rightarrow 0
+\end{align*}
 <p>
-Analog auch mit <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_0fca5e8a8073156d307223bda402b754822e0d4f.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_0fca5e8a8073156d307223bda402b754822e0d4f.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_edcb14cca410bf14725d45bc101672e4b0e6ae0f.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_edcb14cca410bf14725d45bc101672e4b0e6ae0f.svg" class="org-svg" /> (betrachtung der beiden teilfolgen, sodass alle folgenglieder enthalten sind)
+Analog auch mit \(b_n \rightarrow - \infty\) und \(\vert b_n \vert \rightarrow \infty\) (betrachtung der beiden teilfolgen, sodass alle folgenglieder enthalten sind)
 </p>
 </div>
 </div>
-<div id="outline-container-org013e874" class="outline-2">
-<h2 id="org013e874"><span class="section-number-2">2.</span> Beweiwa</h2>
+<div id="outline-container-org3f416c5" class="outline-2">
+<h2 id="org3f416c5"><span class="section-number-2">2.</span> Beweiwa</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, insbesondere sind <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder <img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_df52770c1fb8db307cb4ebc18a3988123abdc6f4.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_df52770c1fb8db307cb4ebc18a3988123abdc6f4.svg" class="org-svg" /> 
+Sei \(\varepsilon > 0\), insbesondere sind <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder \(b_n > \frac{s}{\varepsilon}\) 
 Da gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_76db2e021490647e69d29f72219ec34ab3888f72.svg" alt="20230210203207-nullfolge_durch_beschranktheit_multipliziert_mit_einer_divergenten_folge_76db2e021490647e69d29f72219ec34ab3888f72.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_n \cdot b_n < s
+a_n < \frac{s}{b_n} < \frac{s}{\frac{s}{\varepsilon}} = \varepsilon
+\end{align*}
 </div>
 </div>
 </div>

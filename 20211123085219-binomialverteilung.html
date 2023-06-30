@@ -3,49 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Binomialverteilung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Binomialverteilung</h1>
-<div id="outline-container-org0a50176" class="outline-2">
-<h2 id="org0a50176"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbb34c29" class="outline-2">
+<h2 id="orgbb34c29"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die Binomialverteilung ist die <a href="20220819232307-wahrscheinlichkeitsfunktion.html#ID-f81037e2-fdee-4704-85f1-475b0cb2d44e">Wahrscheinlichkeitsfunktion</a> der <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> <img src="ltximg/20211123085219-binomialverteilung_4987c9d30961e9517f0e5ca5e4d9991517cb4375.svg" alt="20211123085219-binomialverteilung_4987c9d30961e9517f0e5ca5e4d9991517cb4375.svg" class="org-svg" /> bei einer <a href="20211221082504-bernoulli_kette.html#ID-21266f90-2582-423d-8c35-d74a3548f0fb">Bernoulli-Kette</a> mit dem Parameter n und p
+Die Binomialverteilung ist die <a href="20220819232307-wahrscheinlichkeitsfunktion.html#ID-f81037e2-fdee-4704-85f1-475b0cb2d44e">Wahrscheinlichkeitsfunktion</a> der <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> \(Z\) bei einer <a href="20211221082504-bernoulli_kette.html#ID-21266f90-2582-423d-8c35-d74a3548f0fb">Bernoulli-Kette</a> mit dem Parameter n und p
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211123085219-binomialverteilung_6f3c89abba8cb0851fcd29aa996c1b5ae0d4a52d.svg" alt="20211123085219-binomialverteilung_6f3c89abba8cb0851fcd29aa996c1b5ae0d4a52d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+B(n,p,k) =& \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org586855c" class="outline-3">
-<h3 id="org586855c"><span class="section-number-3">1.1.</span> Alternative Schreibweisen</h3>
+<div id="outline-container-org4833be3" class="outline-3">
+<h3 id="org4833be3"><span class="section-number-3">1.1.</span> Alternative Schreibweisen</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211123085219-binomialverteilung_c522f58f352ddcd931350d8002ee41684b2c188e.svg" alt="20211123085219-binomialverteilung_c522f58f352ddcd931350d8002ee41684b2c188e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+B(n,p,k) =& \\
+=& P_p^n (Z=k) \\
+ =& P(Z=k) \\
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-org93f86e9" class="outline-2">
-<h2 id="org93f86e9"><span class="section-number-2">2.</span> </h2>
+<div id="outline-container-org567d19e" class="outline-2">
+<h2 id="org567d19e"><span class="section-number-2">2.</span> </h2>
 <div class="outline-text-2" id="text-2">
 </div>
 </div>

@@ -9,57 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Euklidischer Ring als Hauptidealring</h1>
-<div id="outline-container-org2d5bf8b" class="outline-2">
-<h2 id="org2d5bf8b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org77e56d5" class="outline-2">
+<h2 id="org77e56d5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a>, dann ist <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> 
+Sei \(R\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a>, dann ist \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org768cb56" class="outline-2">
-<h2 id="org768cb56"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3a922af" class="outline-2">
+<h2 id="org3a922af"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_876537b5b1ccc06eeb02241a06774d69c143bc53.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_876537b5b1ccc06eeb02241a06774d69c143bc53.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_3f4e6bc541ad446d5a711e18fa9e989ea2008d86.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_3f4e6bc541ad446d5a711e18fa9e989ea2008d86.svg" class="org-svg" />, da sonst <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_87e6f3ea6c527c3cf17ef37481493930d00a9c7d.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_87e6f3ea6c527c3cf17ef37481493930d00a9c7d.svg" class="org-svg" /> gilt.
-Sei <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_31d57e0f0e67c00290632803e1fd34cfcb141790.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_31d57e0f0e67c00290632803e1fd34cfcb141790.svg" class="org-svg" />, so dass für die <a href="20221230001121-euklidische_normfunktion.html#ID-6037056b-f4cd-4207-85f5-bc2fbc743703">euklidische Normfunktion</a> gilt:
+Sei \(I \subseteq R\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(I \neq \{0\}\), da sonst \(I = (0)\) gilt.
+Sei \(y \in I \setminus \{0\}\), so dass für die <a href="20221230001121-euklidische_normfunktion.html#ID-6037056b-f4cd-4207-85f5-bc2fbc743703">euklidische Normfunktion</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_72c1555c8a1363ca3bce180895b0770f9cee1047.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_72c1555c8a1363ca3bce180895b0770f9cee1047.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall r \in I \setminus \{0\} :  \varphi(y) \leq \varphi(r)
+\end{align*}
 <p>
-Wir zeigen dann, dass <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_26c7448dcdd4c948ff8d9e880c4bf4cba174100e.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_26c7448dcdd4c948ff8d9e880c4bf4cba174100e.svg" class="org-svg" /> gilt
+Wir zeigen dann, dass \(I = (y)\) gilt
 </p>
 </div>
-<div id="outline-container-orgedbba1d" class="outline-3">
-<h3 id="orgedbba1d"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org431ceb1" class="outline-3">
+<h3 id="org431ceb1"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_49da0c80aea7897219d22aefc13f7c2acf1a62c5.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_49da0c80aea7897219d22aefc13f7c2acf1a62c5.svg" class="org-svg" /> belibebig
-Dann existieren nach Annahme (wegen der Eigenschaft als <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a>) <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_883c3f45fc6f6978f78723803721efcfd6b348a7.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_883c3f45fc6f6978f78723803721efcfd6b348a7.svg" class="org-svg" />, so dass gilt
+Sei \(x \in I\) belibebig
+Dann existieren nach Annahme (wegen der Eigenschaft als <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a>) \(q,r \in R\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_ba3e5fffce56674e5bc49fd78888e703f02035a0.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_ba3e5fffce56674e5bc49fd78888e703f02035a0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x =& qy - r 
+% r =& qy - x \in I
+\end{align*}
 <p>
-Insbesondere gilt <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_0459fe693d96ed17410d8c8a8172f2e6af999290.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_0459fe693d96ed17410d8c8a8172f2e6af999290.svg" class="org-svg" />.
-Wegen der Minimalität folgt damit auch <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_1d74b7949c731aa79fb5dc5d324a54d3aeab1e10.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_1d74b7949c731aa79fb5dc5d324a54d3aeab1e10.svg" class="org-svg" />, weil für <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_8cc3b109ef4362cee88e9ab36654420deb822006.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_8cc3b109ef4362cee88e9ab36654420deb822006.svg" class="org-svg" /> dies ein widerspruch wäre zur Annahme <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_5c337618e5f16f3fd1fc3ef989b87c239a9317bc.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_5c337618e5f16f3fd1fc3ef989b87c239a9317bc.svg" class="org-svg" /> bzw. wir <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" class="org-svg" /> als unser <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> wählen würden.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_bf5cf110955c98925cc87ef801fde13940da99d8.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_bf5cf110955c98925cc87ef801fde13940da99d8.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221226132513-jeder_euklidischer_ring_als_hauptidealring_bd816fdaf02071808067c5c880705fe0f1cc2517.svg" alt="20221226132513-jeder_euklidischer_ring_als_hauptidealring_bd816fdaf02071808067c5c880705fe0f1cc2517.svg" class="org-svg" />
+Insbesondere gilt \(r = qy - x \in I\).
+Wegen der Minimalität folgt damit auch \(r = 0\), weil für \(\phi(r) < \phi(y)\) dies ein widerspruch wäre zur Annahme \(\phi(r) \geq \phi(y)\) bzw. wir \(r\) als unser \(y\) wählen würden.
+Daraus folgt \(x = qy\), d.h. \((y) \subseteq I\)
 </p>
 </div>
 </div>
-<div id="outline-container-org75ec968" class="outline-3">
-<h3 id="org75ec968"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9d165bd" class="outline-3">
+<h3 id="org9d165bd"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 erzeugte ideal - als kleinste ideal

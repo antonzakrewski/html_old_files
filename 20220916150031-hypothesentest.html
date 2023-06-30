@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hypothesentest</h1>
-<div id="outline-container-orge669688" class="outline-2">
-<h2 id="orge669688"><span class="section-number-2">1.</span> Anwendung</h2>
+<div id="outline-container-org6d88829" class="outline-2">
+<h2 id="org6d88829"><span class="section-number-2">1.</span> Anwendung</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Ein Hypothesentest wird verwendet, um trotz wenig Datensätzen abschätzen zu können, wie plausibel eine Aussage (<a href="20220820175945-nullhypothese.html#ID-a0687758-dd57-4463-8797-711c06eca74f">Nullhypothese</a>) ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org5c5604f" class="outline-2">
-<h2 id="org5c5604f"><span class="section-number-2">2.</span> Verfahren</h2>
+<div id="outline-container-orgf1ed291" class="outline-2">
+<h2 id="orgf1ed291"><span class="section-number-2">2.</span> Verfahren</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es sei <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" alt="20220916150031-hypothesentest_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" class="org-svg" /> eine Anzahl verschiedener, näherungsweise <a href="20220903215308-unabhangigkeit_fur_zwei_variablen.html#ID-ea6b6904-85a4-4c86-b489-69702c34db37">Unabhängiger</a>  Stichproben, wobei die Wahrscheinlichkeit, dass eine Aussage über die Eigenschaft (z.B. "Fehlerhafte Ware") der Stichproben zutrifft, abgeschätzt werden soll.
-Dafür wird ein <a href="20220916150633-kritischer_bereich.html#ID-2117927c-6c90-4b8d-bc9b-3da3470fa8c7">kritischer Bereich</a> <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20220916150031-hypothesentest_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> (z.B. <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_336ddedc3d6e8542923d7258ecd10b854aa2cd9d.svg" alt="20220916150031-hypothesentest_336ddedc3d6e8542923d7258ecd10b854aa2cd9d.svg" class="org-svg" /> und <a href="20220916150637-annahmebereich.html#ID-e7b62876-8480-43c8-9588-63c10684a385">Annahmebereich</a> <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_73a121c5ededf04b442385991fcaffe8b4c48b34.svg" alt="20220916150031-hypothesentest_73a121c5ededf04b442385991fcaffe8b4c48b34.svg" class="org-svg" /> (z.B. <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_12b3d576980d01bae43ec3c71df41ab38decc2b2.svg" alt="20220916150031-hypothesentest_12b3d576980d01bae43ec3c71df41ab38decc2b2.svg" class="org-svg" /> definiert.
+Es sei \(Z\) eine Anzahl verschiedener, näherungsweise <a href="20220903215308-unabhangigkeit_fur_zwei_variablen.html#ID-ea6b6904-85a4-4c86-b489-69702c34db37">Unabhängiger</a>  Stichproben, wobei die Wahrscheinlichkeit, dass eine Aussage über die Eigenschaft (z.B. "Fehlerhafte Ware") der Stichproben zutrifft, abgeschätzt werden soll.
+Dafür wird ein <a href="20220916150633-kritischer_bereich.html#ID-2117927c-6c90-4b8d-bc9b-3da3470fa8c7">kritischer Bereich</a> \(K\) (z.B. \(K = \{1,2,...n}\}\) und <a href="20220916150637-annahmebereich.html#ID-e7b62876-8480-43c8-9588-63c10684a385">Annahmebereich</a> \(\overline{K}\) (z.B. \(K = \{n+1, n+2, ..., Z\}\) definiert.
 Dabei entstehen jedoch <a href="20220916150100-fehler_1_art.html#ID-577b2aa9-328a-443a-9250-9227cb816d78">Fehler 1. Art</a> und <a href="20220916150102-fehler_2_art.html#ID-7caa4c16-e042-41c8-85fe-c2615b615091">Fehler 2. Art</a>.
-Im Allgemeinen wählt man <img src="file:///home/anton/html/ltximg/20220916150031-hypothesentest_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20220916150031-hypothesentest_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und $ $ so, dass v.a. der <a href="20220916150102-fehler_2_art.html#ID-7caa4c16-e042-41c8-85fe-c2615b615091">Fehler 2. Art</a> minimiert wird.
+Im Allgemeinen wählt man \(K\) und $ \overline{K}$ so, dass v.a. der <a href="20220916150102-fehler_2_art.html#ID-7caa4c16-e042-41c8-85fe-c2615b615091">Fehler 2. Art</a> minimiert wird.
 </p>
 </div>
 </div>

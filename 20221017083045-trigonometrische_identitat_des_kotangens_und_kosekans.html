@@ -9,54 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Trigonometrische Identität des Kotangens und Kosekans</h1>
-<div id="outline-container-org34e3d6d" class="outline-2">
-<h2 id="org34e3d6d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org60a2788" class="outline-2">
+<h2 id="org60a2788"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_8e025385c9034a65950abcd44a6c763325261d8e.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_8e025385c9034a65950abcd44a6c763325261d8e.svg" class="org-svg" /> gilt:
+Für \(x \neq 0\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_77ec5e94d7ef216969b2cfdf33213bbed06ab436.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_77ec5e94d7ef216969b2cfdf33213bbed06ab436.svg" class="org-svg" />
-</span>
+\begin{align*}
+\csc(x)^2 =& \cot(x)^2 + 1 \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge0166bf" class="outline-2">
-<h2 id="orge0166bf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org89f5927" class="outline-2">
+<h2 id="org89f5927"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund des <a href="20210227121315-trigonometrischer_pythagoras.html#ID-af817553-e3a0-436a-ac80-132a29cad9fd">trigonometrischen Pythagoras</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_692de059aacd25e0bd7ad1cdc33dfffe4b51e095.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_692de059aacd25e0bd7ad1cdc33dfffe4b51e095.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 =& \sin(x)^2 + \cos(x)^2
+\end{align*}
 <p>
 Durch Definition des <a href="20221009194918-kotangens.html#ID-482197ff-c47c-4b27-a6b8-1e88c854eac3">Kotangens</a> und  <a href="20221009194936-kosekans.html#ID-561ccbc7-9a06-4f76-ac5e-51a1cf6d9a46">Kosekans</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_04c21fde37e7d84dd19bbb068f9fe96190a2f00c.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_04c21fde37e7d84dd19bbb068f9fe96190a2f00c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cot(x) =& \frac{\cos(x)}{\sin(x)} \\
+\Rightarrow \cos(x) =& \sin(x) \cdot \cot(x)
+\end{align*}
 <p>
-Eingesetzt in oben ergibt und aufgrund der Definition des <a href="20221009194936-kosekans.html#ID-561ccbc7-9a06-4f76-ac5e-51a1cf6d9a46">Kosekans</a> <img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_b443cf61427c95679cfa0244662f1b26e3360d21.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_b443cf61427c95679cfa0244662f1b26e3360d21.svg" class="org-svg" /> folgt
+Eingesetzt in oben ergibt und aufgrund der Definition des <a href="20221009194936-kosekans.html#ID-561ccbc7-9a06-4f76-ac5e-51a1cf6d9a46">Kosekans</a> \(\csc(x) =& \frac{1}{\sin(x)}\) folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_be2d3a3a5dd5ac6b5c15208d78fc7b3a0d12f86d.svg" alt="20221017083045-trigonometrische_identitat_des_kotangens_und_kosekans_be2d3a3a5dd5ac6b5c15208d78fc7b3a0d12f86d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 =& \sin(x)^2 + \cot(x)^2\sin(x)^2 && \vert \cdot \csc(x)^2 \\
+\csc(x)^2 =& 1 + \cot(x)^2
+\end{align*}
 </div>
 </div>
 </div>

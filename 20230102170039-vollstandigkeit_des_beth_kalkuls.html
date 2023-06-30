@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vollständigkeit des Beth-Kalküls</h1>
-<div id="outline-container-org609ab6e" class="outline-2">
-<h2 id="org609ab6e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd95058a" class="outline-2">
+<h2 id="orgd95058a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20230102134256-beth_kalkul.html#ID-9702cf3d-f2c6-450e-be7d-ebbf560ee374">Beth-Kalkül</a> ist <a href="20230102164259-vollstandigkeit_eines_kalkuls.html#ID-33ad7a68-db93-4600-9c7c-2f3fe9c6ecce">vollständig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org693cfe8" class="outline-2">
-<h2 id="org693cfe8"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org4759729" class="outline-2">
+<h2 id="org4759729"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Angenommen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_6003a39bcdf91f828171852acf949e57e3bd0c0d.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_6003a39bcdf91f828171852acf949e57e3bd0c0d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\Sigma \not\vdash A
+\end{align*}
 <p>
-Dann existiert ein <a href="20230102110022-vollstandiges_tableause.html#ID-a492b274-bea2-4666-96bd-5d4b8de7ab15">vollständiges Tableaux</a> für <img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />, das nicht geschlossen ist.
-Dann existiert ein offener Zweig <img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" class="org-svg" />
+Dann existiert ein <a href="20230102110022-vollstandiges_tableause.html#ID-a492b274-bea2-4666-96bd-5d4b8de7ab15">vollständiges Tableaux</a> für \(\Sigma\) und \(A\), das nicht geschlossen ist.
+Dann existiert ein offener Zweig \(Z\)
 </p>
 
 <p>
@@ -44,33 +66,24 @@ für <a href="20230102162341-unendliches_schließen_mit_erststufigen_tableauxreg
 
 
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_3b522946583f473841e947f19937979e8a67f064.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_3b522946583f473841e947f19937979e8a67f064.svg" class="org-svg" /> ein $n-$stelliges Prqdikat setzen wir:
+Für \(P\) ein $n-$stelliges Prqdikat setzen wir:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_746385ba5b466058be64857f2f9b993202abad4a.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_746385ba5b466058be64857f2f9b993202abad4a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\nu(P) = \{(d_1,...,d_n) : P(d_1,...,d_n) \in Z\}
+\end{align*}
 <p>
 Behauptung:
 Damit gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_a00bf68dcebca1b0eea2f08e2a08cb60792b0109.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_a00bf68dcebca1b0eea2f08e2a08cb60792b0109.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\nu([\Sigma]) = 1 \land \nu(A) = A \\
+\end{align*}
 <p>
 also auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230102170039-vollstandigkeit_des_beth_kalkuls_d71c1bf1f047c49fac351e80aecda3696461dde3.svg" alt="20230102170039-vollstandigkeit_des_beth_kalkuls_d71c1bf1f047c49fac351e80aecda3696461dde3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\Sigma \not\vmodels A
+\end{align*}
 <p>
 dabei kann man dann den Baum hochgehen und jede aussage bleibt wahr
 </p>

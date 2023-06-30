@@ -9,12 +9,37 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Bestimmung von Matrixdarstellungen von Vektorraumhomomorphismen der Art <img src="file:///home/anton/html/ltximg/20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" alt="20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" class="org-svg" /></h1>
-<div id="outline-container-org503cb1b" class="outline-2">
-<h2 id="org503cb1b"><span class="section-number-2">1.</span> Gedanke</h2>
+<h1 class="title">Bestimmung von Matrixdarstellungen von Vektorraumhomomorphismen der Art \(K^n\)</h1>
+<div id="outline-container-org20683a9" class="outline-2">
+<h2 id="org20683a9"><span class="section-number-2">1.</span> Gedanke</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>matrixdarstellung eines vr-homomorphismus:
@@ -29,17 +54,16 @@
 
 <p>
 beispiel:
-<img src="file:///home/anton/html/ltximg/20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_b86d57704ae8e78b5bf9d8268051aa54be5d4302.svg" alt="20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_b86d57704ae8e78b5bf9d8268051aa54be5d4302.svg" class="org-svg" />
+\(K^2 \rightarrow K^3\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_64584f6bb85855af93afbb019ea44d09250f41e8.svg" alt="20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_64584f6bb85855af93afbb019ea44d09250f41e8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix} 1 \\ 0 \end{pmatrix}  \mapsto \begin{pmatrix} k_1 \\ k_2 \\ k_3 \end{pmatrix} \\
+\begin{pmatrix} 0 \\ 1 \end{pmatrix}  \mapsto \begin{pmatrix} k_1' \\ k_2' \\ k_3' \end{pmatrix} \\
+\begin{pmatrix} k_1 & k_1' \\ k_2 & k_2' \\ k_3 & k_3' \end{pmatrix} 
+\end{align*}
 
 <p>
-frage: kann man additivität und homogenität nicht noch einfacher zeigen, wenn man <img src="file:///home/anton/html/ltximg/20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" alt="20221122084121-bestimmung_von_matrixdarstellungen_von_vektorraumhomomorphismen_der_art_k_n_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" class="org-svg" /> weglässt ?
+frage: kann man additivität und homogenität nicht noch einfacher zeigen, wenn man \(\beta\) weglässt ?
 </p>
 </div>
 </div>

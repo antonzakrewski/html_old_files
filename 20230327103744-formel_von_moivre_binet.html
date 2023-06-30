@@ -3,209 +3,178 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Formel von Moivre-Binet</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel von Moivre-Binet</h1>
-<div id="outline-container-orgd537f5a" class="outline-2">
-<h2 id="orgd537f5a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge804cdc" class="outline-2">
+<h2 id="orge804cdc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230327103744-formel_von_moivre_binet_394c284603a486385bfaf89aa28715bc8d9a4d9e.svg" alt="20230327103744-formel_von_moivre_binet_394c284603a486385bfaf89aa28715bc8d9a4d9e.svg" class="org-svg" /> der <a href="20230327125530-goldene_schnitt.html#ID-d9144bf3-7de1-45ea-a83e-453c577cd5c7">Goldene Schnitt</a> und <img src="ltximg/20230327103744-formel_von_moivre_binet_c4fd277a72abf76216aa05486d5a8dc877a608bc.svg" alt="20230327103744-formel_von_moivre_binet_c4fd277a72abf76216aa05486d5a8dc877a608bc.svg" class="org-svg" />.
-Dann gilt für die $n$-te <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Zahl</a>, <img src="ltximg/20230327103744-formel_von_moivre_binet_ed43ea3b121c1e2b972c2af917fc84366583de39.svg" alt="20230327103744-formel_von_moivre_binet_ed43ea3b121c1e2b972c2af917fc84366583de39.svg" class="org-svg" />
+Sei \(\phi = \frac{1 + \sqrt{5}}{2}\) der <a href="20230327125530-goldene_schnitt.html#ID-d9144bf3-7de1-45ea-a83e-453c577cd5c7">Goldene Schnitt</a> und \(\widehat{\phi} = \frac{1 - \sqrt{5}}{2} = - \frac{1}{\phi}\).
+Dann gilt für die $n$-te <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Zahl</a>, \(n \in \mathbb{N}_0\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_90c8352db673abde2883c8fe0ed647ebabbd1295.svg" alt="20230327103744-formel_von_moivre_binet_90c8352db673abde2883c8fe0ed647ebabbd1295.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+F_n = \frac{1}{\sqrt{5}} ( \phi^{n} - \widehat{\phi}^n)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb8964bc" class="outline-2">
-<h2 id="orgb8964bc"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org87717db" class="outline-2">
+<h2 id="org87717db"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230327103744-formel_von_moivre_binet_8930229f3bfd2fdd9ae960b9b64ba758793d8dc5.svg" alt="20230327103744-formel_von_moivre_binet_8930229f3bfd2fdd9ae960b9b64ba758793d8dc5.svg" class="org-svg" /> mit <img src="ltximg/20230327103744-formel_von_moivre_binet_497e76e59c03843160d29fcf38939fb77b92fb12.svg" alt="20230327103744-formel_von_moivre_binet_497e76e59c03843160d29fcf38939fb77b92fb12.svg" class="org-svg" /> für <img src="ltximg/20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" alt="20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" class="org-svg" /> (analog zur Fibonacci Folge)
-Dann ist <img src="ltximg/20230327103744-formel_von_moivre_binet_24c211f2a1cdd357790f9cc0d9233620af46a5f7.svg" alt="20230327103744-formel_von_moivre_binet_24c211f2a1cdd357790f9cc0d9233620af46a5f7.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> (siehe: <a href="20221206084011-kriterium_fur_eine_menge_von_vektoren_als_korper.html#ID-76e19fa0-a64e-4d4f-9930-bb1cbce66afa">Kriterium für eine Menge von Vektoren als Körper</a>)
+Sei \(S := \{(x_0,x_1,x_2,...\} \subseteq \mathbb{R}^{\mathbb{N}}\) mit \(x_i = x_{i-1} + x_{i-2}\) für \(i \geq 2\) (analog zur Fibonacci Folge)
+Dann ist \(S\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> (siehe: <a href="20221206084011-kriterium_fur_eine_menge_von_vektoren_als_korper.html#ID-76e19fa0-a64e-4d4f-9930-bb1cbce66afa">Kriterium für eine Menge von Vektoren als Körper</a>)
 </p>
 </div>
-<div id="outline-container-orgac2623d" class="outline-3">
-<h3 id="orgac2623d"><span class="section-number-3">2.1.</span> Abgeschlossenheit gegenüber Addition</h3>
+<div id="outline-container-org4c22f55" class="outline-3">
+<h3 id="org4c22f55"><span class="section-number-3">2.1.</span> Abgeschlossenheit gegenüber Addition</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="ltximg/20230327103744-formel_von_moivre_binet_cc51aab721a5e435dcfd83f4597368fdab1ff242.svg" alt="20230327103744-formel_von_moivre_binet_cc51aab721a5e435dcfd83f4597368fdab1ff242.svg" class="org-svg" />
+Seien \(x,x' \in S\)
 Es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_c126ff3e11240210ed1b53d8a822b6a43ed8ba80.svg" alt="20230327103744-formel_von_moivre_binet_c126ff3e11240210ed1b53d8a822b6a43ed8ba80.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+x + x' = (x_0 + x_0', x_1 + x_1', ...) \coloneqq (y_0,y_1,...,)
+\end{align*}
 <p>
-Und desweiteren für <img src="ltximg/20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" alt="20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" class="org-svg" />
+Und desweiteren für \(i \geq 2\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_7d062dca68fe064b5c78168df18df5f5647e9e9e.svg" alt="20230327103744-formel_von_moivre_binet_7d062dca68fe064b5c78168df18df5f5647e9e9e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+y_i =& x_i + x_i' \\
+=& (x_{i-1} + x_{i-2}) + (x_{i-1}' + x_{i-2}') \\
+=& (x_{i-1} + x_{i-1}') + (x_{i-2} + x_{i-2}') \\
+=& y_{i-1} + y_{i-2}
+\end{align*}
 <p>
-Daraus folgt <img src="ltximg/20230327103744-formel_von_moivre_binet_e71465292e60658cd2fcc3953cc076a6677916c0.svg" alt="20230327103744-formel_von_moivre_binet_e71465292e60658cd2fcc3953cc076a6677916c0.svg" class="org-svg" />
+Daraus folgt \(x + x' \in S\)
 </p>
 </div>
 </div>
-<div id="outline-container-org4fea6ee" class="outline-3">
-<h3 id="org4fea6ee"><span class="section-number-3">2.2.</span> Abgeschlossenheit gegenüber Multiplikation</h3>
+<div id="outline-container-org88bb376" class="outline-3">
+<h3 id="org88bb376"><span class="section-number-3">2.2.</span> Abgeschlossenheit gegenüber Multiplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für <img src="ltximg/20230327103744-formel_von_moivre_binet_cb03e18bbfced04ab8fb66890cc708c14071f73a.svg" alt="20230327103744-formel_von_moivre_binet_cb03e18bbfced04ab8fb66890cc708c14071f73a.svg" class="org-svg" /> und <img src="ltximg/20230327103744-formel_von_moivre_binet_de93d41e59511513e98059ec227583a251766769.svg" alt="20230327103744-formel_von_moivre_binet_de93d41e59511513e98059ec227583a251766769.svg" class="org-svg" /> folgt:
+Für \(\alpha \in \mathbb{R}\) und \(x \in S\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_4bc09dd1bfe23c22804b3286e711ff20128efa25.svg" alt="20230327103744-formel_von_moivre_binet_4bc09dd1bfe23c22804b3286e711ff20128efa25.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\alpha \cdot x =& (\alpha x_0, \alpha x_1, ...) \\
+\coloneqq& (y_0,y_1,...)
+\end{align*}
 <p>
-Dabei gilt für <img src="ltximg/20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" alt="20230327103744-formel_von_moivre_binet_8183b79cfc7891da7249e2ddb54f39404cf4be83.svg" class="org-svg" />
+Dabei gilt für \(i \geq 2\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_a7ad1a0c2c69007237b249e67f6c15046e9786fd.svg" alt="20230327103744-formel_von_moivre_binet_a7ad1a0c2c69007237b249e67f6c15046e9786fd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
+\begin{align*}
+y_i =& \alpha \cdot (x_i) \\
+=& \alpha \cdot (x_{i-1} + x_{i-2}) \\
+=& \alpha \cdot x_{i-1} + \alpha \cdot x_{i-2} \\
+=& y_{i-1} + y_{i-2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5071878" class="outline-3">
-<h3 id="org5071878"><span class="section-number-3">2.3.</span> <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphie</a></h3>
+<div id="outline-container-orge8de731" class="outline-3">
+<h3 id="orge8de731"><span class="section-number-3">2.3.</span> <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphie</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Es folgt zudem:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_a008b0df5c003109671e57acc262a78b58b3861d.svg" alt="20230327103744-formel_von_moivre_binet_a008b0df5c003109671e57acc262a78b58b3861d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+S \simeq \mathbb{R}^2
+\end{align*}
 <p>
-Durch die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> der ersten beiden Komponenten und gegebnfalls Berechnung der folgenden <img src="ltximg/20230327103744-formel_von_moivre_binet_d4f15e67c1d530702953125e5dc28f2b577ce251.svg" alt="20230327103744-formel_von_moivre_binet_d4f15e67c1d530702953125e5dc28f2b577ce251.svg" class="org-svg" />
+Durch die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> der ersten beiden Komponenten und gegebnfalls Berechnung der folgenden \(x_i\)
 Daraus folgt für die <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_4a0efd6275cf7dd77e12fe08e5a2045c1602eb8b.svg" alt="20230327103744-formel_von_moivre_binet_4a0efd6275cf7dd77e12fe08e5a2045c1602eb8b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-7
-</span>
+\begin{align*}
+\mathrm{dim}_{\mathbb{R}}(S) = 2
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga424636" class="outline-3">
-<h3 id="orga424636"><span class="section-number-3">2.4.</span> Konstruktion einer Basis</h3>
+<div id="outline-container-orga41c451" class="outline-3">
+<h3 id="orga41c451"><span class="section-number-3">2.4.</span> Konstruktion einer Basis</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-Sei <img src="ltximg/20230327103744-formel_von_moivre_binet_30ff168d07853071311a6e3eaf086a2f4b5c3fad.svg" alt="20230327103744-formel_von_moivre_binet_30ff168d07853071311a6e3eaf086a2f4b5c3fad.svg" class="org-svg" /> für <img src="ltximg/20230327103744-formel_von_moivre_binet_dae095e53e0c2e3707630a662483a885b0a33fc0.svg" alt="20230327103744-formel_von_moivre_binet_dae095e53e0c2e3707630a662483a885b0a33fc0.svg" class="org-svg" /> und ein <img src="ltximg/20230327103744-formel_von_moivre_binet_21730ca5d4518906d0bd9c219306cfd145b09927.svg" alt="20230327103744-formel_von_moivre_binet_21730ca5d4518906d0bd9c219306cfd145b09927.svg" class="org-svg" />
+Sei \(x_i = \alpha^i\) für \(i \in \mathbb{N}_0\) und ein \(\alpha \in \mathbb{R} \setminus \{0\}\)
 Dann folgt aus
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_95f7265d9804533b5183d79a99ae9b5d4b79bdca.svg" alt="20230327103744-formel_von_moivre_binet_95f7265d9804533b5183d79a99ae9b5d4b79bdca.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-8
-</span>
-</div>
+\begin{align*}
+\alpha^i =& \alpha^{i-1} + \alpha^{i-2} \\
+\Rightarrow \alpha^2 =& \alpha + 1
+\end{align*}
 <p>
-Daraus folgt <img src="ltximg/20230327103744-formel_von_moivre_binet_a5e78a4ab11499a32db4e7bead23d582acdd6fcb.svg" alt="20230327103744-formel_von_moivre_binet_a5e78a4ab11499a32db4e7bead23d582acdd6fcb.svg" class="org-svg" /> und <img src="ltximg/20230327103744-formel_von_moivre_binet_bd45a6d30b4b7b12035d72c479a33a876831073a.svg" alt="20230327103744-formel_von_moivre_binet_bd45a6d30b4b7b12035d72c479a33a876831073a.svg" class="org-svg" />
+Daraus folgt \(\alpha_1 = \phi\) und \(\alpha_2 = \widehat{\phi}\)
 Sei also
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_5adc8308da82842dc3732cda04168b544b51800e.svg" alt="20230327103744-formel_von_moivre_binet_5adc8308da82842dc3732cda04168b544b51800e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-9
-</span>
-</div>
+\begin{align*}
+\Phi =& (\phi^0,\phi^1,...) \in S\\
+\widehat{\Phi} =& (\widehat{\phi}^0, \widehat{\phi}^1,...) \in S
+\end{align*}
 <p>
 Diese sind <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> (vgl. erste und zweite Komponente) und damit auch ein <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a>, d.h. eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgf95e3a8" class="outline-3">
-<h3 id="orgf95e3a8"><span class="section-number-3">2.5.</span> Berechnung</h3>
+<div id="outline-container-org95255d3" class="outline-3">
+<h3 id="org95255d3"><span class="section-number-3">2.5.</span> Berechnung</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
-Wir suchen die Folge mit <img src="ltximg/20230327103744-formel_von_moivre_binet_8c7ba2436ca64e7eb523d224398fb29210f141c8.svg" alt="20230327103744-formel_von_moivre_binet_8c7ba2436ca64e7eb523d224398fb29210f141c8.svg" class="org-svg" /> und <img src="ltximg/20230327103744-formel_von_moivre_binet_04c03add517680cbca46abdfd6367d2e6d45b0be.svg" alt="20230327103744-formel_von_moivre_binet_04c03add517680cbca46abdfd6367d2e6d45b0be.svg" class="org-svg" />.
+Wir suchen die Folge mit \(s_1 = 0\) und \(s_2 = 1\).
 Daraus folgt das Gleichungssystem
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_0bda855d27b0da809720f734978a818cc85bb013.svg" alt="20230327103744-formel_von_moivre_binet_0bda855d27b0da809720f734978a818cc85bb013.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-10
-</span>
-</div>
+\begin{align*}
+f_0 = 0 =& \alpha + \beta \\
+f_1 = 1 =& \alpha \cdot \phi + \beta \cdot \widehat{\phi} \\
+=& \alpha \cdot \frac{1 + \sqrt{5}}{2} + \beta \cdot \frac{1 - \sqrt{5}}{2}
+\end{align*}
 <p>
 mit der Lösung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_54b25e9735eee7427c6236d51fca7aeebb89883c.svg" alt="20230327103744-formel_von_moivre_binet_54b25e9735eee7427c6236d51fca7aeebb89883c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-11
-</span>
-</div>
+\begin{align*}
+\alpha =& \frac{1}{\sqrt{5}} \\
+\beta =& - \frac{1}{\sqrt{5}}
+\end{align*}
 
 <p>
-Damit folgt für die <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Folge</a> beginnend mit <img src="ltximg/20230327103744-formel_von_moivre_binet_e056f35165a79aa12c46f7c341667355e195c04a.svg" alt="20230327103744-formel_von_moivre_binet_e056f35165a79aa12c46f7c341667355e195c04a.svg" class="org-svg" /> für die $n$-te komponente:
+Damit folgt für die <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Folge</a> beginnend mit \(0,1\) für die $n$-te komponente:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230327103744-formel_von_moivre_binet_b2f901d4065cfc41a707f87d3b7b0f2d0cab70f5.svg" alt="20230327103744-formel_von_moivre_binet_b2f901d4065cfc41a707f87d3b7b0f2d0cab70f5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-12
-</span>
-</div>
+\begin{align*}
+f_n =& \alpha \phi^{n} + \beta \widehat{\phi}^n \\
+=& \frac{1}{\sqrt{5}} \left(\frac{1 + \sqrt{5}}{2}\right)^n - \frac{1}{\sqrt{5}} \left(\frac{1 - \sqrt{5}}{2} \right)^n \\
+=& \frac{1}{\sqrt{5}} \left( \left(\frac{1 + \sqrt{5}}{2}\right)^n - \left(\frac{1 - \sqrt{5}}{2} \right)^n \right)
+\end{align*}
 </div>
 </div>
 </div>

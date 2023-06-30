@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit impliziert Folgenstetigkeit</h1>
-<div id="outline-container-org42f5119" class="outline-2">
-<h2 id="org42f5119"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdb3f6f3" class="outline-2">
+<h2 id="orgdb3f6f3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">folgenstetig</a> 
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Dann ist \(f\) auch <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">folgenstetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org954aa61" class="outline-2">
-<h2 id="org954aa61"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org698abad" class="outline-2">
+<h2 id="org698abad"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_95dcdd4b8e51c285ed9e3cc6c3859e6240a92ea0.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_95dcdd4b8e51c285ed9e3cc6c3859e6240a92ea0.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" />, so ist nach Annahme <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_bc6ae4a4dcdafcb975b1b120f66a5fada17768e2.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_bc6ae4a4dcdafcb975b1b120f66a5fada17768e2.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_05cb78ea0bff35268eb497c1251e232e93d39eb8.svg" class="org-svg" />
-Daraus folgt, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_c749c793d4820ae7f9aeaa4d3fcbf4cc34a8a8be.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_c749c793d4820ae7f9aeaa4d3fcbf4cc34a8a8be.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_0394494efe4c8c761ec8c100134e0f9e6ba2ef4f.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_0394494efe4c8c761ec8c100134e0f9e6ba2ef4f.svg" class="org-svg" />  liegen.
-Somit gilt auch, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder von <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_864f520fb96fc5130c0edf2bb30858af6ecfa01a.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_864f520fb96fc5130c0edf2bb30858af6ecfa01a.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> liegen.
-Damit ist <img src="file:///home/anton/html/ltximg/20230509103203-stetigkeit_impliziert_folgenstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230509103203-stetigkeit_impliziert_folgenstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch <a href="20221222113132-folgenkriterium_fur_stetigkeit.html#ID-6117cb3d-dac5-4524-a1be-5551f7264905">folgenstetig</a> 
+Sei \(V \subseteq Y\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(x)\), so ist nach Annahme \(f^{-1}[V] \subseteq X\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(k\)
+Daraus folgt, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder \(x_n\) in \(f^{-1}[V]\)  liegen.
+Somit gilt auch, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder von \(f(x_n)\) in \(V\) liegen.
+Damit ist \(f\) auch <a href="20221222113132-folgenkriterium_fur_stetigkeit.html#ID-6117cb3d-dac5-4524-a1be-5551f7264905">folgenstetig</a> 
 </p>
 </div>
 </div>

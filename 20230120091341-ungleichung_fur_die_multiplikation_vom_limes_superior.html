@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ungleichung für die Multiplikation vom Limes Superior / Inferior</h1>
-<div id="outline-container-org5922841" class="outline-2">
-<h2 id="org5922841"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfbb0741" class="outline-2">
+<h2 id="orgfbb0741"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_e2231d2312fe91195cf86724433f78d1a1d02488.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_e2231d2312fe91195cf86724433f78d1a1d02488.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b4cb17551d687ce56873d6152bc0de7a861885ab.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b4cb17551d687ce56873d6152bc0de7a861885ab.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> in <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_29ed68d6151e47de91b0816d92e1b4698d694e53.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_29ed68d6151e47de91b0816d92e1b4698d694e53.svg" class="org-svg" />, so gilt:
+Seien \((x_n)\) und \((y_n)\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> in \(\mathbb{R}_0^+\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_e8edf4d947a96caa4155145332b1f322e98374c1.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_e8edf4d947a96caa4155145332b1f322e98374c1.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim \sup x_n \cdot \lim \sup y_n \geq \lim \sup x_n \cdot y_n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd3dbb2c" class="outline-2">
-<h2 id="orgd3dbb2c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf80ac6e" class="outline-2">
+<h2 id="orgf80ac6e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Wir wissen, dass für jedes <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_8d545b975f3ad9bdf20687047529f5b1946abfa2.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_8d545b975f3ad9bdf20687047529f5b1946abfa2.svg" class="org-svg" />, analog auch für <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_512a709c00a0fed525b5ac0c7c5d51558b56fdff.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_512a709c00a0fed525b5ac0c7c5d51558b56fdff.svg" class="org-svg" /> 
+Wir wissen, dass für jedes \(\varepsilon > 0\) für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(n\) gilt \(x_n - \varepsilon <  \lim \sup x_n\), analog auch für \(y_n\) 
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_2e4f95b3a766ca822a00c0ed1091508f3bb55b57.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_2e4f95b3a766ca822a00c0ed1091508f3bb55b57.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim \sup x_n y_n \leq (\lim \sup x_n + \varepsilon) \cdot (\lim \sup x_n + \varepsilon) = \lim \sup x_n \lim \sup y_n + \varepsilon (\lim \sup x_n + \lim \sup y_n) + \varepsilon^2
+\end{align*}
 <p>
-Indem man <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_1a8062284d92d98b454f9587b27cc0d66a452dcf.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_1a8062284d92d98b454f9587b27cc0d66a452dcf.svg" class="org-svg" /> konvergieren lässt, folgt insbesondere auch die Ungleichung:
-Angenommen <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_7d6da0b472e7f00d03c0e35b3044542c31cdcf67.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_7d6da0b472e7f00d03c0e35b3044542c31cdcf67.svg" class="org-svg" />, so existiert <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_dbe797cf5196ada12878961977f59df72f117f18.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_dbe797cf5196ada12878961977f59df72f117f18.svg" class="org-svg" />
-Indem man jetzt <img src="file:///home/anton/html/ltximg/20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b59e8f9009ac06c6db675aca3946bd4d3ff63017.svg" alt="20230120091341-ungleichung_fur_die_multiplikation_vom_limes_superior_b59e8f9009ac06c6db675aca3946bd4d3ff63017.svg" class="org-svg" /> hinreichend klein wählt, folgt ein Widerspruch zu oben.
+Indem man \(\varepsilon \rightarrow 0\) konvergieren lässt, folgt insbesondere auch die Ungleichung:
+Angenommen \(\lim \sup x_n y_n > \lim \sup x_n \cdot \lim \sup y_n\), so existiert \(0 < \delta = \lim \sup x_ny_n - \lim \sup x_n \cdot \lim \sup y_n\)
+Indem man jetzt \(\varepsilon\) hinreichend klein wählt, folgt ein Widerspruch zu oben.
 </p>
 </div>
 </div>

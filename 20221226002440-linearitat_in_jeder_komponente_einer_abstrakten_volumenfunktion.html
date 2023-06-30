@@ -3,46 +3,61 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Linearität in jeder Komponente einer abstrakten Volumenfunktion</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linearität in jeder Komponente einer abstrakten Volumenfunktion</h1>
-<div id="outline-container-org5fa15fd" class="outline-2">
-<h2 id="org5fa15fd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6068b5e" class="outline-2">
+<h2 id="org6068b5e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="ltximg/20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_0486bb7573428fce166131fffca321fe0347dbc1.svg" alt="20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_0486bb7573428fce166131fffca321fe0347dbc1.svg" class="org-svg" /> eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> 
-Dann gilt für <img src="ltximg/20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_1cd2a16538fe2e8478eaf28b8a95fadb470adcb5.svg" alt="20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_1cd2a16538fe2e8478eaf28b8a95fadb470adcb5.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(V: R^n \rightarrow R\) eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> 
+Dann gilt für \(z_i,z_j,z_k \in R^n\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_f313000d440a003099a988a5eb45de421ef36f13.svg" alt="20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_f313000d440a003099a988a5eb45de421ef36f13.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1ea83ab" class="outline-2">
-<h2 id="org1ea83ab"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org71317c6" class="outline-2">
+<h2 id="org71317c6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_205a32ea37cc1642bf36290be1b11c55444e5a1e.svg" alt="20221226002440-linearitat_in_jeder_komponente_einer_abstrakten_volumenfunktion_205a32ea37cc1642bf36290be1b11c55444e5a1e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+V(z_1,...,z_i,...,z_j,...,z_n) + V(z_1,...,z'_i,....,z'_j,...,z_n) =& V(z_1,...,z_i,...,z_j,...,z_n) + V(z_1,...,z_i,....,z'_j,...,z_n) + V(z_1,...,z'_i - z_i,....,z'_j,...,z_n) \\
+=& V(z_1,...,z_i,...,z_j + z'_j,...,z_n) + V(z_1,...,z'_i - z_i,....,z'_j,...,z_n) \\
+\end{align*}
 </div>
 </div>
 </div>

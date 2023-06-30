@@ -9,30 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenz einer Komplexen Folge in Abhängigkeit vom Real- und Imaginärteil</h1>
-<div id="outline-container-org4e93a66" class="outline-2">
-<h2 id="org4e93a66"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc5f7979" class="outline-2">
+<h2 id="orgc5f7979"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_ecf15f8000807646f67edfd325ce2671b070041c.svg" alt="20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_ecf15f8000807646f67edfd325ce2671b070041c.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> der <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> und der <a href="20211231000354-imaginarteil.html#ID-8267ad48-49dc-48a8-a7d0-e1b3e1d502fc">Imaginärteil</a> konvergiert
+Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((a_n)\) in \(\mathbb{C}\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> der <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> und der <a href="20211231000354-imaginarteil.html#ID-8267ad48-49dc-48a8-a7d0-e1b3e1d502fc">Imaginärteil</a> konvergiert
 </p>
 </div>
 </div>
-<div id="outline-container-orgff75a3a" class="outline-2">
-<h2 id="orgff75a3a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9f0ac65" class="outline-2">
+<h2 id="org9f0ac65"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" alt="20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" class="org-svg" /> 
+Sei \(a \in \mathbb{C}\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_933dc58f63352d7c0b332e7501f3cb4d04119e59.svg" alt="20221212094433-konvergenz_einer_komplexen_folge_in_abhangigkeit_vom_real_und_imaginarteil_933dc58f63352d7c0b332e7501f3cb4d04119e59.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a - a_n \vert =& \vert \mathrm{Re}(a) + \mathrm{Im}(a) - \mathrm{Re}(a_n) - \mathrm{Im}(a_n) \vert \\
+=& \vert \mathrm{Re}(a) - \mathrm{Re}(a_n) + \mathrm{Im}(a) - \mathrm{Im}(a_n) \vert \\
+\Rightarrow \vert a - a_n \vert^2 =& \vert \mathrm{Re}(a) - \mathrm{Re}(a_n) \vert^2 + \vert \mathrm{Im}(a) - \mathrm{Im}(a_n) \vert^2
+\end{align*}
 </div>
 </div>
 </div>

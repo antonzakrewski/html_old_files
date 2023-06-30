@@ -3,57 +3,70 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>duale Abbildung als Vektorraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">duale Abbildung als Vektorraum</h1>
-<div id="outline-container-orgf658ab5" class="outline-2">
-<h2 id="orgf658ab5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfd36cb1" class="outline-2">
+<h2 id="orgfd36cb1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" alt="20230129215154-duale_abbildung_als_vektorraum_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a>, <img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_0c31376d3f672f1d0827692f07f72dd45f19f17a.svg" alt="20230129215154-duale_abbildung_als_vektorraum_0c31376d3f672f1d0827692f07f72dd45f19f17a.svg" class="org-svg" /> und <img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" alt="20230129215154-duale_abbildung_als_vektorraum_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" class="org-svg" />, so gilt
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a>, \(A,B \in \mathrm{Hom}(V,W)\) und \(\alpha \in K\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_c2ef6a785884cca413254943e8cb79fad12dec41.svg" alt="20230129215154-duale_abbildung_als_vektorraum_c2ef6a785884cca413254943e8cb79fad12dec41.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(A + B)^* =& A^* + B^* \\
+(\alpha A)^* =& \alpha A^*
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org553facb" class="outline-2">
-<h2 id="org553facb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4efd19c" class="outline-2">
+<h2 id="org4efd19c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_fd2afd5ca0561505596f3609c104979777785b30.svg" alt="20230129215154-duale_abbildung_als_vektorraum_fd2afd5ca0561505596f3609c104979777785b30.svg" class="org-svg" />, so gilt:
+Sei \(f \in V^*\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_437cd93a0a92dcbece45ab82214f10724958fde8.svg" alt="20230129215154-duale_abbildung_als_vektorraum_437cd93a0a92dcbece45ab82214f10724958fde8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230129215154-duale_abbildung_als_vektorraum_d611eca63aec8d129e7a9cd2ef8010544433e60b.svg" alt="20230129215154-duale_abbildung_als_vektorraum_d611eca63aec8d129e7a9cd2ef8010544433e60b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+((A + B)^* \circ f) (w) =& f(A(w) + B(w)) \\
+=& f(A(w)) + f(B(w)) \\
+=& (A^* \circ (f))(w) + (B^* \circ (f))(w)
+\end{align*}
+\begin{align*}
+((\alpha A)^* \circ f) \circ w =& f(\alpha A(w)) \\
+=& \alpha f(A(w))
+\end{align*}
 </div>
 </div>
 </div>

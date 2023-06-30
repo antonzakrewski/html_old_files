@@ -9,31 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">product category</h1>
-<div id="outline-container-orge3c0cd6" class="outline-2">
-<h2 id="orge3c0cd6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgc5b6135" class="outline-2">
+<h2 id="orgc5b6135"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230226132904-produktkategorie_de9e5eeefbbe4bc2162a8463692735fa5aa672a3.svg" alt="20230226132904-produktkategorie_de9e5eeefbbe4bc2162a8463692735fa5aa672a3.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorien</a>, dann ist ihr Produkt die <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> <img src="file:///home/anton/html/ltximg/20230226132904-produktkategorie_6996db6225a512ae6e9bced7744ebeb4fb4c8bc1.svg" alt="20230226132904-produktkategorie_6996db6225a512ae6e9bced7744ebeb4fb4c8bc1.svg" class="org-svg" /> mit <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekten</a>
+Sei \((\mathcal{C}_i)_{i \in I}\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorien</a>, dann ist ihr Produkt die <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> \(\mathcal{D} = \prod_{i \in I} \mathcal{C}_i\) mit <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekten</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226132904-produktkategorie_921891dff779c8e1f1a6449d87a2b9b813489154.svg" alt="20230226132904-produktkategorie_921891dff779c8e1f1a6449d87a2b9b813489154.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{Ob}(\mathcal{D})  \coloneqq \prod_{i \in I}^{} \mathrm{Ob}(\mathcal{C}_i)
+\end{align*}
 <p>
 und <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226132904-produktkategorie_90cec7d32909dd4e9cf8cd4450739af98e30e553.svg" alt="20230226132904-produktkategorie_90cec7d32909dd4e9cf8cd4450739af98e30e553.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{Hom}_{\mathcal{D}}(X,Y)  \coloneqq \prod_{i \in I} \mathrm{Hom}_{\mathcal{C}_i}(X_i,Y_i)
+\end{align*}
 <p>
 Dabei ist die <a href="20220817221033-komposition_von_morphismen.html#ID-72b71b59-7fac-4516-9115-9d589b47e0c3">Komposition von Morphismen</a> komponentenweise definiert.
 </p>

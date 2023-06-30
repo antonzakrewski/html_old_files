@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">konfinale Abbildung</h1>
-<div id="outline-container-org759864c" class="outline-2">
-<h2 id="org759864c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org181e954" class="outline-2">
+<h2 id="org181e954"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230225213611-konfinale_abbildung_cb8651ce2e36009d6c8476e6b148dd3a1e6b7d6f.svg" alt="20230225213611-konfinale_abbildung_cb8651ce2e36009d6c8476e6b148dd3a1e6b7d6f.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230225213611-konfinale_abbildung_9163ef8f755edc16fc190927c5cc6e245195cdda.svg" alt="20230225213611-konfinale_abbildung_9163ef8f755edc16fc190927c5cc6e245195cdda.svg" class="org-svg" /> <a href="20230206161154-gerichtete_menge.html#ID-cd512190-83e1-4c9f-85f5-d2fc367cf4ff">gerichtete Menge</a>.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230225213611-konfinale_abbildung_03b8ca23c8e6edac35d544bd175e9e9582c42eec.svg" alt="20230225213611-konfinale_abbildung_03b8ca23c8e6edac35d544bd175e9e9582c42eec.svg" class="org-svg" /> ist eine konfinale Abbildung, falls gilt
+Seien \((I, \triangleleft_I)\) und \((J, \triangleleft_J)\) <a href="20230206161154-gerichtete_menge.html#ID-cd512190-83e1-4c9f-85f5-d2fc367cf4ff">gerichtete Menge</a>.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(\phi: J \rightarrow I\) ist eine konfinale Abbildung, falls gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230225213611-konfinale_abbildung_426aada19a70de22cfddfcaa02ffe3f8e9a2a001.svg" alt="20230225213611-konfinale_abbildung_426aada19a70de22cfddfcaa02ffe3f8e9a2a001.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall i_0 \in I \exists j_0 \in J \forall j \triangleleft_j j_0 : \phi(j) \triangleleft_I i_0
+\end{align*}
 </div>
 </div>
 </div>

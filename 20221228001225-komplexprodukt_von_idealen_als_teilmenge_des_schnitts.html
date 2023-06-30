@@ -9,39 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexprodukt von Idealen als Teilmenge des Schnitts</h1>
-<div id="outline-container-org5eab098" class="outline-2">
-<h2 id="org5eab098"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org13b5759" class="outline-2">
+<h2 id="org13b5759"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_f57b126b18f86aabfc3949531f058b89820d0fa3.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_f57b126b18f86aabfc3949531f058b89820d0fa3.svg" class="org-svg" /> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> über <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(I,J\) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> über \(R\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_8ac4083d92c59cc1de38225487deae3f67ca6102.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_8ac4083d92c59cc1de38225487deae3f67ca6102.svg" class="org-svg" />
-</span>
+\begin{align*}
+IJ \subseteq I \cap J
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbebad13" class="outline-2">
-<h2 id="orgbebad13"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge33b7ec" class="outline-2">
+<h2 id="orge33b7ec"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_5be59db822e159cc348edf07252a7ab5b46ce4d4.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_5be59db822e159cc348edf07252a7ab5b46ce4d4.svg" class="org-svg" />, dann gilt <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_8f199293240c982b80c1bc18dc5d77bf276d79a7.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_8f199293240c982b80c1bc18dc5d77bf276d79a7.svg" class="org-svg" />.
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei zu zeigen: <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" class="org-svg" />:
-aufgrund von <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_79e4f82fc6327dd7289937cbfd54a6d2b6d181d1.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_79e4f82fc6327dd7289937cbfd54a6d2b6d181d1.svg" class="org-svg" /> folgt, dass <img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_e6df2f3fb14f2fb4452b4aa042bbc4b1ff2923bf.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_e6df2f3fb14f2fb4452b4aa042bbc4b1ff2923bf.svg" class="org-svg" /> und dann aufgrund der abgeschlossenheit als <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> auch:
+Sei \(a = \sum_{i=1}^{m} x_iy_i \in IJ\), dann gilt \(x_i, y_i \in R\).
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei zu zeigen: \(a \in I\):
+aufgrund von \(y_i \in R\) folgt, dass \(x_i \cdot y_i \in I\) und dann aufgrund der abgeschlossenheit als <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_0d5852b0c8cd86b2e571e150b9f82c317a654c23.svg" alt="20221228001225-komplexprodukt_von_idealen_als_teilmenge_des_schnitts_0d5852b0c8cd86b2e571e150b9f82c317a654c23.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=1}^{m} x_iy_i \in I
+\end{align*}
 </div>
 </div>
 </div>

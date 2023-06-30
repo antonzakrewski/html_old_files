@@ -9,45 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linearität der Determinante bezüglich einer Zeile</h1>
-<div id="outline-container-orga631dd6" class="outline-2">
-<h2 id="orga631dd6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfb29ac8" class="outline-2">
+<h2 id="orgfb29ac8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien <img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_5539eb0ff1c7f7909975edaa4727f0bf8096cc18.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_5539eb0ff1c7f7909975edaa4727f0bf8096cc18.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_1125d444657a97246340531d3b484ea681b2787a.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_1125d444657a97246340531d3b484ea681b2787a.svg" class="org-svg" />.
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien \(z_i,z_j,z_j' \in R^{n}\), \(r,r' \in R\).
 Dann folgt
 </p>
+\begin{align*}
+\mathrm{det} \left( z_1 , z_2 , \dots , r \cdot z_j + r' \cdot z_j' , \dots , z_n \right)  =& 
+\mathrm{det} \left( z_1 , z_2 , \dots , r \cdot z_j , \dots , z_n \right) + \mathrm{det} \left( z_1 , z_2 , \dots , r' \cdot z_j' , \dots , z_n \right) 
+=& 
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_79dcd9d8b98ec6ba31cfca0ada5e795b8a72b827.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_79dcd9d8b98ec6ba31cfca0ada5e795b8a72b827.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_6618dd8dbb2f57722e2cf936228dee0e5747fddf.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_6618dd8dbb2f57722e2cf936228dee0e5747fddf.svg" class="org-svg" />
-</span>
+\begin{align*}
+\det \begin{pmatrix} z_1 \\ \vdots \\ r \cdot z_j + r' \cdot z_j' \\ \vdots \\ z_n \end{pmatrix} =& r \cdot \det \begin{pmatrix} z_1 \\ \vdots \\ z_j  \\ \vdots \\ z_n \end{pmatrix} + r' \cdot \det \begin{pmatrix} z_1 \\ \vdots \\ s'_j  \\ \vdots \\ z_n \end{pmatrix} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3810fbe" class="outline-2">
-<h2 id="org3810fbe"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org297ba5a" class="outline-2">
+<h2 id="org297ba5a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_8df96e19a442b20a6f48c69aafc82dcd10ebdc49.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_8df96e19a442b20a6f48c69aafc82dcd10ebdc49.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_a52cd50fd61ecb95b5900ed5e592570e2abcc102.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_a52cd50fd61ecb95b5900ed5e592570e2abcc102.svg" class="org-svg" />.
+Sei \(z_j = \left( \alpha_{j1},...,\alpha_{jn}\right)\) und \(z_j = \left( \alpha'_{j1},...,\alpha'_{jn}\right)\).
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_fd004bffd193847ccd5ca1afd94bb21887065c1c.svg" alt="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile_fd004bffd193847ccd5ca1afd94bb21887065c1c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det \begin{pmatrix} z_1 \\ \vdots \\ r \cdot z_j + r' \cdot z_j' \\ \vdots \\ z_n \end{pmatrix} =& 
+\sum_{\tau \in S_n} \mathrm{sgn}(\tau)\alpha_{1\tau(1)} ... \left(r \alpha_{j\tau(j)} + r' \alpha'_{j\tau(j)}\right)...\alpha_{n\tau(n)} \\
+=& \sum_{\tau \in S_n} \mathrm{sgn}(\tau)\alpha_{1\tau(1)} ... \left(r \alpha_{j\tau(j)}\right)...\alpha_{n\tau(n)} +
+\sum_{\tau \in S_n} \mathrm{sgn}(\tau)\alpha_{1\tau(1)} ... \left(r' \alpha'_{j\tau(j)}\right)...\alpha_{n\tau(n)}  \\
+=& r \cdot \sum_{\tau \in S_n} \mathrm{sgn}(\tau)\alpha_{1\tau(1)} ... \alpha_{j\tau(j)}...\alpha_{n\tau(n)} +
+r' \sum_{\tau \in S_n} \mathrm{sgn}(\tau)\alpha_{1\tau(1)} ... \alpha'_{j\tau(j)}...\alpha_{n\tau(n)}  \\
+=& r \cdot \det \begin{pmatrix} z_1 \\ \vdots \\ z_j  \\ \vdots \\ z_n \end{pmatrix} + r' \cdot \det \begin{pmatrix} z_1 \\ \vdots \\ s'_j  \\ \vdots \\ z_n \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

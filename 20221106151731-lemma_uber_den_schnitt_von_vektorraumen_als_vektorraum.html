@@ -9,62 +9,80 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Schnitt von Vektorräumen als Vektorraum</h1>
-<div id="outline-container-orgd8f6234" class="outline-2">
-<h2 id="orgd8f6234"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-orgb553570" class="outline-2">
+<h2 id="orgb553570"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und sei <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_0bb1062ffc0af6c2319eb6600915f405f71a3d79.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_0bb1062ffc0af6c2319eb6600915f405f71a3d79.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterräumen</a>.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und sei \(\{U_i\}_{i \in I}\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterräumen</a>.
 Dann ist auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_44076012ca148b735963414d435324b82623136f.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_44076012ca148b735963414d435324b82623136f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+U =& \bigcap_{i \in I} U_i \subseteq V
+\end{align*}
 <p>
 ebenfalls ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterraum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org324ed6f" class="outline-2">
-<h2 id="org324ed6f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb517a18" class="outline-2">
+<h2 id="orgb517a18"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgac25512" class="outline-3">
-<h3 id="orgac25512"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org9c0b526" class="outline-3">
+<h3 id="org9c0b526"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="20221228143053-schnitt_von_gruppen_als_gruppe.html#ID-1bc7769c-bc24-4836-9da4-6658173dc861">Schnitt von Gruppen als Gruppe</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org08e8101" class="outline-3">
-<h3 id="org08e8101"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgd218325" class="outline-3">
+<h3 id="orgd218325"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sind <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_31273ea120ea649d3f4f8053bf0013ab3fc5b018.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_31273ea120ea649d3f4f8053bf0013ab3fc5b018.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" class="org-svg" /> , so folgt auch für alle <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" />:
+Sind \(u,u' \in U\) und \(\alpha \in K\) , so folgt auch für alle \(i \in I\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_ec5f0e93ec8288bed04aa2b551ea90c7b04e66ec.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_ec5f0e93ec8288bed04aa2b551ea90c7b04e66ec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+u + u' \in U_i \\
+\alpha \cdot u \in U_1
+\end{align*}
 <p>
-da die <img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" class="org-svg" /> auch <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterräume</a> sind.
+da die \(U_i\) auch <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterräume</a> sind.
 Damit folgt auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_5eb935bf8fbf6f696f2768233efb8683be4582aa.svg" alt="20221106151731-lemma_uber_den_schnitt_von_vektorraumen_als_vektorraum_5eb935bf8fbf6f696f2768233efb8683be4582aa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+u + u' \in U \\
+\alpha \cdot u \in U \\
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">geometrische Konstruktion einer Norm</h1>
-<div id="outline-container-org9d6a3d8" class="outline-2">
-<h2 id="org9d6a3d8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4239f75" class="outline-2">
+<h2 id="org4239f75"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> mit einem <a href="20230426085945-einheitsball.html#ID-cbaf30c1-7bec-4cb0-9179-72441c542c40">Einheitsball</a> <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_7a0ec84615f3608f6748d8904c7efc75e570ff9e.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_7a0ec84615f3608f6748d8904c7efc75e570ff9e.svg" class="org-svg" />, welcher folgende Eigenschäften erfüllt:
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> mit einem <a href="20230426085945-einheitsball.html#ID-cbaf30c1-7bec-4cb0-9179-72441c542c40">Einheitsball</a> \(B_1[0]\), welcher folgende Eigenschäften erfüllt:
 </p>
 <ul class="org-ul">
 <li><a href="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm.html#ID-b21cb027-38f6-4550-80af-197f9e9f7e96">Konvexität eines Balls in einem Normierten Raum</a></li>
@@ -25,93 +50,86 @@ Sei <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstru
 <li><a href="20230426091256-beschrankung_des_einheitsballs.html#ID-6332c6f6-f2d3-4fc7-b843-7a45422d8471">Beschränktheit des Einheitsballs</a></li>
 </ul>
 <p>
-Dann existiert eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" class="org-svg" />, welche den Einheitsball <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_7a0ec84615f3608f6748d8904c7efc75e570ff9e.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_7a0ec84615f3608f6748d8904c7efc75e570ff9e.svg" class="org-svg" /> erzeugt
+Dann existiert eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> \(\| \cdot \|\), welche den Einheitsball \(B_1[0]\) erzeugt
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7266de" class="outline-2">
-<h2 id="orgb7266de"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org77918cd" class="outline-2">
+<h2 id="org77918cd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Wir definieren die Norm durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_36f968f360209608e986a19a4ceef3b9739b9b27.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_36f968f360209608e986a19a4ceef3b9739b9b27.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| v \| = \inf \{ \frac{1}{\lambda} > 0 \vert \lambda v \in B_{1}[0]\}
+\end{align*}
 <p>
-Wir zeigen, dass <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_3c683a2c38bd9c84f0af7151ee7cfb958de36627.svg" class="org-svg" /> die Bedingungen einer <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> erfüllt:
+Wir zeigen, dass \(\| \cdot \|\) die Bedingungen einer <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> erfüllt:
 </p>
 </div>
-<div id="outline-container-orga831b43" class="outline-3">
-<h3 id="orga831b43"><span class="section-number-3">2.1.</span> <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
+<div id="outline-container-orgd7e2ff7" class="outline-3">
+<h3 id="orgd7e2ff7"><span class="section-number-3">2.1.</span> <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_1742f7da5c94c002d2b36090f73224c8aa85593d.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_1742f7da5c94c002d2b36090f73224c8aa85593d.svg" class="org-svg" />, so gilt:
+Sei \(v \in V\) und \(\mu > 0\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_cb5187f875ef4dc0c14526ad3981a249b5c0eb69.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_cb5187f875ef4dc0c14526ad3981a249b5c0eb69.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \mu v \| =& \inf\{ \frac{1}{\lambda} > 0 \vert \lambda \cdot \mu v \in B_1[0] \} \\
+=& 
+=& \mu \cdot \inf \{\frac{1}{\lambda} > 0 \vert \lambda \cdot v \in B_1[0]\} \\
+=& \mu \cdot \| v \|
+\end{align*}
 <p>
 Desweitern gilt wegen der Punktysmmetrie zum Ursprung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_bd0f01cc318dec2d379230c149ce764704855fe8.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_bd0f01cc318dec2d379230c149ce764704855fe8.svg" class="org-svg" />
-</span>
+\begin{align*}
+\| - \mu v \| =& \inf \{\frac{1}{\lambda} > 0 \vert \lambda (-\mu) v \in B_1[0] \}  \\
+=& \inf \{\frac{1}{\lambda} > 0 \vert \lambda \mu v \in B_1[0] \}  \\
+=& \| \mu v \| \\
+=& \mu \| v \| \\
+=& \vert \mu \vert \| v \| \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd15f466" class="outline-3">
-<h3 id="orgd15f466"><span class="section-number-3">2.2.</span> <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
+<div id="outline-container-orgdf90c24" class="outline-3">
+<h3 id="orgdf90c24"><span class="section-number-3">2.2.</span> <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> folgt <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_6d1cb7e6be40df3477b75d9ceeed7a9ee06ead77.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_6d1cb7e6be40df3477b75d9ceeed7a9ee06ead77.svg" class="org-svg" /> aus der Definition.
+Für \(v \in V\) folgt \(\| v \| \geq 0\) aus der Definition.
 Ferner gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_8c9dcac342152c8d70af6c35425223ca5032e4a4.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_8c9dcac342152c8d70af6c35425223ca5032e4a4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| 0 \| =& \| 0 \cdot 0 \| \\
+=& \vert 0 \vert \cdot \| 0 \| \\
+=& 0
+\end{align*}
 <p>
-Nach Annahme der Beschränktheit gilt für <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" class="org-svg" />, dass ein maximales $&tau; &isin; ^+ existiert mit <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_7411417a8d0728cb8d61a16448cce4ee7ace7617.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_7411417a8d0728cb8d61a16448cce4ee7ace7617.svg" class="org-svg" />
-Daraus folgt, dass $ \|v  \| inf \{&gt; 0 &vert; &lambda; &sdot; v &isin; B<sub>1</sub>[0]\} = $ und damit gilt <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_82cc98251748afbef96094e5d1d69f9f591d95c2.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_82cc98251748afbef96094e5d1d69f9f591d95c2.svg" class="org-svg" />
+Nach Annahme der Beschränktheit gilt für \(v \neq 0\), dass ein maximales $&tau; &isin; \mathbb{R}^+ existiert mit \(\tau \cdot v \in B_1[0]\)
+Daraus folgt, dass $ \|v  \|  \coloneqq inf \{\frac{1}{\lambda} &gt; 0 &vert; &lambda; &sdot; v &isin; B<sub>1</sub>[0]\} = \frac{1}{\tau}$ und damit gilt \(\| v \| > 0\)
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc1ed390" class="outline-3">
-<h3 id="orgc1ed390"><span class="section-number-3">2.3.</span> <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
+<div id="outline-container-org39467f2" class="outline-3">
+<h3 id="org39467f2"><span class="section-number-3">2.3.</span> <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der <a href="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm.html#ID-b21cb027-38f6-4550-80af-197f9e9f7e96">Konvexität eines Balls in einem Normierten Raum</a>:
-Sei <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_8e025385c9034a65950abcd44a6c763325261d8e.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_8e025385c9034a65950abcd44a6c763325261d8e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_d8b2fa1609ac219dfb84a5a976966d75f7824dc9.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_d8b2fa1609ac219dfb84a5a976966d75f7824dc9.svg" class="org-svg" />, so gilt für die <a href="20230204211609-konvexkombination.html#ID-3495c0b0-8eff-479c-bac4-33d0701ce56c">Konvexkombination</a>:
+Sei \(x \neq 0\) und \(y \in V\), so gilt für die <a href="20230204211609-konvexkombination.html#ID-3495c0b0-8eff-479c-bac4-33d0701ce56c">Konvexkombination</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_078481a58575cc2b68bde2693c569738d8fc8cd1.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_078481a58575cc2b68bde2693c569738d8fc8cd1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{x + y }{\| x \| + \| y \|} =& \frac{\| x \|}{\| x \| + \| y \|} \cdot \frac{x}{\| x \|} + \frac{\| y \|}{\| x \| + \| y \|} \frac{y}{\| y \|}
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_9a7e9af5120fc6e63718d561234b1abe85743fdd.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_9a7e9af5120fc6e63718d561234b1abe85743fdd.svg" class="org-svg" />
-Damit gilt <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_caf3c3dc2cf58cbedd30acb1e756f35f18f352e6.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_caf3c3dc2cf58cbedd30acb1e756f35f18f352e6.svg" class="org-svg" />, da $\| <img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_1dbb54a2b127853b168cdb08fd83c506f92501a9.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_1dbb54a2b127853b168cdb08fd83c506f92501a9.svg" class="org-svg" /> gilt.
+mit \(\frac{x}{\| x \|} = \frac{y}{\| y \|} = 1\)
+Damit gilt \(\|\frac{x + y}{\| x \| + \|y\|} \leq 1\), da $\| \(\frac{x + y}{\| x \| + \| y \|} \in B_1[0]\) gilt.
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426091846-geometrische_konstruktion_einer_norm_3147aa6b3bac0a6763a69177242f7e81a5e5f07a.svg" alt="20230426091846-geometrische_konstruktion_einer_norm_3147aa6b3bac0a6763a69177242f7e81a5e5f07a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\|  \frac{x + y }{\| x \| + \| y \|} \| \leq& 1 \\
+\frac{1}{\| x \| + \| y \|} \cdot \| x + y \| \leq& 1 \\
+\| x + y \| \leq& \| x \| + \| y\|
+\end{align*}
 </div>
 </div>
 </div>

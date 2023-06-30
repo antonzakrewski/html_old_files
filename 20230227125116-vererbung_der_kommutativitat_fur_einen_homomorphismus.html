@@ -9,49 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vererbung der Kommutativität für einen Homomorphismus</h1>
-<div id="outline-container-orgceb4704" class="outline-2">
-<h2 id="orgceb4704"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8f9fa32" class="outline-2">
+<h2 id="org8f9fa32"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_4ed8bf36980e8232ef9307f5b4fe0b10f0b6bcfa.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_4ed8bf36980e8232ef9307f5b4fe0b10f0b6bcfa.svg" class="org-svg" /> <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Strukturen</a> und <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_e56a26e4f8a78b1097cbf850c88e379a97f4680a.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_e56a26e4f8a78b1097cbf850c88e379a97f4680a.svg" class="org-svg" /> ein <a href="20230318213004-homomorphismus_algebra.html#ID-76b5949b-78d2-4deb-987f-839b2e40804a">Homomorphismus</a> (?), dann gilt:
-<img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_35452dffa4af930a7bb8324633c31fd34d25cf0f.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_35452dffa4af930a7bb8324633c31fd34d25cf0f.svg" class="org-svg" /> ist <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a>, wenn <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> kommutativ  ist
+Seien \((A, \circ), (A', \circ')\) <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Strukturen</a> und \(f: A \rightarrow A'\) ein <a href="20230318213004-homomorphismus_algebra.html#ID-76b5949b-78d2-4deb-987f-839b2e40804a">Homomorphismus</a> (?), dann gilt:
+\(\mathrm{im}(A')\) ist <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a>, wenn \(A\) kommutativ  ist
 </p>
 </div>
 </div>
-<div id="outline-container-orgcea921c" class="outline-2">
-<h2 id="orgcea921c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org75a4064" class="outline-2">
+<h2 id="org75a4064"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_f8457569ac898f82106271572eb6880e1f878677.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_f8457569ac898f82106271572eb6880e1f878677.svg" class="org-svg" />, so existieren <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_13b3ecc540a04e41f500aeb19590fb6366519218.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_13b3ecc540a04e41f500aeb19590fb6366519218.svg" class="org-svg" />, so dass gilt
+Seien \(a_1', a_2' \in \mathrm{im}(A')\), so existieren \(a_1, a_2 \in A\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_ef703bf6c16db8efa4688404e253e3c5b83b91de.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_ef703bf6c16db8efa4688404e253e3c5b83b91de.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(a_1) =& a_1' \\
+f(a_2) =& a_2'
+\end{align*}
 <p>
-da <img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> kommutativ ist, gilt auch
+da \(A\) kommutativ ist, gilt auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_9851c081faca1d911ac30595f0f2675126edfbbf.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_9851c081faca1d911ac30595f0f2675126edfbbf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(a_1 \cdot a_2) = f(a_2 \cdot a_1) 
+\end{align*}
 <p>
 und aufgrund Anwendung der <a href="20230318213004-homomorphismus_algebra.html#ID-76b5949b-78d2-4deb-987f-839b2e40804a">Homomorphismus</a> (?) folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_3287d37af30818d739eab0c598a320ca0d5cdb48.svg" alt="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus_3287d37af30818d739eab0c598a320ca0d5cdb48.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(a_1) \cdot f(a_2) =& f(a_2) \cdot f(a_1) \\
+a_1' \cdot a_2' =& a_2' \cdot a_1'
+\end{align*}
 </div>
 </div>
 </div>

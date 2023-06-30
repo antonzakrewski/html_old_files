@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristische Polynom</h1>
-<div id="outline-container-org4c8fc44" class="outline-2">
-<h2 id="org4c8fc44"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga45596b" class="outline-2">
+<h2 id="orga45596b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230222202847-charakteristische_polynom_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_edddf0fc3a8af2d515f04aad68076e47f398eaf3.svg" alt="20230222202847-charakteristische_polynom_edddf0fc3a8af2d515f04aad68076e47f398eaf3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_7ab9504a9f5e9fb404bce59f7da7d798d85efebb.svg" alt="20230222202847-charakteristische_polynom_7ab9504a9f5e9fb404bce59f7da7d798d85efebb.svg" class="org-svg" /> ein <a href="20230318174931-korperendomorphismus.html#ID-a4afa2cb-fb02-41f6-a1c8-693631acb462">Endomorphismus</a> und <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_563e4e1b36732cf612d1f2f6367bde7c3be32fc9.svg" alt="20230222202847-charakteristische_polynom_563e4e1b36732cf612d1f2f6367bde7c3be32fc9.svg" class="org-svg" /> die dazugehörige <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Isomorphie zwischen Matrixdarstellung und Homomorphismus</a> mit <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230222202847-charakteristische_polynom_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" />
-Das charakteristische Polynom von <img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230222202847-charakteristische_polynom_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist definiert als
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(\mathrm{dim}_{K}(V) = n\) und \(f: V \rightarrow V\) ein <a href="20230318174931-korperendomorphismus.html#ID-a4afa2cb-fb02-41f6-a1c8-693631acb462">Endomorphismus</a> und \(A_{f, B,B}\) die dazugehörige <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Isomorphie zwischen Matrixdarstellung und Homomorphismus</a> mit <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(B\)
+Das charakteristische Polynom von \(A\) ist definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222202847-charakteristische_polynom_e98fe3ceb87145704a508af7ba741a54f5fe07f1.svg" alt="20230222202847-charakteristische_polynom_e98fe3ceb87145704a508af7ba741a54f5fe07f1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_A = \det{xE_n - A} \in K[x]
+\end{align*}
 <p>
 siehe: <a href="20230222203215-wohldefiniertheit_des_charakteristischen_polynoms_bezuglich_der_basis.html#ID-13842095-b256-4644-9559-5995c19cbc9e">Wohldefiniertheit des charakteristischen Polynoms bezüglich der Basis</a>
 </p>

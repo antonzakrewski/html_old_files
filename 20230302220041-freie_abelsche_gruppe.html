@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">freie abelsche Gruppe</h1>
-<div id="outline-container-org181f169" class="outline-2">
-<h2 id="org181f169"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org26e0a2c" class="outline-2">
+<h2 id="org26e0a2c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230302220041-freie_abelsche_gruppe_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230302220041-freie_abelsche_gruppe_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist die freie abelsche Gruppe <img src="file:///home/anton/html/ltximg/20230302220041-freie_abelsche_gruppe_d39dc3ba626a61a1365134d044eaaf5eae53100e.svg" alt="20230302220041-freie_abelsche_gruppe_d39dc3ba626a61a1365134d044eaaf5eae53100e.svg" class="org-svg" /> definiert als <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der Ausdrücke der Form
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist die freie abelsche Gruppe \(G[X]\) definiert als <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der Ausdrücke der Form
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230302220041-freie_abelsche_gruppe_c89cbfec78998d6057cf2a45a4cd9f4b2fc20e86.svg" alt="20230302220041-freie_abelsche_gruppe_c89cbfec78998d6057cf2a45a4cd9f4b2fc20e86.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g = \sum_{x \in X} m_x x
+\end{align*}
 <p>
-wobei <img src="file:///home/anton/html/ltximg/20230302220041-freie_abelsche_gruppe_527a60c5294c12cf71479d809ea995618d7c9c80.svg" alt="20230302220041-freie_abelsche_gruppe_527a60c5294c12cf71479d809ea995618d7c9c80.svg" class="org-svg" /> mit <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast allen</a> <img src="file:///home/anton/html/ltximg/20230302220041-freie_abelsche_gruppe_cc455b658923b9486502d6fe9eba0c3683105435.svg" alt="20230302220041-freie_abelsche_gruppe_cc455b658923b9486502d6fe9eba0c3683105435.svg" class="org-svg" />.
+wobei \(m_x \in \mathbb{Z}\) mit <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast allen</a> \(m_x = 0\).
 </p>
 </div>
 </div>

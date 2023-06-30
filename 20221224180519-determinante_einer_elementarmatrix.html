@@ -9,39 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinante einer Elementarmatrix</h1>
-<div id="outline-container-org279e10e" class="outline-2">
-<h2 id="org279e10e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcc7092d" class="outline-2">
+<h2 id="orgcc7092d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_de4c33e97df5a7fd54e54e4268de046c0814ee28.svg" alt="20221224180519-determinante_einer_elementarmatrix_de4c33e97df5a7fd54e54e4268de046c0814ee28.svg" class="org-svg" /> eine <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrix</a>.
+Sei \(T_{ij}(\alpha)\) eine <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrix</a>.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_39e048486d186292bf646bdd6ff2d0a165dd6c53.svg" alt="20221224180519-determinante_einer_elementarmatrix_39e048486d186292bf646bdd6ff2d0a165dd6c53.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{det}(T_{ij}(\alpha)) = 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org58b757d" class="outline-2">
-<h2 id="org58b757d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8632c88" class="outline-2">
+<h2 id="org8632c88"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Konstruktion existiert für <img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_922f966941c2624a915fc3356eb774fa3d1b808a.svg" alt="20221224180519-determinante_einer_elementarmatrix_922f966941c2624a915fc3356eb774fa3d1b808a.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_12241b8cf248debc3a6130f3c93d338799f8f076.svg" alt="20221224180519-determinante_einer_elementarmatrix_12241b8cf248debc3a6130f3c93d338799f8f076.svg" class="org-svg" />, so dass gilt
-<img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_43c8fc28c16cbbd7751e87ac7699944175fc838d.svg" alt="20221224180519-determinante_einer_elementarmatrix_43c8fc28c16cbbd7751e87ac7699944175fc838d.svg" class="org-svg" />
-Damit bleibt nur <img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_bed012f32ac79ce0c39d2d6fd7f95dd7e74d804d.svg" alt="20221224180519-determinante_einer_elementarmatrix_bed012f32ac79ce0c39d2d6fd7f95dd7e74d804d.svg" class="org-svg" /> übrig, so dass für die <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> gilt
+Nach Konstruktion existiert für \(\tau \neq \mathrm{id}_{}\) ein \(j\), so dass gilt
+\(\alpha_{j\tau(j)} = 0\)
+Damit bleibt nur \(\alpha_{11}, \alpha_{22}, ... \alpha_{nn} = 1\) übrig, so dass für die <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224180519-determinante_einer_elementarmatrix_3ccad347d771c3c6fd7d50d44978d493353169d8.svg" alt="20221224180519-determinante_einer_elementarmatrix_3ccad347d771c3c6fd7d50d44978d493353169d8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(T_{ij}(\alpha) = 1
+\end{align*}
 </div>
 </div>
 </div>

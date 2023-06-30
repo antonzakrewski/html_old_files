@@ -3,60 +3,75 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Binomialkoeffizient: Wertemenge</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Binomialkoeffizient: Wertemenge</h1>
-<div id="outline-container-orgafb6ad4" class="outline-2">
-<h2 id="orgafb6ad4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5dfcce4" class="outline-2">
+<h2 id="org5dfcce4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_e904b64a4f22db5cb11d16ff37b40698c65730d8.svg" alt="20220108163005-binomialkoeffizient_wertemenge_e904b64a4f22db5cb11d16ff37b40698c65730d8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\binom{n}{k} \in \mathbb{N} \quad \text{für } n,k \in \mathbb{N}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5614eb5" class="outline-2">
-<h2 id="org5614eb5"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org00ea8ba" class="outline-2">
+<h2 id="org00ea8ba"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org38fdb82" class="outline-3">
-<h3 id="org38fdb82"><span class="section-number-3">2.1.</span> über <a href="20220106223354-handubliche_formel_binomialkoeffizient.html#ID-a5f59058-3c32-430e-a346-4ecc73f2afe7">Handübliche Formel: Binomialkoeffizient</a></h3>
+<div id="outline-container-orgb17d91b" class="outline-3">
+<h3 id="orgb17d91b"><span class="section-number-3">2.1.</span> über <a href="20220106223354-handubliche_formel_binomialkoeffizient.html#ID-a5f59058-3c32-430e-a346-4ecc73f2afe7">Handübliche Formel: Binomialkoeffizient</a></h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_596bbeae77ce3d887851ab8d7a712c84b75c2b0f.svg" alt="20220108163005-binomialkoeffizient_wertemenge_596bbeae77ce3d887851ab8d7a712c84b75c2b0f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\binom{n}{k} = \frac{n!}{k! \cdot (n-k)!}
+\end{align*}
 <ul class="org-ul">
-<li><img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_942a68a7729cc7ea5ec459fae6f926afd69246f4.svg" alt="20220108163005-binomialkoeffizient_wertemenge_942a68a7729cc7ea5ec459fae6f926afd69246f4.svg" class="org-svg" /> kürzt sich mit hinteren faktoren von <img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_d5f171cb1be014adbb5dc6c23198a02d3090bea9.svg" alt="20220108163005-binomialkoeffizient_wertemenge_d5f171cb1be014adbb5dc6c23198a02d3090bea9.svg" class="org-svg" /></li>
-<li>Annahme: <img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_29d256d2fcd98c3c236eb15b1dcbf1d1b506e0ad.svg" alt="20220108163005-binomialkoeffizient_wertemenge_29d256d2fcd98c3c236eb15b1dcbf1d1b506e0ad.svg" class="org-svg" />
-<img src="ltximg/20220108163005-binomialkoeffizient_wertemenge_4a91cca12944e1b9db08920db3bf48b797105f48.svg" alt="20220108163005-binomialkoeffizient_wertemenge_4a91cca12944e1b9db08920db3bf48b797105f48.svg" class="org-svg" /> k-faktoren vorhanden, jeweils um (n-k) größer
+<li>\((n-k)!\) kürzt sich mit hinteren faktoren von \(n!\)</li>
+<li>Annahme: \(k < n\)
+\(\rightarrow\) k-faktoren vorhanden, jeweils um (n-k) größer
 ???</li>
 <li>bzw: minus nach <a href="20220108163834-binomialkoeffizient_n_k.html#ID-540a5af1-8ac1-4bf6-b8ad-ff9ce8eee965">Binomialkoeffizient - (n-k)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgebda2f1" class="outline-3">
-<h3 id="orgebda2f1"><span class="section-number-3">2.2.</span> Sonderfälle</h3>
+<div id="outline-container-orga435031" class="outline-3">
+<h3 id="orga435031"><span class="section-number-3">2.2.</span> Sonderfälle</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
-<li>$k &gt; n &rArr; 0 $</li>
+<li>$k &gt; n &rArr; \binom{k}{n} 0 $</li>
 </ul>
 </div>
 </div>

@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit des Grenzwert einer Folge impliziert i.A. nicht Hausdorff-Eigenschaft</h1>
-<div id="outline-container-org7445984" class="outline-2">
-<h2 id="org7445984"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9e6009d" class="outline-2">
+<h2 id="org9e6009d"><span class="section-number-2">1.</span> Satz</h2>
 </div>
-<div id="outline-container-org7e1efed" class="outline-2">
-<h2 id="org7e1efed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5282a04" class="outline-2">
+<h2 id="org5282a04"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_1e01e54db654897cf4e4902878febeb8e3f9b3cf.svg" alt="20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_1e01e54db654897cf4e4902878febeb8e3f9b3cf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{\Omega}=& \Omega_0 \cup \{\omega_1, \omega_1'\}
+\end{align*}
 <p>
-mit der gröbsten Topologie, die <img src="file:///home/anton/html/ltximg/20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_0a6fc1a6c39b895645a8f24c62e376266feeb805.svg" alt="20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_0a6fc1a6c39b895645a8f24c62e376266feeb805.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_0a6fc1a6c39b895645a8f24c62e376266feeb805.svg" alt="20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_0a6fc1a6c39b895645a8f24c62e376266feeb805.svg" class="org-svg" /> etnhält
+mit der gröbsten Topologie, die \(\Omega_0 \cup \{\omega_1\}\) und \(\Omega_0 \cup \{\omega_1\}\) etnhält
 </p>
 
 <p>
-Jede Folge in <img src="file:///home/anton/html/ltximg/20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_af7f942d113a57f4bafa1061a5cea572aa7225ff.svg" alt="20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_af7f942d113a57f4bafa1061a5cea572aa7225ff.svg" class="org-svg" /> hat genau einen Limespuknt aber <img src="file:///home/anton/html/ltximg/20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_af7f942d113a57f4bafa1061a5cea572aa7225ff.svg" alt="20230601120920-eindeutigkeit_des_grenzwert_einer_folge_impliziert_i_a_nicht_hausdorff_eigenschaft_af7f942d113a57f4bafa1061a5cea572aa7225ff.svg" class="org-svg" /> ist nicht Hausdorff
+Jede Folge in \(\overline{\Omega}\) hat genau einen Limespuknt aber \(\overline{\Omega}\) ist nicht Hausdorff
 Grund: 
 </p>
 </div>

@@ -3,25 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Eindeutigkeit der Inversen Abbildung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit der Inversen Abbildung</h1>
-<div id="outline-container-orga7e42a4" class="outline-2">
-<h2 id="orga7e42a4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgba84031" class="outline-2">
+<h2 id="orgba84031"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>Seien <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_028941f6548a5305c4872d2dc34aba3014b33339.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_028941f6548a5305c4872d2dc34aba3014b33339.svg" class="org-svg" /> und <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_d9d602cac41f75282c82d003114513da15b18111.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_d9d602cac41f75282c82d003114513da15b18111.svg" class="org-svg" /> die <a href="20220303215909-inverse_abbildung.html#ID-07d2e1ee-19ad-4bdf-8b68-5e2da6f60f1a">Inverse Abbildung</a> zu <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /></li>
+<li>Seien \(f'\) und \(f''\) die <a href="20220303215909-inverse_abbildung.html#ID-07d2e1ee-19ad-4bdf-8b68-5e2da6f60f1a">Inverse Abbildung</a> zu \(f\)</li>
 <li>aufgrund der <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektivität</a> (siehe: <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Satz über die Invertierbarkeit bijektiver Abbildungen</a>) gilt:
 <ul class="org-ul">
-<li>für jedes <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_b09493da9ff81a685b9eef6b9fb934252bf8d800.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_b09493da9ff81a685b9eef6b9fb934252bf8d800.svg" class="org-svg" /> gibt es genau ein <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" class="org-svg" /> mit <img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_c41740abfba7d8d9ba91e405c7b6cd5649d54a1b.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_c41740abfba7d8d9ba91e405c7b6cd5649d54a1b.svg" class="org-svg" /></li>
-<li><img src="ltximg/20220303214511-eindeutigkeit_der_inversen_abbildung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20220303214511-eindeutigkeit_der_inversen_abbildung_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /> jede Inverse Abbildung muss y auf x abbilden</li>
+<li>für jedes \(y \in Y\) gibt es genau ein \(x \in X\) mit \(f(x) = y\)</li>
+<li>\(\Rightarrow\) jede Inverse Abbildung muss y auf x abbilden</li>
 </ul></li>
 </ul>
 <p>

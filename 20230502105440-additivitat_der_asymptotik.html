@@ -3,57 +3,73 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Additivität der Asymptotik</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Additivität der Asymptotik</h1>
-<div id="outline-container-org113e2e0" class="outline-2">
-<h2 id="org113e2e0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga0ac8d2" class="outline-2">
+<h2 id="orga0ac8d2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230502105440-additivitat_der_asymptotik_62a372af8f0e6c6a5d6a3a954a89917cce39a506.svg" alt="20230502105440-additivitat_der_asymptotik_62a372af8f0e6c6a5d6a3a954a89917cce39a506.svg" class="org-svg" /> reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> dann gilt für die <a href="20230428093541-landau_notation.html#ID-aa09c71c-2c6b-4113-9d36-20f95aa0009a">Landau-Notation</a>:
+Seien \(f,g\) reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> dann gilt für die <a href="20230428093541-landau_notation.html#ID-aa09c71c-2c6b-4113-9d36-20f95aa0009a">Landau-Notation</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230502105440-additivitat_der_asymptotik_ce5983d70654361a591a8770de4cd8f142708e1e.svg" alt="20230502105440-additivitat_der_asymptotik_ce5983d70654361a591a8770de4cd8f142708e1e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+o(f) + o(g) =& o(\vert f \vert + \vert g \vert) \\
+O(f) + O(g) =& O(\vert f \vert + \vert g \vert)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9bf940e" class="outline-2">
-<h2 id="org9bf940e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb2307a0" class="outline-2">
+<h2 id="orgb2307a0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd3c0658" class="outline-3">
-<h3 id="orgd3c0658"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org1b156c9" class="outline-3">
+<h3 id="org1b156c9"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme steht die Linke Seite für die Summe zweier Funktionen <img src="ltximg/20230502105440-additivitat_der_asymptotik_103a19203f2ce48f6cf32024520ed91ceb19c808.svg" alt="20230502105440-additivitat_der_asymptotik_103a19203f2ce48f6cf32024520ed91ceb19c808.svg" class="org-svg" />, so dass gilt:
+Nach Annahme steht die Linke Seite für die Summe zweier Funktionen \(a(x),b(x)\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230502105440-additivitat_der_asymptotik_40c6bec8d5b4dcb5c07960a25cf3e015b5d921e2.svg" alt="20230502105440-additivitat_der_asymptotik_40c6bec8d5b4dcb5c07960a25cf3e015b5d921e2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\forall \varepsilon > 0 \exists 
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-org7c578aa" class="outline-3">
-<h3 id="org7c578aa"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orge91888f" class="outline-3">
+<h3 id="orge91888f"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 analog

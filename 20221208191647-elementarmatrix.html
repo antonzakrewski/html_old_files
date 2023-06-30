@@ -3,25 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Elementarmatrix</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elementarmatrix</h1>
-<div id="outline-container-org9f8c949" class="outline-2">
-<h2 id="org9f8c949"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga0fb442" class="outline-2">
+<h2 id="orga0fb442"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221208191647-elementarmatrix_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" alt="20221208191647-elementarmatrix_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="ltximg/20221208191647-elementarmatrix_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" alt="20221208191647-elementarmatrix_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" class="org-svg" />.
-Eine Elementarmatrix <img src="ltximg/20221208191647-elementarmatrix_35a1902a06ad5b7b9952af4e26eb5d30d857881e.svg" alt="20221208191647-elementarmatrix_35a1902a06ad5b7b9952af4e26eb5d30d857881e.svg" class="org-svg" /> hat die Form:
-a) <img src="ltximg/20221208191647-elementarmatrix_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" alt="20221208191647-elementarmatrix_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" class="org-svg" /> an der Stelle <img src="ltximg/20221208191647-elementarmatrix_839f34a9f6238b76e8c63b3b2cd3104d27af4b1a.svg" alt="20221208191647-elementarmatrix_839f34a9f6238b76e8c63b3b2cd3104d27af4b1a.svg" class="org-svg" /> für <img src="ltximg/20221208191647-elementarmatrix_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" alt="20221208191647-elementarmatrix_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" class="org-svg" />
-b) <img src="ltximg/20221208191647-elementarmatrix_8045148662054ba953d7a54acaaa9a9ab898c093.svg" alt="20221208191647-elementarmatrix_8045148662054ba953d7a54acaaa9a9ab898c093.svg" class="org-svg" /> auf der Diagonalen (d.h. <img src="ltximg/20221208191647-elementarmatrix_10017fccb38523e16f193ec784818888ce3652dc.svg" alt="20221208191647-elementarmatrix_10017fccb38523e16f193ec784818888ce3652dc.svg" class="org-svg" /> für alle <img src="ltximg/20221208191647-elementarmatrix_b95297aeb0af648b907afd29dcd4d0779029b802.svg" alt="20221208191647-elementarmatrix_b95297aeb0af648b907afd29dcd4d0779029b802.svg" class="org-svg" />)
-c) <img src="ltximg/20221208191647-elementarmatrix_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" alt="20221208191647-elementarmatrix_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" class="org-svg" /> an allen anderen Stellen
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(i \neq j\).
+Eine Elementarmatrix \(T_{ij}(\alpha) = (\alpha_{aj} \in K)\) hat die Form:
+a) \(\alpha \in K\) an der Stelle \(\left(i,j\right)\) für \(i \neq j\)
+b) \(1\) auf der Diagonalen (d.h. \(\alpha_{ii} = 1\) für alle \(i\))
+c) \(0\) an allen anderen Stellen
 </p>
 </div>
 </div>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">unitärer Ring</h1>
-<div id="outline-container-orgd38ec61" class="outline-2">
-<h2 id="orgd38ec61"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org9b3be40" class="outline-2">
+<h2 id="org9b3be40"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_0488611292a19e2a12ecd521f7ad3c22433ba71e.svg" alt="20221013221933-unitarer_ring_0488611292a19e2a12ecd521f7ad3c22433ba71e.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> mit der <a href="20211008171225-definition_halbgruppe.html#ID-704f2f2a-6b57-4168-8b52-4a2965ee69de">Halbgruppe</a> <img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_46444929112b916bbb5c56c00b93cf94125576e9.svg" alt="20221013221933-unitarer_ring_46444929112b916bbb5c56c00b93cf94125576e9.svg" class="org-svg" /> und der <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">Abelschen Gruppe</a> <img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_18b40f9bf6cf6bf4e149f9f2c304e2d8eafbb357.svg" alt="20221013221933-unitarer_ring_18b40f9bf6cf6bf4e149f9f2c304e2d8eafbb357.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221013221933-unitarer_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist ein unitärer Ring, falls <img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_67f00b8419c2b2c4dfc00a76b90305bfcffdf43b.svg" alt="20221013221933-unitarer_ring_67f00b8419c2b2c4dfc00a76b90305bfcffdf43b.svg" class="org-svg" /> ein beidseitig <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrales Element</a> für die Halbgruppe <img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_46444929112b916bbb5c56c00b93cf94125576e9.svg" alt="20221013221933-unitarer_ring_46444929112b916bbb5c56c00b93cf94125576e9.svg" class="org-svg" /> ist, d.h. es gilt
+Sei \((R,+,\cdot)\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> mit der <a href="20211008171225-definition_halbgruppe.html#ID-704f2f2a-6b57-4168-8b52-4a2965ee69de">Halbgruppe</a> \((R,\cdot)\) und der <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">Abelschen Gruppe</a> \((R,+)\).
+\(R\) ist ein unitärer Ring, falls \(1 \in R\) ein beidseitig <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrales Element</a> für die Halbgruppe \((R,\cdot)\) ist, d.h. es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221013221933-unitarer_ring_3d7c99ec844615301c4f324e0e405b8f8b819e63.svg" alt="20221013221933-unitarer_ring_3d7c99ec844615301c4f324e0e405b8f8b819e63.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x \in R : x \cdot 1 = x = 1 \cdot x
+\end{align*}
 </div>
 </div>
 </div>

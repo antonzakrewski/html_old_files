@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Maximum einer Binomialverteilung</h1>
-<div id="outline-container-orgbacb0d6" class="outline-2">
-<h2 id="orgbacb0d6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf1ed192" class="outline-2">
+<h2 id="orgf1ed192"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220916144945-maximum_einer_binomialverteilung_213940e35cf638075ad5ed2ae1a01c74dc32b715.svg" alt="20220916144945-maximum_einer_binomialverteilung_213940e35cf638075ad5ed2ae1a01c74dc32b715.svg" class="org-svg" /> eine <a href="20211123085219-binomialverteilung.html#ID-0c209e31-9b5f-4881-919a-a9c2a423f487">Binomialverteilung</a>.
+Sei \(B(n;p)\) eine <a href="20211123085219-binomialverteilung.html#ID-0c209e31-9b5f-4881-919a-a9c2a423f487">Binomialverteilung</a>.
 Dann gilt für das <a href="20220819225340-globales_maximum.html#ID-d50fdf49-fb3c-49a4-a754-439298c4002a">Maximum</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220916144945-maximum_einer_binomialverteilung_da8dd39f63987685a7e564b78196cf27bd3d5464.svg" alt="20220916144945-maximum_einer_binomialverteilung_da8dd39f63987685a7e564b78196cf27bd3d5464.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert \mathrm{max}(B(n;p)) - \mu \vert < 1
+\end{align*}
 
 <p>
-d.h. falls der Erwartungswert eine <a href="20210618081314-naturliche_zahlen.html#ID-3b0f07cf-8ed5-43e1-96c5-9688c4afb0ca">Natürliche Zahl</a> <img src="file:///home/anton/html/ltximg/20220916144945-maximum_einer_binomialverteilung_9c17bad39aebaa873fec38511ff804235545b95d.svg" alt="20220916144945-maximum_einer_binomialverteilung_9c17bad39aebaa873fec38511ff804235545b95d.svg" class="org-svg" /> ist, so liegt das Maximum bei <img src="file:///home/anton/html/ltximg/20220916144945-maximum_einer_binomialverteilung_76ed4f2be3112d473365528c97235803bd0c4140.svg" alt="20220916144945-maximum_einer_binomialverteilung_76ed4f2be3112d473365528c97235803bd0c4140.svg" class="org-svg" />, ansonsten bei einer der benachbarten Zahlen.
+d.h. falls der Erwartungswert eine <a href="20210618081314-naturliche_zahlen.html#ID-3b0f07cf-8ed5-43e1-96c5-9688c4afb0ca">Natürliche Zahl</a> \(\mu \in \mathbb{N}\) ist, so liegt das Maximum bei \(\mu\), ansonsten bei einer der benachbarten Zahlen.
 </p>
 </div>
 </div>
-<div id="outline-container-org563994d" class="outline-2">
-<h2 id="org563994d"><span class="section-number-2">2.</span> <a href="20220916145231-beweis_maximum_einer_binomialverteilung.html#ID-da985662-fc74-451c-bdaa-b462f74263b3">Beweis: Maximum einer Binomialverteilung</a></h2>
+<div id="outline-container-org6e2064c" class="outline-2">
+<h2 id="org6e2064c"><span class="section-number-2">2.</span> <a href="20220916145231-beweis_maximum_einer_binomialverteilung.html#ID-da985662-fc74-451c-bdaa-b462f74263b3">Beweis: Maximum einer Binomialverteilung</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung</h1>
-<div id="outline-container-orge211d51" class="outline-2">
-<h2 id="orge211d51"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbc5cc4a" class="outline-2">
+<h2 id="orgbc5cc4a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230118224205-ableitung_cb7daa38933ff3d78dee0ff65fe0cb057a24fed5.svg" alt="20230118224205-ableitung_cb7daa38933ff3d78dee0ff65fe0cb057a24fed5.svg" class="org-svg" />  eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit <img src="file:///home/anton/html/ltximg/20230118224205-ableitung_59c1f351c6974de33ccbdceddf44e376e77fdb67.svg" alt="20230118224205-ableitung_59c1f351c6974de33ccbdceddf44e376e77fdb67.svg" class="org-svg" />
-Die Ableitungsfunktion <img src="file:///home/anton/html/ltximg/20230118224205-ableitung_f087933add5b94245530f7b2caec6ec74b710616.svg" alt="20230118224205-ableitung_f087933add5b94245530f7b2caec6ec74b710616.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230118224205-ableitung_6b7061a1facd4cf0512ba7c1e5af389a56121fee.svg" alt="20230118224205-ableitung_6b7061a1facd4cf0512ba7c1e5af389a56121fee.svg" class="org-svg" /> ist - soweit <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> (siehe: <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">Differenzierbarkeit</a>) - definiert als:
+Sei \(f: D \rightarrow \mathbb{C}\)  eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit \(D \subseteq \mathbb{C}\)
+Die Ableitungsfunktion \(f': D' \rightarrow \mathbb{C}\) mit \(D' \subseteq D\) ist - soweit <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> (siehe: <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">Differenzierbarkeit</a>) - definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118224205-ableitung_328e25d044eaf5d0eecea5feff3539fbb6da8c32.svg" alt="20230118224205-ableitung_328e25d044eaf5d0eecea5feff3539fbb6da8c32.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\mathrm{d}f}{\mathrm{d}x}  \coloneqq& \lim_{x' \to x}\left(\frac{f(x') - f(x)}{x' - x}\right) \\
+=& \lim_{\delta \to 0}\left(\frac{f(x + \delta) - f(x)}{\delta}\right) 
+\end{align*}
 </div>
 </div>
 </div>

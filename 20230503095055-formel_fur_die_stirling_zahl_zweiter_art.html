@@ -3,55 +3,71 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Formel für die Stirling Zahl zweiter Art</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel für die Stirling Zahl zweiter Art</h1>
-<div id="outline-container-org548f66b" class="outline-2">
-<h2 id="org548f66b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2325a88" class="outline-2">
+<h2 id="org2325a88"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_2c38673333303383e4de9468c7d990d33119d280.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_2c38673333303383e4de9468c7d990d33119d280.svg" class="org-svg" />
+Seien \(n,k \in \mathbb{N}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e0d7771b434120d262a75a3b2965d14225023f05.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e0d7771b434120d262a75a3b2965d14225023f05.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+S_{n,k} \coloneqq& \frac{\sum_{j=0}^{k} (-1)^{k-j} \binom{k}{k-j} (k-j)^n}{k!}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga632f02" class="outline-2">
-<h2 id="orga632f02"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge698cca" class="outline-2">
+<h2 id="orge698cca"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Kombinatorischer Beweis:
-Man wähle $k$-Farben und betrachte die Anzahl der Möglichkeiten, <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" class="org-svg" /> Objekte zu Färben:
-Allgemein sind das <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_477496e277e19966b38a551aab61ae6c81b1927a.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_477496e277e19966b38a551aab61ae6c81b1927a.svg" class="org-svg" />, wobei wir aber nur die geeigneten Zählen möchten, in denen alle Farben vorkommen, d.h. nach dem <a href="20230217195249-prinzip_der_inklusion_und_exklusion.html#ID-0bad1924-1ad3-4f1c-bc46-817321a57ad5">Prinzip der Inklusion und Exklusion</a> müssen wir die zusätzlich gezählten alternierend abzeihen bzw. addieren.
-Dabei gibt es für <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_77598e9b9682c9a60d8bc7caa84246674209f585.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_77598e9b9682c9a60d8bc7caa84246674209f585.svg" class="org-svg" /> viele Farben <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e020ccd3d723cad1f0dc3521c298c43fb83d642a.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e020ccd3d723cad1f0dc3521c298c43fb83d642a.svg" class="org-svg" /> viele Möglichkeiten, wobei noch <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_3e3db36ba7943a18c58c0ac01950725b435a6aaf.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_3e3db36ba7943a18c58c0ac01950725b435a6aaf.svg" class="org-svg" /> viele Möglichkeiten existieren, die Farben auszuwählen
+Man wähle $k$-Farben und betrachte die Anzahl der Möglichkeiten, \(n\) Objekte zu Färben:
+Allgemein sind das \(k^n\), wobei wir aber nur die geeigneten Zählen möchten, in denen alle Farben vorkommen, d.h. nach dem <a href="20230217195249-prinzip_der_inklusion_und_exklusion.html#ID-0bad1924-1ad3-4f1c-bc46-817321a57ad5">Prinzip der Inklusion und Exklusion</a> müssen wir die zusätzlich gezählten alternierend abzeihen bzw. addieren.
+Dabei gibt es für \(k-i\) viele Farben \((k-i)^n\) viele Möglichkeiten, wobei noch \(\binom{k}{k-i}\) viele Möglichkeiten existieren, die Farben auszuwählen
 </p>
 
 <p>
-Zusätzlich bestehen insgesamt <img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e01bf4383d982ca238cb882590f488070851cc08.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_e01bf4383d982ca238cb882590f488070851cc08.svg" class="org-svg" /> viele <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutationen</a>, die Farben zu vertauschen, d.h. wir erhalten:
+Zusätzlich bestehen insgesamt \(k!\) viele <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutationen</a>, die Farben zu vertauschen, d.h. wir erhalten:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230503095055-formel_fur_die_stirling_zahl_zweiter_art_c64113c0639893f7863af6ee8e1c4aa96470188d.svg" alt="20230503095055-formel_fur_die_stirling_zahl_zweiter_art_c64113c0639893f7863af6ee8e1c4aa96470188d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+k! \cdot S_{n,k} =& \sum_{j=0}^{k} (-1)^{k-j} \binom{k}{k-j} \cdot (k-j)^n \\
+S_{n,k} =& \frac{\sum_{j=0}^{k} (-1)^{k-j} \binom{k}{k-j} \cdot (k-j)^n}{k!}
+\end{align*}
 </div>
 </div>
 </div>

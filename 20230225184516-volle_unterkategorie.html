@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">full subcategory</h1>
-<div id="outline-container-orga266c07" class="outline-2">
-<h2 id="orga266c07"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org7978ce7" class="outline-2">
+<h2 id="org7978ce7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-A <a href="20220824221623-unterkategorie.html#ID-2165c92b-8025-4134-b3b1-4d523a8795a4">subcategory</a> <img src="file:///home/anton/html/ltximg/20230225184516-volle_unterkategorie_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" alt="20230225184516-volle_unterkategorie_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" class="org-svg" /> of a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> <img src="file:///home/anton/html/ltximg/20230225184516-volle_unterkategorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230225184516-volle_unterkategorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> is full, if for all <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> <img src="file:///home/anton/html/ltximg/20230225184516-volle_unterkategorie_a6f58c79dabd821453fa041cc70655094b195be1.svg" alt="20230225184516-volle_unterkategorie_a6f58c79dabd821453fa041cc70655094b195be1.svg" class="org-svg" /> following statement holds true:
+A <a href="20220824221623-unterkategorie.html#ID-2165c92b-8025-4134-b3b1-4d523a8795a4">subcategory</a> \(\mathcal{D}\) of a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> \(\mathcal{C}\) is full, if for all <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> \(A,B \in \mathrm{Ob}(\mathcal{D})\) following statement holds true:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230225184516-volle_unterkategorie_cfa6643349f728c8b78b1d256b05ccd66a3f8fd0.svg" alt="20230225184516-volle_unterkategorie_cfa6643349f728c8b78b1d256b05ccd66a3f8fd0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{Hom}_{\mathcal{D}}(A, B) = \mathrm{Hom}_{\mathcal{C}}(A, B)
+\end{align*}
 </div>
 </div>
 </div>

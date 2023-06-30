@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">strikt konvexe Funktion</h1>
-<div id="outline-container-org2eca239" class="outline-2">
-<h2 id="org2eca239"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdbe114a" class="outline-2">
+<h2 id="orgdbe114a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230204212217-strikt_konvexe_funktion_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" alt="20230204212217-strikt_konvexe_funktion_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" class="org-svg" /> mit dem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> <img src="file:///home/anton/html/ltximg/20230204212217-strikt_konvexe_funktion_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" alt="20230204212217-strikt_konvexe_funktion_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" class="org-svg" /> ist konvex, falls
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: I \rightarrow \mathbb{R}\) mit dem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> \(I \subseteq \mathbb{R}\) ist konvex, falls
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204212217-strikt_konvexe_funktion_426254bc570a1175f67e30d7f559a406979f260a.svg" alt="20230204212217-strikt_konvexe_funktion_426254bc570a1175f67e30d7f559a406979f260a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{(x,y) \vert x \in I, y \geq f(x)\} \subseteq \mathbb{R}^2
+\end{align*}
 <p>
 <a href="20230204211815-strikte_konvexitat.html#ID-2d6d178d-798d-4613-95a4-30fb83bcc7d2">strikt konvex</a> ist.
 </p>

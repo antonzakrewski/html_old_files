@@ -9,62 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer konvergenten Teilfolge für einen Häufungspunkt</h1>
-<div id="outline-container-org1a865dc" class="outline-2">
-<h2 id="org1a865dc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga5ebec3" class="outline-2">
+<h2 id="orga5ebec3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> als <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> von <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" />.
-Dann ist äquivalent dazu, dass eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> existiert, welche gegen <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
+Sei \((a_n)\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit \(a\) als <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> von \((a_n)\).
+Dann ist äquivalent dazu, dass eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> existiert, welche gegen \(a\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf6bfc08" class="outline-2">
-<h2 id="orgf6bfc08"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org40d40c6" class="outline-2">
+<h2 id="org40d40c6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org31ecd4b" class="outline-3">
-<h3 id="org31ecd4b"><span class="section-number-3">2.1.</span> Teilfolge <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> Häufungspunkt:</h3>
+<div id="outline-container-org17140c8" class="outline-3">
+<h3 id="org17140c8"><span class="section-number-3">2.1.</span> Teilfolge \(\Rightarrow\) Häufungspunkt:</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der Definition eines <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkts</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb5fe98d" class="outline-3">
-<h3 id="orgb5fe98d"><span class="section-number-3">2.2.</span> Häufungspunkt <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> Teilfolge:</h3>
+<div id="outline-container-org6f0396c" class="outline-3">
+<h3 id="org6f0396c"><span class="section-number-3">2.2.</span> Häufungspunkt \(\Rightarrow\) Teilfolge:</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für alle <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" class="org-svg" /> enthält <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_6d94613e483a2d53bb6d1d75cdc52be55761d770.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_6d94613e483a2d53bb6d1d75cdc52be55761d770.svg" class="org-svg" />  <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" />.
-Daher lässt sich induktiv die eine <a href="20220105225356-streng_monoton_wachsende_folge.html#ID-b03a5468-9d66-4449-becc-de190ba56fca">streng monoton wachsende</a> Indexfolge <img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_c1053346baf264ef4b59fd4a8d71cf7a20bd8999.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_c1053346baf264ef4b59fd4a8d71cf7a20bd8999.svg" class="org-svg" /> definieren, so dass gilt:
+Für alle \(k \in \mathbb{N}\) enthält \(D_{\frac{1}{k}}(a)\)  <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele \(a_n\).
+Daher lässt sich induktiv die eine <a href="20220105225356-streng_monoton_wachsende_folge.html#ID-b03a5468-9d66-4449-becc-de190ba56fca">streng monoton wachsende</a> Indexfolge \((n_k)_{k \in \mathbb{N}}\) definieren, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_30226b4ed02ee9ca30fe4a54b8411f7c1090aedb.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_30226b4ed02ee9ca30fe4a54b8411f7c1090aedb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_{n_k} \in D_{\frac{1}{k}}(a)
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_54f638fb84d0cc53ecb4a9407bb99a81e8a46621.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_54f638fb84d0cc53ecb4a9407bb99a81e8a46621.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_{n_k} - a \vert < \frac{1}{k}
+\end{align*}
 <p>
 und für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_4c985ff2869b13cbc3267f6ac45af1fbf979bd05.svg" alt="20221129120834-existenz_einer_konvergenten_teilfolge_fur_einen_haufungspunkt_4c985ff2869b13cbc3267f6ac45af1fbf979bd05.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \lim_{k \to \infty}\left(a_{n_k}\right) = a
+\end{align*}
 </div>
 </div>
 </div>

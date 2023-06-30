@@ -9,79 +9,92 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Austauschlemma einer Basis</h1>
-<div id="outline-container-orge402849" class="outline-2">
-<h2 id="orge402849"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-orgc3c28c2" class="outline-2">
+<h2 id="orgc3c28c2"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111900-austauschlemma_einer_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und sei <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_300e136d9ed4e3fee739998895d14672bce6940f.svg" alt="20221109111900-austauschlemma_einer_basis_300e136d9ed4e3fee739998895d14672bce6940f.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111900-austauschlemma_einer_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
-Ist <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_98b082b4416b616a78c6de7f68c00e0581f0b6fe.svg" alt="20221109111900-austauschlemma_einer_basis_98b082b4416b616a78c6de7f68c00e0581f0b6fe.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_b87107aaff6c077230ead75eec462357dc78a6ec.svg" alt="20221109111900-austauschlemma_einer_basis_b87107aaff6c077230ead75eec462357dc78a6ec.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_20546165f78ed01bebed3416dcefdc027b0f0aa3.svg" alt="20221109111900-austauschlemma_einer_basis_20546165f78ed01bebed3416dcefdc027b0f0aa3.svg" class="org-svg" />, so ist auch
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und sei \(B = \{b_1,...,b_n\} \subseteq V\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\).
+Ist \(b = \sum_{1=i}^n \alpha_ib_i\) mit \(\alpha_i \in K\) und \(\alpha_1 \neq 0\), so ist auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_c485e79599a5b7901d3e8a9088541451ac3bad49.svg" alt="20221109111900-austauschlemma_einer_basis_c485e79599a5b7901d3e8a9088541451ac3bad49.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+B' =& \{b,b_2,...,b_n\} \subseteq V
+\end{align*}
 <p>
 eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org6ad1623" class="outline-2">
-<h2 id="org6ad1623"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org926801d" class="outline-2">
+<h2 id="org926801d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb8ef42b" class="outline-3">
-<h3 id="orgb8ef42b"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_98d06dc2e2ac393534753c3eb6ea16acff2f6843.svg" alt="20221109111900-austauschlemma_einer_basis_98d06dc2e2ac393534753c3eb6ea16acff2f6843.svg" class="org-svg" /> als <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a></h3>
+<div id="outline-container-org0962b1e" class="outline-3">
+<h3 id="org0962b1e"><span class="section-number-3">2.1.</span> \(B'\) als <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Aus der Definition von <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20221109111900-austauschlemma_einer_basis_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" /> folgt
+Aus der Definition von \(b\) folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_297042dbeb007d0b830626e3cbdfc612050ddcdc.svg" alt="20221109111900-austauschlemma_einer_basis_297042dbeb007d0b830626e3cbdfc612050ddcdc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+b  =& \sum_{i=1}^{n} \alpha_i b_i \\
+b_1 =& \alpha_1^{-1} (b - \sum_{i=2}^n \alpha_i b_i) \\
+\Rightarrow b_1 \in& \langle B' \rangle
+\end{align*}
 <p>
 Also folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_c0d44bb181fe647db5deac6e7552e015f02c7a73.svg" alt="20221109111900-austauschlemma_einer_basis_c0d44bb181fe647db5deac6e7552e015f02c7a73.svg" class="org-svg" />
-</span>
+\begin{align*}
+\langle \{b,b_2,...,b_n\} \rangle =& \langle \{b_1,b_2,...,b_n\}\rangle \\\
+=& V
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbf6b4c3" class="outline-3">
-<h3 id="orgbf6b4c3"><span class="section-number-3">2.2.</span> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">Lineare Unabhängigkeit</a> von <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_98d06dc2e2ac393534753c3eb6ea16acff2f6843.svg" alt="20221109111900-austauschlemma_einer_basis_98d06dc2e2ac393534753c3eb6ea16acff2f6843.svg" class="org-svg" /></h3>
+<div id="outline-container-orgb441de3" class="outline-3">
+<h3 id="orgb441de3"><span class="section-number-3">2.2.</span> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">Lineare Unabhängigkeit</a> von \(B'\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei für <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_595f7e887ba6837d09958bb4f32a10626103851b.svg" alt="20221109111900-austauschlemma_einer_basis_595f7e887ba6837d09958bb4f32a10626103851b.svg" class="org-svg" />
+Sei für \(\beta, \beta_i \in K\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_e6af54d7fb56f53ec74a5f7c9c688fdf79d2d1f9.svg" alt="20221109111900-austauschlemma_einer_basis_e6af54d7fb56f53ec74a5f7c9c688fdf79d2d1f9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\beta b + \sum_{i=2}^{n} \beta_i b_i =& 0
+\end{align*}
 <p>
-Dann folgt aus der Definition von <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20221109111900-austauschlemma_einer_basis_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" />
+Dann folgt aus der Definition von \(b\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_5e6540840a245e4223e815eb2a8be6e365005898.svg" alt="20221109111900-austauschlemma_einer_basis_5e6540840a245e4223e815eb2a8be6e365005898.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\beta (\alpha_1)b_1 + \sum_{i=2}^{n} \left(\beta_i + \beta \alpha_i\right)b_i =& 0
+\end{align*}
 <p>
-Aus der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">Linearen Unabhängigkeit</a> von <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_faa9b18a2c83695f0c9cbde4946ba3c239689686.svg" alt="20221109111900-austauschlemma_einer_basis_faa9b18a2c83695f0c9cbde4946ba3c239689686.svg" class="org-svg" /> folgt <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_c8a2986b33c5b65507b690fe810ab2a7c7fc1f26.svg" alt="20221109111900-austauschlemma_einer_basis_c8a2986b33c5b65507b690fe810ab2a7c7fc1f26.svg" class="org-svg" />
-Aus der <a href="20220103213622-nullteilerfreiheit.html#ID-bad86f8c-afc1-486f-9add-12b00742a9b7">Nullteilerfreiheit</a> und <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_20546165f78ed01bebed3416dcefdc027b0f0aa3.svg" alt="20221109111900-austauschlemma_einer_basis_20546165f78ed01bebed3416dcefdc027b0f0aa3.svg" class="org-svg" /> folgt <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_8aa1fc3ee77dfe582fee9c41b72080ede5e2053c.svg" alt="20221109111900-austauschlemma_einer_basis_8aa1fc3ee77dfe582fee9c41b72080ede5e2053c.svg" class="org-svg" /> und daraus <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_18eed1ee946e2c4010d3a82beddbedf92a21b998.svg" alt="20221109111900-austauschlemma_einer_basis_18eed1ee946e2c4010d3a82beddbedf92a21b998.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221109111900-austauschlemma_einer_basis_3e3f1b58136e43ee5060e2976f93e7ed158724cd.svg" alt="20221109111900-austauschlemma_einer_basis_3e3f1b58136e43ee5060e2976f93e7ed158724cd.svg" class="org-svg" />
+Aus der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">Linearen Unabhängigkeit</a> von \(B = \{b_1,...,b_n\}\) folgt \(\beta \alpha_1 =& 0\)
+Aus der <a href="20220103213622-nullteilerfreiheit.html#ID-bad86f8c-afc1-486f-9add-12b00742a9b7">Nullteilerfreiheit</a> und \(\alpha_1 \neq 0\) folgt \(\beta = 0\) und daraus \(\beta_i=0\) für \(i \in \{2,...,n\}\)
 </p>
 </div>
 </div>

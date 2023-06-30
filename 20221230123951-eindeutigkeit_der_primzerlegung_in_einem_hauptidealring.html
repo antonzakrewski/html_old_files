@@ -9,46 +9,65 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit der Primzerlegung in einem Hauptidealring</h1>
-<div id="outline-container-org2a967f9" class="outline-2">
-<h2 id="org2a967f9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga51e6e0" class="outline-2">
+<h2 id="orga51e6e0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und sei <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_2077f3589b0a25e0d1b01e1f70d08fcb11919633.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_2077f3589b0a25e0d1b01e1f70d08fcb11919633.svg" class="org-svg" />, so dass eine <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> existiert.
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und sei \(x \in R\), so dass eine <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> existiert.
 Dann ist diese <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> <a href="20221229200313-eindeutige_primzerlegung.html#ID-43ca21ca-b4d6-4937-820b-a99daa5e510a">eindeutig</a> (bis auf <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a> und Reihenfolge)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb3d792d" class="outline-2">
-<h2 id="orgb3d792d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1fb867f" class="outline-2">
+<h2 id="org1fb867f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Angenommen es existieren zwei Darstellungen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_beba5f8cd92578b85fa41a182e3c1638efed6a9f.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_beba5f8cd92578b85fa41a182e3c1638efed6a9f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a = p_1 \cdot ... \cdot p_n = q_1 \cdot ... \cdot q_m
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_b5b0b0aa1f445cc3289d9e85b1812297a65f5a31.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_b5b0b0aa1f445cc3289d9e85b1812297a65f5a31.svg" class="org-svg" /> <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a> und <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_81eb328944d070e95f886509a119c7ce93315122.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_81eb328944d070e95f886509a119c7ce93315122.svg" class="org-svg" /> nach geeigneter Umnummerierung (siehe: <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">Assoziiertheit</a>)
-Da <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_d7323836b115edd75147bc6ffc82653a7967998f.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_d7323836b115edd75147bc6ffc82653a7967998f.svg" class="org-svg" /> prim ist und <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_9e1fcbec690c74dc5c86e2b5629d24973d83dad6.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_9e1fcbec690c74dc5c86e2b5629d24973d83dad6.svg" class="org-svg" />, folgt dass ein <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_5024c458ede386f17cec776ff4fb5712e608b913.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_5024c458ede386f17cec776ff4fb5712e608b913.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_dac27a3ebbfe9a93c9d029727e7468350b309e7c.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_dac27a3ebbfe9a93c9d029727e7468350b309e7c.svg" class="org-svg" />
-Da das <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_6a882f820e83a594a4e77a142af73f089dfb38f2.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_6a882f820e83a594a4e77a142af73f089dfb38f2.svg" class="org-svg" /> irreduzibel ist, hat es keinen echten Teiler, d.h. sie stimmet bis auf eine Einheit überein
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ist nach Umnummerierung <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_5a86aaca6f8c782b4e5f15d06cfeeab63573b2e1.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_5a86aaca6f8c782b4e5f15d06cfeeab63573b2e1.svg" class="org-svg" />
+mit \(p_i,q_i\) <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a> und \(p_i \sim q_i\) nach geeigneter Umnummerierung (siehe: <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">Assoziiertheit</a>)
+Da \(p_1\) prim ist und \(p_1 \mid q_1 \cdot ... \cdot q_m\), folgt dass ein \(j \in \{1,...,m\}\) existiert mit \(p_1 \mid q_j\)
+Da das \(q_j\) irreduzibel ist, hat es keinen echten Teiler, d.h. sie stimmet bis auf eine Einheit überein
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ist nach Umnummerierung \(j = 1\)
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_e6b342cf18dfc3c3958f011d880885b4b722fd97.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_e6b342cf18dfc3c3958f011d880885b4b722fd97.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p_1 \cdot p_2 \cdot ... \cdot p_m \sim p_1 \cdot q_2 \cdot ... \cdot q_m
+\end{align*}
 <p>
-daraus folgt, dass <img src="file:///home/anton/html/ltximg/20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_ce7b95e0c4469085a94528cfc74cb63130bdb8d5.svg" alt="20221230123951-eindeutigkeit_der_primzerlegung_in_einem_hauptidealring_ce7b95e0c4469085a94528cfc74cb63130bdb8d5.svg" class="org-svg" /> usw.
+daraus folgt, dass \(p_2 \cdot ... \cdot p_n \sim q_2 \ocdt ... \cdot q_m\) usw.
 Argument über Induktion
 </p>
 

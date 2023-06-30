@@ -9,36 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Absorption des Binomialkoeffizienten</h1>
-<div id="outline-container-org217f0d7" class="outline-2">
-<h2 id="org217f0d7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org03c1b27" class="outline-2">
+<h2 id="org03c1b27"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230327225335-absorption_des_binomialkoeffizienten_bbf14f97d4cafa62e1bcf44521ad19cf318f765e.svg" alt="20230327225335-absorption_des_binomialkoeffizienten_bbf14f97d4cafa62e1bcf44521ad19cf318f765e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230327225335-absorption_des_binomialkoeffizienten_63b0f1c6231369df5ea0c538cc53e51fbaacaf3a.svg" alt="20230327225335-absorption_des_binomialkoeffizienten_63b0f1c6231369df5ea0c538cc53e51fbaacaf3a.svg" class="org-svg" /> gitl:
+Sei \(r \in \mathbb{C}\) und \(k \in \mathbb{Z} \setminus 0\) gitl:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327225335-absorption_des_binomialkoeffizienten_5a53367280efd2df1fddf38552d65b015c8a9055.svg" alt="20230327225335-absorption_des_binomialkoeffizienten_5a53367280efd2df1fddf38552d65b015c8a9055.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{r}{k} = \frac{r}{k} \binom{r-1}{k-1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org828a50b" class="outline-2">
-<h2 id="org828a50b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org82bfea6" class="outline-2">
+<h2 id="org82bfea6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Definition des <a href="20211216205729-binomialkoeffizient.html#ID-89b0e19a-c480-407f-8939-1074be74e04d">Binomialkoeffizienten</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327225335-absorption_des_binomialkoeffizienten_3d3d50a2dfd266fd6c4e3341b20ac2b37ab27438.svg" alt="20230327225335-absorption_des_binomialkoeffizienten_3d3d50a2dfd266fd6c4e3341b20ac2b37ab27438.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{r}{k} =& \frac{r^{k}}{k!} \\
+=& \frac{r}{k} \cdot \frac{(r-1)^{k-1}}{(k-1)!} \\
+=& \frac{r}{k} \cdot \binom{r-1}{k-1}
+\end{align*}
 </div>
 </div>
 </div>

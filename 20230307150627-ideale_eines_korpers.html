@@ -3,40 +3,61 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ideale eines Körpers</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ideale eines Körpers</h1>
-<div id="outline-container-org9252641" class="outline-2">
-<h2 id="org9252641"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgba870b9" class="outline-2">
+<h2 id="orgba870b9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="ltximg/20230307150627-ideale_eines_korpers_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" alt="20230307150627-ideale_eines_korpers_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" class="org-svg" /> besitzt nur die <a href="20221226123326-triviale_ideale_eines_rings.html#ID-f2da2bcb-33cf-4c2b-b686-68e3e626ed41">trivialen Ideale</a> <img src="ltximg/20230307150627-ideale_eines_korpers_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" alt="20230307150627-ideale_eines_korpers_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" class="org-svg" />, <img src="ltximg/20230307150627-ideale_eines_korpers_cadabd4b9e86fb189a566cd7575dd913556f2e59.svg" alt="20230307150627-ideale_eines_korpers_cadabd4b9e86fb189a566cd7575dd913556f2e59.svg" class="org-svg" />.
+Ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) besitzt nur die <a href="20221226123326-triviale_ideale_eines_rings.html#ID-f2da2bcb-33cf-4c2b-b686-68e3e626ed41">trivialen Ideale</a> \(K\), \(\{0\}\).
 </p>
 </div>
 </div>
-<div id="outline-container-org993e060" class="outline-2">
-<h2 id="org993e060"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1a81737" class="outline-2">
+<h2 id="org1a81737"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230307150627-ideale_eines_korpers_a3e24fe67ef98f56b15167348b69e75e2422bbab.svg" alt="20230307150627-ideale_eines_korpers_a3e24fe67ef98f56b15167348b69e75e2422bbab.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230307150627-ideale_eines_korpers_e0ec8ce49451efe6b0e2dc1b11b3bc82ffbef772.svg" alt="20230307150627-ideale_eines_korpers_e0ec8ce49451efe6b0e2dc1b11b3bc82ffbef772.svg" class="org-svg" />, so existiert ein <img src="ltximg/20230307150627-ideale_eines_korpers_bba4048691eb884c7278dd98474942d8ae0e3b38.svg" alt="20230307150627-ideale_eines_korpers_bba4048691eb884c7278dd98474942d8ae0e3b38.svg" class="org-svg" />.
-Sei <img src="ltximg/20230307150627-ideale_eines_korpers_1b3b14d305d80f915fbea94f11baac3413e82866.svg" alt="20230307150627-ideale_eines_korpers_1b3b14d305d80f915fbea94f11baac3413e82866.svg" class="org-svg" /> beliebig, so gilt:
+Sei \(I\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(I \neq \{0\}\), so existiert ein \(k \in K \setminus \{0\}\).
+Sei \(k' \in K \setminus \{0\}\) beliebig, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230307150627-ideale_eines_korpers_a6014b22ef5d1dbe331c1f083e5eea804a19740d.svg" alt="20230307150627-ideale_eines_korpers_a6014b22ef5d1dbe331c1f083e5eea804a19740d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+k \cdot (k^{-1} \cdot k') \in I \Rightarrow k' \in I
+\end{align*}
 </div>
 </div>
 </div>

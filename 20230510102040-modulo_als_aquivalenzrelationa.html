@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">modulo als Äquivalenzrelation</h1>
-<div id="outline-container-org9faf478" class="outline-2">
-<h2 id="org9faf478"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3e77b3d" class="outline-2">
+<h2 id="org3e77b3d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sie <img src="file:///home/anton/html/ltximg/20230510102040-modulo_als_aquivalenzrelationa_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230510102040-modulo_als_aquivalenzrelationa_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="file:///home/anton/html/ltximg/20230510102040-modulo_als_aquivalenzrelationa_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230510102040-modulo_als_aquivalenzrelationa_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
-Dann ist für <img src="file:///home/anton/html/ltximg/20230510102040-modulo_als_aquivalenzrelationa_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20230510102040-modulo_als_aquivalenzrelationa_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" />
+Sie \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(I\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
+Dann ist für \(a,b \in R\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230510102040-modulo_als_aquivalenzrelationa_7125b98a07aa2a1bf503229f94ad2a04c2d9507f.svg" alt="20230510102040-modulo_als_aquivalenzrelationa_7125b98a07aa2a1bf503229f94ad2a04c2d9507f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \equiv b \mod{I}
+\end{align*}
 <p>
 eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> (siehe: <a href="20220303185823-modulo.html#ID-e9b8d51f-b7f3-4053-83d4-fe48f5cae4d8">Modulo</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-orgfea8811" class="outline-2">
-<h2 id="orgfea8811"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org73e42a1" class="outline-2">
+<h2 id="org73e42a1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Konstruktion des <a href="20221226124933-faktorring_als_ring.html#ID-962fcfae-e109-473c-b507-9f3c29140b4b">Faktorrings als Ring</a> und der 

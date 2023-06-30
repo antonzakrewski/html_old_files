@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Minimum</h1>
-<div id="outline-container-org944b45b" class="outline-2">
-<h2 id="org944b45b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgda3d605" class="outline-2">
+<h2 id="orgda3d605"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221103092136-minimum_97f1a9b3eae3ba4a4259134f399b658dac70e139.svg" alt="20221103092136-minimum_97f1a9b3eae3ba4a4259134f399b658dac70e139.svg" class="org-svg" />  eine <a href="20220817224852-halbordnung.html#ID-b8039fe5-626d-4ba3-93c7-71167141f163">Halbordnung</a> auf einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20221103092136-minimum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221103092136-minimum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />
-<img src="file:///home/anton/html/ltximg/20221103092136-minimum_eb2a2ec0b3bd8198ebd45f4b73a54f1808bd3a8a.svg" alt="20221103092136-minimum_eb2a2ec0b3bd8198ebd45f4b73a54f1808bd3a8a.svg" class="org-svg" /> heißt größtes <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Element</a> oder Maximum von <img src="file:///home/anton/html/ltximg/20221103092136-minimum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221103092136-minimum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />, falls gilt
+Sei \(<\)  eine <a href="20220817224852-halbordnung.html#ID-b8039fe5-626d-4ba3-93c7-71167141f163">Halbordnung</a> auf einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M\)
+\(x \in M\) heißt größtes <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Element</a> oder Maximum von \(M\), falls gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221103092136-minimum_4656d6058ea518253eb8840f168004261b724c53.svg" alt="20221103092136-minimum_4656d6058ea518253eb8840f168004261b724c53.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall y \in M : \lnot (y < x)
+\end{align*}
 </div>
 </div>
 </div>

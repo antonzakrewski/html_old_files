@@ -9,17 +9,42 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Primideal</h1>
-<div id="outline-container-orge0facb4" class="outline-2">
-<h2 id="orge0facb4"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5d7963b" class="outline-2">
+<h2 id="org5d7963b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230329081717-primideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230329081717-primideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230329081717-primideal_6c1108811934a17edaeb5df233b52b91b696b680.svg" alt="20230329081717-primideal_6c1108811934a17edaeb5df233b52b91b696b680.svg" class="org-svg" /> ein <a href="20230427200359-echtes_ideal.html#ID-fa54a328-b081-4a6c-9106-4348783138df">echtes</a> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230329081717-primideal_f114ef5e96cc59cc68b36610e7b8943beefec5ba.svg" alt="20230329081717-primideal_f114ef5e96cc59cc68b36610e7b8943beefec5ba.svg" class="org-svg" /> ein Primideal, falls für <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> <img src="file:///home/anton/html/ltximg/20230329081717-primideal_544b9f3a23f1916c227e015ced640da4267ca3f8.svg" alt="20230329081717-primideal_544b9f3a23f1916c227e015ced640da4267ca3f8.svg" class="org-svg" /> gilt:
-Falls für das <a href="20221227230103-komplexprodukt_von_idealen.html#ID-3b33d732-713a-4420-83bc-b934074e04ce">Komplexprodukt</a> <img src="file:///home/anton/html/ltximg/20230329081717-primideal_d0ba7e0140d069fddf8ae8b59f9a8ab4f8232790.svg" alt="20230329081717-primideal_d0ba7e0140d069fddf8ae8b59f9a8ab4f8232790.svg" class="org-svg" /> gilt, so folgt <img src="file:///home/anton/html/ltximg/20230329081717-primideal_2810bf8fb0750d64ef3579047ec70117b0ae092a.svg" alt="20230329081717-primideal_2810bf8fb0750d64ef3579047ec70117b0ae092a.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20230329081717-primideal_5f8b4e52ddc87f9cb159dbe0e1afbf8f17ba5afd.svg" alt="20230329081717-primideal_5f8b4e52ddc87f9cb159dbe0e1afbf8f17ba5afd.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(\mathfrak{p} \subsetneq R\) ein <a href="20230427200359-echtes_ideal.html#ID-fa54a328-b081-4a6c-9106-4348783138df">echtes</a> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
+Dann ist \(\mathfrak{p}\) ein Primideal, falls für <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> \(\mathfrak{a}, \mathfrak{b} \subseteq R\) gilt:
+Falls für das <a href="20221227230103-komplexprodukt_von_idealen.html#ID-3b33d732-713a-4420-83bc-b934074e04ce">Komplexprodukt</a> \(\mathfrak{a} \mathfrak{b} \subseteq \mathfrak{p}\) gilt, so folgt \(\mathfrak{a} \subseteq \mathfrak{p}\) oder \(\mathfrak{b} \subseteq \mathfrak{p}\)
 siehe:
 </p>
 <ul class="org-ul">

@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Teilnetz</h1>
-<div id="outline-container-org1ff74ac" class="outline-2">
-<h2 id="org1ff74ac"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1bc973d" class="outline-2">
+<h2 id="org1bc973d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_cb8651ce2e36009d6c8476e6b148dd3a1e6b7d6f.svg" alt="20230225213331-teilnetz_cb8651ce2e36009d6c8476e6b148dd3a1e6b7d6f.svg" class="org-svg" /> und  <img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_9163ef8f755edc16fc190927c5cc6e245195cdda.svg" alt="20230225213331-teilnetz_9163ef8f755edc16fc190927c5cc6e245195cdda.svg" class="org-svg" />  <a href="20230206161154-gerichtete_menge.html#ID-cd512190-83e1-4c9f-85f5-d2fc367cf4ff">Gerichtete Mengen</a> sowie <img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_985ffc42d0c552cbbd239dc7a06f1d36057bf555.svg" alt="20230225213331-teilnetz_985ffc42d0c552cbbd239dc7a06f1d36057bf555.svg" class="org-svg" /> ein <a href="20230225212337-netz.html#ID-5cb7eafb-da4d-4b59-8bc4-215af31f6e6e">Netz</a> in der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230225213331-teilnetz_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230225213331-teilnetz_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> eine <a href="20230225213611-konfinale_abbildung.html#ID-b4697a60-ca88-478f-b466-ba16d9ed2432">konfinale Abbildung</a> dann ist ein Teilnetz definiert als
+Seien \((I, \triangleleft_I)\) und  \((J, \triangleleft_J)\)  <a href="20230206161154-gerichtete_menge.html#ID-cd512190-83e1-4c9f-85f5-d2fc367cf4ff">Gerichtete Mengen</a> sowie \((x_i)_{i \in I}\) ein <a href="20230225212337-netz.html#ID-5cb7eafb-da4d-4b59-8bc4-215af31f6e6e">Netz</a> in der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(X\) und \(\phi\) eine <a href="20230225213611-konfinale_abbildung.html#ID-b4697a60-ca88-478f-b466-ba16d9ed2432">konfinale Abbildung</a> dann ist ein Teilnetz definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230225213331-teilnetz_1f57a005ca13d2176843f5b7fa54d5291e2f6601.svg" alt="20230225213331-teilnetz_1f57a005ca13d2176843f5b7fa54d5291e2f6601.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(x_{\phi(j)})_{j \in J}
+\end{align*}
 </div>
 </div>
 </div>

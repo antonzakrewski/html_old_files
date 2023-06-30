@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beutelspacher: Lineare Algebra: 1 Einführung</h1>
-<div id="outline-container-org858a4b7" class="outline-2">
-<h2 id="org858a4b7"><span class="section-number-2">1.</span> Aspekte</h2>
+<div id="outline-container-orgb790644" class="outline-2">
+<h2 id="orgb790644"><span class="section-number-2">1.</span> Aspekte</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org8206e35" class="outline-3">
-<h3 id="org8206e35"><span class="section-number-3">1.1.</span> Mengenlehrenbascis</h3>
+<div id="outline-container-orge0c7791" class="outline-3">
+<h3 id="orge0c7791"><span class="section-number-3">1.1.</span> Mengenlehrenbascis</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li><a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge (Mengenlehre)</a></li>
@@ -41,8 +66,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdfc2a26" class="outline-3">
-<h3 id="orgdfc2a26"><span class="section-number-3">1.2.</span> Äquivalenzrelationen</h3>
+<div id="outline-container-orgb4f8e14" class="outline-3">
+<h3 id="orgb4f8e14"><span class="section-number-3">1.2.</span> Äquivalenzrelationen</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li><a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation (Mengenlehre)</a></li>
@@ -65,8 +90,8 @@ TODO
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaca8d05" class="outline-3">
-<h3 id="orgaca8d05"><span class="section-number-3">1.3.</span> Abbildung</h3>
+<div id="outline-container-org2eb02d7" class="outline-3">
+<h3 id="org2eb02d7"><span class="section-number-3">1.3.</span> Abbildung</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung (Mengenlehre)</a></li>
@@ -87,8 +112,8 @@ TODO
 </ul>
 </div>
 </div>
-<div id="outline-container-org7d17572" class="outline-3">
-<h3 id="org7d17572"><span class="section-number-3">1.4.</span> gleich viele Elemente</h3>
+<div id="outline-container-orgc1c856f" class="outline-3">
+<h3 id="orgc1c856f"><span class="section-number-3">1.4.</span> gleich viele Elemente</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li><a href="20220101131345-gleichmachtigkeit_von_mengen.html#ID-5332a064-fecb-49e0-a2bf-ababf5f364c8">Gleichmächtigkeit von Mengen</a></li>
@@ -101,8 +126,8 @@ TODO
 </p>
 </div>
 </div>
-<div id="outline-container-org2bbbed8" class="outline-3">
-<h3 id="org2bbbed8"><span class="section-number-3">1.5.</span> <img src="file:///home/anton/html/ltximg/20220102171330-beutelsbacher_lineare_algebra_einfuhrung_7a7390a0b968a3db5250eab4912c2e2d575df2e1.svg" alt="20220102171330-beutelsbacher_lineare_algebra_einfuhrung_7a7390a0b968a3db5250eab4912c2e2d575df2e1.svg" class="org-svg" /> Notation</h3>
+<div id="outline-container-org2d742e2" class="outline-3">
+<h3 id="org2d742e2"><span class="section-number-3">1.5.</span> \(\sum\) Notation</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li><a href="20211228192629-definition_summenzeichen.html#ID-79886dfa-c991-4c86-898a-6226f83bc0c1">Definition Summenzeichen</a></li>
@@ -110,8 +135,8 @@ TODO
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfa8d6f9" class="outline-3">
-<h3 id="orgfa8d6f9"><span class="section-number-3">1.6.</span> <a href="20210305204859-mathematische_beweise.html#ID-1bf05411-4f46-47b4-9359-e5e14a52acd6">Mathematische Beweise</a></h3>
+<div id="outline-container-org43bfc67" class="outline-3">
+<h3 id="org43bfc67"><span class="section-number-3">1.6.</span> <a href="20210305204859-mathematische_beweise.html#ID-1bf05411-4f46-47b4-9359-e5e14a52acd6">Mathematische Beweise</a></h3>
 </div>
 </div>
 </div>

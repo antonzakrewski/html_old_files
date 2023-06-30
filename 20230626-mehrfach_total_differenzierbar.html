@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">mehrfache totale Differenzierbarkeit</h1>
-<div id="outline-container-org99cfa63" class="outline-2">
-<h2 id="org99cfa63"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1a8b2eb" class="outline-2">
+<h2 id="org1a8b2eb"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230626-mehrfach_total_differenzierbar_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" alt="20230626-mehrfach_total_differenzierbar_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230626-mehrfach_total_differenzierbar_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230626-mehrfach_total_differenzierbar_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a>, so dass das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_4f196b00c9ae7a01466ffb534bf29e49ccce0c6a.svg" alt="20230626-mehrfach_total_differenzierbar_4f196b00c9ae7a01466ffb534bf29e49ccce0c6a.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> ist, so ist
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^m\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei \(F\) in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x \in U\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a>, so dass das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> \(\mathrm{d}F_x\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> ist, so ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_feb6eadeb35c42821199f20711ced2f9d0272597.svg" alt="20230626-mehrfach_total_differenzierbar_feb6eadeb35c42821199f20711ced2f9d0272597.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{d}^2 F_x  \coloneqq \mathrm{d} ( \mathrm{d}F)_x) : \mathbb{R}^n \rightarrow \mathrm{Hom}(\mathbb{R}^n,\mathbb{R}^m)
+\end{align*}
 <p>
-das zweifache <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> in <img src="file:///home/anton/html/ltximg/20230626-mehrfach_total_differenzierbar_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230626-mehrfach_total_differenzierbar_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+das zweifache <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> in \(x\)
 induktiv werden die weiteren 
 </p>
 </div>

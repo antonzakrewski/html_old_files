@@ -9,38 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einbetten von epsilon-Umgebungen in einen offenen Ball</h1>
-<div id="outline-container-org9d176e5" class="outline-2">
-<h2 id="org9d176e5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1bf9ea2" class="outline-2">
+<h2 id="org1bf9ea2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und eine <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_2636cc7de10854e32d2431a61a6d35cdd2c6328d.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_2636cc7de10854e32d2431a61a6d35cdd2c6328d.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> gegeben.
-Dann existiert für <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_955e214279a04e57ab5a687c598c5dd8359b10ed.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_955e214279a04e57ab5a687c598c5dd8359b10ed.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_9707e5c721968644bf033550289b2233eff20517.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_9707e5c721968644bf033550289b2233eff20517.svg" class="org-svg" />, so dass gilt:
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und eine <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> \(B_{\varepsilon}(x)\) für \(x \in X\) gegeben.
+Dann existiert für \(x' \in B_{\varepsilon}(x)\) ein \(\varepsilon'\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_ab580549e3e31460d857961e2a051361e632a260.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_ab580549e3e31460d857961e2a051361e632a260.svg" class="org-svg" />
-</span>
+\begin{align*}
+B_{\varepsilon'}(x') \subseteq B_{\varepsilon}(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9550427" class="outline-2">
-<h2 id="org9550427"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd0fff95" class="outline-2">
+<h2 id="orgd0fff95"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_bbe953fb25fc9d433a5b8399c6a05bfc297da3ef.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_bbe953fb25fc9d433a5b8399c6a05bfc297da3ef.svg" class="org-svg" />.
-Man wähle dann <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_0a0c9dff745e842f032710f253a301d4b96ee6cc.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_0a0c9dff745e842f032710f253a301d4b96ee6cc.svg" class="org-svg" /> und für <img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_d20aa2e8c40c17e30619023795088a02e75fe8a8.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_d20aa2e8c40c17e30619023795088a02e75fe8a8.svg" class="org-svg" /> folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
+Sei \(\Delta  \coloneqq d(x,x') < \varepsilon\).
+Man wähle dann \(\varepsilon'  \coloneqq \frac{1}{2}(\varepsilon - \Delta)\) und für \(y \in B_{\varepsilon'}(x')\) folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_f62b22169989ef6f6676a3f2bc17e86f22db2a76.svg" alt="20230427203705-einbetten_von_epsilon_umgebungen_in_eine_offene_menge_f62b22169989ef6f6676a3f2bc17e86f22db2a76.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x,y) \leq& d(x,x') + d(y,x') \\
+\leq& \Delta + \varepsilon' \\
+<& \Delta + \frac{1}{2} \varepsilon - \frac{1}{2} \Delta \\
+=& \frac{1}{2} ( \Delta + \varepsilon) \\
+<& \varepsilon
+\end{align*}
 </div>
 </div>
 </div>

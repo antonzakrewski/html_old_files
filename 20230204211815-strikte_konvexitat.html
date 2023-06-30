@@ -3,23 +3,50 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>strikte Konvexität</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">strikte Konvexität</h1>
-<div id="outline-container-org3d8cbfb" class="outline-2">
-<h2 id="org3d8cbfb"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdcdb89e" class="outline-2">
+<h2 id="orgdcdb89e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230204211815-strikte_konvexitat_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20230204211815-strikte_konvexitat_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>.
-Eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="ltximg/20230204211815-strikte_konvexitat_f13eb087f1f77d3c4b06c4022de76d22451fded7.svg" alt="20230204211815-strikte_konvexitat_f13eb087f1f77d3c4b06c4022de76d22451fded7.svg" class="org-svg" /> heißt strikt konvex, falls für <img src="ltximg/20230204211815-strikte_konvexitat_be603d604322eea23a8ebec1c04200f77add6230.svg" alt="20230204211815-strikte_konvexitat_be603d604322eea23a8ebec1c04200f77add6230.svg" class="org-svg" /> und <img src="ltximg/20230204211815-strikte_konvexitat_dc13bfd85592866156f384149989d49f93b6597f.svg" alt="20230204211815-strikte_konvexitat_dc13bfd85592866156f384149989d49f93b6597f.svg" class="org-svg" /> gilt:
-<img src="ltximg/20230204211815-strikte_konvexitat_dc7b09b8a813ebdcc255d382c8d69014a343e2f3.svg" alt="20230204211815-strikte_konvexitat_dc7b09b8a813ebdcc255d382c8d69014a343e2f3.svg" class="org-svg" /> liegt im <a href="20221124232014-inneres_einer_topologie.html#ID-85128b09-97b8-44ca-9ff0-99de899da123">Inneren</a> von <img src="ltximg/20230204211815-strikte_konvexitat_18bed29493ef85057376ccd9b1d7c509a151a5d8.svg" alt="20230204211815-strikte_konvexitat_18bed29493ef85057376ccd9b1d7c509a151a5d8.svg" class="org-svg" />
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>.
+Eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(C \subseteq V\) heißt strikt konvex, falls für \(v,v' \in C\) und \(0 < \lambda < 1\) gilt:
+\(\lambda v + (1 - \lambda) v'\) liegt im <a href="20221124232014-inneres_einer_topologie.html#ID-85128b09-97b8-44ca-9ff0-99de899da123">Inneren</a> von \(C\)
 </p>
 </div>
 </div>

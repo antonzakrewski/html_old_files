@@ -9,78 +9,102 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Invertierbarkeit für eine Basis und für jede Basis</h1>
-<div id="outline-container-orgd250930" class="outline-2">
-<h2 id="orgd250930"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org36ead94" class="outline-2">
+<h2 id="org36ead94"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_169de4588ec9398135f5b47f2d6f70e19f9a53ef.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_169de4588ec9398135f5b47f2d6f70e19f9a53ef.svg" class="org-svg" /> und sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_04274259d6db55111ff60592e8bbc62151295627.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_04274259d6db55111ff60592e8bbc62151295627.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a>, dann sind folgende Aussagen äquivalent:
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(n < \infty\) und sei \(f \in \mathrm{End}_{K}(V)\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a>, dann sind folgende Aussagen äquivalent:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist ein <a href="20230303151718-vektorraumautomorphismus.html#ID-f8f688c5-d960-43c2-8ac4-20d4c3cf2548">Automorphismus</a></li>
-<li>für jede <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" class="org-svg" /> <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbar</a> mit <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_7b716eaf8bc8846bc607da97d1a1fd467fb11e18.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_7b716eaf8bc8846bc607da97d1a1fd467fb11e18.svg" class="org-svg" /></li>
-<li>für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" class="org-svg" /> <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbar</a></li>
+<li>\(f\) ist ein <a href="20230303151718-vektorraumautomorphismus.html#ID-f8f688c5-d960-43c2-8ac4-20d4c3cf2548">Automorphismus</a></li>
+<li>für jede <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(X\) von \(V\) ist \(A_{f,X}\) <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbar</a> mit \(A_{f^{-1},X} = A_{f,X}^{-1}\)</li>
+<li>für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(X\) von \(V\) ist \(A_{f,X}\) <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbar</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org857d22a" class="outline-2">
-<h2 id="org857d22a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6aedddf" class="outline-2">
+<h2 id="org6aedddf"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org378621a" class="outline-3">
-<h3 id="org378621a"><span class="section-number-3">2.1.</span> 1 <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2</h3>
+<div id="outline-container-org04dfeef" class="outline-3">
+<h3 id="org04dfeef"><span class="section-number-3">2.1.</span> 1 \(\Rightarrow\) 2</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_b0edad5a8b43089b20356f5646e235a8ddc44c5e.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_b0edad5a8b43089b20356f5646e235a8ddc44c5e.svg" class="org-svg" />  der <a href="20221125132211-lemma_uber_die_existenz_und_eindeutigkeit_eines_umkehrhomomorphismus_zu_einem_isomorphismus.html#ID-90ffc1d6-8282-417f-a0ee-44df85e8dff2">Umkehrhomomorphismus</a> zu <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" />, so dass gilt:
+Sei \(f^{-1} \in \mathrm{End}_K(V)\)  der <a href="20221125132211-lemma_uber_die_existenz_und_eindeutigkeit_eines_umkehrhomomorphismus_zu_einem_isomorphismus.html#ID-90ffc1d6-8282-417f-a0ee-44df85e8dff2">Umkehrhomomorphismus</a> zu \(f\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_312a10089701b80a255bc9ac7c44451350ed0cc4.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_312a10089701b80a255bc9ac7c44451350ed0cc4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1} \circ f =& f \circ f^{-1} \\
+=& \mathrm{id}_{V} 
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />, so liefert der <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Isomorphismus</a> für die <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Matrixdarstellung</a> und die <a href="20221209203854-verknupfung_von_homomorphismen_durch_matrixmultiplikation.html#ID-5ec903c0-7531-41a1-b108-3a223dbbc3a7">Verknüpfung von Homomorphismen durch Matrixmultiplikation</a> 
+Sei \(X\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\), so liefert der <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Isomorphismus</a> für die <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Matrixdarstellung</a> und die <a href="20221209203854-verknupfung_von_homomorphismen_durch_matrixmultiplikation.html#ID-5ec903c0-7531-41a1-b108-3a223dbbc3a7">Verknüpfung von Homomorphismen durch Matrixmultiplikation</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_10d35af9e79c8a74808e3a102010b7adc058d9fc.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_10d35af9e79c8a74808e3a102010b7adc058d9fc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A_{f^{-1} \circ f, X} =& A_{f \circ f^{-1}, X} \\
+=& A_{f, X} \cdot A_{f^{-1}, X} \\
+=& A_{f^{-1}, X} \cdot A_{f, X} \\
+=& A_{\mathrm{id}_{V}, X} \\
+=& E_n
+\end{align*}
 <p>
-und wegen der <a href="20221210173405-eindeutigkeit_der_inversen_matrix.html#ID-aef7ae7d-2a87-4474-9ada-7ff775b17b92">Eindeutigkeit der inversen Matrix</a> folgt damit auch <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_d05bda81483603eb6f9e1da82d2de57198cf6725.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_d05bda81483603eb6f9e1da82d2de57198cf6725.svg" class="org-svg" />
+und wegen der <a href="20221210173405-eindeutigkeit_der_inversen_matrix.html#ID-aef7ae7d-2a87-4474-9ada-7ff775b17b92">Eindeutigkeit der inversen Matrix</a> folgt damit auch \(A_{f^{-1}, X} = A^{-1}_{f,X}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgf4519d1" class="outline-3">
-<h3 id="orgf4519d1"><span class="section-number-3">2.2.</span> 2 <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 3</h3>
+<div id="outline-container-orgd5c8328" class="outline-3">
+<h3 id="orgd5c8328"><span class="section-number-3">2.2.</span> 2 \(\Rightarrow\) 3</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 trivial
 </p>
 </div>
 </div>
-<div id="outline-container-org677d9bd" class="outline-3">
-<h3 id="org677d9bd"><span class="section-number-3">2.3.</span> 3 <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1</h3>
+<div id="outline-container-org64a8e7a" class="outline-3">
+<h3 id="org64a8e7a"><span class="section-number-3">2.3.</span> 3 \(\Rightarrow\) 1</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_f6f903d209b3965d0b299c2453d7e0af8f43fcb9.svg" class="org-svg" /> invertierbar für die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_c3b9f9e5719bd74d768c811e77a46f30967bc26a.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_c3b9f9e5719bd74d768c811e77a46f30967bc26a.svg" class="org-svg" />
+Sei \(A_{f,X}\) invertierbar für die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(X\).
+Sei \(g = \kappa^{-1}((A_{f,X}^{-1})) \in \mathrm{End}_K(V)\)
 Es gilt folglich für den <a href="20221209203713-isomorphie_zwischen_matrixdarstellung_und_homomorphismus.html#ID-8a33a54a-5559-47cc-b2aa-8c5a2c41ae95">Isomorphismus zwischen der Matrixdarstellung und des Homomorphismus</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_099335b6cf603a297758d7594b86b30a940bb1b0.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_099335b6cf603a297758d7594b86b30a940bb1b0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \circ f =& \kappa^{-1}(A^{-1}_{f,X}) \circ \kappa^{-1}(A_{f,X}) \\
+=& \kappa^{-1}(A^{-1}_{f,X} \cdot A_{f,X}) \\
+=& \kappa^{-1}(E_n) \\
+=& \mathrm{id}_{V} 
+\end{align*}
 <p>
-analog folgt <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_e03b3d64e7e5d41643d4c84385688682ac35e348.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_e03b3d64e7e5d41643d4c84385688682ac35e348.svg" class="org-svg" />.
-Also existiert eine <a href="20210318211130-umkehrfunktion.html#ID-35d2e288-1bec-4daf-866a-99566d5d0d8f">Umkehrfunktion</a> und wegen der <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Umkehrbarkeit bijektiver Abbildungen</a> ist <img src="file:///home/anton/html/ltximg/20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230116144422-aquivalenz_von_invertierbarkeit_fur_eine_basis_und_fur_jede_basis_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiv</a> 
+analog folgt \(f \circ g = \mathrm{id}_{V}\).
+Also existiert eine <a href="20210318211130-umkehrfunktion.html#ID-35d2e288-1bec-4daf-866a-99566d5d0d8f">Umkehrfunktion</a> und wegen der <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Umkehrbarkeit bijektiver Abbildungen</a> ist \(f\) <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiv</a> 
 </p>
 </div>
 </div>

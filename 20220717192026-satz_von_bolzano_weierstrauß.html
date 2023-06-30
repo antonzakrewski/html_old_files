@@ -3,74 +3,90 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Satz von Bolzano-Weierstraß</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Bolzano-Weierstraß</h1>
-<div id="outline-container-org9f2728b" class="outline-2">
-<h2 id="org9f2728b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org05040db" class="outline-2">
+<h2 id="org05040db"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Jede <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte Folge</a> <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexer Zahlen</a> besitzt eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> 
+Jede <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte Folge</a> \(a_n\) <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexer Zahlen</a> besitzt eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org437dc85" class="outline-2">
-<h2 id="org437dc85"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb1bf536" class="outline-2">
+<h2 id="orgb1bf536"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org68850e7" class="outline-3">
-<h3 id="org68850e7"><span class="section-number-3">2.1.</span> Für <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" class="org-svg" /></h3>
+<div id="outline-container-org6bc6e77" class="outline-3">
+<h3 id="org6bc6e77"><span class="section-number-3">2.1.</span> Für \(\mathbb{R}\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach dem <a href="20220717170446-vollstandigkeitsaxiom.html#ID-2772514a-cfc0-4f1c-9762-b5565967613c">Vollständigkeitsaxiom</a> (bzw. hier <a href="20221112154250-supremumsaxiom.html#ID-d844b9e7-b58a-484d-9fa5-4b2fed37cf66">Supremumsaxiom</a>) seien
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_1ecd1714284ea29cf7d6377ce229421dcb7d6705.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_1ecd1714284ea29cf7d6377ce229421dcb7d6705.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(s_n) \coloneqq \inf_{k \leq n}\{a_k\} \\
+(S_n) \coloneqq \sup_{k \leq n}\{a_k\}
+\end{align*}
 <p>
-Da <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> beschränkt ist, folgt auch, dass <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_e7e5ead29ecec77f0a478ecc671c09d86d6cae45.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_e7e5ead29ecec77f0a478ecc671c09d86d6cae45.svg" class="org-svg" /> beschränkt ist und aus der Konstruktion (<a href="20221212093325-monotonie_einer_folge_von_suprema_infima.html#ID-6b4f82cc-6c1b-44bb-9fc6-ad693eba5cbf">Monotonie einer Folge von Suprema/Infima</a>)  auch <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monoton</a>.
-Daraus folgt aufgrund der <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner, beschränkter Folgen</a>, dass <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> konvergiert
+Da \(a_n\) beschränkt ist, folgt auch, dass \((s_n)\) beschränkt ist und aus der Konstruktion (<a href="20221212093325-monotonie_einer_folge_von_suprema_infima.html#ID-6b4f82cc-6c1b-44bb-9fc6-ad693eba5cbf">Monotonie einer Folge von Suprema/Infima</a>)  auch <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monoton</a>.
+Daraus folgt aufgrund der <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner, beschränkter Folgen</a>, dass \(a_n\) konvergiert
 </p>
 </div>
 </div>
-<div id="outline-container-org337fd22" class="outline-3">
-<h3 id="org337fd22"><span class="section-number-3">2.2.</span> Für <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_61d53aad998d88d59f4ddc4cefea819b3b817c0b.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_61d53aad998d88d59f4ddc4cefea819b3b817c0b.svg" class="org-svg" /></h3>
+<div id="outline-container-org735dcc2" class="outline-3">
+<h3 id="org735dcc2"><span class="section-number-3">2.2.</span> Für \(\mathbb{C}\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_85c25710e1de210a385ff9b8f1d726e4bded3e21.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_85c25710e1de210a385ff9b8f1d726e4bded3e21.svg" class="org-svg" /> beschränkt, dann folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
+Sei \((a_n)\) beschränkt, dann folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_3ab41b53873a7afbe8299fe9bb6987b9b061d754.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_3ab41b53873a7afbe8299fe9bb6987b9b061d754.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\vert a_n \vert^2 =& \vert \mathrm{Re}(a_n) \vert^2 + \vert \mathrm{Im}(a_n) \vert^2
+\end{align*}
 <p>
-Dass die reellen <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_9ab7e5d84ea468e29da8f54af52eebe07bf58f03.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_9ab7e5d84ea468e29da8f54af52eebe07bf58f03.svg" class="org-svg" /> bzw. <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_4c5cce6dcf8001355a3c0a99dc22371c146b20e5.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_4c5cce6dcf8001355a3c0a99dc22371c146b20e5.svg" class="org-svg" /> beschränkt sind.
-Damit existiert eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_3ab17fa1cbfef46da375855a79c865b760d5b5dc.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_3ab17fa1cbfef46da375855a79c865b760d5b5dc.svg" class="org-svg" /> welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und wieder eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_0d4a9de499a48ff2342839881b3da17fb3d47931.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_0d4a9de499a48ff2342839881b3da17fb3d47931.svg" class="org-svg" /> von <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_f0340d07a7d091ef52fb97d2f261bfe3da855055.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_f0340d07a7d091ef52fb97d2f261bfe3da855055.svg" class="org-svg" /> welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
-Daraus folgt, dass die beiden <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_14ba2cad71efa9827e539eccdc8d6c784ed8beb0.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_14ba2cad71efa9827e539eccdc8d6c784ed8beb0.svg" class="org-svg" /> und <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_315dd28b39e2f91e987134ee07c727be17a2dac5.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_315dd28b39e2f91e987134ee07c727be17a2dac5.svg" class="org-svg" /> konvergieren, sodass <img src="ltximg/20220717192026-satz_von_bolzano_weierstrauß_4b9f8fb94c48ee4c58983e5209752402ce026203.svg" alt="20220717192026-satz_von_bolzano_weierstrauß_4b9f8fb94c48ee4c58983e5209752402ce026203.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
+Dass die reellen <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> \((\mathrm{Re}(a_n))\) bzw. \(( \mathrm{Im}(a_n))\) beschränkt sind.
+Damit existiert eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(( \mathrm{Re}(a_n_{k}))\) welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und wieder eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(\left( \mathrm{Im}(a_{n_{k_i}})\right)\) von \(( \mathrm{Im}(a_{n_k}))\) welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
+Daraus folgt, dass die beiden <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> \(\left( \mathrm{Re}(a_{n_{k_i}) \right)\) und \(\left( \mathrm{Im}(a_{n_{k_i})\right)\) konvergieren, sodass \(a_{n_{k_{i}}}\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
 siehe:  
 </p>
 </div>
 </div>
-<div id="outline-container-org064e319" class="outline-3">
-<h3 id="org064e319"><span class="section-number-3">2.3.</span> schönere beweisskizze</h3>
+<div id="outline-container-org7396e46" class="outline-3">
+<h3 id="org7396e46"><span class="section-number-3">2.3.</span> schönere beweisskizze</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>halbieren der intervalle: für zukünftige folgenglieder</li>

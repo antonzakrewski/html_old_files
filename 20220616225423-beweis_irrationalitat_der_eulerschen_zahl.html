@@ -9,152 +9,160 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Irrationalität der eulerschen Zahl</h1>
-<div id="outline-container-org59820e0" class="outline-2">
-<h2 id="org59820e0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgec563b5" class="outline-2">
+<h2 id="orgec563b5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20220318184444-eulersche_zahl.html#ID-6c51847c-d7cb-4197-bbe3-b9d98680db54">Eulersche Zahl</a> ist <a href="20220923104945-irrationale_zahlen.html#ID-1ec88c0e-0b1b-4a94-a80a-206e4e896ddf">irrational</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgec08562" class="outline-2">
-<h2 id="orgec08562"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org38f0785" class="outline-2">
+<h2 id="org38f0785"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4b0813a" class="outline-3">
-<h3 id="org4b0813a"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org62145dc" class="outline-3">
+<h3 id="org62145dc"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org713ec12" class="outline-4">
-<h4 id="org713ec12"><span class="section-number-4">2.1.1.</span> Annahmen</h4>
+<div id="outline-container-org2f1021b" class="outline-4">
+<h4 id="org2f1021b"><span class="section-number-4">2.1.1.</span> Annahmen</h4>
 <div class="outline-text-4" id="text-2-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_0fe251b8b30958c7aed88eba959feaefa4efe43d.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_0fe251b8b30958c7aed88eba959feaefa4efe43d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e  \coloneqq \sum_{i=0}^{\infty} \frac{1}{n!}
+\end{align*}
 
 <p>
 Sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_26d642bf1f13b23e2289c03427cc3ff6a062204e.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_26d642bf1f13b23e2289c03427cc3ff6a062204e.svg" class="org-svg" />
-</span>
+\begin{align*}
+e = \frac{p}{q} && p \in \mathbb{Z}, q \in \mathbb{N}\setminus\{0\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1db3fb9" class="outline-4">
-<h4 id="org1db3fb9"><span class="section-number-4">2.1.2.</span> Lemma</h4>
+<div id="outline-container-org656516a" class="outline-4">
+<h4 id="org656516a"><span class="section-number-4">2.1.2.</span> Lemma</h4>
 <div class="outline-text-4" id="text-2-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_ac77cb194254be1e8847d161910c2991d930ed1b.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_ac77cb194254be1e8847d161910c2991d930ed1b.svg" class="org-svg" />
-</span>
+\begin{align*}
+\nexists x\left(x \in \mathbb{Z} \land 0 < x < 1 \right)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd345c12" class="outline-4">
-<h4 id="orgd345c12"><span class="section-number-4">2.1.3.</span> Umformung</h4>
+<div id="outline-container-org14e6412" class="outline-4">
+<h4 id="org14e6412"><span class="section-number-4">2.1.3.</span> Umformung</h4>
 <div class="outline-text-4" id="text-2-1-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_1038481c95153e61e39a025317c61667bee5c639.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_1038481c95153e61e39a025317c61667bee5c639.svg" class="org-svg" />
-</span>
+\begin{align*}
+\frac{p}{q} =& \frac{1}{1!} + \frac{1}{2!} + … + \frac{1}{q!} + \frac{1}{(q+1)!} + … && \vert - \sum_{n=0}^{q} \frac{1}{n!}\\
+\frac{p}{q} - \frac{1}{1!} - \frac{1}{2!} - … - \frac{1}{q!} =& \frac{1}{(q+1)!} + \frac{1}{(q+2)!} + … && \vert \cdot q! \\
+\frac{p \cdot q!}{q} - \frac{q!}{1!} - \frac{q!}{2!} - … - \frac{q!}{q!} =& \frac{q!}{(q+1)!} + \frac{q!}{(q+2)!} + … \\
+ =& \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} + \frac{1}{(q+1)(q+2)(q+3)} …
+\end{align*}
 </div>
-</div>
-<div id="outline-container-orgcd6b1ad" class="outline-5">
-<h5 id="orgcd6b1ad"><span class="section-number-5">2.1.3.1.</span> a)</h5>
+<div id="outline-container-org147c576" class="outline-5">
+<h5 id="org147c576"><span class="section-number-5">2.1.3.1.</span> a)</h5>
 <div class="outline-text-5" id="text-2-1-3-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_aac81d3fe47a7b4b6015a7aac53bdcd9ca91e2a3.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_aac81d3fe47a7b4b6015a7aac53bdcd9ca91e2a3.svg" class="org-svg" />
-</span>
+\begin{align*}
+n =& \frac{p \cdot q!}{q} - \frac{q!}{1!} - \frac{q!}{2!} - … - \frac{q!}{q!} \\
+=& p \cdot (q-1)! - q \cdot (q-1) \cdot … \cdot 2 - q \cdot (q-1) \cdot … \cdot 2 - q \cdot (q-1) \cdot … \cdot 3 - … - q - 1 \\
+\Rightarrow n \in \mathbb{Z}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4dea6ec" class="outline-5">
-<h5 id="org4dea6ec"><span class="section-number-5">2.1.3.2.</span> b)</h5>
+<div id="outline-container-org6f2c111" class="outline-5">
+<h5 id="org6f2c111"><span class="section-number-5">2.1.3.2.</span> b)</h5>
 <div class="outline-text-5" id="text-2-1-3-2">
+\begin{align*}
+q \in \mathbb{N}\setminus\{0\} \Rightarrow q \geq 1 \\
+\frac{1}{(q+1)} + \frac{1}{(q+1)^2} + \frac{1}{(q+1)^3} + … >& \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} + \frac{1}{(q+1)(q+2)(q+3)} + … \\ 
+ \frac{1}{1+1} + \frac{1}{(1+1)^2} + \frac{1}{(1+1)^3} \geq&  \frac{1}{(q+1)} + \frac{1}{(q+1)^2} + \frac{1}{(q+1)^3} + …  \\
+\frac{1}{1+1} + \frac{1}{(1+1)^2} + \frac{1}{(1+1)^3} … =& \frac{1}{2} + \frac{1}{4} + \frac{1}{8} \\
+\frac{1}{2} + \frac{1}{4} + \frac{1}{8} … =& 1 \\
+\Rightarrow 1 \geq& \frac{1}{(q+1)} + \frac{1}{(q+1)^2} + \frac{1}{(q+1)^3} + …  \\
+\Rightarrow 1 >& \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} + \frac{1}{(q+1)(q+2)(q+3)} + … 
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_bc6bfcb5b46bf73e26254b8c1df3370aed0a8092.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_bc6bfcb5b46bf73e26254b8c1df3370aed0a8092.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+q \in \mathbb{N}\setminus\{0\} \Rightarrow& q > 0 \\
+\Rightarrow& q + n > 0 && n \in \mathbb{N}\\
+\Rightarrow& \frac{1}{q+1} > 0 \\
+\Rightarrow& \frac{1}{(q+1)(q+2)…} > 0 \\
+\Rightarrow& \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} + … > 0
+\end{align*}
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_92cba68b71a6fd8063eb52d15eeea5ba71c58097.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_92cba68b71a6fd8063eb52d15eeea5ba71c58097.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_5a2b68585051161c691311c455676322d4f5d7e3.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_5a2b68585051161c691311c455676322d4f5d7e3.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org4c943c2" class="outline-5">
-<h5 id="org4c943c2"><span class="section-number-5">2.1.3.3.</span> Widerspruch</h5>
-</div>
+\begin{align*}
+0 < \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} … < 1 \Rightarrow \frac{1}{q+1} + \frac{1}{(q+1)(q+2)} \not\in \mathbb{Z}
+\end{align*}
 </div>
 </div>
 
 
+<div id="outline-container-orge8fceca" class="outline-5">
+<h5 id="orge8fceca"><span class="section-number-5">2.1.3.3.</span> Widerspruch</h5>
+</div>
+</div>
+</div>
 
 
-<div id="outline-container-org24c6fbc" class="outline-3">
-<h3 id="org24c6fbc"><span class="section-number-3">2.2.</span> b)</h3>
+
+
+<div id="outline-container-org29bc5ab" class="outline-3">
+<h3 id="org29bc5ab"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für alle <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_b5157accef486f2598bf5dace875632eac2342ae.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_b5157accef486f2598bf5dace875632eac2342ae.svg" class="org-svg" /> 
+Für alle \(n \in \mathbb{N}\) ist \(e \cdot n! \not\in \mathbb{Z}\) 
 Wegen der <a href="20220105231353-exponentialreihe.html#ID-109164a3-9e81-4355-b041-802cd24efd33">Exponentialreihe</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_750f707d9b2700d5d6ff0dc916aa58549a99afa5.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_750f707d9b2700d5d6ff0dc916aa58549a99afa5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e \cdot n! =& n! \cdot \sum_{i=0}^{\infty} \frac{1}{i!} \\
+\sum_{i=0}^{n} \frac{n!}{i!} + \sum_{i=0}^{\infty} \frac{n!}{(n+i+1)!}
+\end{align*}
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_88d43501ab589da5ea26a5aa3cdc4454ba363503.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_88d43501ab589da5ea26a5aa3cdc4454ba363503.svg" class="org-svg" /> und für <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_05d0218afcd482eb4b78744203d8763771ee733a.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_05d0218afcd482eb4b78744203d8763771ee733a.svg" class="org-svg" /> gilt:
+Es gilt \(\sum_{i=0}^{n} \frac{n!}{i!} \in \mathbb{N}\) und für \(n \geq 3\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_a1db55847ee31170e09fc8eb91d56960cf179264.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_a1db55847ee31170e09fc8eb91d56960cf179264.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 < \sum_{i=0}^{\infty} \frac{n!}{(n+1)!} \leq \sum_{i=0}^{\infty} \frac{1}{3^{i+1}} = \frac{3}{2} - 1 = 0.5 < 1 
+\end{align*}
 <p>
 Dabei folgt: &lt;TODO&gt;
-Für <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_553617b5c89520a00584049d6d111ed7a25a834d.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_553617b5c89520a00584049d6d111ed7a25a834d.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_3d0ba82c140c6c61e61a4fd853ae029439f36600.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_3d0ba82c140c6c61e61a4fd853ae029439f36600.svg" class="org-svg" /> folgt die Aussage aus z.B. <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_c6679cc2a3f8ad5b279cabb844b8ef7c99cc78b7.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_c6679cc2a3f8ad5b279cabb844b8ef7c99cc78b7.svg" class="org-svg" />  und der <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit</a> von <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_0f6f7de11d5af81b183d5b02b0d4600ddfc85f40.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_0f6f7de11d5af81b183d5b02b0d4600ddfc85f40.svg" class="org-svg" />
+Für \(n = 2\) oder \(n! = 1\) folgt die Aussage aus z.B. \(3! e = 3 \cdot 2! \cdot e\)  und der <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit</a> von \(\mathbb{N}\)
 </p>
 
 
 <p>
-Angenommen es existiere ein <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_87dd2cd70ee367bc7bd11a55960902b82cdb7392.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_87dd2cd70ee367bc7bd11a55960902b82cdb7392.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_2461cd7cef7df419272a0bec9e44438e970b498b.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_2461cd7cef7df419272a0bec9e44438e970b498b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_1efb776fe25ec43e10b74270228a054e4c777f99.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_1efb776fe25ec43e10b74270228a054e4c777f99.svg" class="org-svg" />, so folgt für
+Angenommen es existiere ein \(\frac{p}{q} \in \mathbb{Q}\) mit \(p \in \mathbb{Z}\) und \(q \in \mathbb{N}\), so folgt für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220616225423-beweis_irrationalitat_der_eulerschen_zahl_84b22897b7258a7b0d41683e857e6b6750e6195d.svg" alt="20220616225423-beweis_irrationalitat_der_eulerschen_zahl_84b22897b7258a7b0d41683e857e6b6750e6195d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e \cdot q! = p \cdot (q-1)! \in \mathbb{Z} 
+\end{align*}
 <p>
 Dies ist ein Widerpsruch zur obigen Aussage
 </p>

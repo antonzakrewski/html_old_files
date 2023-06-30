@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Inversionen</h1>
-<div id="outline-container-orgcc5974c" class="outline-2">
-<h2 id="orgcc5974c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0a4ce9a" class="outline-2">
+<h2 id="org0a4ce9a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221211212432-menge_der_inversionen_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20221211212432-menge_der_inversionen_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221211212432-menge_der_inversionen_b25aded72b2963374e5439f5e71ec17f79cb91c5.svg" alt="20221211212432-menge_der_inversionen_b25aded72b2963374e5439f5e71ec17f79cb91c5.svg" class="org-svg" />, dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der Inversionen für <img src="file:///home/anton/html/ltximg/20221211212432-menge_der_inversionen_8e1f70d368755cef913d275aab5ae076fdab9d0b.svg" alt="20221211212432-menge_der_inversionen_8e1f70d368755cef913d275aab5ae076fdab9d0b.svg" class="org-svg" /> gegeben durch:
+Sei \(S_n\) die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und \(\pi \in S_n\), dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der Inversionen für \(\pi\) gegeben durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211212432-menge_der_inversionen_ecfbf788f7f7d5a7ebc1ed99acaf23754e5f7144.svg" alt="20221211212432-menge_der_inversionen_ecfbf788f7f7d5a7ebc1ed99acaf23754e5f7144.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{inv}(\pi) = \{(i,j) \in \{1,...,n\} \times \{1,...,n\} \vert i < j \land \pi(i) > \pi(j) \}
+\end{align*}
 </div>
 </div>
 </div>

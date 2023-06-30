@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Fallunterscheidung</h1>
-<div id="outline-container-orgb04143b" class="outline-2">
-<h2 id="orgb04143b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org675c3b9" class="outline-2">
+<h2 id="org675c3b9"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220921134510-fallunterscheidung_a83160d80460d4f63fb24b5db2cf795c71461288.svg" alt="20220921134510-fallunterscheidung_a83160d80460d4f63fb24b5db2cf795c71461288.svg" class="org-svg" /> und wir wissen <img src="file:///home/anton/html/ltximg/20220921134510-fallunterscheidung_a51ccb7db7d4ac154bb3a5a1305820b7c5d83946.svg" alt="20220921134510-fallunterscheidung_a51ccb7db7d4ac154bb3a5a1305820b7c5d83946.svg" class="org-svg" />
+Sei \(P \Rightarrow Q\) und wir wissen \(P \Leftrightarrow P_1 \lor P_2 \lor P_3 \lor ... \lor P_n\)
 Es reicht dann zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220921134510-fallunterscheidung_59a78d062f5bc1740d29d0739432c0e86d680624.svg" alt="20220921134510-fallunterscheidung_59a78d062f5bc1740d29d0739432c0e86d680624.svg" class="org-svg" />
-</span>
+\begin{align*}
+P_1 \Rightarrow Q \\
+P_2 \Rightarrow Q \\
+\vdots \\
+P_n \Rightarrow Q
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7fa01f7" class="outline-2">
-<h2 id="org7fa01f7"><span class="section-number-2">2.</span> </h2>
+<div id="outline-container-org8719c5c" class="outline-2">
+<h2 id="org8719c5c"><span class="section-number-2">2.</span> </h2>
 </div>
 </div>
 <div id="postamble" class="status">

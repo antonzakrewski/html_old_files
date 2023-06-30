@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">least common denominator</h1>
-<div id="outline-container-org564356b" class="outline-2">
-<h2 id="org564356b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf75f5dd" class="outline-2">
+<h2 id="orgf75f5dd"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a> and <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_1625ee624594bd682b73be1243305120626d089f.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_1625ee624594bd682b73be1243305120626d089f.svg" class="org-svg" />.
-A least common multiple of <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_05ca43f392693b7d0f0a3c0bbfcb6a0fe680b52b.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_05ca43f392693b7d0f0a3c0bbfcb6a0fe680b52b.svg" class="org-svg" /> - <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_7bd3cf555d00697f8762760a80f342aa5c4e7aca.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_7bd3cf555d00697f8762760a80f342aa5c4e7aca.svg" class="org-svg" /> if unique - is an <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">element</a> <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" class="org-svg" />, such that:
+Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a> and \(a, b \in R \setminus \{0\}\).
+A least common multiple of \(a,b\) - \(\mathrm{lcm}(a,b)\) if unique - is an <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">element</a> \(r \in R\), such that:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_77fb8f33b52cdc0b0bea8db3822706d7720593c4.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_77fb8f33b52cdc0b0bea8db3822706d7720593c4.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_c59fcef479550dc9715dd7169d55e74f47278d43.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_c59fcef479550dc9715dd7169d55e74f47278d43.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_20f6d4e3ff7098bd1bb79e29d27cf4f0789d0b6d.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_20f6d4e3ff7098bd1bb79e29d27cf4f0789d0b6d.svg" class="org-svg" /></li>
+<li>\(a \mid r\)</li>
+<li>\(b \mid r\)</li>
+<li>\(\forall r' \in R: a \mid r' \land b \mid r' \Rightarrow r \mid r'\)</li>
 </ul>
 
 <p>
-Often it is useful to define <img src="file:///home/anton/html/ltximg/20220906095246-kleinstes_gemeinsames_vielfache_ca8413aeccb44af176234a66e3a9d64d88afbbde.svg" alt="20220906095246-kleinstes_gemeinsames_vielfache_ca8413aeccb44af176234a66e3a9d64d88afbbde.svg" class="org-svg" />
+Often it is useful to define \(\mathrm{lcm}(a,0) := 0\)
 </p>
 </div>
 </div>

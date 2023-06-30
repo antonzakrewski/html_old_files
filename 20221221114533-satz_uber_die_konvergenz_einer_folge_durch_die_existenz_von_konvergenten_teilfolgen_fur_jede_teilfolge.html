@@ -3,42 +3,63 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Konvergenz einer Folge durch die Existenz von konvergenten Teilfolgen für jede Teilfolge</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenz einer Folge durch die Existenz von konvergenten Teilfolgen für jede Teilfolge</h1>
-<div id="outline-container-org2ce9a9a" class="outline-2">
-<h2 id="org2ce9a9a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4c8b601" class="outline-2">
+<h2 id="org4c8b601"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so dass für jede <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_f4bff19fcd78a55de3b9360e33bb9c474fdf30ba.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_f4bff19fcd78a55de3b9360e33bb9c474fdf30ba.svg" class="org-svg" /> eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_3a7e47231b129513bfd7e99008458a7df97c9577.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_3a7e47231b129513bfd7e99008458a7df97c9577.svg" class="org-svg" /> existiert.
-Dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> gegen <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" class="org-svg" />
+Sei \(a_n\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so dass für jede <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(b_n\) eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(c_n \overset{\mathrm{\infty}}{ \rightarrow} a\) existiert.
+Dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(a_n\) gegen \(a\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge36e585" class="outline-2">
-<h2 id="orge36e585"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb1e2f8a" class="outline-2">
+<h2 id="orgb1e2f8a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" class="org-svg" /> beliebig, aber fest.
-Falls für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> gilt: $ &vert; a - a<sub>n</sub> &vert; &lt; &epsilon;$, so konvergiert <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" />
-Ansonsten existieren <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele Folgenglieder, so dass sich eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_d9f7e29a2abf7c70ff70b347a0a51a1547b5c0d9.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_d9f7e29a2abf7c70ff70b347a0a51a1547b5c0d9.svg" class="org-svg" /> existiert mit
+Sei \(\varepsilon > 0\) beliebig, aber fest.
+Falls für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(a_n\) gilt: $ &vert; a - a<sub>n</sub> &vert; &lt; &epsilon;$, so konvergiert \(a_n\)
+Ansonsten existieren <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> viele Folgenglieder, so dass sich eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(a'_n\) existiert mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_8616e8c97b219f0b4becef3cb84d20e5dd095131.svg" alt="20221221114533-satz_uber_die_konvergenz_einer_folge_durch_die_existenz_von_konvergenten_teilfolgen_fur_jede_teilfolge_8616e8c97b219f0b4becef3cb84d20e5dd095131.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert a'_n - a \vert \geq \varepsilon && \forall n \in \mathbb{N} 
+\end{align*}
 <p>
 Dies ist ein Widerspruch zur Annahme, dass sich für eine beliebige <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> konstruieren lässt.
 </p>

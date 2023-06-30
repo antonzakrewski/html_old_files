@@ -9,68 +9,84 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenzrelation einer Rechtsnebenklasse</h1>
-<div id="outline-container-org3190da9" class="outline-2">
-<h2 id="org3190da9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org84a038a" class="outline-2">
+<h2 id="org84a038a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4e6c72e512f4601506c5043a972a8e3a26340220.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4e6c72e512f4601506c5043a972a8e3a26340220.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> mit der <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4c72a82e617efcfe261ca9604676d055e456e698.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4c72a82e617efcfe261ca9604676d055e456e698.svg" class="org-svg" />.
-Dann ist für <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_7c7226f443b7998ba40a0e6a301eb0c5dbbba5b9.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_7c7226f443b7998ba40a0e6a301eb0c5dbbba5b9.svg" class="org-svg" />: <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_6e84fe954518e4642359f382e1e2d93adf23d881.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_6e84fe954518e4642359f382e1e2d93adf23d881.svg" class="org-svg" /> eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a>.
+Sei \((G, \circ)\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> mit der <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> \((U, \circ)\).
+Dann ist für \(a,b \in G\): \(a \sim b \Leftrightarrow a \circ b^{-1} \in U\) eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org57a45cf" class="outline-2">
-<h2 id="org57a45cf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf76f19e" class="outline-2">
+<h2 id="orgf76f19e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd78fab9" class="outline-3">
-<h3 id="orgd78fab9"><span class="section-number-3">2.1.</span> a) <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">reflexive Relation</a></h3>
+<div id="outline-container-org9c21400" class="outline-3">
+<h3 id="org9c21400"><span class="section-number-3">2.1.</span> a) <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">reflexive Relation</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_d03b85eb0f3de826537a4329b79d92fc2e13b89a.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_d03b85eb0f3de826537a4329b79d92fc2e13b89a.svg" class="org-svg" />
-</span>
+\begin{align*}
+a \circ a^{-1} = e \in U \Rightarrow a \sim a
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgefde100" class="outline-3">
-<h3 id="orgefde100"><span class="section-number-3">2.2.</span> b) <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrische Relation</a></h3>
+<div id="outline-container-orga1352f1" class="outline-3">
+<h3 id="orga1352f1"><span class="section-number-3">2.2.</span> b) <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrische Relation</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a18b61ec06d6e3a54c2d7faca70304f7827d9f2e.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a18b61ec06d6e3a54c2d7faca70304f7827d9f2e.svg" class="org-svg" />, also <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_3d1c63c6d0df10a369248613180ecca9005fbddb.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_3d1c63c6d0df10a369248613180ecca9005fbddb.svg" class="org-svg" />.
-folglich ist das <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">Inverses Element</a> für <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_335b77b13a24a1fff9bda76f347c2919bbefc8b3.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_335b77b13a24a1fff9bda76f347c2919bbefc8b3.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_2894e6d02cc5dad0f68ff97c761ea78097b67175.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_2894e6d02cc5dad0f68ff97c761ea78097b67175.svg" class="org-svg" /> und damit folgt <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_9c26b609f01cd212214863e88397956924581bae.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_9c26b609f01cd212214863e88397956924581bae.svg" class="org-svg" />
+Sei \(a \sim b\), also \(a \circ b^{-1} \in U\).
+folglich ist das <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">Inverses Element</a> für \((a \circ b^{-1})\) in \(U\), d.h. \((a \circ b^{-1})^{-1} =& ba^{-1} \in U\) und damit folgt \(b \sim a\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb612a62" class="outline-3">
-<h3 id="orgb612a62"><span class="section-number-3">2.3.</span> c) <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">transitive Relation</a></h3>
+<div id="outline-container-org756d7f7" class="outline-3">
+<h3 id="org756d7f7"><span class="section-number-3">2.3.</span> c) <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">transitive Relation</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a18b61ec06d6e3a54c2d7faca70304f7827d9f2e.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a18b61ec06d6e3a54c2d7faca70304f7827d9f2e.svg" class="org-svg" />  und <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_b8311ca01b19cbc28532a3cddfeaefac4a368269.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_b8311ca01b19cbc28532a3cddfeaefac4a368269.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_3d1c63c6d0df10a369248613180ecca9005fbddb.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_3d1c63c6d0df10a369248613180ecca9005fbddb.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_b2e5a65039a67249800c24f4d7a694cb2e70f803.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_b2e5a65039a67249800c24f4d7a694cb2e70f803.svg" class="org-svg" />
-aufgrund der Verknüpfung in <img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> folgt:
+Sei \(a \sim b\)  und \(b \sim c\), d.h. \(a \circ b^{-1} \in U\) sowie \(b \circ c^{-1} \in U\)
+aufgrund der Verknüpfung in \(U\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a6d46e81bace068b01429212721a9aed39dbc279.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_a6d46e81bace068b01429212721a9aed39dbc279.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a \circ b^{-1})\circ (b \circ c^{-1}) =& ac^{-1}
+\end{align*}
 <p>
 Aufgrund der <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit einer algebraischen Struktur</a> folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4ce081641739c8648278206ad784e82246f00eb1.svg" alt="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse_4ce081641739c8648278206ad784e82246f00eb1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ac^{-1} \in U \Rightarrow a \sim c
+\end{align*}
 </div>
 </div>
 </div>

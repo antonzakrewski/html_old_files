@@ -9,40 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">invertierbare Elemente in einem Restklassenring der ganzen Zahlen</h1>
-<div id="outline-container-org4b088a9" class="outline-2">
-<h2 id="org4b088a9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc1b89b0" class="outline-2">
+<h2 id="orgc1b89b0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" class="org-svg" /> und der <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> <img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_e18bfca343edd56585c212bfe20cfe57a2b8c62b.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_e18bfca343edd56585c212bfe20cfe57a2b8c62b.svg" class="org-svg" /> gegeben, so gilt für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a> 
+Sei \(m \in \mathbb{Z}\) und der <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> \(\mathbb{Z}/m \mathbb{Z})\) gegeben, so gilt für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_feafba97a31d747044ac9554d57f7c8f519aeaa4.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_feafba97a31d747044ac9554d57f7c8f519aeaa4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\mathbb{Z}/m \mathbb{Z})^{\times} = \{\overline{x} \vert \mathrm{gcd}(x,m) = 1\}
+\end{align*}
 <p>
 siehe: <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org48a8313" class="outline-2">
-<h2 id="org48a8313"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3d44ef3" class="outline-2">
+<h2 id="org3d44ef3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Aus <img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_e38238acf36446dd6a2af9719bf5f5ae98720830.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_e38238acf36446dd6a2af9719bf5f5ae98720830.svg" class="org-svg" /> folgt, dass $a,b &isin; $ existieren mit <img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_5e90114978308c639aec4e2baa01eb8406621241.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_5e90114978308c639aec4e2baa01eb8406621241.svg" class="org-svg" /> (siehe: <a href="20220911124052-lemma_von_bezout.html#ID-36a007b5-785e-4bb3-8664-334fd0369219">Lemma von Bezout</a>)
+Aus \(\mathrm{gcd}(k,m) = 1\) folgt, dass $a,b &isin; \mathbb{Z} $ existieren mit \(ax + bm = 1\) (siehe: <a href="20220911124052-lemma_von_bezout.html#ID-36a007b5-785e-4bb3-8664-334fd0369219">Lemma von Bezout</a>)
 Daraus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_5d13121023eeae556f297006c9696b3819ff8f2d.svg" alt="20230426133715-invertierbare_elemente_in_einem_restklassenring_der_ganzen_zahlen_5d13121023eeae556f297006c9696b3819ff8f2d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{ax + bm} =& \overline{1} \\
+\overline{ax} + \overline{bm} =& \overline{1} \\
+\overline{a} \cdot \overline{x} =& \overline{1}
+\end{align*}
 
 <p>
 die andere Richtung folgt aus den Aussagen über <a href="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen.html#ID-4ee2a8ff-1ceb-4e6c-bd83-0288214355e1">Nullteiler in einem Restklassenring der ganzen Zahlen</a> und <a href="20230423224858-einheit_und_nullteiler.html#ID-2dab0c61-fa50-4755-a1b6-0294e5b02d2f">Einheiten und Nullteiler</a> 

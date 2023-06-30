@@ -9,32 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Pfadkomponente unter stetigen Abbildungen</h1>
-<div id="outline-container-org6895ab4" class="outline-2">
-<h2 id="org6895ab4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb7c08b9" class="outline-2">
+<h2 id="orgb7c08b9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Dann gilt für <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> und die <a href="20230525114518-pfadkomponente.html#ID-3295510f-254c-4af2-a40d-2374ef5c9929">Pfadkomponente</a> <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_20ae9dc3ffbbae6680c356f53d5a4e8b8ffd47d9.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_20ae9dc3ffbbae6680c356f53d5a4e8b8ffd47d9.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" />:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Dann gilt für \(x \in X\) und die <a href="20230525114518-pfadkomponente.html#ID-3295510f-254c-4af2-a40d-2374ef5c9929">Pfadkomponente</a> \(P(x)\) sowie \(f(x)\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_2cd0fbbe0c1f367684b286daedd154bde24f86c5.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_2cd0fbbe0c1f367684b286daedd154bde24f86c5.svg" class="org-svg" />
-</span>
+\begin{align*}
+f[P(x)] \subseteq P(f(x)) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0a6d09b" class="outline-2">
-<h2 id="org0a6d09b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc712a23" class="outline-2">
+<h2 id="orgc712a23"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_fbb9be2fb062b08f434451d6d43fa05305f04459.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_fbb9be2fb062b08f434451d6d43fa05305f04459.svg" class="org-svg" />, so existieren <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_b8ef6a103b62be350427fd10dc536986ce479193.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_b8ef6a103b62be350427fd10dc536986ce479193.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_09c1e896de234117ce9087d548b34a6ab5192f90.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_09c1e896de234117ce9087d548b34a6ab5192f90.svg" class="org-svg" /> und einem <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a> von <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_af64fcbd9665edc8475845c68ea7e8409f7281cd.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_af64fcbd9665edc8475845c68ea7e8409f7281cd.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_b0b56a219873b4ac9ab04aa066b431dd696e1df9.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_b0b56a219873b4ac9ab04aa066b431dd696e1df9.svg" class="org-svg" />.
-Aufgrund der Aussage über einen <a href="20230529184538-weg_unter_verknupfung_mit_stetigen_abbildungen.html#ID-853a7d4b-77d4-44ed-88f9-639df8713f9d">Weg unter Verknüpfung mit stetigen Abbildungen</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_86c72cf0c579721e6422ccdc456de4a6228e1825.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_86c72cf0c579721e6422ccdc456de4a6228e1825.svg" class="org-svg" /> ein Weg von <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_1153ece6f67f70f93e6c1f223d3a97b52984692f.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_1153ece6f67f70f93e6c1f223d3a97b52984692f.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_be5dfe3a713cf301d1144c23b7cc8a8d240690e0.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_be5dfe3a713cf301d1144c23b7cc8a8d240690e0.svg" class="org-svg" /> = y<sub>2</sub>$.
-Damit ist <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_2badab1394665f283b4246f2f5886e3d3b4c3501.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_2badab1394665f283b4246f2f5886e3d3b4c3501.svg" class="org-svg" /> <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a> und damit gilt <img src="file:///home/anton/html/ltximg/20230530173510-pfadkomponente_unter_stetigen_injektionen_4be247f26bd949f11f5366b661a9f5e7a47e68ca.svg" alt="20230530173510-pfadkomponente_unter_stetigen_injektionen_4be247f26bd949f11f5366b661a9f5e7a47e68ca.svg" class="org-svg" />.
+Sei \(y_1,y_2 \in f[P(x)]\), so existieren \(x_1,x_2 \in X\) mit \(f(x_1) = y_1, f(x_2) = y_2\) und einem <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a> von \(\gamma\) von \(x_1\) nach \(x_2\).
+Aufgrund der Aussage über einen <a href="20230529184538-weg_unter_verknupfung_mit_stetigen_abbildungen.html#ID-853a7d4b-77d4-44ed-88f9-639df8713f9d">Weg unter Verknüpfung mit stetigen Abbildungen</a> folgt, dass \(f \circ \gamma\) ein Weg von \(f(x_1) = y_1\) nach \(f(x_2)\) = y<sub>2</sub>$.
+Damit ist \(f[P(x)]\) <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a> und damit gilt \(f[P(x)] \subseteq P[f(x)]\).
 </p>
 </div>
 </div>

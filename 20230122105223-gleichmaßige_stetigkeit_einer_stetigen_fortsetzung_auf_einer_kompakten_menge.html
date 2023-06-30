@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gleichmäßige Stetigkeit einer stetigen Fortsetzung auf einer kompakten Menge</h1>
-<div id="outline-container-orgf3d6b67" class="outline-2">
-<h2 id="orgf3d6b67"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org92a9058" class="outline-2">
+<h2 id="org92a9058"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c22e794b3f0df51ede9a1f57c9fec1ade161897c.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c22e794b3f0df51ede9a1f57c9fec1ade161897c.svg" class="org-svg" /> eine <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_6a6527d5308bdf90c05b95cfb7a73e82b1bde9b1.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_6a6527d5308bdf90c05b95cfb7a73e82b1bde9b1.svg" class="org-svg" /> eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" class="org-svg" /> eine <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist die <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung</a> <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_5c0c1c680e5a1b4570be1768a11b848148027411.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_5c0c1c680e5a1b4570be1768a11b848148027411.svg" class="org-svg" /> ebenfalls <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
+Sei \(V,W\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> \(M \subseteq V\) eine <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(M' \subseteq V\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> und \(f: V \rightarrow W\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei \(f_M\) eine <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist die <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung</a> \(f_{M' \cup M}\) ebenfalls <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org006c4b2" class="outline-2">
-<h2 id="org006c4b2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7d21ceb" class="outline-2">
+<h2 id="org7d21ceb"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach Annahme und 
@@ -32,18 +57,18 @@ Nach Annahme und
 <li><a href="20230120194529-satz_von_heine.html#ID-63bbd543-c95b-4503-9b4a-ff170c35f194">Satz von Heine (Analysis)</a> / <a href="20230120211212-satz_von_heine_fur_die_reellen_zahlen.html#ID-8a76fcc1-0d09-4c94-837e-da6c4667a404">Satz von Heine für die Reellen Zahlen</a> / <a href="20230112113712-gleichmaßige_konvergenz_einer_stetigen_funktion_von_einer_folgenkompakten_menge.html#ID-d7a09c8b-99f9-49fb-802b-b92c186afc15">Gleichmäßige Stetigkeit einer stetigen Funktion von einer Kompakten Menge</a></li>
 </ul>
 <p>
-ist <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_f0440acb8294d7c64edcb68580ade366bad97b0a.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_f0440acb8294d7c64edcb68580ade366bad97b0a.svg" class="org-svg" /> <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_9271d0811dbd436a5f723f75dd8c224151d43fc2.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_9271d0811dbd436a5f723f75dd8c224151d43fc2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c72266686c15d417bb5af0f26b4a1ab57794b2b4.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c72266686c15d417bb5af0f26b4a1ab57794b2b4.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_9f01b185f1f5d7a65a688a6ddeb234e734364e56.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_9f01b185f1f5d7a65a688a6ddeb234e734364e56.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c23ab0c8292b2f12479ec954ec7e0d8144cbb2ee.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_f0440acb8294d7c64edcb68580ade366bad97b0a.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_f0440acb8294d7c64edcb68580ade366bad97b0a.svg" class="org-svg" /> gegeben.
-Dann folgt für <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_24ef3c9dd012c39d56e852456888a6c7616c8b95.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_24ef3c9dd012c39d56e852456888a6c7616c8b95.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b3ea9e36caabb1243b4e698925f260ce33a9642a.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b3ea9e36caabb1243b4e698925f260ce33a9642a.svg" class="org-svg" />
+ist \(f_M\) und \(f_{M'}\) <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a>.
+Sei \(\frac{\varepsilon}{2} > 0\) und \(\delta_M\) und \(\delta_{M'}\) für \(f_M\) bzw. \(f_{M'}\) gegeben.
+Dann folgt für \(x \in M, x' \in M'\) mit \(y \in D_{\delta_M}(x) \cap D_{\delta_{M'}}(x')\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c782dafc7a02a6c4e7e7a904572b6c31e935fdf9.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_c782dafc7a02a6c4e7e7a904572b6c31e935fdf9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert f(x) - f(x') \vert =& \vert f(x) - f(y) + f(y) - f(x') \vert \\
+\leq& \vert f(x) - f(y) \vert + \vert f(y) - f(x') \vert \\
+\leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2} \\
+=& \varepsilon
+\end{align*}
 <p>
-Also ist <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_dcfff80c5d3b74b9aa55086e138a594e90c13d41.svg" alt="20230122105223-gleichmaßige_stetigkeit_einer_stetigen_fortsetzung_auf_einer_kompakten_menge_dcfff80c5d3b74b9aa55086e138a594e90c13d41.svg" class="org-svg" /> glm stetig
+Also ist \(f\) mit \(\varepsilon > 0\) und \(\delta = \delta_{M} + \delta_{M'}\) glm stetig
 </p>
 </div>
 </div>

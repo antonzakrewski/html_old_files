@@ -3,54 +3,78 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Offenheit einer Epsilon-Umgebung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Offenheit einer Epsilon-Umgebung</h1>
-<div id="outline-container-orgab1295c" class="outline-2">
-<h2 id="orgab1295c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga1702ce" class="outline-2">
+<h2 id="orga1702ce"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Jede <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> ist eine <a href="20221002145218-offene_menge.html#ID-9e570743-0f44-46f7-9660-c51f31581ef6">offene Menge</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcd82aca" class="outline-2">
-<h2 id="orgcd82aca"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2aceb40" class="outline-2">
+<h2 id="org2aceb40"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge212187" class="outline-3">
-<h3 id="orge212187"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgb4dc37c" class="outline-3">
+<h3 id="orgb4dc37c"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Durch konstruktion als <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc7ce23c" class="outline-3">
-<h3 id="orgc7ce23c"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org0107bf7" class="outline-3">
+<h3 id="org0107bf7"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_7d8dc4cf0393d9147c7ce0aaaecf5ba78afa84e0.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_7d8dc4cf0393d9147c7ce0aaaecf5ba78afa84e0.svg" class="org-svg" />, so gilt <img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_49b6e46e69bb83c390b7c105267dc968a24ec8c5.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_49b6e46e69bb83c390b7c105267dc968a24ec8c5.svg" class="org-svg" />
-Daraus folgt, dass wir <img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_b5171425453d997c4284ea7500a14b2b3aedede7.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_b5171425453d997c4284ea7500a14b2b3aedede7.svg" class="org-svg" /> &gt; 0 wählen können und es folgt für <img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_23de1909648d31f058822d7f40048695e98fe518.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_23de1909648d31f058822d7f40048695e98fe518.svg" class="org-svg" />
+Sei \(x \in B_{\varepsilon}(r)\), so gilt \(\delta \coloneqq d(x,r) < \varepsilon\)
+Daraus folgt, dass wir \(\varepsilon' \coloneqq \frac{1}{2} (\varepsilon - \delta)\) &gt; 0 wählen können und es folgt für \(z \in B_{\varepsilon'}(x)\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_7d93fbeff45ae0179f6db84cc64209618a8a02cc.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_7d93fbeff45ae0179f6db84cc64209618a8a02cc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+d(z,r) \leq& d(z,x) + d(x,r) \\
+<& \frac{1}{2}(\varepsilon - \delta) + \delta \\
+=& \frac{1}{2} (\varepsilon + \delta) \\
+<& \varepsilon
+\end{align*}
 <p>
-Somit folgt auch <img src="ltximg/20221125122905-offenheit_einer_epsilon_umgebung_a5b5d3ebad9fae0f2aef4f566db075fb7b7533e1.svg" alt="20221125122905-offenheit_einer_epsilon_umgebung_a5b5d3ebad9fae0f2aef4f566db075fb7b7533e1.svg" class="org-svg" />
+Somit folgt auch \(z \in B_{\varepsilon}(r)\)
 </p>
 </div>
 </div>

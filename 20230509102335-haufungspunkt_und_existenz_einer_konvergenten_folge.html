@@ -9,56 +9,83 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Häufungspunkt und Existenz einer konvergenten Folge in erstabzählbaren Räumen</h1>
-<div id="outline-container-orgec81df3" class="outline-2">
-<h2 id="orgec81df3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc382a91" class="outline-2">
+<h2 id="orgc382a91"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230211132406-erste_abzahlbarkeitsaxiom.html#ID-8ec08cf5-0668-49c6-a8f3-7ec959f31636">erstabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c76a27c2183e0e29579c20b651342bb7c0b8f7d5.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c76a27c2183e0e29579c20b651342bb7c0b8f7d5.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20230211132406-erste_abzahlbarkeitsaxiom.html#ID-8ec08cf5-0668-49c6-a8f3-7ec959f31636">erstabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((x_n)_{n \in \mathbb{N}}\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in \(X\).
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li>es existiert eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_d17f7cafe18846b9cb2ffb42fea3b7a28980c060.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_d17f7cafe18846b9cb2ffb42fea3b7a28980c060.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> ist ein <a href="20230111162016-haufungspunkt_topologie.html#ID-194886e1-786a-4087-a60c-f242d88eb765">Häufungspunkt</a></li>
+<li>es existiert eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(x_n' \rightarrow x\)</li>
+<li>\(x\) ist ein <a href="20230111162016-haufungspunkt_topologie.html#ID-194886e1-786a-4087-a60c-f242d88eb765">Häufungspunkt</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org5095ccc" class="outline-2">
-<h2 id="org5095ccc"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2fde019" class="outline-2">
+<h2 id="org2fde019"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5224091" class="outline-3">
-<h3 id="org5224091"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org8983c1b" class="outline-3">
+<h3 id="org8983c1b"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><a href="20230608-konvergente_teilfolge_impliziert_einen_haufungspunkt.html#ID-33c2db0c-a807-4c3c-bb83-6112ae7fde45">konvergente Teilfolge impliziert einen Häufungspunkt</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org77fb11a" class="outline-3">
-<h3 id="org77fb11a"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgba99792" class="outline-3">
+<h3 id="orgba99792"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgdf90313" class="outline-4">
-<h4 id="orgdf90313"><span class="section-number-4">2.2.1.</span> Konstruktion</h4>
+<div id="outline-container-org33decd6" class="outline-4">
+<h4 id="org33decd6"><span class="section-number-4">2.2.1.</span> Konstruktion</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_473e3340375e9120c75a188bc76a6465e922992f.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_473e3340375e9120c75a188bc76a6465e922992f.svg" class="org-svg" /> eine <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>, <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20230509105936-lineare_ordnung_einer_erstabzahlbaren_umgebungsbasis.html#ID-76547ab1-f07a-44da-80d7-bfb09e15100f">linear geordnet</a>.
-Wir konstruieren eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_401026a6be9f889014a3c2683c94ba8b288c0a75.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_401026a6be9f889014a3c2683c94ba8b288c0a75.svg" class="org-svg" />, indem wir aus <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c2059b8449a0dbf08d54ad2d2522a481e5d408d6.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c2059b8449a0dbf08d54ad2d2522a481e5d408d6.svg" class="org-svg" /> ein beliebiges Element wählen.
-Dabei existiert stets ein <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_401026a6be9f889014a3c2683c94ba8b288c0a75.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_401026a6be9f889014a3c2683c94ba8b288c0a75.svg" class="org-svg" />, da nach Annahme unendlich viele Folgenglieder in <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c2059b8449a0dbf08d54ad2d2522a481e5d408d6.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_c2059b8449a0dbf08d54ad2d2522a481e5d408d6.svg" class="org-svg" /> liegen.
-Falls <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_49e122dda84da331f2855ef595ac90c9e7ee7cc6.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_49e122dda84da331f2855ef595ac90c9e7ee7cc6.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> ist, so wähle man <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_b89e460c518b4d3c3a88360f47cdf9025cb0745b.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_b89e460c518b4d3c3a88360f47cdf9025cb0745b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_1bb3b3f101f81ec223e196c62395fb5998c4cd33.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_1bb3b3f101f81ec223e196c62395fb5998c4cd33.svg" class="org-svg" />
+Sei \((U_n)_{n \in \mathbb{N}}\) eine <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>, <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20230509105936-lineare_ordnung_einer_erstabzahlbaren_umgebungsbasis.html#ID-76547ab1-f07a-44da-80d7-bfb09e15100f">linear geordnet</a>.
+Wir konstruieren eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(x_k\), indem wir aus \(U_k \cap \{x_n \vert \text{n hinreichend groß im Vergleich zu } x_{k-1}\}\) ein beliebiges Element wählen.
+Dabei existiert stets ein \(x_k\), da nach Annahme unendlich viele Folgenglieder in \(U_k \cap \{x_n \vert \text{n hinreichend groß im Vergleich zu } x_{k-1}\}\) liegen.
+Falls \((U_n)\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> ist, so wähle man \(U_{\mathrm{min}(k,m)}\) mit \(m \coloneqq \mathrm{max}(n)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org5ee4e34" class="outline-4">
-<h4 id="org5ee4e34"><span class="section-number-4">2.2.2.</span> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a></h4>
+<div id="outline-container-org5acdd29" class="outline-4">
+<h4 id="org5acdd29"><span class="section-number-4">2.2.2.</span> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a></h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, so existiert ein <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_d6c89941193d1bab99ca4042352b4428d884788d.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_d6c89941193d1bab99ca4042352b4428d884788d.svg" class="org-svg" />.
-Dabei liegen nach Konstruktion <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_6291ae5d15d5698e65fbbb1e05ff176754192091.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_6291ae5d15d5698e65fbbb1e05ff176754192091.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_7c277c5980b54917c8c01762dcc7c039742e098f.svg" alt="20230509102335-haufungspunkt_und_existenz_einer_konvergenten_folge_7c277c5980b54917c8c01762dcc7c039742e098f.svg" class="org-svg" />
+Sei \(U\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, so existiert ein \(n \in \mathbb{N}\) mit \(U_n \subseteq U\).
+Dabei liegen nach Konstruktion <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> Folgenglieder \(x_k \in U_n \subseteq U\), d.h. \(x_k \rightarrow x\)
 </p>
 </div>
 </div>

@@ -9,17 +9,42 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">euklidischer Ring</h1>
-<div id="outline-container-orgb2c2338" class="outline-2">
-<h2 id="orgb2c2338"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org72ec40d" class="outline-2">
+<h2 id="org72ec40d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226132415-euklidischer_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist ein euklidischer Ring, falls eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_1a885336fe090fa04702d1119151a63ac5672fa3.svg" alt="20221226132415-euklidischer_ring_1a885336fe090fa04702d1119151a63ac5672fa3.svg" class="org-svg" /> existiert so dass gilt:
-Seien <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_d8e706385035b612185142c04455dcde19704410.svg" alt="20221226132415-euklidischer_ring_d8e706385035b612185142c04455dcde19704410.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_7e978ae16c4c54905eb62dee2d5edfa2abab90d7.svg" alt="20221226132415-euklidischer_ring_7e978ae16c4c54905eb62dee2d5edfa2abab90d7.svg" class="org-svg" />.
-Dann existieren <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_883c3f45fc6f6978f78723803721efcfd6b348a7.svg" alt="20221226132415-euklidischer_ring_883c3f45fc6f6978f78723803721efcfd6b348a7.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_406b946386bbfe11397c7abaeb0eddd439e3c1ef.svg" alt="20221226132415-euklidischer_ring_406b946386bbfe11397c7abaeb0eddd439e3c1ef.svg" class="org-svg" /> mit: <img src="file:///home/anton/html/ltximg/20221226132415-euklidischer_ring_798e38590f03348ad5f85e2917e69956bca4c498.svg" alt="20221226132415-euklidischer_ring_798e38590f03348ad5f85e2917e69956bca4c498.svg" class="org-svg" />
+Ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> \(R\) ist ein euklidischer Ring, falls eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(\phi: R \setminus \{0\} \rightarrow \mathbb{N}_0\) existiert so dass gilt:
+Seien \(x,y \in R\) mit \(y \neq 0\).
+Dann existieren \(q,r \in R\) mit \(x = qy + r\) mit: \(r = 0 \lor \phi(r) < \phi(y)\)
 </p>
 </div>
 </div>

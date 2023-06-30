@@ -3,45 +3,62 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Quotient komplexer Zahlen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quotient komplexer Zahlen</h1>
-<div id="outline-container-org932d26d" class="outline-2">
-<h2 id="org932d26d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa78f77" class="outline-2">
+<h2 id="orgaa78f77"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20220225202721-quotient_komplexer_zahlen_21080e841aabac9b4f45469137a844783c209718.svg" alt="20220225202721-quotient_komplexer_zahlen_21080e841aabac9b4f45469137a844783c209718.svg" class="org-svg" /> mit <img src="ltximg/20220225202721-quotient_komplexer_zahlen_5f9031152569a2f7f09029cf7cb66bb7f07eb6b8.svg" alt="20220225202721-quotient_komplexer_zahlen_5f9031152569a2f7f09029cf7cb66bb7f07eb6b8.svg" class="org-svg" /> und $z' = a' + b' $ 
+Seien \(z,z' \in \mathbb{C}\) mit \(z = a + b \mathrm{i}\) und $z' = a' + b' \mathrm{i} $ 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220225202721-quotient_komplexer_zahlen_a57ab22ca913819964a543b72626e3e4f9968554.svg" alt="20220225202721-quotient_komplexer_zahlen_a57ab22ca913819964a543b72626e3e4f9968554.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\frac{a + b\mathrm{i}}{a + b'\mathrm{i}} = \frac{aa' + bb'}{(a')^2 + (b')^2} + \mathrm{i} \frac{ba - ab'}{(a')^2 - (b')^2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc29afd2" class="outline-2">
-<h2 id="orgc29afd2"><span class="section-number-2">2.</span> Herleitung</h2>
+<div id="outline-container-org40e3616" class="outline-2">
+<h2 id="org40e3616"><span class="section-number-2">2.</span> Herleitung</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220225202721-quotient_komplexer_zahlen_5bbc76350449818884cec4717311d26349811d46.svg" alt="20220225202721-quotient_komplexer_zahlen_5bbc76350449818884cec4717311d26349811d46.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\frac{a + b\mathrm{i}}{a' + b'\mathrm{i}} =& \frac{a + b\mathrm{i}}{a' + b'\mathrm{i}} \frac{a' - b'\mathrm{i}}{a' - b'\mathrm{i}} \\
+=& \frac{aa' - ab'\mathrm{i} + ba'\mathrm{i} - bb' \mathrm{i}^2 }{(a')^2 - (b')^2 \mathrm{i}^2} \\
+=& \frac{aa' + bb'}{(a')^2 + (b')^2} + \mathrm{i} \frac{ba' - ab'}{(a')^2 + (b')^2}
+\end{align*}
 </div>
 </div>
 </div>

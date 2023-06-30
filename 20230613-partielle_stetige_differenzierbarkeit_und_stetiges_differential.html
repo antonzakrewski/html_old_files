@@ -9,39 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">partielle, stetige Differenzierbarkeit und stetiges Differential</h1>
-<div id="outline-container-org23df772" class="outline-2">
-<h2 id="org23df772"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfbe3cce" class="outline-2">
+<h2 id="orgfbe3cce"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^m\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> ist <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> und das <a href="20230613-differential.html#ID-213b5c7c-5d5a-4188-ac96-feaa797a1c91">Differential</a> <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> ist <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> und alle <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_b01a38fbd8420d3e09f3922b8b91664d20a5b563.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_b01a38fbd8420d3e09f3922b8b91664d20a5b563.svg" class="org-svg" /> sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(F\) ist <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> und das <a href="20230613-differential.html#ID-213b5c7c-5d5a-4188-ac96-feaa797a1c91">Differential</a> \(\mathrm{d}F\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(F\) ist <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> und alle \(\frac{\partial F_i}{\partial x_j}U \rightarrow \mathbb{R}\) sind <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge843925" class="outline-2">
-<h2 id="orge843925"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2ad8dc9" class="outline-2">
+<h2 id="org2ad8dc9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc3d9e71" class="outline-3">
-<h3 id="orgc3d9e71"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orge104b98" class="outline-3">
+<h3 id="orge104b98"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Ist <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> diffbar, so auch partiell diffbar.
-Bezüglich der Standardbasen von <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_133243258075c3f3518d92409d7dde8afca8224b.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_133243258075c3f3518d92409d7dde8afca8224b.svg" class="org-svg" /> wird <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" class="org-svg" /> durch die <a href="20230606-jacobi_matrix.html#ID-be661208-14c1-4aaa-a9b0-e96751d62adf">Jacobi Matrix</a>, <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e20bad18adf23963443d94397cc456f7cc12b9de.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e20bad18adf23963443d94397cc456f7cc12b9de.svg" class="org-svg" />
-Ist <img src="file:///home/anton/html/ltximg/20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" alt="20230613-partielle_stetige_differenzierbarkeit_und_stetiges_differential_e746acfc49f3c58eb05c1538f3946965e2532fe2.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>, so auch die matrix koeffizienten
+Ist \(F\) diffbar, so auch partiell diffbar.
+Bezüglich der Standardbasen von \(\mathbb{R}^n\) und \(\mathbb{R}^m\) wird \(\mathrm{d}F\) durch die <a href="20230606-jacobi_matrix.html#ID-be661208-14c1-4aaa-a9b0-e96751d62adf">Jacobi Matrix</a>, \(\mathrm{d}F = \left(\frac{\partial F_i}{\partial x_j}\right)\)
+Ist \(\mathrm{d}F\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>, so auch die matrix koeffizienten
 </p>
 </div>
 </div>
-<div id="outline-container-org1314d07" class="outline-3">
-<h3 id="org1314d07"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orga8bd67d" class="outline-3">
+<h3 id="orga8bd67d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus der Aussage, <a href="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit.html#ID-55dcfea6-25cf-42a7-8a64-6ea51c30415c">stetige partielle Differenzierbarkeit impliziert totale Differenzierbarkeit</a> 

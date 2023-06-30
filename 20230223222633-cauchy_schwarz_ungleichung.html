@@ -9,76 +9,96 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Cauchy-Schwarz Ungleichung</h1>
-<div id="outline-container-org24284a6" class="outline-2">
-<h2 id="org24284a6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3daf6f8" class="outline-2">
+<h2 id="org3daf6f8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_4d16014c7eb80c1b5163371cb6c0749d73926411.svg" alt="20230223222633-cauchy_schwarz_ungleichung_4d16014c7eb80c1b5163371cb6c0749d73926411.svg" class="org-svg" /> eine <a href="20221003155502-positiv_semidefinite_bilinearform.html#ID-234ae6b6-59ba-4f8e-8345-1d990d225fac">positiv semidefinite</a>, <a href="20221003155536-symmetrische_bilinearform.html#ID-bfcdf772-269e-4f6d-a960-90547502eb5f">symmetrische Bilinearform</a> oder <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermitesche Sesquilinearform</a> auf einem <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reellen</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexen Vektorraum</a>
-Dann gilt für alle <img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_9bdb949fe7e45079efa802619e16e05223f5aca0.svg" alt="20230223222633-cauchy_schwarz_ungleichung_9bdb949fe7e45079efa802619e16e05223f5aca0.svg" class="org-svg" />
+Sei \(\langle \cdot, \cdot \rangle\) eine <a href="20221003155502-positiv_semidefinite_bilinearform.html#ID-234ae6b6-59ba-4f8e-8345-1d990d225fac">positiv semidefinite</a>, <a href="20221003155536-symmetrische_bilinearform.html#ID-bfcdf772-269e-4f6d-a960-90547502eb5f">symmetrische Bilinearform</a> oder <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermitesche Sesquilinearform</a> auf einem <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reellen</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexen Vektorraum</a>
+Dann gilt für alle \(v_1,v_2 \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_69690e6d5037a24fb092da28b3f3328bfb6ec07c.svg" alt="20230223222633-cauchy_schwarz_ungleichung_69690e6d5037a24fb092da28b3f3328bfb6ec07c.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert \langle v_1,v_2\rangle \vert \leq \| v_1 \| \| v_2 \|
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org23a87c9" class="outline-2">
-<h2 id="org23a87c9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd96f916" class="outline-2">
+<h2 id="orgd96f916"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf118053" class="outline-3">
-<h3 id="orgf118053"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_85185c8f73b79bea1a9a6fc67706d352fcc0130d.svg" alt="20230223222633-cauchy_schwarz_ungleichung_85185c8f73b79bea1a9a6fc67706d352fcc0130d.svg" class="org-svg" /></h3>
+<div id="outline-container-orgab802cc" class="outline-3">
+<h3 id="orgab802cc"><span class="section-number-3">2.1.</span> \(v_1 = 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Dann folgt <img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_b209ab5022a061d993ba92cafea0cf3fea4a8c2e.svg" alt="20230223222633-cauchy_schwarz_ungleichung_b209ab5022a061d993ba92cafea0cf3fea4a8c2e.svg" class="org-svg" />
+Dann folgt \(\vert \langle v_1, v_2\rangle \vert = \vert 0 \cdot \langle v_1, v_2\rangle \vert = 0 = \| 0 \| \cdot \| y \|\)
 </p>
 </div>
 </div>
-<div id="outline-container-org4be9030" class="outline-3">
-<h3 id="org4be9030"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_899dfa4733723f650da46ad973dfa5078cb44982.svg" alt="20230223222633-cauchy_schwarz_ungleichung_899dfa4733723f650da46ad973dfa5078cb44982.svg" class="org-svg" /></h3>
+<div id="outline-container-org2353709" class="outline-3">
+<h3 id="org2353709"><span class="section-number-3">2.2.</span> \(v_1 \neq 0\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_4d7b709fd0ebe471f78b8e7d65f924e469c1251f.svg" alt="20230223222633-cauchy_schwarz_ungleichung_4d7b709fd0ebe471f78b8e7d65f924e469c1251f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v_3  \coloneqq v_2 - \frac{(v_2,v_1)}{\| v_1 \|} v_1
+\end{align*}
 <p>
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_df9de81973cbdae15adcac94e7a7a1544b8b7bbf.svg" alt="20230223222633-cauchy_schwarz_ungleichung_df9de81973cbdae15adcac94e7a7a1544b8b7bbf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(v_3,v_1) =& (v_2,v_1) - \frac{(v_2,v_1)}{\| v_1 \|^2} \cdot (v_1,v_1) \\
+=& (v_2,v_1) - (v_2,v_1) \\
+=& 0
+\end{align*}
 <p>
 Es gilt dabei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_c9efba60d368a775d76c5ca39a0769bf0e5d554e.svg" alt="20230223222633-cauchy_schwarz_ungleichung_c9efba60d368a775d76c5ca39a0769bf0e5d554e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 \leq& (v_3,v_3) \\
+% =& \| v_3 \|^2 \\
+=& (v_3, v_2 - \frac{(v_2,v_1)}{\| v_1 \|^2} \cdot v_1) \\
+=& (v_3,v_2) + (v_3, - \frac{(v_2,v_1)}{\| v_1 \|^2} \cdot v_1) \\
+=& (v_3,v_2) + \overline{- \frac{(v_2,v_1)}{\| v_1 \|^2}} (v_3,  \cdot v_1) \\
+=& (v_3,v_2) + \overline{- \frac{(v_2,v_1)}{\| v_1 \|^2}} 0 \\
+=& ( v_3, v_2 ) \\
+=& (v_2, v_2) - \frac{(v_2,v_1)}{\| v_1 \|^2} (v_1,v_2)\\
+=& \| v_2 \|^2 - \frac{\vert (v_1,v_2) \|^2}{\| v_1 \|^2}
+\end{align*}
 <p>
 Damit folgt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222633-cauchy_schwarz_ungleichung_e7883884d6bd50766d46d3b254a82c34041f75c0.svg" alt="20230223222633-cauchy_schwarz_ungleichung_e7883884d6bd50766d46d3b254a82c34041f75c0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| (v_1, v_2) \| \leq \| v_1 \| \| v_2 \|
+\end{align*}
 </div>
 </div>
 </div>

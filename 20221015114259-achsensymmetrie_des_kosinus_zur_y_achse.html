@@ -3,119 +3,106 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Achsensymmetrie des Kosinus zur Y-Achse</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Achsensymmetrie des Kosinus zur Y-Achse</h1>
-<div id="outline-container-org5593401" class="outline-2">
-<h2 id="org5593401"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5f43a62" class="outline-2">
+<h2 id="org5f43a62"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_d4669f64c3c676c65931e393ace7e878c3f10cdc.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_d4669f64c3c676c65931e393ace7e878c3f10cdc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\cos(-x) =& \cos(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org656ea2e" class="outline-2">
-<h2 id="org656ea2e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2191aa5" class="outline-2">
+<h2 id="org2191aa5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_716a52f1215bbf861d92473a0a2e25b27d4ea12a.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_716a52f1215bbf861d92473a0a2e25b27d4ea12a.svg" class="org-svg" />
+Sei \(z \coloneqq e^{\mathrm{i}x}\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_1e8eb60754d6c896792690bbc639d49b29136eca.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_1e8eb60754d6c896792690bbc639d49b29136eca.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+e^{-\mathrm{i}x} =& e^{\mathrm{i}x}^{-1} \\
+=& z^{-1} \\
+\end{align*}
 <p>
-Erweiterung um die <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">komplex-konjugierte Zahl</a> <img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_bd42ef526badccfe39062f88a1642d1fa2c6a72b.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_bd42ef526badccfe39062f88a1642d1fa2c6a72b.svg" class="org-svg" /> ergibt
+Erweiterung um die <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">komplex-konjugierte Zahl</a> \(\overline{z}\) ergibt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_e8bc4300da1f17ecd7376f42389a6e3e59b7722d.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_e8bc4300da1f17ecd7376f42389a6e3e59b7722d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+e^{-x} =& \frac{\overline{z}}{\overline{z} \cdot z}
+\end{align*}
 <p>
 Nach der <a href="20220225202318-eulersche_formel.html#ID-a44af9b5-a187-4031-a3a1-06a464bbe064">Eulersche Formel</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_c9887a4afcff270e55cadb31816cc17d44cbcbd6.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_c9887a4afcff270e55cadb31816cc17d44cbcbd6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+e^{\mathrm{i}x} =& \mathrm{i}\sin(x) + \cos(x) \\
+e^{-\mathrm{i}x} =& -\mathrm{i}\sin(x) + \cos(x)
+\end{align*}
 <p>
 Dauraus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_5716f11043c2cf51f2299c6a358a538bb5e19943.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_5716f11043c2cf51f2299c6a358a538bb5e19943.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+e^{-x} =& \frac{\overline{z}}{\overline{z} \cdot z} \\
+=& \frac{-\mathrm{i}\sin(x) + \cos(x)}{\sin(x)^2 + \cos(x)^2}
+\end{align*}
 <p>
 Aufgrund des <a href="20210227121315-trigonometrischer_pythagoras.html#ID-af817553-e3a0-436a-ac80-132a29cad9fd">Trigonometrischen Pythagoras</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_3a8cc7518a5bf6eeedc5cd8842d4d6307e6d5102.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_3a8cc7518a5bf6eeedc5cd8842d4d6307e6d5102.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+e^{-x} =& \frac{-\mathrm{i}\sin(x) + \cos(x)}{\sin(x)^2 + \cos(x)^2}\\
+=& \frac{-\mathrm{i}\sin(x) + \cos(x)}{1} \\
+=& -\mathrm{i}\sin(x) + \cos(x)
+\end{align*}
 
 <p>
 Da für den <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_cadae6eeaf9fb4dbbc97622384b38f9547f22368.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_cadae6eeaf9fb4dbbc97622384b38f9547f22368.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-7
-</span>
-</div>
+\begin{align*}
+\mathrm{Re}(e^{\mathrm{i}x}) =& \cos(x)
+\end{align*}
 <p>
 folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_fc459382fa48917ce6b067b7c07a5a7f95bf19ee.svg" alt="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse_fc459382fa48917ce6b067b7c07a5a7f95bf19ee.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-8
-</span>
-</div>
+\begin{align*}
+\mathrm{Re}(e^{-\mathrm{i}x}) =& \cos(-x) \\
+\mathrm{Re}(e^{-\mathrm{i}x}) =& \mathrm{Re}(-\mathrm{i}\sin(x) + \cos(x)) \\
+=& \cos(x) \\
+\Rightarrow \cos(-x) =& \cos(x)
+\end{align*}
 </div>
 </div>
 </div>

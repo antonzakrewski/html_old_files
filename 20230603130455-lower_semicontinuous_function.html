@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>lower semicontinuous function</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">lower semicontinuous function</h1>
-<div id="outline-container-orga95ad25" class="outline-2">
-<h2 id="orga95ad25"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4343291" class="outline-2">
+<h2 id="org4343291"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230603130455-lower_semicontinuous_function_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230603130455-lower_semicontinuous_function_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and <img src="ltximg/20230603130455-lower_semicontinuous_function_cbe6509235fc8e8b86225b36d83368d504255f41.svg" alt="20230603130455-lower_semicontinuous_function_cbe6509235fc8e8b86225b36d83368d504255f41.svg" class="org-svg" /> be a <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">function</a>.
-Then <img src="ltximg/20230603130455-lower_semicontinuous_function_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230603130455-lower_semicontinuous_function_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> is said to be lower semicontinuous, if for each <img src="ltximg/20230603130455-lower_semicontinuous_function_9ae54de31acaebb825deddadba06044ee86c1733.svg" alt="20230603130455-lower_semicontinuous_function_9ae54de31acaebb825deddadba06044ee86c1733.svg" class="org-svg" /> the <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(f: X \rightarrow \overline{\mathbb{R}}\) be a <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">function</a>.
+Then \(f\) is said to be lower semicontinuous, if for each \(a \in \mathbb{R}\) the <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230603130455-lower_semicontinuous_function_bf87f98544378d1c049c42bb06d91454a5612108.svg" alt="20230603130455-lower_semicontinuous_function_bf87f98544378d1c049c42bb06d91454a5612108.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\{x \in X \vert f(x) > a\}
+\end{align*}
 <p>
 is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
 </p>

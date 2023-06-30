@@ -3,58 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verknüpfung von Vektorraumisomorphismen als Isomorphismus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verknüpfung von Vektorraumisomorphismen als Isomorphismus</h1>
-<div id="outline-container-org8092a7d" class="outline-2">
-<h2 id="org8092a7d"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org0c215c1" class="outline-2">
+<h2 id="org0c215c1"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_80c0f17322b62918aa38901688d645dcede4f020.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_80c0f17322b62918aa38901688d645dcede4f020.svg" class="org-svg" /> <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismen</a> mit <img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_c7fe56488a61189bbdb1e1c96597e083d3b87761.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_c7fe56488a61189bbdb1e1c96597e083d3b87761.svg" class="org-svg" /> und <img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_2071a0507d90f373099e084a9f4714e56f664c7c.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_2071a0507d90f373099e084a9f4714e56f664c7c.svg" class="org-svg" />, so ist auch <img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_f256603d03621d3e52d352ac627f47846f18bbd9.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_f256603d03621d3e52d352ac627f47846f18bbd9.svg" class="org-svg" /> ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a>
+Seien \(g,f\) <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismen</a> mit \(g: V_1 \rightarrow V_2\) und \(f: V_2 \rightarrow V_3\), so ist auch \(f \circ g\) ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org078ee78" class="outline-2">
-<h2 id="org078ee78"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1d65b09" class="outline-2">
+<h2 id="org1d65b09"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2ab2c67" class="outline-3">
-<h3 id="org2ab2c67"><span class="section-number-3">2.1.</span> Additivität</h3>
+<div id="outline-container-orged0338f" class="outline-3">
+<h3 id="orged0338f"><span class="section-number-3">2.1.</span> Additivität</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_91cb56e87965b2003cd21b240cd170c81b99c118.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_91cb56e87965b2003cd21b240cd170c81b99c118.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(fg)(v + v') =& f(g(v + v'))\\
+=& f(g(v) + g(v')) \\
+=& f(g(v)) + f(g(v')) \\
+=& (fg)(v) + (fg)(v')
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org724ca2e" class="outline-3">
-<h3 id="org724ca2e"><span class="section-number-3">2.2.</span> Homogenität</h3>
+<div id="outline-container-org85f0ecc" class="outline-3">
+<h3 id="org85f0ecc"><span class="section-number-3">2.2.</span> Homogenität</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_34df7b1af474b27c5475121dac3c06dcb4234f35.svg" alt="20221125133024-lemma_uber_die_verknupfung_von_isomorphismen_als_isomorphismus_34df7b1af474b27c5475121dac3c06dcb4234f35.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+(fg)(\alpha v) =& f(g(\alpha v)) \\
+=& f(\alpha g(v)) \\
+=& \alpha f(g(v)) \\
+=& \alpha (fg)(v)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfda1041" class="outline-3">
-<h3 id="orgfda1041"><span class="section-number-3">2.3.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektivität</a></h3>
+<div id="outline-container-orga52bfc6" class="outline-3">
+<h3 id="orga52bfc6"><span class="section-number-3">2.3.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektivität</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 siehe: <a href="20220926093750-bijektivitat_einer_komposition_von_bijektiven_abbildungen.html#ID-99751a49-4e91-4460-8a03-bb788984f3b5">Bijektivität einer Komposition von bijektiven Abbildungen</a> 

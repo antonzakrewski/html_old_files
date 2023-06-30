@@ -9,37 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">distributive Verträglichkeit von Addition und Komposition bei Homomorphismen</h1>
-<div id="outline-container-orgb9cb0d8" class="outline-2">
-<h2 id="orgb9cb0d8"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org00c80d6" class="outline-2">
+<h2 id="org00c80d6"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_c431cdb70ef878bb7c1f0b4f48fe53289acdb205.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_c431cdb70ef878bb7c1f0b4f48fe53289acdb205.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_fb56c5e6c7c304141012ed417cf0042ceb2357c9.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_fb56c5e6c7c304141012ed417cf0042ceb2357c9.svg" class="org-svg" /> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> mit <img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_77c36f3064ee847a95263e5cc72ad72406347dd4.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_77c36f3064ee847a95263e5cc72ad72406347dd4.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_5b6441e8202336ca834bc92f0185b5514c65d5e7.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_5b6441e8202336ca834bc92f0185b5514c65d5e7.svg" class="org-svg" />.
+Seien \(V_1,V_2,V_3\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(f,f',g,g'\) <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> mit \(f,f': V_1 \rightarrow V_2\), \(g,g': V_2 \rightarrow V_3\).
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_404da4b54c59ce8bc25f9c5b3320502e51a1f324.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_404da4b54c59ce8bc25f9c5b3320502e51a1f324.svg" class="org-svg" />
-</span>
+\begin{align*}
+g \circ (f + f') =& gf + gf' \\
+(g + g') \circ f =& gf + g'f
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0114ed2" class="outline-2">
-<h2 id="org0114ed2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf2fc82b" class="outline-2">
+<h2 id="orgf2fc82b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_0f086513b8c6c762f87eb8809e67c7d97e070ea2.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_0f086513b8c6c762f87eb8809e67c7d97e070ea2.svg" class="org-svg" />, so folgt:
+Sei \(v \in V_1\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_3ab01ffd7034d530bc60126944d6637eac445d02.svg" alt="20221209185911-lemma_uber_die_distributive_vertraglichkeit_von_addition_und_komposition_bei_homomorphismen_3ab01ffd7034d530bc60126944d6637eac445d02.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \circ (f + f') \circ v =& g \circ (f(v) + f'(v)) \\
+=& g(f(v) + f'(v)) \\
+=& g(f(v)) + g(f'(v)) \\
+(g + g') \circ f \circ v =& (g + g') \circ (f(v)) \\
+=& (g(f(v)) + g'(f(v)) \\
+=& g(f(v)) + g'(f(v))
+\end{align*}
 </div>
 </div>
 </div>

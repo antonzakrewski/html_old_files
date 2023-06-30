@@ -9,39 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quotientenkriterium für Konvergenz in Abhängigkeit vom Limes Superior</h1>
-<div id="outline-container-org55ef02f" class="outline-2">
-<h2 id="org55ef02f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org965bec5" class="outline-2">
+<h2 id="org965bec5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> eine komplexe <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, s.d. für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" class="org-svg" /> gilt
-Existiert <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_a2dc095fa891d1aaacee2dfa4898caebd1df4550.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_a2dc095fa891d1aaacee2dfa4898caebd1df4550.svg" class="org-svg" />, s.d. gilt
-<img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" class="org-svg" />
-lim &sup; &vert; {a<sub>n+1</sub>}{a<sub>n</sub>} &vert;&le; q
-,
-so <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute</a> 
+Sei \(\sum_{n=1}^{\infty} a_n\) eine komplexe <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, s.d. für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(a_n \neq 0\) gilt
+Existiert \(0 < q < 1\), s.d. gilt
+\begin{align*}
+lim &sup; \left &vert; \frac{a<sub>n+1</sub>}{a<sub>n</sub>} \right &vert;&le; q
+\end{align*},
+so <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(\sum_{n=1}^{\infty} a_n\) <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orga36daf4" class="outline-2">
-<h2 id="orga36daf4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org75015d8" class="outline-2">
+<h2 id="org75015d8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_4e1c57738c6db68839d81e1b69b5a842d08e9ea6.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_72e3299a2bf276529f65bc21f7b86b3ca75bfe00.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_72e3299a2bf276529f65bc21f7b86b3ca75bfe00.svg" class="org-svg" /> für alle <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" />.
-Sonst lässt man endlich viele <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" /> weg (siehe: <a href="20221208104941-rechenregeln_fur_konvergente_reihen.html#ID-721102c8-3767-4808-9bc4-a789aa86654c">Rechenregeln für konvergente Reihen</a>)
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a_n \neq 0\) und \(\vert \frac{a_{n+1}}{a_{n}} \vert \leq q\) für alle \(n\).
+Sonst lässt man endlich viele \(a_n\) weg (siehe: <a href="20221208104941-rechenregeln_fur_konvergente_reihen.html#ID-721102c8-3767-4808-9bc4-a789aa86654c">Rechenregeln für konvergente Reihen</a>)
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_e953179ec39ede998d6a2744434dc1cd7c92422c.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_e953179ec39ede998d6a2744434dc1cd7c92422c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_n \vert = \vert \frac{a_{n}}{a_{n+1}} \vert \cdot ... \cdot \vert \frac{a_2}{a_1} \cdot \vert a_1\vert \leq \vert a_1 \vert \cdot q^{n-1}
+\end{align*}
 <p>
-Also ist <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_273b5c9be9210d33dc0034941ae15d56cd629c63.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_273b5c9be9210d33dc0034941ae15d56cd629c63.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a>  <a href="20221204223400-majorantenkriterium.html#ID-c64592ed-8404-4be3-a898-fca8ba96b5a3">Majorante</a> für <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
+Also ist \(\sum_{n=1}^{\infty} \vert a_1 \vert q^{n-1}\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a>  <a href="20221204223400-majorantenkriterium.html#ID-c64592ed-8404-4be3-a898-fca8ba96b5a3">Majorante</a> für \(\sum_{n=1}^{\infty} a_n\), d.h. \(\sum_{n=1}^{\infty} a_n\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
 </p>
 </div>
 </div>

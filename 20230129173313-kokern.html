@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kokern (Vektorraum)</h1>
-<div id="outline-container-orgb05dc6f" class="outline-2">
-<h2 id="orgb05dc6f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdbccc54" class="outline-2">
+<h2 id="orgdbccc54"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230129173313-kokern_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20230129173313-kokern_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und sei <img src="file:///home/anton/html/ltximg/20230129173313-kokern_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" alt="20230129173313-kokern_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" class="org-svg" /> ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>.
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und sei \(f: V \rightarrow W\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>.
 Dann ist der Kokern definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230129173313-kokern_a495e178ac933eefde1ef16c272f5c57d572c5fe.svg" alt="20230129173313-kokern_a495e178ac933eefde1ef16c272f5c57d572c5fe.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\coker(f) = W / \mathrm{im}(f)
+\end{align*}
 </div>
 </div>
 </div>

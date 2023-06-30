@@ -9,34 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Homomorphismus von Moduln über einem Polynomring</h1>
-<div id="outline-container-org96db44e" class="outline-2">
-<h2 id="org96db44e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1214a05" class="outline-2">
+<h2 id="org1214a05"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_e3dfcc60cc9076cf15599dac6f99b0c4c8779517.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_e3dfcc60cc9076cf15599dac6f99b0c4c8779517.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> mit einer $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modulstruktur</a>.
+Seien \(V,V'\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> mit einer $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modulstruktur</a>.
 Dann gilt
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4c5ca3e" class="outline-2">
-<h2 id="org4c5ca3e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1c36909" class="outline-2">
+<h2 id="org1c36909"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_c7b2aec27fe81f40803d94a7928d6bf8a1930e80.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_c7b2aec27fe81f40803d94a7928d6bf8a1930e80.svg" class="org-svg" /> beliebig, so gilt für einen <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphism</a> <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_54035cdf645dd778b218a50a442f38b9ecfdc357.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_54035cdf645dd778b218a50a442f38b9ecfdc357.svg" class="org-svg" />
+Sei \(m \in V\) beliebig, so gilt für einen <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphism</a> \(f: V \rightarrow V'\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_dcbd3353dd47e199b76d40595155bc915eb50999.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_dcbd3353dd47e199b76d40595155bc915eb50999.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(f \circ A)(m) =& f(A(m) \\
+=& f(x \cdot m) \\
+x \cdot f(m) \\
+(A' \circ f)(m)
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a>, da wenn wir <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_73ed0d0592f419464102f7eb72ddd500426c3202.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_73ed0d0592f419464102f7eb72ddd500426c3202.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_e0b46500e6a54dd02e57d1b13f9a9e3f42b82a48.svg" alt="20230525191430-homomorphismus_von_moduln_uber_einem_polynomring_e0b46500e6a54dd02e57d1b13f9a9e3f42b82a48.svg" class="org-svg" /> einschränken, wir einen lineare abbildung für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> erhalten
+Dabei ist \(f\) auch <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a>, da wenn wir \(K[X]\) auf \(K \simeq \{f \in K[X] \vert \mathrm{deg}(f) \leq 0 \}\) einschränken, wir einen lineare abbildung für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> erhalten
 </p>
 </div>
 </div>

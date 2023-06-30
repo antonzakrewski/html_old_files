@@ -9,56 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinante einer Matrix mit gleichen Zeilen</h1>
-<div id="outline-container-org4cc1b35" class="outline-2">
-<h2 id="org4cc1b35"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3875d7d" class="outline-2">
+<h2 id="org3875d7d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_1712392e116f944543b2f1413da49d418f57403d.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_1712392e116f944543b2f1413da49d418f57403d.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_0bacd32ac2b1649b96d99ca9556012ac767d33ab.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_0bacd32ac2b1649b96d99ca9556012ac767d33ab.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_b4c800051e7bd02e7b7193d8e1b5c6794e6816a4.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_b4c800051e7bd02e7b7193d8e1b5c6794e6816a4.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien \(z_i \in R^{n}\) sowie \(z_j = z_k\) für \(j \neq k\)
 so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_cad6de0b6404ad71fd10f4bdbc3ec3394f20a3ee.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_cad6de0b6404ad71fd10f4bdbc3ec3394f20a3ee.svg" class="org-svg" />
-</span>
+\begin{align*}
+\det \begin{pmatrix} z_1 \\ \vdots \\ s_n \end{pmatrix} = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd145e38" class="outline-2">
-<h2 id="orgd145e38"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc4c8d75" class="outline-2">
+<h2 id="orgc4c8d75"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_7e953fcbe79ff5b811b55be4778c6c9e63976a06.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_7e953fcbe79ff5b811b55be4778c6c9e63976a06.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_ea11b5a99084716bbeb3066c3d2ff54736cd96fb.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_ea11b5a99084716bbeb3066c3d2ff54736cd96fb.svg" class="org-svg" />.
-Dann folgt auch bezüglich der <a href="20221023184221-rechtsnebenklasse.html#ID-42fba0c0-da9a-4186-b482-fa6aacf8b3d6">Rechtsnebenklassen</a> <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_dc010819c60a6a2929df11adf70d7cf0369dc1e3.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_dc010819c60a6a2929df11adf70d7cf0369dc1e3.svg" class="org-svg" /> wegen <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_149986aeb9029832edecc606a3c6934401db198a.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_149986aeb9029832edecc606a3c6934401db198a.svg" class="org-svg" /> , d.h. es gilt
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(i < j\) und \(\sigma = (i,j)\).
+Dann folgt auch bezüglich der <a href="20221023184221-rechtsnebenklasse.html#ID-42fba0c0-da9a-4186-b482-fa6aacf8b3d6">Rechtsnebenklassen</a> \(S_n = A_n \sqcup A_n\sigma\) wegen \(\mathrm{sgn}(\sigma) = -1\) , d.h. es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_0a990b0b08838a23bf7315251edf81e33c12c44e.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_0a990b0b08838a23bf7315251edf81e33c12c44e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{\tau \in S_n}^{} = \sum_{\pi \in A_n} + \sum_{\pi \circ \sigma \in A_n\sigma} 
+\end{align*}
 <p>
 Zudem gilt :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_89f7fa9d4f5d7892f70cd91c2685b262ad650eb5.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_89f7fa9d4f5d7892f70cd91c2685b262ad650eb5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{sgn}(\pi \circ \sigma) =& \mathrm{sgn}(\pi) \cdot -1 \\
+=& -1
+\end{align*}
 <p>
-so dass wegen <img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_3d30cd22ca010d3a595630578607aee3a465cc4e.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_3d30cd22ca010d3a595630578607aee3a465cc4e.svg" class="org-svg" /> folgt 
+so dass wegen \(a_{i \pi \circ \sigma (i)} = a_{i \pi (j)} = a_{i \pi (i)}\) folgt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_354978b08daaa0921be040a2b55273cfd53caf29.svg" alt="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen_354978b08daaa0921be040a2b55273cfd53caf29.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{\tau \in S_n} \mathrm{sgn}(\tau)a_{1\tau(1)}(\tau) ... a_{n\tau(1)} =& \sum_{\pi \in A_n} \mathrm{sgn}(\pi)a_{1\pi(1)}(\pi) ... a_{n\pi(1)} + \sum_{\pi \in A_n} \mathrm{sgn}(\pi \circ \sigma) ... a_{1\pi \circ \sigma(1)}(\pi)a_{n\pi(1)} \\
+=& \sum_{\pi \in A_n} \mathrm{sgn}(\pi)a_{1\pi(1)} ... (\pi)a_{n\pi(1)} + \sum_{\pi \in A_n} - a_{1\pi \circ \sigma(1)} \cdot ... \cdot a_{i\pi \circ \sigma(i)} \cdot ... \cdot a_{j\pi \circ \sigma(j)} (\pi)a_{n\pi(1)} \\
+=& \sum_{\pi \in A_n} \mathrm{sgn}(\pi)a_{1\pi(1)} ... (\pi)a_{n\pi(1)} - \sum_{\pi \in A_n} a_{1\pi \circ \sigma(1)} \cdot ... \cdot a_{i\pi (j)} \cdot ... \cdot a_{j\pi  (i)} (\pi)a_{n\pi(1)} \\
+=& \sum_{\pi \in A_n} \mathrm{sgn}(\pi)a_{1\pi(1)} ... (\pi)a_{n\pi(1)} - \sum_{\pi \in A_n} a_{1\pi \circ \sigma(1)} \cdot ... \cdot a_{i\pi (i)} \cdot ... \cdot a_{j\pi  (j)} (\pi)a_{n\pi(1)} \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

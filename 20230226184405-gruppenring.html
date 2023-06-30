@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gruppenring</h1>
-<div id="outline-container-org089958b" class="outline-2">
-<h2 id="org089958b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org449c836" class="outline-2">
+<h2 id="org449c836"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230226184405-gruppenring_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230226184405-gruppenring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>, dann ist der Gruppenring <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_1482dda1801d1f1650811ebea04899e1e7564252.svg" alt="20230226184405-gruppenring_1482dda1801d1f1650811ebea04899e1e7564252.svg" class="org-svg" /> definiert als Summe <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_14a60a6a792232445cacc306fa87c5e0e05ca6fc.svg" alt="20230226184405-gruppenring_14a60a6a792232445cacc306fa87c5e0e05ca6fc.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_7f38d6168108cf7c3c5d4f5637f5011d97d56f9d.svg" alt="20230226184405-gruppenring_7f38d6168108cf7c3c5d4f5637f5011d97d56f9d.svg" class="org-svg" />, so dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_5bfa8c738098ffa30b91782b7f6ff13c84fac7ff.svg" alt="20230226184405-gruppenring_5bfa8c738098ffa30b91782b7f6ff13c84fac7ff.svg" class="org-svg" /> sind
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>, dann ist der Gruppenring \(R[G]\) definiert als Summe \(\sum_{g \in G}^{} r_g \cdot G\) mit \(r_g \in R\), so dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(r_g = 0\) sind
 Die Addition ist dabei definiert durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_9557fc0fe8e1e94111cc1432179067cccf557bad.svg" alt="20230226184405-gruppenring_9557fc0fe8e1e94111cc1432179067cccf557bad.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{g \in G}^{} r_g \cdot g + \sum_{g \in G} r_g' \cdot g =& \sum_{g \in G} (r_g + r_g') g
+\end{align*}
 <p>
 und die Multiplikation durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226184405-gruppenring_ff1d950d2202bd1f17257e845ab838c25a01f7fb.svg" alt="20230226184405-gruppenring_ff1d950d2202bd1f17257e845ab838c25a01f7fb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left(\sum_{g \in G} r_g \cdot g \right) \cdot \left( \sum_{g \in G} r_g' \cdot g\right) =& \sum_{g \in G} \left( \sum_{a \cdot b=g}^{} r_a \cdot r_b' \right) \cdot g
+\end{align*}
 </div>
 </div>
 </div>

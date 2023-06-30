@@ -3,100 +3,106 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Monomorphismus von einem Ring auf das dazugehörige Polynom</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Monomorphismus von einem Ring auf das dazugehörige Polynom</h1>
-<div id="outline-container-orgf70ceec" class="outline-2">
-<h2 id="orgf70ceec"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org602d490" class="outline-2">
+<h2 id="org602d490"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, then the <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> defined by
+Let \(R\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, then the <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> defined by
 Die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_db1497f2361976c7ff053a5b31f9bad7ff5c668b.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_db1497f2361976c7ff053a5b31f9bad7ff5c668b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\phi: R \rightarrow& R[x] \\
+\phi: a \mapsto& (a,0,0,...)
+\end{align*}
 <p>
 is a ring <a href="20230301165850-ringmonomorphismus.html#ID-f893fb26-272b-41b0-8943-52596b2804ba">monomorphism</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org92a3616" class="outline-2">
-<h2 id="org92a3616"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org55104ab" class="outline-2">
+<h2 id="org55104ab"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8274ed7" class="outline-3">
-<h3 id="org8274ed7"><span class="section-number-3">2.1.</span> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injectiv</a></h3>
+<div id="outline-container-org60c1781" class="outline-3">
+<h3 id="org60c1781"><span class="section-number-3">2.1.</span> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injectiv</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Suppose <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" /> such that <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3af1317fab1f20ac559ab331e8b1b4a49521fae6.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3af1317fab1f20ac559ab331e8b1b4a49521fae6.svg" class="org-svg" />
+Suppose \(a,b \in R\) such that \(\phi(a) = \phi(b)\)
 Then follows
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_779d6068bd9a1727f894a1f16a1c2fd564cd30e5.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_779d6068bd9a1727f894a1f16a1c2fd564cd30e5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(a,...) = (b,...)
+\end{align*}
 <p>
-and by definition we know, that <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_d533a70aa84f655bf665c9bdadfd9e4023ac3b31.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_d533a70aa84f655bf665c9bdadfd9e4023ac3b31.svg" class="org-svg" />
+and by definition we know, that \(a = b \in R\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgcec7baa" class="outline-3">
-<h3 id="orgcec7baa"><span class="section-number-3">2.2.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a></h3>
+<div id="outline-container-orgf3d4b97" class="outline-3">
+<h3 id="orgf3d4b97"><span class="section-number-3">2.2.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a></h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org902adef" class="outline-4">
-<h4 id="org902adef"><span class="section-number-4">2.2.1.</span> addition</h4>
+<div id="outline-container-org8dd03a1" class="outline-4">
+<h4 id="org8dd03a1"><span class="section-number-4">2.2.1.</span> addition</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Suppose <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" />.
+Suppose \(a,b \in R\).
 Then follows:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_10a7857a79605629687c0406101802ad40826950.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_10a7857a79605629687c0406101802ad40826950.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{align*}
+\phi(a + b) = (a + b,...) =& (a,...) + (b,...) \\
+=& \phi(a) + \phi(b)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgceec6d6" class="outline-4">
-<h4 id="orgceec6d6"><span class="section-number-4">2.2.2.</span> multiplication</h4>
+<div id="outline-container-orgc4eada8" class="outline-4">
+<h4 id="orgc4eada8"><span class="section-number-4">2.2.2.</span> multiplication</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Suppose <img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" />.
+Suppose \(a,b \in R\).
 Then we conclude:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_8e5eb5b8a1a7a9af4b97f7f275be2a5257100f80.svg" alt="20221228203827-monomorphismus_von_einem_ring_auf_das_dazugehorige_polynom_8e5eb5b8a1a7a9af4b97f7f275be2a5257100f80.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\phi(r \cdot a) =& (r \cdot a,0,...) \\
+=& r \cdot (a,0,...)
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Funktionalgleichung für die Exponentialreihe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Funktionalgleichung für die Exponentialreihe</h1>
-<div id="outline-container-org02648a7" class="outline-2">
-<h2 id="org02648a7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgec13c4f" class="outline-2">
+<h2 id="orgec13c4f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221222151710-funktionalgleichung_fur_die_exponentialreihe_9523d714440835116af4c94d4494ce63eec5a3ff.svg" alt="20221222151710-funktionalgleichung_fur_die_exponentialreihe_9523d714440835116af4c94d4494ce63eec5a3ff.svg" class="org-svg" />.
+Seien \(x,x' \in \mathbb{R}\).
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222151710-funktionalgleichung_fur_die_exponentialreihe_0506e4f96c49e2430fc642c1b15d4cbd6b599cc4.svg" alt="20221222151710-funktionalgleichung_fur_die_exponentialreihe_0506e4f96c49e2430fc642c1b15d4cbd6b599cc4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+e^{x} \cdot e^{x'} =& e^{x + x'}
+\end{align*}
 </div>
 </div>
 </div>

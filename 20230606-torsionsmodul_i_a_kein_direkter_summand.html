@@ -9,52 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Torsionsmodul i.A. kein direkter Summand</h1>
-<div id="outline-container-org40320cb" class="outline-2">
-<h2 id="org40320cb"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb18779b" class="outline-2">
+<h2 id="orgb18779b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> und <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> das <a href="20230303172128-torsionselemente_als_untermodul.html#ID-0155629f-8767-4238-9c0b-ae5aeb2f7349">Torsionsuntermodul</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> i.A. kein <a href="20230606-direkter_summand_modul.html#ID-def9eee3-8496-4c80-a8fe-3ca10308199c">direkter Summand</a> 
+Sei \(M\) ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> und \(T(M)\) das <a href="20230303172128-torsionselemente_als_untermodul.html#ID-0155629f-8767-4238-9c0b-ae5aeb2f7349">Torsionsuntermodul</a>.
+Dann ist \(T(M)\) i.A. kein <a href="20230606-direkter_summand_modul.html#ID-def9eee3-8496-4c80-a8fe-3ca10308199c">direkter Summand</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org434e09c" class="outline-2">
-<h2 id="org434e09c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org967234c" class="outline-2">
+<h2 id="org967234c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_e4c79260daa1c4a6e7bebb5118ef3f62951ea682.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_e4c79260daa1c4a6e7bebb5118ef3f62951ea682.svg" class="org-svg" /> gilt:
+Für \(\prod_{i \in \mathbb{N}} \mathbb{Z} / p^{2i}\mathbb{Z}\) gilt:
 </p>
 </div>
-<div id="outline-container-org3a46ac7" class="outline-3">
-<h3 id="org3a46ac7"><span class="section-number-3">2.1.</span> Torsionsuntermodul</h3>
+<div id="outline-container-org28fbf96" class="outline-3">
+<h3 id="org28fbf96"><span class="section-number-3">2.1.</span> Torsionsuntermodul</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt, dass <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_ce07a42853c48f59a828456e82be5d0387cfc6cd.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_ce07a42853c48f59a828456e82be5d0387cfc6cd.svg" class="org-svg" /> ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a> ist.
+Es gilt, dass \((p,0,0,...)\) ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a> ist.
 Gleichzeitig gilt aber, dass 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_953bb6021c49be8a6941afb1a43a2655e8b26c27.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_953bb6021c49be8a6941afb1a43a2655e8b26c27.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A  \coloneqq& (p^i)_{i \in \mathbb{N}^+} \\
+B  \coloneqq& (0) \times (p^i)_{i \in \mathbb{N}^+ \setminus \{1\}}
+\end{align*}
 <p>
-keine Torsionselemente sind, da für ein <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_03be6db3b81271ba369ce14aefa690b5f2641063.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_03be6db3b81271ba369ce14aefa690b5f2641063.svg" class="org-svg" /> in der <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> nur <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> oft vorkommt und für hinreichend große <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_24099ce619958f7bbba7fb6a341755cfc8c0af13.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_24099ce619958f7bbba7fb6a341755cfc8c0af13.svg" class="org-svg" /> und damit <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_9371c7eb23a95a5f7b1b09add83fea4beffafa77.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_9371c7eb23a95a5f7b1b09add83fea4beffafa77.svg" class="org-svg" />.
+keine Torsionselemente sind, da für ein \(r \in \mathbb{Z}\) in der <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> \(p\) nur <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> oft vorkommt und für hinreichend große \(i\) gilt \(0 < i + n < 2i\) und damit \(p^{i+n} \not\equiv 0\).
 Nach der Abgeschlossenheit gegenüber Subtraktion gilt aber
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_0d3a43f02390198af59ebc83a8e5e5e9577f177b.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_0d3a43f02390198af59ebc83a8e5e5e9577f177b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A - B = (p,0,0,...)
+\end{align*}
 <p>
-wobei <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_f82c7085d9fc1d783dd27cbcdf83a3ab0f6fc9ab.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_f82c7085d9fc1d783dd27cbcdf83a3ab0f6fc9ab.svg" class="org-svg" /> ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a> ist, wegen <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_59b3498eb578023ae44a09e7118b3e66371a52bd.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_59b3498eb578023ae44a09e7118b3e66371a52bd.svg" class="org-svg" />
-Somit folgt für ein <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_0af77eae8cef726f6646493c4a9f76302b75515e.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_0af77eae8cef726f6646493c4a9f76302b75515e.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230606-torsionsmodul_i_a_kein_direkter_summand_e4a2627dafe1f0ccd470fd980b3e68a6ad9fcfe1.svg" alt="20230606-torsionsmodul_i_a_kein_direkter_summand_e4a2627dafe1f0ccd470fd980b3e68a6ad9fcfe1.svg" class="org-svg" />, d.h. der Scnhitt ist nicht trivial
+wobei \(A - B\) ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a> ist, wegen \(p \cdot (A - B) = (p^2,0,...) = 0\)
+Somit folgt für ein \(A,B \in U\) auch \(0 \neq A - B \in T(m) \cap U\), d.h. der Scnhitt ist nicht trivial
 </p>
 </div>
 </div>

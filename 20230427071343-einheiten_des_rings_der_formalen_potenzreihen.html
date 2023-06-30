@@ -9,52 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einheiten des Rings der formalen Potenzreihen</h1>
-<div id="outline-container-orge58abc9" class="outline-2">
-<h2 id="orge58abc9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0394058" class="outline-2">
+<h2 id="org0394058"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_09241b604d49925e1d63d73e1dc2838ed4e83f0a.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_09241b604d49925e1d63d73e1dc2838ed4e83f0a.svg" class="org-svg" /> der <a href="20230427070950-ring_der_formalen_potenzreihen.html#ID-8c920542-3559-472f-8af9-c0d8690cf10a">Ring der formalen Potenzreihen</a>, dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a>
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(R^{\mathbb{N}}\) der <a href="20230427070950-ring_der_formalen_potenzreihen.html#ID-8c920542-3559-472f-8af9-c0d8690cf10a">Ring der formalen Potenzreihen</a>, dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a>
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_1a672dad556ebd080bbc8f4e5e14df597dc3cf35.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_1a672dad556ebd080bbc8f4e5e14df597dc3cf35.svg" class="org-svg" />
-</span>
+\begin{align*}
+(R^{\mathbb{N}})^{\times} = \{(a_0,...) \vert a_0 \in R^{\times}\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org28d1ebb" class="outline-2">
-<h2 id="org28d1ebb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgefd9957" class="outline-2">
+<h2 id="orgefd9957"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgcfd7576" class="outline-3">
-<h3 id="orgcfd7576"><span class="section-number-3">2.1.</span> alle Einheiten enthalten</h3>
+<div id="outline-container-orgeafd0cb" class="outline-3">
+<h3 id="orgeafd0cb"><span class="section-number-3">2.1.</span> alle Einheiten enthalten</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_81ad3a1cb0e875310a5612975fa2f9990cb17ee1.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_81ad3a1cb0e875310a5612975fa2f9990cb17ee1.svg" class="org-svg" />, so folgt nach Annahme für die erste Komponente <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_65410b4154314cecacc2b5691ccd211107235b51.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_65410b4154314cecacc2b5691ccd211107235b51.svg" class="org-svg" /> 
+Sei \(a_0 \not\in R^{\times}\), so folgt nach Annahme für die erste Komponente \(a_0 \cdot b_0 \neq 1\) 
 </p>
 </div>
 </div>
-<div id="outline-container-org6b393c7" class="outline-3">
-<h3 id="org6b393c7"><span class="section-number-3">2.2.</span> ist eine Einheit</h3>
+<div id="outline-container-org16adc5d" class="outline-3">
+<h3 id="org16adc5d"><span class="section-number-3">2.2.</span> ist eine Einheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Wir definieren <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_e4e324da3da3c701a73bafd2ce7a2dfca573d61d.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_e4e324da3da3c701a73bafd2ce7a2dfca573d61d.svg" class="org-svg" /> induktiv und zeigen, dass es ein <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverses element</a> ist:
-Sei <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_91a64bb2e10251c3f184b9da9b40af88c6a88036.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_91a64bb2e10251c3f184b9da9b40af88c6a88036.svg" class="org-svg" />, insbesondere folgt damit <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_43a946cc1eb80c6a01016c374cd7339340d09cba.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_43a946cc1eb80c6a01016c374cd7339340d09cba.svg" class="org-svg" />
-Für <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_1afa7425421ab2c1ad87964f0c32f45350634b11.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_1afa7425421ab2c1ad87964f0c32f45350634b11.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_ada7bfd195b0f34f0f50e956fecc76ff1a8ea83a.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_ada7bfd195b0f34f0f50e956fecc76ff1a8ea83a.svg" class="org-svg" /> sei dann <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_c168a1830e18fef019c5b5f4e22a4cbea56d3c50.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_c168a1830e18fef019c5b5f4e22a4cbea56d3c50.svg" class="org-svg" />, wobei nach Annahme <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_69e13986e157578ad9f9ff1f6dd94bef9c18da55.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_69e13986e157578ad9f9ff1f6dd94bef9c18da55.svg" class="org-svg" /> definiert sind
-Dann sei <img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_5fda3dddd318a023ed4cce217870410fc7111b58.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_5fda3dddd318a023ed4cce217870410fc7111b58.svg" class="org-svg" /> und es folgt:
+Wir definieren \(b_0\) induktiv und zeigen, dass es ein <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverses element</a> ist:
+Sei \(b_0 = a_0^{-1}\), insbesondere folgt damit \(a_0 \cdot b_0 = 1\)
+Für \(b_i\) mit \(i \geq 1\) sei dann \(r_i  \coloneqq \sum_{j=0}^{i-1} a_j b_{i-j}\), wobei nach Annahme \(b_0,...,b_{i-1}\) definiert sind
+Dann sei \(b_i  \coloneqq a_{0}^{-1} \cdot (-r_i)\) und es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427071343-einheiten_des_rings_der_formalen_potenzreihen_540a2edf5267bff6f9492061f68fdce52676815b.svg" alt="20230427071343-einheiten_des_rings_der_formalen_potenzreihen_540a2edf5267bff6f9492061f68fdce52676815b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{j=0}^{i} a_j b_{i-j} =& r_i + a_0 \cdot a_0^{-1} \cdot (-r_i) \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,32 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vektorraumhomomorphismus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vektorraumhomomorphismus</h1>
-<div id="outline-container-org357b85d" class="outline-2">
-<h2 id="org357b85d"><span class="section-number-2">1.</span> Defintion</h2>
+<div id="outline-container-orgbc27ba1" class="outline-2">
+<h2 id="orgbc27ba1"><span class="section-number-2">1.</span> Defintion</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221119162741-vektorraumhomomorphismus_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" alt="20221119162741-vektorraumhomomorphismus_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="ltximg/20221119162741-vektorraumhomomorphismus_3baa0e0f99a93dcfec8ff32c4d00961d4aec2852.svg" alt="20221119162741-vektorraumhomomorphismus_3baa0e0f99a93dcfec8ff32c4d00961d4aec2852.svg" class="org-svg" /> ein <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-<img src="ltximg/20221119162741-vektorraumhomomorphismus_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221119162741-vektorraumhomomorphismus_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist ein Vektorraumhomomorphismus, wenn für <img src="ltximg/20221119162741-vektorraumhomomorphismus_a00aaff02be6b8993b0a362b18c414b19bb01326.svg" alt="20221119162741-vektorraumhomomorphismus_a00aaff02be6b8993b0a362b18c414b19bb01326.svg" class="org-svg" /> und <img src="ltximg/20221119162741-vektorraumhomomorphismus_d4abc1c1863dd970f8f6fdb033b85dfd0ed5fac7.svg" alt="20221119162741-vektorraumhomomorphismus_d4abc1c1863dd970f8f6fdb033b85dfd0ed5fac7.svg" class="org-svg" /> gilt:
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(f: V \rightarrow W\) ein <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+\(f\) ist ein Vektorraumhomomorphismus, wenn für \(v,v' \in V\) und \(k \in K\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221119162741-vektorraumhomomorphismus_dff995963d8f55861a214ce2b7475c23405a5b37.svg" alt="20221119162741-vektorraumhomomorphismus_dff995963d8f55861a214ce2b7475c23405a5b37.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(v + v') =& f(v) + f(v') \\
+f(k \cdot v) =& k \cdot f(v)
+\end{align*}
 </div>
 </div>
 </div>

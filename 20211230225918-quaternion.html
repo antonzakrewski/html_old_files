@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quaternion</h1>
-<div id="outline-container-org5508e0c" class="outline-2">
-<h2 id="org5508e0c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4becaa7" class="outline-2">
+<h2 id="org4becaa7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die Quaternionen <img src="file:///home/anton/html/ltximg/20211230225918-quaternion_9fef74d7ef727fd231608194de16e47b109ac57d.svg" alt="20211230225918-quaternion_9fef74d7ef727fd231608194de16e47b109ac57d.svg" class="org-svg" /> sind eine <a href="20230112165018-korpererweiterung.html#ID-00c61287-655e-486b-b67d-3cc8bd231fc4">Körpererweiterung</a> der <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a> zu einem <a href="20220304154607-quaternionen_als_schiefkorper.html#ID-e05c38e1-dd94-4827-95da-425d8ab4d00d">Schiefkörper</a> (siehe: <a href="20220304154607-quaternionen_als_schiefkorper.html#ID-e05c38e1-dd94-4827-95da-425d8ab4d00d">Quaternionen als Schiefkörper</a>) mittels:
+Die Quaternionen \(\mathbb{H}\) sind eine <a href="20230112165018-korpererweiterung.html#ID-00c61287-655e-486b-b67d-3cc8bd231fc4">Körpererweiterung</a> der <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a> zu einem <a href="20220304154607-quaternionen_als_schiefkorper.html#ID-e05c38e1-dd94-4827-95da-425d8ab4d00d">Schiefkörper</a> (siehe: <a href="20220304154607-quaternionen_als_schiefkorper.html#ID-e05c38e1-dd94-4827-95da-425d8ab4d00d">Quaternionen als Schiefkörper</a>) mittels:
 </p>
 <ul class="org-ul">
 <li><a href="20211231000453-imaginare_einheit_i.html#ID-a23f6243-7f05-47a7-bf9c-cc8ce2d6fdc9">Imaginäre Einheit i</a></li>
 <li><a href="20211231224203-imaginare_einheit_k_quaternion.html#ID-2e5d7738-79ee-453f-a84a-45922843f46a">Imaginäre Einheit k (Quaternion)</a></li>
 <li><a href="20211231224146-imaginare_einheit_j_quaternion.html#ID-3c81ee61-ba29-4c9e-ac5b-bef90c8fb160">Imaginäre Einheit j (Quaternion)</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230225918-quaternion_49d53387fa36674d9807fa0e91ecd90d6acf768c.svg" alt="20211230225918-quaternion_49d53387fa36674d9807fa0e91ecd90d6acf768c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h = a + b \cdot \mathrm{i} + c \cdot \mathrm{j} + d \cdot \mathrm{k} && a,b,c,d \in \mathbb{R}
+\end{align*}
 <p>
 mit komponentenweise definierter Addition und <a href="20211218210925-distributivgesetz.html#ID-3f15be90-7d67-4ab7-bdd0-cace7ebe5c2a">distributiver</a> Multiplikation unter folgenden Regeln:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230225918-quaternion_971a5ff9de0e8a690f857068d9d2a83a02e6b44c.svg" alt="20211230225918-quaternion_971a5ff9de0e8a690f857068d9d2a83a02e6b44c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ -1 =& \mathrm{i}^2 \\
+=& \mathrm{j}^2
+=& \mathrm{k}^2 \\
+=& \mathrm{i}\mathrm{j}\mathrm{k}
+\end{align*}
 <p>
 siehe auch:
 </p>

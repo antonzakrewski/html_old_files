@@ -9,36 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">gleichmäßige Konvergenz von stetigen Abbildungen impliziert Stetigkeit des Grenzwerts</h1>
-<div id="outline-container-org1cc9da5" class="outline-2">
-<h2 id="org1cc9da5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgec0be93" class="outline-2">
+<h2 id="orgec0be93"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> sowie <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_92f257e291cfda440e83395f5d9f201118d0de52.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_92f257e291cfda440e83395f5d9f201118d0de52.svg" class="org-svg" /> eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetiger</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" class="org-svg" /> <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a> mit <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> sowie \(f_n: X \rightarrow M\) eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetiger</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass \(f_n\) <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a> mit \(f_n \rightarrow f\)
+Dann ist \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org70911c2" class="outline-2">
-<h2 id="org70911c2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org325536f" class="outline-2">
+<h2 id="org325536f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> mit der <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_6804cdebe2e29c2efaeabdb1beb937adda934e0d.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_6804cdebe2e29c2efaeabdb1beb937adda934e0d.svg" class="org-svg" /> gegeben, so gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_16b022a4034f73ca3a527be1d9d9ccb08febfdd4.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_16b022a4034f73ca3a527be1d9d9ccb08febfdd4.svg" class="org-svg" />
+Sei \(\varepsilon > 0\) mit der <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> \(U_{\varepsilon}\) gegeben, so gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(n \in \mathbb{N}: \| f - f_n \|_{\infty} < \frac{\varepsilon}{3}\)
 Daraus folgt durch Anwendung der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_866ad3a950b69ef8835fc0621f44f1f1261a7238.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_866ad3a950b69ef8835fc0621f44f1f1261a7238.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(f(x),f(y)) \leq& d(f(x), f_n(x)) + d(f(y), f_n(y)) + d(f_n(x), f_n(y)) \\
+<& \frac{2\varepsilon}{3} + d(f_n(x), f_n(y))
+\end{align*}
 <p>
-Sei für <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_1067cf8196a5a9bd91855368a41eb1e5eb54884b.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_1067cf8196a5a9bd91855368a41eb1e5eb54884b.svg" class="org-svg" /> die $$-<a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_b6c72c21014c0071e86c0d90ba71d860e939588f.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_b6c72c21014c0071e86c0d90ba71d860e939588f.svg" class="org-svg" /> gegeben.
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_bf9af5c6eacaecd5b10098bdb3e3093978a94c8e.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_bf9af5c6eacaecd5b10098bdb3e3093978a94c8e.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" class="org-svg" />.
-Ferner gilt für <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_3225edb0909929e9048ced0b290898eddc7126c6.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_3225edb0909929e9048ced0b290898eddc7126c6.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_57af6b6defdff19c840d5d84c37ee3b75b9adc2d.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_57af6b6defdff19c840d5d84c37ee3b75b9adc2d.svg" class="org-svg" />, d.h. nach der Aussage über <a href="20230612-urbilder_vom_umgebungssystem_unter_stetigen_abbildungen.html#ID-eef47015-d35b-4304-bd1d-ef0857169e09">Urbilder vom Umgebungssystem unter stetigen Abbildungen</a> ist <img src="file:///home/anton/html/ltximg/20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
+Sei für \(f(z) \in M\) die $\frac{\varepsilon}{3}$-<a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> \(U_{\frac{\varepsilon}{3}}(f(z))\) gegeben.
+Nach Annahme ist \(U  \coloneqq f^{-1}[U_{\frac{\varepsilon}{3}}(f(z))]\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(z\).
+Ferner gilt für \(x,y \in U\) auch \(d(f(x),f(y)) <& \frac{2}{3} \varepsilon + d(f(x),f(y)) \leq& \varepsilon\), d.h. nach der Aussage über <a href="20230612-urbilder_vom_umgebungssystem_unter_stetigen_abbildungen.html#ID-eef47015-d35b-4304-bd1d-ef0857169e09">Urbilder vom Umgebungssystem unter stetigen Abbildungen</a> ist \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>.
 </p>
 </div>
 </div>

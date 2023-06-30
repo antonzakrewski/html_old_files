@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Berührpunkt (in <img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20220719153216-beruhrpunkt_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" />)</h1>
-<div id="outline-container-org0250a39" class="outline-2">
-<h2 id="org0250a39"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">Berührpunkt (in \(\mathbb{R}\))</h1>
+<div id="outline-container-org5ce7962" class="outline-2">
+<h2 id="org5ce7962"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_90eec9df15f0a0125e59c3fb51ad80ce2c02d70c.svg" alt="20220719153216-beruhrpunkt_90eec9df15f0a0125e59c3fb51ad80ce2c02d70c.svg" class="org-svg" /> (? eq ? neq ?) eine Teilmenge der Zahlengerade und <img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_9ae54de31acaebb825deddadba06044ee86c1733.svg" alt="20220719153216-beruhrpunkt_9ae54de31acaebb825deddadba06044ee86c1733.svg" class="org-svg" />
-Der Punkt <img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20220719153216-beruhrpunkt_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> heißt Berührpunkt von A, falls in jeder $&epsilon;$-Umgbung von a mindestens ein Punkt von <img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20220719153216-beruhrpunkt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> liegt
+Sei \(A \subset \mathbb{R}\) (? eq ? neq ?) eine Teilmenge der Zahlengerade und \(a \in \mathbb{R}\)
+Der Punkt \(a\) heißt Berührpunkt von A, falls in jeder $&epsilon;$-Umgbung von a mindestens ein Punkt von \(A\) liegt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220719153216-beruhrpunkt_494d7a7a9955eb63fb411ccd5cc6656f605190fc.svg" alt="20220719153216-beruhrpunkt_494d7a7a9955eb63fb411ccd5cc6656f605190fc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+U_{\epsilon}(a)  \coloneqq ]a - \epsilon, a + \epsilon[&& \epsilon > 0
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

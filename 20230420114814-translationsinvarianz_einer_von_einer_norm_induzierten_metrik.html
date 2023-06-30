@@ -9,36 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Translationsinvarianz einer von einer Norm induzierten Metrik</h1>
-<div id="outline-container-org74c7458" class="outline-2">
-<h2 id="org74c7458"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf972934" class="outline-2">
+<h2 id="orgf972934"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_e22ffdd7ca3ba3de01a11ed9b5a87d147b23c0fa.svg" alt="20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_e22ffdd7ca3ba3de01a11ed9b5a87d147b23c0fa.svg" class="org-svg" /> ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>, so ist die <a href="20230111204631-von_einer_norm_induzierte_metrik.html#ID-84892f7a-017a-4af9-a330-28a0ccc2b172">induzierte Metrik</a> <img src="file:///home/anton/html/ltximg/20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> translationsinvariant, d.h. es gilt:
+Sei \((V,\| \|)\) ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>, so ist die <a href="20230111204631-von_einer_norm_induzierte_metrik.html#ID-84892f7a-017a-4af9-a330-28a0ccc2b172">induzierte Metrik</a> \(d\) auf \(V\) translationsinvariant, d.h. es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_50f630e833103867f00ce702bfc8e447626bd7ad.svg" alt="20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_50f630e833103867f00ce702bfc8e447626bd7ad.svg" class="org-svg" />
-</span>
+\begin{align*}
+d(v_1,v_2) = d(v_1 + m, v_2 + m)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org115b2a5" class="outline-2">
-<h2 id="org115b2a5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8fc9cae" class="outline-2">
+<h2 id="org8fc9cae"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt durch Einsetzen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_dcf4c7b9866e60e1b08b412db9551c9674273bf1.svg" alt="20230420114814-translationsinvarianz_einer_von_einer_norm_induzierten_metrik_dcf4c7b9866e60e1b08b412db9551c9674273bf1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| v_1 + m - (v_2 + m) \| =& \| v_1 - v_2 \| \\
+=& d(v_1,v_2)
+\end{align*}
 </div>
 </div>
 </div>

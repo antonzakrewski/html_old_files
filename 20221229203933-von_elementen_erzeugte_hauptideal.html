@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von Elementen erzeugte Ideal</h1>
-<div id="outline-container-org0557af9" class="outline-2">
-<h2 id="org0557af9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd05186a" class="outline-2">
+<h2 id="orgd05186a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221229203933-von_elementen_erzeugte_hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221229203933-von_elementen_erzeugte_hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <img src="file:///home/anton/html/ltximg/20221229203933-von_elementen_erzeugte_hauptideal_7c6267e3fb68ae3a0d5e69d30f62e10f5c946358.svg" alt="20221229203933-von_elementen_erzeugte_hauptideal_7c6267e3fb68ae3a0d5e69d30f62e10f5c946358.svg" class="org-svg" /> gegeben.
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> \(x_i \in R\) gegeben.
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221229203933-von_elementen_erzeugte_hauptideal_e71eb9eb4f71b37383b3cad6d492a406fc3dc015.svg" alt="20221229203933-von_elementen_erzeugte_hauptideal_e71eb9eb4f71b37383b3cad6d492a406fc3dc015.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(x_i) = \{ \sum_{i \in I} r_i x_i r_i' \vert r_i, r_i' \in R \land \text{ fast alle } r_i = 0\}
+\end{align*}
 <p>
-das von <img src="file:///home/anton/html/ltximg/20221229203933-von_elementen_erzeugte_hauptideal_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" alt="20221229203933-von_elementen_erzeugte_hauptideal_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" class="org-svg" /> erzeugte <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> 
+das von \(x_i\) erzeugte <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> 
 </p>
 </div>
 </div>

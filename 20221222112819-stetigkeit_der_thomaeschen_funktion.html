@@ -9,38 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit der Thomaeschen Funktion</h1>
-<div id="outline-container-org3727416" class="outline-2">
-<h2 id="org3727416"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfd4eaa5" class="outline-2">
+<h2 id="orgfd4eaa5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20221222112734-thomaesche_funktion.html#ID-e373912f-153d-44c9-804f-f63e71433bb0">Thomaesche Funktion</a> ist auf allen rationalen Punkten unstetig, und auf allen irrationalen punkten <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc2d573e" class="outline-2">
-<h2 id="orgc2d573e"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org5803626" class="outline-2">
+<h2 id="org5803626"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org884b57f" class="outline-3">
-<h3 id="org884b57f"><span class="section-number-3">2.1.</span> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a></h3>
+<div id="outline-container-org0105df0" class="outline-3">
+<h3 id="org0105df0"><span class="section-number-3">2.1.</span> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_306ad4d740ffd05111f8d08ad96bf965568a956e.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_306ad4d740ffd05111f8d08ad96bf965568a956e.svg" class="org-svg" />.
-Dann existiert eine Approximation <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_890e2cafe60fcb4864e7d6c86b0e8d6b3609085d.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_890e2cafe60fcb4864e7d6c86b0e8d6b3609085d.svg" class="org-svg" /> und sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgenglieder</a> jeweils vollständig gekürzt
-Es folgt dann <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_053b21fc927bbb597e0dd15f6bd8cfc51a053313.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_053b21fc927bbb597e0dd15f6bd8cfc51a053313.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_e3e3260c76870df712045f6b0f19c86194ffce07.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_e3e3260c76870df712045f6b0f19c86194ffce07.svg" class="org-svg" />
+Sei \(r \in \mathbb{R} \setminus \mathbb{Q}\).
+Dann existiert eine Approximation \(\frac{p_n}{q_n} \rightarrow r\) und sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgenglieder</a> jeweils vollständig gekürzt
+Es folgt dann \(q_n \rightarrow \infty\) und damit auch \(f(\frac{p_n}{q_n}) = \frac{1}{q_n} \rightarrow 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgf3963de" class="outline-3">
-<h3 id="orgf3963de"><span class="section-number-3">2.2.</span> unstetig</h3>
+<div id="outline-container-org5e50dde" class="outline-3">
+<h3 id="org5e50dde"><span class="section-number-3">2.2.</span> unstetig</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_4c3d936522f8aa3d4c1e199fa7780040b181df25.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_4c3d936522f8aa3d4c1e199fa7780040b181df25.svg" class="org-svg" /> fest, dann gilt insbesondere <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_b26620a1237ee89fe7f652d38d11b311ac174fa5.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_b26620a1237ee89fe7f652d38d11b311ac174fa5.svg" class="org-svg" />.
-sei $ + &rarr; $ eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> es gilt für <img src="file:///home/anton/html/ltximg/20221222112819-stetigkeit_der_thomaeschen_funktion_dec10ba9fed3d4f982e0e8bc33868fecd68401e4.svg" alt="20221222112819-stetigkeit_der_thomaeschen_funktion_dec10ba9fed3d4f982e0e8bc33868fecd68401e4.svg" class="org-svg" />
+Sei \(\frac{p}{q}\) fest, dann gilt insbesondere \(f(\frac{p}{q}) = \frac{1}{q} > 0\).
+sei $ \frac{p}{q} + \frac{1}{n} &rarr; \frac{p}{q}$ eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> es gilt für \(\lim_{n \to \infty}\left(\inf f(\frac{p}{q} + \frac{1}{n})\right) = 0 \neq \frac{1}{q}\)
 </p>
 </div>
 </div>

@@ -9,63 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summe über Binomialkoeffizienten mit einem Inversen</h1>
-<div id="outline-container-org2ba93fd" class="outline-2">
-<h2 id="org2ba93fd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1b9c072" class="outline-2">
+<h2 id="org1b9c072"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_c32813983335ede40af70d7fe0bc06e0793fc801.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_c32813983335ede40af70d7fe0bc06e0793fc801.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_994884793901f77ee9d3c6f2ca0bb3cdae105536.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_994884793901f77ee9d3c6f2ca0bb3cdae105536.svg" class="org-svg" />, so gilt:
+Seien \(m,n \in \mathbb{N}_0\) mit \(0 \leq m \leq n\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_2054b1e271ce4c6162de77f4fd5001ef179e4762.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_2054b1e271ce4c6162de77f4fd5001ef179e4762.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{m} \binom{m}{k} \binom{n}{k}^{-1} =& \frac{n+1}{n+1-m}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0397c5c" class="outline-2">
-<h2 id="org0397c5c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc64f118" class="outline-2">
+<h2 id="orgc64f118"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aus der Aussage über die <a href="20230501101104-multiplikation_von_binomialkoeffizienten_mit_gleichem_oberen_unteren_wert.html#ID-40160c83-df7e-48c5-b452-e2869910d706">Multiplikation von Binomialkoeffizienten mit gleichem oberen/unteren Wert</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_a8fa3b5a79d7c0ddb2128c66edb8f93a0942e1e6.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_a8fa3b5a79d7c0ddb2128c66edb8f93a0942e1e6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{n}{m} \binom{m}{k} =& \binom{n}{k} \binom{n-k}{m-k} \\
+\frac{1}{\binom{n}{k}} =& \frac{\binom{n-k}{m-k}}{\binom{n}{m} \cdot \binom{m}{k}}
+\end{align*}
 <p>
 Daraus folgt dann 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_b78430bc5edee6fefa79c3e555627a65389c0245.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_b78430bc5edee6fefa79c3e555627a65389c0245.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{m} \binom{m}{k} \binom{n}{k} =& \sum_{k=0}^{m} \frac{\binom{n-k}{m-k}}{\binom{n}{m} \cdot \binom{m}{k}} \cdot \binom{m}{k} \\
+=& \frac{1}{\binom{n}{m}} \cdot \sum_{k=0}^{m} \binom{n-k}{m-k}
+\end{align*}
 <p>
 Durch Umordnung erhalten wir
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_8a44152debabeb105b9e23c701eb92b476d3c70d.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_8a44152debabeb105b9e23c701eb92b476d3c70d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{1}{\binom{n}{m}} \cdot \sum_{k=0}^{m} \binom{n-k}{m-k} =& \frac{1}{\binom{n}{m}} \cdot \sum_{k=0}^{m} \binom{n-m+k}{k}
+\end{align*}
 <p>
 Aus der <a href="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten.html#ID-352ae9c4-905e-4b4b-8186-0918b3ce5ae4">Summenformel über beide Werte des Binomialkoeffizienten</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_cd343ca7140f89f0be36a31f8b909d1f3c19b6b3.svg" alt="20230503161805-summe_uber_binomialkoeffizienten_mit_einem_inversen_cd343ca7140f89f0be36a31f8b909d1f3c19b6b3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{m} \binom{m}{k} \binom{n}{k} =& \\
+=& \frac{1}{\binom{n}{m}} \cdot \sum_{k=0}^{m} \binom{n-m+k}{k} \\
+=& \frac{m! \cdot (n-m)!}{n!} \cdot \frac{(n+1)!}{m! \cdot (n+1-m)!} \\
+=& \frac{n+1}{n+1-m}
+\end{align*}
 </div>
 </div>
 </div>

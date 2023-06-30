@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Abschluss einer Teilmenge</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss einer Teilmenge</h1>
-<div id="outline-container-orgf853a05" class="outline-2">
-<h2 id="orgf853a05"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc6124ec" class="outline-2">
+<h2 id="orgc6124ec"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230305124527-abschluss_einer_teilmenge_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230305124527-abschluss_einer_teilmenge_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="ltximg/20230305124527-abschluss_einer_teilmenge_8dc2158f5f18445f716637b00c679c9ddf20367e.svg" alt="20230305124527-abschluss_einer_teilmenge_8dc2158f5f18445f716637b00c679c9ddf20367e.svg" class="org-svg" />, so folgt
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq B \subseteq X\), so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230305124527-abschluss_einer_teilmenge_71e8c4633e7b480aad1fcf793914c2933dede76e.svg" alt="20230305124527-abschluss_einer_teilmenge_71e8c4633e7b480aad1fcf793914c2933dede76e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\overline{A} \subseteq \overline{B}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8515886" class="outline-2">
-<h2 id="org8515886"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org29fb23c" class="outline-2">
+<h2 id="org29fb23c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230302231225-abschluss_von_einer_vereinigung.html#ID-0bfc0a83-013b-4392-96b6-4572628bb9e5">Abschluss von einer Vereinigung</a>

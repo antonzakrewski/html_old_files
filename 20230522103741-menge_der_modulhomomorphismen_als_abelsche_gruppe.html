@@ -9,60 +9,82 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Modulhomomorphismen als abelsche Gruppe</h1>
-<div id="outline-container-org41f575e" class="outline-2">
-<h2 id="org41f575e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6541bbd" class="outline-2">
+<h2 id="org6541bbd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b55b1553d66fa4113c1061b1de086a4c5692925.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b55b1553d66fa4113c1061b1de086a4c5692925.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismen</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b55b1553d66fa4113c1061b1de086a4c5692925.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b55b1553d66fa4113c1061b1de086a4c5692925.svg" class="org-svg" /> eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich 
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(\mathrm{Hom}_{R}(M,N)\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismen</a>.
+Dann ist \(\mathrm{Hom}_{R}(M,N)\) eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> bezüglich 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_c8ed8d42dbb29aac4b3f23cc376e30061395139e.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_c8ed8d42dbb29aac4b3f23cc376e30061395139e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(f + f')(m) = f(m) + f'(m)
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b5a2603faed4c7ec66430e1891d9267d76bd4fd.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_5b5a2603faed4c7ec66430e1891d9267d76bd4fd.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" />
+für \(f,f' \in \mathrm{Hom}_{R}(M,N)\) und \(m \in M\)
 </p>
 </div>
 </div>
-<div id="outline-container-org88dd260" class="outline-2">
-<h2 id="org88dd260"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8068ead" class="outline-2">
+<h2 id="org8068ead"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230522104845-menge_der_abelschen_gruppenhomomorphismen_als_gruppe.html#ID-5a13a074-ce03-4468-bf61-4fa932c6c8db">Menge der abelschen Gruppenhomomorphismen als Gruppe</a>
 </p>
 </div>
 
-<div id="outline-container-org093316d" class="outline-3">
-<h3 id="org093316d"><span class="section-number-3">2.1.</span> neutrales element</h3>
+<div id="outline-container-org4a2f476" class="outline-3">
+<h3 id="org4a2f476"><span class="section-number-3">2.1.</span> neutrales element</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Folgt aus <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" class="org-svg" />
+Folgt aus \(f = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7e41409" class="outline-3">
-<h3 id="org7e41409"><span class="section-number-3">2.2.</span> inverses Element</h3>
+<div id="outline-container-org4123896" class="outline-3">
+<h3 id="org4123896"><span class="section-number-3">2.2.</span> inverses Element</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> gegeben, so ist zu zeigen, dass <img src="file:///home/anton/html/ltximg/20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_b535e771f7e4dc4a9a3a5eedd739f8461d1bea26.svg" alt="20230522103741-menge_der_modulhomomorphismen_als_abelsche_gruppe_b535e771f7e4dc4a9a3a5eedd739f8461d1bea26.svg" class="org-svg" /> ein <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphism</a> ist.
+Sei \(f\) gegeben, so ist zu zeigen, dass \(-f: m \mapsto - f(m)\) ein <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphism</a> ist.
 </p>
 <ul class="org-ul">
 <li><a href="20230521020753-gruppenhomomorphismus_zwischen_abelschen_gruppen_als_modulhomomorphismus.html#ID-a3b5bf87-f753-4959-9b61-1bd2c053e307">Gruppenhomomorphismus zwischen abelschen Gruppen als Modulhomomorphismus</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd4af175" class="outline-3">
-<h3 id="orgd4af175"><span class="section-number-3">2.3.</span> kommutativ</h3>
+<div id="outline-container-orgc528e66" class="outline-3">
+<h3 id="orgc528e66"><span class="section-number-3">2.3.</span> kommutativ</h3>
 </div>
-<div id="outline-container-org63f30bb" class="outline-3">
-<h3 id="org63f30bb"><span class="section-number-3">2.4.</span> assoziativ</h3>
+<div id="outline-container-org991674f" class="outline-3">
+<h3 id="org991674f"><span class="section-number-3">2.4.</span> assoziativ</h3>
 </div>
 </div>
 </div>

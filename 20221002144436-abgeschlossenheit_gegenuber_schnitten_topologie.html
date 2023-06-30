@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Openness of a finite intersection of open sets</h1>
-<div id="outline-container-org198b825" class="outline-2">
-<h2 id="org198b825"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org8533cfe" class="outline-2">
+<h2 id="org8533cfe"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and <img src="file:///home/anton/html/ltximg/20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> on <img src="file:///home/anton/html/ltximg/20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Then for <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">finite</a> amount of <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> <img src="file:///home/anton/html/ltximg/20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a0a3083cd640bf606a617df1c91c26d37289a487.svg" alt="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_a0a3083cd640bf606a617df1c91c26d37289a487.svg" class="org-svg" />, the <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">intersection</a> 
+Let \(X\) be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and \(\mathcal{T}\) a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> on \(X\).
+Then for <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">finite</a> amount of <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> \(A_1,...,A_n\), the <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">intersection</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_7657c93d1faddb25c83f15e123a97bed6061a372.svg" alt="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie_7657c93d1faddb25c83f15e123a97bed6061a372.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{i = 1}^{n} A_i 
+\end{align*}
 <p>
 is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
 </p>

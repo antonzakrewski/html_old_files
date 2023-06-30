@@ -9,56 +9,88 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Hilfssatz des Binomialkoeffizienten über die handübliche Formel</h1>
-<div id="outline-container-org4f213b1" class="outline-2">
-<h2 id="org4f213b1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd027d1a" class="outline-2">
+<h2 id="orgd027d1a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_d0c11e4b0b96228466399345279ac070b3451599.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_d0c11e4b0b96228466399345279ac070b3451599.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8d0dc35" class="outline-2">
-<h2 id="org8d0dc35"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org11c74e8" class="outline-2">
+<h2 id="org11c74e8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org9df3975" class="outline-3">
-<h3 id="org9df3975"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_9d8bfb4c24eea6553659c91e1950630ee852c99e.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_9d8bfb4c24eea6553659c91e1950630ee852c99e.svg" class="org-svg" /></h3>
+<div id="outline-container-org1211af1" class="outline-3">
+<h3 id="org1211af1"><span class="section-number-3">2.1.</span> \(k \leq 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_9f15eb2656b26a1a174143ce967b1fc127017edb.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_9f15eb2656b26a1a174143ce967b1fc127017edb.svg" class="org-svg" />
-</span>
+\begin{align*}
+k \leq& 0 \Rightarrow k - 1 < 0 \\
+\binom{n}{0} =& 1 \\
+\binom{n}{-h} =& 0 \quad \text{für } h \in \mathbb{N} \\
+\binom{n}{k} =& \binom{n-1}{k-1} + \binom{n-1}{k} \\
+=& 0 + \binom{n-1}{k} \\
+=& \begin{cases}
+1 & \mbox{if } k = 0  \\
+0 & \mbox{if } k < 0 \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orged3dd67" class="outline-3">
-<h3 id="orged3dd67"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_a570b9ffcc964ed53a6b7bde76dc519ebcfd7b69.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_a570b9ffcc964ed53a6b7bde76dc519ebcfd7b69.svg" class="org-svg" /></h3>
+<div id="outline-container-org3a88413" class="outline-3">
+<h3 id="org3a88413"><span class="section-number-3">2.2.</span> \(k \geq n\)</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_5c977eafd60101ccd249533bbfe36cb13b16b918.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_5c977eafd60101ccd249533bbfe36cb13b16b918.svg" class="org-svg" />
-</span>
+\begin{align*}
+k > n \Rightarrow \binom{k}{n} = 0 \\
+k = n \Rightarrow \binom{k}{n} = 1 \\
+k \geq n \Rightarrow k - 1 \geq n - 1  \\
+k = n \Rightarrow k - 1 = n - 1 \\
+\binom{n}{n} = 1 \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5ba4430" class="outline-3">
-<h3 id="org5ba4430"><span class="section-number-3">2.3.</span> <img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_8f39fea4d659ec8775d022d004c26b4576bff212.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_8f39fea4d659ec8775d022d004c26b4576bff212.svg" class="org-svg" /></h3>
+<div id="outline-container-orgd83be82" class="outline-3">
+<h3 id="orgd83be82"><span class="section-number-3">2.3.</span> \(n < k\)</h3>
 <div class="outline-text-3" id="text-2-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_aee20db82f5f4305f898e6ad98120b55cdb51209.svg" alt="20220708165441-beweis_hilfssatz_des_binomialkoeffizienten_uber_die_handubliche_formel_aee20db82f5f4305f898e6ad98120b55cdb51209.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{n-1}{k-1} + \binom{n-1}{k} =& \frac{(n-1)!}{(k-1)!((n-1)-(k-1))!} + \frac{(n-1)!}{k!(n-k-1)!} \\
+=& \frac{(n-1)!}{(k-1)!(n-k)!} + \frac{(n-1)!}{k!(n-k-1)!} \\
+=& \frac{k(n-1)!}{k!(n-k)!} + \frac{(n-k)(n-1)!}{k!(n-k)!} \\
+=& \frac{k(n-1)! + (n-k)(n-1)!}{k!(n-k)!} \\
+=& \frac{((k)+(n-k))(n-1)!}{k!(n-k)!} \\
+=& \frac{n(n-1)!}{k!(n-k)!} \\
+=& \frac{n!}{k!(n-k)!} \\ 
+=& \binom{n}{k}
+\end{align*}
 </div>
 </div>
 </div>

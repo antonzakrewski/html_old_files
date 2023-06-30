@@ -3,52 +3,73 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vereinigung von beliebig vielen Mengen beim Urbild</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vereinigung von beliebig vielen Mengen beim Urbild</h1>
-<div id="outline-container-orgbc3034d" class="outline-2">
-<h2 id="orgbc3034d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga9798b9" class="outline-2">
+<h2 id="orga9798b9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_b85df24f8857bec46b90583def851b135724a2d9.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_b85df24f8857bec46b90583def851b135724a2d9.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_177b22539bdbea324cb3839deb1fc0cac58494e9.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_177b22539bdbea324cb3839deb1fc0cac58494e9.svg" class="org-svg" /> eine beliebige <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> und <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3c91c439b3d1a71e059fcc2e14c836bd12f83377.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3c91c439b3d1a71e059fcc2e14c836bd12f83377.svg" class="org-svg" />, so folgt:
+Sei \(f: X \rightarrow Y\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und \(y_i \subseteq Y\) eine beliebige <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> und \(x_i \coloneqq f^{-1}[y_i]\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_67fb3ac6fe3329c8293a12926a49394b876b14ef.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_67fb3ac6fe3329c8293a12926a49394b876b14ef.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+f^{-1} \left [\bigcup_{i \in I} y_i \right] = \bigcup_{i \in I} x_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf459d9c" class="outline-2">
-<h2 id="orgf459d9c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9d920e6" class="outline-2">
+<h2 id="org9d920e6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2197252" class="outline-3">
-<h3 id="org2197252"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgb8574ba" class="outline-3">
+<h3 id="orgb8574ba"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_fd9cb98fe3ba4d96ab27c84e97cd1d1df09ee762.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_fd9cb98fe3ba4d96ab27c84e97cd1d1df09ee762.svg" class="org-svg" />, so existiert ein <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_1a9a2566e43de2a6092dc0becd733f1a809bc19a.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_1a9a2566e43de2a6092dc0becd733f1a809bc19a.svg" class="org-svg" /> mit <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_f7dee199be8752ffbea7015068db2561b4e6435f.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_f7dee199be8752ffbea7015068db2561b4e6435f.svg" class="org-svg" /> und damit auch <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3e0d92af1b7931828846fc40b8fa0ad871ea42bf.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3e0d92af1b7931828846fc40b8fa0ad871ea42bf.svg" class="org-svg" />  bzw. <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_37b9056346ed5b8615de4318f1bc76d516460c22.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_37b9056346ed5b8615de4318f1bc76d516460c22.svg" class="org-svg" /> und damit auch <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_7138bc86984cf1733c580a9eeed42d35319d2ff2.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_7138bc86984cf1733c580a9eeed42d35319d2ff2.svg" class="org-svg" />
+Sei \(x \in f^{-1}\left [ \bigcup_{i \in I} y_i \right]\), so existiert ein \(y \in \bigcup_{i \in I} y_i\) mit \(x \in f^{-1}(y)\) und damit auch \(y \in y_j\)  bzw. \(x \in x_j\) und damit auch \(x \in \bigcup_{i \in I} x_i\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc8bb45" class="outline-3">
-<h3 id="orgfc8bb45"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org2f6175d" class="outline-3">
+<h3 id="org2f6175d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_7138bc86984cf1733c580a9eeed42d35319d2ff2.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_7138bc86984cf1733c580a9eeed42d35319d2ff2.svg" class="org-svg" />, so existiert ein <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_4aae931f302473eafdcf6a7a6125515b4998965d.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_4aae931f302473eafdcf6a7a6125515b4998965d.svg" class="org-svg" /> mit <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_37b9056346ed5b8615de4318f1bc76d516460c22.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_37b9056346ed5b8615de4318f1bc76d516460c22.svg" class="org-svg" />
-Daraus folgt, dass ein <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3e0d92af1b7931828846fc40b8fa0ad871ea42bf.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_3e0d92af1b7931828846fc40b8fa0ad871ea42bf.svg" class="org-svg" /> existiert mit <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_f7dee199be8752ffbea7015068db2561b4e6435f.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_f7dee199be8752ffbea7015068db2561b4e6435f.svg" class="org-svg" />
-Gleichzeitig gilt <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_34cb384c30dc1987e148330bc5e08350413e301a.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_34cb384c30dc1987e148330bc5e08350413e301a.svg" class="org-svg" /> und damit auch dann <img src="ltximg/20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_59d9d0507aa1da5572c262ad1197cc5a0b19214a.svg" alt="20230207111547-vereinigung_von_beliebig_vielen_mengen_beim_bild_59d9d0507aa1da5572c262ad1197cc5a0b19214a.svg" class="org-svg" />
+Sei \(x \in \bigcup_{i \in I} x_i\), so existiert ein \(x_j\) mit \(x \in x_j\)
+Daraus folgt, dass ein \(y \in y_j\) existiert mit \(x \in f^{-1}(y)\)
+Gleichzeitig gilt \(y \in \bigcup_{y \in y_j} y_i\) und damit auch dann \(x \in f^{-1} \left [\bigcup_{i \in I} \right]\)
 </p>
 </div>
 </div>

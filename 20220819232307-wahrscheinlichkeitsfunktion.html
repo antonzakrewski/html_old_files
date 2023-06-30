@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wahrscheinlichkeitsfunktion</h1>
-<div id="outline-container-orgbea6d4e" class="outline-2">
-<h2 id="orgbea6d4e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0a802d1" class="outline-2">
+<h2 id="org0a802d1"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die Wahrscheinlichkeitsfunktion der <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> X ordnet jedem Wert <img src="file:///home/anton/html/ltximg/20220819232307-wahrscheinlichkeitsfunktion_295f5c546290946210aef202ca22215009463c76.svg" alt="20220819232307-wahrscheinlichkeitsfunktion_295f5c546290946210aef202ca22215009463c76.svg" class="org-svg" /> die <a href="20220102142027-wahrscheinlichkeit.html#ID-6d713be4-69af-4c68-82f2-ab5fcbecf263">Wahrscheinlichkeit</a> <img src="file:///home/anton/html/ltximg/20220819232307-wahrscheinlichkeitsfunktion_c58a6261deb8d31ae424092102a3687ed26500bb.svg" alt="20220819232307-wahrscheinlichkeitsfunktion_c58a6261deb8d31ae424092102a3687ed26500bb.svg" class="org-svg" /> zu
+Die Wahrscheinlichkeitsfunktion der <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> X ordnet jedem Wert \(x_i \in X\) die <a href="20220102142027-wahrscheinlichkeit.html#ID-6d713be4-69af-4c68-82f2-ab5fcbecf263">Wahrscheinlichkeit</a> \(P(X=x_i)\) zu
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220819232307-wahrscheinlichkeitsfunktion_098b4d142844d9d80c7416c1d82af0bf7a3b8449.svg" alt="20220819232307-wahrscheinlichkeitsfunktion_098b4d142844d9d80c7416c1d82af0bf7a3b8449.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+P: X \rightarrow& [0,1]
+P: x_i \mapsto& P(X=x_i)
+\end{align*}
 <p>
 Dabei gelten die <a href="20220820212331-axiome_von_kolmogorov.html#ID-5c810307-4897-4de6-bb4c-df87285dcdb7">Axiome von Kolmogorov</a>
 </p>

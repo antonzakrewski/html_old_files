@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Schlussregeln mit dem materialen Konditional</h1>
 
-<div id="outline-container-org6f1bea4" class="outline-2">
-<h2 id="org6f1bea4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1bd0004" class="outline-2">
+<h2 id="org1bd0004"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230103153852-schlussregeln_fur_das_materiale_konditional_e9fd53c00a759e6bd0b6ce8274fac33c97d8c803.svg" alt="20230103153852-schlussregeln_fur_das_materiale_konditional_e9fd53c00a759e6bd0b6ce8274fac33c97d8c803.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\qed B \models A \prec B \\
+\lnot \diamond A \models A \prec B \\
+\models A \prec (B \lor \lnot B) \\
+\models (A \land \lnot A) \prec B
+\end{align*}
 </div>
 </div>
 </div>

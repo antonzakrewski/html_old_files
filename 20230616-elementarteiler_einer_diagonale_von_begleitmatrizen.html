@@ -9,55 +9,89 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elementarteiler einer Diagonale von Begleitmatrizen</h1>
-<div id="outline-container-org479f449" class="outline-2">
-<h2 id="org479f449"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org23a38d7" class="outline-2">
+<h2 id="org23a38d7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_b06ccff3abe972e4cc03983cc56a604bfe3dfcac.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_b06ccff3abe972e4cc03983cc56a604bfe3dfcac.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_87d5226cf0c5a422de5a099fe93fe197e6f5acb2.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_87d5226cf0c5a422de5a099fe93fe197e6f5acb2.svg" class="org-svg" /> <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normierte Polynome</a> mit <img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_92dc41e90611f8474a164850d17458cf979bde6e.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_92dc41e90611f8474a164850d17458cf979bde6e.svg" class="org-svg" />.
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(g_i \in K[X]\) für \(i \in \{1,...,r\}\) <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normierte Polynome</a> mit \(g_i \mid g_{i+1}\).
 Dann gilt für die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_2c0817af3d21d592441c2ca330e5a032dc5025df.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_2c0817af3d21d592441c2ca330e5a032dc5025df.svg" class="org-svg" />
-</span>
+\begin{align*}
+B =& B_{g_1,...,g_r} \\
+=& \begin{pmatrix} B_{g_1} & & \\
+& \vdots & \\
+& & B_{g_r} \end{pmatrix}  
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org78cb68f" class="outline-2">
-<h2 id="org78cb68f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org98b7b76" class="outline-2">
+<h2 id="org98b7b76"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der Aussage über die <a href="20230619-elementarteiler_einer_begleitmatrix.html#ID-1286c23e-3290-46a0-ad9d-412ea10925dd">Elementarteiler einer</a> <a href="20230609-begleitmatrix.html#ID-66139441-0ee0-4b85-b825-cc1f24a59622">Begleitmatrix</a> existieren <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismen</a> $A<sub>i,B</sub>$<sub>i</sub>, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_aa1d4bec1865f30461b389361dfbd9529d6fb15b.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_aa1d4bec1865f30461b389361dfbd9529d6fb15b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A \cdot M_{B_{g_i}} \cdot B = \begin{pmatrix} 1 & & & \\
+& \vdots & & \\
+& & 1 & \\
+& & & g_i
+\end{pmatrix} 
+\end{align*}
 <p>
-Diese <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> <img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> lassen sich natürlich erweitern durch
+Diese <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> \(A\) lassen sich natürlich erweitern durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_b748e8deb89a6746e1560efaef2e063aa4bbda7b.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_b748e8deb89a6746e1560efaef2e063aa4bbda7b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix} A & \\
+& E_n \\ \end{pmatrix} 
+\end{align*}
 <p>
 so dass folgt
 </p>
+\begin{align*}
+M_B(x) =& \begin{pmatrix} xE - B_{g_1} & & \\
+& \vdots & \\
+& & xE - B
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_90e166f79e947189b2bccd933bce585cc5c8855b.svg" alt="20230616-elementarteiler_einer_diagonale_von_begleitmatrizen_90e166f79e947189b2bccd933bce585cc5c8855b.svg" class="org-svg" />
-</span>
-</div>
+# * Satz
+# Sei $K$ ein [[id:a602197a-6116-40b3-ae33-b421251bbb1e][Körper]] und $g \in K[X]$ ein [[id:f17a0f11-0953-4728-91a6-9a81df943813][normiertes]] [[id:a2f108fc-4631-45ea-bf8c-70182b7714f9][Polynom]] sowie $B_g$ die dazugehörige [[id:66139441-0ee0-4b85-b825-cc1f24a59622][Begleitmatrix]].
+# Dann gilt für die [[id:62d08ada-fc7a-43eb-8029-8794d9d03e52][charakteristische Matrix]] von $B_g$
+# \begin{align*}
+# M_{B_g} \sim \begin{pmatrix}
+# 1 & & & \\
+#   & \vdots & & \\
+#   & & 1 & \\
+#   & & & g \\
+# \end{pmatrix} 
+# \end{align*}
 </div>
 </div>
 </div>

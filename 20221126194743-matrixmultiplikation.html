@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Matrixmultiplikation</h1>
-<div id="outline-container-org6d24677" class="outline-2">
-<h2 id="org6d24677"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org38b3186" class="outline-2">
+<h2 id="org38b3186"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221126194743-matrixmultiplikation_d1490b7d30f2901c429175b344f617668d35a4be.svg" alt="20221126194743-matrixmultiplikation_d1490b7d30f2901c429175b344f617668d35a4be.svg" class="org-svg" /> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> <img src="file:///home/anton/html/ltximg/20221126194743-matrixmultiplikation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221126194743-matrixmultiplikation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" />
+Seien \(A = (a_{ij}) \in R^{l \times m}, B = (b_{jk} \in R^{m \times n}\) <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> \(R\)
 Dann ist die Matrixmultiplikation definiert als eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221126194743-matrixmultiplikation_26544373e901b97ae9dc55d30eb1da174d208d4f.svg" alt="20221126194743-matrixmultiplikation_26544373e901b97ae9dc55d30eb1da174d208d4f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+R^{l \times m} \times R^{m \times n} \rightarrow R^{l \times n}
+\end{align*}
 <p>
 mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221126194743-matrixmultiplikation_9adb7197e143f6d9002957a3ca1d06260ab082a4.svg" alt="20221126194743-matrixmultiplikation_9adb7197e143f6d9002957a3ca1d06260ab082a4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c_{ik} = \sum_{j=1}^{m} a_{ij} \cdot b_{jk}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">irreducible element</h1>
-<div id="outline-container-org26b27f0" class="outline-2">
-<h2 id="org26b27f0"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org96ce622" class="outline-2">
+<h2 id="org96ce622"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226125836-irreduzibles_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226125836-irreduzibles_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
-<img src="file:///home/anton/html/ltximg/20221226125836-irreduzibles_element_9bf1547a80057e027a4536443cc45ce28b46adc8.svg" alt="20221226125836-irreduzibles_element_9bf1547a80057e027a4536443cc45ce28b46adc8.svg" class="org-svg" /> ist irreduzibel, falls für <img src="file:///home/anton/html/ltximg/20221226125836-irreduzibles_element_d8e706385035b612185142c04455dcde19704410.svg" alt="20221226125836-irreduzibles_element_d8e706385035b612185142c04455dcde19704410.svg" class="org-svg" /> gilt:
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
+\(p \in R \setminus \{0\}\) ist irreduzibel, falls für \(x,y \in R\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226125836-irreduzibles_element_529eb6fb4287c948374ddd083a6452accf52e988.svg" alt="20221226125836-irreduzibles_element_529eb6fb4287c948374ddd083a6452accf52e988.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p = xy \Rightarrow x \in R^{\times} \lor y \in R^{\times}
+\end{align*}
 </div>
 </div>
 </div>

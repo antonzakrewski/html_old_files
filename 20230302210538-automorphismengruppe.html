@@ -3,26 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Automorphismengruppe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Automorphismengruppe</h1>
-<div id="outline-container-org459a1cd" class="outline-2">
-<h2 id="org459a1cd"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org6b65445" class="outline-2">
+<h2 id="org6b65445"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230302210538-automorphismengruppe_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20230302210538-automorphismengruppe_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> eine <a href="20230225165858-lokal_kleine_kategorie.html#ID-29f14fa2-ae57-46d2-8e23-3f2924bc1ebe">lokal kleine Kategorie</a> mit <img src="ltximg/20230302210538-automorphismengruppe_4dc203d4a46b2adf0007c991e879fe88ec845f84.svg" alt="20230302210538-automorphismengruppe_4dc203d4a46b2adf0007c991e879fe88ec845f84.svg" class="org-svg" />, so ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220818172827-automorphismus_eines_objekts.html#ID-d6ed25e6-8ebf-4836-b92b-57cc2f1f28c4">Automorphismen</a> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, die Automorphismengruppe <img src="ltximg/20230302210538-automorphismengruppe_8b920d87a538d690ff725cef089b35ed099e4430.svg" alt="20230302210538-automorphismengruppe_8b920d87a538d690ff725cef089b35ed099e4430.svg" class="org-svg" /> 
+Sei \(\mathcal{C}\) eine <a href="20230225165858-lokal_kleine_kategorie.html#ID-29f14fa2-ae57-46d2-8e23-3f2924bc1ebe">lokal kleine Kategorie</a> mit \(A \in \mathrm{Ob}(\mathcal{C})\), so ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220818172827-automorphismus_eines_objekts.html#ID-d6ed25e6-8ebf-4836-b92b-57cc2f1f28c4">Automorphismen</a> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, die Automorphismengruppe \(\mathrm{Aut}_{\mathcal{C}}(A)\) 
 </p>
 </div>
 </div>
-<div id="outline-container-orgba33472" class="outline-2">
-<h2 id="orgba33472"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd54be90" class="outline-2">
+<h2 id="orgd54be90"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Existenz eines <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutralen Element</a> folgt aus dem <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">Identitätsmorphismus</a> 

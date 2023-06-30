@@ -9,37 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation der Determinante mit einer Konstante</h1>
-<div id="outline-container-org5cce151" class="outline-2">
-<h2 id="org5cce151"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1e92e78" class="outline-2">
+<h2 id="org1e92e78"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230502112241-multiplikation_der_determinante_mit_einer_konstante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230502112241-multiplikation_der_determinante_mit_einer_konstante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und damit insbesondere <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a>.
-Dann gilt für einen <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismus</a> mit darstellender <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20230502112241-multiplikation_der_determinante_mit_einer_konstante_24592ae847e26ea593ab169958a7b520e5b4c706.svg" alt="20230502112241-multiplikation_der_determinante_mit_einer_konstante_24592ae847e26ea593ab169958a7b520e5b4c706.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und damit insbesondere <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a>.
+Dann gilt für einen <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">Modulhomomorphismus</a> mit darstellender <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(A \in R^{n \times n}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230502112241-multiplikation_der_determinante_mit_einer_konstante_288d6e0c3277f429b0ccf3b4daf53b95be96be34.svg" alt="20230502112241-multiplikation_der_determinante_mit_einer_konstante_288d6e0c3277f429b0ccf3b4daf53b95be96be34.svg" class="org-svg" />
-</span>
+\begin{align*}
+\det(r \cdot A) = r^n \cdot \det(A)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8bc8a52" class="outline-2">
-<h2 id="org8bc8a52"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org45a659f" class="outline-2">
+<h2 id="org45a659f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach Definition der <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230502112241-multiplikation_der_determinante_mit_einer_konstante_8de07ec35b401e2e6bc4a69a47985a0679ec4705.svg" alt="20230502112241-multiplikation_der_determinante_mit_einer_konstante_8de07ec35b401e2e6bc4a69a47985a0679ec4705.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(r \cdot A) =& \sum_{\tau \in S_n}^{} \mathrm{sgn}(\tau) \prod_{i=1}^{n} r \cdot \alpha_{i \tau(i)} \\
+=& \sum_{\tau \in S_n}^{} \mathrm{sgn}(\tau) r^n \cdot \prod_{i=1}^{n}  \alpha_{i \tau(i)} \\
+=& r^n \sum_{\tau \in S_n}^{} \mathrm{sgn}(\tau) \cdot \prod_{i=1}^{n}  \alpha_{i \tau(i)} \\
+=& r^n \det(A)
+\end{align*}
 </div>
 </div>
 </div>

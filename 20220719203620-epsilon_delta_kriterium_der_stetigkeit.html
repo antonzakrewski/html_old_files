@@ -3,40 +3,61 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Epsilon-Delta Kriterium der Stetigkeit</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Epsilon-Delta Kriterium der Stetigkeit</h1>
-<div id="outline-container-org5bdc176" class="outline-2">
-<h2 id="org5bdc176"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org517589c" class="outline-2">
+<h2 id="org517589c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_28dedb108fffbe46169ec6239f394bfff8b56504.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_28dedb108fffbe46169ec6239f394bfff8b56504.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Räume</a> und sei <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_84c6994c24420b2ca178f397467504923fe3c157.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_84c6994c24420b2ca178f397467504923fe3c157.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-<img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist stetig an der stelle <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_d8def2764f7d135f44cd5304de3cebbaa3eafd16.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_d8def2764f7d135f44cd5304de3cebbaa3eafd16.svg" class="org-svg" />, falls gilt
+Seien \(M,N\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Räume</a> und sei \(f: M \rightarrow N\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+\(f\) ist stetig an der stelle \(x_0 \in M\), falls gilt
 </p>
 
 <p>
-Für jedes <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" class="org-svg" /> gibt es ein <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_dbe045388fafc8fe25ae283f0e4df9c7cf69f569.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_dbe045388fafc8fe25ae283f0e4df9c7cf69f569.svg" class="org-svg" />, so dass gilt: <img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_4d4b00b8d25cfb41835d4d59a1ea55c330f2b008.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_4d4b00b8d25cfb41835d4d59a1ea55c330f2b008.svg" class="org-svg" />
+Für jedes \(\varepsilon > 0\) gibt es ein \(\delta > 0\), so dass gilt: \(\vert x - x_0\vert < \delta \Rightarrow \vert f(x) - f(x_0)\vert < \varepsilon\)
 </p>
 </div>
-<div id="outline-container-orge03923b" class="outline-3">
-<h3 id="orge03923b"><span class="section-number-3">1.1.</span> Formale</h3>
+<div id="outline-container-org84178a9" class="outline-3">
+<h3 id="org84178a9"><span class="section-number-3">1.1.</span> Formale</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220719203620-epsilon_delta_kriterium_der_stetigkeit_b171bf39097a39f55948677fe22d93d9468cc8dd.svg" alt="20220719203620-epsilon_delta_kriterium_der_stetigkeit_b171bf39097a39f55948677fe22d93d9468cc8dd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\forall \varepsilon >0\,\exists \delta >0\,\forall x\in M:|x-x_{0}|<\delta \implies |f(x)-f(x_{0})|<\varepsilon
+\end{align*}
 </div>
 </div>
 </div>

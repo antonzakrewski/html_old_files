@@ -9,43 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Boolsche Algebra als Aussagenlogisches Modell</h1>
-<div id="outline-container-org7342eb7" class="outline-2">
-<h2 id="org7342eb7"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6e7e344" class="outline-2">
+<h2 id="org6e7e344"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine Boolsche Algebra als AussagenlogischesModell ist ein Tupel <img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_3b09428ed1a7a290c0e5865468b361683c5d5ea5.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_3b09428ed1a7a290c0e5865468b361683c5d5ea5.svg" class="org-svg" />  besteht aus einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> und einer <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
+Eine Boolsche Algebra als AussagenlogischesModell ist ein Tupel \((X, \vert ... \vert)\)  besteht aus einer <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(X\) und einer <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_7a2f1e686204d757dfbc577fdee2e170f42c0a06.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_7a2f1e686204d757dfbc577fdee2e170f42c0a06.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| ... \|: \mathbb{A}L \rightarrow \mathcal{P}(X)
+\end{align*}
 <p>
-so dass für alle Aussagenlogische Formeln <img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_008777facc87303341b2e5253c1eddb38b059967.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_008777facc87303341b2e5253c1eddb38b059967.svg" class="org-svg" />
+so dass für alle Aussagenlogische Formeln \(A,B \in \mathbb{A}L\)
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_980155d01efc1fb6d800d0d7d3aa21b31e98221e.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_980155d01efc1fb6d800d0d7d3aa21b31e98221e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert \lnot A \vert =& \vert A \vert^{C} \\
+\vert A \land B \vert =& \vert A \vert \cap \vert B \vert \\
+\vert A \lor B \vert =& \vert A \vert \lor \vert B \vert \\
+\vert A \rightarrow B \vert =& \vert A \vert^C \cup \vert B \vert \\
+\vert \top \vert =& X \\
+\vert \bot \vert =& \emptyset
+\end{align*}
 
 
 <p>
 Wir schreiben
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230429101047-boolsche_algebra_als_aussagenlogisches_modell_55790d622a6bed25a21a0c9368ada70060f502cd.svg" alt="20230429101047-boolsche_algebra_als_aussagenlogisches_modell_55790d622a6bed25a21a0c9368ada70060f502cd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(X, \vert ... \vert ) \models A \Leftrightarrow \vert A \vert = X
+\end{align*}
 </div>
 </div>
 </div>

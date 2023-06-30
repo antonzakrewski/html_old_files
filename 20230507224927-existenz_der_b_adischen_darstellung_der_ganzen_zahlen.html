@@ -9,84 +9,104 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz der B-Adischen Darstellung der ganzen Zahlen</h1>
-<div id="outline-container-org101e178" class="outline-2">
-<h2 id="org101e178"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1418dfe" class="outline-2">
+<h2 id="org1418dfe"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" class="org-svg" />.
-Dann existiert für <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_c048e554e41b35612f908fa2ba9d316772ca686b.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_c048e554e41b35612f908fa2ba9d316772ca686b.svg" class="org-svg" /> eine Darstellung
+Sei \(B \geq 3\) und \(a < 0 < b\) mit \(\vert \{a,...,b\} \vert = B\).
+Dann existiert für \(k \in \mathbb{Z}\) eine Darstellung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_db0f93026e5bee30f71ddd41600baf587ff499ba.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_db0f93026e5bee30f71ddd41600baf587ff499ba.svg" class="org-svg" />
-</span>
+\begin{align*}
+k =& \sum_{i=0}^{\infty} x_i B^i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org31b2236" class="outline-2">
-<h2 id="org31b2236"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbef690e" class="outline-2">
+<h2 id="orgbef690e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>:
 </p>
 </div>
-<div id="outline-container-org66de3f4" class="outline-3">
-<h3 id="org66de3f4"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" class="org-svg" /></h3>
+<div id="outline-container-org7b604cb" class="outline-3">
+<h3 id="org7b604cb"><span class="section-number-3">2.1.</span> \(k = 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-folgt durch Wahl von <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1e0e70033e496f42393cc012d0e68d00adf9fe47.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1e0e70033e496f42393cc012d0e68d00adf9fe47.svg" class="org-svg" />
+folgt durch Wahl von \(x_i = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org53d9ee7" class="outline-3">
-<h3 id="org53d9ee7"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_ea8fb70a604582096a937df2173c44c1b2df7d4f.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_ea8fb70a604582096a937df2173c44c1b2df7d4f.svg" class="org-svg" /></h3>
+<div id="outline-container-org128fd2d" class="outline-3">
+<h3 id="org128fd2d"><span class="section-number-3">2.2.</span> \(k \Rightarrow k + 1\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_31ea17a9cd9961226ea2324d46b40b8b99b4965d.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_31ea17a9cd9961226ea2324d46b40b8b99b4965d.svg" class="org-svg" />, so konstruieren wir <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_a480ecdedb58453f74ed30775a45e49cbdfe7dd9.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_a480ecdedb58453f74ed30775a45e49cbdfe7dd9.svg" class="org-svg" /> durch:
+Sei \(k = \sum_{i=0}^{\infty} x_i B^i\), so konstruieren wir \(k + 1 \overset{!}{=} \sum_{i=0}^{\infty} x_i' B^i\) durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_af95ddf752676f33f42a68384332ce9912b44e59.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_af95ddf752676f33f42a68384332ce9912b44e59.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x_0'  \coloneqq 
+    \begin{cases}
+    x_0' + 1 & \mbox{if } x_0' < b \\
+    a  & \mbox{else } \\ 
+    \end{cases}
+\end{align*}
 <p>
 und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_05ccc95ea26d96f120012d394c95e8da6941915d.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_05ccc95ea26d96f120012d394c95e8da6941915d.svg" class="org-svg" />
-</span>
+\begin{align*}
+x_i'  \coloneqq 
+    \begin{cases}
+    x_i & \mbox{if } x_{i-1} = x_{i-1}', x_{i-1}' \neq a \\
+    x_i + 1 & \mbox{if } x_{i-1} \neq x_{i-1}' = a, x_i < b \\
+    a & \mbox{if } x_{i-1} \neq x_{i-1}' = a, x_i = b \\
+    \end{cases}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4ccca30" class="outline-3">
-<h3 id="org4ccca30"><span class="section-number-3">2.3.</span> negative Zahlen</h3>
+<div id="outline-container-orga1d9bc6" class="outline-3">
+<h3 id="orga1d9bc6"><span class="section-number-3">2.3.</span> negative Zahlen</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1b92ce0785586c69de10b6425cfe48d67ed93a83.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_1b92ce0785586c69de10b6425cfe48d67ed93a83.svg" class="org-svg" />, so wählen wir die Zahlen <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_5964b80b552798208ef6a88511315d7488f2a05d.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_5964b80b552798208ef6a88511315d7488f2a05d.svg" class="org-svg" /> und können somit analog zu oben <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_0e7f802eaa2097ff4863e1cc2137961e4e269ca3.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_0e7f802eaa2097ff4863e1cc2137961e4e269ca3.svg" class="org-svg" /> konstruieren durch:
+Sei \(k < 0\), so wählen wir die Zahlen \(\{-b,...,-a\}\) und können somit analog zu oben \(\vert k \vert\) konstruieren durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_7c04e5c3e7af4d6ae05236276e36a9ec75abc6ed.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_7c04e5c3e7af4d6ae05236276e36a9ec75abc6ed.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert k \vert = \sum_{i=0}^{\infty} \widehat{x_i} B^i
+\end{align*}
 <p>
-Wir erhalten damit <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_ac2ebeaf03a02f827a7f7d773199f20305cf7fc2.svg" class="org-svg" /> indem wir <img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_008243ca5a0f64d176a03915782d6d8ace3b29c9.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_008243ca5a0f64d176a03915782d6d8ace3b29c9.svg" class="org-svg" /> wählen
+Wir erhalten damit \(-k\) indem wir \(x_i  \coloneqq -\widehat{x_i} \in \{a,...,b\}\) wählen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_9961263fd2f9e777c5692f87a0ac8f4865cc9048.svg" alt="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen_9961263fd2f9e777c5692f87a0ac8f4865cc9048.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+-k =& (-1) \sum_{i=0}^{\infty} \widehat{x_i} B^i \\
+=& \sum_{i=0}^{\infty} x_i B^i
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Symmetrie des Binomialkoeffizienten</h1>
-<div id="outline-container-orgc8e764f" class="outline-2">
-<h2 id="orgc8e764f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd6014ae" class="outline-2">
+<h2 id="orgd6014ae"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" alt="20220108163834-binomialkoeffizient_n_k_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_c048e554e41b35612f908fa2ba9d316772ca686b.svg" alt="20220108163834-binomialkoeffizient_n_k_c048e554e41b35612f908fa2ba9d316772ca686b.svg" class="org-svg" /> so gilt
+Sei \(n \in \mathbb{N}_0\) und \(k \in \mathbb{Z}\) so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_e310bc8a1483ba0cefe75878385d1c33da7ead43.svg" alt="20220108163834-binomialkoeffizient_n_k_e310bc8a1483ba0cefe75878385d1c33da7ead43.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{n}{k} = \binom{n}{n-k}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5f15f8d" class="outline-2">
-<h2 id="org5f15f8d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd30122c" class="outline-2">
+<h2 id="orgd30122c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-für <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_93c0aaf319697b04d55fb6156cd8a553f5c2b99f.svg" alt="20220108163834-binomialkoeffizient_n_k_93c0aaf319697b04d55fb6156cd8a553f5c2b99f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_ec970a3bb6d2fd4d9262a2189b218b529a67fdba.svg" alt="20220108163834-binomialkoeffizient_n_k_ec970a3bb6d2fd4d9262a2189b218b529a67fdba.svg" class="org-svg" /> folgt es aus der <a href="20220106223354-handubliche_formel_binomialkoeffizient.html#ID-a5f59058-3c32-430e-a346-4ecc73f2afe7">Darstellung durch Fakultät</a>.
-andernfalls gilt für <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_1b92ce0785586c69de10b6425cfe48d67ed93a83.svg" alt="20220108163834-binomialkoeffizient_n_k_1b92ce0785586c69de10b6425cfe48d67ed93a83.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_bb6f6f2a2b75fcf13f2e6d8e80566d4037e9feda.svg" alt="20220108163834-binomialkoeffizient_n_k_bb6f6f2a2b75fcf13f2e6d8e80566d4037e9feda.svg" class="org-svg" /> (oder umgekehrt) und aus der Definition bzw. <img src="file:///home/anton/html/ltximg/20220108163834-binomialkoeffizient_n_k_8aee43086f7666c07ec0edbef78bbab1d8cf3746.svg" alt="20220108163834-binomialkoeffizient_n_k_8aee43086f7666c07ec0edbef78bbab1d8cf3746.svg" class="org-svg" />
+für \(n,k \in \mathbb{N}_0\) mit \(n > k\) folgt es aus der <a href="20220106223354-handubliche_formel_binomialkoeffizient.html#ID-a5f59058-3c32-430e-a346-4ecc73f2afe7">Darstellung durch Fakultät</a>.
+andernfalls gilt für \(k < 0\) und \(n < n - k\) (oder umgekehrt) und aus der Definition bzw. \(n^{\underline{n + r}} = n \cdot ... \cdot 0 \cdot ... (n - r + 1) = 0\)
 </p>
 </div>
 </div>

@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">feinere Topologie und parakompaktheit</h1>
-<div id="outline-container-org999f554" class="outline-2">
-<h2 id="org999f554"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4992c0b" class="outline-2">
+<h2 id="org4992c0b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230627-grobere_topologie_und_parakompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_06c751d1afbe9b6227cc5f680c5a815276030be4.svg" alt="20230627-grobere_topologie_und_parakompaktheit_06c751d1afbe9b6227cc5f680c5a815276030be4.svg" class="org-svg" /> <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologien</a> auf <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230627-grobere_topologie_und_parakompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_e787124e5ffcccb08159653dca0f10e0566b3a1d.svg" alt="20230627-grobere_topologie_und_parakompaktheit_e787124e5ffcccb08159653dca0f10e0566b3a1d.svg" class="org-svg" /> gilt (vgl. <a href="20230227185536-grobere_topologie.html#ID-d1de74ec-bfab-434e-bdc3-1d301dfd09be">gröbere Topologie</a> / <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a>) und <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_6719c1aef24596c265f3d8d5758cee0f8333026f.svg" alt="20230627-grobere_topologie_und_parakompaktheit_6719c1aef24596c265f3d8d5758cee0f8333026f.svg" class="org-svg" /> <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a> ist.
-Falls für eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_f1c2226a3a4e420f59903b83a8c4a6905d6e4219.svg" alt="20230627-grobere_topologie_und_parakompaktheit_f1c2226a3a4e420f59903b83a8c4a6905d6e4219.svg" class="org-svg" /> eine &lt;offene Verfeinerung&gt; <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_bc663d5162e3d761d78761da8d7c63536503bb97.svg" alt="20230627-grobere_topologie_und_parakompaktheit_bc663d5162e3d761d78761da8d7c63536503bb97.svg" class="org-svg" /> existiert, so dass <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_bc663d5162e3d761d78761da8d7c63536503bb97.svg" alt="20230627-grobere_topologie_und_parakompaktheit_bc663d5162e3d761d78761da8d7c63536503bb97.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> in <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_6719c1aef24596c265f3d8d5758cee0f8333026f.svg" alt="20230627-grobere_topologie_und_parakompaktheit_6719c1aef24596c265f3d8d5758cee0f8333026f.svg" class="org-svg" /> ist, dann ist <img src="file:///home/anton/html/ltximg/20230627-grobere_topologie_und_parakompaktheit_a41b2657563dbde70eb2bea097b67848371b6b1d.svg" alt="20230627-grobere_topologie_und_parakompaktheit_a41b2657563dbde70eb2bea097b67848371b6b1d.svg" class="org-svg" /> <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a> 
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{T}_G, \mathcal{T}_F\) <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologien</a> auf \(X\), so dass \(\mathcal{T}_G \subseteq \mathcal{T}_F\) gilt (vgl. <a href="20230227185536-grobere_topologie.html#ID-d1de74ec-bfab-434e-bdc3-1d301dfd09be">gröbere Topologie</a> / <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a>) und \(\mathcal{T}_G\) <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a> ist.
+Falls für eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(\mathcal{U}_i\) eine &lt;offene Verfeinerung&gt; \(\mathcal{V}_i\) existiert, so dass \(\mathcal{V}_i\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> in \(\mathcal{T}_G\) ist, dann ist \(\mathcal{T}_F\) <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org4c47577" class="outline-2">
-<h2 id="org4c47577"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8f03094" class="outline-2">
+<h2 id="org8f03094"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

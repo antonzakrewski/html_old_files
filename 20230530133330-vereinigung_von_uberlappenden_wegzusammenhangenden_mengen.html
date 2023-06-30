@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vereinigung von überlappenden wegzusammenhängenden Mengen</h1>
-<div id="outline-container-org45c696c" class="outline-2">
-<h2 id="org45c696c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge545ae6" class="outline-2">
+<h2 id="orge545ae6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_fdab7828dfc8231eed95544329af85a04816d057.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_fdab7828dfc8231eed95544329af85a04816d057.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängenden</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> mit <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_d06bb55f2e98c96689226f1ba4233f134133846e.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_d06bb55f2e98c96689226f1ba4233f134133846e.svg" class="org-svg" />.
-Dann ist <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_f9c40f5f7c5693e45bab1567d0ea834c25c9dbc5.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_f9c40f5f7c5693e45bab1567d0ea834c25c9dbc5.svg" class="org-svg" /> P<sub>i</sub>$ ebenfalls <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a>
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(P_i \subseteq X\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängenden</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> mit \(P_i \cap P_j \neq \emptyset\).
+Dann ist \(P  \coloneqq \bigcup_{i \in I}\) P<sub>i</sub>$ ebenfalls <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org579d7b0" class="outline-2">
-<h2 id="org579d7b0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5473b92" class="outline-2">
+<h2 id="org5473b92"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a09e01ed9433cc85662c7276c8f818fc2857ef1a.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a09e01ed9433cc85662c7276c8f818fc2857ef1a.svg" class="org-svg" />, so existieren <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_caa9d434ded9c28d3aa03eb5132611db0cca692d.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_caa9d434ded9c28d3aa03eb5132611db0cca692d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_fe0e5c48f6cd517a42c261aa3edbb7128fb2bc69.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_fe0e5c48f6cd517a42c261aa3edbb7128fb2bc69.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a05c087ffb4b5dee7bbe34ad47ad16f8a7516121.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a05c087ffb4b5dee7bbe34ad47ad16f8a7516121.svg" class="org-svg" />.
-Nach Annahme existiert ein punkt <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_59721104b7c99dbd9591c63a33b7f79d9a3167a1.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_59721104b7c99dbd9591c63a33b7f79d9a3167a1.svg" class="org-svg" /> und <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Wege</a> <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" class="org-svg" />, welche <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" class="org-svg" /> verbinden.
-Aus der <a href="20230515222436-path_composition.html#ID-374e74c2-509e-4f28-8aea-b4dc9b727715">Pfadkomposition</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_bef4692dbebdf613ee91c160eb5752482ba81d0c.svg" alt="20230530133330-vereinigung_von_uberlappenden_wegzusammenhangenden_mengen_bef4692dbebdf613ee91c160eb5752482ba81d0c.svg" class="org-svg" /> der gewünschte <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a> ist.
+Sei \(x,y \in P\), so existieren \(j,i \in I\) mit \(x \in P_i\) und \(y \in P_j\).
+Nach Annahme existiert ein punkt \(z \in P_i \cap P_j\) und <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Wege</a> \(\alpha\) und \(\beta\), welche \(x\) bzw. \(y\) mit \(z\) verbinden.
+Aus der <a href="20230515222436-path_composition.html#ID-374e74c2-509e-4f28-8aea-b4dc9b727715">Pfadkomposition</a> folgt, dass \(\alpha \cdot \beta\) der gewünschte <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a> ist.
 </p>
 </div>
 </div>

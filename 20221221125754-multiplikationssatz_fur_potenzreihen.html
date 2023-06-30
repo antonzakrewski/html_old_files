@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikationssatz für Potenzreihen</h1>
-<div id="outline-container-orgb9e3f2b" class="outline-2">
-<h2 id="orgb9e3f2b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5afb618" class="outline-2">
+<h2 id="org5afb618"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_34837f5d2200f0e03510497c9aae9171d457742b.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_34837f5d2200f0e03510497c9aae9171d457742b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_db2fe88fc3dfdf4b4f4d888b804f70def5df3f04.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_db2fe88fc3dfdf4b4f4d888b804f70def5df3f04.svg" class="org-svg" /> <a href="20221204223941-potenzreihe.html#ID-dab65874-6741-4bba-97fe-d305f01190aa">Potenzreihen</a> in <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_ecf15f8000807646f67edfd325ce2671b070041c.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_ecf15f8000807646f67edfd325ce2671b070041c.svg" class="org-svg" /> mit <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_b755afe9b0b50418a1c6701a2a47611fcd61e58d.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_b755afe9b0b50418a1c6701a2a47611fcd61e58d.svg" class="org-svg" />.
-Dann folgt, dass das <a href="20221216221137-cauchy_produkt.html#ID-fbec730c-5e96-4cde-9d0c-4783e1ff9ee3">Cauchy Produkt</a> <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_7579a645b4ad82fe884d7df28beebac9ca856551.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_7579a645b4ad82fe884d7df28beebac9ca856551.svg" class="org-svg" /> einen <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> von <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_3ed4c44e5fd75b02c5127d8f196c31802a0054b2.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_3ed4c44e5fd75b02c5127d8f196c31802a0054b2.svg" class="org-svg" /> besitzt und für <img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_4c2113d388b1852ac1085d081525c423e995c5b7.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_4c2113d388b1852ac1085d081525c423e995c5b7.svg" class="org-svg" /> gitl:
+Seien \(\sum_{n=0}^{\infty} a_n z^n\) und \(\sum_{n=0}^{\infty} b_n z^n\) <a href="20221204223941-potenzreihe.html#ID-dab65874-6741-4bba-97fe-d305f01190aa">Potenzreihen</a> in \(\mathbb{C}\) mit <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> \(R_a,R_b \geq R\).
+Dann folgt, dass das <a href="20221216221137-cauchy_produkt.html#ID-fbec730c-5e96-4cde-9d0c-4783e1ff9ee3">Cauchy Produkt</a> \(\sum_{n=0}^{\infty} (\sum_{k=0}^{n} a_{n-k} b_k ) z^n\) einen <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> von \(\geq R\) besitzt und für \(\vert z \vert < R_0\) gitl:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221221125754-multiplikationssatz_fur_potenzreihen_2ea73f66ab8ce3cf5ff1e08136548c1a1fdf674a.svg" alt="20221221125754-multiplikationssatz_fur_potenzreihen_2ea73f66ab8ce3cf5ff1e08136548c1a1fdf674a.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{n=0}^{\infty} \left( \sum_{k=0}^{\infty} a_{n-k} b_k \right) z^n =& \left(\sum_{n=0}^{\infty} a_n z^n \right)\cdot \left(\sum_{n=0}^{\infty} b_n z^n \right)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6bdc6fe" class="outline-2">
-<h2 id="org6bdc6fe"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9f3bca0" class="outline-2">
+<h2 id="org9f3bca0"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

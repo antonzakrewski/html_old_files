@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit von Kompositionen stetiger Funktionen</h1>
-<div id="outline-container-org9d23195" class="outline-2">
-<h2 id="org9d23195"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcded0d7" class="outline-2">
+<h2 id="orgcded0d7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_689906acc1c1470b021b68d1cca8b36c8ba4741f.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_689906acc1c1470b021b68d1cca8b36c8ba4741f.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit geeigneten (co-)domänen
-Dann ist <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_736825830fedf4b3893b73e9803b33662d5a6adb.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_736825830fedf4b3893b73e9803b33662d5a6adb.svg" class="org-svg" /> auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
+Seien \(f, g\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit geeigneten (co-)domänen
+Dann ist \(g \circ f\) auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org0488217" class="outline-2">
-<h2 id="org0488217"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org13f9538" class="outline-2">
+<h2 id="org13f9538"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_c3d6c4c55cb3543ffd02a5130af41c081400b99a.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_c3d6c4c55cb3543ffd02a5130af41c081400b99a.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, dann folgt, dass die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_182caf585b2bc9fd50649ba68a2a9b671e8f2607.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_182caf585b2bc9fd50649ba68a2a9b671e8f2607.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und damit auch <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_6aeac74fe33919822456db2259ac9977299d91c4.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_6aeac74fe33919822456db2259ac9977299d91c4.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_736825830fedf4b3893b73e9803b33662d5a6adb.svg" alt="20221222114737-stetigkeit_von_kompositionen_stetiger_funktionen_736825830fedf4b3893b73e9803b33662d5a6adb.svg" class="org-svg" /> <a href="20221222113132-folgenkriterium_fur_stetigkeit.html#ID-6117cb3d-dac5-4524-a1be-5551f7264905">folgenstetig</a> ist und damit auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> (siehe: <a href="20230106145654-aquivalenz_von_folgenstetigkeit_und_stetigkeit.html#ID-1555e2a3-ad97-4c75-9f80-4b0c851d47cd">Äquivalenz von Folgenstetigkeit und Stetigkeit</a>)
+Sei \(x_n \rightarrow x\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, dann folgt, dass die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \(f(x_n) \rightarrow f(x)\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und damit auch \(g(f(x_n)) \rightarrow g(f(x))\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
+Daraus folgt, dass \(g \circ f\) <a href="20221222113132-folgenkriterium_fur_stetigkeit.html#ID-6117cb3d-dac5-4524-a1be-5551f7264905">folgenstetig</a> ist und damit auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> (siehe: <a href="20230106145654-aquivalenz_von_folgenstetigkeit_und_stetigkeit.html#ID-1555e2a3-ad97-4c75-9f80-4b0c851d47cd">Äquivalenz von Folgenstetigkeit und Stetigkeit</a>)
 </p>
 </div>
 </div>

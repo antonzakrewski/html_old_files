@@ -3,35 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Menge der Homomorphismen als Vektorraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Homomorphismen als Vektorraum</h1>
-<div id="outline-container-org4eb2ccb" class="outline-2">
-<h2 id="org4eb2ccb"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-orgeda74a5" class="outline-2">
+<h2 id="orgeda74a5"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" alt="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="ltximg/20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_1d52c5afc12a4fd8886fc736f955f5fcc6a7490d.svg" alt="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_1d52c5afc12a4fd8886fc736f955f5fcc6a7490d.svg" class="org-svg" />, <img src="ltximg/20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" alt="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" class="org-svg" /> so ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismen</a> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mittels:
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(f,g \in \mathrm{Hom}_K(V,W)\), \(\alpha \in K\) so ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismen</a> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mittels:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_69b8ae126e9a7f51193ee70765fc7694d3617da3.svg" alt="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum_69b8ae126e9a7f51193ee70765fc7694d3617da3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(f + g)(a) \coloneqq& f(a) + g(a) \\
+(\alpha f)(a) \coloneqq& \alpha f(a)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4006484" class="outline-2">
-<h2 id="org4006484"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2092758" class="outline-2">
+<h2 id="org2092758"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nachrechnen der <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum-Eigenschaften</a> 

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Limes einer Funktion</h1>
-<div id="outline-container-org54b1d70" class="outline-2">
-<h2 id="org54b1d70"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1696401" class="outline-2">
+<h2 id="org1696401"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230204185410-limes_71e44e01d43bb1704971d529f54117e957b7bd4f.svg" alt="20230204185410-limes_71e44e01d43bb1704971d529f54117e957b7bd4f.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und <img src="file:///home/anton/html/ltximg/20230204185410-limes_b367f18941cd6afd8b8d10c3870447de75042098.svg" alt="20230204185410-limes_b367f18941cd6afd8b8d10c3870447de75042098.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
-Dann gilt <img src="file:///home/anton/html/ltximg/20230204185410-limes_cceec6b1e2b5738cd91db81667091842ce5093cd.svg" alt="20230204185410-limes_cceec6b1e2b5738cd91db81667091842ce5093cd.svg" class="org-svg" />, falls für jede <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230204185410-limes_dfb55cc0b2441ce857b2f1321b02a14509d92572.svg" alt="20230204185410-limes_dfb55cc0b2441ce857b2f1321b02a14509d92572.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230204185410-limes_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230204185410-limes_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230204185410-limes_48d414f021d584bc938e93d40be084366a26e82d.svg" alt="20230204185410-limes_48d414f021d584bc938e93d40be084366a26e82d.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230204185410-limes_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230204185410-limes_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> existiert, so dass gilt
+Seien \(D,C\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und \(f: D \rightarrow C\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
+Dann gilt \(\lim_{x \to x_0}\left(f(x)\right) = a\), falls für jede <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> \(U_a\) von \(a\) eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> \(U_{x_0}\) von \(x_0\) existiert, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204185410-limes_3b1da10a8ae745aa248ac137650ae1464e8d6996.svg" alt="20230204185410-limes_3b1da10a8ae745aa248ac137650ae1464e8d6996.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x \in U_{x_0}: f(x) \in U_a
+\end{align*}
 </div>
 </div>
 </div>

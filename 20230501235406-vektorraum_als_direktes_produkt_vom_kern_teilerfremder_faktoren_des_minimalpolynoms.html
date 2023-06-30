@@ -9,131 +9,142 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vektorraum als Summe der Kerne teilerfremder Faktoren des Minimalpolynoms</h1>
-<div id="outline-container-org9f64a3b" class="outline-2">
-<h2 id="org9f64a3b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga5cdff9" class="outline-2">
+<h2 id="orga5cdff9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> mit <a href="20230306144242-minimalpolynom.html#ID-45149b8e-4acd-4735-b7df-6c7f499582fd">Minimalpolynom</a> <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_7f744a63f463e654463ca5cb29d9106597692604.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_7f744a63f463e654463ca5cb29d9106597692604.svg" class="org-svg" /> für teilerfremde <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_b06ccff3abe972e4cc03983cc56a604bfe3dfcac.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_b06ccff3abe972e4cc03983cc56a604bfe3dfcac.svg" class="org-svg" />
+Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in \mathrm{End}_K(V)\) mit <a href="20230306144242-minimalpolynom.html#ID-45149b8e-4acd-4735-b7df-6c7f499582fd">Minimalpolynom</a> \(m_A = g_1 \cdot ... \cdot g_r\) für teilerfremde \(g_i \in K[X]\)
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_f8bc2fb1dd6efeaaa805d4e9b758f40da4f557d7.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_f8bc2fb1dd6efeaaa805d4e9b758f40da4f557d7.svg" class="org-svg" />
-</span>
+\begin{align*}
+V = \bigoplus_{i=1}^r \mathrm{ker}(g_i(A))
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgeebae6a" class="outline-2">
-<h2 id="orgeebae6a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org221c599" class="outline-2">
+<h2 id="org221c599"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org15b08f6" class="outline-3">
-<h3 id="org15b08f6"><span class="section-number-3">2.1.</span> Summe</h3>
+<div id="outline-container-orga30255e" class="outline-3">
+<h3 id="orga30255e"><span class="section-number-3">2.1.</span> Summe</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_2ceba7fdeaf03ff117c9188dc39146365360a96e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_2ceba7fdeaf03ff117c9188dc39146365360a96e.svg" class="org-svg" />.
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8067f217ff45f9c2268694e98eda4bed50f6c244.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8067f217ff45f9c2268694e98eda4bed50f6c244.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_73ed0d0592f419464102f7eb72ddd500426c3202.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_73ed0d0592f419464102f7eb72ddd500426c3202.svg" class="org-svg" /> ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> ist mit <a href="20230427142833-lemma_von_bezout.html#ID-21bcd872-2b04-4642-8601-60e1f03f3901">Lemma von Bezout</a> / <a href="20230427134534-erweiterter_euklidischer_algorithmus.html#ID-29d60e8e-68dd-48c4-8fd6-def9d853294a">erweiterter euklidischer Algorithmus</a> existieren <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_810f7eec30983381e34ecac1213ffbb70b5037fd.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_810f7eec30983381e34ecac1213ffbb70b5037fd.svg" class="org-svg" /> mit
+Sei \(h_i = \prod_{j \neq i} g_j \in K[x]\).
+Nach Annahme gilt \(\mathrm{gcd}(h_1,...,h_r) = 1 \in K[X]\)
+Da \(K[X]\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> ist mit <a href="20230427142833-lemma_von_bezout.html#ID-21bcd872-2b04-4642-8601-60e1f03f3901">Lemma von Bezout</a> / <a href="20230427134534-erweiterter_euklidischer_algorithmus.html#ID-29d60e8e-68dd-48c4-8fd6-def9d853294a">erweiterter euklidischer Algorithmus</a> existieren \(k_i \in K[X]\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_002b946ffd3b24317ab0d45de866d6fc7a06221d.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_002b946ffd3b24317ab0d45de866d6fc7a06221d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 = \sum_{i=1}^{r} k_i h_i
+\end{align*}
 <p>
-Einsetzen von <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> liefert in <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8f38db9c949eb0c4905217fdc1a6624c3fedc7c2.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_8f38db9c949eb0c4905217fdc1a6624c3fedc7c2.svg" class="org-svg" /> die Identität:
+Einsetzen von \(A\) liefert in \(\mathrm{End}_K(V)\) die Identität:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_14dd75cbe1b856a7ec801b38211f8aead08b45c4.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_14dd75cbe1b856a7ec801b38211f8aead08b45c4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+E = \sum_{i=1}^{r} k_i(A)h_i(A)
+\end{align*}
 <p>
-Daraus folgt für <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" />:
+Daraus folgt für \(v \in V\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_5a2095edbea8f174b4b6761dd44d2cf116886f55.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_5a2095edbea8f174b4b6761dd44d2cf116886f55.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v =& Ev  \\
+=& \sum_{i=1}^{r} k_i(A) h_i(A) v
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> ist, folgt dass <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_73ed0d0592f419464102f7eb72ddd500426c3202.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_73ed0d0592f419464102f7eb72ddd500426c3202.svg" class="org-svg" /> ein <a href="20230224232626-kommutativer_polynomring.html#ID-9044af65-69db-4be0-9a42-da4f21a8439f">kommutativer Polynomring</a> ist, so dass folgt:
+Da \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> ist, folgt dass \(K[X]\) ein <a href="20230224232626-kommutativer_polynomring.html#ID-9044af65-69db-4be0-9a42-da4f21a8439f">kommutativer Polynomring</a> ist, so dass folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_476b9b94a96bf7983faea87616c14feb8fb20ef6.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_476b9b94a96bf7983faea87616c14feb8fb20ef6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_i \cdot (k_i \cdot h_i)) =& g_i \cdot k_i \cdot \prod_{j \neq i} g_j \\
+=& g_i \cdot \prod_{j \neq i} k_i \\
+=& m_A \cdot k_i \\
+=& k_i \cdot m_A
+\end{align*}
 <p>
-Daraus folgt durch einsetzen von <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />:
+Daraus folgt durch einsetzen von \(A\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_6ed0a59893f0ead43db933ab92b31dacd5d6260a.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_6ed0a59893f0ead43db933ab92b31dacd5d6260a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(g_i \cdot k_i \cdot h_i)(A) =& (k_i \cdot m_A)(A) \\
+=& k_i \cdot 0 \\
+=& 0
+\end{align*}
 <p>
-Und somit gilt für <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" />:
+Und somit gilt für \(v \in V\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ec7846d20b5aaa06494b644d05bef702d296017d.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ec7846d20b5aaa06494b644d05bef702d296017d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v =& Ev \\
+=& \sum_{i=1}^{r} k_i(A) h_i(A) v \\
+g_i(A) \cdot \sum_{i=1}^{r} k_i(A) h_i(A) v =& (g_i(A) \cdot \sum_{i=1}^{r} k_i(A)) \cdot v \\
+=& 0 \cdot v \\
+=& 0
+\end{align*}
 <p>
-und damit auch <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_b23110b5092eed9d0e873d6463ea08a265089a4e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_b23110b5092eed9d0e873d6463ea08a265089a4e.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_abc670e6498614f3daae53871685a1050bc27cd2.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_abc670e6498614f3daae53871685a1050bc27cd2.svg" class="org-svg" />
-Daraus folgt dann auch <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_355b7056f9999471be5314847299e5b8ca2fb23e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_355b7056f9999471be5314847299e5b8ca2fb23e.svg" class="org-svg" />
+und damit auch \(v \in \sum_{i=1}^{r} \mathrm{ker}(g_i(A))\) bzw. \(V \subseteq \sum_{i=1}^{r} \mathrm{ker(g_i(A))}\)
+Daraus folgt dann auch \(V = \mathrm{ker}(g_i(A))\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb71eeb6" class="outline-3">
-<h3 id="orgb71eeb6"><span class="section-number-3">2.2.</span> direkte</h3>
+<div id="outline-container-org6d52fb0" class="outline-3">
+<h3 id="org6d52fb0"><span class="section-number-3">2.2.</span> direkte</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_bfad96b8808d9a01febd6a8cced8445eb9d0439e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_bfad96b8808d9a01febd6a8cced8445eb9d0439e.svg" class="org-svg" />.
-Wir zeigen nach der Aussage über die <a href="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen.html#ID-7e657151-5604-4594-a622-cd0bda4f39ef">Äquivalenz von trivialem Schnitt, linearen unabhängigkeit und direkter Summe zweier Vektorräumen</a>, dass <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_a29afc5bda0eef8d0c0ca42fc59a48d3764cf6f5.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_a29afc5bda0eef8d0c0ca42fc59a48d3764cf6f5.svg" class="org-svg" /> gilt.
-Die allgemeine Aussage folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> über die <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" />
+Sei \(U = \mathrm{ker}(g_i(A)) \cap \bigoplus_{j\neq i}^{} \mathrm{ker}(g_j(A))\).
+Wir zeigen nach der Aussage über die <a href="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen.html#ID-7e657151-5604-4594-a622-cd0bda4f39ef">Äquivalenz von trivialem Schnitt, linearen unabhängigkeit und direkter Summe zweier Vektorräumen</a>, dass \(U = \{0\}\) gilt.
+Die allgemeine Aussage folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> über die \(i \in I\)
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_a54f369d3d9dab5dc38808125895bfa2d2b712f6.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_a54f369d3d9dab5dc38808125895bfa2d2b712f6.svg" class="org-svg" />.
+Sei \(h_i  \coloneqq \prod_{j \neq i} g_j\).
 Nach Annahme gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ae2042bcd703bd4595e7ef8fc89cebb080435bdb.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_ae2042bcd703bd4595e7ef8fc89cebb080435bdb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g_i(A)[U] =& \{0\} \\
+=& h_i(A)[U]
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_67289477b1ff5ad48197cff3754009ba32fde52b.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_67289477b1ff5ad48197cff3754009ba32fde52b.svg" class="org-svg" /> nach Annahme <a href="20230419130659-teilerfremde_elemente.html#ID-8ca5b06a-42b2-4511-86a3-753af5442412">teilerfremd</a> sind existiert nach <a href="20230427142833-lemma_von_bezout.html#ID-21bcd872-2b04-4642-8601-60e1f03f3901">Lemma von Bezout</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_eb8a13e37ff6176a98c0553dde70b0625f4de1ca.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_eb8a13e37ff6176a98c0553dde70b0625f4de1ca.svg" class="org-svg" /> mit
+Da \(g_i,h_i\) nach Annahme <a href="20230419130659-teilerfremde_elemente.html#ID-8ca5b06a-42b2-4511-86a3-753af5442412">teilerfremd</a> sind existiert nach <a href="20230427142833-lemma_von_bezout.html#ID-21bcd872-2b04-4642-8601-60e1f03f3901">Lemma von Bezout</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> \(s_i,t_i \in K[X]\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_6f3b88c9a1a65491d386188b6ea9ebf0136590db.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_6f3b88c9a1a65491d386188b6ea9ebf0136590db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+s_i g_i + t_i h_i = 1
+\end{align*}
 <p>
-Daraus folgt dann <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_725c572383b6a14a4ae00ce79e4f1df193fe4059.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_725c572383b6a14a4ae00ce79e4f1df193fe4059.svg" class="org-svg" /> und es folgt für <img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_3a1f5463ad668c6a638316b20d45df986869cb9b.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_3a1f5463ad668c6a638316b20d45df986869cb9b.svg" class="org-svg" />
+Daraus folgt dann \(s_i(A) g_i(A) + t_i(A) h_i(A) = 1(A)^0 = E \in \mathrm{End}_K(V)\) und es folgt für \(B \in U\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_7bc34c25ed05606b614b4206e60efc4162ee7f85.svg" alt="20230501235406-vektorraum_als_direktes_produkt_vom_kern_teilerfremder_faktoren_des_minimalpolynoms_7bc34c25ed05606b614b4206e60efc4162ee7f85.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+B =& 1 \cdot B \\
+=& E \cdot B \\
+=& (s_i(A)g_i(A))B + (t_i(A)h_i(A))+ \\
+=& (s_i(A) \cdot 0 )B + (t_i(A)\cdot 0)+ \\
+=& 0 + 0 \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

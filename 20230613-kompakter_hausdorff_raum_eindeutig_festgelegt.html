@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">kompakter Hausdorff Raum eindeutig festgelegt</h1>
-<div id="outline-container-org7635432" class="outline-2">
-<h2 id="org7635432"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org436a0fa" class="outline-2">
+<h2 id="org436a0fa"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_1ba451d8c2f2bcd91c656c2062c5650d2a199422.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_1ba451d8c2f2bcd91c656c2062c5650d2a199422.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" /> ist <a href="20230227185536-grobere_topologie.html#ID-d1de74ec-bfab-434e-bdc3-1d301dfd09be">gröber</a> als <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" /> ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> und <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_11e151c8802d89a97069df4dc10c95ed1a0b0e19.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_11e151c8802d89a97069df4dc10c95ed1a0b0e19.svg" class="org-svg" /> ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakter</a> raum.
-Dann gilt <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_be3d96e9793f47233867cd9ac4fd60ce3d4965ae.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_be3d96e9793f47233867cd9ac4fd60ce3d4965ae.svg" class="org-svg" />
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{T}_H \subseteq \mathcal{T}_K\), d.h. \(\mathcal{T}_H\) ist <a href="20230227185536-grobere_topologie.html#ID-d1de74ec-bfab-434e-bdc3-1d301dfd09be">gröber</a> als \(\mathcal{T}_H\) und \(\mathcal{T}_H\) ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> und \(\mathcal{T}_K\) ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakter</a> raum.
+Dann gilt \(\mathcal{T}_H = \mathcal{T}_K\)
 </p>
 </div>
 </div>
-<div id="outline-container-org23568bb" class="outline-2">
-<h2 id="org23568bb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0af41cd" class="outline-2">
+<h2 id="org0af41cd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" />, dann ist nach Annahme wegen <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_1ba451d8c2f2bcd91c656c2062c5650d2a199422.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_1ba451d8c2f2bcd91c656c2062c5650d2a199422.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_11e151c8802d89a97069df4dc10c95ed1a0b0e19.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_11e151c8802d89a97069df4dc10c95ed1a0b0e19.svg" class="org-svg" />, dann ist <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">als abgeschlossene Mengen eines kompakten Raums kompakt</a> und nach der Aussage über eine <a href="20230613-grobere_topologie_und_kompaktheit.html#ID-2426581a-d884-46ab-9bb0-2c3b22b096ce">gröbere topologie und Kompaktheit</a> auch <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> in <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" />.
-Damit folgt aus der <a href="20230511112904-abgeschlossenheit_von_kompakten_mengen.html#ID-77b86d0c-e901-449a-9147-602be657eae5">Abgeschlossenheit von kompakten Mengen in Hausdorff Räumen</a>, dass <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist in <img src="file:///home/anton/html/ltximg/20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" alt="20230613-kompakter_hausdorff_raum_eindeutig_festgelegt_bec8544f0af016bcdb34145d1b5c1803acc205bd.svg" class="org-svg" />.
+Sei \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}_H\), dann ist nach Annahme wegen \(\mathcal{T}_H \subseteq \mathcal{T}_K\) auch \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}_H\).
+Sei \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}_K\), dann ist \(A\) <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">als abgeschlossene Mengen eines kompakten Raums kompakt</a> und nach der Aussage über eine <a href="20230613-grobere_topologie_und_kompaktheit.html#ID-2426581a-d884-46ab-9bb0-2c3b22b096ce">gröbere topologie und Kompaktheit</a> auch <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> in \(\mathcal{T}_H\).
+Damit folgt aus der <a href="20230511112904-abgeschlossenheit_von_kompakten_mengen.html#ID-77b86d0c-e901-449a-9147-602be657eae5">Abgeschlossenheit von kompakten Mengen in Hausdorff Räumen</a>, dass \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist in \(\mathcal{T}_H\).
 </p>
 </div>
 </div>

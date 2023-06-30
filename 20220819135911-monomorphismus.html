@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Monomorphismus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Monomorphismus</h1>
-<div id="outline-container-org647f4a6" class="outline-2">
-<h2 id="org647f4a6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org53bf004" class="outline-2">
+<h2 id="org53bf004"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> <img src="ltximg/20220819135911-monomorphismus_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20220819135911-monomorphismus_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" /> ist ein Monomorphismus oder monisch, wenn für alle <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> <img src="ltximg/20220819135911-monomorphismus_c57c964a7e5c5a72062155dda80450cbed7d3941.svg" alt="20220819135911-monomorphismus_c57c964a7e5c5a72062155dda80450cbed7d3941.svg" class="org-svg" /> gilt
+Ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(f: A \rightarrow B\) ist ein Monomorphismus oder monisch, wenn für alle <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> \(g_1,g_2: C \rightarrow A\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220819135911-monomorphismus_19960dd2e7af80668ed54daefa98b0884c2b0bc6.svg" alt="20220819135911-monomorphismus_19960dd2e7af80668ed54daefa98b0884c2b0bc6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+fg_1 = fg_2 \Rightarrow g_1 = g_2
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb1fa9e5" class="outline-2">
-<h2 id="orgb1fa9e5"><span class="section-number-2">2.</span> Bedeutung</h2>
+<div id="outline-container-orgda0bf71" class="outline-2">
+<h2 id="orgda0bf71"><span class="section-number-2">2.</span> Bedeutung</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Vergleichbar mit <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>, d.h. "die Informationen bleiben erhalten"

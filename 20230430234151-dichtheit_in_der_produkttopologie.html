@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dichtheit in der Produkttopologie</h1>
-<div id="outline-container-orgdc1cf1d" class="outline-2">
-<h2 id="orgdc1cf1d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org777f701" class="outline-2">
+<h2 id="org777f701"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dichten</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_dc5c4014aa26f636983d56701b0b65f9e66aa043.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_dc5c4014aa26f636983d56701b0b65f9e66aa043.svg" class="org-svg" />
-Dann ist für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_9654410b016c235e1d41993af30977916fa41dd8.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_9654410b016c235e1d41993af30977916fa41dd8.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
+Sei \((X_i,\mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dichten</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> \(D_i \subseteq X_i\)
+Dann ist für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\prod_{i \in I} D_i\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org35034e0" class="outline-2">
-<h2 id="org35034e0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga8caaf6" class="outline-2">
+<h2 id="orga8caaf6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> und eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> gegeben.
-Diese besteht <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> aus dem <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeinen kartesischen Produkt</a>  <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_7978e10c9f8425f5807d6291ec2d79f5c6cba241.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_7978e10c9f8425f5807d6291ec2d79f5c6cba241.svg" class="org-svg" /> für <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_36e30cfccc32664ad6ee427148d72f3751a7019a.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_36e30cfccc32664ad6ee427148d72f3751a7019a.svg" class="org-svg" />.
-Für jedes der <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> wähle man ein <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_feac0d8e73de1294d53f9a59c4df5bcb194f2071.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_feac0d8e73de1294d53f9a59c4df5bcb194f2071.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230430234151-dichtheit_in_der_produkttopologie_e9aedc6cea7e09a72fd9c8175c447c1a6b55856c.svg" alt="20230430234151-dichtheit_in_der_produkttopologie_e9aedc6cea7e09a72fd9c8175c447c1a6b55856c.svg" class="org-svg" /> und es folgt 
+Sei \(x \in X\) und eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) gegeben.
+Diese besteht <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> aus dem <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeinen kartesischen Produkt</a>  <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> \(\prod_{i = 1} O_i\) für <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_i \subseteq X_i\).
+Für jedes der \(O_i\) wähle man ein \(d_i \in D_1\) mit \(d_i \in O_i\) und es folgt 
 </p>
 </div>
 </div>

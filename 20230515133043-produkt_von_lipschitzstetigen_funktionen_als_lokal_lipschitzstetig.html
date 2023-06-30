@@ -9,43 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produkt von lipschitzstetigen Funktionen als lokal lipschitzstetig</h1>
-<div id="outline-container-org4d68473" class="outline-2">
-<h2 id="org4d68473"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org66e9ed7" class="outline-2">
+<h2 id="org66e9ed7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Dann gilt für <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_e16b8dc77ca34d81be9198bc59355d835401f239.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_e16b8dc77ca34d81be9198bc59355d835401f239.svg" class="org-svg" />, dass das Produkt <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_e146477b4bcd8734b1d64f38d0058e16f68ebf29.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_e146477b4bcd8734b1d64f38d0058e16f68ebf29.svg" class="org-svg" />, dass <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_40f35c086ee201e6b3b4a367b42802a31a2b80c5.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_40f35c086ee201e6b3b4a367b42802a31a2b80c5.svg" class="org-svg" /> <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokal lipschitzstetig</a> ist
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Dann gilt für <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f,g: M \rightarrow \mathbb{R}\), dass das Produkt \(fg(m) = f(m) \cdot g(m)\), dass \(fg\) <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokal lipschitzstetig</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-orgd6eba72" class="outline-2">
-<h2 id="orgd6eba72"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org097b880" class="outline-2">
+<h2 id="org097b880"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_32b8da9430fc784814d0557d8489269940e42943.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_32b8da9430fc784814d0557d8489269940e42943.svg" class="org-svg" />, so gilt:
+Seien \(m,m' \in M\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_7a24a76c9fd33b086f058b4bdff2001ae6aaf8e1.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_7a24a76c9fd33b086f058b4bdff2001ae6aaf8e1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+fg(m) - fg(m') =& f(m)g(m) - f(m')g(m') \\
+=& f(m)g(m) - f(m')g(m) + f(m')g(m) - f(m')g(m') \\
+=& g(m)( f(m) - f(m') ) + f(m')(g(m) - g(m'))
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" class="org-svg" /> jeweils <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> sind mit Lipschitzkonstanten <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_93595dbf67d4454cfb6f85e270124159dd236e1b.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_93595dbf67d4454cfb6f85e270124159dd236e1b.svg" class="org-svg" />, gilt für eine hinreichend kleine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> - z.B. einen <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">1-Ball</a> mit Abschätzung - dass <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_5605a8216ba04ac0bfc0eb9fc667199a4cd62df5.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_5605a8216ba04ac0bfc0eb9fc667199a4cd62df5.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> für ein <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_3acb94def8a15fd3453ee6913f5f314a55d5f3ee.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_3acb94def8a15fd3453ee6913f5f314a55d5f3ee.svg" class="org-svg" />
+Da \(f,g\) jeweils <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> sind mit Lipschitzkonstanten \(L_f,L_g\), gilt für eine hinreichend kleine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) - z.B. einen <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">1-Ball</a> mit Abschätzung - dass \(\vert f(u) \vert, \vert g(u)\vert < L\) für \(u \in U\) für ein \(L \in \mathbb{R}\)
 Daraus folgt die Abschätzung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_881f0eae5987c5aaea38e41da551a7c7b889fdf0.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_881f0eae5987c5aaea38e41da551a7c7b889fdf0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert g(m)(f(m) - f(m')) + f(m')(g(m) - g(m')) \vert \leq& \vert g(m) \vert \cdot \vert f(m) - f(m') \vert + \vert f(m') \vert \cdot \vert g(m) - g(m') \vert \\
+<& L \cdot \vert g(m) - g(m') \vert + L \cdot \vert f(m) - f(m') \vert \\
+<& L \cdot (L_f + L_g) \cdot \vert m - m' \vert
+\end{align*}
 <p>
-Damit ist <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_40f35c086ee201e6b3b4a367b42802a31a2b80c5.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_40f35c086ee201e6b3b4a367b42802a31a2b80c5.svg" class="org-svg" /> lokal lipschitzstetig mit Lipschitzkonstante <img src="file:///home/anton/html/ltximg/20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_7f3490411a830edd411236c4de7b48d01bf72e87.svg" alt="20230515133043-produkt_von_lipschitzstetigen_funktionen_als_lokal_lipschitzstetig_7f3490411a830edd411236c4de7b48d01bf72e87.svg" class="org-svg" /> 
+Damit ist \(fg\) lokal lipschitzstetig mit Lipschitzkonstante \(L \cdot (L_f + L_g)\) 
 </p>
 </div>
 </div>

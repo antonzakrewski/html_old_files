@@ -9,40 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Erstabzählbarkeit und strenge Totalordnung</h1>
-<div id="outline-container-orgbafee60" class="outline-2">
-<h2 id="orgbafee60"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge7404ff" class="outline-2">
+<h2 id="orge7404ff"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230211132406-erste_abzahlbarkeitsaxiom.html#ID-8ec08cf5-0668-49c6-a8f3-7ec959f31636">erstabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230211132406-erste_abzahlbarkeitsaxiom.html#ID-8ec08cf5-0668-49c6-a8f3-7ec959f31636">erstabzählbarer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
 Dann existiert eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a>, <a href="20221010083644-strenge_totalordnung.html#ID-a15ef82b-7f83-4955-9afc-7e380a7e564f">streng totalgeordnete</a> <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org75dcd9c" class="outline-2">
-<h2 id="org75dcd9c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org585a329" class="outline-2">
+<h2 id="org585a329"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> beliebig.
-Nach Annahme existiert eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a> <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_ed0a91e9ed637c6cc93431378d387664c3b72743.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_ed0a91e9ed637c6cc93431378d387664c3b72743.svg" class="org-svg" />.
-Sei dann <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_c68c157023718b9fd8f5d68e4dabca88523eed37.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_c68c157023718b9fd8f5d68e4dabca88523eed37.svg" class="org-svg" />
-Wegen der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a> ist <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_cae80bb6fabcdc8f7f08eb43fa74f4ead946f242.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_cae80bb6fabcdc8f7f08eb43fa74f4ead946f242.svg" class="org-svg" /> wieder eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
-Zusätzlich ist <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_cae80bb6fabcdc8f7f08eb43fa74f4ead946f242.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_cae80bb6fabcdc8f7f08eb43fa74f4ead946f242.svg" class="org-svg" /> eine <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>, da für eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_620aae71f18faf9bb80afebd1f9c941ebf7d7b36.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_620aae71f18faf9bb80afebd1f9c941ebf7d7b36.svg" class="org-svg" />.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_578898737744dccdfe6c0a119dd8447e4f9d799c.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_578898737744dccdfe6c0a119dd8447e4f9d799c.svg" class="org-svg" />.
+Sei \(x \in X\) beliebig.
+Nach Annahme existiert eine <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbare</a> <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a> \(\{U_1,U_2,...\}\).
+Sei dann \(U_n'  \coloneqq \bigcap_{i = 1}^n U_i\)
+Wegen der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a> ist \(U_n'\) wieder eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Zusätzlich ist \(U_n'\) eine <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>, da für eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) ein \(U_i\) existiert mit \(U_i \subseteq U\).
+Daraus folgt \(U_i' \subseteq U_i \subseteq U\).
 </p>
 
 <p>
-Die Totalordnung folgt, da für <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_3b7456f14d9a46ea1df3d63602d46559631e84ac.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_3b7456f14d9a46ea1df3d63602d46559631e84ac.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_37f17e4fad598a667229173c6995817c5a64164c.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_37f17e4fad598a667229173c6995817c5a64164c.svg" class="org-svg" /> folgt:
+Die Totalordnung folgt, da für \(U_{n}', U_{m}'\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(n < m\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230319231616-erstabzahlbarkeit_und_halbordnung_134ed46a120bbed76270e3590a37c1febb97cce8.svg" alt="20230319231616-erstabzahlbarkeit_und_halbordnung_134ed46a120bbed76270e3590a37c1febb97cce8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+U_m' =& \bigcap_{i = 1}^m \\
+ =& \left(\bigcap_{i = 1}^n U_i \right)\cap \left(\bigcap_{i = n+1}^m U_i \right)\\
+\subseteq& \bigcup_{i=1}^n
+\end{align*}
 </div>
 </div>
 </div>

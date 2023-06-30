@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristische Matrix</h1>
-<div id="outline-container-orgcc9b9c8" class="outline-2">
-<h2 id="orgcc9b9c8"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org72612d6" class="outline-2">
+<h2 id="org72612d6"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230608-charakteristische_matrix_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_24592ae847e26ea593ab169958a7b520e5b4c706.svg" alt="20230608-charakteristische_matrix_24592ae847e26ea593ab169958a7b520e5b4c706.svg" class="org-svg" /> ein <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> von einem <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freien</a> <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> <img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_3351d828960e146f84c77e8f37940fe3dae7dfc4.svg" alt="20230608-charakteristische_matrix_3351d828960e146f84c77e8f37940fe3dae7dfc4.svg" class="org-svg" />
-Dann ist die charakteristische Matrix von <img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230608-charakteristische_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> definiert als <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> auf dem <a href="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper.html#ID-85e871e9-02b2-4380-87d7-48b528972860">Modul über dem Polynomring</a> <img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20230608-charakteristische_matrix_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> durch:
+Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(A \in R^{n \times n}\) ein <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> von einem <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freien</a> <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> \(M \simeq R^n\)
+Dann ist die charakteristische Matrix von \(A\) definiert als <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> auf dem <a href="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper.html#ID-85e871e9-02b2-4380-87d7-48b528972860">Modul über dem Polynomring</a> \(R[X]\) durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-charakteristische_matrix_e787ab62d1bd1f3eedd95e857a52758bee78881a.svg" alt="20230608-charakteristische_matrix_e787ab62d1bd1f3eedd95e857a52758bee78881a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+M_A(x) \coloneqq xE - A \in M_n(R[x])
+\end{align*}
 </div>
 </div>
 </div>

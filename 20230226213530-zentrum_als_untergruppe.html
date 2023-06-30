@@ -9,51 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zentrum einer Gruppe als Untergruppe</h1>
-<div id="outline-container-org34154cc" class="outline-2">
-<h2 id="org34154cc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1697575" class="outline-2">
+<h2 id="org1697575"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230226213530-zentrum_als_untergruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, so ist das <a href="20230226213449-zentrum_einer_gruppe.html#ID-1a8fbb74-8226-4029-90aa-f7f67bddbfb5">Zentrum</a> <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_96de215cc728dd5ce805f710791b11b4599e6d27.svg" alt="20230226213530-zentrum_als_untergruppe_96de215cc728dd5ce805f710791b11b4599e6d27.svg" class="org-svg" /> eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> 
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, so ist das <a href="20230226213449-zentrum_einer_gruppe.html#ID-1a8fbb74-8226-4029-90aa-f7f67bddbfb5">Zentrum</a> \(Z(G)\) eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org6aaa84d" class="outline-2">
-<h2 id="org6aaa84d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc35a475" class="outline-2">
+<h2 id="orgc35a475"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 nach <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a> ist zu zeigen
 </p>
 </div>
-<div id="outline-container-orgad48cf6" class="outline-3">
-<h3 id="orgad48cf6"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
+<div id="outline-container-orgb167a97" class="outline-3">
+<h3 id="orgb167a97"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
 </div>
-<div id="outline-container-org0296281" class="outline-3">
-<h3 id="org0296281"><span class="section-number-3">2.2.</span> <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit</a></h3>
+<div id="outline-container-org46e32ab" class="outline-3">
+<h3 id="org46e32ab"><span class="section-number-3">2.2.</span> <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_f4f74954ffdc82de1b204af60bdc2345f47ab9e9.svg" alt="20230226213530-zentrum_als_untergruppe_f4f74954ffdc82de1b204af60bdc2345f47ab9e9.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" alt="20230226213530-zentrum_als_untergruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" class="org-svg" />
+Seien \(z,z' \in Z(G)\), so gilt für \(g \in G\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_b60cb911c92aa7cfd9a69b8e65aa1a3b6661a92c.svg" alt="20230226213530-zentrum_als_untergruppe_b60cb911c92aa7cfd9a69b8e65aa1a3b6661a92c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \cdot z \cdot z'^{-1} \cdot z' =& z \cdot g \\
+=& z \cdot z'^{-1} \cdot z' \cdot g \\
+=& z \cdot z'^{-1} \cdot g \cdot z'
+\end{align*}
 <p>
-und durch Multiplikation mit <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_1c5dea65d873f2b82af9b14729580a6b30521b67.svg" alt="20230226213530-zentrum_als_untergruppe_1c5dea65d873f2b82af9b14729580a6b30521b67.svg" class="org-svg" /> folgt dann
+und durch Multiplikation mit \(z_'^{-1}\) folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_568ea1f2b515087a86b88344dd81a28228f581f4.svg" alt="20230226213530-zentrum_als_untergruppe_568ea1f2b515087a86b88344dd81a28228f581f4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \cdot z \cdot z'^{-1} =& z \cdot z'^{-1} \cdot g
+\end{align*}
 <p>
-und damit ist <img src="file:///home/anton/html/ltximg/20230226213530-zentrum_als_untergruppe_663f362e5c40fd1aa6e15a005d1af69e71a4d394.svg" alt="20230226213530-zentrum_als_untergruppe_663f362e5c40fd1aa6e15a005d1af69e71a4d394.svg" class="org-svg" />
+und damit ist \(z \cdot z'^{-1} \in Z(G)\)
 </p>
 
 <p>

@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">reelle periodische Funktion</h1>
-<div id="outline-container-org7cd8cab" class="outline-2">
-<h2 id="org7cd8cab"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org706245a" class="outline-2">
+<h2 id="org706245a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221015092333-periodische_funktion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221015092333-periodische_funktion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> mit der <a href="20220923144547-definitionsmenge.html#ID-c15421d5-5e90-47e9-a0ef-ada73bf7f696">Definitionsmenge</a> $ <sub>f</sub> $ ist periodisch mit der Periode <img src="file:///home/anton/html/ltximg/20221015092333-periodische_funktion_484e3f0cab4161dfa0343263a165ec2f8e147359.svg" alt="20221015092333-periodische_funktion_484e3f0cab4161dfa0343263a165ec2f8e147359.svg" class="org-svg" />, wenn für jedes <img src="file:///home/anton/html/ltximg/20221015092333-periodische_funktion_28f210288e49b125dac0fbfa615f6c28d5186fe7.svg" alt="20221015092333-periodische_funktion_28f210288e49b125dac0fbfa615f6c28d5186fe7.svg" class="org-svg" /> gilt:
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f\) mit der <a href="20220923144547-definitionsmenge.html#ID-c15421d5-5e90-47e9-a0ef-ada73bf7f696">Definitionsmenge</a> $ \mathcal{D}<sub>f</sub> \subseteq \mathbb{R}$ ist periodisch mit der Periode \(T \in \mathbb{R}\), wenn für jedes \(x_0 \in \mathcal{D}_f\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221015092333-periodische_funktion_9aa55fe61d00309f92bf571d8573d26d09e4c8eb.svg" alt="20221015092333-periodische_funktion_9aa55fe61d00309f92bf571d8573d26d09e4c8eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x_0 + T \in \mathcal{D}_f \\
+f(x_0 + T) \mapsto f(x_0)
+\end{align*}
 </div>
 </div>
 </div>

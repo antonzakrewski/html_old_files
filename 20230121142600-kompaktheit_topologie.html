@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit (Topologie)</h1>
-<div id="outline-container-org6fcea89" class="outline-2">
-<h2 id="org6fcea89"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5d699a3" class="outline-2">
+<h2 id="org5d699a3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230121142600-kompaktheit_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230121142600-kompaktheit_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
-Eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230121142600-kompaktheit_topologie_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" alt="20230121142600-kompaktheit_topologie_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" class="org-svg" /> heißt kompakt, wenn jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230121142600-kompaktheit_topologie_fdf571f1ce395c033d915b0f6e69ed2ceb5a902c.svg" alt="20230121142600-kompaktheit_topologie_fdf571f1ce395c033d915b0f6e69ed2ceb5a902c.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230121142600-kompaktheit_topologie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230121142600-kompaktheit_topologie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> besitzt 
+Sei \(X\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M \subseteq X\) heißt kompakt, wenn jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \((U_{i})\) von \(M\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> besitzt 
 </p>
 
 <p>

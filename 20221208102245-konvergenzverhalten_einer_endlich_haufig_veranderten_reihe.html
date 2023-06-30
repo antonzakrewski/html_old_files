@@ -3,54 +3,74 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Konvergenzverhalten einer endlich häufig veränderten Reihe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenzverhalten einer endlich häufig veränderten Reihe</h1>
-<div id="outline-container-org0359d91" class="outline-2">
-<h2 id="org0359d91"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orged1a193" class="outline-2">
+<h2 id="orged1a193"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_c636e9f5c93080c3b796caa9100c2559f3549d7f.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_c636e9f5c93080c3b796caa9100c2559f3549d7f.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a>, sodass für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a>  <img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_2e5ff60da362415ef273130208b8bf4c17caf47d.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_2e5ff60da362415ef273130208b8bf4c17caf47d.svg" class="org-svg" /> gilt:
+Seien \(a_n, a'_n\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a>, sodass für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a>  \(a_n = a_n'\) gilt:
 Dann sind für <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihen</a> folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_a9ad7914ba6cebcbd56a3a8c294575754f81c00d.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_a9ad7914ba6cebcbd56a3a8c294575754f81c00d.svg" class="org-svg" /></li>
+<li>\(\exists a: \sum_{i=0}^{\infty} a_i \rightarrow a\)</li>
 
-<li><img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_e921847adf443c514d6387f6459693670ea96153.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_e921847adf443c514d6387f6459693670ea96153.svg" class="org-svg" /></li>
+<li>\(\exists a': \sum_{i=0}^{\infty}  a_i' \rightarrow a'\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfb0fbab" class="outline-2">
-<h2 id="orgfb0fbab"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7a7428f" class="outline-2">
+<h2 id="org7a7428f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_5097570e4b3f54b60df6adb35d985bdcda64bae7.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_5097570e4b3f54b60df6adb35d985bdcda64bae7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\sum_{i=0}^{\infty} a_i =& \sum_{i=0}^{n'} a_i + \sum_{i=n' + 1}^{\infty} a_i \\
+\sum_{i=0}^{\infty} a_i' =& \sum_{i=0}^{n'} a_i' + \sum_{i=n' + 1}^{\infty} a_i' \\
+\sum_{i=n' + 1}^{\infty} a_i' =& \sum_{i=n' + 1}^{\infty} a_i \\
+\end{align*}
 <p>
 nach annahme gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_0c5ebd76d84cb1de57640b9c2bc5b4f8ec21e09e.svg" alt="20221208102245-konvergenzverhalten_einer_endlich_haufig_veranderten_reihe_0c5ebd76d84cb1de57640b9c2bc5b4f8ec21e09e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\sum_{i=n}^{\infty} a_n \in& \mathbb{C} \\
+\Rightarrow \sum_{i=0}^{n'} a_i, \sum_{i=0}^{n'} a_i' \in& \mathbb{C} \\ 
+\sum_{i=n' + 1}^{\infty} a_i' =& \sum_{i=n' + 1}^{\infty} a_i \\
+\Rightarrow \sum_{i=0}^{n'} a_n'  + \sum_{i=n' + 1}^{\infty} a_n' \in \mathbb{C} 
+\end{align*}
 </div>
 </div>
 </div>

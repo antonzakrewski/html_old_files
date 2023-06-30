@@ -9,83 +9,82 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Logarithmusfunktion</h1>
-<div id="outline-container-orgc3cfc4b" class="outline-2">
-<h2 id="orgc3cfc4b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org842f677" class="outline-2">
+<h2 id="org842f677"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210507103909-logarithmusfunktion_741983b909e75e4c5d2c61ee133e2f61a303ed8b.svg" alt="20210507103909-logarithmusfunktion_741983b909e75e4c5d2c61ee133e2f61a303ed8b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{equation}
+f(x) = \ln(x)
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb7b0255" class="outline-2">
-<h2 id="orgb7b0255"><span class="section-number-2">2.</span> Eigenschaften</h2>
+<div id="outline-container-org633b270" class="outline-2">
+<h2 id="org633b270"><span class="section-number-2">2.</span> Eigenschaften</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org86c857e" class="outline-3">
-<h3 id="org86c857e"><span class="section-number-3">2.1.</span> Definitionsmenge</h3>
+<div id="outline-container-orgded1f2b" class="outline-3">
+<h3 id="orgded1f2b"><span class="section-number-3">2.1.</span> Definitionsmenge</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210507103909-logarithmusfunktion_f89756ae7352879fb36dbeb73ec198c8492491d0.svg" alt="20210507103909-logarithmusfunktion_f89756ae7352879fb36dbeb73ec198c8492491d0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{equation}
+\mathbb{D}_f = \mathbb{R}^+\setminus{0}
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-org9fc52f3" class="outline-3">
-<h3 id="org9fc52f3"><span class="section-number-3">2.2.</span> Grenzwerte</h3>
+<div id="outline-container-orgf551f42" class="outline-3">
+<h3 id="orgf551f42"><span class="section-number-3">2.2.</span> Grenzwerte</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210507103909-logarithmusfunktion_c4b200e72f2ab12ba1d40065619e98397360e898.svg" alt="20210507103909-logarithmusfunktion_c4b200e72f2ab12ba1d40065619e98397360e898.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim \limits_{x \to 0^+}(f(x)) = - \infty \\
+\lim \limits_{x \to \infty}(f(x)) = + \infty \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org799d549" class="outline-3">
-<h3 id="org799d549"><span class="section-number-3">2.3.</span> Umkehrfunktion</h3>
+<div id="outline-container-org64e8c35" class="outline-3">
+<h3 id="org64e8c35"><span class="section-number-3">2.3.</span> Umkehrfunktion</h3>
 <div class="outline-text-3" id="text-2-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210507103909-logarithmusfunktion_57439e0372d60796ed4284e524ab0bf1a8e2a2c4.svg" alt="20210507103909-logarithmusfunktion_57439e0372d60796ed4284e524ab0bf1a8e2a2c4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{equation}
+f(x) = e^x \Leftrightarrow f^{-1}(x) = \ln(x)
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-orga630003" class="outline-3">
-<h3 id="orga630003"><span class="section-number-3">2.4.</span> Nullstelle</h3>
+<div id="outline-container-orge631585" class="outline-3">
+<h3 id="orge631585"><span class="section-number-3">2.4.</span> Nullstelle</h3>
 <div class="outline-text-3" id="text-2-4">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210507103909-logarithmusfunktion_255ed5cd5b2e6f68ee0c53e94b9b27b60f573dd4.svg" alt="20210507103909-logarithmusfunktion_255ed5cd5b2e6f68ee0c53e94b9b27b60f573dd4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
+\begin{equation}
+\log_a(1) = 0
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-org06b242c" class="outline-3">
-<h3 id="org06b242c"><span class="section-number-3">2.5.</span> <a href="20210507104005-ableitung_logarithmusfunktion.html#ID-a6da2385-41fe-4482-bc84-2b52c0219a4e">Ableitung Logarithmusfunktion</a></h3>
+<div id="outline-container-orgab57a01" class="outline-3">
+<h3 id="orgab57a01"><span class="section-number-3">2.5.</span> <a href="20210507104005-ableitung_logarithmusfunktion.html#ID-a6da2385-41fe-4482-bc84-2b52c0219a4e">Ableitung Logarithmusfunktion</a></h3>
 </div>
 </div>
 </div>

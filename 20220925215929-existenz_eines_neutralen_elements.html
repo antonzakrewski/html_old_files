@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines Neutralen Elements</h1>
-<div id="outline-container-orgc24ce66" class="outline-2">
-<h2 id="orgc24ce66"><span class="section-number-2">1.</span> Axiom</h2>
+<div id="outline-container-org25f1e26" class="outline-2">
+<h2 id="org25f1e26"><span class="section-number-2">1.</span> Axiom</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220925215929-existenz_eines_neutralen_elements_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220925215929-existenz_eines_neutralen_elements_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20220925215929-existenz_eines_neutralen_elements_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" alt="20220925215929-existenz_eines_neutralen_elements_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" class="org-svg" /> eine <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a>.
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\circ\) eine <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a>.
 Das Axiom ist erfüllt, wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220925215929-existenz_eines_neutralen_elements_dd53d151ca5e7094f2aa39e5432e7f35dc98c8eb.svg" alt="20220925215929-existenz_eines_neutralen_elements_dd53d151ca5e7094f2aa39e5432e7f35dc98c8eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\exists e \in M \forall a \in M : (e \circ a = a \circ e = a)
+\end{align*}
 </div>
 </div>
 </div>

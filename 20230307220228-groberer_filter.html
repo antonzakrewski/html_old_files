@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>gröberer Mengenfilter</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">gröberer Mengenfilter</h1>
-<div id="outline-container-org271ab1f" class="outline-2">
-<h2 id="org271ab1f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgad524ef" class="outline-2">
+<h2 id="orgad524ef"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230307220228-groberer_filter_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230307220228-groberer_filter_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230307220228-groberer_filter_74783744b5130c47548a193f5933846724a2ae6b.svg" alt="20230307220228-groberer_filter_74783744b5130c47548a193f5933846724a2ae6b.svg" class="org-svg" /> <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
-Dann ist <img src="ltximg/20230307220228-groberer_filter_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" alt="20230307220228-groberer_filter_1028b80d4fe5da534d4d80d769f94ec5243d3ed8.svg" class="org-svg" /> ein gröberer Filter, wenn gilt:
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{F},\mathcal{G}\) <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
+Dann ist \(\mathcal{G}\) ein gröberer Filter, wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230307220228-groberer_filter_8a67c4ce6c10133c421c0f4c9076464697385309.svg" alt="20230307220228-groberer_filter_8a67c4ce6c10133c421c0f4c9076464697385309.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathcal{G} \subseteq \mathcal{F}
+\end{align*}
 </div>
 </div>
 </div>

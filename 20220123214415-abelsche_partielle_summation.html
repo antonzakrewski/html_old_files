@@ -9,60 +9,80 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abelsche Partielle Summation</h1>
-<div id="outline-container-org3b23b2e" class="outline-2">
-<h2 id="org3b23b2e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org86a7966" class="outline-2">
+<h2 id="org86a7966"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_a76cf4ac500389526202272466c9c31f1056f9a9.svg" alt="20220123214415-abelsche_partielle_summation_a76cf4ac500389526202272466c9c31f1056f9a9.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_9977297dd2c77a81a9f7c57c04bd770640fb40c4.svg" alt="20220123214415-abelsche_partielle_summation_9977297dd2c77a81a9f7c57c04bd770640fb40c4.svg" class="org-svg" /> reelle Zahlen und
+Seien \(a_0,a_1,...,a_n\) und \(b_0,b_1,...,b_n\) reelle Zahlen und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_e270c03b0583aafd4a5b37ef3572633a78d95351.svg" alt="20220123214415-abelsche_partielle_summation_e270c03b0583aafd4a5b37ef3572633a78d95351.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_c6f971208db15816d55d87a98335e2a767e2ac96.svg" alt="20220123214415-abelsche_partielle_summation_c6f971208db15816d55d87a98335e2a767e2ac96.svg" class="org-svg" />
-</span>
+\begin{align*}
+A_k  \coloneqq \sum_{i=0}^k a_i \\
+B_k  \coloneqq \sum_{i=0}^k b_i \\
+\text{für }k = 0,1,...,n
+\end{align*}
+\begin{align*}
+\sum_{k=0}^n A_kb_k = A_nb_n - \sum_{k=0}^{n-1} a_{k+1}B_k
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1e590e9" class="outline-2">
-<h2 id="org1e590e9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org09cfc2b" class="outline-2">
+<h2 id="org09cfc2b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgebe9490" class="outline-3">
-<h3 id="orgebe9490"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
+<div id="outline-container-orgdeb5114" class="outline-3">
+<h3 id="orgdeb5114"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_faf9e2c325bb6e363500f6858846abca90c1e289.svg" alt="20220123214415-abelsche_partielle_summation_faf9e2c325bb6e363500f6858846abca90c1e289.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^0 A_0 b_0 =& A_0 \cdot b_0 \\
+A_0B_0 - \sum_{k=0}^{0-1} a_{0+1}B_k =& A_0B_0 \\
+B_0 =& \sum_{i=0}^0 b_i = b_0 \\
+\Rightarrow& A_0 \cdot b_0 = A_0B_0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5ca674f" class="outline-3">
-<h3 id="org5ca674f"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org7ff9c8e" class="outline-3">
+<h3 id="org7ff9c8e"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_bb70131bd0a509803f849c0559c39244d97c4644.svg" alt="20220123214415-abelsche_partielle_summation_bb70131bd0a509803f849c0559c39244d97c4644.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123214415-abelsche_partielle_summation_7ef6ebad192edb35a45d1792284d7b11058c8720.svg" alt="20220123214415-abelsche_partielle_summation_7ef6ebad192edb35a45d1792284d7b11058c8720.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n+1} A_kb_k =& \sum_{k=0}^n A_kb_k + A_{n+1}b_{n+1} \\
+=& \sum_{k=0}^n A_kb_k + (A_{n} + a_{n+1})b_{n+1} \\
+=& \sum_{k=0}^n A_kb_k + (A_{n} + a_{n+1})b_{n+1} \\
+\end{align*}
+\begin{align*}
+A_{n+1}B_{n+1} - \sum_{k=0}^{n+1-1}a_{k+1}B_k =& A_{n+1}B_{n+1} - \sum_{k=0}^{n}a_{k+1}B_k \\
+=&  (A_{n} + a_{n+1})(B_{n} + b_{n+1}) - \sum_{k=0}^{n-1}(a_{k+1}B_k) - a_{n+1}B_{n} \\
+=& ( A_nB_n - \sum_{k=0}^{n-1}(a_{k+1}B_k) ) + (a_{n+1}B_{n} - a_{n+1}B_{n}) + (A_{n}b_{n+1} + a_{n+1}b_{n+1}) \\
+=& \sum_{k=0}^{n+1}A_kb_k = + (A_{n}b_{n+1} + a_{n+1}b_{n+1})
+\end{align*}
 
 
 <p>

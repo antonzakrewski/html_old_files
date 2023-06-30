@@ -3,64 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>p-adische Metrik</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">p-adische Metrik</h1>
-<div id="outline-container-orgfe47521" class="outline-2">
-<h2 id="orgfe47521"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbd84b03" class="outline-2">
+<h2 id="orgbd84b03"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230211123220-p_adische_metrik_69bb46f4190660c1a27cc7b088dc66fddfc2edd5.svg" alt="20230211123220-p_adische_metrik_69bb46f4190660c1a27cc7b088dc66fddfc2edd5.svg" class="org-svg" /> gegeben mit <img src="ltximg/20230211123220-p_adische_metrik_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230211123220-p_adische_metrik_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> .
-Dann ist für <img src="ltximg/20230211123220-p_adische_metrik_0f0f043bb6d8223c258a78b821beb8c6a870b08b.svg" alt="20230211123220-p_adische_metrik_0f0f043bb6d8223c258a78b821beb8c6a870b08b.svg" class="org-svg" /> mit <img src="ltximg/20230211123220-p_adische_metrik_68c5dce8afe8e8d4ce55fb3058bfe6c202187a80.svg" alt="20230211123220-p_adische_metrik_68c5dce8afe8e8d4ce55fb3058bfe6c202187a80.svg" class="org-svg" /> die $p$-adische <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a> über den <a href="20230211124408-p_adischer_betrag.html#ID-2a27295c-10b2-4c0b-a06c-81096800218b">p-adischen Betrag</a> definiert als
+Sei \(\mathbb{Z}\) gegeben mit \(p\) <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> .
+Dann ist für \(x,y \in \mathbb{Z}\) mit \(x \neq y, x,y \neq 0\) die $p$-adische <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a> über den <a href="20230211124408-p_adischer_betrag.html#ID-2a27295c-10b2-4c0b-a06c-81096800218b">p-adischen Betrag</a> definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230211123220-p_adische_metrik_b8e5dbd62e60030ce85d97ebb5cbfe1f5ef2513d.svg" alt="20230211123220-p_adische_metrik_b8e5dbd62e60030ce85d97ebb5cbfe1f5ef2513d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+d(x,y) =& \vert x - y \vert_p
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdba7d3f" class="outline-2">
-<h2 id="orgdba7d3f"><span class="section-number-2">2.</span> Nachweis</h2>
+<div id="outline-container-org739f9e8" class="outline-2">
+<h2 id="org739f9e8"><span class="section-number-2">2.</span> Nachweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org06de554" class="outline-3">
-<h3 id="org06de554"><span class="section-number-3">2.1.</span> Symmetrie</h3>
+<div id="outline-container-orgeae8e16" class="outline-3">
+<h3 id="orgeae8e16"><span class="section-number-3">2.1.</span> Symmetrie</h3>
 </div>
-<div id="outline-container-orgdcba40a" class="outline-3">
-<h3 id="orgdcba40a"><span class="section-number-3">2.2.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h3>
+<div id="outline-container-orgdd337e1" class="outline-3">
+<h3 id="orgdd337e1"><span class="section-number-3">2.2.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<img src="ltximg/20230211123220-p_adische_metrik_07e89f4e0e034d033e16e40ce1a4046e50dc67cb.svg" alt="20230211123220-p_adische_metrik_07e89f4e0e034d033e16e40ce1a4046e50dc67cb.svg" class="org-svg" /> folgt nach der Konstruktion des <a href="20230211124408-p_adischer_betrag.html#ID-2a27295c-10b2-4c0b-a06c-81096800218b">p-adischen Betrags</a>, da <img src="ltximg/20230211123220-p_adische_metrik_8b1a3648057d72bbb505d7fdbf75cac037c6c138.svg" alt="20230211123220-p_adische_metrik_8b1a3648057d72bbb505d7fdbf75cac037c6c138.svg" class="org-svg" /> ist
+\(d(x,y) \geq 0\) folgt nach der Konstruktion des <a href="20230211124408-p_adischer_betrag.html#ID-2a27295c-10b2-4c0b-a06c-81096800218b">p-adischen Betrags</a>, da \(p \geq 2\) ist
 für zwei verschidene zahlen ist der Betrag 
 </p>
 </div>
 </div>
-<div id="outline-container-org2af807a" class="outline-3">
-<h3 id="org2af807a"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h3>
+<div id="outline-container-orgc539597" class="outline-3">
+<h3 id="orgc539597"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h3>
 <div class="outline-text-3" id="text-2-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230211123220-p_adische_metrik_71ca666aa16bdff6805062ec98eb41342d93f0ee.svg" alt="20230211123220-p_adische_metrik_71ca666aa16bdff6805062ec98eb41342d93f0ee.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\vert x - z \vert_p \leq \vert x - y \vert_p + \vert x - z \vert_p
+\end{align*}
 <p>
-Sein <img src="ltximg/20230211123220-p_adische_metrik_11cf12bd30550f66f2d8afaa3f7c80d69e4a46dd.svg" alt="20230211123220-p_adische_metrik_11cf12bd30550f66f2d8afaa3f7c80d69e4a46dd.svg" class="org-svg" /> die maximalen Exponenten
+Sein \(p_x, p_y,p_z\) die maximalen Exponenten
 </p>
 </div>
 </div>

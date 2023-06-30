@@ -9,66 +9,86 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rang und Invertierbarkeit einer Matrix</h1>
-<div id="outline-container-orgbfa9aaf" class="outline-2">
-<h2 id="orgbfa9aaf"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org63936fb" class="outline-2">
+<h2 id="org63936fb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Sei \(A \in K^{n \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_ba0cd8b73eaa5f1c68046b1b03a4a09c55b1dbe8.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_ba0cd8b73eaa5f1c68046b1b03a4a09c55b1dbe8.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">invertierbar</a></li>
+<li>\(r(A) = n\)</li>
+<li>\(A\) ist <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">invertierbar</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4ab7f36" class="outline-2">
-<h2 id="org4ab7f36"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org54840f4" class="outline-2">
+<h2 id="org54840f4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc23e255" class="outline-3">
-<h3 id="orgc23e255"><span class="section-number-3">2.1.</span> a) <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> b)</h3>
+<div id="outline-container-org11c823b" class="outline-3">
+<h3 id="org11c823b"><span class="section-number-3">2.1.</span> a) \(\Rightarrow\) b)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach der <a href="20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang.html#ID-36cbd55d-eaf0-4013-a8ac-5aa2b53f889f">Gleichheit von Zeilen- und Spaltenrang</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e63a410a53bf33d76abc6f4893effa48f2fae4f3.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e63a410a53bf33d76abc6f4893effa48f2fae4f3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r(A) =& r_z(A) \\
+=& \mathrm{dim}_{K} \langle z_1,...,z_n\rangle \\
+=& n
+\end{align*}
 <p>
-und wegen der <a href="20230115185134-maximale_machtigkeit_einer_linear_unabhangigen_menge_in_abhangigkeit_von_der_basis.html#ID-5cdf7d2e-16e3-48a1-b412-1c0921be7c7a">Maximalen Mächtigkeit einer linear Unabhängigen Menge in Abhängigkeit von der Basis</a> folgt, dass <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_12b35aa74d1c34aeb59a424e62431e26a415f31b.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_12b35aa74d1c34aeb59a424e62431e26a415f31b.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">basis</a> istd:wa
-Sei <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e61faf5f2e5798c66c5d8fad087f46c75184f4e9.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e61faf5f2e5798c66c5d8fad087f46c75184f4e9.svg" class="org-svg" /> die <a href="20221113212113-standardbasis.html#ID-24542220-bbf5-4bba-80cb-327831396ed3">Standardbasis</a> von <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" class="org-svg" />, dann existieren eindeutige <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_54075cac563a60dd4fad90b77060ad368d26a75a.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_54075cac563a60dd4fad90b77060ad368d26a75a.svg" class="org-svg" /> mit
+und wegen der <a href="20230115185134-maximale_machtigkeit_einer_linear_unabhangigen_menge_in_abhangigkeit_von_der_basis.html#ID-5cdf7d2e-16e3-48a1-b412-1c0921be7c7a">Maximalen Mächtigkeit einer linear Unabhängigen Menge in Abhängigkeit von der Basis</a> folgt, dass \(\{z_1,...,z_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">basis</a> istd:wa
+Sei \(\{e_1,...,e_n\}\) die <a href="20221113212113-standardbasis.html#ID-24542220-bbf5-4bba-80cb-327831396ed3">Standardbasis</a> von \(K^n\), dann existieren eindeutige \(\beta_{ij} \in K\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_a30de81407e7c81dcdcbb896542b1c60f86923bc.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_a30de81407e7c81dcdcbb896542b1c60f86923bc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e_i = \sum_{j=1}^{n} \beta_{ij} z_j
+\end{align*}
 <p>
-und für die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e23da4814dcea77cfe88d5342590131439a61f05.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_e23da4814dcea77cfe88d5342590131439a61f05.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_95dbfe349c60c249865e5d25109f0bb38da935b5.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_95dbfe349c60c249865e5d25109f0bb38da935b5.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">invertierbar</a> 
+und für die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(B = (\beta_{ij})\) gilt \(E_n = BA\), d.h. \(A\) ist <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">invertierbar</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org29c82c2" class="outline-3">
-<h3 id="org29c82c2"><span class="section-number-3">2.2.</span> b) <img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> a)</h3>
+<div id="outline-container-orgb34b210" class="outline-3">
+<h3 id="orgb34b210"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) a)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 nach dem <a href="20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation.html#ID-b7dec568-3fdd-4015-8eaa-6f1c67b05d4f">Rang bei einer invertierbaren Matrixmultiplikation</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_280c8f5d45befd8f16481030f1f2bf5137f87534.svg" alt="20221210172842-satz_uber_den_rang_und_invertierbarkeit_einer_matrix_280c8f5d45befd8f16481030f1f2bf5137f87534.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r(A) =& r(A^{-1} A) \\
+=& r(E_n) \\
+=& n
+\end{align*}
 </div>
 </div>
 </div>

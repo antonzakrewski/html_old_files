@@ -9,31 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexe Konjugation als Involution</h1>
-<div id="outline-container-org736aa64" class="outline-2">
-<h2 id="org736aa64"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3cca7d5" class="outline-2">
+<h2 id="org3cca7d5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> ist eine <a href="20221117174105-involution.html#ID-e9795aac-cbbe-463c-a3a3-f9bee013e007">Involution</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgbfbd285" class="outline-2">
-<h2 id="orgbfbd285"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org61bbafc" class="outline-2">
+<h2 id="org61bbafc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221224144416-komplexe_konjugation_als_involution_1317aef4bf0fd3400d5a0fabfcdc854bf6cf78ef.svg" alt="20221224144416-komplexe_konjugation_als_involution_1317aef4bf0fd3400d5a0fabfcdc854bf6cf78ef.svg" class="org-svg" />
+Sei \(z  \coloneqq a + b \mathrm{i} \in \mathbb{C}\)
 dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224144416-komplexe_konjugation_als_involution_07dc185a0caca3384731bdb8a573b12f718ed2db.svg" alt="20221224144416-komplexe_konjugation_als_involution_07dc185a0caca3384731bdb8a573b12f718ed2db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{\overline{z}} =& \overline{\overline{a + b \mathrm{i}}} \\
+=& \overline{a - b \mathrm{i}} \\
+=& a + b \mathrm{i}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,60 +9,79 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Assoziiertheit und Ideale</h1>
-<div id="outline-container-orgea338ca" class="outline-2">
-<h2 id="orgea338ca"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org56c3ba2" class="outline-2">
+<h2 id="org56c3ba2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230419134648-assoziiertheit_und_ideale_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_d8e706385035b612185142c04455dcde19704410.svg" alt="20230419134648-assoziiertheit_und_ideale_d8e706385035b612185142c04455dcde19704410.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(x,y \in R\)
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_aa4630bcbd2f1968ae68585e246860bae286c611.svg" alt="20230419134648-assoziiertheit_und_ideale_aa4630bcbd2f1968ae68585e246860bae286c611.svg" class="org-svg" /> (siehe <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziierte Elemente</a>)</li>
-<li><img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_9ac96c43a33b7652212cd4b6a1178710c390d85c.svg" alt="20230419134648-assoziiertheit_und_ideale_9ac96c43a33b7652212cd4b6a1178710c390d85c.svg" class="org-svg" /> (siehe <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">von einem Element erzeugtes Ideal</a>)</li>
+<li>\(x \sim y\) (siehe <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziierte Elemente</a>)</li>
+<li>\((x) = (y)\) (siehe <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">von einem Element erzeugtes Ideal</a>)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8fad95a" class="outline-2">
-<h2 id="org8fad95a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd30492e" class="outline-2">
+<h2 id="orgd30492e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge456e24" class="outline-3">
-<h3 id="orge456e24"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org08de132" class="outline-3">
+<h3 id="org08de132"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme existiert ein <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_0f3df4be123871a689efad2a5e35816d0d863ac6.svg" alt="20230419134648-assoziiertheit_und_ideale_0f3df4be123871a689efad2a5e35816d0d863ac6.svg" class="org-svg" />, so dass gilt:
+Nach Annahme existiert ein \(u \in R^{\times}\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_42b7bb74cd40e2533aafa771871dcf9b47cca476.svg" alt="20230419134648-assoziiertheit_und_ideale_42b7bb74cd40e2533aafa771871dcf9b47cca476.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x = u \cdot y
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_001f01f80be165e02b96cfb7211f5529238e75c8.svg" alt="20230419134648-assoziiertheit_und_ideale_001f01f80be165e02b96cfb7211f5529238e75c8.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_1a8f4fc169eeab56e11c5d31e376a4aa90819048.svg" alt="20230419134648-assoziiertheit_und_ideale_1a8f4fc169eeab56e11c5d31e376a4aa90819048.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_1028c8e522c7fa44ab71254377215b87c4cdf1bf.svg" alt="20230419134648-assoziiertheit_und_ideale_1028c8e522c7fa44ab71254377215b87c4cdf1bf.svg" class="org-svg" />.
-Aufgrund der Abgeschlossenheit von <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Idealen</a> ist damit aber auch <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_755b95b249bdabeda50932b251b04dc11ca376ff.svg" alt="20230419134648-assoziiertheit_und_ideale_755b95b249bdabeda50932b251b04dc11ca376ff.svg" class="org-svg" /> und damit folgt:
+Sei \(r \in (y)\), so existiert ein \(q \in R\) mit \(q \cdot y = r\).
+Aufgrund der Abgeschlossenheit von <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Idealen</a> ist damit aber auch \(q \cdot u^{-1} \cdot x = q \cdot u^{-1} \cdot u \cdot y = q \cdot y = r \in (x)\) und damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_647925e6c52f8963df108cbc2de1a61fe967a5ec.svg" alt="20230419134648-assoziiertheit_und_ideale_647925e6c52f8963df108cbc2de1a61fe967a5ec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(y) \subseteq (x)
+\end{align*}
 <p>
-Aus Symmetriegründen folgt dann <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_595f813c910619b4015f1e28be7fa0bf46c8c9d9.svg" alt="20230419134648-assoziiertheit_und_ideale_595f813c910619b4015f1e28be7fa0bf46c8c9d9.svg" class="org-svg" />, da die <a href="20230419125906-assoziiertheit_von_elementen_als_aquivalenzrelation.html#ID-1e339089-f304-4d93-aca2-cb01e2ae2b3f">Assoziiertheit von Elementen eine Äquivalenzrelation</a> ist.
+Aus Symmetriegründen folgt dann \((y) = (x)\), da die <a href="20230419125906-assoziiertheit_von_elementen_als_aquivalenzrelation.html#ID-1e339089-f304-4d93-aca2-cb01e2ae2b3f">Assoziiertheit von Elementen eine Äquivalenzrelation</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org22b31e6" class="outline-3">
-<h3 id="org22b31e6"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org0866a82" class="outline-3">
+<h3 id="org0866a82"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme gilt wegen <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_5211ccdeacb25af78518045f986388a495033b89.svg" alt="20230419134648-assoziiertheit_und_ideale_5211ccdeacb25af78518045f986388a495033b89.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_6047c78269d788725c51c78db6cf7880af2cc351.svg" alt="20230419134648-assoziiertheit_und_ideale_6047c78269d788725c51c78db6cf7880af2cc351.svg" class="org-svg" />, dass eine Darstellung <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_dd51b6ca3e302d55f574ac97f041e19c47ecedf1.svg" alt="20230419134648-assoziiertheit_und_ideale_dd51b6ca3e302d55f574ac97f041e19c47ecedf1.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_c671262adf18acaf13024c7d07686047b0a3554a.svg" alt="20230419134648-assoziiertheit_und_ideale_c671262adf18acaf13024c7d07686047b0a3554a.svg" class="org-svg" /> existiert.
-Damit gilt <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_6a53a421102ea7d256bd7ce1454fe052081d8f88.svg" alt="20230419134648-assoziiertheit_und_ideale_6a53a421102ea7d256bd7ce1454fe052081d8f88.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_bebdcce715b6a40ecb63d78ee6dea70b31643633.svg" alt="20230419134648-assoziiertheit_und_ideale_bebdcce715b6a40ecb63d78ee6dea70b31643633.svg" class="org-svg" /> und aus der Äquivalenz von <a href="20230419130113-assoziiertheit_und_gegenseitige_teiler.html#ID-879c8c0e-1360-4ef1-8145-1b32ef5c2e7e">Assoziiertheit und gegenseitige Teiler</a> folgt dann <img src="file:///home/anton/html/ltximg/20230419134648-assoziiertheit_und_ideale_dd4ee4051c92aa4666724acbc8c8cbb4ad4d2390.svg" alt="20230419134648-assoziiertheit_und_ideale_dd4ee4051c92aa4666724acbc8c8cbb4ad4d2390.svg" class="org-svg" />
+Nach Annahme gilt wegen \(x \in (y)\) und \(y \in (x)\), dass eine Darstellung \(x = d \cdot y\) und \(y = d' \cdot x\) existiert.
+Damit gilt \(x \mid y\) und \(y \mid x\) und aus der Äquivalenz von <a href="20230419130113-assoziiertheit_und_gegenseitige_teiler.html#ID-879c8c0e-1360-4ef1-8145-1b32ef5c2e7e">Assoziiertheit und gegenseitige Teiler</a> folgt dann \(x ~ y\)
 </p>
 </div>
 </div>

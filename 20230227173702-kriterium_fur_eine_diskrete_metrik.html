@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kriterium für eine diskrete Metrik</h1>
-<div id="outline-container-org3402a92" class="outline-2">
-<h2 id="org3402a92"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orged2a4b4" class="outline-2">
+<h2 id="orged2a4b4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> <img src="file:///home/anton/html/ltximg/20230227173702-kriterium_fur_eine_diskrete_metrik_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" alt="20230227173702-kriterium_fur_eine_diskrete_metrik_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" class="org-svg" /> gegeben, so dass für <img src="file:///home/anton/html/ltximg/20230227173702-kriterium_fur_eine_diskrete_metrik_dc3d699aba7665f99e80c83e89a643e79267958d.svg" alt="20230227173702-kriterium_fur_eine_diskrete_metrik_dc3d699aba7665f99e80c83e89a643e79267958d.svg" class="org-svg" /> gilt:
+Sei ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> \((X,d)\) gegeben, so dass für \(x,y,z \in X\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227173702-kriterium_fur_eine_diskrete_metrik_198d4e03400be5f625c2986433fcc4af7711cb95.svg" alt="20230227173702-kriterium_fur_eine_diskrete_metrik_198d4e03400be5f625c2986433fcc4af7711cb95.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x,z) \leq \mathrm{max}(d(x,y), d(y,z))
+\end{align*}
 <p>
 Dann ist die von der <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">Metrik induzierte Topologie</a> die gleiche wie bei der <a href="20230227165525-diskrete_metrik.html#ID-2271f14b-7d25-4dec-b568-942b0d953f64">diskrete Metrik</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org32ea2e2" class="outline-2">
-<h2 id="org32ea2e2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcb46232" class="outline-2">
+<h2 id="orgcb46232"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbfd3eb8" class="outline-3">
-<h3 id="orgbfd3eb8"><span class="section-number-3">2.1.</span> offenheit</h3>
+<div id="outline-container-org3dcec82" class="outline-3">
+<h3 id="org3dcec82"><span class="section-number-3">2.1.</span> offenheit</h3>
 </div>
-<div id="outline-container-org204182b" class="outline-3">
-<h3 id="org204182b"><span class="section-number-3">2.2.</span> <a href="20230224171350-hausdorffeigenschaft_bei_metrischen_raumen.html#ID-c0a0b315-c4f5-4e7a-a6cd-36b58b58f0ab">Hausdorffeigenschaft bei metrischen Räumen</a></h3>
+<div id="outline-container-org4afba65" class="outline-3">
+<h3 id="org4afba65"><span class="section-number-3">2.2.</span> <a href="20230224171350-hausdorffeigenschaft_bei_metrischen_raumen.html#ID-c0a0b315-c4f5-4e7a-a6cd-36b58b58f0ab">Hausdorffeigenschaft bei metrischen Räumen</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Nach der Hausdorff

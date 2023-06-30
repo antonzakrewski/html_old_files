@@ -3,45 +3,72 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>continuous map and continuity of the restrictions of a locally finite, closed covering</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">continuous map and continuity of the restrictions of a locally finite, closed covering</h1>
-<div id="outline-container-orgff0876c" class="outline-2">
-<h2 id="orgff0876c"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-org2d18ee3" class="outline-2">
+<h2 id="org2d18ee3"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_77dbb34cf2ded575d084176c65ec64ade25aa8e7.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_77dbb34cf2ded575d084176c65ec64ade25aa8e7.svg" class="org-svg" /> and <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_b5f731f679701e15d3c111a540e93b53d7d594ef.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_b5f731f679701e15d3c111a540e93b53d7d594ef.svg" class="org-svg" /> be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>, <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_7e61ea90385e0c10d5aa482689776d4029d4d2cf.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_7e61ea90385e0c10d5aa482689776d4029d4d2cf.svg" class="org-svg" /> a <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">locally finite</a>, <a href="20230406021002-closed_covering.html#ID-be10a736-b642-4bb2-96aa-53b8260088ac">closed covering</a> of <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" class="org-svg" /> and <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" class="org-svg" /> a <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a>.
+Let \((X,\mathcal{T})\) and \((X',\mathcal{T}')\) be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>, \(\bigcup_{i \in I} A_i = X\) a <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">locally finite</a>, <a href="20230406021002-closed_covering.html#ID-be10a736-b642-4bb2-96aa-53b8260088ac">closed covering</a> of \(X\) and \(f: X \rightarrow X'\) a <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a>.
 Then the following statements are equivalent
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" class="org-svg" />  is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
-<li>each <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">restriction</a> <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_a3db13638d7483e537b596602c00662ef6f2d18b.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_a3db13638d7483e537b596602c00662ef6f2d18b.svg" class="org-svg" /> is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
+<li>\(f: X \rightarrow X'\)  is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
+<li>each <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">restriction</a> \(f_{A_i}: A_i \rightarrow X'\) is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org39b2a2c" class="outline-2">
-<h2 id="org39b2a2c"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org9775d76" class="outline-2">
+<h2 id="org9775d76"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge475e76" class="outline-3">
-<h3 id="orge475e76"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgef0808f" class="outline-3">
+<h3 id="orgef0808f"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Let <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_fe529864b64456d9259844d15fab8087748faa84.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_fe529864b64456d9259844d15fab8087748faa84.svg" class="org-svg" /> be a <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>.
-Then <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_ca7a0f06c549b6853ed45999780f014ef16daa44.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_ca7a0f06c549b6853ed45999780f014ef16daa44.svg" class="org-svg" /> is <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a>.
-Therefore it follows from the <a href="20230114141836-abgeschlossenheit_des_durchschnitts_von_abgeschlossenen_menge.html#ID-5c320a09-b613-4996-9814-8c4787d79af1">Closedness of the intersection of closed sets</a>, that <img src="ltximg/20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_ccde8d56e0783363bcf600dc38010a55289aef30.svg" alt="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering_ccde8d56e0783363bcf600dc38010a55289aef30.svg" class="org-svg" /> is <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a>
+Let \(A' \subseteq X'\) be a <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>.
+Then \(A := f^{-1}[A']\) is <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a>.
+Therefore it follows from the <a href="20230114141836-abgeschlossenheit_des_durchschnitts_von_abgeschlossenen_menge.html#ID-5c320a09-b613-4996-9814-8c4787d79af1">Closedness of the intersection of closed sets</a>, that \(A \cap A_i\) is <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd685fcd" class="outline-3">
-<h3 id="orgd685fcd"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org6e49693" class="outline-3">
+<h3 id="org6e49693"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 follows from the <a href="20230330151432-stetige_fortsetzung_zweier_abbildungen_von_einer_uberdeckung.html#ID-43361c3e-7e6f-4ffb-a0ec-7988d859da0d">glueing lemma for a locally finite, closed covering</a>

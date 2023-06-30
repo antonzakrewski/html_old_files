@@ -3,48 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Distributivität von Schnitt und symmetrischer Differenz</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Distributivität von Schnitt und symmetrischer Differenz</h1>
-<div id="outline-container-org5d903d4" class="outline-2">
-<h2 id="org5d903d4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd2677c6" class="outline-2">
+<h2 id="orgd2677c6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, <img src="ltximg/20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_fca60bd74074360f402dce8e061992310c192d30.svg" alt="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_fca60bd74074360f402dce8e061992310c192d30.svg" class="org-svg" /> und <img src="ltximg/20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_dab92b8e4222db6fafa65b94743252cd89530c00.svg" alt="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_dab92b8e4222db6fafa65b94743252cd89530c00.svg" class="org-svg" /> die <a href="20220922095603-symmetrische_differenz.html#ID-24c1eab0-fb11-465e-a750-cd5a6ea752ad">Symmetrische Differenz</a>, dann gilt für den <a href="20211226215930-durchschnitt_mengenlehre.html#ID-3648b019-56f4-4ceb-8f64-bd9b2ec5bc25">Durchschnitt</a> 
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, \(A,B,C \subseteq X\) und \(\Delta\) die <a href="20220922095603-symmetrische_differenz.html#ID-24c1eab0-fb11-465e-a750-cd5a6ea752ad">Symmetrische Differenz</a>, dann gilt für den <a href="20211226215930-durchschnitt_mengenlehre.html#ID-3648b019-56f4-4ceb-8f64-bd9b2ec5bc25">Durchschnitt</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_7c66116977ba2ed3702f944b02cdf7c52b9d582d.svg" alt="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_7c66116977ba2ed3702f944b02cdf7c52b9d582d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+A \cap (B \Delta C) =& A \cap B \Delta A \cap C \\
+=& \left((A \cap B) \cup (A \cap C) \right) \setminus (A \cap B \cap C)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6af32bd" class="outline-2">
-<h2 id="org6af32bd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8ef7932" class="outline-2">
+<h2 id="org8ef7932"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt nach der <a href="20230526075452-distributivitat_von_komplementbildung_und_vereinigung.html#ID-2947176f-26d7-4a01-a2a7-04eaaedfeaea">Assoziativität von Komplementbildung und Schnitt</a> sowie der <a href="20221209102328-distributivgesetz_fur_vereinigung_und_schnitt.html#ID-95eae3f0-560a-49e4-ac8d-86cfc8c32f2c">Distributivität von Vereinigung und Schnitt</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_fe5964280f83f2fe13954f6e8a9aeeac3fdc5c7f.svg" alt="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz_fe5964280f83f2fe13954f6e8a9aeeac3fdc5c7f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+A \cap ( (B \cup C) \setminus (B \cap C)) =& A \cap (B \setminus ((B \cap C) \cup C \setminus (B \cap C))) \\
+=& (A \cap (B \setminus (B \cap C))) \cup (A \cap (C \setminus (B \cap C))) \\
+=& ((A \cap B) \setminus (B \cap C) ) \cup ((A \cap C) \setminus ( B \cap C)) \\
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">trichotome Relation</h1>
-<div id="outline-container-orge593d40" class="outline-2">
-<h2 id="orge593d40"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org60e9fee" class="outline-2">
+<h2 id="org60e9fee"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220929193712-trichotome_relation_fb4a82c6b926c138aa9a22e825632bc005f612df.svg" alt="20220929193712-trichotome_relation_fb4a82c6b926c138aa9a22e825632bc005f612df.svg" class="org-svg" /> eine <a href="20220929191054-homogene_relation.html#ID-c0565fb9-7b15-4077-8f3a-5e8dce75c105">homogene</a> <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a> auf die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20220929193712-trichotome_relation_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220929193712-trichotome_relation_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />
-<img src="file:///home/anton/html/ltximg/20220929193712-trichotome_relation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220929193712-trichotome_relation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist genau dann trichotom, wenn gilt:
+Sei \(R \subseteq M \times M\) eine <a href="20220929191054-homogene_relation.html#ID-c0565fb9-7b15-4077-8f3a-5e8dce75c105">homogene</a> <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a> auf die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M\)
+\(R\) ist genau dann trichotom, wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220929193712-trichotome_relation_7965eb6fe5204a2ec2d58af16ed132346ca8fa11.svg" alt="20220929193712-trichotome_relation_7965eb6fe5204a2ec2d58af16ed132346ca8fa11.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x,y \in M : ((x,y) \in R \Rightarrow (y,x) \not\in R) \land (a \neq b \Rightarrow (a,b) \in R \lor (b,a) \in R)
+\end{align*}
 </div>
 </div>
 </div>

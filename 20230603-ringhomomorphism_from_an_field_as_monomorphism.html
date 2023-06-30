@@ -9,40 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">ringhomomorphism from an field as monomorphism</h1>
-<div id="outline-container-org6c52a34" class="outline-2">
-<h2 id="org6c52a34"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-org0b7bc60" class="outline-2">
+<h2 id="org0b7bc60"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Suppose <img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, <img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> and <img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_f425891679d3aa33898eb225e5be30fc8ce64f7d.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_f425891679d3aa33898eb225e5be30fc8ce64f7d.svg" class="org-svg" /> a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ringhomomorphism</a>.
-Then <img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_b1b0f80ed313742fc60a59a758f04364fd9175e5.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_b1b0f80ed313742fc60a59a758f04364fd9175e5.svg" class="org-svg" /> is a <a href="20230301165850-ringmonomorphismus.html#ID-f893fb26-272b-41b0-8943-52596b2804ba">ringmonomorphism</a>.
+Suppose \(F\) a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, \(R\) a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> and \(\varphi: F \rightarrow R\) a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ringhomomorphism</a>.
+Then \(\varphi\) is a <a href="20230301165850-ringmonomorphismus.html#ID-f893fb26-272b-41b0-8943-52596b2804ba">ringmonomorphism</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org45bea6d" class="outline-2">
-<h2 id="org45bea6d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org89eb110" class="outline-2">
+<h2 id="org89eb110"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a> ist zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_72439ba5806d6579b44a03770a826f3b87b63b5b.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_72439ba5806d6579b44a03770a826f3b87b63b5b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{ker}(f) = \{0\}
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_c0b6afcf712f4e54c4e6f40e58ac7839f6c1c87d.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_c0b6afcf712f4e54c4e6f40e58ac7839f6c1c87d.svg" class="org-svg" />, so folgt daraus ein Widerspruch, da gilt:
+Sei \(x \in \mathrm{ker}(f) \setminus \{0\}\), so folgt daraus ein Widerspruch, da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230603-ringhomomorphism_from_an_field_as_monomorphism_e26579c5d2f820d5d306bc27d5f64864468cbaeb.svg" alt="20230603-ringhomomorphism_from_an_field_as_monomorphism_e26579c5d2f820d5d306bc27d5f64864468cbaeb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 =& f(1) \\
+=& f(x \cdot x^{-1}) \\
+=& f(x) \cdot f(x^{-1}) \\
+=& 0 \cdot f(x^{-1}) \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

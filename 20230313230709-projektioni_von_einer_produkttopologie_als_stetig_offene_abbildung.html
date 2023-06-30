@@ -9,32 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Projektion von einer Produkttopologie als offene Abbildung</h1>
-<div id="outline-container-orgda57bd0" class="outline-2">
-<h2 id="orgda57bd0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0e30333" class="outline-2">
+<h2 id="org0e30333"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räumen</a> und für <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_91bf53b75b1ba7b587ec27b2ad332fa953f9860c.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_91bf53b75b1ba7b587ec27b2ad332fa953f9860c.svg" class="org-svg" /> die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> gegeben.
-Dann ist die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_55ed2f31027de4dfaa447dcaf34f9c951b38f357.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_55ed2f31027de4dfaa447dcaf34f9c951b38f357.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" class="org-svg" /> und <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räumen</a> und für \(X = \prod_{i \in I} X_i\) die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> \((X, \mathcal{T})\) gegeben.
+Dann ist die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektion</a> \(p_j: X \rightarrow X_j\) für \(j \in I\) und <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org552fa3e" class="outline-2">
-<h2 id="org552fa3e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbe2df0c" class="outline-2">
+<h2 id="orgbe2df0c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf1bd5a8" class="outline-3">
-<h3 id="orgf1bd5a8"><span class="section-number-3">2.1.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
+<div id="outline-container-org95fadbf" class="outline-3">
+<h3 id="org95fadbf"><span class="section-number-3">2.1.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_7fc0a858359f4fe6b1f13dc60e459c3579765cb1.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_7fc0a858359f4fe6b1f13dc60e459c3579765cb1.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_ff696fcc7a31daa5522780a08bb99a78dc41119c.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_ff696fcc7a31daa5522780a08bb99a78dc41119c.svg" class="org-svg" /> gegeben, so ist <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> von <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> vielen <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbildern</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektionen</a> <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_76e03107fa8ccbcd50de1741aaa0337b85d6476f.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_76e03107fa8ccbcd50de1741aaa0337b85d6476f.svg" class="org-svg" />
-Da gilt: <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_97eb25782fea71cdd8a43aa3ac0f39ff3a3ed8ed.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_97eb25782fea71cdd8a43aa3ac0f39ff3a3ed8ed.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_8f8c2b4188c22874856b60d772ef36a8b1162b21.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_8f8c2b4188c22874856b60d772ef36a8b1162b21.svg" class="org-svg" /> folgt:
+Sei \(O \in X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(\pi_j\) gegeben, so ist \(O\) <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> von <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> vielen <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbildern</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektionen</a> \(\pi_i\)
+Da gilt: \(\pi_k[\pi_{i}^{-1}[A]] = X_k\) für \(A \subseteq X_i\) folgt:
 </p>
 <ul class="org-ul">
-<li>falls ein <img src="file:///home/anton/html/ltximg/20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_ff696fcc7a31daa5522780a08bb99a78dc41119c.svg" alt="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung_ff696fcc7a31daa5522780a08bb99a78dc41119c.svg" class="org-svg" /> im Durchschnitt gegeben ist, so ist das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, und zwar der (<a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a>) <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> der ursprünglich für das Urbild ausgewählten, offenen <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> - und damit ebenfalls <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">offen</a></li>
+<li>falls ein \(\pi_j\) im Durchschnitt gegeben ist, so ist das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, und zwar der (<a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a>) <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> der ursprünglich für das Urbild ausgewählten, offenen <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> - und damit ebenfalls <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">offen</a></li>
 </ul>
 <p>
 Ansonsten ist das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> der ganze Raum und damit ebenfalls <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>

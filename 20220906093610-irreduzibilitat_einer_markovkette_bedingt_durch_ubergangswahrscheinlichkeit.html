@@ -3,39 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Irreduzibilität einer Markovkette bedingt durch Übergangswahrscheinlichkeit</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Irreduzibilität einer Markovkette bedingt durch Übergangswahrscheinlichkeit</h1>
-<div id="outline-container-orgab80b0d" class="outline-2">
-<h2 id="orgab80b0d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0208aa8" class="outline-2">
+<h2 id="org0208aa8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine Markovkette ist genau dann irreduzibel, wenn es für jedes Paar <img src="ltximg/20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_767bf42390cf140aa42fbd228ce1d9c066af454d.svg" alt="20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_767bf42390cf140aa42fbd228ce1d9c066af454d.svg" class="org-svg" />
-von Zuständen ein <img src="ltximg/20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_907988fe8e0ebb6c105599c80857e03c7ba40178.svg" alt="20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_907988fe8e0ebb6c105599c80857e03c7ba40178.svg" class="org-svg" /> gibt, sodass
+Eine Markovkette ist genau dann irreduzibel, wenn es für jedes Paar \((i,j) \in S \times S\)
+von Zuständen ein \(k \in \mathbb{N}\) gibt, sodass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_dbe71b5ee4d1b4c16fd8afd48a2e561b8426c6da.svg" alt="20220906093610-irreduzibilitat_einer_markovkette_bedingt_durch_ubergangswahrscheinlichkeit_dbe71b5ee4d1b4c16fd8afd48a2e561b8426c6da.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\left(P^k\right)_{i,j} > 0
+\end{align*}
 <p>
 ist
 </p>
 </div>
 </div>
-<div id="outline-container-org251a78a" class="outline-2">
-<h2 id="org251a78a"><span class="section-number-2">2.</span> beweis</h2>
+<div id="outline-container-org305a541" class="outline-2">
+<h2 id="org305a541"><span class="section-number-2">2.</span> beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 todo

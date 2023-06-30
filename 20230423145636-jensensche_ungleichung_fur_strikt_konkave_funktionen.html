@@ -9,29 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Jensensche Ungleichung für strikt konkave Funktionen</h1>
-<div id="outline-container-org7d8b821" class="outline-2">
-<h2 id="org7d8b821"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org663eac2" class="outline-2">
+<h2 id="org663eac2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für eine <a href="20230423145652-strikt_konkave_funktion.html#ID-6e5c6645-ca07-4692-b062-d25f0d5c193c">strikt konkave Funktion</a> gilt für die <a href="20230204212252-jensensche_ungleichung.html#ID-a261abb3-ed9f-4938-8f2e-34cfaa850a1e">Jensensche Ungleichung</a> mit <img src="file:///home/anton/html/ltximg/20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_a210b74cc36ad8c08aba491d0ffd2d2e93976e67.svg" alt="20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_a210b74cc36ad8c08aba491d0ffd2d2e93976e67.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_d1b32ff972c588e14eef7abf5ce053af9a891417.svg" alt="20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_d1b32ff972c588e14eef7abf5ce053af9a891417.svg" class="org-svg" />:
+Für eine <a href="20230423145652-strikt_konkave_funktion.html#ID-6e5c6645-ca07-4692-b062-d25f0d5c193c">strikt konkave Funktion</a> gilt für die <a href="20230204212252-jensensche_ungleichung.html#ID-a261abb3-ed9f-4938-8f2e-34cfaa850a1e">Jensensche Ungleichung</a> mit \(0 < \lambda_i < 1\) und \(\sum_{i=1}^{n} \lambda_i = 1\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_2b1243eb4218220c589f5954ca0f5948d76f7949.svg" alt="20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_2b1243eb4218220c589f5954ca0f5948d76f7949.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=1}^{n} \lambda_i f(x_i) \leq f(\sum_{i=1}^{n} \lambda_i)  
+\end{align*}
 <p>
-mit gleihcheit <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_443787d5d3e7882e1327c05995fc03f48a0a6bf5.svg" alt="20230423145636-jensensche_ungleichung_fur_strikt_konkave_funktionen_443787d5d3e7882e1327c05995fc03f48a0a6bf5.svg" class="org-svg" />
+mit gleihcheit <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(x_i = x_j\)
 </p>
 </div>
 </div>
-<div id="outline-container-org076ade8" class="outline-2">
-<h2 id="org076ade8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge6a3872" class="outline-2">
+<h2 id="orge6a3872"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230204215433-jensensche_ungleichung_fur_strikte_konvexitat.html#ID-6c1b258e-3e66-4812-a0b0-615ea53c276d">Jensensche Ungleichung für strikte Konvexität</a> und der <a href="20230423150843-strikt_konkav_und_strikt_konvex.html#ID-c6c6739d-abaf-4081-aae5-eb1fa6c90ebd">strikt konkav und strikt konvex</a> 

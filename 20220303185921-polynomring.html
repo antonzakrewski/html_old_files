@@ -9,32 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">polynomial ring</h1>
-<div id="outline-container-orgf02d3aa" class="outline-2">
-<h2 id="orgf02d3aa"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org385c648" class="outline-2">
+<h2 id="org385c648"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220303185921-polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220303185921-polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>.
-Der Polynomring <img src="file:///home/anton/html/ltximg/20220303185921-polynomring_7f9653b8cccbd2c63556637d242e332e4ae45784.svg" alt="20220303185921-polynomring_7f9653b8cccbd2c63556637d242e332e4ae45784.svg" class="org-svg" /> über <img src="file:///home/anton/html/ltximg/20220303185921-polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220303185921-polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>.
+Der Polynomring \(R[x]\) über \(R\) ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303185921-polynomring_fef515da146e8e58e19a635409c04194899f5513.svg" alt="20220303185921-polynomring_fef515da146e8e58e19a635409c04194899f5513.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+R[x] = \{(a_0,a_1,... \vert a_j \in R, \text{ fast alle } a_j = 0\}
+\end{align*}
 <p>
 mit der Addition und Multiplikation
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303185921-polynomring_53e566474abf1492a7360ea7c695343ba03eaf9e.svg" alt="20220303185921-polynomring_53e566474abf1492a7360ea7c695343ba03eaf9e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a_j) + (b_j) =& (a_j + b_j) \\
+(a_j)(b_j) =& (c_j) \\
+c_k =& \sum_{j=0}^{k} a_jb_{k-j}
+\end{align*}
 
 <p>
 TODO: allgemeiner

@@ -3,77 +3,95 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Potenzmenge als Ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Potenzmenge als Ring</h1>
-<div id="outline-container-orgef1d55d" class="outline-2">
-<h2 id="orgef1d55d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org76d76c2" class="outline-2">
+<h2 id="org76d76c2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230526063029-potenzmenge_als_ring_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230526063029-potenzmenge_als_ring_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist <img src="ltximg/20230526063029-potenzmenge_als_ring_cef5d7687049b5758547f3140b1033effa7cb0dd.svg" alt="20230526063029-potenzmenge_als_ring_cef5d7687049b5758547f3140b1033effa7cb0dd.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> mit 
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist \((\mathcal{P}(X), \Delta, \cap)\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> mit 
 </p>
 </div>
 </div>
-<div id="outline-container-orgaaf879b" class="outline-2">
-<h2 id="orgaaf879b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org15fac67" class="outline-2">
+<h2 id="org15fac67"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8787db6" class="outline-3">
-<h3 id="org8787db6"><span class="section-number-3">2.1.</span> abgeschlossen</h3>
+<div id="outline-container-orga26c6b6" class="outline-3">
+<h3 id="orga26c6b6"><span class="section-number-3">2.1.</span> abgeschlossen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der der Konstruktion
 </p>
 </div>
 </div>
-<div id="outline-container-org377bdba" class="outline-3">
-<h3 id="org377bdba"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
+<div id="outline-container-org8e4556a" class="outline-3">
+<h3 id="org8e4556a"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org9ab1094" class="outline-4">
-<h4 id="org9ab1094"><span class="section-number-4">2.2.1.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrales Element</a></h4>
+<div id="outline-container-org2a01b2e" class="outline-4">
+<h4 id="org2a01b2e"><span class="section-number-4">2.2.1.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrales Element</a></h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Es gilt, dass <img src="ltximg/20230526063029-potenzmenge_als_ring_84aa3268523c9b57271c43fce7b6345225a797f9.svg" alt="20230526063029-potenzmenge_als_ring_84aa3268523c9b57271c43fce7b6345225a797f9.svg" class="org-svg" /> das neutrale Element ist.
-Sei <img src="ltximg/20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />, so folgt:
+Es gilt, dass \(\emptyset\) das neutrale Element ist.
+Sei \(A \subseteq X\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526063029-potenzmenge_als_ring_ef429b433e0b1c14a74ca2d5b151410f9a030e65.svg" alt="20230526063029-potenzmenge_als_ring_ef429b433e0b1c14a74ca2d5b151410f9a030e65.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+A \Delta \emptyset =& (A \cup \emptyset) \setminus (A \cap \emptyset) \\
+=& A \setminus \emptyset \\
+=& A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6486ff0" class="outline-4">
-<h4 id="org6486ff0"><span class="section-number-4">2.2.2.</span> <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverses Element</a></h4>
+<div id="outline-container-org4cf2739" class="outline-4">
+<h4 id="org4cf2739"><span class="section-number-4">2.2.2.</span> <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverses Element</a></h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="ltximg/20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />, so ist <img src="ltximg/20230526063029-potenzmenge_als_ring_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230526063029-potenzmenge_als_ring_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> das inverse Element, da gilt:
+Sei \(A \subseteq X\), so ist \(A\) das inverse Element, da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526063029-potenzmenge_als_ring_dd5e88d1f8f2c6502ca573caa1be26178b20df2a.svg" alt="20230526063029-potenzmenge_als_ring_dd5e88d1f8f2c6502ca573caa1be26178b20df2a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+(A \cup A) \setminus (A \cap A) =& A \setminus A \\
+=& \emptyset
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9cb38ca" class="outline-4">
-<h4 id="org9cb38ca"><span class="section-number-4">2.2.3.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
+<div id="outline-container-org6a90e60" class="outline-4">
+<h4 id="org6a90e60"><span class="section-number-4">2.2.3.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
 folgt aus der <a href="20230526081118-assoziativitat_von_der_symmetrischen_differenz.html#ID-f1fe9786-aebd-4bdd-a40a-8a51d750f511">Assoziativität von der symmetrischen Differenz</a> (todo)
@@ -81,29 +99,23 @@ folgt aus der <a href="20230526081118-assoziativitat_von_der_symmetrischen_diffe
 </div>
 </div>
 </div>
-<div id="outline-container-org4e0f756" class="outline-3">
-<h3 id="org4e0f756"><span class="section-number-3">2.3.</span> multiplikativer monoid</h3>
+<div id="outline-container-org35d4f7a" class="outline-3">
+<h3 id="org35d4f7a"><span class="section-number-3">2.3.</span> multiplikativer monoid</h3>
 <div class="outline-text-3" id="text-2-3">
 </div>
-<div id="outline-container-org6aca4d2" class="outline-4">
-<h4 id="org6aca4d2"><span class="section-number-4">2.3.1.</span> Einselement</h4>
+<div id="outline-container-org19d7142" class="outline-4">
+<h4 id="org19d7142"><span class="section-number-4">2.3.1.</span> Einselement</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
-Sei <img src="ltximg/20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230526063029-potenzmenge_als_ring_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />, so gilt:
+Sei \(A \subseteq X\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526063029-potenzmenge_als_ring_c8eb17b92523f4a404f480253e45118af8edae56.svg" alt="20230526063029-potenzmenge_als_ring_c8eb17b92523f4a404f480253e45118af8edae56.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{align*}
+A \cap X = A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org252f0cc" class="outline-4">
-<h4 id="org252f0cc"><span class="section-number-4">2.3.2.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
+<div id="outline-container-orgf7ddef8" class="outline-4">
+<h4 id="orgf7ddef8"><span class="section-number-4">2.3.2.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 folgt aus der <a href="20221209102252-assoziativitat_von_vereinigungen.html#ID-dd91fa12-a801-47eb-86d8-8cbd2ca33161">Assoziativität von Schnitten</a>
@@ -111,8 +123,8 @@ folgt aus der <a href="20221209102252-assoziativitat_von_vereinigungen.html#ID-d
 </div>
 </div>
 </div>
-<div id="outline-container-org78ae1dc" class="outline-3">
-<h3 id="org78ae1dc"><span class="section-number-3">2.4.</span> distributiv</h3>
+<div id="outline-container-org6b31beb" class="outline-3">
+<h3 id="org6b31beb"><span class="section-number-3">2.4.</span> distributiv</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 folgt aus <a href="20230526075130-distributivitat_von_schnitt_und_symmetrischer_differenz.html#ID-0a62b434-4a4a-4dea-9380-07526fe4b400">Distributivität von Schnitt und symmetrischer Differenz</a> (otdo)

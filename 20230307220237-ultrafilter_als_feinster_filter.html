@@ -9,58 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ultrafilter und genau ein Komplement</h1>
-<div id="outline-container-orgc9aa150" class="outline-2">
-<h2 id="orgc9aa150"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org33264fd" class="outline-2">
+<h2 id="org33264fd"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230307220237-ultrafilter_als_feinster_filter_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> ist ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a></li>
-<li>Für <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230307220237-ultrafilter_als_feinster_filter_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_27ab3f7e1b7741e865ce32199003453cdfeb6e95.svg" alt="20230307220237-ultrafilter_als_feinster_filter_27ab3f7e1b7741e865ce32199003453cdfeb6e95.svg" class="org-svg" /></li>
+<li>\(\mathcal{F}\) ist ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a></li>
+<li>Für \(A \subseteq X\) gilt \(A \in \mathcal{F} \lor X \setminus A \in \mathcal{F}\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb3e34ec" class="outline-2">
-<h2 id="orgb3e34ec"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0d54537" class="outline-2">
+<h2 id="org0d54537"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org12c944e" class="outline-3">
-<h3 id="org12c944e"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgc088a65" class="outline-3">
+<h3 id="orgc088a65"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230307220237-ultrafilter_als_feinster_filter_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a>.
-Da <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitte</a> von <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a> aus <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> sind, existieren keine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_9e0116a6b29f439981b46601e136347c8cd697d6.svg" alt="20230307220237-ultrafilter_als_feinster_filter_9e0116a6b29f439981b46601e136347c8cd697d6.svg" class="org-svg" /> mit
+Sei \(A \subseteq X\) und \(\mathcal{F}\) ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a>.
+Da <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitte</a> von <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a> aus \(\mathcal{F}\) <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> sind, existieren keine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(F_1,F_2\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_25b872dc80422840f12589eded09224517b08142.svg" alt="20230307220237-ultrafilter_als_feinster_filter_25b872dc80422840f12589eded09224517b08142.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F_1 \subseteq& A \\
+F_2 \subseteq& X \setminus A
+\end{align*}
 <p>
-Daraus folgt, dass jede <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> in <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230307220237-ultrafilter_als_feinster_filter_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230307220237-ultrafilter_als_feinster_filter_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> oder das <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" alt="20230307220237-ultrafilter_als_feinster_filter_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" class="org-svg" /> nichttrivial schneidet. (sonst widerspruch durch einen schnitt zweier mengen)
-Wir nehmen an, dass <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_f452e4ec17796081dbc7066fae9d9cb7796ea43e.svg" alt="20230307220237-ultrafilter_als_feinster_filter_f452e4ec17796081dbc7066fae9d9cb7796ea43e.svg" class="org-svg" /> für alle <img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" alt="20230307220237-ultrafilter_als_feinster_filter_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" class="org-svg" />, so dass folgt:
+Daraus folgt, dass jede <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> in \(\mathcal{F}\) \(A\) oder das <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> \(X \setminus A\) nichttrivial schneidet. (sonst widerspruch durch einen schnitt zweier mengen)
+Wir nehmen an, dass \(F \cap A \neq \emptyset\) für alle \(F \in \mathcal{F}\), so dass folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230307220237-ultrafilter_als_feinster_filter_ef4c422a414ce1cdf9f11e8c3a0110f71c1f6733.svg" alt="20230307220237-ultrafilter_als_feinster_filter_ef4c422a414ce1cdf9f11e8c3a0110f71c1f6733.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{F} \cup \{F \cap A \vert A \in \mathcal{F}\}
+\end{align*}
 <p>
 eine <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Ultraverfeinerung</a> ist.
-Nach Annahme gilt dann aber $= &lang; &cup; \{F &cap; A &vert; A &isin; \}&rang;
+Nach Annahme gilt dann aber $\mathcal{F} = &lang; \mathcal{F} &cup; \{F &cap; A &vert; A &isin; \mathcal{F}\}&rang;
 </p>
 </div>
 </div>
-<div id="outline-container-orge1748cb" class="outline-3">
-<h3 id="orge1748cb"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9431eef" class="outline-3">
+<h3 id="org9431eef"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 wohldefiniert nach obigen Bemerkungen, beide Mengen können nicht gleichzeitig in einem Filter sein, sonst widerspruch

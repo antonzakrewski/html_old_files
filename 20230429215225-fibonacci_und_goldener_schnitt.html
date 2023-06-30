@@ -3,38 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Fibonacci und Goldener Schnitt</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Fibonacci und Goldener Schnitt</h1>
-<div id="outline-container-org88d4335" class="outline-2">
-<h2 id="org88d4335"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org61fd06f" class="outline-2">
+<h2 id="org61fd06f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei die <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Folge</a> <img src="ltximg/20230429215225-fibonacci_und_goldener_schnitt_d48eab8312681d8a84fb64010f0d49baffe86aa3.svg" alt="20230429215225-fibonacci_und_goldener_schnitt_d48eab8312681d8a84fb64010f0d49baffe86aa3.svg" class="org-svg" /> gegeben, dann gilt:
+Sei die <a href="20220105152935-fibonacci_folge.html#ID-eb92de88-6dd3-44c8-b074-4dc119f0d0e0">Fibonacci Folge</a> \(F_n\) gegeben, dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230429215225-fibonacci_und_goldener_schnitt_da62a8509125d23a34b4dec30fa1ce20279d7908.svg" alt="20230429215225-fibonacci_und_goldener_schnitt_da62a8509125d23a34b4dec30fa1ce20279d7908.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left(\frac{F_{n+1}}{F_n}\right) =& \phi
+\end{align*}
 <p>
-mit <img src="ltximg/20230429215225-fibonacci_und_goldener_schnitt_16cd89310a87a7bb4791837a7e16ada78144ae6f.svg" alt="20230429215225-fibonacci_und_goldener_schnitt_16cd89310a87a7bb4791837a7e16ada78144ae6f.svg" class="org-svg" /> als dem <a href="20230327125530-goldene_schnitt.html#ID-d9144bf3-7de1-45ea-a83e-453c577cd5c7">Goldener Schnitt</a> 
+mit \(\phi\) als dem <a href="20230327125530-goldene_schnitt.html#ID-d9144bf3-7de1-45ea-a83e-453c577cd5c7">Goldener Schnitt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgfd75727" class="outline-2">
-<h2 id="orgfd75727"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6b84051" class="outline-2">
+<h2 id="org6b84051"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230327103744-formel_von_moivre_binet.html#ID-de2875e2-9af4-4043-8e7b-b63aae60a976">Formel von Moivre-Binet</a> 

@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">T1 und T4 impliziert T3a</h1>
-<div id="outline-container-org8b5e8d7" class="outline-2">
-<h2 id="org8b5e8d7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org17d8444" class="outline-2">
+<h2 id="org17d8444"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230603-t1_und_t4_impliziert_t3a_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, welcher die Trennungsaxiome:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, welcher die Trennungsaxiome:
 </p>
 <ul class="org-ul">
 <li><a href="20230207113106-t1_raum.html#ID-0bc02ce3-dbb8-4a80-9a2b-53c3ac9393f1">T1</a></li>
@@ -25,16 +50,16 @@ Sei <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_9
 </ul>
 <p>
 erfüllt.
-Dann ist <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230603-t1_und_t4_impliziert_t3a_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4-Raum</a>.
+Dann ist \(X\) ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4-Raum</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org4a835e6" class="outline-2">
-<h2 id="org4a835e6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd93e456" class="outline-2">
+<h2 id="orgd93e456"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach dem <a href="20230309100938-urysohnsches_lemma.html#ID-289a9c8b-1a5b-493a-bd59-936e07abd336">Urysohnschen Lemma</a> existiert für <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_2946e062bd1395ad783b4c277c639d495e168634.svg" alt="20230603-t1_und_t4_impliziert_t3a_2946e062bd1395ad783b4c277c639d495e168634.svg" class="org-svg" />, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_ead28f340a6afe5ab469bdcbc398672864ccc8b0.svg" alt="20230603-t1_und_t4_impliziert_t3a_ead28f340a6afe5ab469bdcbc398672864ccc8b0.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_13228bf4f75045bdcde80a2e8559952708bc9c24.svg" alt="20230603-t1_und_t4_impliziert_t3a_13228bf4f75045bdcde80a2e8559952708bc9c24.svg" class="org-svg" />
-Nach der <a href="20230207113438-aquivalente_charakterisierungen_eines_t1_raums.html#ID-54d65fd2-2a08-416e-b73a-cd9730e17129">Äquivalenten Charakterisierung eines T1-Raums</a> ist <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_11a245b0b016747055fa66507a7dceb0a23134b8.svg" alt="20230603-t1_und_t4_impliziert_t3a_11a245b0b016747055fa66507a7dceb0a23134b8.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, d.h. man setze <img src="file:///home/anton/html/ltximg/20230603-t1_und_t4_impliziert_t3a_6eadb7336e03ba64609d0a3d3cc135146c0a3a4d.svg" alt="20230603-t1_und_t4_impliziert_t3a_6eadb7336e03ba64609d0a3d3cc135146c0a3a4d.svg" class="org-svg" />
+Nach dem <a href="20230309100938-urysohnsches_lemma.html#ID-289a9c8b-1a5b-493a-bd59-936e07abd336">Urysohnschen Lemma</a> existiert für \(A,B \subseteq X\), <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: X \rightarrow [0,1]\) mit \(f[A] = 0, f[B] = 1\)
+Nach der <a href="20230207113438-aquivalente_charakterisierungen_eines_t1_raums.html#ID-54d65fd2-2a08-416e-b73a-cd9730e17129">Äquivalenten Charakterisierung eines T1-Raums</a> ist \(\{x\} \subseteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, d.h. man setze \(B  \coloneqq \{x\}\)
 </p>
 </div>
 </div>

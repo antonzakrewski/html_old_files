@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Permutation und abstrakte Volumenfunktionen</h1>
-<div id="outline-container-org2e32a7b" class="outline-2">
-<h2 id="org2e32a7b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc73cb01" class="outline-2">
+<h2 id="orgc73cb01"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_f6d854f3e04906de0aeb8493bd505b8c86663dde.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_f6d854f3e04906de0aeb8493bd505b8c86663dde.svg" class="org-svg" /> eine <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutation</a>.
-Dann gilt für einen <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativen Ring</a> <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_89feea019fc3808f877423bb60a03c31e86b4ed5.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_89feea019fc3808f877423bb60a03c31e86b4ed5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_c7d239cc0cbff2bde8d9ea02c3033f6d0fd60866.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_c7d239cc0cbff2bde8d9ea02c3033f6d0fd60866.svg" class="org-svg" /> eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> 
+Sei \(\tau \in S_n\) eine <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutation</a>.
+Dann gilt für einen <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativen Ring</a> \(R\), \(z_i,z_j \in R^n\) und \(V: R^n \rightarrow R\) eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_c26510a2d9184a6e43f6c860dac141331c7031c8.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_c26510a2d9184a6e43f6c860dac141331c7031c8.svg" class="org-svg" />
-</span>
+\begin{align*}
+V(z_{\tau(1)},z_{\tau(2)},...,z_{\tau(n)}) =& \mathrm{sgn}(\tau) \cdot V(z_1,...,z_n)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org909fd97" class="outline-2">
-<h2 id="org909fd97"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9c5eb5b" class="outline-2">
+<h2 id="org9c5eb5b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></li>
@@ -38,35 +60,34 @@ Dann gilt für einen <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-
 Aufgrund der <a href="20221224173940-lemma_uber_die_darstellung_einer_permutation_als_produkt_von_transpositionen.html#ID-35f9504d-a96b-46f8-a571-d79d7d35e65c">Darstellung einer Permutation als Produkt von Transpositionen</a> und <a href="20221210210026-vorzeichen_einer_permutation.html#ID-481881eb-a9d5-4dbf-973a-d80d2ec89986">Vorzeichen einer Permutation</a> als <a href="20221225141556-existenz_eines_epimorphismus_von_der_symmetrischen_gruppe_auf_das_vorzeichen.html#ID-33eba32a-8fed-4d84-9db3-5fa3018beb06">Epimorphismus von der Symmetrischen Gruppe auf das Vorzeichen</a> ist zu zeigen, dass die Aussage für eine eliebige <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> von <a href="20221211214007-transposition_kombinatorik.html#ID-2b1bc9e1-a857-4e1a-9927-02d30418930d">Transpositionen</a> gilt.
 </p>
 </div>
-<div id="outline-container-org898d62d" class="outline-3">
-<h3 id="org898d62d"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-orgb04841d" class="outline-3">
+<h3 id="orgb04841d"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_d6c957c53eda3d8b651432451a31d82df6569283.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_d6c957c53eda3d8b651432451a31d82df6569283.svg" class="org-svg" /> eine <a href="20221211214007-transposition_kombinatorik.html#ID-2b1bc9e1-a857-4e1a-9927-02d30418930d">Transposition</a> und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_ae589cb46294e0954027ad42d5c1e1d180bcccb1.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_ae589cb46294e0954027ad42d5c1e1d180bcccb1.svg" class="org-svg" />. Dann folgt
+Sei \(\tau' =(i,j)\) eine <a href="20221211214007-transposition_kombinatorik.html#ID-2b1bc9e1-a857-4e1a-9927-02d30418930d">Transposition</a> und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(i > j\). Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_5c3be90daa014fe0e101f1b3675d412167827a4c.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_5c3be90daa014fe0e101f1b3675d412167827a4c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_1,...,z_i,...,z_j,...,z_n) + V(z_1,...,z_j,...,.z_i,...,z_n) =& V(z_1,...,z_i + z_j,...,z_j + z_i,...,z_n) \\
+=& 0 \\
+\Rightarrow V(z_1,...,z_i,...,z_j,...,z_n) =& - V(z_1,...,z_j,...,.z_i,...,z_n) \\
+=& \mathrm{sgn}(\tau) V(z_1,...,z_j,...,.z_i,...,z_n) 
+\end{align*}
 <p>
 Damit gilt die Aussage für beliebige <a href="20221211214007-transposition_kombinatorik.html#ID-2b1bc9e1-a857-4e1a-9927-02d30418930d">Transpositionen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orga335cc1" class="outline-3">
-<h3 id="orga335cc1"><span class="section-number-3">2.2.</span> IS</h3>
+<div id="outline-container-org03dbf4e" class="outline-3">
+<h3 id="org03dbf4e"><span class="section-number-3">2.2.</span> IS</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-gelte die Aussage für <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_232aea5497f54b4f8cf61cf3747fdf6051bfa113.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_232aea5497f54b4f8cf61cf3747fdf6051bfa113.svg" class="org-svg" />, so folgt für <img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_e4afa3652e58ae780594573f2239a3fa5afd4bf2.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_e4afa3652e58ae780594573f2239a3fa5afd4bf2.svg" class="org-svg" />
+gelte die Aussage für \(\rho\), so folgt für \(\rho \circ \tau\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226001156-permutation_und_abstrakte_volumenfunktionen_3224ab90b22b10e9804378f5178f77d0fe12e5a6.svg" alt="20221226001156-permutation_und_abstrakte_volumenfunktionen_3224ab90b22b10e9804378f5178f77d0fe12e5a6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_{\rho \circ \tau (1)}, ..., z_{\rho \circ \tau (n)}) =& - V(z_{\rho \circ (1)}, ..., z_{\rho \circ (n)}) \\
+=& \mathrm{sgn}(\tau) \cdot \mathrm{sgn}(\rho) \cdot V(z_1,...,z_n) \\
+=& \mathrm{sgn}(\tau \circ \rho) \cdot V(z_1,...,z_n)
+\end{align*}
 </div>
 </div>
 </div>

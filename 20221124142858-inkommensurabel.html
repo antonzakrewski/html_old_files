@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>inkommensurabel (Zahlen)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">inkommensurabel (Zahlen)</h1>
-<div id="outline-container-orgaf76ea5" class="outline-2">
-<h2 id="orgaf76ea5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org47afd0e" class="outline-2">
+<h2 id="org47afd0e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Zwei <a href="20210702104535-reelle_zahlen.html#ID-764c8d83-a539-42fa-b8b4-3e388f4dc3a1">Reelle Zahlen</a> <img src="ltximg/20221124142858-inkommensurabel_626945927db96d02d43952d312b84bfd00158fe8.svg" alt="20221124142858-inkommensurabel_626945927db96d02d43952d312b84bfd00158fe8.svg" class="org-svg" /> sind inkommensurabel, falls gilt
+Zwei <a href="20210702104535-reelle_zahlen.html#ID-764c8d83-a539-42fa-b8b4-3e388f4dc3a1">Reelle Zahlen</a> \(a,b \in \mathbb{R}\) sind inkommensurabel, falls gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221124142858-inkommensurabel_62fd8e7d5fea9b842eacf260469290638e01595c.svg" alt="20221124142858-inkommensurabel_62fd8e7d5fea9b842eacf260469290638e01595c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\frac{a}{b} \not\in \mathbb{Q} 
+\end{align*}
 </div>
 </div>
 </div>

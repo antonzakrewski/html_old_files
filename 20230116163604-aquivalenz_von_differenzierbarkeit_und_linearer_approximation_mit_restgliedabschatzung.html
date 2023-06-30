@@ -9,87 +9,106 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Differenzierbarkeit und linearer Approximation mit Restgliedabschätzung</h1>
-<div id="outline-container-org4d74745" class="outline-2">
-<h2 id="org4d74745"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8c1327d" class="outline-2">
+<h2 id="org8c1327d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" class="org-svg" /> <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_5ac4d474589670caba7965d332d1860777d31dfb.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_5ac4d474589670caba7965d332d1860777d31dfb.svg" class="org-svg" />
+Seien \(M,N\) <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und \(f: M \rightarrow N\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und \(x_0 \in M\)
 Dann sind folgende Aussagen äquivalent:
 </p>
 </div>
-<div id="outline-container-org765e0e2" class="outline-3">
-<h3 id="org765e0e2"><span class="section-number-3">1.1.</span> a)</h3>
+<div id="outline-container-org74b43d5" class="outline-3">
+<h3 id="org74b43d5"><span class="section-number-3">1.1.</span> a)</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-<img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a> in <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" />
+\(f\) ist <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a> in \(x_0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7e9263b" class="outline-3">
-<h3 id="org7e9263b"><span class="section-number-3">1.2.</span> b)</h3>
+<div id="outline-container-orgf5cefc3" class="outline-3">
+<h3 id="orgf5cefc3"><span class="section-number-3">1.2.</span> b)</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
-Es existiert eine in <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a95df78fd78429014651e9782ede8368525b364b.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a95df78fd78429014651e9782ede8368525b364b.svg" class="org-svg" /> mit
+Es existiert eine in \(x_0\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(s: M \rightarrow N\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_81de70edf4801f2f0bd31710a161bac4bb09f797.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_81de70edf4801f2f0bd31710a161bac4bb09f797.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) = f(x_0) + s(x) \cdot (x - x_0)
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_ab633778696ee22684fc158c3e06c872d0c0e887.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_ab633778696ee22684fc158c3e06c872d0c0e887.svg" class="org-svg" />
-Dabei ist <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_4c8098346c29b31991db59b86113bd3b31cf3ae4.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_4c8098346c29b31991db59b86113bd3b31cf3ae4.svg" class="org-svg" /> die "durchschnittliche Steigung" von <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_59defb4f66498de8c4490d7e640d8978a554f54b.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_59defb4f66498de8c4490d7e640d8978a554f54b.svg" class="org-svg" />
+für \(x \in D\)
+Dabei ist \(s(x)\) die "durchschnittliche Steigung" von \(x_0\) nach \(x\) mit \(f'(x_0) = s(x_0) = a\)
 </p>
 </div>
 </div>
-<div id="outline-container-orga0be9ec" class="outline-3">
-<h3 id="orga0be9ec"><span class="section-number-3">1.3.</span> c)</h3>
+<div id="outline-container-org53441ed" class="outline-3">
+<h3 id="org53441ed"><span class="section-number-3">1.3.</span> c)</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
-<img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_b5e813a528b463f11eeeb4dc5f1f110c1097983c.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_b5e813a528b463f11eeeb4dc5f1f110c1097983c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_61837320f0c120eafc34cade633ec354e0c7c10e.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_61837320f0c120eafc34cade633ec354e0c7c10e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_c36e839a30536e8e994f77bae672bd147c93e2b9.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_c36e839a30536e8e994f77bae672bd147c93e2b9.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_374937b256cd71ab7287ff8e768290c46b3115f8.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_374937b256cd71ab7287ff8e768290c46b3115f8.svg" class="org-svg" />
+\(\exists a \in M\) und \(r: M \rightarrow N\) mit \(r(x_0) = 0\) und \(\lim_{x \to x_0}\left(\frac{r(x)}{x - x_0}\right)\)
 so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_71e91f862f0aadd8f77ff1c9da7215c657b2786e.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_71e91f862f0aadd8f77ff1c9da7215c657b2786e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) = f(x_0) + a(x - x_0) + r(x)
+\end{align*}
 <p>
 stetiges Restglied
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orga4d73e2" class="outline-2">
-<h2 id="orga4d73e2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6a9475d" class="outline-2">
+<h2 id="org6a9475d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org556d7dc" class="outline-3">
-<h3 id="org556d7dc"><span class="section-number-3">2.1.</span> a) <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_530f1c2d6efdf99fd5369a6421a6212d2a4e5652.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_530f1c2d6efdf99fd5369a6421a6212d2a4e5652.svg" class="org-svg" /> b)</h3>
+<div id="outline-container-org410f662" class="outline-3">
+<h3 id="org410f662"><span class="section-number-3">2.1.</span> a) \(\Leftrightarrow\) b)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_3f5339861b82bfff790969f66933ed8494cdc59f.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_3f5339861b82bfff790969f66933ed8494cdc59f.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_18c751a786f12688fae387946fb9d47f812ca02d.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_18c751a786f12688fae387946fb9d47f812ca02d.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_c5d4a954c8ced4474a52215140c367ace29a755e.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_c5d4a954c8ced4474a52215140c367ace29a755e.svg" class="org-svg" /> existiert (siehe: <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a> von <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a728aeb97cad799f4ef27b432a2136f3a63b0d04.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_a728aeb97cad799f4ef27b432a2136f3a63b0d04.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" />)
+Sei \(s(x)  \coloneqq \frac{f(x) - f(x_0)}{x - x_0}\) für \(x \in M \setminus \{x_0\}\)
+Dann ist \(f\) <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(\lim_{x \to x_0}\left(s(x)\right)  \coloneqq s(x_0)\) existiert (siehe: <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a> von \(s\) in \(x_0\))
 </p>
 </div>
 </div>
-<div id="outline-container-org059c1d6" class="outline-3">
-<h3 id="org059c1d6"><span class="section-number-3">2.2.</span> b) <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_530f1c2d6efdf99fd5369a6421a6212d2a4e5652.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_530f1c2d6efdf99fd5369a6421a6212d2a4e5652.svg" class="org-svg" /> c)</h3>
+<div id="outline-container-orgf708681" class="outline-3">
+<h3 id="orgf708681"><span class="section-number-3">2.2.</span> b) \(\Leftrightarrow\) c)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_87fc31077c56b8a40697b71fc755dc3c072e4693.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_87fc31077c56b8a40697b71fc755dc3c072e4693.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_09163950c4f23dbab6c4573c836a146bd141a15c.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_09163950c4f23dbab6c4573c836a146bd141a15c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_ce2b0515737786c01d9bcb1e0b1d20e27605b164.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_ce2b0515737786c01d9bcb1e0b1d20e27605b164.svg" class="org-svg" /> .
-Da <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_4c8098346c29b31991db59b86113bd3b31cf3ae4.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_4c8098346c29b31991db59b86113bd3b31cf3ae4.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> ist, existiert <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_0416dc8a1f8b6fdc78a5eaffd0bce9ba8b9f19e4.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_0416dc8a1f8b6fdc78a5eaffd0bce9ba8b9f19e4.svg" class="org-svg" />
+Sei \(s(x) = s(x_0) + (s(x) - s(x_0))\) mit \(s(x_0) = a\) und \(s(x) - s(x_0) = \frac{r(x)}{x-x_}\) .
+Da \(s(x)\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in \(x_0\) ist, existiert \(\lim_{x \to x_0}\left(\frac{r(x)}{x - x_0}\right) = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org09cdb5c" class="outline-3">
-<h3 id="org09cdb5c"><span class="section-number-3">2.3.</span> c) <img src="file:///home/anton/html/ltximg/20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230116163604-aquivalenz_von_differenzierbarkeit_und_linearer_approximation_mit_restgliedabschatzung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> a)</h3>
+<div id="outline-container-orgf6f71ad" class="outline-3">
+<h3 id="orgf6f71ad"><span class="section-number-3">2.3.</span> c) \(\Rightarrow\) a)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt durch rechnen und Restgleid 

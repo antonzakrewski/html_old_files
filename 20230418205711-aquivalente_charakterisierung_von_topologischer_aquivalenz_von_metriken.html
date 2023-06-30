@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierung von topologischer Äquivalenz von Metriken</h1>
-<div id="outline-container-orgce4692a" class="outline-2">
-<h2 id="orgce4692a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd150bb8" class="outline-2">
+<h2 id="orgd150bb8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_88fd01fd000d155e9c2f8b65ecfd262a606ecb09.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_88fd01fd000d155e9c2f8b65ecfd262a606ecb09.svg" class="org-svg" /> <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metriken</a> auf <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />.
-Dann sind <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_88fd01fd000d155e9c2f8b65ecfd262a606ecb09.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_88fd01fd000d155e9c2f8b65ecfd262a606ecb09.svg" class="org-svg" /> <a href="20230418205307-aquivalente_metrik.html#ID-ab145629-f0c2-4e6d-b7dc-a5462cd470af">topologisch äquivalent</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für alle <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> und alle <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> positive Abstände <img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_0770e8099285b696b60c37bbd3b86048992a5124.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_0770e8099285b696b60c37bbd3b86048992a5124.svg" class="org-svg" /> existieren so dass für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> gilt:
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(d,d'\) <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metriken</a> auf \(M\).
+Dann sind \(d,d'\) <a href="20230418205307-aquivalente_metrik.html#ID-ab145629-f0c2-4e6d-b7dc-a5462cd470af">topologisch äquivalent</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> für alle \(m \in M\) und alle \(\varepsilon > 0\) positive Abstände \(r,r' > 0\) existieren so dass für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_50efb9d6e84751f9bbfe3e16a10fde5e012921bb.svg" alt="20230418205711-aquivalente_charakterisierung_von_topologischer_aquivalenz_von_metriken_50efb9d6e84751f9bbfe3e16a10fde5e012921bb.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+B_{\varepsilon,d'}(r') \subseteq& B_{\varepsilon,d}(m) \\
+B_{\varepsilon,d'}(r) \subseteq& B_{\varepsilon,d'}(m)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd628594" class="outline-2">
-<h2 id="orgd628594"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbf8ac29" class="outline-2">
+<h2 id="orgbf8ac29"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus <a href="20230418210403-aquivalente_charakterisierung_von_einer_metrisch_induzierten_feineren_topologie.html#ID-354e8585-f96d-4f32-b40e-47485d926569">Äquivalente Charakterisierung von einer metrisch induzierten, feineren Topologie</a>.

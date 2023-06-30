@@ -9,38 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bedingte Wahrscheinlichkeit</h1>
-<div id="outline-container-org52f09af" class="outline-2">
-<h2 id="org52f09af"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3119e10" class="outline-2">
+<h2 id="org3119e10"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_3572a14becc71857b48987336dbbd39c41059753.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_3572a14becc71857b48987336dbbd39c41059753.svg" class="org-svg" /> ein <a href="20220903151423-wahrscheinlichkeitsraum.html#ID-0a7fdeda-13a2-44be-bc7e-d6ab02447255">Wahrscheinlichkeitsraum</a> und <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_42691f7bbe0a79513eed021800b19950d4df94fe.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_42691f7bbe0a79513eed021800b19950d4df94fe.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_d08da83727537f0a1cce6a20bfe9cd455d020754.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_d08da83727537f0a1cce6a20bfe9cd455d020754.svg" class="org-svg" />.
+Sei \((\Omega, \mathcal{A}, \mathbb{P})\) ein <a href="20220903151423-wahrscheinlichkeitsraum.html#ID-0a7fdeda-13a2-44be-bc7e-d6ab02447255">Wahrscheinlichkeitsraum</a> und \(A,B \in \mathcal{A}\) mit \(\mathbb{P}(B)> 0\).
 Dann heißt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_2fa7782a9ffe89539b17ed65f8ebd120be69f393.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_2fa7782a9ffe89539b17ed65f8ebd120be69f393.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathbb{P}(A \vert B) =&  \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
+\end{align*}
 <p>
 bedingte Wahrscheinlichkeit von A unter der Bedingung B (gegeben B).
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_3572a14becc71857b48987336dbbd39c41059753.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_3572a14becc71857b48987336dbbd39c41059753.svg" class="org-svg" /> ein W-Raum <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_aaed3ec4f4ee32321eed233a63f7c82b411f492c.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_aaed3ec4f4ee32321eed233a63f7c82b411f492c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_e92be42e79944a060af1dd5c2239c6eedbbdd870.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_e92be42e79944a060af1dd5c2239c6eedbbdd870.svg" class="org-svg" />
-dann ist <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_86980728c337a122dbe17c293366febf3889b4cd.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_86980728c337a122dbe17c293366febf3889b4cd.svg" class="org-svg" /> ein Wahrscheinlichkeitsmaß auf <img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_a1aa50a367d009261b0d24894f180788691f49ee.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_a1aa50a367d009261b0d24894f180788691f49ee.svg" class="org-svg" /> 
+Sei \((\Omega, \mathcal{A}, \mathbb{P})\) ein W-Raum \(B \in \mathcal{A}\) mit \(\mathbb{P}(B) > 0\)
+dann ist \(\mathbb{P}(\cdot \vert B)\) ein Wahrscheinlichkeitsmaß auf \((B, \mathcal{A} \cap B)\) 
 wobei 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210621220549-bedingte_wahrscheinlichkeit_2772af957ac3eacd5545b4acd26756fbd72a86ee.svg" alt="20210621220549-bedingte_wahrscheinlichkeit_2772af957ac3eacd5545b4acd26756fbd72a86ee.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{A} \cap B  \coloneqq \{A \cap B \vert A \in \mathcal{A}\}
+\end{align*}
 </div>
 </div>
 </div>

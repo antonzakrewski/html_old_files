@@ -9,57 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Addition von Konvergenten Folgen</h1>
-<div id="outline-container-org4b147b8" class="outline-2">
-<h2 id="org4b147b8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2568476" class="outline-2">
+<h2 id="org2568476"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221122075543-addition_von_konvergenten_folgen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachraum</a> und seien <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221122075543-addition_von_konvergenten_folgen_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_85eea9c38ce4b095c55b59b3ef23a8a514c62ed5.svg" alt="20221122075543-addition_von_konvergenten_folgen_85eea9c38ce4b095c55b59b3ef23a8a514c62ed5.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit dem <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221122075543-addition_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_65006aa5b2c2f2577c31bd732e56d922bbed9431.svg" alt="20221122075543-addition_von_konvergenten_folgen_65006aa5b2c2f2577c31bd732e56d922bbed9431.svg" class="org-svg" />
-So folgt für die Folge <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_f89baf54d202f32683c2f2f7f94bc2b398d50d76.svg" alt="20221122075543-addition_von_konvergenten_folgen_f89baf54d202f32683c2f2f7f94bc2b398d50d76.svg" class="org-svg" />
+Sei \(M\) ein <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachraum</a> und seien \((a_n)\) und \((a_n')\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit dem <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> \(a\) bzw. \(a'\)
+So folgt für die Folge \((a_n + a_n')_{n \in \mathbb{N}}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_704b6307ea4b95ba768f1edf3bab678db2f22f29.svg" alt="20221122075543-addition_von_konvergenten_folgen_704b6307ea4b95ba768f1edf3bab678db2f22f29.svg" class="org-svg" />
-</span>
+\begin{align*}
+ \lim_{n \to \infty}\left(a_n + a_n'\right) = a + a'
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org347ab6d" class="outline-2">
-<h2 id="org347ab6d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgac2fc4a" class="outline-2">
+<h2 id="orgac2fc4a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221122075543-addition_von_konvergenten_folgen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />
-Es existiert jeweils ein <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_123b2fbf3973dabaf417124a373e853e25cd807f.svg" alt="20221122075543-addition_von_konvergenten_folgen_123b2fbf3973dabaf417124a373e853e25cd807f.svg" class="org-svg" />, so dass für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_4c994f12d21b621fb2c4de74ca91af44bfb11046.svg" alt="20221122075543-addition_von_konvergenten_folgen_4c994f12d21b621fb2c4de74ca91af44bfb11046.svg" class="org-svg" /> gilt
+Sei \(\varepsilon > 0\)
+Es existiert jeweils ein \(n( \frac{\varepsilon}{2}),n'(\frac{\varepsilon}{2})\), so dass für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(m > n(\frac{\varepsilon}{2})\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_4d47516f478c4122af0ea780a7588f2a50939b54.svg" alt="20221122075543-addition_von_konvergenten_folgen_4d47516f478c4122af0ea780a7588f2a50939b54.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_m - a \vert < \frac{\varepsilon}{2}
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_aa15febc885c7bea0015dbc8014d0ad11f194870.svg" alt="20221122075543-addition_von_konvergenten_folgen_aa15febc885c7bea0015dbc8014d0ad11f194870.svg" class="org-svg" />, so folgt:
+Sei \(m \geq \mathrm{max}(n(\frac{\varepsilon}{2}) , n'(\frac{\varepsilon}{2}))\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_f10e91ace946fd1cfe2dce991a23e04a6530a822.svg" alt="20221122075543-addition_von_konvergenten_folgen_f10e91ace946fd1cfe2dce991a23e04a6530a822.svg" class="org-svg" />
-</span>
-</div>
-
+\begin{align*}
+\vert a_m + a_m' - a - a' \vert \leq& \vert a_m - a \vert + \vert a_m' - a' \vert \\
+<& \frac{\varepsilon}{2} + \frac{\varepsilon}{2} \\
+=& \varepsilon
+\end{align*}
 
 
 
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221122075543-addition_von_konvergenten_folgen_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" alt="20221122075543-addition_von_konvergenten_folgen_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+
+\end{align*}
 </div>
 </div>
 </div>

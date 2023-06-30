@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Heine (Analysis)</h1>
-<div id="outline-container-org925c8f0" class="outline-2">
-<h2 id="org925c8f0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0b692cd" class="outline-2">
+<h2 id="org0b692cd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_66bc6e8d5011debec8cb3e162991e7f6946d2ca9.svg" alt="20230120194529-satz_von_heine_66bc6e8d5011debec8cb3e162991e7f6946d2ca9.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> von einem <a href="20230114151007-kompakter_raum.html#ID-0546903d-8514-4cc9-8a8c-6fb2011f98d4">Kompakten</a>,  <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230120194529-satz_von_heine_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> auf einen <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230120194529-satz_von_heine_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230120194529-satz_von_heine_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
+Sei \(f: K \rightarrow M\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> von einem <a href="20230114151007-kompakter_raum.html#ID-0546903d-8514-4cc9-8a8c-6fb2011f98d4">Kompakten</a>,  <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> \(K\) auf einen <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> \(M\)
+Dann ist \(f\) <a href="20230111191254-gleichmaßige_stetigkeit.html#ID-9f0b13c9-32bd-4d18-beb7-91cd6db42d85">gleichmäßig stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orge1eb8b7" class="outline-2">
-<h2 id="orge1eb8b7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga96daa3" class="outline-2">
+<h2 id="orga96daa3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230120194529-satz_von_heine_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> gegeben, so wähle man für jedes <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230120194529-satz_von_heine_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> eine <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">delta-Umgebung</a> mit <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_5b2dae94900c0055eb136c0d1b1f1bc13dd63e33.svg" alt="20230120194529-satz_von_heine_5b2dae94900c0055eb136c0d1b1f1bc13dd63e33.svg" class="org-svg" />
+Sei \(\varepsilon > 0\) gegeben, so wähle man für jedes \(m \in M\) eine <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">delta-Umgebung</a> mit \(B_{\delta(m)}(m) \subseteq B_{\frac{\varepsilon}{2}}(f(m))\)
 Damit erhält man eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> und nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
-Dabei wähle man als <img src="file:///home/anton/html/ltximg/20230120194529-satz_von_heine_aae0ba4077fe0126df8a032133b558fadd0585ef.svg" alt="20230120194529-satz_von_heine_aae0ba4077fe0126df8a032133b558fadd0585ef.svg" class="org-svg" /> das minimum dieser teilüberdeckung.
+Dabei wähle man als \(\delta\) das minimum dieser teilüberdeckung.
 zu zeigen:
 </p>
 </div>

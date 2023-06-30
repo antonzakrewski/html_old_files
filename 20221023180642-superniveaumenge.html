@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Superniveaumenge</h1>
-<div id="outline-container-org5ebdde2" class="outline-2">
-<h2 id="org5ebdde2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb897c2e" class="outline-2">
+<h2 id="orgb897c2e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20221023180642-superniveaumenge_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_145ec6b28672c4950fc535c460cf756e7a119d37.svg" alt="20221023180642-superniveaumenge_145ec6b28672c4950fc535c460cf756e7a119d37.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_555a1654ce79ac313b280b9aee7f449ff858a6ce.svg" alt="20221023180642-superniveaumenge_555a1654ce79ac313b280b9aee7f449ff858a6ce.svg" class="org-svg" /> eine <a href="20221010083158-ordnungsrelation.html#ID-748213ba-229e-4caf-8cb3-ed5bd7d31476">Ordnungsrelation</a> auf <img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221023180642-superniveaumenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" />
-Die Niveaumenge für <img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20221023180642-superniveaumenge_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" /> ist definiert als
+Sei \(f: A \rightarrow B\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(b \in B\) sowie \(\geq\) eine <a href="20221010083158-ordnungsrelation.html#ID-748213ba-229e-4caf-8cb3-ed5bd7d31476">Ordnungsrelation</a> auf \(B\)
+Die Niveaumenge für \(b\) ist definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221023180642-superniveaumenge_a0b60ac22c13c05795c7ddecdfdb49a2424a08df.svg" alt="20221023180642-superniveaumenge_a0b60ac22c13c05795c7ddecdfdb49a2424a08df.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{ a \in A \vert f(a) \geq b\}
+\end{align*}
 </div>
 </div>
 </div>

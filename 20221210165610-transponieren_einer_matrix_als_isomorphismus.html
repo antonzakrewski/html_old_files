@@ -9,67 +9,88 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Transponieren einer Matrix als Isomorphismus</h1>
-<div id="outline-container-org1d8b5bf" class="outline-2">
-<h2 id="org1d8b5bf"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org13a6654" class="outline-2">
+<h2 id="org13a6654"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Sei \(A \in K^{m \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
 Dann ist die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> auf die <a href="20220326224000-transponierte_matrix.html#ID-377b0cb6-81d3-4a2d-933a-f3556e44c27f">Transponierte</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_6b84a2f339c018c3d18299d251862937cb56fb5d.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_6b84a2f339c018c3d18299d251862937cb56fb5d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+K^{m \times n} \rightarrow& K^{n \times m} \\
+A \mapsto A^{t}
+\end{align*}
 <p>
 ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org693885e" class="outline-2">
-<h2 id="org693885e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2053a8c" class="outline-2">
+<h2 id="org2053a8c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_d636631615d5306bb2848ad6e542d4f42370c9d0.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_d636631615d5306bb2848ad6e542d4f42370c9d0.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_eb758c376b5a70027c107758a495790fc12dee3e.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_eb758c376b5a70027c107758a495790fc12dee3e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_901362f11821d6e0aec0feb3bca38e53f5054a75.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_901362f11821d6e0aec0feb3bca38e53f5054a75.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_edaa74f97e45a834424f395d0934841b6314a854.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_edaa74f97e45a834424f395d0934841b6314a854.svg" class="org-svg" />, so gilt:
+Sei \((\alpha_{ij}), (\beta_{ij}) \in K^{m \times n}\) mit \(1 \leq i \leq m\) und \(1 \leq j \leq n\) und \(\lambda \in K\), so gilt:
 </p>
 </div>
-<div id="outline-container-orgaa44639" class="outline-3">
-<h3 id="orgaa44639"><span class="section-number-3">2.1.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a></h3>
+<div id="outline-container-org2fb639f" class="outline-3">
+<h3 id="org2fb639f"><span class="section-number-3">2.1.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist eine <a href="20221117174105-involution.html#ID-e9795aac-cbbe-463c-a3a3-f9bee013e007">Involution</a>, da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_bb0a676c0ca88af2c64aff6fff528d39514cd3e5.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_bb0a676c0ca88af2c64aff6fff528d39514cd3e5.svg" class="org-svg" />
-</span>
+\begin{align*}
+\left((\alpha_{ij})^t\right)^t =& (\alpha_{ji})^t \\
+=& (\alpha_{ij})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0a5daad" class="outline-3">
-<h3 id="org0a5daad"><span class="section-number-3">2.2.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a></h3>
+<div id="outline-container-org0981cee" class="outline-3">
+<h3 id="org0981cee"><span class="section-number-3">2.2.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a></h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_61eac66c1c02232167bb4bb3df9b048d91417e92.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_61eac66c1c02232167bb4bb3df9b048d91417e92.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+((\alpha_{ij}) + (\beta_{ij}))^t =& ( \alpha_{ij} + \beta_{ij})^t \\
+=& (\alpha_{ji} + \beta_{ji}) \\
+=& (\alpha_{ji}) + (\beta_{ji}) \\
+=& (\alpha_{ij})^t + (\beta_{ij})^t
+\end{align*}
 <p>
 für  
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210165610-transponieren_einer_matrix_als_isomorphismus_df209354c74951d8740ef2d22c15b7f772206b56.svg" alt="20221210165610-transponieren_einer_matrix_als_isomorphismus_df209354c74951d8740ef2d22c15b7f772206b56.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\lambda \cdot (\alpha_{ij}))^t =& (\lambda \cdot \alpha_{ij})^t \\
+=& (\lambda \cdot \alpha_{ji}) \\
+=& \lambda \cdot (\alpha_{ji}) \\
+=& \lambda \cdot (\alpha_{ij})^t
+\end{align*}
 </div>
 </div>
 </div>

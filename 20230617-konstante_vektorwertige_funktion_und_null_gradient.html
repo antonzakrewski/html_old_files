@@ -9,44 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">konstante mehrdimensionale reellwertige Funktion und null-Gradient</h1>
-<div id="outline-container-orgd1aa4e9" class="outline-2">
-<h2 id="orgd1aa4e9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgee17026" class="outline-2">
+<h2 id="orgee17026"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> sowie <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_c1c4ef707cfd60cf70cf45dfffd9e35da25c14f4.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_c1c4ef707cfd60cf70cf45dfffd9e35da25c14f4.svg" class="org-svg" /> eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> sowie \(f: U \rightarrow \mathbb{R}\) eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_76542745f68c488650d91891ca71563bc84885aa.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_76542745f68c488650d91891ca71563bc84885aa.svg" class="org-svg" /></li>
-<li>Die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist konstant</li>
+<li>\(\forall x \in U : \nabla f(x) = 0\)</li>
+<li>Die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f\) ist konstant</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfc8e859" class="outline-2">
-<h2 id="orgfc8e859"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgec3e91e" class="outline-2">
+<h2 id="orgec3e91e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org05418e1" class="outline-3">
-<h3 id="org05418e1"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org1ca3420" class="outline-3">
+<h3 id="org1ca3420"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_3225edb0909929e9048ced0b290898eddc7126c6.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_3225edb0909929e9048ced0b290898eddc7126c6.svg" class="org-svg" />.
-Nach der Aussage über eine <a href="20230622-offene_zusammenhangende_mengen_des_euklidischen_raums_wegzusammenhangend.html#ID-5508ad45-8a93-4347-a125-250f17ac9f2b">offene, zusammenhängende Mengen des euklidischen Raums als wegzusammenhängende Menge</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a> ist.
-Somit existiert ein <a href="20230613-polygonzug.html#ID-70b6df30-701d-4807-b115-d9f0ae1c8aa7">Polygonzug</a> mit Ecken <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_2ef0c04ae0acbfbb28082cace192891767693d0c.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_2ef0c04ae0acbfbb28082cace192891767693d0c.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> und man erhält für zwei aufeinanderfolgende Ecken eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_70c83890d046f80f1069b022468087d5243cf865.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_70c83890d046f80f1069b022468087d5243cf865.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_6dccc1abf59e59d6282af0619f56820c6b84edf8.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_6dccc1abf59e59d6282af0619f56820c6b84edf8.svg" class="org-svg" />.
-Falls <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" class="org-svg" /> gilt, so existieren <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_dd6f045ab16b2755bcf9e5ce7411d2e3625831d2.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_dd6f045ab16b2755bcf9e5ce7411d2e3625831d2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_af09ce3ceeda3a42b7df906cee3b8b35cafcde9c.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_af09ce3ceeda3a42b7df906cee3b8b35cafcde9c.svg" class="org-svg" />.
-Nach der Aussage über die <a href="20230120080401-ableitung_und_konstante_funktion.html#ID-fb1d3202-e8ae-421c-a542-faac0671fb56">Ableitung und eine konstante Funktion</a> gilt aber  <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_169fd0f1d6e795bf91ff3275dff5a6c0c746ad37.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_169fd0f1d6e795bf91ff3275dff5a6c0c746ad37.svg" class="org-svg" /> (vgl. <a href="20230602160349-totale_differenzierbarkeit_und_einfache_differenzierbarkeit.html#ID-0f157d3f-52d1-4850-8863-9a5383212121">totale Differenzierbarkeit und Ableitung</a>) und somit nach dem <a href="20230123231918-schrankensatz.html#ID-ca451a9c-05f6-46db-8cc4-830bb1682fe2">Schrankensatz</a> auch <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_f458c605ebeb10ba76a64fe76803f91cfb3ab388.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_f458c605ebeb10ba76a64fe76803f91cfb3ab388.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_15505ea33e3a1baf80df596ccd6485eadf58495b.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_15505ea33e3a1baf80df596ccd6485eadf58495b.svg" class="org-svg" />
+Seien \(x,y \in U\).
+Nach der Aussage über eine <a href="20230622-offene_zusammenhangende_mengen_des_euklidischen_raums_wegzusammenhangend.html#ID-5508ad45-8a93-4347-a125-250f17ac9f2b">offene, zusammenhängende Mengen des euklidischen Raums als wegzusammenhängende Menge</a> folgt, dass \(U\) <a href="20230308142110-wegzusammenhangender_raum_topologie.html#ID-09b1d548-9ac2-461c-8b3e-f72097f54a99">wegzusammenhängend</a> ist.
+Somit existiert ein <a href="20230613-polygonzug.html#ID-70b6df30-701d-4807-b115-d9f0ae1c8aa7">Polygonzug</a> mit Ecken \(x,p_1,...,p_n,y\) von \(x\) nach \(y\) und man erhält für zwei aufeinanderfolgende Ecken eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f_i: [-\varepsilon, \varepsilon] \rightarrow U\) mit \(f(- \varepsilon) = p_i, f(\varepsilon) = p_{i+1}\).
+Falls \(f(x) \neq f(y)\) gilt, so existieren \(p_i,p_{i+1}\) mit \(f(p_i) \neq f(p_{i+1})\).
+Nach der Aussage über die <a href="20230120080401-ableitung_und_konstante_funktion.html#ID-fb1d3202-e8ae-421c-a542-faac0671fb56">Ableitung und eine konstante Funktion</a> gilt aber  \(f_i'(\delta) = \mathrm{d}f_{p_i + t \cdot (p_{i+1} - p_i)}(p_{i+1} - p_i) = 0\) (vgl. <a href="20230602160349-totale_differenzierbarkeit_und_einfache_differenzierbarkeit.html#ID-0f157d3f-52d1-4850-8863-9a5383212121">totale Differenzierbarkeit und Ableitung</a>) und somit nach dem <a href="20230123231918-schrankensatz.html#ID-ca451a9c-05f6-46db-8cc4-830bb1682fe2">Schrankensatz</a> auch \(f_i(\varepsilon) - f_{i}(- \varepsilon) = 0\) bzw. \(f(x) = f(y)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org6acb0e4" class="outline-3">
-<h3 id="org6acb0e4"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgb576318" class="outline-3">
+<h3 id="orgb576318"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-folgt durch die lineare Approximation mit <img src="file:///home/anton/html/ltximg/20230617-konstante_vektorwertige_funktion_und_null_gradient_366bb0fee42a5f9e956aaeb6d49053c9c1a6cbf8.svg" alt="20230617-konstante_vektorwertige_funktion_und_null_gradient_366bb0fee42a5f9e956aaeb6d49053c9c1a6cbf8.svg" class="org-svg" />
+folgt durch die lineare Approximation mit \(\mathrm{d}f_x = 0\)
 </p>
 </div>
 </div>

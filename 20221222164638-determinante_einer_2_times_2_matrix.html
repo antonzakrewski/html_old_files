@@ -3,28 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Determinante einer $2 \times 2$ Matrix</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Determinante einer <img src="ltximg/20221222164638-determinante_einer_2_times_2_matrix_4c5e72ef6a5e84c692ab1c360bf214dff3c9ffe8.svg" alt="20221222164638-determinante_einer_2_times_2_matrix_4c5e72ef6a5e84c692ab1c360bf214dff3c9ffe8.svg" class="org-svg" /> Matrix</h1>
-<div id="outline-container-org969a3ee" class="outline-2">
-<h2 id="org969a3ee"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">Determinante einer \(2 \times 2\) Matrix</h1>
+<div id="outline-container-orgc278b49" class="outline-2">
+<h2 id="orgc278b49"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222164638-determinante_einer_2_times_2_matrix_09d000f5c04af9d150361f7c48689d18d4442a86.svg" alt="20221222164638-determinante_einer_2_times_2_matrix_09d000f5c04af9d150361f7c48689d18d4442a86.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{det} \left( \begin{pmatrix} \alpha_{11} & \alpha_{12} \\ \alpha_{21} & \alpha_{22} \end{pmatrix} \right) =& \alpha_{11}\alpha_{22} - \alpha_{12}\alpha_{21}
+\end{align*}
 </div>
 </div>
 </div>

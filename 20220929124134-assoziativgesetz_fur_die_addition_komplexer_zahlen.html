@@ -9,44 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Assoziativgesetz für die Addition komplexer Zahlen</h1>
-<div id="outline-container-org31679eb" class="outline-2">
-<h2 id="org31679eb"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa06883" class="outline-2">
+<h2 id="orgaa06883"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
+\begin{align*}
+z_1,z_2,z_3 \in \mathbb{C} \\
+(z_1 + z_2) + z_3 =& z_1 + (z_2 + z_3) \\
+=& z_1 + z_2 + z_3
+\end{align*}
+</div>
+</div>
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_d853d85b091259e1f46a41b24496ea9cfdc781fe.svg" alt="20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_d853d85b091259e1f46a41b24496ea9cfdc781fe.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org7519cf3" class="outline-2">
-<h2 id="org7519cf3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc453af4" class="outline-2">
+<h2 id="orgc453af4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_0c535f92c4614304878cf391091dbd5bbd64ffad.svg" alt="20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_0c535f92c4614304878cf391091dbd5bbd64ffad.svg" class="org-svg" /> sodass gilt:
+Seien \(a_1,a_2,a_3,b_1,b_2,b_3 \in \mathbb{R}\) sodass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_851bbdf7491b39cbcfc295ff2d1dcd1068b1c5c7.svg" alt="20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_851bbdf7491b39cbcfc295ff2d1dcd1068b1c5c7.svg" class="org-svg" />
-</span>
+\begin{align*}
+z_1 =:& a_1 + \mathrm{i}b_1 \\
+z_2 =:& a_2 + \mathrm{i}b_2 \\
+z_3 =:& a_3 + \mathrm{i}b_3
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org1d866e6" class="outline-3">
-<h3 id="org1d866e6"><span class="section-number-3">2.1.</span> Addition</h3>
+<div id="outline-container-orge3d9aee" class="outline-3">
+<h3 id="orge3d9aee"><span class="section-number-3">2.1.</span> Addition</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_ad01a164cc6fa8ec6fe5123cc6b95ca3c42aa1b1.svg" alt="20220929124134-assoziativgesetz_fur_die_addition_komplexer_zahlen_ad01a164cc6fa8ec6fe5123cc6b95ca3c42aa1b1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+((a_1 + \mathrm{i}b_1) + (a_2 + \mathrm{i}b_2)) + (a_3 + \mathrm{i}b_3) =& ((a_1 + a_2) + \mathrm{i}(b_1 + b_2)) + (a_3 + \mathrm{i}b_3) \\
+=& (a_1 + a_2 + a_3) + \mathrm{i}(b_1 + b_2 + b_3) \\
+=& (a_1 + \mathrm{i}b_1) + ((a_2 + a_3) + \mathrm{i}(b_2 + b_3))  \\
+=& (a_1 + \mathrm{i}b_1) + \left((a_2 + \mathrm{i}b_2) + (a_3 + \mathrm{i}b_3)\right) 
+\end{align*}
 </div>
 </div>
 </div>

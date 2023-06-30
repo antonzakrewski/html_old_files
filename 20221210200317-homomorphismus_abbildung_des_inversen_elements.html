@@ -9,44 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Homomorphismus: Abbildung des inversen Elements</h1>
-<div id="outline-container-org8680907" class="outline-2">
-<h2 id="org8680907"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcc3d44f" class="outline-2">
+<h2 id="orgcc3d44f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210200317-homomorphismus_abbildung_des_inversen_elements_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" alt="20221210200317-homomorphismus_abbildung_des_inversen_elements_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" class="org-svg" /> ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Gruppenhomomorphismus</a>.
+Sei \(f: G \rightarrow H\) ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Gruppenhomomorphismus</a>.
 Dann gilt für 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210200317-homomorphismus_abbildung_des_inversen_elements_ec1ef30ab3d2e76cf9e90ddb29f9bd3e35990230.svg" alt="20221210200317-homomorphismus_abbildung_des_inversen_elements_ec1ef30ab3d2e76cf9e90ddb29f9bd3e35990230.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210200317-homomorphismus_abbildung_des_inversen_elements_d4a46fbe5f42283bdf80805836947bcf13718c91.svg" alt="20221210200317-homomorphismus_abbildung_des_inversen_elements_d4a46fbe5f42283bdf80805836947bcf13718c91.svg" class="org-svg" />
-</span>
+\begin{align*}
+g, g^{-1} \in G
+\end{align*}
+\begin{align*}
+f(g^{-1}) =& f(g)^{-1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgef3b854" class="outline-2">
-<h2 id="orgef3b854"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb9122d7" class="outline-2">
+<h2 id="orgb9122d7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 aus dem <a href="20221210195037-lemma_uber_das_bild_eines_gruppenhomomorphismus_als_untergruppe.html#ID-1a8f03d6-fede-4ad0-9264-f5225b8db6a2">Lemma über das Bild eines Gruppenhomomorphismus als Untergruppe</a> und der <a href="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe.html#ID-3e68110e-84e0-4c01-a8c1-62d1ba24b022">Eindeutigkeit des inversen Elements einer Gruppe</a> 
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210200317-homomorphismus_abbildung_des_inversen_elements_2e5ca7c3ba158928f73ad01f4f06f6e87e5bf832.svg" alt="20221210200317-homomorphismus_abbildung_des_inversen_elements_2e5ca7c3ba158928f73ad01f4f06f6e87e5bf832.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e =& f(e) \\
+=& f(gg^{-1}) \\
+=& f(g)f(g^{-1}) \\
+\Rightarrow f(g^{-1}) =& f(g)^{-1}
+\end{align*}
 </div>
 </div>
 </div>

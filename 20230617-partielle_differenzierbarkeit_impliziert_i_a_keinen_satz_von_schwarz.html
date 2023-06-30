@@ -9,41 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">partielle Differenzierbarkeit impliziert i.A. keinen Satz von Schwarz</h1>
-<div id="outline-container-org07927c5" class="outline-2">
-<h2 id="org07927c5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6b15671" class="outline-2">
+<h2 id="org6b15671"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_9f0c050c7b9360813cd0a84570e9d9b3cad866a5.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_9f0c050c7b9360813cd0a84570e9d9b3cad866a5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_5ac07e8bfff7afa3d1eae54635528354be80807f.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_5ac07e8bfff7afa3d1eae54635528354be80807f.svg" class="org-svg" /> eine in <img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_28e25562e1f9c6befc2d9c25c58347fcd93634d9.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_28e25562e1f9c6befc2d9c25c58347fcd93634d9.svg" class="org-svg" /> jeweils zweifach <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Sei \(U \subseteq \mathbb{R}^2\) und \(f: U \rightarrow \mathbb{R}^m\) eine in \(e_1,e_2\) jeweils zweifach <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
 Dann gilt i.A. nicht
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_80a4720b077b9740c8d666fb7ad924bb9d5dcceb.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_80a4720b077b9740c8d666fb7ad924bb9d5dcceb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\partial^2 f}{\partial x \partial y} \neq \frac{\partial^2 f}{\partial y \partial y}
+\end{align*}
 
 <ul class="org-ul">
 <li>stetige differenzierbarkeit noch gefordert !</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc4ea2c0" class="outline-2">
-<h2 id="orgc4ea2c0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9f49bb1" class="outline-2">
+<h2 id="org9f49bb1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_8b9761192fd6cea0894d0362176ddfb796c45f12.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_8b9761192fd6cea0894d0362176ddfb796c45f12.svg" class="org-svg" /> gilt
+Für die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: \mathbb{R}^2 \rightarrow \mathbb{R}\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_ab5ae02bac5f64e724476ab4713dc5e74a4729ce.svg" alt="20230617-partielle_differenzierbarkeit_impliziert_i_a_keinen_satz_von_schwarz_ab5ae02bac5f64e724476ab4713dc5e74a4729ce.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x,y) = 
+    \begin{cases}
+     \frac{x^3y - xy^3}{x^2 + y^2}& \mbox{if } (x,y) \neq (0,0)  \\
+     0  & \mbox{else } \\ 
+    \end{cases}
+\end{align*}
 </div>
 </div>
 </div>

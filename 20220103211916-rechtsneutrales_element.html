@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rechtsneutrales Element</h1>
-<div id="outline-container-orgab98a84" class="outline-2">
-<h2 id="orgab98a84"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org39c7666" class="outline-2">
+<h2 id="org39c7666"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220103211916-rechtsneutrales_element_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220103211916-rechtsneutrales_element_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Struktur</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> <img src="file:///home/anton/html/ltximg/20220103211916-rechtsneutrales_element_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" alt="20220103211916-rechtsneutrales_element_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" class="org-svg" />.
-Dann ist <img src="file:///home/anton/html/ltximg/20220103211916-rechtsneutrales_element_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" alt="20220103211916-rechtsneutrales_element_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" class="org-svg" /> ein Rechtsneutrales Element, falls gilt:
+Sei \(M\) eine <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Struktur</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> \(\circ\).
+Dann ist \(e\) ein Rechtsneutrales Element, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220103211916-rechtsneutrales_element_5371e5f5ac097195e4c1b32105ecf7eaf84791e2.svg" alt="20220103211916-rechtsneutrales_element_5371e5f5ac097195e4c1b32105ecf7eaf84791e2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x \in M : (x \cdot e = x)
+\end{align*}
 </div>
 </div>
 </div>

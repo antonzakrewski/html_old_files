@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">bijektive Relation</h1>
-<div id="outline-container-orgf82bc6e" class="outline-2">
-<h2 id="orgf82bc6e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgc83e3a2" class="outline-2">
+<h2 id="orgc83e3a2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220929190900-bijektive_relation_f2d7d2baa8f74b4fc9bb99d1f1597fe9c89fd9aa.svg" alt="20220929190900-bijektive_relation_f2d7d2baa8f74b4fc9bb99d1f1597fe9c89fd9aa.svg" class="org-svg" /> eine <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a> zwischen den <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20220929190900-bijektive_relation_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" alt="20220929190900-bijektive_relation_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" class="org-svg" />
-<img src="file:///home/anton/html/ltximg/20220929190900-bijektive_relation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20220929190900-bijektive_relation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist genau dann bijektiv, wenn sie <a href="20220929184521-linkstotale_relation.html#ID-f199552a-6534-4730-ace4-3525bef8564c">linkstotale</a>, <a href="20220929184739-rechtstotale_relation.html#ID-53c4caf8-a645-4306-94cd-d01b717ed26d">rechtstotale</a>, <a href="20220929184817-linkseindeutige_relation.html#ID-ded50681-5d94-4844-9dcb-6864b7d6b9e1">linkseindeutige</a> und <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">rechtseindeutige</a> ist, d.h.
+Sei \(R \subseteq X \times Y\) eine <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a> zwischen den <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(X,Y\)
+\(R\) ist genau dann bijektiv, wenn sie <a href="20220929184521-linkstotale_relation.html#ID-f199552a-6534-4730-ace4-3525bef8564c">linkstotale</a>, <a href="20220929184739-rechtstotale_relation.html#ID-53c4caf8-a645-4306-94cd-d01b717ed26d">rechtstotale</a>, <a href="20220929184817-linkseindeutige_relation.html#ID-ded50681-5d94-4844-9dcb-6864b7d6b9e1">linkseindeutige</a> und <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">rechtseindeutige</a> ist, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220929190900-bijektive_relation_97b9b3656e697cd1c6d21d356f3e14e138c03098.svg" alt="20220929190900-bijektive_relation_97b9b3656e697cd1c6d21d356f3e14e138c03098.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall b \in B \exists a! \in A : (a,b) \in R
+\end{align*}
 </div>
 </div>
 </div>

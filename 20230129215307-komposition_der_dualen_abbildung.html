@@ -9,42 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komposition der dualen Abbildung</h1>
-<div id="outline-container-org4729a29" class="outline-2">
-<h2 id="org4729a29"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5481958" class="outline-2">
+<h2 id="org5481958"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_e84202f9a95f52909282768df6011d187e082cb0.svg" alt="20230129215307-komposition_der_dualen_abbildung_e84202f9a95f52909282768df6011d187e082cb0.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_0f0a88127506b6c1f7dd180d64a1505d1ec2555f.svg" alt="20230129215307-komposition_der_dualen_abbildung_0f0a88127506b6c1f7dd180d64a1505d1ec2555f.svg" class="org-svg" />, dann gilt
+Seien \(U,V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(A \in \mathrm{Hom}(U,V), B \in \mathrm{Hom}(V,W)\), dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_3f1c74a3797d87032e8bc97b607d96b557dbffb6.svg" alt="20230129215307-komposition_der_dualen_abbildung_3f1c74a3797d87032e8bc97b607d96b557dbffb6.svg" class="org-svg" />
-</span>
+\begin{align*}
+(BA)^* =& A^*B^*
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb97f9b6" class="outline-2">
-<h2 id="orgb97f9b6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org295c33d" class="outline-2">
+<h2 id="org295c33d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_999af907471712f7256dca86f32abef4d36ca4c5.svg" alt="20230129215307-komposition_der_dualen_abbildung_999af907471712f7256dca86f32abef4d36ca4c5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230129215307-komposition_der_dualen_abbildung_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" />, so gilt:
+Sei \(f \in W^*\) und \(u \in U\), so gilt:
 </p>
+\begin{align*}
+((BA)^{*} f) (u) =& f(BA(u)) \\
+(A^*B^* f)(u) =& (A^*f(B))(u) \\
+=& f(BA)(u) \\
+=& f(BA(u))
+\end{align*}
+\begin{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_773e7ee63e54a7f2d2392a3ea4f59e3f542e9b3b.svg" alt="20230129215307-komposition_der_dualen_abbildung_773e7ee63e54a7f2d2392a3ea4f59e3f542e9b3b.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230129215307-komposition_der_dualen_abbildung_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" alt="20230129215307-komposition_der_dualen_abbildung_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" class="org-svg" />
-</span>
-</div>
+\end{align*}
 </div>
 </div>
 </div>

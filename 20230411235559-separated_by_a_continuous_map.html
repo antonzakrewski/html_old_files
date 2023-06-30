@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">separated by a continuous map</h1>
-<div id="outline-container-org6f0eb5d" class="outline-2">
-<h2 id="org6f0eb5d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5b2c6a3" class="outline-2">
+<h2 id="org5b2c6a3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230411235559-separated_by_a_continuous_map_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230411235559-separated_by_a_continuous_map_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>.
-Two points <img src="file:///home/anton/html/ltximg/20230411235559-separated_by_a_continuous_map_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" alt="20230411235559-separated_by_a_continuous_map_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" class="org-svg" /> are said to be separated by a continuous map, if there exists a <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> <img src="file:///home/anton/html/ltximg/20230411235559-separated_by_a_continuous_map_295eaaa66f999d5375d0c37ea79493d96a96473f.svg" alt="20230411235559-separated_by_a_continuous_map_295eaaa66f999d5375d0c37ea79493d96a96473f.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230411235559-separated_by_a_continuous_map_c73773df7ffc266b3da0c78f68ef3fa611d14bac.svg" alt="20230411235559-separated_by_a_continuous_map_c73773df7ffc266b3da0c78f68ef3fa611d14bac.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230411235559-separated_by_a_continuous_map_a883c0e4d16de5d63e024b1fc23ac69146af354e.svg" alt="20230411235559-separated_by_a_continuous_map_a883c0e4d16de5d63e024b1fc23ac69146af354e.svg" class="org-svg" />
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>.
+Two points \(x,y \in X\) are said to be separated by a continuous map, if there exists a <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> \(f: X \rightarrow \mathbb{R}\) such that \(x \in f^{-1}[ \{0\}]\) and \(y \in f^{-1}[ \{1\}]\)
 </p>
 </div>
 </div>

@@ -3,45 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>finite categorical product</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">finite categorical product</h1>
-<div id="outline-container-org6858729" class="outline-2">
-<h2 id="org6858729"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org996dd18" class="outline-2">
+<h2 id="org996dd18"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230403221216-product_category_theory_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20230403221216-product_category_theory_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and <img src="ltximg/20230403221216-product_category_theory_d7662db2aab16e7573cf3fc182bd5686b31c4f93.svg" alt="20230403221216-product_category_theory_d7662db2aab16e7573cf3fc182bd5686b31c4f93.svg" class="org-svg" /> <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a>.
-A product of <img src="ltximg/20230403221216-product_category_theory_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" alt="20230403221216-product_category_theory_fc36db8fa12e3665e50e7706fec031cde53f30b2.svg" class="org-svg" /> and <img src="ltximg/20230403221216-product_category_theory_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" alt="20230403221216-product_category_theory_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" class="org-svg" /> is a triple:
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(A,B \in \mathrm{Ob}(\mathcal{C})\) <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a>.
+A product of \(A\) and \(B\) is a triple:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230403221216-product_category_theory_c5cf9457a4d96662fdf2f79ca9ce2ace8596eb96.svg" alt="20230403221216-product_category_theory_c5cf9457a4d96662fdf2f79ca9ce2ace8596eb96.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(A \times B, \pi_1: A \times B \rightarrow A, \pi_2: A \times B \rightarrow B)
+\end{align*}
 <p>
-where <img src="ltximg/20230403221216-product_category_theory_def5dd484059b427d94b49c722e06e256736b18c.svg" alt="20230403221216-product_category_theory_def5dd484059b427d94b49c722e06e256736b18c.svg" class="org-svg" /> 
-and <img src="ltximg/20230403221216-product_category_theory_9bcec838694fc8c335b7ce935800fa7edeeb51be.svg" alt="20230403221216-product_category_theory_9bcec838694fc8c335b7ce935800fa7edeeb51be.svg" class="org-svg" /> such that for any <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="ltximg/20230403221216-product_category_theory_5f184d54832680178ae9462cd608af35ada32563.svg" alt="20230403221216-product_category_theory_5f184d54832680178ae9462cd608af35ada32563.svg" class="org-svg" /> and <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> <img src="ltximg/20230403221216-product_category_theory_370f064df03a99e15c131d219145371a7cfc2100.svg" alt="20230403221216-product_category_theory_370f064df03a99e15c131d219145371a7cfc2100.svg" class="org-svg" /> and <img src="ltximg/20230403221216-product_category_theory_ec493b96f5c0fe2b8558291f93875ecbfd75ef8c.svg" alt="20230403221216-product_category_theory_ec493b96f5c0fe2b8558291f93875ecbfd75ef8c.svg" class="org-svg" />, there exists a unique maq 
+where \(A \times B \in \mathrm{Ob}(\mathcal{C})\) 
+and \(\pi_1, \pi_2 \in \mathrm{Mor}(\mathcal{C})\) such that for any <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(X \in \mathrm{Ob}(\mathcal{C})\) and <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> \(f: X \rightarrow A\) and \(g: X \rightarrow B\), there exists a unique maq 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230403221216-product_category_theory_4c64d53d619db1f9feaa44bc2df772e021e0658b.svg" alt="20230403221216-product_category_theory_4c64d53d619db1f9feaa44bc2df772e021e0658b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\theta: X \rightarrow A \times B
+\end{align*}
 <p>
 such that the <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
 &lt;diagram&gt;

@@ -3,126 +3,124 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Existenz einer Lösung: Division mit Rest</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Lösung: Division mit Rest</h1>
-<div id="outline-container-orgfe87830" class="outline-2">
-<h2 id="orgfe87830"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5695759" class="outline-2">
+<h2 id="org5695759"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für alle <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_75ea180c55bd5ce5b291b62e6aa1dbc8f118b4ec.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_75ea180c55bd5ce5b291b62e6aa1dbc8f118b4ec.svg" class="org-svg" /> existieren zwei Zahlen <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c396d98860791df933a1fcd790a0ae8dabc14287.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c396d98860791df933a1fcd790a0ae8dabc14287.svg" class="org-svg" /> mit
+Für alle \(a,b \in \mathbb{Z}\) existieren zwei Zahlen \(q,r \in \mathbb{Z}\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_52142b0f4fef3e263130ff23ce1158c18f369cd0.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_52142b0f4fef3e263130ff23ce1158c18f369cd0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+a =& q \cdot b + r \\
+0 \leq r < \vert b \vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org74f0654" class="outline-2">
-<h2 id="org74f0654"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc4a5255" class="outline-2">
+<h2 id="orgc4a5255"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org09778fb" class="outline-3">
-<h3 id="org09778fb"><span class="section-number-3">2.1.</span> <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_ce5a8468e52de990f9959d9c7cc6f511966a40fe.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_ce5a8468e52de990f9959d9c7cc6f511966a40fe.svg" class="org-svg" /></h3>
+<div id="outline-container-org87b4f4a" class="outline-3">
+<h3 id="org87b4f4a"><span class="section-number-3">2.1.</span> \(b > 0\) und \(a \leq 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_ab9412a8382679c0b78e56d02672b35adff0565a.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_ab9412a8382679c0b78e56d02672b35adff0565a.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_de938ee882b657290d2626a1cdee298d6e5ae919.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_de938ee882b657290d2626a1cdee298d6e5ae919.svg" class="org-svg" />, sodass gilt
+Sei \(q_1 = 0\) und \(r_1 = a\), sodass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_19196e6082ac20521dec9aade1ba643c1efd5e7c.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_19196e6082ac20521dec9aade1ba643c1efd5e7c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+a =& b \cdot 0 + a
+\end{align*}
 <p>
-Falls <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_1e56eb0b0484ab5cd91e0c4a28002415aac07eb7.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_1e56eb0b0484ab5cd91e0c4a28002415aac07eb7.svg" class="org-svg" /> gilt, so ist die Existenz für diesen Fall bewiesen.
-Sei sonst <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_a387759702ba925483d2cded336d575b07c9b44d.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_a387759702ba925483d2cded336d575b07c9b44d.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_9e01c55425a77c7ef749033b269bed4e821b92a3.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_9e01c55425a77c7ef749033b269bed4e821b92a3.svg" class="org-svg" />, so gilt
+Falls \(r_1 < b\) gilt, so ist die Existenz für diesen Fall bewiesen.
+Sei sonst \(q_2 = q_1 + 1\) und \(r_2 = r_1 - b\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c7b4143167e09eec43cb10de7a2879d102ecec60.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c7b4143167e09eec43cb10de7a2879d102ecec60.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+a =& (q_1 + 1) \cdot b + r_1 - b \\
+=& q_1 \cdot b + r_1
+=& a
+\end{align*}
 <p>
-Da <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" class="org-svg" /> gilt, ist auch <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_b278b053eaeac12eb8b51375e671eedcd26fd54a.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_b278b053eaeac12eb8b51375e671eedcd26fd54a.svg" class="org-svg" />
+Da \(b > 0\) gilt, ist auch \(q_1 - b = q_2 < q_1\)
 </p>
 </div>
 </div>
 
 
 
-<div id="outline-container-orgd6188e4" class="outline-3">
-<h3 id="orgd6188e4"><span class="section-number-3">2.2.</span> <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_717dcb8b169cdcd5b64fe2b69d73952d9566c7f4.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_717dcb8b169cdcd5b64fe2b69d73952d9566c7f4.svg" class="org-svg" /></h3>
+<div id="outline-container-orgff8ffce" class="outline-3">
+<h3 id="orgff8ffce"><span class="section-number-3">2.2.</span> \(b < 0\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_2a00f31b2833f1ed6a56f033cd918be84282fa6f.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_2a00f31b2833f1ed6a56f033cd918be84282fa6f.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_bde6f514f668adf67debb2202265e0953f33ff36.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_bde6f514f668adf67debb2202265e0953f33ff36.svg" class="org-svg" />.
-Dann lässt sich der Fall <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_717dcb8b169cdcd5b64fe2b69d73952d9566c7f4.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_717dcb8b169cdcd5b64fe2b69d73952d9566c7f4.svg" class="org-svg" /> auf <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" class="org-svg" /> zurückführen mit der Ungleichung
+Sei \(b' =& -b\) und \(f' =& -q\).
+Dann lässt sich der Fall \(b < 0\) auf \(b > 0\) zurückführen mit der Ungleichung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_99ae96e4debdae2a567aa1dae3fd7ebd8e0ef462.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_99ae96e4debdae2a567aa1dae3fd7ebd8e0ef462.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+0 \leq r < \vert b' \vert
+\end{align*}
 <p>
-auf <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_0017c271d70d6bf44db1955b6d167fe16514a148.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_0017c271d70d6bf44db1955b6d167fe16514a148.svg" class="org-svg" />
+auf \(a =& q'b' + r\)
 </p>
 </div>
 </div>
 
 
 
-<div id="outline-container-org05525b9" class="outline-3">
-<h3 id="org05525b9"><span class="section-number-3">2.3.</span> <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_5e77cd42abbb09fe77596c6d041f8b752afa3724.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_5e77cd42abbb09fe77596c6d041f8b752afa3724.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c317baf8a4b69d8baef54908e4c6bf07a9d29122.svg" class="org-svg" /></h3>
+<div id="outline-container-orgc81e5e8" class="outline-3">
+<h3 id="orgc81e5e8"><span class="section-number-3">2.3.</span> \(a < 0\) und \(b > 0\)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_069401d892e7b6cd97cbe1fef3b0476a289415a9.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_069401d892e7b6cd97cbe1fef3b0476a289415a9.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_6267a5bf7dff551f81969be7e44f6284f88f2594.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_6267a5bf7dff551f81969be7e44f6284f88f2594.svg" class="org-svg" /> und <img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_3e95672c684374e973c82c5b4ebc39e7a3231da0.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_3e95672c684374e973c82c5b4ebc39e7a3231da0.svg" class="org-svg" />.
+Sei \(a' = -a\) und \(q' = -q -1\) und \(r' = b - r\).
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_6969ecf0e05070c60afacfcfb4db3a43c3d9b43d.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_6969ecf0e05070c60afacfcfb4db3a43c3d9b43d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+bq' + r' =& -bq - b + b - r \\
+=& -bq - r \\
+=& -(b \cdot q + r) \\
+=& -a \\
+=& a'
+\end{align*}
 
 <p>
 mit der Ungleichung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220921093510-existenz_einer_losung_division_mit_rest_c83ef8b468b39418003e30d0bed4a3d936406a0f.svg" alt="20220921093510-existenz_einer_losung_division_mit_rest_c83ef8b468b39418003e30d0bed4a3d936406a0f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+0 \leq r' < \vert b\vert
+\end{align*}
 <p>
 Somit ist dieser Fall wieder auf den ersten zurückgeführt worden
 </p>

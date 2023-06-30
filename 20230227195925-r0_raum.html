@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Symmetrischer Raum (Topologie)</h1>
-<div id="outline-container-org53b7757" class="outline-2">
-<h2 id="org53b7757"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1804001" class="outline-2">
+<h2 id="org1804001"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227195925-r0_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230227195925-r0_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
-<img src="file:///home/anton/html/ltximg/20230227195925-r0_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230227195925-r0_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist ein symmetrischer Raum, falls für zwei <a href="20230320211013-topologisch_unterscheidbare_punkte.html#ID-c203e63d-59c8-4a4a-8966-95f9f66718fe">topologisch unterscheidbare Punkte</a> <img src="file:///home/anton/html/ltximg/20230227195925-r0_raum_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" alt="20230227195925-r0_raum_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" class="org-svg" /> gilt:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+\(X\) ist ein symmetrischer Raum, falls für zwei <a href="20230320211013-topologisch_unterscheidbare_punkte.html#ID-c203e63d-59c8-4a4a-8966-95f9f66718fe">topologisch unterscheidbare Punkte</a> \(x,y \in X\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227195925-r0_raum_205626e6447f59076606a7d819e26366c07e2a9f.svg" alt="20230227195925-r0_raum_205626e6447f59076606a7d819e26366c07e2a9f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+y \not \in& \overline{ \{x\}}  \\
+x \not \in& \overline{ \{y\}} 
+\end{align*}
 </div>
 </div>
 </div>

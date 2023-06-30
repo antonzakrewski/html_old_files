@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Darstellung eines Elements der Alternierenden Gruppe als Produkt von 3-Zykeln</h1>
-<div id="outline-container-org0303501" class="outline-2">
-<h2 id="org0303501"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga15b6dc" class="outline-2">
+<h2 id="orga15b6dc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_dda898ae99ea1c012eca182db39e6f89994815c4.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_dda898ae99ea1c012eca182db39e6f89994815c4.svg" class="org-svg" /> die <a href="20221225141902-alternieredne_gruppe.html#ID-d4aeb80b-33a1-4ae6-a923-8437f50d7cf3">Alternierende Gruppe</a>, so existiert für ein <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_34443dc7548fa74b503868bd3f0dda17c16c705f.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_34443dc7548fa74b503868bd3f0dda17c16c705f.svg" class="org-svg" /> eine Darstellung als Produkt von <a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">3-Zykeln</a> 
+Sei \(A_n\) die <a href="20221225141902-alternieredne_gruppe.html#ID-d4aeb80b-33a1-4ae6-a923-8437f50d7cf3">Alternierende Gruppe</a>, so existiert für ein \(\sigma \in A_n\) eine Darstellung als Produkt von <a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">3-Zykeln</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org5111d95" class="outline-2">
-<h2 id="org5111d95"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc0d42fb" class="outline-2">
+<h2 id="orgc0d42fb"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20221225215136-lemma_uber_die_darstellung_einer_permutation_als_produkt_von_disjunkten_zyklen.html#ID-94a14829-f81e-45c2-b45f-4da5cd42a605">Darstellung einer Permutation als Produkt von disjunkten Zyklen</a> und dem <a href="20221210210026-vorzeichen_einer_permutation.html#ID-481881eb-a9d5-4dbf-973a-d80d2ec89986">Vorzeichen einer Permutation</a> gilt:
@@ -32,35 +57,29 @@ Nach der <a href="20221225215136-lemma_uber_die_darstellung_einer_permutation_al
 <li>Es existieren gerade viele $2k$-<a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">Zykel</a></li>
 </ul>
 </div>
-<div id="outline-container-org388057d" class="outline-3">
-<h3 id="org388057d"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org82904ff" class="outline-3">
+<h3 id="org82904ff"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_b9df4d97d8164b3b0b3a9a1aba48d298878d8699.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_b9df4d97d8164b3b0b3a9a1aba48d298878d8699.svg" class="org-svg" /> ein $2k-1$-Zykel, so gilt für <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_8fbbf09290c691462e1acfbd2fa1ed1b4d97c2b0.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_8fbbf09290c691462e1acfbd2fa1ed1b4d97c2b0.svg" class="org-svg" />, d.h. man kann einen beliebigen <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_8ff9ef5f16a5b7552326aad495849627fd7c3d2e.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_8ff9ef5f16a5b7552326aad495849627fd7c3d2e.svg" class="org-svg" /> Zykel erzeugen
+Sei \((1,2,...,2k-1)\) ein $2k-1$-Zykel, so gilt für \((1,2k,2k+1) \circ (1,...,2k-1) = (1,2,...,2k+1)\), d.h. man kann einen beliebigen \(2k+1\) Zykel erzeugen
 </p>
 </div>
 </div>
-<div id="outline-container-orgaffe3d6" class="outline-3">
-<h3 id="orgaffe3d6"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org88459d5" class="outline-3">
+<h3 id="org88459d5"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_a1990fce0a57a3cae0e17118427ae9c9859b518c.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_a1990fce0a57a3cae0e17118427ae9c9859b518c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_d0dd9ed9c5fd50755e0cf20b6ff74734872ca76a.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_d0dd9ed9c5fd50755e0cf20b6ff74734872ca76a.svg" class="org-svg" /> zwei $2$-Zykel, so gilt:
+Seien \((1,2)\) und \((3,4)\) zwei $2$-Zykel, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_5f75e5ad6e06957a572dc4d786dd8059d5c635e5.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_5f75e5ad6e06957a572dc4d786dd8059d5c635e5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(1,2,3) \circ (2,3,4) =& (1,2) \circ (3,4)
+\end{align*}
 <p>
-Analog zur a) lässt sich auch ein $2k$-Zykel zu einem <img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_3f387cb6f958d5466f8ef88d939aaae29832334d.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_3f387cb6f958d5466f8ef88d939aaae29832334d.svg" class="org-svg" /> zykel erweitern:
+Analog zur a) lässt sich auch ein $2k$-Zykel zu einem \(2k + 2\) zykel erweitern:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_7826d8ff4eb026fbff69ac9d1ce0297d37adb1a3.svg" alt="20230127192715-darstellung_eines_elements_der_alternierenden_gruppe_als_produkt_von_3_zykeln_7826d8ff4eb026fbff69ac9d1ce0297d37adb1a3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(1,2k+1,2k+2) \circ (1,2,...,2k) = (1,...,2k+2)
+\end{align*}
 </div>
 </div>
 </div>

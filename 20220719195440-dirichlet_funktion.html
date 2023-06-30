@@ -9,19 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dirichlet-Funktion</h1>
-<div id="outline-container-org0c3abdc" class="outline-2">
-<h2 id="org0c3abdc"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org77b9052" class="outline-2">
+<h2 id="org77b9052"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220719195440-dirichlet_funktion_989018685e67891b1665c7033d1ff15616df8bb2.svg" alt="20220719195440-dirichlet_funktion_989018685e67891b1665c7033d1ff15616df8bb2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+D: \mathbb{R} \rightarrow& \mathbb{R} \\
+x \mapsto& D(x) = \begin{cases}
+1 & \mbox{if } x \in \mathbb{Q} \\
+0 & \mbox{if } x \not\in \mathbb{Q} \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
 </div>

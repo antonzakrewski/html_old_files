@@ -9,63 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Darstellung der dualen Abbildung</h1>
-<div id="outline-container-org3eaf6ce" class="outline-2">
-<h2 id="org3eaf6ce"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd041631" class="outline-2">
+<h2 id="orgd041631"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20230130155107-darstellung_der_dualen_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a>, <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_be3b3918b2ae2f6353f27bde8f7b0cf8cf61152f.svg" alt="20230130155107-darstellung_der_dualen_abbildung_be3b3918b2ae2f6353f27bde8f7b0cf8cf61152f.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230130155107-darstellung_der_dualen_abbildung_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_3f0462d360ffc3fd0fad80944bf0d08fa87a0a20.svg" alt="20230130155107-darstellung_der_dualen_abbildung_3f0462d360ffc3fd0fad80944bf0d08fa87a0a20.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_a76a8e403307daffa4b81d557d1113d7fdbf04ca.svg" alt="20230130155107-darstellung_der_dualen_abbildung_a76a8e403307daffa4b81d557d1113d7fdbf04ca.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_145019d8b18bf2e6f420ebd0d06e79ca0b9c58c5.svg" alt="20230130155107-darstellung_der_dualen_abbildung_145019d8b18bf2e6f420ebd0d06e79ca0b9c58c5.svg" class="org-svg" /> mit
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a>, \(\{v_1,...,v_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\) und \(\{w_1,...,w_m\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(W\) und \(A \in \mathrm{Hom}_K(V,W)\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_9a36f606b38d9bdeb370c581c420c73183fa6872.svg" alt="20230130155107-darstellung_der_dualen_abbildung_9a36f606b38d9bdeb370c581c420c73183fa6872.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A v_i = \sum_{j=1}^{m} \alpha_{ji} w_j
+\end{align*}
 <p>
-Seien die zugehörigen <a href="20230130155449-duale_basis.html#ID-60195b87-8c69-430a-a8b8-e4bd1da17e5f">dualen Basen</a> <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_af038d7486de79c838af2d570edcfd0494c77183.svg" alt="20230130155107-darstellung_der_dualen_abbildung_af038d7486de79c838af2d570edcfd0494c77183.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_f22897aed844571b3660fe7d0f6865f279bfc05a.svg" alt="20230130155107-darstellung_der_dualen_abbildung_f22897aed844571b3660fe7d0f6865f279bfc05a.svg" class="org-svg" /> gegeben, so gilt für die <a href="20221226141352-duale_abbildung.html#ID-ddb149e9-6d01-4575-b4f2-e7d1dd2a68b1">duale Abbildung</a> <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20230130155107-darstellung_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" />
+Seien die zugehörigen <a href="20230130155449-duale_basis.html#ID-60195b87-8c69-430a-a8b8-e4bd1da17e5f">dualen Basen</a> \(\{f_1,...,f_n\}\) bzw. \(\{g_1,...,g_m\}\) gegeben, so gilt für die <a href="20221226141352-duale_abbildung.html#ID-ddb149e9-6d01-4575-b4f2-e7d1dd2a68b1">duale Abbildung</a> \(A^*\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_878f5e68d6a380785ecf2874517c9d321ec94c31.svg" alt="20230130155107-darstellung_der_dualen_abbildung_878f5e68d6a380785ecf2874517c9d321ec94c31.svg" class="org-svg" />
-</span>
+\begin{align*}
+A^* g_j = \sum_{i=1}^{n} \alpha_{ji} f_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc18d846" class="outline-2">
-<h2 id="orgc18d846"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaf6f2ed" class="outline-2">
+<h2 id="orgaf6f2ed"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach Definiton der <a href="20221226141352-duale_abbildung.html#ID-ddb149e9-6d01-4575-b4f2-e7d1dd2a68b1">dualen Abbildung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_39057c33df1413e3842398a8d7ccb229e4062d8a.svg" alt="20230130155107-darstellung_der_dualen_abbildung_39057c33df1413e3842398a8d7ccb229e4062d8a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(A^*g_j)(v_k) =& g_j(A(v_k)) \\
+=& g_j(\sum_{l=1}^{m} \alpha_{lk}w_l) \\
+=& \sum_{l=1}^{m} \alpha_{lk}(g_j(w_l))
+\end{align*}
 <p>
-Nach Defintion gilt <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_2137f9fc0705684be1fc104840a909896c09200b.svg" alt="20230130155107-darstellung_der_dualen_abbildung_2137f9fc0705684be1fc104840a909896c09200b.svg" class="org-svg" /> und damit lässt sich der Ausdruck vereinfachen zu
+Nach Defintion gilt \(g_j(w_l) = \delta_{jl}\) und damit lässt sich der Ausdruck vereinfachen zu
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_effa4263a1dc9062da961fc20284108d43e6908a.svg" alt="20230130155107-darstellung_der_dualen_abbildung_effa4263a1dc9062da961fc20284108d43e6908a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(A^*g_j)(v_k) =& \sum_{l=1}^{m} \alpha_{lk}(g_j(w_l)) \\
+=& \alpha_{jk}
+\end{align*}
 <p>
-Analog gilt <img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_05094a858c3bd29e500096c969495f2e499ba41a.svg" alt="20230130155107-darstellung_der_dualen_abbildung_05094a858c3bd29e500096c969495f2e499ba41a.svg" class="org-svg" /> und damit gilt:
+Analog gilt \(f_i(v_k) = \delta_{ik}\) und damit gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230130155107-darstellung_der_dualen_abbildung_da01303c7757750bd00aa2b8e2f4a0958ce9ab2f.svg" alt="20230130155107-darstellung_der_dualen_abbildung_da01303c7757750bd00aa2b8e2f4a0958ce9ab2f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(A^*g_j)(v_k) =& \alpha_{jk} \\
+=& \left(\sum_{i=1}^{n} \alpha_{ji}f_i \right)(v_k) 
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Covering</h1>
-<div id="outline-container-orga62ec7c" class="outline-2">
-<h2 id="orga62ec7c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgee8b7cc" class="outline-2">
+<h2 id="orgee8b7cc"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230227163531-uberdeckung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und sei <img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" alt="20230227163531-uberdeckung_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-Eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> <img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_11da1540e5c40bf57a2561c69ec61e631507beb0.svg" alt="20230227163531-uberdeckung_11da1540e5c40bf57a2561c69ec61e631507beb0.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_5c44323979e1c8395ce776534a8687ded03384a3.svg" alt="20230227163531-uberdeckung_5c44323979e1c8395ce776534a8687ded03384a3.svg" class="org-svg" /> heißt Überdeckung von <img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230227163531-uberdeckung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />, wenn gilt:
+Sei \(X\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und sei \(M \subseteq X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> \((U_i){i \in I}\) \(U_i \subseteq \mathbb{R}\) heißt Überdeckung von \(M\), wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227163531-uberdeckung_bc03cd977c8f0800e36fad025317b7c9ad59ba4b.svg" alt="20230227163531-uberdeckung_bc03cd977c8f0800e36fad025317b7c9ad59ba4b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M \subseteq \bigcup_{i \in I} U_i
+\end{align*}
 </div>
 </div>
 </div>

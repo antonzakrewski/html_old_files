@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Produktregel für Skalarprodukt</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produktregel für Skalarprodukt</h1>
-<div id="outline-container-orgbb71f39" class="outline-2">
-<h2 id="orgbb71f39"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0cabcc9" class="outline-2">
+<h2 id="org0cabcc9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221115071252-produktregel_fur_skalarprodukt_a1907ea73cb36ef1777949558cc787ce85bb42fc.svg" alt="20221115071252-produktregel_fur_skalarprodukt_a1907ea73cb36ef1777949558cc787ce85bb42fc.svg" class="org-svg" /> und <img src="ltximg/20221115071252-produktregel_fur_skalarprodukt_90bd36ef105f88e85a67fbcaa71fe74b85110758.svg" alt="20221115071252-produktregel_fur_skalarprodukt_90bd36ef105f88e85a67fbcaa71fe74b85110758.svg" class="org-svg" />
+Seien \(\vec{a}(t),\vec{b}(t) : \mathbb{R} \rightarrow \mathbb{R}^n\) und \(s(t): \mathbb{R} \rightarrow \mathbb{R}\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221115071252-produktregel_fur_skalarprodukt_fb00c228c1e660ab50314335d2c8bd90412df057.svg" alt="20221115071252-produktregel_fur_skalarprodukt_fb00c228c1e660ab50314335d2c8bd90412df057.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\left(\frac{\mathrm{d}}{\mathrm{d}t} \vec{b}(t) \cdot \vec{a}(t)\right) =& \vec{b}(t) \cdot \frac{\mathrm{d}}{\mathrm{d}t} \vec{a}(t) + \vec{a}(t) \cdot \frac{\mathrm{d}}{\mathrm{d}t} \vec{b}(t)
+\end{align*}
 </div>
 </div>
 </div>

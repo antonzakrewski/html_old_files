@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gleichheit von Zeilen- und Spaltenrang</h1>
-<div id="outline-container-org1662f1b" class="outline-2">
-<h2 id="org1662f1b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org03da5cd" class="outline-2">
+<h2 id="org03da5cd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" alt="20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" class="org-svg" />  eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>, so folgt für den <a href="20221129184813-zeilenrang.html#ID-63fb6cb1-eb36-452e-8c8d-e7cdada5bff0">Zeilenrang</a> <img src="file:///home/anton/html/ltximg/20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_64d6bc5139ec83f921569f05c03cba09ba84b626.svg" alt="20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_64d6bc5139ec83f921569f05c03cba09ba84b626.svg" class="org-svg" /> bzw. <a href="20221129184819-spaltenrang.html#ID-dbd5b521-7d5a-46c2-a46c-388f07e824df">Spaltenrang</a> <img src="file:///home/anton/html/ltximg/20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_eea9eaaf0f7abdec963a6786f7d26d713d9b1023.svg" alt="20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_eea9eaaf0f7abdec963a6786f7d26d713d9b1023.svg" class="org-svg" />
+Sei \(A \in K^{m \times n}\)  eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>, so folgt für den <a href="20221129184813-zeilenrang.html#ID-63fb6cb1-eb36-452e-8c8d-e7cdada5bff0">Zeilenrang</a> \(r_z(A)\) bzw. <a href="20221129184819-spaltenrang.html#ID-dbd5b521-7d5a-46c2-a46c-388f07e824df">Spaltenrang</a> \(r_s(A)\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_71bd9742f8e39d90b950d0a721f948f9c579c99c.svg" alt="20221208191106-satz_uber_die_gleichheit_von_zeilen_und_spaltenrang_71bd9742f8e39d90b950d0a721f948f9c579c99c.svg" class="org-svg" />
-</span>
+\begin{align*}
+r_s(A) = r_z(A) \leq \mathrm{min}(m,n)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4de8f0f" class="outline-2">
-<h2 id="org4de8f0f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgccf8bff" class="outline-2">
+<h2 id="orgccf8bff"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

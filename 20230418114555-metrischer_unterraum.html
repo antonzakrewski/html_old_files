@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Metrischer Unterraum</h1>
-<div id="outline-container-org6ce66be" class="outline-2">
-<h2 id="org6ce66be"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org315beb0" class="outline-2">
+<h2 id="org315beb0"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230418114555-metrischer_unterraum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230418114555-metrischer_unterraum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230418114555-metrischer_unterraum_43a07a62b77346b72d793523c5de964fbeb73518.svg" alt="20230418114555-metrischer_unterraum_43a07a62b77346b72d793523c5de964fbeb73518.svg" class="org-svg" />.
-Dann ist der metrische Unterraum für <img src="file:///home/anton/html/ltximg/20230418114555-metrischer_unterraum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230418114555-metrischer_unterraum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> definiert <img src="file:///home/anton/html/ltximg/20230418114555-metrischer_unterraum_d6af447cfdb3330429b4ac66642bf2faed4b089e.svg" alt="20230418114555-metrischer_unterraum_d6af447cfdb3330429b4ac66642bf2faed4b089e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230418114555-metrischer_unterraum_285a75531d57bf5ce306bc227b1f2a986ad812aa.svg" alt="20230418114555-metrischer_unterraum_285a75531d57bf5ce306bc227b1f2a986ad812aa.svg" class="org-svg" />
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(U \subesteq M\).
+Dann ist der metrische Unterraum für \(U\) definiert \((U,d_{U})\) mit \(d_U  \coloneqq d_{\vert U \times U}\)
 siehe: <a href="20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik.html#ID-276ff8ad-9e36-4653-b0be-258d8f6cab9c">von einer Metrik auf eine Teilmenge induzierte Metrik</a>
 </p>
 </div>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kern und adjungierte Abbildung</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Kern und adjungierte Abbildung</h1>
+<div id="outline-container-org23fe2ab" class="outline-2">
+<h2 id="org23fe2ab"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(V\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(A \in \mathrm{End}_{}(V)\) sowie \(A^*\) die <a href="20230623-adjungierte_abbildung.html#ID-056e5a29-654d-4425-9266-70839a36a082">Adjungierte Abbildung</a>.
+Dann gilt für den <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> 
+</p>
+\begin{align*}
+\mathrm{ker}(A) = \mathrm{ker}(A^*)
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org1dc26ec" class="outline-2">
+<h2 id="org1dc26ec"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org152f377" class="outline-3">
+<h3 id="org152f377"><span class="section-number-3">2.1.</span> a)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sei die Restriktion von \(A_{\mathrm{ker}(A)}\) gegeben, so gilt für beliebiges \(v \in \mathrm{ker}(A)\) 
+</p>
+\begin{align*}
+(Av,v') = 0 \forall v',v \in \mathrm{ker}(A)
+\end{align*}
+<p>
+Nach Annahme folgt
+</p>
+\begin{align*}
+(v,Av') = 0 \forall v,v' \in \mathrm{ker}(A)
+\end{align*}
+<p>
+Damit folgt nach dem <a href="20230624-skalarprodukt_und_nulleintrag.html#ID-5019b9bd-6c4e-4eb8-9858-4b9bc161ae41">Skalarprodukt und Nulleintrag</a> auch \(Av' = 0 \forall v' \in \mathrm{ker}(A)\)
+Damit gilt \(\mathrm{ker}(A) \subseteq \mathrm{ker}(A^*)\)
+</p>
+</div>
+</div>
+<div id="outline-container-org6a710c9" class="outline-3">
+<h3 id="org6a710c9"><span class="section-number-3">2.2.</span> b)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+folgt aus dem <a href="20230628-adjungierte_abbildung_als_involution.html#ID-bb1338b8-26ac-451f-9303-dffb383e1bf9">Adjungieren einer Abbildung als Involution</a> und dem analogen Argument für \(A^*\)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">durchschnittsstabiles Mengensystem</h1>
-<div id="outline-container-orgd5cd90a" class="outline-2">
-<h2 id="orgd5cd90a"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbc3bf75" class="outline-2">
+<h2 id="orgbc3bf75"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Gegeben sei ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a> <img src="file:///home/anton/html/ltximg/20220903220209-durchschnittsstabiles_mengensystem_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" alt="20220903220209-durchschnittsstabiles_mengensystem_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" class="org-svg" />.
-<img src="file:///home/anton/html/ltximg/20220903220209-durchschnittsstabiles_mengensystem_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" alt="20220903220209-durchschnittsstabiles_mengensystem_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" class="org-svg" /> ist ein durchschnittstabiles Mengensystem oder $&pi;$-System, wenn für zwei beliebige <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20220903220209-durchschnittsstabiles_mengensystem_6b7d311ddf0d22dbbe13ce9b179ed6cd92237e5b.svg" alt="20220903220209-durchschnittsstabiles_mengensystem_6b7d311ddf0d22dbbe13ce9b179ed6cd92237e5b.svg" class="org-svg" /> gilt, dass <img src="file:///home/anton/html/ltximg/20220903220209-durchschnittsstabiles_mengensystem_197cd352ed7f0abcb3e3f64d0bc5ea7b75e33e22.svg" alt="20220903220209-durchschnittsstabiles_mengensystem_197cd352ed7f0abcb3e3f64d0bc5ea7b75e33e22.svg" class="org-svg" />
+Gegeben sei ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a> \(\mathcal{S}\).
+\(\mathcal{S}\) ist ein durchschnittstabiles Mengensystem oder $&pi;$-System, wenn für zwei beliebige <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(A,B \in \mathcal{S}\) gilt, dass \(A \cap B \in \mathcal{S}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220903220209-durchschnittsstabiles_mengensystem_dfc59c96cab1dc2c9a6a2971c97602f53d51ba1b.svg" alt="20220903220209-durchschnittsstabiles_mengensystem_dfc59c96cab1dc2c9a6a2971c97602f53d51ba1b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall A,B \in \mathcal{S}( A \cap B \in \mathcal{S})
+\end{align*}
 </div>
 </div>
 </div>

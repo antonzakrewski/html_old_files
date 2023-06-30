@@ -9,21 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beschränktheit einer kompakten Menge</h1>
-<div id="outline-container-org1747f3e" class="outline-2">
-<h2 id="org1747f3e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7844ec3" class="outline-2">
+<h2 id="org7844ec3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20230114151007-kompakter_raum.html#ID-0546903d-8514-4cc9-8a8c-6fb2011f98d4">kompakter</a>, <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">beschränkt</a> 
+Sei \(M\) ein <a href="20230114151007-kompakter_raum.html#ID-0546903d-8514-4cc9-8a8c-6fb2011f98d4">kompakter</a>, <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Dann ist \(M\) <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">beschränkt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org5c51ec8" class="outline-2">
-<h2 id="org5c51ec8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfe8da0b" class="outline-2">
+<h2 id="orgfe8da0b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus den Aussagen:
@@ -34,13 +61,13 @@ folgt aus den Aussagen:
 </ul>
 </div>
 </div>
-<div id="outline-container-org629cc56" class="outline-2">
-<h2 id="org629cc56"><span class="section-number-2">3.</span> Alternativ</h2>
+<div id="outline-container-org9b9a5d4" class="outline-2">
+<h2 id="org9b9a5d4"><span class="section-number-2">3.</span> Alternativ</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> beliebig, dann ist <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_e8f6206b139c1a1a3a4c60a12cb58aa9f88fae54.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_e8f6206b139c1a1a3a4c60a12cb58aa9f88fae54.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> (vgl. <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedische Axiom</a>).
-Nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>, d.h. ein maximales <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" />.
-Damit folgt dann <img src="file:///home/anton/html/ltximg/20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7f242e0be25aeb0db45a9b9c05d267f6337bec2f.svg" alt="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum_7f242e0be25aeb0db45a9b9c05d267f6337bec2f.svg" class="org-svg" />
+Sei \(m \in M\) beliebig, dann ist \(\bigcup_{\varepsilon \in \mathbb{N}} U_{\varepsilon}(m)\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> (vgl. <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedische Axiom</a>).
+Nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>, d.h. ein maximales \(n \in \mathbb{N}\).
+Damit folgt dann \(d(x_1,x_2) \leq d(x_1,m) + d(x_2,m) \leq 2n\)
 </p>
 </div>
 </div>

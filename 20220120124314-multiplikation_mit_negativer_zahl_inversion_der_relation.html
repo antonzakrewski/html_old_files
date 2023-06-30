@@ -9,34 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation mit negativer Zahl - Inversion der Anordnung</h1>
-<div id="outline-container-org5692679" class="outline-2">
-<h2 id="org5692679"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3f981e3" class="outline-2">
+<h2 id="org3f981e3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120124314-multiplikation_mit_negativer_zahl_inversion_der_relation_43e1f11df618691b5891ada378576a244afe4e84.svg" alt="20220120124314-multiplikation_mit_negativer_zahl_inversion_der_relation_43e1f11df618691b5891ada378576a244afe4e84.svg" class="org-svg" />
-</span>
+\begin{align*}
+x < y \land a < 0 \Rightarrow ax > ay
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org48a2956" class="outline-2">
-<h2 id="org48a2956"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1cadb94" class="outline-2">
+<h2 id="org1cadb94"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220120123816-spiegelung_relationen.html#ID-04174cdc-371a-4bc8-a919-5db8b95a14ab">Spiegelung (Relationen)</a> (2x)</li>
 <li><a href="20220106143137-abgeschlossenheit_gegenuber_multiplikation.html#ID-e1471b8d-2c8a-433e-acf5-a9ce4799f161">Abgeschlossenheit gegenüber Multiplikation (Axiom)</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120124314-multiplikation_mit_negativer_zahl_inversion_der_relation_82fe26d3c2b3eba1025dfa71b8f5f0d4e7f9bc41.svg" alt="20220120124314-multiplikation_mit_negativer_zahl_inversion_der_relation_82fe26d3c2b3eba1025dfa71b8f5f0d4e7f9bc41.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+-a > 0 \\
+-ax < -ay \\
+(-ay) - (-ax) > 0 \\
+ax - ay > 0 \\
+ax > ay
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

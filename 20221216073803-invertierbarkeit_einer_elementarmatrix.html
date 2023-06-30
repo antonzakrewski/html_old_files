@@ -3,36 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Invertierbarkeit einer Elementarmatrix</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Invertierbarkeit einer Elementarmatrix</h1>
-<div id="outline-container-org6e8819f" class="outline-2">
-<h2 id="org6e8819f"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org41fad70" class="outline-2">
+<h2 id="org41fad70"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221216073803-invertierbarkeit_einer_elementarmatrix_092399d3388dedc7f5b0a2e8f04001da3ed2dc19.svg" alt="20221216073803-invertierbarkeit_einer_elementarmatrix_092399d3388dedc7f5b0a2e8f04001da3ed2dc19.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
-Dann gilt für <img src="ltximg/20221216073803-invertierbarkeit_einer_elementarmatrix_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" alt="20221216073803-invertierbarkeit_einer_elementarmatrix_a1fe19d289b22e7a66248657990cf47e7e9688a6.svg" class="org-svg" /> und die <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrizen</a> <img src="ltximg/20221216073803-invertierbarkeit_einer_elementarmatrix_79812f62ec6918163064f8b3eabe559c40a911d0.svg" alt="20221216073803-invertierbarkeit_einer_elementarmatrix_79812f62ec6918163064f8b3eabe559c40a911d0.svg" class="org-svg" />
+Sei \(K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
+Dann gilt für \(\alpha \in K\) und die <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrizen</a> \(T_{ij}(\alpha), T_{ij}(-\alpha)\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221216073803-invertierbarkeit_einer_elementarmatrix_3cd022973ce4b70deb72ba8ae08ca182aa5731d6.svg" alt="20221216073803-invertierbarkeit_einer_elementarmatrix_3cd022973ce4b70deb72ba8ae08ca182aa5731d6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+T_{ij}(\alpha) \cdot T_{ij}(-\alpha) =& E_n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga405f10" class="outline-2">
-<h2 id="orga405f10"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3aa7e55" class="outline-2">
+<h2 id="org3aa7e55"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Spezialfall der <a href="20221216073815-komposition_von_elementarmatrizen.html#ID-4a4ad3b1-cf05-44f2-8081-dd1602b8bd31">Komposition von Elementarmatrizen</a> 

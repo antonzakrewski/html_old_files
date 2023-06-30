@@ -9,21 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">starke Markoveigenschaft</h1>
-<div id="outline-container-orgfcb3d2f" class="outline-2">
-<h2 id="orgfcb3d2f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgaea2010" class="outline-2">
+<h2 id="orgaea2010"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220907093111-starke_markoveigenschaft_abf2b49d6ca63a895ae0201f3c2ab376c85087cb.svg" alt="20220907093111-starke_markoveigenschaft_abf2b49d6ca63a895ae0201f3c2ab376c85087cb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+E[ \mathbbm{1}_{T<\infty} \cdot F(X) \cdot (G \circ \theta_T)(X) \vert X_0 = x] =& \\
+E[ \mathbbm{1}_{T < \infty} \cdot F(X) \cdot E [ G(X') \vert X_0' = X_T] \vert X_0 = x]
+\end{align*}
 <p>
-wobei <img src="file:///home/anton/html/ltximg/20220907093111-starke_markoveigenschaft_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20220907093111-starke_markoveigenschaft_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /> eine unabhängige Kopie von X ist
+wobei \(X'\) eine unabhängige Kopie von X ist
 </p>
 </div>
 </div>

@@ -3,33 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dedekindsche Schnittaxiom</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dedekindsche Schnittaxiom</h1>
-<div id="outline-container-orgbd0b981" class="outline-2">
-<h2 id="orgbd0b981"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org485b344" class="outline-2">
+<h2 id="org485b344"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230517212404-dedekindsche_schnittaxiom_e0ae8b677467dc0adccdf2016b95df8d9e85f507.svg" alt="20230517212404-dedekindsche_schnittaxiom_e0ae8b677467dc0adccdf2016b95df8d9e85f507.svg" class="org-svg" /> eine <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">totalgeordnete</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-Dann erfüllt <img src="ltximg/20230517212404-dedekindsche_schnittaxiom_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230517212404-dedekindsche_schnittaxiom_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> das Schnittaxiom, falls für eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">Partition</a> <img src="ltximg/20230517212404-dedekindsche_schnittaxiom_a8b6b3171a4ceb11c756ec3c84da05f25c2aa947.svg" alt="20230517212404-dedekindsche_schnittaxiom_a8b6b3171a4ceb11c756ec3c84da05f25c2aa947.svg" class="org-svg" /> mit <img src="ltximg/20230517212404-dedekindsche_schnittaxiom_e3a023c11f19bd31d089aee51c8349a8af8007f3.svg" alt="20230517212404-dedekindsche_schnittaxiom_e3a023c11f19bd31d089aee51c8349a8af8007f3.svg" class="org-svg" /> (siehe: <a href="20230518104626-vergleich_von_mengen.html#ID-fb96e575-caa0-4771-bf7e-61107246a558">Vergleich von Mengen</a>) ein 
+Sei \((X,<)\) eine <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">totalgeordnete</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Dann erfüllt \(X\) das Schnittaxiom, falls für eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">Partition</a> \(A \sqcup B\) mit \(A < B\) (siehe: <a href="20230518104626-vergleich_von_mengen.html#ID-fb96e575-caa0-4771-bf7e-61107246a558">Vergleich von Mengen</a>) ein 
 Falls für das <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a> und <a href="20220718133120-infimum.html#ID-46cb173e-d119-4d6f-82b5-f27511bb0081">Infimum</a>, welche jeweils Existieren, gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230517212404-dedekindsche_schnittaxiom_cb0f89caaed2daf3e4250c8d6a6aa157ff2704e1.svg" alt="20230517212404-dedekindsche_schnittaxiom_cb0f89caaed2daf3e4250c8d6a6aa157ff2704e1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\sup A = \inf B
+\end{align*}
 </div>
 </div>
 </div>

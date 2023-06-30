@@ -9,69 +9,92 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Faktorring als Ring</h1>
-<div id="outline-container-orge98fb82" class="outline-2">
-<h2 id="orge98fb82"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7833c14" class="outline-2">
+<h2 id="org7833c14"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226124933-faktorring_als_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
-Dann folgt, dass <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_2ccd6a1b4a309448de5b98e4b9d887b923e47b51.svg" alt="20221226124933-faktorring_als_ring_2ccd6a1b4a309448de5b98e4b9d887b923e47b51.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> ist bezüglich folgender Operationen:
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(I\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
+Dann folgt, dass \(R / I\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> ist bezüglich folgender Operationen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_84c3d1052844874a8513b7060cbce33c9924d931.svg" alt="20221226124933-faktorring_als_ring_84c3d1052844874a8513b7060cbce33c9924d931.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(r_1 + I ) + (r_2 + I) =& r_1 + r_2 + I \\
+(r_1 + I) \cdot (r_2 + I) =& r_1r_2 + I
+\end{align*}
 <p>
-mit den Nullelemet <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_d0d311ca6d9431a1c68fe792bfc2b32d75831146.svg" alt="20221226124933-faktorring_als_ring_d0d311ca6d9431a1c68fe792bfc2b32d75831146.svg" class="org-svg" /> und dem Einselement <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_2a8c167716bd546a4aac063f94fb380ff7cf7312.svg" alt="20221226124933-faktorring_als_ring_2a8c167716bd546a4aac063f94fb380ff7cf7312.svg" class="org-svg" /> ist 
+mit den Nullelemet \(0 + I\) und dem Einselement \(1 + I\) ist 
 </p>
 </div>
 </div>
-<div id="outline-container-org16a64bd" class="outline-2">
-<h2 id="org16a64bd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgabcf062" class="outline-2">
+<h2 id="orgabcf062"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb611a5b" class="outline-3">
-<h3 id="orgb611a5b"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org3f70aaa" class="outline-3">
+<h3 id="org3f70aaa"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Da <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_18b40f9bf6cf6bf4e149f9f2c304e2d8eafbb357.svg" alt="20221226124933-faktorring_als_ring_18b40f9bf6cf6bf4e149f9f2c304e2d8eafbb357.svg" class="org-svg" /> nach definiion <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> ist, folgt dass <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> als <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> ist (siehe: <a href="20221210194045-normalteiler_in_abelschen_gruppen.html#ID-2560bb17-1bb6-42e7-91d6-5187eaf040c3">Normalteiler in Abelschen Gruppen</a>)
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_9049b76ec088acfd0df4507948a98cb1c346c893.svg" alt="20221226124933-faktorring_als_ring_9049b76ec088acfd0df4507948a98cb1c346c893.svg" class="org-svg" /> eine (<a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a>) <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist (siehe: <a href="20221224173045-gruppe_des_faktorraums_eines_normalteilers.html#ID-1ef475f9-38ab-41cf-ae47-d44af506705f">Gruppe des Faktorraums eines Normalteilers</a>)
+Da \((R,+)\) nach definiion <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> ist, folgt dass \(I\) als <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> ist (siehe: <a href="20221210194045-normalteiler_in_abelschen_gruppen.html#ID-2560bb17-1bb6-42e7-91d6-5187eaf040c3">Normalteiler in Abelschen Gruppen</a>)
+Daraus folgt, dass \(R/I\) eine (<a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a>) <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist (siehe: <a href="20221224173045-gruppe_des_faktorraums_eines_normalteilers.html#ID-1ef475f9-38ab-41cf-ae47-d44af506705f">Gruppe des Faktorraums eines Normalteilers</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3c5e83" class="outline-3">
-<h3 id="orgc3c5e83"><span class="section-number-3">2.2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> der Multiplikation</h3>
+<div id="outline-container-org0a7b8f4" class="outline-3">
+<h3 id="org0a7b8f4"><span class="section-number-3">2.2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> der Multiplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_d87d286f147433828351ff562bb7cf1d9e74c198.svg" alt="20221226124933-faktorring_als_ring_d87d286f147433828351ff562bb7cf1d9e74c198.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_92332036d6cd398794bf7a66d71f8106a1b4b934.svg" alt="20221226124933-faktorring_als_ring_92332036d6cd398794bf7a66d71f8106a1b4b934.svg" class="org-svg" />.
-Dann existieren <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_9bd5a33577328843c397eaa9efe505e0a1c0220d.svg" alt="20221226124933-faktorring_als_ring_9bd5a33577328843c397eaa9efe505e0a1c0220d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_7dfac58f42dd2a3f7da60f249e711a2617b4eb39.svg" alt="20221226124933-faktorring_als_ring_7dfac58f42dd2a3f7da60f249e711a2617b4eb39.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_baab40b0c2eb06390c1effad9d6e4926c9e190f1.svg" alt="20221226124933-faktorring_als_ring_baab40b0c2eb06390c1effad9d6e4926c9e190f1.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221226124933-faktorring_als_ring_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> ist, folgt <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_ca024ab7e9ba5fc46390faacab6b87a5e69e38bf.svg" alt="20221226124933-faktorring_als_ring_ca024ab7e9ba5fc46390faacab6b87a5e69e38bf.svg" class="org-svg" />, so dass für die Multiplikation folgt:
+Sei \(r_i + I = r_i' + I\) für \(i = 1,2\).
+Dann existieren \(i_1,i_2 \in I\) mit \(r_1 = r_1' + I\) und \(r_2 = r_2' + I\)
+Da \(I\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> ist, folgt \(i_1r_2, i_2r_1, i_1i_2 \in I\), so dass für die Multiplikation folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_73ca90afd80c5d769a946f8d9e6dcbc186e3c533.svg" alt="20221226124933-faktorring_als_ring_73ca90afd80c5d769a946f8d9e6dcbc186e3c533.svg" class="org-svg" />
-</span>
+\begin{align*}
+(r_1 + I)(r_2 + I) =& (r_1r_2 + I) \\
+((r_1 + i_1) + I)((r_2 + i_2) + I) =& (r_1 + i_1)(r_2 + i_2) + I \\
+=& r_1r_2 + i_1r_2 + i_2r_1 + i_1i_2 + I \\
+=& r_1r_2 + I
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0db90fa" class="outline-3">
-<h3 id="org0db90fa"><span class="section-number-3">2.3.</span> Distributivgesetz</h3>
+<div id="outline-container-org521f3f8" class="outline-3">
+<h3 id="org521f3f8"><span class="section-number-3">2.3.</span> Distributivgesetz</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_7371f8d414aeb2e8259bd091b2ae499e9849ef72.svg" alt="20221226124933-faktorring_als_ring_7371f8d414aeb2e8259bd091b2ae499e9849ef72.svg" class="org-svg" /> gilt:
+Für \(r_1,r_2,r_3 \in R\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226124933-faktorring_als_ring_f1cb4f317f035a194173c129af119b2e3f9ea320.svg" alt="20221226124933-faktorring_als_ring_f1cb4f317f035a194173c129af119b2e3f9ea320.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left((r_1 + I) + (r_2 + I) \right) (r_3 + I) =& ((r_1 + r_2) + I) (r_3 + I) \\
+=& ((r_1 + r_2)r_3 + I) \\
+=& r_1r_3 + r_2r_3 + I \\
+=& (r_1r_3 + I) + (r_2r_3 + I)
+\end{align*}
 <p>
 Analog für die andere Richtung
 </p>

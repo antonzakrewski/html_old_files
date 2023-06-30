@@ -9,22 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">elementare Diagonalmatrix</h1>
-<div id="outline-container-orgfae9b37" class="outline-2">
-<h2 id="orgfae9b37"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org16f18d4" class="outline-2">
+<h2 id="org16f18d4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine elementare Diagonalmatrix <img src="file:///home/anton/html/ltximg/20221209183202-elementare_diagonalmatrix_8041e025030fa0ee735f7e2d60029d0c874dd027.svg" alt="20221209183202-elementare_diagonalmatrix_8041e025030fa0ee735f7e2d60029d0c874dd027.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221209183202-elementare_diagonalmatrix_829d884899edaa3607a8f4fbcaefa862980aba0b.svg" alt="20221209183202-elementare_diagonalmatrix_829d884899edaa3607a8f4fbcaefa862980aba0b.svg" class="org-svg" /> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20221209183202-elementare_diagonalmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20221209183202-elementare_diagonalmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ist eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20221209183202-elementare_diagonalmatrix_4e50d48af3535474013496d26b60f3f7b838966d.svg" alt="20221209183202-elementare_diagonalmatrix_4e50d48af3535474013496d26b60f3f7b838966d.svg" class="org-svg" /> mit den Einträgen
+Eine elementare Diagonalmatrix \(D_i(\alpha) \in K^{n \times n}\) mit \(\alpha \neq 0, \alpha \in K\) über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) ist eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(D_i(\alpha) = (\alpha_{ij})\) mit den Einträgen
 </p>
+\begin{align*}
+\alpha_{mn} =& 
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209183202-elementare_diagonalmatrix_4e1edaf361bfb970e50feb766ed044011816466d.svg" alt="20221209183202-elementare_diagonalmatrix_4e1edaf361bfb970e50feb766ed044011816466d.svg" class="org-svg" />
-</span>
-</div>
+\begin{cases}
+\alpha & \mbox{if } m = n = i \\
+1 & \mbox{if } m = n \neq i  \\ 
+0  & \mbox{else } \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
 </div>

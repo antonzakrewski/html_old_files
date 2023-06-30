@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Darstellung eines größten gemeinsamen Teilers als Linearkombination in einem Hauptideal</h1>
-<div id="outline-container-org3ef437f" class="outline-2">
-<h2 id="org3ef437f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf576f1f" class="outline-2">
+<h2 id="orgf576f1f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_d355b70865c8033b534ee8039ac1b71ea1c4d140.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_d355b70865c8033b534ee8039ac1b71ea1c4d140.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_aaccfea0c6543e791676b434009f9164753be874.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_aaccfea0c6543e791676b434009f9164753be874.svg" class="org-svg" /> ein <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">Hauptideal</a> ist mit <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_eb4f8e9c9651628ddf192518d0ab3b6d13e691fe.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_eb4f8e9c9651628ddf192518d0ab3b6d13e691fe.svg" class="org-svg" />.
-Dann ist <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist und als Linearkombination mit Faktoren aus <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" class="org-svg" /> dargestellt werden kann.
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(x_1,...,x_n \in R\), so dass \((x_1,...,x_n)\) ein <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">Hauptideal</a> ist mit \((d) = (x_1,...,x_n)\).
+Dann ist \(d\) ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist und als Linearkombination mit Faktoren aus \(r\) dargestellt werden kann.
 </p>
 </div>
 </div>
-<div id="outline-container-org7c25c97" class="outline-2">
-<h2 id="org7c25c97"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9aba00c" class="outline-2">
+<h2 id="org9aba00c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Existenz von <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> als <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> folgt aus <a href="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination.html#ID-6e4785ef-faf0-44b6-a7d2-86479dd875ec">Darstellung eines größten gemeinsamen Teilers als Linearkombination in einem Hauptideal</a>.
-Da <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_fcad2fcff7d9cb3e4aaafd941f1fd79289469a19.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_fcad2fcff7d9cb3e4aaafd941f1fd79289469a19.svg" class="org-svg" /> gilt, existiert folglich auch eine Darstellung durch eine Linearkombination <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_50040f6d61cf553ca7b1f7e96ea1b1df7b6f085e.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_50040f6d61cf553ca7b1f7e96ea1b1df7b6f085e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_a3bd8c0a21d3c1c266e5cca7aedcc677ac9e72ce.svg" alt="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination_a3bd8c0a21d3c1c266e5cca7aedcc677ac9e72ce.svg" class="org-svg" />
+Existenz von \(d\) als <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> folgt aus <a href="20230419135647-darstellung_eines_großten_gemeinsamen_teilers_als_linearkombination.html#ID-6e4785ef-faf0-44b6-a7d2-86479dd875ec">Darstellung eines größten gemeinsamen Teilers als Linearkombination in einem Hauptideal</a>.
+Da \(d \in (x_1,...,x_n)\) gilt, existiert folglich auch eine Darstellung durch eine Linearkombination \(\sum_{i=1}^{n} \lambda_i x_i\) mit \(\lambda_i \in R\)
 </p>
 </div>
 </div>

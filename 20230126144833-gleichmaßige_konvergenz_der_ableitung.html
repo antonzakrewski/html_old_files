@@ -9,97 +9,101 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">gleichmäßige Konvergenz der Ableitung</h1>
-<div id="outline-container-orgeefd061" class="outline-2">
-<h2 id="orgeefd061"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbeca0fd" class="outline-2">
+<h2 id="orgbeca0fd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" class="org-svg" /> von <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_74b44eefb4fa99a0d47246e950539a9c0bc32b5f.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_74b44eefb4fa99a0d47246e950539a9c0bc32b5f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_99ba4be5761f1a1f61941e232fef815e172f2876.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_99ba4be5761f1a1f61941e232fef815e172f2876.svg" class="org-svg" />  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitungen</a>.
-Falls <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" class="org-svg" /> <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergieren</a> und <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_de421e8b9b5062f14e2d5372b7ef6bffc5972e97.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_de421e8b9b5062f14e2d5372b7ef6bffc5972e97.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so gilt
+Sei eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((f_n)_{n \in \mathbb{N}}\) von <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f_i: D \rightarrow \mathbb{C}\) mit \(D \subseteq \mathbb{R}\) und \((f_n')_{n \in \mathbb{N}}\)  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitungen</a>.
+Falls \(f_n \rightarrow f\) und \(f_n' \rightarrow g\) <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergieren</a> und \(f_i'\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_79da2af8e99b9a87aa3f7169d9d64f404f555da3.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_79da2af8e99b9a87aa3f7169d9d64f404f555da3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f' = g
+\end{align*}
 <p>
 d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_2c9ad2916837210b7fbc6df6ca3f80e8ce99a198.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_2c9ad2916837210b7fbc6df6ca3f80e8ce99a198.svg" class="org-svg" />
-</span>
+\begin{align*}
+\left(\lim_{n \to \infty}f_n\right)' = \lim_{n \to \infty}\left(f_n'\right) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6bd32b6" class="outline-2">
-<h2 id="org6bd32b6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcfcf9b3" class="outline-2">
+<h2 id="orgcfcf9b3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Wegen der <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">Differenzierbarkeit</a> von <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" class="org-svg" /> auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> (siehe: <a href="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen.html#ID-de2242ed-3381-43cc-8c0b-b28b3a717ba2">Stetigkeit von differenzierbaren Funktionen</a>)
-Nach der <a href="20230110122312-stetigkeit_vom_grenzwert_einer_gleichmaßig_konvergenten_funktionenfolge.html#ID-af9ebf40-febc-4411-a1c5-7eb761641ef5">Stetigkeit vom Grenzwert einer gleichmäßig konvergenten Funktionenfolge</a> sind <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> jeweils <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>.
-Seien <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_a21044349681b360b1665d3098768a6adfe0310a.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_a21044349681b360b1665d3098768a6adfe0310a.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_ab633778696ee22684fc158c3e06c872d0c0e887.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_ab633778696ee22684fc158c3e06c872d0c0e887.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_c757ddc191ff78bf739fe396954c22e16ccdfce9.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_c757ddc191ff78bf739fe396954c22e16ccdfce9.svg" class="org-svg" />
-Nach dem <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> existiert ein <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_b07ce288966e77a15a5aa5917294a8eb0bc91919.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_b07ce288966e77a15a5aa5917294a8eb0bc91919.svg" class="org-svg" />
+Wegen der <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">Differenzierbarkeit</a> von \(f_n\) ist \(f_n\) auch <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> (siehe: <a href="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen.html#ID-de2242ed-3381-43cc-8c0b-b28b3a717ba2">Stetigkeit von differenzierbaren Funktionen</a>)
+Nach der <a href="20230110122312-stetigkeit_vom_grenzwert_einer_gleichmaßig_konvergenten_funktionenfolge.html#ID-af9ebf40-febc-4411-a1c5-7eb761641ef5">Stetigkeit vom Grenzwert einer gleichmäßig konvergenten Funktionenfolge</a> sind \(f\) \(g\) jeweils <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>.
+Seien \(x_0 \in D\) und \(x \in D\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(x_0 < x\)
+Nach dem <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> existiert ein \(\xi_{n}(x) \in [x_0,x]\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_8be6a313e1255cd1a06448a04dd35c1469510547.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_8be6a313e1255cd1a06448a04dd35c1469510547.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f_n(x) - f_n(x_0)}{x - x_0} = f_n'(\xi_n(x))
+\end{align*}
 <p>
 Dabei gilt wegen der <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßigen Konvergenz</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_1e41bee6dada7c88ff7beed446996fa12046918f.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_1e41bee6dada7c88ff7beed446996fa12046918f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f_n(x) - f_n(x_0)}{x - x_0} \rightarrow \frac{f(x) - f(x_0)}{x -x_0}
+\end{align*}
 <p>
-Nach <a href="20220717192026-satz_von_bolzano_weierstrauß.html#ID-159756e9-216e-4fb6-a851-907991e28c90">Satz von Bolzano-Weierstraß</a> (<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_bd643cdcdb79f494197d813a09bdeebdd62866f4.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_bd643cdcdb79f494197d813a09bdeebdd62866f4.svg" class="org-svg" /> ist <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">Folgenkompaktheit</a>) existiert eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_b2cd0da0f0dd735439173ca9a04e9f8ae4836e5d.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_b2cd0da0f0dd735439173ca9a04e9f8ae4836e5d.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_3ea0b53d2dcbc2fc38895701ba04e3ce0c20c511.svg" class="org-svg" /> <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßige konvergiert</a> folgt
+Nach <a href="20220717192026-satz_von_bolzano_weierstrauß.html#ID-159756e9-216e-4fb6-a851-907991e28c90">Satz von Bolzano-Weierstraß</a> (\([x_0,x]\) ist <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">Folgenkompaktheit</a>) existiert eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \(\xi_{n_k}(x) \rightarrow \xi(x) \in [x_0,x]\)
+Da \(f_n' \rightarrow g\) <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßige konvergiert</a> folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_4b37761242bb9d1997478bc4f4a00b20a4f2e9d1.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_4b37761242bb9d1997478bc4f4a00b20a4f2e9d1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{n_k}'(\xi_{n_k}(x)) \rightarrow g(\xi(x))
+\end{align*}
 <p>
 wegen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_450f1e34fe1eb94b853351b92a39e045a6f90ce4.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_450f1e34fe1eb94b853351b92a39e045a6f90ce4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert f_{n_k}'(\xi_{n_k}) - g(\xi(x)) \vert \leq \vert f_{n_k}'(\xi_{n_k}(x) - g(\xi_{n_k}(x)) \vert + \vert g(\xi_{n_k}) - g(\xi(x)) \vert
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_6c44ffc55e23e53880e2ddd14d49a05936a8f384.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_6c44ffc55e23e53880e2ddd14d49a05936a8f384.svg" class="org-svg" /> wegen der <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßigen Konvergenz</a> und <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_b3d6940b4a174370242664c410f7b0eeecf8b3fd.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_b3d6940b4a174370242664c410f7b0eeecf8b3fd.svg" class="org-svg" /> wegen der <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a> von <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" />
+mit \(\vert f_{n_k}'(\xi_{n_k}(x) - g(\xi_{n_k}(x)) \vert \rightarrow 0\) wegen der <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßigen Konvergenz</a> und \(\vert g(\xi_{n_k}(x)) - g(\xi(x)) \vert \rightarrow 0\) wegen der <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a> von \(g\)
 daraus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_c637512546f8b81f1b0c924e4a6c791725b491f2.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_c637512546f8b81f1b0c924e4a6c791725b491f2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f(x) - f(x_0)}{x - x_0} =& \lim_{k \to \infty}\left(f_{n_k}'(\xi_{n_k}(x))\right) \\
+=& g(\xi(x))
+\end{align*}
 
 <p>
-Wegen <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_d6eacdc134b5365d3a43c6e54a0f0fcb138dd2db.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_d6eacdc134b5365d3a43c6e54a0f0fcb138dd2db.svg" class="org-svg" /> (siehe: <a href="20220624214831-einschnurungssatz.html#ID-8ad45894-1f59-432f-afed-0fdd9e0bf190">Sandwhichsatz</a> wegen <img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_2332bad8b6f8d535887b19d67c29b523135b1b16.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_2332bad8b6f8d535887b19d67c29b523135b1b16.svg" class="org-svg" />) folgt:
+Wegen \(\lim_{x \to x_0}\left(\xi(x)\right) = x_0\) (siehe: <a href="20220624214831-einschnurungssatz.html#ID-8ad45894-1f59-432f-afed-0fdd9e0bf190">Sandwhichsatz</a> wegen \(x_0 \leq \xi_i(x) < x\)) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126144833-gleichmaßige_konvergenz_der_ableitung_f70723d879e73835148b35ee15cc690e8ceb3c34.svg" alt="20230126144833-gleichmaßige_konvergenz_der_ableitung_f70723d879e73835148b35ee15cc690e8ceb3c34.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f'(x_0) =& \lim_{x \to x_0}\left(\frac{f(x) - f(x_0)}{x - x_0}\right) \\
+=& \lim_{x \to x_0}\left(g(\xi(x_0))\right) 
+=& g(x_0)
+\end{align*}
 </div>
 </div>
 </div>

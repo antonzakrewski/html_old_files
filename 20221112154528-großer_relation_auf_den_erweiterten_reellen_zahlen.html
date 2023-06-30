@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">größer Relation auf den Erweiterten reellen Zahlen</h1>
-<div id="outline-container-org5feb029" class="outline-2">
-<h2 id="org5feb029"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org597d3b0" class="outline-2">
+<h2 id="org597d3b0"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Zusätzlich zu der <a href="20220106143655-definition_großer_relation.html#ID-82df538a-6237-486a-a47f-5134a8da13e3">größer Relation</a> auf den <a href="20210702104535-reelle_zahlen.html#ID-764c8d83-a539-42fa-b8b4-3e388f4dc3a1">Reellen Zahlen</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221112154528-großer_relation_auf_den_erweiterten_reellen_zahlen_c30fa65e5793b254f3f13d182a58b1fa1daf9df7.svg" alt="20221112154528-großer_relation_auf_den_erweiterten_reellen_zahlen_c30fa65e5793b254f3f13d182a58b1fa1daf9df7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x \in \mathbb{R} \cup \{-\infty\} :& x < \infty \\
+\forall x \in \mathbb{R} \cup \{+\infty\} :& -\infty < \infty 
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,62 +9,79 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Regel von de L'Hospital für <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230123234634-regel_von_de_l_hospital_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" /></h1>
-<div id="outline-container-orge454786" class="outline-2">
-<h2 id="orge454786"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Regel von de L'Hospital für \(0\)</h1>
+<div id="outline-container-org0f4f666" class="outline-2">
+<h2 id="org0f4f666"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei das <a href="20220105232221-offenes_intervall.html#ID-ff9b0b3b-6225-430d-8b42-196a1257791d">offene Intervall</a> <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_e1f073711386ed89bde9096dec4f1e0c22c2e1a2.svg" alt="20230123234634-regel_von_de_l_hospital_e1f073711386ed89bde9096dec4f1e0c22c2e1a2.svg" class="org-svg" /> und die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_9940b7b40f8efe9314cb6bb683b73ec0c8fd2cc2.svg" alt="20230123234634-regel_von_de_l_hospital_9940b7b40f8efe9314cb6bb683b73ec0c8fd2cc2.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_3958b946bcb1651bc65a0dd43cbf1c08900dc8db.svg" alt="20230123234634-regel_von_de_l_hospital_3958b946bcb1651bc65a0dd43cbf1c08900dc8db.svg" class="org-svg" /> gegeben, so dass für <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> gilt:
+Sei das <a href="20220105232221-offenes_intervall.html#ID-ff9b0b3b-6225-430d-8b42-196a1257791d">offene Intervall</a> \((a,b) \subsetneq \overline{\mathbb{R}}\) und die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f: (a,b) \rightarrow \mathbb{R}\) sowie \(g: \mathbb{R} \rightarrow (a,b)\) gegeben, so dass für \(a\) gilt:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_30bc4da1c4305dd8bd9be5075e51bc96e6022580.svg" alt="20230123234634-regel_von_de_l_hospital_30bc4da1c4305dd8bd9be5075e51bc96e6022580.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_6f6f4524a18f3a11be1fcc03cb890cf9019d88fc.svg" alt="20230123234634-regel_von_de_l_hospital_6f6f4524a18f3a11be1fcc03cb890cf9019d88fc.svg" class="org-svg" />  für eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_c93bd30dff96bc11f60a2c9b6d5b71e047250e46.svg" alt="20230123234634-regel_von_de_l_hospital_c93bd30dff96bc11f60a2c9b6d5b71e047250e46.svg" class="org-svg" /> ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a> 
+<li>\(\lim_{x \to a^+}\left(g(x)\right) = \lim_{x \to a^+}\left(g(x)\right) = 0\)</li>
+<li>\(g' \neq 0\)  für eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> von \(a\)</li>
+<li>\(\lim_{x \to a^+}\left(\frac{f'(x)}{g'(x)}\right)\) ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniert</a> 
 Dann gilt</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_20c5788e40d7e6f2b8ecf7a5ed2af5abbb0f5d59.svg" alt="20230123234634-regel_von_de_l_hospital_20c5788e40d7e6f2b8ecf7a5ed2af5abbb0f5d59.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim_{x \to a^+}\left(\frac{f(x)}{g(x)}\right) = \lim_{x \to a^+}\left(\frac{f'(x)}{g'(x)}\right) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org543feed" class="outline-2">
-<h2 id="org543feed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd4d2430" class="outline-2">
+<h2 id="orgd4d2430"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-durch die <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung</a> auf <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230123234634-regel_von_de_l_hospital_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_1a48273e4d4e533659f06011ef85e05a3cffcb6e.svg" alt="20230123234634-regel_von_de_l_hospital_1a48273e4d4e533659f06011ef85e05a3cffcb6e.svg" class="org-svg" /> folgt aus dem <a href="20230123234327-verallgemeinerter_mittelwertsatz.html#ID-81e3bb77-8a95-4537-b91e-fb883e964720">Verallgemeinerten Mittelwertsatz</a>, dass ein <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_31ddd634a5fe73af5c27b4a3e95c02262bebbeec.svg" alt="20230123234634-regel_von_de_l_hospital_31ddd634a5fe73af5c27b4a3e95c02262bebbeec.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_50115819729cfc49fe3662e92c01074a56080d85.svg" alt="20230123234634-regel_von_de_l_hospital_50115819729cfc49fe3662e92c01074a56080d85.svg" class="org-svg" /> existiert, so dass gilt:
+durch die <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung</a> auf \(a\) mit \(g(a) = f(a) = 0\) folgt aus dem <a href="20230123234327-verallgemeinerter_mittelwertsatz.html#ID-81e3bb77-8a95-4537-b91e-fb883e964720">Verallgemeinerten Mittelwertsatz</a>, dass ein \(\zeta(x)\) mit \(a < \zeta(x) < x\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_2673664128bd69ac082816c5742e8a7eb96b0f0f.svg" alt="20230123234634-regel_von_de_l_hospital_2673664128bd69ac082816c5742e8a7eb96b0f0f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(f(x) - f(a)) \cdot g'(\zeta(x)) =& (g(x) - g(a)) \cdot f'(\zeta(x)) \\
+\frac{f(x) - f(a)}{g(x) - g(a)} = \frac{f'(\zeta(x))}{g'(\zeta(x))}
+\end{align*}
 <p>
 Da nach <a href="20220624214831-einschnurungssatz.html#ID-8ad45894-1f59-432f-afed-0fdd9e0bf190">Sandwhichsatz</a> gilt:
-<img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_9339b846c15de1b253f27655bec70a3dd01b7414.svg" alt="20230123234634-regel_von_de_l_hospital_9339b846c15de1b253f27655bec70a3dd01b7414.svg" class="org-svg" />
-und nach Annahme <img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_0e3973f8ad93e37a5ecadb143bf97a735a7d838f.svg" alt="20230123234634-regel_von_de_l_hospital_0e3973f8ad93e37a5ecadb143bf97a735a7d838f.svg" class="org-svg" /> existiert gilt aufgrund folgender Überlegungen:
+\(\lim_{x \to a}\left(\zeta(x)\right) \rightarrow a\)
+und nach Annahme \(\lim_{x \to a^+}\left(\frac{f'(x)}{g(x)}\right)\) existiert gilt aufgrund folgender Überlegungen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_e414ac12e98fd54f2489734ed3456ee3d11916cf.svg" alt="20230123234634-regel_von_de_l_hospital_e414ac12e98fd54f2489734ed3456ee3d11916cf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f(x)}{g(x)} =& \frac{f(x) - 0}{g(x) - 0} \\
+=& \frac{f(x) - f(a)}{g(x) - g(a)} \\
+=& \frac{f'(\zeta(x))}{g'(\zeta(x))}
+\end{align*}
 <p>
 das zu Beweisende:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230123234634-regel_von_de_l_hospital_9d15f45cc3d3c21369f7f3a8f38270576dae2950.svg" alt="20230123234634-regel_von_de_l_hospital_9d15f45cc3d3c21369f7f3a8f38270576dae2950.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{x \to a^+}\left(\frac{f(x)}{g(x)}\right)  =& \lim_{x \to a^+}\left(\frac{f'(\zeta(x))}{g'(\zeta(x))}\right)  \\
+=& \lim_{\zeta \to a^+}\left(\frac{f'(\zeta)}{g'(\zeta)}\right) \in \overline{\mathbb{R}}
+\end{align*}
 </div>
 </div>
 </div>

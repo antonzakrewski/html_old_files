@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linksseitige Verknüpfung mit einer Elementarmatrix</h1>
-<div id="outline-container-org44f51f1" class="outline-2">
-<h2 id="org44f51f1"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org989fb0e" class="outline-2">
+<h2 id="org989fb0e"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, <img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_83f2cdbd084af85da4a57e3fa78695e5a1205cfa.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_83f2cdbd084af85da4a57e3fa78695e5a1205cfa.svg" class="org-svg" /> mit zeilen <img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_3a3aefd230d2adda64b7e71f1ed1b65e8e79c5a0.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_3a3aefd230d2adda64b7e71f1ed1b65e8e79c5a0.svg" class="org-svg" />
-Dann gilt für die <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrix</a> <img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_501c62bf4dc5609d11bd8f0407c2ff1a8d736750.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_501c62bf4dc5609d11bd8f0407c2ff1a8d736750.svg" class="org-svg" /> 
+Sei \(K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, \(\alpha \in K\) und \(a \in K^{m \times n}\) mit zeilen \(z_1,...,z_m\)
+Dann gilt für die <a href="20221208191647-elementarmatrix.html#ID-78b77753-7806-4c23-9442-63216ad410f8">Elementarmatrix</a> \(T_{ij}(\alpha) \in K^{m \times m}\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_c62c41d76b706eb4a441b0f01bfd22bb9c798c46.svg" alt="20221216080140-linksseitige_verknupfung_mit_einer_elementarmatrix_c62c41d76b706eb4a441b0f01bfd22bb9c798c46.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+T_{ij}(\alpha)A =& \begin{pmatrix} z_1 \\ \vdots \\ z_i + \alpha z_j \\ \vdots \\ z_m \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

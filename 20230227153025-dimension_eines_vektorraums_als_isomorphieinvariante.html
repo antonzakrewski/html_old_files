@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dimension eines Vektorraums als Isomorphieinvariante</h1>
-<div id="outline-container-org006b3a9" class="outline-2">
-<h2 id="org006b3a9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa91d4c" class="outline-2">
+<h2 id="orgaa91d4c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_e3dfcc60cc9076cf15599dac6f99b0c4c8779517.svg" alt="20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_e3dfcc60cc9076cf15599dac6f99b0c4c8779517.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_7ab9504a9f5e9fb404bce59f7da7d798d85efebb.svg" alt="20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_7ab9504a9f5e9fb404bce59f7da7d798d85efebb.svg" class="org-svg" /> ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a>, dann gilt:
+Seien \(V,V'\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(f: V \rightarrow V\) ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a>, dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_140ea01e5b0cbfd68eb343fe74940591a635e643.svg" alt="20230227153025-dimension_eines_vektorraums_als_isomorphieinvariante_140ea01e5b0cbfd68eb343fe74940591a635e643.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{dim}_{K}(V) = \mathrm{dim}_{K}(V')
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7f3bc45" class="outline-2">
-<h2 id="org7f3bc45"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org58d7f55" class="outline-2">
+<h2 id="org58d7f55"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 TODO für unendliche VR

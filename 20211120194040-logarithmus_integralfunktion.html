@@ -9,33 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Logarithmus - Integralfunktion</h1>
-<div id="outline-container-org5922952" class="outline-2">
-<h2 id="org5922952"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdf00ce2" class="outline-2">
+<h2 id="orgdf00ce2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211120194040-logarithmus_integralfunktion_4fe4d25115d5a9173706a0a537cb41b06736abd9.svg" alt="20211120194040-logarithmus_integralfunktion_4fe4d25115d5a9173706a0a537cb41b06736abd9.svg" class="org-svg" />
-</span>
+\begin{align*}
+\int \ln(x) \mathrm{d}x = x\ln(x) - x  + c
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org87e811e" class="outline-2">
-<h2 id="org87e811e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4f31209" class="outline-2">
+<h2 id="org4f31209"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 aufgrund der <a href="20211120184654-partielle_integration.html#ID-7a87fe70-9eb8-44e5-a684-1db6004df282">Partiellen Integration</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211120194040-logarithmus_integralfunktion_a489a7a89ff7db4c631591af28f97b54dca74a3c.svg" alt="20211120194040-logarithmus_integralfunktion_a489a7a89ff7db4c631591af28f97b54dca74a3c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\int_{}^{} \ln(x) \mathrm{d}x =& \int_{}^{} 1 \cdot \ln(x) \mathrm{d}x \\
+=& x \cdot \ln(x) - \int_{}^{} x \cdot \frac{1}{x} \mathrm{d}x \\
+=& x \cdot \ln(x) - x + c  
+\end{align*}
 </div>
 </div>
 </div>

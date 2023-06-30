@@ -9,44 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexprodukt von zwei Hauptidealen</h1>
-<div id="outline-container-org8ff24d2" class="outline-2">
-<h2 id="org8ff24d2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbf3dcd3" class="outline-2">
+<h2 id="orgbf3dcd3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_9839726fc27c98ecf7ce75a962cacaa1fcf3478d.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_9839726fc27c98ecf7ce75a962cacaa1fcf3478d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_627c40213312e5027fa9230bcc2011ef628e6142.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_627c40213312e5027fa9230bcc2011ef628e6142.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(a,b,c \in R\) mit \(a \cdot b = c\)
 Dann gilt für die <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">von den Elementen erzeugte Ideale</a> und das <a href="20221227230103-komplexprodukt_von_idealen.html#ID-3b33d732-713a-4420-83bc-b934074e04ce">Komplexprodukt</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_c6f209ced84035f7c8edb5a081b0d616357503f6.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_c6f209ced84035f7c8edb5a081b0d616357503f6.svg" class="org-svg" />
-</span>
+\begin{align*}
+(a \cdot b) = (a) \cdot (b)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfdb4cfd" class="outline-2">
-<h2 id="orgfdb4cfd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5b4f7fb" class="outline-2">
+<h2 id="org5b4f7fb"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgcc79284" class="outline-3">
-<h3 id="orgcc79284"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgcdce5cc" class="outline-3">
+<h3 id="orgcdce5cc"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_0c725b8a0eb96780a39a154a93ab4468458a5748.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_0c725b8a0eb96780a39a154a93ab4468458a5748.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_d61ecf64342020a4b20d3438a273ff244dd25ed2.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_d61ecf64342020a4b20d3438a273ff244dd25ed2.svg" class="org-svg" />
-Damit folgt für das <a href="20230117120023-komplexprodukt.html#ID-9ca01308-96d4-4f1e-9f7a-6133740f159c">Komplexprodukt</a> nach Definition <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_1aa0ace12e8f7e9756b26c0ee0deed727286505c.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_1aa0ace12e8f7e9756b26c0ee0deed727286505c.svg" class="org-svg" /> und somit auch <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_89ada60eeef221c939d23dc7a8f0854850865a77.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_89ada60eeef221c939d23dc7a8f0854850865a77.svg" class="org-svg" />
+Sei \(x \in (a \cdot b)\), so existiert ein \(r \in R\) mit \(r \cdot a \cdot b = x\)
+Damit folgt für das <a href="20230117120023-komplexprodukt.html#ID-9ca01308-96d4-4f1e-9f7a-6133740f159c">Komplexprodukt</a> nach Definition \((a) \cdot (b)  \coloneqq \{r \cdot a \cdot b \cdot r' \vert r,r' \in R\}\) und somit auch \(x = r \cdot a \cdot b = (a) \cdot (b)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org02960b2" class="outline-3">
-<h3 id="org02960b2"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org4b77d01" class="outline-3">
+<h3 id="org4b77d01"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_29144e5046d0c3426ce52c8e5460a0be6309a227.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_29144e5046d0c3426ce52c8e5460a0be6309a227.svg" class="org-svg" />, so existieren <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_1125d444657a97246340531d3b484ea681b2787a.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_1125d444657a97246340531d3b484ea681b2787a.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_b1c19f50b01c38e44118e25e9cce1bdd06838f3c.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_b1c19f50b01c38e44118e25e9cce1bdd06838f3c.svg" class="org-svg" />.
-nach Definition folgt somit <img src="file:///home/anton/html/ltximg/20230427201024-komplexprodukt_von_zwei_hauptidealen_39ce9c857cddb05d4d3d523a7bdf61e41c373eb9.svg" alt="20230427201024-komplexprodukt_von_zwei_hauptidealen_39ce9c857cddb05d4d3d523a7bdf61e41c373eb9.svg" class="org-svg" />
+Sei \(x \in (a) \cdot (b)\), so existieren \(r,r' \in R\) mit \(r \cdot a \cdot b \cdot r'\).
+nach Definition folgt somit \(r \cdot (a \cdot b) \cdot r' \in (a \cdot b)\)
 </p>
 </div>
 </div>

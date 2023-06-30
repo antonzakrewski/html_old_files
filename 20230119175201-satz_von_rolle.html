@@ -3,64 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Satz von Rolle</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Rolle</h1>
-<div id="outline-container-orgafb44da" class="outline-2">
-<h2 id="orgafb44da"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org81f0a34" class="outline-2">
+<h2 id="org81f0a34"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230119175201-satz_von_rolle_35380dcf45fb08dff960dba0ac3655274a253c73.svg" alt="20230119175201-satz_von_rolle_35380dcf45fb08dff960dba0ac3655274a253c73.svg" class="org-svg" /> für <img src="ltximg/20230119175201-satz_von_rolle_3a08a18aecd811815974d83b234ef73dcfb71760.svg" alt="20230119175201-satz_von_rolle_3a08a18aecd811815974d83b234ef73dcfb71760.svg" class="org-svg" /> mit <img src="ltximg/20230119175201-satz_von_rolle_cc17fd6ec0168d732e9e933a88a9f42746188b30.svg" alt="20230119175201-satz_von_rolle_cc17fd6ec0168d732e9e933a88a9f42746188b30.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass gilt:
+Sei \([a,b] \in \overline{\mathbb{R}}\) für \(-\infty \leq a < b \leq +\infty\) mit \(f:[a,b] \rightarrow \mathbb{R}\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230119175201-satz_von_rolle_4c8f678c165910748ffdb46feaaf9c3ddb08c3ba.svg" alt="20230119175201-satz_von_rolle_4c8f678c165910748ffdb46feaaf9c3ddb08c3ba.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(a) = f(b)
+\end{align*}
 <p>
-so folgt, dass <img src="ltximg/20230119175201-satz_von_rolle_cf96bfa8f755dc444ed50b2756386db76e04c19b.svg" alt="20230119175201-satz_von_rolle_cf96bfa8f755dc444ed50b2756386db76e04c19b.svg" class="org-svg" /> existiert, so dass gilt
+so folgt, dass \(x_0 \in [a,b]\) existiert, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230119175201-satz_von_rolle_5cb9fa67f12a7cd2d725eb42a7840c2b9ad5ea17.svg" alt="20230119175201-satz_von_rolle_5cb9fa67f12a7cd2d725eb42a7840c2b9ad5ea17.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+f'(x_0) = 0
+\end{align*}
 <p>
 siehe <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a>  
 </p>
 </div>
 </div>
-<div id="outline-container-org5225df3" class="outline-2">
-<h2 id="org5225df3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3c6b601" class="outline-2">
+<h2 id="org3c6b601"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230119175201-satz_von_rolle_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230119175201-satz_von_rolle_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> nicht konstant (sonst trivial), so folgt auch, dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ein <img src="ltximg/20230119175201-satz_von_rolle_e8ba6cdbe2f5e478ca6bd652cffd3073706f3b3a.svg" alt="20230119175201-satz_von_rolle_e8ba6cdbe2f5e478ca6bd652cffd3073706f3b3a.svg" class="org-svg" /> existiert, so dass gilt <img src="ltximg/20230119175201-satz_von_rolle_c66eb21f9f66772eda44e842522985edc30e8091.svg" alt="20230119175201-satz_von_rolle_c66eb21f9f66772eda44e842522985edc30e8091.svg" class="org-svg" /> und <img src="ltximg/20230119175201-satz_von_rolle_d6b75a1ade0d060adb4ac1a6275c55578db64f48.svg" alt="20230119175201-satz_von_rolle_d6b75a1ade0d060adb4ac1a6275c55578db64f48.svg" class="org-svg" />
-Nach <a href="20220719233717-zwischenwertsatz.html#ID-f17f7890-df11-47cf-81d3-ab463e3219ff">Zwischenwertsatz</a> existieren somit für z.B. <img src="ltximg/20230119175201-satz_von_rolle_45a5c6b8fcf0b3858c515610761518b5a5dcd77c.svg" alt="20230119175201-satz_von_rolle_45a5c6b8fcf0b3858c515610761518b5a5dcd77c.svg" class="org-svg" />  verschiedene <img src="ltximg/20230119175201-satz_von_rolle_c888837b25e06de1a4ec06aff343957e800a736e.svg" alt="20230119175201-satz_von_rolle_c888837b25e06de1a4ec06aff343957e800a736e.svg" class="org-svg" />, so dass gilt: <img src="ltximg/20230119175201-satz_von_rolle_30f2d86fae3679e5dacc4ac601b74ba65b139882.svg" alt="20230119175201-satz_von_rolle_30f2d86fae3679e5dacc4ac601b74ba65b139882.svg" class="org-svg" />.
-Damit haben wir den Fall <img src="ltximg/20230119175201-satz_von_rolle_3f5375638b709379a88bfe2168f1eedc657fe77c.svg" alt="20230119175201-satz_von_rolle_3f5375638b709379a88bfe2168f1eedc657fe77c.svg" class="org-svg" />  auf <img src="ltximg/20230119175201-satz_von_rolle_8ad7bfe117e12e9519a49e339900cd6929bfd1e0.svg" alt="20230119175201-satz_von_rolle_8ad7bfe117e12e9519a49e339900cd6929bfd1e0.svg" class="org-svg" /> reduziert, das heißt wir spätestens hier haben wir hier ein <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompaktes</a> <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> und nach dem <a href="20230114140701-satz_vom_minimum_und_maximun.html#ID-e6271294-4695-4486-92db-f72c4008eed2">Satz vom Minimum und Maximum</a> folgt, dass ein <a href="20230120064629-lokales_extremum.html#ID-f8eb7195-5e19-4b8f-84d4-b4d088216234">lokales Extremum</a> existiert.
-Nach der <a href="20230120072306-nullstelle_der_ableitung_und_lokales_extremum.html#ID-239cbea8-5002-4f61-8fe1-5c6b4edd7111">Nullstelle der Ableitung und lokales Extremum</a> folgt somit auch, dass ein <img src="ltximg/20230119175201-satz_von_rolle_e54b56d38545d3668983928d3139788e8797b24e.svg" alt="20230119175201-satz_von_rolle_e54b56d38545d3668983928d3139788e8797b24e.svg" class="org-svg" /> existiert, so dass gilt: <img src="ltximg/20230119175201-satz_von_rolle_90f1c11f6a35693a438c243c10abaaa4249c6c2a.svg" alt="20230119175201-satz_von_rolle_90f1c11f6a35693a438c243c10abaaa4249c6c2a.svg" class="org-svg" />
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f\) nicht konstant (sonst trivial), so folgt auch, dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ein \(y\) existiert, so dass gilt \(f(a) = f(b) \neq y\) und \(\exists x \in (a,b) : f(x) = y\)
+Nach <a href="20220719233717-zwischenwertsatz.html#ID-f17f7890-df11-47cf-81d3-ab463e3219ff">Zwischenwertsatz</a> existieren somit für z.B. \(y' = \frac{f(a) + y}{2}\)  verschiedene \(x_1,x_2 \in (a,b) = \mathbb{R}\), so dass gilt: \(f(x_1) = f(x_2)\).
+Damit haben wir den Fall \([-\infty, \infty]\)  auf \([x_1,x_2]\) reduziert, das heißt wir spätestens hier haben wir hier ein <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompaktes</a> <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> und nach dem <a href="20230114140701-satz_vom_minimum_und_maximun.html#ID-e6271294-4695-4486-92db-f72c4008eed2">Satz vom Minimum und Maximum</a> folgt, dass ein <a href="20230120064629-lokales_extremum.html#ID-f8eb7195-5e19-4b8f-84d4-b4d088216234">lokales Extremum</a> existiert.
+Nach der <a href="20230120072306-nullstelle_der_ableitung_und_lokales_extremum.html#ID-239cbea8-5002-4f61-8fe1-5c6b4edd7111">Nullstelle der Ableitung und lokales Extremum</a> folgt somit auch, dass ein \(x_0 \in [x_1,x_2]\) existiert, so dass gilt: \(f(x_0) = 0\)
 </p>
 </div>
 
-<div id="outline-container-org7ab7f3c" class="outline-3">
-<h3 id="org7ab7f3c"><span class="section-number-3">2.1.</span> Alternativ:</h3>
+<div id="outline-container-org50e06d0" class="outline-3">
+<h3 id="org50e06d0"><span class="section-number-3">2.1.</span> Alternativ:</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Annahme einer <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung einer Funktion</a> für <img src="ltximg/20230119175201-satz_von_rolle_44c5b1244364a1ac41c8b57eca6f3c33ad625b62.svg" alt="20230119175201-satz_von_rolle_44c5b1244364a1ac41c8b57eca6f3c33ad625b62.svg" class="org-svg" /> und dann <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a> 
+Annahme einer <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung einer Funktion</a> für \(-\infty, \infty\) und dann <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a> 
 </p>
 </div>
 </div>

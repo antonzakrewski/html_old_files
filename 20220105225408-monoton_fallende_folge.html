@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">monoton fallende Folge</h1>
 
-<div id="outline-container-orged48bfa" class="outline-2">
-<h2 id="orged48bfa"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5ea87f3" class="outline-2">
+<h2 id="org5ea87f3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20220105225408-monoton_fallende_folge_2205b97ddde2a5261f4d55c93fed4136dbbfe9ea.svg" alt="20220105225408-monoton_fallende_folge_2205b97ddde2a5261f4d55c93fed4136dbbfe9ea.svg" class="org-svg" /> in einem <a href="20220817224852-halbordnung.html#ID-b8039fe5-626d-4ba3-93c7-71167141f163">halbgeordneten</a>, <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">vollständigen metrischen Raum</a> heißt monoton wachsend falls gilt:</li>
+<li>Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((a_n)_{n\in\mathbb{N}\) in einem <a href="20220817224852-halbordnung.html#ID-b8039fe5-626d-4ba3-93c7-71167141f163">halbgeordneten</a>, <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">vollständigen metrischen Raum</a> heißt monoton wachsend falls gilt:</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105225408-monoton_fallende_folge_dd83fdb417e4f971f5505713b3df6f06ae204351.svg" alt="20220105225408-monoton_fallende_folge_dd83fdb417e4f971f5505713b3df6f06ae204351.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_n \geq a_{n+1} \quad \text{für alle }n\in\mathbb{N}
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

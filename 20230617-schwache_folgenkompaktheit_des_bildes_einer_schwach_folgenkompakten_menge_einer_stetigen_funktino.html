@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">schwache Folgenkompaktheit des Bildes einer schwach Folgenkompakten Menge einer stetigen Funktino</h1>
-<div id="outline-container-org03871ad" class="outline-2">
-<h2 id="org03871ad"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org224d26a" class="outline-2">
+<h2 id="org224d26a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> eine <a href="20230615-schwache_folgenkompaktheit.html#ID-d39d16f4-5035-4d05-b350-b727c9ed23ce">schwach folgenkompakte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_36020d2afdeeaafc953f2de917932ad84a1edb30.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_36020d2afdeeaafc953f2de917932ad84a1edb30.svg" class="org-svg" /> ebenfalls <a href="20230615-schwache_folgenkompaktheit.html#ID-d39d16f4-5035-4d05-b350-b727c9ed23ce">schwach folgenkompakt</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(A \subseteq X\) eine <a href="20230615-schwache_folgenkompaktheit.html#ID-d39d16f4-5035-4d05-b350-b727c9ed23ce">schwach folgenkompakte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Dann ist \(f[A]\) ebenfalls <a href="20230615-schwache_folgenkompaktheit.html#ID-d39d16f4-5035-4d05-b350-b727c9ed23ce">schwach folgenkompakt</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org762561f" class="outline-2">
-<h2 id="org762561f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9a7cc52" class="outline-2">
+<h2 id="org9a7cc52"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_c749c793d4820ae7f9aeaa4d3fcbf4cc34a8a8be.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_c749c793d4820ae7f9aeaa4d3fcbf4cc34a8a8be.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />, so existiert nach Annahme ein <a href="20230111162016-haufungspunkt_topologie.html#ID-194886e1-786a-4087-a60c-f242d88eb765">Häufungspunkt</a> <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_6414b4c140af1e69d0f233d449bee340259c42f7.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_6414b4c140af1e69d0f233d449bee340259c42f7.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_d6d37467fbefb4e0d1a7b8c5eb41f1d79f6d74f4.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_d6d37467fbefb4e0d1a7b8c5eb41f1d79f6d74f4.svg" class="org-svg" /> nach Annahme der stetigkeit ebenfalls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> und somit liegen unendlich viele Folgenglieder in <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> und damit auch in <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_6414b4c140af1e69d0f233d449bee340259c42f7.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_6414b4c140af1e69d0f233d449bee340259c42f7.svg" class="org-svg" />.
-Somit ist <img src="file:///home/anton/html/ltximg/20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230617-schwache_folgenkompaktheit_des_bildes_einer_schwach_folgenkompakten_menge_einer_stetigen_funktino_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a>.
+Sei \(x_n\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in \(A\), so existiert nach Annahme ein <a href="20230111162016-haufungspunkt_topologie.html#ID-194886e1-786a-4087-a60c-f242d88eb765">Häufungspunkt</a> \(x\).
+Sei \(U_f\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(x)\), so ist \(U  \coloneqq f^{-1}[U_f]\) nach Annahme der stetigkeit ebenfalls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) und somit liegen unendlich viele Folgenglieder in \(U\) und damit auch in \(U_f\).
+Somit ist \(f(x)\) ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a>.
 </p>
 </div>
 </div>

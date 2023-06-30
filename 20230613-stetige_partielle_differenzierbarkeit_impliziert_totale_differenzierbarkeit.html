@@ -9,60 +9,79 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">stetige partielle Differenzierbarkeit impliziert totale Differenzierbarkeit</h1>
-<div id="outline-container-org65f572c" class="outline-2">
-<h2 id="org65f572c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org51fe0d5" class="outline-2">
+<h2 id="org51fe0d5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_081568a54ca5421cd1cedec3837f8f31d33bf745.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_081568a54ca5421cd1cedec3837f8f31d33bf745.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_c86b909a69e3794a178ce9dd1c068c351ffdcffc.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_c86b909a69e3794a178ce9dd1c068c351ffdcffc.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" />, so dass die <a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist in <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" />, dann ist <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> 
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: \mathbb{R}^n \rightarrow \mathbb{R}^m\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(p \in U\).
+Sei \(F\) <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(O\) von \(p\), so dass die <a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist in \(p\), dann ist \(F\) in \(p\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orga4c9200" class="outline-2">
-<h2 id="orga4c9200"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org15fcebb" class="outline-2">
+<h2 id="org15fcebb"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_a88d1e8f5461a2e8d5c98dc7b0398bad66bbaca4.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_a88d1e8f5461a2e8d5c98dc7b0398bad66bbaca4.svg" class="org-svg" /> für eine übersichtlichere Notation.
-Sei <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existiert eine <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_aae0ba4077fe0126df8a032133b558fadd0585ef.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_aae0ba4077fe0126df8a032133b558fadd0585ef.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> mit <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_990137adbef2b579c6875048a20eb9f876befa9d.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_990137adbef2b579c6875048a20eb9f876befa9d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_cc26a8920d93ff08d967188df86d8d84a4490d80.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_cc26a8920d93ff08d967188df86d8d84a4490d80.svg" class="org-svg" /> beliebiges <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_6a2cf72a9508bb715c771a26cac4c7eaf18dd663.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_6a2cf72a9508bb715c771a26cac4c7eaf18dd663.svg" class="org-svg" />, z.B. der endliche Schnitt der <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a>.
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei \(p = 0\) für eine übersichtlichere Notation.
+Sei \(U\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existiert eine \(\delta\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> mit \(\vert \frac{\partial_i}{\partial_j} f(z) \vert < \varepsilon\) mit \(\vert z \vert < \delta\) beliebiges \(i,j\), z.B. der endliche Schnitt der <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a>.
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_4eb9ad23f0bb0014979952b73b85f6af216db085.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_4eb9ad23f0bb0014979952b73b85f6af216db085.svg" class="org-svg" />, so existiert ein <a href="20230613-polygonzug.html#ID-70b6df30-701d-4807-b115-d9f0ae1c8aa7">Polygonzug</a> mit <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_b41827a3d448cd9ae0a2bc7958dc1437b3afb103.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_b41827a3d448cd9ae0a2bc7958dc1437b3afb103.svg" class="org-svg" />
-Die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_79c78f2f4715a4bdfd6ea72733a51d12045efd22.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_79c78f2f4715a4bdfd6ea72733a51d12045efd22.svg" class="org-svg" /> lässt sich als <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_677477294a71ff8e0ce2948e63bf077398aa16e3.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_677477294a71ff8e0ce2948e63bf077398aa16e3.svg" class="org-svg" /> auffassen und für jede Komponente <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> existiert ein <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_b2a12601b8e9f967e8fc2a61000fd1c2df35a31e.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_b2a12601b8e9f967e8fc2a61000fd1c2df35a31e.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_93f2efad53675900aa0648d3d869291f7c16e9a7.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_93f2efad53675900aa0648d3d869291f7c16e9a7.svg" class="org-svg" />
-Damit folgt für <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> als <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a> 
+Sei \(x \in U_{\delta}\), so existiert ein <a href="20230613-polygonzug.html#ID-70b6df30-701d-4807-b115-d9f0ae1c8aa7">Polygonzug</a> mit \(z_i = \sum_{i=1}^{n} x_i e_i\)
+Die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f(z_{k}) - f(z_{k-1})\) lässt sich als <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: \mathbb{R} \rightarrow \mathbb{R}^m\) auffassen und für jede Komponente \(i\) existiert ein \(\vert \theta_{k,i} \vert < \delta\), so dass \(\frac{\partial_i}{\partial_k} f(z_k + \theta_{k,i} e_k) \theta_{k_i}\)
+Damit folgt für \(x\) als <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_cc9dccf696f1c3a6017d3294bfe963e054e22b88.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_cc9dccf696f1c3a6017d3294bfe963e054e22b88.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) - f(0) =& \sum_{i,j} \frac{\partial_i}{\partial_k} f(z_{k-1} + \theta_{k,i} e_k) \theta_{k,i}
+\end{align*}
 <p>
 Somit folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_3662242596dd37ef8bdfb0512ea3ba2d3f0ac9c8.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_3662242596dd37ef8bdfb0512ea3ba2d3f0ac9c8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) = f(0) + \sum_{i,j} \frac{\partial_i}{\partial_j} f(z_{j-1} + \theta_{j,i} e_j) \theta_{j,i}
+\end{align*}
 
 <p>
 Dabei gilt für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> die Supremumsnorm
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_98e71dcdeefea2d4230b15040b9d1e19ce103927.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_98e71dcdeefea2d4230b15040b9d1e19ce103927.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+& \lim_{z \to 0}\left(\frac{1}{z} \cdot \sum_{i,j} \left( \frac{\partial_i}{\partial_j}f(0) - \frac{\partial_i}{\partial_j} f(z_{j-1} + \theta_{j,i} e_j) \right) \theta_{j,i} \right)  \\
+\leq& \lim_{z \to 0}\left(\frac{1}{\| z \|} \cdot \sum_{i,j} \left( \frac{\partial_i}{\partial_j}f(0) - \frac{\partial_i}{\partial_j} f(z_{j-1} + \theta_{j,i} e_j) \right) \| z \| \right) \\
+=& \lim_{z \to 0} \sum_{i,j} \left( \frac{\partial_i}{\partial_j}f(0) - \frac{\partial_i}{\partial_j} f(z_{j-1} + \theta_{j,i} e_j) \right) \\
+=& 0
+\end{align*}
 
 <p>
-Damit lässt sich <img src="file:///home/anton/html/ltximg/20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ee4bdab68fdce20192d1efcaee729c4100ab975.svg" alt="20230613-stetige_partielle_differenzierbarkeit_impliziert_totale_differenzierbarkeit_1ee4bdab68fdce20192d1efcaee729c4100ab975.svg" class="org-svg" /> mit sublinearem Restglied und der <a href="20230606-jacobi_matrix.html#ID-be661208-14c1-4aaa-a9b0-e96751d62adf">Jacobi Matrix</a> appproximieren.
+Damit lässt sich \(f(0)\) mit sublinearem Restglied und der <a href="20230606-jacobi_matrix.html#ID-be661208-14c1-4aaa-a9b0-e96751d62adf">Jacobi Matrix</a> appproximieren.
 </p>
 
 

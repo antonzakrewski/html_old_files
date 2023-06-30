@@ -9,66 +9,75 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">parakompakter Hausdorff-Raum als T3-Raum</h1>
-<div id="outline-container-org7d93d86" class="outline-2">
-<h2 id="org7d93d86"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org20c208b" class="outline-2">
+<h2 id="org20c208b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakter</a> <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff</a> -<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a>
-Dann ist <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-Raum</a> 
+Sei \((X, \mathcal{T})\) ein <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakter</a> <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff</a> -<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a>
+Dann ist \(X\) ein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-Raum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org3d25b20" class="outline-2">
-<h2 id="org3d25b20"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd7239dd" class="outline-2">
+<h2 id="orgd7239dd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_3d31826a2ed5172532d32d4feb16b39bfee141b0.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_3d31826a2ed5172532d32d4feb16b39bfee141b0.svg" class="org-svg" /> so exisitiert für <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_8ceeae2f424fc18787c8b2b21a503a3255eead88.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_8ceeae2f424fc18787c8b2b21a503a3255eead88.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_c05dc7820635d9f670a60063d4389638c6f23317.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_c05dc7820635d9f670a60063d4389638c6f23317.svg" class="org-svg" /> und eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_cf56315c706439b05e5a41c1376ba53a62abfaaf.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_cf56315c706439b05e5a41c1376ba53a62abfaaf.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" /> und man erhält die <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> 
+Sei \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und \(b \not\in A\) so exisitiert für \(x \in A\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(U(x)\) und eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(V(x)\) von \(b\) und man erhält die <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_0511c31c320cc8e06bffdc890211cf8929a7be06.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_0511c31c320cc8e06bffdc890211cf8929a7be06.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(U(x)) \cup X \setminus A
+\end{align*}
 <p>
-Nach Annahme existiert eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche</a> <a href="20230227163354-feinere_uberdeckung.html#ID-9d631e9c-c072-4bf1-9622-0e64ecda2b23">Verfeinerung</a> <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_3d995dc795e8acec9206c3afcc01ca4fe108c31c.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_3d995dc795e8acec9206c3afcc01ca4fe108c31c.svg" class="org-svg" />.
-Sei die <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> ohne nichtleeren Schnitt mit <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> gegeben:
+Nach Annahme existiert eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche</a> <a href="20230227163354-feinere_uberdeckung.html#ID-9d631e9c-c072-4bf1-9622-0e64ecda2b23">Verfeinerung</a> \(T_i\).
+Sei die <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> ohne nichtleeren Schnitt mit \(A\) gegeben:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_04ebbaf1b33cd6d47a8cee89010b71cd028d182e.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_04ebbaf1b33cd6d47a8cee89010b71cd028d182e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+T_A \coloneqq \{T_i \vert T_i \cap A \neq \emptyset\}
+\end{align*}
 <p>
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_4b12e556ad63f46d7441858897b84ff199c95fe7.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_4b12e556ad63f46d7441858897b84ff199c95fe7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+U_T \coloneqq \bigcup_{T \in T_A} T
+\end{align*}
 <p>
-eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />.
+eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(A\).
 </p>
 
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" />, so existiert nach Annahme eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_6002f3ff20743eb6d2537d7f6cc4d206dd9c2522.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_6002f3ff20743eb6d2537d7f6cc4d206dd9c2522.svg" class="org-svg" />, so dass bloß für endlich viele <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_0d8134b5d042e432180fce5e64cc9b27fb85fcd0.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_0d8134b5d042e432180fce5e64cc9b27fb85fcd0.svg" class="org-svg" /> gilt: <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_5ac5e7e92beee9727d8981a985661c449282412c.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_5ac5e7e92beee9727d8981a985661c449282412c.svg" class="org-svg" />.
-Damit ist <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_5ff7eb73818bf44238f0c989baa1bd07d6b6fa56.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_5ff7eb73818bf44238f0c989baa1bd07d6b6fa56.svg" class="org-svg" /> eine zu <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_48992e2b08ee0ca89b94d94c2274be912825e86d.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230624-parakompakter_hausdorff_raum_als_t3_raum_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230624-parakompakter_hausdorff_raum_als_t3_raum_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" />.
+Für \(b\), so existiert nach Annahme eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(\overline{U}(b)\), so dass bloß für endlich viele \(T_i \subseteq U(x_i)\) gilt: \(T_i \cap W(y) \neq \emptyset\).
+Damit ist \(U(b) \coloneqq \bigcap_{i = 1}^n V(x_i) \cap \overline{U}(b)\) eine zu \(T\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(y\).
 </p>
 </div>
 </div>

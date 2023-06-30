@@ -9,58 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der ungeraden Funktionen als Vektorraum</h1>
-<div id="outline-container-orgceacb87" class="outline-2">
-<h2 id="orgceacb87"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5c4e5c4" class="outline-2">
+<h2 id="org5c4e5c4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> der <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungeraden Funktionen</a> <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_83a30fe66b645048943178d35fb6ccb929c019e6.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_83a30fe66b645048943178d35fb6ccb929c019e6.svg" class="org-svg" /> gegeben, dann ist <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> 
+Sei die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(V\) der <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungeraden Funktionen</a> \(f: \mathbb{R} \rightarrow \mathbb{R}\) gegeben, dann ist \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orge64e121" class="outline-2">
-<h2 id="orge64e121"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org92b2857" class="outline-2">
+<h2 id="org92b2857"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Eigenschaften wie Distributivität folgen aus dem <a href="20221009092141-linearer_funktionenraum.html#ID-81b8bc2e-4619-4831-99f4-9573b999cee6">linearen Funktionenraum</a> 
 Damit bleibt die Abgeschlossenheit zu zeigen
 </p>
 </div>
-<div id="outline-container-orgee925c4" class="outline-3">
-<h3 id="orgee925c4"><span class="section-number-3">2.1.</span> addition</h3>
+<div id="outline-container-orgb4ed3b1" class="outline-3">
+<h3 id="orgb4ed3b1"><span class="section-number-3">2.1.</span> addition</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_7b0c1efcd34e9471fbaa8668a51173298efbffe0.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_7b0c1efcd34e9471fbaa8668a51173298efbffe0.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" />:
+Seien \(f,f' \in V\), so gilt für \(x \in \mathbb{R}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_7f6ec528e42b76265ece9a3fe200649776a91022.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_7f6ec528e42b76265ece9a3fe200649776a91022.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(f + f')(-x) =& f(-x) + f'(-x) \\
+=& -f(x) - f'(x) \\
+=& -(f + f')(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4e192fd" class="outline-3">
-<h3 id="org4e192fd"><span class="section-number-3">2.2.</span> Skalarmultiplikation</h3>
+<div id="outline-container-orgeaaff65" class="outline-3">
+<h3 id="orgeaaff65"><span class="section-number-3">2.2.</span> Skalarmultiplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_1182a2318a4d2df8d6398586d0b17035b2c6ce50.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_1182a2318a4d2df8d6398586d0b17035b2c6ce50.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_ddf855ea69323196e09c35bbce594fba78a2b947.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_ddf855ea69323196e09c35bbce594fba78a2b947.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" />
+Sei \(f \in V\) und \(\lambda \in \mathbb{R}\), so gilt für \(x \in \mathbb{R}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-menge_der_ungeraden_funktionen_als_vektorraum_f2edae6af9505615580b0d445a503dc2faa8bdc4.svg" alt="20230624-menge_der_ungeraden_funktionen_als_vektorraum_f2edae6af9505615580b0d445a503dc2faa8bdc4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(\lambda \cdot f)(-x) =& \lambda \cdot f(-x) \\
+=& \lambda -f(x) \\
+=& - \lambda f(x)
+\end{align*}
 </div>
 </div>
 </div>

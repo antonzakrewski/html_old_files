@@ -3,80 +3,85 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Existenz einer Basis in einem endlich erzeugten Vektorraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Basis in einem endlich erzeugten Vektorraum</h1>
-<div id="outline-container-orgd5fab71" class="outline-2">
-<h2 id="orgd5fab71"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd90f8bf" class="outline-2">
+<h2 id="orgd90f8bf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter K-Vektorraum</a>, <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_1d85a0724aa0e324decc81712cc3f2ef5cb8e1a8.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_1d85a0724aa0e324decc81712cc3f2ef5cb8e1a8.svg" class="org-svg" />.
-Sei <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8f792df3091ff6be35a9a0208d4f7c8f301a8709.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8f792df3091ff6be35a9a0208d4f7c8f301a8709.svg" class="org-svg" /> und seien <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_234c9669e69b557d2a7bbb93d5d646318d8a5e54.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_234c9669e69b557d2a7bbb93d5d646318d8a5e54.svg" class="org-svg" /> <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">linear abhängige</a> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> in <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
-Dann gibt es eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_85a6103c55f787476040b0b8679e80eb05475938.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_85a6103c55f787476040b0b8679e80eb05475938.svg" class="org-svg" /> von <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />, sodass gilt
+Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter K-Vektorraum</a>, \(V = \langle a_1,...,a_n\rangle\).
+Sei \(0 \leq k < n\) und seien \(c_1,...,c_k\) <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">linear abhängige</a> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> in \(V\).
+Dann gibt es eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(\{b_1,...,b_m\}\) von \(V\), sodass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_913db7dd317106676a5605599acd640f4eb3c7ff.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_913db7dd317106676a5605599acd640f4eb3c7ff.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\{c_1,...,c_k\} \subseteq \{b_1,...,b_m\} \subseteq \langle a_1,...,a_n\rangle
+\end{align*}
 <p>
-d.h. jede <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_cbc7fd782bccceba1b040c9f70e73ca9cad9395e.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_cbc7fd782bccceba1b040c9f70e73ca9cad9395e.svg" class="org-svg" /> lässt sich durch Hinzunahme geeigneter <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> aus einem <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ergänzen.
+d.h. jede <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\{c_1,...,c_k\}\) lässt sich durch Hinzunahme geeigneter <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> aus einem <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\) ergänzen.
 </p>
 </div>
 </div>
-<div id="outline-container-org8f7416a" class="outline-2">
-<h2 id="org8f7416a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb8d2034" class="outline-2">
+<h2 id="orgb8d2034"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_28d57b7b77c8fe2d9763cd8b8b3468448de8c577.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_28d57b7b77c8fe2d9763cd8b8b3468448de8c577.svg" class="org-svg" />, da das <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> durch hinzunahme von <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> aus <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_9c7125dee09530807a8671eeae8716fd5d8228cf.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_9c7125dee09530807a8671eeae8716fd5d8228cf.svg" class="org-svg" /> sich nicht verändert und damit die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_6bcb2f73052f49021ef13a8ba11603b932dc9c01.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_6bcb2f73052f49021ef13a8ba11603b932dc9c01.svg" class="org-svg" /> beleib vergrößert werden kann.
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(\{c_1,...,c_k\} \subseteq \{a_1,...,a_n\}\), da das <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> durch hinzunahme von <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> aus \(\langle a_1,...,a_n\rangle\) sich nicht verändert und damit die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\{a_1,...,a_n\}\) beleib vergrößert werden kann.
 Durch Umordnung erhalten wir dann auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_683d051a07f1d67cab1455c174c7aab9c8c69eae.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_683d051a07f1d67cab1455c174c7aab9c8c69eae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+c_i = a_i \forall i \in \{1,..,k\} \\
+b_i = a_i \forall i \in \{1,..,.m\}
+\end{align*}
 <p>
-Sei <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_eb9ccf196d9112b13f08d2353e69165658f99251.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_eb9ccf196d9112b13f08d2353e69165658f99251.svg" class="org-svg" /> die maximal <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so folgt, dass für <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_fb09de43d2b6024d9b53390088cc86d26721ac09.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_fb09de43d2b6024d9b53390088cc86d26721ac09.svg" class="org-svg" /> mit <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_38c5efd2d30ee3c349b6ec8142f43a7a220bf3ae.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_38c5efd2d30ee3c349b6ec8142f43a7a220bf3ae.svg" class="org-svg" /> eine nichttriviale <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a> existiert mit
+Sei \(\{a_1,...,a_m\}\) die maximal <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so folgt, dass für \(a_i'\) mit \(i' > m\) eine nichttriviale <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a> existiert mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_fa7a5ee56f0adcce3f4d5f4290c537026a6b0de7.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_fa7a5ee56f0adcce3f4d5f4290c537026a6b0de7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\sum_{n=1}^{m} \alpha_i a_i + \alpha_{i'} a_{i'} =& 0 && \alpha_{i'} \neq 0 \\
+\a_{i'} =& \frac{-1}{\alpa_{i'}} \sum_{n=1}^{m} \alpha_i a_i 
+\end{align*}
 
 <p>
-Isbesondere ist <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8caf75b7042049a168e26c376331e76121d9dd9c.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_8caf75b7042049a168e26c376331e76121d9dd9c.svg" class="org-svg" /> wegen der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linearen unabhängigkeit</a> von <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_eb9ccf196d9112b13f08d2353e69165658f99251.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_eb9ccf196d9112b13f08d2353e69165658f99251.svg" class="org-svg" />
-Daraus folgt für beliebiges <img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_a0e33685e6fd6d85327a74d1dceae10b5778fa3a.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_a0e33685e6fd6d85327a74d1dceae10b5778fa3a.svg" class="org-svg" />
+Isbesondere ist \(\alpha_{i'} \neq 0\) wegen der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linearen unabhängigkeit</a> von \(\{a_1,...,a_m\}\)
+Daraus folgt für beliebiges \(a_{i'} \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_92acfd532fc3914b6e480f964289b0133e5685b1.svg" alt="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum_92acfd532fc3914b6e480f964289b0133e5685b1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+a_{i'} \in \langle a_i,...,a_m\rangle
+\end{align*}
 </div>
 </div>
 </div>

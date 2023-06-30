@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">doppeltes Komplement</h1>
-<div id="outline-container-org1e55184" class="outline-2">
-<h2 id="org1e55184"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf60c972" class="outline-2">
+<h2 id="orgf60c972"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230320192940-doppeltes_komplement_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230320192940-doppeltes_komplement_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230320192940-doppeltes_komplement_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" alt="20230320192940-doppeltes_komplement_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" class="org-svg" />, so gilt:
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A \subseteq M\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230320192940-doppeltes_komplement_a568667942a127b71b47285b0def4aceb7e4475e.svg" alt="20230320192940-doppeltes_komplement_a568667942a127b71b47285b0def4aceb7e4475e.svg" class="org-svg" />
-</span>
+\begin{align*}
+M \setminus (M \setminus A) = A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4af5cda" class="outline-2">
-<h2 id="org4af5cda"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga0e4cfe" class="outline-2">
+<h2 id="orga0e4cfe"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230320192940-doppeltes_komplement_91a74996f662343834850c7d58dcc32e46e703f7.svg" alt="20230320192940-doppeltes_komplement_91a74996f662343834850c7d58dcc32e46e703f7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M \setminus (M \setminus A) =& \{m \in M \vert m \not\in (M \setminus A) \} \\
+=& \{m \in M \vert m \not\in \{m \in M \vert m \not \in A\}\} \\
+=& \{m \in M \vert m \in A\} \\
+=& A
+\end{align*}
 </div>
 </div>
 </div>

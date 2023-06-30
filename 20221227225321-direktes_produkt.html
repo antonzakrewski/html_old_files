@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Direktes Produkt (Gruppe)</h1>
-<div id="outline-container-org4365f99" class="outline-2">
-<h2 id="org4365f99"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2f361f1" class="outline-2">
+<h2 id="org2f361f1"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien für <img src="file:///home/anton/html/ltximg/20221227225321-direktes_produkt_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20221227225321-direktes_produkt_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20221227225321-direktes_produkt_630f9fb6909aa349aed21a6d93cb40245de2f8c6.svg" alt="20221227225321-direktes_produkt_630f9fb6909aa349aed21a6d93cb40245de2f8c6.svg" class="org-svg" /> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a>.
+Seien für \(i \in I\) \(G_i\) <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a>.
 Das Direkte Produkt der <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> ist definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225321-direktes_produkt_747b0f5f8b5f0609f2d352dd25e7b8df1a20d3ea.svg" alt="20221227225321-direktes_produkt_747b0f5f8b5f0609f2d352dd25e7b8df1a20d3ea.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{i \in I}^{} G_i
+\end{align*}
 <p>
 mit der komponentenweise Verknüpfung, d.h.:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225321-direktes_produkt_0945a54ab33f25be1c3bf76070f9e9eff211e507.svg" alt="20221227225321-direktes_produkt_0945a54ab33f25be1c3bf76070f9e9eff211e507.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(x_i)_{i \in I} \odot (y_i)_{i \in I}  \coloneqq (x_i \cdot_i y_i)_{i \in I}
+\end{align*}
 </div>
 </div>
 </div>

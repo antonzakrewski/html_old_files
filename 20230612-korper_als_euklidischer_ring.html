@@ -9,42 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Körper als euklidischer Ring</h1>
-<div id="outline-container-orgf1eaa78" class="outline-2">
-<h2 id="orgf1eaa78"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org212c96d" class="outline-2">
+<h2 id="org212c96d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230612-korper_als_euklidischer_ring_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, dann ist <img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230612-korper_als_euklidischer_ring_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> auch ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> mit <a href="20221230001121-euklidische_normfunktion.html#ID-6037056b-f4cd-4207-85f5-bc2fbc743703">euklidische Normfunktion</a> 
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, dann ist \(K\) auch ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> mit <a href="20221230001121-euklidische_normfunktion.html#ID-6037056b-f4cd-4207-85f5-bc2fbc743703">euklidische Normfunktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_11af069caf9dbafc7b0a8045bc4d2829779fdf8f.svg" alt="20230612-korper_als_euklidischer_ring_11af069caf9dbafc7b0a8045bc4d2829779fdf8f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\phi(k) = 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb11454b" class="outline-2">
-<h2 id="orgb11454b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6cd0832" class="outline-2">
+<h2 id="org6cd0832"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_6606a2c8bda8b7937cda5bb66a629ac65b74ef33.svg" alt="20230612-korper_als_euklidischer_ring_6606a2c8bda8b7937cda5bb66a629ac65b74ef33.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_1bdf4065862de6ff48d874fbf042f961ae5b02da.svg" alt="20230612-korper_als_euklidischer_ring_1bdf4065862de6ff48d874fbf042f961ae5b02da.svg" class="org-svg" />, so dass gilt:
+Seien \(k,k' \neq 0\), so existiert ein \(\frac{k}{k'}\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230612-korper_als_euklidischer_ring_f8925bce3bacaac5d5cf437de56b9a7f8ee6cbe8.svg" alt="20230612-korper_als_euklidischer_ring_f8925bce3bacaac5d5cf437de56b9a7f8ee6cbe8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+k = \frac{k}{k'} \cdot k' + 0
+\end{align*}
 </div>
 </div>
 </div>

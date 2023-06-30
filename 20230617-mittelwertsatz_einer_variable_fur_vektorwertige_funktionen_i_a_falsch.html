@@ -9,64 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mittelwertsatz einer Variable für vektorwertige Funktionen i.A. falsch</h1>
-<div id="outline-container-org84a891a" class="outline-2">
-<h2 id="org84a891a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga881904" class="outline-2">
+<h2 id="orga881904"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_5ad8884e70b00fc677f7b81ee5d1f07dbd327ecc.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_5ad8884e70b00fc677f7b81ee5d1f07dbd327ecc.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> und auf <img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_7f38f9244753d5b443f2c09bbc15d4f4754957ae.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_7f38f9244753d5b443f2c09bbc15d4f4754957ae.svg" class="org-svg" /> <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20230616-kurve.html#ID-fff7bc54-a513-4c96-8225-5d2978e17977">Kurve</a>.
-Dann existiert i.A. kein <img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_682510e0b696c6466485f3470c12eec29dcb0239.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_682510e0b696c6466485f3470c12eec29dcb0239.svg" class="org-svg" /> mit
+Sei \(c: [0,1] \rightarrow \mathbb{R}^m\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> und auf \((0,1)\) <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20230616-kurve.html#ID-fff7bc54-a513-4c96-8225-5d2978e17977">Kurve</a>.
+Dann existiert i.A. kein \(t \in (0,1)\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_7de57b0025b81430275256b141e58fde94826729.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_7de57b0025b81430275256b141e58fde94826729.svg" class="org-svg" />
-</span>
+\begin{align*}
+c(1) - c(0) = c'(t)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9cfbd4a" class="outline-2">
-<h2 id="org9cfbd4a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd8cb4bc" class="outline-2">
+<h2 id="orgd8cb4bc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei folgende <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> gegeben:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_a96944f02c928efd465389a60998815729d2ba48.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_a96944f02c928efd465389a60998815729d2ba48.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c: \mathbb{R} \rightarrow& \mathbb{R}^2 \\
+t \mapsto& \begin{pmatrix} \sin(2 \pi t) \\ \cos(2\pi t) \end{pmatrix} 
+\end{align*}
 <p>
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_f558deda396c2dc83d5f50d2bd1514e91c615ef6.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_f558deda396c2dc83d5f50d2bd1514e91c615ef6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c(1) - c(0) =& \begin{pmatrix} \sin(2\pi) - \sin(0) \\ \cos(2\pi) - \cos(0) \end{pmatrix} \\
+=& \begin{pmatrix} 0 \\ 0 \end{pmatrix} 
+\end{align*}
 <p>
 Ferner ist die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> differenzierbar mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_e5dfebc8c3ca3e6e6cd93c56e68e9070310a20b6.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_e5dfebc8c3ca3e6e6cd93c56e68e9070310a20b6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}t} c(t) =& \begin{pmatrix} 2\pi \cos(2 \pi t) \\ 2\pi \sin(2\pi t) \end{pmatrix} 
+\end{align*}
 <p>
-und es gilt für <img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_ff675b8b355301881fa6d24f1243f1a1a8b53a2c.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_ff675b8b355301881fa6d24f1243f1a1a8b53a2c.svg" class="org-svg" />, d.h. es gilt <img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_cca824ccceb370d8f28706595c6028c5c59a423e.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_cca824ccceb370d8f28706595c6028c5c59a423e.svg" class="org-svg" />
+und es gilt für \(\cos(2 \pi t) = 0 \Rightarrow \sin(2 \pi t) \neq 0\), d.h. es gilt \(\forall t \in \mathbb{R}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_d24630a707da4b4eb971634a33b1ef1837be5284.svg" alt="20230617-mittelwertsatz_einer_variable_fur_vektorwertige_funktionen_i_a_falsch_d24630a707da4b4eb971634a33b1ef1837be5284.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+c(1) - c(0) =& 0 \\
+\neq& c'(t) \cdot 1
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,70 +9,89 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierung der affinen Unabhängigkeit</h1>
-<div id="outline-container-org86554c5" class="outline-2">
-<h2 id="org86554c5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org450cc93" class="outline-2">
+<h2 id="org450cc93"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_c37e65dff3f33ab63591b0174185b29e91ddbc8b.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_c37e65dff3f33ab63591b0174185b29e91ddbc8b.svg" class="org-svg" /> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a>.
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> und \(v_1,..,v_k\) <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" class="org-svg" /> sind <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affin unabhängig</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_f5479943bbbd69bb3a3781f526b3a07efb5bfdbf.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_f5479943bbbd69bb3a3781f526b3a07efb5bfdbf.svg" class="org-svg" /> för <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d8e61b5a4a984982377de4d31a0bc7247c1beec1.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d8e61b5a4a984982377de4d31a0bc7247c1beec1.svg" class="org-svg" /> ist <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a></li>
+<li>\(v_i\) sind <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affin unabhängig</a></li>
+<li>\(v_i - v_1\) för \(i > 1\) ist <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org74a274e" class="outline-2">
-<h2 id="org74a274e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1812f21" class="outline-2">
+<h2 id="org1812f21"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8aa60bf" class="outline-3">
-<h3 id="org8aa60bf"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgd85c0e2" class="outline-3">
+<h3 id="orgd85c0e2"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" class="org-svg" /> <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affin unabhängig</a> und
+Sei \(v_i\) <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affin unabhängig</a> und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_72b1d0ca498a88f486af310257f0fb52641f5bb5.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_72b1d0ca498a88f486af310257f0fb52641f5bb5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=2}^{k} \lambda_i (v_i - v_1) = 0
+\end{align*}
 <p>
 Dies ist äquivalent zu:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_0a853efae13a89a2729dd8d45a6015bd9b4d0e91.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_0a853efae13a89a2729dd8d45a6015bd9b4d0e91.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& \sum_{i=2}^{k} \lambda_i v_i - \sum_{i=2}^{k} \lambda_i v_1
+\end{align*}
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_8c7d4b4563d805454c9aee8b4cfdd4af3bfba9f1.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_8c7d4b4563d805454c9aee8b4cfdd4af3bfba9f1.svg" class="org-svg" />, so folgt wegen der affinen unabhängigkeit auch <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf96ac42403e6f0e60062e75f21e29f823e2d979.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf96ac42403e6f0e60062e75f21e29f823e2d979.svg" class="org-svg" />, indem man <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_1d8a01ca05fb6757076d03309defe9fe2a33d295.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_1d8a01ca05fb6757076d03309defe9fe2a33d295.svg" class="org-svg" /> betrachtet. 
-Sei <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_e72eedea50d47fe6ea873146ac15b513a266b115.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_e72eedea50d47fe6ea873146ac15b513a266b115.svg" class="org-svg" />, so folgt insbesondere auch, dass man bei der <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affinen Unabhängigkeit</a> <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d84121fa8e4e2992589287e8237cb2eb192be3c6.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d84121fa8e4e2992589287e8237cb2eb192be3c6.svg" class="org-svg" /> setzen kann und so <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" class="org-svg" />  und <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_2e8e5f48f0ac97e68a726228dd0c3a5d85a62fb5.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_2e8e5f48f0ac97e68a726228dd0c3a5d85a62fb5.svg" class="org-svg" /> erhält, woraus nach <a href="20211223100720-kontrapositionsgesetz.html#ID-72683132-824d-4f73-b099-70d5787bebd3">Kontrapositionsgesetz</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_7b32e9bf5837596bd336c81b30b15932e7f154aa.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_7b32e9bf5837596bd336c81b30b15932e7f154aa.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linear unabhängig</a> sein muss.
+Sei \(\sum_{i=2}^{k} \lambda_i = 0\), so folgt wegen der affinen unabhängigkeit auch \(\lambda_i = 0\), indem man \(\sum_{i=2}^{k} \lambda_i v_i + 0 v_1\) betrachtet. 
+Sei \(\sum_{i=2}^{k} \lambda_i \neq 0\), so folgt insbesondere auch, dass man bei der <a href="20230310093634-affine_unabhangigkeit.html#ID-86a600aa-4d12-426c-ad38-7760e78d8481">affinen Unabhängigkeit</a> \(\lambda_1 = - \sum_{i=2}^{k} \lambda_1\) setzen kann und so \(\sum_{i=1}^{k} \lambda_i = 0\)  und \(\sum_{i=1}^{k} \lambda_i v_i = 0\) erhält, woraus nach <a href="20211223100720-kontrapositionsgesetz.html#ID-72683132-824d-4f73-b099-70d5787bebd3">Kontrapositionsgesetz</a> folgt, dass \(\sum_{i=2}^{k} \lambda_i (v_i - v_1)\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linear unabhängig</a> sein muss.
 </p>
 </div>
 </div>
-<div id="outline-container-org9a92e81" class="outline-3">
-<h3 id="org9a92e81"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgf3eee9a" class="outline-3">
+<h3 id="orgf3eee9a"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_f5479943bbbd69bb3a3781f526b3a07efb5bfdbf.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_f5479943bbbd69bb3a3781f526b3a07efb5bfdbf.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> und <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" class="org-svg" />, so folgt
+Sei \(v_i - v_1\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> und \(\sum_{i=1}^{k} \lambda_i = 0\), so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_738c62aba445471328c9ba715fa6e5cc379698db.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_738c62aba445471328c9ba715fa6e5cc379698db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& \sum_{i=1}^{k} \lambda_i v_i \\
+=& \sum_{i=1}^{k} \lambda_i v_i - 0 v_1 \\
+=& \sum_{i=1}^{k} \lambda_i v_i - \sum_{i=1}^{k} \lambda_i v_1 \\
+=& \sum_{i=2}^{k} \lambda_i (v_i - v_1)
+\end{align*}
 <p>
-wegen der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linearen unabhängigkeit</a> folgt dann auch <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf96ac42403e6f0e60062e75f21e29f823e2d979.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf96ac42403e6f0e60062e75f21e29f823e2d979.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d8e61b5a4a984982377de4d31a0bc7247c1beec1.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_d8e61b5a4a984982377de4d31a0bc7247c1beec1.svg" class="org-svg" /> und wegen <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_9e9aa87c0ad2cc623207e2b0cf426e16051e741c.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf7da328781ae24fca14b8aea405e46c31640370.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_cf7da328781ae24fca14b8aea405e46c31640370.svg" class="org-svg" />
-Damit ist dann <img src="file:///home/anton/html/ltximg/20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" alt="20230310094141-aquivalente_charakterisierung_der_affinen_unabhangigkeit_beca644912e8ad7a1f00905b72ca078b44549831.svg" class="org-svg" /> affin unabhängig
+wegen der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linearen unabhängigkeit</a> folgt dann auch \(\lambda_i = 0\) für \(i > 1\) und wegen \(\sum_{i=1}^{k} \lambda_i = 0\) auch \(\lambda_1 = 0\)
+Damit ist dann \(v_i\) affin unabhängig
 </p>
 </div>
 </div>

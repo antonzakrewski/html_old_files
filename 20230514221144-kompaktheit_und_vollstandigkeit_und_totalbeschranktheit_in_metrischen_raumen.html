@@ -9,56 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit bzw. Vollständigkeit und Totalbeschränktheit</h1>
-<div id="outline-container-org07ca516" class="outline-2">
-<h2 id="org07ca516"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0046b84" class="outline-2">
+<h2 id="org0046b84"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständig</a> und <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a></li>
+<li>\(M\) ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a></li>
+<li>\(M\) ist <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständig</a> und <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org8772773" class="outline-2">
-<h2 id="org8772773"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8dbde64" class="outline-2">
+<h2 id="org8dbde64"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge97921e" class="outline-3">
-<h3 id="orge97921e"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orgff7d6a9" class="outline-3">
+<h3 id="orgff7d6a9"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> ohne <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
+Sei \(O_i\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> ohne <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
 Nach Annahme existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckung</a> mit $1$-<a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">Bällen</a>.
-Somit existiert ein <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_c6c93f9dd903e2e8c9a4a76086a939f291561ee5.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_c6c93f9dd903e2e8c9a4a76086a939f291561ee5.svg" class="org-svg" />, welches nicht durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> überdeckt werden.
-Für dieses <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_c6c93f9dd903e2e8c9a4a76086a939f291561ee5.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_c6c93f9dd903e2e8c9a4a76086a939f291561ee5.svg" class="org-svg" /> existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> überdeckung aus $$-Bällen und wieder existiert ein nicht durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele überdeckter $$-Ball <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_27d2b6bd10e3bc5dd6fcc78119add4a3fb24b1ee.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_27d2b6bd10e3bc5dd6fcc78119add4a3fb24b1ee.svg" class="org-svg" />
-Damit konstruiert man eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" class="org-svg" /> von Zentren mit
+Somit existiert ein \(B_1(x_0)\), welches nicht durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele \(O_i\) überdeckt werden.
+Für dieses \(B_1(x_0)\) existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> überdeckung aus $\frac{1}{2}$-Bällen und wieder existiert ein nicht durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele überdeckter $\frac{1}{2}$-Ball \(B_{\frac{1}{2}}(x_1)\)
+Damit konstruiert man eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von \(x_i\) von Zentren mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_788df7dc42339e6dfea53a00d92519fb8640c765.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_788df7dc42339e6dfea53a00d92519fb8640c765.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x_n,x_{n+1}) < \frac{1}{2^n} + \frac{1}{2^{n+1}}
+\end{align*}
 <p>
-da gilt <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3d3a5c922c6be4921f971310442d38725685daed.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3d3a5c922c6be4921f971310442d38725685daed.svg" class="org-svg" />
+da gilt \(B_{\frac{1}{2^n}}(x_n) \cap B_{\frac{1}{2^{n+1}}(x_{n+1}) \neq \emptyset\)
 </p>
 
 <p>
-da die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> somit <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> ist, <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> sie nach Annahme und es existiert ein grenzwert <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />.
-Dieser wird von <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> überdeckt, d.h. es existiert ein <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offenes</a> <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_e12489c8838a95db3ec009871de1f6776850d311.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_e12489c8838a95db3ec009871de1f6776850d311.svg" class="org-svg" /> und damit auch ein <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_d5e6e1e459e42b83139148962d4eb02e9336a565.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_d5e6e1e459e42b83139148962d4eb02e9336a565.svg" class="org-svg" />.
-Somit gilt aber <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_6061759da525f29364f04caafa5c60651c8df214.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_6061759da525f29364f04caafa5c60651c8df214.svg" class="org-svg" /> für hinreichend großes <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" />, Widerspruch.
+da die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> somit <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> ist, <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> sie nach Annahme und es existiert ein grenzwert \(x\).
+Dieser wird von \(O_i\) überdeckt, d.h. es existiert ein <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offenes</a> \(O\) mit \(x \in O\) und damit auch ein \(\varepsilon > 0\) mit \(B_{\varepsilon}(x) \subseteq O\).
+Somit gilt aber \(B_{\frac{1}{2^n}} \subseteq B_{\varepsilon}(x) \subseteq O\) für hinreichend großes \(n\), Widerspruch.
 </p>
 </div>
 </div>
-<div id="outline-container-orgddc8cd9" class="outline-3">
-<h3 id="orgddc8cd9"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgbb71aeb" class="outline-3">
+<h3 id="orgbb71aeb"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus dem Ringschluss von <a href="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu.html#ID-2c40dc31-59b3-43dd-8272-6e9664b5e057">Folgenkompaktheit und Vollständigkeit sowie Totalbeschränktheit</a>   

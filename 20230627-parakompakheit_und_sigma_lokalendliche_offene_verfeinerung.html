@@ -9,37 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierung von regulärer Parakompaktheit</h1>
-<div id="outline-container-orgbc31b86" class="outline-2">
-<h2 id="orgbc31b86"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9065af6" class="outline-2">
+<h2 id="org9065af6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulärer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230522175609-regularer_raum.html#ID-514aafc7-930a-473d-928f-525c49a34146">regulärer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a></li>
-<li>jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> hat eine <a href="20230627-sigma_lokalendlich.html#ID-a2cf2bf5-51e9-4a37-9281-de5d9c2f8b4f">sigma lokalendliche</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a></li>
-<li>Jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> hat eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a> durch beliebige <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a></li>
-<li>jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> hat eine <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">lokalendliche</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a></li>
+<li>\(X\) ist <a href="20230406114101-paracompact_space.html#ID-e335d767-4989-4ad5-ba4e-28c7559ae05a">parakompakt</a></li>
+<li>jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(U\) hat eine <a href="20230627-sigma_lokalendlich.html#ID-a2cf2bf5-51e9-4a37-9281-de5d9c2f8b4f">sigma lokalendliche</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a></li>
+<li>Jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(U\) hat eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a> durch beliebige <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a></li>
+<li>jede <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(U\) hat eine <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">lokalendliche</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc947b79" class="outline-2">
-<h2 id="orgc947b79"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4e0f273" class="outline-2">
+<h2 id="org4e0f273"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfcc1b52" class="outline-3">
-<h3 id="orgfcc1b52"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230627-parakompakheit_und_sigma_lokalendliche_offene_verfeinerung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org27d4422" class="outline-3">
+<h3 id="org27d4422"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 </div>
 
-<div id="outline-container-orgb3e3608" class="outline-3">
-<h3 id="orgb3e3608"><span class="section-number-3">2.2.</span> </h3>
+<div id="outline-container-org3120bcf" class="outline-3">
+<h3 id="org3120bcf"><span class="section-number-3">2.2.</span> </h3>
 </div>
 </div>
 </div>

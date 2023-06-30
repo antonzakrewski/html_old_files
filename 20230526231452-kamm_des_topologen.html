@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kamm des Topologen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kamm des Topologen</h1>
-<div id="outline-container-org0faa6d6" class="outline-2">
-<h2 id="org0faa6d6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org67393a9" class="outline-2">
+<h2 id="org67393a9"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230526231452-kamm_des_topologen_2f67bee86f8145970100994892d7384b33d20bf1.svg" alt="20230526231452-kamm_des_topologen_2f67bee86f8145970100994892d7384b33d20bf1.svg" class="org-svg" /> die euklidische Ebene, dann ist der Kamm des Topologen der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraum</a> für
+Sei \(\mathbb{R}^2\) die euklidische Ebene, dann ist der Kamm des Topologen der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraum</a> für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230526231452-kamm_des_topologen_7ada2d5734a9c173e306ab254c799dcc46334d69.svg" alt="20230526231452-kamm_des_topologen_7ada2d5734a9c173e306ab254c799dcc46334d69.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+K \coloneqq [0,1] \times \{0\} \cup \{(\frac{1}{n},r) \vert r \in [0,1], n \in \mathbb{N}^+\}
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,32 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>naturally equivalence</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">naturally equivalence</h1>
-<div id="outline-container-org9bd9c2f" class="outline-2">
-<h2 id="org9bd9c2f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org33641e3" class="outline-2">
+<h2 id="org33641e3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230403223458-naturally_equivalence_24c5fd41166f32d5dbfa584cee25a059b5fda4e2.svg" alt="20230403223458-naturally_equivalence_24c5fd41166f32d5dbfa584cee25a059b5fda4e2.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a>.
-<img src="ltximg/20230403223458-naturally_equivalence_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20230403223458-naturally_equivalence_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> and <img src="ltximg/20230403223458-naturally_equivalence_28c115dcd858941fca3ae0a5ac8a939e43faaba0.svg" alt="20230403223458-naturally_equivalence_28c115dcd858941fca3ae0a5ac8a939e43faaba0.svg" class="org-svg" /> are naturally equivalent, if there are <a href="20220830173246-kovarianter_funktor.html#ID-c5286004-d249-4969-86d5-c75655b7f5d3">covariant functors</a> <img src="ltximg/20230403223458-naturally_equivalence_3cf9bb062807e42bfd5880bab56f34992472958b.svg" alt="20230403223458-naturally_equivalence_3cf9bb062807e42bfd5880bab56f34992472958b.svg" class="org-svg" /> and <img src="ltximg/20230403223458-naturally_equivalence_5409e356fa50a3f1a235367ff6fa6da9a1355b71.svg" alt="20230403223458-naturally_equivalence_5409e356fa50a3f1a235367ff6fa6da9a1355b71.svg" class="org-svg" /> such that:
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a>.
+\(\mathcal{C}\) and \(\mathcal{D}\) are naturally equivalent, if there are <a href="20220830173246-kovarianter_funktor.html#ID-c5286004-d249-4969-86d5-c75655b7f5d3">covariant functors</a> \(F: \mathcal{C} \rightarrow \mathcal{D}\) and \(G: \mathcal{C} \rightarrow \mathcal{D}\) such that:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230403223458-naturally_equivalence_1764ae755880d7a10d6031b744affdae49acde40.svg" alt="20230403223458-naturally_equivalence_1764ae755880d7a10d6031b744affdae49acde40.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+F \circ G \simeq I_{\mathcal{D}} \\
+G \circ F \simeq I_{\mathcal{C}}
+\end{align*}
 </div>
 </div>
 </div>

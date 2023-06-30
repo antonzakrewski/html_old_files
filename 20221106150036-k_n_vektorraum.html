@@ -3,44 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>$K^n$ Vektorraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title"><img src="ltximg/20221106150036-k_n_vektorraum_450571e2d2543ee50c1e9c9d1fa524b20b8dcbe1.svg" alt="20221106150036-k_n_vektorraum_450571e2d2543ee50c1e9c9d1fa524b20b8dcbe1.svg" class="org-svg" /> Vektorraum</h1>
-<div id="outline-container-orge7e0e0b" class="outline-2">
-<h2 id="orge7e0e0b"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">\(K^n\) Vektorraum</h1>
+<div id="outline-container-orgc22febb" class="outline-2">
+<h2 id="orgc22febb"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221106150036-k_n_vektorraum_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" alt="20221106150036-k_n_vektorraum_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>.
-Dann ist <img src="ltximg/20221106150036-k_n_vektorraum_450571e2d2543ee50c1e9c9d1fa524b20b8dcbe1.svg" alt="20221106150036-k_n_vektorraum_450571e2d2543ee50c1e9c9d1fa524b20b8dcbe1.svg" class="org-svg" /> definiert als
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>.
+Dann ist \(K^n\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221106150036-k_n_vektorraum_b69a3c889e161b9c54b2f7efd086597b3ec5b201.svg" alt="20221106150036-k_n_vektorraum_b69a3c889e161b9c54b2f7efd086597b3ec5b201.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\{(\alpha_1,...,\alpha_n) \vert \alpha_i \in K\}
+\end{align*}
 <p>
 mit der komponentenweisen <a href="20221106145934-vektoraddition.html#ID-c6777ed8-3226-470d-b58c-471165f21783">Vektoraddition</a> und <a href="20221106150206-skalarmultiplikation.html#ID-de889a87-12eb-4fc5-b2b8-08b71c449885">Skalarmultiplikation</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221106150036-k_n_vektorraum_b95e42a8a53e4a0c7965c7d9af2a8e633d782b9b.svg" alt="20221106150036-k_n_vektorraum_b95e42a8a53e4a0c7965c7d9af2a8e633d782b9b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(\alpha_1, ..., \alpha_n) (\beta_1,...,\beta_n) =& (\alpha_1 + \beta_1, ..., \alpha_n + \beta_n) \\
+\alpha \cdot (\alpha_1, ..., \alpha_n) =& (\alpha \cdot \alpha_1, ..., \alpha \cdot \alpha_n)
+\end{align*}
 </div>
 </div>
 </div>

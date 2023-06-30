@@ -3,73 +3,93 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Charakterisierung der indiskreten Topologie anhand der Stetigkeit</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakterisierung der indiskreten Topologie anhand der Stetigkeit</h1>
-<div id="outline-container-org9324a93" class="outline-2">
-<h2 id="org9324a93"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1dba6a9" class="outline-2">
+<h2 id="org1dba6a9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann sind folgende Aussagen äquivalent:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> ist die <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskrete Topologie</a></li>
-<li>Für einen <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_cfed4812cfa49dc30187a07a40f47b89d614971a.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_cfed4812cfa49dc30187a07a40f47b89d614971a.svg" class="org-svg" /> ist jede <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_edf05a459b88935b499290ddead467ec912076fe.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_edf05a459b88935b499290ddead467ec912076fe.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(\mathcal{T}\) ist die <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskrete Topologie</a></li>
+<li>Für einen <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> \((X',\mathcal{T}')\) ist jede <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: X' \rightarrow X\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf58a5ed" class="outline-2">
-<h2 id="orgf58a5ed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4a0bc92" class="outline-2">
+<h2 id="org4a0bc92"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf9ec332" class="outline-3">
-<h3 id="orgf9ec332"><span class="section-number-3">2.1.</span> a) <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> b)</h3>
+<div id="outline-container-org8f055c5" class="outline-3">
+<h3 id="org8f055c5"><span class="section-number-3">2.1.</span> a) \(\Rightarrow\) b)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5e8c450a654ea61ec15276a7225da867ab598330.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5e8c450a654ea61ec15276a7225da867ab598330.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so folgt nach Definition <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_e541b3f3fb710e44e87529c7519e185767e052f2.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_e541b3f3fb710e44e87529c7519e185767e052f2.svg" class="org-svg" /> oder <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_b4745a6256134dee9f17bf580bb21bb92d0b6eb1.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_b4745a6256134dee9f17bf580bb21bb92d0b6eb1.svg" class="org-svg" />
+Sei \(A \in \mathcal{T}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so folgt nach Definition \(A = X\) oder \(A = \emptyset\)
 Ferner gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_66f0351d601c430b5d84047a2ea287e41f8792a3.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_66f0351d601c430b5d84047a2ea287e41f8792a3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f^{-1}[A] =& X' \in \mathcal{T}' 
+f^{-1}[\emptyset] =& \emptyset \in \mathcal{T}'
+\end{align*}
 <p>
-d.h. <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>
+d.h. \(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org33194c3" class="outline-3">
-<h3 id="org33194c3"><span class="section-number-3">2.2.</span> b) <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> a)</h3>
+<div id="outline-container-orgcb2b6df" class="outline-3">
+<h3 id="orgcb2b6df"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) a)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>:
-Nach Annahme existiert ein <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5e8c450a654ea61ec15276a7225da867ab598330.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_5e8c450a654ea61ec15276a7225da867ab598330.svg" class="org-svg" /> mit <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_ad078d436f41b1806518af91c652c52b63acbc66.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_ad078d436f41b1806518af91c652c52b63acbc66.svg" class="org-svg" />
-Sei <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_fd360ad749d31eb46fddd5b79f8f053d94054b2e.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_fd360ad749d31eb46fddd5b79f8f053d94054b2e.svg" class="org-svg" /> und <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /> die <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskrete Topologie</a>.
-Sei zusätzlich <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_07e3b490c7236d94b8579e141d79c281de720e13.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_07e3b490c7236d94b8579e141d79c281de720e13.svg" class="org-svg" /> beliebig, so folgt für die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
+Nach Annahme existiert ein \(A \in \mathcal{T}\) mit \(\emptyset \subsetneq A \subsetneq X\)
+Sei \(X = X'\) und \(\mathcal{T}'\) die <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskrete Topologie</a>.
+Sei zusätzlich \(a \in A, \overline{a} \in X \setminus X\) beliebig, so folgt für die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_4e3869ede9607a14b8823096a94859f8b5225e02.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_4e3869ede9607a14b8823096a94859f8b5225e02.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+f(x) =& 
+\begin{cases}
+a & \mbox{if } x \in A  \\
+\overline{a} & \mbox{if } x \not\in A  \\ 
+\end{cases}
+\end{align*}
 <p>
-Dann gilt <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_e09ab401ca2e86f6b24104019fa10c8c588e5427.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_e09ab401ca2e86f6b24104019fa10c8c588e5427.svg" class="org-svg" /> da <img src="ltximg/20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230227184712-charakterisierung_der_indiskreten_topologie_anhand_der_stetigkeit_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /> <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskret</a> ist.
+Dann gilt \(f^{-1}[A] = \{a\} \not\in \mathcal{T}'\) da \(\mathcal{T}'\) <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskret</a> ist.
 Spezialfall mit einelementiger Menge ?
 </p>
 </div>

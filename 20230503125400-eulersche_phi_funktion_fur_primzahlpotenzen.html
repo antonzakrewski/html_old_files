@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">eulersche Phi Funktion für Primzahlpotenzen</h1>
-<div id="outline-container-orgbd3cd50" class="outline-2">
-<h2 id="orgbd3cd50"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge3aa12e" class="outline-2">
+<h2 id="orge3aa12e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230503125400-eulersche_phi_funktion_fur_primzahlpotenzen_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230503125400-eulersche_phi_funktion_fur_primzahlpotenzen_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> ein <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a>, dann gilt für die <a href="20230503124954-eulersche_phi_funktion.html#ID-58c2b701-cb10-4918-89d7-cbdef5169ca1">Eulersche Phi Funktion</a> 
+Sei \(p\) ein <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a>, dann gilt für die <a href="20230503124954-eulersche_phi_funktion.html#ID-58c2b701-cb10-4918-89d7-cbdef5169ca1">Eulersche Phi Funktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503125400-eulersche_phi_funktion_fur_primzahlpotenzen_73b2b118541bc0e9a8990ecf5a8ed5984212b4db.svg" alt="20230503125400-eulersche_phi_funktion_fur_primzahlpotenzen_73b2b118541bc0e9a8990ecf5a8ed5984212b4db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi(p^k) = (p-1) p^{k-1}
+\end{align*}
 </div>
 </div>
 </div>

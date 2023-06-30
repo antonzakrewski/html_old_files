@@ -9,26 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lipschitzstetigkeit von den komplexen Funktionen: komplexe Konjugation, Betragsabbildung, Real- und Imaginärteilabbildung</h1>
-<div id="outline-container-org22284be" class="outline-2">
-<h2 id="org22284be"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8c2850e" class="outline-2">
+<h2 id="org8c2850e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222104256-lipschitzstetigkeit_von_den_komplexen_funktionen_komplexe_konjugation_betragsabbildung_real_und_imaginarteilabbildung_d6638fdfe0cec0dafda838dbe214deceb262f216.svg" alt="20221222104256-lipschitzstetigkeit_von_den_komplexen_funktionen_komplexe_konjugation_betragsabbildung_real_und_imaginarteilabbildung_d6638fdfe0cec0dafda838dbe214deceb262f216.svg" class="org-svg" />
-</span>
+\begin{align*}
+f: \mathbb{C} \rightarrow& \mathbb{C} \\  
+z \mapsto&  \overline{z} \\
+g: \mathbb{C} \rightarrow& \mathbb{C} \\  
+z \mapsto&  \vert z \vert \\
+h: \mathbb{C} \rightarrow& \mathbb{C} \\  
+z \mapsto&  \mathrm{Re}(z) \\
+h': \mathbb{C} \rightarrow& \mathbb{C} \\  
+z \mapsto&  \mathrm{Im}(z) \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org75c9b55" class="outline-2">
-<h2 id="org75c9b55"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org29d51d0" class="outline-2">
+<h2 id="org29d51d0"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

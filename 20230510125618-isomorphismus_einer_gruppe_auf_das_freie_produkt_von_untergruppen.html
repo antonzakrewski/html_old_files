@@ -3,84 +3,94 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Isomorphismus einer abelschen Gruppe auf das freie Produkt von Untergruppen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphismus einer abelschen Gruppe auf das freie Produkt von Untergruppen</h1>
-<div id="outline-container-org9eb129a" class="outline-2">
-<h2 id="org9eb129a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1acb4d9" class="outline-2">
+<h2 id="org1acb4d9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_2a2bf8e0d6bb45d1704635b3c69daf28505a4455.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_2a2bf8e0d6bb45d1704635b3c69daf28505a4455.svg" class="org-svg" /> <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit paarweise &lt;teilerfremden&gt; &lt;ordnungen&gt; <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_dbc6815aa58f12297f71b788bb77c07614862c3d.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_dbc6815aa58f12297f71b788bb77c07614862c3d.svg" class="org-svg" />.
-Sei <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" class="org-svg" /> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> und <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_8ddd5e9ac1aefe091abbb61b6f876568139369c1.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_8ddd5e9ac1aefe091abbb61b6f876568139369c1.svg" class="org-svg" />.
+Seien \(G_1,...,G_r\) <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit paarweise &lt;teilerfremden&gt; &lt;ordnungen&gt; \(m_i \coloneqq \vert G_i \vert\).
+Sei \(G\) <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> und \(\vert G \vert = m = \prod m_i\).
 Dann ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_500abd72db74601cba5cb481ec929ffdfc1f1002.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_500abd72db74601cba5cb481ec929ffdfc1f1002.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\phi: \prod G_i \rightarrow& G \\
+(x_1,...,x_r) \mapsto& \prod_{i=1}^r x_i
+\end{align*}
 <p>
 ein <a href="20220928135729-gruppenisomorphsimus.html#ID-a0a02292-8a0b-4dc8-a2a8-1d592e5cb95b">gruppenisomorphsimus</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org9e8c662" class="outline-2">
-<h2 id="org9e8c662"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfc8dfa7" class="outline-2">
+<h2 id="orgfc8dfa7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org45cd565" class="outline-3">
-<h3 id="org45cd565"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">homomorphismus</a></h3>
+<div id="outline-container-org3bf3c11" class="outline-3">
+<h3 id="org3bf3c11"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">homomorphismus</a></h3>
 </div>
-<div id="outline-container-orgd28c51a" class="outline-3">
-<h3 id="orgd28c51a"><span class="section-number-3">2.2.</span> <a href="20230318172340-gruppenmonomorphismus.html#ID-60ad1bff-6346-4f3b-b9b3-6e7aff5f4870">monomorphism</a></h3>
+<div id="outline-container-org2fd9fd7" class="outline-3">
+<h3 id="org2fd9fd7"><span class="section-number-3">2.2.</span> <a href="20230318172340-gruppenmonomorphismus.html#ID-60ad1bff-6346-4f3b-b9b3-6e7aff5f4870">monomorphism</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 &lt;kern und mono&gt;
-Sei <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_374d262e707618dc143a9ddb16fa6a35552e4a86.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_374d262e707618dc143a9ddb16fa6a35552e4a86.svg" class="org-svg" />, so folgt <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_cad5ef197e99d553f1dc89faba3354d928f6c2a0.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_cad5ef197e99d553f1dc89faba3354d928f6c2a0.svg" class="org-svg" /> mit $x<sub>10</sub>= (x<sub>2</sub> &sdot; &#x2026; &sdot; x<sub>r</sub>)<sup>-1</sup>
-Dmit existieren $&nu;, &mu; &isin; <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_8f7c9caa8b5cc708cb87e63c66488adcfc74873b.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_8f7c9caa8b5cc708cb87e63c66488adcfc74873b.svg" class="org-svg" /> mit <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_d1b4ead9bd22eb473ac3b1be6ea838aea686c3f9.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_d1b4ead9bd22eb473ac3b1be6ea838aea686c3f9.svg" class="org-svg" />
+Sei \(phi(x_1,...,x_r) = e\), so folgt \(x_1 \cdot ... \cdot x_r = e\) mit $x<sub>10</sub>= (x<sub>2</sub> &sdot; &#x2026; &sdot; x<sub>r</sub>)<sup>-1</sup>
+Dmit existieren $&nu;, &mu; &isin; \(\mathbb{Z}\) mit \(1 = \nu m_1 + \mu m_2 \cdot ... \cdot m_r\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_1ef819d3fdb0bc009e01dcd81168bf73eb366750.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_1ef819d3fdb0bc009e01dcd81168bf73eb366750.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+M \coloneqq 10- \mu m_1 = \mu m_2 \cdot ... m_r
+\end{align*}
 <p>
 Damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_cc9f5a1a49740786a40e359fda8f2039a7470afd.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_cc9f5a1a49740786a40e359fda8f2039a7470afd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+x_1 = x_1^M = (x_2 ... x_r)^{-M} = e
+\end{align*}
 <p>
-Analog für <img src="ltximg/20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_1f32a96205227cbbb95101dfa966146aa9293111.svg" alt="20230510125618-isomorphismus_einer_gruppe_auf_das_freie_produkt_von_untergruppen_1f32a96205227cbbb95101dfa966146aa9293111.svg" class="org-svg" />
+Analog für \(i \neq 1\)
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org9b2fbec" class="outline-3">
-<h3 id="org9b2fbec"><span class="section-number-3">2.3.</span> <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">epimorphism</a></h3>
+<div id="outline-container-orga67f8f9" class="outline-3">
+<h3 id="orga67f8f9"><span class="section-number-3">2.3.</span> <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">epimorphism</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der &lt;äquvalenz injektiv surjektiv endlich&gt;

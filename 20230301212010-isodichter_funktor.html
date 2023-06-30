@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isodichter Funktor</h1>
-<div id="outline-container-orgb75cab1" class="outline-2">
-<h2 id="orgb75cab1"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge570b32" class="outline-2">
+<h2 id="orge570b32"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">Funktor</a> <img src="file:///home/anton/html/ltximg/20230301212010-isodichter_funktor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20230301212010-isodichter_funktor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> auf zwei <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorien</a> <img src="file:///home/anton/html/ltximg/20230301212010-isodichter_funktor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" alt="20230301212010-isodichter_funktor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" class="org-svg" /> ist isodicht (oder auch essenziell surjektiv), falls für jedes <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> <img src="file:///home/anton/html/ltximg/20230301212010-isodichter_funktor_ebbf797fbe63ed580e4eeece1090675ba098e808.svg" alt="20230301212010-isodichter_funktor_ebbf797fbe63ed580e4eeece1090675ba098e808.svg" class="org-svg" /> ein <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> <img src="file:///home/anton/html/ltximg/20230301212010-isodichter_funktor_269fc2b94ede73c94673480b3150a5fdd595e0e8.svg" alt="20230301212010-isodichter_funktor_269fc2b94ede73c94673480b3150a5fdd595e0e8.svg" class="org-svg" /> existiert mit:
+Ein <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">Funktor</a> \(F: \mathcal{C} \rightarrow \mathcal{D}\) auf zwei <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorien</a> \(\mathcal{C}, \mathcal{D}\) ist isodicht (oder auch essenziell surjektiv), falls für jedes <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> \(C \in \mathrm{Ob}(\mathcal{D})\) ein <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">Objekt</a> \(A \in \mathrm{Ob}(\mathcal{C})\) existiert mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230301212010-isodichter_funktor_19132d4a232775011547ec217e92ee69acc67bcb.svg" alt="20230301212010-isodichter_funktor_19132d4a232775011547ec217e92ee69acc67bcb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F(A) \simeq C
+\end{align*}
 </div>
 </div>
 </div>

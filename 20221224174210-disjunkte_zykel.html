@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Disjunkte Zykel</h1>
-<div id="outline-container-orgf6927c9" class="outline-2">
-<h2 id="orgf6927c9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb98c7f6" class="outline-2">
+<h2 id="orgb98c7f6"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien zwei <a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">Zykel</a> <img src="file:///home/anton/html/ltximg/20221224174210-disjunkte_zykel_7b24e4a8482dab4f759836a9c50187b4b59220a4.svg" alt="20221224174210-disjunkte_zykel_7b24e4a8482dab4f759836a9c50187b4b59220a4.svg" class="org-svg" /> von der <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> <img src="file:///home/anton/html/ltximg/20221224174210-disjunkte_zykel_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20221224174210-disjunkte_zykel_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> gegeben.
+Seien zwei <a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">Zykel</a> \(\tau  \coloneqq (a_1,a_2,...,a_k), \psi  \coloneqq (b_1,b_2,...,b_l)\) von der <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> \(S_n\) gegeben.
 </p>
 
 <p>
-<img src="file:///home/anton/html/ltximg/20221224174210-disjunkte_zykel_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" alt="20221224174210-disjunkte_zykel_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221224174210-disjunkte_zykel_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" alt="20221224174210-disjunkte_zykel_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" class="org-svg" /> sind disjunkt, falls gilt:
+\(\tau\) und \(\psi\) sind disjunkt, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224174210-disjunkte_zykel_3e932c316db5fea4f5ec8953fc3467b9f6915164.svg" alt="20221224174210-disjunkte_zykel_3e932c316db5fea4f5ec8953fc3467b9f6915164.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{a_1,...,a_k\} \cap \{b_1,..,b_l\} = \emptyset
+\end{align*}
 </div>
 </div>
 </div>

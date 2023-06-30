@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komposition von Abbildungen und Surjektivität/Injektivität</h1>
-<div id="outline-container-org5c11862" class="outline-2">
-<h2 id="org5c11862"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6d17b65" class="outline-2">
+<h2 id="org6d17b65"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_73caf9d29c250f84ca80da51f2d0b7ac5f5f107f.svg" alt="20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_73caf9d29c250f84ca80da51f2d0b7ac5f5f107f.svg" class="org-svg" />  <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
+Seien \(f: X \rightarrow Y ,g: Y \rightarrow Z\)  <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
 Dann gelten folgende Aussagen
 </p>
 <ol class="org-ol">
-<li>Sei <img src="file:///home/anton/html/ltximg/20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_736825830fedf4b3893b73e9803b33662d5a6adb.svg" alt="20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_736825830fedf4b3893b73e9803b33662d5a6adb.svg" class="org-svg" /> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>, dann ist auch <img src="file:///home/anton/html/ltximg/20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></li>
-<li>Sei <img src="file:///home/anton/html/ltximg/20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_736825830fedf4b3893b73e9803b33662d5a6adb.svg" alt="20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_736825830fedf4b3893b73e9803b33662d5a6adb.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a>, dann ist auch <img src="file:///home/anton/html/ltximg/20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20221222072340-komposition_von_abbildungen_und_surjektivitat_injektivitat_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a></li>
+<li>Sei \(g \circ f\) <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>, dann ist auch \(f\) <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a></li>
+<li>Sei \(g \circ f\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a>, dann ist auch \(g\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a></li>
 </ol>
 </div>
 </div>

@@ -9,49 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bruch behält die Anordnung gegenüber 0</h1>
-<div id="outline-container-org2edc388" class="outline-2">
-<h2 id="org2edc388"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgae3dadf" class="outline-2">
+<h2 id="orgae3dadf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120125342-bruch_behalt_relation_5fcf44a04089d755df987c90ba7e850c748c9bbb.svg" alt="20220120125342-bruch_behalt_relation_5fcf44a04089d755df987c90ba7e850c748c9bbb.svg" class="org-svg" />
-</span>
+\begin{align*}
+x > 0 \Leftrightarrow x^{-1} > 0 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge731a87" class="outline-2">
-<h2 id="orge731a87"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaa0f16f" class="outline-2">
+<h2 id="orgaa0f16f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>über: <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat positiv (Anordnungsaxiome)</a></li>
 <li>über: <a href="20220106143137-abgeschlossenheit_gegenuber_multiplikation.html#ID-e1471b8d-2c8a-433e-acf5-a9ce4799f161">Abgeschlossenheit gegenüber Multiplikation (Axiom)</a></li>
 </ul>
 </div>
-<div id="outline-container-org0427877" class="outline-3">
-<h3 id="org0427877"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20220120125342-bruch_behalt_relation_ab7c291e4ba34196ac85f7888760b1c68304b4a2.svg" alt="20220120125342-bruch_behalt_relation_ab7c291e4ba34196ac85f7888760b1c68304b4a2.svg" class="org-svg" /></h3>
+<div id="outline-container-org2f607ad" class="outline-3">
+<h3 id="org2f607ad"><span class="section-number-3">2.1.</span> \(x > 0\)</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120125342-bruch_behalt_relation_0547aca4abb1aed6de93255511cf0ca7ce20b9de.svg" alt="20220120125342-bruch_behalt_relation_0547aca4abb1aed6de93255511cf0ca7ce20b9de.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^{-2} = \left(x^{-1}\right)^2 \Rightarrow x^{-2} > 0 \\
+x \cdot x^{-2} > 0 \\
+x^{-1} > 0 \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org52d13f7" class="outline-3">
-<h3 id="org52d13f7"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20220120125342-bruch_behalt_relation_237984b8ec435d99c7e492e0aeef968c1ce96121.svg" alt="20220120125342-bruch_behalt_relation_237984b8ec435d99c7e492e0aeef968c1ce96121.svg" class="org-svg" /></h3>
+<div id="outline-container-org6edadbd" class="outline-3">
+<h3 id="org6edadbd"><span class="section-number-3">2.2.</span> \(x^{-1} > 0\)</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120125342-bruch_behalt_relation_097edbebfd49c6d60855ca8b551ad6c86939469c.svg" alt="20220120125342-bruch_behalt_relation_097edbebfd49c6d60855ca8b551ad6c86939469c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^2 > 0 \\
+x^2 \cdot x^{-1} > 0 \\
+x > 0
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

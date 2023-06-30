@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">p-Metrik</h1>
-<div id="outline-container-org10e7405" class="outline-2">
-<h2 id="org10e7405"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdeb2e3f" class="outline-2">
+<h2 id="orgdeb2e3f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230514195850-p_metrik_a56a9c3ecbf6af63161a45c6b0a484c0c9c400ce.svg" alt="20230514195850-p_metrik_a56a9c3ecbf6af63161a45c6b0a484c0c9c400ce.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230514195850-p_metrik_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" alt="20230514195850-p_metrik_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
-Dann ist die $p$-Metrik für das <a href="20211226220618-kartesische_produkt.html#ID-0dd71736-db78-4510-8588-7811037d0796">kartesische Produkt</a> <img src="file:///home/anton/html/ltximg/20230514195850-p_metrik_c6572bb4ffc8e660dda09ad38019a39293e12f9c.svg" alt="20230514195850-p_metrik_c6572bb4ffc8e660dda09ad38019a39293e12f9c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230514195850-p_metrik_d1645b5fda6397473cfdaeb48b9ba7b80783f0dd.svg" alt="20230514195850-p_metrik_d1645b5fda6397473cfdaeb48b9ba7b80783f0dd.svg" class="org-svg" /> definiert durch
+Sei \((M_i,d_i)\) für \(i \in \{1,..,n\}\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a>.
+Dann ist die $p$-Metrik für das <a href="20211226220618-kartesische_produkt.html#ID-0dd71736-db78-4510-8588-7811037d0796">kartesische Produkt</a> \(M  \coloneqq \prod_{i=1}^n M_i\) und \((m_i), (m_i') \in M\) definiert durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230514195850-p_metrik_24eda5832eea03f00f0db7e9b83c93d36ca67303.svg" alt="20230514195850-p_metrik_24eda5832eea03f00f0db7e9b83c93d36ca67303.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_p((m_i),(m_i'))  \coloneqq \sqrt[p]{\sum_{j=1}^{n} (d(m_j,m_j'))^p}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">factorization (morphism)</h1>
-<div id="outline-container-org6732b81" class="outline-2">
-<h2 id="org6732b81"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgddcf6a4" class="outline-2">
+<h2 id="orgddcf6a4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230225172453-faktorisierung_eines_morphismus_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_005d876c82104e0be83e55ce0dac08bde8bd7856.svg" alt="20230225172453-faktorisierung_eines_morphismus_005d876c82104e0be83e55ce0dac08bde8bd7856.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20230225172453-faktorisierung_eines_morphismus_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" />.
-Eine Faktorisierung von <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230225172453-faktorisierung_eines_morphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist eine Darstellung:
+Sei \(\mathcal{C}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und \(A,B,C \in \mathrm{Ob}(\mathcal{C})\) und \(f: A \rightarrow B\).
+Eine Faktorisierung von \(f\) ist eine Darstellung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_3d15fd2a8f6459d5182b8725b4ea08f1ab78b88b.svg" alt="20230225172453-faktorisierung_eines_morphismus_3d15fd2a8f6459d5182b8725b4ea08f1ab78b88b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f =& g \circ h
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_4ab2e6f74c9671784d8b6eadf6c8ad920887411e.svg" alt="20230225172453-faktorisierung_eines_morphismus_4ab2e6f74c9671784d8b6eadf6c8ad920887411e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230225172453-faktorisierung_eines_morphismus_445d028bd185f441c5cb96825c36f9778361de6e.svg" alt="20230225172453-faktorisierung_eines_morphismus_445d028bd185f441c5cb96825c36f9778361de6e.svg" class="org-svg" />
+mit \(h: A \rightarrow C\) und \(g: C \rightarrow B\)
 </p>
 </div>
 </div>

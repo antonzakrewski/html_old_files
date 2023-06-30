@@ -9,111 +9,119 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Basis, minimales Erzeugendensystem und maximal linear unabhängige Teilmenge</h1>
-<div id="outline-container-org89ed473" class="outline-2">
-<h2 id="org89ed473"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org99f5d94" class="outline-2">
+<h2 id="org99f5d94"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_4ae6c9b5d424a1e2176f515fc2f6e5f6228815a1.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_4ae6c9b5d424a1e2176f515fc2f6e5f6228815a1.svg" class="org-svg" />.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und sei \(\{b_i\} =  B \subseteq V\).
 Dannn sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
-<li><img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> ist eine <a href="20221211171616-maximal_linear_unabhangige_teilmenge.html#ID-aea4559f-dcd5-4699-be7c-c7ad80ff59e8">maximal linear unabhängige Teilmenge</a></li>
-<li><img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> ist ein <a href="20221211171402-minimales_erzeugendensystem.html#ID-4c1a9b01-3350-41a4-b3f8-d83dfe9eceab">minimales Erzeugendensystem</a></li>
+<li>\(B\) ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
+<li>\(B\) ist eine <a href="20221211171616-maximal_linear_unabhangige_teilmenge.html#ID-aea4559f-dcd5-4699-be7c-c7ad80ff59e8">maximal linear unabhängige Teilmenge</a></li>
+<li>\(B\) ist ein <a href="20221211171402-minimales_erzeugendensystem.html#ID-4c1a9b01-3350-41a4-b3f8-d83dfe9eceab">minimales Erzeugendensystem</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3e52840" class="outline-2">
-<h2 id="org3e52840"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4f5794b" class="outline-2">
+<h2 id="org4f5794b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über einen <a href="20211230231638-ringschluss_beweistechnik.html#ID-f53319cd-0fbf-41ed-b456-9e3fab321446">Ringschluss</a>:
 </p>
 </div>
-<div id="outline-container-org7c98adc" class="outline-3">
-<h3 id="org7c98adc"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org170992e" class="outline-3">
+<h3 id="org170992e"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> und <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_3d85179fdf01fc0c9be5402427fab0cf1dbcd21d.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_3d85179fdf01fc0c9be5402427fab0cf1dbcd21d.svg" class="org-svg" />.
+Sei \(B\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> und \(v \in V \setminus B\).
 Dann folgt, dass eine <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a> existiert mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_aa5dd55169674628470499745022e4ff4725d4eb.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_aa5dd55169674628470499745022e4ff4725d4eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v =& \sum_{i}^{} \alpha_i b_i
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_04b108b46038713f4219ee3cd8c53f2d0adb4f9c.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_04b108b46038713f4219ee3cd8c53f2d0adb4f9c.svg" class="org-svg" /> folgt:
+für \(B \sqcup \{v\}\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_da0f41610cae112dbf5541fb61bef74182c114fe.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_da0f41610cae112dbf5541fb61bef74182c114fe.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& -v + \sum_{i}^{} \alpha_i b_i
+\end{align*}
 <p>
 d.h. es existiert eine nichttriviale <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge89c649" class="outline-3">
-<h3 id="orge89c649"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgc46d31a" class="outline-3">
+<h3 id="orgc46d31a"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_3d85179fdf01fc0c9be5402427fab0cf1dbcd21d.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_3d85179fdf01fc0c9be5402427fab0cf1dbcd21d.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> eine <a href="20221211171616-maximal_linear_unabhangige_teilmenge.html#ID-aea4559f-dcd5-4699-be7c-c7ad80ff59e8">maximal linear unabhängige Teilmenge</a> ist, folgt, dass <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_04b108b46038713f4219ee3cd8c53f2d0adb4f9c.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_04b108b46038713f4219ee3cd8c53f2d0adb4f9c.svg" class="org-svg" /> <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> ist, d.h.
+Sei \(v \in V \setminus B\).
+Da \(B\) eine <a href="20221211171616-maximal_linear_unabhangige_teilmenge.html#ID-aea4559f-dcd5-4699-be7c-c7ad80ff59e8">maximal linear unabhängige Teilmenge</a> ist, folgt, dass \(B \sqcup \{v\}\) <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> ist, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_64e4443d6393756f7198bbc6e0e258538a23beed.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_64e4443d6393756f7198bbc6e0e258538a23beed.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& \sum_{i}^{} \alpha_i b_i + \beta v \\ 
+v =& \sum_{i}^{} -\frac{\alpha_i}{\beta} b_i
+\end{align*}
 <p>
-d.h. <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> ist ein <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> 
-Sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_9bcd0c59b3745248f0cd0194dd9b5d272ee67380.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_9bcd0c59b3745248f0cd0194dd9b5d272ee67380.svg" class="org-svg" />
+d.h. \(B\) ist ein <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> 
+Sei \(b_k \in B\)
 Dann gilt wegen der <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">Linearen unabhängigkeit</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_8d11a04c289869d1e7ca0801c26bb4e8fce0bd87.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_8d11a04c289869d1e7ca0801c26bb4e8fce0bd87.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\alpha_k b_k =& \sum_{i \neq k}^{} \alpha_i b_i \Rightarrow \alpha_k = 0
+\end{align*}
 <p>
-d.h. <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_de56a602af45bcbf1985adfcc36641871e43f9a6.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_de56a602af45bcbf1985adfcc36641871e43f9a6.svg" class="org-svg" /> lässt sich nicht erzeugen, d.h. <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> ist minimal
+d.h. \(b_k \in V\) lässt sich nicht erzeugen, d.h. \(B\) ist minimal
 </p>
 </div>
 </div>
-<div id="outline-container-org481c69f" class="outline-3">
-<h3 id="org481c69f"><span class="section-number-3">2.3.</span> c)</h3>
+<div id="outline-container-org8a2fca3" class="outline-3">
+<h3 id="org8a2fca3"><span class="section-number-3">2.3.</span> c)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Durch <a href="20211223100720-kontrapositionsgesetz.html#ID-72683132-824d-4f73-b099-70d5787bebd3">Kontrapositionsgesetz</a>: 
-Sei <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a>, dann folgt für <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_9bcd0c59b3745248f0cd0194dd9b5d272ee67380.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_9bcd0c59b3745248f0cd0194dd9b5d272ee67380.svg" class="org-svg" />
+Sei \(B\) <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a>, dann folgt für \(b_k \in B\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_f3f8a771c67bbfacc007fa8696a27191389050d6.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_f3f8a771c67bbfacc007fa8696a27191389050d6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+b_k =& \sum_{i \neq k}^{} \alpha_i b_i \\
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_cd48b503212bb56c115e7ca2f4b109e25bda67fa.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_cd48b503212bb56c115e7ca2f4b109e25bda67fa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\langle B\rangle = \langle B \setminus \{b_k\}\rangle
+\end{align*}
 <p>
-d.h. <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> kann nicht minimal sein und folglich ist <img src="file:///home/anton/html/ltximg/20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20221211171225-satz_uber_die_aquivalenz_von_basis_minimales_erzeugendensystem_und_maximal_linear_unabhangige_teilmenge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linear unabhängig</a>  
+d.h. \(B\) kann nicht minimal sein und folglich ist \(B\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linear unabhängig</a>  
 </p>
 </div>
 </div>

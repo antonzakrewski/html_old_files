@@ -3,79 +3,98 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stetigkeit von Multiplikation und Addition von stetigen reellwertigen Funktionen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit von Multiplikation und Addition von stetigen reellwertigen Funktionen</h1>
-<div id="outline-container-org4dbe2ab" class="outline-2">
-<h2 id="org4dbe2ab"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0fc1381" class="outline-2">
+<h2 id="org0fc1381"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" class="org-svg" />, <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_c5e94e3738bb01f7e6e7de9f621df77f5cd2de36.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_c5e94e3738bb01f7e6e7de9f621df77f5cd2de36.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> im Punkt <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" />.
-Dann gilt, dass <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_31bfc61a9049845474cee94ef0399bd124222439.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_31bfc61a9049845474cee94ef0399bd124222439.svg" class="org-svg" /> und <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_8ca1cc0428560b16c17028986730e28b826aee1a.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_8ca1cc0428560b16c17028986730e28b826aee1a.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> sind.
+Seien \(f: M \rightarrow N\), \(g: M \rightarrow N\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> im Punkt \(m \in M\).
+Dann gilt, dass \(f \pm g\) und \(f \cdot g\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> sind.
 </p>
 </div>
 </div>
-<div id="outline-container-org2e07aff" class="outline-2">
-<h2 id="org2e07aff"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2f34bb1" class="outline-2">
+<h2 id="org2f34bb1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2596ea9" class="outline-3">
-<h3 id="org2596ea9"><span class="section-number-3">2.1.</span> Addition</h3>
+<div id="outline-container-org8a19c60" class="outline-3">
+<h3 id="org8a19c60"><span class="section-number-3">2.1.</span> Addition</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9271d0811dbd436a5f723f75dd8c224151d43fc2.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9271d0811dbd436a5f723f75dd8c224151d43fc2.svg" class="org-svg" />, dann existieren <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9a88e0789fcdc10054b0dd90beb0cfce2e130809.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9a88e0789fcdc10054b0dd90beb0cfce2e130809.svg" class="org-svg" />, so dass für <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_011098d1ffa742d60b0618d724cf3fd0c4cad59e.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_011098d1ffa742d60b0618d724cf3fd0c4cad59e.svg" class="org-svg" /> mit <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_5a0f3a0c8878123ccd8b96654fd303e516913098.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_5a0f3a0c8878123ccd8b96654fd303e516913098.svg" class="org-svg" /> gilt:
+Sei \(\frac{\varepsilon}{2} > 0\), dann existieren \(\delta_f, \delta_g > 0\), so dass für \(m, m' \in M\) mit \(\vert m - m' \vert < \delta_f, \delta_g\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_e48d8b55cc1763ffb05c18fe387f15ac090a6c62.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_e48d8b55cc1763ffb05c18fe387f15ac090a6c62.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert f(m) - f(m')\vert < \varepsilon \\
+\vert g(m) - g(m')\vert < \varepsilon
+\end{align*}
 <p>
 Daraus folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> für:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_7516859c9afcfa672c4364ec2cc221e36b95c2bf.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_7516859c9afcfa672c4364ec2cc221e36b95c2bf.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\vert f(m) \pm g(m) - f(m') \mp g(m) \vert =& \vert (f(m) - f(m')) \pm (g(m) - g(m')) \vert \\
+\leq& \vert f(m) - f(m') \vert + \vert \pm (g(m) - g(m')) \vert \\
+=& \vert f(m) - f(m') \vert + \vert g(m) - g(m') \vert \\
+<& \frac{\varepsilon}{2} + \frac{\varepsilon}{2} \\
+=& \varepsilon
+\end{align*}
 <p>
-Daraus folgt, dass für <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> das Minimum von <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_ce721f8dd5a7520cf11413d7cd537ea83e38bd9f.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_ce721f8dd5a7520cf11413d7cd537ea83e38bd9f.svg" class="org-svg" /> die geforderte Eigenschaft erfüllt
+Daraus folgt, dass für \(\varepsilon > 0\) das Minimum von \(\delta_{f, \frac{\varepsilon}{2}}, \delta_{g, \frac{\varepsilon}{2}}\) die geforderte Eigenschaft erfüllt
 </p>
 </div>
 </div>
-<div id="outline-container-orgb182071" class="outline-3">
-<h3 id="orgb182071"><span class="section-number-3">2.2.</span> Mutliplikation</h3>
+<div id="outline-container-org7b82fa7" class="outline-3">
+<h3 id="org7b82fa7"><span class="section-number-3">2.2.</span> Mutliplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, dann existieren <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_f7dbea299cdb0ce0facd71698f75a1c29f761366.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_f7dbea299cdb0ce0facd71698f75a1c29f761366.svg" class="org-svg" />, so dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" />  <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_3f19f71128f22df852f9e298db11720f354f2112.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_3f19f71128f22df852f9e298db11720f354f2112.svg" class="org-svg" /> existiert.
-Sei <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b234df92067aeda21c029f0f589af8382da9d020.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_b234df92067aeda21c029f0f589af8382da9d020.svg" class="org-svg" />, dann existiert für <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9cc0f7368552beaf5c13f0d3d697511909104e0e.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9cc0f7368552beaf5c13f0d3d697511909104e0e.svg" class="org-svg" /> wieder <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_4ced029e618668ade0ed58f0db39b30bcb6864cb.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_4ced029e618668ade0ed58f0db39b30bcb6864cb.svg" class="org-svg" /> und sei <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_92dc0db00ac201442132204dfa0aa304a9412248.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_92dc0db00ac201442132204dfa0aa304a9412248.svg" class="org-svg" />.
-Daraus folgt für <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_53ca27010fd7db37f75df8aae2ae85bcc13785ae.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_53ca27010fd7db37f75df8aae2ae85bcc13785ae.svg" class="org-svg" /> mit <img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_bb74877b5fe16d28201a15362b05139f90c801b5.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_bb74877b5fe16d28201a15362b05139f90c801b5.svg" class="org-svg" />
+Sei \(\varepsilon > 0\), dann existieren \(\delta_{f, \varepsilon}, \delta_{g, \varepsilon} > 0\), so dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(f\)  \(s_f \coloneqq \sup \{\vert f(x) \vert \mid \vert x - x_0 \vert < \delta_{f, \varepsilon}\} \leq \vert f(x) \vert + \varepsilon\) existiert.
+Sei \(s \coloneqq \mathrm{max}(1, s_f, s_g)\), dann existiert für \(0 < \frac{\varepsilon}{2 \cdot s} < \varepsilon\) wieder \(\delta_{f, \frac{\varepsilon}{2 \cdot s}}, \delta_{g, \frac{\varepsilon}{2 \cdot s}} > 0\) und sei \(\delta \coloneqq \mathrm{min}( \delta_{f, \frac{\varepsilon}{2 \cdot s}}, \delta_{g, \frac{\varepsilon}{2 \cdot s}})\).
+Daraus folgt für \(m'\) mit \(\vert m - m' \vert < \delta\)
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9aaf2a4ce76013d6344870f15f92d02dc8731b38.svg" alt="20230108142759-stetigkeit_von_multiplikation_und_addition_von_stetigen_funktionen_9aaf2a4ce76013d6344870f15f92d02dc8731b38.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\vert f(m)\cdot g(m) - f(m') \cdot g(m') \vert =& \vert f(m) \cdot g(m) - f(m') \cdot (g(m') - g(m) + g(m)) \vert \\
+=& \vert g(m) \cdot \left(f(m) - f(m')\right) - f(m') \cdot \left( g(m') - g(m) \right) \vert \\
+\leq& \vert g(m) \cdot \left(f(m) - f(m')\right) \vert  + \vert f(m') \cdot \left( g(m') - g(m) \right) \vert  \\
+=& \vert g(m) \vert \cdot \left(f(m) - f(m')\right) \vert + \vert f(m') \vert \cdot \vert \left( g(m') - g(m) \right) \vert \\
+\leq& s \cdot \frac{\varepsilon}{2 \cdot s} + s \cdot \frac{\varepsilon}{2 \cdot s} \\
+=& \varepsilon
+\end{align*}
 </div>
 </div>
 </div>

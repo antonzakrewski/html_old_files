@@ -3,57 +3,73 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Darstellende Matrix bestehend aus Einheitsmatrix und Nullmatrix</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Darstellende Matrix bestehend aus Einheitsmatrix und Nullmatrix</h1>
-<div id="outline-container-org7f20a73" class="outline-2">
-<h2 id="org7f20a73"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc801cc8" class="outline-2">
+<h2 id="orgc801cc8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_6e1c4c462744ec016e2b39453c1f6ae2e1503af7.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_73011395bc0c052439b26821910deba21ba7b52c.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_73011395bc0c052439b26821910deba21ba7b52c.svg" class="org-svg" /> ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
-Dann existieren <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basen</a> <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_1f6ea4eef817de1ac01826f20bda26589d8e8a1a.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_1f6ea4eef817de1ac01826f20bda26589d8e8a1a.svg" class="org-svg" />, so dass die zugehörige <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> besteht aus:
+Seien \(V,W\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(\phi: V \rightarrow W\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
+Dann existieren <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basen</a> \(X,V\), so dass die zugehörige <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> besteht aus:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_d9a9d668e982ccba84bf773b9357a7a70dff08b5.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_d9a9d668e982ccba84bf773b9357a7a70dff08b5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+A_{\phi,X,Y} = \begin{pmatrix} E_s & 0 \\ 0 & 0 \end{pmatrix} 
+\end{align*}
 <p>
 mit geeigneten Nullmatrizen
 </p>
 </div>
 </div>
-<div id="outline-container-orgbc54cd3" class="outline-2">
-<h2 id="orgbc54cd3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8317694" class="outline-2">
+<h2 id="org8317694"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Da der <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> ein endlich erzeugter <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> ist (siehe <a href="20221111220924-lemma_uber_den_kern_als_linearen_unterraum.html#ID-85a5c948-302a-42d4-b6df-000a9e0bb5ec">Kern als linearen Unterraum</a>) wähle man eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_f958445775895619f28e263a9a2d9509da4d975f.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_f958445775895619f28e263a9a2d9509da4d975f.svg" class="org-svg" /> für den Kern (<a href="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum.html#ID-545e0404-237c-4981-816c-ae700b4998a2">Existenz einer Basis in einem endlich erzeugten Vektorraum</a>).
-Diese erweitere man dann durch <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_fe08629e7c82df0b9e40a47026530c026ca80f45.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_fe08629e7c82df0b9e40a47026530c026ca80f45.svg" class="org-svg" /> zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> (siehe: <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Austauschsatz von Steinitz</a>) und wähle dann <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_7b6763c65c10262faeb8c5a068fb6c7569ed6111.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_7b6763c65c10262faeb8c5a068fb6c7569ed6111.svg" class="org-svg" /> als einen Teil der <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_d41096f09c1fa669c152aa6f55ff065b98954955.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_d41096f09c1fa669c152aa6f55ff065b98954955.svg" class="org-svg" /> und erweitere diesen durch <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_9042291ab3302f88b056f538e3d9aad718f7ff3d.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_9042291ab3302f88b056f538e3d9aad718f7ff3d.svg" class="org-svg" />
-Dabei gilt zu zeigen: <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_7b6763c65c10262faeb8c5a068fb6c7569ed6111.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_7b6763c65c10262faeb8c5a068fb6c7569ed6111.svg" class="org-svg" /> ist linear unabhängig:
+Da der <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> ein endlich erzeugter <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> ist (siehe <a href="20221111220924-lemma_uber_den_kern_als_linearen_unterraum.html#ID-85a5c948-302a-42d4-b6df-000a9e0bb5ec">Kern als linearen Unterraum</a>) wähle man eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(\{u_1,...,u_k\}\) für den Kern (<a href="20221109111932-satz_uber_die_existenz_einer_basis_in_einem_endlich_erzeugten_vektorraum.html#ID-545e0404-237c-4981-816c-ae700b4998a2">Existenz einer Basis in einem endlich erzeugten Vektorraum</a>).
+Diese erweitere man dann durch \(v_{k+1},...,v_n\) zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\) (siehe: <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Austauschsatz von Steinitz</a>) und wähle dann \(\phi(v_i)\) als einen Teil der <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(W\) und erweitere diesen durch \(w'_i\)
+Dabei gilt zu zeigen: \(\phi(v_i)\) ist linear unabhängig:
 angenommen nicht, so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_aa948dcce92a12b22c0cd5f564c6c9a85587d893.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_aa948dcce92a12b22c0cd5f564c6c9a85587d893.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+0 =& \sum_{i}^{} \alpha_i \phi(v_i) \\ 
+0 =& \phi(\sum_{i}^{} \alpha_i v_i)
+ \end{align*}
 <p>
-D.h. <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_4424d2815c6d64702cef738d4a6aa660292c8a55.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_4424d2815c6d64702cef738d4a6aa660292c8a55.svg" class="org-svg" /> und es gilt nach Konstruktion, dass <img src="ltximg/20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_76e65ec2cc9a3e31b54d7f7f06406e6d04fbc866.svg" alt="20230127152930-darstellende_matrix_bestehend_aus_einheitsmatrix_und_nullmatrix_76e65ec2cc9a3e31b54d7f7f06406e6d04fbc866.svg" class="org-svg" /> <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> ist
+D.h. \(\sum_{i}^{} \alpha_i v_i \in \mathrm{ker}(\phi)\) und es gilt nach Konstruktion, dass \(\{u_1,...,u_k,v_{k+1},...,v_n\}\) <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> ist
 </p>
 </div>
 </div>

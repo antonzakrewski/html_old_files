@@ -3,32 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>identity morphism</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">identity morphism</h1>
-<div id="outline-container-org7497153" class="outline-2">
-<h2 id="org7497153"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org14c403c" class="outline-2">
+<h2 id="org14c403c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20220817165031-identitatsmorphismus_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20220817165031-identitatsmorphismus_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and <img src="ltximg/20220817165031-identitatsmorphismus_bf675cbbf003cdc8d444aa826696b8642f6793d4.svg" alt="20220817165031-identitatsmorphismus_bf675cbbf003cdc8d444aa826696b8642f6793d4.svg" class="org-svg" />.
-Then there exist <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> <img src="ltximg/20220817165031-identitatsmorphismus_8d6037e1a01117aaa22e6c6415727bab789cebdd.svg" alt="20220817165031-identitatsmorphismus_8d6037e1a01117aaa22e6c6415727bab789cebdd.svg" class="org-svg" /> and <img src="ltximg/20220817165031-identitatsmorphismus_96fcba41cbe49a94e5e3a20f92f31db1e94ac3e2.svg" alt="20220817165031-identitatsmorphismus_96fcba41cbe49a94e5e3a20f92f31db1e94ac3e2.svg" class="org-svg" /> such that for a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> <img src="ltximg/20220817165031-identitatsmorphismus_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20220817165031-identitatsmorphismus_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" /> follows:
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(A, B \in \mathrm{Ob}(\mathcal{C})\).
+Then there exist <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> \(\mathrm{id}_{A}: A \rightarrow A\) and \(\mathrm{id}_{B}: B \rightarrow B\) such that for a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(f: A \rightarrow B\) follows:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220817165031-identitatsmorphismus_b3d24f134de4afe9f6633c18817eda7ddc92b3fd.svg" alt="20220817165031-identitatsmorphismus_b3d24f134de4afe9f6633c18817eda7ddc92b3fd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f =& f \circ \mathrm{id}_{A} \\
+=& \mathrm{id}_{B} \circ \mathrm{id}_{B} 
+\end{align*}
 </div>
 </div>
 </div>

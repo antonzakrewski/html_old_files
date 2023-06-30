@@ -9,71 +9,85 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Assoziativität des topologischen Produkts</h1>
-<div id="outline-container-org652de26" class="outline-2">
-<h2 id="org652de26"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdc78dd8" class="outline-2">
+<h2 id="orgdc78dd8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_4eb4adbdccc994a6add5354e63f5fbb495a55f01.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_4eb4adbdccc994a6add5354e63f5fbb495a55f01.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_044698e1d61a92c4f06053770199242d56d95f12.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_044698e1d61a92c4f06053770199242d56d95f12.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_2414c438e9da50d512329ac594edad5c39e4fcd5.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_2414c438e9da50d512329ac594edad5c39e4fcd5.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> so gilt für die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>
+Seien \((X_1, \mathcal{T}_1)\), \((X_2, \mathcal{T}_2)\) und \((X_3,\mathcal{T}_3)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> so gilt für die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_8e1cb46f0c7cdcd9a517f80900df707002e28c2b.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_8e1cb46f0c7cdcd9a517f80900df707002e28c2b.svg" class="org-svg" />
-</span>
+\begin{align*}
+X'  \coloneqq ((X_1 \times X_2) \times X_3) \simeq X_1 \times X_2 \times X_3 \eqqcolon X'd
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge49cfe0" class="outline-2">
-<h2 id="orge49cfe0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1d92a81" class="outline-2">
+<h2 id="org1d92a81"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Wir betrachten die natürliche <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_feef38dbfebb25c0c27c2bb3e9e747444c979fdd.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_feef38dbfebb25c0c27c2bb3e9e747444c979fdd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p: ((X_1 \times X_2) \times X_3) \rightarrow& X_1 \times X_2 \times X_3 \\
+((x_1,x_2),x_3) \mapsto& (x_1,x_2,x_3)
+\end{align*}
 <p>
 und zeigen, dass sie sowohl offen als auch <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist
 </p>
 </div>
-<div id="outline-container-org2a2b2b6" class="outline-3">
-<h3 id="org2a2b2b6"><span class="section-number-3">2.1.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
+<div id="outline-container-org43db473" class="outline-3">
+<h3 id="org43db473"><span class="section-number-3">2.1.</span> <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">offene Abbildung</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_3f2ea81c66b1a8e6fa8f29bc744f79eb5d456f7d.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_3f2ea81c66b1a8e6fa8f29bc744f79eb5d456f7d.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_f46673091950bc75088fb77789cc2774ae47f331.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_f46673091950bc75088fb77789cc2774ae47f331.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_549c7591372dd82717acb94fb735ba5777caefe8.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_549c7591372dd82717acb94fb735ba5777caefe8.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so folgt:
+Sei \((O_1 \times O_2)\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in \(X_1 \times X_2\) und \((O_1 \times O_2) \times O_3 \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_97c74874bc0588ab8dfb3e5c45c5c5821e7f8798.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_97c74874bc0588ab8dfb3e5c45c5c5821e7f8798.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p[(O_1 \times O_2) \times O_3] =& O_1 \times O_2 \times O_3
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_9d93671ac4a15532ed872dce4f4aa4012e6d0eb5.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_9d93671ac4a15532ed872dce4f4aa4012e6d0eb5.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Dabei ist \(O_1 \times O_2 \times O_3\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org07ce6e3" class="outline-3">
-<h3 id="org07ce6e3"><span class="section-number-3">2.2.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
+<div id="outline-container-org87f5aab" class="outline-3">
+<h3 id="org87f5aab"><span class="section-number-3">2.2.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_9d93671ac4a15532ed872dce4f4aa4012e6d0eb5.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_9d93671ac4a15532ed872dce4f4aa4012e6d0eb5.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_aa1909d97ea187bb10dade84de02760295b78735.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_aa1909d97ea187bb10dade84de02760295b78735.svg" class="org-svg" />, so gilt für das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a>
+Sei \(O_1 \times O_2 \times O_3\) mit \(O_i \in X_i\), so gilt für das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_23ada543271d400e7c5f6dced7baac19fde3fcc5.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_23ada543271d400e7c5f6dced7baac19fde3fcc5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p^{-1}[O_1 \times O_2 \times O_3] = (O_1 \times O_2) \times O_3
+\end{align*}
 <p>
-welches <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist in <img src="file:///home/anton/html/ltximg/20230526094133-assoziativitat_des_topologischen_produkts_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230526094133-assoziativitat_des_topologischen_produkts_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />
+welches <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist in \(X\)
 </p>
 </div>
 </div>

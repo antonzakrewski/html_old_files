@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Additive Funktion</h1>
-<div id="outline-container-orgfaaa7b7" class="outline-2">
-<h2 id="orgfaaa7b7"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdefcbee" class="outline-2">
+<h2 id="orgdefcbee"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221003154327-additive_funktion_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221003154327-additive_funktion_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171225-definition_halbgruppe.html#ID-704f2f2a-6b57-4168-8b52-4a2965ee69de">Halbgruppe</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> <img src="file:///home/anton/html/ltximg/20221003154327-additive_funktion_33d370cf2e8fb28e4778835e46049b6bd89dff27.svg" alt="20221003154327-additive_funktion_33d370cf2e8fb28e4778835e46049b6bd89dff27.svg" class="org-svg" />
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221003154327-additive_funktion_4e38915096989d8f5d5aafbbb1165855ba4b7ac8.svg" alt="20221003154327-additive_funktion_4e38915096989d8f5d5aafbbb1165855ba4b7ac8.svg" class="org-svg" /> ist additiv, wenn gilt
+Sei \(M\) eine <a href="20211008171225-definition_halbgruppe.html#ID-704f2f2a-6b57-4168-8b52-4a2965ee69de">Halbgruppe</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> \(+\)
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: M \rightarrow M\) ist additiv, wenn gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003154327-additive_funktion_9587d16b806e1dd5ab3f6cd6bcd23f9e44431eb6.svg" alt="20221003154327-additive_funktion_9587d16b806e1dd5ab3f6cd6bcd23f9e44431eb6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x,y \in M : (f(x + y) = f(x) + f(y))
+\end{align*}
 </div>
 </div>
 </div>

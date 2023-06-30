@@ -9,23 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Algorithmus zur Ermittlung der Inversen Matrix</h1>
-<div id="outline-container-org1c95bde" class="outline-2">
-<h2 id="org1c95bde"><span class="section-number-2">1.</span> Heuristik</h2>
+<div id="outline-container-orgc999648" class="outline-2">
+<h2 id="orgc999648"><span class="section-number-2">1.</span> Heuristik</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Durch <a href="20221209182455-elementare_umformung.html#ID-21e4c10b-c38d-4bca-9809-50973831bac2">elementare Umformung</a> zu einer <a href="20221210183428-zeilenstufenform.html#ID-c86c4b1e-7fc4-4fb9-b8d9-6ade802afaae">Zeilenstufenform</a> bringen und dann zu einer <a href="20221126201444-einheitsmatrix.html#ID-d920ec83-a935-4274-8b46-d3c21846c28c">Einheitsmatrix</a>;
 Währenddessen die Schritte auch auf die <a href="20221126201444-einheitsmatrix.html#ID-d920ec83-a935-4274-8b46-d3c21846c28c">Einheitsmatrix</a> anwenden
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230116210435-algorithmus_zur_ermittlung_der_inversen_matrix_a3e6164f0b9a5490df653ca4fbb9162625610d9e.svg" alt="20230116210435-algorithmus_zur_ermittlung_der_inversen_matrix_a3e6164f0b9a5490df653ca4fbb9162625610d9e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A =& A \cdot E_n \\
+…& \text{elementare Umformungen rechtsseitig anwenden} \\
+E_n =& A \cdot A^{-1}
+\end{align*}
 </div>
 </div>
 </div>

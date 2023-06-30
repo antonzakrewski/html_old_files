@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">locally finite covering</h1>
-<div id="outline-container-orgccd9054" class="outline-2">
-<h2 id="orgccd9054"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge848543" class="outline-2">
+<h2 id="orge848543"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230330201224-lokalendliche_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_82fd144c1c653819d3d8cb99086d3882e66271bc.svg" alt="20230330201224-lokalendliche_uberdeckung_82fd144c1c653819d3d8cb99086d3882e66271bc.svg" class="org-svg" /> eine <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckung</a> von <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_decd7b1a29016db1ef176196c5bebe1342d60f02.svg" alt="20230330201224-lokalendliche_uberdeckung_decd7b1a29016db1ef176196c5bebe1342d60f02.svg" class="org-svg" />
-<img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230330201224-lokalendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" /> ist eine lokalendliche Überdeckung, falls für <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230330201224-lokalendliche_uberdeckung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230330201224-lokalendliche_uberdeckung_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> existiert, so dass nur für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230330201224-lokalendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" /> gilt:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A_i \subseteq X\) eine <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckung</a> von \(B \subseteq X\)
+\(A_i\) ist eine lokalendliche Überdeckung, falls für \(x \in X\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{U}(x)\) existiert, so dass nur für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele \(A_i\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330201224-lokalendliche_uberdeckung_5bfad697bef7ccb1bd06743bc64ca8704830fb8b.svg" alt="20230330201224-lokalendliche_uberdeckung_5bfad697bef7ccb1bd06743bc64ca8704830fb8b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A_i \cap U \neq \emptyset
+\end{align*}
 </div>
 </div>
 </div>

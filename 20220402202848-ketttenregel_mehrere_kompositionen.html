@@ -9,52 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel - mehrere Kompositionen</h1>
-<div id="outline-container-org80121d3" class="outline-2">
-<h2 id="org80121d3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3e7709b" class="outline-2">
+<h2 id="org3e7709b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220402202848-ketttenregel_mehrere_kompositionen_ae64960ec1cf2f028d211493f7a1f22e87fba64a.svg" alt="20220402202848-ketttenregel_mehrere_kompositionen_ae64960ec1cf2f028d211493f7a1f22e87fba64a.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_n(x)  \coloneqq& u_1(u_2(...(u_n(x)))) \\
+f_n(x)' =& u_1'(u_2(...(u_n(x)))) \cdot u_2'(...(u_n(x))) \cdot ... \cdot u_n'(x) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgce55b57" class="outline-2">
-<h2 id="orgce55b57"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3f47058" class="outline-2">
+<h2 id="org3f47058"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>   
 </p>
 </div>
-<div id="outline-container-org2c76258" class="outline-3">
-<h3 id="org2c76258"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org0a49ea1" class="outline-3">
+<h3 id="org0a49ea1"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>siehe: <a href="20210412125148-kettenregel.html#ID-2a4a6de8-4c4d-45bc-97f3-de18cfd2aac7">Kettenregel</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf4ff92c" class="outline-3">
-<h3 id="orgf4ff92c"><span class="section-number-3">2.2.</span> IS</h3>
+<div id="outline-container-org19b4c99" class="outline-3">
+<h3 id="org19b4c99"><span class="section-number-3">2.2.</span> IS</h3>
 <div class="outline-text-3" id="text-2-2">
+\begin{align*}
+f_{n}'(x) =& u_1'(u_2(...(u_n(x)))) \cdot u_2'(...(u_n(x))) \cdot ... \cdot u_n'(x)\\
+f_n(x)  \coloneqq& u_1(u_2(...(u_n((x))))) \\
+f_{n+1}(x)  \coloneqq& u_1(u_2(...(u_n(u_{n+1}(x))))) \\
+f_{n+1}(x) =& f_n(u_{n+1}(x))
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220402202848-ketttenregel_mehrere_kompositionen_c86774178ed02645c2f29573948cb6d6b38112c7.svg" alt="20220402202848-ketttenregel_mehrere_kompositionen_c86774178ed02645c2f29573948cb6d6b38112c7.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220402202848-ketttenregel_mehrere_kompositionen_ddd2cb62569b1cc27fd2136a52cd551f03f749ae.svg" alt="20220402202848-ketttenregel_mehrere_kompositionen_ddd2cb62569b1cc27fd2136a52cd551f03f749ae.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{n+1}(x)' =& f_n'(u_{n+1}(x)) \cdot u'_n(x) \\
+=& \left[u_1'(u_2(...(u_n(u_{n+1}(x))))) \cdot u_2'(...(u_n(u_{n+1}(x)))) ... \cdot u_n'(u_{n+1}(x)) \right] \cdot u_n'(x) \\
+f_{n+1}(x)' =& u_1'(u_2(...(u_{n+1}(x)))) \cdot u_2'(...(u_{n+1}(x))) \cdot ... \cdot u_{n+1}'(x) 
+\end{align*}
 </div>
 </div>
 </div>

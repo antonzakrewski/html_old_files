@@ -3,41 +3,64 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Multiplikation mit einem nilpotenten Element als nilpotentes Element</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation mit einem nilpotenten Element als nilpotentes Element</h1>
-<div id="outline-container-orga47edf9" class="outline-2">
-<h2 id="orga47edf9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbe56866" class="outline-2">
+<h2 id="orgbe56866"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_a32c6bc32639c49aa3a9b7fe3c589498d4113afb.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_a32c6bc32639c49aa3a9b7fe3c589498d4113afb.svg" class="org-svg" /> ein <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotentes Element</a>.
-Dann ist <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_5bc60b4c2dfa4013a118b1c0a48cf281c0bfe255.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_5bc60b4c2dfa4013a118b1c0a48cf281c0bfe255.svg" class="org-svg" /> für ein beliebiges <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_023f8d605ee00541f094d84a5925b2a65bed4587.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_023f8d605ee00541f094d84a5925b2a65bed4587.svg" class="org-svg" /> ebenfalls <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotentes Element</a>.
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(x \in R\) ein <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotentes Element</a>.
+Dann ist \(x \cdot r\) für ein beliebiges \(r \in R\) ebenfalls <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotentes Element</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb868cb1" class="outline-2">
-<h2 id="orgb868cb1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcac555b" class="outline-2">
+<h2 id="orgcac555b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existiert ein <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" /> mit <img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_f8edc8b26cf94f7dc37980a846e2b7c2d1f110d7.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_f8edc8b26cf94f7dc37980a846e2b7c2d1f110d7.svg" class="org-svg" />
+Nach Annahme existiert ein \(n \in \mathbb{N}\) mit \(x^n = 0\)
 Somit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_88f55ae4502aeab228126516ba7a5fa68be486d1.svg" alt="20230421143146-multiplikation_mit_einem_nilpotenten_element_als_nilpotentes_element_88f55ae4502aeab228126516ba7a5fa68be486d1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(x \cdot r)^n =& x^n \cdot r^n \\
+=& 0 \cdot r^n \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

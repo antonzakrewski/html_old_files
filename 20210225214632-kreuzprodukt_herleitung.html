@@ -9,48 +9,81 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kreuzprodukt - Herleitung</h1>
-<div id="outline-container-orgab81b94" class="outline-2">
-<h2 id="orgab81b94"><span class="section-number-2">1.</span> Rechnung</h2>
+<div id="outline-container-org0253ba1" class="outline-2">
+<h2 id="org0253ba1"><span class="section-number-2">1.</span> Rechnung</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org0b8beab" class="outline-3">
-<h3 id="org0b8beab"><span class="section-number-3">1.1.</span> Ziel</h3>
+<div id="outline-container-orgd69f691" class="outline-3">
+<h3 id="orgd69f691"><span class="section-number-3">1.1.</span> Ziel</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Berechnung eines <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> mit <a href="20220107124051-orthogonale_winkel.html#ID-abb651b7-71ca-46dd-954c-7685ea72166f">rechtem Winkel</a> zu 2 gegebenen <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210225214632-kreuzprodukt_herleitung_7e43912f101cbb4009e0748aea85d08ac3f3d79f.svg" alt="20210225214632-kreuzprodukt_herleitung_7e43912f101cbb4009e0748aea85d08ac3f3d79f.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vec{a} \circ \vec{c} = 0 \\
+\vec{b} \circ \vec{c} = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgda6f730" class="outline-3">
-<h3 id="orgda6f730"><span class="section-number-3">1.2.</span> Folgerung</h3>
+<div id="outline-container-org15494b3" class="outline-3">
+<h3 id="org15494b3"><span class="section-number-3">1.2.</span> Folgerung</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210225214632-kreuzprodukt_herleitung_2116bcc3d137e1d0787d49ca5b048effb49f4494.svg" alt="20210225214632-kreuzprodukt_herleitung_2116bcc3d137e1d0787d49ca5b048effb49f4494.svg" class="org-svg" />
-</span>
+\begin{align*}
+0 =& xa_1 + ya_2 + za_3 \\
+0 =& xb_1 + yb_2 + zb_3 \\
+xa_1 =& -(ya_2 + za_3) && \vert \cdot b_2 \\
+xa_1b_2 =& b_2 (ya_2 + za_3) \\
+-xb_1 =& yb_2 + zb_3 && \vert \cdot a_2 \\
+-xb_1a_2 =& a_2  (yb_2 + zb_3) \\
+x (a_1b_2 - b_1a_2) =& z (a_2b_3 - a_3b_2) \\
+z  \coloneqq& (a_1b_2 - b_1a_2)  \\
+\Rightarrow x =& a_2b_3 -a_3b_2 \\
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org34e93ed" class="outline-3">
-<h3 id="org34e93ed"><span class="section-number-3">1.3.</span> Analog</h3>
+<div id="outline-container-orgc2ad588" class="outline-3">
+<h3 id="orgc2ad588"><span class="section-number-3">1.3.</span> Analog</h3>
 <div class="outline-text-3" id="text-1-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210225214632-kreuzprodukt_herleitung_1e1558713401a6d3ee6ad578e9d4917ba80d7888.svg" alt="20210225214632-kreuzprodukt_herleitung_1e1558713401a6d3ee6ad578e9d4917ba80d7888.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& xa_1 + ya_2 + za3 \\
+0 =& xb_1 + yb_2 + zb3 \\
+ya_2 =& -(xa_1 + za_3) \\
+-yb_2 =& xb_1 + zb_3 \\
+yb_1a_2 =& - b_1 (xa_1 + za_3) \\
+-ya_1b_2 =& a_1 (xb_1 + zb_3) \\
+y (b_1a_2 - a_1b_2) =& z (a_1b_3 - a_3b_1) \\
+z =& (a_1b_2 - b_1a_2) \\ 
+y =& a_3b_1 - a_1b_3
+\end{align*}
 </div>
 </div>
 </div>

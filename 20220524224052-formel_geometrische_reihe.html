@@ -9,54 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel: Geometrische Reihe</h1>
-<div id="outline-container-org2e92a7c" class="outline-2">
-<h2 id="org2e92a7c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2098fa9" class="outline-2">
+<h2 id="org2098fa9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_1f515253fb26dce2cce5b08ec163689e22e73f0e.svg" alt="20220524224052-formel_geometrische_reihe_1f515253fb26dce2cce5b08ec163689e22e73f0e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^n x^k =& \frac{1-x^{n+1}}{1-x}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb93dcb6" class="outline-2">
-<h2 id="orgb93dcb6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2a4d72e" class="outline-2">
+<h2 id="org2a4d72e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Durch einen <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> 
 </p>
 </div>
-<div id="outline-container-orga2a6705" class="outline-3">
-<h3 id="orga2a6705"><span class="section-number-3">2.1.</span> Induktionsanfang für <img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_957b9968372a73b42526338dd57e81391ecbc68b.svg" alt="20220524224052-formel_geometrische_reihe_957b9968372a73b42526338dd57e81391ecbc68b.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20220524224052-formel_geometrische_reihe_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" /></h3>
+<div id="outline-container-org41e3c87" class="outline-3">
+<h3 id="org41e3c87"><span class="section-number-3">2.1.</span> Induktionsanfang für \(-1\) oder \(0\)</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_3f01c31787af825405629382856ff7db56b9dffd.svg" alt="20220524224052-formel_geometrische_reihe_3f01c31787af825405629382856ff7db56b9dffd.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_91e8674254f598ab4c3ff36f68f68ad0083ab619.svg" alt="20220524224052-formel_geometrische_reihe_91e8674254f598ab4c3ff36f68f68ad0083ab619.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{-1} x^k =& 0 \\
+ =& \frac{0}{1-x} \\
+=& \frac{1 - x^{-1 + 1}}{1-x}
+\end{align*}
+\begin{align*}
+\sum_{k=0}^0 x^k =& x^0 \\
+=& 1 \\
+=& \frac{1 - x^1}{1 - x^1}
+\end{align*}
 </div>
 </div>
-<div id="outline-container-orgfe2d7e0" class="outline-3">
-<h3 id="orgfe2d7e0"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org51ce5b8" class="outline-3">
+<h3 id="org51ce5b8"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220524224052-formel_geometrische_reihe_ba8fd8aec13e0f11d67ebc7c3398ffeb8f4776bd.svg" alt="20220524224052-formel_geometrische_reihe_ba8fd8aec13e0f11d67ebc7c3398ffeb8f4776bd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n+1} x^k =& \sum_{k=0}^{n} + x^{n+1} \\
+=& \frac{1 - x^{n+1}}{1 - x} + \frac{x^{n+1} - x^{n+2}}{1 - x}\\
+=& \frac{1 - x^{(n+1)+1}}{1-x}
+\end{align*}
 </div>
 </div>
 </div>

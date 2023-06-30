@@ -9,62 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summenformel über beide Werte des Binomialkoeffizienten</h1>
-<div id="outline-container-org9605e00" class="outline-2">
-<h2 id="org9605e00"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9761bdb" class="outline-2">
+<h2 id="org9761bdb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_c048e554e41b35612f908fa2ba9d316772ca686b.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_c048e554e41b35612f908fa2ba9d316772ca686b.svg" class="org-svg" />, so gilt:
+Sei \(r \in \mathbb{R}\) und \(k \in \mathbb{Z}\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_deaebaaa8e1cddea89fa537382e91a5977996ef6.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_deaebaaa8e1cddea89fa537382e91a5977996ef6.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{n} \binom{r+k}{k} = \binom{r+n+1}{n}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6b33f96" class="outline-2">
-<h2 id="org6b33f96"><span class="section-number-2">2.</span> Bewies</h2>
+<div id="outline-container-org0d9d41e" class="outline-2">
+<h2 id="org0d9d41e"><span class="section-number-2">2.</span> Bewies</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4a4552a" class="outline-3">
-<h3 id="org4a4552a"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" class="org-svg" /></h3>
+<div id="outline-container-org8e96db6" class="outline-3">
+<h3 id="org8e96db6"><span class="section-number-3">2.1.</span> \(r \in \mathbb{N}\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Aus der <a href="20220108163834-binomialkoeffizient_n_k.html#ID-540a5af1-8ac1-4bf6-b8ad-ff9ce8eee965">Symmetrie des Binomialkoeffizienten</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_d759de8144c4280f2f8c087d0dca3a6e511a5879.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_d759de8144c4280f2f8c087d0dca3a6e511a5879.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{r+k}{k} =& \binom{r+k}{r+k-k} \\
+ =& \binom{r+k}{r} \\
+\end{align*}
 <p>
 Damit folgt dann mittels Indexverschiebungs
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_c9b2d990998dba9cb26a360e7f868a08f0f52cc3.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_c9b2d990998dba9cb26a360e7f868a08f0f52cc3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n} \binom{r+k}{r} =& \sum_{k=r}^{n+r}  \binom{k}{r}
+\end{align*}
 <p>
 und ferne folgt aus der <a href="20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten.html#ID-62472f2a-7ece-4aef-984b-79c98d684369">Summenformel über einem festen oberen Wert des Binomialkoeffizienten</a> sowie der Symmetrie
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_79642ba18e244ebcc94ff815295ae4c863e5c571.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_79642ba18e244ebcc94ff815295ae4c863e5c571.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=r}^{n+r} \binom{k}{r} =& \binom{n+r+1}{r+1} \\
+=& \binom{r+n+1}{n}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org67a4b02" class="outline-3">
-<h3 id="org67a4b02"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20230426204214-summenformel_uber_beide_werte_des_binomialkoeffizienten_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /></h3>
+<div id="outline-container-org09c690f" class="outline-3">
+<h3 id="org09c690f"><span class="section-number-3">2.2.</span> \(r \in \mathbb{R}\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus dem <a href="20221223182341-beweisstruktur_kombinatorik_binomialkoeffizient_als_polynom.html#ID-d55f5b8e-26c3-44e1-b4a9-67e9b26a3a3f">Polynomialargument des Binomialkoeffizienten</a> 

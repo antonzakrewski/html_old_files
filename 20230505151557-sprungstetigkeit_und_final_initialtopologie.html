@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sprungstetigkeit und Final/Initialtopologie</h1>
-<div id="outline-container-org43fdb05" class="outline-2">
-<h2 id="org43fdb05"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb4afe9c" class="outline-2">
+<h2 id="orgb4afe9c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei die <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_57ae903e71a2e8614191728415b8b1d954c2772a.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_57ae903e71a2e8614191728415b8b1d954c2772a.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">sprungstetigen Funktionen</a>, dann ist:
+Sei die \(\mathcal{R}(x): \mathbb{R} \rightarrow \mathbb{R}\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">sprungstetigen Funktionen</a>, dann ist:
 </p>
 <ul class="org-ul">
 <li>die <a href="20230223225929-initialtopologie.html#ID-c3a212d4-4f8e-44b6-a3e6-91932f8ea153">Initialtopologie</a> die <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskrete Topologie</a></li>
@@ -28,43 +53,47 @@ Also nicht besonders interessant (vgl. <a href="20230227184712-charakterisierung
 </p>
 </div>
 </div>
-<div id="outline-container-orgc1d6654" class="outline-2">
-<h2 id="orgc1d6654"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge6d198f" class="outline-2">
+<h2 id="orge6d198f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb266910" class="outline-3">
-<h3 id="orgb266910"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org4fdb788" class="outline-3">
+<h3 id="org4fdb788"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_74c02da959441f7c4aca9a56440bdc6156f3a515.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_74c02da959441f7c4aca9a56440bdc6156f3a515.svg" class="org-svg" />, dann konstruieren wir sprungstetige <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_720952bd139bc21cc4dae35a515190f15cd31434.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_720952bd139bc21cc4dae35a515190f15cd31434.svg" class="org-svg" /> mit
+Sei \(y \in \mathbb{R}\), dann konstruieren wir sprungstetige <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f,g: \mathbb{R} \rightarrow \mathbb{R}\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_79e48155d5142b7d3fd7aeb965f8ccd74f6d8356.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_79e48155d5142b7d3fd7aeb965f8ccd74f6d8356.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) =&
+    \begin{cases}
+    1 & \mbox{if } x \leq y \\
+    0 & \mbox{if } x > y \\
+    \end{cases}
+g(x) =&    
+    \begin{cases}
+    1 & \mbox{if } x \geq y \\
+    0 & \mbox{if } x < y \\
+    \end{cases}
+\end{align*}
 <p>
-Es folgt für <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_b52ec4a5e07e8adf67f7a26eca15dba3b413ecd8.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_b52ec4a5e07e8adf67f7a26eca15dba3b413ecd8.svg" class="org-svg" /> als <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" />.
+Es folgt für \(U  \coloneqq U_{\frac{1}{2}}(1)\) als <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> von \(1\).
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_14f336699899ce31486b62354b89e84b7bf7f2c1.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_14f336699899ce31486b62354b89e84b7bf7f2c1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1}[U] =& (-\infty,y] \\
+g^{-1}[U] =& [y,\infty)
+\end{align*}
 <p>
-Aus der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit des endlichen Durchschnitts offener Mengen</a> folgt dann, dass <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_4f1a94a149c04c399bb401550a2365bc69bb5609.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_4f1a94a149c04c399bb401550a2365bc69bb5609.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
-Da <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> beliebig war, folgt dass die <a href="20230223225929-initialtopologie.html#ID-c3a212d4-4f8e-44b6-a3e6-91932f8ea153">Initialtopologie</a> die <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskrete Topologie</a> ist.
+Aus der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit des endlichen Durchschnitts offener Mengen</a> folgt dann, dass \((- \infty, y] \cap [y, \infty) = [y]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Da \(y\) beliebig war, folgt dass die <a href="20230223225929-initialtopologie.html#ID-c3a212d4-4f8e-44b6-a3e6-91932f8ea153">Initialtopologie</a> die <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskrete Topologie</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org5d60125" class="outline-3">
-<h3 id="org5d60125"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org5afc81c" class="outline-3">
+<h3 id="org5afc81c"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_8970ddeb7b62400c5fc6aa6cd492bf1d3926acba.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_8970ddeb7b62400c5fc6aa6cd492bf1d3926acba.svg" class="org-svg" /> gegeben.
-Dann können wir annehmen, da <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_f973c15fd7f78c765b91fadf1f2c6d6df19e330b.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_f973c15fd7f78c765b91fadf1f2c6d6df19e330b.svg" class="org-svg" /> sprungstetig ist, dass <img src="file:///home/anton/html/ltximg/20230505151557-sprungstetigkeit_und_final_initialtopologie_a6a4b94d5ea243c8d2ed6019b5b472b474050b2a.svg" alt="20230505151557-sprungstetigkeit_und_final_initialtopologie_a6a4b94d5ea243c8d2ed6019b5b472b474050b2a.svg" class="org-svg" /> auch in der Standardtopologie offen ist.
+Sei eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A\) mit \(A \neq \emptyset,\mathbb{R}\) gegeben.
+Dann können wir annehmen, da \(f(x) = x\) sprungstetig ist, dass \(f^{-1}[A] \subseteq \mathbb{R}\) auch in der Standardtopologie offen ist.
 </p>
 </div>
 </div>

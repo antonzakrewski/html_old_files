@@ -9,18 +9,43 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Principal ideal</h1>
-<div id="outline-container-org31ad35d" class="outline-2">
-<h2 id="org31ad35d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgcf6d0d8" class="outline-2">
+<h2 id="orgcf6d0d8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>.
-An <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> is said to be a principal ideal, if an <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">element</a> <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_e3ea76eecee269500232f00b64e87664d3ff5324.svg" alt="20221130163614-hauptideal_e3ea76eecee269500232f00b64e87664d3ff5324.svg" class="org-svg" /> exists, such that <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> generates <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>
-Ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ist ein Hauptideal, falls ein <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Element</a> <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221130163614-hauptideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> existiert, sodass dass das von <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221130163614-hauptideal_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">von einem Element erzeugtes Ideal</a>  gleich <img src="file:///home/anton/html/ltximg/20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20221130163614-hauptideal_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ist
+Let \(R\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>.
+An <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> \(I\) is said to be a principal ideal, if an <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">element</a> \(a \in R\) exists, such that \(a\) generates \(I\)
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>
+Ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> \(I\) ist ein Hauptideal, falls ein <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Element</a> \(a\) in \(R\) existiert, sodass dass das von \(a\) <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">von einem Element erzeugtes Ideal</a>  gleich \(I\) ist
 </p>
 </div>
 </div>

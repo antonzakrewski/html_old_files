@@ -3,44 +3,65 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Umordnung einer bedingt konvergenten Reihe zu Divergenz oder Konvergenz</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Umordnung einer bedingt konvergenten Reihe zu Divergenz oder Konvergenz</h1>
-<div id="outline-container-org69acab5" class="outline-2">
-<h2 id="org69acab5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgcabd620" class="outline-2">
+<h2 id="orgcabd620"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_8f313cc0365f02baa279233e0490f9491a0f6ada.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_8f313cc0365f02baa279233e0490f9491a0f6ada.svg" class="org-svg" /> eine <a href="20221216220937-bedingte_konvergenz_einer_reihe.html#ID-b10b92ad-0fce-4403-b5df-08897574eac3">bedingt</a> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> in <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9d9eb8738e6a6b1daea4f7c9bc2c976374a87576.svg" class="org-svg" /> , so existiert eine <a href="20221216220908-umordnung_einer_reihe.html#ID-a28ce676-e2d8-4d30-831a-4ad906b92b37">Umordnung</a> <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_72c8cdbb78cda2d28e1db1c95be1b69c17999c1d.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_72c8cdbb78cda2d28e1db1c95be1b69c17999c1d.svg" class="org-svg" />, so dass für beliebiges <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_bd1433696ce6a6c6ead86d7e3e656bee3b2ab3d1.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_bd1433696ce6a6c6ead86d7e3e656bee3b2ab3d1.svg" class="org-svg" /> gilt:
+Sei \(\sum_{n=0}^{\infty} a_n\) eine <a href="20221216220937-bedingte_konvergenz_einer_reihe.html#ID-b10b92ad-0fce-4403-b5df-08897574eac3">bedingt</a> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> in \(\mathbb{R}\) , so existiert eine <a href="20221216220908-umordnung_einer_reihe.html#ID-a28ce676-e2d8-4d30-831a-4ad906b92b37">Umordnung</a> \(\sigma: \mathbb{N}  \rightarrow \mathbb{N}\), so dass für beliebiges \(W \in \overline{\mathbb{R}}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_17e5066fb232159e3ec6891dd1baf2a1103391bf.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_17e5066fb232159e3ec6891dd1baf2a1103391bf.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\sum_{n=0}^{\infty} a_{\sigma(n)} = W
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc5161f4" class="outline-2">
-<h2 id="orgc5161f4"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org7f19dfc" class="outline-2">
+<h2 id="org7f19dfc"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-unterteilung von <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> in (disjunkte) <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolgen</a> mit  <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c8369f8c2ee89d2d455ffd68e689dfe571f35716.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c8369f8c2ee89d2d455ffd68e689dfe571f35716.svg" class="org-svg" /> und <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_512863b44ea7e02b71cc026e58372eb6903ac507.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_512863b44ea7e02b71cc026e58372eb6903ac507.svg" class="org-svg" />.
-Insbesondere ist jedes Gleid von <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> in genau einer der beiden Teilfolgen.
-Die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> einer <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> gegen <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9528e6066cebc2e36bcb2672badad370d6ea5fc9.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9528e6066cebc2e36bcb2672badad370d6ea5fc9.svg" class="org-svg" />, weil sonst nach dem <a href="20221216221056-riemannscher_umordnungssatz.html#ID-0a500364-542d-443a-8ea5-7350c292a523">Riemannschen Umordnungssatz</a> die folge absolut <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergieren</a>  würde.
-Setzen eines Ziels <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_b240d69a6ff0746328457aa439d95d1f6411d536.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_b240d69a6ff0746328457aa439d95d1f6411d536.svg" class="org-svg" />, für <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_7def2857ff98e51fb43963f5b49c584948eafb05.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_7def2857ff98e51fb43963f5b49c584948eafb05.svg" class="org-svg" /> ist <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_14ff32e808b9e692bb4eb60e0858e4f5d9b4eddf.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_14ff32e808b9e692bb4eb60e0858e4f5d9b4eddf.svg" class="org-svg" />, <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  für <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_099d4c27ea286e137dc7f8d3d636d341cf66310e.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_099d4c27ea286e137dc7f8d3d636d341cf66310e.svg" class="org-svg" /> ist <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_14ff32e808b9e692bb4eb60e0858e4f5d9b4eddf.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_14ff32e808b9e692bb4eb60e0858e4f5d9b4eddf.svg" class="org-svg" />
-Für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_783e6f756cdf85544cf0e36b8bfe5c2240a40b6c.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_783e6f756cdf85544cf0e36b8bfe5c2240a40b6c.svg" class="org-svg" /> folgender Algorithmus:
-Falls  <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_d06441e0dd1122993b693b238214da0414bf2dce.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_d06441e0dd1122993b693b238214da0414bf2dce.svg" class="org-svg" />, so wird <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" class="org-svg" /> ffür <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_586ebcc89b2b67362b1e75568ab6afef15ccafff.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_586ebcc89b2b67362b1e75568ab6afef15ccafff.svg" class="org-svg" />  inkrementiert und <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9c38ed40565df64346534fd0de4e240123a0c671.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_9c38ed40565df64346534fd0de4e240123a0c671.svg" class="org-svg" /> ist das nächste Glied der negativen teilfolge, sonst wird <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_24912e0785a9e052960a05dbd480ecdc926929e5.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_24912e0785a9e052960a05dbd480ecdc926929e5.svg" class="org-svg" /> das nächtse positive gleid der teilfolge.
-da <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c9310bf4d4df6785aa6968560f7e3472f2be2856.svg" class="org-svg" /> eine <a href="20220105153234-nullfolge.html#ID-7249b9ac-2afc-4157-9427-c368e5d287d3">Nullfolge</a> ist, konvergiert das für einen festen wert, für <img src="ltximg/20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c28b696ba4276117cb9a0254cafd41106e353804.svg" alt="20230110074924-umordnung_einer_bedingt_konvergenten_reihe_zu_divergenz_oder_konvergenz_c28b696ba4276117cb9a0254cafd41106e353804.svg" class="org-svg" /> <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> das wegen <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedizität</a> 
+unterteilung von \(a_n\) in (disjunkte) <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolgen</a> mit  \(0 \leq a_n\) und \(0 > a_n\).
+Insbesondere ist jedes Gleid von \(a_n\) in genau einer der beiden Teilfolgen.
+Die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> einer <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> gegen \(\pm \infty\), weil sonst nach dem <a href="20221216221056-riemannscher_umordnungssatz.html#ID-0a500364-542d-443a-8ea5-7350c292a523">Riemannschen Umordnungssatz</a> die folge absolut <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergieren</a>  würde.
+Setzen eines Ziels \(z_n \in \mathbb{R}\), für \(W \in \mathbb{R}\) ist \(z_n = n\), <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  für \(W = +\infty\) ist \(z_n = n\)
+Für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(W \geq 0\) folgender Algorithmus:
+Falls  \(\sum_{i=0}^{k} a_{\sigma(i)} \geq W\), so wird \(n\) ffür \(z_n\)  inkrementiert und \(\sigma(i+1)\) ist das nächste Glied der negativen teilfolge, sonst wird \(\sigma(i + 1)\) das nächtse positive gleid der teilfolge.
+da \(a_n\) eine <a href="20220105153234-nullfolge.html#ID-7249b9ac-2afc-4157-9427-c368e5d287d3">Nullfolge</a> ist, konvergiert das für einen festen wert, für \(W = \pm \infty\) <a href="20220105155509-divergenz_einer_folge.html#ID-7c931d09-3c01-4dac-b0d0-02b4458741f7">divergiert</a> das wegen <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedizität</a> 
 </p>
 </div>
 </div>

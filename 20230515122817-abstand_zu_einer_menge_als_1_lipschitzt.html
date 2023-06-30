@@ -9,49 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstand zu einer Menge als 1-Lipschitz</h1>
-<div id="outline-container-orgd719e25" class="outline-2">
-<h2 id="orgd719e25"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga600404" class="outline-2">
+<h2 id="orga600404"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_b067e2919d0908e6e1d2ff33a9f2ef401eab291f.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_b067e2919d0908e6e1d2ff33a9f2ef401eab291f.svg" class="org-svg" />
-Dann ist der <a href="20230227172045-abstand_zweier_teilmengen.html#ID-76dd3f2f-291b-4a59-9628-e015fa507c7d">Abstand</a> <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_571f3b999448b0a3e21133f095fb5e775efa1ddc.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_571f3b999448b0a3e21133f095fb5e775efa1ddc.svg" class="org-svg" /> eine <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">1-Lipschitz</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(A \subseteq X\) mit \(A \neq \emptyset\)
+Dann ist der <a href="20230227172045-abstand_zweier_teilmengen.html#ID-76dd3f2f-291b-4a59-9628-e015fa507c7d">Abstand</a> \(d(\cdot, A)\) eine <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">1-Lipschitz</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org3e5d60d" class="outline-2">
-<h2 id="org3e5d60d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org025c4ca" class="outline-2">
+<h2 id="org025c4ca"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_b55aac3fedaaac570f7e8743b2c6664152f557ad.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_b55aac3fedaaac570f7e8743b2c6664152f557ad.svg" class="org-svg" /> folgt <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_dd0ff5bb5f38f8e0a5a84277738f6d5f7fd5d367.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_dd0ff5bb5f38f8e0a5a84277738f6d5f7fd5d367.svg" class="org-svg" />.
-Sei im folgenden <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_8f8c50a053522ee471d3d0ac88012f3b869a3a9d.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_8f8c50a053522ee471d3d0ac88012f3b869a3a9d.svg" class="org-svg" />.
+Für <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(y \in \overline{A}\) folgt \(\vert d(y,A) - d(x,A) \vert = d(x,A) \leq d(x,\overline{a})\).
+Sei im folgenden \(x,y \not\in \overline{A}\).
 </p>
 
 <p>
 Nach der <a href="20230420132847-umgekehrte_dreiecksungleichung.html#ID-7b5a2782-1ef3-49b0-a51a-c9751470aaeb">umgekehrte Dreiecksungleichung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_2cc4874d71f40db20c6f78e5f00e9dfa47b899e5.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_2cc4874d71f40db20c6f78e5f00e9dfa47b899e5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert d(y,z) - d(x,z) \vert \leq d(x,y) 
+\end{align*}
 
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_f1a01d26d924bbf8377ae78fa4891609070e4b2d.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_f1a01d26d924bbf8377ae78fa4891609070e4b2d.svg" class="org-svg" />, so wähle man - sofern existent - ein <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_2a5448f7bf4df0544ed9bb5119897c0c4224c5ce.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_2a5448f7bf4df0544ed9bb5119897c0c4224c5ce.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_502e406f5b7c0ff75d8a1ceb943f24ed2b3938e2.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_502e406f5b7c0ff75d8a1ceb943f24ed2b3938e2.svg" class="org-svg" /> und es folgt 
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(d(y,A) \leq d(x,A)\), so wähle man - sofern existent - ein \(a \neq x,y\) mit \(0 \leq d(y,a) - d(y,A) \leq d(x,a) - d(x,A)\) und es folgt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_240f3446798997adfbffe44c620b5ae6bb179a80.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_240f3446798997adfbffe44c620b5ae6bb179a80.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 \leq d(x,A) - d(y,A) \leq& d(x,a) - d(y,a) \leq d(x,y)  \\
+\vert d(x,A) - d(y,A) \vert \leq& d(x,y) 
+\end{align*}
 <p>
-Angenommen es existiert kein solches <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" />, so gilt <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_42a5b416413f3975c9daa8261e823b26c2e5cdd2.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_42a5b416413f3975c9daa8261e823b26c2e5cdd2.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_8a67435f5ed945928bc0fb2a29572807191d5f88.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_8a67435f5ed945928bc0fb2a29572807191d5f88.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_d188a139007fb6c56fd2c03050be40dc4ef87046.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_d188a139007fb6c56fd2c03050be40dc4ef87046.svg" class="org-svg" />.
-Nach Annahme folgt <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_62d9fccdeb4fb6735539a72b7cc876f7cb262843.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_62d9fccdeb4fb6735539a72b7cc876f7cb262843.svg" class="org-svg" /> und somit <img src="file:///home/anton/html/ltximg/20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_03bbf3ee2e539319644f299dcde6f16c8841f1ae.svg" alt="20230515122817-abstand_zu_einer_menge_als_1_lipschitzt_03bbf3ee2e539319644f299dcde6f16c8841f1ae.svg" class="org-svg" />
+Angenommen es existiert kein solches \(a\), so gilt \(d(x,\cdot) < d(y,\cdot)\) für \(M \setminus \{x,y\}\) und damit auch \(\inf d(x,A) \leq \inf d(y,A)\).
+Nach Annahme folgt \(d(y,A) = d(x,A)\) und somit \(\vert d(y,A) - d(x,A) \vert = 0 \leq d(x,y)\)
 </p>
 </div>
 </div>

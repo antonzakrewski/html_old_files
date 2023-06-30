@@ -9,128 +9,132 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">umordnungssatz für Doppelsummen</h1>
-<div id="outline-container-org6ca7b6d" class="outline-2">
-<h2 id="org6ca7b6d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgac21c4d" class="outline-2">
+<h2 id="orgac21c4d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_f078e7f5dc90593520d57a0b31eb03e26aeb35a2.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_f078e7f5dc90593520d57a0b31eb03e26aeb35a2.svg" class="org-svg" /> eine absolute doppelsummenkonvergente(*) Reihe (insbesondere existieren nach annahme die grenzwerte <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_90666c71b070713376bf9859f9ebced478eb750f.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_90666c71b070713376bf9859f9ebced478eb750f.svg" class="org-svg" />), so dass gilt
+\(\sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k} \right)\) eine absolute doppelsummenkonvergente(*) Reihe (insbesondere existieren nach annahme die grenzwerte \(b_n  \coloneqq \sum_{n=0}^{\infty} a_{n,k}\)), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_b4c5c817a7a5affb0d3690ea6c9e84d79913d426.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_b4c5c817a7a5affb0d3690ea6c9e84d79913d426.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k} \right) = g
+\end{align*}
 <p>
 Dann folgt, dass auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_779b0611e1a04a2faf53f49a2fdfc98d407e4620.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_779b0611e1a04a2faf53f49a2fdfc98d407e4620.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{\infty} \left( \sum_{n=0}^{\infty} a_{n,k} \right) = g'
+\end{align*}
 <p>
-konvergiert und zwar gegen den gleichen grenzwert <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_85dbfa36e47004170cad15907074e92e2f1e75e9.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_85dbfa36e47004170cad15907074e92e2f1e75e9.svg" class="org-svg" /> 
+konvergiert und zwar gegen den gleichen grenzwert \(g' = g\) 
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0f107c8" class="outline-2">
-<h2 id="org0f107c8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org00309d1" class="outline-2">
+<h2 id="org00309d1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Beweisskizze:
 </p>
 <ul class="org-ul">
-<li>wir können uns mit einer endlichen summe von <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_4ec5693bf834f026c146f06af8b0ea2d9406ae38.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_4ec5693bf834f026c146f06af8b0ea2d9406ae38.svg" class="org-svg" />  beliebig dem grenzwert <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> nähern;</li>
-<li>diese können wir dann gewohnt umordnen, um eine "partialsumme" von  <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_336003fbd14fbf4e19007b8cfb8aa133e7fc65dc.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_336003fbd14fbf4e19007b8cfb8aa133e7fc65dc.svg" class="org-svg" /> zu erhalten - mit dem gleichen grenzwert</li>
-<li>das heißt wir können mit einer "partialsumme" (die besser wird, je mehr folgenglieder sie zusätzlich addiert) von <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_a6829c1414a6add274285c99b39714e13b36aec3.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_a6829c1414a6add274285c99b39714e13b36aec3.svg" class="org-svg" /> uns beliebig dem grenzwert <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> nähern;</li>
-<li>dies ist symmetrisch, das heißt wir können uns auch umgekehrt mit einer partialsumme beliebig dem grenzwert <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_2a7d827e4236675b9570a9da184321d4fa0f88cb.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_2a7d827e4236675b9570a9da184321d4fa0f88cb.svg" class="org-svg" /> nähern</li>
-<li>aufgrund der eindeutigkeit des grenzwerts gilt <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_fa515f9b266f2f431b25ab461fb2ecac7aac3b9f.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_fa515f9b266f2f431b25ab461fb2ecac7aac3b9f.svg" class="org-svg" /></li>
+<li>wir können uns mit einer endlichen summe von \(\sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k}  \right) = g\)  beliebig dem grenzwert \(g\) nähern;</li>
+<li>diese können wir dann gewohnt umordnen, um eine "partialsumme" von  \(\sum_{k=0}^{\infty} \left( \sum_{n=0}^{\infty}  a_{n,k} \right)\) zu erhalten - mit dem gleichen grenzwert</li>
+<li>das heißt wir können mit einer "partialsumme" (die besser wird, je mehr folgenglieder sie zusätzlich addiert) von \(\sum_{k=0}^{\infty} \left( \sum_{n=0}^{\infty} a_{n,k} \right)\) uns beliebig dem grenzwert \(g\) nähern;</li>
+<li>dies ist symmetrisch, das heißt wir können uns auch umgekehrt mit einer partialsumme beliebig dem grenzwert \(g'\) nähern</li>
+<li>aufgrund der eindeutigkeit des grenzwerts gilt \(g = g'\)</li>
 <li>diese komische bedingung der absoluten doppelsummenkonvergenz ist notwendig, damit jede reihe (nach majorantenkriterium) auch konvergiert und wir im körper bleiben um weiterzurechnen</li>
 </ul>
 </div>
-<div id="outline-container-orga783680" class="outline-3">
-<h3 id="orga783680"><span class="section-number-3">2.1.</span> Formal</h3>
+<div id="outline-container-org176523d" class="outline-3">
+<h3 id="org176523d"><span class="section-number-3">2.1.</span> Formal</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_e1e9ff2d19c1b27a41c86211857db65a8c3b5ba7.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_e1e9ff2d19c1b27a41c86211857db65a8c3b5ba7.svg" class="org-svg" />.
-Wir wissen, dass die Folge <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_212dc384b657e16f2596649c585c182240ad1b15.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_212dc384b657e16f2596649c585c182240ad1b15.svg" class="org-svg" /> eine konvergente nullfolge ist, da die Reihe <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_c3f67f173417333537bdba1fbb67434a4ee22ead.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_c3f67f173417333537bdba1fbb67434a4ee22ead.svg" class="org-svg" /> konvergiert 
-Sei <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />
-Nach cauchy (und unserer absoluten konvergenz) existiert ein <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_29399a3317991c8c125a94f1faeefef93328271b.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_29399a3317991c8c125a94f1faeefef93328271b.svg" class="org-svg" />, so dass
+Sei \(b_n  \coloneqq \sum_{k=0}^{\infty} a_{n,k}\).
+Wir wissen, dass die Folge \((b_n)\) eine konvergente nullfolge ist, da die Reihe \(\sum_{n=0}^{\infty} b_n\) konvergiert 
+Sei \(\varepsilon > 0\)
+Nach cauchy (und unserer absoluten konvergenz) existiert ein \(n( \frac{\varepsilon}{2})\), so dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_2db686399e5c249305b7e089077dcb37c3faa4cc.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_2db686399e5c249305b7e089077dcb37c3faa4cc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=n(\frac{\varepsilon}{2})}^{\infty} \vert b_n \vert < \frac{\varepsilon}{2}
+\end{align*}
 <p>
 Das heißt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_1d4a24bf2d5a42f1b9ee858ef16e20789a33b241.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_1d4a24bf2d5a42f1b9ee858ef16e20789a33b241.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\right\vert g - \sum_{n=0}^{n(\frac{\varepsilon}{2})- 1} \vert b_n \vert \left \vert < \frac{\varepsilon}{2}
+\end{align*}
 <p>
-Zudem existiert wegen der konvergenz für <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_b48d5d2267ecc0db7d54547e90e2b322533e8f3c.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_b48d5d2267ecc0db7d54547e90e2b322533e8f3c.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_94acef918cec3c36f449a860b6ce544c2094be70.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_94acef918cec3c36f449a860b6ce544c2094be70.svg" class="org-svg" /> (insbesondere endlich viele, <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_a639e49a4d8ca3ce6eb58e97ab12a3b169c78c6d.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_a639e49a4d8ca3ce6eb58e97ab12a3b169c78c6d.svg" class="org-svg" /> jeweils cauchy =&gt; maximum davon wählen) ein <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_3bd2c81cad937a938a102a22b9a1e14c6a2f9c34.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_3bd2c81cad937a938a102a22b9a1e14c6a2f9c34.svg" class="org-svg" />, so dass gilt
+Zudem existiert wegen der konvergenz für \(b_n = \sum_{k=0}^{\infty} a_{n,k}\) für \(n_0 \in \{0,...,n(\frac{\varepsilon}{2})-1\}\) (insbesondere endlich viele, \(\sum_{k=0}^{\infty} a_{n,k}\) jeweils cauchy =&gt; maximum davon wählen) ein \(\mathrm{max}(n'(\frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})}))\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_892fa2fec81d18e96121a7555befae3eec2b759d.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_892fa2fec81d18e96121a7555befae3eec2b759d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left  \vert b_n - \sum_{k=0}^{n'(\frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})})}a_{n,k} \right \vert < \frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})}
+\end{align*}
 
 <p>
 so dass gilt:
 </p>
+\begin{align*}
+\left \left \vert \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} a_{n,k} - \sum_{n=0}^{n(\frac{\varepsilon}{2})-1} \sum_{k=0}^{n'(\frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})})} a_{n,k} \right \vert =& \left \vert \sum_{n=n(\frac{\varepsilon}{2})}^{\infty} b_n + \sum_{n=0}^{n(\frac{\varepsilon}{2})-1} \sum_{k= n'(\frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})}) + 1}^{\infty} a_{n,k} \right\vert \\
+\leq& \left \vert \sum_{n=n(\frac{\varepsilon}{2})}^{\infty} b_n \right \vert + \left \vert \sum_{n=0}^{n(\frac{\varepsilon}{2})-1} \sum_{k= n'(\frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})}) + 1}^{\infty} a_{n,k} \right \vert \\
+<& \frac{\varepsilon}{2} + n(\frac{\varepsilon}{2}) \cdot \frac{\varepsilon}{2 \cdot n(\frac{\varepsilon}{2})} \\
+=& \varepsilon
+\end{align*}
+</div>
+</div>
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_6c145274206cd300ebca350d5ad8013657360b27.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_6c145274206cd300ebca350d5ad8013657360b27.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org12ec8c6" class="outline-3">
-<h3 id="org12ec8c6"><span class="section-number-3">2.2.</span> Definition</h3>
+<div id="outline-container-org4291319" class="outline-3">
+<h3 id="org4291319"><span class="section-number-3">2.2.</span> Definition</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_7aac6b630add17369c4cbb1ec1bbf69ec716c952.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_7aac6b630add17369c4cbb1ec1bbf69ec716c952.svg" class="org-svg" /> sei eine absolut doppelsummenkonvergente reihe (oder so ähnlich) falls 
+\(\sum_{n=0}^{\infty} \sum_{k=0}^{\infty} a_{n,k}\) sei eine absolut doppelsummenkonvergente reihe (oder so ähnlich) falls 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_4581c9d10388472d4c6d61d6f5a535c5fd56d72b.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_4581c9d10388472d4c6d61d6f5a535c5fd56d72b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \vert a_{n,k} \vert
+\end{align*}
 <p>
 konvergiert
 </p>
 </div>
 </div>
-<div id="outline-container-org4bf77fd" class="outline-3">
-<h3 id="org4bf77fd"><span class="section-number-3">2.3.</span> Übertragung auf <img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_ecf15f8000807646f67edfd325ce2671b070041c.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_ecf15f8000807646f67edfd325ce2671b070041c.svg" class="org-svg" /></h3>
+<div id="outline-container-orgc13b112" class="outline-3">
+<h3 id="orgc13b112"><span class="section-number-3">2.3.</span> Übertragung auf \(\mathbb{C}\)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt, indem man realteil und imaginärteil schrittweise ausklammert
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230113081018-umordnungssatz_fur_doppelsummen_910e55ab34026923132ae43743d2d0be00a996f0.svg" alt="20230113081018-umordnungssatz_fur_doppelsummen_910e55ab34026923132ae43743d2d0be00a996f0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\leadsto \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} a_{n,k} =& \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \mathrm{Im}(a_{n,k}) + \sum_{n=0}^{\infty} \sum_{k=0}^{\infty} \mathrm{Re}(a_{n,k}) + 
+\end{align*}
 
 <p>
 Angewandt auf die Aufgabe kann man 

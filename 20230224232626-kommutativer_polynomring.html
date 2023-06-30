@@ -9,55 +9,80 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">kommutativer Polynomring</h1>
-<div id="outline-container-orga1daa68" class="outline-2">
-<h2 id="orga1daa68"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org760a53f" class="outline-2">
+<h2 id="org760a53f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230224232626-kommutativer_polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20230224232626-kommutativer_polynomring_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> der dazugehörige <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a>.
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(R[X]\) der dazugehörige <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230224232626-kommutativer_polynomring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ist <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20230224232626-kommutativer_polynomring_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> als <a href="20221228202226-polynomring_als_ring.html#ID-df7711fc-7f0d-4868-999a-fdd9683b23ca">Ring</a> ist <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a></li>
+<li>\(R\) ist <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a></li>
+<li>\(R[X]\) als <a href="20221228202226-polynomring_als_ring.html#ID-df7711fc-7f0d-4868-999a-fdd9683b23ca">Ring</a> ist <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativ</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5277607" class="outline-2">
-<h2 id="org5277607"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9ec8327" class="outline-2">
+<h2 id="org9ec8327"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgadf14ec" class="outline-3">
-<h3 id="orgadf14ec"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org3d1785f" class="outline-3">
+<h3 id="org3d1785f"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_205eaa061f9219a0abceb1e3156332f0ce754dc5.svg" alt="20230224232626-kommutativer_polynomring_205eaa061f9219a0abceb1e3156332f0ce754dc5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_8674f2d87e64a5ab4001d2c01964fef8521cb171.svg" alt="20230224232626-kommutativer_polynomring_8674f2d87e64a5ab4001d2c01964fef8521cb171.svg" class="org-svg" /> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a>, dann gilt:
+Seien \(f = \sum_{i=0}^{n} \alpha_i X^i\) und \(g = \sum_{i=0}^{n'} \beta_i X^i\) <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a>, dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_6bf62243aa743b4f3a13cf1d986ae459122945d1.svg" alt="20230224232626-kommutativer_polynomring_6bf62243aa743b4f3a13cf1d986ae459122945d1.svg" class="org-svg" />
-</span>
+\begin{align*}
+f \cdot g =& \left(\sum_{i=0}^{n} \alpha_i X^i \right) \cdot \left( \sum_{i=0}^{n'} \beta_i X^i \right) \\
+=& \sum_{j=0}^{n + n'} \sum_{i=0}^{j} \alpha_{i} \beta_{j-i} X^j \\
+=& \sum_{j=0}^{n + n'} \sum_{i=0}^{j} \beta_{j-i} \alpha_{i} X^j \\
+=& \sum_{j=0}^{n' + n} \sum_{i=0}^{j} \beta_{i} \alpha_{i-j} X^j \\
+=& \left( \sum_{i=0}^{n'} \beta_i X^i \right) \left( \sum_{j=0}^{n} \alpha_i X^i \right)
+\end{align*}
 </div>
 </div>
-</div>
 
 
-<div id="outline-container-org5841ef1" class="outline-3">
-<h3 id="org5841ef1"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org93071d2" class="outline-3">
+<h3 id="org93071d2"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme gilt für <img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_1125d444657a97246340531d3b484ea681b2787a.svg" alt="20230224232626-kommutativer_polynomring_1125d444657a97246340531d3b484ea681b2787a.svg" class="org-svg" />:
+Nach Annahme gilt für \(r,r' \in R\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224232626-kommutativer_polynomring_24d6ba98b8e3e8978957b7780eaff233cd886840.svg" alt="20230224232626-kommutativer_polynomring_24d6ba98b8e3e8978957b7780eaff233cd886840.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(r X^{0} ) \cdot (r' X^{0}) =& (r' X^{0}) \cdot (r X^{0}) \\
+=& r \cdot r'  X^0 \\
+=& r' \cdot r X^0
+\end{align*}
 </div>
 </div>
 </div>

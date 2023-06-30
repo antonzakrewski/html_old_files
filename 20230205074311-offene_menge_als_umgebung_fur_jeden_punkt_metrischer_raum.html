@@ -9,44 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">offene Menge als Umgebung für jeden Punkt (Metrischer Raum)</h1>
-<div id="outline-container-org4185842" class="outline-2">
-<h2 id="org4185842"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org25e5850" class="outline-2">
+<h2 id="org25e5850"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_9cf542c47d8867c2e453c1cd9eb79d3a6b8037ef.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_9cf542c47d8867c2e453c1cd9eb79d3a6b8037ef.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Sei \(M\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(U \subseteq M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ist <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ist für alle <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a></li>
+<li>\(U\) ist <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a></li>
+<li>\(U\) ist für alle \(x \in U\) eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8e16c90" class="outline-2">
-<h2 id="org8e16c90"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb4ce625" class="outline-2">
+<h2 id="orgb4ce625"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org93d86e2" class="outline-3">
-<h3 id="org93d86e2"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org36351cf" class="outline-3">
+<h3 id="org36351cf"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> beliebig, so existiert wegen der offenheit ein <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, so dass die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> in <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> enthalten ist.
+Sei \(U\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(x \in U\) beliebig, so existiert wegen der offenheit ein \(\varepsilon > 0\), so dass die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> in \(U\) enthalten ist.
 </p>
 
 <p>
-Daraus folgt nach Definition, dass <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> ist
+Daraus folgt nach Definition, dass \(U\) eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> von \(x\) ist
 </p>
 </div>
 </div>
-<div id="outline-container-orgb5e302d" class="outline-3">
-<h3 id="orgb5e302d"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgce580d3" class="outline-3">
+<h3 id="orgce580d3"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> aller Punkte, so gilt für einen beliebigen Punkt <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" />, dass ein <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> existiert, sodass alle punkte mit abstand kleiner <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b59e8f9009ac06c6db675aca3946bd4d3ff63017.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_b59e8f9009ac06c6db675aca3946bd4d3ff63017.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230205074311-offene_menge_als_umgebung_fur_jeden_punkt_metrischer_raum_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> sind.
+Sei \(U\) eine <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> aller Punkte, so gilt für einen beliebigen Punkt \(u \in U\), dass ein \(\varepsilon > 0\) existiert, sodass alle punkte mit abstand kleiner \(\varepsilon\) in \(U\) sind.
 Dies ist nach Definition eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge.</a>
 </p>
 </div>

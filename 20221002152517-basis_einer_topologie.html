@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Basis (topology)</h1>
-<div id="outline-container-org3c3c7fd" class="outline-2">
-<h2 id="org3c3c7fd"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgfb564e4" class="outline-2">
+<h2 id="orgfb564e4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20221002152517-basis_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_b257a6bbc23645f756e988b41388ae2c793c0717.svg" alt="20221002152517-basis_einer_topologie_b257a6bbc23645f756e988b41388ae2c793c0717.svg" class="org-svg" /> a collection of <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subsets</a>.
-<img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20221002152517-basis_einer_topologie_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> is a basis for a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> on <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20221002152517-basis_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, if the following statements hold:
+Let \(X\) be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and \(\mathcal{B} \subseteq \mathcal{P}(X)\) a collection of <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subsets</a>.
+\(\mathcal{B}\) is a basis for a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> on \(X\), if the following statements hold:
 </p>
 </div>
-<div id="outline-container-orge009e54" class="outline-3">
-<h3 id="orge009e54"><span class="section-number-3">1.1.</span> a)</h3>
+<div id="outline-container-orgc8a0650" class="outline-3">
+<h3 id="orgc8a0650"><span class="section-number-3">1.1.</span> a)</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_53f34fc7fea76fbd2aa8606de091f0e4cc5a64fd.svg" alt="20221002152517-basis_einer_topologie_53f34fc7fea76fbd2aa8606de091f0e4cc5a64fd.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{B \in \mathcal{B}} B = X
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org25ee825" class="outline-3">
-<h3 id="org25ee825"><span class="section-number-3">1.2.</span> b)</h3>
+<div id="outline-container-orge8ef255" class="outline-3">
+<h3 id="orge8ef255"><span class="section-number-3">1.2.</span> b)</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
-For <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_6abee745d7fb41611c14012858d9dd0c646944e5.svg" alt="20221002152517-basis_einer_topologie_6abee745d7fb41611c14012858d9dd0c646944e5.svg" class="org-svg" /> and suitable <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_443a0ca0dbdef91690dcd269665635b1f11ba939.svg" alt="20221002152517-basis_einer_topologie_443a0ca0dbdef91690dcd269665635b1f11ba939.svg" class="org-svg" /> (possibly <img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_12d0964d41d74ea28344504e178e869688bea30f.svg" alt="20221002152517-basis_einer_topologie_12d0964d41d74ea28344504e178e869688bea30f.svg" class="org-svg" />) it holds that:
+For \(B_1,B_2 \in \mathcal{B}\) and suitable \(B_j\) (possibly \(J = \emptyset\)) it holds that:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002152517-basis_einer_topologie_7382203bb51cb30ab674f02f1f15bc04fd645738.svg" alt="20221002152517-basis_einer_topologie_7382203bb51cb30ab674f02f1f15bc04fd645738.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{j \in J} B_j = B_1 \cap B_2
+\end{align*}
 
 <p>
 see: <a href="20230401112443-topology_generated_by_a_basis.html#ID-8c4f0b7e-e588-45ef-9fac-ef4db8534849">Topology generated by a basis</a>

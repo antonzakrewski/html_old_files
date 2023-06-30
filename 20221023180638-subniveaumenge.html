@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Subniveaumenge</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Subniveaumenge</h1>
-<div id="outline-container-orgd4d1d54" class="outline-2">
-<h2 id="orgd4d1d54"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org7c8277c" class="outline-2">
+<h2 id="org7c8277c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221023180638-subniveaumenge_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20221023180638-subniveaumenge_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="ltximg/20221023180638-subniveaumenge_4617f7d66de42a0d98061de0608e247e54e73546.svg" alt="20221023180638-subniveaumenge_4617f7d66de42a0d98061de0608e247e54e73546.svg" class="org-svg" /> sowie <img src="ltximg/20221023180638-subniveaumenge_97fe4b833490731c59d3ee9e85cc8ef74f114edc.svg" alt="20221023180638-subniveaumenge_97fe4b833490731c59d3ee9e85cc8ef74f114edc.svg" class="org-svg" /> eine <a href="20221010083158-ordnungsrelation.html#ID-748213ba-229e-4caf-8cb3-ed5bd7d31476">Ordnungsrelation</a> auf <img src="ltximg/20221023180638-subniveaumenge_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" alt="20221023180638-subniveaumenge_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" class="org-svg" />
-Die Niveaumenge für <img src="ltximg/20221023180638-subniveaumenge_d458624ba681b728bdeeb02a264d566240c40eca.svg" alt="20221023180638-subniveaumenge_d458624ba681b728bdeeb02a264d566240c40eca.svg" class="org-svg" /> ist definiert als
+Sei \(f: A \rightarrow B\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(b \in B\) sowie \(\leq\) eine <a href="20221010083158-ordnungsrelation.html#ID-748213ba-229e-4caf-8cb3-ed5bd7d31476">Ordnungsrelation</a> auf \(B\)
+Die Niveaumenge für \(b\) ist definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221023180638-subniveaumenge_9cff4729795b0b72f757acb1cf4b878060237d1c.svg" alt="20221023180638-subniveaumenge_9cff4729795b0b72f757acb1cf4b878060237d1c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\{ a \in A \vert f(a) \leq b\}
+\end{align*}
 </div>
 </div>
 </div>

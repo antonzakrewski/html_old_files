@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Totalbeschränktheit</h1>
-<div id="outline-container-orgd3088ea" class="outline-2">
-<h2 id="orgd3088ea"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga1d29b4" class="outline-2">
+<h2 id="orga1d29b4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230224182853-totalbeschranktheit_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230224182853-totalbeschranktheit_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-<img src="file:///home/anton/html/ltximg/20230224182853-totalbeschranktheit_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" alt="20230224182853-totalbeschranktheit_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" class="org-svg" /> ist totalbeschränkt, falls für <img src="file:///home/anton/html/ltximg/20230224182853-totalbeschranktheit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230224182853-totalbeschranktheit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele Punkte <img src="file:///home/anton/html/ltximg/20230224182853-totalbeschranktheit_ec4a5f1744d3ea5fecb4c45f64581c74c68b8a0d.svg" alt="20230224182853-totalbeschranktheit_ec4a5f1744d3ea5fecb4c45f64581c74c68b8a0d.svg" class="org-svg" /> existieren, so dass für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> gilt:
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+\(A \subseteq M\) ist totalbeschränkt, falls für \(\varepsilon > 0\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele Punkte \(x_1,...,x_n \in M\) existieren, so dass für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224182853-totalbeschranktheit_05678abeb21ddfc01d5276ce482075a4f58a466a.svg" alt="20230224182853-totalbeschranktheit_05678abeb21ddfc01d5276ce482075a4f58a466a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A \subseteq \bigcup_{i = 1}^n U_{\varepsilon}(x_i)
+\end{align*}
 </div>
 </div>
 </div>

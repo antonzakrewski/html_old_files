@@ -9,89 +9,109 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristische Polynom für Rang 1</h1>
-<div id="outline-container-orgb6929c6" class="outline-2">
-<h2 id="orgb6929c6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2628c86" class="outline-2">
+<h2 id="org2628c86"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20221126200912-rang_einer_matrix.html#ID-23583271-da43-4b65-8507-bd539e482ca1">Rang</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" /> für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" />
+Sei \(A \in K^{n \times n}\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20221126200912-rang_einer_matrix.html#ID-23583271-da43-4b65-8507-bd539e482ca1">Rang</a> \(1\) für einen <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_9048a1c2a8ce6320ac72e0a5d06d5b1110cbb8f9.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_9048a1c2a8ce6320ac72e0a5d06d5b1110cbb8f9.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_A  \coloneqq x^n - x^{n-1} \mathrm{Tr}(A)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgddf4696" class="outline-2">
-<h2 id="orgddf4696"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org68aed8a" class="outline-2">
+<h2 id="org68aed8a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga3cf736" class="outline-3">
-<h3 id="orga3cf736"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org52ef54b" class="outline-3">
+<h3 id="org52ef54b"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Die Koeffizienten vor <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_5a338907b1d4af0fd7e417811528f1ec2086bf07.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_5a338907b1d4af0fd7e417811528f1ec2086bf07.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_d886831a1dd42b955bb2eae28754cf04866907ef.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_d886831a1dd42b955bb2eae28754cf04866907ef.svg" class="org-svg" /> folgen aus der Aussage über das <a href="20230428164635-charakteristische_polynom_und_spur.html#ID-0b0a017e-9546-4107-987e-6bbc5ec91427">Charakteristische Polynom und die Spur</a>.
+Die Koeffizienten vor \(X^n\) und \(X^{n-1}\) folgen aus der Aussage über das <a href="20230428164635-charakteristische_polynom_und_spur.html#ID-0b0a017e-9546-4107-987e-6bbc5ec91427">Charakteristische Polynom und die Spur</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf5c0c02" class="outline-3">
-<h3 id="orgf5c0c02"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org53b0a5d" class="outline-3">
+<h3 id="org53b0a5d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgcae20f7" class="outline-4">
-<h4 id="orgcae20f7"><span class="section-number-4">2.2.1.</span> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_bde92ae8083bd0383db91d024c510cae7c6d3287.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_bde92ae8083bd0383db91d024c510cae7c6d3287.svg" class="org-svg" /></h4>
+<div id="outline-container-org3f77cd7" class="outline-4">
+<h4 id="org3f77cd7"><span class="section-number-4">2.2.1.</span> \(n = 1\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Nach Definition gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_2d1162a0d3438522893882397c175c9ad12b88cd.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_2d1162a0d3438522893882397c175c9ad12b88cd.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_A =& (x - \alpha_{11}) \\
+=& x^{1-1} (x - \mathrm{Tr}(\alpha_{11})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9fe89bc" class="outline-4">
-<h4 id="org9fe89bc"><span class="section-number-4">2.2.2.</span> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_31765168177a89488a5435a5956d4d6f4a3f29a3.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_31765168177a89488a5435a5956d4d6f4a3f29a3.svg" class="org-svg" /></h4>
+<div id="outline-container-org27d5e27" class="outline-4">
+<h4 id="org27d5e27"><span class="section-number-4">2.2.2.</span> \(n > 1\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei der Grad des <a href="20230226185157-monom.html#ID-c82cd1df-eeac-46eb-954b-e945e25aad8e">Monoms</a> kleiner als <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_0727dc498bfd7b757e7ab7838dd2ca2078bd85ea.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_0727dc498bfd7b757e7ab7838dd2ca2078bd85ea.svg" class="org-svg" />, hier <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_f4344224c0738caa6de189eec9cf7ee79e2162c9.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_f4344224c0738caa6de189eec9cf7ee79e2162c9.svg" class="org-svg" />, so wird der Koeffizient erzeugt von der Summe der führenden Koeffizienten von <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> der Form:
-Dabei sind nach Annahme die Zeilen der <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> paarweise <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> und hier in dem Fall mind. die Zeilen von <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_d0a31b72b2125b18a6865e313286540e37e6d4b0.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_d0a31b72b2125b18a6865e313286540e37e6d4b0.svg" class="org-svg" /> d.h. nach der Aussage, dass nicht invertierbare <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> <a href="20221126195729-aquivalenz_determinante_ungleich_null_und_regulare_matrix.html#ID-8ef0368a-9a6b-4776-9392-e07c1c404c3e">Determinante</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" /> haben, folgt für die Determinante 
+Sei der Grad des <a href="20230226185157-monom.html#ID-c82cd1df-eeac-46eb-954b-e945e25aad8e">Monoms</a> kleiner als \(n - 1\), hier <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(n-2\), so wird der Koeffizient erzeugt von der Summe der führenden Koeffizienten von <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> der Form:
+Dabei sind nach Annahme die Zeilen der <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(A\) paarweise <a href="20220207224704-lineare_abhangigkeit.html#ID-97e6b172-9da3-4ad6-a1b1-a589a41c8ec5">Linear abhängig</a> und hier in dem Fall mind. die Zeilen von \(\alpha_{ii}, \alpha_{jj}\) d.h. nach der Aussage, dass nicht invertierbare <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> <a href="20221126195729-aquivalenz_determinante_ungleich_null_und_regulare_matrix.html#ID-8ef0368a-9a6b-4776-9392-e07c1c404c3e">Determinante</a> \(0\) haben, folgt für die Determinante 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_b7c9856722efe5228544c4e7ac72ee447e005553.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_b7c9856722efe5228544c4e7ac72ee447e005553.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A'_{i,j}  \coloneqq&
+\begin{pmatrix}
+ x & \hdots & & & & & \hdots & - \alpha_{1,n} \\
+\vdots & & & & & & & \vdots \\
+& & - \alpha_{i,i} & & & & & \\
+& & & & & & & \\
+& & & & - \alpha_{j,j} & & & \\
+\vdots & & & &  & & & \vdots \\
+- \alpha_{n,1} & \hdots & & & & & \hdots & x
+ \end{pmatrix} 
+\end{align*} 
 <p>
-Daraus folgt dann, dass der führende Koeffizient über alle <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_0a4383ece842bdbb69a6302f797e5cc1988ebd6a.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_0a4383ece842bdbb69a6302f797e5cc1988ebd6a.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_a662f5bc1334d10d58a3dd7b8aa043e4cf0a9b72.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_a662f5bc1334d10d58a3dd7b8aa043e4cf0a9b72.svg" class="org-svg" /> jeweils <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" /> ist wegen
+Daraus folgt dann, dass der führende Koeffizient über alle <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a> \(A_{i,j}\) mit \(1 \leq i < j \leq n\) jeweils \(0\) ist wegen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_57a20b3ba43c8ba50a9467b30350a31f580221b2.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_57a20b3ba43c8ba50a9467b30350a31f580221b2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{det}(A'_{i,j}) = 0
+\end{align*}
 <p>
 Daraus folgt insbesondere
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_06b65f353a0e23e7794efde0c5f005803c947614.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_06b65f353a0e23e7794efde0c5f005803c947614.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{1 \leq i < j \leq n}^{} \det(A_{i,j}) = 0 
+\end{align*}
 <p>
-Und somit ist der Koeffizient mit Grad <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_f4344224c0738caa6de189eec9cf7ee79e2162c9.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_f4344224c0738caa6de189eec9cf7ee79e2162c9.svg" class="org-svg" /> gleich <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" />
-Für die Koeffizienten mit Grad <img src="file:///home/anton/html/ltximg/20230428165035-charakteristische_polynom_fur_rang_1_216f955ae00453d653343efca325b26fb9046b84.svg" alt="20230428165035-charakteristische_polynom_fur_rang_1_216f955ae00453d653343efca325b26fb9046b84.svg" class="org-svg" /> analoge Argumentation
+Und somit ist der Koeffizient mit Grad \(n-2\) gleich \(0\)
+Für die Koeffizienten mit Grad \(<n-2\) analoge Argumentation
 </p>
 </div>
 </div>

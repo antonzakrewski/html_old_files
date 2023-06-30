@@ -9,19 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierungen einer stetigen Abbildung (Topologie)</h1>
-<div id="outline-container-org7ca000a" class="outline-2">
-<h2 id="org7ca000a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org636852d" class="outline-2">
+<h2 id="org636852d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230228051544-aquivalente_charakterisierungen_einer_stetigen_abbildung_topologie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 </ul>
 
 <ul class="org-ul">
@@ -45,8 +70,8 @@ Dann sind folgende Aussagen äquivalent:
 <li><a href="20230406020825-continuous_map_and_continuity_of_the_restrictions_of_a_locally_finite_closed_covering.html#ID-b7720af9-b155-48be-b33b-201f3efad5c3">continuous map and continuity of the restrictions of a locally finite, closed covering</a></li>
 </ul>
 </div>
-<div id="outline-container-org14ef22a" class="outline-3">
-<h3 id="org14ef22a"><span class="section-number-3">1.1.</span> für <a href="20230227185804-stetigkeit_in_einem_punkt_topologie.html#ID-415665d1-cda9-465e-87f0-9def9ccacd53">Stetigkeit in einem Punkt (Topologie)</a></h3>
+<div id="outline-container-orgde79cc3" class="outline-3">
+<h3 id="orgde79cc3"><span class="section-number-3">1.1.</span> für <a href="20230227185804-stetigkeit_in_einem_punkt_topologie.html#ID-415665d1-cda9-465e-87f0-9def9ccacd53">Stetigkeit in einem Punkt (Topologie)</a></h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li><a href="20230313193044-stetigkeit_einer_funktion_und_umgebungsbasen.html#ID-a0a13de8-f747-4025-9ec9-34db55537706">Stetigkeit einer Funktion in einem Punkt und Umgebungsbasen</a></li>
@@ -54,8 +79,8 @@ Dann sind folgende Aussagen äquivalent:
 </div>
 </div>
 </div>
-<div id="outline-container-orgd9ed4e1" class="outline-2">
-<h2 id="orgd9ed4e1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga0cdfd4" class="outline-2">
+<h2 id="orga0cdfd4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 siehe unter einzelnen punkten

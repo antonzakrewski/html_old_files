@@ -9,34 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">excluded point topology</h1>
-<div id="outline-container-orgf5beae4" class="outline-2">
-<h2 id="orgf5beae4"><span class="section-number-2">1.</span> Definition / Proposition</h2>
+<div id="outline-container-org1d6cbd4" class="outline-2">
+<h2 id="org1d6cbd4"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230331231647-excluded_point_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_3d0595915278196e56a71afcce16081fef871fe1.svg" alt="20230331231647-excluded_point_topology_3d0595915278196e56a71afcce16081fef871fe1.svg" class="org-svg" />.
-The excluded point topology <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_96eedeedd28cbab6a12347a42feecb4f2a7e738b.svg" alt="20230331231647-excluded_point_topology_96eedeedd28cbab6a12347a42feecb4f2a7e738b.svg" class="org-svg" /> on <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230331231647-excluded_point_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> is defined by:
+Let \(X\) be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and \(x_0 \in X\).
+The excluded point topology \({EPX}_{x_0}\) on \(X\) is defined by:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_3151e5f9270ecf42a0413dd45d0770ebc75f065d.svg" alt="20230331231647-excluded_point_topology_3151e5f9270ecf42a0413dd45d0770ebc75f065d.svg" class="org-svg" />
-</span>
+\begin{align*}
+{EPX}_{x_0} := \{O \subseteq X \vert x_0 \notin O \lor O = X\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb48291f" class="outline-2">
-<h2 id="orgb48291f"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org06a8c2a" class="outline-2">
+<h2 id="org06a8c2a"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5650d38" class="outline-3">
-<h3 id="org5650d38"><span class="section-number-3">2.1.</span> a) <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
+<div id="outline-container-org008ecc8" class="outline-3">
+<h3 id="org008ecc8"><span class="section-number-3">2.1.</span> a) <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-By construction <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_5e1c6cef8ce050fe297ab5c0da87ca2c46cf3877.svg" alt="20230331231647-excluded_point_topology_5e1c6cef8ce050fe297ab5c0da87ca2c46cf3877.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_3d0595915278196e56a71afcce16081fef871fe1.svg" alt="20230331231647-excluded_point_topology_3d0595915278196e56a71afcce16081fef871fe1.svg" class="org-svg" /> and therefore <img src="file:///home/anton/html/ltximg/20230331231647-excluded_point_topology_189a8e953f1c1a58f476762041ed06d2cc859db3.svg" alt="20230331231647-excluded_point_topology_189a8e953f1c1a58f476762041ed06d2cc859db3.svg" class="org-svg" />
+By construction \(X \in {EPX}_{x_0}\) and \(x_0 \in X\) and therefore \(X \in {EXP}_{x_0}\)
 </p>
 </div>
 </div>

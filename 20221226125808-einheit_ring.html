@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einheit (Ring)</h1>
-<div id="outline-container-org7e56a76" class="outline-2">
-<h2 id="org7e56a76"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0cc370e" class="outline-2">
+<h2 id="org0cc370e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226125808-einheit_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226125808-einheit_ring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
-<img src="file:///home/anton/html/ltximg/20221226125808-einheit_ring_2077f3589b0a25e0d1b01e1f70d08fcb11919633.svg" alt="20221226125808-einheit_ring_2077f3589b0a25e0d1b01e1f70d08fcb11919633.svg" class="org-svg" /> ist eine Einheit, falls gilt:
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
+\(x \in R\) ist eine Einheit, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226125808-einheit_ring_34f0137d6f66ec79fca028e3fd4cbb7695891b21.svg" alt="20221226125808-einheit_ring_34f0137d6f66ec79fca028e3fd4cbb7695891b21.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \mid 1
+\end{align*}
 <p>
 bzw.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226125808-einheit_ring_447a237dc7f5b036d13f7c8289fd6cd2cca081d3.svg" alt="20221226125808-einheit_ring_447a237dc7f5b036d13f7c8289fd6cd2cca081d3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\exists y \in R : xy = 1
+\end{align*}
 </div>
 </div>
 </div>

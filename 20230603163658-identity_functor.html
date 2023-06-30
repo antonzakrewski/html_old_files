@@ -3,31 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>identity functor</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">identity functor</h1>
-<div id="outline-container-orgd892f39" class="outline-2">
-<h2 id="orgd892f39"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgab04596" class="outline-2">
+<h2 id="orgab04596"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230603163658-identity_functor_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230603163658-identity_functor_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, then the identity functor is defined as
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, then the identity functor is defined as
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230603163658-identity_functor_9bdc8182f6a9cab2fb7973160532a3811a87f13e.svg" alt="20230603163658-identity_functor_9bdc8182f6a9cab2fb7973160532a3811a87f13e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{id}_{\mathcal{C}}: A \mapsto& A \\
+g \mapsto& g
+\end{align*}
 </div>
 </div>
 </div>

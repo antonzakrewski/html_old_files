@@ -3,38 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Division mit Rest</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Division mit Rest</h1>
-<div id="outline-container-org56568f2" class="outline-2">
-<h2 id="org56568f2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0f995fd" class="outline-2">
+<h2 id="org0f995fd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20220303184021-division_mit_rest_22274bb5c96d3c8e3f7282cd2a5dbe2978ec7336.svg" alt="20220303184021-division_mit_rest_22274bb5c96d3c8e3f7282cd2a5dbe2978ec7336.svg" class="org-svg" /> 
-Dann gibt es eindeutig bestimmte Zahlen <img src="ltximg/20220303184021-division_mit_rest_c396d98860791df933a1fcd790a0ae8dabc14287.svg" alt="20220303184021-division_mit_rest_c396d98860791df933a1fcd790a0ae8dabc14287.svg" class="org-svg" /> mit:
+Seien \(a,b \in& \mathbb{Z}\) 
+Dann gibt es eindeutig bestimmte Zahlen \(q,r \in \mathbb{Z}\) mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220303184021-division_mit_rest_6c58e819d8b37749fb980d0d6f540cdb32434ee1.svg" alt="20220303184021-division_mit_rest_6c58e819d8b37749fb980d0d6f540cdb32434ee1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+a =& q \cdot b + r \\
+0 \leq& r < \vert b\vert
+\end{align*}
 </div>
+<div id="outline-container-org18c0ff7" class="outline-3">
+<h3 id="org18c0ff7"><span class="section-number-3">1.1.</span> <a href="20220921093510-existenz_einer_losung_division_mit_rest.html#ID-764fca4a-c62a-4c06-b5db-67d689a10dfd">Existenz einer Lösung: Division mit Rest</a></h3>
 </div>
-<div id="outline-container-org4b5b0ae" class="outline-3">
-<h3 id="org4b5b0ae"><span class="section-number-3">1.1.</span> <a href="20220921093510-existenz_einer_losung_division_mit_rest.html#ID-764fca4a-c62a-4c06-b5db-67d689a10dfd">Existenz einer Lösung: Division mit Rest</a></h3>
-</div>
-<div id="outline-container-orgf360b84" class="outline-3">
-<h3 id="orgf360b84"><span class="section-number-3">1.2.</span> <a href="20220921093503-eindeutigkeit_division_mit_rest.html#ID-fb97dfe6-8e6c-47d4-98a4-398a79ead994">Eindeutigkeit: Division mit Rest</a></h3>
+<div id="outline-container-org8bb1e67" class="outline-3">
+<h3 id="org8bb1e67"><span class="section-number-3">1.2.</span> <a href="20220921093503-eindeutigkeit_division_mit_rest.html#ID-fb97dfe6-8e6c-47d4-98a4-398a79ead994">Eindeutigkeit: Division mit Rest</a></h3>
 </div>
 </div>
 </div>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>selbst-adjungiert und Abbildung der Diagonalen auf die Reellen Zahlen</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">selbst-adjungiert und Abbildung der Diagonalen auf die Reellen Zahlen</h1>
+<div id="outline-container-org926d7c1" class="outline-2">
+<h2 id="org926d7c1"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(V\) ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer</a> <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(A \in \mathrm{End}_{\mathbb{C}}(V)\).
+<a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
+</p>
+<ol class="org-ol">
+<li>\(A\) ist <a href="20230303174217-selbstadjungierter_endomorphismus.html#ID-31005da0-e759-49d6-aabd-ce153e2574ea">Selbstadjungiert</a></li>
+<li>\(\langle Av, v\rangle \in \mathbb{R}\)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org57c2223" class="outline-2">
+<h2 id="org57c2223"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orge51b6d6" class="outline-3">
+<h3 id="orge51b6d6"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Nach der <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermitesche Symmetrie</a> gilt:
+</p>
+\begin{align*}
+\langle Av, v\rangle =& \langle v, Av\rangle \\
+=& \overline{ \langle Av, v\rangle}
+\end{align*}
+<p>
+und damit auch \(\langle Av, v\rangle \in \mathbb{R}\)
+</p>
+</div>
+</div>
+<div id="outline-container-org750244e" class="outline-3">
+<h3 id="org750244e"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Seien \(v_1,v_2 \in V\), so gilt
+</p>
+\begin{align*}
+(A(v_1 + v_2), v_1 + v_2) =& (Av_1, v_1) + (A v_1, v_2) + (A v_2, v_1) + (A v_2,v_2) 
+(Av_1, v_2) + (A v_2, v_1) \in& \mathbb{R}
+\end{align*}
+<p>
+Es folgt somit: \((A v_1, v_2) + (A v_2, v_1) \in \mathbb{R}\)
+</p>
+\begin{align*}
+(A(v_1 + \mathrm{i} v_2), v_1 + \mathrm{i} v_2) =& (Av_1, v_1) + (A v_1, \mathrm{i} v_2) + ( \mathrm{i} A v_2, v_1) + (\mathrm{i} A v_2, \mathrm{i} v_2)  \\
+=& (A v_1, v_1) - (Av_2,v_2) + \mathrm{i} (A v_1, v_2) + \mathrm{i} (A v_2, v_1) \\
+\mathrm{i} (A v_1, v_2) + \mathrm{i} (A v_2, v_1)  \in& \mathbb{R}
+\end{align*}
+<p>
+Aufgrund der  <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> als <a href="20230628-komplexe_konjugation_als_isomorphismus.html#ID-c89d0c56-829c-47f5-a6da-6119e850a1a1">komplexe Konjugation als Automorphismus</a> folgt somit
+</p>
+\begin{align*}
+\overline{(Av_1, v_2) + (A v_2, v_1)} = \overline{ (Av_1, v_2)} + \overline{(A v_2, v_1)}
+\end{align*}
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

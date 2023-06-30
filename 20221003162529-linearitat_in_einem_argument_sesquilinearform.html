@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linearität in einem Argument (Sesquilinearform)</h1>
-<div id="outline-container-org86f3830" class="outline-2">
-<h2 id="org86f3830"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2623f0f" class="outline-2">
+<h2 id="org2623f0f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_1d020af54d4dd394d7f299130aef599957f30ba9.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_1d020af54d4dd394d7f299130aef599957f30ba9.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> mit der <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermiteschen Sesquilinearform</a> <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_0f80b6b5b7387eadbf204a7909ef229808d2e567.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_0f80b6b5b7387eadbf204a7909ef229808d2e567.svg" class="org-svg" />.
-Es seien <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" />  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a>.
-Dann gilt für eine <a href="20221003155654-sesquilinearform.html#ID-a45e77e2-cb58-46a5-9457-a99ce7b1b279">Sesquilinearform</a> <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_76529468779510cf2f551edbc97e0ba5b48cdbb3.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_76529468779510cf2f551edbc97e0ba5b48cdbb3.svg" class="org-svg" /> mit beliebigen <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_9efcafdc1e09ff62bf66645de3973afe754546f6.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_9efcafdc1e09ff62bf66645de3973afe754546f6.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" class="org-svg" /> 
+Sei \(\mathbb{C}^n\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> mit der <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermiteschen Sesquilinearform</a> \(\langle , \rangle\).
+Es seien \(V,W\)  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a>.
+Dann gilt für eine <a href="20221003155654-sesquilinearform.html#ID-a45e77e2-cb58-46a5-9457-a99ce7b1b279">Sesquilinearform</a> \(S: V \times W \rightarrow \mathbb{C}\) mit beliebigen \(v \in V\) und \(w,w' \in W\) sowie \(a \in \mathbb{C}\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003162529-linearitat_in_einem_argument_sesquilinearform_ffd5cea3fe408fe533a038f49c02e3cb0c0cc21f.svg" alt="20221003162529-linearitat_in_einem_argument_sesquilinearform_ffd5cea3fe408fe533a038f49c02e3cb0c0cc21f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\langle v, a \cdot w \rangle =& a \langle v,w \rangle \\
+\langle v, w + w' \rangle =& \langle v,w \rangle + \langle v,w' \rangle
+\end{align*}
 <p>
 Alternativ auch umgekehrt für das andere Argument
 </p>

@@ -9,19 +9,42 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rechenregeln: Kreuzprodukt</h1>
-<div id="outline-container-org84ffb5e" class="outline-2">
-<h2 id="org84ffb5e"><span class="section-number-2">1.</span> Aspekte</h2>
+<div id="outline-container-org0d21e07" class="outline-2">
+<h2 id="org0d21e07"><span class="section-number-2">1.</span> Aspekte</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220107125553-rechenregeln_kreuzprodukt_88adba15cd1e0b540ee75ba6280cf3de0c41b15d.svg" alt="20220107125553-rechenregeln_kreuzprodukt_88adba15cd1e0b540ee75ba6280cf3de0c41b15d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{a} \times \vec{b} = - \left(\vec{b} \times \vec{a}\right) \\
+\vec{a} \times \vec{a} =& 0 \\
+\end{align*}
 <ul class="org-ul">
 <li><a href="20210227115324-antikommutativitat.html#ID-7489e75e-9bd0-4422-b6a4-6abde30c4b9e">Antikommutativität</a></li>
 <li><a href="20220107130047-distributivitat_kreuzprodukt_mit_vektoraddition.html#ID-1de3270b-80af-4f68-b6c5-48a29b98201d">Distributivität: Kreuzprodukt mit Vektoraddition</a></li>

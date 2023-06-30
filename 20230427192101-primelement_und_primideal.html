@@ -9,48 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Primelement und erzeugte Primideal</h1>
-<div id="outline-container-org4dc1820" class="outline-2">
-<h2 id="org4dc1820"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4c5b1f4" class="outline-2">
+<h2 id="org4c5b1f4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427192101-primelement_und_primideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein (<a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a>) <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_f3b7e2edcbab681dc551e01998d95ca35e922491.svg" alt="20230427192101-primelement_und_primideal_f3b7e2edcbab681dc551e01998d95ca35e922491.svg" class="org-svg" />.
+Sei \(R\) ein (<a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a>) <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(p \in R\).
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_810de63c4236fb5a0eae51321a5b5858525ca699.svg" alt="20230427192101-primelement_und_primideal_810de63c4236fb5a0eae51321a5b5858525ca699.svg" class="org-svg" /> ist ein <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">Primideal</a> (<a href="20230427193507-vollstandiges_primideal.html#ID-a1ead1c9-871c-4112-9e79-a784ad98bcd2">vollständiges Primideal</a>)</li>
-<li><img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230427192101-primelement_und_primideal_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> ist ein <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">Primelement</a></li>
+<li>\((p)\) ist ein <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">Primideal</a> (<a href="20230427193507-vollstandiges_primideal.html#ID-a1ead1c9-871c-4112-9e79-a784ad98bcd2">vollständiges Primideal</a>)</li>
+<li>\(p\) ist ein <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">Primelement</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5eb8cab" class="outline-2">
-<h2 id="org5eb8cab"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0ae31fc" class="outline-2">
+<h2 id="org0ae31fc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org9b84adc" class="outline-3">
-<h3 id="org9b84adc"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgbd20993" class="outline-3">
+<h3 id="orgbd20993"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_810de63c4236fb5a0eae51321a5b5858525ca699.svg" alt="20230427192101-primelement_und_primideal_810de63c4236fb5a0eae51321a5b5858525ca699.svg" class="org-svg" /> ein <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">Primideal</a> und <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_2cce2ccf10ff6ab23d46693275ae4fee7c26c43d.svg" alt="20230427192101-primelement_und_primideal_2cce2ccf10ff6ab23d46693275ae4fee7c26c43d.svg" class="org-svg" />.
+Sei \((p)\) ein <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">Primideal</a> und \(p = x \cdot y\).
 Dann gilt nach dem <a href="20230427201024-komplexprodukt_von_zwei_hauptidealen.html#ID-f8fb5ddb-6cf4-4c51-be0d-2ba0bfbc08d4">Komplexprodukt von zwei Hauptidealen</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_27cf2ae306279cfb39199e7e3e0168efd86a71b3.svg" alt="20230427192101-primelement_und_primideal_27cf2ae306279cfb39199e7e3e0168efd86a71b3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(p) =& (x \cdot y) \\
+=& (x) \cdot (y)
+\end{align*}
 <p>
-Damit folgt nach Annahme <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_9a1ef3e6c065c558441bda0a165f8e0f555ded80.svg" alt="20230427192101-primelement_und_primideal_9a1ef3e6c065c558441bda0a165f8e0f555ded80.svg" class="org-svg" /> und somit auch <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_5bc3ae0e8dc5751883cb125822f6f7ebf30ad8b1.svg" alt="20230427192101-primelement_und_primideal_5bc3ae0e8dc5751883cb125822f6f7ebf30ad8b1.svg" class="org-svg" />.
-wegen der Aussage über die <a href="20230419134552-teilbarkeit_und_ideale.html#ID-917c642d-db0b-44e5-9155-19aa05c362ae">Teilbarkeit und die Ideale</a> folgt dadurch <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_d90ae765b4e69110d1850ebe302be3de87b151cd.svg" alt="20230427192101-primelement_und_primideal_d90ae765b4e69110d1850ebe302be3de87b151cd.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230427192101-primelement_und_primideal_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230427192101-primelement_und_primideal_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> ist <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a>wa
+Damit folgt nach Annahme <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(x \in (p)\) und somit auch \((x) \subseteq (p)\).
+wegen der Aussage über die <a href="20230419134552-teilbarkeit_und_ideale.html#ID-917c642d-db0b-44e5-9155-19aa05c362ae">Teilbarkeit und die Ideale</a> folgt dadurch \(p \mid x\), d.h. \(p\) ist <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a>wa
 </p>
 </div>
 </div>
-<div id="outline-container-org1f5fb07" class="outline-3">
-<h3 id="org1f5fb07"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orga433a93" class="outline-3">
+<h3 id="orga433a93"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 TODO

@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">quadratische Form als Bilinearform</h1>
-<div id="outline-container-orgd98cfec" class="outline-2">
-<h2 id="orgd98cfec"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5a2d0a7" class="outline-2">
+<h2 id="org5a2d0a7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230601115049-quadratische_form_als_bilinearform_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a> und <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_befa4b5859bf3ec778994136f0a696c964525a41.svg" alt="20230601115049-quadratische_form_als_bilinearform_befa4b5859bf3ec778994136f0a696c964525a41.svg" class="org-svg" /> der <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> in <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230601115049-quadratische_form_als_bilinearform_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> Variablen und <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_3cf7128ea0346cb3fa8b8a406080cb4fce80d576.svg" alt="20230601115049-quadratische_form_als_bilinearform_3cf7128ea0346cb3fa8b8a406080cb4fce80d576.svg" class="org-svg" /> eine <a href="20230604-quadratische_form.html#ID-1c68a22f-54cc-48fc-9791-2f41df8be73c">quadratische Form</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_71948449ef3b5e44fbd64f21e3b4bd00f8c6735d.svg" alt="20230601115049-quadratische_form_als_bilinearform_71948449ef3b5e44fbd64f21e3b4bd00f8c6735d.svg" class="org-svg" /> die <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">Restriktion</a> auf die <a href="20230330175154-diagonalabbildung.html#ID-d79d9003-736d-4f2e-b6e6-d2c6c636e4c2">diagonale</a> einer <a href="20230224164810-bilinearform.html#ID-48e29c9d-7941-405a-a653-1f728c298928">Bilinearform</a>  <img src="file:///home/anton/html/ltximg/20230601115049-quadratische_form_als_bilinearform_2f7d4e69445912552ebdb0ba0a89b7055f629b20.svg" alt="20230601115049-quadratische_form_als_bilinearform_2f7d4e69445912552ebdb0ba0a89b7055f629b20.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a> und \(R[X_1,..,X_n]\) der <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> in \(n\) Variablen und \(q \in R[X_1,...,X_n]\) eine <a href="20230604-quadratische_form.html#ID-1c68a22f-54cc-48fc-9791-2f41df8be73c">quadratische Form</a>.
+Dann ist \(q\) die <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">Restriktion</a> auf die <a href="20230330175154-diagonalabbildung.html#ID-d79d9003-736d-4f2e-b6e6-d2c6c636e4c2">diagonale</a> einer <a href="20230224164810-bilinearform.html#ID-48e29c9d-7941-405a-a653-1f728c298928">Bilinearform</a>  \(q': R^n \times R^n \rightarrow R\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc5b585d" class="outline-2">
-<h2 id="orgc5b585d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org695ad24" class="outline-2">
+<h2 id="org695ad24"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 TODO

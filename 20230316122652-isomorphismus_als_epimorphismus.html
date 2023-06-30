@@ -9,40 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphismus als Epimorphismus</h1>
-<div id="outline-container-org18753fc" class="outline-2">
-<h2 id="org18753fc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org89202e1" class="outline-2">
+<h2 id="org89202e1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" alt="20230316122652-isomorphismus_als_epimorphismus_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230316122652-isomorphismus_als_epimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230316122652-isomorphismus_als_epimorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>.
+Sei \(\mathcal{D}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und \(f\) ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist \(f\) auch ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org91e8fb2" class="outline-2">
-<h2 id="org91e8fb2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0446847" class="outline-2">
+<h2 id="org0446847"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annamhe existiert ein <a href="20230302133235-umkehrmorphismus_als_isomorphismus.html#ID-62a0c89f-9c14-4e3f-9a00-8f4464f22191">Umkehrmorphismus</a> <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" alt="20230316122652-isomorphismus_als_epimorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" class="org-svg" />.
-Seien <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_58c48beb51c02a38fbd36c00ea68d655c0de28a6.svg" alt="20230316122652-isomorphismus_als_epimorphismus_58c48beb51c02a38fbd36c00ea68d655c0de28a6.svg" class="org-svg" /> beliebige <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> mit
+Nach Annamhe existiert ein <a href="20230302133235-umkehrmorphismus_als_isomorphismus.html#ID-62a0c89f-9c14-4e3f-9a00-8f4464f22191">Umkehrmorphismus</a> \(f^{-1}\).
+Seien \(g,g'\) beliebige <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismen</a> mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_d9ee1c88ae61665e3d6a32da7846cc700b2b7a37.svg" alt="20230316122652-isomorphismus_als_epimorphismus_d9ee1c88ae61665e3d6a32da7846cc700b2b7a37.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+gf =& g'f
+\end{align*}
 <p>
-so folgt durch Rechtsverknüpfung mit <img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" alt="20230316122652-isomorphismus_als_epimorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" class="org-svg" />:
+so folgt durch Rechtsverknüpfung mit \(f^{-1}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230316122652-isomorphismus_als_epimorphismus_71a64a5b7e2d155758326ce2eb02542d58e98c1e.svg" alt="20230316122652-isomorphismus_als_epimorphismus_71a64a5b7e2d155758326ce2eb02542d58e98c1e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+gf \circ f^{-1} =& g'f \circ f^{-1} \\
+g \circ \mathrm{id}_{} =& g' \circ \mathrm{id}_{} \\
+g =& g'
+\end{align*}
 </div>
 </div>
 </div>

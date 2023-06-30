@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Geometrische Bedeutung: Kreuzprodukt</h1>
-<div id="outline-container-orgde3937a" class="outline-2">
-<h2 id="orgde3937a"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-org2bafac5" class="outline-2">
+<h2 id="org2bafac5"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220917135608-beweis_geometrische_bedeutung_kreuzprodukt_af4fbc00d3fc9631fbcd68819052ac9c8301be4a.svg" alt="20220917135608-beweis_geometrische_bedeutung_kreuzprodukt_af4fbc00d3fc9631fbcd68819052ac9c8301be4a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{c}  \coloneqq& \vec{a} \times \vec{b} \\
+=& \begin{pmatrix} a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1 \end{pmatrix} \\
+\vec{c} \circ \vec{a} =& (a_2b_3 - a_3b_2) \cdot a_1 + (a_3b_1 - a_1b_3) \cdot a_2 + (a_1b_2 - a_2b_1) \cdot a_3 \\
+=& (a_1a_2b_3 + b_1a_2a_3 + a_1b_2a_3) - (a_1b_2a_3 + a_1a_2b_3 + b_1a_2a_3)
+\end{align*}
 <p>
-Analog für <img src="file:///home/anton/html/ltximg/20220917135608-beweis_geometrische_bedeutung_kreuzprodukt_858e5c7ca9ce99cdbc9964173da5382cadb46a73.svg" alt="20220917135608-beweis_geometrische_bedeutung_kreuzprodukt_858e5c7ca9ce99cdbc9964173da5382cadb46a73.svg" class="org-svg" />
+Analog für \(\vec{c}\)
 </p>
 </div>
 </div>

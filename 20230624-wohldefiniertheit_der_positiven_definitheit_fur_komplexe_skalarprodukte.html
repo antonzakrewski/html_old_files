@@ -9,45 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wohldefiniertheit der positiven Definitheit für komplexe Skalarprodukte</h1>
-<div id="outline-container-org1e03ac3" class="outline-2">
-<h2 id="org1e03ac3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1aafb73" class="outline-2">
+<h2 id="org1aafb73"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> mit einem <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Skalarprodukt</a> <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_3974261eeb2ab620e4b285429c02e7e6406f526d.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_3974261eeb2ab620e4b285429c02e7e6406f526d.svg" class="org-svg" />.
-Dann gilt für <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" />
+Sei \(V\) ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> mit einem <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Skalarprodukt</a> \((\cdot, \cdot)\).
+Dann gilt für \(v \in V\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_f012dd2ed88e4bc5d6bf0cd7df6842bb609f27af.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_f012dd2ed88e4bc5d6bf0cd7df6842bb609f27af.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(v,v) \in \mathbb{R}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd6397e3" class="outline-2">
-<h2 id="orgd6397e3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfad1037" class="outline-2">
+<h2 id="orgfad1037"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-nach <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermiteschen Symmetrie</a> gilt für <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_fddee79e86dd9d644b5482a8bdd07b321b5dd877.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_fddee79e86dd9d644b5482a8bdd07b321b5dd877.svg" class="org-svg" />:
+nach <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermiteschen Symmetrie</a> gilt für \((v,v) \in \mathbb{C}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_26abdb6c382ef5f5a2f880cda169ab1e195999e9.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_26abdb6c382ef5f5a2f880cda169ab1e195999e9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(v,v) = \overline{(v,v)}
+\end{align*}
 <p>
-Und damit nach Konstruktion der <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_2bbae6a23357924c9bec7b3ec594ec76447591de.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_2bbae6a23357924c9bec7b3ec594ec76447591de.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_a15321f39bf0e07be407041925471532e38a086f.svg" alt="20230624-wohldefiniertheit_der_positiven_definitheit_fur_komplexe_skalarprodukte_a15321f39bf0e07be407041925471532e38a086f.svg" class="org-svg" />
+Und damit nach Konstruktion der <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> \(\mathrm{Im}((v,v)) = 0\) bzw. \((v,v) \in \mathbb{R}\)
 </p>
 </div>
 </div>

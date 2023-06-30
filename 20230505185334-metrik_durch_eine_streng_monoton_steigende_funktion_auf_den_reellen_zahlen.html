@@ -9,93 +9,115 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Metrik durch eine streng monoton steigende Funktion auf den reellen Zahlen</h1>
-<div id="outline-container-org58886cd" class="outline-2">
-<h2 id="org58886cd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org47d7771" class="outline-2">
+<h2 id="org47d7771"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_d6f2ebfe6c976026a26e79a375b5a49ca6fa9cb1.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_d6f2ebfe6c976026a26e79a375b5a49ca6fa9cb1.svg" class="org-svg" /> eine <a href="20230112105050-streng_monotone_abbildung.html#ID-ae36493e-93e4-42e4-8498-a6e106b7b237">streng monotone</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist:
+Sei \(\phi: \mathbb{R} \rightarrow \mathbb{R}\) eine <a href="20230112105050-streng_monotone_abbildung.html#ID-ae36493e-93e4-42e4-8498-a6e106b7b237">streng monotone</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f90ef2e106d6d7182dcb1cd04720cb68adbf755e.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f90ef2e106d6d7182dcb1cd04720cb68adbf755e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_{\phi}(x,y)  \coloneqq \vert \phi(x) - \phi(y) \vert
+\end{align*}
 <p>
 eine zur Standardtopologie <a href="20230418205307-aquivalente_metrik.html#ID-ab145629-f0c2-4e6d-b7dc-a5462cd470af">äquivalente Metrik</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org8c64314" class="outline-2">
-<h2 id="org8c64314"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org98cfc5a" class="outline-2">
+<h2 id="org98cfc5a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> streng monoton steigend:
 </p>
 </div>
-<div id="outline-container-orgb7783ad" class="outline-3">
-<h3 id="orgb7783ad"><span class="section-number-3">2.1.</span> <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a></h3>
+<div id="outline-container-org4240d6f" class="outline-3">
+<h3 id="org4240d6f"><span class="section-number-3">2.1.</span> <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org4683c86" class="outline-4">
-<h4 id="org4683c86"><span class="section-number-4">2.1.1.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h4>
+<div id="outline-container-org76396fc" class="outline-4">
+<h4 id="org76396fc"><span class="section-number-4">2.1.1.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_43129113c4855bd19c5f01371b970b099def34c2.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_43129113c4855bd19c5f01371b970b099def34c2.svg" class="org-svg" />, so folgt <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_d2235e7c8b331f26b92242543c5f2459c3a5a6d8.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_d2235e7c8b331f26b92242543c5f2459c3a5a6d8.svg" class="org-svg" />
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_4096b6f6ff7e5a35ad2e2afda74ac201201b9795.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_4096b6f6ff7e5a35ad2e2afda74ac201201b9795.svg" class="org-svg" />, so folgt nach Annahme <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_88857cc456345b588975ed1704949df484272441.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_88857cc456345b588975ed1704949df484272441.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_a54a3d8b68a2995a46cabcb0ab8d2af549058569.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_a54a3d8b68a2995a46cabcb0ab8d2af549058569.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_99ef0ecae38cb41a35ec3b737609afa5430f11bf.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_99ef0ecae38cb41a35ec3b737609afa5430f11bf.svg" class="org-svg" />
+Sei \(x = y\), so folgt \(d_{\phi}(x,y) = \vert \phi(x) - \phi(x) \vert = \vert 0 \vert = 0\)
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(x < y\), so folgt nach Annahme \(\phi(x) < \phi(y)\) und damit auch \(\phi(x) - \phi(y) \neq 0\) bzw. \(\vert \phi(x) - \phi(y) \vert > 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb590f82" class="outline-4">
-<h4 id="orgb590f82"><span class="section-number-4">2.1.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h4>
+<div id="outline-container-orgdcafa49" class="outline-4">
+<h4 id="orgdcafa49"><span class="section-number-4">2.1.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Folgt aus der Symmetrie von <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" class="org-svg" />:
+Folgt aus der Symmetrie von \(\vert \cdot \vert\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_437692b30090939d094b32b6cfb438c4a93df84c.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_437692b30090939d094b32b6cfb438c4a93df84c.svg" class="org-svg" />
-</span>
+\begin{align*}
+d_{\phi}(x,y)  \coloneqq& \vert \phi(x) - \phi(y) \vert \\
+=& \vert (-1) \cdot \phi(y) - \phi(x) \vert \\
+=& \vert - 1 \vert \cdot \vert \phi(y) - \phi(x) \vert \\
+=& d_{\phi}(y,x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3799559" class="outline-4">
-<h4 id="org3799559"><span class="section-number-4">2.1.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h4>
+<div id="outline-container-org5c94ac2" class="outline-4">
+<h4 id="org5c94ac2"><span class="section-number-4">2.1.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h4>
 <div class="outline-text-4" id="text-2-1-3">
 <p>
-Folgt aus der Dreiecksungleichung von <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" class="org-svg" />:
-Seien <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_449e8a7abbfbb636ad34f68cf6dcdb8b105861e7.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_449e8a7abbfbb636ad34f68cf6dcdb8b105861e7.svg" class="org-svg" /> so gilt:
+Folgt aus der Dreiecksungleichung von \(\vert \cdot \vert\):
+Seien \(x,y,z \in \mathbb{R}\) so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_0772e962da4d330e5ce9342bcdb5caf320fcea5c.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_0772e962da4d330e5ce9342bcdb5caf320fcea5c.svg" class="org-svg" />
-</span>
+\begin{align*}
+d_{\phi}(x,z) =& \vert \phi(x) - \phi(y) \vert \\
+=& \vert \phi(x) - \phi(z) + \phi(z) - \phi(y) \vert \\
+\leq& \vert \phi(x) - \phi(z) \vert + \vert \phi(z) - \phi(y) \vert \\
+=& d_{\phi}(x,z) + d_{\phi}(z,y) 
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-orgd2031da" class="outline-3">
-<h3 id="orgd2031da"><span class="section-number-3">2.2.</span> Äquivalent</h3>
+<div id="outline-container-orgb74e6e9" class="outline-3">
+<h3 id="orgb74e6e9"><span class="section-number-3">2.2.</span> Äquivalent</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_1729d79db835b1ce186f56fd471af5018bfdcc9b.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_1729d79db835b1ce186f56fd471af5018bfdcc9b.svg" class="org-svg" /> <a href="20230112105050-streng_monotone_abbildung.html#ID-ae36493e-93e4-42e4-8498-a6e106b7b237">streng monotone</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so gilt:
-Sei <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_1a50dcd6a6d5dab2083b958b997c81d3ea1969fb.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_1a50dcd6a6d5dab2083b958b997c81d3ea1969fb.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" />, dann gilt: <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_cc29ebb3578a8968ea2d7d0070192287629f0761.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_cc29ebb3578a8968ea2d7d0070192287629f0761.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_34947b2ceef6fe36fe1a3358b06eed8b41a3a624.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_34947b2ceef6fe36fe1a3358b06eed8b41a3a624.svg" class="org-svg" />.
-Insbesondere gilt für <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_21869d0f38aebea147019b48728a81bdac30d8a5.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_21869d0f38aebea147019b48728a81bdac30d8a5.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_48ed213dd8543639c070955a21d567afa67dcd3c.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_48ed213dd8543639c070955a21d567afa67dcd3c.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_dfdf6f611ce16679072b3ae5b02d4e79c341ce35.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_dfdf6f611ce16679072b3ae5b02d4e79c341ce35.svg" class="org-svg" />, analog auch für <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_90620970cffdf22b5898dfc402ed385f34eef35a.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_90620970cffdf22b5898dfc402ed385f34eef35a.svg" class="org-svg" />
+Seien \(\phi,\phi'\) <a href="20230112105050-streng_monotone_abbildung.html#ID-ae36493e-93e4-42e4-8498-a6e106b7b237">streng monotone</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so gilt:
+Sei \(r > 0\) und \(x \in \mathbb{R}\), dann gilt: \(B_{r}^{\phi'}(x) = (y_1,y_2) \ni x\) für \(y_1  \coloneqq \phi^{-1}'(\phi(x) - r), y_2  \coloneqq \phi^{-1}'(\phi(x) + r)\).
+Insbesondere gilt für \(z < y_1\) auch \(\phi(z) < \phi(y_1) < \phi(x)\) bzw. \(\vert \phi(x) - \phi(z) \vert = \vert \phi(x) - \phi(y) + \phi(y) - \phi(z) \vert = \vert \phi(x) - \phi(y) \vert + \vert \phi(y) - \phi(z) \vert > \vert \phi(x) - \phi(y) \vert\), analog auch für \(z > y_2\)
 </p>
 
 <p>
-Sei ferner <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e90597b3d17bc2e51f814b4b961647dfed92e240.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e90597b3d17bc2e51f814b4b961647dfed92e240.svg" class="org-svg" />, so gilt <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e6f36add273473e50ffb02da768a3b88ac4d03f3.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e6f36add273473e50ffb02da768a3b88ac4d03f3.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_6b9977cf6cc2029d6370f8093d7fe64f2c241866.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_6b9977cf6cc2029d6370f8093d7fe64f2c241866.svg" class="org-svg" />, so gilt nach der Bemerkung von oben <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_38793be40456cd9d727df7f080a2dae8d7168305.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_38793be40456cd9d727df7f080a2dae8d7168305.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_3064158c91cdcaea24df5c645589ce8ed2a442a5.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_3064158c91cdcaea24df5c645589ce8ed2a442a5.svg" class="org-svg" />
+Sei ferner \(\delta  \coloneqq \frac{1}{2} \mathrm{min}(\vert \phi(x) - \phi(y_1)\vert, \vert \phi(x) - \phi(y_2) \vert)\), so gilt \(B_{\delta}^{\phi}(x) \subseteq B_r^{\phi'}(x)\).
+Sei \(z \not\in (y_1,y_2)\), so gilt nach der Bemerkung von oben \(\vert \phi(x) - \phi(z) \vert > \vert \phi(x) - \phi(y_1) \vert > \delta\) und damit auch \(z \not\in B_{\delta}^{\phi}(x)\)
 </p>
 
 <p>
-Der Vergleich mit <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_f28074137418f7cec0653242314377a764b5f629.svg" class="org-svg" /> folgt dann durch Symmetrie des Arguments und Wahl von <img src="file:///home/anton/html/ltximg/20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e5244c8fc5366fa6265c2077c636a79437b294aa.svg" alt="20230505185334-metrik_durch_eine_streng_monoton_steigende_funktion_auf_den_reellen_zahlen_e5244c8fc5366fa6265c2077c636a79437b294aa.svg" class="org-svg" />
+Der Vergleich mit \(\vert \cdot \vert\) folgt dann durch Symmetrie des Arguments und Wahl von \(\phi' = \mathrm{id}\)
 </p>
 </div>
 </div>

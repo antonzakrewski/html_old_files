@@ -9,34 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">A-zyklischer Unterraum impliziert A-invarianz</h1>
-<div id="outline-container-org99fbe78" class="outline-2">
-<h2 id="org99fbe78"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgae47694" class="outline-2">
+<h2 id="orgae47694"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> und <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> ein <a href="20230303172328-a_zyklischer_unterraum.html#ID-060e2d8f-b62d-4048-9f3d-47576486a157">A-zyklischer Unterraum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> auch ein <a href="20230303172336-a_invarianter_unterraum.html#ID-33e3d70f-6a63-4ffd-b8d7-f9b29ad80ec1">A-invarianter Unterraum</a> 
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(U \subseteq V\) ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> und \(A \in \mathrm{End}_K(V)\) ein <a href="20230303172328-a_zyklischer_unterraum.html#ID-060e2d8f-b62d-4048-9f3d-47576486a157">A-zyklischer Unterraum</a>.
+Dann ist \(U\) auch ein <a href="20230303172336-a_invarianter_unterraum.html#ID-33e3d70f-6a63-4ffd-b8d7-f9b29ad80ec1">A-invarianter Unterraum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org3c3d980" class="outline-2">
-<h2 id="org3c3d980"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf855b77" class="outline-2">
+<h2 id="orgf855b77"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> beliebig, so ist zu zeigen: <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_9f3a7d469494329d7be5cdbefc2c3b566f2699c4.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_9f3a7d469494329d7be5cdbefc2c3b566f2699c4.svg" class="org-svg" />.
-Nach Annahme existiert ein <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_cbbe3fa93c49f21b99318b4200c72b0ac5dc40ea.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_cbbe3fa93c49f21b99318b4200c72b0ac5dc40ea.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_e761d9dff8c7b3d294352c238c9fe17c7a3b01b3.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_e761d9dff8c7b3d294352c238c9fe17c7a3b01b3.svg" class="org-svg" /> ein <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> bildet.
-Daraus folgt, dass eine Darstellung <img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_28e7c2f802fe2999500a15df2683f72b977f5c08.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_28e7c2f802fe2999500a15df2683f72b977f5c08.svg" class="org-svg" />.
+Sei \(u \in U\) beliebig, so ist zu zeigen: \(A(u) \in U\).
+Nach Annahme existiert ein \(u_0 \in U\), so dass \(A^n(u_0)\) ein <a href="20221106152549-erzeugendensystem.html#ID-f76ea8a6-1176-46cf-a300-c2312e60e6d8">Erzeugendensystem</a> bildet.
+Daraus folgt, dass eine Darstellung \(u = \sum_{i=0}^{k} \alpha_i A^{i}(u_0)\).
 Einsetzen unter Verwendung der <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Linearität</a> ergibt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_a546b4c585cb3703b4f34454082df18098c8c3d2.svg" alt="20230304095339-a_zyklischer_unterraum_impliziert_a_invarianz_a546b4c585cb3703b4f34454082df18098c8c3d2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A(u) =& A(\sum_{i=0}^{k} \alpha_i A^i(u_0)) \\
+=& \sum_{i=0}^{k} A(\alpha_i A^i(u_0)) \\
+=& \sum_{i=0}^{k} \alpha_i A( A^i(u_0)) \\
+=& \sum_{i=1}^{k+1} \alpha_i A^i(u_0)
+\end{align*}
 </div>
 </div>
 </div>

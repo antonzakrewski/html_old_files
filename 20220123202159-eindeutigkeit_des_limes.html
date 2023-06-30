@@ -9,31 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit des Limes</h1>
-<div id="outline-container-orgc72a007" class="outline-2">
-<h2 id="orgc72a007"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdf7dee2" class="outline-2">
+<h2 id="orgdf7dee2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220123202159-eindeutigkeit_des_limes_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_c76a27c2183e0e29579c20b651342bb7c0b8f7d5.svg" alt="20220123202159-eindeutigkeit_des_limes_c76a27c2183e0e29579c20b651342bb7c0b8f7d5.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_c9c3844c7dfd280b262bb9e9b6e5c66c2f37777d.svg" alt="20220123202159-eindeutigkeit_des_limes_c9c3844c7dfd280b262bb9e9b6e5c66c2f37777d.svg" class="org-svg" />
+Sei \(M\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \((x_n)_{n \in \mathbb{N}}\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit \(x_i \in M\)
 So folgt für den Grenzwert 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_75ee2e8a3bdcc1752f1e5de3ff8397e8294e12ad.svg" alt="20220123202159-eindeutigkeit_des_limes_75ee2e8a3bdcc1752f1e5de3ff8397e8294e12ad.svg" class="org-svg" />
-</span>
+\begin{align*}
+ \lim_{n \to \infty}\left(x_n\right) = a \\
+ \lim_{n \to \infty}\left(x_n\right) = a' \\
+\Rightarrow a = a'
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdb38325" class="outline-2">
-<h2 id="orgdb38325"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org44ab6a3" class="outline-2">
+<h2 id="org44ab6a3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_67fa071891f21e438143c4d1486c4c1682bfe37a.svg" alt="20220123202159-eindeutigkeit_des_limes_67fa071891f21e438143c4d1486c4c1682bfe37a.svg" class="org-svg" /> verschiedene <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerte</a> einer Folge. 
-So folgt aufgrund der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positiven Definitheit</a>, dass <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_ad09a73129269a3d267ab228d289322265ce2831.svg" alt="20220123202159-eindeutigkeit_des_limes_ad09a73129269a3d267ab228d289322265ce2831.svg" class="org-svg" /> gilt, sodass für <img src="file:///home/anton/html/ltximg/20220123202159-eindeutigkeit_des_limes_3c4bb030a9d6510c5fbbaab990f02d71e1e36361.svg" alt="20220123202159-eindeutigkeit_des_limes_3c4bb030a9d6510c5fbbaab990f02d71e1e36361.svg" class="org-svg" /> gilt:
+Seien \(a \neq b\) verschiedene <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerte</a> einer Folge. 
+So folgt aufgrund der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positiven Definitheit</a>, dass \(\vert a - b \vert > 0\) gilt, sodass für \(\epsilon = \frac{\vert a - b \vert}{3}\) gilt:
 Widerspruch (zu tun)
 </p>
 

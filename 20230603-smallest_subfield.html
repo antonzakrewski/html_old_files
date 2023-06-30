@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>smallest subfield</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">smallest subfield</h1>
-<div id="outline-container-org3b459e7" class="outline-2">
-<h2 id="org3b459e7"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0b20908" class="outline-2">
+<h2 id="org0b20908"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230603-smallest_subfield_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230603-smallest_subfield_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> be a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, then the smallest subfield <img src="ltximg/20230603-smallest_subfield_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" alt="20230603-smallest_subfield_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" class="org-svg" /> is defined as
+Let \(F\) be a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, then the smallest subfield \(S\) is defined as
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230603-smallest_subfield_db95119a349040e01c024f87d3064dabcc7420a4.svg" alt="20230603-smallest_subfield_db95119a349040e01c024f87d3064dabcc7420a4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+S \coloneqq \bigcap_{F' \subseteq F, \text{ subfield }} F' 
+\end{align*}
 <p>
 see: <a href="20230604-existence_of_a_smallest_subfield.html#ID-f57ce5e3-cde2-41c7-9572-38987d2ee475">Existence of a smallest subfield</a>,  
 </p>

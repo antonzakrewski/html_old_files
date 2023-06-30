@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Allgemeines Kommutativgesetz</h1>
-<div id="outline-container-orgf25f275" class="outline-2">
-<h2 id="orgf25f275"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org1f0d30f" class="outline-2">
+<h2 id="org1f0d30f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220105121041-allgemeines_kommutativgesetz_79aa106f28b730202014b9f03d616abb12c19778.svg" alt="20220105121041-allgemeines_kommutativgesetz_79aa106f28b730202014b9f03d616abb12c19778.svg" class="org-svg" /> eine kommutativer <a href="20210702075710-monoid.html#ID-ebccfd45-6c4b-4a93-818a-8f6848600874">Monoid</a>, dann gilt für <img src="file:///home/anton/html/ltximg/20220105121041-allgemeines_kommutativgesetz_8198e8d298a3a235063b81795d70e63e3f95bb4d.svg" alt="20220105121041-allgemeines_kommutativgesetz_8198e8d298a3a235063b81795d70e63e3f95bb4d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220105121041-allgemeines_kommutativgesetz_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20220105121041-allgemeines_kommutativgesetz_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" />
+Sei \((M, \cdot)\) eine kommutativer <a href="20210702075710-monoid.html#ID-ebccfd45-6c4b-4a93-818a-8f6848600874">Monoid</a>, dann gilt für \(m_i\) mit \(i \in \{1,...,n\}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105121041-allgemeines_kommutativgesetz_6a21054bbbac2c17cf9d9f37dccbc7af6475741d.svg" alt="20220105121041-allgemeines_kommutativgesetz_6a21054bbbac2c17cf9d9f37dccbc7af6475741d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{i = 1} m_i = \prod_{i=1} m_{\sigma(i)}
+\end{align*}
 <p>
-für eine beliebige <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutation</a> <img src="file:///home/anton/html/ltximg/20220105121041-allgemeines_kommutativgesetz_fac82d6401c073d5b6384a11b068de89ea17c628.svg" alt="20220105121041-allgemeines_kommutativgesetz_fac82d6401c073d5b6384a11b068de89ea17c628.svg" class="org-svg" />
+für eine beliebige <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutation</a> \(\sigma \in S_n\)
 </p>
 </div>
 </div>

@@ -3,60 +3,82 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Zyklizität des Produkts endlicher zyklischer Gruppen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zyklizität des Produkts endlicher zyklischer Gruppen</h1>
-<div id="outline-container-org8172cf9" class="outline-2">
-<h2 id="org8172cf9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3ffdb78" class="outline-2">
+<h2 id="org3ffdb78"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2a2bf8e0d6bb45d1704635b3c69daf28505a4455.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2a2bf8e0d6bb45d1704635b3c69daf28505a4455.svg" class="org-svg" /> <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklische</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> der <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlichen</a> <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Ordnung</a> <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_9552c2592c76c59044410d81bc17da8bc9af7bf3.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_9552c2592c76c59044410d81bc17da8bc9af7bf3.svg" class="org-svg" />.
-Sei <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_eb2b7db3d2e7dd56bedefaccdda64eec07aac758.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_eb2b7db3d2e7dd56bedefaccdda64eec07aac758.svg" class="org-svg" /> das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">Direktes Produkt</a>.
+Seien \(G_1,...,G_r\) <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklische</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> der <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlichen</a> <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Ordnung</a> \(m_1,...,m_r \in \mathbb{N}_0\).
+Sei \(G \coloneqq \prod_{i=1}^r G_i\) das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">Direktes Produkt</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_7a8018e990545bc2a3d86a5547d6c6101bdccbef.svg" class="org-svg" /> ist <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklisch</a></li>
-<li>für <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_816b2de34a0f80111aab2e66eb653989f02bd01f.svg" class="org-svg" /> gilt <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2fbc698c36b095ee73bfb3ac6a2bb10a2fe46d3e.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2fbc698c36b095ee73bfb3ac6a2bb10a2fe46d3e.svg" class="org-svg" /></li>
+<li>\(G\) ist <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklisch</a></li>
+<li>für \(i \neq j\) gilt \(\mathrm{gcd}(m_i,m_j) = 1\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org819423c" class="outline-2">
-<h2 id="org819423c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8f4b60e" class="outline-2">
+<h2 id="org8f4b60e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga84f332" class="outline-3">
-<h3 id="orga84f332"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org73bc992" class="outline-3">
+<h3 id="org73bc992"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_7c32b30d37e188b0247622d921a557ab1c165155.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_7c32b30d37e188b0247622d921a557ab1c165155.svg" class="org-svg" /> ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">erzeuger</a>, d.h. <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_abcb21a861224a8049a8d8e176c353860f559aab.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_abcb21a861224a8049a8d8e176c353860f559aab.svg" class="org-svg" />
-Angenommen <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2bbab116459996dab214aac22898486215885762.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_2bbab116459996dab214aac22898486215885762.svg" class="org-svg" /> o.E. <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_c964285f830c89705d616590dc2296c6ece7b92c.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_c964285f830c89705d616590dc2296c6ece7b92c.svg" class="org-svg" />
-Dann folgt <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_0e5b0bd1993f9bc584aa5c0862305843b4ae1249.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_0e5b0bd1993f9bc584aa5c0862305843b4ae1249.svg" class="org-svg" />, ein widerspruch, dann
+Sei \(x \coloneqq (x_1,...,x_r)\) ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">erzeuger</a>, d.h. \(\mathrm{ord}(x) = \prod_{i=1}^r m\)
+Angenommen \(d = \mathrm{gcd}(m_i,m_j) > 1\) o.E. \(i = 1,j = 2\)
+Dann folgt \(x^{\frac{m}{d}} = 1\), ein widerspruch, dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_3625dbb1d905740ce2ea3dc5896e24796e708ac0.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_3625dbb1d905740ce2ea3dc5896e24796e708ac0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(x_1^{m_1})^{\frac{m_2}{d} \cdot m_3 \cdot ... \cdot m_r} = 1 \\
+(x_2^{m_2})^{\frac{m_1}{d} \cdot m_3 \cdot ... \cdot m_r} = 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7aaca1e" class="outline-3">
-<h3 id="org7aaca1e"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org2efa5ff" class="outline-3">
+<h3 id="org2efa5ff"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_326e5c5486a5f599c5a6d96615b795aeeac22257.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_326e5c5486a5f599c5a6d96615b795aeeac22257.svg" class="org-svg" />, wobei <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_8e2f70cbab785541f25267421b42c8250a38aa79.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_8e2f70cbab785541f25267421b42c8250a38aa79.svg" class="org-svg" />.
-klar: <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_826883fce423dcdce194c3988000ddafc30916a3.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_826883fce423dcdce194c3988000ddafc30916a3.svg" class="org-svg" />, d.h. es folgt <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_03d79f50e24999fa731bb6d7a8e3b766ead618fb.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_03d79f50e24999fa731bb6d7a8e3b766ead618fb.svg" class="org-svg" />
-Andererseits <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_0529e79ef99f5883c6099834ad82536c3aef2963.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_0529e79ef99f5883c6099834ad82536c3aef2963.svg" class="org-svg" /> für alle <img src="ltximg/20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_b95297aeb0af648b907afd29dcd4d0779029b802.svg" alt="20230510124315-zyklizitat_des_produkts_zyklischer_gruppen_b95297aeb0af648b907afd29dcd4d0779029b802.svg" class="org-svg" />
+Sei \(x \coloneqq \left(x_1,...,x_r\right)\), wobei \(\langle x_i\rangle = G_i\).
+klar: \(x^m = 1\), d.h. es folgt \(\mathrm{ord}(x) \mid m\)
+Andererseits \(m_i \mid \mathrm{ord}(x)\) für alle \(i\)
 </p>
 </div>
 </div>

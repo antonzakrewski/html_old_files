@@ -9,41 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kern eines Gruppenhomomorphismus als Normalteiler</h1>
-<div id="outline-container-org4ae2c05" class="outline-2">
-<h2 id="org4ae2c05"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org99553d2" class="outline-2">
+<h2 id="org99553d2"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_ec14aedb9ef9f0601958cc7fd11387b540a29381.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_ec14aedb9ef9f0601958cc7fd11387b540a29381.svg" class="org-svg" /> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> und sei <img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" class="org-svg" /> ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Gruppenhomomorphismus</a> 
-Dann ist <img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_df5f288389da4c546a2a11aa63293d961af528e9.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_df5f288389da4c546a2a11aa63293d961af528e9.svg" class="org-svg" /> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> 
+Seien \(G,H\) <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> und sei \(f: G \rightarrow H\) ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Gruppenhomomorphismus</a> 
+Dann ist \(\mathrm{ker}(f) \leq G\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb29d26d" class="outline-2">
-<h2 id="orgb29d26d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org53c2687" class="outline-2">
+<h2 id="org53c2687"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_7e6ec3852bb0def68b76b26b3ce57f78b4b39caf.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_7e6ec3852bb0def68b76b26b3ce57f78b4b39caf.svg" class="org-svg" />.
-Dann folgt für <img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" class="org-svg" />
+Sei \(g \in \mathrm{ker}(f)\).
+Dann folgt für \(a \in G\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_420a01c153f86833472f593add984577a68f9822.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_420a01c153f86833472f593add984577a68f9822.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_{a}(g) =& g^{-1}ag
+\end{align*}
 <p>
 Desweiteren gilt wegen der <a href="20221210200317-homomorphismus_abbildung_des_inversen_elements.html#ID-04a8e669-3f19-4547-8aed-1fc0780c038f">Abbildung des inversen Elements</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_56596bb192c8f8df84c16b04839252c6dd8aa1f4.svg" alt="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler_56596bb192c8f8df84c16b04839252c6dd8aa1f4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(g^{-1}ag) =& f(g^{-1})f(a)f(g) \\
+=& f(g)^{-1}ef(g) \\
+=& f(g)^{-1}f(g) \\
+=& e
+\Rightarrow g^{-1}ag \in \mathrm{ker}(f)
+\end{align*}
 </div>
 </div>
 </div>

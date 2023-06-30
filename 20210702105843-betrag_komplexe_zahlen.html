@@ -9,104 +9,125 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Betrag einer komplexen Zahl</h1>
-<div id="outline-container-org7249039" class="outline-2">
-<h2 id="org7249039"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org50c6902" class="outline-2">
+<h2 id="org50c6902"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_8e244166e710a3c561fb68df6a59a2738078db08.svg" alt="20210702105843-betrag_komplexe_zahlen_8e244166e710a3c561fb68df6a59a2738078db08.svg" class="org-svg" />  eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> 
-Dann ist der Betrag von <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" alt="20210702105843-betrag_komplexe_zahlen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" class="org-svg" />
+Sei \(z  \coloneqq a + b\mathrm{i}\)  eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> 
+Dann ist der Betrag von \(z\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_956bc237c8b122b57cf3391bb1e3d3c4d8a0462c.svg" alt="20210702105843-betrag_komplexe_zahlen_956bc237c8b122b57cf3391bb1e3d3c4d8a0462c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert z \vert =& \sqrt{z \overline{z}} \\
+ =& \sqrt{a^2 + b^2} 
+\end{align*}
 <p>
 ein
 </p>
 </div>
 </div>
-<div id="outline-container-org1bf2b1f" class="outline-2">
-<h2 id="org1bf2b1f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1138933" class="outline-2">
+<h2 id="org1138933"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb2d439d" class="outline-3">
-<h3 id="orgb2d439d"><span class="section-number-3">2.1.</span> <a href="20221124131957-positive_definitheit_bewertung.html#ID-388f4f2d-5329-4c58-ad28-131473a8b5f8">Positive Definitheit (Bewertung)</a></h3>
+<div id="outline-container-org4c18fd9" class="outline-3">
+<h3 id="org4c18fd9"><span class="section-number-3">2.1.</span> <a href="20221124131957-positive_definitheit_bewertung.html#ID-388f4f2d-5329-4c58-ad28-131473a8b5f8">Positive Definitheit (Bewertung)</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Es gilt, dass das <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat nicht negativ</a> ist und folglich auch die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_ecdd794ba9f8048eabeb3bde31c33dbc5438c1c0.svg" alt="20210702105843-betrag_komplexe_zahlen_ecdd794ba9f8048eabeb3bde31c33dbc5438c1c0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sqrt{a^2 + b^2} \geq 0
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_16eda0c33a190f21d6cc527d3b105c361d21475e.svg" alt="20210702105843-betrag_komplexe_zahlen_16eda0c33a190f21d6cc527d3b105c361d21475e.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_f8f24fc2fe0ade6e744fd9156a5e4035b9e7b8cb.svg" alt="20210702105843-betrag_komplexe_zahlen_f8f24fc2fe0ade6e744fd9156a5e4035b9e7b8cb.svg" class="org-svg" /> und für <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_1b324a1c6e1962eb7caae18b34ab3bbc5bb18a23.svg" alt="20210702105843-betrag_komplexe_zahlen_1b324a1c6e1962eb7caae18b34ab3bbc5bb18a23.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_f93d09106ed9ad71265c619ade66bd15defc6adb.svg" alt="20210702105843-betrag_komplexe_zahlen_f93d09106ed9ad71265c619ade66bd15defc6adb.svg" class="org-svg" />
+Für \(z \neq 0\) gilt \(a^2 + b^2 > 0\) und für \(z = 0\) gilt \(\sqrt{a^2 + b^2} = \sqrt{0} = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org851c024" class="outline-3">
-<h3 id="org851c024"><span class="section-number-3">2.2.</span> <a href="20221124132139-multiplikativitat_einer_bewertung.html#ID-80eb3ad3-1b18-4d94-86d3-9aaeb2327c65">Multiplikativität einer Bewertung</a></h3>
+<div id="outline-container-org0af4fc2" class="outline-3">
+<h3 id="org0af4fc2"><span class="section-number-3">2.2.</span> <a href="20221124132139-multiplikativitat_einer_bewertung.html#ID-80eb3ad3-1b18-4d94-86d3-9aaeb2327c65">Multiplikativität einer Bewertung</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_5902bbad2a7e6438a1da7a2ff7623cedd0ae1884.svg" alt="20210702105843-betrag_komplexe_zahlen_5902bbad2a7e6438a1da7a2ff7623cedd0ae1884.svg" class="org-svg" />, dann gilt
+Seien \(z,z' \in \mathbb{C}\), dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_1018ce70a8443aadc5c049589197df9fe5bbf65c.svg" alt="20210702105843-betrag_komplexe_zahlen_1018ce70a8443aadc5c049589197df9fe5bbf65c.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert z \cdot z' \vert =& \vert \left(\mathrm{Re}(z) + \mathrm{i} \cdot \mathrm{Im}(z) \right) \left( \mathrm{Re}(z') + \mathrm{i} \cdot \mathrm{Im}(z') \right) \vert \\
+=& \vert \mathrm{Re}(z) \cdot \mathrm{Re}(z') - \mathrm{Im}(z) \mathrm{Im}(z') + \mathrm{i} \left( \mathrm{Re}(z) \mathrm{Im}(z') + \mathrm{Re}(z') \mathrm{Im}(z) \right) \vert \\
+=& \sqrt{ \left(\mathrm{Re}(z) \cdot \mathrm{Re}(z') - \mathrm{Im}(z) \mathrm{Im}(z') \right)^2 +  \left( \mathrm{Re}(z) \mathrm{Im}(z') + \mathrm{Re}(z') \mathrm{Im}(z) \right)^2 } \\
+=& \sqrt{ \left(\mathrm{Re}(z)^2\mathrm{Re}(z')^2 + \mathrm{Im}(z)^2\mathrm{Im}(z')^2 - 2 \mathrm{Re}(z) \mathrm{Re}(z') \mathrm{Im}(z) \mathrm{Im}(z') \right)+  \left( \mathrm{Re}(z)^2 \mathrm{Im}(z')^2 + \mathrm{Re}(z')^2 \mathrm{Im}(z)^2 + 2 \mathrm{Re}(z)\mathrm{Im}(z')\mathrm{Re}(z')\mathrm{Im}(z)\right)} \\
+% =& \sqrt{ \left(\mathrm{Re}(z)^2\mathrm{Re}(z')^2 + \mathrm{Im}(z)^2\mathrm{Im}(z')^2 - 2 \mathrm{Re}(z) \mathrm{Re}(z') \mathrm{Im}(z) \mathrm{Im}(z') \right)+  \left( \mathrm{Re}(z)^2 \mathrm{Im}(z')^2 + \mathrm{Re}(z')^2 \mathrm{Im}(z)^2 + 2 \mathrm{Re}(z)\mathrm{Im}(z')\mathrm{Re}(z')\mathrm{Im}(z)\right)} \\
+=& \sqrt{ \mathrm{Re}(z)^2\mathrm{Re}(z')^2 + \mathrm{Im}(z)^2\mathrm{Im}(z')^2 +  \mathrm{Re}(z)^2 \mathrm{Im}(z')^2 + \mathrm{Re}(z')^2 \mathrm{Im}(z)^2} \\
+=& \sqrt{ \left(\mathrm{Re}(z)^2 + \mathrm{Im}(z)^2 \right) \cdot \left( \mathrm{Re}(z')^2  + \mathrm{Im}(z')^2 \right) } \\
+=& \sqrt{ \mathrm{Re}(z)^2 + \mathrm{Im}(z)} \cdot \sqrt{ \mathrm{Re}(z')^2  + \mathrm{Im}(z')^2 }
+=& \vert z \vert \cdot \vert z' \vert
+\end{align*}
 </div>
 </div>
-</div>
 
 
 
-<div id="outline-container-org9955641" class="outline-3">
-<h3 id="org9955641"><span class="section-number-3">2.3.</span> <a href="20230112170609-dreiecksungleichung_einer_betragsfunktion.html#ID-012c985f-79e9-4235-bbb4-0693a22954e4">Dreiecksungleichung einer Betragsfunktion</a></h3>
+<div id="outline-container-org2809205" class="outline-3">
+<h3 id="org2809205"><span class="section-number-3">2.3.</span> <a href="20230112170609-dreiecksungleichung_einer_betragsfunktion.html#ID-012c985f-79e9-4235-bbb4-0693a22954e4">Dreiecksungleichung einer Betragsfunktion</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_be857bb682b41a9e364287186755d226130b4c1a.svg" alt="20210702105843-betrag_komplexe_zahlen_be857bb682b41a9e364287186755d226130b4c1a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert z + w \vert \leq \vert z \vert + \vert w \vert
+\end{align*}
 <p>
-Aufgrund der <a href="20230112170407-positive_definitheit_betragsfunktion.html#ID-9c779d96-5305-4e3d-b94f-108045d792f0">Positiven Definitheit</a> und der <a href="20230112105224-strikt_isotone_abbildung.html#ID-e3c2cf03-af7c-4ae7-b2ee-7f1fea4a0bd3">strikten Isotonie</a> der <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_1b75fb1cf94e57f75e31dcff75b168a0e06e4bfb.svg" alt="20210702105843-betrag_komplexe_zahlen_1b75fb1cf94e57f75e31dcff75b168a0e06e4bfb.svg" class="org-svg" /> mit $ x x<sup>2</sup>$ ist das äquivalent zu:
+Aufgrund der <a href="20230112170407-positive_definitheit_betragsfunktion.html#ID-9c779d96-5305-4e3d-b94f-108045d792f0">Positiven Definitheit</a> und der <a href="20230112105224-strikt_isotone_abbildung.html#ID-e3c2cf03-af7c-4ae7-b2ee-7f1fea4a0bd3">strikten Isotonie</a> der <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: \mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0\) mit $ x \mapsto x<sup>2</sup>$ ist das äquivalent zu:
 </p>
+\begin{align*}
+\vert z + w \vert^2 \leq (\vert z \vert + \vert w \vert)^2
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_b3dc1b8c949128c5dc67d433eb420f2000bb4cd1.svg" alt="20210702105843-betrag_komplexe_zahlen_b3dc1b8c949128c5dc67d433eb420f2000bb4cd1.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_ce88ef74ae8653858a7f670757342164192ba4df.svg" alt="20210702105843-betrag_komplexe_zahlen_ce88ef74ae8653858a7f670757342164192ba4df.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert z + w \vert^2 =& (z + w)( \overline{z + w}) \\
+=& (z + w)( \overline{z} + \overline{w} ) \\
+=& z \overline{z} + w \overline{w} + z \overline{w} + \overline{z}w \\
+\left(\vert z \vert + \vert w \vert \right)^2 =& z \overline{z} + w \overline{w} + 2 \cdot \vert z w \vert \\
+=&  z \overline{z} + w \overline{w} + 2 \cdot \vert z \vert \cdot \vert w \vert \\
+=&  z \overline{z} + w \overline{w} + 2 \cdot \vert z \vert \cdot \vert \overline{w} \vert \\
+=&  z \overline{z} + w \overline{w} + 2 \cdot \vert z\overline{w} \vert \\
+\end{align*}
 
 <p>
 Es gitl zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105843-betrag_komplexe_zahlen_4f8a02b8308f62e2e695d9d201584888288e049d.svg" alt="20210702105843-betrag_komplexe_zahlen_4f8a02b8308f62e2e695d9d201584888288e049d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+2 \mathrm{Re}( z \overline{w}) \leq&  2 \cdot \sqrt{\mathrm{Re}(z \overline{w})^2 + \mathrm{Im}(z \overline{w})^2} \\
+z \overline{w} + \overline{z \overline{w}} \leq& 2 \cdot \sqrt{\mathrm{Re}(z \overline{w})^2 + \mathrm{Im}(z \overline{w})^2} \\
+z \overline{w} + \overline{z} w \leq& 2 \cdot \vert z \overline{w} \vert 
+\end{align*}
 </div>
 </div>
 </div>

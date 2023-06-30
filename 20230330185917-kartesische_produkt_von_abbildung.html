@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">kartesische Produkt von Abbildung</h1>
-<div id="outline-container-orga7c19a4" class="outline-2">
-<h2 id="orga7c19a4"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4eb284a" class="outline-2">
+<h2 id="org4eb284a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230330185917-kartesische_produkt_von_abbildung_f2bb2d8b5e662c4e2d618ab68e49671ebad3d4b7.svg" alt="20230330185917-kartesische_produkt_von_abbildung_f2bb2d8b5e662c4e2d618ab68e49671ebad3d4b7.svg" class="org-svg" /> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familien</a> von <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und <img src="file:///home/anton/html/ltximg/20230330185917-kartesische_produkt_von_abbildung_ea17a723e7133aee90da236392b5ca615152aa13.svg" alt="20230330185917-kartesische_produkt_von_abbildung_ea17a723e7133aee90da236392b5ca615152aa13.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
+Seien \(A_i, B_i\) <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familien</a> von <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und \(f_i: A_i \rightarrow B_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
 Dann ist für das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> und die <a href="20230226211841-projektion.html#ID-7d34ba5d-48ed-476e-a440-d18dd40eac27">Projektionen</a> das kartesische Produkt der <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> definiert durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330185917-kartesische_produkt_von_abbildung_d3c00fa1ecfa1c5f33d74955eb10bdc81776a126.svg" alt="20230330185917-kartesische_produkt_von_abbildung_d3c00fa1ecfa1c5f33d74955eb10bdc81776a126.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{i \in I} f_i: \prod_{i \in i} A_i \rightarrow& \prod_{i \in I} B_i \\
+x \mapsto& \prod_{i \in I} f_i(\pi_i(x))
+\end{align*}
 </div>
 </div>
 </div>

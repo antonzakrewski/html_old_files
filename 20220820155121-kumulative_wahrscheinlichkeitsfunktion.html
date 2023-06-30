@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>kumulative Wahrscheinlichkeitsverteilung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">kumulative Wahrscheinlichkeitsverteilung</h1>
-<div id="outline-container-orgd628f5a" class="outline-2">
-<h2 id="orgd628f5a"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgab294fa" class="outline-2">
+<h2 id="orgab294fa"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine Kumulative Wahrscheinlichkeitsverteilung gibt die <a href="20220102142027-wahrscheinlichkeit.html#ID-6d713be4-69af-4c68-82f2-ab5fcbecf263">Wahrscheinlichkeit</a> an, dass die <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> den Wert <img src="ltximg/20220820155121-kumulative_wahrscheinlichkeitsfunktion_59fb52cf9a6fec37a351a4e95da61a4548b3cfff.svg" alt="20220820155121-kumulative_wahrscheinlichkeitsfunktion_59fb52cf9a6fec37a351a4e95da61a4548b3cfff.svg" class="org-svg" /> oder jeden kleineren annimmt. 
+Eine Kumulative Wahrscheinlichkeitsverteilung gibt die <a href="20220102142027-wahrscheinlichkeit.html#ID-6d713be4-69af-4c68-82f2-ab5fcbecf263">Wahrscheinlichkeit</a> an, dass die <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> den Wert \(x_1\) oder jeden kleineren annimmt. 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220820155121-kumulative_wahrscheinlichkeitsfunktion_7d1a752f36c44f2c49a217eeb84a601743e5054b.svg" alt="20220820155121-kumulative_wahrscheinlichkeitsfunktion_7d1a752f36c44f2c49a217eeb84a601743e5054b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+F_{X}(x) \coloneqq P(X \leq x_1)
+\end{align*}
 <p>
 siehe: <a href="20220819232307-wahrscheinlichkeitsfunktion.html#ID-f81037e2-fdee-4704-85f1-475b0cb2d44e">Wahrscheinlichkeitsfunktion</a>
 </p>

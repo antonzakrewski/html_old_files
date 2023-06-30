@@ -9,101 +9,118 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Kombinatorische Bedeutung Binomialkoeffizent</h1>
-<div id="outline-container-org0a0afb9" class="outline-2">
-<h2 id="org0a0afb9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org044f1c9" class="outline-2">
+<h2 id="org044f1c9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 siehe <a href="20220104211627-kombinatorische_bedeutung_binomialkoeffizient.html#ID-f23c84a5-bacd-4339-b9c9-d41c20fb14a1">Kombinatorische Bedeutung: Binomialkoeffizient</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7c6f14" class="outline-2">
-<h2 id="orgb7c6f14"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf5f4557" class="outline-2">
+<h2 id="orgf5f4557"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgcb6daaa" class="outline-3">
-<h3 id="orgcb6daaa"><span class="section-number-3">2.1.</span> durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">vollständige Induktion</a></h3>
+<div id="outline-container-org07898c0" class="outline-3">
+<h3 id="org07898c0"><span class="section-number-3">2.1.</span> durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">vollständige Induktion</a></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org7129f24" class="outline-4">
-<h4 id="org7129f24"><span class="section-number-4">2.1.1.</span> Induktionsanfang</h4>
+<div id="outline-container-org04e7456" class="outline-4">
+<h4 id="org04e7456"><span class="section-number-4">2.1.1.</span> Induktionsanfang</h4>
 <div class="outline-text-4" id="text-2-1-1">
 </div>
-<div id="outline-container-org535d6bb" class="outline-5">
-<h5 id="org535d6bb"><span class="section-number-5">2.1.1.1.</span> Leere Menge</h5>
+<div id="outline-container-org6324bf2" class="outline-5">
+<h5 id="org6324bf2"><span class="section-number-5">2.1.1.1.</span> Leere Menge</h5>
 <div class="outline-text-5" id="text-2-1-1-1">
 <ul class="org-ul">
 <li>bloß <a href="20211226215449-leere_menge.html#ID-abf22513-8cde-4019-8690-8b02edd4337d">Leere Menge</a> als (nicht-echte) <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_dfeef83ad986b92909e2d3612b5e03be9553710a.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_dfeef83ad986b92909e2d3612b5e03be9553710a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{0}{0} = \prod_{j=1}^{0} \frac{0 - j + 1}{j} = \frac{0!}{0!\cdot 0!} = 1
+\end{align*}
 <ul class="org-ul">
 <li>siehe: <a href="20220104204915-leere_produkt.html#ID-455211f8-d2fc-4d32-984d-89e980de54e3">leere Produkt</a></li>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org14fb707"></a>Einelementige Menge<br />
+<li><a id="orgb62e8ec"></a>Einelementige Menge<br />
 <div class="outline-text-6" id="text-2-1-1-1-1">
 <ul class="org-ul">
-<li><a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>  von <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_5be0bbb7ec09531acc59527a973ff600b6c6d319.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_5be0bbb7ec09531acc59527a973ff600b6c6d319.svg" class="org-svg" />:
+<li><a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>  von \(\{A_1\}\):
 <ul class="org-ul">
-<li><a href="20211226215449-leere_menge.html#ID-abf22513-8cde-4019-8690-8b02edd4337d">Leere Menge</a> <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_27ea6fa01cf820b768170fdffe93493f219944a2.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_27ea6fa01cf820b768170fdffe93493f219944a2.svg" class="org-svg" /> (siehe:  <a href="20220104204915-leere_produkt.html#ID-455211f8-d2fc-4d32-984d-89e980de54e3">leere Produkt</a>)</li>
-<li>Einelementig: $\{A<sub>1</sub>\} &rArr; 1 = = &prod;<sub>j=1</sub><sup>1</sup> = 1 $</li>
+<li><a href="20211226215449-leere_menge.html#ID-abf22513-8cde-4019-8690-8b02edd4337d">Leere Menge</a> \(\emptyset \Rightarrow 1 = \binom{1}{0}\) (siehe:  <a href="20220104204915-leere_produkt.html#ID-455211f8-d2fc-4d32-984d-89e980de54e3">leere Produkt</a>)</li>
+<li>Einelementig: $\{A<sub>1</sub>\} &rArr; 1 = \binom{1}{1} = &prod;<sub>j=1</sub><sup>1</sup> \frac{1 - 1 + 1}{j} = 1 $</li>
 </ul></li>
 </ul>
 </div>
 </li>
 </ol>
 </div>
-<div id="outline-container-org4131845" class="outline-5">
-<h5 id="org4131845"><span class="section-number-5">2.1.1.2.</span> k</h5>
+<div id="outline-container-org7b14a19" class="outline-5">
+<h5 id="org7b14a19"><span class="section-number-5">2.1.1.2.</span> k</h5>
 <div class="outline-text-5" id="text-2-1-1-2">
 <p>
 Triviale Fälle
 </p>
 
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_f647a4b5540e2615ed622b7f413c89d36b2fbeb7.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_f647a4b5540e2615ed622b7f413c89d36b2fbeb7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{n}{0} =& 1 \\
+\binom{n}{n + i} =& 0 \quad i \in \mathbb{N}^+
+\end{align*}
 </div>
 </div>
 </div>
 
-<div id="outline-container-orga63ebdb" class="outline-4">
-<h4 id="orga63ebdb"><span class="section-number-4">2.1.2.</span> Induktionsschritt</h4>
+<div id="outline-container-org0f24996" class="outline-4">
+<h4 id="org0f24996"><span class="section-number-4">2.1.2.</span> Induktionsschritt</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 über <a href="20220106222835-binomialkoeffizient_hilfssatz.html#ID-3f28b90e-18b5-420b-88e8-2794157bc002">Binomialkoeffizient - Hilfssatz</a>
 Annahme:
 </p>
 <ul class="org-ul">
-<li>Erhöhen der Menge (Mächtigkeit: <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_da929740aebfa84a4688d5e268feeb306d98a2ce.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_da929740aebfa84a4688d5e268feeb306d98a2ce.svg" class="org-svg" />) um das Element <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_7420e8ec765b8d035a9703e0d30dd60b978bf10a.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_7420e8ec765b8d035a9703e0d30dd60b978bf10a.svg" class="org-svg" />
+<li>Erhöhen der Menge (Mächtigkeit: \(\vert n \vert\)) um das Element \(A_{n+1}\)
 <ul class="org-ul">
 <li>neue Möglichkeiten:
 <ul class="org-ul">
-<li>Mengen ohne <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_ed28517f195dedfe39bee7f9197db90b28542194.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_ed28517f195dedfe39bee7f9197db90b28542194.svg" class="org-svg" /></li>
-<li>Mengen mit <img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_b3951182e6671c2dd87ddbf41b75d00e38e081d1.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_b3951182e6671c2dd87ddbf41b75d00e38e081d1.svg" class="org-svg" /> (weil Platz gemacht werden muss)</li>
+<li>Mengen ohne \(A_{n+1} \Rightarrow \binom{n}{k}\)</li>
+<li>Mengen mit \(A_{n+1} \Rightarrow \binom{n}{k-1}\) (weil Platz gemacht werden muss)</li>
 </ul></li>
 </ul></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_f3716366bea96e7f373f8baba9dfa56c6acd8b6f.svg" alt="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent_f3716366bea96e7f373f8baba9dfa56c6acd8b6f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k}
+\end{align*}
 
 
 
@@ -114,8 +131,8 @@ Annahme:
 </div>
 </div>
 
-<div id="outline-container-orgba0b231" class="outline-3">
-<h3 id="orgba0b231"><span class="section-number-3">2.2.</span> Alternativ</h3>
+<div id="outline-container-org533133a" class="outline-3">
+<h3 id="org533133a"><span class="section-number-3">2.2.</span> Alternativ</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 TODO aus Königsberger

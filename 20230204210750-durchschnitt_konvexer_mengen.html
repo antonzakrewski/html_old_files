@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Durchschnitt konvexer Mengen</h1>
-<div id="outline-container-orgefdea09" class="outline-2">
-<h2 id="orgefdea09"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org05ee0a3" class="outline-2">
+<h2 id="org05ee0a3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230204210750-durchschnitt_konvexer_mengen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_bf24ac35dd068d397fd0c56975075fc7201d7f58.svg" alt="20230204210750-durchschnitt_konvexer_mengen_bf24ac35dd068d397fd0c56975075fc7201d7f58.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">Konvexen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> 
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und \(M_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">Konvexen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> 
 Dann ist auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_b19c760fe69c2d15ed405e6247a6d7eb7d29faba.svg" alt="20230204210750-durchschnitt_konvexer_mengen_b19c760fe69c2d15ed405e6247a6d7eb7d29faba.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{i \in I} M_i
+\end{align*}
 <p>
 eine konvexe <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org5e7c53b" class="outline-2">
-<h2 id="org5e7c53b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5f1837c" class="outline-2">
+<h2 id="org5f1837c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_be35954a4f44b67b84c17c217e2f6c2f201f4141.svg" alt="20230204210750-durchschnitt_konvexer_mengen_be35954a4f44b67b84c17c217e2f6c2f201f4141.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230204210750-durchschnitt_konvexer_mengen_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" />.
-Dann gilt auch <img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_6ddc8355cb709721ad71faf3130faea2021defa7.svg" alt="20230204210750-durchschnitt_konvexer_mengen_6ddc8355cb709721ad71faf3130faea2021defa7.svg" class="org-svg" /> und damit auch 
+Sei \(v,v' \in M_i\) für \(i \in I\).
+Dann gilt auch \(\lambda v + (1 - \lambda) v' \in M_i\) und damit auch 
 Daraus folgt, dass der
-<img src="file:///home/anton/html/ltximg/20230204210750-durchschnitt_konvexer_mengen_6804a453f181058f332de0bf431cf41b4a9df6ba.svg" alt="20230204210750-durchschnitt_konvexer_mengen_6804a453f181058f332de0bf431cf41b4a9df6ba.svg" class="org-svg" />
+\(\lambda v + (1 - \lambda) v' \in \bigcap_{i \in I} M_i\)
  <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> konvex ist
 </p>
 </div>

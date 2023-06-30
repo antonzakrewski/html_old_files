@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinante einer Matrix mit gleichen Spalten</h1>
-<div id="outline-container-org0df6207" class="outline-2">
-<h2 id="org0df6207"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org278139b" class="outline-2">
+<h2 id="org278139b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230118134202-determinante_einer_matrix_mit_gleichen_spalten_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230118134202-determinante_einer_matrix_mit_gleichen_spalten_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien <img src="file:///home/anton/html/ltximg/20230118134202-determinante_einer_matrix_mit_gleichen_spalten_c39a2a5cca836e5f46a0ecc98e8df45f82582fe8.svg" alt="20230118134202-determinante_einer_matrix_mit_gleichen_spalten_c39a2a5cca836e5f46a0ecc98e8df45f82582fe8.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230118134202-determinante_einer_matrix_mit_gleichen_spalten_a5ba07d015b572d79330dd777721af00468f311b.svg" alt="20230118134202-determinante_einer_matrix_mit_gleichen_spalten_a5ba07d015b572d79330dd777721af00468f311b.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230118134202-determinante_einer_matrix_mit_gleichen_spalten_697342d4ca4808ac062b6f7fdb46217ed3b9642b.svg" alt="20230118134202-determinante_einer_matrix_mit_gleichen_spalten_697342d4ca4808ac062b6f7fdb46217ed3b9642b.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien \(s_k \in R^{n}\) sowie \(s_j = s_j\) für \(j \neq j\)
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134202-determinante_einer_matrix_mit_gleichen_spalten_041be693a1c22f3277211af0ee649b0ea1330075.svg" alt="20230118134202-determinante_einer_matrix_mit_gleichen_spalten_041be693a1c22f3277211af0ee649b0ea1330075.svg" class="org-svg" />
-</span>
+\begin{align*}
+\det \begin{pmatrix} s_1 & \dots & s_n \end{pmatrix} = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf05eed1" class="outline-2">
-<h2 id="orgf05eed1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0b81b32" class="outline-2">
+<h2 id="org0b81b32"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20221225205908-determinante_einer_transponierten_matrix.html#ID-5fd18484-7920-44ec-8741-c3a47cecb1f9">Determinante einer transponierten Matrix</a> und der <a href="20230118134153-determinante_einer_matrix_mit_gleichen_zeilen.html#ID-d0db1af4-15dc-4604-bc5d-c2da83c90863">Determinante einer Matrix mit gleichen Zeilen</a> 

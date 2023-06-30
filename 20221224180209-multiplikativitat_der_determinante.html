@@ -3,87 +3,91 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Determinantenproduktsatz</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinantenproduktsatz</h1>
-<div id="outline-container-org112823e" class="outline-2">
-<h2 id="org112823e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org226e181" class="outline-2">
+<h2 id="org226e181"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221224180209-multiplikativitat_der_determinante_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221224180209-multiplikativitat_der_determinante_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="ltximg/20221224180209-multiplikativitat_der_determinante_985347dc2b9d8436575f1ba3baa4beb649903582.svg" alt="20221224180209-multiplikativitat_der_determinante_985347dc2b9d8436575f1ba3baa4beb649903582.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(A,B \in R^{n \times n}\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224180209-multiplikativitat_der_determinante_bcd96dd714a66b284510d392993bf8cfa9f6ef5c.svg" alt="20221224180209-multiplikativitat_der_determinante_bcd96dd714a66b284510d392993bf8cfa9f6ef5c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mathrm{det}(AB) =& \mathrm{det}(A)\mathrm{det}(B)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgccb9a3e" class="outline-2">
-<h2 id="orgccb9a3e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org377f8e7" class="outline-2">
+<h2 id="org377f8e7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20230118134616-determinante_als_abstrakte_volumenfunktion.html#ID-0ab6e1a0-fdd2-4812-9280-8946871f58ba">Determinante als Abstrakte Volumenfunktion</a> und der Definition als <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakten Volumenfunktion</a> gilt für die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224180209-multiplikativitat_der_determinante_6fda3aec165636be199cf2607f27ff1e3ef9c0fb.svg" alt="20221224180209-multiplikativitat_der_determinante_6fda3aec165636be199cf2607f27ff1e3ef9c0fb.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+f_B: (R^n)^n \rightarrow& R \\
+\begin{pmatrix} z_1 \\ \vdots \\ z_n \end{pmatrix} \mapsto& f_{det}(\begin{pmatrix} z_1 B \\ \vdots \\ z_n B \end{pmatrix} \\
+=& \mathrm{det}(AB)
+\end{align*}
 <p>
 Es folgt, dass die <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">Abstrakte Volumenfunktion</a> eine skalierte <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> ist, d.h. es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224180209-multiplikativitat_der_determinante_cb597c89de6a0dd64e99479abb1723884c066191.svg" alt="20221224180209-multiplikativitat_der_determinante_cb597c89de6a0dd64e99479abb1723884c066191.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+f_B( \begin{pmatrix} z_1 \\ \vdots \\ z_n \end{pmatrix} ) =& f_{det}(\begin{pmatrix} z_1 \\ \vdots \\ z_n \end{pmatrix} ) \cdot c(B) \\
+=& \mathrm{det}(A) \cdot c(B)
+\end{align*}
 
 <p>
-Sei <img src="ltximg/20221224180209-multiplikativitat_der_determinante_03162605cbcc41815cea4cfc2285871a7a0cda71.svg" alt="20221224180209-multiplikativitat_der_determinante_03162605cbcc41815cea4cfc2285871a7a0cda71.svg" class="org-svg" />, so folgt
+Sei \(A = E_n\), so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224180209-multiplikativitat_der_determinante_4ff6d91972862db39bf3954b43fab6491f580aee.svg" alt="20221224180209-multiplikativitat_der_determinante_4ff6d91972862db39bf3954b43fab6491f580aee.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\mathrm{det}(B) =& \mathrm{det}(E_n \cdot B) \\
+=& f_B(\begin{pmatrix} e_1 \\ \vdots \\ e_2 \end{pmatrix}  \\
+=& \det(E_n) \cdot c(B) \\
+=& c(B)
+\end{align*}
 <p>
-Also gilt <img src="ltximg/20221224180209-multiplikativitat_der_determinante_9c98578fbe1515b9f4814c258f219378889fbfa1.svg" alt="20221224180209-multiplikativitat_der_determinante_9c98578fbe1515b9f4814c258f219378889fbfa1.svg" class="org-svg" />
+Also gilt \(c(B) = \mathrm{det}(B)\)
 und daraus folgt für:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224180209-multiplikativitat_der_determinante_eb652c4d7970b5301d65757146348232524bd52f.svg" alt="20221224180209-multiplikativitat_der_determinante_eb652c4d7970b5301d65757146348232524bd52f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+f_{det}(AB) =& \det(Ab) \\
+=& \det(A) \cdot \det(B)
+\end{align*}
 </div>
 </div>
 </div>

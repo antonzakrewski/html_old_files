@@ -3,31 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Charakteristik (Algebra)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakteristik (Algebra)</h1>
-<div id="outline-container-org5587f1c" class="outline-2">
-<h2 id="org5587f1c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd9a6168" class="outline-2">
+<h2 id="orgd9a6168"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221030164602-charakteristik_eines_korpers_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221030164602-charakteristik_eines_korpers_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer Ring</a>, dann ist die Charakteristik <img src="ltximg/20221030164602-charakteristik_eines_korpers_70ed16f068bcad4bfea003106cf19c81e3d26c69.svg" alt="20221030164602-charakteristik_eines_korpers_70ed16f068bcad4bfea003106cf19c81e3d26c69.svg" class="org-svg" /> ist definiert als:
+Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer Ring</a>, dann ist die Charakteristik \(\chi(K)\) ist definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221030164602-charakteristik_eines_korpers_8aeec086e1f097a3b4b49752ecc2d59675bed4d7.svg" alt="20221030164602-charakteristik_eines_korpers_8aeec086e1f097a3b4b49752ecc2d59675bed4d7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\chi(R) \coloneqq 
+\begin{cases}
+\mathrm{min}(m \in \mathbb{N} \vert \sum_{n=1}^{m} 1 = 0) & \mbox{if } \exists m : \sum_{n=1}^{m} = 0 \\
+0 & \mbox{else }  \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
 </div>

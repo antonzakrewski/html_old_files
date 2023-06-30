@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">lokalkompaktheit als Isomorphieinvariante</h1>
-<div id="outline-container-org4bfd420" class="outline-2">
-<h2 id="org4bfd420"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgded424b" class="outline-2">
+<h2 id="orgded424b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompaktheit</a> ist eine <a href="20230226183037-isomorphieinvariante.html#ID-c2b2faa5-362f-4a92-949c-ed3751f4acba">Isomorphieinvariante</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org9c0ed27" class="outline-2">
-<h2 id="org9c0ed27"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3b74103" class="outline-2">
+<h2 id="org3b74103"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_549ef832452186a7de6b651c8890117b703a24a4.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_549ef832452186a7de6b651c8890117b703a24a4.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_1164af378ac0ccdb141da9fb916cc2472de0b907.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_1164af378ac0ccdb141da9fb916cc2472de0b907.svg" class="org-svg" /> ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a> und <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_7570ab04527b946d2e3964ab68cf1c665ec9dc07.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_7570ab04527b946d2e3964ab68cf1c665ec9dc07.svg" class="org-svg" />, so existiert ein eindeutiges <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_13ad14b01beeca6cbda6015b220963c1b58a20d5.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_13ad14b01beeca6cbda6015b220963c1b58a20d5.svg" class="org-svg" />.
-Nach Annahme existiert eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und es folgt, dass <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_b63ee120cb06cbaf52b03587ea348d1ddf7f4f66.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_b63ee120cb06cbaf52b03587ea348d1ddf7f4f66.svg" class="org-svg" /> als <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Bildes einer kompakten Menge einer stetigen Funktion kompakt</a> ist.
-Ferner ist wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> von <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_1a2fa08ecb384d81b782f9599cb67b6c761fb320.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_1a2fa08ecb384d81b782f9599cb67b6c761fb320.svg" class="org-svg" /> und der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> <img src="file:///home/anton/html/ltximg/20230621-lokalkompaktheit_als_isomorphieinvariante_b63ee120cb06cbaf52b03587ea348d1ddf7f4f66.svg" alt="20230621-lokalkompaktheit_als_isomorphieinvariante_b63ee120cb06cbaf52b03587ea348d1ddf7f4f66.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Seien \((X, \mathcal{T})\) und \((Y, \mathcal{T}_Y)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(\varphi: X \rightarrow Y\) ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a>.
+Sei \(X\) <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a> und \(y \in Y\), so existiert ein eindeutiges \(x \in X\) mit \(\varphi^{-1}(y) = x\).
+Nach Annahme existiert eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K\) und es folgt, dass \(\varphi[K]\) als <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Bildes einer kompakten Menge einer stetigen Funktion kompakt</a> ist.
+Ferner ist wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> von \(\varphi^{-1}\) und der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> \(\varphi[K]\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
 </p>
 </div>
 </div>

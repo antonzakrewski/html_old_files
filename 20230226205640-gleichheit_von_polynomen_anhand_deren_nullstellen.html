@@ -3,44 +3,65 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gleichheit von Polynomen anhand hinreichend vieler gleicher Werte in Abhängigkeit vom Grad</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gleichheit von Polynomen anhand hinreichend vieler gleicher Werte in Abhängigkeit vom Grad</h1>
-<div id="outline-container-orgf1069b7" class="outline-2">
-<h2 id="orgf1069b7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org05a1da9" class="outline-2">
+<h2 id="org05a1da9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_c86b085033a91907158e00adc0d9d2965cda2ba1.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_c86b085033a91907158e00adc0d9d2965cda2ba1.svg" class="org-svg" /> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> über einem <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a>, so dass für unendlich viele <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_f00969735338f3c925d14abe5caea39417999a0b.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_f00969735338f3c925d14abe5caea39417999a0b.svg" class="org-svg" /> gilt:
+Seien \(f,g \in R[X]\) <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> über einem <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a>, so dass für unendlich viele \(c \in R\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e09325a73712b074688f009d21364acc0d3d0305.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e09325a73712b074688f009d21364acc0d3d0305.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(c) = g(c)
+\end{align*}
 <p>
-Dann folgt <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_bb70ca03054960e8baacd761ec1c3a3462ceec77.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_bb70ca03054960e8baacd761ec1c3a3462ceec77.svg" class="org-svg" />
-Wenn der <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> von <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" />, <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" class="org-svg" /> bekannt ist, so reichen auch <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_3658ae64b712113bfa36997e5407d6ed3d809518.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_3658ae64b712113bfa36997e5407d6ed3d809518.svg" class="org-svg" /> Werte 
+Dann folgt \(f = g\)
+Wenn der <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> von \(f\), \(g\) bekannt ist, so reichen auch \(\mathrm{max}(\mathrm{deg}(f), \mathrm{deg}(g)) + 1\) Werte 
 </p>
 </div>
 </div>
-<div id="outline-container-org23407c5" class="outline-2">
-<h2 id="org23407c5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge45b363" class="outline-2">
+<h2 id="orge45b363"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_fa5d4081af56a6c20a29f6eec38c27dd7e8b881d.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_fa5d4081af56a6c20a29f6eec38c27dd7e8b881d.svg" class="org-svg" /> (vgl. <a href="20230226190704-grad_von_polynomen_unter_multiplikation_in_einem_integritatsbereich.html#ID-ac8fc7ef-5b72-4a77-8057-2b3ad9241517">Grad von Polynomen unter Multiplikation in einem Integritätsbereich</a>) und für <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_931de2beca522ccd625b4aa0c9208b8f727680ac.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_931de2beca522ccd625b4aa0c9208b8f727680ac.svg" class="org-svg" /> gilt <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_f44d968e7f74c12d6b13311220613b4776cabda7.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_f44d968e7f74c12d6b13311220613b4776cabda7.svg" class="org-svg" />
-Nach dem <a href="20220309073611-fundamentalsatz_der_algebra.html#ID-61f68a08-0fb6-427f-b1cd-73f2ddf560a1">Fundamentalsatz der Algebra</a> folgt, dass <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" class="org-svg" /> - sofern nicht das <a href="20221223184351-nullpolynom.html#ID-3ecc5d53-e0d1-4b33-a9a8-12103316164a">Nullpolynom</a> - maximal <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_b37b8ce8863218d1105a8ddf2be2d97366c87a6c.svg" class="org-svg" /> verschiedene <a href="20220320113706-nullstelle.html#ID-b094e637-5f3c-42a2-a2c2-ae73bbbe29a2">Nullstellen</a> hat.
-Daraus folgt, dass <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" class="org-svg" /> das <a href="20221223184351-nullpolynom.html#ID-3ecc5d53-e0d1-4b33-a9a8-12103316164a">Nullpolynom</a> ist und damit auch <img src="ltximg/20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_bb70ca03054960e8baacd761ec1c3a3462ceec77.svg" alt="20230226205640-gleichheit_von_polynomen_anhand_deren_nullstellen_bb70ca03054960e8baacd761ec1c3a3462ceec77.svg" class="org-svg" /> 
+Es gilt \(\mathrm{deg}(g) = \mathrm{deg}(-g)\) (vgl. <a href="20230226190704-grad_von_polynomen_unter_multiplikation_in_einem_integritatsbereich.html#ID-ac8fc7ef-5b72-4a77-8057-2b3ad9241517">Grad von Polynomen unter Multiplikation in einem Integritätsbereich</a>) und für \(h \coloneqq f - g\) gilt \(\mathrm{deg}(h) \leq \mathrm{max}(\mathrm{deg}(f), \mathrm{deg}(g)) =: n < \infty\)
+Nach dem <a href="20220309073611-fundamentalsatz_der_algebra.html#ID-61f68a08-0fb6-427f-b1cd-73f2ddf560a1">Fundamentalsatz der Algebra</a> folgt, dass \(h\) - sofern nicht das <a href="20221223184351-nullpolynom.html#ID-3ecc5d53-e0d1-4b33-a9a8-12103316164a">Nullpolynom</a> - maximal \(n\) verschiedene <a href="20220320113706-nullstelle.html#ID-b094e637-5f3c-42a2-a2c2-ae73bbbe29a2">Nullstellen</a> hat.
+Daraus folgt, dass \(h\) das <a href="20221223184351-nullpolynom.html#ID-3ecc5d53-e0d1-4b33-a9a8-12103316164a">Nullpolynom</a> ist und damit auch \(f = g\) 
 </p>
 </div>
 </div>

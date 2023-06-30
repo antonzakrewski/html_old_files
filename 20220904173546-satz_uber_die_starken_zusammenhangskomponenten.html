@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">topologische Ordnung einer starken Zusammenhangskomponenten</h1>
-<div id="outline-container-orgab7804c" class="outline-2">
-<h2 id="orgab7804c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgac4abb6" class="outline-2">
+<h2 id="orgac4abb6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220904173546-satz_uber_die_starken_zusammenhangskomponenten_7874974bce7f4192518a7a5729a6bd716839a319.svg" alt="20220904173546-satz_uber_die_starken_zusammenhangskomponenten_7874974bce7f4192518a7a5729a6bd716839a319.svg" class="org-svg" /> ein <a href="20220904170921-gerichteter_graph.html#ID-c6373682-0c45-41b0-a678-325e5ba177c6">gerichteter Graph</a> mit den <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starken Zusammenhangskomponenten</a> <img src="file:///home/anton/html/ltximg/20220904173546-satz_uber_die_starken_zusammenhangskomponenten_3c4e2581a5f329e041a8f7d3ffe511b5b808004c.svg" alt="20220904173546-satz_uber_die_starken_zusammenhangskomponenten_3c4e2581a5f329e041a8f7d3ffe511b5b808004c.svg" class="org-svg" /> 
-Dann gibt es eine <a href="20220906090431-topologische_ordnung.html#ID-8a978451-d2d6-408e-a0d6-bb26be591bb2">topologische Ordnung</a>, sodass jede <a href="20220904171142-kante.html#ID-ee89f9c4-02d1-4312-9f41-09d9a1811714">Kante</a>, die zwei <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starke Zusammenhangskomponenten</a> <img src="file:///home/anton/html/ltximg/20220904173546-satz_uber_die_starken_zusammenhangskomponenten_6b2c36af34e1fd9fab9bd4922d64c525bb68e680.svg" alt="20220904173546-satz_uber_die_starken_zusammenhangskomponenten_6b2c36af34e1fd9fab9bd4922d64c525bb68e680.svg" class="org-svg" /> verbindet, sodass für jede <a href="20220904171142-kante.html#ID-ee89f9c4-02d1-4312-9f41-09d9a1811714">Kante</a> die zwei verschiedene <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starke Zusammenhangskomponente</a> <img src="file:///home/anton/html/ltximg/20220904173546-satz_uber_die_starken_zusammenhangskomponenten_2b955212d3fe51d56c2691752f9fde3e2bc63fe5.svg" alt="20220904173546-satz_uber_die_starken_zusammenhangskomponenten_2b955212d3fe51d56c2691752f9fde3e2bc63fe5.svg" class="org-svg" /> verbindet
+Sei \(G=(V,E)\) ein <a href="20220904170921-gerichteter_graph.html#ID-c6373682-0c45-41b0-a678-325e5ba177c6">gerichteter Graph</a> mit den <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starken Zusammenhangskomponenten</a> \(C_1,...,C_k\) 
+Dann gibt es eine <a href="20220906090431-topologische_ordnung.html#ID-8a978451-d2d6-408e-a0d6-bb26be591bb2">topologische Ordnung</a>, sodass jede <a href="20220904171142-kante.html#ID-ee89f9c4-02d1-4312-9f41-09d9a1811714">Kante</a>, die zwei <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starke Zusammenhangskomponenten</a> \(C_i, C_j\) verbindet, sodass für jede <a href="20220904171142-kante.html#ID-ee89f9c4-02d1-4312-9f41-09d9a1811714">Kante</a> die zwei verschiedene <a href="20220904224157-starke_zusammenhangskomponente.html#ID-849254d8-1d45-4228-a282-ff881e2c2a98">starke Zusammenhangskomponente</a> \(c_i,c_j\) verbindet
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220904173546-satz_uber_die_starken_zusammenhangskomponenten_8081a8e8d1f18760322929f6d65375ebfd9df522.svg" alt="20220904173546-satz_uber_die_starken_zusammenhangskomponenten_8081a8e8d1f18760322929f6d65375ebfd9df522.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sigma(j) > \sigma(i)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1808fee" class="outline-2">
-<h2 id="org1808fee"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org73b05c8" class="outline-2">
+<h2 id="org73b05c8"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach dem 

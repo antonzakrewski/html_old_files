@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Algebraischer Rang (Mordell)</h1>
-<div id="outline-container-org23444be" class="outline-2">
-<h2 id="org23444be"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org09fef43" class="outline-2">
+<h2 id="org09fef43"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 für die Gruppe von <a href="20230428152455-satz_von_mordell.html#ID-14c37a3c-2b1d-4ab7-ba65-5cb12181fc73">Satz von Mordell</a> mit der eindeutigen darstellung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428153245-algebraischer_rang_mordell_ef21e435fb146f4e53d96077e56384a65fdc8f7a.svg" alt="20230428153245-algebraischer_rang_mordell_ef21e435fb146f4e53d96077e56384a65fdc8f7a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+X = \sum_{i=1}^{n} n_i p_i  + T_k && n_i \in \mathbb{Z} 
+\end{align*}
 <p>
-heißt der algebraische rang das minimale <img src="file:///home/anton/html/ltximg/20230428153245-algebraischer_rang_mordell_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230428153245-algebraischer_rang_mordell_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" />
+heißt der algebraische rang das minimale \(n\)
 </p>
 
 <p>

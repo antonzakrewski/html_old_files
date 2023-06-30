@@ -9,64 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kleiner Satz von Fermat</h1>
-<div id="outline-container-org561702b" class="outline-2">
-<h2 id="org561702b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6e33eae" class="outline-2">
+<h2 id="org6e33eae"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_8b529855484326ef419048f9294aa8ebde911627.svg" alt="20230503132640-kleiner_satz_von_fermat_8b529855484326ef419048f9294aa8ebde911627.svg" class="org-svg" /> eine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a> und <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" alt="20230503132640-kleiner_satz_von_fermat_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_9c251ffbe5bf211b06fdad91944f6bb4650b548f.svg" alt="20230503132640-kleiner_satz_von_fermat_9c251ffbe5bf211b06fdad91944f6bb4650b548f.svg" class="org-svg" />
+Sei \(p \in \mathbb{N}\) eine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a> und \(a \in \mathbb{Z}\) mit \(\mathrm{gcd}(a,p) = 1\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_665e4e38da10ae3926e709a76e82aaffdd3dc467.svg" alt="20230503132640-kleiner_satz_von_fermat_665e4e38da10ae3926e709a76e82aaffdd3dc467.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a^{p-1} \equiv& 1 \mod(p) \\
+a^{p} \equiv& p \mod{p}
+\end{align*}
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_5ac5df230edd1b24b2c3804691734e3baf9b8cf3.svg" alt="20230503132640-kleiner_satz_von_fermat_5ac5df230edd1b24b2c3804691734e3baf9b8cf3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" alt="20230503132640-kleiner_satz_von_fermat_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" alt="20230503132640-kleiner_satz_von_fermat_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" class="org-svg" />
+Sei \(m \in \mathbb{Z}_{\geq 2}\) und \(a \in \mathbb{Z}\) mit \(\mathrm{gcd}(a,m) = 1\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_338389dc1749b88b3eaac1d00318cc93f5e6c828.svg" alt="20230503132640-kleiner_satz_von_fermat_338389dc1749b88b3eaac1d00318cc93f5e6c828.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a^{\phi(m)} = 1 \mod{m}
+\end{align*}
 <p>
 <a href="20230503124954-eulersche_phi_funktion.html#ID-58c2b701-cb10-4918-89d7-cbdef5169ca1">Eulersche Phi Funktion</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgda0d621" class="outline-2">
-<h2 id="orgda0d621"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org107a7be" class="outline-2">
+<h2 id="org107a7be"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org165262a" class="outline-3">
-<h3 id="org165262a"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org5a64ac0" class="outline-3">
+<h3 id="org5a64ac0"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach der Aussage über die <a href="20230503125137-einheit_und_großter_gemeinsamer_teiler.html#ID-f4900727-dc4d-40b0-bf51-27f2a69d1f27">Einheit und der größter gemeinsamer Teiler im Restklassenring</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_b7137465a18b52660d2fdd90f3ea11ccd03fe8ef.svg" alt="20230503132640-kleiner_satz_von_fermat_b7137465a18b52660d2fdd90f3ea11ccd03fe8ef.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{gcd}(a,m) = 1 \Leftrightarrow \overline{a} \in \left(\mathbb{Z} / m \mathbb{Z}\right)^{\times}
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_0c6e5f7727f2d66f6a12acf80038f9540fc8da68.svg" alt="20230503132640-kleiner_satz_von_fermat_0c6e5f7727f2d66f6a12acf80038f9540fc8da68.svg" class="org-svg" /> folgt nach Definition:
+Für \(g = (\mathbb{Z} /m \mathbb{Z})^{\times}\) folgt nach Definition:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_24dc0b1e147da9d3fcdecd91a0d63a7dfbd3da61.svg" alt="20230503132640-kleiner_satz_von_fermat_24dc0b1e147da9d3fcdecd91a0d63a7dfbd3da61.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{a}^{\phi(m)} = \overline{1} \in  (\mathbb{Z} / m \mathbb{Z})^{\times}
+\end{align*}
 <p>
 d.h. es f
 </p>
@@ -76,18 +90,15 @@ satz von lagrange
 </p>
 </div>
 </div>
-<div id="outline-container-org26765df" class="outline-3">
-<h3 id="org26765df"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org58b1be1" class="outline-3">
+<h3 id="org58b1be1"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Folgt aus der Aussage über die <a href="20230503125400-eulersche_phi_funktion_fur_primzahlpotenzen.html#ID-f9dea7fb-190b-4ea3-a1c1-b69d0bcc1692">eulersche Phi Funktion für Primzahlpotenzen</a> :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503132640-kleiner_satz_von_fermat_ab6743c8f4c5958df03f4838ee0e480d9993e61c.svg" alt="20230503132640-kleiner_satz_von_fermat_ab6743c8f4c5958df03f4838ee0e480d9993e61c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi(p) = p - 1
+\end{align*}
 </div>
 </div>
 </div>

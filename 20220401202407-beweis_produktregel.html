@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Produktregel</h1>
-<div id="outline-container-org18c400c" class="outline-2">
-<h2 id="org18c400c"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-org240f8e1" class="outline-2">
+<h2 id="org240f8e1"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220401202407-beweis_produktregel_daecceafbd5a8be93192b895dd702d65191b51b4.svg" alt="20220401202407-beweis_produktregel_daecceafbd5a8be93192b895dd702d65191b51b4.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220401202407-beweis_produktregel_4fe69c6b532cc2fc10ed2a76b84373dc298cdf08.svg" alt="20220401202407-beweis_produktregel_4fe69c6b532cc2fc10ed2a76b84373dc298cdf08.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g'(x)  \coloneqq& \lim_{\varepsilon \to 0}\left(\frac{g(x + \varepsilon) - g(x)}{\varepsilon}\right) \\
+h'(x)  \coloneqq& \lim_{\varepsilon \to 0}\left(\frac{h(x + \varepsilon) - h(x)}{\varepsilon}\right)
+\end{align*}
+\begin{align*}
+f'(x) =& \lim_{\varepsilon \to 0}\left(\frac{f(x + \varepsilon) - f(x)}{\varepsilon}\right) \\
+=& \lim_{\varepsilon \to 0}\left(\frac{g(x+\varepsilon) \cdot h(x+\varepsilon) - g(x) \cdot h(x)}{\varepsilon }\right) \\
+=& \lim_{\varepsilon \to 0}\left(\frac{g(x+\varepsilon) \cdot h(x+\varepsilon) - g(x) \cdot h(x) + g(x)h(x+\varepsilon) - g(x)h(x+\varepsilon)}{\varepsilon }\right) \\
+=& \lim_{\varepsilon \to 0}\left(\frac{h(x+\varepsilon) \cdot \left(g(x+\varepsilon) - g(x)\right) + g(x)\cdot\left(h(x+\varepsilon) - h(x)\right)}{\varepsilon }\right) \\
+=& \lim_{\varepsilon \to 0}\left(h(x+\varepsilon\right)) \cdot \lim_{\varepsilon \to 0}\left(\frac{g(x+\varepsilon) - g(x)}{\varepsilon}\right) + \lim_{\varepsilon \to 0}\left(g(x\right)) \lim_{\varepsilon \to 0}\left(\frac{h(x+\varepsilon) - h(x)}{\varepsilon}\right) \\
+=& h(x) \cdot g'(x) + g(x) \cdot h'(x)
+\end{align*}
 </div>
 </div>
 </div>

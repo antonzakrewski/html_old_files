@@ -9,104 +9,123 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Basis for a subspace topology</h1>
-<div id="outline-container-orgb247d16" class="outline-2">
-<h2 id="orgb247d16"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-org680fa85" class="outline-2">
+<h2 id="org680fa85"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230410230752-basis_for_a_subspace_topology_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230410230752-basis_for_a_subspace_topology_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> a <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a> for <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230410230752-basis_for_a_subspace_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Suppose further <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" alt="20230410230752-basis_for_a_subspace_topology_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" class="org-svg" /> with the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(\mathcal{B}\) a <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a> for \(X\).
+Suppose further \(Y \subseteq X\) with the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
 Then 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_5931e662c77f36899a089803c47ef989c1295923.svg" alt="20230410230752-basis_for_a_subspace_topology_5931e662c77f36899a089803c47ef989c1295923.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{B}_Y =& \{B \cap Y \vert B \in \mathcal{B}\}
+\end{align*}
 <p>
 is a <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org8ef3acc" class="outline-2">
-<h2 id="org8ef3acc"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgb69ba98" class="outline-2">
+<h2 id="orgb69ba98"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org932c0a8" class="outline-3">
-<h3 id="org932c0a8"><span class="section-number-3">2.1.</span> <a href="20230312232134-bedingung_fur_eine_basis_einer_topologie.html#ID-b8f08e4a-d1b7-40ba-a9e7-aa6757d00f13">Bedingung für eine Basis einer Topologie</a></h3>
+<div id="outline-container-org3b606a7" class="outline-3">
+<h3 id="org3b606a7"><span class="section-number-3">2.1.</span> <a href="20230312232134-bedingung_fur_eine_basis_einer_topologie.html#ID-b8f08e4a-d1b7-40ba-a9e7-aa6757d00f13">Bedingung für eine Basis einer Topologie</a></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgd0c8790" class="outline-4">
-<h4 id="orgd0c8790"><span class="section-number-4">2.1.1.</span> a)</h4>
+<div id="outline-container-org5a9585a" class="outline-4">
+<h4 id="org5a9585a"><span class="section-number-4">2.1.1.</span> a)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 follows from <a href="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt.html#ID-2365d754-a288-4146-9866-3d818afa661b">Allgemeine Distributivgesetz für Vereinigung und Schnitt</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_bb74b4bccd88200e9f64c2ace7f3cf1e98b3eb83.svg" alt="20230410230752-basis_for_a_subspace_topology_bb74b4bccd88200e9f64c2ace7f3cf1e98b3eb83.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{B \in \mathcal{B}_Y} B =& \bigcup_{B \in \mathcal{B}} (B \cap Y) \\
+=& (\bigcup_{B \in \mathcal{B}} B ) \cap Y \\
+=& X \cap Y \\
+=& Y
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbb41759" class="outline-4">
-<h4 id="orgbb41759"><span class="section-number-4">2.1.2.</span> b)</h4>
+<div id="outline-container-orgb1418d5" class="outline-4">
+<h4 id="orgb1418d5"><span class="section-number-4">2.1.2.</span> b)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_babf3feac3dcc03f21177ff965a693b90809f013.svg" alt="20230410230752-basis_for_a_subspace_topology_babf3feac3dcc03f21177ff965a693b90809f013.svg" class="org-svg" />:
-Then there exist <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_7d5ccc27d4ce7a032f453b9250489c869e915838.svg" alt="20230410230752-basis_for_a_subspace_topology_7d5ccc27d4ce7a032f453b9250489c869e915838.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_fb7751d750ff74683f060552c37d74abf6443541.svg" alt="20230410230752-basis_for_a_subspace_topology_fb7751d750ff74683f060552c37d74abf6443541.svg" class="org-svg" />
-furthermore there exist <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_81d4f328e20a2c3581667a98b2fedf519c27d14c.svg" alt="20230410230752-basis_for_a_subspace_topology_81d4f328e20a2c3581667a98b2fedf519c27d14c.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_51706f84c4931f105ef06fc6121b42a48dc56216.svg" alt="20230410230752-basis_for_a_subspace_topology_51706f84c4931f105ef06fc6121b42a48dc56216.svg" class="org-svg" />.
-Therefore we can construct with <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_95ba6c62f23866828c47005d8bf4839790cca37b.svg" alt="20230410230752-basis_for_a_subspace_topology_95ba6c62f23866828c47005d8bf4839790cca37b.svg" class="org-svg" />:
+Let \(B_Y,B_Y' \in \mathcal{B}_Y\):
+Then there exist \(B,B' \in \mathcal{B}\) such that \(B \cap Y = B_Y, B' \cap Y = B_Y'\)
+furthermore there exist \(B_i \in \mathcal{B}\) such that \(\bigcup_{i \in I} B_i = B \cap B'\).
+Therefore we can construct with \(B_{i,Y}  \coloneqq B_i \cap Y \in \mathcal{B}_Y\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_c56585628486a933011fa33f8ef625493263eed0.svg" alt="20230410230752-basis_for_a_subspace_topology_c56585628486a933011fa33f8ef625493263eed0.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{i \in I} B_{i,Y} =& \bigcup_{i \in I} (B_i \cap Y) \\
+=& (\bigcup_{i \in I} B_i) \cap Y \\
+=& (B \cap B') \cap Y \\
+=& (B \cap Y) \cap (B' \cap Y)
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-orgab670fa" class="outline-3">
-<h3 id="orgab670fa"><span class="section-number-3">2.2.</span> equal <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a></h3>
+<div id="outline-container-org5784777" class="outline-3">
+<h3 id="org5784777"><span class="section-number-3">2.2.</span> equal <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a></h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org4166806" class="outline-4">
-<h4 id="org4166806"><span class="section-number-4">2.2.1.</span> a)</h4>
+<div id="outline-container-orgb660565" class="outline-4">
+<h4 id="orgb660565"><span class="section-number-4">2.2.1.</span> a)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_876eb8cd777f0f689100cd6185ea4f5d955e8985.svg" alt="20230410230752-basis_for_a_subspace_topology_876eb8cd777f0f689100cd6185ea4f5d955e8985.svg" class="org-svg" /> an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> in <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230410230752-basis_for_a_subspace_topology_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" />, then there exists an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> set <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" alt="20230410230752-basis_for_a_subspace_topology_f5c69d4d7eda339fab42a24695cb8c320ad91bdf.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_78aa1c7e4ab81bc625fa7e6343d6a016d87bc05f.svg" alt="20230410230752-basis_for_a_subspace_topology_78aa1c7e4ab81bc625fa7e6343d6a016d87bc05f.svg" class="org-svg" />
-It follows, that there exist <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_81d4f328e20a2c3581667a98b2fedf519c27d14c.svg" alt="20230410230752-basis_for_a_subspace_topology_81d4f328e20a2c3581667a98b2fedf519c27d14c.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_06d4861060e4026878e0a2851d3d7c96b50eced7.svg" alt="20230410230752-basis_for_a_subspace_topology_06d4861060e4026878e0a2851d3d7c96b50eced7.svg" class="org-svg" />.
+Let \(O_y \subseteq Y\) an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> in \(Y\), then there exists an <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> set \(O_x\) such that \(Y \cap O_x = O_y\)
+It follows, that there exist \(B_i \in \mathcal{B}\) such that \(\bigcup_{i \in I} B_i = O_X\).
 Furthermore
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_210736d5255c2663802082bfabaadab4cb3a02ff.svg" alt="20230410230752-basis_for_a_subspace_topology_210736d5255c2663802082bfabaadab4cb3a02ff.svg" class="org-svg" />
-</span>
+\begin{align*}
+O_y =& O_x \cap Y \\
+=& ( \bigcup_{i \in I} B_i) \cap Y \\
+=& \bigcup_{i \in I} (B_i \cap Y)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9313397" class="outline-4">
-<h4 id="org9313397"><span class="section-number-4">2.2.2.</span> b)</h4>
+<div id="outline-container-org8f239ac" class="outline-4">
+<h4 id="org8f239ac"><span class="section-number-4">2.2.2.</span> b)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_e61086a41298c71a75d36428ec39d226e6c59a3c.svg" alt="20230410230752-basis_for_a_subspace_topology_e61086a41298c71a75d36428ec39d226e6c59a3c.svg" class="org-svg" /> be a <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a> of <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> from <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_da641ce57398c5a35e479eb47964525410d27143.svg" alt="20230410230752-basis_for_a_subspace_topology_da641ce57398c5a35e479eb47964525410d27143.svg" class="org-svg" /> with <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_f3f89ad7f62d18166084e8b79dccb2cea5ca69dc.svg" alt="20230410230752-basis_for_a_subspace_topology_f3f89ad7f62d18166084e8b79dccb2cea5ca69dc.svg" class="org-svg" />
+Let \(\bigcup_{i \in I} B_{i,Y}\) be a <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a> of <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> from \(\mathcal{B}_Y\) with \(B_{i,y} := B_i \cap Y\)
 Then
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_4474c908b114795fb8b0df99afa00100b0f7ae0c.svg" alt="20230410230752-basis_for_a_subspace_topology_4474c908b114795fb8b0df99afa00100b0f7ae0c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in I} B_{i,Y} =& \bigcup_{i \in I} (B_i  \cap Y) \\
+=& (\bigcup_{i \in I} B_i ) \cap Y \\
+\end{align*}
 <p>
-We know, that <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_e4dc2a0bd0317c02b6041abb0148d6a4bda2c237.svg" alt="20230410230752-basis_for_a_subspace_topology_e4dc2a0bd0317c02b6041abb0148d6a4bda2c237.svg" class="org-svg" /> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> in <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230410230752-basis_for_a_subspace_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> and therefore <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_c3a686b35c212ca5a3945f34eadbf887ec2c6d62.svg" alt="20230410230752-basis_for_a_subspace_topology_c3a686b35c212ca5a3945f34eadbf887ec2c6d62.svg" class="org-svg" /> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> in <img src="file:///home/anton/html/ltximg/20230410230752-basis_for_a_subspace_topology_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230410230752-basis_for_a_subspace_topology_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" />
+We know, that \(\bigcup_{i \in I} B_i\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> in \(X\) and therefore \(\bigcup_{i \in I} B_i \cap Y\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> in \(Y\)
 </p>
 </div>
 </div>

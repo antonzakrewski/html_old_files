@@ -9,45 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakteristische Polynom und Multiplikation</h1>
-<div id="outline-container-org8b4ac76" class="outline-2">
-<h2 id="org8b4ac76"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3d9ed03" class="outline-2">
+<h2 id="org3d9ed03"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_309c90c996af7690be5916daf81868d23c400ddc.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_309c90c996af7690be5916daf81868d23c400ddc.svg" class="org-svg" />, so gilt:
+Sei \(A \in K^{n \times n}\) und \(\lambda \in K^{\times}\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_eef4b947fbaad59d9fc9e3619b3f8aba6d04b5d8.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_eef4b947fbaad59d9fc9e3619b3f8aba6d04b5d8.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{\lambda A} = \lambda^n \cdot f_A(\frac{x}{\lambda})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfacbcd7" class="outline-2">
-<h2 id="orgfacbcd7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge26545b" class="outline-2">
+<h2 id="orge26545b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_192ae345ccbaab745cdf6a35e7daf6f7ca67ac9f.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_192ae345ccbaab745cdf6a35e7daf6f7ca67ac9f.svg" class="org-svg" />, d.h. es gilt:
+Nach Annahme gilt \(\lambda \neq 0\), d.h. es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_4028f8f5120761864d014f70b1a34055d6d5224e.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_4028f8f5120761864d014f70b1a34055d6d5224e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(xE - \lambda A) = \det(\lambda (\left(\frac{x}{\lambda}\right)E - A\right))
+\end{align*}
 <p>
-Durch <img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> faches Anwenden der <a href="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile.html#ID-e423112a-0525-4274-a068-decaeede7aea">Linearität der Determinante bezüglich einer Zeile</a> und Substitution mit <img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_7d0de53dd885f7353c23730dac5e3b2cf3803006.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_7d0de53dd885f7353c23730dac5e3b2cf3803006.svg" class="org-svg" /> folgt dann:
+Durch \(n\) faches Anwenden der <a href="20221225235724-linearitat_der_determinante_bezuglich_einer_zeile.html#ID-e423112a-0525-4274-a068-decaeede7aea">Linearität der Determinante bezüglich einer Zeile</a> und Substitution mit \(x'  \coloneqq \frac{x}{\lambda}\) folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164720-charakteristische_polynom_und_multiplikation_c224803f1df6b052df8826bf7ee14e1fdeb4a490.svg" alt="20230428164720-charakteristische_polynom_und_multiplikation_c224803f1df6b052df8826bf7ee14e1fdeb4a490.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(\lambda (\left(\frac{x}{\lambda}\right)E - A)) =& \lambda^n \cdot \det(x'E - A) \\
+=& \lambda^n \cdot f_A(x') \\
+=& \lambda^n \cdot f_A(\frac{x}{\lambda})
+\end{align*}
 </div>
 </div>
 </div>

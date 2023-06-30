@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">mehrdimensionale Riemannsche Integral</h1>
-<div id="outline-container-org285f9b6" class="outline-2">
-<h2 id="org285f9b6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgef2ef4c" class="outline-2">
+<h2 id="orgef2ef4c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221113211400-mehrdimensionale_riemannsche_integral_466fd9c5905fb2c6733104c8a77d20ab61612751.svg" alt="20221113211400-mehrdimensionale_riemannsche_integral_466fd9c5905fb2c6733104c8a77d20ab61612751.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass <img src="file:///home/anton/html/ltximg/20221113211400-mehrdimensionale_riemannsche_integral_e87c4f5fb6efe467ed3f68c38ec0985121b7a397.svg" alt="20221113211400-mehrdimensionale_riemannsche_integral_e87c4f5fb6efe467ed3f68c38ec0985121b7a397.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221113211400-mehrdimensionale_riemannsche_integral_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20221113211400-mehrdimensionale_riemannsche_integral_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> <a href="20221014115636-integrierbar.html#ID-1d4ac6ca-0c1b-49b9-86f4-ee43e9b8a401">integrierbar</a> ist.
+Sei \(f: \mathbb{R} \rightarrow \mathbb{R}^n\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass \(\pi_i(f) \mathbb{R} \rightarrow \mathbb{R}\) für \(i \in \{1,...,n\}\) <a href="20221014115636-integrierbar.html#ID-1d4ac6ca-0c1b-49b9-86f4-ee43e9b8a401">integrierbar</a> ist.
 Dann ist das Integral definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221113211400-mehrdimensionale_riemannsche_integral_d7f3e173b39e778981fadaff0ac127a4869cb2b7.svg" alt="20221113211400-mehrdimensionale_riemannsche_integral_d7f3e173b39e778981fadaff0ac127a4869cb2b7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} v(t) \mathrm{d}t  \coloneqq \sum_{i=1}^{n} \int_{a}^{b} \pi_i(f(t)) \mathrm{d}t e_i 
+\end{align*}
 <p>
-für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20221113211400-mehrdimensionale_riemannsche_integral_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" alt="20221113211400-mehrdimensionale_riemannsche_integral_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" class="org-svg" />
+für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(e_i\)
 </p>
 </div>
 </div>

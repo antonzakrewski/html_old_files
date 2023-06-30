@@ -9,36 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Image of a full or faithful Functor as a Category</h1>
-<div id="outline-container-orgcc98729" class="outline-2">
-<h2 id="orgcc98729"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orgbe34505" class="outline-2">
+<h2 id="orgbe34505"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-the <a href="20230402194515-image_of_a_functor.html#ID-70ce7618-7873-4fc4-a139-a84fcda6d996">Image</a> of a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> <img src="file:///home/anton/html/ltximg/20230402205120-image_of_a_full_or_faithful_functor_as_a_category_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20230402205120-image_of_a_full_or_faithful_functor_as_a_category_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> for <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> is a <a href="20220824221623-unterkategorie.html#ID-2165c92b-8025-4134-b3b1-4d523a8795a4">subcategory</a> if one of the following statements hold true:
+the <a href="20230402194515-image_of_a_functor.html#ID-70ce7618-7873-4fc4-a139-a84fcda6d996">Image</a> of a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> \(F: \mathcal{C} \rightarrow \mathcal{D}\) for <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> is a <a href="20220824221623-unterkategorie.html#ID-2165c92b-8025-4134-b3b1-4d523a8795a4">subcategory</a> if one of the following statements hold true:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230402205120-image_of_a_full_or_faithful_functor_as_a_category_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230402205120-image_of_a_full_or_faithful_functor_as_a_category_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> is a <a href="20230301211925-voller_funktor.html#ID-300944ac-0e6d-4b27-99f1-176a261999aa">full functor</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230402205120-image_of_a_full_or_faithful_functor_as_a_category_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230402205120-image_of_a_full_or_faithful_functor_as_a_category_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> is "injective for the <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a>" (?)</li>
+<li>\(F\) is a <a href="20230301211925-voller_funktor.html#ID-300944ac-0e6d-4b27-99f1-176a261999aa">full functor</a></li>
+<li>\(F\) is "injective for the <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a>" (?)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf07055a" class="outline-2">
-<h2 id="orgf07055a"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org71ef84e" class="outline-2">
+<h2 id="org71ef84e"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org49bb95e" class="outline-3">
-<h3 id="org49bb95e"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org377ce58" class="outline-3">
+<h3 id="org377ce58"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 true by definition
 </p>
 </div>
 </div>
-<div id="outline-container-orgad55f62" class="outline-3">
-<h3 id="orgad55f62"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org81fb426" class="outline-3">
+<h3 id="org81fb426"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 existence of composition &lt;todo&gt;

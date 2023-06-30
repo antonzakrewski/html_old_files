@@ -9,42 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">totale Differential der Determinante</h1>
-<div id="outline-container-org506b7f5" class="outline-2">
-<h2 id="org506b7f5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org97dd24e" class="outline-2">
+<h2 id="org97dd24e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230602160655-totale_differential_der_determinante_1548bf723ff454ce625f043d932d7ae11a69be62.svg" alt="20230602160655-totale_differential_der_determinante_1548bf723ff454ce625f043d932d7ae11a69be62.svg" class="org-svg" /> als <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> und die <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinantenfunktion</a> 
+Sei \(\mathbb{R}^{n \times n}\) als <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> und die <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinantenfunktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230602160655-totale_differential_der_determinante_50ef492d2c63d9f60894541053e4a31d56325d7a.svg" alt="20230602160655-totale_differential_der_determinante_50ef492d2c63d9f60894541053e4a31d56325d7a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\det: \mathbb{R}^{n \times n} \rightarrow \mathbb{R}
+\end{align*}
 <p>
 gegeben.
 Dann ist die <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> mit <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totalem Differential</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230602160655-totale_differential_der_determinante_cf20a4cae19a8c6e1c65fcda4d45a139aee569a3.svg" alt="20230602160655-totale_differential_der_determinante_cf20a4cae19a8c6e1c65fcda4d45a139aee569a3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+(\mathrm{d} \det)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgaf0ebb8" class="outline-2">
-<h2 id="orgaf0ebb8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb4fb71d" class="outline-2">
+<h2 id="orgb4fb71d"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">monoton wachsende reelle Funktion</h1>
-<div id="outline-container-org868bcfe" class="outline-2">
-<h2 id="org868bcfe"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgc51055d" class="outline-2">
+<h2 id="orgc51055d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20220820235114-monoton_zunehmende_funktion_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" alt="20220820235114-monoton_zunehmende_funktion_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220820235114-monoton_zunehmende_funktion_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20220820235114-monoton_zunehmende_funktion_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> ist monoton wachsend, falls für <img src="file:///home/anton/html/ltximg/20220820235114-monoton_zunehmende_funktion_bae2a93340874897c57389d23e2cbfe5a73146f4.svg" alt="20220820235114-monoton_zunehmende_funktion_bae2a93340874897c57389d23e2cbfe5a73146f4.svg" class="org-svg" /> gilt:
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: D \rightarrow \mathbb{R}\) mit \(D \subseteq \mathbb{R}\) ist monoton wachsend, falls für \(x,y \in D\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220820235114-monoton_zunehmende_funktion_295f2650c759ebd9ea1f41087e6f598f102188a1.svg" alt="20220820235114-monoton_zunehmende_funktion_295f2650c759ebd9ea1f41087e6f598f102188a1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x,y \in D : x < y \Rightarrow f(x) \leq f(y)
+\end{align*}
 </div>
 </div>
 </div>

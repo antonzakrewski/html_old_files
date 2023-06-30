@@ -9,51 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Riemannscher Umordnungssatz</h1>
-<div id="outline-container-org9193899" class="outline-2">
-<h2 id="org9193899"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2d0499e" class="outline-2">
+<h2 id="org2d0499e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221216221056-riemannscher_umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>, aber nicht <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a>.
+Sei \(\sum_{n=1}^{\infty} a_n\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, welche <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>, aber nicht <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a>.
 Dann folgt, dass diese <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <a href="20221216220937-bedingte_konvergenz_einer_reihe.html#ID-b10b92ad-0fce-4403-b5df-08897574eac3">bedingt konvergiert</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orge5d774f" class="outline-2">
-<h2 id="orge5d774f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5537196" class="outline-2">
+<h2 id="org5537196"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Da <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221216221056-riemannscher_umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> nicht <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut konvergiert</a>, folgt:
+Da \(\sum_{n=1}^{\infty} a_n\) nicht <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut konvergiert</a>, folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_0bb02e3f51b2ae5fd64f5bec3aaa5eb66439b68d.svg" alt="20221216221056-riemannscher_umordnungssatz_0bb02e3f51b2ae5fd64f5bec3aaa5eb66439b68d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=1}^{\infty} \vert a_n \vert = + \infty
+\end{align*}
 <p>
 Zudem gilt, dass die Teilfolgen bestehend aus den positiven und negativen summanden <a href="20220123204533-betsimmte_divergenz.html#ID-bb9c233f-4de3-4e2f-85b0-9423df2bb2f7">bestimmte Divergieren</a> müssen, weil es sonst ein Widerspruch zur Konvergenz wäre.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_a50b8c3a365e7fbff0ef922d8bcb490650e2c587.svg" alt="20221216221056-riemannscher_umordnungssatz_a50b8c3a365e7fbff0ef922d8bcb490650e2c587.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=1}^{\infty} \mathrm{max}(a_n,0) = + \infty \\
+\sum_{n=1}^{\infty} \mathrm{min}(a_n,0) = - \infty
+\end{align*}
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_27637f7b7eb0817465ca4235186e71dc4083a4a1.svg" alt="20221216221056-riemannscher_umordnungssatz_27637f7b7eb0817465ca4235186e71dc4083a4a1.svg" class="org-svg" /> die <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> negativer zahlen und <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_ad373528a3efb671b51e0a29a8f5d479f19c1c0a.svg" alt="20221216221056-riemannscher_umordnungssatz_ad373528a3efb671b51e0a29a8f5d479f19c1c0a.svg" class="org-svg" /> die <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> nichtnegativer Zahlen, $ {n(a<sub>&sigma;</sub>)}}$ bzw. <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_0d2cb423e2a78671cb1fadb8a26df2660aa0a53c.svg" alt="20221216221056-riemannscher_umordnungssatz_0d2cb423e2a78671cb1fadb8a26df2660aa0a53c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>, welche auf das nächste, noch unverwendete Folgenglied von $ <sub>n</sub>$ bzw. <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_ad373528a3efb671b51e0a29a8f5d479f19c1c0a.svg" alt="20221216221056-riemannscher_umordnungssatz_ad373528a3efb671b51e0a29a8f5d479f19c1c0a.svg" class="org-svg" /> abbildet  und sei <img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_9ae54de31acaebb825deddadba06044ee86c1733.svg" alt="20221216221056-riemannscher_umordnungssatz_9ae54de31acaebb825deddadba06044ee86c1733.svg" class="org-svg" /> ein beliebiger Grenzwert
+Sei \(\overline{a_n}\) die <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> negativer zahlen und \(a_n'\) die <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> nichtnegativer Zahlen, $ \overline{n(a<sub>&sigma;</sub>)}}$ bzw. \(n(a_{\sigma})'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>, welche auf das nächste, noch unverwendete Folgenglied von $ \overline{a}<sub>n</sub>$ bzw. \(a_n'\) abbildet  und sei \(a \in \mathbb{R}\) ein beliebiger Grenzwert
 dann konstruiere man die Umordnung folgendermaßen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221216221056-riemannscher_umordnungssatz_a556f6cf51b85131d6354eef8e15980d6b6058ad.svg" alt="20221216221056-riemannscher_umordnungssatz_a556f6cf51b85131d6354eef8e15980d6b6058ad.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_{\sigma(k)} =& 
+\begin{cases}
+\overline{n(a_{\sigma(k)})} & \mbox{if } \sum_{n=1}^{k-1} a_{\sigma(n)} \geq a \\
+n'(a_{\sigma(k)}) & \mbox{else } \\ 
+\end{cases}
+\end{align*}
 
 <p>
 Ebenso lässt sich eine <a href="20221216220908-umordnung_einer_reihe.html#ID-a28ce676-e2d8-4d30-831a-4ad906b92b37">Umordnung</a> konstruieren, welche <a href="20220123204533-betsimmte_divergenz.html#ID-bb9c233f-4de3-4e2f-85b0-9423df2bb2f7">bestimmt divergiert</a>: 

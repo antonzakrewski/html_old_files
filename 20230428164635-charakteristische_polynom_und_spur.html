@@ -9,75 +9,90 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakteristische Polynom und Spur</h1>
-<div id="outline-container-org6c83241" class="outline-2">
-<h2 id="org6c83241"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org04028ec" class="outline-2">
+<h2 id="org04028ec"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_30b1195265ce344931dd2639f70b73a69cdb32d2.svg" alt="20230428164635-charakteristische_polynom_und_spur_30b1195265ce344931dd2639f70b73a69cdb32d2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_d77687f6d7b5dfc4ccf76c56598a877ea710010c.svg" alt="20230428164635-charakteristische_polynom_und_spur_d77687f6d7b5dfc4ccf76c56598a877ea710010c.svg" class="org-svg" /> so hat das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a> die Form:
+Sei \(A = (\alpha_{ij}) \in K^{n \times n}\) mit \(n \geq 2\) so hat das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a> die Form:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_24db7ee3afd4adc2417018d412c80a3c9634b85f.svg" alt="20230428164635-charakteristische_polynom_und_spur_24db7ee3afd4adc2417018d412c80a3c9634b85f.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^n - \mathrm{Tr}(A) x^{n-1} + ... + (-1)^{n} \mathrm{det}(A)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd9499ac" class="outline-2">
-<h2 id="orgd9499ac"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcbcd0a1" class="outline-2">
+<h2 id="orgcbcd0a1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der Definition der <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_33f21d80c8beba1e9039a60a775bbbad0c9124fc.svg" alt="20230428164635-charakteristische_polynom_und_spur_33f21d80c8beba1e9039a60a775bbbad0c9124fc.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_A =& \sum_{\tau \in S_n}^{} \mathrm{sgn}(\tau) \prod_{i=1}^{n} \alpha'_{i \tau(i)} \\
+=& \sum_{i=0}^{n} \beta_i X^i
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org49fce9f" class="outline-3">
-<h3 id="org49fce9f"><span class="section-number-3">2.1.</span> n</h3>
+<div id="outline-container-org8f232c1" class="outline-3">
+<h3 id="org8f232c1"><span class="section-number-3">2.1.</span> n</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_cc47bf2e7b8726a5bb156ff7e4d2e2ee1bd6bdaf.svg" alt="20230428164635-charakteristische_polynom_und_spur_cc47bf2e7b8726a5bb156ff7e4d2e2ee1bd6bdaf.svg" class="org-svg" />, da <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" alt="20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_780646bffb2933ef718c0af69b2dd23593bde195.svg" alt="20230428164635-charakteristische_polynom_und_spur_780646bffb2933ef718c0af69b2dd23593bde195.svg" class="org-svg" /> sein muss, damit der Grad des <a href="20230226185157-monom.html#ID-c82cd1df-eeac-46eb-954b-e945e25aad8e">Monom</a> gleich <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230428164635-charakteristische_polynom_und_spur_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> ist.
+Dabei ist \(\beta_n = 1\), da \(\tau = \mathrm{id}_{}\) und \(\mathrm{sgn}(\tau) = 1\) sein muss, damit der Grad des <a href="20230226185157-monom.html#ID-c82cd1df-eeac-46eb-954b-e945e25aad8e">Monom</a> gleich \(n\) ist.
 Daraus folgt durch ausmultiplizieren von $&prod;<sub>i=1</sub><sup>n</sup> (x - &alpha;<sub>i,i</sub>) = x<sup>n</sup> + &#x2026;$.
 </p>
 </div>
 </div>
-<div id="outline-container-org83b9d9b" class="outline-3">
-<h3 id="org83b9d9b"><span class="section-number-3">2.2.</span> n-1</h3>
+<div id="outline-container-org1192375" class="outline-3">
+<h3 id="org1192375"><span class="section-number-3">2.2.</span> n-1</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Für den Koeffizienten <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_723349217bbc5eb7489fb9a63bf7391b61cdde98.svg" alt="20230428164635-charakteristische_polynom_und_spur_723349217bbc5eb7489fb9a63bf7391b61cdde98.svg" class="org-svg" /> gilt, dass <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" alt="20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" class="org-svg" /> sein muss, da <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> Zahlen auf sich selbst abgebildet werden müssen, um Grad <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> zu erreichen.
-Ferner folgt dann, da <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" alt="20230428164635-charakteristische_polynom_und_spur_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" class="org-svg" /> eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a>`ist, dass <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" alt="20230428164635-charakteristische_polynom_und_spur_2711eb23bee403e957c5cc98fd7d6e7fa4e3338c.svg" class="org-svg" /> gelten muss.
-Man betrachte wieder <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_6ae65ccc9dae4a5980457679590b1ab51d3ba62f.svg" alt="20230428164635-charakteristische_polynom_und_spur_6ae65ccc9dae4a5980457679590b1ab51d3ba62f.svg" class="org-svg" />: Durch Ausmultiplizieren folgt, dass genau ein Faktor <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_5c8c0bc557c252fa0ed53f2c5428ecb9088ac523.svg" alt="20230428164635-charakteristische_polynom_und_spur_5c8c0bc557c252fa0ed53f2c5428ecb9088ac523.svg" class="org-svg" /> gewählt wird und sonst <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230428164635-charakteristische_polynom_und_spur_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> mal <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230428164635-charakteristische_polynom_und_spur_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />, d.h. wir erhalten:
+Für den Koeffizienten \(\beta_{n-1}\) gilt, dass \(\tau = \mathrm{id}_{}\) sein muss, da \(n-1\) Zahlen auf sich selbst abgebildet werden müssen, um Grad \(n-1\) zu erreichen.
+Ferner folgt dann, da \(\tau\) eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a>`ist, dass \(\tau = \mathrm{id}_{}\) gelten muss.
+Man betrachte wieder \(\prod_{i=1}^n (x - \alpha_{i,i})\): Durch Ausmultiplizieren folgt, dass genau ein Faktor \(- \alpha_{i,i}\) gewählt wird und sonst \(n-1\) mal \(x\), d.h. wir erhalten:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_6e37b68e7dbcbb5d766aef79a710d332b99548fe.svg" alt="20230428164635-charakteristische_polynom_und_spur_6e37b68e7dbcbb5d766aef79a710d332b99548fe.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=1}^{n} -\alpha_{i,i} x^n =&  - \mathrm{Tr}(A)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org90a32c1" class="outline-3">
-<h3 id="org90a32c1"><span class="section-number-3">2.3.</span> 0</h3>
+<div id="outline-container-org1e0cc5a" class="outline-3">
+<h3 id="org1e0cc5a"><span class="section-number-3">2.3.</span> 0</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Hier gilt, dass man alle Permutationen durchgeht und bei den Fixpunkten beim Anwenden des Distributivgesetzes stets das <img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230428164635-charakteristische_polynom_und_spur_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> vermeidet
+Hier gilt, dass man alle Permutationen durchgeht und bei den Fixpunkten beim Anwenden des Distributivgesetzes stets das \(x\) vermeidet
 Damit erhält man:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428164635-charakteristische_polynom_und_spur_680d30e4bdb0722298159af7643ffa1d825a3804.svg" alt="20230428164635-charakteristische_polynom_und_spur_680d30e4bdb0722298159af7643ffa1d825a3804.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=1}^{n} \prod_{\tau \in S_n} \mathrm{sgn}(\tau) -\alpha_{i,\tau} =& (-1)^{n} \sum_{i=1}^{n}  \prod_{\tau \in S_n}  \mathrm{sgn}(\tau) \alpha_{i,\tau} 
+=& (-1)^{n} \det(A)
+\end{align*}
 </div>
 </div>
 </div>

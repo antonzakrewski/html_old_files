@@ -3,35 +3,62 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Urbilder abgeschlossene Mengen unter stetigen Abbildungen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Urbilder abgeschlossene Mengen unter stetigen Abbildungen</h1>
-<div id="outline-container-org9a982a9" class="outline-2">
-<h2 id="org9a982a9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgeee29c9" class="outline-2">
+<h2 id="orgeee29c9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 <li>Das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> einer <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen Menge</a> ist ebenfalls <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org99048f3" class="outline-2">
-<h2 id="org99048f3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6073e22" class="outline-2">
+<h2 id="org6073e22"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_95909d7484d0c88b24ee9525a95a624b096d6d6f.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_95909d7484d0c88b24ee9525a95a624b096d6d6f.svg" class="org-svg" /> eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> (<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_9f8bc185723f3900f42c039c3c406d42734b5455.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_9f8bc185723f3900f42c039c3c406d42734b5455.svg" class="org-svg" /> abgeschlossen <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> (<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>) und aus dem <a href="20230228120202-komplement_des_urbilds.html#ID-5a1d2f09-7dcf-42cd-ac7c-53c9d515fa6d">Komplement des Urbilds</a> folgt, dass <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_62f0c13b37fa0db3eb925ee2d064e724a37dd58b.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_62f0c13b37fa0db3eb925ee2d064e724a37dd58b.svg" class="org-svg" />
-Dabei sind <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_2183bb1fe1e435e82d90e8ee0c9b60663ee32553.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_2183bb1fe1e435e82d90e8ee0c9b60663ee32553.svg" class="org-svg" /> bzw. <img src="ltximg/20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_72124c8ef5ccc4665183ae40ee5f3595baf266ea.svg" alt="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen_72124c8ef5ccc4665183ae40ee5f3595baf266ea.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> (<a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a>) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> (vgl. Definition einer <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen Menge</a>)
+Sei \(A' \subseteq X'\) eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> (<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist \(f^{-1}[A']\) abgeschlossen <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> (<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>) und aus dem <a href="20230228120202-komplement_des_urbilds.html#ID-5a1d2f09-7dcf-42cd-ac7c-53c9d515fa6d">Komplement des Urbilds</a> folgt, dass \(f^{-1}[X' \setminus A'] = X \setminus f^{-1}[A']\)
+Dabei sind \(X' \setminus A'\) bzw. \(X \setminus f^{-1}[A']\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> (<a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a>) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> (vgl. Definition einer <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen Menge</a>)
 </p>
 </div>
 </div>

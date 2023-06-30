@@ -9,38 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Reduktion modulo p</h1>
-<div id="outline-container-org7f99911" class="outline-2">
-<h2 id="org7f99911"><span class="section-number-2">1.</span> These</h2>
+<div id="outline-container-orgb6ebf2a" class="outline-2">
+<h2 id="orgb6ebf2a"><span class="section-number-2">1.</span> These</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> eine Primzahl.
-suche <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_0f0f043bb6d8223c258a78b821beb8c6a870b08b.svg" alt="20230428154125-reduktion_modulo_p_0f0f043bb6d8223c258a78b821beb8c6a870b08b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_3d7b164d34c1a04f73193fa1a6762bf2e7f35a77.svg" alt="20230428154125-reduktion_modulo_p_3d7b164d34c1a04f73193fa1a6762bf2e7f35a77.svg" class="org-svg" />
+Sei \(p\) eine Primzahl.
+suche \(x,y \in \mathbb{Z}\) mit \(0 \leq x,y < p\)
 so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_7ea401bdce533246828a51f7f09421adf14affd9.svg" alt="20230428154125-reduktion_modulo_p_7ea401bdce533246828a51f7f09421adf14affd9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p \mid x^3 + Ax + B - y^2
+\end{align*}
 <p>
-bzw. Betrachten der Gleichung über <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_a6b6c92b47e1c7e68880915370749e7638671180.svg" alt="20230428154125-reduktion_modulo_p_a6b6c92b47e1c7e68880915370749e7638671180.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_c1f72bb8345f96cd3533f13b01158545bfe04423.svg" alt="20230428154125-reduktion_modulo_p_c1f72bb8345f96cd3533f13b01158545bfe04423.svg" class="org-svg" />
-und <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> teilt nicht die <a href="20230428154448-diskriminante_einer_elliptischen_kurve.html#ID-4a278f41-138b-4e57-b593-beb9c686c350">Diskriminante einer elliptischen Kurve</a> 
+bzw. Betrachten der Gleichung über \(F_p\) mit \(p > 3\)
+und \(p\) teilt nicht die <a href="20230428154448-diskriminante_einer_elliptischen_kurve.html#ID-4a278f41-138b-4e57-b593-beb9c686c350">Diskriminante einer elliptischen Kurve</a> 
 </p>
 
 <p>
 schranken für die anzahl der lösungen:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_832537b502d5b11eeff912cdab6349a30bd47e31.svg" alt="20230428154125-reduktion_modulo_p_832537b502d5b11eeff912cdab6349a30bd47e31.svg" class="org-svg" /> wegen anzahl verschiedener elemente</li>
+<li>\(p^2\) wegen anzahl verschiedener elemente</li>
 
-<li>setze <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230428154125-reduktion_modulo_p_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> fest, -&gt; gibt es passende <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230428154125-reduktion_modulo_p_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" /> ?
+<li>setze \(x\) fest, -&gt; gibt es passende \(y\) ?
 <ul class="org-ul">
-<li>in etwa <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230428154125-reduktion_modulo_p_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> punkte zu erwarten (und <img src="file:///home/anton/html/ltximg/20230428154125-reduktion_modulo_p_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" alt="20230428154125-reduktion_modulo_p_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" class="org-svg" />)</li>
+<li>in etwa \(p\) punkte zu erwarten (und \(\infty\))</li>
 <li>dabei: durch quadrieren =&gt; positive / negative lösung</li>
 <li>wegen endlich vielen: "hälfte hat keine, andere hälfte hat je zwei quadrate"</li>
 </ul></li>

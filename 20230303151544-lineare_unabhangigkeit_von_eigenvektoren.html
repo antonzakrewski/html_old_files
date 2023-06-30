@@ -9,69 +9,95 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">lineare Unabhängigkeit von Eigenvektoren für verschiedene Eigenwerte</h1>
-<div id="outline-container-org0042444" class="outline-2">
-<h2 id="org0042444"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf36087c" class="outline-2">
+<h2 id="orgf36087c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_ba513dd7b444279a0dbe8ed44fb057f22d089362.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_ba513dd7b444279a0dbe8ed44fb057f22d089362.svg" class="org-svg" />, so gilt für <a href="20220904160119-eigenvektor.html#ID-6ffc560a-28ea-4b47-81a9-5ce44feb02d1">Eigenvektoren</a> <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" class="org-svg" /> füw paarweise verschiedene <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_133ddb32515e2fc84273eb0d278463b07a0ec6cf.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_133ddb32515e2fc84273eb0d278463b07a0ec6cf.svg" class="org-svg" />, dass <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> sind.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in \mathrm{End}_{K}(V)\), so gilt für <a href="20220904160119-eigenvektor.html#ID-6ffc560a-28ea-4b47-81a9-5ce44feb02d1">Eigenvektoren</a> \(v_1,...,v_n\) füw paarweise verschiedene <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> \(\alpha_1,...,\alpha_n\), dass \(v_1,...,v_n\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> sind.
 </p>
 </div>
 </div>
-<div id="outline-container-orge1a526d" class="outline-2">
-<h2 id="orge1a526d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd156d78" class="outline-2">
+<h2 id="orgd156d78"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>:
 </p>
 </div>
-<div id="outline-container-orgcc312f1" class="outline-3">
-<h3 id="orgcc312f1"><span class="section-number-3">2.1.</span> induktionsanfang</h3>
+<div id="outline-container-org5702b6c" class="outline-3">
+<h3 id="org5702b6c"><span class="section-number-3">2.1.</span> induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Definition ist  <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_899dfa4733723f650da46ad973dfa5078cb44982.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_899dfa4733723f650da46ad973dfa5078cb44982.svg" class="org-svg" /> (vgl. <a href="20220904160119-eigenvektor.html#ID-6ffc560a-28ea-4b47-81a9-5ce44feb02d1">Eigenvektor</a>) und daraus folgt <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare Unabhängigkeit</a>.
+Nach Definition ist  \(v_1 \neq 0\) (vgl. <a href="20220904160119-eigenvektor.html#ID-6ffc560a-28ea-4b47-81a9-5ce44feb02d1">Eigenvektor</a>) und daraus folgt <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare Unabhängigkeit</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org214afc4" class="outline-3">
-<h3 id="org214afc4"><span class="section-number-3">2.2.</span> induktionsschritt</h3>
+<div id="outline-container-orgd5371db" class="outline-3">
+<h3 id="orgd5371db"><span class="section-number-3">2.2.</span> induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien für <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_beca644912e8ad7a1f00905b72ca078b44549831.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_beca644912e8ad7a1f00905b72ca078b44549831.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_f3e408bda93a922d3ce7209015ab5bb5c49b9c18.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_f3e408bda93a922d3ce7209015ab5bb5c49b9c18.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_679a43fa7ea950acfe969f51a06ab6165959ec8c.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_679a43fa7ea950acfe969f51a06ab6165959ec8c.svg" class="org-svg" /> so folgt:
+Seien für \(i \in \{1,...,n\}\) \(v_i\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>.
+Sei \(\beta_1,...,\beta_{n+1} \in K\) mit \(\sum_{i=1}^{n+1}  \beta_i v_1 = 0\) so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_c309f0c2db553d4b87473a4045b6b4c825a0682d.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_c309f0c2db553d4b87473a4045b6b4c825a0682d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& A(0) \\
+=& A( \sum_{i=1}^{n+1} \beta_i v_i) \\
+=& \sum_{i=1}^{n+1} A(\beta_i v_i) \\
+=& \sum_{i=1}^{n+1} \beta_i A(v_i) \\
+=& \sum_{i=1}^{n+1} \beta_i \alpha_i v_i \\
+=& \sum_{i=1}^{n+1} \alpha_i \beta_i v_i
+\end{align*}
 <p>
 Desweiteren gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_c3cbd729891312a520e5f5f455c91e969da4ec54.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_c3cbd729891312a520e5f5f455c91e969da4ec54.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& \alpha_{n+1} \cdot 0 \\
+=& \alpha_{n+1} \left( \sum_{i=1}^{n+1} \beta_i v_i \right) \\
+=& \sum_{i=1}^{n+1} \alpha_{n+1} \beta_i v_i
+\end{align*}
 <p>
 Daraus folgt für die Differenz:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_4d841485e16cbecd9dc6b9d6e79ec6e0988f1bde.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_4d841485e16cbecd9dc6b9d6e79ec6e0988f1bde.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& 0 - 0 \\
+=& \sum_{i=1}^{n+1} \alpha_i \beta_i v_i - \sum_{i=1}^{n+1} \alpha_{n+1} \beta_i v_i \\
+=& \sum_{i=1}^{n+1} (\alpha_i - \alpha_{n+1}) \beta_i v_i \\
+=& \sum_{i=1}^{n} (\alpha_i - \alpha_{n+1}) \beta_i v_i
+\end{align*}
 <p>
-Nach Induktionsannahme sind <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>.
-Damit gilt <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_5918285fe128dee47733975972361db9b251cefc.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_5918285fe128dee47733975972361db9b251cefc.svg" class="org-svg" /> 
-Da wir annehmen, dass die <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> paarweise verschieden sind, gilt insbesondere für <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_33001d5e7d7265f3004f56d289b2ebad28f5dbdb.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_33001d5e7d7265f3004f56d289b2ebad28f5dbdb.svg" class="org-svg" /> e <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_8f14333ffaf4e6315a4e897bcb85e9b9078bb9d2.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_8f14333ffaf4e6315a4e897bcb85e9b9078bb9d2.svg" class="org-svg" />.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_9f5d6fbb16419568916dbe14dda22ac720e3c832.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_9f5d6fbb16419568916dbe14dda22ac720e3c832.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> und dann auch für <img src="file:///home/anton/html/ltximg/20230303151544-lineare_unabhangigkeit_von_eigenvektoren_ac526b7a546136133543d9e08e1eb102d14b639b.svg" alt="20230303151544-lineare_unabhangigkeit_von_eigenvektoren_ac526b7a546136133543d9e08e1eb102d14b639b.svg" class="org-svg" />
+Nach Induktionsannahme sind \(v_1,...,v_n\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a>.
+Damit gilt \((\alpha_i - \alpha_{n+1}) \cdot \beta_i = 0\) 
+Da wir annehmen, dass die <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> paarweise verschieden sind, gilt insbesondere für \(i \neq n + 1\) e \(\alpha_i - \alpha_1 \neq 0\).
+Daraus folgt \(\beta_i = 0\) für \(i \in \{1,...,n\}\) und dann auch für \(\beta_{n+1} = 0\)
 </p>
 </div>
 </div>

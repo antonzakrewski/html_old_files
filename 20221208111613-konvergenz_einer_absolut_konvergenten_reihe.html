@@ -9,61 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenz einer absolut konvergenten Reihe</h1>
-<div id="outline-container-orgbb3c0ce" class="outline-2">
-<h2 id="orgbb3c0ce"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf973181" class="outline-2">
+<h2 id="orgf973181"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_93babeb81094e304b3bd44c4cbfabc5f79ea84f5.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_93babeb81094e304b3bd44c4cbfabc5f79ea84f5.svg" class="org-svg" /> <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so folgt, dass  <img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_93babeb81094e304b3bd44c4cbfabc5f79ea84f5.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_93babeb81094e304b3bd44c4cbfabc5f79ea84f5.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und es gilt folgende Ungleichung
+Sei \(\sum_{n=0}^{\infty}\) <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so folgt, dass  \(\sum_{n=0}^{\infty}\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> und es gilt folgende Ungleichung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_9f6b29723520d3f4e2fd7540e4f5c06329ca359a.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_9f6b29723520d3f4e2fd7540e4f5c06329ca359a.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert \sum_{n=1}^{\infty} a_m \vert   \leq \sum_{n=1}^{\infty} \vert a_m \vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org02b8592" class="outline-2">
-<h2 id="org02b8592"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga2a1dfc" class="outline-2">
+<h2 id="orga2a1dfc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei $s<sub>m</sub> = &sum;<sub>n=1</sub><sup>&infin;</sup> &vert; a<sub>n</sub> &vert; $ (<a href="20220105225333-monoton_wachsende_folge.html#ID-bcf5584f-c888-4d25-8a32-ea72fc6e8145">monoton wachsende</a>) und <img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_e5572eedc144f6b176104eb755d24be72d5c72b3.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_e5572eedc144f6b176104eb755d24be72d5c72b3.svg" class="org-svg" />
-und $ ~{s}<sub>m</sub> &sum;<sub>n=1</sub><sup>m</sup> a<sub>n</sub>$ 
+Sei $s<sub>m</sub> = &sum;<sub>n=1</sub><sup>&infin;</sup> &vert; a<sub>n</sub> &vert; $ (<a href="20220105225333-monoton_wachsende_folge.html#ID-bcf5584f-c888-4d25-8a32-ea72fc6e8145">monoton wachsende</a>) und \(s = \sum_{n=1}^{\infty} \vert a_n \vert\)
+und $ ~{s}<sub>m</sub>  \coloneqq &sum;<sub>n=1</sub><sup>m</sup> a<sub>n</sub>$ 
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_1146dfc8adf30b01158ec4fd428b3555782146b5.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_1146dfc8adf30b01158ec4fd428b3555782146b5.svg" class="org-svg" /> 
+Sei \(m < m'\) 
 Aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_541e5b377030cf6989abd16929191cac2417725f.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_541e5b377030cf6989abd16929191cac2417725f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 \leq \vert \tilde{s}_m - \tilde{s}_{m'} \vert \leq \vert s_m - s_{m'} \vert 
+\end{align*}
 <p>
 nach dem <a href="20220105225912-cauchysches_konvergenz_kriterium.html#ID-08b989d3-4b14-4823-b00a-8c5392d5ca82">Cauchysches Konvergenz-Kriterium</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_e3d62cfa0974a31befc6a9ff9bbca7cbc2a5154c.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_e3d62cfa0974a31befc6a9ff9bbca7cbc2a5154c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert s_m - s_m' \vert \rightarrow 0
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_5486860d3f9a4cc69c8e3b1924bc4f4b82e95691.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_5486860d3f9a4cc69c8e3b1924bc4f4b82e95691.svg" class="org-svg" />
+für \(m,m' \rightarrow \infty\)
 so dass für 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208111613-konvergenz_einer_absolut_konvergenten_reihe_caf1dbb95b3b4ca86f68aaa6971a00cb0772af12.svg" alt="20221208111613-konvergenz_einer_absolut_konvergenten_reihe_caf1dbb95b3b4ca86f68aaa6971a00cb0772af12.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert \tilde{s}_m - \tilde{s}_{m} \vert \rightarrow 0
+\end{align*}
 <p>
 und nach <a href="20220105225912-cauchysches_konvergenz_kriterium.html#ID-08b989d3-4b14-4823-b00a-8c5392d5ca82">Cauchysches Konvergenz-Kriterium</a> folgt, dass $ ~{s}<sub>m</sub>$  konvergiert
 </p>

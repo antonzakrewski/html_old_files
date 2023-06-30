@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvexe Hülle</h1>
-<div id="outline-container-orgaa5da5b" class="outline-2">
-<h2 id="orgaa5da5b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf726db2" class="outline-2">
+<h2 id="orgf726db2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230204210743-konvexe_hulle_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230204210743-konvexe_hulle_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230204210743-konvexe_hulle_55a8c2cf6ed59e06bfb5ef0613bf37a99f6bf902.svg" alt="20230204210743-konvexe_hulle_55a8c2cf6ed59e06bfb5ef0613bf37a99f6bf902.svg" class="org-svg" /> eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> 
-Dann ist die Konvexe Hülle von <img src="file:///home/anton/html/ltximg/20230204210743-konvexe_hulle_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230204210743-konvexe_hulle_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> definiert als <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> aller <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvexen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230204210743-konvexe_hulle_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230204210743-konvexe_hulle_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230204210743-konvexe_hulle_a832a3a1501176b99042d78ebf61beba57e6cfed.svg" alt="20230204210743-konvexe_hulle_a832a3a1501176b99042d78ebf61beba57e6cfed.svg" class="org-svg" />
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und \(C \subseteq V\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> 
+Dann ist die Konvexe Hülle von \(V\) definiert als <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> aller <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvexen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(M\) mit \(C \subseteq M\)
 </p>
 </div>
 </div>

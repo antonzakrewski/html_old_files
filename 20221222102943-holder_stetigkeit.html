@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hölder-Stetigkeit</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hölder-Stetigkeit</h1>
-<div id="outline-container-org1e8623f" class="outline-2">
-<h2 id="org1e8623f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org8baab31" class="outline-2">
+<h2 id="org8baab31"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221222102943-holder_stetigkeit_67adad00791ebbea20ac528db1aa98cdd2e37ae9.svg" alt="20221222102943-holder_stetigkeit_67adad00791ebbea20ac528db1aa98cdd2e37ae9.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und sei <img src="ltximg/20221222102943-holder_stetigkeit_3ccc2275a734e7c9c5ceba6d77d2c692617145e7.svg" alt="20221222102943-holder_stetigkeit_3ccc2275a734e7c9c5ceba6d77d2c692617145e7.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-<img src="ltximg/20221222102943-holder_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221222102943-holder_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist Hölder-Stetig zum Exponenenten <img src="ltximg/20221222102943-holder_stetigkeit_88b99359fa1cd08ca6253b813762aea8b52b5b95.svg" alt="20221222102943-holder_stetigkeit_88b99359fa1cd08ca6253b813762aea8b52b5b95.svg" class="org-svg" /> in der <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="ltximg/20221222102943-holder_stetigkeit_7ec168717a9bee77223337ad3a4fa25e980924d9.svg" alt="20221222102943-holder_stetigkeit_7ec168717a9bee77223337ad3a4fa25e980924d9.svg" class="org-svg" />, falls eine Konstante <img src="ltximg/20221222102943-holder_stetigkeit_18bed29493ef85057376ccd9b1d7c509a151a5d8.svg" alt="20221222102943-holder_stetigkeit_18bed29493ef85057376ccd9b1d7c509a151a5d8.svg" class="org-svg" /> existiert, so dass für alle <img src="ltximg/20221222102943-holder_stetigkeit_cbf915241f5d722d9b5b754f30190f3e74ce1a7c.svg" alt="20221222102943-holder_stetigkeit_cbf915241f5d722d9b5b754f30190f3e74ce1a7c.svg" class="org-svg" /> gilt:
+Seien \(E,F\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und sei \(f: E \rightarrow F\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+\(f\) ist Hölder-Stetig zum Exponenenten \(\alpha\) in der <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(D \subseteq E\), falls eine Konstante \(C\) existiert, so dass für alle \(x,x_0 \in D\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222102943-holder_stetigkeit_5982d0f0e5bd88cd6d7f0b9e748f1aa00ff6e7ae.svg" alt="20221222102943-holder_stetigkeit_5982d0f0e5bd88cd6d7f0b9e748f1aa00ff6e7ae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert f(x_0) - f(x) \vert \leq C \cdot \vert x - x_0 \vert^{\alpha}
+\end{align*}
 </div>
 </div>
 </div>

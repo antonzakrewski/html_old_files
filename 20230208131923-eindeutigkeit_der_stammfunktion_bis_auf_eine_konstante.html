@@ -9,39 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit der Stammfunktion bis auf eine Konstante</h1>
-<div id="outline-container-org9e5e0ab" class="outline-2">
-<h2 id="org9e5e0ab"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1f9da0b" class="outline-2">
+<h2 id="org1f9da0b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> ist eindeutig bis auf eine Kontsante 
 </p>
 </div>
 </div>
-<div id="outline-container-orgde21e65" class="outline-2">
-<h2 id="orgde21e65"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5be8167" class="outline-2">
+<h2 id="org5be8167"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktionen</a> <img src="file:///home/anton/html/ltximg/20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_ab5bc3761884bd8785bece127d16745c04d4917a.svg" alt="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_ab5bc3761884bd8785bece127d16745c04d4917a.svg" class="org-svg" />, so folgt für die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Sei \(f\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktionen</a> \(F_1(x),F_2(x)\), so folgt für die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_b84bcae5ab556b0ef79e6ed955da72c31113c58b.svg" alt="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_b84bcae5ab556b0ef79e6ed955da72c31113c58b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h(x)  \coloneqq& F_1(x) - F_2(x) \\
+h'(x) =& 0
+\end{align*}
 <p>
-Daraus folgt aus der Ableitung gleich 0 eine konstante <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> (siehe: <a href="20230120080401-ableitung_und_konstante_funktion.html#ID-fb1d3202-e8ae-421c-a542-faac0671fb56">Ableitung und konstante Funktion</a>) und damit für ein konstantes <img src="file:///home/anton/html/ltximg/20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_f0b97c1f552b19feb9c76ef2f277cd1b6d7cfb22.svg" alt="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_f0b97c1f552b19feb9c76ef2f277cd1b6d7cfb22.svg" class="org-svg" />
+Daraus folgt aus der Ableitung gleich 0 eine konstante <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> (siehe: <a href="20230120080401-ableitung_und_konstante_funktion.html#ID-fb1d3202-e8ae-421c-a542-faac0671fb56">Ableitung und konstante Funktion</a>) und damit für ein konstantes \(c:\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_d45f2254abdb1d8defdab27369a70cc1525caa38.svg" alt="20230208131923-eindeutigkeit_der_stammfunktion_bis_auf_eine_konstante_d45f2254abdb1d8defdab27369a70cc1525caa38.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F_1(x) - F_2(x) = c\\
+F_1(x) = F_2(x) + c
+\end{align*}
 </div>
 </div>
 </div>

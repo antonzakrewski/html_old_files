@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit des Durchschnitts von kompakten Mengen in einem metrischen Raum</h1>
-<div id="outline-container-org31b0d8f" class="outline-2">
-<h2 id="org31b0d8f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdc7f8be" class="outline-2">
+<h2 id="orgdc7f8be"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" alt="20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(K_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_6fd1e1bbed172b5386b7fca474c8686509f3c83b.svg" alt="20230513213911-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_metrischen_raum_6fd1e1bbed172b5386b7fca474c8686509f3c83b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{i \in } K_i
+\end{align*}
 <p>
 ebenfalls <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgdea6a94" class="outline-2">
-<h2 id="orgdea6a94"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5c74714" class="outline-2">
+<h2 id="org5c74714"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230224171350-hausdorffeigenschaft_bei_metrischen_raumen.html#ID-c0a0b315-c4f5-4e7a-a6cd-36b58b58f0ab">Hausdorffeigenschaft von metrischen Räumen</a> und <a href="20230513213428-kompaktheit_des_durchschnitts_von_kompakten_mengen_in_einem_hausdorff_raum.html#ID-38348824-130c-4f06-affa-469f3b969d28">Kompaktheit des Durchschnitts von kompakten Mengen in einem Hausdorff-Raum</a> 

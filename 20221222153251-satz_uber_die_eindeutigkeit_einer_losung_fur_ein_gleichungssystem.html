@@ -3,42 +3,65 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Eindeutigkeit einer Lösung für ein Gleichungssystem</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit einer Lösung für ein Gleichungssystem</h1>
-<div id="outline-container-org7c9767b" class="outline-2">
-<h2 id="org7c9767b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb177773" class="outline-2">
+<h2 id="orgb177773"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_94ab9ac9216048bf762fb5c9fb1149fb8fe7ee06.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_94ab9ac9216048bf762fb5c9fb1149fb8fe7ee06.svg" class="org-svg" /> und <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_99fc4e2fdc4e2c4424277b1326a0f4a0c2e05377.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_99fc4e2fdc4e2c4424277b1326a0f4a0c2e05377.svg" class="org-svg" /> mit
-L hat genau dann eine eindeutige Lösung, wenn <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_d959cb4648348f6f6fafed3c662672c3657a619a.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_d959cb4648348f6f6fafed3c662672c3657a619a.svg" class="org-svg" /> gilt
+Sei \(A \in K^{m \times n}\) und \(b \in K^m\) mit
+L hat genau dann eine eindeutige Lösung, wenn \(r(A) = n\) gilt
 </p>
 </div>
 </div>
-<div id="outline-container-org3d09547" class="outline-2">
-<h2 id="org3d09547"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org90d82ad" class="outline-2">
+<h2 id="org90d82ad"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_51284da791da652b7391c0558eab8e1645df22eb.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_51284da791da652b7391c0558eab8e1645df22eb.svg" class="org-svg" /> eine Lösung.
-Aus der <a href="20221128194935-distributivitat_des_matrixprodukts.html#ID-4bbfac39-ca02-4d2b-b25d-595a0e7eda62">Distributivität des Matrixprodukts</a> folgt, dass der <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_0c340867254659ffe31261e073fd23a7401604c3.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_0c340867254659ffe31261e073fd23a7401604c3.svg" class="org-svg" /> die Lösungsmenge ist.
-zu zeigen ist, dass der <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> minimal ist, d.h. <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" class="org-svg" /> besitzt.
+Sei \(a \in K^{n}\) eine Lösung.
+Aus der <a href="20221128194935-distributivitat_des_matrixprodukts.html#ID-4bbfac39-ca02-4d2b-b25d-595a0e7eda62">Distributivität des Matrixprodukts</a> folgt, dass der <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> \(a + \mathrm{ker}(A)\) die Lösungsmenge ist.
+zu zeigen ist, dass der <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> minimal ist, d.h. <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(0\) besitzt.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_e5e9aaed5a01c563927f3cca88152f258a9667c6.svg" alt="20221222153251-satz_uber_die_eindeutigkeit_einer_losung_fur_ein_gleichungssystem_e5e9aaed5a01c563927f3cca88152f258a9667c6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(\mathrm{ker}(A)) =& \mathrm{dim}_{K}(K^{n}) - \mathrm{dim}_{K}(\mathrm{im}(A)) \\
+\leadsto 0 =& n - \mathrm{rank}(A) \\
+\mathrm{rank}(A) =& n
+\end{align*}
 </div>
 </div>
 </div>

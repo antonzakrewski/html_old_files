@@ -9,28 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Heronverfahren</h1>
-<div id="outline-container-org94ecff8" class="outline-2">
-<h2 id="org94ecff8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5527461" class="outline-2">
+<h2 id="org5527461"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Annäherung</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220210110830-heronverfahren_4a500706a717182d66333156aabc1cb9c2af92c6.svg" alt="20220210110830-heronverfahren_4a500706a717182d66333156aabc1cb9c2af92c6.svg" class="org-svg" />
-</span>
+\begin{align*}
+x = \sqrt{y} \\
+x_0  \coloneqq a \\
+x_{n+1} = \frac{1}{2} \cdot \left(\frac{y}{x_n} + x_n\right)
+\end{align*}
 </div>
 </div>
-</div>
 
 
-<div id="outline-container-org1d49600" class="outline-2">
-<h2 id="org1d49600"><span class="section-number-2">2.</span> Geometrische Idee</h2>
+<div id="outline-container-org509b660" class="outline-2">
+<h2 id="org509b660"><span class="section-number-2">2.</span> Geometrische Idee</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>gesucht: länge eines quadrats - quadrat mit flächeninhalt x</li>

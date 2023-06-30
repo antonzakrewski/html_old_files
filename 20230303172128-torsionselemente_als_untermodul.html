@@ -9,35 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Torsionsuntermodul</h1>
-<div id="outline-container-org456257f" class="outline-2">
-<h2 id="org456257f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org36cb160" class="outline-2">
+<h2 id="org36cb160"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230303172128-torsionselemente_als_untermodul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230303172128-torsionselemente_als_untermodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> und <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselemente</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a> 
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(M\) ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> und \(T(M)\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselemente</a>.
+Dann ist \(T(M)\) ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org7c88cc4" class="outline-2">
-<h2 id="org7c88cc4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org15838df" class="outline-2">
+<h2 id="org15838df"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Eigenschaften eines <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduls</a> werden weitervererbt, bleibt zu zeigen, dass <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230303172128-torsionselemente_als_untermodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> und bezüglich der "Skalarmultiplikation" <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">abgeschlossen</a> ist.
-Existenz des inversen Elements für die <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_3bb031a8cce5e34b917e4d429363d0ff7ad3f0e1.svg" alt="20230303172128-torsionselemente_als_untermodul_3bb031a8cce5e34b917e4d429363d0ff7ad3f0e1.svg" class="org-svg" /> folgt dann durch Multiplikation mit <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_957b9968372a73b42526338dd57e81391ecbc68b.svg" alt="20230303172128-torsionselemente_als_untermodul_957b9968372a73b42526338dd57e81391ecbc68b.svg" class="org-svg" />
-<a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">Nichtleer</a> wegen <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_005cb9f6ee2293fa5c9a93ce3e49507bc46e10b8.svg" alt="20230303172128-torsionselemente_als_untermodul_005cb9f6ee2293fa5c9a93ce3e49507bc46e10b8.svg" class="org-svg" />, nach Annahme ist <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_85353ccd73d7ec6d80f2973b3549d98e17108ca3.svg" alt="20230303172128-torsionselemente_als_untermodul_85353ccd73d7ec6d80f2973b3549d98e17108ca3.svg" class="org-svg" />, d.h. für <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" alt="20230303172128-torsionselemente_als_untermodul_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_3f97520a8a4a8d86610a09409b2054b0133ead5d.svg" alt="20230303172128-torsionselemente_als_untermodul_3f97520a8a4a8d86610a09409b2054b0133ead5d.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_429f159dbc3f0ee9c8a6c2e0c088861eefe7eb5a.svg" alt="20230303172128-torsionselemente_als_untermodul_429f159dbc3f0ee9c8a6c2e0c088861eefe7eb5a.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" alt="20230303172128-torsionselemente_als_untermodul_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_2d826f707260ce2f09bef7da8e817b04ddd181b5.svg" alt="20230303172128-torsionselemente_als_untermodul_2d826f707260ce2f09bef7da8e817b04ddd181b5.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_96ef18bb697874a54481fd66ecffb3766544785f.svg" alt="20230303172128-torsionselemente_als_untermodul_96ef18bb697874a54481fd66ecffb3766544785f.svg" class="org-svg" /> beliebig, so ist <img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_d7b99abf54b86a6fd9427229350e75195765bd00.svg" alt="20230303172128-torsionselemente_als_untermodul_d7b99abf54b86a6fd9427229350e75195765bd00.svg" class="org-svg" /> ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a>, da gilt:
+Eigenschaften eines <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduls</a> werden weitervererbt, bleibt zu zeigen, dass \(T(M)\) <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> und bezüglich der "Skalarmultiplikation" <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">abgeschlossen</a> ist.
+Existenz des inversen Elements für die <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> \((T(M), +)\) folgt dann durch Multiplikation mit \(-1\)
+<a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">Nichtleer</a> wegen \(0 \in T(M)\), nach Annahme ist \(R \neq \{0\}\), d.h. für \(r \in R \setminus \{0\}\) gilt \(r \cdot 0 = 0\)
+Sei \(t \in T(M)\), so existiert ein \(r \in R \setminus \{0\}\), so dass \(r \cdot t = 0\)
+Sei \(r' \in R\) beliebig, so ist \(r' \cdot t\) ein <a href="20230222205653-torsionselement.html#ID-8529376b-0b2f-4bc4-94e1-b111293af63c">Torsionselement</a>, da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230303172128-torsionselemente_als_untermodul_153fe3315b128f181399565018fcfddb82097629.svg" alt="20230303172128-torsionselemente_als_untermodul_153fe3315b128f181399565018fcfddb82097629.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r \cdot r' \cdot t =& r' \cdot r \cdot t \\
+=& r' \cdot 0 \\
+=& 0 
+\end{align*}
 </div>
 </div>
 </div>

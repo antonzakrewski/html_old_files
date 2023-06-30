@@ -3,61 +3,80 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kriterium für die Absolute Konvergenz einer Reihe (Cauchy)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kriterium für die Absolute Konvergenz einer Reihe (Cauchy)</h1>
-<div id="outline-container-orga9a8bd4" class="outline-2">
-<h2 id="orga9a8bd4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge588537" class="outline-2">
+<h2 id="orge588537"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_1c1f501c0daf7c87dc25446f8f2fe7712e2e468d.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_1c1f501c0daf7c87dc25446f8f2fe7712e2e468d.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a>, <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e7d6529fbb68b339c39c620790ddfaf3a3a3a6bf.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e7d6529fbb68b339c39c620790ddfaf3a3a3a6bf.svg" class="org-svg" />
+Sei \(\sum_{n=1}^{\infty} a_n\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolut</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a>, \(\forall \varepsilon > 0 \exists n(\varepsilon) \in \mathbb{N}: \sum_{k=n(\varepsilon)}^{\infty} \vert a_n \vert < \varepsilon\)
 </p>
 </div>
 </div>
-<div id="outline-container-org8ac5027" class="outline-2">
-<h2 id="org8ac5027"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgdf3e288" class="outline-2">
+<h2 id="orgdf3e288"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org10ccd91" class="outline-3">
-<h3 id="org10ccd91"><span class="section-number-3">2.1.</span> absolute konvergenz <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /> obiges kriterium</h3>
+<div id="outline-container-org288a228" class="outline-3">
+<h3 id="org288a228"><span class="section-number-3">2.1.</span> absolute konvergenz \(\Rightarrow\) obiges kriterium</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_9f8ffca3210c6abec64841f54a49f9dabb26babe.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_9f8ffca3210c6abec64841f54a49f9dabb26babe.svg" class="org-svg" /> dannn folgt, dass für <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_5bdf2e5bd96c0d8d0ede598cd4fd86c3f2e86b6f.svg" class="org-svg" /> ein <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_41bccded593d1ebfabea0e78c6aaf1f1371189d5.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_41bccded593d1ebfabea0e78c6aaf1f1371189d5.svg" class="org-svg" /> existiert, sodass gilt:
+Sei \(a = \sum_{n=1}^{\infty} \vert a_n \vert\) dannn folgt, dass für \(\varepsilon > 0\) ein \(n(\varepsilon) \in \mathbb{N}\) existiert, sodass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_67cf8c1f694483eedf0d5f44c8e5b27a8f5895be.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_67cf8c1f694483eedf0d5f44c8e5b27a8f5895be.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\vert s_{n(\varepsilon)} - a \vert <& \varepsilon \\
+\vert \sum_{n=1}^{n(\varepsilon)} \vert a_n \vert - \sum_{n=1}^{\infty} \vert a_n \vert \vert <& \varepsilon \\
+\vert - \sum_{n=n(\varepsilon) + 1}^{\infty} \vert a_n \vert\vert < \varepsilon 
+\sum_{n=n(\varepsilon) + 1}^{\infty} \vert a_n \vert < \varepsilon 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org13ec5f0" class="outline-3">
-<h3 id="org13ec5f0"><span class="section-number-3">2.2.</span> obiges kriterium <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /> absolute konvergenz</h3>
+<div id="outline-container-org5c1b07e" class="outline-3">
+<h3 id="org5c1b07e"><span class="section-number-3">2.2.</span> obiges kriterium \(\Rightarrow\) absolute konvergenz</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Wir wissen, dass die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_bb68ac94ff1c4f68aa27f7693b7d5a9b8b451c9e.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_bb68ac94ff1c4f68aa27f7693b7d5a9b8b451c9e.svg" class="org-svg" />  <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">Monoton</a> ist und <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">Beschränkt</a>:
-Sei <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e542f9987df6cf066cf62f7faaa509e87eec656a.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e542f9987df6cf066cf62f7faaa509e87eec656a.svg" class="org-svg" /> und <img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_b9dba24e34277bc9fe52552c24df2237620a805e.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_b9dba24e34277bc9fe52552c24df2237620a805e.svg" class="org-svg" /> gegeben, dann folgt
+Wir wissen, dass die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> \(\sum_{n=1}^{\infty} \vert a_n \vert\)  <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">Monoton</a> ist und <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">Beschränkt</a>:
+Sei \(\varepsilon = 1\) und \(n(1)\) gegeben, dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e5087fb8c7fda103f1abcd8c0dac50af35ef5bbc.svg" alt="20221222093214-kriterium_fur_die_absolute_konvergenz_einer_reihe_e5087fb8c7fda103f1abcd8c0dac50af35ef5bbc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\sum_{n=n(1)}^{\infty} \vert a_n \vert < 1 \\
+0 \leq \sum_{n=1}^{\infty} \vert a_n \vert \leq \sum_{n=1}^{n(1) - 1} \vert a_n \vert + 1
+\end{align*}
 
 <p>
 <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner beschränkter Folgen</a>

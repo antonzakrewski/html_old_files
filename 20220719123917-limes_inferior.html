@@ -9,32 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Limes Inferior</h1>
-<div id="outline-container-org6aa9aee" class="outline-2">
-<h2 id="org6aa9aee"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org96fbff6" class="outline-2">
+<h2 id="org96fbff6"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220719123917-limes_inferior_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20220719123917-limes_inferior_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> eine <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit den <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkten</a> $h<sub>1</sub>,&#x2026;,$
+Sei \((a_n)\) eine <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit den <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkten</a> $h<sub>1</sub>,&#x2026;,$
 Der Limes Inferior ist definiert als 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220719123917-limes_inferior_6ea986d74f75e320a521a5a5b48a22b7eac8249e.svg" alt="20220719123917-limes_inferior_6ea986d74f75e320a521a5a5b48a22b7eac8249e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\inf\{h_1,...\}
+\end{align*}
 <p>
 bzw.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220719123917-limes_inferior_6295ae8afe95c471291cb86e3694115b7cde9a6e.svg" alt="20220719123917-limes_inferior_6295ae8afe95c471291cb86e3694115b7cde9a6e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left(\inf{a_n}\right)  \coloneqq&  \lim_{n \to \infty}\left(\inf_{m \geq n}\{a_n\}\right)  \\
+=& \sup \inf \{a_n\}
+\end{align*}
 </div>
 </div>
 </div>

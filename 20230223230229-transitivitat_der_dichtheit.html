@@ -9,40 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Transitivität der Dichtheit</h1>
-<div id="outline-container-org8ab634a" class="outline-2">
-<h2 id="org8ab634a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org163f33c" class="outline-2">
+<h2 id="org163f33c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" alt="20230223230229-transitivitat_der_dichtheit_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_e36a72818ce13846b7053f10fc273bd817484a91.svg" alt="20230223230229-transitivitat_der_dichtheit_e36a72818ce13846b7053f10fc273bd817484a91.svg" class="org-svg" /> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a>, so dass <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230223230229-transitivitat_der_dichtheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230223230229-transitivitat_der_dichtheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" alt="20230223230229-transitivitat_der_dichtheit_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230223230229-transitivitat_der_dichtheit_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" /> liegt.
-Dann folgt, dass <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" alt="20230223230229-transitivitat_der_dichtheit_34ea2d05f9f60b299e77a6a9694fc57b60dc22f7.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in <img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230223230229-transitivitat_der_dichtheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> liegt.
+Sei \((X, \mathcal{T}_X)\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(Y,Z\) <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a>, so dass \(Y\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in \(X\) und \(Z\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in \(Y\) liegt.
+Dann folgt, dass \(Z\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in \(X\) liegt.
 </p>
 </div>
 </div>
-<div id="outline-container-org3564562" class="outline-2">
-<h2 id="org3564562"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6ffd9e9" class="outline-2">
+<h2 id="org6ffd9e9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach Annahme gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_a3f639b30be3f9ce132873df7077e7e2977490b5.svg" alt="20230223230229-transitivitat_der_dichtheit_a3f639b30be3f9ce132873df7077e7e2977490b5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{Y} =& X \\
+\overline{Z} =& Y
+\end{align*}
 <p>
 Zusätzlich folgt aus dem <a href="20230302231204-abschluss_als_idempotente_abbildung.html#ID-9eaf42aa-6435-4ead-aac2-48b8e613760d">Abschluss als idempotente Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223230229-transitivitat_der_dichtheit_3b05197ac96d032416ab18768596cd206445004a.svg" alt="20230223230229-transitivitat_der_dichtheit_3b05197ac96d032416ab18768596cd206445004a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{Z} =& \overline{\overline{Z}} \\
+=& \overline{Y} \\
+=& X
+\end{align*}
 </div>
 </div>
 </div>

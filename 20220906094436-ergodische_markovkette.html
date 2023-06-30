@@ -3,21 +3,48 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ergodische Markovkette</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">ergodische Markovkette</h1>
-<div id="outline-container-org4ed8d74" class="outline-2">
-<h2 id="org4ed8d74"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb84c473" class="outline-2">
+<h2 id="orgb84c473"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220904101519-markow_kette.html#ID-7ed34770-d827-4d65-806c-4590f95b642b">Markovkette</a> mit eindeutiger <a href="20220904154240-stationare_verteilung.html#ID-2595e864-cf3d-4b8d-a6eb-13dd4ba8f638">invarianter Verteilung</a> <img src="ltximg/20220906094436-ergodische_markovkette_3f3a35b086c18d6dda78513ef506c5a79c2cffa4.svg" alt="20220906094436-ergodische_markovkette_3f3a35b086c18d6dda78513ef506c5a79c2cffa4.svg" class="org-svg" />  für jede <a href="20220906094027-anfangsverteilung.html#ID-16cbb55e-d55f-4e10-9183-87112a3f88c0">Anfangsverteilung</a> konvergiert die Verteilung gegen <img src="ltximg/20220906094436-ergodische_markovkette_3f3a35b086c18d6dda78513ef506c5a79c2cffa4.svg" alt="20220906094436-ergodische_markovkette_3f3a35b086c18d6dda78513ef506c5a79c2cffa4.svg" class="org-svg" />,  heißt ergodisch
+Eine <a href="20220904101519-markow_kette.html#ID-7ed34770-d827-4d65-806c-4590f95b642b">Markovkette</a> mit eindeutiger <a href="20220904154240-stationare_verteilung.html#ID-2595e864-cf3d-4b8d-a6eb-13dd4ba8f638">invarianter Verteilung</a> \(\mu\)  für jede <a href="20220906094027-anfangsverteilung.html#ID-16cbb55e-d55f-4e10-9183-87112a3f88c0">Anfangsverteilung</a> konvergiert die Verteilung gegen \(\mu\),  heißt ergodisch
 siehe: <a href="20220906093813-satz_uber_eindeutige_invariante_verteilungen.html#ID-0e604274-0751-4928-906f-a0dc48d0b5f3">Satz über eindeutige invariante Verteilungen</a> 
 </p>
 </div>

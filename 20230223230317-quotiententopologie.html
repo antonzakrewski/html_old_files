@@ -9,17 +9,42 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quotiententopologie</h1>
-<div id="outline-container-org0760374" class="outline-2">
-<h2 id="org0760374"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4c056d2" class="outline-2">
+<h2 id="org4c056d2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_cdaf6a7212c9b68db844ae8d10c10906bd2883b8.svg" alt="20230223230317-quotiententopologie_cdaf6a7212c9b68db844ae8d10c10906bd2883b8.svg" class="org-svg" /> und eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" alt="20230223230317-quotiententopologie_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230223230317-quotiententopologie_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" /> gegeben.
-Sei dann <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_660319ba9fe4ccb723541b39be85b1767895c95b.svg" alt="20230223230317-quotiententopologie_660319ba9fe4ccb723541b39be85b1767895c95b.svg" class="org-svg" /> die <a href="20221224140459-kanonische_abbildung_in_einen_faktorraum.html#ID-62513b30-d833-4f0f-97ae-cd527636ef04">kanonische Abbildung</a> in den <a href="20221224140351-faktorraum_nach_einer_aquivalenzrelation.html#ID-b4f6e2f6-99b2-49a4-bc81-3f11a55ca49b">Faktorraum</a>.
-Die <a href="20230224180620-finaltopologie.html#ID-089a51e7-dbea-4600-a1ce-6e758f44ee49">Finaltopologie</a> <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_716c6399944b768ee7c3d244d5519cef9c5aa958.svg" alt="20230223230317-quotiententopologie_716c6399944b768ee7c3d244d5519cef9c5aa958.svg" class="org-svg" /> zur <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_915ac369bcc0a6c5a21c5004f4fd12034190cee0.svg" alt="20230223230317-quotiententopologie_915ac369bcc0a6c5a21c5004f4fd12034190cee0.svg" class="org-svg" /> wird Quotiententopologie zu <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230223230317-quotiententopologie_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230223230317-quotiententopologie_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" alt="20230223230317-quotiententopologie_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" class="org-svg" /> genannt. 
+Sei ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> \((Y, \mathcal{T})\) und eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> \(\sim\) auf \(Y\) gegeben.
+Sei dann \(\pi: Y \rightarrow Y/~\) die <a href="20221224140459-kanonische_abbildung_in_einen_faktorraum.html#ID-62513b30-d833-4f0f-97ae-cd527636ef04">kanonische Abbildung</a> in den <a href="20221224140351-faktorraum_nach_einer_aquivalenzrelation.html#ID-b4f6e2f6-99b2-49a4-bc81-3f11a55ca49b">Faktorraum</a>.
+Die <a href="20230224180620-finaltopologie.html#ID-089a51e7-dbea-4600-a1ce-6e758f44ee49">Finaltopologie</a> \(\mathcal{T}_{\sim}\) zur <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(\pi: Y \rightarrow Y/\sim\) wird Quotiententopologie zu \(Y\) und \(\sim\) genannt. 
 </p>
 </div>
 </div>

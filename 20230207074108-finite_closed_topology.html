@@ -9,65 +9,86 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">cofinite topology</h1>
-<div id="outline-container-org11d46fd" class="outline-2">
-<h2 id="org11d46fd"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org1510bcc" class="outline-2">
+<h2 id="org1510bcc"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230207074108-finite_closed_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist die finite closed topology (cofinite topologie) auf <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230207074108-finite_closed_topology_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> definiert als <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_d526ce455c811cce9a5e4fc1d8f195e4c89e1b55.svg" alt="20230207074108-finite_closed_topology_d526ce455c811cce9a5e4fc1d8f195e4c89e1b55.svg" class="org-svg" />
+Sei \(X\) eine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist die finite closed topology (cofinite topologie) auf \(X\) definiert als <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\mathcal{T} = \{O \subseteq X \vert X \setminus O \text{ ist endlich}\} \cup X\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2819a24" class="outline-2">
-<h2 id="org2819a24"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd6c3786" class="outline-2">
+<h2 id="orgd6c3786"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4caf2ff" class="outline-3">
-<h3 id="org4caf2ff"><span class="section-number-3">2.1.</span> <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">triviale Mengen in einer Topologie</a></h3>
+<div id="outline-container-orgf882a9e" class="outline-3">
+<h3 id="orgf882a9e"><span class="section-number-3">2.1.</span> <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">triviale Mengen in einer Topologie</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Konstruktion gilt <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_3eb7eff62c28c227f8d42d571919f616cd481a9f.svg" alt="20230207074108-finite_closed_topology_3eb7eff62c28c227f8d42d571919f616cd481a9f.svg" class="org-svg" /> 
+Nach Konstruktion gilt \(X, \emptyset \in \mathcal{T}\) 
 </p>
 </div>
 </div>
-<div id="outline-container-orga682f84" class="outline-3">
-<h3 id="orga682f84"><span class="section-number-3">2.2.</span> <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a></h3>
+<div id="outline-container-org65cc098" class="outline-3">
+<h3 id="org65cc098"><span class="section-number-3">2.2.</span> <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" alt="20230207074108-finite_closed_topology_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_b1c8fa85d6d812ab92bf56143c705c6eeeb2bdd0.svg" alt="20230207074108-finite_closed_topology_b1c8fa85d6d812ab92bf56143c705c6eeeb2bdd0.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230207074108-finite_closed_topology_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
+Seien \(O_i \in \mathcal{T}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Dann ist \(X \setminus O_i\) für \(i \in I\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
 Nach der Aussage über <a href="20230110103410-komplementbildung_unter_schnitt_und_vereinigung.html#ID-d6517940-4043-41d9-9063-12faf67aab22">Komplementbildung unter Schnitt und Vereinigung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_bcf16e83991a2d3c47581093a04c74e181bec5fa.svg" alt="20230207074108-finite_closed_topology_bcf16e83991a2d3c47581093a04c74e181bec5fa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i} O_i =& \bigcup_{i} X \setminus (X \setminus O_i) \\
+=& X \setminus \bigcap_{i} X \setminus O_i
+\end{align*}
 <p>
-Insbesondere folgt <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_5d34ea7493ca6a8c0819b430c9023013c126d675.svg" alt="20230207074108-finite_closed_topology_5d34ea7493ca6a8c0819b430c9023013c126d675.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_ca0fa322663d81610fec21d86cfa3372d79cd7bf.svg" alt="20230207074108-finite_closed_topology_ca0fa322663d81610fec21d86cfa3372d79cd7bf.svg" class="org-svg" /> ist <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
+Insbesondere folgt \(\bigcup_{i} X \setminus O_i \subseteq O_{i'}\), d.h. \(\bigcup_{i} X \setminus O_i\) ist <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org2761a2d" class="outline-3">
-<h3 id="org2761a2d"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit von endlichem Durchschnitt offener Mengen</a></h3>
+<div id="outline-container-org7f87c43" class="outline-3">
+<h3 id="org7f87c43"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit von endlichem Durchschnitt offener Mengen</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" alt="20230207074108-finite_closed_topology_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230207074108-finite_closed_topology_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_b1c8fa85d6d812ab92bf56143c705c6eeeb2bdd0.svg" alt="20230207074108-finite_closed_topology_b1c8fa85d6d812ab92bf56143c705c6eeeb2bdd0.svg" class="org-svg" /> jeweils <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
+Seien \(O_i \in \mathcal{T}\) für \(i \in \{1,...,n\}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Dann ist \(X \setminus O_i\) jeweils <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> 
 Nach der Aussage über <a href="20230110103410-komplementbildung_unter_schnitt_und_vereinigung.html#ID-d6517940-4043-41d9-9063-12faf67aab22">Komplementbildung unter Schnitt und Vereinigung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_780c064cca6a8f30c4b4da4b2677cb1c107b0146.svg" alt="20230207074108-finite_closed_topology_780c064cca6a8f30c4b4da4b2677cb1c107b0146.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcap_{i=1}^n O_i =& \bigcap_{i=1}^n X \setminus (X \setminus O_i) \\
+=& X \setminus \bigcup_{i=1}^n X \setminus O_i
+\end{align*}
 <p>
-Aus der Aussage über <a href="20230429003359-endliche_machtigkeit_der_endlichen_vereinigung_endlicher_mengen.html#ID-68df12c7-703b-4c4a-8bc6-7baf585c2bed">endliche Mächtigkeit der endlichen Vereinigung endlicher Mengen</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_32ae92255d3a4a313b07564f066316be598f0d3b.svg" alt="20230207074108-finite_closed_topology_32ae92255d3a4a313b07564f066316be598f0d3b.svg" class="org-svg" /> ebenfalls endlich ist, d.h. <img src="file:///home/anton/html/ltximg/20230207074108-finite_closed_topology_0d2b752ca06eba7c19d323c58fce263876847b82.svg" alt="20230207074108-finite_closed_topology_0d2b752ca06eba7c19d323c58fce263876847b82.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Aus der Aussage über <a href="20230429003359-endliche_machtigkeit_der_endlichen_vereinigung_endlicher_mengen.html#ID-68df12c7-703b-4c4a-8bc6-7baf585c2bed">endliche Mächtigkeit der endlichen Vereinigung endlicher Mengen</a> folgt, dass \(\bigcup_{i = 1}^{n} X \setminus O_i\) ebenfalls endlich ist, d.h. \(\bigcap_{i = 1}^n O_i\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>

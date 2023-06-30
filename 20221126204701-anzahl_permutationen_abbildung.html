@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Anzahl Permutationen (Abbildung)</h1>
-<div id="outline-container-org8e7cdc4" class="outline-2">
-<h2 id="org8e7cdc4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7789733" class="outline-2">
+<h2 id="org7789733"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221126204701-anzahl_permutationen_abbildung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221126204701-anzahl_permutationen_abbildung_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche Menge</a>.
-Dann existieren <img src="file:///home/anton/html/ltximg/20221126204701-anzahl_permutationen_abbildung_ad85b7bc95243adb9a477b6e92c61f7c343a5640.svg" alt="20221126204701-anzahl_permutationen_abbildung_ad85b7bc95243adb9a477b6e92c61f7c343a5640.svg" class="org-svg" /> verschiedene <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutationen</a>.
+Sei \(M\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche Menge</a>.
+Dann existieren \(\vert M\vert!\) verschiedene <a href="20221026161747-permutation_abbildung.html#ID-af424eae-548d-4d43-8ff0-3c2930186d7c">Permutationen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org31f2b32" class="outline-2">
-<h2 id="org31f2b32"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbd31b33" class="outline-2">
+<h2 id="orgbd31b33"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Dies folgt aus der <a href="20211228212511-kombinatorische_bedeutung_fakultat.html#ID-fabe6097-ea34-4b98-b5d8-1b3109f27cc1">Kombinatorische Bedeutung der Fakultät</a> 

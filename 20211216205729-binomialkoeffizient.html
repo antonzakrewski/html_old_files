@@ -9,36 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Binomial coefficient</h1>
-<div id="outline-container-org354969d" class="outline-2">
-<h2 id="org354969d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge99845c" class="outline-2">
+<h2 id="orge99845c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20211216205729-binomialkoeffizient_53cd8075009d15efeb85180b01b6548e8106cb82.svg" alt="20211216205729-binomialkoeffizient_53cd8075009d15efeb85180b01b6548e8106cb82.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20211216205729-binomialkoeffizient_26efff9e222f557969ccce389220e8d74a762eed.svg" alt="20211216205729-binomialkoeffizient_26efff9e222f557969ccce389220e8d74a762eed.svg" class="org-svg" /> a ist der Binomialkoeffizient definiert als"a
+Für \(k \in \mathbb{N}_0\) und \(z \in \mathbb{C}\) a ist der Binomialkoeffizient definiert als"a
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211216205729-binomialkoeffizient_2d888b3d51108bdb391648cd13c378b62d2c71d7.svg" alt="20211216205729-binomialkoeffizient_2d888b3d51108bdb391648cd13c378b62d2c71d7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{r}{k} =:& \prod_{j=1}^k \frac{r - j + 1}{j} \\
+=& \frac{z^{\underline{k}}}{k!}
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20211216205729-binomialkoeffizient_4a40d2e0df19ccb2c336e4949fa833c1937620c8.svg" alt="20211216205729-binomialkoeffizient_4a40d2e0df19ccb2c336e4949fa833c1937620c8.svg" class="org-svg" /> bietet es sich an, <img src="file:///home/anton/html/ltximg/20211216205729-binomialkoeffizient_691ac3da05148a9cf8ce698be4fc7d2e0e681959.svg" alt="20211216205729-binomialkoeffizient_691ac3da05148a9cf8ce698be4fc7d2e0e681959.svg" class="org-svg" /> zu definieren
+Für \(k \not\in \mathbb{N}_0\) bietet es sich an, \(\binom{r}{k}  \coloneqq 0\) zu definieren
 siehe: <a href="20211228201532-definition_produktzeichen.html#ID-09dd36bc-1342-42cd-8dbc-fdc043c3a5c0">Definition Produktzeichen</a>, <a href="20211228195146-definition_fakultat.html#ID-bf0457c7-3d2b-4423-ac4b-7f006f517928">Definition Fakultät</a>
 </p>
 <ul class="org-ul">
 <li><a href="20220110114351-binomialkoeffizient_handubliche_formel.html#ID-fff4e124-3f8f-4f8f-808e-01cd4ee1e1d9">Binomialkoeffizient - handübliche Formel</a></li>
 </ul>
 </div>
-<div id="outline-container-org9557416" class="outline-3">
-<h3 id="org9557416"><span class="section-number-3">1.1.</span> </h3>
+<div id="outline-container-orgb08e2cf" class="outline-3">
+<h3 id="orgb08e2cf"><span class="section-number-3">1.1.</span> </h3>
 </div>
 </div>
-<div id="outline-container-org1a7c545" class="outline-2">
-<h2 id="org1a7c545"><span class="section-number-2">2.</span> <a href="20220104205852-binomialkoeffizient_spezialfalle.html#ID-4ecb6a71-5424-4532-b905-e5b170a4b137">Binomialkoeffizient - Spezialfälle</a></h2>
+<div id="outline-container-org23af939" class="outline-2">
+<h2 id="org23af939"><span class="section-number-2">2.</span> <a href="20220104205852-binomialkoeffizient_spezialfalle.html#ID-4ecb6a71-5424-4532-b905-e5b170a4b137">Binomialkoeffizient - Spezialfälle</a></h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220108163005-binomialkoeffizient_wertemenge.html#ID-3b5fff7f-56ff-4721-8798-f6cfc1b36c29">Binomialkoeffizient: Wertemenge</a></li>

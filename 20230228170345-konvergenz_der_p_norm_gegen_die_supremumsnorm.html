@@ -9,77 +9,88 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenz der p-Norm gegen die <a href="20230301102039-maximumsnorm.html#ID-9f9f07b2-ec6b-49bf-89b6-6cab73f1f3a7">Maximumsnorm</a></h1>
-<div id="outline-container-orgf6bc82a" class="outline-2">
-<h2 id="orgf6bc82a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfeadbee" class="outline-2">
+<h2 id="orgfeadbee"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> mit einer <a href="20230112165607-betragsfunktion_in_einem_korper.html#ID-63c090e9-4121-4b95-9def-b1356b686ef1">Betragsfunktion</a> <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_f28074137418f7cec0653242314377a764b5f629.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_f28074137418f7cec0653242314377a764b5f629.svg" class="org-svg" />
-Dann gilt für die <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_3886ee30a2e39e3dcec1ae37b2005cf9be5cfdbc.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_3886ee30a2e39e3dcec1ae37b2005cf9be5cfdbc.svg" class="org-svg" /> 
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(n\) über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) mit einer <a href="20230112165607-betragsfunktion_in_einem_korper.html#ID-63c090e9-4121-4b95-9def-b1356b686ef1">Betragsfunktion</a> \(\vert \cdot \vert\)
+Dann gilt für die <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> \((\| \cdot \|_p)_{p \in [1,+\infty)\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_3e1a75253f307761b50ce9b74a687501f01dece7.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_3e1a75253f307761b50ce9b74a687501f01dece7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{p \to \infty}\left( \| \cdot \| \right) \rightarrow \| \cdot \|_{\infty}
+\end{align*}
 <p>
 d.h. die <a href="20230224165655-p_norm.html#ID-3c5b1d2d-114c-4629-bde4-0418eea708e1">p-Norm</a> <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">konvergieren punktweise</a> gegen die <a href="20230301102039-maximumsnorm.html#ID-9f9f07b2-ec6b-49bf-89b6-6cab73f1f3a7">Maximumsnorm</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org050d48b" class="outline-2">
-<h2 id="org050d48b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5b49061" class="outline-2">
+<h2 id="org5b49061"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" class="org-svg" /> (sonst folgt die Gleichheit durch <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positiver Definitheit</a> / Auswertung)
-Sei <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_f078e0ff5e70d85f619dfb6438d4395800ecacb3.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_f078e0ff5e70d85f619dfb6438d4395800ecacb3.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_21a97f9eb793323d4661d17e89db452e4abba476.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_21a97f9eb793323d4661d17e89db452e4abba476.svg" class="org-svg" />,so folgt die Abschätzung
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f \neq 0\) (sonst folgt die Gleichheit durch <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positiver Definitheit</a> / Auswertung)
+Sei \(f \in K^n\) mit \(\| \cdot \|_{\infty} = m = f(i_0)\),so folgt die Abschätzung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_2a4f85e94d632c2de816380e3d59f918f5fad054.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_2a4f85e94d632c2de816380e3d59f918f5fad054.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{p \to \infty}\left( \frac{ \sqrt[p]{\left(\sum_{i=1}^{n} \vert f(i) \vert^p \right)}}{m} \right) =& \lim_{p \to \infty}\left( \sqrt[p]{\left(\sum_{i=1}^{n} \left  \vert \frac{f(i)}{f(i_0)}f \right \vert^p \right)} \right) \\
+=& \lim_{p \to \infty}\left( \sqrt[p]{\left(1 + \sum_{i \neq i_0}^{n} \left  \vert \frac{f(i)}{f(i_0)} \right \vert^p \right)} \right) 
+\end{align*}
 <p>
-Desweiteren gilt <img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_a1d5a84138910819e850a072b9373ce821ebe3be.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_a1d5a84138910819e850a072b9373ce821ebe3be.svg" class="org-svg" />, d.h. es folgen die Abschätzungen:
+Desweiteren gilt \(f(i_0) \geq f(i)\), d.h. es folgen die Abschätzungen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_ed3fefafe89a8e8e34329f701ff4ace10567a861.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_ed3fefafe89a8e8e34329f701ff4ace10567a861.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 \geq \left \vert \frac{f(i)}{f(i_0)} \right \vert \right \geq 0\\
+1 \geq \left \vert \frac{f(i)}{f(i_0)} \right \vert^p \geq 0
+\end{align*}
 <p>
 und es folgt damit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_241c354bb66faaabe8baae5310b165813d9ba33e.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_241c354bb66faaabe8baae5310b165813d9ba33e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 =& \lim_{p \to \infty}\left( \sqrt[p]{1} \right) \\
+\leq& \lim_{p \to \infty}\left( \sqrt[p]{\left(1 + \sum_{i \neq i_0}^{n} \left  \vert \frac{f(i)}{f(i_0)}f \right \vert^p \right)} \right) \\
+\leq& \lim_{p \to \infty}\left( \sqrt[p]{\left(1 + (n-1)} \right) \rightarrow 1
+\end{align*}
 <p>
 da.h. es folgt nach <a href="20220624214831-einschnurungssatz.html#ID-8ad45894-1f59-432f-afed-0fdd9e0bf190">Sandwhichsatz</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_1571d96cf00af287c6166d5fbba599fc20f11e6f.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_1571d96cf00af287c6166d5fbba599fc20f11e6f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{p \to \infty}\left(\frac{\| f \|_p}{\| f\|_{\infty}}\right) 
+\end{align*}
 <p>
 und nach <a href="20221124121214-rechenregeln_fur_konvergenz.html#ID-378232f9-6577-4647-8e25-5f0793b92314">Rechenregeln für Konvergenz</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_1678c975aa3f9ddf5d332d79c7a1668cb81e71b4.svg" alt="20230228170345-konvergenz_der_p_norm_gegen_die_supremumsnorm_1678c975aa3f9ddf5d332d79c7a1668cb81e71b4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{p \to \infty}\left(\| f \|_p\right) = \| f \|_{\infty}
+\end{align*}
 </div>
 </div>
 </div>

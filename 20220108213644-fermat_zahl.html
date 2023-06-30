@@ -9,56 +9,80 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Fermat Zahl</h1>
-<div id="outline-container-org6533330" class="outline-2">
-<h2 id="org6533330"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2eb27d1" class="outline-2">
+<h2 id="org2eb27d1"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die $k$-te Fermat Zahl ist definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220108213644-fermat_zahl_9c1f1ee5aad636f6210a26e2d098c8d96220cf7c.svg" alt="20220108213644-fermat_zahl_9c1f1ee5aad636f6210a26e2d098c8d96220cf7c.svg" class="org-svg" />
-</span>
+\begin{align*}
+F_k  \coloneqq 2^{2^k} + 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgebda65d" class="outline-2">
-<h2 id="orgebda65d"><span class="section-number-2">2.</span> Überlegung</h2>
+<div id="outline-container-org2b396c6" class="outline-2">
+<h2 id="org2b396c6"><span class="section-number-2">2.</span> Überlegung</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li>notwendige Bedingung für eine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a> der Form <img src="file:///home/anton/html/ltximg/20220108213644-fermat_zahl_79872bd145c70cc37b3e0926436eab7dc28697ef.svg" alt="20220108213644-fermat_zahl_79872bd145c70cc37b3e0926436eab7dc28697ef.svg" class="org-svg" />:
+<li>notwendige Bedingung für eine <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">Primzahl</a> der Form \(2^n + 1\):
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20220108213644-fermat_zahl_9777622a18d1db895ec15cbc8ff6788a1541e576.svg" alt="20220108213644-fermat_zahl_9777622a18d1db895ec15cbc8ff6788a1541e576.svg" class="org-svg" /></li>
+<li>\(n = 2^k\)</li>
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org12fe7ed" class="outline-3">
-<h3 id="org12fe7ed"><span class="section-number-3">2.1.</span> Begründung</h3>
+<div id="outline-container-org8936228" class="outline-3">
+<h3 id="org8936228"><span class="section-number-3">2.1.</span> Begründung</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgc804654" class="outline-4">
-<h4 id="orgc804654"><span class="section-number-4">2.1.1.</span> Lemma</h4>
+<div id="outline-container-org201b6cf" class="outline-4">
+<h4 id="org201b6cf"><span class="section-number-4">2.1.1.</span> Lemma</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li><a href="20220104221220-geometrische_reihe.html#ID-f8ab4e19-abfd-4905-b9ae-81534050103c">Geometrische Reihe</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220108213644-fermat_zahl_677c052db6eb55ae299499cd7f22f85bcaf30ebc.svg" alt="20220108213644-fermat_zahl_677c052db6eb55ae299499cd7f22f85bcaf30ebc.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220108213644-fermat_zahl_5def9d3ad69ef037b4354b2b0279a991db335c9c.svg" alt="20220108213644-fermat_zahl_5def9d3ad69ef037b4354b2b0279a991db335c9c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n} x^n =& \frac{1-x^{n+1}}{1-x} \\
+\sum_{k=0}^{n-1} 2^n =& \frac{1-2^{n}}{1-2}  \\
+=& \frac{1-2^{n}}{1-2} \\
+=& 2^{n} - 1 \\
+\end{align*}
+\begin{align*}
+\sum_{k=0}^{n-1} x^k =& \frac{1-x^n}{1-x} && \vert \cdot -(1-x)  \\
+\sum_{k=0}^{n-1} x^k \cdot (x - 1) =& x^n - 1 && \vert \cdot -1 \\
+\sum_{k=0}^{n-1} x^k \cdot (1 - x) =& 1 - x^n
+y  \coloneqq -x \\
+n_2  \coloneqq 2j + 1 \\ 
+\sum_{k=0}^{2j} -y^k \cdot (1 + y) =& 1 + y^{2j + 1}
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

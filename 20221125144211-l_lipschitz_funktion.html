@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>L-Lipschitz-Funktion</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">L-Lipschitz-Funktion</h1>
-<div id="outline-container-org9ec5d09" class="outline-2">
-<h2 id="org9ec5d09"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5949450" class="outline-2">
+<h2 id="org5949450"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> $ &rarr; $ heißt L-Lipschitz für <img src="ltximg/20221125144211-l_lipschitz_funktion_2f1553bd368cf8f64bfddea99e41f76747d24f37.svg" alt="20221125144211-l_lipschitz_funktion_2f1553bd368cf8f64bfddea99e41f76747d24f37.svg" class="org-svg" />, falls für alle <img src="ltximg/20221125144211-l_lipschitz_funktion_7eb34d9a788a8659a99a91b9f55c71f0f170bbf1.svg" alt="20221125144211-l_lipschitz_funktion_7eb34d9a788a8659a99a91b9f55c71f0f170bbf1.svg" class="org-svg" /> gilt:
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> $ \mathbb{C} &rarr; \mathbb{C}$ heißt L-Lipschitz für \(L \geq 0\), falls für alle \(z,w \in \mathbb{C}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221125144211-l_lipschitz_funktion_ab703d00db88b82195a5bb30b57027e5257a60f0.svg" alt="20221125144211-l_lipschitz_funktion_ab703d00db88b82195a5bb30b57027e5257a60f0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert f(z) - f(w) \vert \leq L \cdot \vert z - w \vert
+\end{align*}
 </div>
 </div>
 </div>

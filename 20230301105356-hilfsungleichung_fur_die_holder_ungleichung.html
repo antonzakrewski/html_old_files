@@ -3,60 +3,72 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hilfsungleichung für die Hölder-Ungleichung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hilfsungleichung für die Hölder-Ungleichung</h1>
-<div id="outline-container-orgf232add" class="outline-2">
-<h2 id="orgf232add"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7edf9f3" class="outline-2">
+<h2 id="org7edf9f3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_dc0fb72244b8b4f89cde8834bbed56fde8a4d7f7.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_dc0fb72244b8b4f89cde8834bbed56fde8a4d7f7.svg" class="org-svg" /> und <a href="20230224170705-zueinander_konjugierte_reelle_zahlen.html#ID-59c0d0ec-566a-4f7b-bd2f-8dc953446501">zueinander konjugierte reelle Zahlen</a> <img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_fc48367a5b52d6a8cd2a0f0f167ecb60c8c3d250.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_fc48367a5b52d6a8cd2a0f0f167ecb60c8c3d250.svg" class="org-svg" /> gilt:
+Für \(a,b \in [0, \infty)\) und <a href="20230224170705-zueinander_konjugierte_reelle_zahlen.html#ID-59c0d0ec-566a-4f7b-bd2f-8dc953446501">zueinander konjugierte reelle Zahlen</a> \(p,q\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_0aaee56295eaabb4fb3d30699c6e5bed2d4300bd.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_0aaee56295eaabb4fb3d30699c6e5bed2d4300bd.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+ab \leq \frac{1}{p} a^p + \frac{1}{q}b^q
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org30bb63e" class="outline-2">
-<h2 id="org30bb63e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4c8c6cd" class="outline-2">
+<h2 id="org4c8c6cd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_af00799c08aeb96872786b8b72752351cb539d47.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_af00799c08aeb96872786b8b72752351cb539d47.svg" class="org-svg" /> (für <img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_85cb8f5fa4364e6e26d67adbfb662c79b1ba2892.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_85cb8f5fa4364e6e26d67adbfb662c79b1ba2892.svg" class="org-svg" /> oder <img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_af755a3daafc05a4860bc3c0b99a5e33650a72fd.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_af755a3daafc05a4860bc3c0b99a5e33650a72fd.svg" class="org-svg" /> ist die Ungleichung klar)
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a,b > 0\) (für \(a = 0\) oder \(b = 0\) ist die Ungleichung klar)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_80dcb6297a6c95719c8405af00427d7d92530493.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_80dcb6297a6c95719c8405af00427d7d92530493.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+ab =& \mathrm{e}^{\ln(a \cdot b)}\\
+=& \mathrm{e}^{\ln(a) + \ln(b)} \\
+=& \mathrm{e}^{\frac{1}{p}\ln(a^p) + \frac{1}{q}\ln(b^q)} 
+\end{align*}
 <p>
 Wir wissen, die <a href="20230301104518-exponentialfunktion_als_konvexe_funktion.html#ID-bc542d28-749d-4ff2-bc9a-36c238859f56">Exponentialfunktion ist konvex</a>, d.h. es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230301105356-hilfsungleichung_fur_die_holder_ungleichung_6e88222e03739e58736ac90316f330373b668381.svg" alt="20230301105356-hilfsungleichung_fur_die_holder_ungleichung_6e88222e03739e58736ac90316f330373b668381.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\mathrm{e}^{\frac{1}{p}\ln(a^p) + \frac{1}{q}\ln(b^q)} \leq& \frac{1}{p} \mathrm{e}^{\ln(a^p)} + \frac{1}{q} \mathrm{e}^{\ln(b^q)} \\
+=& \frac{1}{p} a^p + \frac{1}{q}b^q
+\end{align*}
 </div>
 </div>
 </div>

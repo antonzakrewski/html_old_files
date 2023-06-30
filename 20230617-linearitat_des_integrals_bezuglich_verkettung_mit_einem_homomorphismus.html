@@ -9,56 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Linearität des Integrals bezüglich Verkettung mit einem Homomorphismus</h1>
-<div id="outline-container-org983dfe0" class="outline-2">
-<h2 id="org983dfe0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4860f44" class="outline-2">
+<h2 id="org4860f44"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_ded747dac202d62af54e9d0c4a7eba6595b98992.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_ded747dac202d62af54e9d0c4a7eba6595b98992.svg" class="org-svg" /> eine <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">Sprungstetige Funktion</a> und <img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_f8bad2d69b9b9c1cb00f1f362d2f9ed281533f9e.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_f8bad2d69b9b9c1cb00f1f362d2f9ed281533f9e.svg" class="org-svg" /> ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a>.
+Sei \(v: \mathbb{R} \rightarrow \mathbb{R}^m\) eine <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">Sprungstetige Funktion</a> und \(\varphi \in \mathrm{Hom}_{\mathbb{R}}(\mathbb{R}^m,\mathbb{R}^n)\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a>.
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_7331836b8e524f9e96d6d0cf7e2e033429e6f0ac.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_7331836b8e524f9e96d6d0cf7e2e033429e6f0ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\int_{a}^{b} (\varphi v(t)) \mathrm{d}t = \varphi( \int_{a}^{b} v(t) \mathrm{d}t) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org476e9a0" class="outline-2">
-<h2 id="org476e9a0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc15ca5b" class="outline-2">
+<h2 id="orgc15ca5b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existiert eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>  <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">sprungstetiger Funktionen</a> <img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_de94934c0c9474a5812ec630fc07fbaf725d7cba.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_de94934c0c9474a5812ec630fc07fbaf725d7cba.svg" class="org-svg" /> und es folgt für <img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_9d4c7b320b0d6224fceea52c4ba28faf22b52797.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_9d4c7b320b0d6224fceea52c4ba28faf22b52797.svg" class="org-svg" /> als <a href="20220717183751-lange_eines_intervalls.html#ID-f827c035-3f1b-47ed-9ef1-00d508fe5130">Länge eines Intervalls</a> für eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a>  <a href="20230130184329-verfeinerung_eines_intervalls.html#ID-46a1dffa-874d-4736-9312-5523cf810f4e">Verfeinerung</a> 
+Nach Annahme existiert eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>  <a href="20230204190938-sprungstetige_funktion.html#ID-e0050a39-69b7-400b-8609-e0bdc7d4de22">sprungstetiger Funktionen</a> \(\tau_n \rightarrow \varphi\) und es folgt für \(\delta_i\) als <a href="20220717183751-lange_eines_intervalls.html#ID-f827c035-3f1b-47ed-9ef1-00d508fe5130">Länge eines Intervalls</a> für eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a>  <a href="20230130184329-verfeinerung_eines_intervalls.html#ID-46a1dffa-874d-4736-9312-5523cf810f4e">Verfeinerung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_3eea86f04eb231c507ef5eba05e01655f5154b31.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_3eea86f04eb231c507ef5eba05e01655f5154b31.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\int_{a}^{b} \varphi v(t) \mathrm{d}t =& \lim_{n \to \infty}\left( \sum_{i} \varphi \cdot \delta_i \cdot \tau_n(i) v(t) \right) \\
+=&  \lim_{n \to \infty}\left( \varphi (\sum_{i}  \cdot \delta_i \cdot \tau_n(i) v(t) ) \right) \\
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_b1b0f80ed313742fc60a59a758f04364fd9175e5.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_b1b0f80ed313742fc60a59a758f04364fd9175e5.svg" class="org-svg" /> ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a> ist, gilt wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> (vgl. <a href="20230515133113-lineare_abbildungen_auf_endlich_dimensionalen_vektorraumen_als_lipschitzstetig.html#ID-d3166af7-eefd-457b-9c14-12bbe3f4963a">lineare Abbildungen auf endlich dimensionalen Vektorräumen als Lipschitzstetig</a>)
+Da \(\varphi\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Vektorraumhomomorphismus</a> ist, gilt wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> (vgl. <a href="20230515133113-lineare_abbildungen_auf_endlich_dimensionalen_vektorraumen_als_lipschitzstetig.html#ID-d3166af7-eefd-457b-9c14-12bbe3f4963a">lineare Abbildungen auf endlich dimensionalen Vektorräumen als Lipschitzstetig</a>)
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_9ac95033a6e3dcf8b994e919c219619e8dd663e2.svg" alt="20230617-linearitat_des_integrals_bezuglich_verkettung_mit_einem_homomorphismus_9ac95033a6e3dcf8b994e919c219619e8dd663e2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left( \varphi (\sum_{i}  \cdot \delta_i \cdot \tau_n(i) v(t) ) \right) \\
+=& \varphi \lim_{n \to \infty}\left((\sum_{i}  \cdot \delta_i \cdot \tau_n(t) ) \right) \\
+=& \varphi \int_{a}^{b} v(t) \mathrm{d}t 
+\end{align*}
 </div>
 </div>
 </div>

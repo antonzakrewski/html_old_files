@@ -9,41 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Betrag: Reelle Zahlen</h1>
-<div id="outline-container-orgb24eacd" class="outline-2">
-<h2 id="orgb24eacd"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb172e9d" class="outline-2">
+<h2 id="orgb172e9d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105633-betrag_reelle_zahlen_92425e6405ad77e717096bb24797cb9298f8398a.svg" alt="20210702105633-betrag_reelle_zahlen_92425e6405ad77e717096bb24797cb9298f8398a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{equation}
+\vert a \vert = \begin{cases}
+a & \mbox{if } a > 0\\
+0 & \mbox{if } a = 0\\
+- a & \mbox{if } a <  0
+\end{cases}
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-org16fd142" class="outline-2">
-<h2 id="org16fd142"><span class="section-number-2">2.</span> Eigenschaften</h2>
+<div id="outline-container-org6a9c41a" class="outline-2">
+<h2 id="org6a9c41a"><span class="section-number-2">2.</span> Eigenschaften</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210702105633-betrag_reelle_zahlen_0c98e6a30a80921137287eff2344d2a9d54ac26b.svg" alt="20210702105633-betrag_reelle_zahlen_0c98e6a30a80921137287eff2344d2a9d54ac26b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{equation}
+\forall x(\vert x\vert \geq 0)
+\end{equation}
 </div>
 </div>
 
-<div id="outline-container-org9f399c7" class="outline-2">
-<h2 id="org9f399c7"><span class="section-number-2">3.</span> Quelle</h2>
+<div id="outline-container-org98da893" class="outline-2">
+<h2 id="org98da893"><span class="section-number-2">3.</span> Quelle</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li><a href="rasch2013vorkurs">rasch2013vorkurs</a></li>

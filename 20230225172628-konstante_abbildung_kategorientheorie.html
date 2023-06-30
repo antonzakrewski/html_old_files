@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konstante Abbildung (Kategorientheorie)</h1>
-<div id="outline-container-org20578b9" class="outline-2">
-<h2 id="org20578b9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org025c6a3" class="outline-2">
+<h2 id="org025c6a3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_bf013f416a52bc335c4572ea7ce1474d02df05ff.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a>, <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_9e2e3561c77cf20e282b50ce01ac02fad40ec375.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_9e2e3561c77cf20e282b50ce01ac02fad40ec375.svg" class="org-svg" /> und sei <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a>.
-<img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist konstant, falls sich <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> über <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_8b713347c109185bae55639ca6b1b7a5ea091654.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_8b713347c109185bae55639ca6b1b7a5ea091654.svg" class="org-svg" /> <a href="20230225172453-faktorisierung_eines_morphismus.html#ID-03fc6d28-e9bd-4fa3-8093-a113eaf06a6e">faktorisieren</a> lässt, d.h. es gilt:
+Sei \(\mathcal{C}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a>, \(A,B \in \mathrm{Obj}(\mathcal{C})\) und sei \(f: A \rightarrow B\) ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a>.
+\(f\) ist konstant, falls sich \(f\) über \(\{0\}\) <a href="20230225172453-faktorisierung_eines_morphismus.html#ID-03fc6d28-e9bd-4fa3-8093-a113eaf06a6e">faktorisieren</a> lässt, d.h. es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_75dfd09e34c578f79038d16dbfb8cf27267188aa.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_75dfd09e34c578f79038d16dbfb8cf27267188aa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f = b \circ 0
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_32677ee8affc93cdd8e55de811ae35cecb9d5651.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_32677ee8affc93cdd8e55de811ae35cecb9d5651.svg" class="org-svg" /> und ein <img src="file:///home/anton/html/ltximg/20230225172628-konstante_abbildung_kategorientheorie_b6e2e629a6e90fdcfec3418c531378535ba87163.svg" alt="20230225172628-konstante_abbildung_kategorientheorie_b6e2e629a6e90fdcfec3418c531378535ba87163.svg" class="org-svg" />
+für \(0: A \rightarrow \{0\}\) und ein \(b: \{0\} \rightarrow B\)
 </p>
 </div>
 </div>

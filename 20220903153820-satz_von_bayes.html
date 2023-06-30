@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Bayes</h1>
 
-<div id="outline-container-orgbcff8c3" class="outline-2">
-<h2 id="orgbcff8c3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8b159c5" class="outline-2">
+<h2 id="org8b159c5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-sei <img src="file:///home/anton/html/ltximg/20220903153820-satz_von_bayes_3572a14becc71857b48987336dbbd39c41059753.svg" alt="20220903153820-satz_von_bayes_3572a14becc71857b48987336dbbd39c41059753.svg" class="org-svg" /> ein Wahrscheinlichkeitsraum <img src="file:///home/anton/html/ltximg/20220903153820-satz_von_bayes_7681f7176d7da5ef2810dae3c6073bde890b8f77.svg" alt="20220903153820-satz_von_bayes_7681f7176d7da5ef2810dae3c6073bde890b8f77.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220903153820-satz_von_bayes_d4aa6c26942b22db9d3d3204a8f6130d618c0e9e.svg" alt="20220903153820-satz_von_bayes_d4aa6c26942b22db9d3d3204a8f6130d618c0e9e.svg" class="org-svg" />
+sei \((\Omega, \mathcal{A}, \mathbb{P})\) ein Wahrscheinlichkeitsraum \(A, B \in \mathcal{A}\) mit \(\mathbb{P}(A), \mathbb{P}(B) > 0\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220903153820-satz_von_bayes_6aec36a388ccb17fc83bd0627585d13c7bb1ce53.svg" alt="20220903153820-satz_von_bayes_6aec36a388ccb17fc83bd0627585d13c7bb1ce53.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathbb{P}(B \vert A) =& \mathbb{P}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org39ac866" class="outline-2">
-<h2 id="org39ac866"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3b52f18" class="outline-2">
+<h2 id="org3b52f18"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -3,32 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Trennung von endlich vielen, paarweise disjunkten abgeschlossenen Mengen in einem normalen Raum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Trennung von endlich vielen, paarweise disjunkten abgeschlossenen Mengen in einem normalen Raum</h1>
-<div id="outline-container-org64bb7e0" class="outline-2">
-<h2 id="org64bb7e0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1dfbbfc" class="outline-2">
+<h2 id="org1dfbbfc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normaler</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" /> für <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
-Dann existieren paarweise <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" class="org-svg" /> von <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20230227205526-normaler_raum_topologie.html#ID-8dac9b3a-6b0d-479c-b4c8-e6a022e96e12">normaler</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und \(A_i\) für \(i \in \{1,..,n\}\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Dann existieren paarweise <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_i\) von \(A_i\).
 </p>
 </div>
 </div>
-<div id="outline-container-orga4de7c7" class="outline-2">
-<h2 id="orga4de7c7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6c2231e" class="outline-2">
+<h2 id="org6c2231e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existieren für <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_36b19d7bca08d199511845312d01edcdc05014ec.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_36b19d7bca08d199511845312d01edcdc05014ec.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_9816e089179900e33e267a7c56a842333d50a5a7.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_9816e089179900e33e267a7c56a842333d50a5a7.svg" class="org-svg" /> bzw. <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_18980554f236ca53c11f54e870a1bbfdc3748c7c.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_18980554f236ca53c11f54e870a1bbfdc3748c7c.svg" class="org-svg" />.
-Damit existieren <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele Kombinationen und aus der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a> folgt, dass <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_ce77eef7ab2b15f4bb662ac7341b30c03b14ed0c.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_ce77eef7ab2b15f4bb662ac7341b30c03b14ed0c.svg" class="org-svg" /> ebenfalls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_0148cc6ba9761b1d28101b691f3acaf5537ec8ea.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_0148cc6ba9761b1d28101b691f3acaf5537ec8ea.svg" class="org-svg" /> ist.
-Diese Konstruktion lässt sich für <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> wiederholen und es folgt nach Konstruktion, dass <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_086bcb9f368c6bcd3ded490882a90d9634bc72e1.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_086bcb9f368c6bcd3ded490882a90d9634bc72e1.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> zu <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" class="org-svg" /> für <img src="ltximg/20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_fb0ce84c9b08ee09defd8843de78433b897456b0.svg" alt="20230520151831-trennung_von_endlich_vielen_paarweise_disjunkten_abgeschlossenen_mengen_in_einem_normalen_raum_fb0ce84c9b08ee09defd8843de78433b897456b0.svg" class="org-svg" /> ist.
+Nach Annahme existieren für \(A_i,A_j\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_{i,j}\) bzw. \(U_{j,i}\).
+Damit existieren <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele Kombinationen und aus der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a> folgt, dass \(U_j \coloneqq \bigcap_{i = 1}^{n} U_{j,i}\) ebenfalls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(A_j\) ist.
+Diese Konstruktion lässt sich für \(i \in \{1,...,n\}\) wiederholen und es folgt nach Konstruktion, dass \(U_j\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> zu \(U_i\) für \(i \neq j\) ist.
 </p>
 </div>
 </div>

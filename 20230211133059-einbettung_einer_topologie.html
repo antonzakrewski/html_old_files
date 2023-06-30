@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einbettung einer Topologie</h1>
-<div id="outline-container-org3d5bcc5" class="outline-2">
-<h2 id="org3d5bcc5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd3f75ae" class="outline-2">
+<h2 id="orgd3f75ae"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230211133059-einbettung_einer_topologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230211133059-einbettung_einer_topologie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_68deebc060af9cb297d2d816791b3d6ab9b6dc4d.svg" alt="20230211133059-einbettung_einer_topologie_68deebc060af9cb297d2d816791b3d6ab9b6dc4d.svg" class="org-svg" /> ist eine Einbettung von <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230211133059-einbettung_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230211133059-einbettung_einer_topologie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" />, falls für die von <img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_ffc941e9003adfa98149e6103d41efb93051f60b.svg" alt="20230211133059-einbettung_einer_topologie_ffc941e9003adfa98149e6103d41efb93051f60b.svg" class="org-svg" /> induzierte <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>.
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(s: X \rightarrow X'\) ist eine Einbettung von \(X\) in \(X'\), falls für die von \(f[X]\) induzierte <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230211133059-einbettung_einer_topologie_a7392e61e365df7a4b7110873864928c32253f75.svg" alt="20230211133059-einbettung_einer_topologie_a7392e61e365df7a4b7110873864928c32253f75.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f': X \rightarrow& f[X] \\
+x \mapsto& f(x)
+\end{align*}
 <p>
 ist ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a> 
 </p>

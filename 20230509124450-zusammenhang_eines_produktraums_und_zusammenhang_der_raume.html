@@ -9,52 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang eines Produktraums und Zusammenhang der Räume</h1>
-<div id="outline-container-org67ae08f" class="outline-2">
-<h2 id="org67ae08f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd943ab4" class="outline-2">
+<h2 id="orgd943ab4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" class="org-svg" /> gegeben.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> \(X  \coloneqq \prod X_i\) gegeben.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" class="org-svg" /> ist für beliebiges <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
+<li>\(X\) ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
+<li>\(X_i\) ist für beliebiges \(i\) <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2dc3b70" class="outline-2">
-<h2 id="org2dc3b70"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4bfcaf1" class="outline-2">
+<h2 id="org4bfcaf1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Dabei werden folgende pathologische Fälle vernachlässigt
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_88c631461572a03f0c67d79117d49bc6f1f1dd1a.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_88c631461572a03f0c67d79117d49bc6f1f1dd1a.svg" class="org-svg" /> für ein <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_7aea370aeda7d28f76d888c4561291b7096636c1.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_7aea370aeda7d28f76d888c4561291b7096636c1.svg" class="org-svg" /> wegen der Ablehnung des <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f86-a90b-7a269c9fd21e">Axiom of choice</a></li>
+<li>\(X_i \neq \emptyset\) für ein \(i \in I\)</li>
+<li>\(X = \emptyset\) wegen der Ablehnung des <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f86-a90b-7a269c9fd21e">Axiom of choice</a></li>
 </ul>
 </div>
-<div id="outline-container-orgd3d89cc" class="outline-3">
-<h3 id="orgd3d89cc"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org9fb262c" class="outline-3">
+<h3 id="org9fb262c"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> zusammenhängend, dann ist <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_2f4a1cb09d84a5b5d0ab76b747f13dd264e9d3b8.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_2f4a1cb09d84a5b5d0ab76b747f13dd264e9d3b8.svg" class="org-svg" /> und nach der Aussage über den <a href="20230509121156-zusammenhang_des_bilds_einer_stetigen_menge.html#ID-cfd2871b-85a4-4110-aa50-8f650e4050d3">Zusammenhang des Bilds einer stetigen Menge</a> ist <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bfd962ef8c6c229a9d815ea2e79fe79a3a8bea45.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bfd962ef8c6c229a9d815ea2e79fe79a3a8bea45.svg" class="org-svg" /> zusammenhängend.
+Sei \(X\) zusammenhängend, dann ist \(X_j = p_j[X]\) und nach der Aussage über den <a href="20230509121156-zusammenhang_des_bilds_einer_stetigen_menge.html#ID-cfd2871b-85a4-4110-aa50-8f650e4050d3">Zusammenhang des Bilds einer stetigen Menge</a> ist \(X_j\) zusammenhängend.
 </p>
 </div>
 </div>
-<div id="outline-container-orge788c42" class="outline-3">
-<h3 id="orge788c42"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org906b04e" class="outline-3">
+<h3 id="org906b04e"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> und die <a href="20230308142726-zusammenhangskomponente.html#ID-1428682d-f6f4-4d4c-b52c-bc0087485f33">Zusammenhangskomponente</a> <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_9ff4d9b3210a7c8b13d57092537370fd2b57df09.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_9ff4d9b3210a7c8b13d57092537370fd2b57df09.svg" class="org-svg" /> gegeben.
-Sei <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bcf4880887faab780b057241e2b1d8fc94c1024e.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_bcf4880887faab780b057241e2b1d8fc94c1024e.svg" class="org-svg" /> beliebig und <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_19dc7233722cfa42001060a23ed00a8a6c3377c2.svg" class="org-svg" />, so existieren endlich viele <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_b436648c06bc2ff46f5090eeff9fd9d1d82d0b20.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_b436648c06bc2ff46f5090eeff9fd9d1d82d0b20.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_14eee8a0e19f4559a1bfee9818ea709f3c591263.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_14eee8a0e19f4559a1bfee9818ea709f3c591263.svg" class="org-svg" />.
-Da die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2e0b5fc38b0bf7e25c59e6b0c65e085f9d8198c.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2e0b5fc38b0bf7e25c59e6b0c65e085f9d8198c.svg" class="org-svg" /> <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">homeomorph</a> zu einem <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängenden</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> ist, folgt, dass <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2e0b5fc38b0bf7e25c59e6b0c65e085f9d8198c.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2e0b5fc38b0bf7e25c59e6b0c65e085f9d8198c.svg" class="org-svg" /> ebenfalls <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist.
-Nach der Aussage über die <a href="20230509125028-zusammenhang_einer_vereinigung_von_nicht_disjunkten_zusammenhangenden_mengen.html#ID-be6e96bb-97bc-4dae-b248-54e6e01a72c7">Vereinigung von überlappenden zusammenhängenden Mengen</a> lässt sich induktiv durch geeignete <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigungen</a> von <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der Form <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_cae7794df7fc1fd06041253a90079a33d98a2ff7.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_cae7794df7fc1fd06041253a90079a33d98a2ff7.svg" class="org-svg" /> zeigen, dass eine <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängende</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_d015845ae0bff5b2a6ce2ce912405e185ccd8f10.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_d015845ae0bff5b2a6ce2ce912405e185ccd8f10.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_10bf2c3c95add5b8e0bd377e0fe1e9801206707f.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_10bf2c3c95add5b8e0bd377e0fe1e9801206707f.svg" class="org-svg" /> existiert.
-Diese ist nach universeller Eigenschaft <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> von <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_9ff4d9b3210a7c8b13d57092537370fd2b57df09.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_9ff4d9b3210a7c8b13d57092537370fd2b57df09.svg" class="org-svg" /> und schneidet <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" />, d.h. es folgt <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_e639a78e4c81107a6dca3eaee6b35098bb009ccb.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_e639a78e4c81107a6dca3eaee6b35098bb009ccb.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb4bdc6750d7d4b2099c3d3a2e6ba21890a945bd.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_eb4bdc6750d7d4b2099c3d3a2e6ba21890a945bd.svg" class="org-svg" />. 
-Nach der Aussage über <a href="20230308131718-teilmenge_eines_abschlusses_einer_zusammenhangender_menge_als_zusammenhangende_menge.html#ID-16447d4d-126d-4231-a7e4-b95d3be606fe">Abschlusses einer zusammenhängenden Menge als zusammenhängende Menge</a> ist <img src="file:///home/anton/html/ltximg/20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230509124450-zusammenhang_eines_produktraums_und_zusammenhang_der_raume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> somit <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> 
+Sei \(x \in X\) und die <a href="20230308142726-zusammenhangskomponente.html#ID-1428682d-f6f4-4d4c-b52c-bc0087485f33">Zusammenhangskomponente</a> \(K[x]\) gegeben.
+Sei \(y \in X\) beliebig und \(U\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(y\), so existieren endlich viele \(U_i \subseteq X_i\) mit \(\prod_{i=1}^n U_i \times \prod_{j \neq i} X_i \subseteq U\).
+Da die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \((x_i)_{i \neq k} \times X_k \simeq X_k\) <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">homeomorph</a> zu einem <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängenden</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> ist, folgt, dass \((x_i)_{i \neq k} \times X_k \simeq X_k\) ebenfalls <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist.
+Nach der Aussage über die <a href="20230509125028-zusammenhang_einer_vereinigung_von_nicht_disjunkten_zusammenhangenden_mengen.html#ID-be6e96bb-97bc-4dae-b248-54e6e01a72c7">Vereinigung von überlappenden zusammenhängenden Mengen</a> lässt sich induktiv durch geeignete <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigungen</a> von <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> der Form \((x_i)_{i \neq k} \times X_k\) zeigen, dass eine <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängende</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(K\) mit \(x \in K\) und \((y_i)_{i = 1,...,n} \times (x_j)_{j \neq i} \in K\) existiert.
+Diese ist nach universeller Eigenschaft <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> von \(K[x]\) und schneidet \(U\), d.h. es folgt \(y \in \overline{K[x]}\) bzw. \(\overline{K[x]} = X\). 
+Nach der Aussage über <a href="20230308131718-teilmenge_eines_abschlusses_einer_zusammenhangender_menge_als_zusammenhangende_menge.html#ID-16447d4d-126d-4231-a7e4-b95d3be606fe">Abschlusses einer zusammenhängenden Menge als zusammenhängende Menge</a> ist \(X\) somit <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> 
 </p>
 </div>
 </div>

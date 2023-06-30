@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Nullteiler in einem Restklassenring der ganzen Zahlen</h1>
-<div id="outline-container-org7fd2c25" class="outline-2">
-<h2 id="org7fd2c25"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org033950c" class="outline-2">
+<h2 id="org033950c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_d63e97f387cc7bf47417a601f2ac661fdb9cdd91.svg" class="org-svg" /> und der <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> <img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_e18bfca343edd56585c212bfe20cfe57a2b8c62b.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_e18bfca343edd56585c212bfe20cfe57a2b8c62b.svg" class="org-svg" /> gegeben, so gil ür <img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_39be2936f9a8710257f0086dc564cb61343aa5f4.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_39be2936f9a8710257f0086dc564cb61343aa5f4.svg" class="org-svg" />
+Sei \(m \in \mathbb{Z}\) und der <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">Faktorring</a> \(\mathbb{Z}/m \mathbb{Z})\) gegeben, so gil ür \(x \in \mathbb{Z}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_0f36f0bed76704284cc829a337e8cdecba960a7a.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_0f36f0bed76704284cc829a337e8cdecba960a7a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{gcd}()
+\end{align*}
 <p>
 siehe: <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org5b0fe76" class="outline-2">
-<h2 id="org5b0fe76"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge19e6ab" class="outline-2">
+<h2 id="orge19e6ab"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 ES gilt@:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_47dc9df99e98c83c2ddd58a61a6200d7f4bfd130.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_47dc9df99e98c83c2ddd58a61a6200d7f4bfd130.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\overline{x} \cdot \frac{\overline{m}}{\overline{d}} =& \frac{\overline{x}}{\overline{d}} \cdot \overline{m} = \overline{0}
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_403631b9f160b75cf327c3d6fd2f20cdf3d247f3.svg" alt="20230426133938-nullteiler_in_einem_restklassenring_der_ganzen_zahlen_403631b9f160b75cf327c3d6fd2f20cdf3d247f3.svg" class="org-svg" /> - (ausarbeiten)
+mit \(\frac{\overline{m}}{\overline{d}}, \overline{x} \neq 0\) - (ausarbeiten)
 </p>
 </div>
 </div>

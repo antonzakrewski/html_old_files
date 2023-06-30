@@ -9,38 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">big-O notation</h1>
-<div id="outline-container-org3a4de71" class="outline-2">
-<h2 id="org3a4de71"><span class="section-number-2">1.</span> Definitio:</h2>
+<div id="outline-container-orgd54006e" class="outline-2">
+<h2 id="orgd54006e"><span class="section-number-2">1.</span> Definitio:</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230428095117-big_o_notation_150ea29b5126db27cfe5698c1970194e95f6bc89.svg" alt="20230428095117-big_o_notation_150ea29b5126db27cfe5698c1970194e95f6bc89.svg" class="org-svg" /> reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> auf einem <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">unbeschränktem</a> <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> <img src="file:///home/anton/html/ltximg/20230428095117-big_o_notation_6e59c2bdab0de1df785c3cbca75ddb3741cf1fd7.svg" alt="20230428095117-big_o_notation_6e59c2bdab0de1df785c3cbca75ddb3741cf1fd7.svg" class="org-svg" />
+Seien \(f,g: U \rightarrow \mathbb{R}\) reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> auf einem <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">unbeschränktem</a> <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> \(U \subseteq \mathbb{R}\)
 Man schreibt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428095117-big_o_notation_fe61587f9ebc7f1ef59e66cc5139c09540061acb.svg" alt="20230428095117-big_o_notation_fe61587f9ebc7f1ef59e66cc5139c09540061acb.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+g >>& f
+g \in& O(f)
+\end{align*}
 <p>
 Falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428095117-big_o_notation_989a34170b74a04465c54c46298d2513eaaf58d2.svg" alt="20230428095117-big_o_notation_989a34170b74a04465c54c46298d2513eaaf58d2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\exists \varepsilon > 0 \exists x(\varepsilon) : x(\varepsilon) < x \Rightarrow \vert f(x) \vert \leq \varepsilon \cdot g(x) 
+\end{align*}
 </div>
 </div>
 </div>

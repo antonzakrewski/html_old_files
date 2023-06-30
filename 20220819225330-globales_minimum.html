@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">globales Minimum</h1>
-<div id="outline-container-org5ee6f31" class="outline-2">
-<h2 id="org5ee6f31"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org744d0ca" class="outline-2">
+<h2 id="org744d0ca"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220819225330-globales_minimum_c1c4ef707cfd60cf70cf45dfffd9e35da25c14f4.svg" alt="20220819225330-globales_minimum_c1c4ef707cfd60cf70cf45dfffd9e35da25c14f4.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220819225330-globales_minimum_6e59c2bdab0de1df785c3cbca75ddb3741cf1fd7.svg" alt="20220819225330-globales_minimum_6e59c2bdab0de1df785c3cbca75ddb3741cf1fd7.svg" class="org-svg" /> 
-Die <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a> <img src="file:///home/anton/html/ltximg/20220819225330-globales_minimum_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20220819225330-globales_minimum_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> ist ein globales Minimum wenn gilt
+Sei \(f: U \rightarrow \mathbb{R}\) mit \(U \subseteq \mathbb{R}\) 
+Die <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a> \(x_0\) ist ein globales Minimum wenn gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220819225330-globales_minimum_fb894370e4b4ffc2141e774f0ee8c8bbfb95c37b.svg" alt="20220819225330-globales_minimum_fb894370e4b4ffc2141e774f0ee8c8bbfb95c37b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall x : x \in U (f(x_0) \leq f(x))
+\end{align*}
 </div>
 </div>
 </div>

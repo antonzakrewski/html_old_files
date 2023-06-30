@@ -9,55 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Transformation: Winkelfunktion zur Exponentialfunktion</h1>
 
-<div id="outline-container-orga89bb2b" class="outline-2">
-<h2 id="orga89bb2b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbc7f74b" class="outline-2">
+<h2 id="orgbc7f74b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_f477d4e24caad835ca55c187ac70fd4bfbfcbf90.svg" alt="20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_f477d4e24caad835ca55c187ac70fd4bfbfcbf90.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sin(\theta) =& \frac{1}{2i} (e^{i\theta} - e^{-i\theta}) \\
+\cos(\theta) =& \frac{1}{2} (e^{i\theta} + e^{-i\theta})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2b97e17" class="outline-2">
-<h2 id="org2b97e17"><span class="section-number-2">2.</span> Herleitung</h2>
+<div id="outline-container-org928ea05" class="outline-2">
+<h2 id="org928ea05"><span class="section-number-2">2.</span> Herleitung</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220302183928-transformation_von_exponentialfunktion_zur_winkelfunktion.html#ID-119dca21-9d77-4801-b06c-f93ea67769ae">Transformation: Exponentialfunktion zur Winkelfunktion</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_d44b0fe3cf91f0e24d2fda01d857cff0051c81b5.svg" alt="20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_d44b0fe3cf91f0e24d2fda01d857cff0051c81b5.svg" class="org-svg" />
-</span>
+\begin{align*}
+e^{i\theta} =& \cos(\theta) + i\sin(\theta) \\
+e^{-i\theta} =& \cos(\theta) - i\sin(\theta)
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org590ca6c" class="outline-3">
-<h3 id="org590ca6c"><span class="section-number-3">2.1.</span> Sinus</h3>
+<div id="outline-container-orgf84104e" class="outline-3">
+<h3 id="orgf84104e"><span class="section-number-3">2.1.</span> Sinus</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_07f8746f9781551f05fca37f343fed87aac04c07.svg" alt="20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_07f8746f9781551f05fca37f343fed87aac04c07.svg" class="org-svg" />
-</span>
+\begin{align*}
+e^{i\theta} + e^{-i\theta} =& 2\cos(\theta) && \vert \cdot \frac{1}{2} \\
+\frac{1}{2} (e^{i\theta} + e^{-i\theta}) =& \cos(\theta)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfa55c26" class="outline-3">
-<h3 id="orgfa55c26"><span class="section-number-3">2.2.</span> Cosinus</h3>
+<div id="outline-container-org6b4f450" class="outline-3">
+<h3 id="org6b4f450"><span class="section-number-3">2.2.</span> Cosinus</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_81933dc2198f359c03a40c0c5b769ccc4a198183.svg" alt="20220302184006-transformation_von_winkelfunktion_zur_exponentialfunktion_81933dc2198f359c03a40c0c5b769ccc4a198183.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e^{i\theta} - e^{-i\theta} =& 2i \cdot \sin(\theta) && \vert \cdot \frac{1}{2i} \\
+\frac{1}{2i} (e^{i\theta} - e^{-i\theta}) =& \sin(\theta)
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Umgebungsbasis einer Produkttopologie</h1>
-<div id="outline-container-orgb638a35" class="outline-2">
-<h2 id="orgb638a35"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdc216a6" class="outline-2">
+<h2 id="orgdc216a6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> über einer <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> <img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" class="org-svg" />.
-Seien ferner <img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_b2eb8d5f13e8ae576a9a655c87c3d3383e31a104.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_b2eb8d5f13e8ae576a9a655c87c3d3383e31a104.svg" class="org-svg" /> <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasen</a> von <img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_1daefdc032873a6594a4b57993397af6e313fceb.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_1daefdc032873a6594a4b57993397af6e313fceb.svg" class="org-svg" />, so ist
+Sei \(X\) eine <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> über einer <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> \((X_i,\mathcal{T}_i)\).
+Seien ferner \(\mathcal{B}_{i}(x_i)\) <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasen</a> von \(x_i \in X_i\), so ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_5efdbc7da69efe620bc14dcd476ffe70a14fd9dc.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_5efdbc7da69efe620bc14dcd476ffe70a14fd9dc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{i \in I} \mathcal{B}_i(x_i)
+\end{align*}
 <p>
-eine Umgebungsbasis von <img src="file:///home/anton/html/ltximg/20230430234659-umgebungsbasis_einer_produkttopologie_985ffc42d0c552cbbd239dc7a06f1d36057bf555.svg" alt="20230430234659-umgebungsbasis_einer_produkttopologie_985ffc42d0c552cbbd239dc7a06f1d36057bf555.svg" class="org-svg" />
+eine Umgebungsbasis von \((x_i)_{i \in I}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org8d41158" class="outline-2">
-<h2 id="org8d41158"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org67f6244" class="outline-2">
+<h2 id="org67f6244"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der 

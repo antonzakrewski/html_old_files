@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sierpinski-Space</h1>
-<div id="outline-container-orgcad78e6" class="outline-2">
-<h2 id="orgcad78e6"><span class="section-number-2">1.</span> Definition / Proposition</h2>
+<div id="outline-container-org1f120ea" class="outline-2">
+<h2 id="org1f120ea"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-The Sierpinski-Space <img src="file:///home/anton/html/ltximg/20230404225102-sierpinski_space_084cb99448f3dc5dda2d357abf49499a378d96ff.svg" alt="20230404225102-sierpinski_space_084cb99448f3dc5dda2d357abf49499a378d96ff.svg" class="org-svg" /> on <img src="file:///home/anton/html/ltximg/20230404225102-sierpinski_space_c61717f0dc13aea03e1d48352ae5db7f30bb7f3d.svg" alt="20230404225102-sierpinski_space_c61717f0dc13aea03e1d48352ae5db7f30bb7f3d.svg" class="org-svg" /> is a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> defined as:
+The Sierpinski-Space \(\mathbb{S}\) on \(\{1,0\}\) is a <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> defined as:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230404225102-sierpinski_space_fa3e478ae1463fc60dd473e724b4602c7ba80002.svg" alt="20230404225102-sierpinski_space_fa3e478ae1463fc60dd473e724b4602c7ba80002.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathbb{S} := \{\emptyset, \{1\}, \{1,0\} \}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2cb202f" class="outline-2">
-<h2 id="org2cb202f"><span class="section-number-2">2.</span> Proof as <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a></h2>
+<div id="outline-container-org61fcb8e" class="outline-2">
+<h2 id="org61fcb8e"><span class="section-number-2">2.</span> Proof as <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a></h2>
 <div class="outline-text-2" id="text-2">
 <p>
 trivial

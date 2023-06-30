@@ -3,49 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Faktorregel</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Faktorregel</h1>
-<div id="outline-container-org5ed0e91" class="outline-2">
-<h2 id="org5ed0e91"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2d6b572" class="outline-2">
+<h2 id="org2d6b572"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230118171223-faktorregel_a58001fa4e0ff0be2f490ce23e144070e4742068.svg" alt="20230118171223-faktorregel_a58001fa4e0ff0be2f490ce23e144070e4742068.svg" class="org-svg" /> ein <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit <img src="ltximg/20230118171223-faktorregel_19811c52650342437cf46afd30f74aa7fbc636ac.svg" alt="20230118171223-faktorregel_19811c52650342437cf46afd30f74aa7fbc636ac.svg" class="org-svg" /> und <img src="ltximg/20230118171223-faktorregel_f45b22844bd1100b6dd06152bfe799444140ea3e.svg" alt="20230118171223-faktorregel_f45b22844bd1100b6dd06152bfe799444140ea3e.svg" class="org-svg" /> 
+Sei \(f: D \rightarrow \mathbb{C}\) ein <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit \(D \subseteq \mathbb{C}\) und \(\alpha \in \mathbb{C}\) 
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230118171223-faktorregel_e337342299c58780c13a227be3458bc214b2aba1.svg" alt="20230118171223-faktorregel_e337342299c58780c13a227be3458bc214b2aba1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(\alpha \cdot f(x))' =& \alpha \cdot f'(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2c47a35" class="outline-2">
-<h2 id="org2c47a35"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9f79603" class="outline-2">
+<h2 id="org9f79603"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aus der Definition der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230118171223-faktorregel_5aa1bc725d03c3ae7c3728701ae868a126dc8a2f.svg" alt="20230118171223-faktorregel_5aa1bc725d03c3ae7c3728701ae868a126dc8a2f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(\alpha \cdot f(x))' =& \lim_{\delta \to 0}\left(\frac{\alpha \cdot f(x + \delta) - \alpha \cdot f(x)}{\delta}\right) \\
+=& \alpha \cdot \lim_{\delta \to 0}\left(\frac{f(x + \delta) - f(x)}{\delta}\right) \\
+=& \alpha \cdot f'(x)
+\end{align*}
 <p>
 alternitev:
 folgt aus der <a href="20230118163257-kettenregel.html#ID-b4eb3b33-2c52-4f4f-9889-cdbb92adfaa2">Kettenregel</a> 

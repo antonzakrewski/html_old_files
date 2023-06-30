@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Permutation</h1>
-<div id="outline-container-org216c426" class="outline-2">
-<h2 id="org216c426"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd77e5ae" class="outline-2">
+<h2 id="orgd77e5ae"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220928140441-permutation_b8e4ac493ae27b007c3768d6a40431a17753b253.svg" alt="20220928140441-permutation_b8e4ac493ae27b007c3768d6a40431a17753b253.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit <a href="20211227215415-machtigkeit_menge.html#ID-a53ec5a2-0adb-4575-bf21-e3ac15eff75f">Mächtigkeit</a> <img src="file:///home/anton/html/ltximg/20220928140441-permutation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20220928140441-permutation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20220928140441-permutation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20220928140441-permutation_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a>.
+Sei \(X = \{x_1, x_2, ..., x_n\}\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit <a href="20211227215415-machtigkeit_menge.html#ID-a53ec5a2-0adb-4575-bf21-e3ac15eff75f">Mächtigkeit</a> \(n\), d.h. \(n\) <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a>.
 Eine Permutation ist dann eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220928140441-permutation_664385e89273d4c73ea76e491ac70196155f59c5.svg" alt="20220928140441-permutation_664385e89273d4c73ea76e491ac70196155f59c5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\pi: \{x \in \mathbb{N} : 1 \leq x \leq n \} \rightarrow X
+\end{align*}
 </div>
 </div>
 </div>

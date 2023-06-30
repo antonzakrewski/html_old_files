@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Annullierung von Vektoren</h1>
-<div id="outline-container-orgdff50ed" class="outline-2">
-<h2 id="orgdff50ed"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd428e40" class="outline-2">
+<h2 id="orgd428e40"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226005900-annullierung_von_vektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221226005900-annullierung_von_vektoren_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20221226005900-annullierung_von_vektoren_30b762cf2836e393bb5319c725ee9e5cdf9eac20.svg" alt="20221226005900-annullierung_von_vektoren_30b762cf2836e393bb5319c725ee9e5cdf9eac20.svg" class="org-svg" />
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(S \subseteq V^*\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226005900-annullierung_von_vektoren_300bc5423854481b90158203c300ac962e74470b.svg" alt="20221226005900-annullierung_von_vektoren_300bc5423854481b90158203c300ac962e74470b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+S^{\top} =& \{v \in V \vert s(v) = 0 \forall s \in S \}
+\end{align*}
 </div>
 </div>
 </div>

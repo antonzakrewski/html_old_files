@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Taylor-Entwicklung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Taylor-Entwicklung</h1>
-<div id="outline-container-org6cab780" class="outline-2">
-<h2 id="org6cab780"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6cea4f2" class="outline-2">
+<h2 id="org6cea4f2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221113211059-taylor_entwicklung_5b51397d3607cad716542325d6ba14fdd1ef1891.svg" alt="20221113211059-taylor_entwicklung_5b51397d3607cad716542325d6ba14fdd1ef1891.svg" class="org-svg" /> eine <a href="20221021000346-glatte_funktion.html#ID-1d941314-2cef-435c-8e94-e176d3a830c9">glatte</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass für <img src="ltximg/20221113211059-taylor_entwicklung_493086c360d35f0c1a51dce787cffc58fa57647a.svg" alt="20221113211059-taylor_entwicklung_493086c360d35f0c1a51dce787cffc58fa57647a.svg" class="org-svg" /> in einer <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> <img src="ltximg/20221113211059-taylor_entwicklung_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" alt="20221113211059-taylor_entwicklung_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" class="org-svg" /> von <img src="ltximg/20221113211059-taylor_entwicklung_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" alt="20221113211059-taylor_entwicklung_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" class="org-svg" /> die <a href="20220302162755-taylorreihe.html#ID-a4e603aa-2ab3-42af-b185-e357439006bc">Taylorreihe</a> von <img src="ltximg/20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> gegen <img src="ltximg/20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a>.
-Dann lässt sich <img src="ltximg/20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20221113211059-taylor_entwicklung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> um <img src="ltximg/20221113211059-taylor_entwicklung_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" alt="20221113211059-taylor_entwicklung_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" class="org-svg" /> in <img src="ltximg/20221113211059-taylor_entwicklung_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" alt="20221113211059-taylor_entwicklung_31c58e1c3e3c93f52d4f47ebb153097b0b135fd8.svg" class="org-svg" /> als <a href="20221204223941-potenzreihe.html#ID-dab65874-6741-4bba-97fe-d305f01190aa">Potenzreihe</a> durch die <a href="20220302162755-taylorreihe.html#ID-a4e603aa-2ab3-42af-b185-e357439006bc">Taylorreihe</a> darstellen/entwickeln.
+Sei \(f: I \rightarrow \mathbb{R}\) eine <a href="20221021000346-glatte_funktion.html#ID-1d941314-2cef-435c-8e94-e176d3a830c9">glatte</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass für \(x_0 \in I\) in einer <a href="20221206143436-umgebung_metrischer_raum.html#ID-c68f3091-12bb-48b4-896f-9d42d8ef1d09">Umgebung</a> \(U\) von \(x_0\) die <a href="20220302162755-taylorreihe.html#ID-a4e603aa-2ab3-42af-b185-e357439006bc">Taylorreihe</a> von \(f\) gegen \(f\) <a href="20230110113621-gleichmaßige_konvergenz_einer_funktionenfolge.html#ID-e895942f-e89f-4078-875a-79790b2e125b">gleichmäßig konvergiert</a>.
+Dann lässt sich \(f\) um \(x_0\) in \(U\) als <a href="20221204223941-potenzreihe.html#ID-dab65874-6741-4bba-97fe-d305f01190aa">Potenzreihe</a> durch die <a href="20220302162755-taylorreihe.html#ID-a4e603aa-2ab3-42af-b185-e357439006bc">Taylorreihe</a> darstellen/entwickeln.
 </p>
 </div>
 </div>

@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Richtungsableitung</h1>
-<div id="outline-container-orgd2687de" class="outline-2">
-<h2 id="orgd2687de"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org89527f2" class="outline-2">
+<h2 id="org89527f2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20220303084101-richtungsableitung_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_b0f6efa1481bc1370d9f97511e4f8a45cac32178.svg" alt="20220303084101-richtungsableitung_b0f6efa1481bc1370d9f97511e4f8a45cac32178.svg" class="org-svg" /> so ist 
+Sei \(x \in U\) und \(v \in \mathbb{R}^n\) so ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_d785440e7f94ea46fb4dfc083ddee4d6be0f8e3e.svg" alt="20220303084101-richtungsableitung_d785440e7f94ea46fb4dfc083ddee4d6be0f8e3e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\partial_v F)(x)  \coloneqq \frac{d}{dt}_{t = 0} F(x + t v) \in \mathbb{R}^m
+\end{align*}
 <p>
-die Richtungsableitung von <img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20220303084101-richtungsableitung_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> im Punkt <img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20220303084101-richtungsableitung_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in Richtung des Vektors <img src="file:///home/anton/html/ltximg/20220303084101-richtungsableitung_851c49db5bf83ebbbdbc4f2c204a756a934dd64e.svg" alt="20220303084101-richtungsableitung_851c49db5bf83ebbbdbc4f2c204a756a934dd64e.svg" class="org-svg" />
+die Richtungsableitung von \(F\) im Punkt \(x\) in Richtung des Vektors \(v\)
 </p>
 </div>
 </div>

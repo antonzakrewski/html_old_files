@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elementarteilersatz</h1>
-<div id="outline-container-org05a74ba" class="outline-2">
-<h2 id="org05a74ba"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org014c10c" class="outline-2">
+<h2 id="org014c10c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230608-elementarteilersatz_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_d6b2fbee6f19e41501c3c6baae5eafda23d271f7.svg" alt="20230608-elementarteilersatz_d6b2fbee6f19e41501c3c6baae5eafda23d271f7.svg" class="org-svg" /> ein <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugter</a>, <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freier</a> $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_6524d22654c786e253a954913c7b2771addce9f0.svg" alt="20230608-elementarteilersatz_6524d22654c786e253a954913c7b2771addce9f0.svg" class="org-svg" /> ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a>.
-Dann existieren Elemente <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_6fe3fdff427ee52d493b94a1046b7ae728a28754.svg" alt="20230608-elementarteilersatz_6fe3fdff427ee52d493b94a1046b7ae728a28754.svg" class="org-svg" />, die sich zu einer <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> erweitern lassen und Koeffizienten <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_bc3415bed76d13c20b5fe52f9539087cab9716ba.svg" alt="20230608-elementarteilersatz_bc3415bed76d13c20b5fe52f9539087cab9716ba.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_a48d88904a74ab123bf49d32acce05025326749f.svg" alt="20230608-elementarteilersatz_a48d88904a74ab123bf49d32acce05025326749f.svg" class="org-svg" /> eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> ist mit
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und \(F \simeq R^n\) ein <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">endlich erzeugter</a>, <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freier</a> $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie \(M \subseteq F\) ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a>.
+Dann existieren Elemente \(x_1,...,x_s \in M\), die sich zu einer <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> erweitern lassen und Koeffizienten \(\alpha_1,...,\alpha_s \in R \setminus \{0\}\), so dass \(\alpha_i x_i\) eine <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> ist mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-elementarteilersatz_3d5a4b27a151ee4acfa7216d5008be46ca51855a.svg" alt="20230608-elementarteilersatz_3d5a4b27a151ee4acfa7216d5008be46ca51855a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\alpha_i \mid \alpha_{i+1}
+\end{align*}
 </div>
 </div>
 </div>

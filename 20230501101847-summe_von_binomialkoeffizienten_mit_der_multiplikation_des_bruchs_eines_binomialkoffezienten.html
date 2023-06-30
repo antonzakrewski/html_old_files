@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summe von Binomialkoeffizienten mit der Multiplikation des Bruchs eines Binomialkoffezienten</h1>
-<div id="outline-container-org3561627" class="outline-2">
-<h2 id="org3561627"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc4b0d4e" class="outline-2">
+<h2 id="orgc4b0d4e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_c32813983335ede40af70d7fe0bc06e0793fc801.svg" alt="20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_c32813983335ede40af70d7fe0bc06e0793fc801.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_994884793901f77ee9d3c6f2ca0bb3cdae105536.svg" alt="20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_994884793901f77ee9d3c6f2ca0bb3cdae105536.svg" class="org-svg" />, dann folgt:
+Sei \(m,n \in \mathbb{N}_0\) mit \(0 \leq m \leq n\), dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_ed71c1ee6c7ce1e866437e7ebbfebaf54bd738e3.svg" alt="20230501101847-summe_von_binomialkoeffizienten_mit_der_multiplikation_des_bruchs_eines_binomialkoffezienten_ed71c1ee6c7ce1e866437e7ebbfebaf54bd738e3.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{m} \binom{m}{k} (\binom{n}{k})^{-1} =& \frac{n+1}{n+1-m}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbf7012c" class="outline-2">
-<h2 id="orgbf7012c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org31efeb0" class="outline-2">
+<h2 id="org31efeb0"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

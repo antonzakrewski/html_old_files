@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Normalteiler</h1>
-<div id="outline-container-orgdd80f7e" class="outline-2">
-<h2 id="orgdd80f7e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org094fb90" class="outline-2">
+<h2 id="org094fb90"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20221210192900-normalteiler_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und sei <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_96f3856bff4d0457ec292f10cee8cf9a50bb0493.svg" alt="20221210192900-normalteiler_96f3856bff4d0457ec292f10cee8cf9a50bb0493.svg" class="org-svg" /> eine untergruppe
-<img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20221210192900-normalteiler_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ist eine Normalteiler falls für <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" alt="20221210192900-normalteiler_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20221210192900-normalteiler_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> gilt:
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und sei \(U \leq G\) eine untergruppe
+\(U\) ist eine Normalteiler falls für \(g \in G\) und \(u \in U\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_4cc063fc431a618fb119f5f416175416e5e132a6.svg" alt="20221210192900-normalteiler_4cc063fc431a618fb119f5f416175416e5e132a6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g^{-1}ug \in U
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_63954fb2705e6f2753198f02794139311d00ac0f.svg" alt="20221210192900-normalteiler_63954fb2705e6f2753198f02794139311d00ac0f.svg" class="org-svg" /> schreibt man <img src="file:///home/anton/html/ltximg/20221210192900-normalteiler_99f773bd1b2f4262acb804bd701e88f6b3020b93.svg" alt="20221210192900-normalteiler_99f773bd1b2f4262acb804bd701e88f6b3020b93.svg" class="org-svg" />  
+Für \(U \neq G\) schreibt man \(U \trianglelefteq G\)  
 </p>
 </div>
 </div>

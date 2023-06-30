@@ -9,70 +9,86 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Grenzwert Logarithmus</h1>
-<div id="outline-container-orgd3f7d75" class="outline-2">
-<h2 id="orgd3f7d75"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7ad5321" class="outline-2">
+<h2 id="org7ad5321"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org729f8c8" class="outline-3">
-<h3 id="org729f8c8"><span class="section-number-3">1.1.</span> <img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_d79128eb2baaad4c643388a1f02d8041f4338586.svg" alt="20220122191411-grenzwert_logarithmus_d79128eb2baaad4c643388a1f02d8041f4338586.svg" class="org-svg" /></h3>
+<div id="outline-container-org25fd40a" class="outline-3">
+<h3 id="org25fd40a"><span class="section-number-3">1.1.</span> \(a > 1\)</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_c21c3d16a6a0e2347ef22cb043a2ce679374373e.svg" alt="20220122191411-grenzwert_logarithmus_c21c3d16a6a0e2347ef22cb043a2ce679374373e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim_{x \to \infty} \log_a{x} =& \infty \\
+\lim_{x \to 0} \log_a{x} =& - \infty
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9fff592" class="outline-3">
-<h3 id="org9fff592"><span class="section-number-3">1.2.</span> <img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_d4d46a366b25c0be97a16415e4a9068f95547a77.svg" alt="20220122191411-grenzwert_logarithmus_d4d46a366b25c0be97a16415e4a9068f95547a77.svg" class="org-svg" /></h3>
+<div id="outline-container-org4011796" class="outline-3">
+<h3 id="org4011796"><span class="section-number-3">1.2.</span> \(0 < a < 1\)</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_c21c3d16a6a0e2347ef22cb043a2ce679374373e.svg" alt="20220122191411-grenzwert_logarithmus_c21c3d16a6a0e2347ef22cb043a2ce679374373e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim_{x \to \infty} \log_a{x} =& \infty \\
+\lim_{x \to 0} \log_a{x} =& - \infty
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-orga45e53a" class="outline-2">
-<h2 id="orga45e53a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org84e1310" class="outline-2">
+<h2 id="org84e1310"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210430153716-logarithmus.html#ID-48295b0c-3973-4c30-b73d-19aba6fbd39b">Logarithmus</a> per Definition als <a href="20210318211130-umkehrfunktion.html#ID-35d2e288-1bec-4daf-866a-99566d5d0d8f">Umkehrfunktion</a> der <a href="20210422120854-exponentialfunktion.html#ID-0d40c326-51fe-47d2-a254-a16dfae8cbf5">Exponentialfunktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_6ca4a5a66985a688e304a0f2bc9168d5e80df441.svg" alt="20220122191411-grenzwert_logarithmus_6ca4a5a66985a688e304a0f2bc9168d5e80df441.svg" class="org-svg" />
-</span>
+\begin{align*}
+y = e^x \Leftrightarrow \ln(y) = x
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org1ebb3ce" class="outline-3">
-<h3 id="org1ebb3ce"><span class="section-number-3">2.1.</span> Basis größer 1</h3>
+<div id="outline-container-org6116e8a" class="outline-3">
+<h3 id="org6116e8a"><span class="section-number-3">2.1.</span> Basis größer 1</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_7169e86e400aeb59a9f2a21e85ed68c7604ccabc.svg" alt="20220122191411-grenzwert_logarithmus_7169e86e400aeb59a9f2a21e85ed68c7604ccabc.svg" class="org-svg" />
-</span>
+\begin{align*}
+a > 1 \Rightarrow \\
+\lim_{x \to \infty}\left(a^x \right) =& \infty \\
+\lim_{x \to -\infty}\left(a^x \right) =& 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2bc49a2" class="outline-3">
-<h3 id="org2bc49a2"><span class="section-number-3">2.2.</span> Basis kleiner 1</h3>
+<div id="outline-container-org880d4d6" class="outline-3">
+<h3 id="org880d4d6"><span class="section-number-3">2.2.</span> Basis kleiner 1</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122191411-grenzwert_logarithmus_73445fc9d197181cb03396b440108bb2eb50666e.svg" alt="20220122191411-grenzwert_logarithmus_73445fc9d197181cb03396b440108bb2eb50666e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a < 1 \Rightarrow \\
+\lim_{x \to \infty}\left(a^x \right) =& 0 \\
+\lim_{x \to -\infty}\left(a^x \right) =& \infty
+\end{align*}
 </div>
 </div>
 </div>

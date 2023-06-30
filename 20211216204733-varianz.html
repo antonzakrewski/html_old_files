@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Varianz</h1>
-<div id="outline-container-org6664d97" class="outline-2">
-<h2 id="org6664d97"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgde1b21e" class="outline-2">
+<h2 id="orgde1b21e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für eine <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> mit <a href="20211216204418-erwartungswert.html#ID-121a95a8-4927-4d4b-b56d-884f605d62f3">Erwartungswert</a> <img src="file:///home/anton/html/ltximg/20211216204733-varianz_76ed4f2be3112d473365528c97235803bd0c4140.svg" alt="20211216204733-varianz_76ed4f2be3112d473365528c97235803bd0c4140.svg" class="org-svg" /> ist die Varianz folgendermaßen definiert:
+Für eine <a href="20211123085211-zufallsgroßen.html#ID-5a6cdfb1-52fb-424c-b4ca-8ab53eccfcf7">Zufallsgröße</a> mit <a href="20211216204418-erwartungswert.html#ID-121a95a8-4927-4d4b-b56d-884f605d62f3">Erwartungswert</a> \(\mu\) ist die Varianz folgendermaßen definiert:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211216204733-varianz_362efe155e5cd8f82dd4c1544f992446a5260411.svg" alt="20211216204733-varianz_362efe155e5cd8f82dd4c1544f992446a5260411.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+Var(X)  \coloneqq \sum_{i=1}^n (x_i - \mu)^2 \cdot P(X=x_i)
+\end{align*}
 
 <p>
 <a href="20220820160448-bedeutung_varianz.html#ID-3d7c7620-59d9-4249-a932-a2bccee5bfd2">Bedeutung: Varianz</a>

@@ -9,54 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschätzung der harmonischen Zahl mit dem zweier Logarithmus</h1>
-<div id="outline-container-org352d76a" class="outline-2">
-<h2 id="org352d76a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb94ed95" class="outline-2">
+<h2 id="orgb94ed95"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" class="org-svg" /> gilt:
+Für \(n \in \mathbb{N}_0\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_eaf6e7d9151e13e387f7a4031e19c2d9fea6037a.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_eaf6e7d9151e13e387f7a4031e19c2d9fea6037a.svg" class="org-svg" />
-</span>
+\begin{align*}
+\frac{\floor(\log_2(n))}{2} \leq H_n \leq \floor(\log_2(n)) + 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9fa8271" class="outline-2">
-<h2 id="org9fa8271"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8ef5ade" class="outline-2">
+<h2 id="org8ef5ade"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Betrachte man die Summe
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_c0fe1f52a371abc4df00da40d1cff2bb905900b4.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_c0fe1f52a371abc4df00da40d1cff2bb905900b4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H_{2^n} =  \sum_{i=1}^{n} \sum_{j=2^{n}}^{2^{n+1}-1} \frac{1}{j}  
+\end{align*}
 <p>
 Es gilt die Abschätzung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_0973eeb08f98da13a9e8054d82dba4bf9f5e49bf.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_0973eeb08f98da13a9e8054d82dba4bf9f5e49bf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{j=2^{n}}^{2^{n+1}-1} \frac{1}{j} \geq 2^{n} \cdot \frac{1}{2^{n+1} - 1} \geq& \frac{1}{2} \\
+\sum_{j=2^{n}}^{2^{n+1}-1} \leq&  2^n \cdot \frac{1}{2^n} = 1
+\end{align*}
 <p>
-Es gilt, dass die $n$-te Harmonische Zahl <img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_1d47d83280182a79be164dc4413bed5c76198145.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_1d47d83280182a79be164dc4413bed5c76198145.svg" class="org-svg" /> viele Summen der Form <img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_f701092cdf3d26aedd1d70d8cea557051290c935.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_f701092cdf3d26aedd1d70d8cea557051290c935.svg" class="org-svg" /> durchlaufen hat, d.h. es folgt mittels der Abschätzung der Summen:
+Es gilt, dass die $n$-te Harmonische Zahl \(i = \floor(\log_2(n))\) viele Summen der Form \(\sum_{j=2^{i}}^{2^{i+1}-1} \frac{1}{j}\) durchlaufen hat, d.h. es folgt mittels der Abschätzung der Summen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_5548b896fee8fe23b448d7161283833b7c87c71d.svg" alt="20230425093705-abschatzung_der_harmonischen_zahl_mit_dem_logarithmus_5548b896fee8fe23b448d7161283833b7c87c71d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\floor(\log_2(n))}{2} \leq H_n \leq 1 + \floor(\log_2(n))
+\end{align*}
 </div>
 </div>
 </div>

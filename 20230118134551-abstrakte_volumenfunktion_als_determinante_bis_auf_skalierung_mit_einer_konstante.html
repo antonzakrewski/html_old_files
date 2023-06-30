@@ -9,58 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstrakte Volumenfunktion als Determinante bis auf Skalierung mit einer Konstante</h1>
-<div id="outline-container-orgc497ec6" class="outline-2">
-<h2 id="orgc497ec6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9d2bc5b" class="outline-2">
+<h2 id="org9d2bc5b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und sei <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_16c7723aff7f816d216bafb51c2e115fe20ef062.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_16c7723aff7f816d216bafb51c2e115fe20ef062.svg" class="org-svg" />.
-Sei zusätzlich <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_02f04df338fe78623be2ac619097c9775da59a6e.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_02f04df338fe78623be2ac619097c9775da59a6e.svg" class="org-svg" /> und sind <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" class="org-svg" /> die <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> in <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_33a8eee0c989330961abe2170cac45767b8c3066.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_33a8eee0c989330961abe2170cac45767b8c3066.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" /> an der stelle <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> und sonst <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" />, so gilt:
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und sei \(V\) eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a> \(V: (R^n)^n \rightarrow R\).
+Sei zusätzlich \(z_i = \begin{pmatrix} \alpha_{i1} & \dots & \alpha_{in} \end{pmatrix} \in R^n\) und sind \(e_1,...,e_n\) die <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> in \(R^n\) mit \(1\) an der stelle \(i\) und sonst \(0\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_82df4a9d79f868a0b9defce5daaa9378758960e4.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_82df4a9d79f868a0b9defce5daaa9378758960e4.svg" class="org-svg" />
-</span>
+\begin{align*}
+V( \begin{pmatrix} z_1 \\ \vdots \\ z_n \end{pmatrix} ) = \det(\alpha_{ij}) V( \begin{pmatrix} e_1 \\ \vdots \\ e_n \end{pmatrix})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org26d2644" class="outline-2">
-<h2 id="org26d2644"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf62739e" class="outline-2">
+<h2 id="orgf62739e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund der <a href="20230121215031-multilineare_abbildung.html#ID-cb913b22-e3ec-42c8-9049-9228735bbed4">Multilinearität</a> lässt sich das Argument aufteilen, so dass pro Zeile nur ein Eintrag nicht null ist.
-Danach können die Einträge vorgezogen werden, so dass für <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_4b48c607880fc717bb19995fea6bacd29e0ed9cf.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_4b48c607880fc717bb19995fea6bacd29e0ed9cf.svg" class="org-svg" /> gilt
+Danach können die Einträge vorgezogen werden, so dass für \(N = \{1,...,n\}\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_53fee372e88b323535302b525bf3c0c96ae1f4af.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_53fee372e88b323535302b525bf3c0c96ae1f4af.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_1,...,z_n) = \sum_{(j_1,...,j_n) \in N^n} \alpha_{1j_1} \cdot ... \cdot \alpha_{nj_n} V(e_{j_1},...,e_{j_n})
+\end{align*}
 <p>
-Falls <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_6991f0129fa05e036640a097489413476daed3df.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_6991f0129fa05e036640a097489413476daed3df.svg" class="org-svg" /> nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>, ist, so folgt wegen <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> als <a href="20230121215027-alternierende_abbildung.html#ID-8ed0ff83-3bab-47ca-bc30-32604a245a1b">alternierende</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_63f772968bb5853b334d5bdb00d63ba09784aa4b.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_63f772968bb5853b334d5bdb00d63ba09784aa4b.svg" class="org-svg" />
-<a href="20221022191921-lemma_uber_die_aquivalenz_von_bijektivitat_surjektivitat_und_injektivitat_bei_gleich_machtigen_mengen.html#ID-5fb6982e-e7b5-48be-9fd3-0b3a7a7b4499">Daraus folgt</a>, dass alle nicht <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiven</a> <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_12241b8cf248debc3a6130f3c93d338799f8f076.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_12241b8cf248debc3a6130f3c93d338799f8f076.svg" class="org-svg" /> rausfallen, so dass folgt
+Falls \(j: n \mapsto j_n\) nicht <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>, ist, so folgt wegen \(V\) als <a href="20230121215027-alternierende_abbildung.html#ID-8ed0ff83-3bab-47ca-bc30-32604a245a1b">alternierende</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(V(e_{j_1},...,e_{j_n}) = 0\)
+<a href="20221022191921-lemma_uber_die_aquivalenz_von_bijektivitat_surjektivitat_und_injektivitat_bei_gleich_machtigen_mengen.html#ID-5fb6982e-e7b5-48be-9fd3-0b3a7a7b4499">Daraus folgt</a>, dass alle nicht <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiven</a> \(j\) rausfallen, so dass folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_b9504f3ee4c0dcc5e0cb6b459d7565ed0e5efea6.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_b9504f3ee4c0dcc5e0cb6b459d7565ed0e5efea6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_1,...,z_n) = \sum_{\tau \in S_n}^{} \alpha_{1\tau(1)} \cdot ... \cdot \alpha_{n\tau(n)} \cdot V(e_{\tau(1)},...,e_{\tau(n)})
+\end{align*}
 <p>
-Wegen <a href="20221226001156-permutation_und_abstrakte_volumenfunktionen.html#ID-393bef70-1eef-46f6-9971-f0de676d043d">der Permutation und einer abstrakte Volumenfunktionen</a> folgt auch <img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_dca7db74bea8e13d2465741531ccb04623a89331.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_dca7db74bea8e13d2465741531ccb04623a89331.svg" class="org-svg" />
+Wegen <a href="20221226001156-permutation_und_abstrakte_volumenfunktionen.html#ID-393bef70-1eef-46f6-9971-f0de676d043d">der Permutation und einer abstrakte Volumenfunktionen</a> folgt auch \(V(e_{\tau(1)},...,e_{\tau(n)}) = \mathrm{sgn}(\tau) \cdot V(e_1,...,e_n)\)
 und damit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_368aaec10721a996e5478c509ec7411c361dbcce.svg" alt="20230118134551-abstrakte_volumenfunktion_als_determinante_bis_auf_skalierung_mit_einer_konstante_368aaec10721a996e5478c509ec7411c361dbcce.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_1,...,z_n) =& \sum_{\tau \in S_n}^{} \alpha_{1\tau(1)} \cdot ... \cdot \alpha_{n\tau(n)} \cdot V(e_{\tau(1)},...,e_{\tau(n)}) \\
+=& \sum_{\tau \in S_n}^{} \alpha_{1\tau(1)} \cdot ... \cdot \alpha_{n\tau(n)} \cdot \mathrm{sgn}(\tau) \cdot V(e_1,...,e_n) \\
+=& \det( \begin{pmatrix} z_1 \\ \vdost \\ z_n \end{pmatrix} \cdot V(e_1,...,e_n)
+\end{align*}
 </div>
 </div>
 </div>

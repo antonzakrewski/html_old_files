@@ -3,44 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>innerer Punkt (metrischer Raum)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">innerer Punkt (metrischer Raum)</h1>
-<div id="outline-container-org5993fe5" class="outline-2">
-<h2 id="org5993fe5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf18c0a0" class="outline-2">
+<h2 id="orgf18c0a0"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-sei <img src="ltximg/20221027080050-innerer_punkt_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20221027080050-innerer_punkt_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20221027080050-innerer_punkt_ad966ef1ebda075d494bf06f778746dda2699005.svg" alt="20221027080050-innerer_punkt_ad966ef1ebda075d494bf06f778746dda2699005.svg" class="org-svg" />
-<img src="ltximg/20221027080050-innerer_punkt_bca7470ce7e4f36aa434fede04e6e2e782df5522.svg" alt="20221027080050-innerer_punkt_bca7470ce7e4f36aa434fede04e6e2e782df5522.svg" class="org-svg" /> ist ein innerer Punkt, falls gilt
+sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x \in M\)
+\(x\) ist ein innerer Punkt, falls gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221027080050-innerer_punkt_0d4a50800098d70bed90874788bdf989a23f0e22.svg" alt="20221027080050-innerer_punkt_0d4a50800098d70bed90874788bdf989a23f0e22.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\exists x > 0 : U_{\epsilon}(x) \subseteq M
+\end{align*} 
 <p>
 bzw.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221027080050-innerer_punkt_22b09af306f049a72a754b8371f8a15f12c089ac.svg" alt="20221027080050-innerer_punkt_22b09af306f049a72a754b8371f8a15f12c089ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\exists e > 0 \forall y \in \mathbb{R} : (d(x,y) < \epsilon \Rightarrow y \in M
+\end{align*}
 <p>
 (siehe: <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a>)
 </p>

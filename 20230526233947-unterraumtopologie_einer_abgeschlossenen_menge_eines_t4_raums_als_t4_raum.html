@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Unterraumtopologie einer abgeschlossenen Menge eines T4-Raums als T4-Raum</h1>
-<div id="outline-container-org9fbe710" class="outline-2">
-<h2 id="org9fbe710"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9597594" class="outline-2">
+<h2 id="org9597594"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4</a>-<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />.
-Dann ist die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ebenfalls ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4-Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4</a>-<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und \(A \subseteq X\).
+Dann ist die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von \(A\) ebenfalls ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4-Raum</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org81cd2b2" class="outline-2">
-<h2 id="org81cd2b2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2e254bd" class="outline-2">
+<h2 id="org2e254bd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_a1fbeec87f664c0451da1f5a2339af982f94d9b6.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_a1fbeec87f664c0451da1f5a2339af982f94d9b6.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Nach der <a href="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie.html#ID-2287eeee-f246-4ebb-8c18-793ac03adc02">Übertragung der Abgeschlossenheit von der Unterraumtopologie</a> sind <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_80dfcabf4170d419b239f688ea20d81c0d1a637b.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_80dfcabf4170d419b239f688ea20d81c0d1a637b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Damit existieren <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_d30090149c0cd3ea59373b9c7b007f3830ab1265.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_d30090149c0cd3ea59373b9c7b007f3830ab1265.svg" class="org-svg" />, welche <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind.
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_126b8628250966fd58195ddcfd728e5a57f6dae0.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_126b8628250966fd58195ddcfd728e5a57f6dae0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_12b53b3f9a937f7aaa5d84eb6632220ed021b748.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_12b53b3f9a937f7aaa5d84eb6632220ed021b748.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> in <img src="file:///home/anton/html/ltximg/20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230526233947-unterraumtopologie_einer_abgeschlossenen_menge_eines_t4_raums_als_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> sind.
+Sei \(B,C \subseteq A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Nach der <a href="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie.html#ID-2287eeee-f246-4ebb-8c18-793ac03adc02">Übertragung der Abgeschlossenheit von der Unterraumtopologie</a> sind \(B,C\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(X\).
+Damit existieren <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_B,U_C \subseteq X\), welche <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind.
+Daraus folgt, dass \(A \cap U_A\) und \(B \cap U_B\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> in \(A\) sind.
 </p>
 </div>
 </div>

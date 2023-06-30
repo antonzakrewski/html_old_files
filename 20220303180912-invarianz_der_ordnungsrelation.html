@@ -9,52 +9,70 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Invarianz der Ordnungsrelation (Starrheit von <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20220303180912-invarianz_der_ordnungsrelation_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" />)</h1>
-<div id="outline-container-orgefc1fb6" class="outline-2">
-<h2 id="orgefc1fb6"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Invarianz der Ordnungsrelation (Starrheit von \(\mathbb{R}\))</h1>
+<div id="outline-container-org4af3305" class="outline-2">
+<h2 id="org4af3305"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_83a30fe66b645048943178d35fb6ccb929c019e6.svg" alt="20220303180912-invarianz_der_ordnungsrelation_83a30fe66b645048943178d35fb6ccb929c019e6.svg" class="org-svg" /> ein <a href="20230318174914-korperautomorphismus.html#ID-776e9cb7-a17c-4875-b44f-c01ed1d8602c">Automorphismus</a>.
-Dann erhält <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20220303180912-invarianz_der_ordnungsrelation_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> die <a href="20211223084436-anordnungsaxiome.html#ID-87bafb9b-c74f-47e4-9ac2-ef86909a7185">Anordnung</a>, d.h.
+Sei \(f: \mathbb{R} \rightarrow \mathbb{R}\) ein <a href="20230318174914-korperautomorphismus.html#ID-776e9cb7-a17c-4875-b44f-c01ed1d8602c">Automorphismus</a>.
+Dann erhält \(f\) die <a href="20211223084436-anordnungsaxiome.html#ID-87bafb9b-c74f-47e4-9ac2-ef86909a7185">Anordnung</a>, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_2aaa59b9b577de6390a0f9195f9a1ffc78d6521f.svg" alt="20220303180912-invarianz_der_ordnungsrelation_2aaa59b9b577de6390a0f9195f9a1ffc78d6521f.svg" class="org-svg" />
-</span>
+\begin{align*}
+a < b \Leftrightarrow f(a) < f(b)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd372b2d" class="outline-2">
-<h2 id="orgd372b2d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org24b7e2b" class="outline-2">
+<h2 id="org24b7e2b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_c530230daa429259cfb564f694aceb7396934e0f.svg" alt="20220303180912-invarianz_der_ordnungsrelation_c530230daa429259cfb564f694aceb7396934e0f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_31ba969d74aabe557b13aaeb4f79a40d86bac962.svg" alt="20220303180912-invarianz_der_ordnungsrelation_31ba969d74aabe557b13aaeb4f79a40d86bac962.svg" class="org-svg" />
-Dann folgt nach Definition <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_539374b54678c8636c0e4498c8431a48b6709992.svg" alt="20220303180912-invarianz_der_ordnungsrelation_539374b54678c8636c0e4498c8431a48b6709992.svg" class="org-svg" />.
-wegen der <a href="20221126210818-existenz_von_wurzeln_in_mathbb_real.html#ID-8e421588-31c4-400e-a48f-ece1af140624">Existenz von Wurzeln in <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20220303180912-invarianz_der_ordnungsrelation_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /></a> sei <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_ce974179c4ac3be97363f2107d29a18527a93a19.svg" alt="20220303180912-invarianz_der_ordnungsrelation_ce974179c4ac3be97363f2107d29a18527a93a19.svg" class="org-svg" />
+Seien \(a,b \in K\) mit \(a < b\)
+Dann folgt nach Definition \(0 < b - a\).
+wegen der <a href="20221126210818-existenz_von_wurzeln_in_mathbb_real.html#ID-8e421588-31c4-400e-a48f-ece1af140624">Existenz von Wurzeln in \(\mathbb{R}\)</a> sei \(r^2  \coloneqq b - a\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_2e4d9d77607e01f164b7157ad4b12855c2218890.svg" alt="20220303180912-invarianz_der_ordnungsrelation_2e4d9d77607e01f164b7157ad4b12855c2218890.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(b - a) =& f(r^2) \\
+=& f(r)^2 
+\end{align*}
 <p>
-Dabei gilt <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_07e2e033cac626bfe1eb9e30576a7c3400ceb43c.svg" alt="20220303180912-invarianz_der_ordnungsrelation_07e2e033cac626bfe1eb9e30576a7c3400ceb43c.svg" class="org-svg" /> (vgl. <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat positiv</a>) und es folgt:
+Dabei gilt \((f(r))^2 > 0\) (vgl. <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat positiv</a>) und es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_2fdcaae61d3723a6cafa381fb367d1512ffa16ef.svg" alt="20220303180912-invarianz_der_ordnungsrelation_2fdcaae61d3723a6cafa381fb367d1512ffa16ef.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 <& f(b - a) \\
+f(a) <& f(b)
+\end{align*}
 
 <p>
-Da insbesondere für einen <a href="20230318174914-korperautomorphismus.html#ID-776e9cb7-a17c-4875-b44f-c01ed1d8602c">Automorphismus</a> für ein <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_2fa4d08bc4497a168c09122fbc31fa51776b0a9f.svg" alt="20220303180912-invarianz_der_ordnungsrelation_2fa4d08bc4497a168c09122fbc31fa51776b0a9f.svg" class="org-svg" /> ein eindeutiges <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_b490dbd243800f0011e310214f0d7718fdce5cc5.svg" alt="20220303180912-invarianz_der_ordnungsrelation_b490dbd243800f0011e310214f0d7718fdce5cc5.svg" class="org-svg" /> existiert, folgt aus <img src="file:///home/anton/html/ltximg/20220303180912-invarianz_der_ordnungsrelation_0e95053e72e0565557b18fd23fc3333a44e2770b.svg" alt="20220303180912-invarianz_der_ordnungsrelation_0e95053e72e0565557b18fd23fc3333a44e2770b.svg" class="org-svg" /> ein <a href="20220902194001-widerspruch.html#ID-d758d8be-c0f8-45d8-b7b4-5d9ecc65476a">Widerspruch</a> 
+Da insbesondere für einen <a href="20230318174914-korperautomorphismus.html#ID-776e9cb7-a17c-4875-b44f-c01ed1d8602c">Automorphismus</a> für ein \(f(b)\) ein eindeutiges \(f^{-1}(f(a))\) existiert, folgt aus \(f(a) < f(b) \Rightarrow a < b\) ein <a href="20220902194001-widerspruch.html#ID-d758d8be-c0f8-45d8-b7b4-5d9ecc65476a">Widerspruch</a> 
 </p>
 
 <p>

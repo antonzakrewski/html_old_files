@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Standardbasis</h1>
-<div id="outline-container-orgbbd5a58" class="outline-2">
-<h2 id="orgbbd5a58"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0c896a8" class="outline-2">
+<h2 id="org0c896a8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221113212113-standardbasis_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" alt="20221113212113-standardbasis_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
-Dann ist die Standard<a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">basis</a> <img src="file:///home/anton/html/ltximg/20221113212113-standardbasis_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" alt="20221113212113-standardbasis_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" class="org-svg" /> definiert als
+Sei \(K^n\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>.
+Dann ist die Standard<a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">basis</a> \(e_1,...,e_n\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221113212113-standardbasis_164fd981c9570796c85d3cd3bfccfee4ae510a2e.svg" alt="20221113212113-standardbasis_164fd981c9570796c85d3cd3bfccfee4ae510a2e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e_i  \coloneqq \sum_{j=1}^n \delta_{ij}
+\end{align*}
 </div>
 </div>
 </div>

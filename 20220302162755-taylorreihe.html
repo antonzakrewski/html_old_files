@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Taylorreihe</h1>
-<div id="outline-container-org2a05e82" class="outline-2">
-<h2 id="org2a05e82"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6dcff25" class="outline-2">
+<h2 id="org6dcff25"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_03a5caf7fad1d6f10345063c1d210336ffef9a8a.svg" alt="20220302162755-taylorreihe_03a5caf7fad1d6f10345063c1d210336ffef9a8a.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" alt="20220302162755-taylorreihe_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" class="org-svg" /> beliebig oft <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> (<img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_219acbec57171116609dd3b17e6f9fa0ef5b771a.svg" alt="20220302162755-taylorreihe_219acbec57171116609dd3b17e6f9fa0ef5b771a.svg" class="org-svg" />, siehe <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>), so ist die Taylorreihe zu <img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20220302162755-taylorreihe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20220302162755-taylorreihe_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> definiert als:
+Sei \(f: I \rightarrow \mathbb{C}\) mit \(I \subseteq \mathbb{R}\) beliebig oft <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> (\(C^{\infty}\), siehe <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>), so ist die Taylorreihe zu \(f\) in \(x_0\) definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302162755-taylorreihe_884967d1449661f08d507e53ae8037200609b1e4.svg" alt="20220302162755-taylorreihe_884967d1449661f08d507e53ae8037200609b1e4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+T_{f(x,a)} = \sum_{n=0}^{\infty} \left(\frac{f^{n}(a)}{n!} \cdot (x-a)^n \right)
+\end{align*}
 </div>
 </div>
 </div>

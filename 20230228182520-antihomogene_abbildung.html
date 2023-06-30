@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">antihomogene Abbildung</h1>
-<div id="outline-container-orgfd3ed6d" class="outline-2">
-<h2 id="orgfd3ed6d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgffbc016" class="outline-2">
+<h2 id="orgffbc016"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230228182520-antihomogene_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20230228182520-antihomogene_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexe</a> bzw. <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
-Eine antihomogen Abbildung ist eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230228182520-antihomogene_abbildung_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" alt="20230228182520-antihomogene_abbildung_b202aaa897556da8e2b6e56e07208bd0de19ac2f.svg" class="org-svg" /> so dass für <img src="file:///home/anton/html/ltximg/20230228182520-antihomogene_abbildung_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230228182520-antihomogene_abbildung_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230228182520-antihomogene_abbildung_0997319ef06659f23b098e3c31e1c4886038122d.svg" alt="20230228182520-antihomogene_abbildung_0997319ef06659f23b098e3c31e1c4886038122d.svg" class="org-svg" /> gilt 
+Seien \(V,W\) <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexe</a> bzw. <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
+Eine antihomogen Abbildung ist eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: V \rightarrow W\) so dass für \(v \in V\) und \(\lambda \in \mathbb{C}\) gilt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228182520-antihomogene_abbildung_3547f319a8814b0909947db2a9ac1ce90181b767.svg" alt="20230228182520-antihomogene_abbildung_3547f319a8814b0909947db2a9ac1ce90181b767.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(\lambda V) = \overline{\lambda} f(V)
+\end{align*}
 <p>
 siehe: <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> 
 </p>

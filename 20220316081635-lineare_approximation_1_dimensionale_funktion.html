@@ -9,20 +9,42 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineare Approximation: 1 Dimensionale Funktion</h1>
 
-<div id="outline-container-org8a7b027" class="outline-2">
-<h2 id="org8a7b027"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6c456db" class="outline-2">
+<h2 id="org6c456db"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220316081635-lineare_approximation_1_dimensionale_funktion_bef3aa35f5f8a8b5450b66716008d7585fe655dc.svg" alt="20220316081635-lineare_approximation_1_dimensionale_funktion_bef3aa35f5f8a8b5450b66716008d7585fe655dc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) \approx f(x_0) + f'(x_0) \cdot (x - x_0)
+\end{align*}
 </div>
 </div>
 </div>

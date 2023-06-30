@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Normalenform in Koordinatenform (Darstellung einer Ebene)</h1>
 
-<div id="outline-container-orgbeafd49" class="outline-2">
-<h2 id="orgbeafd49"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9cb8202" class="outline-2">
+<h2 id="org9cb8202"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220307211651-normalenform_in_koordinatenform_darstellung_einer_ebene_82b7be3e8f4deb1799eaf6d8cc7da3cdc74dcb59.svg" alt="20220307211651-normalenform_in_koordinatenform_darstellung_einer_ebene_82b7be3e8f4deb1799eaf6d8cc7da3cdc74dcb59.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{n}  \coloneqq \begin{pmatrix} n_1 \\ n_2 \\ n_3 \end{pmatrix} 
+\vec{P}  \coloneqq \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} \\
+\vec{n} \circ (\vec{P} - \vec{A}) = 0 \\
+n_1x_1 + n_2x_2 + n_3x_3 - \vec{n} \circ \vec{A} = 0
+\end{align*}
 </div>
 </div>
 </div>

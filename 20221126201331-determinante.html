@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinante (Leibniz Determinante)</h1>
-<div id="outline-container-org53c39fc" class="outline-2">
-<h2 id="org53c39fc"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org00bdfd8" class="outline-2">
+<h2 id="org00bdfd8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221126201331-determinante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221126201331-determinante_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="file:///home/anton/html/ltximg/20221126201331-determinante_bc84368fd07db861fb801c1e1b73804b324a2301.svg" alt="20221126201331-determinante_bc84368fd07db861fb801c1e1b73804b324a2301.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(A = (\alpha_{ij}) \in R^{n \times n}\)
 Die Determinante ist definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221126201331-determinante_62523d889aa21d4a7bf129a4cbd0bf83852b0216.svg" alt="20221126201331-determinante_62523d889aa21d4a7bf129a4cbd0bf83852b0216.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{det}(A) =& \sum_{\tau \in S_n}^{} \mathrm{sgn}(\tau) \prod_{i=1}^{n} \alpha_{i \tau(i)}
+\end{align*}
 </div>
 </div>
 </div>

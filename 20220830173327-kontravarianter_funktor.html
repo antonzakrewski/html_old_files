@@ -9,31 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">contravariant functor</h1>
-<div id="outline-container-orgbd44791" class="outline-2">
-<h2 id="orgbd44791"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org685ff26" class="outline-2">
+<h2 id="org685ff26"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" alt="20220830173327-kontravarianter_funktor_fb87d5fe72d2ac9e05ca052a8b90cb1213322747.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a>.
-A functor <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20220830173327-kontravarianter_funktor_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> is a map 
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a>.
+A functor \(F: \mathcal{C} \rightarrow \mathcal{D}\) is a map 
 </p>
 
 <ul class="org-ul">
-<li>sending an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_7e998c81312fa1a852befc5659c0c93042b56757.svg" alt="20220830173327-kontravarianter_funktor_7e998c81312fa1a852befc5659c0c93042b56757.svg" class="org-svg" /> to an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_f2dddb07d1c262e44d4603b1dda2c4d5df14de07.svg" alt="20220830173327-kontravarianter_funktor_f2dddb07d1c262e44d4603b1dda2c4d5df14de07.svg" class="org-svg" /></li>
-<li>sending a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_68acd5f8a426b030f2b2e766939559eed31e15f3.svg" alt="20220830173327-kontravarianter_funktor_68acd5f8a426b030f2b2e766939559eed31e15f3.svg" class="org-svg" /> to a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_cfe97b588d5d6b03a8a73187bf81ceb76c7256d0.svg" alt="20220830173327-kontravarianter_funktor_cfe97b588d5d6b03a8a73187bf81ceb76c7256d0.svg" class="org-svg" /></li>
+<li>sending an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(C \in \mathrm{Ob}(\mathcal{C})\) to an <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(F(C) \in \mathrm{Ob}(\mathcal{D})\)</li>
+<li>sending a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(f \in \mathrm{Hom}_{\mathcal{C}}(A,B)\) to a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(F(f) \in \mathrm{Hom}_{\mathcal{D}}(F(B),F(A))\)</li>
 </ul>
 <p>
-such that <img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20220830173327-kontravarianter_funktor_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> preserves the <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">identity morphism</a> and <a href="20220817221033-komposition_von_morphismen.html#ID-72b71b59-7fac-4516-9115-9d589b47e0c3">composition of morphisms</a>:
+such that \(F\) preserves the <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">identity morphism</a> and <a href="20220817221033-komposition_von_morphismen.html#ID-72b71b59-7fac-4516-9115-9d589b47e0c3">composition of morphisms</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220830173327-kontravarianter_funktor_46ac67a841ab63c447f52f9444974da9cf1aa869.svg" alt="20220830173327-kontravarianter_funktor_46ac67a841ab63c447f52f9444974da9cf1aa869.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F(\mathrm{id}_{A}) =& \mathrm{id}_{F(A)} \\
+F(f \circ g) =& F(g) \circ F(g)
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Reduktionsregel $\sin^n$</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Reduktionsregel <img src="ltximg/20221020213746-reduktionsregel_sin_n_ed0f622797852665a629d9f653b64a3435cd44d0.svg" alt="20221020213746-reduktionsregel_sin_n_ed0f622797852665a629d9f653b64a3435cd44d0.svg" class="org-svg" /></h1>
-<div id="outline-container-orgdca3cb7" class="outline-2">
-<h2 id="orgdca3cb7"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Reduktionsregel \(\sin^n\)</h1>
+<div id="outline-container-org57d3990" class="outline-2">
+<h2 id="org57d3990"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221020213746-reduktionsregel_sin_n_bf341caa624214f0b9abea9eeb7eb4f2fe6dc177.svg" alt="20221020213746-reduktionsregel_sin_n_bf341caa624214f0b9abea9eeb7eb4f2fe6dc177.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\int_{}^{} \sin(x)^n \mathrm{d}x  =& \frac{n - 1}{n} \int_{}^{} \sin(x)^{n - 2} \mathrm{d}x - \frac{\cos(x)\sin(x)^{n-1}}{n} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1888a38" class="outline-2">
-<h2 id="org1888a38"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org30bf165" class="outline-2">
+<h2 id="org30bf165"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

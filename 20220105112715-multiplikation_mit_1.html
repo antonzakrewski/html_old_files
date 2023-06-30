@@ -9,30 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation mit -1</h1>
-<div id="outline-container-org0627f26" class="outline-2">
-<h2 id="org0627f26"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4be6ff9" class="outline-2">
+<h2 id="org4be6ff9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105112715-multiplikation_mit_1_8e27b5985ec60148d7f663ede0547209e7e86f90.svg" alt="20220105112715-multiplikation_mit_1_8e27b5985ec60148d7f663ede0547209e7e86f90.svg" class="org-svg" />
-</span>
+\begin{align*}
+\forall x(-1 \cdot x = -x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga67cb89" class="outline-2">
-<h2 id="orga67cb89"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaf3db9a" class="outline-2">
+<h2 id="orgaf3db9a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105112715-multiplikation_mit_1_a8985877118381cdabf01c42cf8c8dd1ddc40f6f.svg" alt="20220105112715-multiplikation_mit_1_a8985877118381cdabf01c42cf8c8dd1ddc40f6f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \cdot -1  \coloneqq& y \\
+x \cdot -1 =& y \vert + x \\
+x + x \cdot -1  =& y + x \\
+x \cdot 1 + x \cdot - 1 =& y + x \\
+x \cdot (1 - 1) =& y + x \\
+x \cdot 0 =& y + x \\
+0 =& y + x  \vert -x \\
+-x =& y \Rightarrow -x = x \cdot -1
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a> 

@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lokale Änderungsrate</h1>
-<div id="outline-container-orgd56a46c" class="outline-2">
-<h2 id="orgd56a46c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb38f29f" class="outline-2">
+<h2 id="orgb38f29f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20210217184055-lokale_anderungsrate_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20210217184055-lokale_anderungsrate_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> eine in <img src="file:///home/anton/html/ltximg/20210217184055-lokale_anderungsrate_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20210217184055-lokale_anderungsrate_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>. 
-Dann ist die lokale Änderungsrate an der <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a>  <img src="file:///home/anton/html/ltximg/20210217184055-lokale_anderungsrate_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20210217184055-lokale_anderungsrate_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> 
+Sei \(f(x)\) eine in \(a\) <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>. 
+Dann ist die lokale Änderungsrate an der <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a>  \(a\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210217184055-lokale_anderungsrate_413b2a0a432efcb411023c2cf65b8e07d1c71805.svg" alt="20210217184055-lokale_anderungsrate_413b2a0a432efcb411023c2cf65b8e07d1c71805.svg" class="org-svg" />
-</span>
+\begin{align*}
+f'(a) =& \lim\limits_{x \to a}\left(\frac{f(x) - f(a)}{x -a}\right) \\
+=& \lim\limits_{\epsilon \to 0}\left(\frac{f(x+\epsilon) - f(a)}{\epsilon}\right)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb0e0ce1" class="outline-2">
-<h2 id="orgb0e0ce1"><span class="section-number-2">2.</span> <a href="20220820183008-interpretation_lokale_anderungsrate.html#ID-e31c4fdb-64f7-41d2-9392-e1bec67b3cd6">Interpretation: Lokale Änderungsrate</a></h2>
+<div id="outline-container-org1b5de95" class="outline-2">
+<h2 id="org1b5de95"><span class="section-number-2">2.</span> <a href="20220820183008-interpretation_lokale_anderungsrate.html#ID-e31c4fdb-64f7-41d2-9392-e1bec67b3cd6">Interpretation: Lokale Änderungsrate</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -3,32 +3,55 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Parameterform (Darstellung einer Gerade)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Parameterform (Darstellung einer Gerade)</h1>
-<div id="outline-container-org9477517" class="outline-2">
-<h2 id="org9477517"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf4929b3" class="outline-2">
+<h2 id="orgf4929b3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20220207223846-parameterform_darstellung_einer_gerade_dcd0be2b50ff7eb86bd0b39e4ed0845431435be1.svg" alt="20220207223846-parameterform_darstellung_einer_gerade_dcd0be2b50ff7eb86bd0b39e4ed0845431435be1.svg" class="org-svg" /> eine <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a> im <a href="20220207224324-dreidimensionaler_raum.html#ID-cbea667b-afb3-48b6-8f21-6b14b629617b">dreidimensionalen Raum</a>.
-Dann lässt sich <img src="ltximg/20220207223846-parameterform_darstellung_einer_gerade_dcd0be2b50ff7eb86bd0b39e4ed0845431435be1.svg" alt="20220207223846-parameterform_darstellung_einer_gerade_dcd0be2b50ff7eb86bd0b39e4ed0845431435be1.svg" class="org-svg" /> in der Parameterform auf folgende Art beschreibe:
+Sei \(E\) eine <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a> im <a href="20220207224324-dreidimensionaler_raum.html#ID-cbea667b-afb3-48b6-8f21-6b14b629617b">dreidimensionalen Raum</a>.
+Dann lässt sich \(E\) in der Parameterform auf folgende Art beschreibe:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220207223846-parameterform_darstellung_einer_gerade_a921ebd64e3d5498616ed39a99595e7dd6e07721.svg" alt="20220207223846-parameterform_darstellung_einer_gerade_a921ebd64e3d5498616ed39a99595e7dd6e07721.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vec{E} =& \vec{A} + \lambda \cdot \vec{u} \quad\quad \lambda \in \mathbb{R} \quad\quad \vec{u} \neq \vec{0} \\
+\vec{A} \coloneqq& \text{Aufpunkt} \\
+\vec{u} \coloneqq& \text{Richtungsvektor}
+\end{align*}
 </div>
 </div>
 </div>

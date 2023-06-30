@@ -9,40 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produktzeichen</h1>
-<div id="outline-container-org6cc4373" class="outline-2">
-<h2 id="org6cc4373"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org72df111" class="outline-2">
+<h2 id="org72df111"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="20220104174716-definition_durch_vollstandige_induktion.html#ID-6fef56dc-8e70-4313-b98b-3842e403ee19">Definition durch vollständige Induktion</a></li>
 </ul>
 </div>
-<div id="outline-container-orgd261145" class="outline-3">
-<h3 id="orgd261145"><span class="section-number-3">1.1.</span> Induktionsanfang</h3>
+<div id="outline-container-org6aafd1e" class="outline-3">
+<h3 id="org6aafd1e"><span class="section-number-3">1.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228201532-definition_produktzeichen_cdef0e90349957f93e396b8f815b0de1b00d95c2.svg" alt="20211228201532-definition_produktzeichen_cdef0e90349957f93e396b8f815b0de1b00d95c2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{k=m}^{m-1} a_k  \coloneqq 1
+\end{align*}
 <ul class="org-ul">
 <li></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga9a4923" class="outline-3">
-<h3 id="orga9a4923"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org6484fc8" class="outline-3">
+<h3 id="org6484fc8"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228201532-definition_produktzeichen_88df69a3dd35b5039875185cb6c48e8746c42399.svg" alt="20211228201532-definition_produktzeichen_88df69a3dd35b5039875185cb6c48e8746c42399.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{k=m}^{n+1} a_k  \coloneqq  a_{n+1} \cdot \prod_{k=m}^n 
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

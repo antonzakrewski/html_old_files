@@ -9,56 +9,70 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mittelwertsatz</h1>
-<div id="outline-container-org07b60ad" class="outline-2">
-<h2 id="org07b60ad"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc2fc9a3" class="outline-2">
+<h2 id="orgc2fc9a3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_6c0c3b77959a4e7d92badae9a3c09e08337b78ef.svg" alt="20230119175551-mittelwertsatz_6c0c3b77959a4e7d92badae9a3c09e08337b78ef.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-Dann existiert ein <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_ae223dd808316f99d1861ba1350d03009673fb5b.svg" alt="20230119175551-mittelwertsatz_ae223dd808316f99d1861ba1350d03009673fb5b.svg" class="org-svg" />, so dass gilt
+Sei \([a,b] \subseteq \mathbb{R}\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Dann existiert ein \(x_0 \in (a,b)\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_c1919e50a08fc8d2a139c4f179fc70273eedaea1.svg" alt="20230119175551-mittelwertsatz_c1919e50a08fc8d2a139c4f179fc70273eedaea1.svg" class="org-svg" />
-</span>
+\begin{align*}
+f'(x_0) = \frac{f(b) - f(a)}{b - a}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfa4ed26" class="outline-2">
-<h2 id="orgfa4ed26"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgedfe6dd" class="outline-2">
+<h2 id="orgedfe6dd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_21a373639a0ebb00639408348f69ac746eee13b0.svg" alt="20230119175551-mittelwertsatz_21a373639a0ebb00639408348f69ac746eee13b0.svg" class="org-svg" /> definiert als
+Sei \(h: [a,b] \rightarrow \mathbb{R}\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_ee387312973df90e505cb63cdaa7881eddb98318.svg" alt="20230119175551-mittelwertsatz_ee387312973df90e505cb63cdaa7881eddb98318.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h(x) = f(x) - \frac{f(b) - f(a)}{b - a} \cdot (x - a)
+\end{align*}
 <p>
-insbesondere gilt <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_eda31b2ed2ff16ca73f20f734e575c042ca07df0.svg" alt="20230119175551-mittelwertsatz_eda31b2ed2ff16ca73f20f734e575c042ca07df0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_27eee51a194c35d216f8814edf60923fd1a73a6c.svg" alt="20230119175551-mittelwertsatz_27eee51a194c35d216f8814edf60923fd1a73a6c.svg" class="org-svg" />
-Nach dem <a href="20230119175201-satz_von_rolle.html#ID-42d93e12-32ad-4c75-89c8-c3acd258d029">Satz von Rolle</a> existiert also ein <img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_ae223dd808316f99d1861ba1350d03009673fb5b.svg" alt="20230119175551-mittelwertsatz_ae223dd808316f99d1861ba1350d03009673fb5b.svg" class="org-svg" />, so dass gilt
+insbesondere gilt \(h(a) = f(a)\) und \(h(b) = f(a)\)
+Nach dem <a href="20230119175201-satz_von_rolle.html#ID-42d93e12-32ad-4c75-89c8-c3acd258d029">Satz von Rolle</a> existiert also ein \(x_0 \in (a,b)\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_b6ea6203ecdbf3ce2af2a25cd80d17545cab456d.svg" alt="20230119175551-mittelwertsatz_b6ea6203ecdbf3ce2af2a25cd80d17545cab456d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h'(x_0) =& f'(x) - \frac{f(b) - f(a)}{b - a} \\
+=& 0
+\end{align*}
 <p>
 und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119175551-mittelwertsatz_476288bb460da02f14b3f84efd0bf48016288393.svg" alt="20230119175551-mittelwertsatz_476288bb460da02f14b3f84efd0bf48016288393.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f'(x) =& \frac{f(b) - f(a)}{b - a}
+\end{align*}
 </div>
 </div>
 </div>

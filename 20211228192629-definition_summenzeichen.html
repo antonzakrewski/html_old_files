@@ -3,82 +3,85 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Summenzeichen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summenzeichen</h1>
 
-<div id="outline-container-orga73ade7" class="outline-2">
-<h2 id="orga73ade7"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge8f28c2" class="outline-2">
+<h2 id="orge8f28c2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="20220104174716-definition_durch_vollstandige_induktion.html#ID-6fef56dc-8e70-4313-b98b-3842e403ee19">Definition durch vollständige Induktion</a></li>
 </ul>
 </div>
-<div id="outline-container-orge31faca" class="outline-3">
-<h3 id="orge31faca"><span class="section-number-3">1.1.</span> <a href="20211228193106-leere_summe.html#ID-3fc1cdae-0ab4-4477-93c2-5234aa8a3947">Leere Summe</a> als Induktionsanfang</h3>
+<div id="outline-container-orgb55d92b" class="outline-3">
+<h3 id="orgb55d92b"><span class="section-number-3">1.1.</span> <a href="20211228193106-leere_summe.html#ID-3fc1cdae-0ab4-4477-93c2-5234aa8a3947">Leere Summe</a> als Induktionsanfang</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211228192629-definition_summenzeichen_a208ad15a25a4048f8b4577cc84aaead1dc8c937.svg" alt="20211228192629-definition_summenzeichen_a208ad15a25a4048f8b4577cc84aaead1dc8c937.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\sum_{k=m}^{m-1} a_k \coloneqq 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1485202" class="outline-3">
-<h3 id="org1485202"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org27eb58c" class="outline-3">
+<h3 id="org27eb58c"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211228192629-definition_summenzeichen_76aeeaa97f4cfd9336efc6fb1e1dc644b062eb96.svg" alt="20211228192629-definition_summenzeichen_76aeeaa97f4cfd9336efc6fb1e1dc644b062eb96.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\sum_{k=m}^{n + 1} a_k \coloneqq \left( \sum_{k=m}^{n} a_k \right) + a_{n+1}
+\end{align*}
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgaf53372" class="outline-2">
-<h2 id="orgaf53372"><span class="section-number-2">2.</span> Alternative Schreibweise</h2>
+<div id="outline-container-orgdf80f33" class="outline-2">
+<h2 id="orgdf80f33"><span class="section-number-2">2.</span> Alternative Schreibweise</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211228192629-definition_summenzeichen_dff4d5f7c1da954f3e8b7ceb3edcc0fdfea26d80.svg" alt="20211228192629-definition_summenzeichen_dff4d5f7c1da954f3e8b7ceb3edcc0fdfea26d80.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{align*}
+\sum_{0\leq k\leq n} a_k \coloneqq \sum_{k=0}^{n} a_k
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org18e1a13" class="outline-3">
-<h3 id="org18e1a13"><span class="section-number-3">2.1.</span> Vortei</h3>
+<div id="outline-container-orgf96c740" class="outline-3">
+<h3 id="orgf96c740"><span class="section-number-3">2.1.</span> Vortei</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Angabe von Bedingugnen möglich:</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211228192629-definition_summenzeichen_f24534bf3e51b7528caa4235ec892477c27464f2.svg" alt="20211228192629-definition_summenzeichen_f24534bf3e51b7528caa4235ec892477c27464f2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\sum_{0\leq k \leq 100, k Primzahl} 2^k
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>

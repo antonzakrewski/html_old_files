@@ -9,45 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summenformel mit mehrfachen Indizes beim Binomialkoeffizienten</h1>
-<div id="outline-container-org4e68da3" class="outline-2">
-<h2 id="org4e68da3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org02722e2" class="outline-2">
+<h2 id="org02722e2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_7b69509289eab824c8c4940bf169976a7bd76acb.svg" alt="20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_7b69509289eab824c8c4940bf169976a7bd76acb.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" />, so gilts
+Sei \(r \in \mathbb{R\) und \(n \in \mathbb{N}\), so gilts
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_f3e308ba6ab57e555657e8f34cc5677f6a23daf8.svg" alt="20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_f3e308ba6ab57e555657e8f34cc5677f6a23daf8.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{i=0}^{n} \binom{r + k}{k} = \binom{r + n + 1}{n}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0921e3a" class="outline-2">
-<h2 id="org0921e3a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0b536c3" class="outline-2">
+<h2 id="org0b536c3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2a3d0f2" class="outline-3">
-<h3 id="org2a3d0f2"><span class="section-number-3">2.1.</span> natürliche Zahlen</h3>
+<div id="outline-container-orgbe27021" class="outline-3">
+<h3 id="orgbe27021"><span class="section-number-3">2.1.</span> natürliche Zahlen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" alt="20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" class="org-svg" />
+Sei \(r \in \mathbb{N}\)
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_2ce72f370d46fa116800faeff75b32e99ebd5f3d.svg" alt="20230425083536-summenformel_mit_mehrfachen_indizes_beim_binomialkoeffizienten_2ce72f370d46fa116800faeff75b32e99ebd5f3d.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{n} \binom{r+k}{k} =& \sum_{k=0}^{n} \binom{r+k}{r + k - k} \\
+=& \sum_{k=0}^{n} \binom{r+k}{r} \\
+=& \sum_{k=r}^{n+r} \binom{k}{r} \\  
+=& \binom{n+r+1}{r+1} \\
+=& \binom{n+r+1}{n}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf674fc2" class="outline-3">
-<h3 id="orgf674fc2"><span class="section-number-3">2.2.</span> polynomialargument</h3>
+<div id="outline-container-org0e9e744" class="outline-3">
+<h3 id="org0e9e744"><span class="section-number-3">2.2.</span> polynomialargument</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 allgemeiner Fall folgt aus dem  

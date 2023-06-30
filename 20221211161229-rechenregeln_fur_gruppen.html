@@ -9,94 +9,107 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rechenregeln für Gruppen</h1>
-<div id="outline-container-orge70aac7" class="outline-2">
-<h2 id="orge70aac7"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org76c04fb" class="outline-2">
+<h2 id="org76c04fb"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_44c9cf95ae51c67c6677318de296bcb23189c799.svg" alt="20221211161229-rechenregeln_fur_gruppen_44c9cf95ae51c67c6677318de296bcb23189c799.svg" class="org-svg" /> einei <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_1674ed03d69e6f75797a372a15c7bd391683a12e.svg" alt="20221211161229-rechenregeln_fur_gruppen_1674ed03d69e6f75797a372a15c7bd391683a12e.svg" class="org-svg" />
+Sei \((G, \cdot)\) einei <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(a,b,c \in G\)
 Dann folgt
 </p>
 </div>
-<div id="outline-container-orgd8c136d" class="outline-3">
-<h3 id="orgd8c136d"><span class="section-number-3">1.1.</span> a)</h3>
+<div id="outline-container-orgc9f82c4" class="outline-3">
+<h3 id="orgc9f82c4"><span class="section-number-3">1.1.</span> a)</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_44a07820cd0b43196991ab745d247ed8daad6765.svg" alt="20221211161229-rechenregeln_fur_gruppen_44a07820cd0b43196991ab745d247ed8daad6765.svg" class="org-svg" />
-</span>
+\begin{align*}
+ab = ac \Leftrightarrow b = c \Leftrightarrow ba = ca
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgde09658" class="outline-3">
-<h3 id="orgde09658"><span class="section-number-3">1.2.</span> b)</h3>
+<div id="outline-container-org09055b2" class="outline-3">
+<h3 id="org09055b2"><span class="section-number-3">1.2.</span> b)</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_0ccdb9f0e4db3f9205b47a91715265bf6eed18e2.svg" alt="20221211161229-rechenregeln_fur_gruppen_0ccdb9f0e4db3f9205b47a91715265bf6eed18e2.svg" class="org-svg" />
-</span>
+\begin{align*}
+(a^{-1})^{-1} =& a
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf666875" class="outline-3">
-<h3 id="orgf666875"><span class="section-number-3">1.3.</span> c)</h3>
+<div id="outline-container-org99cfada" class="outline-3">
+<h3 id="org99cfada"><span class="section-number-3">1.3.</span> c)</h3>
 <div class="outline-text-3" id="text-1-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_c851f53a6d486c641cb7e561cadcde790ce7e114.svg" alt="20221211161229-rechenregeln_fur_gruppen_c851f53a6d486c641cb7e561cadcde790ce7e114.svg" class="org-svg" />
-</span>
+\begin{align*}
+(ab)^{-1} = b^{-1}a^{-1}
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-orge9095f6" class="outline-2">
-<h2 id="orge9095f6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgab5f06b" class="outline-2">
+<h2 id="orgab5f06b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3c27e5b" class="outline-3">
-<h3 id="org3c27e5b"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org09b4752" class="outline-3">
+<h3 id="org09b4752"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_77286950f678c2d1afc4578b31fee969b7c2a3f5.svg" alt="20221211161229-rechenregeln_fur_gruppen_77286950f678c2d1afc4578b31fee969b7c2a3f5.svg" class="org-svg" />  folgt aus der Eindeutigkeit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> 
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(b = c \Rightarrow ab = ac\)  folgt aus der Eindeutigkeit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_e562d9e610ac3c7d5bcd2a63b19fd1620010f382.svg" alt="20221211161229-rechenregeln_fur_gruppen_e562d9e610ac3c7d5bcd2a63b19fd1620010f382.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ab =& ac \\
+a^{-1}ab =& a^{-1}ac \\
+b =& c
+\end{align*}
 
 <p>
 analog die andere gleichung
 </p>
 </div>
 </div>
-<div id="outline-container-orgc6e04eb" class="outline-3">
-<h3 id="orgc6e04eb"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org149e191" class="outline-3">
+<h3 id="org149e191"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_918c0d56fbffbce932ff6711f3f099bfd7ec10a5.svg" alt="20221211161229-rechenregeln_fur_gruppen_918c0d56fbffbce932ff6711f3f099bfd7ec10a5.svg" class="org-svg" />
-</span>
+\begin{align*}
+(a^{-1})^{-1}a^{-1} =& e \\
+(a^{-1})^{-1}a^{-1}a =& a \\
+(a^{-1})^{-1} =& a
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgedd2c83" class="outline-3">
-<h3 id="orgedd2c83"><span class="section-number-3">2.3.</span> c)</h3>
+<div id="outline-container-org102054d" class="outline-3">
+<h3 id="org102054d"><span class="section-number-3">2.3.</span> c)</h3>
 <div class="outline-text-3" id="text-2-3">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221211161229-rechenregeln_fur_gruppen_2ca64337099606994b187b28cdeaee6d4fe861f1.svg" alt="20221211161229-rechenregeln_fur_gruppen_2ca64337099606994b187b28cdeaee6d4fe861f1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(ab)^{-1} (ab) =& e \\
+(ab)^{-1} (ab) b^{-1}a^{-1} =& e b^{-1}a^{-1} \\
+(ab)^{-1} =& b^{-1}a^{-1}
+\end{align*}
 </div>
 </div>
 </div>

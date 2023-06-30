@@ -9,37 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">orthogonale Komplement der ungeraden Funktionen</h1>
-<div id="outline-container-orgff0dbe5" class="outline-2">
-<h2 id="orgff0dbe5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org07e73bd" class="outline-2">
+<h2 id="org07e73bd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> der <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle Vektorraum</a> der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigen</a>, <a href="20230504110222-beschrankte_funktion.html#ID-52e37e84-8cb8-49c4-a730-cb75224c83fc">beschränkten Funktionen</a> <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_1b53c6f24cb233b2861513bc9176bc767e420c9f.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_1b53c6f24cb233b2861513bc9176bc767e420c9f.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungeraden Funktionen</a>.
-Sei ferner die <a href="20230623-integration_von_polynomen_als_skalarprodukt.html#ID-f91d9210-ec48-49ee-81ef-36f03bca4320">Integration von Regelfunktionen als Skalarprodukt</a> <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_577b445e728851f3838bfc2513fb24bedf26c9e5.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_577b445e728851f3838bfc2513fb24bedf26c9e5.svg" class="org-svg" />   gegeben, dann gilt für das <a href="20230105092749-orthogonales_komplement.html#ID-e1d31ecf-7be2-4812-ba03-7145c5c0dbe8">orthogonale Komplement</a> 
+Sei \(V\) der <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle Vektorraum</a> der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigen</a>, <a href="20230504110222-beschrankte_funktion.html#ID-52e37e84-8cb8-49c4-a730-cb75224c83fc">beschränkten Funktionen</a> \(B(\mathbb{R},\mathbb{R})\) und \(U \subseteq V\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungeraden Funktionen</a>.
+Sei ferner die <a href="20230623-integration_von_polynomen_als_skalarprodukt.html#ID-f91d9210-ec48-49ee-81ef-36f03bca4320">Integration von Regelfunktionen als Skalarprodukt</a> \(\int_{-1}^{1} \cdot \mathrm{d}x\)   gegeben, dann gilt für das <a href="20230105092749-orthogonales_komplement.html#ID-e1d31ecf-7be2-4812-ba03-7145c5c0dbe8">orthogonale Komplement</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_44af6e9ebf3d54c5ac80c863035010cfaa70a18c.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_44af6e9ebf3d54c5ac80c863035010cfaa70a18c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+U^{\bot} = G
+\end{align*}
 <p>
-wobei <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230623-gerade_funktion.html#ID-eb820242-182d-4642-92d1-bd0ed7ef0260">geraden Funktionen</a> ist
+wobei \(G\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230623-gerade_funktion.html#ID-eb820242-182d-4642-92d1-bd0ed7ef0260">geraden Funktionen</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3962d2" class="outline-2">
-<h2 id="orgc3962d2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5d0ca4e" class="outline-2">
+<h2 id="org5d0ca4e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org1638fbe" class="outline-3">
-<h3 id="org1638fbe"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org6a51c88" class="outline-3">
+<h3 id="org6a51c88"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus den Aussagen:
@@ -50,71 +71,42 @@ folgt aus den Aussagen:
 </ul>
 </div>
 </div>
-<div id="outline-container-org9286bd5" class="outline-3">
-<h3 id="org9286bd5"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgc738445" class="outline-3">
+<h3 id="orgc738445"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt nach den <a href="20230208144258-eigenschaften_des_integrals.html#ID-93047046-b304-4f3d-841c-8cb81f64774e">Eigenschaften des Integrals</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_3adf0e20aac79a55a26aaae0b714a27a7321c75a.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_3adf0e20aac79a55a26aaae0b714a27a7321c75a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\int_{-1}^{1} f(x) \cdot u(x) \mathrm{d}x =& \int_{-1}^{0} f(x) \cdot u(x) \mathrm{d}x + \int_{0}^{1} f(x) \cdot u(x) \mathrm{d}x 
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_cd0b65ed1bff67a6f421536009ba193984f7febf.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_cd0b65ed1bff67a6f421536009ba193984f7febf.svg" class="org-svg" /> folgt somit durch <a href="20220509172841-integration_durch_substitution.html#ID-c4abdeb3-ffcc-413e-8a84-7623ad09cd50">Integration durch Substitution</a> 
+Für \(y = -x\) folgt somit durch <a href="20220509172841-integration_durch_substitution.html#ID-c4abdeb3-ffcc-413e-8a84-7623ad09cd50">Integration durch Substitution</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_85fa4b5a664c5d81036ca8dad5e15300d62a319d.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_85fa4b5a664c5d81036ca8dad5e15300d62a319d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\int_{0}^{-1} f(-x) \cdot u(-x) \cdot (-1r \mathrm{d}x =& \int_{0}^{-1} f(-x) \cdot -u(x) \cdot (-1) \mathrm{d}x \\
+=& \int_{0}^{-1} f(-x) \cdot u(x) \mathrm{d}x 
+\end{align*}
 <p>
 Durch <a href="20230624-vertauschen_von_integrationsgrenzen.html#ID-08ef7a08-9a53-4bc7-aeda-a1172299c89b">Vertauschen von Integrationsgrenzen</a> folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_eb8c3f5590fd9c4b907cc4a4fce87438ca02c55d.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_eb8c3f5590fd9c4b907cc4a4fce87438ca02c55d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\int_{0}^{-1} f(-x) \cdot u(x) \mathrm{d}x  =& - \int_{-1}^{0} f(-x) \cdot u(x) \mathrm{d}x
+\end{align*}
 <p>
 bzw.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_64347c3f1d69f24fb9696a5c7b7b29e8b41e8e11.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_64347c3f1d69f24fb9696a5c7b7b29e8b41e8e11.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\int_{-1}^{1} f(x) \cdot u(x) \mathrm{d}x =& \int_{-1}^{0} (f(x) - f(-x)) u(x) \mathrm{d}x
+\end{align*}
 <p>
 Für 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_6575e00e816c909ba8070e23f17fa583319f4782.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_6575e00e816c909ba8070e23f17fa583319f4782.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+ \int_{-1}^{0} (f(x) - f(-x)) u(x) \mathrm{d}x =& 0 && \forall u(x) \in U
+\end{align*}
 <p>
-folgt damit <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_fd2cdec987c24f50fe43cd392554dafa431a13a5.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_fd2cdec987c24f50fe43cd392554dafa431a13a5.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230623-orthogonale_komplement_der_ungeraden_funktionen_b4e42315c7914ef5903fca24fdea29eee41dbfe2.svg" alt="20230623-orthogonale_komplement_der_ungeraden_funktionen_b4e42315c7914ef5903fca24fdea29eee41dbfe2.svg" class="org-svg" />
+folgt damit \(f(x) = f(-x)\) bzw. \(f \in G\)
 </p>
 </div>
 </div>

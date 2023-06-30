@@ -3,48 +3,64 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lineare Unabhängigkeit der paarweise gebildeten Summe drei linear unabhängiger Vektoren</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineare Unabhängigkeit der paarweise gebildeten Summe drei linear unabhängiger Vektoren</h1>
-<div id="outline-container-org5187aa0" class="outline-2">
-<h2 id="org5187aa0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org114b620" class="outline-2">
+<h2 id="org114b620"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_5848be1647244eb2025cbeeb8e6f24a2d9b99452.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> mit <a href="20221030164602-charakteristik_eines_korpers.html#ID-857e2abc-6f76-404f-bf65-6822c05d6bd3">Charakteristik</a> <img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_60f6ce7003d64b9c7b6e011b97d2e3305599d99f.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_60f6ce7003d64b9c7b6e011b97d2e3305599d99f.svg" class="org-svg" />, <img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_edf473c313c6bd0aba479d0a35694f108fe6ee0a.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, so folgt für drei <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> <img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_476a0919d3454a9868ef09b02e9f55b5d4e5b8f8.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_476a0919d3454a9868ef09b02e9f55b5d4e5b8f8.svg" class="org-svg" />, dass
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> mit <a href="20221030164602-charakteristik_eines_korpers.html#ID-857e2abc-6f76-404f-bf65-6822c05d6bd3">Charakteristik</a> \(\mathrm{char}(K) \neq 2\), \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, so folgt für drei <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a> \(u,v,w \in V\), dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_881db062bc203bd9e0e46e39aafa69ec08429bae.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_881db062bc203bd9e0e46e39aafa69ec08429bae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+u + v, u + w, v + w
+\end{align*}
 <p>
 auch <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> sind
 </p>
 </div>
 </div>
-<div id="outline-container-org5a3f5cf" class="outline-2">
-<h2 id="org5a3f5cf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org78bd0bd" class="outline-2">
+<h2 id="org78bd0bd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_6dbd8464583f0c0009e55becb4d3d9e3fd277df6.svg" alt="20230110135218-lineare_unabhangigkeit_der_paarweise_gebildeten_summe_drei_linear_unabhangiger_vektoren_6dbd8464583f0c0009e55becb4d3d9e3fd277df6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+u + v =& k_1 \cdot (u + w) + k_2 (v + w) \\
+u + v =& (k_1 + k_2) w + k_1 u + k_2 v \\
+\end{align*}
 </div>
 </div>
 </div>

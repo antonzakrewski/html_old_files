@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">small-omega notation</h1>
-<div id="outline-container-org12f2cd2" class="outline-2">
-<h2 id="org12f2cd2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb15f5aa" class="outline-2">
+<h2 id="orgb15f5aa"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230507211817-small_omega_notation_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" alt="20230507211817-small_omega_notation_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" class="org-svg" /> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, dann ist das <img src="file:///home/anton/html/ltximg/20230507211817-small_omega_notation_ec89700cbbeea8f0d018ff6d61e7b50fa832471a.svg" alt="20230507211817-small_omega_notation_ec89700cbbeea8f0d018ff6d61e7b50fa832471a.svg" class="org-svg" /> in der Landau-Notation definiert als:
+Seien \(f,g\) <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, dann ist das \(\omega\) in der Landau-Notation definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507211817-small_omega_notation_2dfd9621db99045eec6c0f76908f3a8e80ece8cd.svg" alt="20230507211817-small_omega_notation_2dfd9621db99045eec6c0f76908f3a8e80ece8cd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f = \omega(g) \Leftrightarrow& g = o(f)
+\end{align*}
 </div>
 </div>
 </div>

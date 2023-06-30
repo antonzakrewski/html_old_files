@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kommutativität einer algebraischen Struktur als Isomorphieinvariante</h1>
-<div id="outline-container-org45b9588" class="outline-2">
-<h2 id="org45b9588"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb8f2ca8" class="outline-2">
+<h2 id="orgb8f2ca8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_4ed8bf36980e8232ef9307f5b4fe0b10f0b6bcfa.svg" alt="20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_4ed8bf36980e8232ef9307f5b4fe0b10f0b6bcfa.svg" class="org-svg" /> <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Strukturen</a> und <img src="file:///home/anton/html/ltximg/20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_e56a26e4f8a78b1097cbf850c88e379a97f4680a.svg" alt="20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_e56a26e4f8a78b1097cbf850c88e379a97f4680a.svg" class="org-svg" /> ein <a href="20230318213240-isomorphismus_algebra.html#ID-3e254a9d-81eb-40a1-90bb-ba7634aab1ee">Isomorphismus</a>, dann gilt:
-<img src="file:///home/anton/html/ltximg/20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_74a43688706923c509d2463c929b3501a9441a7d.svg" alt="20230227124749-kommutativitat_einer_algebraischen_struktur_als_isomorphieinvariante_74a43688706923c509d2463c929b3501a9441a7d.svg" class="org-svg" />  <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a> ist.
+Seien \((A, \circ), (A', \circ')\) <a href="20220814141239-algebraische_struktur.html#ID-580e4f1e-9381-4b26-adc4-d460191581e1">Algebraische Strukturen</a> und \(f: A \rightarrow A'\) ein <a href="20230318213240-isomorphismus_algebra.html#ID-3e254a9d-81eb-40a1-90bb-ba7634aab1ee">Isomorphismus</a>, dann gilt:
+\(A\) ist <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(A'\)  <a href="20220105121041-allgemeines_kommutativgesetz.html#ID-887153e0-9f6f-408d-983a-9ee0cff308bd">kommutativ</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbfba411" class="outline-2">
-<h2 id="orgbfba411"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org922aba8" class="outline-2">
+<h2 id="org922aba8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230227125116-vererbung_der_kommutativitat_fur_einen_homomorphismus.html#ID-4b3199b5-69f8-408b-a644-d5b615d8b06b">Vererbung der Kommutativität für einen Homomorphismus</a> und der Symmetrie durch den Umkehrisomorphismus

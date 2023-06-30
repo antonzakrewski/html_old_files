@@ -9,46 +9,75 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Trigonalisiertes Polynom und charakteristische Polynom</h1>
-<div id="outline-container-org46df0e1" class="outline-2">
-<h2 id="org46df0e1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org122ad69" class="outline-2">
+<h2 id="org122ad69"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a>  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> sowie <img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_1b01308f6042e6b2c5e2057c33aec53201a78156.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_1b01308f6042e6b2c5e2057c33aec53201a78156.svg" class="org-svg" /> eine <a href="20230428180510-trigonalisierbarer_endomorphismus.html#ID-179077ce-7cd0-44c9-a418-134d710ddd4a">trigonalisierbare</a> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(K^{n \times n}\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a>  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> sowie \(A = (\alpha_{i,j}) \in K^{n \times n}\) eine <a href="20230428180510-trigonalisierbarer_endomorphismus.html#ID-179077ce-7cd0-44c9-a418-134d710ddd4a">trigonalisierbare</a> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
 Dann ist das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a>  
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_5047a1250478da805bf529e9f6dd9c7787e2990f.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_5047a1250478da805bf529e9f6dd9c7787e2990f.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lambda_A(x) = \prod_{i=1}^n (x - \alpha_{i,i}) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org073f519" class="outline-2">
-<h2 id="org073f519"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4bd6f8f" class="outline-2">
+<h2 id="org4bd6f8f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_bf763ccfb72c5df3f0fb6c364abf2c5fc8a44b48.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_bf763ccfb72c5df3f0fb6c364abf2c5fc8a44b48.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M_A(x) =&
+ \begin{pmatrix}
+ x - \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n}  \\
+ 0 & x - \alpha_{2,2} & \dots & - \alpha_{2,n}  \\
+ 0 & 0 & \vdots & \ddots  \\
+ 0 & 0 & 0 & - \alpha_{n,n} \\
+ \end{pmatrix} 
+\end{align*}
 <p>
 Dann folgt durch wiederholtes Anwenden der <a href="20221224180415-laplace_entwicklung.html#ID-569e3b41-3b14-4775-922c-5a02533fbfdd">Laplace Entwicklung</a> auf die erste Zeile
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230622-trigonalisiertes_polynom_und_charakteristische_polynom_245b8e1bb472dac07c12a02ee4175f02e24a4ee3.svg" alt="20230622-trigonalisiertes_polynom_und_charakteristische_polynom_245b8e1bb472dac07c12a02ee4175f02e24a4ee3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\det(M_A(x)) =& (x - \alpha_{1,1} \cdot 
+\begin{pmatrix}
+ x - \alpha_{2,2} & \dots & - \alpha_{2,n}  \\
+ 0 & \vdots & \ddots  \\
+ 0 & 0 & - \alpha_{n,n} \\
+  \end{pmatrix} \\
+=& ... \\
+=& \prod_{i=1}^n (x - \alpha_{i,i}) 
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,41 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zykel</h1>
-<div id="outline-container-org778d37e" class="outline-2">
-<h2 id="org778d37e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org9ad4e28" class="outline-2">
+<h2 id="org9ad4e28"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221224174219-zykel_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20221224174219-zykel_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221224174219-zykel_f6d854f3e04906de0aeb8493bd505b8c86663dde.svg" alt="20221224174219-zykel_f6d854f3e04906de0aeb8493bd505b8c86663dde.svg" class="org-svg" />
-<img src="file:///home/anton/html/ltximg/20221224174219-zykel_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" alt="20221224174219-zykel_c9fe5a3ed575d70d18c276f497f7a80bf234f985.svg" class="org-svg" /> ist ein $k$-Zykel, falls für paarweise verschiedene <img src="file:///home/anton/html/ltximg/20221224174219-zykel_a7ff97731101592a1827335f97fb3c5d31d9505f.svg" alt="20221224174219-zykel_a7ff97731101592a1827335f97fb3c5d31d9505f.svg" class="org-svg" /> gilt:
+Sei \(S_n\) die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und \(\tau \in S_n\)
+\(\tau\) ist ein $k$-Zykel, falls für paarweise verschiedene \(a_1,a_2,...,a_k \in \{1,...,n\}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224174219-zykel_3c0454f81eb8e1d44f4d5103887efcb3627cef9f.svg" alt="20221224174219-zykel_3c0454f81eb8e1d44f4d5103887efcb3627cef9f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tau(a_1) =& a_2 \\
+\tau(a_2) =& a_3 \\
+\vdots& \\
+\tau(a_{k-1}) =& a_k \\
+\tau(a_k) =& a_1
+\end{align*}
 <p>
-und für <img src="file:///home/anton/html/ltximg/20221224174219-zykel_baa3bb73cf3e68cd855bed56aaa6235a4ca8f675.svg" alt="20221224174219-zykel_baa3bb73cf3e68cd855bed56aaa6235a4ca8f675.svg" class="org-svg" />
+und für \(b \not \in \{a_1,...,a_k\}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224174219-zykel_2d37d5d17f96266a4de21433fc1c81b970ea82f4.svg" alt="20221224174219-zykel_2d37d5d17f96266a4de21433fc1c81b970ea82f4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tau(b) = b
+\end{align*}
 <p>
 Man schreibt auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221224174219-zykel_07ebb4791afff3afc631b1005bcb377063c34777.svg" alt="20221224174219-zykel_07ebb4791afff3afc631b1005bcb377063c34777.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tau = (a_1,a_2,...,a_{k-1},a_k)
+\end{align*}
 </div>
 </div>
 </div>

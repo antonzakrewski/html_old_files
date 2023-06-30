@@ -9,50 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">konstruktiver Elementarteilersatz für euklidische Ringe</h1>
-<div id="outline-container-org8949975" class="outline-2">
-<h2 id="org8949975"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge91b1be" class="outline-2">
+<h2 id="orge91b1be"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_59adcdf397b03ea65387815ac0bdf0e2aca9c0f3.svg" alt="20230531112726-elementarteilersatz_59adcdf397b03ea65387815ac0bdf0e2aca9c0f3.svg" class="org-svg" /> <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">frei</a> über einem <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischen Ring</a>  mit <a href="20230222205618-rang_eines_moduls.html#ID-32dff54d-1956-4458-9354-10f3d29e3ed4">Rang</a> <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230531112726-elementarteilersatz_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_0dee199191188b1bfb592bb059716068109185f7.svg" alt="20230531112726-elementarteilersatz_0dee199191188b1bfb592bb059716068109185f7.svg" class="org-svg" /> ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a> mit
+Sei \(M = \bigoplus_{i=1}^n R u_i\) <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">frei</a> über einem <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischen Ring</a>  mit <a href="20230222205618-rang_eines_moduls.html#ID-32dff54d-1956-4458-9354-10f3d29e3ed4">Rang</a> \(n\) und \(N \subseteq M\) ein <a href="20230222204739-untermodul.html#ID-72f8c93c-c8cd-4dd0-b1c4-81e2efb54d75">Untermodul</a> mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_61fc394ca1b747b0a6868e1e98e12e5ec705f3b9.svg" alt="20230531112726-elementarteilersatz_61fc394ca1b747b0a6868e1e98e12e5ec705f3b9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+N =& \langle v_1,...,v_k\rangle
+\end{align*}
 <p>
-Dann existieren Basen <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_5a35b17680df3801c45e4a1a1d69a7690468342d.svg" alt="20230531112726-elementarteilersatz_5a35b17680df3801c45e4a1a1d69a7690468342d.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230531112726-elementarteilersatz_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_6dceebcbdb6a54d2caf30065a2761bebf99cc446.svg" alt="20230531112726-elementarteilersatz_6dceebcbdb6a54d2caf30065a2761bebf99cc446.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230531112726-elementarteilersatz_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_34cfffaf5faaf93ee4d48c77473ab3fa428e3acc.svg" alt="20230531112726-elementarteilersatz_34cfffaf5faaf93ee4d48c77473ab3fa428e3acc.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_8938e4fe4a9a1a8acf1ca4ceb7b7d6d5b042af50.svg" alt="20230531112726-elementarteilersatz_8938e4fe4a9a1a8acf1ca4ceb7b7d6d5b042af50.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_5b6f7a8cd8cfe4dc3aaf79f43f82592cc21e9464.svg" alt="20230531112726-elementarteilersatz_5b6f7a8cd8cfe4dc3aaf79f43f82592cc21e9464.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_e6d07866d5319615a7bfc029592fa17cc8d77a94.svg" alt="20230531112726-elementarteilersatz_e6d07866d5319615a7bfc029592fa17cc8d77a94.svg" class="org-svg" />
+Dann existieren Basen \(u_1',...,u_n'\) von \(M\) und \(v_1',...,v_m'\) von \(N\) mit \(m \leq n\) und \(v_i' = \varepsilon_i \cdot u_i'\) für \(i = 1,..,m\) und \(\varepsilon_i \mid \varepsilon_{i+1}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgaf993da" class="outline-2">
-<h2 id="orgaf993da"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org429abac" class="outline-2">
+<h2 id="org429abac"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Man wähle eine beliebige <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_0831c14c59586e9ea917647086b9b41e048c98e4.svg" alt="20230531112726-elementarteilersatz_0831c14c59586e9ea917647086b9b41e048c98e4.svg" class="org-svg" />
+Man wähle eine beliebige <a href="20230303171607-basis_eines_moduls.html#ID-4d94d36c-5d43-4344-a837-6c9705d279a1">Basis</a> \(u_1,...,u_n\)
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_5139defc354788d6913ae0751321b9b7ba365a1b.svg" alt="20230531112726-elementarteilersatz_5139defc354788d6913ae0751321b9b7ba365a1b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v_l =& \sum_{i=1}^{n} \alpha_{i,l} u_i, \alpha_{i,l} \in R
+\end{align*}
 <p>
-Sei dann <img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_ceceec32ae9dccb9f79ee4da0f0b67854dcf21bc.svg" alt="20230531112726-elementarteilersatz_ceceec32ae9dccb9f79ee4da0f0b67854dcf21bc.svg" class="org-svg" />
+Sei dann \(A = (\alpha_{i,l}) \in R^{n \times k}\)
 Dabei ändern wir die Mtarix
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531112726-elementarteilersatz_3478c24ff063d6f83956de8aec77341f4623440b.svg" alt="20230531112726-elementarteilersatz_3478c24ff063d6f83956de8aec77341f4623440b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A' = \begin{pmatrix}
+\varepsilon_1 & 0 ... & 0 & 0\\
+0 & ... & 0\\
+0 & ... & \varepsilon_m & 0 \\
+0 & ... & 0 & 0
+ \end{pmatrix} 
+\end{align*}
 <p>
 Erlaubt sind <a href="20221209182455-elementare_umformung.html#ID-21e4c10b-c38d-4bca-9809-50973831bac2">elementare Umformung</a>, welche keine <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse</a> voraussetzen sowie <a href="20230531114146-permutation_von_zeilen_bzw_spalten.html#ID-c497db00-e634-4638-9d2b-48eae5d252ff">Permutation von Zeilen bzw. Spalten</a> 
 </p>

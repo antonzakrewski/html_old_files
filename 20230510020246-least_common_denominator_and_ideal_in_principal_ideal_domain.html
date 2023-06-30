@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">least common denominator and ideal in principal ideal domain</h1>
-<div id="outline-container-orgf10e719" class="outline-2">
-<h2 id="orgf10e719"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orgbc5432d" class="outline-2">
+<h2 id="orgbc5432d"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> be a <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">principal ideal domain</a> and <img src="file:///home/anton/html/ltximg/20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" />.
-Then for the <a href="20220906095246-kleinstes_gemeinsames_vielfache.html#ID-2e7d2bdd-5ced-4aed-866c-cf1a18dbf579">least common denominator</a> <img src="file:///home/anton/html/ltximg/20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_4295ea1161fbbc89a691e9b1a35271aaac29eb13.svg" alt="20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_4295ea1161fbbc89a691e9b1a35271aaac29eb13.svg" class="org-svg" /> and the <a href="20221227230103-komplexprodukt_von_idealen.html#ID-3b33d732-713a-4420-83bc-b934074e04ce">product</a> of the <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideals</a> <img src="file:///home/anton/html/ltximg/20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_f6780d8ba1eda4d581077620fb6de73fb3cd90aa.svg" alt="20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_f6780d8ba1eda4d581077620fb6de73fb3cd90aa.svg" class="org-svg" /> following holds true:
+Let \(R\) be a <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">principal ideal domain</a> and \(a,b \in R\).
+Then for the <a href="20220906095246-kleinstes_gemeinsames_vielfache.html#ID-2e7d2bdd-5ced-4aed-866c-cf1a18dbf579">least common denominator</a> \(l  \coloneqq \mathrm{lcd}(a,b)\) and the <a href="20221227230103-komplexprodukt_von_idealen.html#ID-3b33d732-713a-4420-83bc-b934074e04ce">product</a> of the <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideals</a> \(aR, bR\) following holds true:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_cb6aaf8c2a18501aa2b3b017f6cc0b0d32880dc3.svg" alt="20230510020246-least_common_denominator_and_ideal_in_principal_ideal_domain_cb6aaf8c2a18501aa2b3b017f6cc0b0d32880dc3.svg" class="org-svg" />
-</span>
+\begin{align*}
+aR \cdot bR = \mathrm{lcd}(a,b)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2275ab1" class="outline-2">
-<h2 id="org2275ab1"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org5c08701" class="outline-2">
+<h2 id="org5c08701"><span class="section-number-2">2.</span> Proof</h2>
 </div>
 </div>
 <div id="postamble" class="status">

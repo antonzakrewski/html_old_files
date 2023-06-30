@@ -3,51 +3,71 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kommutativität von disjunkten Zyklen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kommutativität von disjunkten Zyklen</h1>
-<div id="outline-container-orge8770b6" class="outline-2">
-<h2 id="orge8770b6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd097a71" class="outline-2">
+<h2 id="orgd097a71"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_52c9a4c7e8e7c74748d83526f84b7db6eb94ce0d.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_52c9a4c7e8e7c74748d83526f84b7db6eb94ce0d.svg" class="org-svg" /> und <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_2c4e0f5d05eeef4222395eac1bfa98bc3a2ab675.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_2c4e0f5d05eeef4222395eac1bfa98bc3a2ab675.svg" class="org-svg" /> <a href="20221224174210-disjunkte_zykel.html#ID-893b920e-282b-4100-8fce-a51e438897fb">Disjunkte Zykel</a> einer <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_13951f52a14bf6f86f781e18611bfb87a5fa0f43.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_13951f52a14bf6f86f781e18611bfb87a5fa0f43.svg" class="org-svg" />
+Seien \((a_1\,...\,a_k)\) und \((a'_1\,...\,a'_m)\) <a href="20221224174210-disjunkte_zykel.html#ID-893b920e-282b-4100-8fce-a51e438897fb">Disjunkte Zykel</a> einer <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> \(S_n\)
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_b4a17813cfb53bb8de36b2f35e6a5760efbf19d1.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_b4a17813cfb53bb8de36b2f35e6a5760efbf19d1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(a_1\,...\,a_k) \circ (a_1'\,...\,a'_m) =  (a_1'\,...\,a'_m) \circ (a_1\,...\,a_k) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8c1c0b7" class="outline-2">
-<h2 id="org8c1c0b7"><span class="section-number-2">2.</span> Bewesw</h2>
+<div id="outline-container-orgd9f1ed2" class="outline-2">
+<h2 id="orgd9f1ed2"><span class="section-number-2">2.</span> Bewesw</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_16290cefd7d706cb8b7bbe1d961ec47af5546672.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_16290cefd7d706cb8b7bbe1d961ec47af5546672.svg" class="org-svg" /> beliebig und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> nicht in <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_f1d0f8a1782514443d1261829531e9e271cdf62b.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_f1d0f8a1782514443d1261829531e9e271cdf62b.svg" class="org-svg" />.
-Insbesondere gilt dann auch <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_44bce4c4a4f75be8e98f34a9a5051dffbf5ef6f3.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_44bce4c4a4f75be8e98f34a9a5051dffbf5ef6f3.svg" class="org-svg" /> nicht in <img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_f1d0f8a1782514443d1261829531e9e271cdf62b.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_f1d0f8a1782514443d1261829531e9e271cdf62b.svg" class="org-svg" />.
+Sei \(b_i\) beliebig und <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> nicht in \((a_1'\,...\,a'_m)\).
+Insbesondere gilt dann auch \((a_1\,...\,a_k) \circ (b_i) =: b_{i+1}\) nicht in \((a_1'\,...\,a'_m)\).
 Dann gilt aufgrund der Definition eines <a href="20221224174219-zykel.html#ID-2bc9ba37-5874-46bd-99c8-808058ddd68c">Zykel</a> :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230117090045-kommutativitat_von_disjunkten_zyklen_559fe8f1282954353e87f028bc7df1beee4163ce.svg" alt="20230117090045-kommutativitat_von_disjunkten_zyklen_559fe8f1282954353e87f028bc7df1beee4163ce.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(a'_1\,...\,a'_m) \circ (b_i) =& (b_i) \\
+(a'_1\,...\,a'_m) \circ (b_{i+1}) =& (b_{i+1}) \\
+(a_1\,...\,a_k) \circ (a_1'\,...\,a_m') \circ (b_i) =& (a_1\,...\,a_k) \circ (b_i) \\
+=& (b_{i+1}) \\
+=& (a_1'\,...\,a_m') \circ (b_{i+1}) \\
+=& (a_1'\,...\,a_m') \circ (a_1\,...\,a_k) \circ (b_i)
+\end{align*}
 </div>
 </div>
 </div>

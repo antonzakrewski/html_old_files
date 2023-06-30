@@ -3,33 +3,60 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Äquivalenz von trivialem Schnitt, linearen unabhängigkeit und direkter Summe zweier Vektorräumen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von trivialem Schnitt, linearen unabhängigkeit und direkter Summe zweier Vektorräumen</h1>
-<div id="outline-container-org1ee2daf" class="outline-2">
-<h2 id="org1ee2daf"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org67f7269" class="outline-2">
+<h2 id="org67f7269"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_7c48237d8183532216c35c88bfc04f739a95296f.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_7c48237d8183532216c35c88bfc04f739a95296f.svg" class="org-svg" /> (<a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unter-</a>)<a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
+Seien \(U,W \subseteq V\) (<a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unter-</a>)<a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_d180473139192f132b6f21b76c074d89b80d1b53.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_d180473139192f132b6f21b76c074d89b80d1b53.svg" class="org-svg" /></li>
-<li><img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_78ad859012b8987a94759f9f98791eb5276ea688.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_78ad859012b8987a94759f9f98791eb5276ea688.svg" class="org-svg" /></li>
-<li>für <img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_6de5e8657a1b7712294788fea9f69f526a827821.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_6de5e8657a1b7712294788fea9f69f526a827821.svg" class="org-svg" /> gilt: <img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_b2ac5b94170c9b35c26713b2aa62043a7b347e6b.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_b2ac5b94170c9b35c26713b2aa62043a7b347e6b.svg" class="org-svg" /></li>
-<li>für <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> <img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_717abfa7a15bc875f67d2eae0dcab66254a8f2a3.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_717abfa7a15bc875f67d2eae0dcab66254a8f2a3.svg" class="org-svg" /> gilt, dass <img src="ltximg/20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_b4dd931ec8c50624b8858662b3c74090c00cfac4.svg" alt="20230111100333-aquivalenz_von_trivialem_schnitt_linearen_unabhangigkeit_und_direkter_summe_zweier_vektorraumen_b4dd931ec8c50624b8858662b3c74090c00cfac4.svg" class="org-svg" /> <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> sind</li>
+<li>\(U \oplus W\)</li>
+<li>\(U \cap W = \{0\}\)</li>
+<li>für \(u \in U, w \in W\) gilt: \(u + w = 0 \Leftrightarrow u = w = 0\)</li>
+<li>für <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängige</a> \(u_i,w_i\) gilt, dass \((u_i) \cup (w_i)\) <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">lineare unabhängig</a> sind</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb88a885" class="outline-2">
-<h2 id="orgb88a885"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb015c10" class="outline-2">
+<h2 id="orgb015c10"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

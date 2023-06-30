@@ -9,49 +9,113 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Elementarteiler eines Jordanblocks</h1>
-<div id="outline-container-org6757c47" class="outline-2">
-<h2 id="org6757c47"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga442305" class="outline-2">
+<h2 id="orga442305"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230620-elementarteiler_eines_jordanblocks_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230620-elementarteiler_eines_jordanblocks_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_9e292c292cefe5b71df9680913410ca463250bf4.svg" alt="20230620-elementarteiler_eines_jordanblocks_9e292c292cefe5b71df9680913410ca463250bf4.svg" class="org-svg" /> ein <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a>.
-Dann gilt für die <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a> von <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_9e292c292cefe5b71df9680913410ca463250bf4.svg" alt="20230620-elementarteiler_eines_jordanblocks_9e292c292cefe5b71df9680913410ca463250bf4.svg" class="org-svg" />:
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) und \(J(\alpha,n)\) ein <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a>.
+Dann gilt für die <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a> von \(J(\alpha,n)\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_8520d209243ff4bf33f3341483412a58042a908f.svg" alt="20230620-elementarteiler_eines_jordanblocks_8520d209243ff4bf33f3341483412a58042a908f.svg" class="org-svg" />
-</span>
+\begin{align*}
+M_{J(\alpha,n)}(x) \sim \begin{pmatrix}
+1 & & & & \\
+& 1 & & & \\
+& & \vdots & & \\
+& & & 1 & \\
+& & & & (x-\alpha)^{n} \\
+ \end{pmatrix} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge30f4c9" class="outline-2">
-<h2 id="orge30f4c9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb338bbf" class="outline-2">
+<h2 id="orgb338bbf"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus dem <a href="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe.html#ID-ccc45228-1dd6-40e5-a706-20180852a181">algorithmischer Elementarteilersatz für Moduln über euklidische Ringe</a>:
 Durch Permutation folgt für die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_1aefd4c73ed9f0b70f9fcd2b574c4d5cd9dc97e3.svg" alt="20230620-elementarteiler_eines_jordanblocks_1aefd4c73ed9f0b70f9fcd2b574c4d5cd9dc97e3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix}
+x - \alpha & 0 & 0 & 0 & 0 & 0 \\
+-1 & x - \alpha & 0 & 0 & 0 & 0 \\
+0 & -1 & x - \alpha & 0 & 0 & 0 \\
+& & \vdots & \vdots &  & \\
+0 & 0 & 0 & -1 & x - \alpha & 0 \\
+0 & 0 & 0 & 0 & -1 & x - \alpha \\
+ \end{pmatrix} \\
+\rightarrow&
+\begin{pmatrix}
+-1 & x - \alpha & 0 & 0 & 0 & 0 \\
+0 & -1 & x - \alpha & 0 & 0 & 0 \\
+& & \vdots & \vdots &  & \\
+0 & 0 & 0 & -1 & x - \alpha & 0 \\
+0 & 0 & 0 & 0 & -1 & x - \alpha \\
+x - \alpha & 0 & 0 & 0 & 0 & 0 \\
+ \end{pmatrix} \\
+\rightarrow& 
+\end{align*}
 <p>
 Durch Subtraktion nach dem Algorithmus folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_ccf7cc03856f46f314eba7fcde5bb5b1666d20af.svg" alt="20230620-elementarteiler_eines_jordanblocks_ccf7cc03856f46f314eba7fcde5bb5b1666d20af.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix}
+-1 & x - \alpha & 0 & 0 & 0 & 0 \\
+0 & -1 & x - \alpha & 0 & 0 & 0 \\
+& & \vdots & \vdots &  & \\
+0 & 0 & 0 & -1 & x - \alpha & 0 \\
+0 & 0 & 0 & 0 & -1 & x - \alpha \\
+x - \alpha & 0 & 0 & 0 & 0 & 0 \\
+ \end{pmatrix} \\
+\rightarrow& 
+\begin{pmatrix}
+-1 & 0 &  &  & 0 & 0 \\
+0 & -1 &  &  & 0 & 0 \\
+& & \vdots & \vdots &  & \\
+0 & 0 &  & -1 & 0 & 0 \\
+0 & 0 &  & 0 & -1 & 0 \\
+x - \alpha & (x - \alpha) (\alpha - x)^1  &  &  & (x - \alpha)(\alpha - x)^{n-2} & (x - \alpha)(\alpha - x)^{n-1} \\
+ \end{pmatrix} \\
+\rightarrow&
+\begin{pmatrix}
+-1 & 0 &  &  & 0 & 0 \\
+0 & -1 &  &  & 0 & 0 \\
+& & \vdots & \vdots &  & \\
+0 & 0 &  & -1 & 0 & 0 \\
+0 & 0 &  & 0 & -1 & 0 \\
+ & &  & & & (x - \alpha)(\alpha - x)^{n-1} \\
+ \end{pmatrix} \\
+\end{align*}
 <p>
-Dabei erhalten wir durch Normierung (Multiplikation mit <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_957b9968372a73b42526338dd57e81391ecbc68b.svg" alt="20230620-elementarteiler_eines_jordanblocks_957b9968372a73b42526338dd57e81391ecbc68b.svg" class="org-svg" />) die <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a>  <img src="file:///home/anton/html/ltximg/20230620-elementarteiler_eines_jordanblocks_6fd1c024f35d4009e912d81dec04495536c8fcc6.svg" alt="20230620-elementarteiler_eines_jordanblocks_6fd1c024f35d4009e912d81dec04495536c8fcc6.svg" class="org-svg" />
+Dabei erhalten wir durch Normierung (Multiplikation mit \(-1\)) die <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a>  \(1,1,...,(x - \alpha)^n\)
 </p>
 </div>
 </div>

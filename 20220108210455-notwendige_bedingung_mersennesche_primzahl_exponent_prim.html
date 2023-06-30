@@ -3,80 +3,89 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notwendige Bedingung: Mersennesche Primzahl - Exponent prim</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Notwendige Bedingung: Mersennesche Primzahl - Exponent prim</h1>
 
 
-<div id="outline-container-org067535a" class="outline-2">
-<h2 id="org067535a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org42eb8e1" class="outline-2">
+<h2 id="org42eb8e1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_fc2f6bd00259361bf6ec4c77c9d0a1f4de28b09a.svg" alt="20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_fc2f6bd00259361bf6ec4c77c9d0a1f4de28b09a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+n \not\in \mathbb{P} \Rightarrow (2^n - 1) \not\in \mathbb{P}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdd54e31" class="outline-2">
-<h2 id="orgdd54e31"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org93a80b3" class="outline-2">
+<h2 id="org93a80b3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org51980a9" class="outline-3">
-<h3 id="org51980a9"><span class="section-number-3">2.1.</span> Lemma</h3>
+<div id="outline-container-orgeda1cc4" class="outline-3">
+<h3 id="orgeda1cc4"><span class="section-number-3">2.1.</span> Lemma</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><a href="20220104221220-geometrische_reihe.html#ID-f8ab4e19-abfd-4905-b9ae-81534050103c">Geometrische Reihe</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_98d54bf12ab32e49a6ae3f510750362e73740bdf.svg" alt="20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_98d54bf12ab32e49a6ae3f510750362e73740bdf.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_c86b8d49958e63d7ae19de0f30c749c4eec7fb09.svg" alt="20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_c86b8d49958e63d7ae19de0f30c749c4eec7fb09.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n} x^n =& \frac{1-x^{n+1}}{1-x} \\
+\sum_{k=0}^{n-1} 2^n =& \frac{1-2^{n}}{1-2}  \\
+=& \frac{1-2^{n}}{1-2} \\
+=& 2^{n} - 1 \\
+\end{align*}
+\begin{align*}
+\sum_{k=0}^{n-1} x^k =& \frac{1-x^n}{1-x} && \vert \cdot -(1-x)  \\
+\sum_{k=0}^{n-1} x^k \cdot (x - 1) =& x^n - 1 \\
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-orga3ba43a" class="outline-3">
-<h3 id="orga3ba43a"><span class="section-number-3">2.2.</span> Umformung</h3>
+<div id="outline-container-org22e6984" class="outline-3">
+<h3 id="org22e6984"><span class="section-number-3">2.2.</span> Umformung</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Annahme:</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_0c85328ebcc26e4443491600b546c610de1952ae.svg" alt="20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_0c85328ebcc26e4443491600b546c610de1952ae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+2^{n} - 1 =& 2^{kl} - 1 \\
+=& (2^k)^l - 1 \\
+=& \left( \sum_{k=0}^{l-1} (2^k)^l \right) \cdot (2^k - 1) \\
+\end{align*}
 <ul class="org-ul">
-<li>für <img src="ltximg/20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_24ea15ebe4a9b3cdfe6907563da7c09f15aae1c9.svg" alt="20220108210455-notwendige_bedingung_mersennesche_primzahl_exponent_prim_24ea15ebe4a9b3cdfe6907563da7c09f15aae1c9.svg" class="org-svg" /> also trivialer Teiler</li>
+<li>für \(k = 1 \Rightarrow (2^1 - 1) = 1\) also trivialer Teiler</li>
 </ul>
 
 

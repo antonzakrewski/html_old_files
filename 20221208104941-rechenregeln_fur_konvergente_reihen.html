@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rechenregeln für konvergente Reihen</h1>
-<div id="outline-container-orgcbd29cb" class="outline-2">
-<h2 id="orgcbd29cb"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga066810" class="outline-2">
+<h2 id="orga066810"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221208104941-rechenregeln_fur_konvergente_reihen_69669e676194b2b4e4f4fe6db5dc827f496b7ffb.svg" alt="20221208104941-rechenregeln_fur_konvergente_reihen_69669e676194b2b4e4f4fe6db5dc827f496b7ffb.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221208104941-rechenregeln_fur_konvergente_reihen_eec2fa1e6305023ab7471ccca412d59841a9adc7.svg" alt="20221208104941-rechenregeln_fur_konvergente_reihen_eec2fa1e6305023ab7471ccca412d59841a9adc7.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihen</a>, so folgt für <img src="file:///home/anton/html/ltximg/20221208104941-rechenregeln_fur_konvergente_reihen_0997319ef06659f23b098e3c31e1c4886038122d.svg" alt="20221208104941-rechenregeln_fur_konvergente_reihen_0997319ef06659f23b098e3c31e1c4886038122d.svg" class="org-svg" />:
+Seien \(\sum_{i=1}^{\infty} a_n \rightarrow a\) und \(\sum_{i=1}^{\infty} b_n \rightarrow b\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihen</a>, so folgt für \(\lambda \in \mathbb{C}\):
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208104941-rechenregeln_fur_konvergente_reihen_acee43241bd99b0e6db9183bab8a11c785b58b4a.svg" alt="20221208104941-rechenregeln_fur_konvergente_reihen_acee43241bd99b0e6db9183bab8a11c785b58b4a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=1}^{\infty} a_n + b_n =& \sum_{i=1}^{\infty} a_n + \sum_{i=1}^{\infty} b_n \rightarrow a + b \\
+\sum_{i=1}^{\infty} a_n \cdot \lambda =& \lambda \cdot \sum_{i=1}^{\infty} a_n \rightarrow \lambda a
+\end{align*}
 </div>
 </div>
 </div>

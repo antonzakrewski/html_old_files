@@ -9,59 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Urbilder für einelementige Mengen als Partition</h1>
-<div id="outline-container-org2988323" class="outline-2">
-<h2 id="org2988323"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org3b9553a" class="outline-2">
+<h2 id="org3b9553a"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
+Sei \(f: A \rightarrow B\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
 Die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_9bcd457daaf924bb180d9fe00061196f3e5331cd.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_9bcd457daaf924bb180d9fe00061196f3e5331cd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{f^{-1}[\{b\}] \vert b \in B\}
+\end{align*}
 <p>
-bildet eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">Partition</a> über <img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />
+bildet eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">Partition</a> über \(A\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7eae458" class="outline-2">
-<h2 id="org7eae458"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7c8f6d9" class="outline-2">
+<h2 id="org7c8f6d9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund der <a href="20220929184521-linkstotale_relation.html#ID-f199552a-6534-4730-ace4-3525bef8564c">Linkstotalität</a>  einer <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_f2382e9bbd9bcf2d7f2dad8ade36249ef7d0110d.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_f2382e9bbd9bcf2d7f2dad8ade36249ef7d0110d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall a \in A \exists b \in B : f(a) = b
+\end{align*}
 <p>
 und daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_0e48bc4a5172309f7218bd654a1aae82a4be5aef.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_0e48bc4a5172309f7218bd654a1aae82a4be5aef.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(a) = b \Rightarrow a \in f^{-1}[ \{b\}] 
+\end{align*}
 <p>
-Somit ist <img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_7a85aa1cdaf30f00cc745d75bd384d1b8a2ef1c2.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_7a85aa1cdaf30f00cc745d75bd384d1b8a2ef1c2.svg" class="org-svg" />
+Somit ist \(\bigcup_{b \in B} f^{-1} [ \{b\}] = M\)
 Zusätzlich folgt aufgrund der <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">Rechtseindeutigkeit</a>, dass die einzelnen <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbilder</a> <a href="20221022200529-paarweise_disjunkt.html#ID-be2193ac-8753-46a7-8619-93bddc42d334">paarweise disjunkt</a> sind, weil sonst folgen würde:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_e566e425064025aea068d0ac414133a49602eb54.svg" alt="20221022195631-menge_der_urbilder_fur_einelementige_mengen_als_partition_e566e425064025aea068d0ac414133a49602eb54.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \in f^{-1}[ \{b\}] \cap f^{-1} [ \{b'\} ] \\
+\Rightarrow f(a) = b = b'
+\end{align*}
 </div>
 </div>
 </div>

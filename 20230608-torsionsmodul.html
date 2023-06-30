@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Torsionsmodul</h1>
-<div id="outline-container-org85a3b98" class="outline-2">
-<h2 id="org85a3b98"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org94479f0" class="outline-2">
+<h2 id="org94479f0"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-torsionsmodul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230608-torsionsmodul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="file:///home/anton/html/ltximg/20230608-torsionsmodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230608-torsionsmodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230608-torsionsmodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230608-torsionsmodul_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein Torsionsmodul, falls für das <a href="20230303172128-torsionselemente_als_untermodul.html#ID-0155629f-8767-4238-9c0b-ae5aeb2f7349">Torsionsuntermodul</a> <img src="file:///home/anton/html/ltximg/20230608-torsionsmodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" alt="20230608-torsionsmodul_3ae98780f31d38aafbc1f684186ab5186ce30aa1.svg" class="org-svg" /> gilt:
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(M\) ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a>.
+Dann ist \(M\) ein Torsionsmodul, falls für das <a href="20230303172128-torsionselemente_als_untermodul.html#ID-0155629f-8767-4238-9c0b-ae5aeb2f7349">Torsionsuntermodul</a> \(T(M)\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-torsionsmodul_de165929089d441a1b2aba8a65fe8278eaafb305.svg" alt="20230608-torsionsmodul_de165929089d441a1b2aba8a65fe8278eaafb305.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+T(M) = M
+\end{align*}
 </div>
 </div>
 </div>

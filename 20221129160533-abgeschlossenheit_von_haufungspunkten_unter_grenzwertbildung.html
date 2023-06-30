@@ -9,41 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abgeschlossenheit von Häufungspunkten unter Grenzwertbildung</h1>
-<div id="outline-container-org3ea8dc6" class="outline-2">
-<h2 id="org3ea8dc6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org602c9b4" class="outline-2">
+<h2 id="org602c9b4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> und <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_2fdccd4a12bc0a0e426b1d326818b3aa1a677812.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_2fdccd4a12bc0a0e426b1d326818b3aa1a677812.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkten</a> von <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" />, welche gegen <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> auch ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> von <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" />
+Sei \((a_n)\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> und \((h_m)\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkten</a> von \((a_n)\), welche gegen \(g\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>.
+Dann ist \(g\) auch ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> von \((a_n)\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgd9a357e" class="outline-2">
-<h2 id="orgd9a357e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org96c64aa" class="outline-2">
+<h2 id="org96c64aa"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, dann gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4d7d056d64fb2f1ead91f16bd5238b392f38832a.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_4d7d056d64fb2f1ead91f16bd5238b392f38832a.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_7e33d2a4ad1a65d2c25aac3e11c25cba016bb345.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_7e33d2a4ad1a65d2c25aac3e11c25cba016bb345.svg" class="org-svg" />.
-Durch Wahl eines Punktes <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> aus einer gegen <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergenten</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit der Eigenschaft
+Sei \(\varepsilon > 0\), dann gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(m \in \mathbb{N}\) \(h_m \in D_{\frac{\epsilon}{2}}(g)\).
+Durch Wahl eines Punktes \(p\) aus einer gegen \(a_n\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergenten</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit der Eigenschaft
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_f49a9ce5db38aeb1f792dbfde69163134a68a390.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_f49a9ce5db38aeb1f792dbfde69163134a68a390.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_n - p \vert < \frac{\varepsilon}{2}
+\end{align*}
 <p>
-folgt, dass nach der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> für beliebiges <img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> gilt:
+folgt, dass nach der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> für beliebiges \(\varepsilon > 0\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_51ecf6489a757af788a2253e68e215bff7a40252.svg" alt="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung_51ecf6489a757af788a2253e68e215bff7a40252.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert p - g \vert \leq& \vert p - a_n \vert + \vert a_n - g \vert \\
+<& \frac{\varepsilon}{2} + \frac{\varepsilon}{2} \\
+=& \varepsilon
+\end{align*}
 </div>
 </div>
 </div>

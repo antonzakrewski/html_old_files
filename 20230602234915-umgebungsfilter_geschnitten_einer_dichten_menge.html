@@ -9,43 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Umgebungsfilter in einer dichten Menge</h1>
-<div id="outline-container-org6d4340d" class="outline-2">
-<h2 id="org6d4340d"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org706bd3e" class="outline-2">
+<h2 id="org706bd3e"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> der <a href="20230307205358-umgebungsfilter.html#ID-3c344219-7a09-499a-972e-d2ee27f45aa5">Umgebungsfilter</a>.
-Sei ferner <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_4735819e379623925f94d516f9d5e723993857f0.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_4735819e379623925f94d516f9d5e723993857f0.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_b1b670d5f25bb87573df1779c7e2b428d748abfb.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_b1b670d5f25bb87573df1779c7e2b428d748abfb.svg" class="org-svg" />, dann ist
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, \(x \in X\) und \(\mathcal{F}\) der <a href="20230307205358-umgebungsfilter.html#ID-3c344219-7a09-499a-972e-d2ee27f45aa5">Umgebungsfilter</a>.
+Sei ferner \(A \in X\) mit \(x \in \overline{A}\), dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_e5e0cd9efc92b9206a799ad80a70d229146921e7.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_e5e0cd9efc92b9206a799ad80a70d229146921e7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{U \cap A \vert U \in \mathcal{F}\}
+\end{align*}
 <p>
 eine <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefinierte</a> <a href="20230307220152-filterbasis.html#ID-b663b997-58b1-4959-89ec-725ed853a062">Filterbasis</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb040acf" class="outline-2">
-<h2 id="orgb040acf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3f0a490" class="outline-2">
+<h2 id="org3f0a490"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20230525124011-bedingungen_einer_basis_eines_mengenfilters.html#ID-a80e5768-24da-4779-92fd-d632602ca36a">Bedingungen einer Basis eines Mengenfilters</a> zeigen wir:
-Sei <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_faf38cc7cf68c44b15a94c5f9c53844d187ccc30.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_faf38cc7cf68c44b15a94c5f9c53844d187ccc30.svg" class="org-svg" />, so gilt für
+Sei \(U_1,U_2 \in \mathcal{U}\), so gilt für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_1af2ac7550787cc21cfd967ff434520da7617e03.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_1af2ac7550787cc21cfd967ff434520da7617e03.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+U_1 \cap A \cap U_2 \cap A =& (U_1 \cap U_2) \cap A \\
+\neq \emptyset
+\end{align*}
 <p>
-da <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_003f5479a8c81e1c2db990c9d0fec61dfdc70060.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_003f5479a8c81e1c2db990c9d0fec61dfdc70060.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> ist und <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a>, folgt <img src="file:///home/anton/html/ltximg/20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_c9318fbf32d746752859cf362ceebfbe4846e72f.svg" alt="20230602234915-umgebungsfilter_geschnitten_einer_dichten_menge_c9318fbf32d746752859cf362ceebfbe4846e72f.svg" class="org-svg" />
+da \(U_3  \coloneqq U_1 \cap U_2\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) ist und \(A\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a>, folgt \(U_3 \cap A \neq \empytset\)
 </p>
 </div>
 </div>

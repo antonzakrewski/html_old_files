@@ -3,28 +3,51 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kettenregel (mehrdimensionale Funktionen)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel (mehrdimensionale Funktionen)</h1>
-<div id="outline-container-org3115a9f" class="outline-2">
-<h2 id="org3115a9f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4a528eb" class="outline-2">
+<h2 id="org4a528eb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220316083400-kettenregel_mehrdimensionale_funktionen_5f26e7e6644a19bb405c8ac52078ca8fbc5bf2ac.svg" alt="20220316083400-kettenregel_mehrdimensionale_funktionen_5f26e7e6644a19bb405c8ac52078ca8fbc5bf2ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\frac{d}{dt} f(\vec{x(t)}) =& \frac{d}{dt}f(x_1(t), x_2(t),..., x_n(t)) \\
+=& f_{x_1}(\vec{x}(t) \cdot \dot{x_1} + ... + f_{x_n}(\vec{x}(t)) \cdot \dot_{x_n})  \\
+=& \text{grad} f(\vec{x}(t)) \cdot \frac{d}{dt} \vec{x}(t)
+\end{align*}
 </div>
 </div>
 </div>

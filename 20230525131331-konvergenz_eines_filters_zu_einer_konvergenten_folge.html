@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenz eines Filters zu einer konvergenten Folge</h1>
-<div id="outline-container-org8c51649" class="outline-2">
-<h2 id="org8c51649"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd451153" class="outline-2">
+<h2 id="orgd451153"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_a5e62e4f787ea25dbf8300b75a9e538e6e42b345.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_a5e62e4f787ea25dbf8300b75a9e538e6e42b345.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>.
-Dann gilt für den <a href="20230307121909-filter_einer_folge.html#ID-22f5aeb6-85d8-4805-98a2-77db34003847">Mengenfilter einer Folge</a> <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_409aecee32fe524570982c501236e64974135647.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_409aecee32fe524570982c501236e64974135647.svg" class="org-svg" /> (siehe: <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">Konvergenz eines Filters</a>)
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(a_n \rightarrow a\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>.
+Dann gilt für den <a href="20230307121909-filter_einer_folge.html#ID-22f5aeb6-85d8-4805-98a2-77db34003847">Mengenfilter einer Folge</a> \(\mathcal{F} \rightarrow a\) (siehe: <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">Konvergenz eines Filters</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-org0057f70" class="outline-2">
-<h2 id="org0057f70"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org776bb54" class="outline-2">
+<h2 id="org776bb54"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" />, so gilt nach annahme, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_ead986e58ccbb6ae61c7432f1dd4714bbdd98e96.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_ead986e58ccbb6ae61c7432f1dd4714bbdd98e96.svg" class="org-svg" />.
-Damit folgt, dass ein <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_41c16388e28db19c2ef0180b2dbf8005fabbd1eb.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_41c16388e28db19c2ef0180b2dbf8005fabbd1eb.svg" class="org-svg" /> existiert und es folgt <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_9357a165e5d22a18b57681b2465d93fea17a0b88.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_9357a165e5d22a18b57681b2465d93fea17a0b88.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_5ee1fa4b6380ca7d1f2003407e0de651ce2c91e1.svg" alt="20230525131331-konvergenz_eines_filters_zu_einer_konvergenten_folge_5ee1fa4b6380ca7d1f2003407e0de651ce2c91e1.svg" class="org-svg" />
+Sei \(U\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(a\), so gilt nach annahme, dass <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(a_n \in U\).
+Damit folgt, dass ein \(F_n = \{a_m \vert m \geq n \} \in \mathcal{F}\) existiert und es folgt \(F_n \subseteq U\), d.h. \(U \in \mathcal{F}\)
 </p>
 </div>
 </div>

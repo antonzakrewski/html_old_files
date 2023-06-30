@@ -9,67 +9,88 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rang nach Verknüpfung mit Mono- und Isomorphismus</h1>
-<div id="outline-container-orgce2f110" class="outline-2">
-<h2 id="orgce2f110"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org40c5ce2" class="outline-2">
+<h2 id="org40c5ce2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_ca58ff69fed577d2ed6283f89155d18045422b85.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_ca58ff69fed577d2ed6283f89155d18045422b85.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_035e64a48358e4c97fc0d68e849d60cc9847769b.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_035e64a48358e4c97fc0d68e849d60cc9847769b.svg" class="org-svg" /> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismen</a>, so dass <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" class="org-svg" /> ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>, <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_20a05423e3274b582cdaf805336aa5d2f7bf850d.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_20a05423e3274b582cdaf805336aa5d2f7bf850d.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_4b2d8376fddb2436ee49c18b4665a5a1fe76cdee.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_4b2d8376fddb2436ee49c18b4665a5a1fe76cdee.svg" class="org-svg" /> ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist.
+Seien \(U,V,W,X\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(\psi: U \rightarrow V, \phi: V \rightarrow W, \chi: W \rightarrow X\) <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismen</a>, so dass \(\psi\) ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>, \(\mathrm{rank}(\phi)\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und \(\xi\) ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_49686537ea2119adcbf40b5a029a9729e9ca070a.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_49686537ea2119adcbf40b5a029a9729e9ca070a.svg" class="org-svg" />
-</span>
+\begin{align*}
+r(\phi) = r(\chi \circ \phi \circ \psi)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd933898" class="outline-2">
-<h2 id="orgd933898"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge3bfa2f" class="outline-2">
+<h2 id="orge3bfa2f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8f31b76" class="outline-3">
-<h3 id="org8f31b76"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org88ae1b4" class="outline-3">
+<h3 id="org88ae1b4"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt: <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_3a9064aad2c54038594259f7c68fb0fb1e526790.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_3a9064aad2c54038594259f7c68fb0fb1e526790.svg" class="org-svg" />
+Es gilt: \(\mathrm{Im}(\phi \circ \psi) = \mathrm{Im}(\phi)\)
 </p>
 </div>
-<div id="outline-container-orgbfb5598" class="outline-5">
-<h5 id="orgbfb5598"><span class="section-number-5">2.1.0.1.</span> <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" class="org-svg" /></h5>
+<div id="outline-container-org6141dda" class="outline-5">
+<h5 id="org6141dda"><span class="section-number-5">2.1.0.1.</span> \(\supseteq\)</h5>
 <div class="outline-text-5" id="text-2-1-0-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d8d604977431b1bdacf3a109a9356edb90b9e910.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d8d604977431b1bdacf3a109a9356edb90b9e910.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_938da1a4a0a01fb1fba02d4506a9e04d99629425.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_938da1a4a0a01fb1fba02d4506a9e04d99629425.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a36aa3b2c48119d6cf7e04a5a904900b54f93e92.svg" class="org-svg" /> ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a> ist, existiert ein <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d9804f6c2f85f19aa5c75e5f6b7771d8ea22bb6f.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d9804f6c2f85f19aa5c75e5f6b7771d8ea22bb6f.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_6d5c6bc527283ae901c77693b3431e0fad12849e.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_6d5c6bc527283ae901c77693b3431e0fad12849e.svg" class="org-svg" />
+Sei \(w \in \mathrm{Im}(\phi)\), so existiert ein \(v \in V\) mit \(\phi(v) = w\)
+Da \(\psi\) ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a> ist, existiert ein \(u' \in U\) mit \(\psi(u') = v\) und damit auch \(\phi(\psi(u')) = w\)
 </p>
 </div>
 </div>
-<div id="outline-container-orga7d61ae" class="outline-5">
-<h5 id="orga7d61ae"><span class="section-number-5">2.1.0.2.</span> <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" class="org-svg" /></h5>
+<div id="outline-container-orgc1099dd" class="outline-5">
+<h5 id="orgc1099dd"><span class="section-number-5">2.1.0.2.</span> \(\subseteq\)</h5>
 <div class="outline-text-5" id="text-2-1-0-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_834af5185f9ddfbdc87ac509896b283ba254eac3.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_834af5185f9ddfbdc87ac509896b283ba254eac3.svg" class="org-svg" />, so existiert  ein <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_bc964ee279d6cb9fc682cef93b18e91dae139aa0.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_bc964ee279d6cb9fc682cef93b18e91dae139aa0.svg" class="org-svg" />
-Dabei gilt <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d3f688ccf98eed7dd8b2de055fcd7d4cb2d23c3e.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_d3f688ccf98eed7dd8b2de055fcd7d4cb2d23c3e.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_5f7d697522bf6088c8789ed98e2e2a4091e60c36.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_5f7d697522bf6088c8789ed98e2e2a4091e60c36.svg" class="org-svg" />
+Sei \(w \in \mathrm{Im}(\phi \circ \psi) \subseteq W\), so existiert  ein \(u \in U\) mit \(\phi(\psi(u)) = w\)
+Dabei gilt \(\psi(u) \in V\) und damit auch \(w = \phi(\psi(u)) \in \mathrm{Im}(\phi)\)
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org6b7c0d1" class="outline-3">
-<h3 id="org6b7c0d1"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgde1afa3" class="outline-3">
+<h3 id="orgde1afa3"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Es gilt nach dem <a href="20230123044300-rangsatz.html#ID-2e30f05f-ed0c-4a47-86e3-5d6e3330d830">Rangsatz</a> für den <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a605c9cc0c7af97e907684629d49fefa201a9945.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a605c9cc0c7af97e907684629d49fefa201a9945.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_3a99e77343aa6c52bc1c75d1868d1f28bf4c159e.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_3a99e77343aa6c52bc1c75d1868d1f28bf4c159e.svg" class="org-svg" /> (siehe: <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a>)
+Es gilt nach dem <a href="20230123044300-rangsatz.html#ID-2e30f05f-ed0c-4a47-86e3-5d6e3330d830">Rangsatz</a> für den <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> \(\chi_{\vert \phi}: \mathrm{Im}(\phi) \rightarrow \mathrm{Im}(\chi)\) mit \(\mathrm{ker}(\chi_{\vert \mathrm{Im}(\phi)}) \subseteq \mathrm{ker}(\chi) = \{0\}\) (siehe: <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a>)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a7c9644232fa6a1323c9e030e158dce197508f81.svg" alt="20230127155219-rang_nach_verknupfung_mit_mono_und_isomorphismus_a7c9644232fa6a1323c9e030e158dce197508f81.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(\mathrm{Im}(\phi)) =& \mathrm{dim}_{K}(\mathrm{Im}(\chi_{\vert \mathrm{Im}(\phi)})) - \mathrm{dim}_{K}(\mathrm{ker}(\chi_{\mathrm{Im}(\phi)}) \\
+=& \mathrm{dim}_{K}(\mathrm{Im}(\chi_{\vert \mathrm{Im}(\phi)})) - 0 \\
+=& \mathrm{dim}_{K}(\mathrm{Im}(\chi_{\vert \mathrm{Im}(\phi)}))
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Tychonoff</h1>
-<div id="outline-container-org1d5434b" class="outline-2">
-<h2 id="org1d5434b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4d35aa2" class="outline-2">
+<h2 id="org4d35aa2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230519090021-satz_von_tychonoff_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a>.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li>Für beliebiges <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230519090021-satz_von_tychonoff_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> ist <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" alt="20230519090021-satz_von_tychonoff_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.</li>
-<li>die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_2c640434c1de047931c22a20e78b74c244145e14.svg" alt="20230519090021-satz_von_tychonoff_2c640434c1de047931c22a20e78b74c244145e14.svg" class="org-svg" /> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.</li>
+<li>Für beliebiges \(i \in I\) ist \(X_i\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.</li>
+<li>die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> \(X  \coloneqq \prod_{i \in I}\) mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.</li>
 </ol>
 
 <p>
@@ -30,49 +55,49 @@ unter Annahme des <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f8
 </p>
 </div>
 </div>
-<div id="outline-container-orgaa61384" class="outline-2">
-<h2 id="orgaa61384"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3b44ef0" class="outline-2">
+<h2 id="org3b44ef0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgdfb6d85" class="outline-3">
-<h3 id="orgdfb6d85"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org90090dc" class="outline-3">
+<h3 id="org90090dc"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-sei <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_e69778fd596ea63098207c8c64c9f8576fb2855f.svg" alt="20230519090021-satz_von_tychonoff_e69778fd596ea63098207c8c64c9f8576fb2855f.svg" class="org-svg" /> eine <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a> von <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" alt="20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> mit <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a> aus <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" alt="20230519090021-satz_von_tychonoff_77813a6a53573d9cbb7c6b9db34ebce03e8c1f47.svg" class="org-svg" /> ohne <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
-Dann existiert für alle <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_b632810a76b16133e98681d37a997828e941c470.svg" alt="20230519090021-satz_von_tychonoff_b632810a76b16133e98681d37a997828e941c470.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_41d1ccba23ab1ad901d443b76bab8d203c4f3565.svg" alt="20230519090021-satz_von_tychonoff_41d1ccba23ab1ad901d443b76bab8d203c4f3565.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" alt="20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" class="org-svg" /> nur durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_64dcc6e59e6320f3320078a462d5c8e38561c7ad.svg" alt="20230519090021-satz_von_tychonoff_64dcc6e59e6320f3320078a462d5c8e38561c7ad.svg" class="org-svg" /> überdeckt wird.
-Anmerkung <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" alt="20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" class="org-svg" /> wird durhc endlich viele Zylindermengen überdeckt.
+sei \(\mathcal{S} = \{\pi_i^{-1}[U_i] \vert U_i \in \mathcal{T}_i\}\) eine <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a> von \(X\).
+Sei \(V_j\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> mit <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a> aus \(\mathcal{S}\) ohne <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
+Dann existiert für alle \(\lambda \in I\) ein \(x_\lambda \in X_\lambda\), so dass \(\pi_{\lambda}^{-1}[x_\lambda]\) nur durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(V_i\) überdeckt wird.
+Anmerkung \(\pi_{\lambda}^{-1}[x_\lambda]\) wird durhc endlich viele Zylindermengen überdeckt.
 </p>
 </div>
-<div id="outline-container-orgb009a45" class="outline-4">
-<h4 id="orgb009a45"><span class="section-number-4">2.1.1.</span> Annahme 1</h4>
+<div id="outline-container-org9d80bb1" class="outline-4">
+<h4 id="org9d80bb1"><span class="section-number-4">2.1.1.</span> Annahme 1</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Dann steckt <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_399919526f1b2c05064d955174aa9e323ed4eba2.svg" alt="20230519090021-satz_von_tychonoff_399919526f1b2c05064d955174aa9e323ed4eba2.svg" class="org-svg" /> genau in einer der Zylindermengen <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" alt="20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" class="org-svg" />
-Angenommen nicht, diese endliche menge überdeckt ganz <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, Widerspruch zur Annahme
+Dann steckt \(\pi_{\lambda}^{-1}[x_{\lambda}]\) genau in einer der Zylindermengen \(\pi_{\lambda}^{-1}[x_\lambda]\)
+Angenommen nicht, diese endliche menge überdeckt ganz \(X\), Widerspruch zur Annahme
 </p>
 </div>
 </div>
 
-<div id="outline-container-org2bdb90b" class="outline-4">
-<h4 id="org2bdb90b"><span class="section-number-4">2.1.2.</span> Annahme 2</h4>
+<div id="outline-container-org1d6b232" class="outline-4">
+<h4 id="org1d6b232"><span class="section-number-4">2.1.2.</span> Annahme 2</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Jedes <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" alt="20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" class="org-svg" /> wird durch endlich viele <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" alt="20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" class="org-svg" /> überdeckt.
-Dann steckt <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" alt="20230519090021-satz_von_tychonoff_979e32e1301711e35ba8d6a1b83ce9c7fe5a236b.svg" class="org-svg" /> steckt ganz in einem <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" alt="20230519090021-satz_von_tychonoff_3317ace68583a41bb1bab862c2d8fbcfe143a9a0.svg" class="org-svg" />.
+Jedes \(\pi_{\lambda}^{-1}[x_\lambda]\) wird durch endlich viele \(V_j\) überdeckt.
+Dann steckt \(\pi_{\lambda}^{-1}[x_\lambda]\) steckt ganz in einem \(V_j\).
 </p>
 
 <p>
-Nach <a href="20230524073002-alexander_s_compactness_theorem.html#ID-83497edf-46c0-4979-8058-32628e01bf3a">Alexander's Compactness Theorem</a> ist somit auch <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230519090021-satz_von_tychonoff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
+Nach <a href="20230524073002-alexander_s_compactness_theorem.html#ID-83497edf-46c0-4979-8058-32628e01bf3a">Alexander's Compactness Theorem</a> ist somit auch \(X\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdc673a9" class="outline-3">
-<h3 id="orgdc673a9"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgad2ef10" class="outline-3">
+<h3 id="orgad2ef10"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_b18baff558e950d74a92cab981424cc9e23a5459.svg" alt="20230519090021-satz_von_tychonoff_b18baff558e950d74a92cab981424cc9e23a5459.svg" class="org-svg" /> und nach der <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Kompaktheit des Bildes einer kompakten Menge einer stetigen Funktion</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230519090021-satz_von_tychonoff_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" alt="20230519090021-satz_von_tychonoff_bc8602f85e4e912ba2bfc7868f7a3949d9cc4fcb.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist.
+Es gilt \(\pi_i[X] = X_i\) und nach der <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Kompaktheit des Bildes einer kompakten Menge einer stetigen Funktion</a> folgt, dass \(X_i\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist.
 </p>
 </div>
 </div>

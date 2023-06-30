@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">sigma lokalendlich</h1>
-<div id="outline-container-org0065ce2" class="outline-2">
-<h2 id="org0065ce2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org96c5116" class="outline-2">
+<h2 id="org96c5116"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230627-sigma_lokalendlich_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230627-sigma_lokalendlich_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230627-sigma_lokalendlich_5b500c7a532fb040ba04acd89e715c2d73ccb795.svg" alt="20230627-sigma_lokalendlich_5b500c7a532fb040ba04acd89e715c2d73ccb795.svg" class="org-svg" /> ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a>, falls <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbar</a> viele, <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche Mengensysteme</a> <img src="file:///home/anton/html/ltximg/20230627-sigma_lokalendlich_72b6473a534f7cf09c4c6695e3859d49ba3982d8.svg" alt="20230627-sigma_lokalendlich_72b6473a534f7cf09c4c6695e3859d49ba3982d8.svg" class="org-svg" /> exisitieren, so dass gilt
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{A} \subseteq \mathcal{P}(X)\) ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a>, falls <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbar</a> viele, <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliche Mengensysteme</a> \(\mathcal{A}_n\) exisitieren, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230627-sigma_lokalendlich_9ee3251ff4b32770d5b4d7e55da672b6ece8ed4e.svg" alt="20230627-sigma_lokalendlich_9ee3251ff4b32770d5b4d7e55da672b6ece8ed4e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{A} = \bigcup_{n \in \mathbb{N}} \mathcal{A}_n
+\end{align*}
 </div>
 </div>
 </div>

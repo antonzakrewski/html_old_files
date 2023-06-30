@@ -9,21 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Folgenstetigkeit des Produkts folgenstetiger Abbildungen</h1>
-<div id="outline-container-org0a25647" class="outline-2">
-<h2 id="org0a25647"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7198c64" class="outline-2">
+<h2 id="org7198c64"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_fc58fc623e87e8a6ac894d3ea74c468c15ee8885.svg" alt="20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_fc58fc623e87e8a6ac894d3ea74c468c15ee8885.svg" class="org-svg" /> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familien</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit einer <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">Folgenstetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> <img src="file:///home/anton/html/ltximg/20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_0aee7cb864dbdf730d66808fa007df5e4eeac907.svg" alt="20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_0aee7cb864dbdf730d66808fa007df5e4eeac907.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_33f14cc60c98e32ddacf16648a8c0f264bb3f231.svg" alt="20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_33f14cc60c98e32ddacf16648a8c0f264bb3f231.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_eaad89acffc74d0cb65954fd32ec24c4286edbac.svg" alt="20230621-folgenstetigkeit_des_produkts_folgenstetiger_abbildungen_eaad89acffc74d0cb65954fd32ec24c4286edbac.svg" class="org-svg" /> das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
+Seien \((X_i, \mathcal{T}_i)\), \((Y_i, \mathcal{T}_i')\) <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familien</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> mit einer <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">Folgenstetigen</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> \(f: X_i \rightarrow Y_i\) und \(X \coloneqq \prod_{i \in I} X_i\) bzw. \(Y \coloneqq \prod_{i \in I} Y_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
 Dann ist 
 </p>
 </div>
 </div>
-<div id="outline-container-org9c3b45f" class="outline-2">
-<h2 id="org9c3b45f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf36567c" class="outline-2">
+<h2 id="orgf36567c"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

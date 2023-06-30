@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lipschitzstetigkeit impliziert Hölderstetigkeit</h1>
-<div id="outline-container-org58398a5" class="outline-2">
-<h2 id="org58398a5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3678e60" class="outline-2">
+<h2 id="org3678e60"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_64b78cc3c18bf61e1afc1adce5d0b4f987bce624.svg" class="org-svg" /> eine <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> über <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_01ee62a17966ad02a93b0733b71802c82b6e9dd2.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> auch <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölderstetig</a> 
+Sei \(f: M \rightarrow N\) eine <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> über <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> \(M,N\)
+Dann ist \(f\) auch <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölderstetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orga048bb2" class="outline-2">
-<h2 id="orga048bb2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf5c9875" class="outline-2">
+<h2 id="orgf5c9875"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existiert ein <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_781c390874fa49bbed1672f080fe921accb28334.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_781c390874fa49bbed1672f080fe921accb28334.svg" class="org-svg" />, so dass für <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_32b8da9430fc784814d0557d8489269940e42943.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_32b8da9430fc784814d0557d8489269940e42943.svg" class="org-svg" /> gilt
+Nach Annahme existiert ein \(L\), so dass für \(m,m' \in M\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_462e273a998a6a583a0053ff7b4973ffac155cef.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_462e273a998a6a583a0053ff7b4973ffac155cef.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert f(m) - f(m') \vert \leq L \cdot \vert m - m' \vert
+\end{align*}
 <p>
-Durch Wahl von <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_443a30191c38af34a37702d474743c64380686ef.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_443a30191c38af34a37702d474743c64380686ef.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_781c390874fa49bbed1672f080fe921accb28334.svg" alt="20230112113512-lipschitzstetigkeit_impliziert_holderstetigkeit_781c390874fa49bbed1672f080fe921accb28334.svg" class="org-svg" /> folgt dann die <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölder-Stetigkeit</a> 
+Durch Wahl von \(\alpha = 1\) und \(L\) folgt dann die <a href="20221222102943-holder_stetigkeit.html#ID-a377f9ed-b0f1-4d74-8108-f2c005a4849d">Hölder-Stetigkeit</a> 
 </p>
 </div>
 </div>

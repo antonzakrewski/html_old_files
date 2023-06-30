@@ -9,103 +9,122 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierung eines T3a-Raums</h1>
-<div id="outline-container-orga461f11" class="outline-2">
-<h2 id="orga461f11"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org972a09d" class="outline-2">
+<h2 id="org972a09d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">T3a-Raum</a></li>
-<li>die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_3d3583721e86a7047f7fc75b0a592a383176c7ef.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_3d3583721e86a7047f7fc75b0a592a383176c7ef.svg" class="org-svg" /> ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
+<li>\(X\) ist ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">T3a-Raum</a></li>
+<li>die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(B  \coloneqq \{f^{-1}[U] \vert U \subseteq [0,1] \text{ offen }, f: X \rightarrow [0,1] \text{ ist stetig}\}\) ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
 <li>Die Nullstellenmengen <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetiger</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> bilden eine <a href="20230211131931-basis_der_abgeschlossenen_mengen.html#ID-a27e5b1a-13ef-482e-8254-c921689ef21d">Basis der abgeschlossenen Mengen</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orge8d2765" class="outline-2">
-<h2 id="orge8d2765"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga7cb8cd" class="outline-2">
+<h2 id="orga7cb8cd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3131505" class="outline-3">
-<h3 id="org3131505"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orge7ff1ae" class="outline-3">
+<h3 id="orge7ff1ae"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existiert nach Annahme für beliebiges <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> eine stetige <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> mit:
+Sei \(U \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, so existiert nach Annahme für beliebiges \(x \in U\) eine stetige <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f\) mit:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_4502415e6eeeea6d2088e48306facfcda5f94b64.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_4502415e6eeeea6d2088e48306facfcda5f94b64.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: X \rightarrow& [0,1] \\
+f(x) =& 1 \\
+f[X \setminus U] =& \{0\}
+\end{align*}
 <p>
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_f2149133a57d75a0eaefdbc811588f3a49083de3.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_f2149133a57d75a0eaefdbc811588f3a49083de3.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und in <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> liegt, da <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_96350689734f9dc41417059cf9a9eeab3da24f0f.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_96350689734f9dc41417059cf9a9eeab3da24f0f.svg" class="org-svg" /> gilt.
-Indem man dann über alle <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> geht, erhält man auch <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> als <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, d.h. eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> liegt vor.
+Daraus folgt, dass \(f^{-1}[(\frac{1}{2},1]] \subseteq U \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und in \(V\) liegt, da \(f[X \setminus V] = \{0\}\) gilt.
+Indem man dann über alle \(x \in X\) geht, erhält man auch \(U\) als <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, d.h. eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> liegt vor.
 </p>
 </div>
 </div>
-<div id="outline-container-orga77a119" class="outline-3">
-<h3 id="orga77a119"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 3)</h3>
+<div id="outline-container-orgedcf4b1" class="outline-3">
+<h3 id="orgedcf4b1"><span class="section-number-3">2.2.</span> 2) \(\implies\) 3)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach der Aussage über die <a href="20230522191913-basis_der_abgeschlossenen_mengen_und_trennung.html#ID-bf7528bf-28c6-4b2d-abb9-f72418e59886">Basis der abgeschlossenen Mengen und Trennung</a> reicht es aus zu zeigen, dass für eine beliebige <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ea52474b64c12ce6d7a283eae0251d61c7e05ef4.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ea52474b64c12ce6d7a283eae0251d61c7e05ef4.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_fb62b90d0f5961ecde4ef207b93e0408e7c5894d.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_fb62b90d0f5961ecde4ef207b93e0408e7c5894d.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a4acfad631acc2eba7784dd6b616b5b30e6ba25f.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a4acfad631acc2eba7784dd6b616b5b30e6ba25f.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt, dass <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_4b0da25dab4ac3a4e97ae8e3c211eada387f1ad1.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_4b0da25dab4ac3a4e97ae8e3c211eada387f1ad1.svg" class="org-svg" /> und <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_3a88d9bec2ad246e1e095bd50c24c526921e8445.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_3a88d9bec2ad246e1e095bd50c24c526921e8445.svg" class="org-svg" /> existieren, so dass gilt:
+Nach der Aussage über die <a href="20230522191913-basis_der_abgeschlossenen_mengen_und_trennung.html#ID-bf7528bf-28c6-4b2d-abb9-f72418e59886">Basis der abgeschlossenen Mengen und Trennung</a> reicht es aus zu zeigen, dass für eine beliebige <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A\) und \(x \in X \setminus A\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A_x \supseteq A\) existiert mit \(x \not\in A_x\).
+Da \(X \setminus A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt, dass <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_i \subseteq [0,1]\) und <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f_i: X \rightarrow \mathbb{R}\) existieren, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_e68ca022844d4151e3b7c4b4dd82396e3d4a21c9.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_e68ca022844d4151e3b7c4b4dd82396e3d4a21c9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+X \setminus A =& \bigcup_{i \in I} f^{-1}_i[O_i]
+\end{align*}
 <p>
 durch Anwendung der <a href="20230110103410-komplementbildung_unter_schnitt_und_vereinigung.html#ID-d6517940-4043-41d9-9063-12faf67aab22">Komplementbildung unter Schnitt und Vereinigung</a> folgt somit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_0391aede45a66c0ae1540aaf3b689537b50ec41e.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_0391aede45a66c0ae1540aaf3b689537b50ec41e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+X \setminus (X \setminus A) =& X \setminus \bigcup_{i \in I} f^{-1}_i[O_i] \\
+A =& \bigcap_{i \in I} X \setminus f^{-1}_i[O_i]
+\end{align*}
 <p>
-Somit existiert für <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ea52474b64c12ce6d7a283eae0251d61c7e05ef4.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_ea52474b64c12ce6d7a283eae0251d61c7e05ef4.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a01048a70e0d5d3825f3af37c58d3a3c07075d1e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a63c6e78729f4976893e1dc1e089e304301e3d97.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_a63c6e78729f4976893e1dc1e089e304301e3d97.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /> als <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> auch ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-Raum</a> ist (vgl. <a href="20230604-metrische_raume_als_t3a_raum.html#ID-5f35f9da-2ca0-4678-8997-9764a6b5b353">metrische Räume als T3a Räume</a>) existiert eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
+Somit existiert für \(x \in X \setminus A\) ein \(j \in I\) mit \(x \in f^{-1}[O_j]\).
+Da \(\mathbb{R}\) als <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> auch ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-Raum</a> ist (vgl. <a href="20230604-metrische_raume_als_t3a_raum.html#ID-5f35f9da-2ca0-4678-8997-9764a6b5b353">metrische Räume als T3a Räume</a>) existiert eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8e50f4511595afa1df1566ed988bfb4d4b96b5fa.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8e50f4511595afa1df1566ed988bfb4d4b96b5fa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g: \mathbb{R} \rightarrow& [0,1] \\
+g(f_j(x)) =& 1 \\
+g[\mathbb{R} \setminus f^{-1}[O_j]] =& \{0\}
+\end{align*}
 <p>
 D.h. es folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_919f574c2a049b22b7099c96f803b1a1d5d42ebc.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_919f574c2a049b22b7099c96f803b1a1d5d42ebc.svg" class="org-svg" />
-</span>
+\begin{align*}
+(g \circ f_j)[A] \subseteq& (g \circ f_j)[X \setminus O_j] \\
+\subseteq& g[ \mathbb{R} \setminus f^{-1}[O_j]] \\
+=& \{0\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfaa8074" class="outline-3">
-<h3 id="orgfaa8074"><span class="section-number-3">2.3.</span> 3) <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orge89b903" class="outline-3">
+<h3 id="orge89b903"><span class="section-number-3">2.3.</span> 3) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_fcec99c61653409bde7be34ab3626d8f147015e7.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_fcec99c61653409bde7be34ab3626d8f147015e7.svg" class="org-svg" />, so existiert nach Annahme eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_295eaaa66f999d5375d0c37ea79493d96a96473f.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_295eaaa66f999d5375d0c37ea79493d96a96473f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_c1f05b7951db8f9089e6ca1bd7099f9a60792b29.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_c1f05b7951db8f9089e6ca1bd7099f9a60792b29.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_c29e7090b5889803399bfad7df34e29c155f5b1d.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_c29e7090b5889803399bfad7df34e29c155f5b1d.svg" class="org-svg" />.
+Sei \(A \subseteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und \(x \not\in A\), so existiert nach Annahme eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: X \rightarrow \mathbb{R}\) mit \(A \subseteq f^{-1}[0]\) und \(f(x) \neq 0\).
 Dann hat folgende Funktion die gewünschte Eigenschaft:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511174027-aquivalente_charakterisierung_eines_t3a_raums_1d6222ae83f382e699176d97892ad954657ec23d.svg" alt="20230511174027-aquivalente_charakterisierung_eines_t3a_raums_1d6222ae83f382e699176d97892ad954657ec23d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g: X \rightarrow& [0,1] \\
+g(y)  \coloneqq 
+    \begin{cases}
+    \mathrm{min}(\frac{f(y)}{f(x)},1) & \mbox{if } f(y) \geq 0 \\
+    0 & \mbox{else } \\ 
+    \end{cases}
+\end{align*}
 <p>
 siehe: <a href="20230605-minimumsfunktion_als_stetige_abbildung.html#ID-a230c206-bfa5-4fd1-8499-30f6deaef6e7">Minimumsfunktion als stetige Abbildung</a> 
 </p>

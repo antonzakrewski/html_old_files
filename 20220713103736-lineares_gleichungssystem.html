@@ -3,35 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lineares Gleichungssystem</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineares Gleichungssystem</h1>
-<div id="outline-container-orgd2200bc" class="outline-2">
-<h2 id="orgd2200bc"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org7d7ff3b" class="outline-2">
+<h2 id="org7d7ff3b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Ein Lineares Gleichungssystem ist ein <a href="20220713103832-gleichungssystem.html#ID-5e9fe431-f4a3-4d4d-a283-0de46a387917">Gleichungssystem</a> der Form
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220713103736-lineares_gleichungssystem_008d7c51bc1d81257a154c3d68ea7d9ddcf1dea9.svg" alt="20220713103736-lineares_gleichungssystem_008d7c51bc1d81257a154c3d68ea7d9ddcf1dea9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\sum_{i=1}^n a_1i \cdot x_i =& b_1 \\
+\sum_{i=1}^n a_2i \cdot x_i =& b_2 \\
+… \\
+\sum_{i=1}^n a_1i \cdot x_i =& b_n 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0883a9e" class="outline-2">
-<h2 id="org0883a9e"><span class="section-number-2">2.</span> Unterscheidung</h2>
+<div id="outline-container-orge0700d6" class="outline-2">
+<h2 id="orge0700d6"><span class="section-number-2">2.</span> Unterscheidung</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220713103409-inhomogenes_lineares_gleichungssystem.html#ID-4ec9cc75-0d6c-43fe-b101-29becc0ae7f7">Inhomogenes lineares Gleichungssystem</a></li>

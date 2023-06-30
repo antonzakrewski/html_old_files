@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">relative Komplement und Schnitt mit dem absoluten Komplement</h1>
-<div id="outline-container-org6452156" class="outline-2">
-<h2 id="org6452156"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org134dabe" class="outline-2">
+<h2 id="org134dabe"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20220903142722-grundmenge.html#ID-2b5bcaae-5d96-4b8b-b31d-b77527fe22d3">Grundmenge</a> und <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_052f8ff5d4bf09d7d48f26bafd9323c0b0a8fee6.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_052f8ff5d4bf09d7d48f26bafd9323c0b0a8fee6.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Sei \(M\) eine <a href="20220903142722-grundmenge.html#ID-2b5bcaae-5d96-4b8b-b31d-b77527fe22d3">Grundmenge</a> und \(A,B \subseteq M\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_b81063e051d444f96e15a970f917d3be93f43f94.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_b81063e051d444f96e15a970f917d3be93f43f94.svg" class="org-svg" />
-</span>
+\begin{align*}
+A \setminus B = A \cap (M \setminus B)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org152305a" class="outline-2">
-<h2 id="org152305a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5e2d161" class="outline-2">
+<h2 id="org5e2d161"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_b3937b8d39a92e3df9b14df1d672ee1333fe5394.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_b3937b8d39a92e3df9b14df1d672ee1333fe5394.svg" class="org-svg" />, so ist dies äquivalent zu <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_918fe6cdeafbca57d2bc5895694ec3e1115af515.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_918fe6cdeafbca57d2bc5895694ec3e1115af515.svg" class="org-svg" />.
-Dies ist äquivalent zu <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_f6b15f2ba6950c65d3bda3b5d26df2f6bae47c43.svg" alt="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement_f6b15f2ba6950c65d3bda3b5d26df2f6bae47c43.svg" class="org-svg" />, d.h. es folgt Gleichheit
+Sei \(a \in A \setminus B\), so ist dies äquivalent zu \(a \in A\) und \(a \not\in B\).
+Dies ist äquivalent zu \(a \in A\) und \(a \in (M \setminus B)\), d.h. es folgt Gleichheit
 </p>
 </div>
 </div>

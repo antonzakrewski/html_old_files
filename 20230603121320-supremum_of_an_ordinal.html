@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">supremum of ordinals</h1>
-<div id="outline-container-org1831013" class="outline-2">
-<h2 id="org1831013"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgae5b10d" class="outline-2">
+<h2 id="orgae5b10d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Suppose <img src="file:///home/anton/html/ltximg/20230603121320-supremum_of_an_ordinal_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230603121320-supremum_of_an_ordinal_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> is a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> of <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">ordinals</a>, then the supremum <img src="file:///home/anton/html/ltximg/20230603121320-supremum_of_an_ordinal_09e738cc0032e83ef348ec905a7d13207b55d4bd.svg" alt="20230603121320-supremum_of_an_ordinal_09e738cc0032e83ef348ec905a7d13207b55d4bd.svg" class="org-svg" /> is defined as the smallest <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">ordinal</a> <img src="file:///home/anton/html/ltximg/20230603121320-supremum_of_an_ordinal_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" alt="20230603121320-supremum_of_an_ordinal_a33c44fb726f280c2c0804f866aed58fc6efed31.svg" class="org-svg" /> such that
+Suppose \(A\) is a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> of <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">ordinals</a>, then the supremum \(\sup A\) is defined as the smallest <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">ordinal</a> \(\beta\) such that
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230603121320-supremum_of_an_ordinal_4659e5a6182e26e9b7bb514bf7ee5af90db62c71.svg" alt="20230603121320-supremum_of_an_ordinal_4659e5a6182e26e9b7bb514bf7ee5af90db62c71.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall \alpha \in A : \alpha \leq \beta
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-org443e6e1" class="outline-2">
-<h2 id="org443e6e1"><span class="section-number-2">2.</span> Existence</h2>
+<div id="outline-container-orgcf59a34" class="outline-2">
+<h2 id="orgcf59a34"><span class="section-number-2">2.</span> Existence</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 follows from the <a href="20220929195946-wohlordnung.html#ID-8f3e284b-c3c9-4aaf-8bf5-5eadc47faa78">well ordering</a> of a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> of <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">ordinals</a> 

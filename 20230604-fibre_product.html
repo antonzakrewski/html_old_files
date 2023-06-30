@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">fibre product</h1>
-<div id="outline-container-org12f46d9" class="outline-2">
-<h2 id="org12f46d9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0c972c1" class="outline-2">
+<h2 id="org0c972c1"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230604-fibre_product_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230604-fibre_product_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> be a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, <img src="file:///home/anton/html/ltximg/20230604-fibre_product_33f14cc60c98e32ddacf16648a8c0f264bb3f231.svg" alt="20230604-fibre_product_33f14cc60c98e32ddacf16648a8c0f264bb3f231.svg" class="org-svg" /> the <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">product topology</a> and <img src="file:///home/anton/html/ltximg/20230604-fibre_product_1c90f7137678b25938c0972ff7ce2731b7145e4f.svg" alt="20230604-fibre_product_1c90f7137678b25938c0972ff7ce2731b7145e4f.svg" class="org-svg" /> a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">maps</a> to a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> <img src="file:///home/anton/html/ltximg/20230604-fibre_product_2439ebe6e9cb71a6b25e10b693c7c042aa3ef72f.svg" alt="20230604-fibre_product_2439ebe6e9cb71a6b25e10b693c7c042aa3ef72f.svg" class="org-svg" /> and 
-Then the fibre product is the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a> on <img src="file:///home/anton/html/ltximg/20230604-fibre_product_6c32bd2f64c38a7aa5ff275a7c2e673af45d3461.svg" alt="20230604-fibre_product_6c32bd2f64c38a7aa5ff275a7c2e673af45d3461.svg" class="org-svg" />
+Let \((X_i, \mathcal{T}_i)\) be a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, \(X  \coloneqq \prod_{i \in I} X_i\) the <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">product topology</a> and \(f_i: X_i \rightarrow X_0\) a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">maps</a> to a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> \((X_0, \mathcal{T}_0)\) and 
+Then the fibre product is the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a> on \(\{x \in X \vert f_i(\pi_i(x)) = f_j(\pi_j(x)) \forall i,j \in I\}\)
 </p>
 </div>
 </div>

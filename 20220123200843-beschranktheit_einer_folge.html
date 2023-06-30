@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beschränktheit einer Folge</h1>
-<div id="outline-container-orgc41ba7f" class="outline-2">
-<h2 id="orgc41ba7f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd30f360" class="outline-2">
+<h2 id="orgd30f360"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220123200843-beschranktheit_einer_folge_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>  und die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20220123200843-beschranktheit_einer_folge_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220123200843-beschranktheit_einer_folge_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />.
+Sei \(M\) ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>  und die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((a_n)\) in \(M\).
 </p>
 
 <p>
-<img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20220123200843-beschranktheit_einer_folge_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" /> ist beschränkt, falls ein <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20220123200843-beschranktheit_einer_folge_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20220123200843-beschranktheit_einer_folge_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /> existieren, so dass für alle <img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_156596dbd4c756f90c85d516a896a06ce05ad974.svg" alt="20220123200843-beschranktheit_einer_folge_156596dbd4c756f90c85d516a896a06ce05ad974.svg" class="org-svg" /> gilt:
+\((a_n)\) ist beschränkt, falls ein \(m \in M\) und \(r \in \mathbb{R}\) existieren, so dass für alle \(s \in M\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123200843-beschranktheit_einer_folge_34e21e4d8dd10423402dbba45fc07bd1e405bf13.svg" alt="20220123200843-beschranktheit_einer_folge_34e21e4d8dd10423402dbba45fc07bd1e405bf13.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| a_n \| \leq r \forall n \in \mathbb{N} 
+\end{align*}
 
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>

@@ -9,48 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komposition von lokal lipschitzstetigen Funktionen</h1>
-<div id="outline-container-org197c702" class="outline-2">
-<h2 id="org197c702"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga560f09" class="outline-2">
+<h2 id="orga560f09"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_fc0adad42ae343dd431bbfdfbe1d88640f6b8865.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_fc0adad42ae343dd431bbfdfbe1d88640f6b8865.svg" class="org-svg" /> <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_3407bbf1e7f023dacd0d597b0f63e695339b9d57.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_3407bbf1e7f023dacd0d597b0f63e695339b9d57.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_84b2ee46a9ca1d61b07d7e403807a0aba60a610d.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_84b2ee46a9ca1d61b07d7e403807a0aba60a610d.svg" class="org-svg" /> <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokal lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit <a href="20221222102430-lipschitzkonstante.html#ID-fefaf440-f71c-45e7-b68a-1f6c6ccdce52">Lipschitzkonstante</a> <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6bd6ec8a40a1dd3f3c046fe30894214c4c70afe9.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6bd6ec8a40a1dd3f3c046fe30894214c4c70afe9.svg" class="org-svg" />
+Seien \((M_1,d_1), (M_2,d_2), (M_3,d_3)\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und \(f_1: M_1 \rightarrow M_2\) bzw. \(g: M_2 \rightarrow M_3\) <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokal lipschitzstetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit <a href="20221222102430-lipschitzkonstante.html#ID-fefaf440-f71c-45e7-b68a-1f6c6ccdce52">Lipschitzkonstante</a> \(L_1,L_2\)
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_90435c5bc0b09f461f3149dd17f727878d74cf40.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_90435c5bc0b09f461f3149dd17f727878d74cf40.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_2 \circ f_1: M_1 \rightarrow M_3
+\end{align*}
 <p>
 ebenfalls lipschitzstetig
 </p>
 </div>
 </div>
-<div id="outline-container-org1c165e2" class="outline-2">
-<h2 id="org1c165e2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgacdaa5a" class="outline-2">
+<h2 id="orgacdaa5a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_7752a53be05c2b2b350ee3614569c52a30625e52.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_7752a53be05c2b2b350ee3614569c52a30625e52.svg" class="org-svg" /> gegeben
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_8feee5977f0225ca236f4a00611cd4b3e1e1b426.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_8feee5977f0225ca236f4a00611cd4b3e1e1b426.svg" class="org-svg" /> auf einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" class="org-svg" /> <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> mit Lipschitzkonstante <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_ce1a874cf142e3d030fbeb393291823fdf844b6c.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_ce1a874cf142e3d030fbeb393291823fdf844b6c.svg" class="org-svg" />.
-Ebenso <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_e0f9d8d13fdbf0198d663658e0c98b3676b0c208.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_e0f9d8d13fdbf0198d663658e0c98b3676b0c208.svg" class="org-svg" /> mit einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_7d27d0dc99201502db336a579706c247de70e67f.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_7d27d0dc99201502db336a579706c247de70e67f.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6e5d880f90282877a4aa409385f68dec12468a23.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6e5d880f90282877a4aa409385f68dec12468a23.svg" class="org-svg" /> und <a href="20221222102430-lipschitzkonstante.html#ID-fefaf440-f71c-45e7-b68a-1f6c6ccdce52">Lipschitzkonstante</a> <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_0c3afdd43d71960f44a317afd04d1c0acc96ba28.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_0c3afdd43d71960f44a317afd04d1c0acc96ba28.svg" class="org-svg" />
-Nach Definition <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_58a0041dd584930c73f98d0139a5eeaffec3dde0.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_58a0041dd584930c73f98d0139a5eeaffec3dde0.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_fa45aba953e52aa0a919f0ad90390b7c637b93fa.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_fa45aba953e52aa0a919f0ad90390b7c637b93fa.svg" class="org-svg" />.
-Da <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">das Umgebungssystem abgeschlossen ist unter endlichem Schnitt</a> sei dann <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_78725f4887d13d61472bffb539dd87ebbc6a581c.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_78725f4887d13d61472bffb539dd87ebbc6a581c.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" class="org-svg" />.
+Sei \(m \in M_1\) gegeben
+Nach Annahme ist \(f_1\) auf einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) von \(m\) <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> mit Lipschitzkonstante \(L_1\).
+Ebenso \(f_2\) mit einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U_2\) von \(f(m)\) und <a href="20221222102430-lipschitzkonstante.html#ID-fefaf440-f71c-45e7-b68a-1f6c6ccdce52">Lipschitzkonstante</a> \(L_2\)
+Nach Definition \(\exist \varepsilon > 0\) mit \(B_{\varepsilon}(f(m)) \subseteq U_2\).
+Da <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">das Umgebungssystem abgeschlossen ist unter endlichem Schnitt</a> sei dann \(U_1  \coloneqq U \cap B_{\frac{\varepsilon}{L_1}}(m) \subseteq M_1\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(m\).
 Es gilt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6b4ca092b17a0d8b8fc1b0e9b223cf5646416b5f.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_6b4ca092b17a0d8b8fc1b0e9b223cf5646416b5f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f[U_1] \subseteq& U_2 \\
+f_{2} \circ f_{1,\vert U_1} =& f_{2, \vert U_2} \circ f_{1,\vert U_1} 
+\end{align*}
 <p>
-und <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_e758cde27a8024441db9ed52be157fc0e0fd5e28.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_e758cde27a8024441db9ed52be157fc0e0fd5e28.svg" class="org-svg" /> nach Konstruktion bzw. <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_0bea6448347147026c71d7718e03c1d3603eb4b2.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_0bea6448347147026c71d7718e03c1d3603eb4b2.svg" class="org-svg" /> nach Annahme <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">lipschitzstetig</a> 
-Daraus folgt aus der <a href="20230515132945-komposition_von_lipschitzstetigen_funktionen.html#ID-e7ff9503-1962-45d7-9af0-ff75259f33c0">Komposition von lipschitzstetigen Funktionen</a>, dass <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_9f1d43a795c95ea5b900ca9fe83d6e19222ed7d5.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_9f1d43a795c95ea5b900ca9fe83d6e19222ed7d5.svg" class="org-svg" /> <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> ist auf einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_c3ee0fdd25e47b964173782163c267dcc3267c59.svg" alt="20230515132959-komposition_von_lokal_lipschitzstetigen_funktionen_c3ee0fdd25e47b964173782163c267dcc3267c59.svg" class="org-svg" /> bzw. <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokale Lipschitzstetigkeit</a> 
+und \(f_{1,\vert U_1}\) nach Konstruktion bzw. \(f_{2,\vert U_2}\) nach Annahme <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">lipschitzstetig</a> 
+Daraus folgt aus der <a href="20230515132945-komposition_von_lipschitzstetigen_funktionen.html#ID-e7ff9503-1962-45d7-9af0-ff75259f33c0">Komposition von lipschitzstetigen Funktionen</a>, dass \((f_2 \circ f_{1, \vert U_1}) = (f_{2} \circ f_{1})_{\vert U_1}\) <a href="20221125175541-lipschitzstetig.html#ID-53d30a09-5724-4c59-9495-2ffa2f053707">Lipschitzstetig</a> ist auf einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U_1\) bzw. <a href="20230113091928-lokale_lipschitzstetigkeit.html#ID-6965083e-f1eb-44b4-ad03-09f11ef3cbb3">lokale Lipschitzstetigkeit</a> 
 </p>
 </div>
 </div>

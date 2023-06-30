@@ -9,39 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Assoziativität von Komplementbildung und Schnitt</h1>
-<div id="outline-container-org32781f7" class="outline-2">
-<h2 id="org32781f7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf3e0b35" class="outline-2">
+<h2 id="orgf3e0b35"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230526075452-distributivitat_von_komplementbildung_und_vereinigung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230526075452-distributivitat_von_komplementbildung_und_vereinigung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230526075452-distributivitat_von_komplementbildung_und_vereinigung_fca60bd74074360f402dce8e061992310c192d30.svg" alt="20230526075452-distributivitat_von_komplementbildung_und_vereinigung_fca60bd74074360f402dce8e061992310c192d30.svg" class="org-svg" />, so gilt:
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A,B,C \subseteq X\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526075452-distributivitat_von_komplementbildung_und_vereinigung_6ef04f78f17acb91030769c7aa3ae312a0314829.svg" alt="20230526075452-distributivitat_von_komplementbildung_und_vereinigung_6ef04f78f17acb91030769c7aa3ae312a0314829.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A \cap (B \setminus (C)) =& (A \cap B) \cap C
+\end{align*}
 <p>
 siehe:  <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a>, <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb050e68" class="outline-2">
-<h2 id="orgb050e68"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfc79f59" class="outline-2">
+<h2 id="orgfc79f59"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Aussage über das <a href="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement.html#ID-66c2f37b-a822-4d2f-beaa-dcd0056597be">relative Komplement und Schnitt mit dem absoluten Komplement</a> und <a href="20221209102252-assoziativitat_von_vereinigungen.html#ID-dd91fa12-a801-47eb-86d8-8cbd2ca33161">Assoziativität von Vereinigungen und Schnitt</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230526075452-distributivitat_von_komplementbildung_und_vereinigung_84a77c8212aaeef59c6a38793995a15b7bf0c946.svg" alt="20230526075452-distributivitat_von_komplementbildung_und_vereinigung_84a77c8212aaeef59c6a38793995a15b7bf0c946.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A \cap (B \setminus C) =& A \cap (B \cap (X \setminus C)) \\
+=& (A \cap B) \cap (X \setminus C) \\
+=& (A \cap B) \setminus C
+\end{align*}
 </div>
 </div>
 </div>

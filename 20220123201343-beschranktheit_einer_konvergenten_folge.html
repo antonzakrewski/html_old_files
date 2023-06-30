@@ -9,49 +9,65 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beschränktheit einer konvergenten Folge</h1>
-<div id="outline-container-org41d4b9a" class="outline-2">
-<h2 id="org41d4b9a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2241abf" class="outline-2">
+<h2 id="org2241abf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Jede <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> ist <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org1542e9e" class="outline-2">
-<h2 id="org1542e9e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1e4648e" class="outline-2">
+<h2 id="org1e4648e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_5535a91d4e7bb65997a19fdfcc23cc31126751aa.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_5535a91d4e7bb65997a19fdfcc23cc31126751aa.svg" class="org-svg" />.
-Dann existiert für beliebiges <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_7a3f9f420d66a90c580294db3df7b30cd05f884d.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_7a3f9f420d66a90c580294db3df7b30cd05f884d.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> so dass für <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_ca78af6bbf6ac5004460e891f4772b37b5754adf.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_ca78af6bbf6ac5004460e891f4772b37b5754adf.svg" class="org-svg" /> gilt
+Sei \((a_n) \rightarrow a\).
+Dann existiert für beliebiges \(\epsilon > 0\) ein \(n \in \mathbb{N}\) so dass für \(n \leq n_0 \in \mathbb{N}\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_efa197b54d47f941da0ce1d1bb8a70763516ebef.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_efa197b54d47f941da0ce1d1bb8a70763516ebef.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_{n_0} - a \vert < \epsilon
+\end{align*}
 <p>
-Aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> folgt für <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_ab7635bcde52c31e871ba1d151e8c87376267586.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_ab7635bcde52c31e871ba1d151e8c87376267586.svg" class="org-svg" /> 
+Aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> folgt für \(\vert a_n \vert = \vert (a_{n_0} - a) + a \vert\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_6d27c1d84af194c76258f60369808e3e7300e96e.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_6d27c1d84af194c76258f60369808e3e7300e96e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_n \vert \leq \vert a_{n_0} - a \vert + \vert a \vert < \epsilon + \vert a \vertd
+\end{align*}
 <p>
-Daraus folgt für alle <img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" />
+Daraus folgt für alle \(n \in \mathbb{N}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123201343-beschranktheit_einer_konvergenten_folge_cd2e02ac53d1ad6b10122f8c23fc776d96dc0e29.svg" alt="20220123201343-beschranktheit_einer_konvergenten_folge_cd2e02ac53d1ad6b10122f8c23fc776d96dc0e29.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_n \leq \mathrm{max}(\vert a_1 \vert, \vert a_2 \vert,...,\vert a_{n_0-1}\vert ,\vert a \vert +\epsilon)
+\end{align*}
 
 
 

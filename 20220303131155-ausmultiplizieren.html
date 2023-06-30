@@ -3,63 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ausmultiplizieren</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ausmultiplizieren</h1>
-<div id="outline-container-org153f9ca" class="outline-2">
-<h2 id="org153f9ca"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4156e4d" class="outline-2">
+<h2 id="org4156e4d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220303131155-ausmultiplizieren_3923b4f5fd9c40851dd4b01c5a35779c94d39eb3.svg" alt="20220303131155-ausmultiplizieren_3923b4f5fd9c40851dd4b01c5a35779c94d39eb3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(a_1 + a_2 + ... + a_n) (b_1 + b_2 + ... + b_k) =& \\
+=& (\sum_{i=1}^n a_i) (\sum_{j=1}^k b_j) \\
+=& \sum_{i=1}^n\sum_{j=1}^k a_ib_j
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge94fbdb" class="outline-2">
-<h2 id="orge94fbdb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9ffc912" class="outline-2">
+<h2 id="org9ffc912"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></li>
 </ul>
 </div>
-<div id="outline-container-orgf87c5ae" class="outline-3">
-<h3 id="orgf87c5ae"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org551b0b3" class="outline-3">
+<h3 id="org551b0b3"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220303131155-ausmultiplizieren_ed59e76a524a2e3e97222c192e82bb3a99a74beb.svg" alt="20220303131155-ausmultiplizieren_ed59e76a524a2e3e97222c192e82bb3a99a74beb.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+(a_1) (b_1) =& a_1b_1 \\
+=& \sum_{i=1}^1\sum_{j=1}^1 a_ib_j\\
+(a_1) (b_1 + b_2) =& a_1b_1 + a_1b_2\\
+=& \sum_{i=1}^1\sum_{j=1}^2 a_ib_j 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd1b69d1" class="outline-3">
-<h3 id="orgd1b69d1"><span class="section-number-3">2.2.</span> IA</h3>
+<div id="outline-container-org4c1b4df" class="outline-3">
+<h3 id="org4c1b4df"><span class="section-number-3">2.2.</span> IA</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220303131155-ausmultiplizieren_d552fac9f2bc812a0b60678ffe02c4e48a16058f.svg" alt="20220303131155-ausmultiplizieren_d552fac9f2bc812a0b60678ffe02c4e48a16058f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+(a_1 + ... + a_n)(b_1 + ... + b_{k} + b_{k+1}) =& \sum_{i=1}^n a_i)(\sum_{j=1}^{k} + b_{k+1}) \\
+=& \sum_{i=1}^n\sum_{j=1}^k a_ib_j + \sum_{i=1}^na_ib_{k+1} \\
+=& \sum_{i=1}^n\sum_{j=1}^{k+1}a_ib_j
+\end{align*}
 </div>
 </div>
 </div>

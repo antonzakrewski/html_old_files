@@ -9,55 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Divisor of Index as Divisor of Fibonacci Number</h1>
-<div id="outline-container-orga8e7991" class="outline-2">
-<h2 id="orga8e7991"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orgc168c5f" class="outline-2">
+<h2 id="orgc168c5f"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-For <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_d0fc48e61aaa5a2d20ba6f43ba3276b5957b8376.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_d0fc48e61aaa5a2d20ba6f43ba3276b5957b8376.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_0ea960d4e4b8a9c14b60448521b6374148c5f9c5.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_0ea960d4e4b8a9c14b60448521b6374148c5f9c5.svg" class="org-svg" /> following statement holds true:
+For \(n,m \in \mathbb{N}^+\) such that \(n \mid m\) following statement holds true:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_4a803594ecff9ed654bb00ab0967c39649db850d.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_4a803594ecff9ed654bb00ab0967c39649db850d.svg" class="org-svg" />
-</span>
+\begin{align*}
+F_{n} \mid F_{m}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb50d560" class="outline-2">
-<h2 id="orgb50d560"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orge601a6d" class="outline-2">
+<h2 id="orge601a6d"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-By Assumption there exists an <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_6b1d2c4490cb6dffdac3787705c5054de445524c.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_6b1d2c4490cb6dffdac3787705c5054de445524c.svg" class="org-svg" />
-Using a <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Proof by induction</a> we show, that <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_c6fdb815d850c25af853207cacf966ede87ef41e.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_c6fdb815d850c25af853207cacf966ede87ef41e.svg" class="org-svg" /> if <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_8cd351b008d2a07b6370c4faff435ec21e8f83bf.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_8cd351b008d2a07b6370c4faff435ec21e8f83bf.svg" class="org-svg" /> 
+By Assumption there exists an \(k \in \mathbb{N}\) such that \(n \cdot k = m\)
+Using a <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Proof by induction</a> we show, that \(F_{n} \mid F_{n \cdot (k+1)}\) if \(F_{n} \mid F_{n \cdot k}\) 
 </p>
 </div>
-<div id="outline-container-org38448ef" class="outline-3">
-<h3 id="org38448ef"><span class="section-number-3">2.1.</span> Basis</h3>
+<div id="outline-container-org89520a0" class="outline-3">
+<h3 id="org89520a0"><span class="section-number-3">2.1.</span> Basis</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Holds true for <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" class="org-svg" />.
+Holds true for \(k = 1\).
 </p>
 </div>
 </div>
-<div id="outline-container-orgab30ff8" class="outline-3">
-<h3 id="orgab30ff8"><span class="section-number-3">2.2.</span> Step</h3>
+<div id="outline-container-org06a7608" class="outline-3">
+<h3 id="org06a7608"><span class="section-number-3">2.2.</span> Step</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-By Assumption <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_98f3e5ada4ff27fdefb0b43bb7ab2f4a7d94f0b2.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_98f3e5ada4ff27fdefb0b43bb7ab2f4a7d94f0b2.svg" class="org-svg" /> and therefore there exists an <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_e6ea4ad1b1c032bf140171220b6193f9f0fded3c.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_4130f75899fa5b2931a319117c6c100989d4d153.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_4130f75899fa5b2931a319117c6c100989d4d153.svg" class="org-svg" />
+By Assumption \(F_n \mid F_{n \cdot k}\) and therefore there exists an \(r \in \mathbb{N}\) such that \(F_n \cdot r = F_{n \cdot k}\)
 Therefore we can deduce from the <a href="20230327121709-rekursionsformel_fur_die_fibonacci_zahl.html#ID-9263a719-2410-4062-afbe-b5b926cadbc6">recursion formula</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_7adf3e836f036a21a44a8fa15c66ce0e9b1fa7e2.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_7adf3e836f036a21a44a8fa15c66ce0e9b1fa7e2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F_{n \cdot (k+1)} =& F_{n \cdot k + n} \\
+=& F_{n \cdot k} F_{n-1} + F_{n \cdot k + 1} F_{n} \\
+=& r \cdot F_{n} \cdot F_{n-1} + F_{n \cdot k + 1} \cdot F_n \\
+=& F_{n} \cdot \left(r \cdot F_{n-1} + F_{n \cdot k + 1} \right)
+\end{align*}
 <p>
-nd <img src="file:///home/anton/html/ltximg/20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_92211b208a662f03dbb0beb4c833dc4238a874da.svg" alt="20230418180229-divisor_of_index_as_divisor_of_fibonacci_number_92211b208a662f03dbb0beb4c833dc4238a874da.svg" class="org-svg" /> follows
+nd \(F_n \mid F_{n \cdot (k + 1)}\) follows
 </p>
 </div>
 </div>

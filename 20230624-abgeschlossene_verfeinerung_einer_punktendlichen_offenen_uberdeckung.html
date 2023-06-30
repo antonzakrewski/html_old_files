@@ -9,21 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">abgeschlossene Verfeinerung einer punktendlichen, offenen Überdeckung</h1>
-<div id="outline-container-org7235a1c" class="outline-2">
-<h2 id="org7235a1c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge9c1f50" class="outline-2">
+<h2 id="orge9c1f50"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_af79e77fb5ef9054fe08de9bd731a133f9bef5d1.svg" alt="20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_af79e77fb5ef9054fe08de9bd731a133f9bef5d1.svg" class="org-svg" /> eine <a href="20230330231212-punktendliche_uberdeckung.html#ID-5627b50b-30ed-4bd1-8eff-65b46729b8c7">punktendliche</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a>.
-Dann existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a> <img src="file:///home/anton/html/ltximg/20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_6c40562d100bea77f592f31aa81c8d1ad20aae23.svg" alt="20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_6c40562d100bea77f592f31aa81c8d1ad20aae23.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_a94bcd6d411fa92c28dec3b738363a24df1dc118.svg" alt="20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_a94bcd6d411fa92c28dec3b738363a24df1dc118.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230624-abgeschlossene_verfeinerung_einer_punktendlichen_offenen_uberdeckung_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" />
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((U_i)\) eine <a href="20230330231212-punktendliche_uberdeckung.html#ID-5627b50b-30ed-4bd1-8eff-65b46729b8c7">punktendliche</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a>.
+Dann existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20230307220219-feinerer_filter.html#ID-bb924e3f-d87b-4236-b446-70032cc51df6">Verfeinerung</a> \((B_i)\) mit \(\overline{B_i} \subseteq A_i\) für \(i \in I\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9cde6ab" class="outline-2">
-<h2 id="org9cde6ab"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbdb6217" class="outline-2">
+<h2 id="orgbdb6217"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

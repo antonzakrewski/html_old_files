@@ -9,33 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gaußsche Integral</h1>
-<div id="outline-container-orge2d64c8" class="outline-2">
-<h2 id="orge2d64c8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org444ad71" class="outline-2">
+<h2 id="org444ad71"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002082430-gaußsche_integral_25d88bea5e2a9e1cf2ff5f51153d3d8f5a36837e.svg" alt="20221002082430-gaußsche_integral_25d88bea5e2a9e1cf2ff5f51153d3d8f5a36837e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\int_{x \in \mathbb{R}}^{} e^{-ax^2} \mathrm{d}x = \sqrt{\frac{\pi}{a}} && a > 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgab6845c" class="outline-2">
-<h2 id="orgab6845c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8a12c63" class="outline-2">
+<h2 id="org8a12c63"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über <a href="20221113224338-integrale_in_polarkoordinaten.html#ID-f12feacb-cb4c-4884-b7a3-c978dbe4fb3f">Integral in Polarkoordinaten</a> und 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221002082430-gaußsche_integral_70098bad08493a50dd415e10d8fedb7236359e25.svg" alt="20221002082430-gaußsche_integral_70098bad08493a50dd415e10d8fedb7236359e25.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left(\int_{-\infty}^{\infty} e^{-x^2} \mathrm{d}x \right)^2 =& \int_{-\infty}^{\infty} e^{-x^2} \mathrm{d}x \int_{-\infty}^{\infty} e^{-y^2} \mathrm{d}y \\
+=& \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2 + y^2)} \mathrm{d}x y \mathrm{d} \\
+=& \int_{0}^{2\pi} \int_{0}^{\infty} e^{-r^2}r  \mathrm{d}r  \mathrm{d}\theta \\
+=& 2 \pi \int_{0}^{\infty} re^{-r^2} \mathrm{d}r \\
+=& 2\pi \int_{-\infty}^{0} \frac{1}{2}e^s \mathrm{d}s \\
+=& \pi \int_{-\infty}^{0} e^s \mathrm{d}s \\
+=& \pi (e^{0} - e^{- \infty}) \\
+=& \pi    
+\end{align*}
 </div>
 </div>
 </div>

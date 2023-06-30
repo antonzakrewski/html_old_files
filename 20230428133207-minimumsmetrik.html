@@ -9,60 +9,81 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Minimumsmetrik</h1>
-<div id="outline-container-orge805660" class="outline-2">
-<h2 id="orge805660"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org174e3b1" class="outline-2">
+<h2 id="org174e3b1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230428133207-minimumsmetrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>, dann ist
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>, dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_8ec6d0af7851e0d20891136f77525d21414592b4.svg" alt="20230428133207-minimumsmetrik_8ec6d0af7851e0d20891136f77525d21414592b4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_{\mathrm{min}}  \coloneqq \mathrm{min}(1,d)
+\end{align*}
 <p>
 ebenfalls eine <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org358688b" class="outline-2">
-<h2 id="org358688b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org83def6a" class="outline-2">
+<h2 id="org83def6a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0881363" class="outline-3">
-<h3 id="org0881363"><span class="section-number-3">2.1.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h3>
+<div id="outline-container-org31a3cf8" class="outline-3">
+<h3 id="org31a3cf8"><span class="section-number-3">2.1.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-folgt aus der Symmetrie von <img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230428133207-minimumsmetrik_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" />
+folgt aus der Symmetrie von \(d\)
 </p>
 </div>
 </div>
-<div id="outline-container-org334b19d" class="outline-3">
-<h3 id="org334b19d"><span class="section-number-3">2.2.</span> Dreiecksungleichung</h3>
+<div id="outline-container-org81e1aae" class="outline-3">
+<h3 id="org81e1aae"><span class="section-number-3">2.2.</span> Dreiecksungleichung</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt:
 </p>
+\begin{align*}
+d_{\mathrm{min}}(x,y) =& \mathrm{min}(1,d(x,y)) \\
+\leq& \mathrm{min}(d(x,z) + d(z,y),1) \\
+\leq& \mathrm{min}(d(x,z), 1) + \mathrm{min}(d(z,y), 1) 
+\end{align*}
+</div>
+</div>
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_d5375acf7774b91cc3882b43e0dcdc2c79b9791b.svg" alt="20230428133207-minimumsmetrik_d5375acf7774b91cc3882b43e0dcdc2c79b9791b.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org89c92ad" class="outline-3">
-<h3 id="org89c92ad"><span class="section-number-3">2.3.</span> Positive Definitheit</h3>
+<div id="outline-container-org35d60f3" class="outline-3">
+<h3 id="org35d60f3"><span class="section-number-3">2.3.</span> Positive Definitheit</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_83136d9774f2882750f4c64f0120bbbe16d8f3c2.svg" alt="20230428133207-minimumsmetrik_83136d9774f2882750f4c64f0120bbbe16d8f3c2.svg" class="org-svg" /></li>
-<li>sei <img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230428133207-minimumsmetrik_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" /> , so folt <img src="file:///home/anton/html/ltximg/20230428133207-minimumsmetrik_b1ac6ba15ffd2db9e6d238e923c2cb93a73489fe.svg" alt="20230428133207-minimumsmetrik_b1ac6ba15ffd2db9e6d238e923c2cb93a73489fe.svg" class="org-svg" /></li>
+<li>\(d_{\mathrm{min}}(x,x) = \mathrm{min}(d(x,x),1) = \mathrm{min}(0,1) = 0\)</li>
+<li>sei \(x \neq y\) , so folt \(d_{\mathrm{min}}(x,y) \geq d(x,y) > 0\)</li>
 </ul>
 </div>
 </div>

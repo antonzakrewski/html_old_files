@@ -3,32 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>konvexe Funktion und Monotonie der Ableitung bzw. zweite Ableitung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">konvexe Funktion und Monotonie der Ableitung bzw. zweite Ableitung</h1>
-<div id="outline-container-orgc00eb0d" class="outline-2">
-<h2 id="orgc00eb0d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org386cbec" class="outline-2">
+<h2 id="org386cbec"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230204212731-konvexe_funktion_und_monotonie_der_ableitung_ee60470306d326ade0144ac09d55468d0e2cf1bf.svg" alt="20230204212731-konvexe_funktion_und_monotonie_der_ableitung_ee60470306d326ade0144ac09d55468d0e2cf1bf.svg" class="org-svg" /> eine zweimal <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei \(f: \mathbb{R} \rightarrow \mathbb{R}\) eine zweimal <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230204212731-konvexe_funktion_und_monotonie_der_ableitung_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230204212731-konvexe_funktion_und_monotonie_der_ableitung_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist <a href="20230204211958-konvexe_funktion.html#ID-46d5b620-5fbf-4352-8aad-30f19903ff81">konvex</a></li>
-<li><img src="ltximg/20230204212731-konvexe_funktion_und_monotonie_der_ableitung_028941f6548a5305c4872d2dc34aba3014b33339.svg" alt="20230204212731-konvexe_funktion_und_monotonie_der_ableitung_028941f6548a5305c4872d2dc34aba3014b33339.svg" class="org-svg" /> ist <a href="20220820235114-monoton_zunehmende_funktion.html#ID-91f42774-c339-4d51-a501-14bdfda41b23">monoton wachsend</a></li>
-<li><img src="ltximg/20230204212731-konvexe_funktion_und_monotonie_der_ableitung_d9d602cac41f75282c82d003114513da15b18111.svg" alt="20230204212731-konvexe_funktion_und_monotonie_der_ableitung_d9d602cac41f75282c82d003114513da15b18111.svg" class="org-svg" /> ist nichtnegativ</li>
+<li>\(f\) ist <a href="20230204211958-konvexe_funktion.html#ID-46d5b620-5fbf-4352-8aad-30f19903ff81">konvex</a></li>
+<li>\(f'\) ist <a href="20220820235114-monoton_zunehmende_funktion.html#ID-91f42774-c339-4d51-a501-14bdfda41b23">monoton wachsend</a></li>
+<li>\(f''\) ist nichtnegativ</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3c4057b" class="outline-2">
-<h2 id="org3c4057b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org13771ec" class="outline-2">
+<h2 id="org13771ec"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -5,19 +5,54 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Stetigkeit Abgeschlossenheit enier stetigen Abbildung von einem kompakten Raum in einen Hausdorff-Raum</title>
+<title>Abgeschlossenheit einer stetigen Abbildung von einem kompakten Raum in einen Hausdorff-Raum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Stetigkeit Abgeschlossenheit enier stetigen Abbildung von einem kompakten Raum in einen Hausdorff-Raum</h1>
-<div id="outline-container-orgffdce3c" class="outline-2">
-<h2 id="orgffdce3c"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Abgeschlossenheit einer stetigen Abbildung von einem kompakten Raum in einen Hausdorff-Raum</h1>
+<div id="outline-container-org16ef434" class="outline-2">
+<h2 id="org16ef434"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-TODO ???
+Seien \((X, \mathcal{T}_X)\) und \((Y, \mathcal{T}_Y)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, so dass \(X\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> und \(Y\) ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> ist und \(f: X \rightarrow Y\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
+Dann ist \(f\) auch eine <a href="20230227190123-abgeschlossene_abbildung_topologie.html#ID-007193f7-4fbb-4a0b-9e26-1bd7c7dcb6c3">abgeschlossene Abbildung</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org301c55f" class="outline-2">
+<h2 id="org301c55f"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei \(A \subesteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, so ist \(A\) auch <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> (vgl. <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">Abgeschlossene Mengen kompakter Räume sind kompakt</a>)
+Nach <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Kompaktheit des Bildes einer kompakten Menge einer stetigen Funktion</a> folgt, dass \(f[A]\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist und nach der <a href="20230511112904-abgeschlossenheit_von_kompakten_mengen.html#ID-77b86d0c-e901-449a-9147-602be657eae5">Abgeschlossenheit von kompakten Mengen in Hausdorff Räumen</a> auch, dass \(f[A]\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
 </p>
 </div>
 </div>

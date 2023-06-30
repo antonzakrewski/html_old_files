@@ -3,26 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Einschluss von beschränkten Folgen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einschluss von beschränkten Folgen</h1>
-<div id="outline-container-orga82ba30" class="outline-2">
-<h2 id="orga82ba30"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org2d45500" class="outline-2">
+<h2 id="org2d45500"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_85c25710e1de210a385ff9b8f1d726e4bded3e21.svg" alt="20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_85c25710e1de210a385ff9b8f1d726e4bded3e21.svg" class="org-svg" /> eine <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>.
-Dann <img src="ltximg/20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_78923b2e637d99c2f181d21a524cdd17f58520ec.svg" alt="20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_78923b2e637d99c2f181d21a524cdd17f58520ec.svg" class="org-svg" /> und <img src="ltximg/20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_3b53d2ad55db4f5665d6ffb1e84b6934e88df451.svg" alt="20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_3b53d2ad55db4f5665d6ffb1e84b6934e88df451.svg" class="org-svg" />.
+Sei \((a_n)\) eine <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>.
+Dann \(s_n \coloneqq \inf\{a_k \vert k \geq n \}\) und \(S_n \coloneqq \sup\{a_k \vert k \geq n\}\).
 </p>
 
 <p>
-Daraus folgt für <img src="ltximg/20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_94b773efb8902855517616da0ddf03dd73007e0f.svg" alt="20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_94b773efb8902855517616da0ddf03dd73007e0f.svg" class="org-svg" /> <img src="ltximg/20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_db6c092f5738169cae43cb09bf220b9167bec1b6.svg" alt="20221129161341-lemma_uber_den_einschluss_von_beschrankten_folgen_db6c092f5738169cae43cb09bf220b9167bec1b6.svg" class="org-svg" />.
+Daraus folgt für \(n \leq n'\) \(s_n \leq s_{n'} \leq S_{n'} \leq S_{n}\).
 Weiter schreiben ?
 </p>
 </div>

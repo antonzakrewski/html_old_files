@@ -9,53 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang einer Ordnungstopologie</h1>
-<div id="outline-container-orgb18746b" class="outline-2">
-<h2 id="orgb18746b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org460e606" class="outline-2">
+<h2 id="org460e606"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_e0ae8b677467dc0adccdf2016b95df8d9e85f507.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_e0ae8b677467dc0adccdf2016b95df8d9e85f507.svg" class="org-svg" /> eine <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">totalgeordnete</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> die <a href="20230225212410-ordnungstopologie.html#ID-01b4bc63-62e3-4d71-9c78-1255941c1837">Ordnungstopologie</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> das <a href="20230517212404-dedekindsche_schnittaxiom.html#ID-8f84dd15-dfc0-4d81-92bb-4dcd4d426fd5">Dedekindsche Schnittaxiom</a> erfüllt
+Sei \((X,<)\) eine <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">totalgeordnete</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \((X, \mathcal{T})\) die <a href="20230225212410-ordnungstopologie.html#ID-01b4bc63-62e3-4d71-9c78-1255941c1837">Ordnungstopologie</a>.
+Dann ist \(X\) <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(X\) das <a href="20230517212404-dedekindsche_schnittaxiom.html#ID-8f84dd15-dfc0-4d81-92bb-4dcd4d426fd5">Dedekindsche Schnittaxiom</a> erfüllt
 </p>
 </div>
 </div>
-<div id="outline-container-org964257f" class="outline-2">
-<h2 id="org964257f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org37f5666" class="outline-2">
+<h2 id="org37f5666"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org37201d1" class="outline-3">
-<h3 id="org37201d1"><span class="section-number-3">2.1.</span> a) Dedekind =&gt; Zusammenhang</h3>
+<div id="outline-container-org2c81427" class="outline-3">
+<h3 id="org2c81427"><span class="section-number-3">2.1.</span> a) Dedekind =&gt; Zusammenhang</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_2946e062bd1395ad783b4c277c639d495e168634.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_2946e062bd1395ad783b4c277c639d495e168634.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_6231a7fed75077887dbfdb7e05ae8c4b1f148a38.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_6231a7fed75077887dbfdb7e05ae8c4b1f148a38.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_473404635b2abfc17dea541207caa20b0a1aa767.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_473404635b2abfc17dea541207caa20b0a1aa767.svg" class="org-svg" />.
-Dann existieren <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_22c113d9e68e377d0d7714f5c31cb73930a9a5cf.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_145ec6b28672c4950fc535c460cf756e7a119d37.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_145ec6b28672c4950fc535c460cf756e7a119d37.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_31ba969d74aabe557b13aaeb4f79a40d86bac962.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_31ba969d74aabe557b13aaeb4f79a40d86bac962.svg" class="org-svg" />.
+Seien \(A,B \subseteq X\) mit \(A \sqcup B = X\) und \(A,B \neq \emptyset\).
+Dann existieren \(a \in A\), \(b \in B\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a < b\).
 Betrachten wir die <a href="20230308142726-zusammenhangskomponente.html#ID-1428682d-f6f4-4d4c-b52c-bc0087485f33">Zusammenhangskomponenten</a>
 </p>
 
 <p>
-Wir können dann einen Dedekind Schnitt <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_43fc23558dede04f3abfe2de37224ec2e3e79f2f.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_43fc23558dede04f3abfe2de37224ec2e3e79f2f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_6ffad1fb727e14726390ced5288bf6f5c81e29a3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_6ffad1fb727e14726390ced5288bf6f5c81e29a3.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_c101cd48e7716e62b877861b82952791d946f7ca.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_c101cd48e7716e62b877861b82952791d946f7ca.svg" class="org-svg" /> konstruieren.
-Ferner existiert dann ein <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_752567f26bbefba1fcea08ec7e228529174cb058.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_752567f26bbefba1fcea08ec7e228529174cb058.svg" class="org-svg" />
+Wir können dann einen Dedekind Schnitt \(\tilde{A} < \tilde{B}\) mit \(K(a) \subseteq \tilde{A}\), \(K(b) \subseteq \tilde{B}\) konstruieren.
+Ferner existiert dann ein \(z  \coloneqq \sup(\tilde{}) = \inf(\tilde{B})\)
 Dabei ist eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von $
 </p>
 </div>
 </div>
-<div id="outline-container-orgd25fb16" class="outline-3">
-<h3 id="orgd25fb16"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org7d7ffe9" class="outline-3">
+<h3 id="org7d7ffe9"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Angenommen <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> erfüllt nicht das Dedekindsche Schnittaxiom.
-Dann existiert eine offene Zerlegung <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_a8b6b3171a4ceb11c756ec3c84da05f25c2aa947.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_a8b6b3171a4ceb11c756ec3c84da05f25c2aa947.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_e3a023c11f19bd31d089aee51c8349a8af8007f3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_e3a023c11f19bd31d089aee51c8349a8af8007f3.svg" class="org-svg" />, so dass eine der beiden Fälle zutritt:
+Angenommen \(X\) erfüllt nicht das Dedekindsche Schnittaxiom.
+Dann existiert eine offene Zerlegung \(A \sqcup B\) mit \(A < B\), so dass eine der beiden Fälle zutritt:
 </p>
 <ol class="org-ol">
 <li>Es existiert kein <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a></li>
 <li>Das <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a> stimmt nicht mit dem <a href="20220718133120-infimum.html#ID-46cb173e-d119-4d6f-82b5-f27511bb0081">Infimum</a> überein</li>
 </ol>
 <p>
-Für 1) ist <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_5dd7686174e97565010ce73749b967eeff0f1fb2.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_5dd7686174e97565010ce73749b967eeff0f1fb2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_ebebdefa63ebe2024a0e1e3dd977a3751cd1ab1b.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_ebebdefa63ebe2024a0e1e3dd977a3751cd1ab1b.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_11dbd33b3989adf40d2d10a477dafb2b3550bacf.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_11dbd33b3989adf40d2d10a477dafb2b3550bacf.svg" class="org-svg" /> liegt <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a>, da kein Supremum existiert
-Für 2) gilt <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_99a4eb978160417f7d4c4d81bbd578e8f9489ca3.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_99a4eb978160417f7d4c4d81bbd578e8f9489ca3.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> Zerlegung, da <img src="file:///home/anton/html/ltximg/20230517212309-zusammenhang_einer_ordnungstopologie_e4416b9fa5b9d82c5c408e0075939c69b3c03f3f.svg" alt="20230517212309-zusammenhang_einer_ordnungstopologie_e4416b9fa5b9d82c5c408e0075939c69b3c03f3f.svg" class="org-svg" /> gilt.
+Für 1) ist \(\bigcup_{a \in A} (-\infty,a') = A\) mit \(a < a'\), so dass \(a' \in A\) liegt <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a>, da kein Supremum existiert
+Für 2) gilt \(A = \{x \in X \vert x \leq \inf(B)\}, B = \{x \in X \vert x \geq \sup(B)\}\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> Zerlegung, da \(\sup(A) < \inf(B)\) gilt.
 </p>
 </div>
 </div>

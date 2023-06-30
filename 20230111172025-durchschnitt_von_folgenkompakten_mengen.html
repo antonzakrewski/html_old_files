@@ -3,60 +3,81 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Durchschnitt von folgenkompakten Mengen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Durchschnitt von folgenkompakten Mengen</h1>
-<div id="outline-container-orga3a2db3" class="outline-2">
-<h2 id="orga3a2db3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org25230a9" class="outline-2">
+<h2 id="org25230a9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_2f20aa3e5dcf17d3ad076603c87dcb6b3382919e.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_2f20aa3e5dcf17d3ad076603c87dcb6b3382919e.svg" class="org-svg" /> für <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_dff593043603ff98da9c0013149e984ec3125edc.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_dff593043603ff98da9c0013149e984ec3125edc.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> von <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Sei \(K_i\) für \(i \in I\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> von <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_01ad6d957efcd6d1984486b855d9425298d68205.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_01ad6d957efcd6d1984486b855d9425298d68205.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\bigcap_{i \in I} K_i
+\end{align*}
 <p>
 ebenfalls <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org8a28a00" class="outline-2">
-<h2 id="org8a28a00"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org52deb31" class="outline-2">
+<h2 id="org52deb31"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20230111170118-aquivalenz_von_folgenkompaktheit_und_abgeschlossenheit_sowie_beschranktheit.html#ID-2fad4a88-23b0-4946-b39a-7e4ca8623fd7">Äquivalenz von Folgenkompaktheit und Abgeschlossenheit sowie Beschränktheit</a></li>
 </ul>
 </div>
-<div id="outline-container-org70502d9" class="outline-3">
-<h3 id="org70502d9"><span class="section-number-3">2.1.</span> beschränktheit</h3>
+<div id="outline-container-orge9b76d6" class="outline-3">
+<h3 id="orge9b76d6"><span class="section-number-3">2.1.</span> beschränktheit</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 trivial
 </p>
 </div>
 </div>
-<div id="outline-container-orgd4c0e5a" class="outline-3">
-<h3 id="orgd4c0e5a"><span class="section-number-3">2.2.</span> <a href="20230111165234-abgeschlossene_menge_in_einem_metrischen_raum.html#ID-de8df4f2-4853-47e2-b944-f1ceb3cd94b9">abgeschlossene Menge in einem metrischen Raum</a></h3>
+<div id="outline-container-org83f5f78" class="outline-3">
+<h3 id="org83f5f78"><span class="section-number-3">2.2.</span> <a href="20230111165234-abgeschlossene_menge_in_einem_metrischen_raum.html#ID-de8df4f2-4853-47e2-b944-f1ceb3cd94b9">abgeschlossene Menge in einem metrischen Raum</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_04ba55366f8de9896e962e3ff14cc061926be212.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_04ba55366f8de9896e962e3ff14cc061926be212.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" class="org-svg" />.
-Sei <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" class="org-svg" /> beliebig aber fest:
-Da <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_fa9a82046a599ca03c4f5d9309e2bdfa69cabbc0.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_fa9a82046a599ca03c4f5d9309e2bdfa69cabbc0.svg" class="org-svg" /> ist die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> ebenfalls in <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" class="org-svg" />
-Da <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" class="org-svg" /> selbst <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakt</a> ist, existiert der <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> von <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_b3e98a0b6aa326ff5d6f63b556c1a415016c3f94.svg" class="org-svg" /> und da <img src="ltximg/20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" alt="20230111172025-durchschnitt_von_folgenkompakten_mengen_a42294701c03cf310eae0d0098d5db93177acd27.svg" class="org-svg" /> beliebig war 
+Sei \(a_n \in \bigcap_{i \in I} K_i\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> \(a\).
+Sei \(K_r\) beliebig aber fest:
+Da \(\bigcap_{i \in I} K_i \subseteq K_r\) ist die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> ebenfalls in \(K_r\)
+Da \(K_r\) selbst <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompakt</a> ist, existiert der <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> von \(a\) und da \(K_r\) beliebig war 
 </p>
 </div>
 </div>

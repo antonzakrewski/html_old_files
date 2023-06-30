@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">mehrfache partielle Differenzierbarkeit</h1>
-<div id="outline-container-org9b74ba8" class="outline-2">
-<h2 id="org9b74ba8"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5aa9eec" class="outline-2">
+<h2 id="org5aa9eec"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_b0deacef86624b41ecef75e069cc5d33a62c0d02.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /> in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> ist und in <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> nach <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_e8634234d1fbebbcda28fdd54c7a956ccb944183.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_e8634234d1fbebbcda28fdd54c7a956ccb944183.svg" class="org-svg" /> diffbar ist <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_25159ab41cbd60a8208a6a10f77761a37d4bec29.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_25159ab41cbd60a8208a6a10f77761a37d4bec29.svg" class="org-svg" />
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^m\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so dass \(x \in U\) in einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbar</a> ist und in \(x\) nach \(x_j\) diffbar ist \((1 \leq i,j \leq n\)
 so ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_45b97f7d03a3a576d8ae02517089f3358513e3eb.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_45b97f7d03a3a576d8ae02517089f3358513e3eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\partial^2 F}{\partial x_j \partial x_i}(x)  \coloneqq \frac{\partial}{\partial x_j} \left(\frac{\partial F}{\partial x_j}\right)(x) \in \mathbb{R}^m
+\end{align*}
 
 <p>
-Allgemein definiert man die $k$-fache ABleitung für <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_53cd8075009d15efeb85180b01b6548e8106cb82.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_53cd8075009d15efeb85180b01b6548e8106cb82.svg" class="org-svg" /> induktiv
+Allgemein definiert man die $k$-fache ABleitung für \(k \in \mathbb{N}_0\) induktiv
 </p>
 
 <p>
-<img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_44c791b47aa079db6bcba720b6771f3a5bf994e8.svg" class="org-svg" /> heßit $k$-fach partiell differenzierbar, falls alle $k$-fachen partiellen ableitungen überall in <img src="file:///home/anton/html/ltximg/20230615-mehrfache_partielle_differenzierbarkeit_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230615-mehrfache_partielle_differenzierbarkeit_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> existieren und stetig sind
+\(F\) heßit $k$-fach partiell differenzierbar, falls alle $k$-fachen partiellen ableitungen überall in \(U\) existieren und stetig sind
 </p>
 </div>
 </div>

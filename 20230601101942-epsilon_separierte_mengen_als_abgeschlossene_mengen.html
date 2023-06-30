@@ -3,44 +3,65 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>epsilon separierte Mengen als abgeschlossene Mengen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">epsilon separierte Mengen als abgeschlossene Mengen</h1>
-<div id="outline-container-org6b62509" class="outline-2">
-<h2 id="org6b62509"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org104e8ef" class="outline-2">
+<h2 id="org104e8ef"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_0dee199191188b1bfb592bb059716068109185f7.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_0dee199191188b1bfb592bb059716068109185f7.svg" class="org-svg" /> eine <a href="20230513220424-epsilon_separierte_menge.html#ID-7249f4be-213f-4e5e-8ed2-d86fdbf2f210">epsilon-separierte Menge</a>.
-Dann ist <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(N \subseteq M\) eine <a href="20230513220424-epsilon_separierte_menge.html#ID-7249f4be-213f-4e5e-8ed2-d86fdbf2f210">epsilon-separierte Menge</a>.
+Dann ist \(N\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge733dee" class="outline-2">
-<h2 id="orge733dee"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org02705d3" class="outline-2">
+<h2 id="org02705d3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Wir zeigen, dass das <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> offen ist, d.h. <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Umgebung aller Punkte</a>.
-Sei <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_93d661958510263fdab7a44d2d0c47185187614f.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_93d661958510263fdab7a44d2d0c47185187614f.svg" class="org-svg" /> beliebig.
-Angenommen es existiert ein <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_5c489d836bb8762c9e0d3b4015f3241717c10cef.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_5c489d836bb8762c9e0d3b4015f3241717c10cef.svg" class="org-svg" /> mit <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_8270628f06704ad19983d4e8f151e31e11ec2002.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_8270628f06704ad19983d4e8f151e31e11ec2002.svg" class="org-svg" />, so folgt aus der <a href="20230420132847-umgekehrte_dreiecksungleichung.html#ID-7b5a2782-1ef3-49b0-a51a-c9751470aaeb">umgekehrten Dreiecksungleichung</a> für beliebiges <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_02ed5144a931549d8f724579acbad11357c30866.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_02ed5144a931549d8f724579acbad11357c30866.svg" class="org-svg" />:
+Sei \(m \in M \setminus N\) beliebig.
+Angenommen es existiert ein \(x \in N\) mit \(d(m,x) < \varepsilon\), so folgt aus der <a href="20230420132847-umgekehrte_dreiecksungleichung.html#ID-7b5a2782-1ef3-49b0-a51a-c9751470aaeb">umgekehrten Dreiecksungleichung</a> für beliebiges \(z \in N\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_802dfc7f0b3aafdb70ea81f33a8d66bdde634e42.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_802dfc7f0b3aafdb70ea81f33a8d66bdde634e42.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert d(x,y) - d(m,x) \vert \leq d(m,z)
+\end{align*}
 <p>
-Sonst wählen wir die <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_1915f2e673cc607c8a61b36692d8354ddb51432b.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_1915f2e673cc607c8a61b36692d8354ddb51432b.svg" class="org-svg" /><a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">-Umgebung</a> von <img src="ltximg/20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" alt="20230601101942-epsilon_separierte_mengen_als_abgeschlossene_mengen_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" class="org-svg" />
+Sonst wählen wir die \(\frac{\varepsilon}{2}\)<a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">-Umgebung</a> von \(m\)
 </p>
 
 <p>

@@ -9,35 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Translations-Invarianz (Anordnung)</h1>
-<div id="outline-container-org2c93d02" class="outline-2">
-<h2 id="org2c93d02"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga17d969" class="outline-2">
+<h2 id="orga17d969"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120123432-translations_invarianz_anordnung_027b676d098b31e955ce96e9e3c62b277457169f.svg" alt="20220120123432-translations_invarianz_anordnung_027b676d098b31e955ce96e9e3c62b277457169f.svg" class="org-svg" />
-</span>
+\begin{align*}
+x < y \land y < z \Rightarrow x < z
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org73788f3" class="outline-2">
-<h2 id="org73788f3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb6133a4" class="outline-2">
+<h2 id="orgb6133a4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>aus:</li>
 <li><a href="20220106143303-definition_relationen.html#ID-6c219ebe-1001-40be-926a-8a6f14ef3ad7">Definition: Relationen</a></li>
 <li><a href="20220106143046-abgeschlossenheit_gegenuber_addition.html#ID-a3d587a9-60dc-43de-94ed-bc59c78ed2ca">Abgeschlossenheit gegenüber Addition (Axiom)</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220120123432-translations_invarianz_anordnung_6ae963183308a6bf5ce73716235d90eea044a0b4.svg" alt="20220120123432-translations_invarianz_anordnung_6ae963183308a6bf5ce73716235d90eea044a0b4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x - y < 0 \Rightarrow y - x > 0 \\
+y - z < 0 \Rightarrow z - y > 0 \\
+(y - x) + (z - y) > 0 \\
+z - x > 0 \Rightarrow z > x
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

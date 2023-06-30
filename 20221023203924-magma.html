@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Magma</h1>
-<div id="outline-container-org5ab90b2" class="outline-2">
-<h2 id="org5ab90b2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdd61afd" class="outline-2">
+<h2 id="orgdd61afd"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221023203924-magma_ea4c7d3167e88240f3317cd27a8cbbc463383636.svg" alt="20221023203924-magma_ea4c7d3167e88240f3317cd27a8cbbc463383636.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> <img src="file:///home/anton/html/ltximg/20221023203924-magma_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" alt="20221023203924-magma_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" class="org-svg" /> und bezüglich <img src="file:///home/anton/html/ltximg/20221023203924-magma_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" alt="20221023203924-magma_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" class="org-svg" /> <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">abgeschlossen</a>, d.h. für <img src="file:///home/anton/html/ltximg/20221023203924-magma_34643153fc9ed9d87ebb42162ea16cd778458165.svg" alt="20221023203924-magma_34643153fc9ed9d87ebb42162ea16cd778458165.svg" class="org-svg" />
+Sei \((M, \circ)\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> mit der <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> \(\circ\) und bezüglich \(\circ\) <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">abgeschlossen</a>, d.h. für \(m_1, m_2 \in M\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221023203924-magma_b7857c80b59ec455bec37841d9807fbd4b7d2d68.svg" alt="20221023203924-magma_b7857c80b59ec455bec37841d9807fbd4b7d2d68.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+m_1 \circ m_2 \in M
+\end{align*}
 <p>
-Dann ist <img src="file:///home/anton/html/ltximg/20221023203924-magma_ea4c7d3167e88240f3317cd27a8cbbc463383636.svg" alt="20221023203924-magma_ea4c7d3167e88240f3317cd27a8cbbc463383636.svg" class="org-svg" /> ein Magma
+Dann ist \((M, \circ)\) ein Magma
 </p>
 </div>
 </div>

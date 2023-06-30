@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">geometrische Interpretation des Gradienten für eine Abbildung auf die reellen Zahlen</h1>
-<div id="outline-container-org4cf1150" class="outline-2">
-<h2 id="org4cf1150"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0a1e47f" class="outline-2">
+<h2 id="org0a1e47f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-geometrische_interpretation_des_gradienten_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230613-geometrische_interpretation_des_gradienten_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230613-geometrische_interpretation_des_gradienten_267db5a555ca357feeb72e6b6b52442fda339621.svg" alt="20230613-geometrische_interpretation_des_gradienten_267db5a555ca357feeb72e6b6b52442fda339621.svg" class="org-svg" /> eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> in <img src="file:///home/anton/html/ltximg/20230613-geometrische_interpretation_des_gradienten_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230613-geometrische_interpretation_des_gradienten_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" />.
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}\) eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> in \(x \in U\).
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-geometrische_interpretation_des_gradienten_ce2a33e663fb92fe2dd2efdeda959a0ec0219cdb.svg" alt="20230613-geometrische_interpretation_des_gradienten_ce2a33e663fb92fe2dd2efdeda959a0ec0219cdb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{d} f_x = \langle ((\mathrm{grad} f)(x), \cdot\rangle
+\end{align*}
 <p>
 für <a href="20230228170206-euklidisches_skalarprodukt.html#ID-aa212354-4b27-4632-a1f6-ee0ccc12729c">Standardskalarprodukt</a> 
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-geometrische_interpretation_des_gradienten_ca1dca59d3d12a29fd271dbe8bfca9f0b07c2fe4.svg" alt="20230613-geometrische_interpretation_des_gradienten_ca1dca59d3d12a29fd271dbe8bfca9f0b07c2fe4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\partial_v f)(x) = \mathrm{d} f_x(v) = \langle (\nabla f)(x), v\rangle
+\end{align*}
 
 <p>
 Richtung des stärksten Anstiegs
 </p>
 </div>
 </div>
-<div id="outline-container-org85847e2" class="outline-2">
-<h2 id="org85847e2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org45f363a" class="outline-2">
+<h2 id="org45f363a"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

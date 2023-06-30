@@ -3,56 +3,69 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Abstand: Ebene - Punkt (über Trigonometrie)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstand: Ebene - Punkt (über Trigonometrie)</h1>
-<div id="outline-container-org217a8b2" class="outline-2">
-<h2 id="org217a8b2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8a82eb3" class="outline-2">
+<h2 id="org8a82eb3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220314123306-abstand_ebene_punkt_uber_trigonometrie_0b3a79f1d0c274d109cb539b321e060912d566a4.svg" alt="20220314123306-abstand_ebene_punkt_uber_trigonometrie_0b3a79f1d0c274d109cb539b321e060912d566a4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+d(P,E) = \left\vert (\vec{P} - \vec{A}) \circ \frac{\vec{n}}{\vert n\vert} \right\vert \\
+$A \in E$
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org27dbb22" class="outline-2">
-<h2 id="org27dbb22"><span class="section-number-2">2.</span> Zusammenhang mit den Gleichungen von E</h2>
+<div id="outline-container-org79253af" class="outline-2">
+<h2 id="org79253af"><span class="section-number-2">2.</span> Zusammenhang mit den Gleichungen von E</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220314123306-abstand_ebene_punkt_uber_trigonometrie_f011dc20ea87cf1ba9cee22e161d20db472d808f.svg" alt="20220314123306-abstand_ebene_punkt_uber_trigonometrie_f011dc20ea87cf1ba9cee22e161d20db472d808f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+E: (\vec{X} - \vec{A}) \circ \vec{n} =&  0 \\
+\vec{n_2} \coloneqq& \frac{\vec{n}}{\vert \vec{n} \vert} \\
+\end{align*}
 
 <p>
-Setzt man <img src="ltximg/20220314123306-abstand_ebene_punkt_uber_trigonometrie_0bcaace50eee08bac4ed08a63d44bc77407c199b.svg" alt="20220314123306-abstand_ebene_punkt_uber_trigonometrie_0bcaace50eee08bac4ed08a63d44bc77407c199b.svg" class="org-svg" /> in die Hesseschenormalform ein, erhält man d oder -d
+Setzt man \(P \not\in E\) in die Hesseschenormalform ein, erhält man d oder -d
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220314123306-abstand_ebene_punkt_uber_trigonometrie_64c7019a899a4cfc0daf9dc6652a589162bf17a5.svg" alt="20220314123306-abstand_ebene_punkt_uber_trigonometrie_64c7019a899a4cfc0daf9dc6652a589162bf17a5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+E: ax_1 + bx_2 + cx_3 + k =& 0 \\
+\vec{n} \Rightarrow \begin{pmatrix} a \\ b \\ c \end{pmatrix}  \\
+E : (ax_10+ bx_2 + cx_3 + k) \cdot \frac{1}{\vert \vec{n} \vert} = 0
+\end{align*}
 </div>
 </div>
 </div>

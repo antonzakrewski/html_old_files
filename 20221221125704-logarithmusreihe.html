@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Logarithmusreihe</h1>
-<div id="outline-container-org6f58a17" class="outline-2">
-<h2 id="org6f58a17"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgec1a383" class="outline-2">
+<h2 id="orgec1a383"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221221125704-logarithmusreihe_b708c17677fd2b993ffcb6e1cc0118d761958ce0.svg" alt="20221221125704-logarithmusreihe_b708c17677fd2b993ffcb6e1cc0118d761958ce0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} z^n
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-orge9c694d" class="outline-2">
-<h2 id="orge9c694d"><span class="section-number-2">2.</span> Konvergenz</h2>
+<div id="outline-container-org34695d7" class="outline-2">
+<h2 id="org34695d7"><span class="section-number-2">2.</span> Konvergenz</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Die Logarithmusreihe <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> nach dem <a href="20220718122231-leibniz_sches_konvergenz_kriterium.html#ID-d4cb56f4-7ef1-4dc3-bceb-05b83f08bb4c">Leibniz'schem Konvergenz-Kriterium</a> für <img src="file:///home/anton/html/ltximg/20221221125704-logarithmusreihe_9e63a35dd1b93f686cf13d102460f2eae8ba8551.svg" alt="20221221125704-logarithmusreihe_9e63a35dd1b93f686cf13d102460f2eae8ba8551.svg" class="org-svg" /> und damit ist der <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> <img src="file:///home/anton/html/ltximg/20221221125704-logarithmusreihe_4ce71148732ed7d7029180c4f8461a4e43921c37.svg" alt="20221221125704-logarithmusreihe_4ce71148732ed7d7029180c4f8461a4e43921c37.svg" class="org-svg" /> (für $ &vert; z &vert; &gt; 1$ greift das <a href="20220527114556-nullfolgenkriterium.html#ID-c025c821-0f3d-48e4-a186-f7cc4b9b169d">Nullfolgenkriterium</a>) 
+Die Logarithmusreihe <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> nach dem <a href="20220718122231-leibniz_sches_konvergenz_kriterium.html#ID-d4cb56f4-7ef1-4dc3-bceb-05b83f08bb4c">Leibniz'schem Konvergenz-Kriterium</a> für \(z = 1\) und damit ist der <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> \(R = 1\) (für $ &vert; z &vert; &gt; 1$ greift das <a href="20220527114556-nullfolgenkriterium.html#ID-c025c821-0f3d-48e4-a186-f7cc4b9b169d">Nullfolgenkriterium</a>) 
 </p>
 </div>
 </div>

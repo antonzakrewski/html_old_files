@@ -9,42 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplement einer abgeschlossenen und offenen Menge</h1>
-<div id="outline-container-org8f7787c" class="outline-2">
-<h2 id="org8f7787c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb7f7f64" class="outline-2">
+<h2 id="orgb7f7f64"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_27426a3d421c9bea5062b2282af13015f26104b0.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_27426a3d421c9bea5062b2282af13015f26104b0.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(O \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(A \subseteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
 Dann gilt:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_246581feeeabd0438db50f7951294c80a2d7f11d.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_246581feeeabd0438db50f7951294c80a2d7f11d.svg" class="org-svg" /> ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_431a62e60d3a494a8a78d45afa056503dfb41bf1.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_431a62e60d3a494a8a78d45afa056503dfb41bf1.svg" class="org-svg" /> ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a></li>
+<li>\(O \setminus A\) ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
+<li>\(A \setminus O\) ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org03fe2bb" class="outline-2">
-<h2 id="org03fe2bb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5353f2a" class="outline-2">
+<h2 id="org5353f2a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgee0246f" class="outline-3">
-<h3 id="orgee0246f"><span class="section-number-3">2.1.</span> 1)</h3>
+<div id="outline-container-org2708031" class="outline-3">
+<h3 id="org2708031"><span class="section-number-3">2.1.</span> 1)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und wegen der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten</a> ist <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_9b6d1258486f60c9cd940110ea75f6fc9e3aed66.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_9b6d1258486f60c9cd940110ea75f6fc9e3aed66.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
-Dabei gilt <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_955125916a0b28764e643803a227d230f9b4b683.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_955125916a0b28764e643803a227d230f9b4b683.svg" class="org-svg" /> (vgl. <a href="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement.html#ID-66c2f37b-a822-4d2f-beaa-dcd0056597be">relative Komplement und Schnitt mit dem absoluten Komplement</a>)
+Nach Annahme ist \(X \setminus A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und wegen der <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten</a> ist \(O \cap (X \setminus A)\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Dabei gilt \(O \setminus A = O \cap (X \setminus A)\) (vgl. <a href="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement.html#ID-66c2f37b-a822-4d2f-beaa-dcd0056597be">relative Komplement und Schnitt mit dem absoluten Komplement</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-org9e90b0e" class="outline-3">
-<h3 id="org9e90b0e"><span class="section-number-3">2.2.</span> 2)</h3>
+<div id="outline-container-orgaaa03c3" class="outline-3">
+<h3 id="orgaaa03c3"><span class="section-number-3">2.2.</span> 2)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_31ef0c8ebc6cecddf397c20048e8c8dfc73c871f.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_31ef0c8ebc6cecddf397c20048e8c8dfc73c871f.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und wegen der <a href="20230114141836-abgeschlossenheit_des_durchschnitts_von_abgeschlossenen_menge.html#ID-5c320a09-b613-4996-9814-8c4787d79af1">Abgeschlossenheit des Durchschnitts von abgeschlossenen Menge</a> ist <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_316c8de5ceaf874157c6801c75fa78de6d3c8f45.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_316c8de5ceaf874157c6801c75fa78de6d3c8f45.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
-Analog gilt wieder <img src="file:///home/anton/html/ltximg/20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_41a74b23bff7c26de5bd8490a50fca73139e95a3.svg" alt="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge_41a74b23bff7c26de5bd8490a50fca73139e95a3.svg" class="org-svg" /> (vgl. <a href="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement.html#ID-66c2f37b-a822-4d2f-beaa-dcd0056597be">relative Komplement und Schnitt mit dem absoluten Komplement</a>)
+Nach Annahme ist \(X \setminus O\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und wegen der <a href="20230114141836-abgeschlossenheit_des_durchschnitts_von_abgeschlossenen_menge.html#ID-5c320a09-b613-4996-9814-8c4787d79af1">Abgeschlossenheit des Durchschnitts von abgeschlossenen Menge</a> ist \(A \cap (X \setminus O)\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
+Analog gilt wieder \(A \setminus O = A \cap (X \setminus O)\) (vgl. <a href="20230330213638-relative_komplement_und_schnitt_mit_dem_absoluten_komplement.html#ID-66c2f37b-a822-4d2f-beaa-dcd0056597be">relative Komplement und Schnitt mit dem absoluten Komplement</a>)
 </p>
 </div>
 </div>

@@ -9,66 +9,83 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von Matrizen als Äquivalenzrelation</h1>
-<div id="outline-container-org367e71b" class="outline-2">
-<h2 id="org367e71b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd4ba68e" class="outline-2">
+<h2 id="orgd4ba68e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_616049ac1ffc7081ff82a84ab80c94252ff4cfac.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_616049ac1ffc7081ff82a84ab80c94252ff4cfac.svg" class="org-svg" /> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a>.
+Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> \(R\) und \(A,B \in R^{n \times m}\) <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a>.
 Dann ist die <a href="20230608-aquivalente_matrizen.html#ID-f05c96d0-f2e4-46e4-a543-4407cc8135c8">Äquivalenz von Matrizen</a> eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org6eb684f" class="outline-2">
-<h2 id="org6eb684f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6400033" class="outline-2">
+<h2 id="org6400033"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org35ef484" class="outline-3">
-<h3 id="org35ef484"><span class="section-number-3">2.1.</span> symmetrie</h3>
+<div id="outline-container-orgd40301f" class="outline-3">
+<h3 id="orgd40301f"><span class="section-number-3">2.1.</span> symmetrie</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_8a466cfcd06bcf4e3abdf046651a34f52fbc080e.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_8a466cfcd06bcf4e3abdf046651a34f52fbc080e.svg" class="org-svg" />, so folgt durch Multiplikation mit <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_3493cca6264cbbe4132364e9bfb9b8d6e4bb439b.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_3493cca6264cbbe4132364e9bfb9b8d6e4bb439b.svg" class="org-svg" />
+Sei \(B = P \cdot A \cdot Q\), so folgt durch Multiplikation mit \(P^{-1},Q^{-1}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_7d82df6912fefba786608cfd7f5bcaefb2c5c772.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_7d82df6912fefba786608cfd7f5bcaefb2c5c772.svg" class="org-svg" />
-</span>
+\begin{align*}
+P^{-1} B Q^{-1} =& A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb7a48ca" class="outline-3">
-<h3 id="orgb7a48ca"><span class="section-number-3">2.2.</span> reflexivität</h3>
+<div id="outline-container-orgbe4eec0" class="outline-3">
+<h3 id="orgbe4eec0"><span class="section-number-3">2.2.</span> reflexivität</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_2542fbd9f52f42111d73b8315f582e88e8bf2f62.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_2542fbd9f52f42111d73b8315f582e88e8bf2f62.svg" class="org-svg" />
+Es gilt \(A = E \cdot A \cdot E\)
 </p>
 </div>
 </div>
-<div id="outline-container-org201c487" class="outline-3">
-<h3 id="org201c487"><span class="section-number-3">2.3.</span> transitivität</h3>
+<div id="outline-container-orgf86636d" class="outline-3">
+<h3 id="orgf86636d"><span class="section-number-3">2.3.</span> transitivität</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" class="org-svg" /> gegeben mit 
+Seien \(A,B,C\) gegeben mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_3c94beb4d44bc405da1d61cff2a7eb0610a31999.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_3c94beb4d44bc405da1d61cff2a7eb0610a31999.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A =& P \cdot B \cdot Q \\
+B =& P' \cdot C \cdot Q'
+\end{align*}
 <p>
 so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_1e99aa0c8d42abba686a82ee1104e9adb93492ee.svg" alt="20230608-aquivalenz_von_matrizen_als_aquivalenzrelation_1e99aa0c8d42abba686a82ee1104e9adb93492ee.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A =& P \cdot P' \cdot C \cdot Q' \cdot Q
+\end{align*}
 </div>
 </div>
 </div>

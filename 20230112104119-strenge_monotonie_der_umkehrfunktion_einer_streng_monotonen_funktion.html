@@ -9,23 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">strenge Monotonie der Umkehrfunktion einer streng Monotonen Funktion</h1>
-<div id="outline-container-org4369905" class="outline-2">
-<h2 id="org4369905"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga0fd329" class="outline-2">
+<h2 id="orga0fd329"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine <a href="20230112105224-strikt_isotone_abbildung.html#ID-e3c2cf03-af7c-4ae7-b2ee-7f1fea4a0bd3">strikt isotone</a> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a> für zwei <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">Totalordnungen</a>, dann gilt, dass die <a href="20220927213528-umkehrabbildung.html#ID-6852cd17-4614-4655-ad66-85727c75b0f5">Umkehrabbildung</a> <img src="file:///home/anton/html/ltximg/20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" alt="20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" class="org-svg" /> <a href="20230112105219-strikt_antitone_abbildung.html#ID-ac5c3225-e582-407b-8c8d-e3edca050825">strikt antitone</a> ist.
+Sei \(f: A \rightarrow B\) eine <a href="20230112105224-strikt_isotone_abbildung.html#ID-e3c2cf03-af7c-4ae7-b2ee-7f1fea4a0bd3">strikt isotone</a> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a> für zwei <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">Totalordnungen</a>, dann gilt, dass die <a href="20220927213528-umkehrabbildung.html#ID-6852cd17-4614-4655-ad66-85727c75b0f5">Umkehrabbildung</a> \(f^{-1}: B \rightarrow A\) <a href="20230112105219-strikt_antitone_abbildung.html#ID-ac5c3225-e582-407b-8c8d-e3edca050825">strikt antitone</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org81ab2b9" class="outline-2">
-<h2 id="org81ab2b9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org829f837" class="outline-2">
+<h2 id="org829f837"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_a109ecabc75d01d214d808542faf5b2c96ab88db.svg" alt="20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_a109ecabc75d01d214d808542faf5b2c96ab88db.svg" class="org-svg" />, dann folgt nach isotonie <img src="file:///home/anton/html/ltximg/20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_ebebdefa63ebe2024a0e1e3dd977a3751cd1ab1b.svg" alt="20230112104119-strenge_monotonie_der_umkehrfunktion_einer_streng_monotonen_funktion_ebebdefa63ebe2024a0e1e3dd977a3751cd1ab1b.svg" class="org-svg" />, weil sonst ein Widerspruch entstünde
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f(a) < f(a')\), dann folgt nach isotonie \(a < a'\), weil sonst ein Widerspruch entstünde
 </p>
 </div>
 </div>

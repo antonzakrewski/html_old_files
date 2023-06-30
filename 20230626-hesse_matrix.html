@@ -9,23 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hesse-Matrix</h1>
-<div id="outline-container-org4f54168" class="outline-2">
-<h2 id="org4f54168"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org115b136" class="outline-2">
+<h2 id="org115b136"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230626-hesse_matrix_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" alt="20230626-hesse_matrix_18be77a37cb9724ebe6b2a32535e1663ff087d96.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230626-hesse_matrix_267db5a555ca357feeb72e6b6b52442fda339621.svg" alt="20230626-hesse_matrix_267db5a555ca357feeb72e6b6b52442fda339621.svg" class="org-svg" /> eine <a href="20230615-mehrfache_partielle_differenzierbarkeit.html#ID-7411f706-b8bb-4bea-8b82-856a5ec0a69a">zweifach partiell Differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}\) eine <a href="20230615-mehrfache_partielle_differenzierbarkeit.html#ID-7411f706-b8bb-4bea-8b82-856a5ec0a69a">zweifach partiell Differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
 Dann ist die Hesse Matrix definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230626-hesse_matrix_4fe7beaf5235419b0a109327e201ef31581da887.svg" alt="20230626-hesse_matrix_4fe7beaf5235419b0a109327e201ef31581da887.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathbf{H_f} =& \begin{pmatrix}
+ \frac{\partial^2}{\partial x_1 \partial x_1} & \frac{\partial^2}{\partial x_1 \partial x_2} & \ddots & \frac{\partial^2}{\partial x_1 \partial x_n} \\ 
+ \frac{\partial^2}{\partial x_2 \partial x_1} & \frac{\partial^2}{\partial x_2 \partial x_2} & \ddots & \frac{\partial^2}{\partial x_2 \partial x_n} \\ 
+ \vdots & \vdots & \ddots & \vdots \\
+ \frac{\partial^2}{\partial x_n \partial x_1} & \frac{\partial^2}{\partial x_n \partial x_2} & \ddots & \frac{\partial^2}{\partial x_n \partial x_n} \\ 
+ \end{pmatrix} \\
+=& \left(\frac{\partial^2}{\partial x_i \partial x_j}\right)_{i,j}
+\end{align*}
 </div>
 </div>
 </div>

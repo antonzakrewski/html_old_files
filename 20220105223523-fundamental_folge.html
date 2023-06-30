@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Fundamental-Folge</h1>
-<div id="outline-container-org848e317" class="outline-2">
-<h2 id="org848e317"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5e86b37" class="outline-2">
+<h2 id="org5e86b37"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220105223523-fundamental_folge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20220105223523-fundamental_folge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>.
-Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20220105223523-fundamental_folge_30e82e597c45ca3cd8f056e538937a654815418b.svg" alt="20220105223523-fundamental_folge_30e82e597c45ca3cd8f056e538937a654815418b.svg" class="org-svg" /> heißt Cauchy-Folge/Fundamental-Folge wenn gilt:
-Für jedes <img src="file:///home/anton/html/ltximg/20220105223523-fundamental_folge_7a3f9f420d66a90c580294db3df7b30cd05f884d.svg" alt="20220105223523-fundamental_folge_7a3f9f420d66a90c580294db3df7b30cd05f884d.svg" class="org-svg" /> existiert ein  <img src="file:///home/anton/html/ltximg/20220105223523-fundamental_folge_d3873fab3e6c8b9eea282df610073a43e36b0042.svg" alt="20220105223523-fundamental_folge_d3873fab3e6c8b9eea282df610073a43e36b0042.svg" class="org-svg" /> so dass gilt:
+Sei \((M,d)\) ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>.
+Eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((a_n)_{n\in\mathbb{N}}\) heißt Cauchy-Folge/Fundamental-Folge wenn gilt:
+Für jedes \(\epsilon > 0\) existiert ein  \(N\in\mathbb{N}\) so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105223523-fundamental_folge_5b8885975ee9c4436ee97a0f4ea1891fdf057823.svg" alt="20220105223523-fundamental_folge_5b8885975ee9c4436ee97a0f4ea1891fdf057823.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(a_n, a_m) < \epsilon \quad \text{für alle } n,m \leq N
+\end{align*}
 </div>
 </div>
 </div>

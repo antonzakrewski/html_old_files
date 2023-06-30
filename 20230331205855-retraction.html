@@ -9,16 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Retraction</h1>
-<div id="outline-container-org4ca0fde" class="outline-2">
-<h2 id="org4ca0fde"><span class="section-number-2">1.</span> Definitino</h2>
+<div id="outline-container-org07be907" class="outline-2">
+<h2 id="org07be907"><span class="section-number-2">1.</span> Definitino</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230331205855-retraction_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230331205855-retraction_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, <img src="file:///home/anton/html/ltximg/20230331205855-retraction_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" alt="20230331205855-retraction_bb1993ec1c956aba848aafc75b42c5ce0bfa4167.svg" class="org-svg" /> a <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subset</a> and <img src="file:///home/anton/html/ltximg/20230331205855-retraction_549ef832452186a7de6b651c8890117b703a24a4.svg" alt="20230331205855-retraction_549ef832452186a7de6b651c8890117b703a24a4.svg" class="org-svg" /> the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
-A retraction is a <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> <img src="file:///home/anton/html/ltximg/20230331205855-retraction_1f199fc3e48d607e537680072ebc9fae857ad05c.svg" alt="20230331205855-retraction_1f199fc3e48d607e537680072ebc9fae857ad05c.svg" class="org-svg" />, such that <img src="file:///home/anton/html/ltximg/20230331205855-retraction_d0942a0760c4b3bf3a698db62e31fbcfb786d4fd.svg" alt="20230331205855-retraction_d0942a0760c4b3bf3a698db62e31fbcfb786d4fd.svg" class="org-svg" /> 
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, \(Y \subseteq X\) a <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subset</a> and \((Y, \mathcal{T}_Y)\) the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
+A retraction is a <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> \(r: X \rightarrow Y\), such that \(r_{\vert Y} = \mathrm{id}_{Y}\) 
 </p>
 </div>
 </div>

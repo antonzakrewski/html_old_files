@@ -3,62 +3,82 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beweis: Grenzwert $\frac{\sin(\theta)}{\theta}$</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Beweis: Grenzwert <img src="ltximg/20220624191450-beweis_grenzwert_frac_sin_theta_theta_4f4e56de1c9606dfd28c673666c4782170ad41c4.svg" alt="20220624191450-beweis_grenzwert_frac_sin_theta_theta_4f4e56de1c9606dfd28c673666c4782170ad41c4.svg" class="org-svg" /></h1>
-<div id="outline-container-org7129547" class="outline-2">
-<h2 id="org7129547"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Beweis: Grenzwert \(\frac{\sin(\theta)}{\theta}\)</h1>
+<div id="outline-container-org2d3a486" class="outline-2">
+<h2 id="org2d3a486"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220624191450-beweis_grenzwert_frac_sin_theta_theta_6c150459706d17cb762ff62865f637a7855b2b7e.svg" alt="20220624191450-beweis_grenzwert_frac_sin_theta_theta_6c150459706d17cb762ff62865f637a7855b2b7e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\lim_{\theta \to 0^+}\left(\frac{\sin(\theta)}{\theta}\right) =& 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb25fcad" class="outline-2">
-<h2 id="orgb25fcad"><span class="section-number-2">2.</span> Lemma</h2>
+<div id="outline-container-org00e0124" class="outline-2">
+<h2 id="org00e0124"><span class="section-number-2">2.</span> Lemma</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220624214831-einschnurungssatz.html#ID-8ad45894-1f59-432f-afed-0fdd9e0bf190">Einschnürungssatz</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb2f74d7" class="outline-2">
-<h2 id="orgb2f74d7"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-org03cf07c" class="outline-2">
+<h2 id="org03cf07c"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Skizze fehlt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220624191450-beweis_grenzwert_frac_sin_theta_theta_09dce01e11da76d6e4d2f75efb658a470e0d4236.svg" alt="20220624191450-beweis_grenzwert_frac_sin_theta_theta_09dce01e11da76d6e4d2f75efb658a470e0d4236.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220624191450-beweis_grenzwert_frac_sin_theta_theta_6440205123e42d022e84b37003c99be7ee444d09.svg" alt="20220624191450-beweis_grenzwert_frac_sin_theta_theta_6440205123e42d022e84b37003c99be7ee444d09.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+A_1 =& \frac{1}{2} \cdot \sin(\theta)\cos(\theta) \\
+A_2 =& r^2 \cdot \pi \cdot \frac{\theta}{2\pi} \\
+=& \frac{1}{2}\theta \\
+A_3 =& \frac{1}{2} \cdot 1 \cdot \tan(\theta) \\
+=& \frac{1}{2}\tan(\theta)
+A_1 \leq A_2 \leq A_3 \\
+\frac{1}{2} \sin(\theta)\cos(\theta) \leq \frac{1}{2} \theta \leq \frac{1}{2} \tan(\theta) \vert && \cdot 2\\
+\sin(\theta)\cos(\theta) \leq \theta \leq \tan(\theta) && (…)^{-1}\\
+\frac{1}{\sin(\theta)\cos(\theta)} \leq \frac{1}{\theta} \leq \frac{\cos(\theta)}{\sin(\theta)} \vert && \cdot \sin(\theta)\\
+\frac{1}{\cos(\theta)} \leq \frac{\sin(\theta)}{\theta} \leq \cos(theta)
+\end{align*}
+\begin{align*}
+\lim_{\theta \to 0}\left(\frac{1}{\cos(\theta)}\right) \leq \lim_{\theta \to 0}\left(\frac{\sin(\theta)}{\theta}\right) \leq \lim_{\theta \to 0}\left(\cos(theta)\right) \\
+1 \leq \lim_{\theta \to 0}\left(\frac{\sin(\theta)}{\theta}\right) \leq 1 \\
+\Rightarrow \lim_{\theta \to 0}\left(\frac{\sin(\theta)}{\theta}\right) = 1
+\end{align*}
 </div>
 </div>
 </div>

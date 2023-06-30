@@ -3,53 +3,80 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stetigkeit in einem Punkt und Filterstetigkeit in einem Punkt</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit in einem Punkt und Filterstetigkeit in einem Punkt</h1>
-<div id="outline-container-org047f0f6" class="outline-2">
-<h2 id="org047f0f6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4a64027" class="outline-2">
+<h2 id="org4a64027"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> ein Punkt sowie <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(x \in X\) ein Punkt sowie \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230227185804-stetigkeit_in_einem_punkt_topologie.html#ID-415665d1-cda9-465e-87f0-9def9ccacd53">stetig im Punkt</a> <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /></li>
-<li><img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230530205458-fliterstetigkeit_in_einem_punkt.html#ID-7b03593f-6f89-4540-87ab-ca2fef5682dd">filterstetig im Punkt</a> <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /></li>
+<li>\(f\) ist <a href="20230227185804-stetigkeit_in_einem_punkt_topologie.html#ID-415665d1-cda9-465e-87f0-9def9ccacd53">stetig im Punkt</a> \(x\)</li>
+<li>\(f\) ist <a href="20230530205458-fliterstetigkeit_in_einem_punkt.html#ID-7b03593f-6f89-4540-87ab-ca2fef5682dd">filterstetig im Punkt</a> \(x\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcc05004" class="outline-2">
-<h2 id="orgcc05004"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org02b37f1" class="outline-2">
+<h2 id="org02b37f1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org6e33191" class="outline-3">
-<h3 id="org6e33191"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org473ed86" class="outline-3">
+<h3 id="org473ed86"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_6414b4c140af1e69d0f233d449bee340259c42f7.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_6414b4c140af1e69d0f233d449bee340259c42f7.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" />, so ist <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_d6d37467fbefb4e0d1a7b8c5eb41f1d79f6d74f4.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_d6d37467fbefb4e0d1a7b8c5eb41f1d79f6d74f4.svg" class="org-svg" /> nach der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
-Nach Annahme der <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">Konvergenz eines Filters</a> gilt <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_c435b9c64df5b4e76eb6ddc2b7c89b6827fffe9f.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_c435b9c64df5b4e76eb6ddc2b7c89b6827fffe9f.svg" class="org-svg" /> und somit auch <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_5ee1fa4b6380ca7d1f2003407e0de651ce2c91e1.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_5ee1fa4b6380ca7d1f2003407e0de651ce2c91e1.svg" class="org-svg" />.
-Daraus folgt <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_e851d8d0d90d7fbbadfa27a7ed4239498b7be535.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_e851d8d0d90d7fbbadfa27a7ed4239498b7be535.svg" class="org-svg" /> bzw. da <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_6414b4c140af1e69d0f233d449bee340259c42f7.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_6414b4c140af1e69d0f233d449bee340259c42f7.svg" class="org-svg" /> beliebig war auch <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" class="org-svg" />
+Sei \(U_f\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(x)\), so ist \(U \coloneqq f^{-1}[U_f]\) nach der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Nach Annahme der <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">Konvergenz eines Filters</a> gilt \(\mathcal{U}(x) \subseteq \mathcal{F}\) und somit auch \(U \in \mathcal{F}\).
+Daraus folgt \(U_f = f[U] \in \mathcal{F}\) bzw. da \(U_f\) beliebig war auch \(f[\mathcal{F}] \rightarrow f(x)\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb9cfbed" class="outline-3">
-<h3 id="orgb9cfbed"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org62846f0" class="outline-3">
+<h3 id="org62846f0"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" class="org-svg" /> für einen beliebigen <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" class="org-svg" />.
-Sei <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_f48afc7310ba9e5ae5ad4b842f4d28af75cdf571.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_f48afc7310ba9e5ae5ad4b842f4d28af75cdf571.svg" class="org-svg" /> (siehe: <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>).
-Es gilt <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" class="org-svg" /> und nach Annahme <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_19158e44f9e4adc41423aff8d48d8489a5fd52b1.svg" class="org-svg" />.
-Sei <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_0848027a64fe798f3161ee0ffce9fe87fa030486.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_0848027a64fe798f3161ee0ffce9fe87fa030486.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, so gilt nach Annahme auch <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a6f43e12c5233ccec43075403657bc50e0d4f36a.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a6f43e12c5233ccec43075403657bc50e0d4f36a.svg" class="org-svg" />.
-Damit existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" class="org-svg" /> von <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> mit <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_b467da29896b4642b24523fd50c38d18e3b3a032.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_b467da29896b4642b24523fd50c38d18e3b3a032.svg" class="org-svg" />.
-Daraus folgt <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_f9b2fb784663802e2be5b53a7dd64851122a7d43.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_f9b2fb784663802e2be5b53a7dd64851122a7d43.svg" class="org-svg" />, d.h. <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_8bb2410ab22ce4a45196a67d449741a1cbdff0fc.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_8bb2410ab22ce4a45196a67d449741a1cbdff0fc.svg" class="org-svg" /> ist eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> und nach der Charakterisierung über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> ist <img src="ltximg/20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230530205518-stetigkeit_in_einem_punkt_und_filterstetigkeit_in_einem_punkt_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
+Sei \(f[\mathcal{F}] \rightarrow f(x)\) für einen beliebigen <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> \(\mathcal{F} \rightarrow x\).
+Sei \(\mathcal{F} \coloneqq \{F \in \mathcal{U}(x)\}\) (siehe: <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>).
+Es gilt \(\mathcal{F} \rightarrow x\) und nach Annahme \(f[\mathcal{F}] \rightarrow f(x)\).
+Sei \(U_f \subseteq X'\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, so gilt nach Annahme auch \(U_f \in f[\mathcal{F}]\).
+Damit existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U'\) von \(x\) mit \(f[U'] = U_f\).
+Daraus folgt \(U' \subseteq f^{-1}[U_f]\), d.h. \(f^{-1}[U_f]\) ist eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> und nach der Charakterisierung über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> ist \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
 </p>
 </div>
 </div>

@@ -3,54 +3,75 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>größter gemeinsamer Teiler von einfachen Produkten irreduzibler Elemente</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">größter gemeinsamer Teiler von einfachen Produkten irreduzibler Elemente</h1>
-<div id="outline-container-orgbf4eb33" class="outline-2">
-<h2 id="orgbf4eb33"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2cb7458" class="outline-2">
+<h2 id="org2cb7458"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_f1a2839c8ebd13b167756ab1e0d17296c8fb884c.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_f1a2839c8ebd13b167756ab1e0d17296c8fb884c.svg" class="org-svg" /> für <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_b6dc822c02f6f672a539d9c18fa2ef48c5d27e6f.svg" class="org-svg" /> paarweise verschiedene, nicht <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziierte</a>, <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibles Element</a> sowie <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_8b4648a380e68a8e1dd881dc0aa79dbaa8095a96.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_8b4648a380e68a8e1dd881dc0aa79dbaa8095a96.svg" class="org-svg" />.
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und \(p_i \in R\) für \(i \in \{1,..,n\}\) paarweise verschiedene, nicht <a href="20230419125055-assoziierte_elemente.html#ID-1ce4d3b5-90e8-4f84-9764-500c2232b4e6">assoziierte</a>, <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibles Element</a> sowie \(h_i \coloneqq \prod_{j\neq i} p_i\).
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0a4b7d8c3a06b296b1c1ed77ad21cbe9ee9e39ac.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0a4b7d8c3a06b296b1c1ed77ad21cbe9ee9e39ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+g \coloneqq \mathrm{gcd}(h_1,...,h_n) = 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd4d2055" class="outline-2">
-<h2 id="orgd4d2055"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org746407e" class="outline-2">
+<h2 id="org746407e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org05401d4" class="outline-3">
-<h3 id="org05401d4"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
+<div id="outline-container-org60091f7" class="outline-3">
+<h3 id="org60091f7"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 trivial
 </p>
 </div>
 </div>
-<div id="outline-container-orgd77bb7a" class="outline-3">
-<h3 id="orgd77bb7a"><span class="section-number-3">2.2.</span> größter Teiler</h3>
+<div id="outline-container-orgc99910a" class="outline-3">
+<h3 id="orgc99910a"><span class="section-number-3">2.2.</span> größter Teiler</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0fde5773c100983f27ad3daa9b0ec8aeed0993a3.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0fde5773c100983f27ad3daa9b0ec8aeed0993a3.svg" class="org-svg" />, dann existiert für <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" class="org-svg" /> eine <a href="20221229200313-eindeutige_primzerlegung.html#ID-43ca21ca-b4d6-4937-820b-a99daa5e510a">Eindeutige Primzerlegung</a>.
-Falls kein <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">Primelement</a> <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_5c3c85855b69793dfc9d248a6cdb731898f8a2c8.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_5c3c85855b69793dfc9d248a6cdb731898f8a2c8.svg" class="org-svg" /> existiert, so ist <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_3bdb0418254c70de12beed336919d016be89de3c.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_3bdb0418254c70de12beed336919d016be89de3c.svg" class="org-svg" /> und es folgt <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0ef740ea6c67d2a4be530cf542f1e7cb63a24160.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_0ef740ea6c67d2a4be530cf542f1e7cb63a24160.svg" class="org-svg" />.
-Ansonsten folgt <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_2ca39378d44bf1358fbc28a0732a9c886fa1ded5.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_2ca39378d44bf1358fbc28a0732a9c886fa1ded5.svg" class="org-svg" /> und wegen <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7c7b135e9364b242dc52f9f3e35954505968c8a2.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7c7b135e9364b242dc52f9f3e35954505968c8a2.svg" class="org-svg" /> folgt <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7dea45ea2bebd832a2e986fd799db4225869a0ae.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7dea45ea2bebd832a2e986fd799db4225869a0ae.svg" class="org-svg" />
-Ferner folgt daraus <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7a0186caf51ab4a7146d2a7f4074c4cc9c908781.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_7a0186caf51ab4a7146d2a7f4074c4cc9c908781.svg" class="org-svg" />, was aber ein Widerspruch ist, da nach Konstruktion <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_e506cc6a0685dd9ffd54bd9d89f3b7b73a1cb523.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_e506cc6a0685dd9ffd54bd9d89f3b7b73a1cb523.svg" class="org-svg" /> für mind. ein <img src="ltximg/20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230525181850-großter_gemeinsamer_teiler_von_einfachen_produkten_irreduzibler_elemente_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> gilt.
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(r \in R \{0\}\), dann existiert für \(r\) eine <a href="20221229200313-eindeutige_primzerlegung.html#ID-43ca21ca-b4d6-4937-820b-a99daa5e510a">Eindeutige Primzerlegung</a>.
+Falls kein <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">Primelement</a> \(p \mid r\) existiert, so ist \(r \in R^{\times}\) und es folgt \(r \mid g\).
+Ansonsten folgt \(p \mid r, r \mid g = g \cdot 1\) und wegen \(p \nmid 1\) folgt \(p \mid g\)
+Ferner folgt daraus \(p \mid h_i\), was aber ein Widerspruch ist, da nach Konstruktion \(p \nmid h_i\) für mind. ein \(i \in I\) gilt.
 (vgl. auch  <a href="20230525170851-großter_gemeinsamer_teiler_und_primzerlegung_in_einem_hauptidealring.html#ID-976562af-3605-44c7-9d06-948ca2cd3356">größter gemeinsamer Teiler und Primzerlegung in einem Hauptidealring</a>)
 </p>
 </div>

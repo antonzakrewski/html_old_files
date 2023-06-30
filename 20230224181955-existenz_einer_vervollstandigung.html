@@ -9,71 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Vervollständigung</h1>
-<div id="outline-container-orgff9a6fd" class="outline-2">
-<h2 id="orgff9a6fd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org554e86f" class="outline-2">
+<h2 id="org554e86f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230224181955-existenz_einer_vervollstandigung_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>, so existiert ein <a href="20230223230502-vervollstandigung.html#ID-4bf0e2fb-ca68-4321-875f-99903b9e26fe">Vervollständigung</a> <img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_c4faec95cf58e86a4c3f575592eb7868acc71901.svg" alt="20230224181955-existenz_einer_vervollstandigung_c4faec95cf58e86a4c3f575592eb7868acc71901.svg" class="org-svg" /> zu einem <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischen Raum</a> 
+Sei \((M,d)\) ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>.
+Dann existiert eine bis auf <a href="20221209134652-isometrie_metrischer_raum.html#ID-897a11a6-874c-4734-9d2b-7bf717ba7867">Isometrie</a> eindeutige <a href="20230223230502-vervollstandigung.html#ID-4bf0e2fb-ca68-4321-875f-99903b9e26fe">Vervollständigung</a> \((M',d')\) zu einem <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischen Raum</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc46cba8" class="outline-2">
-<h2 id="orgc46cba8"><span class="section-number-2">2.</span> Beweis (skizze)</h2>
+<div id="outline-container-org0a422b2" class="outline-2">
+<h2 id="org0a422b2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-org227e570" class="outline-3">
-<h3 id="org227e570"><span class="section-number-3">2.1.</span> konstruktion</h3>
-<div class="outline-text-3" id="text-2-1">
 <p>
-Man wähle die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> und identiziere sie durch:
+folgt aus:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_ff618697f688d1f9f583416c0fe2feee8d4ba366.svg" alt="20230224181955-existenz_einer_vervollstandigung_ff618697f688d1f9f583416c0fe2feee8d4ba366.svg" class="org-svg" />
-</span>
-</div>
-<p>
-Man betrachte dann die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20211230190101-aquivalenzklasse.html#ID-5ee76318-ae03-4cb3-877f-6b6ff88ad6fa">Äquivalenzklassen</a> mit der <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a>:
-</p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_157cf5438adfc884fd5caa3eea75bdf1ffdf79c3.svg" alt="20230224181955-existenz_einer_vervollstandigung_157cf5438adfc884fd5caa3eea75bdf1ffdf79c3.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-<div id="outline-container-org9b33885" class="outline-3">
-<h3 id="org9b33885"><span class="section-number-3">2.2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-Seien <img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_8df8b7ca008a5f98cc6f40b1afba6ddc52f258bb.svg" alt="20230224181955-existenz_einer_vervollstandigung_8df8b7ca008a5f98cc6f40b1afba6ddc52f258bb.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_b4cb17551d687ce56873d6152bc0de7a861885ab.svg" alt="20230224181955-existenz_einer_vervollstandigung_b4cb17551d687ce56873d6152bc0de7a861885ab.svg" class="org-svg" /> <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a>, dann folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a>:
-</p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_1e20d3a0f6e26709660d10f3c24156cba900499c.svg" alt="20230224181955-existenz_einer_vervollstandigung_1e20d3a0f6e26709660d10f3c24156cba900499c.svg" class="org-svg" />
-</span>
-</div>
-<p>
-mit <img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_1a24479a3176b898c1c77e1c6a9da9fb10fbbde3.svg" alt="20230224181955-existenz_einer_vervollstandigung_1a24479a3176b898c1c77e1c6a9da9fb10fbbde3.svg" class="org-svg" />.
-Analog für die andere Seite und man erhält:
-</p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224181955-existenz_einer_vervollstandigung_5c5aeb8688d95b41b49c0f03d04fb4596d18e505.svg" alt="20230224181955-existenz_einer_vervollstandigung_5c5aeb8688d95b41b49c0f03d04fb4596d18e505.svg" class="org-svg" />
-</span>
-</div>
-</div>
-</div>
-<div id="outline-container-org3e4fd5b" class="outline-3">
-<h3 id="org3e4fd5b"><span class="section-number-3">2.3.</span> <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständig</a></h3>
+<ul class="org-ul">
+<li><a href="20230611-metrische_vervollstandigung_nach_hausdorff.html#ID-e3ca1a19-1376-4001-8a2c-bb8ae891c802">Metrische Vervollständigung nach Hausdorff</a></li>
+<li><a href="20230612-universelle_eigenschaft_der_hausdorff_vervollstandigung.html#ID-2dd20393-3248-475e-b72c-8b102f8c3dcc">universelle Eigenschaft der Hausdorff-Vervollständigung</a></li>
+</ul>
 </div>
 </div>
 </div>

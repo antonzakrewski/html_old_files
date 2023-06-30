@@ -3,63 +3,78 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Allgemeine Distributivgesetz für Vereinigung und Schnitt</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Allgemeine Distributivgesetz für Vereinigung und Schnitt</h1>
-<div id="outline-container-org2c24fa4" class="outline-2">
-<h2 id="org2c24fa4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3b8f51c" class="outline-2">
+<h2 id="org3b8f51c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d89174ceede3b5c0cf7cabc2ba0c191b51935bb8.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d89174ceede3b5c0cf7cabc2ba0c191b51935bb8.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d3e9028eac01109cddedc7eee632a94793908908.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d3e9028eac01109cddedc7eee632a94793908908.svg" class="org-svg" /> bzw. <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d2a6da7a154e2abf418e40b0d7224eb44499ab2a.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d2a6da7a154e2abf418e40b0d7224eb44499ab2a.svg" class="org-svg" /> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilien</a>.
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A_i \subseteq M\) bzw. \(B_j \subseteq M\) <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilien</a>.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_8cdb3e02be28b80682a354b8825b9387e0a68466.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_8cdb3e02be28b80682a354b8825b9387e0a68466.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\bigcup_{i \in I} A_i \cap \bigcup_{j \in J} B_j = \bigcup_{(i,j) \in I \times J} A_i \cap B_j
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0a8bf20" class="outline-2">
-<h2 id="org0a8bf20"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc13c964" class="outline-2">
+<h2 id="orgc13c964"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7319a66" class="outline-3">
-<h3 id="org7319a66"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org123ddf2" class="outline-3">
+<h3 id="org123ddf2"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_5d9437d0c2681ae3d76564f25ef9c50d8a64e8ce.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_5d9437d0c2681ae3d76564f25ef9c50d8a64e8ce.svg" class="org-svg" />, so existieren <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_dff593043603ff98da9c0013149e984ec3125edc.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_dff593043603ff98da9c0013149e984ec3125edc.svg" class="org-svg" /> bzw. <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_5724fa05926f04470d6c211a62b6076ea2fc4303.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_5724fa05926f04470d6c211a62b6076ea2fc4303.svg" class="org-svg" /> mit <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_78241d769e5dbf1a14eec1c0cea4b676587b0a12.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_78241d769e5dbf1a14eec1c0cea4b676587b0a12.svg" class="org-svg" />
-Damit folgt <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d34dc93392e6c47cbc877f4c801389a83c3e20de.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_d34dc93392e6c47cbc877f4c801389a83c3e20de.svg" class="org-svg" />
+Sei \(a \in \bigcup_{i \in I} A_i \cap \bigcup_{j \in J} B_j\), so existieren \(i \in I\) bzw. \(j \in J\) mit \(a \in A_i, a \in B_j\)
+Damit folgt \(a \in A_i \cap B_j \subseteq \bigcup_{(i,j) \in I \times J} A_i \cap B_j\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgf8ca160" class="outline-3">
-<h3 id="orgf8ca160"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orga010212" class="outline-3">
+<h3 id="orga010212"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_83aea7552edf7376ba8e8a969a2776193775fb5a.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_83aea7552edf7376ba8e8a969a2776193775fb5a.svg" class="org-svg" />, so existiert ein <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_fca3cc45f95ecfc406518c699b266bf6f59d8397.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_fca3cc45f95ecfc406518c699b266bf6f59d8397.svg" class="org-svg" /> mit <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_c77408c7a2c562c746344b05f2ddf0b119c738f6.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_c77408c7a2c562c746344b05f2ddf0b119c738f6.svg" class="org-svg" />.
-Damit folgt <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_e81d179dedc8b72b24f47073676bdaaf3fd102cf.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_e81d179dedc8b72b24f47073676bdaaf3fd102cf.svg" class="org-svg" /> und <img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_36be2ad40bf7e54769d7e35c9311586728a5adb0.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_36be2ad40bf7e54769d7e35c9311586728a5adb0.svg" class="org-svg" /> und insgesamt
+Sei \(a \in \bigcup_{(i,j) \in I \times J} A_i \cap B_j\), so existiert ein \((i,j) \in I \times J\) mit \(a \in A_i \cap B_j\).
+Damit folgt \(a \in A_i \subseteq \bigcup_{i \in I} A_i\) und \(a \in B_j \subseteq \bigcup_{j \in J} B_j\) und insgesamt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_818b60c6affad8ee32a03bbf85540d387d8a16cb.svg" alt="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt_818b60c6affad8ee32a03bbf85540d387d8a16cb.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in I} A_i \cap \bigcup_{j \in J} B_j
+\end{align*}
 </div>
 </div>
 </div>

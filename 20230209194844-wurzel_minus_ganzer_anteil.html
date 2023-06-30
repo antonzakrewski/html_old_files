@@ -9,50 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Wurzel minus ganzer Anteil</h1>
-<div id="outline-container-org6694fd8" class="outline-2">
-<h2 id="org6694fd8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb0ec947" class="outline-2">
+<h2 id="orgb0ec947"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_ebcaf7797b017459d3b75b08f6a16581adb528e8.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_ebcaf7797b017459d3b75b08f6a16581adb528e8.svg" class="org-svg" />, so folgt für die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> 
+Sei \(m \in \mathbb{N}, m > 1\), so folgt für die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_dc8fcc25fceae715375d86d8931d8934d8c14ae9.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_dc8fcc25fceae715375d86d8931d8934d8c14ae9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_n = n\sqrt{m} - [n\sqrt{m}]
+\end{align*}
 <p>
-Dass das ganze <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_e2669f20d88e822f021cd2bd6330ec3d032deb12.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_e2669f20d88e822f021cd2bd6330ec3d032deb12.svg" class="org-svg" /> ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> ist
+Dass das ganze <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> \([0,1]\) ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-org1acaf8d" class="outline-2">
-<h2 id="org1acaf8d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1c492c9" class="outline-2">
+<h2 id="org1c492c9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach der <a href="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung.html#ID-602c1de7-51ce-49f1-9929-d3c73de86aa5">Abgeschlossenheit von Häufungspunkten unter Grenzwertbildung</a> ist zu zeigen: <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_c80fe6e44ab34551ba69cb931944e6f0d0d4f852.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_c80fe6e44ab34551ba69cb931944e6f0d0d4f852.svg" class="org-svg" />  
-Desweiteren gilt für <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_ceefab9510ba982f12374c423797008b20fcb6b9.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_ceefab9510ba982f12374c423797008b20fcb6b9.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_8cd0d7be63dd240b1d544fc331b0ec4ee72f1cfa.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_8cd0d7be63dd240b1d544fc331b0ec4ee72f1cfa.svg" class="org-svg" /> und für ungerades <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_e2bb26fbfb5b0ea6b5c3994564eae8c77f8678bd.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_1285552009f91c2aa0c2b877cd053e50db7ff3de.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_1285552009f91c2aa0c2b877cd053e50db7ff3de.svg" class="org-svg" /> für ein $a &isin; $ und <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_1317f11ba86dfa9a52de1c8948be37a05adfed71.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_1317f11ba86dfa9a52de1c8948be37a05adfed71.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_a252adee4ce47f7464f6610e3760e4d32e92fcc3.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_a252adee4ce47f7464f6610e3760e4d32e92fcc3.svg" class="org-svg" />, so wähle man <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_4473b35fa0d258abf0aa4714b9e2b229832a0406.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_4473b35fa0d258abf0aa4714b9e2b229832a0406.svg" class="org-svg" />, d.h. es folgt
+Nach der <a href="20221129160533-abgeschlossenheit_von_haufungspunkten_unter_grenzwertbildung.html#ID-602c1de7-51ce-49f1-9929-d3c73de86aa5">Abgeschlossenheit von Häufungspunkten unter Grenzwertbildung</a> ist zu zeigen: \(\forall y \in (0,1) : y \,\text{ist ein Häufungspunkt}\)  
+Desweiteren gilt für \(d  \coloneqq \sqrt{m} - [\sqrt{m}]\) mit \(\sqrt{m} - d < 1\) und für ungerades \(N\) \((\sqrt{m} - d)^N = \sqrt{m}^N - \binom{N}{1} \sqrt{m}^{N -1} \cdot d ... - d^N = a \sqrt{m} + b\) für ein $a &isin; \mathbb{N} $ und \(b \in \mathbb{Z}\).
+Sei \(c \in (0,1)\), so wähle man \(k \in (\frac{c}{\delta}, \frac{c}{\delta} + 1) \cap \mathbb{N}\), d.h. es folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_6f30e1241dca5be66c597e8fc60b16ac0f3f809c.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_6f30e1241dca5be66c597e8fc60b16ac0f3f809c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+k \cdot a \in (c, c + \delta) \subseteq (c, c + \varepsilon)
+\end{align*}
 <p>
-Da gilt <img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_306f4f15bd2619798c389a0235d6f7e9c52ce817.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_306f4f15bd2619798c389a0235d6f7e9c52ce817.svg" class="org-svg" />, folgt insbesondere wegen <a href="20230209202119-ganzzahliger_anteil_und_addition_von_ganzen_zahlen.html#ID-bda77bcf-5e63-459a-8d9f-a36e4dd9c1e3">ganzzahliger Anteil und Addition von ganzen Zahlen</a> 
+Da gilt \(k \cdot b \in \mathbb{Z}, k \cdot a \in \mathbb{N}\), folgt insbesondere wegen <a href="20230209202119-ganzzahliger_anteil_und_addition_von_ganzen_zahlen.html#ID-bda77bcf-5e63-459a-8d9f-a36e4dd9c1e3">ganzzahliger Anteil und Addition von ganzen Zahlen</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230209194844-wurzel_minus_ganzer_anteil_566c2ef672cff5948357ef9a9b178eefc5a73c90.svg" alt="20230209194844-wurzel_minus_ganzer_anteil_566c2ef672cff5948357ef9a9b178eefc5a73c90.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(kb + ka \sqrt{x}) - [kb + ka \sqrt{x}] = ka \sqrt{x} - [ka \sqrt{x}]
+\end{align*}
 </div>
 </div>
 </div>

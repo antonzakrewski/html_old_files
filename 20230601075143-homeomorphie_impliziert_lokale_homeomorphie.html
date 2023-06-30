@@ -9,24 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Homeomorphie impliziert lokale Homeomorphie</h1>
-<div id="outline-container-orgd2f1830" class="outline-2">
-<h2 id="orgd2f1830"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb1e798e" class="outline-2">
+<h2 id="orgb1e798e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230601074735-lokal_homeomorph.html#ID-131f523a-aa28-4f22-bcde-ce172f7f8edb">lokal homeomorph</a> zu <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" />.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a>.
+Dann ist \(X\) <a href="20230601074735-lokal_homeomorph.html#ID-131f523a-aa28-4f22-bcde-ce172f7f8edb">lokal homeomorph</a> zu \(X'\).
 </p>
 </div>
 </div>
-<div id="outline-container-orgd37f04c" class="outline-2">
-<h2 id="orgd37f04c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf889644" class="outline-2">
+<h2 id="orgf889644"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Folgt, indem man für <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> eine beliebige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> - z.B. <img src="file:///home/anton/html/ltximg/20230601075143-homeomorphie_impliziert_lokale_homeomorphie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230601075143-homeomorphie_impliziert_lokale_homeomorphie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> - wählt.
+Folgt, indem man für \(x \in X\) eine beliebige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> - z.B. \(X\) - wählt.
 </p>
 </div>
 </div>

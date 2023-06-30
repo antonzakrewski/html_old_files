@@ -9,12 +9,37 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verhältnis: Wurzelkriterium und Quotientenkriterium</h1>
-<div id="outline-container-orgaa213fa" class="outline-2">
-<h2 id="orgaa213fa"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa69ccd" class="outline-2">
+<h2 id="orgaa69ccd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20221212101600-wurzel_kriterium_fur_konvergenz.html#ID-be8fc800-6b74-4819-9b7d-92f1234956e5">Wurzel-Kriterium für Konvergenz</a> ist impliziert das <a href="20221212103532-quotientenkriterium_fur_konvergenz_in_abhangigkeit_vom_limes_superior.html#ID-0d4e7ad0-7da7-40cf-831f-e8106bdc5ed0">Quotientenkriterium für Konvergenz in Abhängigkeit vom Limes Superior</a>, aber nicht umgekehrt.
@@ -22,74 +47,54 @@ Dabei ist das Wurzelkriterium oft einfacher anwendbar.
 </p>
 </div>
 </div>
-<div id="outline-container-orga2a49ed" class="outline-2">
-<h2 id="orga2a49ed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9790c76" class="outline-2">
+<h2 id="org9790c76"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es sei <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> positiver reeller Zahlen.
+Es sei \((a_n)_{n \in \mathbb{N}}\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> positiver reeller Zahlen.
 Dann folgt:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_8a4fc837b099ff4c3288c48332f83ed3eb0afa45.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_8a4fc837b099ff4c3288c48332f83ed3eb0afa45.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left(\sup \sqrt[n]{a_n} \right) \leq  \lim_{n \to \infty}\left(\sup \frac{a_{n+1}}{a_n}\right) 
+\end{align*}
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_c0d0e1d8213258916e6429f8e3018f3c808ba0ca.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_c0d0e1d8213258916e6429f8e3018f3c808ba0ca.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> beliebig, dann folgt, dass ein <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_f47017ee23a9da63034ffece6659be5d1c49bff9.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_f47017ee23a9da63034ffece6659be5d1c49bff9.svg" class="org-svg" /> existiert, sodass für <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_1f61fe74c8966d2c853aa1edaaeacf7bdb457b6e.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_1f61fe74c8966d2c853aa1edaaeacf7bdb457b6e.svg" class="org-svg" /> gilt:
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> sei \(\lim_{n \to \infty}\left(\sup \frac{a_{n+1}}{a_n}\right) =: C < \infty\)
+Sei \(\varepsilon > 0\) beliebig, dann folgt, dass ein \(n_{\varepsilon} \in \mathbb{N}\) existiert, sodass für \(\forall n > n_{ \varepsilon}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_40a0b3c4180a00649a243d5db850c62b13abcefe.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_40a0b3c4180a00649a243d5db850c62b13abcefe.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{a_{n+1}}{a_{n}} < C + \varepsilon
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_389c7cd9afdd097835a5e2f604ca8c0e72c1e19a.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_389c7cd9afdd097835a5e2f604ca8c0e72c1e19a.svg" class="org-svg" />, dann folgt
+Sei \(n_{\varepsilon} < n\), dann folgt
 </p>
+\begin{align*}
+a_n < a_{n-1}(C + \varepsilon) < a_{n-2} (C + \varepsilon)^2 < ... < a_{n_{\varepsilon}} (C + \varepsilon)^{n - n_{\varepsilon}}
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_c92636398eab2a2f1e5b3b013ba49caae1462260.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_c92636398eab2a2f1e5b3b013ba49caae1462260.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_29f9984da22668783e172bc6615f8e1dbd824847.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_29f9984da22668783e172bc6615f8e1dbd824847.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sqrt[n]{a_{n}} < \sqrt[n]{a_{n_{\varepsilon}}} (C + \varepsilon)^{1 - \frac{n_{\varepsilon}}{n}}
+\end{align*}
 <p>
 Es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_49f845b9f21bff5e73ae1595bb532f7316916908.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_49f845b9f21bff5e73ae1595bb532f7316916908.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \lim_{n \to \infty}\left(\sqrt[n]{a_{n_{\varepsilon}}}\right) =& 1 \\
+ \lim_{n \to \infty}\left((C + \varepsilon)^{1 - \frac{n_{\varepsilon}}{n}}\right) =& C + \varepsilon
+\end{align*}
 
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_07dcab742ef4368b87a4e5044590b14963e0c27b.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_07dcab742ef4368b87a4e5044590b14963e0c27b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\exists n'_{\varepsilon} > n_{\varepsilon} : \sqrt[n]{a_n} < C + 2 \varepsilon \forall n > n'_{\varepsilon}
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_99c2bf0b30c8d187900f3b58e9a3fa80516528a1.svg" alt="20221222071532-verhaltnis_wurzelkriterium_und_quotientenkriterium_99c2bf0b30c8d187900f3b58e9a3fa80516528a1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \lim_{n \to \infty}\left( \sup \sqrt[n]{a_n}\right)  \leq C + 2 \varepsilon \forall \varepsilon > 0 \Rightarrow lim_{n \rightarrow \infty} \sup \sqrt[n]{a_n} \leq C
+\end{align*}
 </div>
 </div>
 </div>

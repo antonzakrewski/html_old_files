@@ -3,36 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mittlere Änderungsrate</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mittlere Änderungsrate</h1>
-<div id="outline-container-org3c1202f" class="outline-2">
-<h2 id="org3c1202f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org397b4df" class="outline-2">
+<h2 id="org397b4df"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20210217184014-mittlere_anderungsrate_differenzenquotient_9512e9cd3de0dab496cbf799f09682cf6d8d7d10.svg" alt="20210217184014-mittlere_anderungsrate_differenzenquotient_9512e9cd3de0dab496cbf799f09682cf6d8d7d10.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
-Dann ist die mittlere Änderungsrate über dem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> <img src="ltximg/20210217184014-mittlere_anderungsrate_differenzenquotient_7561279de8259e69b8d974810d2d3c1acf8c596c.svg" alt="20210217184014-mittlere_anderungsrate_differenzenquotient_7561279de8259e69b8d974810d2d3c1acf8c596c.svg" class="org-svg" />
+Sei \(f(x)\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
+Dann ist die mittlere Änderungsrate über dem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> \([x_0,x_1]\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20210217184014-mittlere_anderungsrate_differenzenquotient_282f54aa2f26b618a10e7f12d67cab6e82ae4a44.svg" alt="20210217184014-mittlere_anderungsrate_differenzenquotient_282f54aa2f26b618a10e7f12d67cab6e82ae4a44.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+m_{[x_0;x_1]} =& \frac{f(x_1) - f(x_0)}{x_1 - x_0}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc2d3252" class="outline-2">
-<h2 id="orgc2d3252"><span class="section-number-2">2.</span> <a href="20220820182354-interpretation_mittlere_anderungsrate.html#ID-8f3f58fb-1a3a-4333-9ed7-d47635d6d806">Interpretation: mittlere Änderungsrate</a></h2>
+<div id="outline-container-org6032f61" class="outline-2">
+<h2 id="org6032f61"><span class="section-number-2">2.</span> <a href="20220820182354-interpretation_mittlere_anderungsrate.html#ID-8f3f58fb-1a3a-4333-9ed7-d47635d6d806">Interpretation: mittlere Änderungsrate</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

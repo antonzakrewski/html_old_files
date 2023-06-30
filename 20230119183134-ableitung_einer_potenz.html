@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung einer Potenz für eine natürliche Zahl</h1>
-<div id="outline-container-org9978b7e" class="outline-2">
-<h2 id="org9978b7e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9d937e3" class="outline-2">
+<h2 id="org9d937e3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230119183134-ableitung_einer_potenz_26efff9e222f557969ccce389220e8d74a762eed.svg" alt="20230119183134-ableitung_einer_potenz_26efff9e222f557969ccce389220e8d74a762eed.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230119183134-ableitung_einer_potenz_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" alt="20230119183134-ableitung_einer_potenz_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230119183134-ableitung_einer_potenz_c0f8e6d92487f6cd406f1fe5fc9110fb548c4432.svg" alt="20230119183134-ableitung_einer_potenz_c0f8e6d92487f6cd406f1fe5fc9110fb548c4432.svg" class="org-svg" />, so folgt für die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> 
+Sei \(z \in \mathbb{C}\) und \(k \in \mathbb{N}\) mit \(f(x) = z^k\), so folgt für die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119183134-ableitung_einer_potenz_ea3c984d9a8b67cd42e90ff9cbe171e7f8fbf861.svg" alt="20230119183134-ableitung_einer_potenz_ea3c984d9a8b67cd42e90ff9cbe171e7f8fbf861.svg" class="org-svg" />
-</span>
+\begin{align*}
+f'(x) = k \cdot z^{k-1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgcefc549" class="outline-2">
-<h2 id="orgcefc549"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1de7505" class="outline-2">
+<h2 id="org1de7505"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt aus dem <a href="20220104220747-binomischer_lehrsatz.html#ID-93572b6e-6e51-486b-bf69-476329e57614">Binomischen Lehrsatz</a> und der Definition der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230119183134-ableitung_einer_potenz_1bcb075308969ad4019b3103a9f4635bb188fc0d.svg" alt="20230119183134-ableitung_einer_potenz_1bcb075308969ad4019b3103a9f4635bb188fc0d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{\delta \to 0}\left(\frac{(z + \delta)^k - z^k}{\delta}\right) =& \lim_{\delta \to 0}\left(\frac{\sum_{n=0}^{k} \binom{k}{n} z^{n} \cdot \delta^{k-n}  - z^k}{\delta}\right) \\
+=& \lim_{\delta \to 0}\left(\frac{\sum_{n=1}^{k-1} \binom{k}{n} z^{k-n} \cdot \delta^{n}}{\delta}\right) \\
+=& \binom{k}{1} z^{k-1} \\
+=& k \cdot z^{k-1}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,48 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bedingung für eine Basis der abgeschlossenen Mengen einer Topologie</h1>
-<div id="outline-container-org79f8fc6" class="outline-2">
-<h2 id="org79f8fc6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgeb7bbb3" class="outline-2">
+<h2 id="orgeb7bbb3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_b257a6bbc23645f756e988b41388ae2c793c0717.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_b257a6bbc23645f756e988b41388ae2c793c0717.svg" class="org-svg" /> eine <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">Basis einer Topologie</a>, so gilt:
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{B} \subseteq \mathcal{P}(X)\) eine <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">Basis einer Topologie</a>, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_14e79efc9f047f956531a7b7da3eb0190433d836.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_14e79efc9f047f956531a7b7da3eb0190433d836.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{O \in \mathcal{B}} O =& X
+\end{align*}
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_3dfab8149281a04a16d16f9b2c500722ec34c4d7.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_3dfab8149281a04a16d16f9b2c500722ec34c4d7.svg" class="org-svg" /> existiert eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_134184a96bf1036baa95b93ad8bfd54cd9008341.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_134184a96bf1036baa95b93ad8bfd54cd9008341.svg" class="org-svg" />, so dass gilt
+Für \(O,O' \in \mathcal{B}\) existiert eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> \(O_i \in \mathcal{B}\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_2606e8f058a4213cb4bf368914f1cbe3fc08929d.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_2606e8f058a4213cb4bf368914f1cbe3fc08929d.svg" class="org-svg" />
-</span>
+\begin{align*}
+O \cap O' = \bigcup_{i \in I} O_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6b9560e" class="outline-2">
-<h2 id="org6b9560e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org99d4b89" class="outline-2">
+<h2 id="org99d4b89"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2222020" class="outline-3">
-<h3 id="org2222020"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgbeea402" class="outline-3">
+<h3 id="orgbeea402"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und damit existiert eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_c2a3736cfc715906ec920db98496c243d1cb0cb7.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_c2a3736cfc715906ec920db98496c243d1cb0cb7.svg" class="org-svg" />.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_7dc0b5f32087ec5233a9ffdc37b3e11e4bff669e.svg" alt="20230312232147-bedingung_fur_eine_basis_der_abgeschlossenen_mengen_einer_topologie_7dc0b5f32087ec5233a9ffdc37b3e11e4bff669e.svg" class="org-svg" />
+Nach Annahme ist \(X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und damit existiert eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> \(O_i\) mit \(\bigcup_{i \in I} O_i = X\).
+Daraus folgt \(X = \bigcup_{i \in I} O_i \subseteq \bigcup_{O \in \mathcal{B}} O \subseteq X\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2ce9a4c" class="outline-3">
-<h3 id="org2ce9a4c"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgb012c40" class="outline-3">
+<h3 id="orgb012c40"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber Schnitten (Topologie)</a> und der Definition einer <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">Basis einer Topologie</a> 

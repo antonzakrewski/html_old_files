@@ -9,32 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Umkehrmorphismus als Isomorphismus</h1>
-<div id="outline-container-orga504793" class="outline-2">
-<h2 id="orga504793"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfe6f1c1" class="outline-2">
+<h2 id="orgfe6f1c1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230302133235-umkehrmorphismus_als_isomorphismus_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" alt="20230302133235-umkehrmorphismus_als_isomorphismus_af71802479903aa2e99bbaed2cc7332ba28ea625.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und <img src="file:///home/anton/html/ltximg/20230302133235-umkehrmorphismus_als_isomorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230302133235-umkehrmorphismus_als_isomorphismus_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist auch <img src="file:///home/anton/html/ltximg/20230302133235-umkehrmorphismus_als_isomorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" alt="20230302133235-umkehrmorphismus_als_isomorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" class="org-svg" /> ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
+Sei \(\mathcal{D}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> und \(f\) ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a>, so ist auch \(f^{-1}\) ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3af207" class="outline-2">
-<h2 id="orgc3af207"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6cf56f3" class="outline-2">
+<h2 id="org6cf56f3"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach Annahme gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230302133235-umkehrmorphismus_als_isomorphismus_6bbde2f9aaad67eeddc838cfa318b220e4a35fe1.svg" alt="20230302133235-umkehrmorphismus_als_isomorphismus_6bbde2f9aaad67eeddc838cfa318b220e4a35fe1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1} \circ f =& \mathrm{id}_{} \\
+f \circ f^{-1} =& \mathrm{id}_{} 
+\end{align*}
 <p>
-Damit ist <img src="file:///home/anton/html/ltximg/20230302133235-umkehrmorphismus_als_isomorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" alt="20230302133235-umkehrmorphismus_als_isomorphismus_19466c16bc292f373edcc31bcef20d10371d5e79.svg" class="org-svg" /> nach Definition ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
+Damit ist \(f^{-1}\) nach Definition ein <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphismus</a> 
 </p>
 </div>
 </div>

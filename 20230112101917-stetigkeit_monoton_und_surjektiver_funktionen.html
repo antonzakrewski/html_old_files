@@ -9,56 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit monoton und surjektiver Funktionen</h1>
-<div id="outline-container-org08b1ac0" class="outline-2">
-<h2 id="org08b1ac0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2516de0" class="outline-2">
+<h2 id="org2516de0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_83a30fe66b645048943178d35fb6ccb929c019e6.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_83a30fe66b645048943178d35fb6ccb929c019e6.svg" class="org-svg" /> eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektive</a> und <a href="20220720221945-monotone_funktionen.html#ID-129ba773-5747-457b-9fd9-7a6da22480a6">monotone Funktionen</a> 
-Dann ist <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
+Sei \(f: \mathbb{R} \rightarrow \mathbb{R}\) eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektive</a> und <a href="20220720221945-monotone_funktionen.html#ID-129ba773-5747-457b-9fd9-7a6da22480a6">monotone Funktionen</a> 
+Dann ist \(f\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgd4affa1" class="outline-2">
-<h2 id="orgd4affa1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7b7fec6" class="outline-2">
+<h2 id="org7b7fec6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 HÄ ?
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> und <a href="20220720221945-monotone_funktionen.html#ID-129ba773-5747-457b-9fd9-7a6da22480a6">monotone Funktionen</a> 
-Sei <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_602b72868e0941833a6069aebc5a3bed6214d615.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_602b72868e0941833a6069aebc5a3bed6214d615.svg" class="org-svg" /> beliebig und sei <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_0793f748fd30e0dd3dc29bd8c600e01f2e711bea.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_0793f748fd30e0dd3dc29bd8c600e01f2e711bea.svg" class="org-svg" /> ein <a href="20221027080050-innerer_punkt.html#ID-0e0b3053-63c0-4dea-9ce2-a419979c1f2b">innerer Punkt</a> des Intervalls <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_3bfffe7e13b97629a6b40d6a56c5c4b29b5cd14e.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_3bfffe7e13b97629a6b40d6a56c5c4b29b5cd14e.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> nimmt in <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> weder ein <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> noch <a href="20221103092141-maximum.html#ID-abf0481b-fe94-4bef-a0d3-fbb5c498364b">Maximum</a> an.
-Aufgrund der <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">Surjektivität</a> existiert zu <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> existiert ein <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_5ced5acb4be81fcabc1ca2cee7e53ba34a180425.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_5ced5acb4be81fcabc1ca2cee7e53ba34a180425.svg" class="org-svg" /> mit
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f\) und <a href="20220720221945-monotone_funktionen.html#ID-129ba773-5747-457b-9fd9-7a6da22480a6">monotone Funktionen</a> 
+Sei \(p \in \mathbb{R}\) beliebig und sei \(f(p)\) ein <a href="20221027080050-innerer_punkt.html#ID-0e0b3053-63c0-4dea-9ce2-a419979c1f2b">innerer Punkt</a> des Intervalls \(f(\mathbb{R})\), d.h. \(f\) nimmt in \(p\) weder ein <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> noch <a href="20221103092141-maximum.html#ID-abf0481b-fe94-4bef-a0d3-fbb5c498364b">Maximum</a> an.
+Aufgrund der <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">Surjektivität</a> existiert zu \(\varepsilon > 0\) existiert ein \(x_{\pm}\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_103a38341ab56b35a9bd654ff3389faadac5b9c3.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_103a38341ab56b35a9bd654ff3389faadac5b9c3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(p) - \varepsilon < f(x_-) < f(p) < f(x_+) < f(p) + \varepsilon
+\end{align*}
 <p>
-Damit existiert ein <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_98ecd1434c84169b04597a650d06f404463fbd38.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_98ecd1434c84169b04597a650d06f404463fbd38.svg" class="org-svg" /> mit: <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_915e1a471676f9de27d277144a5a823407ce4e3b.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_915e1a471676f9de27d277144a5a823407ce4e3b.svg" class="org-svg" />
-Es gilt dann für <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_ab633778696ee22684fc158c3e06c872d0c0e887.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_ab633778696ee22684fc158c3e06c872d0c0e887.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_c27a51b4ad2503e103fa8deae3fae09049b12b6b.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_c27a51b4ad2503e103fa8deae3fae09049b12b6b.svg" class="org-svg" />
+Damit existiert ein \(\delta > 0\) mit: \(x_- < p - \delta < p + \delta < x_p+\)
+Es gilt dann für \(x \in D\) mit \(\vert x - p \vert < \delta\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_4e40845ef300b15312af06c5f3a35475927002eb.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_4e40845ef300b15312af06c5f3a35475927002eb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x_- < p - \delta < x < p + \delta < x_+
+\end{align*}
 <p>
 und auf Grund der monotonie folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_18cabcf34765b51d7a1f0053d46d7f19f8109b78.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_18cabcf34765b51d7a1f0053d46d7f19f8109b78.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(p) - \varepsilon  f(x_-) \leq f(x) \leq f(x_+) < f(p) + \varepsilon \\
+\vert f(x)  -f(p) \vert < \varepsilon
+\end{align*}
 <p>
-Das zeigt, dass <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist.
-Falls <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_0793f748fd30e0dd3dc29bd8c600e01f2e711bea.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_0793f748fd30e0dd3dc29bd8c600e01f2e711bea.svg" class="org-svg" /> Randpunkte von <img src="file:///home/anton/html/ltximg/20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_042620ed6cbf8773ec46f28e40c5180925767659.svg" alt="20230112101917-stetigkeit_monoton_und_surjektiver_funktionen_042620ed6cbf8773ec46f28e40c5180925767659.svg" class="org-svg" /> sind, so verwendet man ein analoges argument mit der "hälfte" (+ dass aufgrund der monotonie kein verschiiedener
+Das zeigt, dass \(f\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist.
+Falls \(f(p)\) Randpunkte von \(D\) sind, so verwendet man ein analoges argument mit der "hälfte" (+ dass aufgrund der monotonie kein verschiiedener
 </p>
 </div>
 </div>

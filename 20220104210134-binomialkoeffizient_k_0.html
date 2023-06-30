@@ -9,43 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Binomialkoeffizient - k = 0</h1>
-<div id="outline-container-orgebc3c5c" class="outline-2">
-<h2 id="orgebc3c5c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8132a81" class="outline-2">
+<h2 id="org8132a81"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104210134-binomialkoeffizient_k_0_962b879ad47d1526b416504039020a1cd656c596.svg" alt="20220104210134-binomialkoeffizient_k_0_962b879ad47d1526b416504039020a1cd656c596.svg" class="org-svg" />
-</span>
+\begin{align*}
+\binom{n}{0} = 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgcf6ccc9" class="outline-2">
-<h2 id="orgcf6ccc9"><span class="section-number-2">2.</span> Herleitung</h2>
+<div id="outline-container-orgfe7f488" class="outline-2">
+<h2 id="orgfe7f488"><span class="section-number-2">2.</span> Herleitung</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104210134-binomialkoeffizient_k_0_0176b8c0cf95343cb44d687d3b15f677aa22928f.svg" alt="20220104210134-binomialkoeffizient_k_0_0176b8c0cf95343cb44d687d3b15f677aa22928f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{n}{0} = \prod_{j=1}^{0} \frac{n-j+1}{j} = 1
+\end{align*}
 <ul class="org-ul">
 <li>siehe: <a href="20220104204915-leere_produkt.html#ID-455211f8-d2fc-4d32-984d-89e980de54e3">leeres Produkt</a></li>
 </ul>
 </div>
-<div id="outline-container-org3e972a7" class="outline-3">
-<h3 id="org3e972a7"><span class="section-number-3">2.1.</span> Handübliche Formel</h3>
+<div id="outline-container-org76e377d" class="outline-3">
+<h3 id="org76e377d"><span class="section-number-3">2.1.</span> Handübliche Formel</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104210134-binomialkoeffizient_k_0_c5aa50604526fe4565a22c14f219bc0a8a07562c.svg" alt="20220104210134-binomialkoeffizient_k_0_c5aa50604526fe4565a22c14f219bc0a8a07562c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{n!}{0! \cdot (n-0)!} = 1
+\end{align*}
 
 
 <p>

@@ -3,56 +3,79 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Distributivgesetz für Vereinigung und Schnitt</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Distributivgesetz für Vereinigung und Schnitt</h1>
-<div id="outline-container-org836abd9" class="outline-2">
-<h2 id="org836abd9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org51354af" class="outline-2">
+<h2 id="org51354af"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_2ec2b37ca52c2e295b371f20a2e347a01b8a3987.svg" alt="20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_2ec2b37ca52c2e295b371f20a2e347a01b8a3987.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so folgt
+Seien \(A,B,C \subseteq M\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_77a23976954b9d4fbdaa0d232ca989118bf09d3f.svg" alt="20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_77a23976954b9d4fbdaa0d232ca989118bf09d3f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+A \cap \left(B \cup C\right) =& (A \cap B) \cup (A \cap C) \\
+A \cup \left(B \cap C\right) =& (A \cup B ) \cap (A \cup C)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org58a00fb" class="outline-2">
-<h2 id="org58a00fb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2427fdd" class="outline-2">
+<h2 id="org2427fdd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5e7e6e1" class="outline-3">
-<h3 id="org5e7e6e1"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgbe56fba" class="outline-3">
+<h3 id="orgbe56fba"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus dem <a href="20220929224749-kommutativgesetz_logik.html#ID-6e0a2497-c10a-40e8-80e4-286a179a34fa">Kommutativgesetz</a> für <a href="20211223095503-disjunktion_logik.html#ID-efaa31dc-0565-4a79-9bae-a633992277d2">Disjunktion</a> und <a href="20211223095538-konjunktion_logik.html#ID-4a71a4a5-377d-4e65-9e82-24d1e1957940">Konjunktion</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_c243fa32288f98f974fd798f3de17d9f51f2717f.svg" alt="20221209102328-distributivgesetz_fur_vereinigung_und_schnitt_c243fa32288f98f974fd798f3de17d9f51f2717f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+A \cap  (B \cup C) =& \{x \vert x \in A \land x \in (B \cup C) \} \\
+=& \{x \vert x \in A \land x \in \{y \vert y \in B \lor y \in C\}\} \\
+=& \{x \vert x \in A \land (x \in B \lor x \in C)\} \\
+=& \{x \vert (x \in A \land x \in B) \lor (x \in A \land x \in C)\} \\
+=& \{x \vert x \in \{y \vert y \in A \lor y \in B \} \lor x \in \{y \vert y \in A \lor y \in C \} \} \\
+=& \{x \vert x \in (A \cap B) \lor x  \in (A \cap C) \} \\
+=& \{x \vert x \in (A \cap B) \cup (A \cap c) \} \\
+=& (A \cap B) \cup (A \cap c)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb42cd6a" class="outline-3">
-<h3 id="orgb42cd6a"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org208546a" class="outline-3">
+<h3 id="org208546a"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 todo

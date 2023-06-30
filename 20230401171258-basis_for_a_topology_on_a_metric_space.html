@@ -9,50 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Basis for a topology on a metric space</h1>
-<div id="outline-container-orgcaef7e3" class="outline-2">
-<h2 id="orgcaef7e3"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-orga008cf3" class="outline-2">
+<h2 id="orga008cf3"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> be a <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metric space</a> and <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_3258e91b7a7217aebed389cff71d0e9e93b5700e.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_3258e91b7a7217aebed389cff71d0e9e93b5700e.svg" class="org-svg" /> be the <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">topology induced by the metric</a> <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" />.
-Then the collection <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_67da30ac7fe562f607ceada503a1f10aef7d1011.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_67da30ac7fe562f607ceada503a1f10aef7d1011.svg" class="org-svg" /> of <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-neighbourhoods</a> <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_52689a8852bc62b00e1d1683ccba43b19c84e1c8.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_52689a8852bc62b00e1d1683ccba43b19c84e1c8.svg" class="org-svg" /> is a <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a> for the natural <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a>.
+Let \((M,d)\) be a <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metric space</a> and \((M,\mathcal{T})\) be the <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">topology induced by the metric</a> \(d\).
+Then the collection \(\mathcal{B} := \{B_{\varepsilon}(m) \vert m \in M, \varepsilon > 0\}\) of <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-neighbourhoods</a> \(B_{\varepsilon}(m)\) is a <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a> for the natural <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org1d65816" class="outline-2">
-<h2 id="org1d65816"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgb309c55" class="outline-2">
+<h2 id="orgb309c55"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org85b1a20" class="outline-3">
-<h3 id="org85b1a20"><span class="section-number-3">2.1.</span> <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a></h3>
+<div id="outline-container-org92f3c41" class="outline-3">
+<h3 id="org92f3c41"><span class="section-number-3">2.1.</span> <a href="20221002152517-basis_einer_topologie.html#ID-1a5a6999-876a-4b54-b786-acafe4968fd6">basis</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-<img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_4b58f8d4bd39564f3b618271caca8c73b5386586.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_4b58f8d4bd39564f3b618271caca8c73b5386586.svg" class="org-svg" /> is trivial - e.g. choose for <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_e82e23b75a1830549b8ecfe8f9a14f1a10c712a4.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_e82e23b75a1830549b8ecfe8f9a14f1a10c712a4.svg" class="org-svg" />
-For <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_acebe8eb774161d071abaa30c5672731d8eaef28.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_acebe8eb774161d071abaa30c5672731d8eaef28.svg" class="org-svg" />  we can construct a suitable <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a>.
-For <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_91d4b328933fc07ce2ff28e7aaa42f9a3ca73cbe.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_91d4b328933fc07ce2ff28e7aaa42f9a3ca73cbe.svg" class="org-svg" /> we can embed an <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-neighbourhood</a> using the <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">triangle inequality</a>:
+\(\bigcup_{B \in \mathcal{B}} B = M\) is trivial - e.g. choose for \(m \in M : B_{1}(m)\)
+For \(B_{\varepsilon}(m) \cap B_{\varepsilon'}(m')\)  we can construct a suitable <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a>.
+For \(b \in C := B_{\varepsilon}(m) \cap B_{\varepsilon'}(m')\) we can embed an <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-neighbourhood</a> using the <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">triangle inequality</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_5cd03d2e95e0ef31ab02b5ff0fee8be1546b9fd1.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_5cd03d2e95e0ef31ab02b5ff0fee8be1546b9fd1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall b \in B_{\varepsilon}(m) : d(m,c) \leq d(m,b) + d(b,c) \Rightarrow B_{\varepsilon - d(m,b)}(b) \subseteq B_{\varepsilon}(m)
+\end{align*}
 <p>
-with <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_dbfefa8704ada892e731e31a48ccc7f6aea03053.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_dbfefa8704ada892e731e31a48ccc7f6aea03053.svg" class="org-svg" /> because of <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_67d85c3efcd07deebd524c6930b4989ebf77b1e4.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_67d85c3efcd07deebd524c6930b4989ebf77b1e4.svg" class="org-svg" />
-For <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_0264a5d6b4ceaf652b5f66a7423f707f60d6dc67.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_0264a5d6b4ceaf652b5f66a7423f707f60d6dc67.svg" class="org-svg" /> we can take <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_effe70f4a3cdda4551f34a6b7288df47b53fabe0.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_effe70f4a3cdda4551f34a6b7288df47b53fabe0.svg" class="org-svg" /> and unite those <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a>
+with \(\varepsilon - d(m,b) > 0\) because of \(d(m,b) < \varepsilon\)
+For \(c \in C\) we can take \(\mathrm{min}(\varepsilon - d(m,b), \varepsilon' - d(m',b))\) and unite those <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org8ebfcb8" class="outline-3">
-<h3 id="org8ebfcb8"><span class="section-number-3">2.2.</span> equal <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a></h3>
+<div id="outline-container-orgc1dcc64" class="outline-3">
+<h3 id="orgc1dcc64"><span class="section-number-3">2.2.</span> equal <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-by definition, every union of <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> from <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> is <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">open  (metric space)</a>.
-Suppose <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>, then for each <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_f69c14599ca7bab277931eec85a269ab5f47834e.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_f69c14599ca7bab277931eec85a269ab5f47834e.svg" class="org-svg" /> we can choose an <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, such that <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_5e049faad5f7c48afcd5521e0711afc7fd6c3121.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_5e049faad5f7c48afcd5521e0711afc7fd6c3121.svg" class="org-svg" />.
-Therefore the <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a> of those <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_d35dcbec7ea9a6689c3d216578122827bef95b5b.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_d35dcbec7ea9a6689c3d216578122827bef95b5b.svg" class="org-svg" /> is <img src="file:///home/anton/html/ltximg/20230401171258-basis_for_a_topology_on_a_metric_space_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230401171258-basis_for_a_topology_on_a_metric_space_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> itself
+by definition, every union of <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> from \(\mathcal{B}\) is <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">open  (metric space)</a>.
+Suppose \(O\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>, then for each \(o \in O\) we can choose an \(\varepsilon > 0\), such that \(B_{\varepsilon}(o) \subseteq O\).
+Therefore the <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">union</a> of those \(B_{\varepsilon}(o)\) is \(O\) itself
 </p>
 </div>
 </div>

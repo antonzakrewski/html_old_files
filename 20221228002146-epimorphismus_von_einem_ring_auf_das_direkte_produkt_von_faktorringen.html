@@ -3,60 +3,70 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Epimorphismus von einem Ring auf das direkte Produkt von Faktorringen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Epimorphismus von einem Ring auf das direkte Produkt von Faktorringen</h1>
-<div id="outline-container-orge534567" class="outline-2">
-<h2 id="orge534567"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfa1fd0a" class="outline-2">
+<h2 id="orgfa1fd0a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien <img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_51241d62dbd95c018cd4181fb8e4e4d35e03e768.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_51241d62dbd95c018cd4181fb8e4e4d35e03e768.svg" class="org-svg" /> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> in <img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" />, so dass <img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_5f498ffb692791d6eba0e76fc34a8a856c77e473.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_5f498ffb692791d6eba0e76fc34a8a856c77e473.svg" class="org-svg" /> für <img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_78e57aac3840de0612aa60fe543fea4592945150.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_78e57aac3840de0612aa60fe543fea4592945150.svg" class="org-svg" /> gilt 
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und seien \(I_1,...,I_n\) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a> in \(R\), so dass \(I_i + I_j = R\) für \(j \neq i\) gilt 
 Dann ist die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_d751f7c7229219f4006fbb598f0e90719a575ac6.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_d751f7c7229219f4006fbb598f0e90719a575ac6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f: R \rightarrow \prod_{i=1}^{n} R / I_{i} \\
+r \mapsto (r + I_1,...,r + I_n)
+\end{align*}
 <p>
 ein <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiver</a> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_4e05067d10afe5fc4184f298df4c8d24178ed14f.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_4e05067d10afe5fc4184f298df4c8d24178ed14f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\mathrm{ker}(f) = \bigcap_{i=1}^n I_i
+\end{align*}
 <p>
 Insbesondere gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_edb249b10861215c61ed0e207e5adc1c2ceb456d.svg" alt="20221228002146-epimorphismus_von_einem_ring_auf_das_direkte_produkt_von_faktorringen_edb249b10861215c61ed0e207e5adc1c2ceb456d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{align*}
+R / \bigcap_{i=1}^n \simeq \prod_{i=1}^{n} R / I_i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org429bc9a" class="outline-2">
-<h2 id="org429bc9a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8c50658" class="outline-2">
+<h2 id="org8c50658"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

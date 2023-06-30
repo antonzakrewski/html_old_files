@@ -3,69 +3,76 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ableitung Arkustangens</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung Arkustangens</h1>
-<div id="outline-container-org2e0cf06" class="outline-2">
-<h2 id="org2e0cf06"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5d209b4" class="outline-2">
+<h2 id="org5d209b4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015103813-ableitung_arcustangens_c9ca2ccd96425652dfc431d220827df261733200.svg" alt="20221015103813-ableitung_arcustangens_c9ca2ccd96425652dfc431d220827df261733200.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\arctan'(x) =& \frac{1}{1 + x^2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf5ded41" class="outline-2">
-<h2 id="orgf5ded41"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1c2e60d" class="outline-2">
+<h2 id="org1c2e60d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund der Definition des <a href="20221009192726-arkuskotangens.html#ID-f8e28bac-2565-4b87-b532-f23de504d455">Arkuskotangens</a> als <a href="20210318211130-umkehrfunktion.html#ID-35d2e288-1bec-4daf-866a-99566d5d0d8f">Umkehrfunktion</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015103813-ableitung_arcustangens_2ebf9509e6ded908b6a445cde149c22a3cddf660.svg" alt="20221015103813-ableitung_arcustangens_2ebf9509e6ded908b6a445cde149c22a3cddf660.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\tan(\arctan(x)) =& x 
+\end{align*}
 <p>
 Aufgrund der <a href="20221015110424-ableitung_tangens.html#ID-fa398e10-2fcc-4b06-bc7f-b0a691f61739">Ableitung des Tangens</a> und der <a href="20210412125148-kettenregel.html#ID-2a4a6de8-4c4d-45bc-97f3-de18cfd2aac7">Kettenregel</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015103813-ableitung_arcustangens_bd2ebe02e96e586ad02f6d0ec1b2fa164e8286ae.svg" alt="20221015103813-ableitung_arcustangens_bd2ebe02e96e586ad02f6d0ec1b2fa164e8286ae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\tan(\arctan(x)) =& x && \vert \frac{\mathrm{d}}{\mathrm{d}x} \\
+\sec(\arctan(x))^2 \cdot \arctan'(x)=&  1 && \vert \cdot \frac{1}{\sec(\arctan(x))^2}\\
+\arctan'(x) =& \frac{1}{\sec(\arctan(x))^2} 
+\end{align*}
 <p>
 Aufgrund der <a href="20221015105512-trigonometrische_identitat_tangens_und_sekans.html#ID-2a5176f5-298f-487f-b866-0997ad4cd5f2">Trigonometrische Identität des Tangens und Sekans</a> $sec(y)<sup>2</sup> =&amp; 1 + tan(y)<sup>2</sup> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015103813-ableitung_arcustangens_022f7f1babdd112d3b86a1182490f141bbd2f06a.svg" alt="20221015103813-ableitung_arcustangens_022f7f1babdd112d3b86a1182490f141bbd2f06a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\arctan'(x) =& \frac{1}{\sec(\arctan(x))^2} \\
+=& \frac{1}{1 + \tan(arctan(x))^2} \\
+=& \frac{1}{1 + x^2}
+\end{align*}
 </div>
 </div>
 </div>

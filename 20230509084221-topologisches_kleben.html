@@ -9,38 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Adjunktionsraum</h1>
-<div id="outline-container-org9188d26" class="outline-2">
-<h2 id="org9188d26"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgeacbe23" class="outline-2">
+<h2 id="orgeacbe23"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230509084221-topologisches_kleben_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230509084221-topologisches_kleben_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230509084221-topologisches_kleben_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_ae25819ad45292c45b897ad2bf9e8d1db581e1f3.svg" alt="20230509084221-topologisches_kleben_ae25819ad45292c45b897ad2bf9e8d1db581e1f3.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> bezüglich der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
-Ferner sei <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" alt="20230509084221-topologisches_kleben_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" class="org-svg" /> eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> auf <img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_59f0d081b8b9b2761d90bb00d904269b3df9d554.svg" alt="20230509084221-topologisches_kleben_59f0d081b8b9b2761d90bb00d904269b3df9d554.svg" class="org-svg" /> mit:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(A \subseteq X\) sowie \(f: A \rightarrow Y\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> bezüglich der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
+Ferner sei \(\sim\) eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> auf \(X \sqcup Y\) mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_5369619ce7f6ab751fce4f99f04123648311842f.svg" alt="20230509084221-topologisches_kleben_5369619ce7f6ab751fce4f99f04123648311842f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+z_1 \sim z_2 \coloneqq 
+    \begin{cases}
+    z_1 = z_2 \\
+    z_1 \in A, z_2 = f(z_1) \\
+    z_2 \in A, z_1 = f(z_2) \\
+    z_1,z_2 \in A, f(z_1) = f(z_2)
+    \end{cases}
+\end{align*}
 <p>
 Dann ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230509084221-topologisches_kleben_cd138823c108215f66288aea326cc685fb604552.svg" alt="20230509084221-topologisches_kleben_cd138823c108215f66288aea326cc685fb604552.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+X \sqcup_f Y \coloneqq (X \sqcup Y) / \sim
+\end{align*}
 </div>
 </div>
 </div>

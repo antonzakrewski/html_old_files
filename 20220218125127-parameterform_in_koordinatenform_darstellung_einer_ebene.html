@@ -9,13 +9,38 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Parameterform in Koordinatenform (Darstellung einer Ebene)</h1>
 
-<div id="outline-container-org27511f1" class="outline-2">
-<h2 id="org27511f1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfb62845" class="outline-2">
+<h2 id="orgfb62845"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="20220210092610-ebenengleichung_in_parameterform.html#ID-b4ad407d-6c4f-487e-9d84-46bdcce58db2">Parameterform (Darstellung einer Ebene)</a>   
@@ -23,12 +48,10 @@
 <li>wahl eines Punkte</li>
 </ul></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220218125127-parameterform_in_koordinatenform_darstellung_einer_ebene_7b7170db3e2a1894fcca7a784c6b3b0f5dfaeeb7.svg" alt="20220218125127-parameterform_in_koordinatenform_darstellung_einer_ebene_7b7170db3e2a1894fcca7a784c6b3b0f5dfaeeb7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+E:& \vec{X} = \vec{A} + \lambda \vec{u} + \mu \vec{v} \\
+E:& (\vec{u} \times \vec{n}) \circ (\vec{A} - \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} ) = 0
+\end{align*}
 </div>
 </div>
 </div>

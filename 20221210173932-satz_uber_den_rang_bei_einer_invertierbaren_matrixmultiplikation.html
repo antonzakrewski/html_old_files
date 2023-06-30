@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rang bei einer invertierbaren Matrixmultiplikation</h1>
-<div id="outline-container-org6ba7f68" class="outline-2">
-<h2 id="org6ba7f68"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org67fad90" class="outline-2">
+<h2 id="org67fad90"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" alt="20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_b9ad704ec481876fda34e36e5d9968dfbf480f37.svg" class="org-svg" /> .
-Seien   <img src="file:///home/anton/html/ltximg/20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_c379e20ef454d6a7dcfa48726a078ded8644e80b.svg" alt="20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_c379e20ef454d6a7dcfa48726a078ded8644e80b.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_49ebda023c7fbb5ad6fcbd3c5939d4068bd331e7.svg" alt="20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_49ebda023c7fbb5ad6fcbd3c5939d4068bd331e7.svg" class="org-svg" /> jeweils <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbare</a> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a>, dann folgt:
+Sei \(A \in K^{m \times n}\) .
+Seien   \(B \in K^{n \times n}\) bzw. \(C \in K^{m \times m}\) jeweils <a href="20221210173144-inverse_matrix.html#ID-d2b778ff-5874-4c99-acdb-3ebd54f1bf7b">invertierbare</a> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a>, dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_9e5b7b83b8385970864e4c74c1bc7e863af1fab7.svg" alt="20221210173932-satz_uber_den_rang_bei_einer_invertierbaren_matrixmultiplikation_9e5b7b83b8385970864e4c74c1bc7e863af1fab7.svg" class="org-svg" />
-</span>
+\begin{align*}
+r(A) =& r(AB) \\
+=& r(CA)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org9bf7196" class="outline-2">
-<h2 id="org9bf7196"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org07e5b6b" class="outline-2">
+<h2 id="org07e5b6b"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

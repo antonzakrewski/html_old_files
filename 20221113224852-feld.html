@@ -9,29 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Feld</h1>
-<div id="outline-container-org42f93e0" class="outline-2">
-<h2 id="org42f93e0"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4f2bb05" class="outline-2">
+<h2 id="org4f2bb05"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Ein Feld ist eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221113224852-feld_103dc923cbdbbb0cd807b869968eb6059c9eee4b.svg" alt="20221113224852-feld_103dc923cbdbbb0cd807b869968eb6059c9eee4b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{F}: \mathbb{R}^d \supset M \rightarrow L \subset \mathbb{R}^n \\
+\vec{y} = \begin{pmatrix} y_1 \\ ... \\ y_d  \end{pmatrix}  \mapsto \vec{F}(\vec{y}) = \begin{pmatrix} F_1(\vec{y}) \\ ... \\ F_n(\vec(y)) \end{pmatrix} 
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20221113224852-feld_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221113224852-feld_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> die <a href="20221113224926-basismannigfaltigkeit.html#ID-1612961a-4d16-44d5-b1c0-8dc4b8eff1af">Basismannigfaltigkeit</a> und <img src="file:///home/anton/html/ltximg/20221113224852-feld_781c390874fa49bbed1672f080fe921accb28334.svg" alt="20221113224852-feld_781c390874fa49bbed1672f080fe921accb28334.svg" class="org-svg" /> die <a href="20221113224931-zielmannigfaltigkeit.html#ID-d9647bfc-bee6-4dd9-b4ac-6594cc176f11">Zielmannigfaltigkeit</a> 
+Dabei ist \(M\) die <a href="20221113224926-basismannigfaltigkeit.html#ID-1612961a-4d16-44d5-b1c0-8dc4b8eff1af">Basismannigfaltigkeit</a> und \(L\) die <a href="20221113224931-zielmannigfaltigkeit.html#ID-d9647bfc-bee6-4dd9-b4ac-6594cc176f11">Zielmannigfaltigkeit</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgfe59b86" class="outline-2">
-<h2 id="orgfe59b86"><span class="section-number-2">2.</span> Arten</h2>
+<div id="outline-container-org4b45a79" class="outline-2">
+<h2 id="org4b45a79"><span class="section-number-2">2.</span> Arten</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20221113224449-skalarfeld.html#ID-e834c41c-d052-46e9-bf36-affa0862cebb">Skalarfeld</a></li>

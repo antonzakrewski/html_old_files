@@ -9,37 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">innere einer offenen Menge</h1>
-<div id="outline-container-org1a795cb" class="outline-2">
-<h2 id="org1a795cb"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd7e82cb" class="outline-2">
+<h2 id="orgd7e82cb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230304103255-innere_einer_offenen_menge_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230304103255-innere_einer_offenen_menge_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq X\).
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_5e8c450a654ea61ec15276a7225da867ab598330.svg" alt="20230304103255-innere_einer_offenen_menge_5e8c450a654ea61ec15276a7225da867ab598330.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230304103255-innere_einer_offenen_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> is t <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_a6ad18caef30c64b4ec07f9f2d520d6766efbdc5.svg" alt="20230304103255-innere_einer_offenen_menge_a6ad18caef30c64b4ec07f9f2d520d6766efbdc5.svg" class="org-svg" /></li>
+<li>\(A \in \mathcal{T}\), d.h. \(A\) is t <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
+<li>\(A^{\circ} = A\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc4923b7" class="outline-2">
-<h2 id="orgc4923b7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb8e6b79" class="outline-2">
+<h2 id="orgb8e6b79"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org194b422" class="outline-3">
-<h3 id="org194b422"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org91d13e0" class="outline-3">
+<h3 id="org91d13e0"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der Definition
 </p>
 </div>
 </div>
-<div id="outline-container-orgc2cfcbf" class="outline-3">
-<h3 id="orgc2cfcbf"><span class="section-number-3">2.2.</span> b) <img src="file:///home/anton/html/ltximg/20230304103255-innere_einer_offenen_menge_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230304103255-innere_einer_offenen_menge_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> a)</h3>
+<div id="outline-container-orgced7914" class="outline-3">
+<h3 id="orgced7914"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) a)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt asu der <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a>

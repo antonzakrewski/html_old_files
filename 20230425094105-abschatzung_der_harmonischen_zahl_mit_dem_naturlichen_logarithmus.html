@@ -9,81 +9,92 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschätzung der Harmonischen Zahl mit dem natürlichen Logarithmus</h1>
-<div id="outline-container-org481f22b" class="outline-2">
-<h2 id="org481f22b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga5b785f" class="outline-2">
+<h2 id="orga5b785f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Es gilt für die $n$-te <a href="20230327225748-harmonische_zahl.html#ID-a4bfe849-4829-48a0-a660-bcb7c06886f6">Harmonische Zahl der Ordnung 1</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_6930315f5c3cb3a78bf9637d40c9ce63f887aec9.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_6930315f5c3cb3a78bf9637d40c9ce63f887aec9.svg" class="org-svg" />
-</span>
+\begin{align*}
+\ln(n) \leq H_n \leq 1 + \ln(n - 1)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org34e4d0b" class="outline-2">
-<h2 id="org34e4d0b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgefa5065" class="outline-2">
+<h2 id="orgefa5065"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Betrachten wir die <a href="20220819232744-treppenfunktion.html#ID-44a46263-b27e-4186-86da-d7a82b58b01b">Treppenfunktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_513384c790abc4a3acd656d4193a739980a3944e.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_513384c790abc4a3acd656d4193a739980a3944e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tau: [1,n+1] \rightarrow \mathbb{R} \\
+n \mapsto \frac{1}{\floor(n)}
+\end{align*}
 <p>
 Das <a href="20230208131201-riemannsche_integral.html#ID-4b3c65e0-5b1b-4cb0-b9bd-205a1080c794">Riemann</a> ist der Treppenfunktion ist die <a href="20230327225748-harmonische_zahl.html#ID-a4bfe849-4829-48a0-a660-bcb7c06886f6">Harmonische Zahl der Ordnung 1</a> und wir können abschätzen: 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_181571a67885719c91b9544dfda14fd567a8486e.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_181571a67885719c91b9544dfda14fd567a8486e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{1}{x} \leq \tau(x)
+\end{align*}
 <p>
 Damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_c3248c9c266e8a8dcec34065eefff6924d46d8f4.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_c3248c9c266e8a8dcec34065eefff6924d46d8f4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H_n \geq& \int_1^n \frac{1}{x} \mathrm{d}x\\
+=& \ln(n)
+\end{align*}
 <p>
 Zudem gilt für die Funktion:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_33498c3a55b4a8912f7f584302a16d23971a837f.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_33498c3a55b4a8912f7f584302a16d23971a837f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x)  \coloneqq 
+    \begin{cases}
+    1 & \mbox{if } x \in [0,1] \\
+    \frac{1}{x}  
+    \end{cases}
+\end{align*}
 <p>
 Die Abschätzung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_a449a98b9752e821ec927c426f5d388b4df6f117.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_a449a98b9752e821ec927c426f5d388b4df6f117.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tau(x) \leq f(x)
+\end{align*}
 <p>
 Daraus folgt die Abschätzung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_c0250e309be2f088db108680c9c4303785757588.svg" alt="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus_c0250e309be2f088db108680c9c4303785757588.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H_{n-1} \leq& 1 + \int_1^{n-1} \frac{1}{x} \mathrm{d}x \\
+=& 1 + \ln(n-1)
+\end{align*}
 </div>
 </div>
 </div>

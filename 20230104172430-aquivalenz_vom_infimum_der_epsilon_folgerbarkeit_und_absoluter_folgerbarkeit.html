@@ -9,34 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz vom Infimum der epsilon-Folgerbarkeit und absoluter Folgerbarkeit</h1>
-<div id="outline-container-org2b25b5b" class="outline-2">
-<h2 id="org2b25b5b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4c1115f" class="outline-2">
+<h2 id="org4c1115f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ist <img src="file:///home/anton/html/ltximg/20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" alt="20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> von Formeln, so ist
+Ist \(\Sigma\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> von Formeln, so ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_28f102fe8c9fccdf3eb3eab53bdb1e5e390e1f68.svg" alt="20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_28f102fe8c9fccdf3eb3eab53bdb1e5e390e1f68.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\Sigma \models A
+\end{align*}
 <p>
 äquivalent zu
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_60c48e1b5985baa9bd0e05464dee2aa851132523.svg" alt="20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_60c48e1b5985baa9bd0e05464dee2aa851132523.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\inf (\nu[\Sigma]) \leq \nu(A) \forall \nu
+\end{align*}
 <p>
 vorstellung:
-<img src="file:///home/anton/html/ltximg/20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" alt="20230104172430-aquivalenz_vom_infimum_der_epsilon_folgerbarkeit_und_absoluter_folgerbarkeit_cef5738ec98e6027166a301f1e1aa91aa83fbf7c.svg" class="org-svg" /> -&gt; kombinationen von designierten wahrheitswerten
+\(\Sigma\) -&gt; kombinationen von designierten wahrheitswerten
 </p>
 </div>
 </div>

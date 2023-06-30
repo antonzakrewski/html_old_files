@@ -9,41 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">positiver Abstand zu einer Abgeschlosenen Menge</h1>
-<div id="outline-container-org9c1af8d" class="outline-2">
-<h2 id="org9c1af8d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8ef1f17" class="outline-2">
+<h2 id="org8ef1f17"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_3258e91b7a7217aebed389cff71d0e9e93b5700e.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_3258e91b7a7217aebed389cff71d0e9e93b5700e.svg" class="org-svg" /> die <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">von der Metrik induzierte</a> <a href="20221204190836-topologie.html#ID-17beb370-71a1-47e9-b9e3-7c53dd7c5684">Topologie</a> und <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" class="org-svg" /> eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-Dann gilt für <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_2be775b4a5b826aa1eaa2d4a22ff244a0a7cb201.svg" class="org-svg" />
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \((M,\mathcal{T})\) die <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">von der Metrik induzierte</a> <a href="20221204190836-topologie.html#ID-17beb370-71a1-47e9-b9e3-7c53dd7c5684">Topologie</a> und \(A \subseteq M\) eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Dann gilt für \(m \in M\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_62048a44bfab24bae1d4724ebcdc11e888f08bac.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_62048a44bfab24bae1d4724ebcdc11e888f08bac.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+m \in A \Leftrightarrow d(m,A) = 0
+\end{align*}
 <p>
 bzw. die Negation
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_ab4612d33dcbf55f0359ffa15ad785dfef4b4430.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_ab4612d33dcbf55f0359ffa15ad785dfef4b4430.svg" class="org-svg" />
-</span>
+\begin{align*}
+m \not\in A \Leftrightarrow d(m,A) > 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb8ad1bf" class="outline-2">
-<h2 id="orgb8ad1bf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org53d4c2b" class="outline-2">
+<h2 id="org53d4c2b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a> gilt <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_a8d5a371d52616735988cbe53ede7700eb7f7bfb.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_a8d5a371d52616735988cbe53ede7700eb7f7bfb.svg" class="org-svg" /> und für <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_7d00a8dbdbac4e6affa8fdaae1cb830e3ac9fde2.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_7d00a8dbdbac4e6affa8fdaae1cb830e3ac9fde2.svg" class="org-svg" /> gilt für beliebiges <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_a3301c447d0fb6af5aba9f79661759e3f64fb8d2.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_a3301c447d0fb6af5aba9f79661759e3f64fb8d2.svg" class="org-svg" />.
-Daraus folgt dann <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_f4360d40abcae1a8b69a6b7ec9507eb2dde950b5.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_f4360d40abcae1a8b69a6b7ec9507eb2dde950b5.svg" class="org-svg" /> und auch <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_0b85ac9b57cdfce5266b1b204c62455a2e27c8cf.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_0b85ac9b57cdfce5266b1b204c62455a2e27c8cf.svg" class="org-svg" />
-Die Rückrichtung folgt aus der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit</a> durch <img src="file:///home/anton/html/ltximg/20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_0d55c05429ec633619bd1aa9f44ab6c16df7f4eb.svg" alt="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge_0d55c05429ec633619bd1aa9f44ab6c16df7f4eb.svg" class="org-svg" />
+Nach dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a> gilt \(\overline{A} = A\) und für \(d(m,A)\) gilt für beliebiges \(\varepsilon > 0: U_{\varepsilon}(m) \cap A \neq \emptyset\).
+Daraus folgt dann \(m \in \overline{A}\) und auch \(m \in A\)
+Die Rückrichtung folgt aus der <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit</a> durch \(0 \leq d(m,A) \leq d(m,m) = 0\)
 </p>
 </div>
 </div>

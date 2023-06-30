@@ -3,28 +3,55 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hüllenoperator</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hüllenoperator</h1>
-<div id="outline-container-org47871bb" class="outline-2">
-<h2 id="org47871bb"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org9e6bae9" class="outline-2">
+<h2 id="org9e6bae9"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230313215514-hullenoperator_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" alt="20230313215514-hullenoperator_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230313215514-hullenoperator_cfee15e3f805e97cec14cd786b4a3095dc6d5adf.svg" alt="20230313215514-hullenoperator_cfee15e3f805e97cec14cd786b4a3095dc6d5adf.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-<img src="ltximg/20230313215514-hullenoperator_bd97f8cc9649854efd31097f533f329d2f7e35cb.svg" alt="20230313215514-hullenoperator_bd97f8cc9649854efd31097f533f329d2f7e35cb.svg" class="org-svg" /> ist ein Hüllenoperator, falls <img src="ltximg/20230313215514-hullenoperator_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230313215514-hullenoperator_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> folgende Eigenschaften erfüllt:
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\overline{\phantom{x}}: \mathcal{P}(X) \rightarrow \mathcal{P}(X)\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+\(\overline{\phantom{x}}\) ist ein Hüllenoperator, falls \(f\) folgende Eigenschaften erfüllt:
 </p>
 <ol class="org-ol">
-<li><img src="ltximg/20230313215514-hullenoperator_def1842adca47e96d937555e563d7dee95f22517.svg" alt="20230313215514-hullenoperator_def1842adca47e96d937555e563d7dee95f22517.svg" class="org-svg" /></li>
-<li><img src="ltximg/20230313215514-hullenoperator_6e85d2b4f8d47bf89875bc8ddeeecb38ee0603e6.svg" alt="20230313215514-hullenoperator_6e85d2b4f8d47bf89875bc8ddeeecb38ee0603e6.svg" class="org-svg" /></li>
-<li><img src="ltximg/20230313215514-hullenoperator_b782266bc07a34dabbe1e52e958092bc9d19e695.svg" alt="20230313215514-hullenoperator_b782266bc07a34dabbe1e52e958092bc9d19e695.svg" class="org-svg" /></li>
-<li><img src="ltximg/20230313215514-hullenoperator_092b5049d796dbd28903271e3bda9082f46a71b1.svg" alt="20230313215514-hullenoperator_092b5049d796dbd28903271e3bda9082f46a71b1.svg" class="org-svg" /></li>
+<li>\(\overline{\emptyset} = \emptyset\)</li>
+<li>\(\forall A \subseteq X : A \subseteq \overline{A}\)</li>
+<li>\(\forall A \subseteq X : \overline{\overline{A}} = \overline{A}\)</li>
+<li>\(\forall A,B \subseteq X : \overline{A \cup B} = \overline{A} \cup \overline{B}\)</li>
 </ol>
 </div>
 </div>

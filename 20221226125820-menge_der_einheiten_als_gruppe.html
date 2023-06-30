@@ -9,51 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Einheiten als Gruppe</h1>
-<div id="outline-container-orgcaf76c6" class="outline-2">
-<h2 id="orgcaf76c6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org15a2382" class="outline-2">
+<h2 id="org15a2382"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
-Dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a> <img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_c519097a64feb00607d81ffbb34f9cc349407954.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_c519097a64feb00607d81ffbb34f9cc349407954.svg" class="org-svg" /> eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> 
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>.
+Dann ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a> \(R^{\times}\) eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc1e4355" class="outline-2">
-<h2 id="orgc1e4355"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbbf88db" class="outline-2">
+<h2 id="orgbbf88db"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 zu zeigen: <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a> 
 </p>
 </div>
-<div id="outline-container-org6ae6610" class="outline-3">
-<h3 id="org6ae6610"><span class="section-number-3">2.1.</span> nichtleer</h3>
+<div id="outline-container-org727085a" class="outline-3">
+<h3 id="org727085a"><span class="section-number-3">2.1.</span> nichtleer</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_dcf5e42a93cea92572847dca06c0d322a4b0b830.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_dcf5e42a93cea92572847dca06c0d322a4b0b830.svg" class="org-svg" />
-</span>
+\begin{align*}
+1 \cdot 1 = 1 \Rightarrow 1 \in R^{\times} \neq \emptyset 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3f92e2d" class="outline-3">
-<h3 id="org3f92e2d"><span class="section-number-3">2.2.</span> abgeschlossenheit</h3>
+<div id="outline-container-orgf54b301" class="outline-3">
+<h3 id="orgf54b301"><span class="section-number-3">2.2.</span> abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_fb19c9e7193fc08fec563deffc21c5cc6f050f9c.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_fb19c9e7193fc08fec563deffc21c5cc6f050f9c.svg" class="org-svg" />
-So folgt nach konstruktion, dass <img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_2e2bdf27ea31ae7424b58b1d9c83457775ce0f74.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_2e2bdf27ea31ae7424b58b1d9c83457775ce0f74.svg" class="org-svg" /> existieren mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_1782d9475487e5fced0e81df6948cd4f86240845.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_1782d9475487e5fced0e81df6948cd4f86240845.svg" class="org-svg" />.
+Seien \(a,b^{-1} \in R^{\times}\)
+So folgt nach konstruktion, dass \(a^{-1}, b\) existieren mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a^{-1} \cdot a = 1\).
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226125820-menge_der_einheiten_als_gruppe_0913ade19d2980e9f0f5f19d425baf52a8c99c25.svg" alt="20221226125820-menge_der_einheiten_als_gruppe_0913ade19d2980e9f0f5f19d425baf52a8c99c25.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a \cdot b^{-1}) \cdot (b \cdot a^{-1}) =& 1 \\
+\Rightarrow a \cdot b^{-1} \in R^{\times}
+\end{align*}
 </div>
 </div>
 </div>

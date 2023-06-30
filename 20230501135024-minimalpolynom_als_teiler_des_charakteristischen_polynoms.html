@@ -9,61 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Minimalpolynom als Teiler des Charakteristischen Polynoms</h1>
-<div id="outline-container-org011f275" class="outline-2">
-<h2 id="org011f275"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdaa4121" class="outline-2">
+<h2 id="orgdaa4121"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein $n$-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20230222203528-minimalpolynom.html#ID-6ec50a2e-09e0-4866-a0f6-acae544923f8">Minimalpolynom</a> <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_d7fe747f45f21adc7902b02092bafa240cafc30d.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_d7fe747f45f21adc7902b02092bafa240cafc30d.svg" class="org-svg" /> und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_c7ffdb6ff120296458be2120aea730d62e95f8ba.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_c7ffdb6ff120296458be2120aea730d62e95f8ba.svg" class="org-svg" />
-Dann existiert ein <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_a7884967688bb00cf716853d5aad8655852ba868.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_a7884967688bb00cf716853d5aad8655852ba868.svg" class="org-svg" /> so dass gilt:
+Sei \(V\) ein $n$-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a> mit <a href="20230222203528-minimalpolynom.html#ID-6ec50a2e-09e0-4866-a0f6-acae544923f8">Minimalpolynom</a> \(m_A\) und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> \(f_A\)
+Dann existiert ein \(g \in K[X]\) so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_b6b0ddddc9cb4267dfe9b41e2a612de4e17f4570.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_b6b0ddddc9cb4267dfe9b41e2a612de4e17f4570.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_A = g \cdot m_A
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0aa25d2" class="outline-2">
-<h2 id="org0aa25d2"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org34c3d30" class="outline-2">
+<h2 id="org34c3d30"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Da <a href="20230314170420-polynomring_uber_einem_korper_als_euklidischer_ring.html#ID-56b8e8c8-a1ca-4271-a5b8-c6e1c8d5ab1b">der Polynomring über einem Körper ein euklidischer Ring</a> ist, folgt durch Polynomdivision:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_5a2736fe921a1b4c90476daf0c8d80f8ffaf5b3c.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_5a2736fe921a1b4c90476daf0c8d80f8ffaf5b3c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\chi_A(x) = \mu_A(x) \cdot g(x) + r(x)
+\end{align*}
 <p>
-für <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_81560008dc864b5ef3d11175218eeaf80abcf086.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_81560008dc864b5ef3d11175218eeaf80abcf086.svg" class="org-svg" />.
+für \(g,r \in K[X]\).
 </p>
 
 <p>
-Nach dem <a href="20230222203639-satz_von_cayley_hamilton.html#ID-617e9586-9b4a-4651-b036-ac05b6befa50">Satz von Cayley-Hamilton</a> gilt <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_b4574c30d7c621d2acbe176e0c6f29e37a5ba81e.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_b4574c30d7c621d2acbe176e0c6f29e37a5ba81e.svg" class="org-svg" /> , d.h. <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist im <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> des <a href="20230304193911-algebra_einsetzungshomomorphismus.html#ID-5440db15-647e-4546-91c6-8333ebcd2dfa">Algebra-Einsetzungshomomorphismus</a>:
+Nach dem <a href="20230222203639-satz_von_cayley_hamilton.html#ID-617e9586-9b4a-4651-b036-ac05b6befa50">Satz von Cayley-Hamilton</a> gilt \(f_A(A) = 0\) , d.h. \(A\) ist im <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> des <a href="20230304193911-algebra_einsetzungshomomorphismus.html#ID-5440db15-647e-4546-91c6-8333ebcd2dfa">Algebra-Einsetzungshomomorphismus</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_037b1b576b6f799ecb9c66982dde452904cf610a.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_037b1b576b6f799ecb9c66982dde452904cf610a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+K[X] \rightarrow \mathrm{End}_K(V) \\
+A \rightarrow f(A)
+\end{align*}
 <p>
-Nach Definition ist <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_d7fe747f45f21adc7902b02092bafa240cafc30d.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_d7fe747f45f21adc7902b02092bafa240cafc30d.svg" class="org-svg" /> der <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normierte</a> Erzeuger des Kerns, damit folgt <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_395b8517417168522e18219719718ffcd39e9363.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_395b8517417168522e18219719718ffcd39e9363.svg" class="org-svg" /> und auch
+Nach Definition ist \(m_A\) der <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normierte</a> Erzeuger des Kerns, damit folgt \(\mu_A(A) = 0\) und auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_2dd9b2b46af65198706bed4f15ba9f314d5db3d0.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_2dd9b2b46af65198706bed4f15ba9f314d5db3d0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& \chi_A(A) \\
+=& \mu_A(A) \cdot g(A) + r(A) \\
+=& r(A)
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_aaf458e05546b51526582ba105b394adeb43dbc9.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_aaf458e05546b51526582ba105b394adeb43dbc9.svg" class="org-svg" /> nach Definition minimal gewählt wurde, folgt auch <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_1d74b7949c731aa79fb5dc5d324a54d3aeab1e10.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_1d74b7949c731aa79fb5dc5d324a54d3aeab1e10.svg" class="org-svg" />, da sonst <img src="file:///home/anton/html/ltximg/20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_f1aca02aec1ec488e8a7f885e38a840b9760955b.svg" alt="20230501135024-minimalpolynom_als_teiler_des_charakteristischen_polynoms_f1aca02aec1ec488e8a7f885e38a840b9760955b.svg" class="org-svg" /> gelten würde
+Da \(\mu_A\) nach Definition minimal gewählt wurde, folgt auch \(r = 0\), da sonst \(\mathrm{deg}(r) < \mathrm{deg}(\mu_A)\) gelten würde
 </p>
 </div>
 </div>

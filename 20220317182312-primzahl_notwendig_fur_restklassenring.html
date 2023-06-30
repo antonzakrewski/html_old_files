@@ -9,30 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Primzahl notwendig für Restklassenkörper</h1>
-<div id="outline-container-orgce29757" class="outline-2">
-<h2 id="orgce29757"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org69deb36" class="outline-2">
+<h2 id="org69deb36"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20220317182312-primzahl_notwendig_fur_restklassenring_73986b1b2764b4c5c1c5a9977dbd843eba82a7dd.svg" alt="20220317182312-primzahl_notwendig_fur_restklassenring_73986b1b2764b4c5c1c5a9977dbd843eba82a7dd.svg" class="org-svg" /> ist dann ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper (Mathe)</a>, wenn <img src="file:///home/anton/html/ltximg/20220317182312-primzahl_notwendig_fur_restklassenring_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" alt="20220317182312-primzahl_notwendig_fur_restklassenring_1ac765397b87d3f1afdac5c7616d4f68835dbc59.svg" class="org-svg" /> <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> ist</li>
+<li>\(Z_p\) ist dann ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper (Mathe)</a>, wenn \(p\) <a href="20211228193940-primzahl.html#ID-d7857a86-c778-478d-aa48-7e239fcd8076">prim</a> ist</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org932e87f" class="outline-2">
-<h2 id="org932e87f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org987e2f5" class="outline-2">
+<h2 id="org987e2f5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220317182312-primzahl_notwendig_fur_restklassenring_c543d70e6e3c9a9e62c14ea116449a5b6a12093f.svg" alt="20220317182312-primzahl_notwendig_fur_restklassenring_c543d70e6e3c9a9e62c14ea116449a5b6a12093f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+p  \coloneqq& a \cdot b && a,b \in Z_p p \\
+\Rightarrow a \cdot_p b =& 0
+\end{align*}
 <ul class="org-ul">
 <li>Widerspruch zur <a href="20220103213622-nullteilerfreiheit.html#ID-bad86f8c-afc1-486f-9add-12b00742a9b7">Nullteilerfreiheit</a></li>
 </ul>

@@ -9,49 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss eines Produkts</h1>
-<div id="outline-container-orgcb0cb03" class="outline-2">
-<h2 id="orgcb0cb03"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2758ef3" class="outline-2">
+<h2 id="org2758ef3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" alt="20230430202046-abschluss_eines_produkts_027ef79876bcbe1cc0754c7c4ce8d608eedc9e91.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_d43c043e79dd97009b3397e80dc89c59deea1e08.svg" alt="20230430202046-abschluss_eines_produkts_d43c043e79dd97009b3397e80dc89c59deea1e08.svg" class="org-svg" /> die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>
-Seien ferner <img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_f80f127ba1d774a73a6bbe43631b473f0868c135.svg" alt="20230430202046-abschluss_eines_produkts_f80f127ba1d774a73a6bbe43631b473f0868c135.svg" class="org-svg" />, so gilt für das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> und den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>:
+Seien \((X_i,\mathcal{T}_i)\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \((X,\mathcal{T})\) die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>
+Seien ferner \(A_i \subseteq X_i\), so gilt für das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> und den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_fdbdafe6d943531ccc3d5208bf9df952f9a19291.svg" alt="20230430202046-abschluss_eines_produkts_fdbdafe6d943531ccc3d5208bf9df952f9a19291.svg" class="org-svg" />
-</span>
+\begin{align*}
+\overline{\prod A_i} = \prod \overline{A_i}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf977074" class="outline-2">
-<h2 id="orgf977074"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaa57c4a" class="outline-2">
+<h2 id="orgaa57c4a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf3dacc2" class="outline-3">
-<h3 id="orgf3dacc2"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org5f4ff0e" class="outline-3">
+<h3 id="org5f4ff0e"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Wir wissen, dass die <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektionen von einer Produkttopologie eine stetig offene Abbildung</a> sind.
 Nach der Charakterisierung des <a href="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen.html#ID-1b328ebc-2c0d-43c4-8581-da0f9579c217">Bild des Abschlusses unter stetigen Abbildungen</a> gilt dabei:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_2db77c880d47825bc742e1c8f415d8201133c504.svg" alt="20230430202046-abschluss_eines_produkts_2db77c880d47825bc742e1c8f415d8201133c504.svg" class="org-svg" />
-</span>
+\begin{align*}
+\pi_i[\overline{\prod A_i}] \subseteq& \overline{\pi_i[\prod A_i]} =& \overline{A_i}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5146405" class="outline-3">
-<h3 id="org5146405"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org01080ea" class="outline-3">
+<h3 id="org01080ea"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230430202046-abschluss_eines_produkts_3428f7ef88a49b1bd47706d72d0e3c3ed5ec74cf.svg" alt="20230430202046-abschluss_eines_produkts_3428f7ef88a49b1bd47706d72d0e3c3ed5ec74cf.svg" class="org-svg" />
+Sei \(a = (a_i) \in \prod \overline{A_i}\)
 </p>
 </div>
 </div>

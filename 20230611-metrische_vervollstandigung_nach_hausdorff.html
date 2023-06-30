@@ -9,66 +9,83 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Metrische Vervollständigung nach Hausdorff</h1>
-<div id="outline-container-orgcc0f07b" class="outline-2">
-<h2 id="orgcc0f07b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org799ea79" class="outline-2">
+<h2 id="org799ea79"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_3d0595915278196e56a71afcce16081fef871fe1.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_3d0595915278196e56a71afcce16081fef871fe1.svg" class="org-svg" /> fest.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x_0 \in X\) fest.
 Dann ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_6f7c32804e25b639751b96527c341e4aefb77c17.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_6f7c32804e25b639751b96527c341e4aefb77c17.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{C}^0(X, \| \cdot \|_{\infty})
+\end{align*}
 <p>
 mit der natürlichen Assoziation
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_c006e4221fc77e3a5cdb14b0936d1a4e53ecd51d.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_c006e4221fc77e3a5cdb14b0936d1a4e53ecd51d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\iota: X \rightarrow& \mathcal{C}^0(X, \| \cdot \|_{\infty}) \\
+x \mapsto& d(\cdot, x) - d(\cdot, x_0)
+\end{align*}
 <p>
 eine <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vervollständigung</a> durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_8f94f535c8825c741f261a828410def9f9d5ff3a.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_8f94f535c8825c741f261a828410def9f9d5ff3a.svg" class="org-svg" />
-</span>
+\begin{align*}
+(\overline{\iota[X]}, \| \cdot \|_{\infty})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org759d29e" class="outline-2">
-<h2 id="org759d29e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org80abcf9" class="outline-2">
+<h2 id="org80abcf9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org44d703f" class="outline-3">
-<h3 id="org44d703f"><span class="section-number-3">2.1.</span> <a href="20230420124409-isometrische_einbettung.html#ID-b394c6cc-a4c6-421b-a0a5-711f841db54f">Isometrische Einbettung</a></h3>
+<div id="outline-container-org4c13f5f" class="outline-3">
+<h3 id="org4c13f5f"><span class="section-number-3">2.1.</span> <a href="20230420124409-isometrische_einbettung.html#ID-b394c6cc-a4c6-421b-a0a5-711f841db54f">Isometrische Einbettung</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20230611-isometrische_einbettung_auf_die_differenz.html#ID-7aaf143e-cf12-425c-8644-63112a19879c">Isometrische Einbettung auf die Differenz</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgfb6ea2e" class="outline-3">
-<h3 id="orgfb6ea2e"><span class="section-number-3">2.2.</span> <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständigkeit</a></h3>
+<div id="outline-container-orge30ad9c" class="outline-3">
+<h3 id="orge30ad9c"><span class="section-number-3">2.2.</span> <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständigkeit</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_181e1282ef44cd1af37eeeb4ffe94392944f00d9.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_181e1282ef44cd1af37eeeb4ffe94392944f00d9.svg" class="org-svg" /> eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so setzen wir <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_81f70b3aeab709bb50fa25e1b0d9c32c7a6cd5be.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_81f70b3aeab709bb50fa25e1b0d9c32c7a6cd5be.svg" class="org-svg" />.
-Dabei ist <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_fdde8d5e84bfca31e676dc7a910d78ae5382a43d.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_fdde8d5e84bfca31e676dc7a910d78ae5382a43d.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_5de149ef1f68bd434a346c93e876a2c8d66c0e2b.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_5de149ef1f68bd434a346c93e876a2c8d66c0e2b.svg" class="org-svg" /> ist eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /> und konvergiert, d.h. <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a>.
+Sei \(f_n \in \iota[X]\) eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so setzen wir \(f(x)  \coloneqq \lim_{n \to \infty}\left(f_n(x)\right)\).
+Dabei ist \(\vert f_n(x) - f_m(x) \vert \leq& \| f_n - f_m \|_{\infty}\), d.h. \(f_n(x)\) ist eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> in \(\mathbb{R}\) und konvergiert, d.h. \(f(x)\) ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a>.
 </p>
 
 <p>
-so folgt aus der Aussage, <a href="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts.html#ID-d4063ead-f8db-464f-bbcd-4ddcc5c0185f">gleichmäßige Konvergenz von stetigen Abbildungen impliziere Stetigkeit des Grenzwerts</a>, dass <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_eb6a1dbca0e598b1889a440ca88817a2d00fdef3.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_eb6a1dbca0e598b1889a440ca88817a2d00fdef3.svg" class="org-svg" />.
-Ferner ist nach der Aussage über <a href="20230319220347-konvergente_folgen_und_abgeschlossenen_mengen.html#ID-a89b2f81-bac7-4046-80e5-fa2309ba3b9a">Konvergente Folgen und Abgeschlossenen Mengen in erstabzählbaren Räumen</a> <img src="file:///home/anton/html/ltximg/20230611-metrische_vervollstandigung_nach_hausdorff_4a6a2541ff2960877bb6477995494906af78cb13.svg" alt="20230611-metrische_vervollstandigung_nach_hausdorff_4a6a2541ff2960877bb6477995494906af78cb13.svg" class="org-svg" />, da <a href="20230222171544-erste_abzahlbarkeitsaxiom_in_metrischen_raumen.html#ID-03e88cab-5832-4ecd-a005-84ce1036be99">metrische Räume ertsabzählbar</a> sind.
+so folgt aus der Aussage, <a href="20230606-gleichmaßige_konvergenz_von_stetigen_abbildungen_impliziert_stetigkeit_des_grenzwerts.html#ID-d4063ead-f8db-464f-bbcd-4ddcc5c0185f">gleichmäßige Konvergenz von stetigen Abbildungen impliziere Stetigkeit des Grenzwerts</a>, dass \(f \in \mathcal{C}^0(X, \| \cdot \|_{\infty})\).
+Ferner ist nach der Aussage über <a href="20230319220347-konvergente_folgen_und_abgeschlossenen_mengen.html#ID-a89b2f81-bac7-4046-80e5-fa2309ba3b9a">Konvergente Folgen und Abgeschlossenen Mengen in erstabzählbaren Räumen</a> \(f \in \overline{\iota[X]}\), da <a href="20230222171544-erste_abzahlbarkeitsaxiom_in_metrischen_raumen.html#ID-03e88cab-5832-4ecd-a005-84ce1036be99">metrische Räume ertsabzählbar</a> sind.
 </p>
 </div>
 </div>

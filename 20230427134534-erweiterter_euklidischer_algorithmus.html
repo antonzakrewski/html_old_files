@@ -3,47 +3,62 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>erweiterter euklidischer Algorithmus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">erweiterter euklidischer Algorithmus</h1>
-<div id="outline-container-orgf78983a" class="outline-2">
-<h2 id="orgf78983a"><span class="section-number-2">1.</span> Algorithmus</h2>
+<div id="outline-container-orge7885e8" class="outline-2">
+<h2 id="orge7885e8"><span class="section-number-2">1.</span> Algorithmus</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> und <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_3e42886730e7af6fcec5d66d76282b2c2d7bc3f0.svg" class="org-svg" />.
-Dann liefert der <a href="20220906102828-euklidischer_algorithmus.html#ID-46ca0f33-0265-49a8-a689-91968fb88b56">euklidischer Algorithmus</a> Ringelemente <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_6e38a2f887f2363d0082c75bdaccbc7f8562d337.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_6e38a2f887f2363d0082c75bdaccbc7f8562d337.svg" class="org-svg" /> für <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> mit <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_bab13f26068ed9f20d88d7d720c6ef3721a42fa9.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_bab13f26068ed9f20d88d7d720c6ef3721a42fa9.svg" class="org-svg" /> und 
+Sei \(R\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> und \(a,b \in R\).
+Dann liefert der <a href="20220906102828-euklidischer_algorithmus.html#ID-46ca0f33-0265-49a8-a689-91968fb88b56">euklidischer Algorithmus</a> Ringelemente \(r_i, q_i\) für \(i \in \{1,...,n\}\) mit \(r_0 \coloneqq a, r_1 \coloneqq b\) und 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_23a8a6fdccd8c39bff87ac4e8a1dd58e48f52a24.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_23a8a6fdccd8c39bff87ac4e8a1dd58e48f52a24.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+r_i =& r_{i+1} q_{i+1} + r_{i+2}
+\end{align*}
 <p>
-sowie <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_b17c74fcad3402a719d1ab6ab54cad4c577173b4.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_b17c74fcad3402a719d1ab6ab54cad4c577173b4.svg" class="org-svg" />
-Es folgt, dass <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_1e69e58618021ee88209dff91a9a2863ee0df196.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_1e69e58618021ee88209dff91a9a2863ee0df196.svg" class="org-svg" /> der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsame Teiler</a> ist und es gilt:
+sowie \(r_n = 0\)
+Es folgt, dass \(r_{n-1}\) der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsame Teiler</a> ist und es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_1349c83c2d9b03a8dccf139e2a25a20292ffdd34.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_1349c83c2d9b03a8dccf139e2a25a20292ffdd34.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+r_{n-2} =& r_{n-1} \cdot q_{n-1} \\
+\end{align*}
 <p>
-Zusätzlich führt man <img src="ltximg/20230427134534-erweiterter_euklidischer_algorithmus_b5a5038618bd6b6ae442b44749c1a4afd3825a4d.svg" alt="20230427134534-erweiterter_euklidischer_algorithmus_b5a5038618bd6b6ae442b44749c1a4afd3825a4d.svg" class="org-svg" /> ein mit
+Zusätzlich führt man \(s_1, t_1\) ein mit
 </p>
 </div>
 </div>

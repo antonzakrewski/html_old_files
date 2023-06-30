@@ -9,40 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvergenzverhalten einer endlich häufig verschobenen Reihe</h1>
-<div id="outline-container-org4eb782a" class="outline-2">
-<h2 id="org4eb782a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3b41782" class="outline-2">
+<h2 id="org3b41782"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_02e9c4843b734a578f42f05195dfe34c2cd8edc3.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_02e9c4843b734a578f42f05195dfe34c2cd8edc3.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> in <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_ecf15f8000807646f67edfd325ce2671b070041c.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_ecf15f8000807646f67edfd325ce2671b070041c.svg" class="org-svg" /> (verallgemeinerbar -&gt; was hat addition + metrik), dann sind folgende Aussagen äquivalent 
+Sei \(\sum_{n=0}^{\infty} a_n\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> in \(\mathbb{C}\) (verallgemeinerbar -&gt; was hat addition + metrik), dann sind folgende Aussagen äquivalent 
 </p>
 <ul class="org-ul">
-<li>es existiert ein <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_3e3d61b858c135007af8db2a8c80fb38c0005a58.svg" class="org-svg" /> sodass <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_361def956d39428aa332aee56d1974bfa9a80a9b.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_361def956d39428aa332aee56d1974bfa9a80a9b.svg" class="org-svg" /> konvergiert</li>
-<li><img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_02e9c4843b734a578f42f05195dfe34c2cd8edc3.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_02e9c4843b734a578f42f05195dfe34c2cd8edc3.svg" class="org-svg" /> konvergiert</li>
+<li>es existiert ein \(k \in \mathbb{N}\) sodass \(\sum_{n=k}^{\infty} a_n\) konvergiert</li>
+<li>\(\sum_{n=0}^{\infty} a_n\) konvergiert</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf7ccf7d" class="outline-2">
-<h2 id="orgf7ccf7d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf59a907" class="outline-2">
+<h2 id="orgf59a907"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es sei:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_b1c6693d83b3f5d0a2ab38fba232f4e79cb0a515.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_b1c6693d83b3f5d0a2ab38fba232f4e79cb0a515.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+s  \coloneqq \sum_{n=0}^{k-1} a_n \in \mathbb{C} 
+\end{align*}
 <p>
 Dann folgt:
 </p>
 <ul class="org-ul">
-<li><a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_fb03346225e6f0f5562bd04f8646012713886ed3.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_fb03346225e6f0f5562bd04f8646012713886ed3.svg" class="org-svg" /> dann folgt, dass <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_3e9fc518bcac0a3cca293d6e0b5e544479c15832.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_3e9fc518bcac0a3cca293d6e0b5e544479c15832.svg" class="org-svg" /> und $ &sum;<sub>n=k</sub><sup>&infin;</sup> a<sub>i</sub> &rarr; a - s$</li>
-<li><a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_73690a247bc8603d107a006f2cb7bb059afd3783.svg" alt="20221213071814-konvergenzverhalten_einer_endlich_haufig_verschobenen_reihe_73690a247bc8603d107a006f2cb7bb059afd3783.svg" class="org-svg" /> so folgt, dass $ &sum;<sub>n=0</sub><sup>&infin;</sup> a<sub>n</sub> = &sum;<sub>i=0</sub><sup>k-1</sup> a<sub>i</sub> + &sum;<sub>n=k</sub><sup>&infin;</sup> a<sub>n</sub> &rarr; s + a'$</li>
+<li><a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(\sum_{n=0}^{\infty} a_n \rightarrow a\) dann folgt, dass \(\sum_{i=0}^{k-1} a_i + \sum_{n=k}^{\infty} a_n \rightarrow a\) und $ &sum;<sub>n=k</sub><sup>&infin;</sup> a<sub>i</sub> &rarr; a - s$</li>
+<li><a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(\sum_{n=k}^{\infty} a_n \rightarrow a'\) so folgt, dass $ &sum;<sub>n=0</sub><sup>&infin;</sup> a<sub>n</sub> = &sum;<sub>i=0</sub><sup>k-1</sup> a<sub>i</sub> + &sum;<sub>n=k</sub><sup>&infin;</sup> a<sub>n</sub> &rarr; s + a'$</li>
 </ul>
 </div>
 </div>

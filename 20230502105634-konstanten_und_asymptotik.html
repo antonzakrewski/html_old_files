@@ -3,35 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Konstanten und Asymptotik</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konstanten und Asymptotik</h1>
-<div id="outline-container-org1ed40e3" class="outline-2">
-<h2 id="org1ed40e3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdf0e478" class="outline-2">
+<h2 id="orgdf0e478"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230502105634-konstanten_und_asymptotik_62a372af8f0e6c6a5d6a3a954a89917cce39a506.svg" alt="20230502105634-konstanten_und_asymptotik_62a372af8f0e6c6a5d6a3a954a89917cce39a506.svg" class="org-svg" /> reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> dann gilt für <img src="ltximg/20230502105634-konstanten_und_asymptotik_05cfc35fc04f532cae1130e51657cac587c4499c.svg" alt="20230502105634-konstanten_und_asymptotik_05cfc35fc04f532cae1130e51657cac587c4499c.svg" class="org-svg" /> und die <a href="20230428093541-landau_notation.html#ID-aa09c71c-2c6b-4113-9d36-20f95aa0009a">Landau-Notation</a>:
+Seien \(f,g\) reelle <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> dann gilt für \(c \in \mathbb{R} \setminus \{0\}\) und die <a href="20230428093541-landau_notation.html#ID-aa09c71c-2c6b-4113-9d36-20f95aa0009a">Landau-Notation</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230502105634-konstanten_und_asymptotik_79fa93e7f831a59219b4e4b32f57e609c105d7e5.svg" alt="20230502105634-konstanten_und_asymptotik_79fa93e7f831a59219b4e4b32f57e609c105d7e5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+c \cdot O(f) =& O(f) \\ 
+c \cdot o(f) =& o(f)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfaaf71a" class="outline-2">
-<h2 id="orgfaaf71a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7596dd3" class="outline-2">
+<h2 id="org7596dd3"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

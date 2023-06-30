@@ -9,48 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Grenzwert: Geometrische Reihe</h1>
-<div id="outline-container-org841a63c" class="outline-2">
-<h2 id="org841a63c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbf90e09" class="outline-2">
+<h2 id="orgbf90e09"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Für die <a href="20220104221220-geometrische_reihe.html#ID-f8ab4e19-abfd-4905-b9ae-81534050103c">Geometrische Reihe</a> ist der <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a>: 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123204322-grenzwert_geometrische_reihe_20e1f48e49ffe8e78b2e407e30c2e55e76ad28a7.svg" alt="20220123204322-grenzwert_geometrische_reihe_20e1f48e49ffe8e78b2e407e30c2e55e76ad28a7.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^n x^k = \frac{1-x^{n+1}}{1-x}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2698612" class="outline-2">
-<h2 id="org2698612"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbeb148d" class="outline-2">
+<h2 id="orgbeb148d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org1c20c86" class="outline-3">
-<h3 id="org1c20c86"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
+<div id="outline-container-org6ce3f6f" class="outline-3">
+<h3 id="org6ce3f6f"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123204322-grenzwert_geometrische_reihe_1c467d13a120c6523a1563beaa09521e95da3852.svg" alt="20220123204322-grenzwert_geometrische_reihe_1c467d13a120c6523a1563beaa09521e95da3852.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^0 x^k = 1 = \frac{1-x^{0+1}}{1 - x} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4388366" class="outline-3">
-<h3 id="org4388366"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org123088d" class="outline-3">
+<h3 id="org123088d"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220123204322-grenzwert_geometrische_reihe_e0062c26ff5c7f9fe66c82774ae6ea555500d09b.svg" alt="20220123204322-grenzwert_geometrische_reihe_e0062c26ff5c7f9fe66c82774ae6ea555500d09b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n+1} x^k &= \sum_{k=0}^{n} x^k + x^{n+1} \\
+=& \frac{1-x^{n+1}}{1-x} + x^{n+1} = \\
+=& \frac{1-x^{n+1}}{1-x} + \frac{(1-x)x^{n+1}}{1-x} = \\
+=& \frac{1-x^{n+1} + x^{n+1} - x^{(n+1)+1}}{1-x} = \\
+=& \frac{1-x^{(n+1)+1}}{1-x}
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

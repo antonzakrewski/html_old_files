@@ -3,57 +3,71 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verhältnis: Sinus und Sinus Hyperbolicus</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verhältnis: Sinus und Sinus Hyperbolicus</h1>
-<div id="outline-container-org53bc2cc" class="outline-2">
-<h2 id="org53bc2cc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbfcf8d7" class="outline-2">
+<h2 id="orgbfcf8d7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_0d0ad861bd37bc2eb31f25e172f6ec857f54273b.svg" alt="20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_0d0ad861bd37bc2eb31f25e172f6ec857f54273b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\frac{\sinh(\mathrm{i}x)}{\mathrm{i}} =& \sin(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org13ceaf7" class="outline-2">
-<h2 id="org13ceaf7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0d303c2" class="outline-2">
+<h2 id="org0d303c2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der <a href="20220225202318-eulersche_formel.html#ID-a44af9b5-a187-4031-a3a1-06a464bbe064">Eulerschen Formel</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_b1b77ad07a55bd43abef2184de855b81e7777320.svg" alt="20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_b1b77ad07a55bd43abef2184de855b81e7777320.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+e^{\mathrm{i}x} =& \mathrm{i}\sin(x) + \cos(x)
+\end{align*}
 <p>
 Eingesetzt in die Definiton des <a href="20220429215639-sinus_hyperbolicus.html#ID-3a9e5a68-f5a3-4f9f-9248-e006c4ae4e4a">Sinus hyperbolicus</a> und aufgrund der <a href="20221015113419-punktsymmetrie_des_sinus_zum_ursprung.html#ID-250611d9-2666-4066-b812-683f76fcb2a1">Punktsymmetrie des Sinus zum Ursprung</a> und <a href="20221015114259-achsensymmetrie_des_kosinus_zur_y_achse.html#ID-14af94f6-289d-4c78-ab36-1ce1480b750f">Achsensymmetrie des Kosinus zur Y-Achse</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_a22bf064bc3365c830752c77016b9bccd64cb710.svg" alt="20221015112026-verhaltnis_sinus_und_sinus_hyperbolicus_a22bf064bc3365c830752c77016b9bccd64cb710.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\sinh(\mathrm{i}x) =& \frac{1}{2} \left(e^{\mathrm{i}x} - e^{-\mathrm{i}x}\right) \\
+=& \frac{1}{2} \left(\mathrm{i}\sin(x) + \cos(x) - (\mathrm{i}\sin(-x) + \cos(x))\right) \\
+=& \frac{1}{2} \left(\mathrm{i}\sin(x) + \cos(x) + \mathrm{i}\sin(x) - \cos(x))\right) \\
+=& \frac{1}{2} \left(2 \mathrm{i} \sin(x)\right) \\
+=& \mathrm{i}\sin(x) && \vert \cdot \frac{1}{i} \\
+\frac{\sinh(x)}{i} =& \sin(x)
+\end{align*}
 </div>
 </div>
 </div>

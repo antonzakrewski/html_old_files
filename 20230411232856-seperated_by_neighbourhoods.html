@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>separated by neighbourhoods</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">separated by neighbourhoods</h1>
-<div id="outline-container-org5ceff5d" class="outline-2">
-<h2 id="org5ceff5d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgdd6fb02" class="outline-2">
+<h2 id="orgdd6fb02"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230411232856-seperated_by_neighbourhoods_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230411232856-seperated_by_neighbourhoods_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>.
-Two points <img src="ltximg/20230411232856-seperated_by_neighbourhoods_5d2f3de24f4fb713a9d6d9e23807d20324a228d9.svg" alt="20230411232856-seperated_by_neighbourhoods_5d2f3de24f4fb713a9d6d9e23807d20324a228d9.svg" class="org-svg" /> are said to be separated by neighbourhoods, if there exist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">neighbourhoods</a> <img src="ltximg/20230411232856-seperated_by_neighbourhoods_4749908b0c67b4be93b5e89248ddaaa0c1560bb4.svg" alt="20230411232856-seperated_by_neighbourhoods_4749908b0c67b4be93b5e89248ddaaa0c1560bb4.svg" class="org-svg" /> such that <img src="ltximg/20230411232856-seperated_by_neighbourhoods_cb4a03f364c03ea08e98454a2cec4c9a68a53cca.svg" alt="20230411232856-seperated_by_neighbourhoods_cb4a03f364c03ea08e98454a2cec4c9a68a53cca.svg" class="org-svg" />
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>.
+Two points \(x,y \in X\) are said to be separated by neighbourhoods, if there exist <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">neighbourhoods</a> \(N_x \in \mathcal{N}(x), N_y \in \mathcal{N}_y\) such that \(N_x \cap N_y = \emptyset\)
 </p>
 </div>
 </div>

@@ -9,42 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit Links- und Rechtsinverses Element in Gruppen</h1>
-<div id="outline-container-orgc41b051" class="outline-2">
-<h2 id="orgc41b051"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc782d73" class="outline-2">
+<h2 id="orgc782d73"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_a0e49c4804a309335efc4c254de805d51984f147.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_a0e49c4804a309335efc4c254de805d51984f147.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" class="org-svg" /> als <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a> , so dass gilt:
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(a,b,c,e \in G\) mit \(e\) als <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a> , so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_cbff4cfdfd64a80fb2e6db9447f590bc398b7eb8.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_cbff4cfdfd64a80fb2e6db9447f590bc398b7eb8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \circ b =& e \\
+c \circ a =& e
+\end{align*}
 <p>
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_b38b5ccbce0acde0ab546334ebced4f60944001a.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_b38b5ccbce0acde0ab546334ebced4f60944001a.svg" class="org-svg" />
-</span>
+\begin{align*}
+b =& c
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd03c83d" class="outline-2">
-<h2 id="orgd03c83d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6b061e6" class="outline-2">
+<h2 id="org6b061e6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_e1049def6eed8077fa6a25c1328573cf9075f4ea.svg" alt="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen_e1049def6eed8077fa6a25c1328573cf9075f4ea.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ba =& eba \\
+=& caba \\
+=& cea \\
+=& ca \\
+=& e
+\end{align*}
 </div>
 </div>
 </div>

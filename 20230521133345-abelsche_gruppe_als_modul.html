@@ -9,58 +9,83 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abelsche Gruppe als Modul</h1>
-<div id="outline-container-org8e1bf5b" class="outline-2">
-<h2 id="org8e1bf5b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4dca004" class="outline-2">
+<h2 id="org4dca004"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_f2553a1b389772e11138708225be20b4eef32d24.svg" alt="20230521133345-abelsche_gruppe_als_modul_f2553a1b389772e11138708225be20b4eef32d24.svg" class="org-svg" /> eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230521133345-abelsche_gruppe_als_modul_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> ein $$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> 
+Sei \((G,+)\) eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>.
+Dann ist \(G\) ein $\mathbb{Z}$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgd36e5de" class="outline-2">
-<h2 id="orgd36e5de"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfdb41af" class="outline-2">
+<h2 id="orgfdb41af"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0855104" class="outline-3">
-<h3 id="org0855104"><span class="section-number-3">2.1.</span> Skalarmultiplikation</h3>
+<div id="outline-container-orgb706880" class="outline-3">
+<h3 id="orgb706880"><span class="section-number-3">2.1.</span> Skalarmultiplikation</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_03be6db3b81271ba369ce14aefa690b5f2641063.svg" alt="20230521133345-abelsche_gruppe_als_modul_03be6db3b81271ba369ce14aefa690b5f2641063.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" alt="20230521133345-abelsche_gruppe_als_modul_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" class="org-svg" />, so ist die Skalarmutliplikation definiert als 
+Sei \(r \in \mathbb{Z}\) und \(a \in G\), so ist die Skalarmutliplikation definiert als 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_d95b7c61cee773098a76cff989f4df7a8b6ef789.svg" alt="20230521133345-abelsche_gruppe_als_modul_d95b7c61cee773098a76cff989f4df7a8b6ef789.svg" class="org-svg" />
-</span>
+\begin{align*}
+r \cdot a
+#  \coloneqq& \mathrm{sgn}(r) \cdot \sum_{i=1}^{\vert r \vert} a \\
+\eqqcolon& \sum_{i=1}^{r} a - \sum_{i=1}^{-r} a
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgfb6f245" class="outline-3">
-<h3 id="orgfb6f245"><span class="section-number-3">2.2.</span> distributiv</h3>
+<div id="outline-container-org6c45bc1" class="outline-3">
+<h3 id="org6c45bc1"><span class="section-number-3">2.2.</span> distributiv</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_94352e3f54276b6e5499cd4abf2f93fe6487457d.svg" alt="20230521133345-abelsche_gruppe_als_modul_94352e3f54276b6e5499cd4abf2f93fe6487457d.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_d7fc49a1be4afb30fe5a0cee25fcbbfcf51e2835.svg" alt="20230521133345-abelsche_gruppe_als_modul_d7fc49a1be4afb30fe5a0cee25fcbbfcf51e2835.svg" class="org-svg" />, so gilt:
+Seien \(a,a' \in G\) und \(r,r' \in \mathbb{Z}\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_2ea26d1bd1127f6910303aaaf3c3a99387438ee9.svg" alt="20230521133345-abelsche_gruppe_als_modul_2ea26d1bd1127f6910303aaaf3c3a99387438ee9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(r + r)' \cdot a =& \mathrm{sgn}(r + r') \cdot \sum_{i=1}^{\vert r + r' \vert} a \\
+=& \sum_{i=1}^{r + r'} a - \sum_{i=1}^{-r - r'} a \\
+=& \sum_{i=1}^{r} a + \sum_{i=1}^{r'} a - \sum_{i=1}^{-r} a - \sum_{i=1}^{-r'} a \\
+=& \sum_{i=1}^{r} a - \sum_{i=1}^{-r} a + \sum_{i=1}^{r'} a  - \sum_{i=1}^{-r'} a \\
+=& r \cdot a + r' \cdot a
+\end{align*}
 <p>
 bzw. durch wiederholte Anwendung des Kommutativgesetz:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230521133345-abelsche_gruppe_als_modul_d2972ea95b9768465c5d6f15580f500f7c55ef40.svg" alt="20230521133345-abelsche_gruppe_als_modul_d2972ea95b9768465c5d6f15580f500f7c55ef40.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r \cdot (a + a') =& \sum_{i=1}^{r} (a + a') - \sum_{i=1}^{-r} - (a + a') \\
+=& \sum_{i=1}^{r} a + \sum_{i=1}^{r} a' - \sum_{i=1}^{-r} a - \sum_{i=1}^{-r} a' \\
+=& \sum_{i=1}^{r} a - \sum_{i=1}^{-r} a + \sum_{i=1}^{r} a' - \sum_{i=1}^{-r} a' \\
+=& r \cdot a + r \cdot a'
+\end{align*}
 </div>
 </div>
 </div>

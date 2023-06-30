@@ -9,37 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hauptsatz der Differential und Integralrechnung (Q12)</h1>
-<div id="outline-container-org9832a66" class="outline-2">
-<h2 id="org9832a66"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5bc330a" class="outline-2">
+<h2 id="org5bc330a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für die <a href="20211004124723-integralfunktion.html#ID-64416527-1ab2-4f7d-9f82-b698448cd9d4">Integralfunktion</a> <img src="file:///home/anton/html/ltximg/20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_460090c6d9a5e8f0bfef30e89fce9875bb904d37.svg" alt="20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_460090c6d9a5e8f0bfef30e89fce9875bb904d37.svg" class="org-svg" /> über die Funktion f
+Für die <a href="20211004124723-integralfunktion.html#ID-64416527-1ab2-4f7d-9f82-b698448cd9d4">Integralfunktion</a> \(I_a\) über die Funktion f
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_75846496ba4913a5bcfa9a708be6b059f7c61676.svg" alt="20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_75846496ba4913a5bcfa9a708be6b059f7c61676.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+I_a:x \mapsto \int^x_af(t)\mathrm{d}t
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_1a6da990bd8ad552f26b90ac8e1ce31dcec211f7.svg" alt="20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_1a6da990bd8ad552f26b90ac8e1ce31dcec211f7.svg" class="org-svg" /> (Intervall) und <img src="file:///home/anton/html/ltximg/20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_166feb598e2375c624265a79b9e03ff81aba38d3.svg" alt="20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_166feb598e2375c624265a79b9e03ff81aba38d3.svg" class="org-svg" /> gilt:
+mit \(\mathbb{D}_{I_a} = \mathbb{D}_f\) (Intervall) und \(a \in \mtahbb{D}_f\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_bd80e01aae16eb81eeefab6012c9f7e53232c52b.svg" alt="20211011123210-hauptsatz_der_differential_und_integralrechnung_hdi_bd80e01aae16eb81eeefab6012c9f7e53232c52b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+I_a'(x) = f(x) \\
+# \int_{a}^{x} f(t) \mathrm{d}t =& f(x)
+\end{align*}
 </div>
 </div>
 </div>

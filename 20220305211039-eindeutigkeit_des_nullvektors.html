@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit des Nullvektors (Vektorraum)</h1>
 
-<div id="outline-container-org4c124eb" class="outline-2">
-<h2 id="org4c124eb"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgafd5fd8" class="outline-2">
+<h2 id="orgafd5fd8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220305211039-eindeutigkeit_des_nullvektors_e9d220a6f0eaf8a72f04fd98f7bfc7bb0243943e.svg" alt="20220305211039-eindeutigkeit_des_nullvektors_e9d220a6f0eaf8a72f04fd98f7bfc7bb0243943e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\exists! \vec{0}(\vec{v} + \vec{0} = \vec{v} = \vec{0} + \vec{v}) 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org015fb58" class="outline-2">
-<h2 id="org015fb58"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4cfa8ac" class="outline-2">
+<h2 id="org4cfa8ac"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220305211039-eindeutigkeit_des_nullvektors_ab34c49fb84e9e6b5328c25c964285e48c06bf87.svg" alt="20220305211039-eindeutigkeit_des_nullvektors_ab34c49fb84e9e6b5328c25c964285e48c06bf87.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{v} + \vec{0}  =& \vec{v} \\
+\vec{v} + \vec{0'} =& \vec{v} \\
+\Rightarrow \vec{0} + \vec{0'} =& \vec{0} \\
+\vec{0'} =& \vec{0}
+\end{align*}
 
 
 <p>

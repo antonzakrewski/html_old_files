@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz: Transponierte Matrix und Reguläre Matrix</h1>
-<div id="outline-container-org8273a2a" class="outline-2">
-<h2 id="org8273a2a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org285564f" class="outline-2">
+<h2 id="org285564f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Sei \(A \in K^{n \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
 Dann sind folgende Aussagen äquivalent:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist eine <a href="20221126194548-regulare_matrix.html#ID-14893187-42b5-4042-9d00-9db7ee576a55">Reguläre Matrix</a></li>
-<li>die <a href="20220326224000-transponierte_matrix.html#ID-377b0cb6-81d3-4a2d-933a-f3556e44c27f">Transponierte Matrix</a> <img src="file:///home/anton/html/ltximg/20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_67ece0a7e01fd38dda50226c5da0dfec0e6a8a89.svg" alt="20221126195806-aquivalenz_transponierte_matrix_und_regulare_matrix_67ece0a7e01fd38dda50226c5da0dfec0e6a8a89.svg" class="org-svg" /> ist eine <a href="20221126194548-regulare_matrix.html#ID-14893187-42b5-4042-9d00-9db7ee576a55">Reguläre Matrix</a></li>
+<li>\(A\) ist eine <a href="20221126194548-regulare_matrix.html#ID-14893187-42b5-4042-9d00-9db7ee576a55">Reguläre Matrix</a></li>
+<li>die <a href="20220326224000-transponierte_matrix.html#ID-377b0cb6-81d3-4a2d-933a-f3556e44c27f">Transponierte Matrix</a> \(A^T\) ist eine <a href="20221126194548-regulare_matrix.html#ID-14893187-42b5-4042-9d00-9db7ee576a55">Reguläre Matrix</a></li>
 </ul>
 <p>
 Insbesondere folgt, dass alle <a href="20221126195657-aquivalenzente_charakterisierung_einer_regularen_matrix.html#ID-63220de8-917a-4f5a-826a-331a2515cdb2">Äquivalente Charakterisierungen</a> auch äquivalent zur <a href="20220326224000-transponierte_matrix.html#ID-377b0cb6-81d3-4a2d-933a-f3556e44c27f">Transponierte Matrix</a> als <a href="20221126194548-regulare_matrix.html#ID-14893187-42b5-4042-9d00-9db7ee576a55">Reguläre Matrix</a> sind

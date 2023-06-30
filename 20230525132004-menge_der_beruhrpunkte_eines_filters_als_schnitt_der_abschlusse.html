@@ -9,39 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der Berührpunkte eines Filters als Schnitt der Abschlüsse</h1>
-<div id="outline-container-org2ad7a8d" class="outline-2">
-<h2 id="org2ad7a8d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf401ba1" class="outline-2">
+<h2 id="orgf401ba1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
-Dann gilt für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230307221042-beruhrpunkt_eines_filters.html#ID-d373da8b-d760-4a1b-a108-4f126d59215f">Berührpunkt eines Filters</a> <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" />:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a>.
+Dann gilt für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230307221042-beruhrpunkt_eines_filters.html#ID-d373da8b-d760-4a1b-a108-4f126d59215f">Berührpunkt eines Filters</a> \(B\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_cad9e63ce22d1be6a68711d5d3be98937e69517d.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_cad9e63ce22d1be6a68711d5d3be98937e69517d.svg" class="org-svg" />
-</span>
+\begin{align*}
+B  \coloneqq \bigcap_{F \in \mathcal{F}} \overline{F}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org32a9630" class="outline-2">
-<h2 id="org32a9630"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org84328e1" class="outline-2">
+<h2 id="org84328e1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> ein <a href="20230307221042-beruhrpunkt_eines_filters.html#ID-d373da8b-d760-4a1b-a108-4f126d59215f">Berührpunkt</a> von <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" />.
-Dann ist dies äquivalent zu <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_a8b901bf51670ea5859e88c102ffc56806c85162.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_a8b901bf51670ea5859e88c102ffc56806c85162.svg" class="org-svg" /> für alle <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" class="org-svg" />.
-Dies ist äquivalent zu <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_404054622a51cf7970820519094f529cce576b23.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_404054622a51cf7970820519094f529cce576b23.svg" class="org-svg" /> für alle <img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_3735d4bf67d931b167bbd99acf9efde1ccb793fe.svg" class="org-svg" /> und damit auch zu
+Sei \(x \in X\) ein <a href="20230307221042-beruhrpunkt_eines_filters.html#ID-d373da8b-d760-4a1b-a108-4f126d59215f">Berührpunkt</a> von \(\mathcal{F}\).
+Dann ist dies äquivalent zu \(U \cap F \neq \emptyset\) für alle <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U\) und \(F \in \mathcal{F}\).
+Dies ist äquivalent zu \(x \in \overline{F}\) für alle \(F \in \mathcal{F}\) und damit auch zu
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_c5880b1f1a042ff4483472098189b321520cb960.svg" alt="20230525132004-menge_der_beruhrpunkte_eines_filters_als_schnitt_der_abschlusse_c5880b1f1a042ff4483472098189b321520cb960.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \in \bigcap_{F \in \mathcal{F}} \overline{F}
+\end{align*}
 </div>
 </div>
 </div>

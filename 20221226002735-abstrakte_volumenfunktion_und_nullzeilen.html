@@ -9,37 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstrakte Volumenfunktion und Nullzeilen</h1>
-<div id="outline-container-orgf495234" class="outline-2">
-<h2 id="orgf495234"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf3ab214" class="outline-2">
+<h2 id="orgf3ab214"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226002735-abstrakte_volumenfunktion_und_nullzeilen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221226002735-abstrakte_volumenfunktion_und_nullzeilen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>, <img src="file:///home/anton/html/ltximg/20221226002735-abstrakte_volumenfunktion_und_nullzeilen_b8b98f1ead27eecaff5af30d5391b48a673c8c48.svg" alt="20221226002735-abstrakte_volumenfunktion_und_nullzeilen_b8b98f1ead27eecaff5af30d5391b48a673c8c48.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226002735-abstrakte_volumenfunktion_und_nullzeilen_c7d239cc0cbff2bde8d9ea02c3033f6d0fd60866.svg" alt="20221226002735-abstrakte_volumenfunktion_und_nullzeilen_c7d239cc0cbff2bde8d9ea02c3033f6d0fd60866.svg" class="org-svg" /> eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a>
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a>, \(z_i \in R^n\) und \(V: R^n \rightarrow R\) eine <a href="20221224174816-abstrakte_volumenfunktion.html#ID-2fb7bc59-c528-4fe5-87d0-a64b484262fc">abstrakte Volumenfunktion</a>
 Dann gilt für die <a href="20221210183721-nullzeile.html#ID-c2e34a0c-d827-41c2-8c9c-0b30fe1281f3">Nullzeile</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226002735-abstrakte_volumenfunktion_und_nullzeilen_0c0c70ae19e5f3287d4da60131a8569ed4f43ba5.svg" alt="20221226002735-abstrakte_volumenfunktion_und_nullzeilen_0c0c70ae19e5f3287d4da60131a8569ed4f43ba5.svg" class="org-svg" />
-</span>
+\begin{align*}
+V(z_1,...,0,...,z_n) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org603a7e6" class="outline-2">
-<h2 id="org603a7e6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org66e84f9" class="outline-2">
+<h2 id="org66e84f9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226002735-abstrakte_volumenfunktion_und_nullzeilen_1fc7f864bafd3dfb9ae1b689d13df17bb5659e25.svg" alt="20221226002735-abstrakte_volumenfunktion_und_nullzeilen_1fc7f864bafd3dfb9ae1b689d13df17bb5659e25.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(z_1,...,0,...,z_n) =& V(z_1,...,0 + 0,...,z_n) \\
+=& V(z_1,...,0,...,z_n) + V(z_1,...,0,...,z_n) \\
+V(z_1,...,0,...,z_n) =& V(z_1,...,0,...,z_n) + V(z_1,...,0,...,z_n) \vert - V(z_1,...,0,...,z_n) \\
+0 =& V(z_1,...,0,...,z_n)
+\end{align*}
 </div>
 </div>
 </div>

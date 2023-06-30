@@ -9,32 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">orthogonale Gruppe und Standardskalarprodukt</h1>
-<div id="outline-container-orgb9d8ac2" class="outline-2">
-<h2 id="orgb9d8ac2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfadf08a" class="outline-2">
+<h2 id="orgfadf08a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> mit dem <a href="20230228170206-euklidisches_skalarprodukt.html#ID-aa212354-4b27-4632-a1f6-ee0ccc12729c">Standardskalarprodukt</a> und <img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_9fb81ae0bc856374f667632db2d2e5115940737e.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_9fb81ae0bc856374f667632db2d2e5115940737e.svg" class="org-svg" />
+Sei \(\mathbb{R}^n\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> mit dem <a href="20230228170206-euklidisches_skalarprodukt.html#ID-aa212354-4b27-4632-a1f6-ee0ccc12729c">Standardskalarprodukt</a> und \(A \in \mathbb{R}^{n \times n}\)
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_2220dc9684af6bfb4b9ce41a6ef60eefe4b7fd44.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_2220dc9684af6bfb4b9ce41a6ef60eefe4b7fd44.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_c297e442b9483e58c679ad444c691a936c2317aa.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_c297e442b9483e58c679ad444c691a936c2317aa.svg" class="org-svg" /></li>
+<li>\(\| A u \| =& \| u \| \forall  u \in \mathbb{R}^n\)</li>
+<li>\(A in \mathrm{SO}_n(\mathbb{R})\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgdd7bddc" class="outline-2">
-<h2 id="orgdd7bddc"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org53ce32b" class="outline-2">
+<h2 id="org53ce32b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2490192" class="outline-3">
-<h3 id="org2490192"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orga569990" class="outline-3">
+<h3 id="orga569990"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 </div>
-<div id="outline-container-org3c9ecfd" class="outline-3">
-<h3 id="org3c9ecfd"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230626-orthogonale_gruppe_und_standardskalarprodukt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230626-orthogonale_gruppe_und_standardskalarprodukt_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-org58e4df3" class="outline-3">
+<h3 id="org58e4df3"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 </div>
 </div>
 </div>

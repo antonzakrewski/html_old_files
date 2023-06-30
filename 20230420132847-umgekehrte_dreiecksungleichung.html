@@ -3,109 +3,104 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>umgekehrte Dreiecksungleichung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">umgekehrte Dreiecksungleichung</h1>
-<div id="outline-container-orgf708379" class="outline-2">
-<h2 id="orgf708379"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orgfe13fdf" class="outline-2">
+<h2 id="orgfe13fdf"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_fbf0ab948850be76543b1699a9ae4bb1a049fb87.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_fbf0ab948850be76543b1699a9ae4bb1a049fb87.svg" class="org-svg" />.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x,y,z \in M\).
 Dann ist die umgekehrte Dreiecksungleichung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_46b1b9eaeb25cc9a82c40962b1587269f42816d4.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_46b1b9eaeb25cc9a82c40962b1587269f42816d4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\vert d(y,z) - d(x,z) \vert \leq d(x,y) 
+\end{align*}
 <p>
 äquivalent zur <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org05b52bf" class="outline-2">
-<h2 id="org05b52bf"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org19cd384" class="outline-2">
+<h2 id="org19cd384"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5024d66" class="outline-3">
-<h3 id="org5024d66"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org9163165" class="outline-3">
+<h3 id="org9163165"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Es gilt nach der Dreiecksungleichung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_22bf78dd5759d87ef667ead591f2daf44db63e8d.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_22bf78dd5759d87ef667ead591f2daf44db63e8d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+d(y,z) \leq d(x,z) + d(x,y)  
+\end{align*}
 <p>
 und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_7ecef64130e38600ff20f3b77053f7b1e5119f83.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_7ecef64130e38600ff20f3b77053f7b1e5119f83.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+d(y,z) - d(x,z) \leq d(x,y)
+\end{align*}
 <p>
 Analog gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_670dcda62679ec2b22bd12d1f2e7daa935f925dc.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_670dcda62679ec2b22bd12d1f2e7daa935f925dc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+d(x,z) \leq& d(x,y) + d(z,y) \\
+d(x,z) - d(z,y) \leq& d(x,y)
+\end{align*}
 <p>
 Damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_c23313a13eb73f53e8f1f448526c9919f5cedcf3.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_c23313a13eb73f53e8f1f448526c9919f5cedcf3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
+\begin{align*}
+d(x,y) \geq& \pm (d(x,z) - d(z,y)) \\
+d(x,y) \geq& \vert d(x,z) - d(z,) \vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org18930b3" class="outline-3">
-<h3 id="org18930b3"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org93a876e" class="outline-3">
+<h3 id="org93a876e"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_fa594dd1feebb17c0647ac5066f86569b7ada1c7.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_fa594dd1feebb17c0647ac5066f86569b7ada1c7.svg" class="org-svg" /> gegeben und <img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_e8ba6cdbe2f5e478ca6bd652cffd3073706f3b3a.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_e8ba6cdbe2f5e478ca6bd652cffd3073706f3b3a.svg" class="org-svg" /> beliebig, so gilt:
+Sei \(d(x,z)\) gegeben und \(y\) beliebig, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230420132847-umgekehrte_dreiecksungleichung_cfa21ff127a2b82fdfb7f59eb6a90b62afa6b183.svg" alt="20230420132847-umgekehrte_dreiecksungleichung_cfa21ff127a2b82fdfb7f59eb6a90b62afa6b183.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+d(x,y) \geq& \vert d(x,z) - d(z,y) \vert \\
+d(x,y) \geq& d(x,z) - d(z,y) \\
+d(x,y) + d(z,y) \geq& d(x,z)
+\end{align*}
 </div>
 </div>
 </div>

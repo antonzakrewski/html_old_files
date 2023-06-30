@@ -3,49 +3,76 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Preimages of neighbourhoods under continuous maps</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Preimages of neighbourhoods under continuous maps</h1>
-<div id="outline-container-org7c8f23f" class="outline-2">
-<h2 id="org7c8f23f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4ce42bd" class="outline-2">
+<h2 id="org4ce42bd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> und <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 <li>Das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist ebenfalls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1ce4531" class="outline-2">
-<h2 id="org1ce4531"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org15f8d4d" class="outline-2">
+<h2 id="org15f8d4d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7e3a170" class="outline-3">
-<h3 id="org7e3a170"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org43074e0" class="outline-3">
+<h3 id="org43074e0"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_d09cc6dfb9f5d58ebd88705fa5d357f159af3e7c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_d09cc6dfb9f5d58ebd88705fa5d357f159af3e7c.svg" class="org-svg" /> für ein <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_f31390eac7e4899054752e528b1afd14036b862c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_f31390eac7e4899054752e528b1afd14036b862c.svg" class="org-svg" />, dann existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_b9abb7543750d6ea0f181748b071b42c9a719467.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_b9abb7543750d6ea0f181748b071b42c9a719467.svg" class="org-svg" />.
-Da <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt wegen <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_a17a0a7da1aef44e4fe4b1c050ee32f9dca31d25.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_a17a0a7da1aef44e4fe4b1c050ee32f9dca31d25.svg" class="org-svg" />, dass <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_2192b81a8fd59e1c8010adf9c95801a8d56c46b8.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_2192b81a8fd59e1c8010adf9c95801a8d56c46b8.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist.
+Sei \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und \(U' \in \mathcal{U}(x')\) für ein \(x' \in X'\), dann existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(O' \subseteq U'\).
+Da \(f^{-1}[O']\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt wegen \(f^{-1}[O'] \subseteq f^{-1}[U']\), dass \(f^{-1}[U']\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgab411b0" class="outline-3">
-<h3 id="orgab411b0"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org364d9a1" class="outline-3">
+<h3 id="org364d9a1"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_b348497044c2ae842597ecac54b1b3e119e346cf.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_b348497044c2ae842597ecac54b1b3e119e346cf.svg" class="org-svg" />, so ist <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_53a1680298f4c7f69ef02d50a9bc655f4a4291d2.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_53a1680298f4c7f69ef02d50a9bc655f4a4291d2.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> aller Punkte (vgl. <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a>).
-Nach Annahme folgt damit, dass <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> für beliebige <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_47712bd5f20d7a6d032b50ee7ca98f7bbe58347b.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_47712bd5f20d7a6d032b50ee7ca98f7bbe58347b.svg" class="org-svg" /> ist. 
-Daraus folgt wieder wegen der Äquivalenz von <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a>, dass <img src="ltximg/20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" alt="20230312160241-umgebung_unter_stetigen_abbildungen_67495fed1cff9667b581fd556e180804166a890c.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Sei \(O' \in \mathcal{T}'\), so ist \(O'\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> aller Punkte (vgl. <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a>).
+Nach Annahme folgt damit, dass \(f^{-1}[O']\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> für beliebige \(U \subseteq f^{-1}[O']\) ist. 
+Daraus folgt wieder wegen der Äquivalenz von <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a>, dass \(f^{-1}[O']\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
 </p>
 </div>
 </div>

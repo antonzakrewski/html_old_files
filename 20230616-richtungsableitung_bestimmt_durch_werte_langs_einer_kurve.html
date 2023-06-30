@@ -9,65 +9,87 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Richtungsableitung bestimmt durch Werte längs einer Kurve</h1>
-<div id="outline-container-orgec8b1ff" class="outline-2">
-<h2 id="orgec8b1ff"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1fa70b6" class="outline-2">
+<h2 id="org1fa70b6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_8a9951be234e86cd58413d15ae5f3890c60801a0.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_8a9951be234e86cd58413d15ae5f3890c60801a0.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und <img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_d5fe4a4f498f0a0a0950e3dced5e3d8c5c94b815.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_d5fe4a4f498f0a0a0950e3dced5e3d8c5c94b815.svg" class="org-svg" /> eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-Sei ferner <img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_fa1e7c1f205a5ca40beca05b45d840724de6e081.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_fa1e7c1f205a5ca40beca05b45d840724de6e081.svg" class="org-svg" /> eine <a href="20230616-kurve.html#ID-fff7bc54-a513-4c96-8225-5d2978e17977">Kurve</a>, dann gilt für die <a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a> 
+Sei \(U \subseteq \mathbb{R}^m\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^n\) eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Sei ferner \(c: (- \varepsilon, \varepsilon) \rightarrow U\) eine <a href="20230616-kurve.html#ID-fff7bc54-a513-4c96-8225-5d2978e17977">Kurve</a>, dann gilt für die <a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_fbecae179cf011e27e4b9a4be334b814aab2a78b.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_fbecae179cf011e27e4b9a4be334b814aab2a78b.svg" class="org-svg" />
-</span>
+\begin{align*}
+\partial_{c'(0)} F(c(0)) =& c'(0) \cdot \mathrm{d}F_{c_0} \\
+=& (F \circ c)'(0) \h
+=& \mathrm{d}_0 (F \circ c)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgaa0fd9f" class="outline-2">
-<h2 id="orgaa0fd9f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org52da41c" class="outline-2">
+<h2 id="org52da41c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0cfdb23" class="outline-3">
-<h3 id="org0cfdb23"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org7fdd37f" class="outline-3">
+<h3 id="org7fdd37f"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach Annahme sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_f5ec0b8fbe7521a5dae8a282847db6a9168d4f92.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_f5ec0b8fbe7521a5dae8a282847db6a9168d4f92.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+F(x) = F(c(0)) + \mathrm{d}_{c(0)} F(x) + o(\| x \|)
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_ab2b2f77d5864b862462564b1976b9e0b248e503.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_ab2b2f77d5864b862462564b1976b9e0b248e503.svg" class="org-svg" />
+mit \(\lim_{x \to 0}\left(\frac{o(\| x \|)}{\| x \|}\right) = 0\)
 Somit folgt durch Einsetzen in die Definition
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_9920bd6c8589ef9a77fcb0e2a9194b38e89db1c1.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_9920bd6c8589ef9a77fcb0e2a9194b38e89db1c1.svg" class="org-svg" />
-</span>
+\begin{align*}
+\partial_{c'(0)} F(c(0)) =& \lim_{t \to 0}\left(\frac{F(c(0) + t c'(0)) - F(c(0))}{t}\right) \\
+=& \lim_{t \to 0}\left(\frac{F(c(0)) + \mathrm{d}F_{c_0}(t c'(0)) + o(\| t \cdot c'(0) \|) - F(c(0))}{t}\right) \\
+=& \lim_{t \to 0}\left(\frac{\mathrm{d}F_{c_0}(t c'(0))}{t}\right) \\
+=& \lim_{t \to 0}\left(\frac{t \cdot \mathrm{d}F_{c_0}(c'(0))}{t}\right) \\
+=& \mathrm{d}F_{c_0}(c'(0)) \\
+=& c'(0) \cdot \mathrm{d} F_{c_0}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb71cbe4" class="outline-3">
-<h3 id="orgb71cbe4"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orge54bf7b" class="outline-3">
+<h3 id="orge54bf7b"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Nach der <a href="20230606-kettenregel_fur_das_totale_differential.html#ID-8b45d9e9-87fb-42ce-a53c-b1aca5fac3e5">Kettenregel für das totale Differential</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_873071355609586dae5cc137416e1d0c2018e41f.svg" alt="20230616-richtungsableitung_bestimmt_durch_werte_langs_einer_kurve_873071355609586dae5cc137416e1d0c2018e41f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{d}_0 (F \circ c) =& \mathrm{d} F_{c(0)} \circ \mathrm{d}_0 c \\
+=& \mathrm{d} F_{c(0)} \circ (c'(0) \cdot (x)) \\
+=& c'(0) \cdot \mathrm{d} F_{c(0)}
+\end{align*}
 </div>
 </div>
 </div>

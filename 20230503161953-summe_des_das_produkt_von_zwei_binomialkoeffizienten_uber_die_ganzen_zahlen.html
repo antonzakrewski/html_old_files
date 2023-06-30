@@ -9,63 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summe des Produkt von zwei bestimmten Binomialkoeffizienten über die ganzen Zahlen</h1>
-<div id="outline-container-org43d55cc" class="outline-2">
-<h2 id="org43d55cc"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org90464a5" class="outline-2">
+<h2 id="org90464a5"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_b9849e0747e624c9babe0104f7983c1ca42db116.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_b9849e0747e624c9babe0104f7983c1ca42db116.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_5697ab37a1c8cc36f7fed57d3452bfe423e9394b.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_5697ab37a1c8cc36f7fed57d3452bfe423e9394b.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_d5fd7ed8c1e4f702bf114b3121f3fa531829f3f5.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_d5fd7ed8c1e4f702bf114b3121f3fa531829f3f5.svg" class="org-svg" />
+Seien \(l \in \mathbb{N}_0\) und \(m,q \in \mathbb{Z}\) sowie \(s \in \mathbb{R}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e2778c72ca1be3673c99aba0a27e7872dfce4be3.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e2778c72ca1be3673c99aba0a27e7872dfce4be3.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k \in \mathbb{Z}}^{} \binom{l}{m+k} \binom{s}{q+k} = \binom{l + s}{l-m+q}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5f37e1c" class="outline-2">
-<h2 id="org5f37e1c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7b5e8f5" class="outline-2">
+<h2 id="org7b5e8f5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aus der <a href="20220108163834-binomialkoeffizient_n_k.html#ID-540a5af1-8ac1-4bf6-b8ad-ff9ce8eee965">Symmetrie des Binomialkoeffizienten</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_8044bda0f3785e28381e4d198f08629a931dc378.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_8044bda0f3785e28381e4d198f08629a931dc378.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\binom{l}{m+k} =& \binom{l}{l-m-k}
+\end{align*}
 <p>
 Und damit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_3190bb6179f72b533d28eaa2beeef5c97a3633bb.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_3190bb6179f72b533d28eaa2beeef5c97a3633bb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k \in \mathbb{Z}}^{} \binom{l}{m+k} \binom{s}{q+k} =& \sum_{k \in \mathbb{Z}}^{} \binom{l}{l-m-k} \binom{s}{q+k}
+\end{align*}
 <p>
-Aus einer Indexspiegelung mit <img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_98d44a907d1e2e2d9ee1c8090c50e26b2e3b3c63.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_98d44a907d1e2e2d9ee1c8090c50e26b2e3b3c63.svg" class="org-svg" /> folgt somit
+Aus einer Indexspiegelung mit \(k \rightarrow -k\) folgt somit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e2b5064e52063abdbee34225459c5f562fc30f20.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e2b5064e52063abdbee34225459c5f562fc30f20.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k \in \mathbb{Z}}^{} \binom{l}{m+k} \binom{s}{q+k} =& \sum_{k \in \mathbb{Z}}^{} \binom{l}{l-m-k} \binom{s}{q+k} \\
+=& \sum_{k \in \mathbb{Z}}^{} \binom{l}{l-m+k} \binom{s}{q-k}
+\end{align*}
 <p>
 Damit wenden wir dann die <a href="20221104120845-vandermonde_identitat.html#ID-2d2fcf38-9761-480a-b113-e2de1a9ecab2">Vandermonde Identität</a> an und es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e064be5db79abfea291455d0d92479551b1b7998.svg" alt="20230503161953-summe_des_das_produkt_von_zwei_binomialkoeffizienten_uber_die_ganzen_zahlen_e064be5db79abfea291455d0d92479551b1b7998.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k \in \mathbb{Z}}^{} \binom{l}{l-m+k} \binom{s}{q-k} =& \binom{l + s}{l-m+q}
+\end{align*}
 </div>
 </div>
 </div>

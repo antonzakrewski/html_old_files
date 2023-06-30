@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verhältnis: Normale - Tangente</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verhältnis: Normale - Tangente</h1>
-<div id="outline-container-orgb30da76" class="outline-2">
-<h2 id="orgb30da76"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgecb7b73" class="outline-2">
+<h2 id="orgecb7b73"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>Sei zu <img src="ltximg/20220330134358-verhaltnis_normale_tangente_9512e9cd3de0dab496cbf799f09682cf6d8d7d10.svg" alt="20220330134358-verhaltnis_normale_tangente_9512e9cd3de0dab496cbf799f09682cf6d8d7d10.svg" class="org-svg" /> <img src="ltximg/20220330134358-verhaltnis_normale_tangente_aa51b8e49cd0e6b5f324b23e8251926afa5b74f8.svg" alt="20220330134358-verhaltnis_normale_tangente_aa51b8e49cd0e6b5f324b23e8251926afa5b74f8.svg" class="org-svg" /> die <a href="20220330134435-tangente.html#ID-0a81cb9d-c5fb-44e0-b947-a78fbe6a235f">Tangente</a> und <img src="ltximg/20220330134358-verhaltnis_normale_tangente_378bc7edd857051dd539ee76ecdb6881c5661ca2.svg" alt="20220330134358-verhaltnis_normale_tangente_378bc7edd857051dd539ee76ecdb6881c5661ca2.svg" class="org-svg" /> die <a href="20220330134320-normale_analysis.html#ID-bde06898-4670-4fbf-b902-d368574aed58">Normale</a> jeweils an der Stelle <img src="ltximg/20220330134358-verhaltnis_normale_tangente_59fb52cf9a6fec37a351a4e95da61a4548b3cfff.svg" alt="20220330134358-verhaltnis_normale_tangente_59fb52cf9a6fec37a351a4e95da61a4548b3cfff.svg" class="org-svg" /></li>
+<li>Sei zu \(f(x)\) \(t(x_1)\) die <a href="20220330134435-tangente.html#ID-0a81cb9d-c5fb-44e0-b947-a78fbe6a235f">Tangente</a> und \(n(x_1)\) die <a href="20220330134320-normale_analysis.html#ID-bde06898-4670-4fbf-b902-d368574aed58">Normale</a> jeweils an der Stelle \(x_1\)</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220330134358-verhaltnis_normale_tangente_274a706b905df2c497a170cbaaa4312dfdf7077e.svg" alt="20220330134358-verhaltnis_normale_tangente_274a706b905df2c497a170cbaaa4312dfdf7077e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+t'(x_1) \cdot n'(x_1) = -1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdd7b3ad" class="outline-2">
-<h2 id="orgdd7b3ad"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgacbc22b" class="outline-2">
+<h2 id="orgacbc22b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>über <a href="20220107124051-orthogonale_winkel.html#ID-abb651b7-71ca-46dd-954c-7685ea72166f">Orthogonale Winkel: Skalarprodukt</a></li>

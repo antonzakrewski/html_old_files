@@ -3,45 +3,61 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verhältnis: Stammfunktion - Integralfunktion</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verhältnis: Stammfunktion - Integralfunktion</h1>
-<div id="outline-container-org2371be3" class="outline-2">
-<h2 id="org2371be3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org27805e2" class="outline-2">
+<h2 id="org27805e2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Die Integralfunktionen sind Stammfunktionen von f</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211011122743-verhaltnis_stammfunktion_integralfunktion_10cd599e69dd21acc4db7081246ef80f542b06c6.svg" alt="20211011122743-verhaltnis_stammfunktion_integralfunktion_10cd599e69dd21acc4db7081246ef80f542b06c6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+I_a'(x) = f(x)
+\end{align*}
 </div>
 
-<div id="outline-container-org2302561" class="outline-3">
-<h3 id="org2302561"><span class="section-number-3">1.1.</span> Begründung</h3>
+<div id="outline-container-org5e1dc5f" class="outline-3">
+<h3 id="org5e1dc5f"><span class="section-number-3">1.1.</span> Begründung</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211011122743-verhaltnis_stammfunktion_integralfunktion_d5bf101b4b5f6049bd875418675ff515fb8b6951.svg" alt="20211011122743-verhaltnis_stammfunktion_integralfunktion_d5bf101b4b5f6049bd875418675ff515fb8b6951.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+I_a(x) = \int_a^xf(t)\mathrm{d}t = \int_0^xf(t)\mathrm{d}t - \int_0^af(t)\mathrm{d}t \\
+\int_0^af(t)\mathrm{d}t = const.
+\end{align*}
 </div>
 </div>
 </div>

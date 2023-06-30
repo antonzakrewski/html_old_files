@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstand: Ebene - Punkt (über Hessesche Normalform)</h1>
-<div id="outline-container-org3ea7fba" class="outline-2">
-<h2 id="org3ea7fba"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaf9366d" class="outline-2">
+<h2 id="orgaf9366d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-sei <img src="file:///home/anton/html/ltximg/20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_a4e9f13b4a8fe31f500f00951517d46b65581728.svg" alt="20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_a4e9f13b4a8fe31f500f00951517d46b65581728.svg" class="org-svg" /> ein Punkt und <img src="file:///home/anton/html/ltximg/20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_d875175607cd0dc7612f846f1a1dc401ecf497a7.svg" alt="20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_d875175607cd0dc7612f846f1a1dc401ecf497a7.svg" class="org-svg" /> eine <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a> in <a href="20220314123801-hessesche_normalform.html#ID-8df3781a-a063-4c5e-b1e7-baac34b6c6ed">Hessescher Normalform</a>.
+sei \(\vec{P} =& \begin{pmatrix} x_1 \\ y_1 \\ z_1 \end{pmatrix}\) ein Punkt und \(E: \frac{1}{\vert \vec{n} \vert} \cdot (a \cdot x + b \cdot y + c \cdot z + k) = 0\) eine <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a> in <a href="20220314123801-hessesche_normalform.html#ID-8df3781a-a063-4c5e-b1e7-baac34b6c6ed">Hessescher Normalform</a>.
 Dann ist der Abstand zwischen Punkt und <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_3d243b52da792ded3d867480152ddf59c1339815.svg" alt="20220920051416-abstand_ebene_punkt_uber_hessesche_normalform_3d243b52da792ded3d867480152ddf59c1339815.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d = E: \frac{1}{\vert \vec{n} \vert} \cdot (a \cdot x_1 + b \cdot y_1 + c \cdot z_1 + k)
+\end{align*}
 </div>
 </div>
 </div>

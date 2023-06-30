@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kriterium für eine Metrik als Norm</h1>
-<div id="outline-container-org46ed384" class="outline-2">
-<h2 id="org46ed384"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbbadd21" class="outline-2">
+<h2 id="orgbbadd21"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230422123128-kriterium_fur_eine_metrik_als_norma_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230422123128-kriterium_fur_eine_metrik_als_norma_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230422123128-kriterium_fur_eine_metrik_als_norma_07470b7d09ab10caeb31f36a35160ee4e51ec873.svg" alt="20230422123128-kriterium_fur_eine_metrik_als_norma_07470b7d09ab10caeb31f36a35160ee4e51ec873.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230422123128-kriterium_fur_eine_metrik_als_norma_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230422123128-kriterium_fur_eine_metrik_als_norma_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a> mit der von <img src="file:///home/anton/html/ltximg/20230422123128-kriterium_fur_eine_metrik_als_norma_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230422123128-kriterium_fur_eine_metrik_als_norma_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> womöglich induzierten <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a>, falls
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> und \((V,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Dann ist \(V\) ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a> mit der von \(d\) womöglich induzierten <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a>, falls
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422123128-kriterium_fur_eine_metrik_als_norma_a6e19fc5590528c62f666b9fc63c79740b4998e0.svg" alt="20230422123128-kriterium_fur_eine_metrik_als_norma_a6e19fc5590528c62f666b9fc63c79740b4998e0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \cdot \|  \coloneqq d(0, \cdot)
+\end{align*}
 <p>
 eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a>  ist
 </p>

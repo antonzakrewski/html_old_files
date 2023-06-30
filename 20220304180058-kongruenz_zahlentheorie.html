@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kongruenz (Zahlentheorie)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kongruenz (Zahlentheorie)</h1>
-<div id="outline-container-org15cd9f5" class="outline-2">
-<h2 id="org15cd9f5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf252353" class="outline-2">
+<h2 id="orgf252353"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<img src="ltximg/20220304180058-kongruenz_zahlentheorie_75ea180c55bd5ce5b291b62e6aa1dbc8f118b4ec.svg" alt="20220304180058-kongruenz_zahlentheorie_75ea180c55bd5ce5b291b62e6aa1dbc8f118b4ec.svg" class="org-svg" /> sind kongruent modulo m, <img src="ltximg/20220304180058-kongruenz_zahlentheorie_704030ffdcaf61ea3308fbe69b5e0fbcb54f32c5.svg" alt="20220304180058-kongruenz_zahlentheorie_704030ffdcaf61ea3308fbe69b5e0fbcb54f32c5.svg" class="org-svg" /> zueinander, wenn gilt
+\(a,b \in \mathbb{Z}\) sind kongruent modulo m, \(m \in \mathbb{Z} \setminus \{0\}\) zueinander, wenn gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304180058-kongruenz_zahlentheorie_ef5f68e270cf6459a16faa57163c38963afb2899.svg" alt="20220304180058-kongruenz_zahlentheorie_ef5f68e270cf6459a16faa57163c38963afb2899.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(a - b) \mid m 
+\end{align*}
 <p>
 Siehe: <a href="20221017152831-teilbarkeit.html#ID-86fe4f74-47e7-4142-860f-8f0ef6af6f40">Teilbarkeit</a> 
 </p>

@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz der Primzerlegung in einem Hauptidealring</h1>
-<div id="outline-container-org04bfd6d" class="outline-2">
-<h2 id="org04bfd6d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org200a83f" class="outline-2">
+<h2 id="org200a83f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und sei <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_094f709837a6b5473c73ef2d14fed0c099741242.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_094f709837a6b5473c73ef2d14fed0c099741242.svg" class="org-svg" />.
-Dann existiert eine <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> für <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und sei \(x \in R \setminus \{0\}\).
+Dann existiert eine <a href="20221226132205-primzerlegung.html#ID-662cc04a-0cb1-4a87-bbf1-9e3a88e08552">Primzerlegung</a> für \(x\)
 </p>
 </div>
 </div>
-<div id="outline-container-org288b403" class="outline-2">
-<h2 id="org288b403"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc6320ae" class="outline-2">
+<h2 id="orgc6320ae"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Falls <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibel</a> ist, so ist <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a>, da jedes <a href="20230426123641-irreduzibles_element_in_einem_hauptidealring_als_primelement.html#ID-9f97661e-12d1-4e24-b380-aff8b1393978">irreduzibles Element in einem Hauptidealring ein Primelement ist</a> 
-Andernfalls hat <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> einen <a href="20230426131019-echter_teiler.html#ID-8ee670c5-366a-47f6-b493-ad3333e1734e">echten Teiler</a> , d.h. <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_2b76a1a84855cfa1ef56dcfb293d1b39bcfd7426.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_2b76a1a84855cfa1ef56dcfb293d1b39bcfd7426.svg" class="org-svg" />
-Falls <img src="file:///home/anton/html/ltximg/20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_64a77c06f4e3d7780e58aab388f781f7c543d490.svg" alt="20221230124042-existenz_der_primzerlegung_in_einem_hauptidealring_64a77c06f4e3d7780e58aab388f781f7c543d490.svg" class="org-svg" /> irreduzibel sind, s o sind wir fertig.
+Falls \(a\) <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibel</a> ist, so ist \(a\) <a href="20230426123442-primelement.html#ID-ffa743e1-94ee-49fe-9647-396eeb233982">prim</a>, da jedes <a href="20230426123641-irreduzibles_element_in_einem_hauptidealring_als_primelement.html#ID-9f97661e-12d1-4e24-b380-aff8b1393978">irreduzibles Element in einem Hauptidealring ein Primelement ist</a> 
+Andernfalls hat \(a\) einen <a href="20230426131019-echter_teiler.html#ID-8ee670c5-366a-47f6-b493-ad3333e1734e">echten Teiler</a> , d.h. \(a = a_1 \cdot a_2\)
+Falls \(a_1,a_2\) irreduzibel sind, s o sind wir fertig.
 Behauptung: Das Verfahren bricht ab, da wir sonst einen <a href="20220902194001-widerspruch.html#ID-d758d8be-c0f8-45d8-b7b4-5d9ecc65476a">Widerspruch</a> zum <a href="20230426125305-teilerkettensatz.html#ID-5ae0d565-2086-46e1-a376-9321da260c37">Teilerkettensatz</a> hätten
 </p>
 </div>

@@ -9,31 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">einseitige Differenzierbarkeit von konvexen Funktionen</h1>
-<div id="outline-container-orgdaf6a9c" class="outline-2">
-<h2 id="orgdaf6a9c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0b98897" class="outline-2">
+<h2 id="org0b98897"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_43415efa00e540e90798f5cdcc606e3c7bf3a446.svg" class="org-svg" /> ein <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> und <img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" class="org-svg" /> eine <a href="20230204211958-konvexe_funktion.html#ID-46d5b620-5fbf-4352-8aad-30f19903ff81">konvexe Funktion</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230204220225-einseitige_differenzierbarkeit.html#ID-18437108-cbd6-491f-b979-479f5d0a39fd">einseitige differenzierbar</a> 
+Sei \(I \subseteq \mathbb{R}\) ein <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> und \(f: I \rightarrow \mathbb{R}\) eine <a href="20230204211958-konvexe_funktion.html#ID-46d5b620-5fbf-4352-8aad-30f19903ff81">konvexe Funktion</a>.
+Dann ist \(f\) <a href="20230204220225-einseitige_differenzierbarkeit.html#ID-18437108-cbd6-491f-b979-479f5d0a39fd">einseitige differenzierbar</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org234b83a" class="outline-2">
-<h2 id="org234b83a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf180e29" class="outline-2">
+<h2 id="orgf180e29"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt nach der <a href="20230204220014-abschatzung_von_konvexen_funktionen.html#ID-b2bb192a-fd5c-49a0-b20c-4eb6c172d414">Abschätzung von Konvexen Funktionen</a> für <img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_3ce034533f4ae25e5747fe75a49e81deea7b68aa.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_3ce034533f4ae25e5747fe75a49e81deea7b68aa.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" />:
+Es gilt nach der <a href="20230204220014-abschatzung_von_konvexen_funktionen.html#ID-b2bb192a-fd5c-49a0-b20c-4eb6c172d414">Abschätzung von Konvexen Funktionen</a> für \(x_1 < x_2 < x_3\) in \(I\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_9042bddf7d6ce78398c8112049d4c55b6559e78b.svg" alt="20230204212651-einseitige_differenzierbarkeit_von_konvexen_funktionen_9042bddf7d6ce78398c8112049d4c55b6559e78b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{f(x_2) - f(x_1)}{x_2 - x_1} \leq \frac{f(x_3) - f(x_1)}{x_3 - x_1} \leq \frac{f(x_3) - f(x_2)}{x_3 - x_2} 
+\end{align*}
 <p>
 Damit ist 
 </p>

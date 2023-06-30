@@ -9,19 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">unterschiedliche Nachfolger (Peano Axiom)</h1>
-<div id="outline-container-org18161f3" class="outline-2">
-<h2 id="org18161f3"><span class="section-number-2">1.</span> Axiom</h2>
+<div id="outline-container-orgab5fad3" class="outline-2">
+<h2 id="orgab5fad3"><span class="section-number-2">1.</span> Axiom</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220106181627-unterschiedliche_nachfolger_peano_axiom_302ce0a27eeab11a12a48b3db41a578817bf52df.svg" alt="20220106181627-unterschiedliche_nachfolger_peano_axiom_302ce0a27eeab11a12a48b3db41a578817bf52df.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall n \forall m (n,m \in \mathbb{N} \Rightarrow (n' = m' \Rightarrow m = n))
+\end{align*}
 
 <p>
 bzw. die Nachfolge<a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">abbildung</a> ist <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a> 

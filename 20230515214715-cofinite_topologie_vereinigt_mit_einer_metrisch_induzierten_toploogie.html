@@ -9,68 +9,88 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kofinite Topologie vereinigt mit einer metrisch induzierten Topologie</h1>
-<div id="outline-container-org21557aa" class="outline-2">
-<h2 id="org21557aa"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6a2fcd0" class="outline-2">
+<h2 id="org6a2fcd0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_8149dc8d5def49f14b0b0d1f57ea6cf873b08060.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_8149dc8d5def49f14b0b0d1f57ea6cf873b08060.svg" class="org-svg" /> die <a href="20230207074108-finite_closed_topology.html#ID-faed368d-25e5-4118-b24c-807a634c9771">cofinite Topologie</a> auf <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />.
-Dann gilt für eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_6a7d69f08dbba287c4a9c884aa27679f0eb5ac28.svg" class="org-svg" /> und die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_baa4bde66acf06d63d6819bd2e7304b6139626d9.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_baa4bde66acf06d63d6819bd2e7304b6139626d9.svg" class="org-svg" />, dass
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(\mathcal{T}_{\mathrm{cof}}\) die <a href="20230207074108-finite_closed_topology.html#ID-faed368d-25e5-4118-b24c-807a634c9771">cofinite Topologie</a> auf \(M\).
+Dann gilt für eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(A \subseteq M\) und die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> \(\mathcal{T}_{A}\), dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_dc381da57fdb50702a6012df1fdc1b509af0d698.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_dc381da57fdb50702a6012df1fdc1b509af0d698.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{T}  \coloneqq \mathcal{T}_{A} \cup \mathcal{T}_{\mathrm{cof}}
+\end{align*}
 <p>
-eine <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> auf (ganz) <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist.
+eine <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> auf (ganz) \(M\) ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org229ee6a" class="outline-2">
-<h2 id="org229ee6a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0ffc788" class="outline-2">
+<h2 id="org0ffc788"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3e9fb51" class="outline-3">
-<h3 id="org3e9fb51"><span class="section-number-3">2.1.</span> triviale <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a></h3>
+<div id="outline-container-orge4ac777" class="outline-3">
+<h3 id="orge4ac777"><span class="section-number-3">2.1.</span> triviale <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_fd816df0f73f50291e7067e936c943e4a8c86e84.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_fd816df0f73f50291e7067e936c943e4a8c86e84.svg" class="org-svg" />
+Nach Annahme gilt \(M,\emptyset \in \mathcal{T}_{\mathrm{cof}}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org378ad8f" class="outline-3">
-<h3 id="org378ad8f"><span class="section-number-3">2.2.</span> <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a></h3>
+<div id="outline-container-orgcd62969" class="outline-3">
+<h3 id="orgcd62969"><span class="section-number-3">2.2.</span> <a href="20221224153225-offenheit_von_vereinigungen.html#ID-9c720a57-bfb3-46a7-9743-a470afba0eae">Offenheit von Vereinigungen</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" class="org-svg" />:
+Seien \(O_i \in \mathcal{T}\):
 </p>
 <ul class="org-ul">
-<li>Falls ein <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_50f6c912f6949c4fa9c3281f555acac0370e5fe4.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_50f6c912f6949c4fa9c3281f555acac0370e5fe4.svg" class="org-svg" />, so ist insbesondere <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_251fbd75b2500c6c7401e402799917c45237fa90.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_251fbd75b2500c6c7401e402799917c45237fa90.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und damit <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_b3a6ad6e55b43c2780d4154b80301245266bc2fd.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_b3a6ad6e55b43c2780d4154b80301245266bc2fd.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
-<li>Ansonsten folgt die Aussage aus der Eigenschaft von <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_baa4bde66acf06d63d6819bd2e7304b6139626d9.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_baa4bde66acf06d63d6819bd2e7304b6139626d9.svg" class="org-svg" /> als <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a></li>
+<li>Falls ein \(O_j \in \mathcal{T}_{\mathrm{cof}}\), so ist insbesondere \(X \setminus (\bigcup O_i) = \bigcap X \setminus O_i \subseteq X \setminus O_j\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und damit \(O_j\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></li>
+<li>Ansonsten folgt die Aussage aus der Eigenschaft von \(\mathcal{T}_{A}\) als <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org86a53f2" class="outline-3">
-<h3 id="org86a53f2"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit des endlichen Durchschnitts offener Mengen</a></h3>
+<div id="outline-container-org23acba8" class="outline-3">
+<h3 id="org23acba8"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Offenheit des endlichen Durchschnitts offener Mengen</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_f2c525f1f9cb9c7b6277c746747993b5200e6df6.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_401944709aac58b9f94077c3aa9c987c21d7f056.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_401944709aac58b9f94077c3aa9c987c21d7f056.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_96be67be11318d4221b4e415a5404aaf1aba4a87.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_96be67be11318d4221b4e415a5404aaf1aba4a87.svg" class="org-svg" />, der allgemeine fall folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> bzw. ist durch die Eigenschaft von <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_3c493afc535dbe4d94e99d2ccaedc5205ff46aa0.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_3c493afc535dbe4d94e99d2ccaedc5205ff46aa0.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_e9658b6c9d24f75e06f00eae3150d1642804a527.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_e9658b6c9d24f75e06f00eae3150d1642804a527.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> ist und <a href="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum.html#ID-cfb8e097-29ba-4fdf-a8c3-257878628fdd">endliche Menge abgeschlossen in metrischen Räumen abgeschlossen sind</a>, folgt aus dem <a href="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge.html#ID-443ec431-b5d9-49af-93c0-172f5d49556b">Komplement einer abgeschlossenen und offenen Menge</a>, dass
+Seien \(O_i \in \mathcal{T}\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(i \in \{1,2\}\) und \(O_1 \in \mathcal{T}_A, O_2 \in \mathcal{T}_{\mathrm{cof}}\), der allgemeine fall folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> bzw. ist durch die Eigenschaft von \(\mathcal{T}_{A},\mathcal{T}_{\mathrm{cof}}\).
+Da \(K  \coloneqq X \setminus O_2\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> ist und <a href="20230427201956-einelementige_menge_als_abgeschlossene_menge_in_einem_metrischen_raum.html#ID-cfb8e097-29ba-4fdf-a8c3-257878628fdd">endliche Menge abgeschlossen in metrischen Räumen abgeschlossen sind</a>, folgt aus dem <a href="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge.html#ID-443ec431-b5d9-49af-93c0-172f5d49556b">Komplement einer abgeschlossenen und offenen Menge</a>, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_6b00fbdcf080acc3f0c66d2b8864765c6c1dd2e0.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_6b00fbdcf080acc3f0c66d2b8864765c6c1dd2e0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+O_1 \cap O_2 =& O_2 \cap M \setminus K \\
+=& O_2 \setminus K
+\end{align*}
 <p>
-<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist in <img src="file:///home/anton/html/ltximg/20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_dda1be9fb024ea8e61a2933fb5ada206e261572b.svg" alt="20230515214715-cofinite_topologie_vereinigt_mit_einer_metrisch_induzierten_toploogie_dda1be9fb024ea8e61a2933fb5ada206e261572b.svg" class="org-svg" />
+<a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist in \(\mathcal{T}_{d}\)
 </p>
 </div>
 </div>

@@ -9,33 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang eines topologischen Raum als Invariante unter stetigen, surjektiven Abbildungen</h1>
-<div id="outline-container-org9b09d0f" class="outline-2">
-<h2 id="org9b09d0f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd2b34cd" class="outline-2">
+<h2 id="orgd2b34cd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a>, <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 </p>
 <ul class="org-ul">
-<li>Falls <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist, so auch <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /></li>
-<li>Falls <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /> <a href="20230308122703-unzusammenhangender_raum.html#ID-3d0d0333-8bcf-4fc8-90c5-f6a7e8e185cc">unzusammenhängend</a> ist, so auch <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /></li>
+<li>Falls \(X\) <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> ist, so auch \(X'\)</li>
+<li>Falls \(X'\) <a href="20230308122703-unzusammenhangender_raum.html#ID-3d0d0333-8bcf-4fc8-90c5-f6a7e8e185cc">unzusammenhängend</a> ist, so auch \(X\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4f4c403" class="outline-2">
-<h2 id="org4f4c403"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org38aa863" class="outline-2">
+<h2 id="org38aa863"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Eine Aussage ist bloß die <a href="20211223100720-kontrapositionsgesetz.html#ID-72683132-824d-4f73-b099-70d5787bebd3">Kontraposition</a> der anderen, d.h. wir zeigen nur die 2.:
 </p>
 
 <p>
-Angenommen <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /> ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">unzusammenhängend</a>, so existieren <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_623c5f6c269ce5f9c80c67829e9f1ec404047312.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_623c5f6c269ce5f9c80c67829e9f1ec404047312.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_4a63316efd26046290d16aee9c4f5e59f34c651a.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_4a63316efd26046290d16aee9c4f5e59f34c651a.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, sind <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_e49540bee1e00f592c7cef930b74065b0189dff0.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_e49540bee1e00f592c7cef930b74065b0189dff0.svg" class="org-svg" /> jeweils <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> und da <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> ist, auch eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">partition</a> mit <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_984aee8909cb72897d284e72185dbbaecd4ae824.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_984aee8909cb72897d284e72185dbbaecd4ae824.svg" class="org-svg" />
-Aus der Annahme der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_e49540bee1e00f592c7cef930b74065b0189dff0.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_e49540bee1e00f592c7cef930b74065b0189dff0.svg" class="org-svg" /> jeweils <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind und damit auch, dass <img src="file:///home/anton/html/ltximg/20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230506202945-zusammenhang_eines_topologischen_raum_als_invariante_unter_stetigen_surjektiven_abbildungen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> unzusammenhängend.
+Angenommen \(X'\) ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">unzusammenhängend</a>, so existieren <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleere</a> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(A,B \subseteq X'\) mit \(A \sqcup B = X'\).
+Da \(f\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, sind \(f^{-1}[A], f^{-1}[B]\) jeweils <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> und da \(f\) <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> ist, auch eine <a href="20211230201833-partition_mengenlehre.html#ID-8c4522dc-7da5-40f7-9ba7-54cc0e1a60a9">partition</a> mit \(f^{-1}[A] \sqcup f^{-1}[B] = X\)
+Aus der Annahme der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a> folgt, dass \(f^{-1}[A], f^{-1}[B]\) jeweils <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind und damit auch, dass \(X\) unzusammenhängend.
 </p>
 </div>
 </div>

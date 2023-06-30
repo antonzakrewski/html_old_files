@@ -3,112 +3,116 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bild des Abschlusses unter stetigen Abbildungen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bild des Abschlusses unter stetigen Abbildungen</h1>
-<div id="outline-container-orgeffd183" class="outline-2">
-<h2 id="orgeffd183"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org565ebe6" class="outline-2">
+<h2 id="org565ebe6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> und <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0fc12455d3c37008e9ff1cf707abf2f47bc82c69.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0c4ac4e9f3190d685d9994000fe653e4f5def474.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
-<li>Für eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_23118262bfaa716f627bc572c1f782c46347a769.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_23118262bfaa716f627bc572c1f782c46347a769.svg" class="org-svg" /> gilt: <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_7407dda9cb045c31b93ea8e03c01c6c8b772fe8c.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_7407dda9cb045c31b93ea8e03c01c6c8b772fe8c.svg" class="org-svg" /> (siehe: <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>)</li>
+<li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>Für eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(A \subseteq X\) gilt: \(f[\overline{A}] \subseteq \overline{f[A]}\) (siehe: <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf6f376a" class="outline-2">
-<h2 id="orgf6f376a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaa9f946" class="outline-2">
+<h2 id="orgaa9f946"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbfa44d5" class="outline-3">
-<h3 id="orgbfa44d5"><span class="section-number-3">2.1.</span> a) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /></h3>
+<div id="outline-container-org2c0289a" class="outline-3">
+<h3 id="org2c0289a"><span class="section-number-3">2.1.</span> a) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> \(\Rightarrow\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:
-Sei <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> aber das Kriterium ist verletzt:
-D.h. es existiert eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0956decf06b68cbccf4c2fe7fea3d4879dd915d6.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0956decf06b68cbccf4c2fe7fea3d4879dd915d6.svg" class="org-svg" /> mit <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_838e57292f9075c980e7ea022803a5481118f0c1.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_838e57292f9075c980e7ea022803a5481118f0c1.svg" class="org-svg" />, so dass gilt:
+Sei \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> aber das Kriterium ist verletzt:
+D.h. es existiert eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A \subseteq X'\) mit \(a \in \overline{A} \setminus A\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3a706cddb42089ee956796168ceeb464e19f9b02.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3a706cddb42089ee956796168ceeb464e19f9b02.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(a) \not\in \overline{f[A]}
+\end{align*}
 <p>
-Da <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss abgeschlossen</a> ist, folgt dass <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_2e40c511e9c3463dcbf9b97e892b3a8cc42a16b9.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_2e40c511e9c3463dcbf9b97e892b3a8cc42a16b9.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_510c238ca2542404f829e0f487850c851a893fd5.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_510c238ca2542404f829e0f487850c851a893fd5.svg" class="org-svg" />
-Dabei ist aber <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_84db577e653959eabce7bd3780f7b28c0cb6f481.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_84db577e653959eabce7bd3780f7b28c0cb6f481.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_c9b596ea0607c010a86b1c3ff4231a06391aaef1.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_c9b596ea0607c010a86b1c3ff4231a06391aaef1.svg" class="org-svg" />.
-Damit folgt, dass das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0e6a90f282b85d7d96eceb1250329ee80bb4b802.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0e6a90f282b85d7d96eceb1250329ee80bb4b802.svg" class="org-svg" /> keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist, d.h. <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> ist verletzt
+Da <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss abgeschlossen</a> ist, folgt dass \(X' \setminus \overline{f[A]}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(a)\)
+Dabei ist aber \(X \setminus \overline{A}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit \(a \not\in X' \setminus \overline{A}\).
+Damit folgt, dass das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(f^{-1}[X' \setminus \overline{f[A]}]\) keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist, d.h. <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> ist verletzt
 </p>
 </div>
 </div>
-<div id="outline-container-org77ad6e1" class="outline-3">
-<h3 id="org77ad6e1"><span class="section-number-3">2.2.</span> b) <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /> stetig</h3>
+<div id="outline-container-org9411cc6" class="outline-3">
+<h3 id="org9411cc6"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) stetig</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:
-Sei <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> nicht <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>, so existiert nach der Aussage über das <a href="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen.html#ID-db9a2c4c-d4bc-404c-96dd-b58235803cac">Urbild einer abgeschlossene Mengen unter stetigen Abbildungen</a> eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_7ce6a5b54b0b2820fe72518211a0766a3c1382ca.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_7ce6a5b54b0b2820fe72518211a0766a3c1382ca.svg" class="org-svg" />, so dass <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_8b8b13c5ff6a5f89eec399588eba22f689e75079.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_8b8b13c5ff6a5f89eec399588eba22f689e75079.svg" class="org-svg" /> nicht <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
-Da <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_5654dc2ca28146c33a4dcae91b951a20d5fa3906.svg" class="org-svg" /> nach Annahme <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, gilt <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_36b4750f5c7801ce59b44f4e8db2a8a781dad0f3.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_36b4750f5c7801ce59b44f4e8db2a8a781dad0f3.svg" class="org-svg" /> (siehe: <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">Abschluss als kleinste abgeschlossene Menge</a>)
+Sei \(f\) nicht <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>, so existiert nach der Aussage über das <a href="20230312160645-abgeschlossene_mengen_unter_stetigen_abbildungen.html#ID-db9a2c4c-d4bc-404c-96dd-b58235803cac">Urbild einer abgeschlossene Mengen unter stetigen Abbildungen</a> eine <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(B \subseteq X'\), so dass \(A \coloneqq f^{-1}[B]\) nicht <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Da \(B\) nach Annahme <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, gilt \(\overline{B} = B\) (siehe: <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">Abschluss als kleinste abgeschlossene Menge</a>)
 </p>
 
 <p>
-Wegen des <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss als abgeschlossene Menge</a> und des <a href="20230303194137-abschluss_als_obermenge.html#ID-14e70756-d207-4d73-9ac3-16c1a4eb3609">Abschluss als Obermenge</a> gilt auch für die nicht <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_50a11768b7bcaa6e8350d11c5db4b73505d3125e.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_50a11768b7bcaa6e8350d11c5db4b73505d3125e.svg" class="org-svg" />, d.h. <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_58ee3ffb21223692dca386ae27b0152bffe049b3.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_58ee3ffb21223692dca386ae27b0152bffe049b3.svg" class="org-svg" /> mit <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_30e1174027744263df890d0a7a43dd1800df280a.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_30e1174027744263df890d0a7a43dd1800df280a.svg" class="org-svg" />
+Wegen des <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss als abgeschlossene Menge</a> und des <a href="20230303194137-abschluss_als_obermenge.html#ID-14e70756-d207-4d73-9ac3-16c1a4eb3609">Abschluss als Obermenge</a> gilt auch für die nicht <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A \subsetneq \overline{A}\), d.h. \(\exists a' \in \overline{A} \setminus A\) mit \(f(a) \not\in B\)
 Daraus folgt aber der Widerspruch zur Annahme, da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_e022943fc83ca124522a9b68c0e5551de6abd108.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_e022943fc83ca124522a9b68c0e5551de6abd108.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+a' \in& f[\overline{A}] \\
+a' \not\in& \overline{f[A]} = f[A]
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-org3ad9f2f" class="outline-3">
-<h3 id="org3ad9f2f"><span class="section-number-3">2.3.</span> komische richtung</h3>
+<div id="outline-container-orga63d4c7" class="outline-3">
+<h3 id="orga63d4c7"><span class="section-number-3">2.3.</span> komische richtung</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Da der <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist (vgl. <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss als abgeschlossene Menge</a>) folgt wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">Stetigkeit</a>, dass
 und zudem auch noch die <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">die kleinste abgeschlossene Menge</a> ist folgt,
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3a8f407a7e252d99da1a7354a9cc57ff868279ac.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3a8f407a7e252d99da1a7354a9cc57ff868279ac.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+f^{-1}[\overline{f[A]}]
+\end{align*}
 <p>
 <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
-Desweiteren gilt, dass <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_cedd2a27ef8d5ceeeb3c77abdc7d01493d61edbe.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_cedd2a27ef8d5ceeeb3c77abdc7d01493d61edbe.svg" class="org-svg" /> (vgl. <a href="20230303194137-abschluss_als_obermenge.html#ID-14e70756-d207-4d73-9ac3-16c1a4eb3609">Abschluss als Obermenge</a>) und damit auch <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_da54fbb56b6bcc26fb9ba3424a0a1f26de4ef1f0.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_da54fbb56b6bcc26fb9ba3424a0a1f26de4ef1f0.svg" class="org-svg" />
-Wegen dem <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">Abschluss als kleinste abgeschlossene Menge</a> folgt daraus <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3609a81e826f00c1d8b3856ff13738f851608ab5.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_3609a81e826f00c1d8b3856ff13738f851608ab5.svg" class="org-svg" />, so dass insgesamt durch Auswertung mit <img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> folgt:
+Desweiteren gilt, dass \(f[A] \subseteq \overline{f[A]}\) (vgl. <a href="20230303194137-abschluss_als_obermenge.html#ID-14e70756-d207-4d73-9ac3-16c1a4eb3609">Abschluss als Obermenge</a>) und damit auch \(A \subseteq f^{-1}[f[A]] \subseteq f^{-1}[\overline{f[A]}]\)
+Wegen dem <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">Abschluss als kleinste abgeschlossene Menge</a> folgt daraus \(\overline{A} \subseteq f^{-1}[\overline{f[A]}]\), so dass insgesamt durch Auswertung mit \(f\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_fa3c7020ceb22422241c39cdf911f25651441489.svg" alt="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen_fa3c7020ceb22422241c39cdf911f25651441489.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+f[\overline{A}] \subseteq f[f^{-1}[\overline{f[A]}] = \overline{f[A]}
+\end{align*}
 </div>
 </div>
 </div>

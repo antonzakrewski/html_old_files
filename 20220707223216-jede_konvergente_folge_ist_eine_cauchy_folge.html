@@ -5,44 +5,64 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jede konvergente Folge ist eine Cauchy-Folge</title>
+<title>konvergente Folge als Cauchy-Folge</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Jede konvergente Folge ist eine Cauchy-Folge</h1>
-<div id="outline-container-org4601768" class="outline-2">
-<h2 id="org4601768"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">konvergente Folge als Cauchy-Folge</h1>
+<div id="outline-container-org3dde9ec" class="outline-2">
+<h2 id="org3dde9ec"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
-Dann ist jede <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente Folge</a> <img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_c3d6c4c55cb3543ffd02a5130af41c081400b99a.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_c3d6c4c55cb3543ffd02a5130af41c081400b99a.svg" class="org-svg" /> eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy-Folge</a>.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Dann ist jede <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente Folge</a> \(x_n \rightarrow x\) eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy-Folge</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org6c40b09" class="outline-2">
-<h2 id="org6c40b09"><span class="section-number-2">2.</span> BeweiS</h2>
+<div id="outline-container-org2f12414" class="outline-2">
+<h2 id="org2f12414"><span class="section-number-2">2.</span> BeweiS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, dann existiert ein <img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_a1eaff78962398a044fcec64afe36a61cd7c6717.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_a1eaff78962398a044fcec64afe36a61cd7c6717.svg" class="org-svg" />, so dass für <img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_0414e6237457653d2fd85dc5a5af70aae8b2694a.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_0414e6237457653d2fd85dc5a5af70aae8b2694a.svg" class="org-svg" /> gilt
+Sei \(\varepsilon > 0\), dann existiert ein \(n(\frac{\varepsilon}{2}) \in \mathbb{N}\), so dass für \(n,m > n(\frac{\varepsilon}{2})\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_c2804ad2f2fb18aefdd3f8c16f807ceb44917ad1.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_c2804ad2f2fb18aefdd3f8c16f807ceb44917ad1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x_n,x) < \frac{\varepsilon}{2}
+\end{align*}
 <p>
 Daraus folgt aber durch Anwendung der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_3ce900376d7d9ccea20680bf4d0b961fde7f438d.svg" alt="20220707223216-jede_konvergente_folge_ist_eine_cauchy_folge_3ce900376d7d9ccea20680bf4d0b961fde7f438d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x_n,x_m) \leq& d(x_n,x) + d(x_m,x) \\
+<& \varepsilon
+\end{align*}
 </div>
 </div>
 </div>

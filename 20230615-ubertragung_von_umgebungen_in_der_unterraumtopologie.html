@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Übertragung von Umgebungen in der Unterraumtopologie</h1>
-<div id="outline-container-org8cddf0c" class="outline-2">
-<h2 id="org8cddf0c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1b47cba" class="outline-2">
+<h2 id="org1b47cba"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> in <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(x \in X\).
+Sei \(U \subseteq X\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) und \(V \subseteq U\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a>.
+Dann ist \(V\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> in \(X\).
 </p>
 </div>
 </div>
-<div id="outline-container-org7c56efb" class="outline-2">
-<h2 id="org7c56efb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7cf1851" class="outline-2">
+<h2 id="org7cf1851"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme existiert eine in <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_cf0afab4f6c3dececb65fa080117cefde4f4f221.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_cf0afab4f6c3dececb65fa080117cefde4f4f221.svg" class="org-svg" />.
-Damit existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8ffb8adec1ff1a158770415720ad8760f22cc9e6.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8ffb8adec1ff1a158770415720ad8760f22cc9e6.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> sind, folgt aus der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a>, dass <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_b902589969f90f77cbbd5b7ceba38b80c54eccc5.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_b902589969f90f77cbbd5b7ceba38b80c54eccc5.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> ist und damit auch <img src="file:///home/anton/html/ltximg/20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />.
+Nach Annahme existiert eine in \(U\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(V' \subseteq V\).
+Damit existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(U'\) mit \(U' \cap U = V'\).
+Da \(U'\), \(U\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von \(x\) sind, folgt aus der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a>, dass \(V'\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\) ist und damit auch \(V\).
 </p>
 </div>
 </div>

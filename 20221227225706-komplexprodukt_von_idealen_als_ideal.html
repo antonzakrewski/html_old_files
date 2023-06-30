@@ -9,65 +9,84 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexprodukt von Idealen als Ideal</h1>
-<div id="outline-container-orgafbb389" class="outline-2">
-<h2 id="orgafbb389"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org711b030" class="outline-2">
+<h2 id="org711b030"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_758fd258cb0820ef4ed501357b28038adc184988.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_758fd258cb0820ef4ed501357b28038adc184988.svg" class="org-svg" /> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a>.
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(I,J \subseteq R\) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideale</a>.
 Dann folgt, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_d7131f34292525d3429f4d896ac8c512f02e325f.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_d7131f34292525d3429f4d896ac8c512f02e325f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+IJ  = \left\{ \sum_{i=1}^{m} x_iy_i \vert x_i \in I, y_i \in j \right\}
+\end{align*}
 <p>
 auch ein Ideal ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org7e12617" class="outline-2">
-<h2 id="org7e12617"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8e81fda" class="outline-2">
+<h2 id="org8e81fda"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org15bdcb1" class="outline-3">
-<h3 id="org15bdcb1"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
+<div id="outline-container-org55ad00f" class="outline-3">
+<h3 id="org55ad00f"><span class="section-number-3">2.1.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_9e5bdf4f813c9ffb0a0f7d8ab545dba4ad6793cc.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_9e5bdf4f813c9ffb0a0f7d8ab545dba4ad6793cc.svg" class="org-svg" />.
-Dann gilt, dass <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_7420347ca38e1031d6b0123f1b714650f187146c.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_7420347ca38e1031d6b0123f1b714650f187146c.svg" class="org-svg" />  und es folgt:
+Sei \(\sum_{i=1}^{m} x_iy_i \in IJ\).
+Dann gilt, dass \(\sum_{i=1}^{m} x_i(-y_i) \in IJ\)  und es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_5c4d479d073162be63eb3a4a18ef31e79ba9ba36.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_5c4d479d073162be63eb3a4a18ef31e79ba9ba36.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{i=1}^{m} x_iy_i  + \sum_{i=1}^{m} x_i(-y_i)  =& \sum_{i=1}^{m} x_i(y_i - y_j) \\
+=& \sum_{i=1}^{m} x_i \cdot 0 \\
+=& \sum_{i=1}^{m} 0 \\
+=& 0
+ \end{align*}
 
 <p>
 Abgeschlossenheit der addition folgt nach konstruktion, neutrales element folgt
 </p>
 </div>
 </div>
-<div id="outline-container-org957b86d" class="outline-3">
-<h3 id="org957b86d"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
+<div id="outline-container-org0461eaa" class="outline-3">
+<h3 id="org0461eaa"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_1125d444657a97246340531d3b484ea681b2787a.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_1125d444657a97246340531d3b484ea681b2787a.svg" class="org-svg" />  und <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_9e5bdf4f813c9ffb0a0f7d8ab545dba4ad6793cc.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_9e5bdf4f813c9ffb0a0f7d8ab545dba4ad6793cc.svg" class="org-svg" /> dann folgt
+Seien \(r,r' \in R\)  und \(\sum_{i=1}^{m} x_iy_i \in IJ\) dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_499bddcb8d66b5fe8c81f4a6afeac00f2450c26c.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_499bddcb8d66b5fe8c81f4a6afeac00f2450c26c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+r \cdot \sum_{i=1}^{m} x_iy_i  \cdot r' =&  \sum_{i=1}^{m} (r \cdot x_i)(y_i  \cdot r')
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20221227225706-komplexprodukt_von_idealen_als_ideal_d532e0ce726d4d81e537049ad8476c38be4af1a0.svg" alt="20221227225706-komplexprodukt_von_idealen_als_ideal_d532e0ce726d4d81e537049ad8476c38be4af1a0.svg" class="org-svg" />
+mit \(r \cdot x_i \in I, y_i \cdot r' \in J\)
 </p>
 </div>
 </div>

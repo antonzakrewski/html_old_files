@@ -9,46 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines maximalen Ideals</h1>
-<div id="outline-container-org99efbb3" class="outline-2">
-<h2 id="org99efbb3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org26600c2" class="outline-2">
+<h2 id="org26600c2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230314223206-existenz_eines_maximalen_ideals_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>
-Dann existiert ein <a href="20230314223428-maximales_ideal.html#ID-9d76bba3-11a8-42c9-9bdb-f774da2bb06a">maximales Ideal</a> <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_1266f6b42896d07ee52c4c654bea060627c401e9.svg" alt="20230314223206-existenz_eines_maximalen_ideals_1266f6b42896d07ee52c4c654bea060627c401e9.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>
+Dann existiert ein <a href="20230314223428-maximales_ideal.html#ID-9d76bba3-11a8-42c9-9bdb-f774da2bb06a">maximales Ideal</a> \(M \subsetneq R\)
 </p>
 </div>
 </div>
-<div id="outline-container-org11d8f7b" class="outline-2">
-<h2 id="org11d8f7b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8602181" class="outline-2">
+<h2 id="org8602181"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Betrachten wir die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_2ea3df4e2293a54bf558a2b5c6bbbff507efcbeb.svg" alt="20230314223206-existenz_eines_maximalen_ideals_2ea3df4e2293a54bf558a2b5c6bbbff507efcbeb.svg" class="org-svg" /> mit der <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Teilmengenrelation als Halbordnung</a>:
-Insbesondere ist <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_f9695779b255301e517deff311a508b60d929b64.svg" alt="20230314223206-existenz_eines_maximalen_ideals_f9695779b255301e517deff311a508b60d929b64.svg" class="org-svg" />  ein (<a href="20221226123326-triviale_ideale_eines_rings.html#ID-f2da2bcb-33cf-4c2b-b686-68e3e626ed41">triviales</a>) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
+Betrachten wir die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(S  \coloneqq \{J \subsetneq R \vert J \text{ ist ein Ideal}\}\) mit der <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Teilmengenrelation als Halbordnung</a>:
+Insbesondere ist \(\{0\} \subsetneq R\)  ein (<a href="20221226123326-triviale_ideale_eines_rings.html#ID-f2da2bcb-33cf-4c2b-b686-68e3e626ed41">triviales</a>) <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
 </p>
 </div>
-<div id="outline-container-orga9c0723" class="outline-3">
-<h3 id="orga9c0723"><span class="section-number-3">2.1.</span> <a href="20230222205154-induktive_kette.html#ID-fae75338-a090-491a-9f68-eb8f727929f7">induktive Kette</a></h3>
+<div id="outline-container-org07d59f0" class="outline-3">
+<h3 id="org07d59f0"><span class="section-number-3">2.1.</span> <a href="20230222205154-induktive_kette.html#ID-fae75338-a090-491a-9f68-eb8f727929f7">induktive Kette</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_40ae23a0a75dbc78a732703779cb6ffbe3170c81.svg" alt="20230314223206-existenz_eines_maximalen_ideals_40ae23a0a75dbc78a732703779cb6ffbe3170c81.svg" class="org-svg" /> eine <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">Kette</a> in <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" alt="20230314223206-existenz_eines_maximalen_ideals_d92008ffc5e627588251eacbd488b3cb67cfeae4.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_d514b90a6a78666671b299624b65d066eaf53f8d.svg" alt="20230314223206-existenz_eines_maximalen_ideals_d514b90a6a78666671b299624b65d066eaf53f8d.svg" class="org-svg" />, so folgt <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_7c0d419de1bc9781cbb3acea2fa1f3c61f2a594b.svg" alt="20230314223206-existenz_eines_maximalen_ideals_7c0d419de1bc9781cbb3acea2fa1f3c61f2a594b.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_37ae5f8fb723a99d679de253315f5a4fc5fac94d.svg" alt="20230314223206-existenz_eines_maximalen_ideals_37ae5f8fb723a99d679de253315f5a4fc5fac94d.svg" class="org-svg" />
-Bleibt zu zeigen <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_386f9d627e82e4c34da603371767f66c69f2dba6.svg" alt="20230314223206-existenz_eines_maximalen_ideals_386f9d627e82e4c34da603371767f66c69f2dba6.svg" class="org-svg" />.
+Sei \(K \subseteq S\) eine <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">Kette</a> in \(S\) und \(s(K) = \bigcup \{J \in K\}\), so folgt \(J \subseteq s(K)\) für \(J \in K\)
+Bleibt zu zeigen \(s(K) \in S\).
 </p>
 </div>
-<div id="outline-container-org4f1c5ec" class="outline-4">
-<h4 id="org4f1c5ec"><span class="section-number-4">2.1.1.</span> echte Teilmenge</h4>
+<div id="outline-container-org24d6493" class="outline-4">
+<h4 id="org24d6493"><span class="section-number-4">2.1.1.</span> echte Teilmenge</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Wir wissen, dass <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_d163f6e3c78a9f186858acbef074c5d284306254.svg" alt="20230314223206-existenz_eines_maximalen_ideals_d163f6e3c78a9f186858acbef074c5d284306254.svg" class="org-svg" />, da sonst für ein <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_466829704756e44afa433c22dd5c0970379d6706.svg" alt="20230314223206-existenz_eines_maximalen_ideals_466829704756e44afa433c22dd5c0970379d6706.svg" class="org-svg" /> gelten würde (vgl. <a href="20230314174015-von_einer_einheit_erzeugtes_ideal.html#ID-cf419725-19a8-46df-bd48-e2b7c58b7996">von einer Einheit erzeugtes Ideal</a>).
-Damit ist <img src="file:///home/anton/html/ltximg/20230314223206-existenz_eines_maximalen_ideals_d45c3aa5d0ffb592f00c7fb3a0e52bec4a8cd110.svg" alt="20230314223206-existenz_eines_maximalen_ideals_d45c3aa5d0ffb592f00c7fb3a0e52bec4a8cd110.svg" class="org-svg" />.
+Wir wissen, dass \(1 \not\in J\), da sonst für ein \(J = R\) gelten würde (vgl. <a href="20230314174015-von_einer_einheit_erzeugtes_ideal.html#ID-cf419725-19a8-46df-bd48-e2b7c58b7996">von einer Einheit erzeugtes Ideal</a>).
+Damit ist \(s(K) \subsetneq R\).
 </p>
 </div>
 </div>
-<div id="outline-container-orged49abb" class="outline-4">
-<h4 id="orged49abb"><span class="section-number-4">2.1.2.</span> Ideal</h4>
+<div id="outline-container-orgc55ea8d" class="outline-4">
+<h4 id="orgc55ea8d"><span class="section-number-4">2.1.2.</span> Ideal</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 siehe: <a href="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal.html#ID-233cfb99-303f-46ac-a44a-594ea660f6e3">Vereinigung von einer Kette von Idealen als Ideal</a> 
@@ -56,8 +81,8 @@ siehe: <a href="20230427085413-vereinigung_von_einer_kette_von_idealen_als_ideal
 </div>
 </div>
 </div>
-<div id="outline-container-org7892f08" class="outline-3">
-<h3 id="org7892f08"><span class="section-number-3">2.2.</span> Korollar</h3>
+<div id="outline-container-org7b00be8" class="outline-3">
+<h3 id="org7b00be8"><span class="section-number-3">2.2.</span> Korollar</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Damit aus dem <a href="20220817195600-lemma_von_zorn.html#ID-8afc287e-b64f-49e8-9479-83cedc5e7f0a">Lemma von Zorn</a>, dass ein maximales Ideal existiert

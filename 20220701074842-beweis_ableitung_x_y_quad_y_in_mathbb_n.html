@@ -9,51 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Beweis: Ableitung <img src="file:///home/anton/html/ltximg/20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_011ba759428d206517862e12c5475d49231ae3c6.svg" alt="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_011ba759428d206517862e12c5475d49231ae3c6.svg" class="org-svg" /></h1>
-<div id="outline-container-org789d15d" class="outline-2">
-<h2 id="org789d15d"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Beweis: Ableitung \(x^y \quad y \in \mathbb{N}\)</h1>
+<div id="outline-container-org3268bdc" class="outline-2">
+<h2 id="org3268bdc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_637c5a75dd42b7c73f1e8d2ccdf2253a118b1dc9.svg" alt="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_637c5a75dd42b7c73f1e8d2ccdf2253a118b1dc9.svg" class="org-svg" />
-</span>
+\begin{align*}
+(x^y)' =& y \cdot x^{y-1} && y \in \mathbb{N}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org42096c5" class="outline-2">
-<h2 id="org42096c5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org813ebce" class="outline-2">
+<h2 id="org813ebce"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbd4fbe5" class="outline-3">
-<h3 id="orgbd4fbe5"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
+<div id="outline-container-org54c7fef" class="outline-3">
+<h3 id="org54c7fef"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_525fd4a502ece6e71f4a22ddc5b39742c1b6ad02.svg" alt="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_525fd4a502ece6e71f4a22ddc5b39742c1b6ad02.svg" class="org-svg" />
-</span>
+\begin{align*}
+\left(x^0)' =& \lim_{\epsilon \to \infty}\left(\frac{(x+\epsilon)^0 - x^0}{\epsilon}\right) \\
+=& \lim_{\epsilon \to \infty}\left(\frac{0}{\epsilon}\right) \\
+=& 0 \\
+\end{align*}
+\begin{align*}
+(x^1)' =& \lim_{\epsilon \to \infty}\left(\frac{x+\epsilon - x}{\epsilon}\right) \\
+=& \lim_{\epsilon \to \infty}\left(\frac{\epsilon}{\epsilon}\right) \\
+=& 1 \\
+=& 1 \cdot x^{0}
+\end{align*}
 </div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_81562de45aa69bf8907c7a50297d74362924daf5.svg" alt="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_81562de45aa69bf8907c7a50297d74362924daf5.svg" class="org-svg" />
-</span>
 </div>
-</div>
-</div>
-<div id="outline-container-org686fcae" class="outline-3">
-<h3 id="org686fcae"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org1629ac5" class="outline-3">
+<h3 id="org1629ac5"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_5b8dcf150a7ee51e4b671ded4c253f1262273368.svg" alt="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n_5b8dcf150a7ee51e4b671ded4c253f1262273368.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(x^{y+1})' =& (x^{y} \cdot x^{1})' \\
+=& (x^{y})' x^{1} + x^{y} \cdot (x^1)' \\
+=& y \cdot x^{y-1} \cdot x^{1} + x^{y} \cdot 1 \\
+=& y \cdot x^y  + x^{y} \\
+=& (y+1) \cdot x^y 
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rekursionsformel für die Stirling Zahl erster Art</h1>
-<div id="outline-container-orgaca9371" class="outline-2">
-<h2 id="orgaca9371"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc3e79aa" class="outline-2">
+<h2 id="orgc3e79aa"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_b04ca274fc0a2e861e61157e57c9628c139ba14f.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_b04ca274fc0a2e861e61157e57c9628c139ba14f.svg" class="org-svg" />.
-Dann gilt für die <a href="20230327104607-stirling_zahl_erster_art.html#ID-7133e309-606f-408d-8a8e-85d27c0aa9ea">Stirling Zahl erster Art</a> <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_9a6f7fecefc270a723bd8ae7b772e6a26331a642.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_9a6f7fecefc270a723bd8ae7b772e6a26331a642.svg" class="org-svg" />
+Sei \(n \in \mathbb{N}\) und \(1 \leq k \leq n\).
+Dann gilt für die <a href="20230327104607-stirling_zahl_erster_art.html#ID-7133e309-606f-408d-8a8e-85d27c0aa9ea">Stirling Zahl erster Art</a> \(\overline{s}_{n,k}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_a5a4600aa49ab01775784b2a0861dfe622b0fa86.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_a5a4600aa49ab01775784b2a0861dfe622b0fa86.svg" class="org-svg" />
-</span>
+\begin{align*}
+\overline{S}_{n,k} =& (n-1) \overline{S}_{n-1,k} + \overline{S}_{n-1,k-1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org77fd8a0" class="outline-2">
-<h2 id="org77fd8a0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2380eca" class="outline-2">
+<h2 id="org2380eca"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Kombinatorsicher Beweis:
@@ -37,22 +59,22 @@ Man wähle ein beliebiges Element aus
 Es existieren 2 Möglichkeiten:
 </p>
 </div>
-<div id="outline-container-org39fcb55" class="outline-3">
-<h3 id="org39fcb55"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org4ce3d72" class="outline-3">
+<h3 id="org4ce3d72"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Das ausgewählte element ist in einem $i$-Zykel mit <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_d9c8535ea72198eaccb9b19cef7a8be7e22edc3c.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_d9c8535ea72198eaccb9b19cef7a8be7e22edc3c.svg" class="org-svg" />.
-Dann betrachte man <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_0686550ba3602602dffaa97b9a08987d77c571cd.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_0686550ba3602602dffaa97b9a08987d77c571cd.svg" class="org-svg" /> als Möglichkeit, aus den anderen <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> Elementen $k$-viele Zykel zu bilden.
-Zudem existieren <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> Möglichkeiten, das ausgewählte Element einzusortieren, indem man es als Nachfolger eines der <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> Elemente setzt.
+Das ausgewählte element ist in einem $i$-Zykel mit \(i \geq 2\).
+Dann betrachte man \(\overline{s}_{n-1,k}\) als Möglichkeit, aus den anderen \(n-1\) Elementen $k$-viele Zykel zu bilden.
+Zudem existieren \(n-1\) Möglichkeiten, das ausgewählte Element einzusortieren, indem man es als Nachfolger eines der \(n-1\) Elemente setzt.
 </p>
 </div>
 </div>
-<div id="outline-container-orgdb060ac" class="outline-3">
-<h3 id="orgdb060ac"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org2abf3c3" class="outline-3">
+<h3 id="org2abf3c3"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Das ausgewählte Element bildet einen $1$-zykel,
-Dann existieren <img src="file:///home/anton/html/ltximg/20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_8d3d40321e450116dff78b70ac308bc88a8cd664.svg" alt="20230327113418-rekursionsformel_fur_die_stirling_zahl_erster_art_8d3d40321e450116dff78b70ac308bc88a8cd664.svg" class="org-svg" /> Möglichkeiten, die restlichen $n$-Elemente zu verteilen
+Dann existieren \(\overline{s}_{n-1,k-1}\) Möglichkeiten, die restlichen $n$-Elemente zu verteilen
 </p>
 </div>
 </div>

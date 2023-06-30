@@ -9,43 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Ableitung der Exponentialfunktion</h1>
-<div id="outline-container-orgf1d35af" class="outline-2">
-<h2 id="orgf1d35af"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-orgdca3dcc" class="outline-2">
+<h2 id="orgdca3dcc"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orge9686c4" class="outline-3">
-<h3 id="orge9686c4"><span class="section-number-3">1.1.</span> Für <a href="20220318184444-eulersche_zahl.html#ID-6c51847c-d7cb-4197-bbe3-b9d98680db54">Eulersche Zahl</a></h3>
+<div id="outline-container-org01d3c52" class="outline-3">
+<h3 id="org01d3c52"><span class="section-number-3">1.1.</span> Für <a href="20220318184444-eulersche_zahl.html#ID-6c51847c-d7cb-4197-bbe3-b9d98680db54">Eulersche Zahl</a></h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220820234400-beweis_ableitung_der_exponentialfunktion_8b1c5a32b00fa8c59923d65ccc43b14b667c9470.svg" alt="20220820234400-beweis_ableitung_der_exponentialfunktion_8b1c5a32b00fa8c59923d65ccc43b14b667c9470.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220820234400-beweis_ableitung_der_exponentialfunktion_ed63cafa70a4cb6541f324b941c6d1fb82295b77.svg" alt="20220820234400-beweis_ableitung_der_exponentialfunktion_ed63cafa70a4cb6541f324b941c6d1fb82295b77.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a^x)' =& \lim_{h \to 0}\left(\frac{a^{x+h} - a^{x}}{x + h - x }\right) \\
+=& \lim_{h \to 0}\left(\frac{a^x \cdot \left(a^h - 1\right)}{h}\right) \\
+=& a^x \cdot \lim_{h \to 0}\left(\frac{a^h - 1}{h}\right)
+\end{align*}
+\begin{align*}
+e: 1 = \lim_{h \to 0}\left(\frac{e^h - 1}{h}\right)
+\end{align*}
 <p>
 vgl <a href="20220105231813-definition_eulersche_zahl.html#ID-b5211c2c-95cd-4349-a4e5-dffea742da6a">Definition: Eulersche Zahl</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org7056c51" class="outline-3">
-<h3 id="org7056c51"><span class="section-number-3">1.2.</span> Allgemein</h3>
+<div id="outline-container-org4c8db93" class="outline-3">
+<h3 id="org4c8db93"><span class="section-number-3">1.2.</span> Allgemein</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220820234400-beweis_ableitung_der_exponentialfunktion_760a5754878d1d1e5309e4ddc55419b52230d6d9.svg" alt="20220820234400-beweis_ableitung_der_exponentialfunktion_760a5754878d1d1e5309e4ddc55419b52230d6d9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a^x)' =& (e^{\ln(a) \cdot x})' \\
+=& (\ln(a) \cdot x)' \cdot e^{\ln(a) \cdot x} \\
+=& \ln(a) \cdot a^x
+\end{align*}
 </div>
 </div>
 </div>

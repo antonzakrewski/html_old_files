@@ -9,28 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit von differenzierbaren Funktionen</h1>
-<div id="outline-container-org4607367" class="outline-2">
-<h2 id="org4607367"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org26ea914" class="outline-2">
+<h2 id="org26ea914"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Jede in <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" class="org-svg" /> ist <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>
+Jede in \(D \subseteq \mathbb{R}\) <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: D \rightarrow \mathbb{R}\) ist <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org7f58eee" class="outline-2">
-<h2 id="org7f58eee"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9f662d9" class="outline-2">
+<h2 id="org9f662d9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>:
 </p>
 
 <p>
-Wenn die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so folgt, dass ein <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" /> existiert, so dass für ein geeignetes <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> für alle <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_98ecd1434c84169b04597a650d06f404463fbd38.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_98ecd1434c84169b04597a650d06f404463fbd38.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_823e010e08a5d7ff91089bd1a18c8beb3b76deaf.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_823e010e08a5d7ff91089bd1a18c8beb3b76deaf.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_905441d5bae01e39c1763b7e8734e8140b5bdbce.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_905441d5bae01e39c1763b7e8734e8140b5bdbce.svg" class="org-svg" />.
-Daraus folgt auch, dass die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_253a55c83184aa29553a1f8b6c17a54fc717a633.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_253a55c83184aa29553a1f8b6c17a54fc717a633.svg" class="org-svg" /> nicht auf <img src="file:///home/anton/html/ltximg/20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20221015094153-satz_uber_die_stetigkeit_von_differenzierbaren_funktionen_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> ist
+Wenn die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f\) nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, so folgt, dass ein \(x_0\) existiert, so dass für ein geeignetes \(\varepsilon > 0\) für alle \(\delta > 0\) ein \(x'\) existiert mit \(\vert f(x_0) - f(x') \vert > \varepsilon\).
+Daraus folgt auch, dass die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> \(\lim_{x \to x_0}\left(\frac{f(x) - f(x_0)}{x - x_0}\right)\) nicht auf \(\mathbb{R}\) <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> ist
 </p>
 </div>
 </div>

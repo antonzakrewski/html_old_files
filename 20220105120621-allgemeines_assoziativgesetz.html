@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Allgemeines Assoziativgesetz</h1>
-<div id="outline-container-org558655f" class="outline-2">
-<h2 id="org558655f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1aa83b2" class="outline-2">
+<h2 id="org1aa83b2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 ???
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105120621-allgemeines_assoziativgesetz_539f338b11b4edb886f2fdd0cb9a14bb2de26ad3.svg" alt="20220105120621-allgemeines_assoziativgesetz_539f338b11b4edb886f2fdd0cb9a14bb2de26ad3.svg" class="org-svg" />
-</span>
+\begin{align*}
+x_1 \circ x_2 \circ ... \circ x_n = (x_1 \circ x_2 \circ ... \circ x_n)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc67097c" class="outline-2">
-<h2 id="orgc67097c"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-orgc4f32d7" class="outline-2">
+<h2 id="orgc4f32d7"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>durch wiederholte Anwendung und gegebenfalls <a href="20220301114004-substitution_mathe.html#ID-08d1a600-6cd8-4aa3-8a9d-99750ccded31">Substitution</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105120621-allgemeines_assoziativgesetz_2fa601e4d8def6139cae894915d9d4d5338694af.svg" alt="20220105120621-allgemeines_assoziativgesetz_2fa601e4d8def6139cae894915d9d4d5338694af.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x_1 \circ x_2 \circ x_3 \circ ... \circ x_n =& \\
+(x_1 \circ x_2) \circ x_3 \circ ... \circ x_n =& \\
+((x_1 \circ x_2) \circ x_3) \circ ... \circ x_n =& \\
+...
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

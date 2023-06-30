@@ -9,36 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Metrischer Tensor für Minkowski-Räume</h1>
-<div id="outline-container-org180855b" class="outline-2">
-<h2 id="org180855b"><span class="section-number-2">1.</span> </h2>
+<div id="outline-container-org7008cdf" class="outline-2">
+<h2 id="org7008cdf"><span class="section-number-2">1.</span> </h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Je nach Konvention
-Signatur <img src="file:///home/anton/html/ltximg/20221115111435-metrischer_tensor_fur_minkowski_raume_19c5fd63d897fcfdbc93b6f6aafcccf115c26a60.svg" alt="20221115111435-metrischer_tensor_fur_minkowski_raume_19c5fd63d897fcfdbc93b6f6aafcccf115c26a60.svg" class="org-svg" />
+Signatur \(+2\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221115111435-metrischer_tensor_fur_minkowski_raume_3fd473ccafff493f22ff4eceeca57ff8bcf5f57a.svg" alt="20221115111435-metrischer_tensor_fur_minkowski_raume_3fd473ccafff493f22ff4eceeca57ff8bcf5f57a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g =& \begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}  \\
+=& \mathrm{diag}(-1,1,1,1)
+\end{align*}
 
 
 <p>
-Signatur <img src="file:///home/anton/html/ltximg/20221115111435-metrischer_tensor_fur_minkowski_raume_ec92d0110815b963bf38f79c04136ce66a7fcb24.svg" alt="20221115111435-metrischer_tensor_fur_minkowski_raume_ec92d0110815b963bf38f79c04136ce66a7fcb24.svg" class="org-svg" />
+Signatur \(-2\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221115111435-metrischer_tensor_fur_minkowski_raume_c1848919f6ba5b1168fd77b85ca0693fe9413357.svg" alt="20221115111435-metrischer_tensor_fur_minkowski_raume_c1848919f6ba5b1168fd77b85ca0693fe9413357.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g =& \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}  \\
+=& \mathrm{diag}(1,-1,-1,-1)
+\end{align*}
 <p>
-Signatur <img src="file:///home/anton/html/ltximg/20221115111435-metrischer_tensor_fur_minkowski_raume_19c5fd63d897fcfdbc93b6f6aafcccf115c26a60.svg" alt="20221115111435-metrischer_tensor_fur_minkowski_raume_19c5fd63d897fcfdbc93b6f6aafcccf115c26a60.svg" class="org-svg" />
+Signatur \(+2\)
 </p>
 </div>
 </div>

@@ -9,57 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einfache Differenzialgleichung für eine skalierte Ableitung</h1>
-<div id="outline-container-orgb0c0d82" class="outline-2">
-<h2 id="orgb0c0d82"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgadfce04" class="outline-2">
+<h2 id="orgadfce04"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_d4d8d21de97c0bf07a5064b5dde69fa2cc74c982.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_d4d8d21de97c0bf07a5064b5dde69fa2cc74c982.svg" class="org-svg" /> ein <a href="20220105232221-offenes_intervall.html#ID-ff9b0b3b-6225-430d-8b42-196a1257791d">Offenes Intervall</a> und <img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_dd8a2f445da196c2b5da36c91e3901370ebf402c.svg" class="org-svg" /> eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit
+Sei \(I \subset \mathbb{R}\) ein <a href="20220105232221-offenes_intervall.html#ID-ff9b0b3b-6225-430d-8b42-196a1257791d">Offenes Intervall</a> und \(f: I \rightarrow \mathbb{R}\) eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_f60ff02f191bab24169f8109220ee55255d6be25.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_f60ff02f191bab24169f8109220ee55255d6be25.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f' = \alpha f
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_dd597c7018633364d2d8f2fd9f98b74783d3f2cc.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_dd597c7018633364d2d8f2fd9f98b74783d3f2cc.svg" class="org-svg" />, so folgt:
+mit \(\alpha \in \mathbb{R}\), so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_b07ffdc4adc09d0935fb3e3bb2c02fecf86b3dc1.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_b07ffdc4adc09d0935fb3e3bb2c02fecf86b3dc1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) = c \cdot e^{\alpha \cdot x}
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_9154567c9ca3c747a02a2d096c28deb2f5c6aee7.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_9154567c9ca3c747a02a2d096c28deb2f5c6aee7.svg" class="org-svg" />
+mit \(c \in \mathbb{R}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org5d893ed" class="outline-2">
-<h2 id="org5d893ed"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9a18b26" class="outline-2">
+<h2 id="org9a18b26"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Die Hilsfunktion <img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_06b3b16f6ba4ff5fa19aade2975585be842ff0b1.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_06b3b16f6ba4ff5fa19aade2975585be842ff0b1.svg" class="org-svg" /> ist nach der <a href="20230118171023-produktregel.html#ID-a2cd35dd-7cec-4ad6-ad61-7533ac4309d3">Produktregel</a> <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> mit <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> 
+Die Hilsfunktion \(h(x)  \coloneqq f(x) \cdot e^{-\alphax}\) ist nach der <a href="20230118171023-produktregel.html#ID-a2cd35dd-7cec-4ad6-ad61-7533ac4309d3">Produktregel</a> <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> mit <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_f3ae0fa7402a80f684d4622582758916a20c04c7.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_f3ae0fa7402a80f684d4622582758916a20c04c7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h'(x) =& (f'(x) - \alpha f(x)) \cdot e^{- \alpha x} = 0
+\end{align*}
 <p>
 Nach der Aussage über das <a href="20230120080401-ableitung_und_konstante_funktion.html#ID-fb1d3202-e8ae-421c-a542-faac0671fb56">Verhältnis von Ableitung und konstanter Funktion</a> folgt damit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_c51aeea1194284317286fb9c871cd8f671d00b29.svg" alt="20230120081219-einfache_differenzialgleichung_fur_eine_skalierte_ableitung_c51aeea1194284317286fb9c871cd8f671d00b29.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h(x) =& c \\
+f(x) \cdot e^{-ax} =& c \vert \cdot 
+\end{align*}
 <p>
 und 
 </p>

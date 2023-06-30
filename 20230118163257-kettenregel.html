@@ -9,34 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel</h1>
-<div id="outline-container-org2316065" class="outline-2">
-<h2 id="org2316065"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb7d4967" class="outline-2">
+<h2 id="orgb7d4967"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_036f26d140ae2ff32217b563a415561b276a9ec7.svg" alt="20230118163257-kettenregel_036f26d140ae2ff32217b563a415561b276a9ec7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_c0953300f0d2bd4a2f00aaad371fbfc72d5ba98c.svg" alt="20230118163257-kettenregel_c0953300f0d2bd4a2f00aaad371fbfc72d5ba98c.svg" class="org-svg" />   <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit <img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_db25e2bf66879662aea6459a09c69a21eb93ba0f.svg" alt="20230118163257-kettenregel_db25e2bf66879662aea6459a09c69a21eb93ba0f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_22f2f04e4b2477a421e63e0a6be28a1c61e10860.svg" alt="20230118163257-kettenregel_22f2f04e4b2477a421e63e0a6be28a1c61e10860.svg" class="org-svg" />
+Seien \(f: D_f \rightarrow \mathbb{R}\) und \(g: D_g \rightarrow \mathbb{C}\)   <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit \(f(D_f) \subseteq D_g\) mit \(D_f,D_g \subseteq \mathbb{R}\)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_c93b8791e68a61c2d5df53eed3ca3d6d770b2c47.svg" alt="20230118163257-kettenregel_c93b8791e68a61c2d5df53eed3ca3d6d770b2c47.svg" class="org-svg" />
-</span>
+\begin{align*}
+\frac{\mathrm{d}(g \circ f)(x)}{\mathrm{d}x} =& g'(f(x)) \cdot f'(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf691149" class="outline-2">
-<h2 id="orgf691149"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf4f13cf" class="outline-2">
+<h2 id="orgf4f13cf"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118163257-kettenregel_7d9c733c31230240cb3311e627c722043392a024.svg" alt="20230118163257-kettenregel_7d9c733c31230240cb3311e627c722043392a024.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g(f(x)) - g(f(x_0)) =& s_g(f(x)) \cdot (f(x) - f(x_0) \\
+=& s_g(f(x)) \cdot s_f(x) \cdot (x - x_0) \\
+=:& s_{g \circ f}(x)
+\end{align*}
 
 
 

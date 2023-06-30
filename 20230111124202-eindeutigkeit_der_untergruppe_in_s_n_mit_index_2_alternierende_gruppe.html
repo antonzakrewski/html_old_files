@@ -9,93 +9,108 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Eindeutigkeit der Untergruppe in <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> mit Index 2 (Alternierende Gruppe)</h1>
-<div id="outline-container-orgae376ba" class="outline-2">
-<h2 id="orgae376ba"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Eindeutigkeit der Untergruppe in \(S_n\) mit Index 2 (Alternierende Gruppe)</h1>
+<div id="outline-container-org56068f8" class="outline-2">
+<h2 id="org56068f8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_22e52f55cd9ff52c86817a3f86dfc1e660b1b6f7.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_22e52f55cd9ff52c86817a3f86dfc1e660b1b6f7.svg" class="org-svg" />  mit <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index (Gruppentheorie)</a> <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_025ab2f11f85b858d5fcfed1d010ddee05a0d0b2.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_025ab2f11f85b858d5fcfed1d010ddee05a0d0b2.svg" class="org-svg" />
-Dann ist <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_bf35e6b690c16ac214b2fc061e52aefb3f401087.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_bf35e6b690c16ac214b2fc061e52aefb3f401087.svg" class="org-svg" />
+Sei \(S_n\) die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und \(U \subseteq S_n\)  mit <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index (Gruppentheorie)</a> \(\vert S_n : U \vert = 2\)
+Dann ist \(S_n = A_n\)
 </p>
 </div>
 </div>
-<div id="outline-container-org5a728f0" class="outline-2">
-<h2 id="org5a728f0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb98e1b6" class="outline-2">
+<h2 id="orgb98e1b6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_c51375cd7a6f48ad46152c4f93339e38fc5c81f4.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_c51375cd7a6f48ad46152c4f93339e38fc5c81f4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: S_n \rightarrow& \{-1,1\} \\
+a \mapsto& 
+\begin{cases}
+1 & \mbox{if } a \in U \\
+-1 & \mbox{if } a \not\in U \\ 
+\end{cases}
+\end{align*}
 <p>
-ist ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Homomorphismus</a> und daraus folgt nach dem <a href="20221225215827-lemma_uber_den_homomorphismus_von_der_symmetrischen_gruppe_in_einen_korper.html#ID-c10e68f5-5e53-42f0-bb40-525fc926c130">Homomorphismus von der Symmetrischen Gruppe in einen Körper</a>, dass <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_43b51605cd101e9c03bea8bd077a5586b0a8652b.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_43b51605cd101e9c03bea8bd077a5586b0a8652b.svg" class="org-svg" />
+ist ein <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Homomorphismus</a> und daraus folgt nach dem <a href="20221225215827-lemma_uber_den_homomorphismus_von_der_symmetrischen_gruppe_in_einen_korper.html#ID-c10e68f5-5e53-42f0-bb40-525fc926c130">Homomorphismus von der Symmetrischen Gruppe in einen Körper</a>, dass \(U = A_n\)
 </p>
 </div>
-<div id="outline-container-org1cd9c2a" class="outline-3">
-<h3 id="org1cd9c2a"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Homomorphismus</a></h3>
+<div id="outline-container-org8e46f48" class="outline-3">
+<h3 id="org8e46f48"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Homomorphismus</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei die <a href="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse.html#ID-df4f1105-e31e-4c22-9114-cbe5945ce202">Äquivalenzrelation einer Rechtsnebenklasse</a> gegeben.
-Sei <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_fd269bb940d097168004abeeb5358946826a0937.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_fd269bb940d097168004abeeb5358946826a0937.svg" class="org-svg" /> für  <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_03d40dae74df8b5a8294c0a6e4c87874255fb314.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_03d40dae74df8b5a8294c0a6e4c87874255fb314.svg" class="org-svg" />
+Sei \(a = a' \cdot \overline{a}\) für  \(a,a',\overline{a} \in S_n\)
 Dann folgt für:
 </p>
 </div>
-<div id="outline-container-org792c3aa" class="outline-4">
-<h4 id="org792c3aa"><span class="section-number-4">2.1.1.</span> <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5b6b7ef6e221c6c8e1e3612666b572e9d070e061.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5b6b7ef6e221c6c8e1e3612666b572e9d070e061.svg" class="org-svg" /></h4>
+<div id="outline-container-orgf356178" class="outline-4">
+<h4 id="orgf356178"><span class="section-number-4">2.1.1.</span> \(a, a' \in U\)</h4>
 <div class="outline-text-4" id="text-2-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_717a5fbab80352373cfd85f363e9fb325498646c.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_717a5fbab80352373cfd85f363e9fb325498646c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \cdot a' \in U
+\end{align*}
 <p>
 wegen der <a href="20220814141200-abgeschlossenheit_einer_algebraischen_struktur.html#ID-8d0963bb-1256-4adb-9fb2-dad2e261f500">Abgeschlossenheit</a> der <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc7e4cd8" class="outline-4">
-<h4 id="orgc7e4cd8"><span class="section-number-4">2.1.2.</span> <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_7f4b82ffd0fddc8001d55c52f749a781f079db41.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_7f4b82ffd0fddc8001d55c52f749a781f079db41.svg" class="org-svg" /></h4>
+<div id="outline-container-org60a3c95" class="outline-4">
+<h4 id="org60a3c95"><span class="section-number-4">2.1.2.</span> <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a \in U, a' \not \in U\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_1cbf6c3c305104b8eae968917bc854806a429829.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_1cbf6c3c305104b8eae968917bc854806a429829.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \cdot a' \not \in U
+\end{align*}
 <p>
-weil sonst durch multiplikation mit <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_c1fbc9783626ac5f4ef28b3e584999d7147b62b8.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_c1fbc9783626ac5f4ef28b3e584999d7147b62b8.svg" class="org-svg" /> ein widerspruch zur annahme entstünde
+weil sonst durch multiplikation mit \(a^{-1} \in U\) ein widerspruch zur annahme entstünde
 </p>
 </div>
 </div>
-<div id="outline-container-org6c8e4fb" class="outline-4">
-<h4 id="org6c8e4fb"><span class="section-number-4">2.1.3.</span> <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5bbced46a2132709ec72e55b5462cf28b817273e.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5bbced46a2132709ec72e55b5462cf28b817273e.svg" class="org-svg" /></h4>
+<div id="outline-container-org64f6c35" class="outline-4">
+<h4 id="org64f6c35"><span class="section-number-4">2.1.3.</span> \(a,a' \not\in U\)</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <p>
-Wegen der Existenz des Inversen folgt dann auch <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_4a63eda1e6b514af2ad177abdf3838fc60fa9d6b.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_4a63eda1e6b514af2ad177abdf3838fc60fa9d6b.svg" class="org-svg" /> und wegen der <a href="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse.html#ID-df4f1105-e31e-4c22-9114-cbe5945ce202">Äquivalenzrelation einer Rechtsnebenklasse</a> und dem <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index</a> gleich <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_d386195bb1fece8d1fea7f25f39d23bde506a647.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_d386195bb1fece8d1fea7f25f39d23bde506a647.svg" class="org-svg" /> gilt
+Wegen der Existenz des Inversen folgt dann auch \(a^{-1} \not\in U\) und wegen der <a href="20221023193227-aquivalenzrelation_einer_rechtsnebenklasse.html#ID-df4f1105-e31e-4c22-9114-cbe5945ce202">Äquivalenzrelation einer Rechtsnebenklasse</a> und dem <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index</a> gleich \(2\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_d4387f65050d0cf805f7b1c7c6529de3f687b617.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_d4387f65050d0cf805f7b1c7c6529de3f687b617.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+aU =& a'^{-1}U 
+\end{align*}
 <p>
-und damit auch <img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_40b2a55d6cc49d2985f9c44b54c8ee0e92ed914b.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_40b2a55d6cc49d2985f9c44b54c8ee0e92ed914b.svg" class="org-svg" />, d.h.
+und damit auch \(a \sim a'^{-1}\), d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5e084253e0c4272afabedb50dc80062a92c6f759.svg" alt="20230111124202-eindeutigkeit_der_untergruppe_in_s_n_mit_index_2_alternierende_gruppe_5e084253e0c4272afabedb50dc80062a92c6f759.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \cdot (a'^{-1})^{-1} \in U
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,40 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit des inversen Elements einer Gruppe</h1>
-<div id="outline-container-org1ee4449" class="outline-2">
-<h2 id="org1ee4449"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org27fc3be" class="outline-2">
+<h2 id="org27fc3be"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" class="org-svg" />
-Dann existiert genau ein <img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_fedd7c79f2ed72d747cc5f93bc37fae08403add3.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_fedd7c79f2ed72d747cc5f93bc37fae08403add3.svg" class="org-svg" />, so dass gilt:
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(g \in G\)
+Dann existiert genau ein \(g^{-1}\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_3c89cebdcb541d00bdaa259ae63760e05dfc8174.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_3c89cebdcb541d00bdaa259ae63760e05dfc8174.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall g \exists! g^{-1} ( g\cdot g^{-1} = 1)
+\end{align*}
 <ul class="org-ul">
 <li>1 als <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org090529b" class="outline-2">
-<h2 id="org090529b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9b602ac" class="outline-2">
+<h2 id="org9b602ac"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Aufgrund der <a href="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen.html#ID-ff7baf40-33c9-4bca-a77b-cd1bf2c7a945">Eindeutigkeit des Links- und Rechtsinverses Element in Gruppen</a> folgt für <img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_01de5b11ff1d87128662754300d3dedf74040bd0.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_01de5b11ff1d87128662754300d3dedf74040bd0.svg" class="org-svg" />:
+Aufgrund der <a href="20221209141339-eindeutigkeit_links_und_rechtsinverses_element_in_gruppen.html#ID-ff7baf40-33c9-4bca-a77b-cd1bf2c7a945">Eindeutigkeit des Links- und Rechtsinverses Element in Gruppen</a> folgt für \(gg^{-1} = e = g \cdot \overline{g^{-1}}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_41728b8e8a1724c08b77710f9b56da102e5e4b78.svg" alt="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe_41728b8e8a1724c08b77710f9b56da102e5e4b78.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+gg^{-1} =& g \overline{g^{-1}} && \vert g^{-1} \\
+g^{-1}gg^{-1} =& g^{-1}g \overline{g^{-1}} \\
+g^{-1} =& \overline{g^{-1}}
+\end{align*}
 </div>
 </div>
 </div>

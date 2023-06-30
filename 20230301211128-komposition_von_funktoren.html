@@ -9,25 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">composition of functors</h1>
-<div id="outline-container-orgf725924" class="outline-2">
-<h2 id="orgf725924"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgefd3061" class="outline-2">
+<h2 id="orgefd3061"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_4db4e9d925be063f154d48974efd0be5f1c8f87e.svg" alt="20230301211128-komposition_von_funktoren_4db4e9d925be063f154d48974efd0be5f1c8f87e.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" alt="20230301211128-komposition_von_funktoren_863dfd1b17ac9de12b6430b64bebd3d3574198e7.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_08842e39755f31a2371c7f246b4c0f5f20c2ee39.svg" alt="20230301211128-komposition_von_funktoren_08842e39755f31a2371c7f246b4c0f5f20c2ee39.svg" class="org-svg" /> be <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functors</a>.
-Then there exists a composition <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_49c64bca57294db496518aed69a96b61791b268e.svg" alt="20230301211128-komposition_von_funktoren_49c64bca57294db496518aed69a96b61791b268e.svg" class="org-svg" /> defined by:
+Let \(\mathcal{C}, \mathcal{D}, \mathcal{E}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(F: \mathcal{C} \rightarrow \mathcal{D}\) and \(G: \mathcal{D} \rightarrow \mathcal{E}\) be <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functors</a>.
+Then there exists a composition \(G \circ F\) defined by:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_7ba23216bc26e5da59eb19e8120ce11ae83a7823.svg" alt="20230301211128-komposition_von_funktoren_7ba23216bc26e5da59eb19e8120ce11ae83a7823.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(G \circ F)(A) =& G(F(A)) \\
+(G \circ F)(f) =& G(F(f))
+\end{align*}
 <p>
-for <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_efb87d5e23e3ac322b128c9c2eff4c396ba1c517.svg" alt="20230301211128-komposition_von_funktoren_efb87d5e23e3ac322b128c9c2eff4c396ba1c517.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_28ec2e5b3e01e7c6e968f13fa274cc90f90d8b2c.svg" alt="20230301211128-komposition_von_funktoren_28ec2e5b3e01e7c6e968f13fa274cc90f90d8b2c.svg" class="org-svg" />
+for \(A \in \mathcal{C}\) and \(f \in \mathrm{Mor}(\mathcal{C}\)
 </p>
 </div>
 </div>

@@ -9,21 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">feinere Topologie erhält i.A. nicht T3-Eigenschaft</h1>
-<div id="outline-container-org4ae685c" class="outline-2">
-<h2 id="org4ae685c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc2ab7f3" class="outline-2">
+<h2 id="orgc2ab7f3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3</a> -<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und <img src="file:///home/anton/html/ltximg/20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /> eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a> auf <img src="file:///home/anton/html/ltximg/20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
-Dann ist <img src="file:///home/anton/html/ltximg/20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230614-feinere_topologie_erhalt_i_a_nicht_t3_eigenschaft_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> i.A. kein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-Raum</a> 
+Sei \((X, \mathcal{T})\) ein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3</a> -<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und \(\mathcal{T}'\) eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a> auf \(X\).
+Dann ist \(\mathcal{T}\) i.A. kein <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-Raum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org4816feb" class="outline-2">
-<h2 id="org4816feb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org11238c0" class="outline-2">
+<h2 id="org11238c0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230227174346-indiskrete_topologie.html#ID-9447f709-30a2-4b9a-b651-73909b037fad">indiskreten Topologie</a> als <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-Raum</a> einer beliebigen, nicht <a href="20230207113114-t3_raum.html#ID-1496cd1c-f753-4113-8c6c-997de305c027">T3-</a> <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> 

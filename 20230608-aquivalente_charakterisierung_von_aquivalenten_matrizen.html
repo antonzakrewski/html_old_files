@@ -9,196 +9,176 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">äquivalente Charakterisierung von ähnlichen Matrizen</h1>
-<div id="outline-container-org95760f4" class="outline-2">
-<h2 id="org95760f4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org691c881" class="outline-2">
+<h2 id="org691c881"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6d448c2f20cb3050ad15449b1229878a342b7944.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6d448c2f20cb3050ad15449b1229878a342b7944.svg" class="org-svg" />.
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(A,B \in K^{n \times n} \simeq \mathrm{End}_{K}(V)\).
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> sind <a href="20230608-ahnliche_matrix.html#ID-44f6fd3c-ffcc-4518-a4f1-43a15eb783a2">ähnlich</a></li>
-<li>Für <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_800aef2704c5fc6994df007596ad32ceba75facb.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_800aef2704c5fc6994df007596ad32ceba75facb.svg" class="org-svg" /> aufgefasst als <a href="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper.html#ID-85e871e9-02b2-4380-87d7-48b528972860">Modul über dem Polynomring</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_73ed0d0592f419464102f7eb72ddd500426c3202.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_73ed0d0592f419464102f7eb72ddd500426c3202.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_7ba5ef3b523ca51318262cdcda3360e6bb39ca12.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_7ba5ef3b523ca51318262cdcda3360e6bb39ca12.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_98a994a3e1c5e3ad5927bf222df22a499aba50a3.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_98a994a3e1c5e3ad5927bf222df22a499aba50a3.svg" class="org-svg" /> als $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a></li>
-<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" class="org-svg" /> sind <a href="20230608-aquivalente_matrizen.html#ID-f05c96d0-f2e4-46e4-a543-4407cc8135c8">äquivalent</a></li>
-<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" class="org-svg" /> haben die selben <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a></li>
-<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0ca5a9070ad4fc072ea8b3304d3ad09571c24ed.svg" class="org-svg" /> haben die selben <a href="20230608-invariantenteiler.html#ID-78a0a142-4f01-4717-8840-7e474a781be0">Invariantenteiler</a></li>
+<li>\(A\) und \(B\) sind <a href="20230608-ahnliche_matrix.html#ID-44f6fd3c-ffcc-4518-a4f1-43a15eb783a2">ähnlich</a></li>
+<li>Für \(V_A\) aufgefasst als <a href="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper.html#ID-85e871e9-02b2-4380-87d7-48b528972860">Modul über dem Polynomring</a> \(K[X]\) gilt \(V_A \simeq v_B\)</li>
+<li>\(K[X]^n / \langle M_A(x)\rangle \simeq K[X] / \langle M_B(x)\rangle\) als $K[X]$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a></li>
+<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> \(M_A(x),M_B(x)\) sind <a href="20230608-aquivalente_matrizen.html#ID-f05c96d0-f2e4-46e4-a543-4407cc8135c8">äquivalent</a></li>
+<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> \(M_A(x),M_B(x)\) haben die selben <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a></li>
+<li>die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrizen</a> \(M_A(x),M_B(x)\) haben die selben <a href="20230608-invariantenteiler.html#ID-78a0a142-4f01-4717-8840-7e474a781be0">Invariantenteiler</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb911b34" class="outline-2">
-<h2 id="orgb911b34"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org57fe088" class="outline-2">
+<h2 id="org57fe088"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org025f81a" class="outline-3">
-<h3 id="org025f81a"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org55063ca" class="outline-3">
+<h3 id="org55063ca"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_3b6dc265fb6de563715985d31abdedebd254e962.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_3b6dc265fb6de563715985d31abdedebd254e962.svg" class="org-svg" /> für ein <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_61b0f99a9bfc19eaa7fdd9c55abc8353f3301bbf.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_61b0f99a9bfc19eaa7fdd9c55abc8353f3301bbf.svg" class="org-svg" />.
-Dann ist <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e08822395f2aae8e787fc9f85b686fc38dfafdda.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e08822395f2aae8e787fc9f85b686fc38dfafdda.svg" class="org-svg" /> ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> (vgl. &lt;todo&gt;)
-Ferner gilt für <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_837925a2bc7c70989856b516007cad561a1de487.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_837925a2bc7c70989856b516007cad561a1de487.svg" class="org-svg" />
+Sei \(B = S^{-1} A S\) für ein \(S \in \mathrm{GL}_{n}(K)\).
+Dann ist \(g: V_A \rightarrow V_B\) ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> (vgl. &lt;todo&gt;)
+Ferner gilt für \(x \cdot v \in V_A\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6e41531e9b3c7577d1bd25d246c0b31aff5ed529.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6e41531e9b3c7577d1bd25d246c0b31aff5ed529.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+g(x \cdot v) =& g(Av) \\
+=& S^{-1}Av \\
+=& S^{-1}ASS^{-1}v \\
+=& BS^{-1}v \\
+=& x \cdot g(v)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc675609" class="outline-3">
-<h3 id="orgc675609"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgf010544" class="outline-3">
+<h3 id="orgf010544"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e08822395f2aae8e787fc9f85b686fc38dfafdda.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e08822395f2aae8e787fc9f85b686fc38dfafdda.svg" class="org-svg" /> ein Modul<a href="20230303170548-modulisomorphismus.html#ID-808e406f-ac3b-433c-a704-4f83909ef60d">isomorphismus</a> von $K[X]-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a>,  so ist <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> insbesondere auch ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> von <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräumen</a>.
-Damit existiert zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0a52da538a92f6fa15695fede3134b4a3a6fc23.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0a52da538a92f6fa15695fede3134b4a3a6fc23.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> $S &isin; <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_ffce55971c4093896be12bdd808de92c4a859aab.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_ffce55971c4093896be12bdd808de92c4a859aab.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_9d8300cc177c3c746c82b3358e858edd016edf99.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_9d8300cc177c3c746c82b3358e858edd016edf99.svg" class="org-svg" />.
+Sei \(g: V_A \rightarrow V_B\) ein Modul<a href="20230303170548-modulisomorphismus.html#ID-808e406f-ac3b-433c-a704-4f83909ef60d">isomorphismus</a> von $K[X]-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a>,  so ist \(g\) insbesondere auch ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> von \(K\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräumen</a>.
+Damit existiert zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V_A, V_B\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a> $S &isin; \(\mathrm{GL}_{n}(K)\) mit \(S \simeq g\).
 Somit folgt aus 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6d8878767acc27e3a329c1eeab55914ef47fb45e.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_6d8878767acc27e3a329c1eeab55914ef47fb45e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+g(x \cdot v) =& x \cdot g(v) \\
+(S \cdot A)(v) =& (B \cdot S)(v) \\
+A(v) =& S^{-1}BS(v) \\
+\Rightarrow A = S^{-1}BS
+\end{align*}
 <p>
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_0fcb93e85f9e84bc2e24fe0da414a037c801310f.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_0fcb93e85f9e84bc2e24fe0da414a037c801310f.svg" class="org-svg" />
+Daraus folgt \(A \sim B\)
 </p>
 </div>
 </div>
-<div id="outline-container-orga38b08a" class="outline-3">
-<h3 id="orga38b08a"><span class="section-number-3">2.3.</span> 2) <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8fdc6da850dcf1010b521d50ade638cc5d441cda.svg" class="org-svg" /> 3)</h3>
+<div id="outline-container-org923eff6" class="outline-3">
+<h3 id="org923eff6"><span class="section-number-3">2.3.</span> 2) \(\implies\) 3)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_f97c44de5e6baa9b091a74ba0c1459c48923b9a1.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_f97c44de5e6baa9b091a74ba0c1459c48923b9a1.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_800aef2704c5fc6994df007596ad32ceba75facb.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_800aef2704c5fc6994df007596ad32ceba75facb.svg" class="org-svg" /> gegeben
-Sei <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_efecabbf297be96e8dfd25df3d7479427e80b4d7.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> und <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_c803b8e617fec7a9f5871d1fae9ff7180221db0c.svg" class="org-svg" /> die Standardbasis.
+Sei \(K[x]^n/ \langle M_A(x)\rangle\) und \(V_A\) gegeben
+Sei \(v_1,...,v_n\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> und \(e_1,...,e_n\) die Standardbasis.
 Es gilt für den <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">Modulepimorphismus</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_be3f246c346a16afee1757b3fcc14fc0ba65ee0a.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_be3f246c346a16afee1757b3fcc14fc0ba65ee0a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+h: K[x]^n \rightarrow& V_A \\
+e_i \mapsto v_i
+\end{align*}
 <p>
-dass <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_a545ac5d8107e93555802c4028492effb24afdc6.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_a545ac5d8107e93555802c4028492effb24afdc6.svg" class="org-svg" /> im <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> liegt.
-Die $j$-te Spalte von <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8b5728f9aaa1ebf8369b0476e750def4d8d82dd7.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_8b5728f9aaa1ebf8369b0476e750def4d8d82dd7.svg" class="org-svg" /> ist
+dass \(\langle M_A(x)\rangle\) im <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> liegt.
+Die $j$-te Spalte von \(M_A(x)\) ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_1cecc9836a1c35418cf75796b8a0c60c958c42b2.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_1cecc9836a1c35418cf75796b8a0c60c958c42b2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix} - \alpha_{1,j},...,x - \alpha_{j,j}, ..., - \alpha_{n,j} \end{pmatrix} 
+\end{align*}
 <p>
 Damit folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_2bf6f9a35bb5b4b3700c3f117d5b54552811112b.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_2bf6f9a35bb5b4b3700c3f117d5b54552811112b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+s_j =& - \sum_{i=1}^{n} \alpha_{i,j} e_i + x e_{j,j}
+\end{align*}
 <p>
-Und durch Einsetzen in <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" class="org-svg" />:
+Und durch Einsetzen in \(h\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_ced8c7ee07b9408a95a71e33d1731b96084dd206.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_ced8c7ee07b9408a95a71e33d1731b96084dd206.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+h(s_j) =& \sum_{i=1}^{n} \alpha_{i,j} v_i + A v_j \\
+=& 0
+\end{align*}
 <p>
-Damit induziert <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" class="org-svg" /> eine <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefinierten</a> <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">Modulepimorphismus</a>
+Damit induziert \(h\) eine <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefinierten</a> <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">Modulepimorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_af7bb9c84e5d363ef9dc9d0caff727661cb71aae.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_af7bb9c84e5d363ef9dc9d0caff727661cb71aae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-7
-</span>
-</div>
+\begin{align*}
+\overline{h}: K[x]^n / \langle M_A(x)\rangle \rightarrow& V_A \\
+a + \langle M_A(x)\rangle \mapsto& h(a)
+\end{align*}
 <p>
 &lt;todo&gt;
-Es folgt nach dem <a href="20230608-elementarteilersatz.html#ID-68fff7ca-8ee3-4b67-868d-ceb73cee70ec">Elementarteilersatz</a>, dass <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_9ab6608340765c4500d27499984fd81eb5894ac4.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_9ab6608340765c4500d27499984fd81eb5894ac4.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> existieren mit
+Es folgt nach dem <a href="20230608-elementarteilersatz.html#ID-68fff7ca-8ee3-4b67-868d-ceb73cee70ec">Elementarteilersatz</a>, dass <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> \(c_i(x)\) für \(i \in \{1,...,n\}\) existieren mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_2941751e24bf63953c57116baba6a3d0cd7a0550.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_2941751e24bf63953c57116baba6a3d0cd7a0550.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-8
-</span>
-</div>
+\begin{align*}
+K[x]^n/ \langle M_A(x)\rangle \simeq& K[x]^n / \langle \begin{pmatrix} c_1(x) & & \\
+& \ddots & \\
+& & c_n(x)
+\end{pmatrix} \rangle
+\siemq&
+\oplus_{i=1}^n K[x]^n / (c_i(x))
+\end{align*}
 <p>
 Somit gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0b5947ee1134cbfda822e8f5287616229cac666.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_d0b5947ee1134cbfda822e8f5287616229cac666.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-9
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(K[x]^n/\langle M_A(x)\rangle) =& \sum_{i=1}^{n} \mathrm{dim}_{K}(K[x] / (c_i(x))) \\
+=& \sum_{i=1}^{n} \mathrm{deg}(c_1(x)) \\
+=& \mathrm{deg}(\prod_{i=1}^n c_i(x)) \\
+=& \mathrm{deg}(\det(M_A(x))) \\
+=& n
+\end{align*}
 <p>
 Dabei gelten die letzten Schritte, da nach den elementaren Umformungen im <a href="20230610-algorithmischer_elementarteilersatz_fur_moduln_uber_euklidische_ringe.html#ID-ccc45228-1dd6-40e5-a706-20180852a181">algorithmischen Elementarteilersatz für Moduln über euklidische Ringe</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_1ca8ad66e6273bf8db2e3e82ec5485705a59ad47.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_1ca8ad66e6273bf8db2e3e82ec5485705a59ad47.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-10
-</span>
-</div>
+\begin{align*}
+M_A(x) \sim \mathrm{diag}(c_1(x),...,c_n(x))
+\end{align*}
 <p>
-gilt, somit existieren <img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_50a4f4e8d8d33077961249ccc65c9e28d03b6325.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_50a4f4e8d8d33077961249ccc65c9e28d03b6325.svg" class="org-svg" /> mit
+gilt, somit existieren \(P,Q \in \mathrm{GL}_{n}(K[X])\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_52c6870b4a4614b202f1dea3a2ee89203871ce48.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_52c6870b4a4614b202f1dea3a2ee89203871ce48.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-11
-</span>
-</div>
+\begin{align*}
+\mathrm{diag}(c_1(x),...,c_n(x)) = P \cdot M_A(x) \cdot Q
+\end{align*}
 <p>
 und wegen 
-<img src="file:///home/anton/html/ltximg/20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_7b2f87181ff8592ec7a7597f0ba1581c837d4c7d.svg" alt="20230608-aquivalente_charakterisierung_von_aquivalenten_matrizen_7b2f87181ff8592ec7a7597f0ba1581c837d4c7d.svg" class="org-svg" /> 
+\(\det(P), \det(Q) \in K[x]^\times = K^\times\) 
 folgt die Behauptung aus dem <a href="20221224180209-multiplikativitat_der_determinante.html#ID-3755c9f1-a210-4ed2-981d-efabc6596635">Determinantenproduktsatz</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org41e421e" class="outline-3">
-<h3 id="org41e421e"><span class="section-number-3">2.4.</span> restlich</h3>
+<div id="outline-container-org3c2ce8f" class="outline-3">
+<h3 id="org3c2ce8f"><span class="section-number-3">2.4.</span> restlich</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 die Restlichen aussagen sind äquivalente Umformungen des Elementarteilersatzes

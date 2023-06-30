@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Folgenstetigkeit in topologischen Räumen</h1>
-<div id="outline-container-org333c184" class="outline-2">
-<h2 id="org333c184"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2356bc7" class="outline-2">
+<h2 id="org2356bc7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-<img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist folgenstetig, falls für eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" class="org-svg" /> gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+\(f\) ist folgenstetig, falls für eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((x_n) \rightarrow x\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224175911-folgenstetigkeit_in_topologischen_raumen_604ec9d1a2f5297398434855ee6cdac6e17e1671.svg" alt="20230224175911-folgenstetigkeit_in_topologischen_raumen_604ec9d1a2f5297398434855ee6cdac6e17e1671.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x_n) \rightarrow f(x)
+\end{align*}
 </div>
 </div>
 </div>

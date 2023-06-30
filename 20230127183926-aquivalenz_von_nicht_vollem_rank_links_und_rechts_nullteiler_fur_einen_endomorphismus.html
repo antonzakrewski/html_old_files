@@ -9,111 +9,118 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenz von nicht-vollem Rank, Links- und Rechts-Nullteiler für einen Endomorphismus</h1>
-<div id="outline-container-orgbecfa14" class="outline-2">
-<h2 id="orgbecfa14"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7ea64d2" class="outline-2">
+<h2 id="org7ea64d2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_dbf652ced593016a2312b5adfdd7b576e2b88c23.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_dbf652ced593016a2312b5adfdd7b576e2b88c23.svg" class="org-svg" /> ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a>, so sind folgende Aussagen Äquivalent:
+Sei \(U\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(\phi: U \rightarrow U\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphismus</a>, so sind folgende Aussagen Äquivalent:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_a30ca8415200dfaae8ed1ba7b85bbffa227026bc.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_a30ca8415200dfaae8ed1ba7b85bbffa227026bc.svg" class="org-svg" />")</li>
-<li><img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> ist ein Links-Nullteiler in <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_666494b374268e95d23e35fe73448127ee872f57.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_666494b374268e95d23e35fe73448127ee872f57.svg" class="org-svg" />, d.h. es existiert ein <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_e885033c8f11d89fc6d07d0ba46570efb79af144.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_e885033c8f11d89fc6d07d0ba46570efb79af144.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_60f347a797c3ecda8e1b02384525c69e57e9e782.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_60f347a797c3ecda8e1b02384525c69e57e9e782.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> ist ein Rechts-Nullteiler in <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_666494b374268e95d23e35fe73448127ee872f57.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_666494b374268e95d23e35fe73448127ee872f57.svg" class="org-svg" />, d.h. es existiert ein <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_96d21b2f233d2390f51cc6ed414ed05fe8b7cecf.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_96d21b2f233d2390f51cc6ed414ed05fe8b7cecf.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_24ec0cf477ab91fb0907a01b3fa6053af9123c81.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_24ec0cf477ab91fb0907a01b3fa6053af9123c81.svg" class="org-svg" /></li>
+<li>\(\mathrm{rank}(\phi) < \mathrm{dim}_{K}(U)\)")</li>
+<li>\(\phi\) ist ein Links-Nullteiler in \(\mathrm{End}_K(U)\), d.h. es existiert ein \(\psi \in \mathrm{End}_K(U), \psi \neq 0\) mit \(\phi \circ \psi = 0\)</li>
+<li>\(\phi\) ist ein Rechts-Nullteiler in \(\mathrm{End}_K(U)\), d.h. es existiert ein \(\chi \in \mathrm{End}_K(U), \chi \neq 0\) mit \(\chi \circ \phi = 0\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd195349" class="outline-2">
-<h2 id="orgd195349"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org479a1ff" class="outline-2">
+<h2 id="org479a1ff"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über einen <a href="20211230231638-ringschluss_beweistechnik.html#ID-f53319cd-0fbf-41ed-b456-9e3fab321446">Ringschluss</a>
 </p>
 </div>
-<div id="outline-container-org4156baf" class="outline-3">
-<h3 id="org4156baf"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orgf39e4b3" class="outline-3">
+<h3 id="orgf39e4b3"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach <a href="20230123044300-rangsatz.html#ID-2e30f05f-ed0c-4a47-86e3-5d6e3330d830">Rangsatz</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_99727dac7739d11ebc31b4ea3c44eb84e4017a54.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_99727dac7739d11ebc31b4ea3c44eb84e4017a54.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(U) =& \mathrm{dim}_{K}(\mathrm{Im}(\phi)) + \mathrm{dim}_{K}(\mathrm{ker}(\phi)) \\
+=& \mathrm{rank}(\phi) + \mathrm{dim}_{K}(\mathrm{ker}(\phi))
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ca08fe5ea495c7a2b1765503d120389eeeb11730.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ca08fe5ea495c7a2b1765503d120389eeeb11730.svg" class="org-svg" /> als folge der Annahme <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_a30ca8415200dfaae8ed1ba7b85bbffa227026bc.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_a30ca8415200dfaae8ed1ba7b85bbffa227026bc.svg" class="org-svg" />
-Man wähle eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_cb9fd29b861053c037d6e15a2ccdc1012edf6e51.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_cb9fd29b861053c037d6e15a2ccdc1012edf6e51.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_fa59af74554655e20ad39087f8b0cd8e9b0ebf6a.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_fa59af74554655e20ad39087f8b0cd8e9b0ebf6a.svg" class="org-svg" />, vervollständige diese nach <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Steinitz</a> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_28ace172070b94e227d6817ac5ee4441d24003e6.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_28ace172070b94e227d6817ac5ee4441d24003e6.svg" class="org-svg" /> zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> und konstruiere durch die <a href="20221117110351-lemma_uber_die_eindeutigkeit_eines_homomorphismus_durch_die_abbildungen_der_basen.html#ID-4c9a6f67-fffe-4044-aa13-3200e9b83f86">Basisabbildung</a> folgenden <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
+mit \(\mathrm{dim}_{K}(\mathrm{ker}(\phi)) < 0\) als folge der Annahme \(\mathrm{rank}(\phi) < \mathrm{dim}_{K}(U)\)
+Man wähle eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(\{u_1,...,u_k\}\) von \(\mathrm{ker}(\phi)\), vervollständige diese nach <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Steinitz</a> mit \(\{v_{k+1},...,v_n\}\) zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(U\) und konstruiere durch die <a href="20221117110351-lemma_uber_die_eindeutigkeit_eines_homomorphismus_durch_die_abbildungen_der_basen.html#ID-4c9a6f67-fffe-4044-aa13-3200e9b83f86">Basisabbildung</a> folgenden <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_7d9613ee5dfb5025fc282212d0879be928cee960.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_7d9613ee5dfb5025fc282212d0879be928cee960.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\psi(u_i) = \psi(v_i) = u_1 \neq 0
+\end{align*}
 <p>
 Daraus folgt für beliebigen Basisvektor (und damit auch für einen beliebigen Vektor
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_013ebf10f2d44d80860cdb803638b3b08aab9c88.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_013ebf10f2d44d80860cdb803638b3b08aab9c88.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi(\psi(v_i)) = \phi(u_1) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org05db7f0" class="outline-3">
-<h3 id="org05db7f0"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 3)</h3>
+<div id="outline-container-orgc9caf37" class="outline-3">
+<h3 id="orgc9caf37"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_91937cca565b4e02640421498a4624f0960399e9.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_91937cca565b4e02640421498a4624f0960399e9.svg" class="org-svg" /> und wegen der Abbildung <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_93796c9f9bc8cfd835e57e9f933f5c54aae73e61.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_93796c9f9bc8cfd835e57e9f933f5c54aae73e61.svg" class="org-svg" /> gilt
+Nach Annahme gilt \(\mathrm{Im}(\phi) = \mathrm{Im}(\phi_{\mathrm{ker}(\psi)})\) und wegen der Abbildung \(\phi_{\vert \mathrm{ker}(\psi)}: \mathrm{ker}(\psi) \rightarrow U\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_8f6f1ab6f7e7a9395e4f716830556f3026fbe7c9.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_8f6f1ab6f7e7a9395e4f716830556f3026fbe7c9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(U) > \mathrm{dim}_{K}(\mathrm{ker}(\psi)) \geq \mathrm{dim}_{K}(\mathrm{Im}(\phi_{\vert \mathrm{ker}(\psi)})) = \mathrm{dim}_{K}(\mathrm{Im}(\phi))
+\end{align*}
 <p>
 Das heißt man wähle die <a href="20221224140459-kanonische_abbildung_in_einen_faktorraum.html#ID-62513b30-d833-4f0f-97ae-cd527636ef04">kanonische Abbildung in einen Faktorraum</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_55e32aca3228d014e1a057a5fc3b1050b0167213.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_55e32aca3228d014e1a057a5fc3b1050b0167213.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\chi: U \rightarrow  U / \mathrm{Im}(\phi) \\
+u  \rightarrow u + \mathrm{Im}(\phi)
+\end{align*}
 <p>
-Wegen der <a href="20221224172137-surjektivitat_einer_kanonischen_abbildung_in_einen_faktorraum.html#ID-c5166f5e-13e0-4a2a-afd1-261b78d18ac8">Surjektivität</a> folgt <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_d4532663b5830e0007107dc0ef311abc913bc1eb.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_d4532663b5830e0007107dc0ef311abc913bc1eb.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_68005b7cf66799a5bcfbf67edd06155104ef709f.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_68005b7cf66799a5bcfbf67edd06155104ef709f.svg" class="org-svg" /> und es gilt für beliebiges <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" />
+Wegen der <a href="20221224172137-surjektivitat_einer_kanonischen_abbildung_in_einen_faktorraum.html#ID-c5166f5e-13e0-4a2a-afd1-261b78d18ac8">Surjektivität</a> folgt \(\mathrm{Im}(\chi) = U / \mathrm{Im}(\phi)\) mit \(\mathrm{dim}_{K}(\mathrm{Im}(U / \mathrm{Im}(\phi))) = \mathrm{dim}_{K}(U) - \mathrm{dim}_{K}(\mathrm{Im}(\phi)) > 0\) und es gilt für beliebiges \(u \in U\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_e315ef39de9eb92a9450e8a7d195a4bf9a9d76a3.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_e315ef39de9eb92a9450e8a7d195a4bf9a9d76a3.svg" class="org-svg" />
-</span>
+\begin{align*}
+\chi \circ \psi(u) =& \chi(\psi(u)) \\
+=& 0 + \mathrm{Im}(\phi)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgde069b5" class="outline-3">
-<h3 id="orgde069b5"><span class="section-number-3">2.3.</span> 3) <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orgcc978c6" class="outline-3">
+<h3 id="orgcc978c6"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:
-Angenommen <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> wäre ein <a href="20230303151718-vektorraumautomorphismus.html#ID-f8f688c5-d960-43c2-8ac4-20d4c3cf2548">Automorphismus</a>
-Nach Annahme existiert ein <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_f51e24826c08fc328b7946009a18fa65849a91ec.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_f51e24826c08fc328b7946009a18fa65849a91ec.svg" class="org-svg" /> und nach <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">isomorphie</a> auch ein <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_d5b826dfd61e4fd410d88327863e227894f9f261.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_d5b826dfd61e4fd410d88327863e227894f9f261.svg" class="org-svg" />, so dass gelten würde
+Angenommen \(\phi\) wäre ein <a href="20230303151718-vektorraumautomorphismus.html#ID-f8f688c5-d960-43c2-8ac4-20d4c3cf2548">Automorphismus</a>
+Nach Annahme existiert ein \(u \in U\) mit \(\chi(u) \neq 0\) und nach <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">isomorphie</a> auch ein \(u' \in U\) mit \(\phi(u') = u\), so dass gelten würde
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_aab6f1a17d9a90635239195fa8d3301b478edd75.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_aab6f1a17d9a90635239195fa8d3301b478edd75.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\chi \circ \phi(u') = \chi(u') \neq 0
+\end{align*}
 <p>
-Dies ist ein Widerspruch zur Anname, <img src="file:///home/anton/html/ltximg/20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_0409c810aaa137238851cb4ee1be8d2646023fb0.svg" alt="20230127183926-aquivalenz_von_nicht_vollem_rank_links_und_rechts_nullteiler_fur_einen_endomorphismus_0409c810aaa137238851cb4ee1be8d2646023fb0.svg" class="org-svg" /> wäre ein Rechts-Nullteiler
+Dies ist ein Widerspruch zur Anname, \(\chi\) wäre ein Rechts-Nullteiler
 </p>
 </div>
 </div>

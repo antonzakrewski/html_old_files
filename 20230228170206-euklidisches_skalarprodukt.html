@@ -9,27 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">euklidisches Skalarprodukt</h1>
-<div id="outline-container-org1ac097f" class="outline-2">
-<h2 id="org1ac097f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org7e9f723" class="outline-2">
+<h2 id="org7e9f723"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei der <a href="20221003093835-euklidischer_raum.html#ID-66f09aad-4268-439b-8f87-f160abb19672">Euklidische Raum</a> <img src="file:///home/anton/html/ltximg/20230228170206-euklidisches_skalarprodukt_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20230228170206-euklidisches_skalarprodukt_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> gegeben, dann ist das Standardskalarprodukt definiert als:
+Sei der <a href="20221003093835-euklidischer_raum.html#ID-66f09aad-4268-439b-8f87-f160abb19672">Euklidische Raum</a> \(\mathbb{R}^n\) gegeben, dann ist das Standardskalarprodukt definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228170206-euklidisches_skalarprodukt_73cedcd50ca94656dec6255d610ff5f335d3abf0.svg" alt="20230228170206-euklidisches_skalarprodukt_73cedcd50ca94656dec6255d610ff5f335d3abf0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\langle \cdot, \cdot\rangle: \mathbb{R}^n \times \mathbb{R}^n \rightarrow& \mathbb{R}
+(u,v) \mapsto& <u,v> = \sum_{i=1}^{n} u_i v_i
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-org8809741" class="outline-2">
-<h2 id="org8809741"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org68809fd" class="outline-2">
+<h2 id="org68809fd"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

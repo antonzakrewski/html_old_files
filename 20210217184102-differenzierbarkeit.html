@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Differenzierbarkeit (Q11)</h1>
-<div id="outline-container-org9ae437c" class="outline-2">
-<h2 id="org9ae437c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org85fd8ab" class="outline-2">
+<h2 id="org85fd8ab"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> ist über einem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> I differenzierbar, wenn die <a href="20210217184055-lokale_anderungsrate.html#ID-ba796e5f-4ad1-4ec1-b46d-dce14082f201">lokale Änderungsrate</a> an jeder Stelle <img src="file:///home/anton/html/ltximg/20210217184102-differenzierbarkeit_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" alt="20210217184102-differenzierbarkeit_0bcadcbab8c1bb960002433b7ae1f514de506fce.svg" class="org-svg" /> eindeutig ist, d.h. bei beidseitiger Annäherung gleich ist:
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> ist über einem <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> I differenzierbar, wenn die <a href="20210217184055-lokale_anderungsrate.html#ID-ba796e5f-4ad1-4ec1-b46d-dce14082f201">lokale Änderungsrate</a> an jeder Stelle \(a \in I\) eindeutig ist, d.h. bei beidseitiger Annäherung gleich ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210217184102-differenzierbarkeit_35b234690918d46a0e5d62da7e9beaf0ce305abb.svg" alt="20210217184102-differenzierbarkeit_35b234690918d46a0e5d62da7e9beaf0ce305abb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f'(x) =& \lim_{h \to 0^+}\left( \frac{f(x+h) - f(x)}{h}\right)\\
+=& \lim_{h \to 0^+}\left( \frac{f(x-h) - f(x)}{-h}\right) \\
+\end{align*}
 </div>
 </div>
 </div>

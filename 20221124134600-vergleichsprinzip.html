@@ -9,55 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vergleichsprinzip</h1>
-<div id="outline-container-orgac69184" class="outline-2">
-<h2 id="orgac69184"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6bf4c43" class="outline-2">
+<h2 id="org6bf4c43"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20221124134600-vergleichsprinzip_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">Vollständiger bewerteter Körper</a> und seien <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_28a113a612458bfb5a29a0bffaad260749194d3b.svg" alt="20221124134600-vergleichsprinzip_28a113a612458bfb5a29a0bffaad260749194d3b.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_5535a91d4e7bb65997a19fdfcc23cc31126751aa.svg" alt="20221124134600-vergleichsprinzip_5535a91d4e7bb65997a19fdfcc23cc31126751aa.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_2de89aef12ec80926bbc83369878332a4170790c.svg" alt="20221124134600-vergleichsprinzip_2de89aef12ec80926bbc83369878332a4170790c.svg" class="org-svg" />.
-Falls <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_c0da72b44febdcb87177252c378bc1dbc4bb84ed.svg" alt="20221124134600-vergleichsprinzip_c0da72b44febdcb87177252c378bc1dbc4bb84ed.svg" class="org-svg" /> für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20221124134600-vergleichsprinzip_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> gilt, so folgt
+Sei \(M\) ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">Vollständiger bewerteter Körper</a> und seien \((a_n), (b_n)\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> \((a_n) \rightarrow a\) und \((b_n) \rightarrow b\).
+Falls \(a_n \leq b_n\) für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(n \in \mathbb{N}\) gilt, so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_9a961aef5330688b26ada27a7e3ad0e58cf559b0.svg" alt="20221124134600-vergleichsprinzip_9a961aef5330688b26ada27a7e3ad0e58cf559b0.svg" class="org-svg" />
-</span>
+\begin{align*}
+a \leq b
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org491cd56" class="outline-2">
-<h2 id="org491cd56"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga3b4704" class="outline-2">
+<h2 id="orga3b4704"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221124134600-vergleichsprinzip_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, dann folgt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> $n &isin; $ 
+Sei \(\varepsilon > 0\), dann folgt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> $n &isin; \mathbb{N} $ 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_a5f2e809ba427560d411f8197d42af8a76e0f317.svg" alt="20221124134600-vergleichsprinzip_a5f2e809ba427560d411f8197d42af8a76e0f317.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a - \varepsilon < a_n \leq b_n < b + \varepsilon
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_315cb326f1808e97088e4ef8f5539761ae80c47e.svg" alt="20221124134600-vergleichsprinzip_315cb326f1808e97088e4ef8f5539761ae80c47e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+b - a >& - 2 \varepsilon \\
+b - a \geq& 0
+\end{align*}
 <p>
 und somit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124134600-vergleichsprinzip_9a961aef5330688b26ada27a7e3ad0e58cf559b0.svg" alt="20221124134600-vergleichsprinzip_9a961aef5330688b26ada27a7e3ad0e58cf559b0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \leq b
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,67 +3,80 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Eindeutigkeit des totalen Differentials</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit des totalen Differentials</h1>
-<div id="outline-container-orga7363fd" class="outline-2">
-<h2 id="orga7363fd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org926a610" class="outline-2">
+<h2 id="org926a610"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_d2376253c1769ac557c296dec42f3fff5e28643a.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_d2376253c1769ac557c296dec42f3fff5e28643a.svg" class="org-svg" /> eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totales Differential</a> eindeutig bestimmt.
+Sei \(f: \mathbb{R}^m \rightarrow \mathbb{R}^n\) eine <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, dann ist das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totales Differential</a> eindeutig bestimmt.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf43fa55" class="outline-2">
-<h2 id="orgf43fa55"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2b293ab" class="outline-2">
+<h2 id="org2b293ab"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Angenommen es existieren zwei verschiedene totale Differentiale, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_f55daed709d606e7b61ecbd381b85c8538eaeab8.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_f55daed709d606e7b61ecbd381b85c8538eaeab8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+F(x) =&  F(x_0) + L(x - x_0) + r(x) \\
+F(x) =&  F(x_0) + L'(x-x_0) + r'(x) 
+\end{align*}
 <p>
 Es folgt für die Differenz:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_6a428c3079e72392e7b683f0a730b0b7fe187c0e.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_6a428c3079e72392e7b683f0a730b0b7fe187c0e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(L - L')(x - x_0 =& r(x) - r'(x) \\
+=& o(\| x - x_0 \|)
+\end{align*}
 <p>
-Dabei ist <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_bb6ff2e8c044d0e53a1d98306f973c432ea1d1cd.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_bb6ff2e8c044d0e53a1d98306f973c432ea1d1cd.svg" class="org-svg" /> ein <a href="20230601104215-linearer_operator.html#ID-f0820723-a046-4b6e-bb52-0e14a4bbb688">linear</a> (vgl. <a href="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum.html#ID-fc08811e-0e8a-4761-960f-6c4ec8ba9c46">Menge der Homomorphismen als Vektorraum</a>) und damit wegen der Größenordnung gleich <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" />:
+Dabei ist \((L - L')\) ein <a href="20230601104215-linearer_operator.html#ID-f0820723-a046-4b6e-bb52-0e14a4bbb688">linear</a> (vgl. <a href="20221125102950-lemma_uber_die_menge_von_homomorphismen_als_vektorraum.html#ID-fc08811e-0e8a-4761-960f-6c4ec8ba9c46">Menge der Homomorphismen als Vektorraum</a>) und damit wegen der Größenordnung gleich \(0\):
 </p>
 
 <p>
-Sei <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_cfc431f801be74cab5c70c434cf7f68d832e44d8.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_cfc431f801be74cab5c70c434cf7f68d832e44d8.svg" class="org-svg" /> mit <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_b0f6efa1481bc1370d9f97511e4f8a45cac32178.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_b0f6efa1481bc1370d9f97511e4f8a45cac32178.svg" class="org-svg" />, <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_82a56d5055d0b6b8564410ed5402823299b720c2.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_82a56d5055d0b6b8564410ed5402823299b720c2.svg" class="org-svg" /> für <img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_faf8349c5628b8015e9d197efe34f3ed0ba034ec.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_faf8349c5628b8015e9d197efe34f3ed0ba034ec.svg" class="org-svg" /> hinreichend klein, so folgt:
+Sei \(x \coloneqq x_0 + tv\) mit \(v \in \mathbb{R}^n\), \(t \in \mathbb{R}\) für \(tv\) hinreichend klein, so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230601104344-eindeutigkeit_des_totalen_differentials_f70035effc806a90b57c0d25189727727a7811aa.svg" alt="20230601104344-eindeutigkeit_des_totalen_differentials_f70035effc806a90b57c0d25189727727a7811aa.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+(L - L') (tv) =& o(t) \\
+(L - L') (tv) =& t \cdot (L - L')v \\
+ \Rightarrow& (L - L')(v) = 0
+\end{align*}
 </div>
 </div>
 </div>

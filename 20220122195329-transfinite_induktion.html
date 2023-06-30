@@ -3,26 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Transfinite induction</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Transfinite induction</h1>
-<div id="outline-container-org7c89a00" class="outline-2">
-<h2 id="org7c89a00"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org358db79" class="outline-2">
+<h2 id="org358db79"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 eine Verallgemeinerung des <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>:
 Für eine    Klasse mit Grenzzahl a
 </p>
 <ul class="org-ul">
-<li>zeigen von <img src="ltximg/20220122195329-transfinite_induktion_3fa845da6c3078f9c33bdc3877b3939df47241fa.svg" alt="20220122195329-transfinite_induktion_3fa845da6c3078f9c33bdc3877b3939df47241fa.svg" class="org-svg" /></li>
-<li>zeigen: <img src="ltximg/20220122195329-transfinite_induktion_2e2f66123f8a6b8a4cc3dbd035b63db3352426f3.svg" alt="20220122195329-transfinite_induktion_2e2f66123f8a6b8a4cc3dbd035b63db3352426f3.svg" class="org-svg" /></li>
+<li>zeigen von \(P(a)\)</li>
+<li>zeigen: \(a < b \Rightarrow P(a) \Rightarrow P(b)\)</li>
 </ul>
 
 <p>

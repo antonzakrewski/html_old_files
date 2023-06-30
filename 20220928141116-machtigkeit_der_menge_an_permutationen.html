@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mächtigkeit der Menge an Permutationen</h1>
-<div id="outline-container-org19d6bf4" class="outline-2">
-<h2 id="org19d6bf4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org76c1241" class="outline-2">
+<h2 id="org76c1241"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220928141116-machtigkeit_der_menge_an_permutationen_3b522946583f473841e947f19937979e8a67f064.svg" alt="20220928141116-machtigkeit_der_menge_an_permutationen_3b522946583f473841e947f19937979e8a67f064.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  aller möglichen <a href="20220928140441-permutation.html#ID-01de1cf3-b2f6-4908-a06a-1e9479c0f756">Permutationen</a> einer $n$-Menge.
-Die <a href="20211227215415-machtigkeit_menge.html#ID-a53ec5a2-0adb-4575-bf21-e3ac15eff75f">Mächtigkeit</a> von <img src="file:///home/anton/html/ltximg/20220928141116-machtigkeit_der_menge_an_permutationen_3b522946583f473841e947f19937979e8a67f064.svg" alt="20220928141116-machtigkeit_der_menge_an_permutationen_3b522946583f473841e947f19937979e8a67f064.svg" class="org-svg" /> ist dann <img src="file:///home/anton/html/ltximg/20220928141116-machtigkeit_der_menge_an_permutationen_7322650109d92f4f78cf139e5e8d239c08d40869.svg" alt="20220928141116-machtigkeit_der_menge_an_permutationen_7322650109d92f4f78cf139e5e8d239c08d40869.svg" class="org-svg" />
+Sei \(P\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  aller möglichen <a href="20220928140441-permutation.html#ID-01de1cf3-b2f6-4908-a06a-1e9479c0f756">Permutationen</a> einer $n$-Menge.
+Die <a href="20211227215415-machtigkeit_menge.html#ID-a53ec5a2-0adb-4575-bf21-e3ac15eff75f">Mächtigkeit</a> von \(P\) ist dann \(n!\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220928141116-machtigkeit_der_menge_an_permutationen_7accc78366a6a2e8c0f65818d3698491e750fcf9.svg" alt="20220928141116-machtigkeit_der_menge_an_permutationen_7accc78366a6a2e8c0f65818d3698491e750fcf9.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert P \vert = n!
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org74b9f12" class="outline-2">
-<h2 id="org74b9f12"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org57df013" class="outline-2">
+<h2 id="org57df013"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>todo: durch vollständige induktion</li>

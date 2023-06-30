@@ -9,64 +9,82 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalenzrelation des Abstands 0</h1>
-<div id="outline-container-orge682688" class="outline-2">
-<h2 id="orge682688"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6ea7a7c" class="outline-2">
+<h2 id="org6ea7a7c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230224153550-aquivalenzrelation_des_abstands_0_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230224153550-aquivalenzrelation_des_abstands_0_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>, dann ist die  <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a>
+Sei \((M,d)\) ein <a href="20230224123147-semimetrischer_raum.html#ID-e2594bf0-67cb-4d50-a605-39627074bcd2">semimetrischer Raum</a>, dann ist die  <a href="20211227225631-relation_mathe.html#ID-20e17f2d-e102-4093-8c48-e5b41db0ffbf">Relation</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224153550-aquivalenzrelation_des_abstands_0_5b7c55add608b318460ba26686471790bd9ef0c7.svg" alt="20230224153550-aquivalenzrelation_des_abstands_0_5b7c55add608b318460ba26686471790bd9ef0c7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x ~ y \Leftrightarrow d(x,y) = 0 && \forall x,y \in M
+\end{align*}
 <p>
 eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgcea77cb" class="outline-2">
-<h2 id="orgcea77cb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6f421af" class="outline-2">
+<h2 id="org6f421af"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb293db6" class="outline-3">
-<h3 id="orgb293db6"><span class="section-number-3">2.1.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
+<div id="outline-container-orgfa5c794" class="outline-3">
+<h3 id="orgfa5c794"><span class="section-number-3">2.1.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der  <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc68f3df" class="outline-3">
-<h3 id="orgc68f3df"><span class="section-number-3">2.2.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
+<div id="outline-container-org188746e" class="outline-3">
+<h3 id="org188746e"><span class="section-number-3">2.2.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230224153550-aquivalenzrelation_des_abstands_0_844e28f83b9507898ae44e418e0718d04d1a2f7a.svg" alt="20230224153550-aquivalenzrelation_des_abstands_0_844e28f83b9507898ae44e418e0718d04d1a2f7a.svg" class="org-svg" />, so dass gilt:
+Seien \(x,y,z \in M\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224153550-aquivalenzrelation_des_abstands_0_57c8e7d01db657c5837e52879e2e2e45729f9e63.svg" alt="20230224153550-aquivalenzrelation_des_abstands_0_57c8e7d01db657c5837e52879e2e2e45729f9e63.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d(x,y) = 0 \\
+d(y,x) = 0
+\end{align*}
 <p>
 Dann folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> und <a href="20230224151242-nichtnegativitat_einer_metrik.html#ID-ab691ad2-60ab-4adf-944a-18f1da955cf8">Nichtnegativität</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230224153550-aquivalenzrelation_des_abstands_0_1e009e36e6e107393c757b7952a41864b63a90a7.svg" alt="20230224153550-aquivalenzrelation_des_abstands_0_1e009e36e6e107393c757b7952a41864b63a90a7.svg" class="org-svg" />
-</span>
+\begin{align*}
+0 \leq d(x,z) \leq d(x,y) + d(y,x) \leq 0 \\
+\Rightarrow d(x,z) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org46ccfb9" class="outline-3">
-<h3 id="org46ccfb9"><span class="section-number-3">2.3.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexivität</a></h3>
+<div id="outline-container-orga466ff3" class="outline-3">
+<h3 id="orga466ff3"><span class="section-number-3">2.3.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexivität</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus <a href="20230224153947-selbstabstand_einer_seminorm.html#ID-236597be-c717-45ad-bf0d-05bd5c0b9df9">Selbstabstand einer Seminorm</a> 

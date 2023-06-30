@@ -9,18 +9,43 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Innere eines Produkts</h1>
-<div id="outline-container-orgb2131a7" class="outline-2">
-<h2 id="orgb2131a7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org44dd257" class="outline-2">
+<h2 id="org44dd257"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" alt="20230430202039-innere_eines_produkts_df2c14573b02ba06055fc5278a9442a8b53c6381.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_7fe1ceeff0979587d8cadbaf2580d775c81781ae.svg" alt="20230430202039-innere_eines_produkts_7fe1ceeff0979587d8cadbaf2580d775c81781ae.svg" class="org-svg" /> die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
-Dann gilt für das <a href="20230222172752-inneres_einer_topologie.html#ID-14daf62f-ca16-4f9a-a71f-a84e86b23c1c">innere</a> für <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230430202039-innere_eines_produkts_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_6118b92a0d3feccf947887a298dbddfc674a75de.svg" alt="20230430202039-innere_eines_produkts_6118b92a0d3feccf947887a298dbddfc674a75de.svg" class="org-svg" />:
-<img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" alt="20230430202039-innere_eines_produkts_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" class="org-svg" />
-{A &times; B) = (A) &times; (B)
+Seien \(X,Y\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(X \times Y\) die <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
+Dann gilt für das <a href="20230222172752-inneres_einer_topologie.html#ID-14daf62f-ca16-4f9a-a71f-a84e86b23c1c">innere</a> für <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmengen</a> \(A \subseteq X\) und \(B \subseteq Y\):
+\begin{align*}
+\mathring{A &times; B) = \mathring(A) &times; \mathring(B)
 </p>
 
 <p>
@@ -28,14 +53,14 @@ Damit folgt insbesondere aus <a href="20210305204948-beweis_durch_vollstandige_i
 </p>
 </div>
 </div>
-<div id="outline-container-orgf129f42" class="outline-2">
-<h2 id="orgf129f42"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org45a1a02" class="outline-2">
+<h2 id="org45a1a02"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_e75609a83c53b47a79ac54bd86063c868fc6a442.svg" alt="20230430202039-innere_eines_produkts_e75609a83c53b47a79ac54bd86063c868fc6a442.svg" class="org-svg" />, so ist die <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion eine  stetig offene Abbildung</a>.
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_1725c1fb5bd18f7e7b359130cc1013545098e6fd.svg" alt="20230430202039-innere_eines_produkts_1725c1fb5bd18f7e7b359130cc1013545098e6fd.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit auch nach der <a href="20230222173339-innere_einer_topologie_als_großte_offene_menge.html#ID-351982c5-c63f-4633-926c-bbeb9fe84be2">Innere einer Toplogie als größte offene Menge</a> auch <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_2bf2812c2b044981cded8d04dcf6767a751bd75e.svg" alt="20230430202039-innere_eines_produkts_2bf2812c2b044981cded8d04dcf6767a751bd75e.svg" class="org-svg" />
-Analog für <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_b365ac1d8dd916943e97c1a824dde1cd9e6c55b4.svg" alt="20230430202039-innere_eines_produkts_b365ac1d8dd916943e97c1a824dde1cd9e6c55b4.svg" class="org-svg" /> und es folgt somit für <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_6b8846517e54aab18725244fc029c80a5758f1a7.svg" alt="20230430202039-innere_eines_produkts_6b8846517e54aab18725244fc029c80a5758f1a7.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_b984f2c19e4876ac4e84616f07ea11d7b93b9994.svg" alt="20230430202039-innere_eines_produkts_b984f2c19e4876ac4e84616f07ea11d7b93b9994.svg" class="org-svg" />
-Zudem gilt, dass <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_7e5a0bda3b18e667071ff5ff1d664754bf280aaa.svg" alt="20230430202039-innere_eines_produkts_7e5a0bda3b18e667071ff5ff1d664754bf280aaa.svg" class="org-svg" /> jeweils <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind und damit auch <img src="file:///home/anton/html/ltximg/20230430202039-innere_eines_produkts_95146c14f01b32be3266ab1f2fb400b6fdeb4f36.svg" alt="20230430202039-innere_eines_produkts_95146c14f01b32be3266ab1f2fb400b6fdeb4f36.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Sei \(O \subseteq A \times B\), so ist die <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">Projektion eine  stetig offene Abbildung</a>.
+Daraus folgt, dass \(\pi_A(O) \subseteq \subseteq A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit auch nach der <a href="20230222173339-innere_einer_topologie_als_großte_offene_menge.html#ID-351982c5-c63f-4633-926c-bbeb9fe84be2">Innere einer Toplogie als größte offene Menge</a> auch \(\pi_A(O) \subseteq \mathring{A}\)
+Analog für \(\pi_B(O)\) und es folgt somit für \((a,b) \in O : a \in \mathring{A}, b \in \mathring{B}\), d.h. \(O \subseteq \mathring{A} \times \mathring{B}\)
+Zudem gilt, dass \(\mathring{A}, \mathring{B}\) jeweils <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sind und damit auch \(\pi_A^{-1}[\mathring{A}] \cap \pi_B^{-1}[\mathring{B}] = (\mathring{A} \times Y) \cap (X \times \mathring{B}) = \mathring{A} \cap \mathring{B}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
 D.h. es greißt die Charakterisierung des <a href="20230222173339-innere_einer_topologie_als_großte_offene_menge.html#ID-351982c5-c63f-4633-926c-bbeb9fe84be2">Inneren einer Toplogie als größte offene Menge</a> 
 </p>
 </div>

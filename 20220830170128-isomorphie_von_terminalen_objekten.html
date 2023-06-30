@@ -9,26 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphie von terminalen Objekten</h1>
-<div id="outline-container-orgd8a7e48" class="outline-2">
-<h2 id="orgd8a7e48"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org01c221f" class="outline-2">
+<h2 id="org01c221f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220830170128-isomorphie_von_terminalen_objekten_bf9f878241ea4aa1074f87db7b51dbf7f1948424.svg" alt="20220830170128-isomorphie_von_terminalen_objekten_bf9f878241ea4aa1074f87db7b51dbf7f1948424.svg" class="org-svg" /> <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminale Objekte</a> 
-Dann existiert genau ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> <img src="file:///home/anton/html/ltximg/20220830170128-isomorphie_von_terminalen_objekten_864bd7eedbb5e5fc7bf51348cabbb2d37d1af0ae.svg" alt="20220830170128-isomorphie_von_terminalen_objekten_864bd7eedbb5e5fc7bf51348cabbb2d37d1af0ae.svg" class="org-svg" /> und dieser ist <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a> 
+Seien \(A, B \in Obj(\mathbf{C})\) <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminale Objekte</a> 
+Dann existiert genau ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(f_{A \rightarrow B}: A \rightarrow B\) und dieser ist <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org515c90d" class="outline-2">
-<h2 id="org515c90d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf281cff" class="outline-2">
+<h2 id="orgf281cff"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220830170128-isomorphie_von_terminalen_objekten_c64066faf05021d4b7a2e578fe5683aae57e634b.svg" alt="20220830170128-isomorphie_von_terminalen_objekten_c64066faf05021d4b7a2e578fe5683aae57e634b.svg" class="org-svg" /> nicht <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a>.
-Da auch A ein <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminales Objekt</a> ist, gibt es einen <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> <img src="file:///home/anton/html/ltximg/20220830170128-isomorphie_von_terminalen_objekten_75e11ae7ec71655c9b6f73e24937f4ee4d083155.svg" alt="20220830170128-isomorphie_von_terminalen_objekten_75e11ae7ec71655c9b6f73e24937f4ee4d083155.svg" class="org-svg" />
-Daraus folgt durch Komposition: <img src="file:///home/anton/html/ltximg/20220830170128-isomorphie_von_terminalen_objekten_fc57261b6ae20be4318cf5a9492823899b1ab115.svg" alt="20220830170128-isomorphie_von_terminalen_objekten_fc57261b6ae20be4318cf5a9492823899b1ab115.svg" class="org-svg" />.
+Sei \(g: A \rightarrow B\) nicht <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a>.
+Da auch A ein <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminales Objekt</a> ist, gibt es einen <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(f_{B \rightarrow A}: A \rightarrow B\)
+Daraus folgt durch Komposition: \(f_{B \rightarrow A} \circ g \neq id_{A}\).
 Damit wäre der <a href="20220819140031-endomorphismus.html#ID-50a12682-aaeb-4e29-9add-c505508e134e">Endomorphismus</a> von A nicht mehr eindeutig (aufgrund des <a href="20220817165031-identitatsmorphismus.html#ID-18d8207c-a2f4-499b-ab59-b7efe4858e31">Identitätsmorphismus</a>) und A kein <a href="20220825145511-terminales_objekt.html#ID-16825b5e-51d8-4e5e-ac19-2a05cd9fb110">terminales Objekt</a> 
 </p>
 </div>

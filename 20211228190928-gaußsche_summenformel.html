@@ -9,82 +9,108 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gaußsche Summenformel</h1>
-<div id="outline-container-org3eb828f" class="outline-2">
-<h2 id="org3eb828f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb97c3b8" class="outline-2">
+<h2 id="orgb97c3b8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_c93da911a6487ff1e3002a1b5831efb1cf12e343.svg" alt="20211228190928-gaußsche_summenformel_c93da911a6487ff1e3002a1b5831efb1cf12e343.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^n k = \frac{n\left(n+1\right)}{2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org12eba0f" class="outline-2">
-<h2 id="org12eba0f"><span class="section-number-2">2.</span> Beweise</h2>
+<div id="outline-container-org3dda467" class="outline-2">
+<h2 id="org3dda467"><span class="section-number-2">2.</span> Beweise</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org540de24" class="outline-3">
-<h3 id="org540de24"><span class="section-number-3">2.1.</span> <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></h3>
+<div id="outline-container-orgadd7545" class="outline-3">
+<h3 id="orgadd7545"><span class="section-number-3">2.1.</span> <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org53c0743" class="outline-4">
-<h4 id="org53c0743"><span class="section-number-4">2.1.1.</span> Induktionsanfang</h4>
+<div id="outline-container-org5a1a750" class="outline-4">
+<h4 id="org5a1a750"><span class="section-number-4">2.1.1.</span> Induktionsanfang</h4>
 <div class="outline-text-4" id="text-2-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_a8b14f1dc3e77aff1fa37996f901e2d4fa9f1613.svg" alt="20211228190928-gaußsche_summenformel_a8b14f1dc3e77aff1fa37996f901e2d4fa9f1613.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^0 k =& 0 = \frac{0 \left( 0 + 1\right)}{2}
+\end{align*}
 <ul class="org-ul">
 <li>siehe: <a href="20211228193106-leere_summe.html#ID-3fc1cdae-0ab4-4477-93c2-5234aa8a3947">Leere Summe</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1106fbd" class="outline-4">
-<h4 id="org1106fbd"><span class="section-number-4">2.1.2.</span> Induktionsschritt</h4>
+<div id="outline-container-org88a5313" class="outline-4">
+<h4 id="org88a5313"><span class="section-number-4">2.1.2.</span> Induktionsschritt</h4>
 <div class="outline-text-4" id="text-2-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_b4be7a9400a29d0da196349c1fa2a4db2aa104bf.svg" alt="20211228190928-gaußsche_summenformel_b4be7a9400a29d0da196349c1fa2a4db2aa104bf.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{n+1} k =& (n + 1) + \sum_{k=0}^{n} \\
+=& (n + 1) + \frac{n\left(n + 1\right)}{2} \\
+=& \frac{2n + 2 + n\left(n + 1\right)}{2} \\
+=& \frac{\left(n + 1\right) \left(\left(n + 1\right) + 1 \right)}{2}
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-org59eaaca" class="outline-3">
-<h3 id="org59eaaca"><span class="section-number-3">2.2.</span> Substition</h3>
+<div id="outline-container-org7d91976" class="outline-3">
+<h3 id="org7d91976"><span class="section-number-3">2.2.</span> Substition</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org953f1fb" class="outline-4">
-<h4 id="org953f1fb"><span class="section-number-4">2.2.1.</span> <img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_780dcbad3b1b7016aa99e63fca7c0df993cc603a.svg" alt="20211228190928-gaußsche_summenformel_780dcbad3b1b7016aa99e63fca7c0df993cc603a.svg" class="org-svg" /></h4>
+<div id="outline-container-orgda0fb75" class="outline-4">
+<h4 id="orgda0fb75"><span class="section-number-4">2.2.1.</span> \(n = 2j\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Sei $h =&amp; j - k &rArr; k =&amp; $
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_6dad01bc750c032653967075c0642200ef128992.svg" alt="20211228190928-gaußsche_summenformel_6dad01bc750c032653967075c0642200ef128992.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{k=0}^{n} k =& \sum_{k=0}^{2j} k \\
+=& \sum_{k=1}^{j} k + \sum_{k=j+1}^{2j} k \\
+=& \sum_{k=1}^{j} k + \sum_{k=1}^{j} (k + j) \\
+=& (\sum_{k=1}^{j} j - k + 1) + \sum_{k=1}^{j} (k + j) \\
+=& \sum_{k=1}^{j} (2j + 1) \\
+=& j \cdot (2j + 1) \\
+=& \frac{1}{2} n \cdot \left( 2 \cdot \frac{1}{2} n + 1\right) \\
+=& \frac{n ( n + 1)}{2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org84ab4aa" class="outline-4">
-<h4 id="org84ab4aa"><span class="section-number-4">2.2.2.</span> <img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_7b4602469baee5e0f302f6325fe6a0768b672a02.svg" alt="20211228190928-gaußsche_summenformel_7b4602469baee5e0f302f6325fe6a0768b672a02.svg" class="org-svg" /></h4>
+<div id="outline-container-org52c654b" class="outline-4">
+<h4 id="org52c654b"><span class="section-number-4">2.2.2.</span> \(n = 2j + 1\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211228190928-gaußsche_summenformel_add3b1f3fbd3ed1b43056477987585f748f6cca6.svg" alt="20211228190928-gaußsche_summenformel_add3b1f3fbd3ed1b43056477987585f748f6cca6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{k=0}^{n} k =&  \sum_{k=0}^{2j + 1} k \\
+=&  \sum_{k=0}^{2j + 1} k \\
+=& \sum_{k=0}^{2j} k + 2j + 1 \\
+=& \frac{(2j)^2 + 2j }{2} + 2j + 1 \\
+=& \frac{(2j)^2 + 2j + 4j + 2}{2}  \\
+=& \frac{(2j)^2 + (2j+1) + 4j + 1}{2}  \\
+=& \frac{(2j + 1)^2 + (2j+1)}{2}  \\
+\end{align*}
 </div>
 </div>
 </div>

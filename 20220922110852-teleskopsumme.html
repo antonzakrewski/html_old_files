@@ -9,22 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Teleskopsumme</h1>
-<div id="outline-container-org94e7d64" class="outline-2">
-<h2 id="org94e7d64"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org39033b3" class="outline-2">
+<h2 id="org39033b3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Wenn man bei einer Summe bloß der erste und letzte <a href="20220926062838-summand.html#ID-2084c1bd-b11c-4bfd-b732-7b13d95acc14">Summand</a> nach der Auswertung übrig bleibt, so nennt man das eine Teleskopsumme
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220922110852-teleskopsumme_004a7238d3652f22ca21a78a713adf6bbdefc644.svg" alt="20220922110852-teleskopsumme_004a7238d3652f22ca21a78a713adf6bbdefc644.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_1 + ((a_2 + a_3) + a_4 + a_5 ... + a_{n-1}) + a_n =& \\
+a_1 + ( a_4 + a_5 ... + a_{n-1}) + a_n =& a_1 + a_n
+\end{align*}
 </div>
 </div>
 </div>

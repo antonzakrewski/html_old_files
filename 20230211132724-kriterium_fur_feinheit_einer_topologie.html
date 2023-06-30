@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kriterium für die Feinheit einer Topologie</h1>
-<div id="outline-container-org23ccb58" class="outline-2">
-<h2 id="org23ccb58"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4f38d3f" class="outline-2">
+<h2 id="org4f38d3f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_bf9fa6f74e839414726a8226dfe71026bbdf46fc.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_bf9fa6f74e839414726a8226dfe71026bbdf46fc.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />.
-Falls für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230211132724-kriterium_fur_feinheit_einer_topologie_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230211132724-kriterium_fur_feinheit_einer_topologie_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /> existiert, so dass gilt
+Seien \((X, \mathcal{T})\) und \((X, \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(x \in X\).
+Falls für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) von \(x\) in \(\mathcal{T}\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U'\) von \(x\) in \(\mathcal{T}'\) existiert, so dass gilt
 </p>
 </div>
 </div>
-<div id="outline-container-org9becfb1" class="outline-2">
-<h2 id="org9becfb1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4c6362b" class="outline-2">
+<h2 id="org4c6362b"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

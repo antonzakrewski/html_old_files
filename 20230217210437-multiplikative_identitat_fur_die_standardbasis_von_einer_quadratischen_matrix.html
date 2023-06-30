@@ -9,36 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikative Identität für die Standardbasis von einer quadratischen Matrix</h1>
-<div id="outline-container-org27ee521" class="outline-2">
-<h2 id="org27ee521"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb4dbcee" class="outline-2">
+<h2 id="orgb4dbcee"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" alt="20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, so gilt für die Multiplikation der Standardbasis <img src="file:///home/anton/html/ltximg/20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_2cc6f3cdd0ee00382eebdec1553237289dfc81b2.svg" alt="20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_2cc6f3cdd0ee00382eebdec1553237289dfc81b2.svg" class="org-svg" />
+Sei \(K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, so gilt für die Multiplikation der Standardbasis \(E_{k,l}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_015a91e599bd893dad53d821519a402532d3cdb9.svg" alt="20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_015a91e599bd893dad53d821519a402532d3cdb9.svg" class="org-svg" />
-</span>
+\begin{align*}
+E_{k,l} \cdot E_{p,q} = \delta_{l,p} E_{k,q}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org81094c9" class="outline-2">
-<h2 id="org81094c9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgffd36f8" class="outline-2">
+<h2 id="orgffd36f8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt nach der <a href="20221126194743-matrixmultiplikation.html#ID-f1eb1007-4ae9-4903-825c-8c59f9c0f3ad">Matrixmultiplikation</a> und der Definition der Standardbasis <img src="file:///home/anton/html/ltximg/20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_4aa2bfb26f2d659a6530fd1c32164ced9e163765.svg" alt="20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_4aa2bfb26f2d659a6530fd1c32164ced9e163765.svg" class="org-svg" />
+Es gilt nach der <a href="20221126194743-matrixmultiplikation.html#ID-f1eb1007-4ae9-4903-825c-8c59f9c0f3ad">Matrixmultiplikation</a> und der Definition der Standardbasis \((E_{kl})_{i,j} = \delta_{ki} \delta_{lj}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_8e1b523925339ef65a5a6f914d93c7ed3b93017e.svg" alt="20230217210437-multiplikative_identitat_fur_die_standardbasis_von_einer_quadratischen_matrix_8e1b523925339ef65a5a6f914d93c7ed3b93017e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(E_{k,l} \cdot E_{p,q})_{i,j} =& \sum_{t=1}^{n} (E_{k,l})_{i,t} \cdot (E_{p,q})_{t,j} \\
+=& \sum_{t=1}^{n} \delta_{ki}\delta_{lt}\delta_{pt}\delta_{qj} \\
+=& \delta_{ki}\delta_{l,p} \delta_{qj} \\
+=& \delta_{l,p} \delta_{ki}\delta_{qj} \\
+=& \delta_{l,p} (E_{k,q})_{i,j}
+\end{align*}
 </div>
 </div>
 </div>

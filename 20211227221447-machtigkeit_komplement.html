@@ -9,46 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mächtigkeit Komplement</h1>
-<div id="outline-container-org23ca440" class="outline-2">
-<h2 id="org23ca440"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaaa0cf6" class="outline-2">
+<h2 id="orgaaa0cf6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211227221447-machtigkeit_komplement_ff6e00c6a4b1b55dadc4f4e42a365dec0f6a7ddd.svg" alt="20211227221447-machtigkeit_komplement_ff6e00c6a4b1b55dadc4f4e42a365dec0f6a7ddd.svg" class="org-svg" />
-</span>
+\begin{align*}
+Y \subseteq X \land \vert X \setminus Y \vert \Rightarrow \vert X\vert - \vert Y \vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8d1a737" class="outline-2">
-<h2 id="org8d1a737"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div id="outline-container-org0836f6d" class="outline-2">
+<h2 id="org0836f6d"><span class="section-number-2">2.</span> Beweisskizze</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org320fed3" class="outline-3">
-<h3 id="org320fed3"><span class="section-number-3">2.1.</span> Lemma und Definitionen</h3>
+<div id="outline-container-org41d20fe" class="outline-3">
+<h3 id="org41d20fe"><span class="section-number-3">2.1.</span> Lemma und Definitionen</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><a href="20211227220858-summenformel_machtigkeit_von_mengen.html#ID-b564a8ec-1953-42b5-a3ff-43be04505b64">Summenformel (Mächtigkeit von Mengen)</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211227221447-machtigkeit_komplement_1bc579d2459ba956455dfb188cf779f0653bef61.svg" alt="20211227221447-machtigkeit_komplement_1bc579d2459ba956455dfb188cf779f0653bef61.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+Y \subseteq X \\
+\forall(x \in Y \Rightarrow x \not\in X \setminus Y) \\
+\vert \emptyset \vert = 0 \\
+\vert X \cup Y \vert = \vert X \vert + \vert Y \vert - \vert X \cap Y \vert \\
+\end{align*}
 <ul class="org-ul">
 <li>wie genau ???</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211227221447-machtigkeit_komplement_f04aa50e2ad921b8743b8343d286eb2d536d1bbb.svg" alt="20211227221447-machtigkeit_komplement_f04aa50e2ad921b8743b8343d286eb2d536d1bbb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+% \forall(x \in Y \Rightarrow x \in X) \\
+Y \cap X \setminus Y = \emptyset \\
+Y \cup X \setminus Y = X \\
+\vert Y \cup X \setminus Y \vert = \vert X \vert \\
+\vert Y \vert + \vert X \setminus Y \vert - \vert Y \cap X \setminus Y \vert = \vert X \vert \\
+\vert Y \vert + \vert X \setminus Y \vert - \vert \emptyset \vert = \vert X \vert \\
+\vert Y \vert + \vert X \setminus Y \vert = \vert X \vert \\
+\vert X \setminus Y \vert = \vert X \vert - \vert Y \vert
+\end{align*}
 <ul class="org-ul">
 <li><a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a></li>
 </ul>

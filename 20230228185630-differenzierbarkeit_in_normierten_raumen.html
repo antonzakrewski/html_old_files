@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">differenzierbarkeit in normierten Räumen</h1>
-<div id="outline-container-org9ea0f81" class="outline-2">
-<h2 id="org9ea0f81"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org08a1d76" class="outline-2">
+<h2 id="org08a1d76"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_186e6f485495d067d1bc5e9a2eca73346ca3b124.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_186e6f485495d067d1bc5e9a2eca73346ca3b124.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_4a1cadde4f4f110895c8b7845cb34acf59a472c6.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_4a1cadde4f4f110895c8b7845cb34acf59a472c6.svg" class="org-svg" /> zwei <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierte Räume</a> mit <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_04b3347a55aa6b7340142c6a607623bcef7d2cff.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_04b3347a55aa6b7340142c6a607623bcef7d2cff.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a>und <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" />
-eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_37494fdfe3cbdd87987610c99673f54878bc1aef.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_37494fdfe3cbdd87987610c99673f54878bc1aef.svg" class="org-svg" /> ist differenzierbar an der Stelle <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_f4f2c39394a9abd7b6586f4b5c95c70453ca9dfa.svg" class="org-svg" />, falls eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>  <a href="20221003214043-lineare_abbildung.html#ID-ee7fc451-55b9-49a3-8af0-017984f517f7">lineare</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  <img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_57c312b3d427e3ef49804715cacd51c1db5db190.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_57c312b3d427e3ef49804715cacd51c1db5db190.svg" class="org-svg" /> existiert, so dass gilt
+Seien \((V, \| \cdot \|)\) und \((W, \| \cdot \|)\) zwei <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierte Räume</a> mit \(V \neq \{0\}\), \(U \subseteq V\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a>und \(x \in U\)
+eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: U \rightarrow W\) ist differenzierbar an der Stelle \(x_0\), falls eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>  <a href="20221003214043-lineare_abbildung.html#ID-ee7fc451-55b9-49a3-8af0-017984f517f7">lineare</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>  \(L: V \rightarrow W\) existiert, so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228185630-differenzierbarkeit_in_normierten_raumen_ae7baf1ea04e8e1a615872400fbd3d217ca8e2a5.svg" alt="20230228185630-differenzierbarkeit_in_normierten_raumen_ae7baf1ea04e8e1a615872400fbd3d217ca8e2a5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{x \to x_0}\left(\frac{\| f(x) - f(x_0) - L(x - x_0) \|}{\| x - x_0 \|}\right) 
+\end{align*}
 </div>
 </div>
 </div>

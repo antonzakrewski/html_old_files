@@ -9,49 +9,65 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gültigkeit eines Beweises durch Vollständige Induktion innerhalb der Natürlichen Zahlen</h1>
-<div id="outline-container-orga806eab" class="outline-2">
-<h2 id="orga806eab"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1fa552b" class="outline-2">
+<h2 id="org1fa552b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Durch einen <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> lässt sich eine Aussage <img src="file:///home/anton/html/ltximg/20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_f49bc585ded28c1e3d1acc9602824651f7492bad.svg" alt="20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_f49bc585ded28c1e3d1acc9602824651f7492bad.svg" class="org-svg" /> für $n &isin; $$$ beweisen
+Durch einen <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> lässt sich eine Aussage \(A(n)\) für $n &isin; $\mathbb{N}$$ beweisen
 </p>
 </div>
 </div>
-<div id="outline-container-org621ed1d" class="outline-2">
-<h2 id="org621ed1d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgee79a3b" class="outline-2">
+<h2 id="orgee79a3b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Man wende das Induktionspriniz an auf die Menge $ \{n &vert; A(n) \} &sub; $
+Man wende das Induktionspriniz an auf die Menge $ \{n &vert; A(n) \} &sub; \mathbb{N} $
 Aufgrund des Induktionsanfangs gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_3ec9ad9d1f59df9758558c9c57b41813c8de085f.svg" alt="20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_3ec9ad9d1f59df9758558c9c57b41813c8de085f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 \in M
+\end{align*}
 <p>
 Aufgrund des Induktionsschritts gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_ba4bbe98d2a79ff476710dbf011323230b5e7630.svg" alt="20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_ba4bbe98d2a79ff476710dbf011323230b5e7630.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\nu(M) \in M
+\end{align*}
 <p>
 Nach dem <a href="20220106181148-induktions_axiom_peano.html#ID-00e19945-dad8-49ea-b2ad-6de9ed8dd8e0">Induktions-Axiom (Peano)</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_d2a76a932a916422849d1ceb11bcda51a3bccb66.svg" alt="20221020111213-gultigkeit_eines_beweises_durch_vollstandige_induktion_innerhalb_der_naturlichen_zahlen_d2a76a932a916422849d1ceb11bcda51a3bccb66.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M = \mathbb{N} 
+\end{align*}
 </div>
 </div>
 </div>

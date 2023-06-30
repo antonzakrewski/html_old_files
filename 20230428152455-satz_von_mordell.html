@@ -3,51 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Satz von Mordell</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Mordell</h1>
-<div id="outline-container-orgb72e9ed" class="outline-2">
-<h2 id="orgb72e9ed"><span class="section-number-2">1.</span> Informell</h2>
+<div id="outline-container-org5571791" class="outline-2">
+<h2 id="org5571791"><span class="section-number-2">1.</span> Informell</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die gruppe <img src="ltximg/20230428152455-satz_von_mordell_b82563e37b2c1f5aefb3527ccea5d4872014cd0b.svg" alt="20230428152455-satz_von_mordell_b82563e37b2c1f5aefb3527ccea5d4872014cd0b.svg" class="org-svg" /> ist endlich erzeugt:
+Die gruppe \(E(\mathbb{Q})\) ist endlich erzeugt:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230428152455-satz_von_mordell_406a3f210cdc1a0dcd6a7936ee9eb3867914dd4d.svg" alt="20230428152455-satz_von_mordell_406a3f210cdc1a0dcd6a7936ee9eb3867914dd4d.svg" class="org-svg" />:</li>
+<li>\(p_1,...,p_r\):</li>
 </ul>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230428152455-satz_von_mordell_a15b0ee84f4d3cd859fdb411d2ecabd11e5d7bc4.svg" alt="20230428152455-satz_von_mordell_a15b0ee84f4d3cd859fdb411d2ecabd11e5d7bc4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+E(\mathbb{Q}) \simeq \mathbb{Z}^r \oplus T
+\end{align*}
 <p>
-mit <img src="ltximg/20230428152455-satz_von_mordell_99289dacdc94b06f2eb1251d7cb446cdcd0c6f80.svg" alt="20230428152455-satz_von_mordell_99289dacdc94b06f2eb1251d7cb446cdcd0c6f80.svg" class="org-svg" /> endlich
+mit \(T\) endlich
 </p>
 
 <p>
-damit folgt, dass jeder Punkt <img src="ltximg/20230428152455-satz_von_mordell_d8ea0968960fef5339ef12537a30d0702be035ef.svg" alt="20230428152455-satz_von_mordell_d8ea0968960fef5339ef12537a30d0702be035ef.svg" class="org-svg" /> sich eindeutig schreiben lässt als:
+damit folgt, dass jeder Punkt \(X \in E(\mathbb{Q})\) sich eindeutig schreiben lässt als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230428152455-satz_von_mordell_7d1d772ee9b3756ae8f67e150a9fdeed2cb63a50.svg" alt="20230428152455-satz_von_mordell_7d1d772ee9b3756ae8f67e150a9fdeed2cb63a50.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+X = \sum_{i=1}^{n} n_i p_i  + T_k && n_i \in \mathbb{Z} 
+\end{align*}
 </div>
 </div>
 </div>

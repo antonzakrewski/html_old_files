@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Herleitung: Additionstheoreme - Sinus</h1>
 
-<div id="outline-container-orgb66b0d0" class="outline-2">
-<h2 id="orgb66b0d0"><span class="section-number-2">1.</span> Herleitung</h2>
+<div id="outline-container-org837fcc4" class="outline-2">
+<h2 id="org837fcc4"><span class="section-number-2">1.</span> Herleitung</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220302214506-herleitung_additionstheoreme_sinus_db7fe89c96e0a5603323ecc50a20cdcc2bb7fdd8.svg" alt="20220302214506-herleitung_additionstheoreme_sinus_db7fe89c96e0a5603323ecc50a20cdcc2bb7fdd8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sin(\theta) =& \frac{1}{2i} (e^{i\theta} - e^{-i\theta})
+\end{align*}
 <p>
 unbefriedigend: geometrischer beweis notwendig
 </p>
 <ul class="org-ul">
-<li>so zirkelschluss (?): weil über eulersche identität <img src="file:///home/anton/html/ltximg/20220302214506-herleitung_additionstheoreme_sinus_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" alt="20220302214506-herleitung_additionstheoreme_sinus_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" class="org-svg" /> taylorreihe  <img src="file:///home/anton/html/ltximg/20220302214506-herleitung_additionstheoreme_sinus_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" alt="20220302214506-herleitung_additionstheoreme_sinus_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" class="org-svg" /> ableitung sinus/cosinus</li>
+<li>so zirkelschluss (?): weil über eulersche identität \(\Leftarrow\) taylorreihe  \(\Leftarrow\) ableitung sinus/cosinus</li>
 </ul>
 
 <ol class="org-ol">

@@ -9,51 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Standardtopologie mit diskreten Irrationalen Zahlen als vollständig normaler Raum</h1>
-<div id="outline-container-org3ade68d" class="outline-2">
-<h2 id="org3ade68d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd0fc6ed" class="outline-2">
+<h2 id="orgd0fc6ed"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen.html#ID-68209973-e902-4cff-9827-033dc4be8c9a">Standardtopologie mit diskreten Irrationalen Zahlen</a> ist ein <a href="20230227205538-vollstandig_normaler_raum_topologie.html#ID-481f3549-db51-4ece-ad88-73dd7a36981f">vollständig normaler Raum</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org20e93a1" class="outline-2">
-<h2 id="org20e93a1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org511bf7b" class="outline-2">
+<h2 id="org511bf7b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_582969064b78571a3cb5d24766671a98cbd37073.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_582969064b78571a3cb5d24766671a98cbd37073.svg" class="org-svg" /> gegeben mit <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_7a83d58de0a32f30cc9a6358f1c3810f453c1c2e.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_7a83d58de0a32f30cc9a6358f1c3810f453c1c2e.svg" class="org-svg" />.
-Sei <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_18c4d9f7478164ee3ac76849ca2d74e5a88f4c91.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_18c4d9f7478164ee3ac76849ca2d74e5a88f4c91.svg" class="org-svg" />, dann folgt <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_c63bf18feffee9a3cc138fd3bb47a6a4994bac11.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_c63bf18feffee9a3cc138fd3bb47a6a4994bac11.svg" class="org-svg" />, analog für <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_9832a331f16a681c7d6823c0f4478d8f3b8bf843.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_9832a331f16a681c7d6823c0f4478d8f3b8bf843.svg" class="org-svg" />.
+Seien \(A,B \subseteq \mathbb{R}\) gegeben mit \(\overline{A} \cap B = A \cap \overline{B} = \emptyset\).
+Sei \(A_i \coloneqq A \setminus \mathbb{Q}, A_r \coloneqq A \cap \mathbb{Q}\), dann folgt \(A = A_i \sqcup A_r\), analog für \(B_i,B_r\).
 Ferner gilt für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_d69447a5d4ddb6f2d4b2504d6f44ca49e2d6c8f9.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_d69447a5d4ddb6f2d4b2504d6f44ca49e2d6c8f9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{cl}_{\mathcal{T}_I}(A) = \mathrm{cl}_{\mathcal{T}_S}(A) \cap \mathbb{Q} \sqcup A_i \\
+\mathrm{cl}_{\mathcal{T}_I}(B) = \mathrm{cl}_{\mathcal{T}_S}(B) \cap \mathbb{Q} \sqcup B_i
+\end{align*}
 <p>
-da für <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_d5d1532d36fb6796312e265c2d6b54d5f5769786.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_d5d1532d36fb6796312e265c2d6b54d5f5769786.svg" class="org-svg" /> die Standardtopologie eine äquivalente <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a> besitzt (vgl. <a href="20230613-abschluss_und_umgebungsbasis.html#ID-5b3e694a-d1e6-4ddd-83df-4e04b4d9e3e5">Abschluss und Umgebungsbasis</a>) und für <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_21457a74852eade3e2592a6487fc8cd55109869e.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_21457a74852eade3e2592a6487fc8cd55109869e.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_7a0b21de5c55029cc8d0889e771424737ef9dbb7.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_7a0b21de5c55029cc8d0889e771424737ef9dbb7.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
-Sei <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_73ebbba8856695a672a18f6dbb8079fb0d2d25a6.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_73ebbba8856695a672a18f6dbb8079fb0d2d25a6.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_b1f58810513a9c62a6922dbe45c0f1f95dd1a40b.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_b1f58810513a9c62a6922dbe45c0f1f95dd1a40b.svg" class="org-svg" /> nach Annahme eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
-Sei <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_c63fd3e6bdaa35e0a27cbb021f8fa835ee9acf01.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_c63fd3e6bdaa35e0a27cbb021f8fa835ee9acf01.svg" class="org-svg" />, so folgt insbesondere auch <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_a51507b77ae143a62cd000970c0aae0578f58141.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_a51507b77ae143a62cd000970c0aae0578f58141.svg" class="org-svg" /> und damit existiert eine <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_361ad983b36f6462a48d887ce8d590a3f0d69c6a.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_361ad983b36f6462a48d887ce8d590a3f0d69c6a.svg" class="org-svg" /> in der Standardtopologie, da der <a href="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge.html#ID-4cec4a2b-75eb-431a-ac92-9c4fe3e8619c">zu einer Abgeschlosenen Menge positiv</a> ist.
-Sei im folgenden <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_cfbce23dbd9952e342dd681c6dab542167b52d38.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_cfbce23dbd9952e342dd681c6dab542167b52d38.svg" class="org-svg" /> die <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_2810f5d6a0cfe3d747adfe4f2c9306ef81582387.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_2810f5d6a0cfe3d747adfe4f2c9306ef81582387.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" />.
-Dann erhalten wir die beiden <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkten</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von <img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" class="org-svg" /> durch:
+da für \(q \in \mathbb{Q}\) die Standardtopologie eine äquivalente <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a> besitzt (vgl. <a href="20230613-abschluss_und_umgebungsbasis.html#ID-5b3e694a-d1e6-4ddd-83df-4e04b4d9e3e5">Abschluss und Umgebungsbasis</a>) und für \(q \in \mathbb{R} \setminus \mathbb{Q}\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\{q\}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Sei \(a \in A_i\), so ist \(\{a\}\) nach Annahme eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Sei \(a \in A_r\), so folgt insbesondere auch \(a \not\in \mathrm{cl}_{\mathcal{T}_S}(A) \supseteq \mathrm{cl}_{\mathcal{T}_S}(A) \cap \mathbb{Q}\) und damit existiert eine <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> \(U_{\varepsilon}(a)\) in der Standardtopologie, da der <a href="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge.html#ID-4cec4a2b-75eb-431a-ac92-9c4fe3e8619c">zu einer Abgeschlosenen Menge positiv</a> ist.
+Sei im folgenden \(U_{\delta}(a)\) die \(\frac{\varepsilon}{3}\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(a\).
+Dann erhalten wir die beiden <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkten</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von \(A,B\) durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_92b19c79aa1a9679854f050f8b7b21c453dd684f.svg" alt="20230613-standardtopologie_mit_diskreten_irrationalen_zahlen_als_vollstandig_normaler_raum_92b19c79aa1a9679854f050f8b7b21c453dd684f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+U_A \coloneqq& A_i \cup \bigcup_{a \in A_r} U_{\delta}(a) \\
+U_B \coloneqq& B_i \cup \bigcup_{b \in B_r} U_{\delta}(b)
+\end{align*}
 <p>
 Nach <a href="20230601152332-aquivalente_charakterisierung_eines_vollstandig_normalen_raumes.html#ID-ad0914c1-9c3a-4029-b333-0978154250cc">Äquivalente Charakterisierung eines vollständig normalen Raumes</a> zeigen 
 </p>

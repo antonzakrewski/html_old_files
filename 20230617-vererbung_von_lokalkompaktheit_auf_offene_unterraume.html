@@ -9,27 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vererbung von hausdorffscher Lokalkompaktheit auf offene Unterräume</h1>
-<div id="outline-container-orgf1f8e11" class="outline-2">
-<h2 id="orgf1f8e11"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga1654d2" class="outline-2">
+<h2 id="orga1654d2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakter</a> <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_27426a3d421c9bea5062b2282af13015f26104b0.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_27426a3d421c9bea5062b2282af13015f26104b0.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Dann ist die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_205c61c9fa006549e26787fd5a1e69a399a703e2.svg" class="org-svg" /> ebenfalls <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakter</a> <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und \(O \subseteq X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Dann ist die <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> von \(O\) ebenfalls <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org6c6e40d" class="outline-2">
-<h2 id="org6c6e40d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0cce821" class="outline-2">
+<h2 id="org0cce821"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_f69c14599ca7bab277931eec85a269ab5f47834e.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_f69c14599ca7bab277931eec85a269ab5f47834e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_62882eb8a465242cb77d108f2119577431e8db68.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_62882eb8a465242cb77d108f2119577431e8db68.svg" class="org-svg" /> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a6d9ab5fe4ce045470faf8f4eee6c10f70d39403.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a6d9ab5fe4ce045470faf8f4eee6c10f70d39403.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> (vgl. <a href="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie.html#ID-bbd920ec-2044-467d-9d6e-3306ace56466">Übertragung von Umgebungen in der Unterraumtopologie</a>)
-Nach Annahme existiert eine in <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_dcd06a8b2aef901d71084a10580e7332729710ee.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_dcd06a8b2aef901d71084a10580e7332729710ee.svg" class="org-svg" />.
-Ferner ist <img src="file:///home/anton/html/ltximg/20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_0ae4b3ec4c88871714d9c8434bdba1ac9636b8b8.svg" alt="20230617-vererbung_von_lokalkompaktheit_auf_offene_unterraume_0ae4b3ec4c88871714d9c8434bdba1ac9636b8b8.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> (vgl. <a href="20230305165431-rand_als_abgeschlossene_menge.html#ID-caf191d6-2835-4d86-9a51-006f0bfa5d68">Rand als abgeschlossene Menge</a>) und somit <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.
+Sei \(o \in O\) und \(U \subseteq O\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Dann ist \(U\) auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(o\) in \(X\) (vgl. <a href="20230615-ubertragung_von_umgebungen_in_der_unterraumtopologie.html#ID-bbd920ec-2044-467d-9d6e-3306ace56466">Übertragung von Umgebungen in der Unterraumtopologie</a>)
+Nach Annahme existiert eine in \(X\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K \subseteq U\).
+Ferner ist \(\partial O\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> (vgl. <a href="20230305165431-rand_als_abgeschlossene_menge.html#ID-caf191d6-2835-4d86-9a51-006f0bfa5d68">Rand als abgeschlossene Menge</a>) und somit <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.
 Nach der <a href="20230615-trennung_von_kompakten_mengen_von_abgeschlossenen_mengen_in_einem_t3_raum.html#ID-8c4eab70-6b39-4bea-96c3-e96648c0b18e">Trennung von kompakten Mengen von abgeschlossenen Mengen in einem T3-Raum</a> 
 </p>
 </div>

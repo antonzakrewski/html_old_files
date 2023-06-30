@@ -9,44 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis Ableitung Sinus/Cosinus</h1>
-<div id="outline-container-org053c3d3" class="outline-2">
-<h2 id="org053c3d3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org523d42b" class="outline-2">
+<h2 id="org523d42b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210331101932-beweis_ableitung_sinus_cosinus_4e674ee3f6c50061a0277bea5faa15d5ef21da3e.svg" alt="20210331101932-beweis_ableitung_sinus_cosinus_4e674ee3f6c50061a0277bea5faa15d5ef21da3e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sin(x)' =& \cos(x) \\
+\cos(x)' =& -\sin(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8162674" class="outline-2">
-<h2 id="org8162674"><span class="section-number-2">2.</span> Lemma</h2>
+<div id="outline-container-org8dc4fc3" class="outline-2">
+<h2 id="org8dc4fc3"><span class="section-number-2">2.</span> Lemma</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20210331101952-additionstheorem.html#ID-78ae366a-d42a-4713-8bbd-5843151cd5f3">Additionstheorem</a></li>
-<li><a href="20220624191119-grenzwert_frac_sin_x_1.html#ID-0186f7c4-943b-4bcc-8684-383f93488242">Grenzwert: <img src="file:///home/anton/html/ltximg/20210331101932-beweis_ableitung_sinus_cosinus_6f7947d4798d6dc49e08110c7cf44c015ea4e571.svg" alt="20210331101932-beweis_ableitung_sinus_cosinus_6f7947d4798d6dc49e08110c7cf44c015ea4e571.svg" class="org-svg" /></a></li>
-<li><a href="20220624195745-grenzwert_frac_1_cos_x_x.html#ID-567d638c-eb2c-4614-96f5-61118d07d8cf">Grenzwert: <img src="file:///home/anton/html/ltximg/20210331101932-beweis_ableitung_sinus_cosinus_507e758882774391d12690c8bd950069c0147c70.svg" alt="20210331101932-beweis_ableitung_sinus_cosinus_507e758882774391d12690c8bd950069c0147c70.svg" class="org-svg" /></a></li>
+<li><a href="20220624191119-grenzwert_frac_sin_x_1.html#ID-0186f7c4-943b-4bcc-8684-383f93488242">Grenzwert: \(\frac{\sin(\theta)}{\theta}\)</a></li>
+<li><a href="20220624195745-grenzwert_frac_1_cos_x_x.html#ID-567d638c-eb2c-4614-96f5-61118d07d8cf">Grenzwert: \(\frac{1 - \cos(x)}{x}\)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc2bc954" class="outline-2">
-<h2 id="orgc2bc954"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-org1b33a9d" class="outline-2">
+<h2 id="org1b33a9d"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org665e076" class="outline-3">
-<h3 id="org665e076"><span class="section-number-3">3.1.</span> Cosinus</h3>
+<div id="outline-container-org6f9f25f" class="outline-3">
+<h3 id="org6f9f25f"><span class="section-number-3">3.1.</span> Cosinus</h3>
 <div class="outline-text-3" id="text-3-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210331101932-beweis_ableitung_sinus_cosinus_6c456f99dc4a2a710c5e24915ca720ce41c0880e.svg" alt="20210331101932-beweis_ableitung_sinus_cosinus_6c456f99dc4a2a710c5e24915ca720ce41c0880e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cos(\theta)' =& \lim_{\varepsilon \to 0}\left(\frac{\cos(\theta + \varepsilon)-\cos(\theta)}{\varepsilon}\right) \\
+=& \lim_{\varepsilon \to 0}\left(\frac{\cos(\theta)\cos(\varepsilon) - \sin(\theta)\sin(\varepsilon) - \cos(\theta)}{\varepsilon}\right) \\
+=& -\cos(\theta) \cdot \lim_{\varepsilon \to 0}\left(\frac{1 - \cos(\varepsilon)}{\varepsilon}\right)  - \sin(\theta) \cdot \lim_{\varepsilon \to 0}\left(\frac{\sin(\varepsilon)}{\varepsilon}\right) \\
+=& -\cos(\theta) \cdot 0 - \sin(\theta) \cdot 1 \\
+=& -\sin(\theta)
+\end{align*}
 </div>
 </div>
 </div>

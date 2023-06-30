@@ -9,19 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Koordinatentransformation: Kartesisch zu Kugel</h1>
-<div id="outline-container-orge5b3632" class="outline-2">
-<h2 id="orge5b3632"><span class="section-number-2">1.</span> Rechnung</h2>
+<div id="outline-container-org06022c3" class="outline-2">
+<h2 id="org06022c3"><span class="section-number-2">1.</span> Rechnung</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221114085100-koordinatentransformation_kartesisch_zu_kugel_2c736c725927687ed41ab725295fcce6da53c87d.svg" alt="20221114085100-koordinatentransformation_kartesisch_zu_kugel_2c736c725927687ed41ab725295fcce6da53c87d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix} =& \begin{pmatrix} \sqrt{x^2 + y^2 + z^2} \\ \arccos( \frac{}{}) \\ \arctan(\frac{y}{x}) \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

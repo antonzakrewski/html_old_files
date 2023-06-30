@@ -3,59 +3,69 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Abstand: Ebene - Gerade</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstand: Ebene - Gerade</h1>
 
-<div id="outline-container-org18e57e7" class="outline-2">
-<h2 id="org18e57e7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3606859" class="outline-2">
+<h2 id="org3606859"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220312210646-abstand_ebene_gerade_1e60f924c0b8fddb994b37363d26ef32c5b14bb7.svg" alt="20220312210646-abstand_ebene_gerade_1e60f924c0b8fddb994b37363d26ef32c5b14bb7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+E_1 : (\vec{A} - \vec{X}) \circ \vec{n} \\
+g_1 : \vec{A} + \vec{u} \lambda
+\end{align*}
 </div>
-</div>
-<div id="outline-container-org65a934a" class="outline-3">
-<h3 id="org65a934a"><span class="section-number-3">1.1.</span> Möglichkeiten (<a href="20220207224324-dreidimensionaler_raum.html#ID-cbea667b-afb3-48b6-8f21-6b14b629617b">dreidimensionaler Raum</a>)</h3>
+<div id="outline-container-org2b5dc77" class="outline-3">
+<h3 id="org2b5dc77"><span class="section-number-3">1.1.</span> Möglichkeiten (<a href="20220207224324-dreidimensionaler_raum.html#ID-cbea667b-afb3-48b6-8f21-6b14b629617b">dreidimensionaler Raum</a>)</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220312210646-abstand_ebene_gerade_8f7eee302ab93ae332727ee1f94393a8a797ba85.svg" alt="20220312210646-abstand_ebene_gerade_8f7eee302ab93ae332727ee1f94393a8a797ba85.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\vec{n} \circ \vec{u} = 0
+\end{align*}
 <ul class="org-ul">
 <li>parallel oder identisch
-<img src="ltximg/20220312210646-abstand_ebene_gerade_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" alt="20220312210646-abstand_ebene_gerade_0d240fc16dffb110e3a157f0d0a797fb9fb6fec5.svg" class="org-svg" /> beliebigen Punkt von der Gerade in Ebenengleichung einsetzen:
+\(\Rightarrow\) beliebigen Punkt von der Gerade in Ebenengleichung einsetzen:
 <ul class="org-ul">
-<li>auf Ebene <img src="ltximg/20220312210646-abstand_ebene_gerade_4a91cca12944e1b9db08920db3bf48b797105f48.svg" alt="20220312210646-abstand_ebene_gerade_4a91cca12944e1b9db08920db3bf48b797105f48.svg" class="org-svg" /> identisch</li>
+<li>auf Ebene \(\rightarrow\) identisch</li>
 <li>ansonsten: <a href="20220312205048-abstand_ebene_punkt.html#ID-f27e255b-2627-47f4-8594-e6520694c1be">Abstand: Ebene - Punkt</a></li>
 </ul></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220312210646-abstand_ebene_gerade_e86208db657559c3ada715e3cb3575883e27c041.svg" alt="20220312210646-abstand_ebene_gerade_e86208db657559c3ada715e3cb3575883e27c041.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\vec{n} \circ \vec{u} \neq 0
+\end{align*}
 </div>
 </div>
 </div>

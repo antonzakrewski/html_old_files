@@ -9,83 +9,100 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">mengentheoretische Operationen bei Urbildern</h1>
-<div id="outline-container-org501cedc" class="outline-2">
-<h2 id="org501cedc"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org2160cea" class="outline-2">
+<h2 id="org2160cea"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ff3609252f5ac8061c1bc32282a355c85d367f59.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ff3609252f5ac8061c1bc32282a355c85d367f59.svg" class="org-svg" />
+Sei \(f: A \rightarrow B\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(B_1,B_2 \subset B\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1a3315f09ad2bafd48d0ade0dd01bf594859b7c4.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1a3315f09ad2bafd48d0ade0dd01bf594859b7c4.svg" class="org-svg" />
-</span>
+\begin{align*}
+f^{-1}[B_1 \cup B_2] =& f^{-1}[B_1] \cup f^{-1}[B_2] \\
+f^{-1}[B_1 \cap B_2] =& f^{-1}[B_1] \cap f^{-1}[B_2]
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbe97e95" class="outline-2">
-<h2 id="orgbe97e95"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgff17441" class="outline-2">
+<h2 id="orgff17441"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga79ffe2" class="outline-3">
-<h3 id="orga79ffe2"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org81627dc" class="outline-3">
+<h3 id="org81627dc"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org10eff90" class="outline-4">
-<h4 id="org10eff90"><span class="section-number-4">2.1.1.</span> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /></h4>
+<div id="outline-container-orga24b42a" class="outline-4">
+<h4 id="orga24b42a"><span class="section-number-4">2.1.1.</span> \(\Rightarrow\)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_63c8b869f7a507e220e1ee48fd0a263907ccc85e.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_63c8b869f7a507e220e1ee48fd0a263907ccc85e.svg" class="org-svg" />, so folgt, dass ein <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_6c7c6ab04bcce19608aa058e26d6cc23c4e91fdc.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_6c7c6ab04bcce19608aa058e26d6cc23c4e91fdc.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" class="org-svg" />
-Daraus folgt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_750e0c5ab22babf61f90f7d8b5957fbf2ea61003.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_750e0c5ab22babf61f90f7d8b5957fbf2ea61003.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_05098342338855ba0a170b1f8bbdc125ea5152cd.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_05098342338855ba0a170b1f8bbdc125ea5152cd.svg" class="org-svg" />
+Sei \(a \in f^{-1}[B_1 \cup B_2]\), so folgt, dass ein \(b \in  B_1 \cup B_2\) existiert mit \(f(a) = b\)
+Daraus folgt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(b \in B_1\) und damit auch \(a \in f^{-1}[B_1] \subseteq f^{-1}[B_1] \cup f^{-1}[B_2]\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc817af7" class="outline-4">
-<h4 id="orgc817af7"><span class="section-number-4">2.1.2.</span> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" class="org-svg" /></h4>
+<div id="outline-container-org62b4a17" class="outline-4">
+<h4 id="org62b4a17"><span class="section-number-4">2.1.2.</span> \(\Leftarrow\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_997d5d1d1d85804a4813aa7dd6ffb72a793d48c8.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_997d5d1d1d85804a4813aa7dd6ffb72a793d48c8.svg" class="org-svg" />, so folgt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_de40065c3da21601ad622928c369b3ec72b4544a.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_de40065c3da21601ad622928c369b3ec72b4544a.svg" class="org-svg" />, d.h. es existiert ein <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_750e0c5ab22babf61f90f7d8b5957fbf2ea61003.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_750e0c5ab22babf61f90f7d8b5957fbf2ea61003.svg" class="org-svg" />, so dass gilt: <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" class="org-svg" />
-Da gilt: <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_e956c5d1c17b89ac8755b391ccf25fd50724771d.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_e956c5d1c17b89ac8755b391ccf25fd50724771d.svg" class="org-svg" /> folgt auch <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_da29436f540e30a57b883f8869e4527496d4f58b.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_da29436f540e30a57b883f8869e4527496d4f58b.svg" class="org-svg" /> und damit <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_63c8b869f7a507e220e1ee48fd0a263907ccc85e.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_63c8b869f7a507e220e1ee48fd0a263907ccc85e.svg" class="org-svg" />
+Sei \(a \in f^{-1}[B_1] \cup f^{-1}[B_2]\), so folgt <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a \in f^{-1}[B_1]\), d.h. es existiert ein \(b \in B_1\), so dass gilt: \(f(a) = b\)
+Da gilt: \(B_1 \subseteq B_1 \cup B_2\) folgt auch \(b \in B_1 \cup B_2\) und damit \(a \in f^{-1}[B_1 \cup B_2]\)
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org44e2710" class="outline-3">
-<h3 id="org44e2710"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgeb48c18" class="outline-3">
+<h3 id="orgeb48c18"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgd2fb2a5" class="outline-4">
-<h4 id="orgd2fb2a5"><span class="section-number-4">2.2.1.</span> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /></h4>
+<div id="outline-container-orgf18e7e6" class="outline-4">
+<h4 id="orgf18e7e6"><span class="section-number-4">2.2.1.</span> \(\Rightarrow\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1f48238d8b8c51f64e84b2e538820261a08d3b75.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1f48238d8b8c51f64e84b2e538820261a08d3b75.svg" class="org-svg" />, so folgt auch dass ein <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ce43485eaf23afb0d91006a27a7a4bb811522961.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ce43485eaf23afb0d91006a27a7a4bb811522961.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_2cd295686bbfed25a57885a422e3f96043f6f1ae.svg" class="org-svg" />
-Daraus folgt auch <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_aeee96c30fc03ea042e98c0fdcafd73f74bfeece.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_aeee96c30fc03ea042e98c0fdcafd73f74bfeece.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_c4d891fa5a572289e7fe1a46c3fc59d413479200.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_c4d891fa5a572289e7fe1a46c3fc59d413479200.svg" class="org-svg" /> und daraus folgt:
+Sei \(a \in f^{-1}[B_1 \cap B_2]\), so folgt auch dass ein \(b \in B_1 \cap B_2\) existiert mit \(f(a) = b\)
+Daraus folgt auch \(b \in B_1, b \in B_2\) und \(a \in f^{-1}[B_1], a \in f^{-1}[B_2]\) und daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_822e3bdbe5aa498f8af5c8c850c18509112a613b.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_822e3bdbe5aa498f8af5c8c850c18509112a613b.svg" class="org-svg" />
-</span>
+\begin{align*}
+a \in f^{-1}[B_1] \cap f^{-1}[B_2]
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc7882d6" class="outline-4">
-<h4 id="orgc7882d6"><span class="section-number-4">2.2.2.</span> <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_98ef4411cbf702cfadeb3a77276016f1aa746e33.svg" class="org-svg" /></h4>
+<div id="outline-container-orgeb3edcd" class="outline-4">
+<h4 id="orgeb3edcd"><span class="section-number-4">2.2.2.</span> \(\Leftarrow\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_e5d02119750c2e27a05f5c93f04eb2379b088927.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_e5d02119750c2e27a05f5c93f04eb2379b088927.svg" class="org-svg" />, so folgt <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_c4d891fa5a572289e7fe1a46c3fc59d413479200.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_c4d891fa5a572289e7fe1a46c3fc59d413479200.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ba2f152ea468f3f9b9b37ba84c7649be0580126a.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ba2f152ea468f3f9b9b37ba84c7649be0580126a.svg" class="org-svg" />
-Daraus folgt <img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ce43485eaf23afb0d91006a27a7a4bb811522961.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_ce43485eaf23afb0d91006a27a7a4bb811522961.svg" class="org-svg" /> und es gilt
+Sei \(a \in f^{-1}[B_1] \cap f^{-1}[B_2]\), so folgt \(a \in f^{-1}[B_1], a \in f^{-1}[B_2]\), d.h. \(f(a) = b \in B_1, b \in B_2\)
+Daraus folgt \(b \in B_1 \cap B_2\) und es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1ea435d3dee53343a38360ae51a1a3fa5e7e4f1f.svg" alt="20221022192924-lemma_uber_mengentheoretische_operation_bei_urbildern_1ea435d3dee53343a38360ae51a1a3fa5e7e4f1f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a \in f^{-1}[B_1 \cap B_2]
+\end{align*}
 </div>
 </div>
 </div>

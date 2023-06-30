@@ -9,71 +9,85 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Folgenkriterium für Stetigkeit</h1>
-<div id="outline-container-orgebe2c1f" class="outline-2">
-<h2 id="orgebe2c1f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge383d7c" class="outline-2">
+<h2 id="orge383d7c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_18c95573c7d20793e3485b249f57e5c78f2470c6.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_18c95573c7d20793e3485b249f57e5c78f2470c6.svg" class="org-svg" /> ist in einem Punkt <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_ab633778696ee22684fc158c3e06c872d0c0e887.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_ab633778696ee22684fc158c3e06c872d0c0e887.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a>,  für jede Folge <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" class="org-svg" /> gilt:
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(\mathbb{C} \subseteq D \rightarrow  \mathbb{C}\) ist in einem Punkt \(x \in D\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a>,  für jede Folge \((x_n) \rightarrow x\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_604ec9d1a2f5297398434855ee6cdac6e17e1671.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_604ec9d1a2f5297398434855ee6cdac6e17e1671.svg" class="org-svg" />
-</span>
+\begin{align*}
+f(x_n) \rightarrow f(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga5ed74e" class="outline-2">
-<h2 id="orga5ed74e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc84f7ab" class="outline-2">
+<h2 id="orgc84f7ab"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb624243" class="outline-3">
-<h3 id="orgb624243"><span class="section-number-3">2.1.</span> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> folgenstetig</h3>
+<div id="outline-container-org39926ca" class="outline-3">
+<h3 id="org39926ca"><span class="section-number-3">2.1.</span> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> \(\Rightarrow\) folgenstetig</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_ab633778696ee22684fc158c3e06c872d0c0e887.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_ab633778696ee22684fc158c3e06c872d0c0e887.svg" class="org-svg" /> und sei <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_bc7affbe60ee6780c80b913238c54e797ae821b9.svg" class="org-svg" /> eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> 
-Die <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">Stetigkeit</a> von <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" /> liefert.
-Zu <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_2c68aa7befd8e51e5876149f7d7bc2ec88a5050d.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_2c68aa7befd8e51e5876149f7d7bc2ec88a5050d.svg" class="org-svg" /> mit
+Sei \(f\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in \(x \in D\) und sei \((x_n) \rightarrow x\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> 
+Die <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">Stetigkeit</a> von \(f\) in \(x\) liefert.
+Zu \(\varepsilon > 0\) \(\exists \delta = \delta(\varepsilon) > 0\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_dafede4bc2e84f9bd6d510f38dd940d452428403.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_dafede4bc2e84f9bd6d510f38dd940d452428403.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert x_n - x \vert < \delta \Rightarrow \vert f(x_n) - f(x) \vert < \varepsilon
+\end{align*}
 <p>
-Dabei ist <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_80c51c896119c5df6b726962ce0b48daaf558c2e.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_80c51c896119c5df6b726962ce0b48daaf558c2e.svg" class="org-svg" /> wegen dem <a href="20220105225912-cauchysches_konvergenz_kriterium.html#ID-08b989d3-4b14-4823-b00a-8c5392d5ca82">Cauchysches Konvergenz-Kriterium</a> gegeben 
+Dabei ist \(\vert x_n - x \vert \rightarrow 0\) wegen dem <a href="20220105225912-cauchysches_konvergenz_kriterium.html#ID-08b989d3-4b14-4823-b00a-8c5392d5ca82">Cauchysches Konvergenz-Kriterium</a> gegeben 
 </p>
 </div>
 </div>
-<div id="outline-container-org96b2596" class="outline-3">
-<h3 id="org96b2596"><span class="section-number-3">2.2.</span> folgenstetig <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a></h3>
+<div id="outline-container-org444d967" class="outline-3">
+<h3 id="org444d967"><span class="section-number-3">2.2.</span> folgenstetig \(\Rightarrow\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-durch <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>, d.h. nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> nicht Folgenstetig 
-Sei <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>, dann existiert ein <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> mit:
+durch <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>, d.h. nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> \(\Rightarrow\) nicht Folgenstetig 
+Sei \(f\) nicht <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a>, dann existiert ein \(\varepsilon > 0\) mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_261fb39a46dda978a344fa6bf032cb9aa5efd384.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_261fb39a46dda978a344fa6bf032cb9aa5efd384.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall \delta > 0 \exists x_{\delta} \in D : \vert x_{\delta} - x \vert < \delta \land \vert f(x_{\delta}) - f(x) \vert \geq \varepsilon
+\end{align*}
 <p>
-Für die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_d5b711b52505e9eff52f05b20b72ccc5590d4fa9.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_d5b711b52505e9eff52f05b20b72ccc5590d4fa9.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_042620ed6cbf8773ec46f28e40c5180925767659.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_042620ed6cbf8773ec46f28e40c5180925767659.svg" class="org-svg" /> gilt dann:
+Für die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((x_{\frac{1}{n}})_{n \in \mathbb{N}}\) in \(D\) gilt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_4f8db5adec72990a7acf9a8a44f0ed16d436ed02.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_4f8db5adec72990a7acf9a8a44f0ed16d436ed02.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x_{\frac{1}{n}} \rightarrow x \\
+f(x_{\frac{1}{n}} \not \rightarrow f(x)
+\end{align*}
 <p>
-Also ist <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> nicht folgenstetig in <img src="file:///home/anton/html/ltximg/20221222113132-folgenkriterium_fur_stetigkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20221222113132-folgenkriterium_fur_stetigkeit_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+Also ist \(f\) nicht folgenstetig in \(x\)
 </p>
 </div>
 </div>

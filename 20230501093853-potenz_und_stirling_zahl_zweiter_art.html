@@ -9,57 +9,83 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Potenz und Stirling Zahl zweiter Art</h1>
-<div id="outline-container-org859792a" class="outline-2">
-<h2 id="org859792a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org82bfb64" class="outline-2">
+<h2 id="org82bfb64"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" /> gegeben, dann gilt
+Sei \(n \in \mathbb{N}_0\) und \(x \in \mathbb{R}\) gegeben, dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_d40cbbc3e8b414d3e38d75f58210b8dea45611e9.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_d40cbbc3e8b414d3e38d75f58210b8dea45611e9.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^n = \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org84859a6" class="outline-2">
-<h2 id="org84859a6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgad6ff19" class="outline-2">
+<h2 id="orgad6ff19"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>
 </p>
 </div>
-<div id="outline-container-orgfd57e94" class="outline-3">
-<h3 id="orgfd57e94"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org40143aa" class="outline-3">
+<h3 id="org40143aa"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt für <img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_e77f28b5feced9570ec67066dad0193ae4375135.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_e77f28b5feced9570ec67066dad0193ae4375135.svg" class="org-svg" />:
+Es gilt für \(n = 0\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_66e427b5114cc5aaee9681f74094c312baabcd72.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_66e427b5114cc5aaee9681f74094c312baabcd72.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^{\overline{0}} =& 1 \\
+=&  1 \cdot (-1)^{0} x^{\overline{0}}
+=& \sum_{k=0}^{0} S_{0,k} (-1)^{n-k} x^{\overline{k}}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1c74658" class="outline-3">
-<h3 id="org1c74658"><span class="section-number-3">2.2.</span> IS</h3>
+<div id="outline-container-org026f26e" class="outline-3">
+<h3 id="org026f26e"><span class="section-number-3">2.2.</span> IS</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230501093853-potenz_und_stirling_zahl_zweiter_art_ff81dc1b60fecc26eed282807b845fa3407e4ff3.svg" alt="20230501093853-potenz_und_stirling_zahl_zweiter_art_ff81dc1b60fecc26eed282807b845fa3407e4ff3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^{n+1} =& x^n \cdot x \\
+=& \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}} \cdot x \\
+=& \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}} \cdot (x + k - k) \\
+=& \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}} \cdot (x + k)  - k  \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}} \\
+=& \sum_{k=0}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k+1}}  - k \sum_{k=1}^{n} S_{n,k} (-1)^{n-k} x^{\overline{k}} + 0 \cdot (-1)^{n-0} x^{\overline{0}} 
+=& \sum_{k=1}^{n+1} S_{n,k-1} (-1)^{n-k-1} x^{\overline{k}}  + k \sum_{k=1}^{n} S_{n,k} (-1)^{n-k-1} x^{\overline{k}} + 0\\
+=& \sum_{k=1}^{n}  (-1)^{n-k-1} \left(S_{n,k-1} + k \cdot S_{n,k} \right) x^{\overline{k}} + S_{n,n} (-1)^{n-n} x^{\overline{n+1}} \\
+=& \sum_{k=0}^{n}  (-1)^{(n+1)-k} S_{n+1,k} x^{\overline{k}}   + S_{(n+1),(n+1)} (-1)^{(n+1)-(n+1)} x^{\overline{n+1}} \\
+=& \sum_{k=0}^{n+1}  (-1)^{(n+1)-k} S_{n+1,k} x^{\overline{k}}  
+\end{align*}
 </div>
 </div>
 </div>

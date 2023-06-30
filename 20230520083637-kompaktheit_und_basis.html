@@ -3,48 +3,75 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kompaktheit und Basis</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit und Basis</h1>
-<div id="outline-container-orgc35cadd" class="outline-2">
-<h2 id="orgc35cadd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org129605e" class="outline-2">
+<h2 id="org129605e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230520083637-kompaktheit_und_basis_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230520083637-kompaktheit_und_basis_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="ltximg/20230520083637-kompaktheit_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230520083637-kompaktheit_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von <img src="ltximg/20230520083637-kompaktheit_und_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230520083637-kompaktheit_und_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{B}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(X\).
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li><img src="ltximg/20230520083637-kompaktheit_und_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230520083637-kompaktheit_und_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230412003456-compact_set.html#ID-d09ae6d2-2b5c-41c1-a54d-3259d3e2f0f0">compact</a></li>
-<li>für eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> <img src="ltximg/20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> aus <img src="ltximg/20230520083637-kompaktheit_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230520083637-kompaktheit_und_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a></li>
+<li>\(X\) ist <a href="20230412003456-compact_set.html#ID-d09ae6d2-2b5c-41c1-a54d-3259d3e2f0f0">compact</a></li>
+<li>für eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(O_i\) aus \(\mathcal{B}\) existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6f039e1" class="outline-2">
-<h2 id="org6f039e1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org93c2775" class="outline-2">
+<h2 id="org93c2775"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb6f412e" class="outline-3">
-<h3 id="orgb6f412e"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org11ad454" class="outline-3">
+<h3 id="org11ad454"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-folgt nach Definition, da <img src="ltximg/20230520083637-kompaktheit_und_basis_073ff3c16ba554aab1f0acf06d66127966d20cf4.svg" alt="20230520083637-kompaktheit_und_basis_073ff3c16ba554aab1f0acf06d66127966d20cf4.svg" class="org-svg" /> gilt.
+folgt nach Definition, da \(\mathcal{B} \subseteq \mathcal{T}\) gilt.
 </p>
 </div>
 </div>
-<div id="outline-container-org2b04774" class="outline-3">
-<h3 id="org2b04774"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9fcec7d" class="outline-3">
+<h3 id="org9fcec7d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="ltximg/20230520083637-kompaktheit_und_basis_403cbed72dcc02c829bce226ea032e28995ae2c6.svg" alt="20230520083637-kompaktheit_und_basis_403cbed72dcc02c829bce226ea032e28995ae2c6.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a>, so existieren für <img src="ltximg/20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> jeweils <img src="ltximg/20230520083637-kompaktheit_und_basis_724440964694b3a67c949c5eef97b388e1f00969.svg" alt="20230520083637-kompaktheit_und_basis_724440964694b3a67c949c5eef97b388e1f00969.svg" class="org-svg" /> mit <img src="ltximg/20230520083637-kompaktheit_und_basis_932bc1ee57ca493f1836a736c2937b41ef9650b8.svg" alt="20230520083637-kompaktheit_und_basis_932bc1ee57ca493f1836a736c2937b41ef9650b8.svg" class="org-svg" />.
-Nach Annahme existiert für <img src="ltximg/20230520083637-kompaktheit_und_basis_ecee9a207a40a6da2765dbefe69c50d3f87ba6ef.svg" alt="20230520083637-kompaktheit_und_basis_ecee9a207a40a6da2765dbefe69c50d3f87ba6ef.svg" class="org-svg" /> eine endliche Teilüberdeckung und für <img src="ltximg/20230520083637-kompaktheit_und_basis_c6727c4d333c55875da819a2e5850d95054e15a1.svg" alt="20230520083637-kompaktheit_und_basis_c6727c4d333c55875da819a2e5850d95054e15a1.svg" class="org-svg" /> wähle man ein <img src="ltximg/20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> mit <img src="ltximg/20230520083637-kompaktheit_und_basis_6a2f04189a8478b650c44d7039150f93c22c25cd.svg" alt="20230520083637-kompaktheit_und_basis_6a2f04189a8478b650c44d7039150f93c22c25cd.svg" class="org-svg" />.
-Damit erhält man eine endliche Teilüberdeckung von <img src="ltximg/20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230520083637-kompaktheit_und_basis_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" />
+Sei \((O_i)\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a>, so existieren für \(O_i\) jeweils \(B_{i,j} \in \mathcal{B}\) mit \(O_i = \bigcup_{j \in J} B_{i,j}\).
+Nach Annahme existiert für \((B_{i,j})_{i,j}\) eine endliche Teilüberdeckung und für \(B_{i,j}\) wähle man ein \(O_i\) mit \(B_{i,j} \subseteq O_{i}\).
+Damit erhält man eine endliche Teilüberdeckung von \(O_i\)
 </p>
 </div>
 </div>

@@ -9,32 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Reihe (Mathe)</h1>
-<div id="outline-container-org73b73b8" class="outline-2">
-<h2 id="org73b73b8"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga66005c" class="outline-2">
+<h2 id="orga66005c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> der <a href="20211222222939-partialsumme.html#ID-1f1eb3ef-3197-4cb7-87a5-87c5aac79050">Partialsummen</a> einer Folge heißt (unendliche) Reihe
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211222222904-reihe_mathe_f402a8b873917febc5abe59f562acd8a9eda2509.svg" alt="20211222222904-reihe_mathe_f402a8b873917febc5abe59f562acd8a9eda2509.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left(s_n\right)_{n\leq1} =& \left(\sum_{i=1}^n a_i\right) \\
+=& \sum_{i=1}^{\infty} a_n
+\end{align*}
 
 <p>
-Falls <img src="file:///home/anton/html/ltximg/20211222222904-reihe_mathe_02a23a73e6328079f0d142f6b879b137729b177c.svg" alt="20211222222904-reihe_mathe_02a23a73e6328079f0d142f6b879b137729b177c.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>, so ist <img src="file:///home/anton/html/ltximg/20211222222904-reihe_mathe_8135c8874f0dbe2f2c44d0474615b1295eb04538.svg" alt="20211222222904-reihe_mathe_8135c8874f0dbe2f2c44d0474615b1295eb04538.svg" class="org-svg" /> häufig eine Kurznotation für
+Falls \((s_n)\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>, so ist \(\left(\sum_{i=1}^{ \infty} a_i\right)\) häufig eine Kurznotation für
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211222222904-reihe_mathe_56c676e31892c2f1982ac987ed677480cde69f64.svg" alt="20211222222904-reihe_mathe_56c676e31892c2f1982ac987ed677480cde69f64.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\left(\sum_{i=1}^(\infty) a_i\right) =  \lim_{n \to \infty}\left(s_n\right) 
+\end{align*}
 </div>
 </div>
 </div>

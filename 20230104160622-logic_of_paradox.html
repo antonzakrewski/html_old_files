@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Logic of Paradox</h1>
-<div id="outline-container-orgf5e8f5e" class="outline-2">
-<h2 id="orgf5e8f5e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org49e99c8" class="outline-2">
+<h2 id="org49e99c8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 sowohl wahr als auch falsch
-Wie <img src="file:///home/anton/html/ltximg/20230104160622-logic_of_paradox_36131b03a2ac753a8e6d66995aebcc0ee1c3dae0.svg" alt="20230104160622-logic_of_paradox_36131b03a2ac753a8e6d66995aebcc0ee1c3dae0.svg" class="org-svg" />, nur mit <img src="file:///home/anton/html/ltximg/20230104160622-logic_of_paradox_8bb38d8894eb20daaeb6ea73aa9594c59cbe589a.svg" alt="20230104160622-logic_of_paradox_8bb38d8894eb20daaeb6ea73aa9594c59cbe589a.svg" class="org-svg" />
+Wie \(K_3\), nur mit \(D = \{i,1\}\)
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230104160622-logic_of_paradox_e63177502d27216c6382afdc85cbbfc0e1207516.svg" alt="20230104160622-logic_of_paradox_e63177502d27216c6382afdc85cbbfc0e1207516.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\models_{LP} p \lor \lnot p
+\end{align*}
 </div>
 </div>
 </div>

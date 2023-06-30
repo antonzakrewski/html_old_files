@@ -9,31 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sprungstetige Funktion</h1>
-<div id="outline-container-org01bcdbe" class="outline-2">
-<h2 id="org01bcdbe"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgea8b5d9" class="outline-2">
+<h2 id="orgea8b5d9"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20230204190938-sprungstetige_funktion_4788528ff8cb39bde7c6477a18d28a0b77eafbac.svg" alt="20230204190938-sprungstetige_funktion_4788528ff8cb39bde7c6477a18d28a0b77eafbac.svg" class="org-svg" />  ist sprungstetig, falls für <img src="file:///home/anton/html/ltximg/20230204190938-sprungstetige_funktion_ae223dd808316f99d1861ba1350d03009673fb5b.svg" alt="20230204190938-sprungstetige_funktion_ae223dd808316f99d1861ba1350d03009673fb5b.svg" class="org-svg" /> jeweils die <a href="20230116160200-einseitige_grenzwerte_von_funktionen_auf_ℝ.html#ID-11a2af38-c267-4961-a018-6818d1ad5f35">einseitigen Grenzwerte</a> von <img src="file:///home/anton/html/ltximg/20230204190938-sprungstetige_funktion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230204190938-sprungstetige_funktion_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> existieren, d.h. es existieren
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: [a,b] \rightarrow \mathbb{C}\)  ist sprungstetig, falls für \(x_0 \in (a,b)\) jeweils die <a href="20230116160200-einseitige_grenzwerte_von_funktionen_auf_ℝ.html#ID-11a2af38-c267-4961-a018-6818d1ad5f35">einseitigen Grenzwerte</a> von \(f\) existieren, d.h. es existieren
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204190938-sprungstetige_funktion_c1d00c04315f2328b0ae841a0ef4a291ac22d5ba.svg" alt="20230204190938-sprungstetige_funktion_c1d00c04315f2328b0ae841a0ef4a291ac22d5ba.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{x \searrow x_0} f(x) \\
+\lim_{x \nearrow x_0} f(x) 
+\end{align*}
 <p>
 und desweiteren auch folgende <a href="20230204185410-limes.html#ID-f06ca0cf-92da-44c7-8b2e-e832ef244990">Limiten</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204190938-sprungstetige_funktion_5abd8d94befa391158745c97b2da95cb83281e02.svg" alt="20230204190938-sprungstetige_funktion_5abd8d94befa391158745c97b2da95cb83281e02.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{x \searrow a} f(x) \\
+\lim_{x \nearrow b} f(x) 
+\end{align*}
 </div>
 </div>
 </div>

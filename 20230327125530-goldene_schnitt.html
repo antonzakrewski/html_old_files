@@ -9,45 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Goldene Schnitt</h1>
-<div id="outline-container-org8cf725c" class="outline-2">
-<h2 id="org8cf725c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgce5de86" class="outline-2">
+<h2 id="orgce5de86"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Der goldene Schnitt <img src="file:///home/anton/html/ltximg/20230327125530-goldene_schnitt_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230327125530-goldene_schnitt_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> ist definiert als
+Der goldene Schnitt \(\phi\) ist definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327125530-goldene_schnitt_993f50121bfe97d4598ca688664787a54f172993.svg" alt="20230327125530-goldene_schnitt_993f50121bfe97d4598ca688664787a54f172993.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi  \coloneqq& \frac{1 + \sqrt{5}}{2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf51cab9" class="outline-2">
-<h2 id="orgf51cab9"><span class="section-number-2">2.</span> weitere Charakterisierungen</h2>
+<div id="outline-container-org0f9df7d" class="outline-2">
+<h2 id="org0f9df7d"><span class="section-number-2">2.</span> weitere Charakterisierungen</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Das inverse ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327125530-goldene_schnitt_ec548a0a603293c0e245916e144f9ec7377768b1.svg" alt="20230327125530-goldene_schnitt_ec548a0a603293c0e245916e144f9ec7377768b1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\widehat{\phi} =& \phi^{-1} \\
+=& \frac{1 - \sqrt{5}}{2} \\
+=& \phi - 1
+\end{align*}
 <p>
 und der goldene Schnitt ist die positive Lösung der Gleichung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327125530-goldene_schnitt_4fc325afcf7c6d05a688201bab130448b7cf2513.svg" alt="20230327125530-goldene_schnitt_4fc325afcf7c6d05a688201bab130448b7cf2513.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^2 - x = 1
+\end{align*}
 </div>
 </div>
 </div>

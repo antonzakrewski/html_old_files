@@ -9,62 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</h1>
-<div id="outline-container-org5b7e765" class="outline-2">
-<h2 id="org5b7e765"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc0d406a" class="outline-2">
+<h2 id="orgc0d406a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> von <a href="20230111165234-abgeschlossene_menge_in_einem_metrischen_raum.html#ID-de8df4f2-4853-47e2-b944-f1ceb3cd94b9">abgeschlossenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Sei \(n \in \mathbb{N}\) und \(K_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> von <a href="20230111165234-abgeschlossene_menge_in_einem_metrischen_raum.html#ID-de8df4f2-4853-47e2-b944-f1ceb3cd94b9">abgeschlossenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
 Dann ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_4795a8a50ff88ab72f3313de695b4082afb6ebe0.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_4795a8a50ff88ab72f3313de695b4082afb6ebe0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in \{1,...,n\}} K_i
+\end{align*}
 <p>
 ebenfalls eine <a href="20230111165234-abgeschlossene_menge_in_einem_metrischen_raum.html#ID-de8df4f2-4853-47e2-b944-f1ceb3cd94b9">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org524bb16" class="outline-2">
-<h2 id="org524bb16"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org76f90f0" class="outline-2">
+<h2 id="org76f90f0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2c1016f" class="outline-3">
-<h3 id="org2c1016f"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgd83f7b2" class="outline-3">
+<h3 id="orgd83f7b2"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach dem <a href="20221028093107-schubfachprinzip.html#ID-d33a1094-3551-47b8-a056-3602e11fa14b">Schubfachprinzip</a> existiert <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f346e637ed4f4110297729dc3b77c7f7a04fe2e2.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f346e637ed4f4110297729dc3b77c7f7a04fe2e2.svg" class="org-svg" /> und eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f6923a622aea00ff2703c79ff1dff3e0cd9c649c.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f6923a622aea00ff2703c79ff1dff3e0cd9c649c.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_e18ebba925c81715cdf02ca951a6e39a2e838d7a.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_e18ebba925c81715cdf02ca951a6e39a2e838d7a.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_e18ebba925c81715cdf02ca951a6e39a2e838d7a.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_e18ebba925c81715cdf02ca951a6e39a2e838d7a.svg" class="org-svg" /> folgenkompakt ist, existiert in <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_1ddac70d64c63609a4657149b275e2eb2ce0f6c6.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_1ddac70d64c63609a4657149b275e2eb2ce0f6c6.svg" class="org-svg" /> eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> von <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_000dee0651ddbeec47f329e35732e240065fe56e.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_000dee0651ddbeec47f329e35732e240065fe56e.svg" class="org-svg" />
+Nach dem <a href="20221028093107-schubfachprinzip.html#ID-d33a1094-3551-47b8-a056-3602e11fa14b">Schubfachprinzip</a> existiert \(r \in \{1,...,n\}\) und eine <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> \((a_{n_l})_{l \in \mathbb{N}\) in \(K_r\)
+Da \(K_r\) folgenkompakt ist, existiert in \(K_r \subseteq \bigcup_{i \in \{1,...,n\}} K_i\) eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> von \((a_n)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org74759ca" class="outline-3">
-<h3 id="org74759ca"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org4233016" class="outline-3">
+<h3 id="org4233016"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_0148cc6ba9761b1d28101b691f3acaf5537ec8ea.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_0148cc6ba9761b1d28101b691f3acaf5537ec8ea.svg" class="org-svg" /> abgeschlossen ist, folgt, dass ein Radius <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_cbae271ef1a8b78d95231d812b940008b6399574.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_cbae271ef1a8b78d95231d812b940008b6399574.svg" class="org-svg" /> existiert, so dass gilt:
+Da \(A_j\) abgeschlossen ist, folgt, dass ein Radius \(r_j > 0\) existiert, so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f615aed107cd787d14c9b2e5df9dabd4f44a8b55.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_f615aed107cd787d14c9b2e5df9dabd4f44a8b55.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+D_{r_{j}}(z) \cap A_j = \emptyset
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_4c0a890ecb04daa00a6c689a0e287d2856824237.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_4c0a890ecb04daa00a6c689a0e287d2856824237.svg" class="org-svg" />, dann ist
+Sei \(r = \mathrm{min}(r_1,...,r_n)\), dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_d8b89b43194d112bfd4ef0c2c7df80498780ec0e.svg" alt="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen_d8b89b43194d112bfd4ef0c2c7df80498780ec0e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+D_{r(z) \cap \bigcup_{i \in \{1,...,n\}} A_i
+\end{align*}
 <p>
 Damit ist das komplement der vereinigung offen
 </p>

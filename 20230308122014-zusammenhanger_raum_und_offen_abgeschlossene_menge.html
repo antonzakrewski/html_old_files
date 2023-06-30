@@ -9,41 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhängender Raum und clopen set</h1>
-<div id="outline-container-orgabe2249" class="outline-2">
-<h2 id="orgabe2249"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge7c454a" class="outline-2">
+<h2 id="orge7c454a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_38717fd26df59728308816716eb4365b8efa0a99.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_38717fd26df59728308816716eb4365b8efa0a99.svg" class="org-svg" /> ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> nur <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_84aa3268523c9b57271c43fce7b6345225a797f9.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_84aa3268523c9b57271c43fce7b6345225a797f9.svg" class="org-svg" /> <a href="20230207075730-clopen_set.html#ID-f8defda0-b0fc-49cb-ab4f-21c64be93fe5">clopen sets</a> sind.
+Ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> \(\left(X, \mathcal{T}\right)\) ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> nur \(X\) und \(\emptyset\) <a href="20230207075730-clopen_set.html#ID-f8defda0-b0fc-49cb-ab4f-21c64be93fe5">clopen sets</a> sind.
 </p>
 </div>
 </div>
-<div id="outline-container-orgde4da00" class="outline-2">
-<h2 id="orgde4da00"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0d58da4" class="outline-2">
+<h2 id="org0d58da4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Beweis der Negation für den <a href="20230308122703-unzusammenhangender_raum.html#ID-3d0d0333-8bcf-4fc8-90c5-f6a7e8e185cc">unzusammenhängenden Raum</a> 
 </p>
 </div>
-<div id="outline-container-orgdefd6c8" class="outline-3">
-<h3 id="orgdefd6c8"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgf24a074" class="outline-3">
+<h3 id="orgf24a074"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Man wähle die <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a> <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, folgt dass das <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_efb14d668e2a6687ced185564fa2c6181b46e6a6.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
-Daraus folgt: <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_fe5fa094aa97417ef454514ecb410d46b995be63.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_fe5fa094aa97417ef454514ecb410d46b995be63.svg" class="org-svg" />
+Man wähle die <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Menge</a> \(A\)
+Da \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, folgt dass das <a href="20211227205752-komplement_mengenlehre.html#ID-76b857a4-da6d-4333-b837-cc1009f534e2">Komplement</a> \(X \setminus A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Daraus folgt: \(X = A \sqcup X \setminus A\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7acb80f" class="outline-3">
-<h3 id="org7acb80f"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orga5be62d" class="outline-3">
+<h3 id="orga5be62d"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme existiert eine <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleerer</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_d2a3c99b9c19a10493f87f28cd08561dae28d4f5.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_d2a3c99b9c19a10493f87f28cd08561dae28d4f5.svg" class="org-svg" />.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_ef6f65aa586f411f527c1f8c2338f0ccc9eed58c.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_ef6f65aa586f411f527c1f8c2338f0ccc9eed58c.svg" class="org-svg" /> und da <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt dass <img src="file:///home/anton/html/ltximg/20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230308122014-zusammenhanger_raum_und_offen_abgeschlossene_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> auch <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
+Nach Annahme existiert eine <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleerer</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(X = A \sqcup B\).
+Daraus folgt \(A = X \setminus B\) und da \(B\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, folgt dass \(A\) auch <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.
 </p>
 </div>
 </div>

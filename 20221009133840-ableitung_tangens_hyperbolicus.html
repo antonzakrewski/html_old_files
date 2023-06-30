@@ -9,42 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung Tangens hyperbolicus</h1>
-<div id="outline-container-org2aa3850" class="outline-2">
-<h2 id="org2aa3850"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7ceb218" class="outline-2">
+<h2 id="org7ceb218"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133840-ableitung_tangens_hyperbolicus_b0af10dc7da1670dc54c410dde35571bad030a89.svg" alt="20221009133840-ableitung_tangens_hyperbolicus_b0af10dc7da1670dc54c410dde35571bad030a89.svg" class="org-svg" />
-</span>
+\begin{align*}
+\tanh'(x) =& \frac{1}{\cosh(x)^2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3551d54" class="outline-2">
-<h2 id="org3551d54"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0fc1dcd" class="outline-2">
+<h2 id="org0fc1dcd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nach der Definition des <a href="20221009135837-tangens_hyperbolicus.html#ID-bd1ae03b-33ef-45ce-8170-f4086f9147a2">Tangens hyperbolicus</a> gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133840-ableitung_tangens_hyperbolicus_8734f9a4c8b594fc633a2dca62396288deb4786e.svg" alt="20221009133840-ableitung_tangens_hyperbolicus_8734f9a4c8b594fc633a2dca62396288deb4786e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tanh(x) =& \frac{\sinh(x)}{\cosh(x)}
+\end{align*}
 <p>
 Aufgrund der <a href="20210217213918-quotientenregel.html#ID-6b07168c-c2fd-4a8e-a0c6-1cbf4f462118">Quotientenregel</a> und der <a href="20221009133834-ableitung_cosinus_hyperbolicus.html#ID-b326154e-ae7d-43b0-ad03-9e6b199ad974">Ableitung des Kosinus hyperbolicus</a> und <a href="20221009133830-ableitung_sinus_hyperbolicus.html#ID-d00c5c90-9872-4ea6-856d-032994853dc0">Ableitung des Sinus hyperbolicus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221009133840-ableitung_tangens_hyperbolicus_684ab9d0bae768dc0bcce1032e2846720a174d51.svg" alt="20221009133840-ableitung_tangens_hyperbolicus_684ab9d0bae768dc0bcce1032e2846720a174d51.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tanh(x)' =& \left(\frac{\sinh(x)}{\cosh(x)}\right)' \\
+=& \frac{\cosh(x)^2 - \sinh(x)^2}{\cosh(x)^2} \\
+=& \frac{  \left(\frac{1}{2}( e^x + e^{-x})\right)^2 - \left(\frac{1}{2}( e^x - e^{-x})\right)^2}{\cosh(x)} \\
+=& \frac{ \frac{1}{4}(e^{2x} + e^{-2x} + 2e^{x-x} )  - \frac{1}{4} (e^{2x} + e^{-2x} - 2 e^{x - x}) }{\cosh(x)} \\
+=& \frac{\frac{1}{4} (e^{2x} - e^{2x} + e^{-2x} - e^{-2x} + 2e^{x-x} + 2e^{x-x})}{\cosh(x)} \\
+=& \frac{\frac{1}{4} 4e^{0}}{\cosh(x)^2} \\
+=& \frac{1}{\cosh(x)^2}
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kreuzprodukt mit einem orthogonalen Anteil</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kreuzprodukt mit einem orthogonalen Anteil</h1>
-<div id="outline-container-orgafb5278" class="outline-2">
-<h2 id="orgafb5278"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org960673b" class="outline-2">
+<h2 id="org960673b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_1efffe326dcf5c7d12a5856391c12e7d16d4d9ce.svg" alt="20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_1efffe326dcf5c7d12a5856391c12e7d16d4d9ce.svg" class="org-svg" /> und es gelte <img src="ltximg/20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_7abff6e009ea8aa3ea4fd3afa4e7fbd191fe2d8f.svg" alt="20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_7abff6e009ea8aa3ea4fd3afa4e7fbd191fe2d8f.svg" class="org-svg" /> so folgt:
+Seien \(\vec{v},\vec{w} \in \mathbb{R}^3\) und es gelte \(\vec{w} \cdot \vec{v} = 0\) so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_f3c76f0db9dd71de2807947a2d5ad5b2996749a8.svg" alt="20221114071304-kreuzprodukt_mit_einem_orthogonalen_anteil_f3c76f0db9dd71de2807947a2d5ad5b2996749a8.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\vec{w} \times \vec{v} =& \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5d97944" class="outline-2">
-<h2 id="org5d97944"><span class="section-number-2">2.</span> Folgerung</h2>
+<div id="outline-container-org66536d7" class="outline-2">
+<h2 id="org66536d7"><span class="section-number-2">2.</span> Folgerung</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund der <a href="20221106113259-distributivitat_des_kreuzprodukts.html#ID-6d6da8d8-dfb5-4869-a476-62e4fec80bd1">Distributivität</a> lässt sich ein beliebiger <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> in einen <a href="20211103175932-orthogonal.html#ID-84103ec1-5449-434b-b55c-3ac6ca47c90e">orthogonalen</a> Anteil und einen senkrechten Anteil zerlegen, sodass folgt dass bloß der senkrechte Anteil das Kreuzprodukt bestimmt

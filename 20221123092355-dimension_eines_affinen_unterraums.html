@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dimension eines affinen Unterraums</h1>
-<div id="outline-container-org068bb04" class="outline-2">
-<h2 id="org068bb04"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org16957de" class="outline-2">
+<h2 id="org16957de"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221123092355-dimension_eines_affinen_unterraums_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>, <img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20221123092355-dimension_eines_affinen_unterraums_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterraum</a> und <img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_c342c2f7b257dc2cdf8327229d642fd76d7f1bbb.svg" alt="20221123092355-dimension_eines_affinen_unterraums_c342c2f7b257dc2cdf8327229d642fd76d7f1bbb.svg" class="org-svg" /> ein <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> für <img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_65e1dc71fcece88cbb641bfb978e62d18bb1695a.svg" alt="20221123092355-dimension_eines_affinen_unterraums_65e1dc71fcece88cbb641bfb978e62d18bb1695a.svg" class="org-svg" />
-Dann ist die <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> von <img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_c342c2f7b257dc2cdf8327229d642fd76d7f1bbb.svg" alt="20221123092355-dimension_eines_affinen_unterraums_c342c2f7b257dc2cdf8327229d642fd76d7f1bbb.svg" class="org-svg" /> definiert als
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>, \(U \subseteq V\) ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterraum</a> und \(A = a + U\) ein <a href="20221119123122-affiner_unterraum.html#ID-bfb9ff4c-c2f2-477c-bc90-88da2de01cf9">affiner Unterraum</a> für \(a \in V\)
+Dann ist die <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> von \(A = a + U\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221123092355-dimension_eines_affinen_unterraums_af7ee903b50b2b92ec88691593eabacb0281c807.svg" alt="20221123092355-dimension_eines_affinen_unterraums_af7ee903b50b2b92ec88691593eabacb0281c807.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{}(A) = \mathrm{dim}_{}(U)
+\end{align*}
 </div>
 </div>
 </div>

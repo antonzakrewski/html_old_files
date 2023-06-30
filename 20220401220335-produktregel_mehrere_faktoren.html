@@ -9,26 +9,48 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produktregel für mehrere Faktoren</h1>
-<div id="outline-container-orgd29172b" class="outline-2">
-<h2 id="orgd29172b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org46018ff" class="outline-2">
+<h2 id="org46018ff"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20220401220335-produktregel_mehrere_faktoren_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" alt="20220401220335-produktregel_mehrere_faktoren_b000cce9f7cfe759e3fffd2cf0d91b66d6ef1b09.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20220401220335-produktregel_mehrere_faktoren_0a4bad123e980b00bf36114e39aa191fde533e97.svg" alt="20220401220335-produktregel_mehrere_faktoren_0a4bad123e980b00bf36114e39aa191fde533e97.svg" class="org-svg" /> <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a>, so gilt:
+Seien die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f_i\) für \(i \in \{1,2,...,k\}\) <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a>, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220401220335-produktregel_mehrere_faktoren_da74ec4787134aaf7ca4abfe3b6b41b38a5da450.svg" alt="20220401220335-produktregel_mehrere_faktoren_da74ec4787134aaf7ca4abfe3b6b41b38a5da450.svg" class="org-svg" />
-</span>
+\begin{align*}
+\left(\prod_{i=1}^k f_i(x)\right)' =& \sum_{i=1}^k\left(\frac{f_i'(x)}{f_i(x)} \cdot \prod_{j=1}^k f_j(x)\right)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf1bf053" class="outline-2">
-<h2 id="orgf1bf053"><span class="section-number-2">2.</span> <a href="20220820184843-beweis_produktregel_fur_mehrere_faktoren.html#ID-bc8372e2-383c-4fc3-85e5-9bfa58b16a9b">Beweis: Produktregel für mehrere Faktoren</a></h2>
+<div id="outline-container-org980f715" class="outline-2">
+<h2 id="org980f715"><span class="section-number-2">2.</span> <a href="20220820184843-beweis_produktregel_fur_mehrere_faktoren.html#ID-bc8372e2-383c-4fc3-85e5-9bfa58b16a9b">Beweis: Produktregel für mehrere Faktoren</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

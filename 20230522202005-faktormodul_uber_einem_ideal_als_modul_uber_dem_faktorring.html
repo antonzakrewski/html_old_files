@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Faktormodul über einem Modulideal als Modul über dem Faktorring</h1>
-<div id="outline-container-org3b69e07" class="outline-2">
-<h2 id="org3b69e07"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org03bbaaf" class="outline-2">
+<h2 id="org03bbaaf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> <img src="file:///home/anton/html/ltximg/20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_876537b5b1ccc06eeb02241a06774d69c143bc53.svg" alt="20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_876537b5b1ccc06eeb02241a06774d69c143bc53.svg" class="org-svg" /> ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
-Dann ist das <a href="20230222204643-faktormodul.html#ID-9f848ff8-95b8-4f0b-ad74-7997012399a0">Faktormodul</a> <img src="file:///home/anton/html/ltximg/20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_92017f038bce5351baf60a213be3cc68657293de.svg" alt="20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_92017f038bce5351baf60a213be3cc68657293de.svg" class="org-svg" /> über dem <a href="20230523163356-ideal_mal_modul_als_modul.html#ID-bb06dd64-8633-45dc-8966-7650e0835ec4">Modulideal</a> ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über dem <a href="20230517113714-faktorring_als_modul.html#ID-a1dfa3ed-e263-48b4-82d1-5d0203a6e30b">Faktorring</a> <img src="file:///home/anton/html/ltximg/20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_9049b76ec088acfd0df4507948a98cb1c346c893.svg" alt="20230522202005-faktormodul_uber_einem_ideal_als_modul_uber_dem_faktorring_9049b76ec088acfd0df4507948a98cb1c346c893.svg" class="org-svg" />
+Sei \(M\) ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über einem <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> \(R\) sowie \(I \subseteq R\) ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a>.
+Dann ist das <a href="20230222204643-faktormodul.html#ID-9f848ff8-95b8-4f0b-ad74-7997012399a0">Faktormodul</a> \(M / IM\) über dem <a href="20230523163356-ideal_mal_modul_als_modul.html#ID-bb06dd64-8633-45dc-8966-7650e0835ec4">Modulideal</a> ein <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> über dem <a href="20230517113714-faktorring_als_modul.html#ID-a1dfa3ed-e263-48b4-82d1-5d0203a6e30b">Faktorring</a> \(R/I\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9d6f0d3" class="outline-2">
-<h2 id="org9d6f0d3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org69b27a4" class="outline-2">
+<h2 id="org69b27a4"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

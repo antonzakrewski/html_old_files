@@ -3,34 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lineare Approximation</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineare Approximation</h1>
-<div id="outline-container-orgaf38922" class="outline-2">
-<h2 id="orgaf38922"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgaeb1262" class="outline-2">
+<h2 id="orgaeb1262"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230116165325-lineare_approximation_28dedb108fffbe46169ec6239f394bfff8b56504.svg" alt="20230116165325-lineare_approximation_28dedb108fffbe46169ec6239f394bfff8b56504.svg" class="org-svg" /> <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und <img src="ltximg/20230116165325-lineare_approximation_84c6994c24420b2ca178f397467504923fe3c157.svg" alt="20230116165325-lineare_approximation_84c6994c24420b2ca178f397467504923fe3c157.svg" class="org-svg" /> eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
-Dann ist die Lineare Approximation mit Entwicklungspunkt <img src="ltximg/20230116165325-lineare_approximation_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" alt="20230116165325-lineare_approximation_ed843fe9aafc33dd6fd567fc5e9abb5b85fe9f02.svg" class="org-svg" /> definiert als:
+Seien \(M,N\) <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und \(f: M \rightarrow N\) eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Dann ist die Lineare Approximation mit Entwicklungspunkt \(x_0\) definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230116165325-lineare_approximation_c9cac532f68c2c587254449682cb27b9fda983d9.svg" alt="20230116165325-lineare_approximation_c9cac532f68c2c587254449682cb27b9fda983d9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f(x) \approx& f(x_0) + f'(x_0) \cdot (x - x_0) \\
+f(x) =& f(x_0) + f'(x_0) \cdot (x - x_0) + r(x)
+\end{align*}
 <p>
-mit dem <a href="20230116165512-restglied.html#ID-c026cee3-ddb3-4b3f-9651-259b312e4b3e">Restglied</a> <img src="ltximg/20230116165325-lineare_approximation_37514e2fef78394297049c55b0486062e9eeed29.svg" alt="20230116165325-lineare_approximation_37514e2fef78394297049c55b0486062e9eeed29.svg" class="org-svg" />
+mit dem <a href="20230116165512-restglied.html#ID-c026cee3-ddb3-4b3f-9651-259b312e4b3e">Restglied</a> \(r(x) \coloneqq s(x) - s(x_0)(x - x_0)\)
 </p>
 </div>
 </div>

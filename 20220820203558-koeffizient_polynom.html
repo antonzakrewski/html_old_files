@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Koeffizient (Polynom)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Koeffizient (Polynom)</h1>
-<div id="outline-container-org43e43a5" class="outline-2">
-<h2 id="org43e43a5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org79f8432" class="outline-2">
+<h2 id="org79f8432"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20220820203558-koeffizient_polynom_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20220820203558-koeffizient_polynom_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="ltximg/20220820203558-koeffizient_polynom_ea428f73d16756166e290f0ca055fbcc7eda93bc.svg" alt="20220820203558-koeffizient_polynom_ea428f73d16756166e290f0ca055fbcc7eda93bc.svg" class="org-svg" /> ein <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a>.
-Dann sind <img src="ltximg/20220820203558-koeffizient_polynom_a1fe7ae47d9289f8a5e51ede645a424d03eff926.svg" alt="20220820203558-koeffizient_polynom_a1fe7ae47d9289f8a5e51ede645a424d03eff926.svg" class="org-svg" /> für <img src="ltximg/20220820203558-koeffizient_polynom_9f76be827567232d8c6bbfa7b0e0da43bdd66b09.svg" alt="20220820203558-koeffizient_polynom_9f76be827567232d8c6bbfa7b0e0da43bdd66b09.svg" class="org-svg" /> die Koeffizienten von <img src="ltximg/20220820203558-koeffizient_polynom_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20220820203558-koeffizient_polynom_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" />
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(f = \sum_{i=0}^{n} r_i X^i \in R[X]\) ein <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a>.
+Dann sind \(r_i\) für \(i \in \{0,...,n\}\) die Koeffizienten von \(f\)
 </p>
 </div>
 </div>

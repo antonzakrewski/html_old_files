@@ -9,58 +9,76 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von einem Element erzeugte Untergruppe</h1>
-<div id="outline-container-org629d404" class="outline-2">
-<h2 id="org629d404"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orgdd7a8a9" class="outline-2">
+<h2 id="orgdd7a8a9"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_44c9cf95ae51c67c6677318de296bcb23189c799.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_44c9cf95ae51c67c6677318de296bcb23189c799.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" class="org-svg" />.
+Sei \((G, \cdot)\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(a \in G\).
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_db9db140d2e93d6ab4a2dfb038ab640417306c1e.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_db9db140d2e93d6ab4a2dfb038ab640417306c1e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H = \{a^{m} \vert m \in \mathbb{Z}\}
+\end{align*}
 <p>
-die von <img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_2a7771a109aeda8f2242ef1bb777f35ee0726ef1.svg" class="org-svg" /> erzeugte, <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a>
+die von \(m\) erzeugte, <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsche</a> <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orged3981e" class="outline-2">
-<h2 id="orged3981e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org45f9bfa" class="outline-2">
+<h2 id="org45f9bfa"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org87b0176" class="outline-3">
-<h3 id="org87b0176"><span class="section-number-3">2.1.</span> <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a>:</h3>
+<div id="outline-container-org5e96af9" class="outline-3">
+<h3 id="org5e96af9"><span class="section-number-3">2.1.</span> <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a>:</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_2f530a8372aebc343f1194708d17c2d999442fa2.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_2f530a8372aebc343f1194708d17c2d999442fa2.svg" class="org-svg" />, so gilt:
+Sei \(a^m,a^n \in H\), so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_e9a10ec24d4367cacff79562128ee21c17d76c1b.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_e9a10ec24d4367cacff79562128ee21c17d76c1b.svg" class="org-svg" />
-</span>
+\begin{align*}
+a^{m} \cdot a^{-n} =& a^{m - n} \in H
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgeeb075e" class="outline-3">
-<h3 id="orgeeb075e"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a></h3>
+<div id="outline-container-org4c20d2d" class="outline-3">
+<h3 id="org4c20d2d"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_43797ae7ce293c6e549b990d10c4340a10494da4.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_43797ae7ce293c6e549b990d10c4340a10494da4.svg" class="org-svg" />, so gilt
+Sei \(a^m, a^n \in H\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111090438-von_einem_element_erzeugte_gruppe_1d192d22c18d234bd63d7b91b8ddb75c66e30fba.svg" alt="20230111090438-von_einem_element_erzeugte_gruppe_1d192d22c18d234bd63d7b91b8ddb75c66e30fba.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a^m \cdot a^n =& a^{m + n} \\
+=& a^{n + m} \\
+=& a^n \cdot a^m
+\end{align*}
 </div>
 </div>
 </div>

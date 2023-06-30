@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Jordanschen Normalform für ein zerfallendes Polynom</h1>
-<div id="outline-container-orgc329ef1" class="outline-2">
-<h2 id="orgc329ef1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org935652b" class="outline-2">
+<h2 id="org935652b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_708e63875045d7d804d38a439434cb1c36bf6506.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_708e63875045d7d804d38a439434cb1c36bf6506.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>
-Falls das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a> <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_7822e589f04d0377fbbe3a5c27fb2c2f2a166c15.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_7822e589f04d0377fbbe3a5c27fb2c2f2a166c15.svg" class="org-svg" /> über <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> <a href="20221229010309-zerfallen_eines_polynoms.html#ID-8e83cdb4-e8e8-465c-806e-0960939bd509">zerfällt</a>, so existiert eine <a href="20230616-jordan_normalform.html#ID-11cb2029-895b-4516-a321-37d302675feb">Jordan-Normalform</a> <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_810c71627aa476b6a534101ddf7cc34912e24733.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_810c71627aa476b6a534101ddf7cc34912e24733.svg" class="org-svg" /> mit
+Sei \(V \simeq K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) und \(A \in V\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>
+Falls das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a> \(\chi_A(x)\) über \(K\) <a href="20221229010309-zerfallen_eines_polynoms.html#ID-8e83cdb4-e8e8-465c-806e-0960939bd509">zerfällt</a>, so existiert eine <a href="20230616-jordan_normalform.html#ID-11cb2029-895b-4516-a321-37d302675feb">Jordan-Normalform</a> \(J\) mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_f897f44a5cae194b8dcc8f6eeda03081aa70c467.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_f897f44a5cae194b8dcc8f6eeda03081aa70c467.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+J \approx A
+\end{align*}
 <p>
 siehe: <a href="20230608-ahnliche_matrix.html#ID-44f6fd3c-ffcc-4518-a4f1-43a15eb783a2">konjugierte Matrix</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org2295606" class="outline-2">
-<h2 id="org2295606"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org97de79f" class="outline-2">
+<h2 id="org97de79f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_c16602800356671eac9e5ff21c04ba344f436b98.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_c16602800356671eac9e5ff21c04ba344f436b98.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_9ab6608340765c4500d27499984fd81eb5894ac4.svg" alt="20230616-existenz_einer_jordanschen_normalform_fur_ein_zerfallendes_polynom_9ab6608340765c4500d27499984fd81eb5894ac4.svg" class="org-svg" /> als 
+Sei \(\chi_A(x) = \prod_{i=1}^{n} c_i(x)\) mit \(c_i(x)\) als 
 </p>
 </div>
 </div>

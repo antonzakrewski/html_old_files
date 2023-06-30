@@ -9,62 +9,79 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Absolut-Betrag: Wertebereich</h1>
 
-<div id="outline-container-org0a588b8" class="outline-2">
-<h2 id="org0a588b8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6a67803" class="outline-2">
+<h2 id="org6a67803"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org0db7222" class="outline-3">
-<h3 id="org0db7222"><span class="section-number-3">1.1.</span> a)</h3>
+<div id="outline-container-orgf99e579" class="outline-3">
+<h3 id="orgf99e579"><span class="section-number-3">1.1.</span> a)</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105161001-absolut_betrag_wertebereich_809ef28e6ddda75360a6f69381b1519e2895124d.svg" alt="20220105161001-absolut_betrag_wertebereich_809ef28e6ddda75360a6f69381b1519e2895124d.svg" class="org-svg" />
-</span>
+\begin{align*}
+f:& x \mapsto \vert x \vert \\
+% f:& \mathbb{R} \rightarrow \mathbb{R}_{0}^+
+f:& \mathbb{R}\setminus\{0\} \rightarrow \mathbb{R}^+\setminus\{0\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd5358f8" class="outline-3">
-<h3 id="orgd5358f8"><span class="section-number-3">1.2.</span> b)</h3>
+<div id="outline-container-org011259a" class="outline-3">
+<h3 id="org011259a"><span class="section-number-3">1.2.</span> b)</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105161001-absolut_betrag_wertebereich_f9ff41d556cf2b16a53411f0d059f6b2eb80f197.svg" alt="20220105161001-absolut_betrag_wertebereich_f9ff41d556cf2b16a53411f0d059f6b2eb80f197.svg" class="org-svg" />
-</span>
+\begin{align*}
+f:& x \mapsto \vert x \vert \\
+f:& \{0\} \rightarrow \{0\}
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-org3b671a5" class="outline-2">
-<h2 id="org3b671a5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org32375b8" class="outline-2">
+<h2 id="org32375b8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgeccf73e" class="outline-3">
-<h3 id="orgeccf73e"><span class="section-number-3">2.1.</span> Lemma</h3>
+<div id="outline-container-org8ca871a" class="outline-3">
+<h3 id="org8ca871a"><span class="section-number-3">2.1.</span> Lemma</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105161001-absolut_betrag_wertebereich_f4d05fc5c706ae641d8d220cc6d64cb826178465.svg" alt="20220105161001-absolut_betrag_wertebereich_f4d05fc5c706ae641d8d220cc6d64cb826178465.svg" class="org-svg" />
-</span>
+\begin{align*}
+x \in \mathbb{R}\setminus\{0\} \Leftrightarrow& \vert x \vert > 0 \\
+\vert x \vert = 0 \Leftrightarrow& x = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga612255" class="outline-3">
-<h3 id="orga612255"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div id="outline-container-org1e2d997" class="outline-3">
+<h3 id="org1e2d997"><span class="section-number-3">2.2.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-2">
+\begin{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105161001-absolut_betrag_wertebereich_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" alt="20220105161001-absolut_betrag_wertebereich_914d5637e1360c32f5fa998a8aa61ce9aca37250.svg" class="org-svg" />
-</span>
-</div>
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>   
 </p>

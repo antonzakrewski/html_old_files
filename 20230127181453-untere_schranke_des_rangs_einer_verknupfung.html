@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">untere Schranke des Rangs einer Verknüpfung</h1>
-<div id="outline-container-org936f7b4" class="outline-2">
-<h2 id="org936f7b4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfdce974" class="outline-2">
+<h2 id="orgfdce974"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230127181453-untere_schranke_des_rangs_einer_verknupfung_e84202f9a95f52909282768df6011d187e082cb0.svg" alt="20230127181453-untere_schranke_des_rangs_einer_verknupfung_e84202f9a95f52909282768df6011d187e082cb0.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20230127181453-untere_schranke_des_rangs_einer_verknupfung_0c8f49f280aec6663fdfe9949ddd1459a0a86b4c.svg" alt="20230127181453-untere_schranke_des_rangs_einer_verknupfung_0c8f49f280aec6663fdfe9949ddd1459a0a86b4c.svg" class="org-svg" /> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> mit <img src="file:///home/anton/html/ltximg/20230127181453-untere_schranke_des_rangs_einer_verknupfung_aa3057459e51f2caf76dcd4198089ff33694138c.svg" alt="20230127181453-untere_schranke_des_rangs_einer_verknupfung_aa3057459e51f2caf76dcd4198089ff33694138c.svg" class="org-svg" />, so folgt:
-<img src="file:///home/anton/html/ltximg/20230127181453-untere_schranke_des_rangs_einer_verknupfung_1eac51ffed3d67e13cbadda6431150143741e63d.svg" alt="20230127181453-untere_schranke_des_rangs_einer_verknupfung_1eac51ffed3d67e13cbadda6431150143741e63d.svg" class="org-svg" /> sind <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und es gilt:
+Seien \(U,V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(\phi: V \rightarrow W, \psi: U \rightarrow V\) <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> mit \(\mathrm{dim}_{K}(V) < \infty\), so folgt:
+\(\mathrm{rank}(\phi), \mathrm{rank}(\psi)\) sind <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> und es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127181453-untere_schranke_des_rangs_einer_verknupfung_9d89377ed05190dfa7db474c230ee719e2fd34c3.svg" alt="20230127181453-untere_schranke_des_rangs_einer_verknupfung_9d89377ed05190dfa7db474c230ee719e2fd34c3.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{rank}(\phi \circ \psi) \geq \mathrm{rank}(\phi) + \mathrm{rank}(\psi) - \mathrm{dim}_{K}(V)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org543029a" class="outline-2">
-<h2 id="org543029a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org22b53b5" class="outline-2">
+<h2 id="org22b53b5"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

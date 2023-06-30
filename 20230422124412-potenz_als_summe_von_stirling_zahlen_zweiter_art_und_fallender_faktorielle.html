@@ -9,70 +9,92 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Potenz als Summe von Stirling Zahlen zweiter Art und fallender Faktorielle</h1>
-<div id="outline-container-org7720135" class="outline-2">
-<h2 id="org7720135"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org679d47d" class="outline-2">
+<h2 id="org679d47d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" class="org-svg" />, so  gilt:
+Sei \(x \in \mathbb{R}\) und \(n \in \mathbb{N}_0\), so  gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_335cb608f7e575b6ae2e1e9362d30a7b439dc062.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_335cb608f7e575b6ae2e1e9362d30a7b439dc062.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^n = \sum_{k \in \mathbb{N}_0}^{} S_{n,k} x^{\underline{k}}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgab34548" class="outline-2">
-<h2 id="orgab34548"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0f6ddf7" class="outline-2">
+<h2 id="org0f6ddf7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> 
 </p>
 </div>
-<div id="outline-container-org970a294" class="outline-3">
-<h3 id="org970a294"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org964143b" class="outline-3">
+<h3 id="org964143b"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_ef100ee5cf79735900fc2a003fa3bfe682672290.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_ef100ee5cf79735900fc2a003fa3bfe682672290.svg" class="org-svg" />
-</span>
+\begin{align*}
+x^0 =& 1 \\
+\sum_{k \in \mathbb{N}_0}^{} S_{n,k} x^{\underline{k}} =& S_{0,0} x^{\underline{0}} \\
+=& 1 \cdot 1 \\
+=& 1
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgde7f15a" class="outline-3">
-<h3 id="orgde7f15a"><span class="section-number-3">2.2.</span> IS</h3>
+<div id="outline-container-orgca11ea6" class="outline-3">
+<h3 id="orgca11ea6"><span class="section-number-3">2.2.</span> IS</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_34eaae3ab556ad2e7f830578ebbbf7cf1e903221.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_34eaae3ab556ad2e7f830578ebbbf7cf1e903221.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^n =& x \cdot x^{n-1} \\
+=& x \cdot \sum_{k \in \mathbb{N}_0 } S_{n-1,k} x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0 } x \cdot  S_{n-1,k} x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0 } (x-k+k) \cdot  S_{n-p,k} x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0 } (x-k) \cdot  S_{n-1,k} x^{\underline{k}} + \sum_{k \in \mathbb{N}_0 } k \cdot  S_{n-1,k} x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0 } S_{n-1,k} x^{\underline{k+1}} + \sum_{k \in \mathbb{N}_0} k \cdot  S_{n-1,k} x^{\underline{k}}
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_f1d701da75be5e76cf801c75ed4242cbc155f7f9.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_f1d701da75be5e76cf801c75ed4242cbc155f7f9.svg" class="org-svg" /> gilt, folgt durch Indexverschiebung:
+Da \(S_{n-1,-1} = 0\) gilt, folgt durch Indexverschiebung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_47bd859547075eb25bfc76a771b47e258c0ad0ad.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_47bd859547075eb25bfc76a771b47e258c0ad0ad.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^n =& \sum_{k \in \mathbb{N}_0 } S_{n,k} \cdot x^{\underline{k+1}} + \sum_{k \in \mathbb{N}_0 } k \cdot  S_{n,k} \cdot x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0} S_{n-1,k} \cdot x^{\underline{k+1}} + \sum_{k \in \mathbb{N}_0 } k \cdot  S_{n-1,k} \cdot x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0} S_{n-1,k-1} \cdot x^{\underline{k}} + \sum_{k \in \mathbb{N}_0 } k \cdot  S_{n-1,k} \cdot x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0} \left(S_{n-1,k-1} + k \cdot S_{n-1,k} \right) x^{\underline{k}}
+\end{align*}
 <p>
-Nach der <a href="20230327224107-rekursionsformel_fur_die_stirling_zahl_zweiter_art.html#ID-340ea228-586f-404a-abfb-1b24189fa97d">Rekursionsformel für die Stirling Zahl zweiter Art</a> gilt <img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_b498cb9dde418f9af812e84da0fbebebff7d7a8d.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_b498cb9dde418f9af812e84da0fbebebff7d7a8d.svg" class="org-svg" />
+Nach der <a href="20230327224107-rekursionsformel_fur_die_stirling_zahl_zweiter_art.html#ID-340ea228-586f-404a-abfb-1b24189fa97d">Rekursionsformel für die Stirling Zahl zweiter Art</a> gilt \(S_{n-1,k-1} + k \cdot S_{n-1,k} = S_{n,k}\)
 Daraus folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_7a1b405d51588bd55f46acefed2c0b7f17dd091d.svg" alt="20230422124412-potenz_als_summe_von_stirling_zahlen_zweiter_art_und_fallender_faktorielle_7a1b405d51588bd55f46acefed2c0b7f17dd091d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x^n =& \sum_{k \in \mathbb{N}_0} \left(S_{n-1,k-1} + k \cdot S_{n-1,k} \right) x^{\underline{k}} \\
+=& \sum_{k \in \mathbb{N}_0 } S_{n,k} x^{\underline{k}}
+\end{align*}
 </div>
 </div>
 </div>

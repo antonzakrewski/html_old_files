@@ -9,37 +9,59 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit des Durchschnitts abgeschlossener, kompakter Mengen</h1>
-<div id="outline-container-org11a679e" class="outline-2">
-<h2 id="org11a679e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgdf47d22" class="outline-2">
+<h2 id="orgdf47d22"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakter</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(K_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakter</a>, <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_d2b23e12cfcd536704632631cd5a4c430465a65a.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_d2b23e12cfcd536704632631cd5a4c430465a65a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+K  \coloneqq \bigcap_{i \in I} K_i
+\end{align*}
 <p>
 ebenfalls <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org92d5304" class="outline-2">
-<h2 id="org92d5304"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org255e44f" class="outline-2">
+<h2 id="org255e44f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" />.
-Nach der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit des Durchschnitts abgeschlossener Mengen</a> ist <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und damit <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_88c0056a5c19f7cc9a382623267c68d55c650849.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_88c0056a5c19f7cc9a382623267c68d55c650849.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Somit ist <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_7b628c17060afee674da31a1eb5740d99bbaf4b7.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_7b628c17060afee674da31a1eb5740d99bbaf4b7.svg" class="org-svg" /> eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von einem belieben <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" class="org-svg" />.
-Da <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_170f73f6e99c936eee3d1622c4f082c93de6e403.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a> ist, existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_45fdd352e6192ca10d6d06ef39b31b9e382971ec.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_45fdd352e6192ca10d6d06ef39b31b9e382971ec.svg" class="org-svg" />.
-Damit folgt, dass <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_f7802e48bd207852493acfe623bd09b33aa57ba7.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_f7802e48bd207852493acfe623bd09b33aa57ba7.svg" class="org-svg" /> eine endliche Teilüberdeckung von <img src="file:///home/anton/html/ltximg/20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230513211428-kompaktheit_vom_durchschnitt_abgeschlossener_kompakter_mengen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ist.
+Sei \(O_i\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von \(K\).
+Nach der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit des Durchschnitts abgeschlossener Mengen</a> ist \(K\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und damit \(O  \coloneqq X \setminus K\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Somit ist \(O_i \cup O\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von einem belieben \(K_i\).
+Da \(K_i\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a> ist, existiert eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a> \(O_i' \cup O\).
+Damit folgt, dass \(O_i'\) eine endliche Teilüberdeckung von \(K\) ist.
 </p>
 </div>
 </div>

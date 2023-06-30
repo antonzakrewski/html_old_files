@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Inverse map</h1>
-<div id="outline-container-org5a378f6" class="outline-2">
-<h2 id="org5a378f6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2f02dd8" class="outline-2">
+<h2 id="org2f02dd8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220927213528-umkehrabbildung_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" alt="20220927213528-umkehrabbildung_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" class="org-svg" /> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und <img src="file:///home/anton/html/ltximg/20220927213528-umkehrabbildung_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" alt="20220927213528-umkehrabbildung_5f12a48daf8292da223a5d69b35a785dca7c37cd.svg" class="org-svg" /> eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> (vgl: <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Invertierbarkeit bijektiver Abbildungen</a>)
-Dann ist die Umkehrabbildung <img src="file:///home/anton/html/ltximg/20220927213528-umkehrabbildung_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" alt="20220927213528-umkehrabbildung_1d9c8ccbe2151ae1337e8fa9cf016920632bd943.svg" class="org-svg" /> folgendermaßen definiert, sodass gilt:
+Seien \(A,B\) <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> und \(f: A \rightarrow B\) eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> (vgl: <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Invertierbarkeit bijektiver Abbildungen</a>)
+Dann ist die Umkehrabbildung \(f^{-1}: B \rightarrow A\) folgendermaßen definiert, sodass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220927213528-umkehrabbildung_2d8e3f4bf89429a84dc500ac5eca1192d9bab5d8.svg" alt="20220927213528-umkehrabbildung_2d8e3f4bf89429a84dc500ac5eca1192d9bab5d8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1} \circ f = id_{A} \\
+f \circ f^{-1} = id_{B} \\
+\end{align*}
 <p>
 siehe: <a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">Komposition von Abbildungen</a> und  
 </p>

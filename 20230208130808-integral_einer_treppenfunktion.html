@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Integral einer Treppenfunktion</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Integral einer Treppenfunktion</h1>
-<div id="outline-container-org660834b" class="outline-2">
-<h2 id="org660834b"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0542803" class="outline-2">
+<h2 id="org0542803"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230208130808-integral_einer_treppenfunktion_e7dd865afcc316e1d13e756bc55aa6c3c053d4e5.svg" alt="20230208130808-integral_einer_treppenfunktion_e7dd865afcc316e1d13e756bc55aa6c3c053d4e5.svg" class="org-svg" /> eine <a href="20220819232744-treppenfunktion.html#ID-44a46263-b27e-4186-86da-d7a82b58b01b">Treppenfunktion</a> mit dem Wert <img src="ltximg/20230208130808-integral_einer_treppenfunktion_7c11e2bbdab20457aa3c4a13b8929f2e77152663.svg" alt="20230208130808-integral_einer_treppenfunktion_7c11e2bbdab20457aa3c4a13b8929f2e77152663.svg" class="org-svg" /> auf dem $i$-ten <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> mit Länge <img src="ltximg/20230208130808-integral_einer_treppenfunktion_16b2f482b545c37c7dd93a495ae9d910480cab46.svg" alt="20230208130808-integral_einer_treppenfunktion_16b2f482b545c37c7dd93a495ae9d910480cab46.svg" class="org-svg" />, so ist das <a href="20230208131201-riemannsche_integral.html#ID-4b3c65e0-5b1b-4cb0-b9bd-205a1080c794">Riemannsche Integral</a>  definiert als
+Sei \(\phi: [a,b] \rightarrow \mathbb{C}\) eine <a href="20220819232744-treppenfunktion.html#ID-44a46263-b27e-4186-86da-d7a82b58b01b">Treppenfunktion</a> mit dem Wert \(\alpha_i\) auf dem $i$-ten <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> mit Länge \(\Delta_i\), so ist das <a href="20230208131201-riemannsche_integral.html#ID-4b3c65e0-5b1b-4cb0-b9bd-205a1080c794">Riemannsche Integral</a>  definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230208130808-integral_einer_treppenfunktion_b7baf59ce2b328f6b730402f91921257ea458766.svg" alt="20230208130808-integral_einer_treppenfunktion_b7baf59ce2b328f6b730402f91921257ea458766.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\int_{a}^b \phi(x) \mathrm{d}x = \sum_{i=1}^{k} \alpha_i \Delta_i
+\end{align*}
 </div>
 </div>
 </div>

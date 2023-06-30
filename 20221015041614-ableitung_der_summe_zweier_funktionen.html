@@ -3,49 +3,66 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Summenregel</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summenregel</h1>
-<div id="outline-container-orgdee6c8c" class="outline-2">
-<h2 id="orgdee6c8c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2ec0374" class="outline-2">
+<h2 id="org2ec0374"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20221015041614-ableitung_der_summe_zweier_funktionen_9fff8cc0ef6e2fc982c44e1c4ec1d9b85e9ad3bc.svg" alt="20221015041614-ableitung_der_summe_zweier_funktionen_9fff8cc0ef6e2fc982c44e1c4ec1d9b85e9ad3bc.svg" class="org-svg" /> ein <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit <img src="ltximg/20221015041614-ableitung_der_summe_zweier_funktionen_19811c52650342437cf46afd30f74aa7fbc636ac.svg" alt="20221015041614-ableitung_der_summe_zweier_funktionen_19811c52650342437cf46afd30f74aa7fbc636ac.svg" class="org-svg" /> 
+Seien \(f,g: D \rightarrow \mathbb{C}\) ein <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> mit \(D \subseteq \mathbb{C}\) 
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015041614-ableitung_der_summe_zweier_funktionen_a5668a518717cfd0f0f185f8f6b829a1b7a65a20.svg" alt="20221015041614-ableitung_der_summe_zweier_funktionen_a5668a518717cfd0f0f185f8f6b829a1b7a65a20.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(g(x) + f(x))' =& g'(x) f'(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgaece17b" class="outline-2">
-<h2 id="orgaece17b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgec63645" class="outline-2">
+<h2 id="orgec63645"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aus der Definition der <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221015041614-ableitung_der_summe_zweier_funktionen_00f1e8a1596ec172ac0d1e1206de35294076f61a.svg" alt="20221015041614-ableitung_der_summe_zweier_funktionen_00f1e8a1596ec172ac0d1e1206de35294076f61a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(g(x) + f(x))' =& \lim_{\delta \to 0}\left(\frac{g(x+\delta) + f(x + \delta) - g(x) - f(x)}{\delta}\right) \\
+=& \lim_{\delta \to 0}\left(\frac{f(x + \delta) - f(x)}{\delta}\right) + \lim_{\delta \to 0}\left(\frac{g(x + \delta) - g(x)}{\delta}\right) \\
+=& g'(x) \cdot f'(x)
+\end{align*}
 </div>
 </div>
 </div>

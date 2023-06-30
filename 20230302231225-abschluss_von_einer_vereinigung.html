@@ -3,97 +3,95 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Abschluss von einer endlichen Vereinigung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss von einer endlichen Vereinigung</h1>
-<div id="outline-container-orgc6c2773" class="outline-2">
-<h2 id="orgc6c2773"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb15919b" class="outline-2">
+<h2 id="orgb15919b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230302231225-abschluss_von_einer_vereinigung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_c6d71d69713aacde1b23070897c55b5bc4c72f48.svg" alt="20230302231225-abschluss_von_einer_vereinigung_c6d71d69713aacde1b23070897c55b5bc4c72f48.svg" class="org-svg" /> für <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230302231225-abschluss_von_einer_vereinigung_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" />, so folgt für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>:
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(O_i \subseteq X\) für \(i \in \{1,...,n\}\), so folgt für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_c16bc12f2450db3c2509521f612c171ad061e028.svg" alt="20230302231225-abschluss_von_einer_vereinigung_c16bc12f2450db3c2509521f612c171ad061e028.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\overline{\bigcup_{i = 1}^n O_i} = \bigcup_{i = 1}^n \overline{O_i}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org630902d" class="outline-2">
-<h2 id="org630902d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbc5f5fd" class="outline-2">
+<h2 id="orgbc5f5fd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_4de0fea77255be1420eb72ed6952b79b6f53c078.svg" alt="20230302231225-abschluss_von_einer_vereinigung_4de0fea77255be1420eb72ed6952b79b6f53c078.svg" class="org-svg" />, der allgemeine fall folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> 
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(i =2\), der allgemeine fall folgt durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Induktion</a> 
 </p>
 </div>
-<div id="outline-container-org5063d02" class="outline-3">
-<h3 id="org5063d02"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org0f799ca" class="outline-3">
+<h3 id="org0f799ca"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_c9a27ae5dc58854622b22c12e312ab814fef0ab8.svg" alt="20230302231225-abschluss_von_einer_vereinigung_c9a27ae5dc58854622b22c12e312ab814fef0ab8.svg" class="org-svg" />.
-Da <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_fc850a2af34d2b23b8246fe3b462f8038b05400d.svg" alt="20230302231225-abschluss_von_einer_vereinigung_fc850a2af34d2b23b8246fe3b462f8038b05400d.svg" class="org-svg" /> die <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">kleinste abgeschlossene Menge</a> Menge, die <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230302231225-abschluss_von_einer_vereinigung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> enthält ist, und <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_a5d67f6467d701f654e3b52b3ccc105913fa0157.svg" alt="20230302231225-abschluss_von_einer_vereinigung_a5d67f6467d701f654e3b52b3ccc105913fa0157.svg" class="org-svg" /> als <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, folgt:
+Es gilt \(A \subseteq A \cup B \subseteq \overline{A \cup B}\).
+Da \(\overline{A}\) die <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">kleinste abgeschlossene Menge</a> Menge, die \(A\) enthält ist, und \(\overline{A \cup B}\) als <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist, folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_59964a2218318e74c03984d0dcadb9a3544d4130.svg" alt="20230302231225-abschluss_von_einer_vereinigung_59964a2218318e74c03984d0dcadb9a3544d4130.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\overline{A} \subseteq \overline{A \cup B}
+\end{align*}
 <p>
-Analog auch für <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" alt="20230302231225-abschluss_von_einer_vereinigung_133ce7436294b7beccc5c3dd82f66c2d14269a5e.svg" class="org-svg" />, d.h. es folgt:
+Analog auch für \(B\), d.h. es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_6f95bb8b71f86be51ec54d2a04fdc65c97a663af.svg" alt="20230302231225-abschluss_von_einer_vereinigung_6f95bb8b71f86be51ec54d2a04fdc65c97a663af.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
+\begin{align*}
+\overline{A} \cup \overline{B} \subseteq \overline{A \cup B}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org58c5689" class="outline-3">
-<h3 id="org58c5689"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orga818cd6" class="outline-3">
+<h3 id="orga818cd6"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_bade6114c8c45c77c8eb7605a26a583901edb481.svg" alt="20230302231225-abschluss_von_einer_vereinigung_bade6114c8c45c77c8eb7605a26a583901edb481.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+A \subseteq \overline{A}, B \subseteq \overline{B}
+\end{align*}
 <p>
-Nach der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> ist <img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_fc38d57c9b0828db9e7b80ec4d8033ca525c2448.svg" alt="20230302231225-abschluss_von_einer_vereinigung_fc38d57c9b0828db9e7b80ec4d8033ca525c2448.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und es folgt aus dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a>:
+Nach der <a href="20230111173849-endliche_vereinigung_von_abgeschlossenen_mengen.html#ID-283187fc-bdcf-4a0c-80e6-d97d46c3716a">Abgeschlossenheit endlicher Vereinigung von abgeschlossenen Mengen</a> ist \(\overline{A} \cup \overline{B}\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und es folgt aus dem <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230302231225-abschluss_von_einer_vereinigung_2f270fbbfc478b547a23a32882086620a2dd404d.svg" alt="20230302231225-abschluss_von_einer_vereinigung_2f270fbbfc478b547a23a32882086620a2dd404d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\overline{A \cup B} \subseteq& \overline{\overline{A} \cup \overline{B}} \\
+\overline{A \cup B} \subseteq& \overline{A} \cup \overline{B} \\
+\end{align*}
 </div>
 </div>
 </div>

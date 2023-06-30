@@ -3,62 +3,78 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>particular point topology</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">particular point topology</h1>
-<div id="outline-container-org8205295" class="outline-2">
-<h2 id="org8205295"><span class="section-number-2">1.</span> Definition / Proposition</h2>
+<div id="outline-container-orga977dd5" class="outline-2">
+<h2 id="orga977dd5"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230331231623-particular_point_topology_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" alt="20230331231623-particular_point_topology_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" class="org-svg" /> be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and <img src="ltximg/20230331231623-particular_point_topology_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" alt="20230331231623-particular_point_topology_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" class="org-svg" />.
-The particular point topology <img src="ltximg/20230331231623-particular_point_topology_1a85b724fb6db084ef2e26ccbc4e5b92ebcea630.svg" alt="20230331231623-particular_point_topology_1a85b724fb6db084ef2e26ccbc4e5b92ebcea630.svg" class="org-svg" /> on <img src="ltximg/20230331231623-particular_point_topology_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" alt="20230331231623-particular_point_topology_0e350759f82a46607857b5d7c1b2e8a4527fafbe.svg" class="org-svg" /> is defined by:
+Let \(X\) be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a> and \(x_0 \in X\).
+The particular point topology \({PPX}_{x_0}\) on \(X\) is defined by:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230331231623-particular_point_topology_80dc56dfdf92e9838007244dd15ce637939c0f1c.svg" alt="20230331231623-particular_point_topology_80dc56dfdf92e9838007244dd15ce637939c0f1c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+{PPX}_{x_0} := \{O \subseteq X \vert x_0 \in O \lor O = \emptyset\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5908472" class="outline-2">
-<h2 id="org5908472"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org65f46b6" class="outline-2">
+<h2 id="org65f46b6"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbd0ffae" class="outline-3">
-<h3 id="orgbd0ffae"><span class="section-number-3">2.1.</span> a) <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
+<div id="outline-container-org3a6e679" class="outline-3">
+<h3 id="org3a6e679"><span class="section-number-3">2.1.</span> a) <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-By construction <img src="ltximg/20230331231623-particular_point_topology_8c0cc6ea237231fa5c6b11bef8ed7f0446c9a919.svg" alt="20230331231623-particular_point_topology_8c0cc6ea237231fa5c6b11bef8ed7f0446c9a919.svg" class="org-svg" /> and <img src="ltximg/20230331231623-particular_point_topology_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" alt="20230331231623-particular_point_topology_b877e925df94bbc3fc5040d4e756d1f98215d179.svg" class="org-svg" /> and therefore <img src="ltximg/20230331231623-particular_point_topology_7ee76903029661bc9d7c2b002b3055ed0913ce4a.svg" alt="20230331231623-particular_point_topology_7ee76903029661bc9d7c2b002b3055ed0913ce4a.svg" class="org-svg" />
+By construction \(\emptyset \in {PPX}_{x_0}\) and \(x_0 \in X\) and therefore \(X \in {PPX}_{x_0}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org707c42d" class="outline-3">
-<h3 id="org707c42d"><span class="section-number-3">2.2.</span> b) <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a> / <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Openness of a union of open sets</a></h3>
+<div id="outline-container-org428a451" class="outline-3">
+<h3 id="org428a451"><span class="section-number-3">2.2.</span> b) <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a> / <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Openness of a union of open sets</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Let <img src="ltximg/20230331231623-particular_point_topology_7659ec9af5895b99c2fb1c031cdf0d41a51fe3c0.svg" alt="20230331231623-particular_point_topology_7659ec9af5895b99c2fb1c031cdf0d41a51fe3c0.svg" class="org-svg" /> be collection of <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> with <img src="ltximg/20230331231623-particular_point_topology_34fb11b77ef0e8a6798df728b2d70b0b02cb48c4.svg" alt="20230331231623-particular_point_topology_34fb11b77ef0e8a6798df728b2d70b0b02cb48c4.svg" class="org-svg" />, then <img src="ltximg/20230331231623-particular_point_topology_0e5bb3b7c39bbdaa7dd461a729db1611ec0b15d7.svg" alt="20230331231623-particular_point_topology_0e5bb3b7c39bbdaa7dd461a729db1611ec0b15d7.svg" class="org-svg" />.
+Let \(O_i\) be collection of <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> with \(O_i \neq X\), then \(\forall i \in I : x_0 \not\in O_i\).
 Therefore we can conclude:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230331231623-particular_point_topology_25dd3bde8a088b5f53384c510151434ffb157bfc.svg" alt="20230331231623-particular_point_topology_25dd3bde8a088b5f53384c510151434ffb157bfc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+p \not\in& \bigcap_{i \in I} O_i \Rightarrow \bigcap_{i \in I} O_i \in {PPX}_{x_0}\\
+p \not\in& \bigcup_{i \in I} O_i \Rightarrow \bigcup_{i \in I} O_i \in {PPX}_{x_0}
+\end{align*}
 </div>
 </div>
 </div>

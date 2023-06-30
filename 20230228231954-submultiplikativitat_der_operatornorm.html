@@ -9,35 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Submultiplikativität der Operatornorm</h1>
-<div id="outline-container-org995ae99" class="outline-2">
-<h2 id="org995ae99"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7243c09" class="outline-2">
+<h2 id="org7243c09"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die <a href="20230228183044-operatornorm_als_echte_norm.html#ID-ee5d7893-af98-4807-8118-00bde790b509">Operatornorm</a> zweier <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Räume</a> <img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_94aff7afc8190444ec95a0d4c7b97ce0ac7dc1d2.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_94aff7afc8190444ec95a0d4c7b97ce0ac7dc1d2.svg" class="org-svg" /> ist <a href="20230228232010-submultiplikativitat.html#ID-5b8a1359-1ef6-4bf4-9825-37218f84865d">submultiplikativität</a> 
+Die <a href="20230228183044-operatornorm_als_echte_norm.html#ID-ee5d7893-af98-4807-8118-00bde790b509">Operatornorm</a> zweier <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Räume</a> \((V, \| \cdot \|_V), (W, \| \cdot \|_W)\) ist <a href="20230228232010-submultiplikativitat.html#ID-5b8a1359-1ef6-4bf4-9825-37218f84865d">submultiplikativität</a> 
 TODO: alllgemein
 </p>
 </div>
 </div>
-<div id="outline-container-org76804ce" class="outline-2">
-<h2 id="org76804ce"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2cdeb6f" class="outline-2">
+<h2 id="org2cdeb6f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_d1ad844a8731cebac85b24455dc38b7682f9517b.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_d1ad844a8731cebac85b24455dc38b7682f9517b.svg" class="org-svg" />.
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_6a70742f95cd2c55c23782218944ec30d873e216.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_6a70742f95cd2c55c23782218944ec30d873e216.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_3431768a356564fc18f51740d42e50414f15e57e.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_3431768a356564fc18f51740d42e50414f15e57e.svg" class="org-svg" />, da <img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_5fc30b86a163e7a7d271fbac4b5ab913304998d2.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_5fc30b86a163e7a7d271fbac4b5ab913304998d2.svg" class="org-svg" /> gilt, so folgt:
+Seien \(X,Y \in \mathrm{Hom}_{\mathbb{R}}(V,W)\).
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(X,Y \neq 0\) und \(Yv \neq 0\), da \(Y \neq 0\) gilt, so folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230228231954-submultiplikativitat_der_operatornorm_4dab9f9f383f53feea2d88ff51416c0aa16407d9.svg" alt="20230228231954-submultiplikativitat_der_operatornorm_4dab9f9f383f53feea2d88ff51416c0aa16407d9.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\| X \circ Y \|_{\mathrm{op}} =& \sup_{v \in V \setminus \{0\}} \frac{\| X Y v \|}{\| v\|} \\
+=& \sup_{v \in V \setminus \{0\}, Yv \neq 0} \frac{\| X Y v \|}{\| Yv\|} \cdot \frac{\| Y v \|}{\| \|} \\
+\leq& \sup_{v \in V \setminus \{0\}, Yv \neq 0} \frac{\| X Yv \|}{\| Yv \| } \cdot \sup_{v \in V \setminus \{0\}} \cdot \sup_{v \in V \setminus \{0\}} \frac{\| Yv \|}{\|v \|} \\
+=& \sup_{w \in V \setminus \{0\}} \frac{\| Xw \|}{\| w \| } \cdot \sup_{v \in V \setminus \{0\}} \cdot \sup_{v \in V \setminus \{0\}} \frac{\| Yv \|}{\|v \|} \\
+\leq& \| X \|_{\mathrm{op}} \cdot \| Y \|_{\mathrm{op}}
+\end{align*}
 </div>
 </div>
 </div>

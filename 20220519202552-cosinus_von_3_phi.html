@@ -9,30 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Cosinus von 3 phi</h1>
-<div id="outline-container-org376308b" class="outline-2">
-<h2 id="org376308b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org805b706" class="outline-2">
+<h2 id="org805b706"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220519202552-cosinus_von_3_phi_3151472f85cd93c01face6414f00821656b15d36.svg" alt="20220519202552-cosinus_von_3_phi_3151472f85cd93c01face6414f00821656b15d36.svg" class="org-svg" />
-</span>
+\begin{align*}
+\cos(3\phi) = 3\cos^3(\phi) - 3\sin^2(\phi)\cos(\phi)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgef7d8db" class="outline-2">
-<h2 id="orgef7d8db"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org768ad92" class="outline-2">
+<h2 id="org768ad92"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220519202552-cosinus_von_3_phi_ce4292801694f025b180abb8e6f86228f67934f6.svg" alt="20220519202552-cosinus_von_3_phi_ce4292801694f025b180abb8e6f86228f67934f6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\cos(3\phi) =& Re[\cos(3\phi) + i\sin(3\phi)] \\
+=& Re[e^{i3\phi}] \\
+=& Re[\left(\cos(\phi) + i\sin(\phi)\right)^3] \\
+=& Re[\cos^3(\phi) + 3i\cos^2(\phi) - 3\sin^2(\phi)\cos(\phi) - i\sin^3(\phi)] \\
+=& Re[\cos^3(\phi) - 3\sin^2(\phi)\cos(\phi) + i(3\cos^2(\phi)\sin(\phi) - \sin^3(\phi))] \\
+=& 3\cos^3(\phi) - 3\sin^2(\phi)\cos(\phi)
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,19 +9,41 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">leere Produkt</h1>
-<div id="outline-container-orged5e500" class="outline-2">
-<h2 id="orged5e500"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgced91eb" class="outline-2">
+<h2 id="orgced91eb"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220104204915-leere_produkt_cdef0e90349957f93e396b8f815b0de1b00d95c2.svg" alt="20220104204915-leere_produkt_cdef0e90349957f93e396b8f815b0de1b00d95c2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\prod_{k=m}^{m-1} a_k  \coloneqq 1
+\end{align*}
 <ul class="org-ul">
 <li>Definition als <a href="20210618085902-existenz_neutrales_element_multiplikation.html#ID-0c67b816-66e1-4378-92b3-9f528c5d45d7">Neutrales Element (Multiplikation)</a></li>
 </ul>

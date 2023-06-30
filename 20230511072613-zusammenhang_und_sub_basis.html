@@ -9,41 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang und Basis</h1>
-<div id="outline-container-org48cfb66" class="outline-2">
-<h2 id="org48cfb66"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1abe0ba" class="outline-2">
+<h2 id="org1abe0ba"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230511072613-zusammenhang_und_sub_basis_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 
 <ul class="org-ul">
-<li>für eine beliebige <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" alt="20230511072613-zusammenhang_und_sub_basis_041e69b5bb15eba06e00025a76783eeb4c3df709.svg" class="org-svg" /> existieren keine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_c81147d76720e839b40c2cc74cd624d0365d6927.svg" alt="20230511072613-zusammenhang_und_sub_basis_c81147d76720e839b40c2cc74cd624d0365d6927.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_b814df0fb8bb71b7a27b023d48f910264d37e299.svg" alt="20230511072613-zusammenhang_und_sub_basis_b814df0fb8bb71b7a27b023d48f910264d37e299.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230511072613-zusammenhang_und_sub_basis_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
+<li>für eine beliebige <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(\mathcal{B}\) existieren keine <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_i, O_i \in \mathcal{S}\) mit \(\bigcup O_i \sqcup \bigcup O_i' = X\)</li>
+<li>\(X\) ist <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängend</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9279bf4" class="outline-2">
-<h2 id="org9279bf4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org83f409e" class="outline-2">
+<h2 id="org83f409e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org86a0bca" class="outline-3">
-<h3 id="org86a0bca"><span class="section-number-3">2.1.</span> b)</h3>
+<div id="outline-container-org10e6546" class="outline-3">
+<h3 id="org10e6546"><span class="section-number-3">2.1.</span> b)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 angenommen doch, so wähle man diese Mengen und dann folgt, dass eine <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener</a> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleerer</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> existieren.
 </p>
 </div>
 </div>
-<div id="outline-container-org66442ee" class="outline-3">
-<h3 id="org66442ee"><span class="section-number-3">2.2.</span> c)</h3>
+<div id="outline-container-org67a63e3" class="outline-3">
+<h3 id="org67a63e3"><span class="section-number-3">2.2.</span> c)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Falls in ganz <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230511072613-zusammenhang_und_sub_basis_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> keine geeignete <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> existiert, so auch nicht in <img src="file:///home/anton/html/ltximg/20230511072613-zusammenhang_und_sub_basis_11ce121edbb97f650f31e336dbba5cc6547df04f.svg" alt="20230511072613-zusammenhang_und_sub_basis_11ce121edbb97f650f31e336dbba5cc6547df04f.svg" class="org-svg" />
+Falls in ganz \(\mathcal{T}\) keine geeignete <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigung</a> existiert, so auch nicht in \(\mathcal{S} \subseteq \mathcal{T}\)
 </p>
 </div>
 </div>

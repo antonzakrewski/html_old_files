@@ -9,15 +9,40 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Punktaddition auf elliptischen Kurven</h1>
-<div id="outline-container-orga20aecd" class="outline-2">
-<h2 id="orga20aecd"><span class="section-number-2">1.</span> informell</h2>
+<div id="outline-container-org431233e" class="outline-2">
+<h2 id="org431233e"><span class="section-number-2">1.</span> informell</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für zwei Punkte <img src="file:///home/anton/html/ltximg/20230428151520-punktaddition_auf_elliptischen_kurven_3b522946583f473841e947f19937979e8a67f064.svg" alt="20230428151520-punktaddition_auf_elliptischen_kurven_3b522946583f473841e947f19937979e8a67f064.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230428151520-punktaddition_auf_elliptischen_kurven_59bcf94789d4f5d4ba7fa7687afc3e0bcdd55364.svg" alt="20230428151520-punktaddition_auf_elliptischen_kurven_59bcf94789d4f5d4ba7fa7687afc3e0bcdd55364.svg" class="org-svg" /> auf elliptischen Kurven ist die Addition definiert als
+Für zwei Punkte \(P\), \(Q\) auf elliptischen Kurven ist die Addition definiert als
 </p>
 <ul class="org-ul">
 <li>verschidene punkte: gerade zwischen den beiden</li>
@@ -45,7 +70,7 @@ dabei ist die addition kommutativ
 
 
 <li>assoziativ</li>
-<li><img src="file:///home/anton/html/ltximg/20230428151520-punktaddition_auf_elliptischen_kurven_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" alt="20230428151520-punktaddition_auf_elliptischen_kurven_9f6dd0f7a148034e7d1732ed37aa0ba194f7cedc.svg" class="org-svg" /> als neutrale element</li>
+<li>\(\infty\) als neutrale element</li>
 <li>gespiegelter punkt ist das inverse element
 =&gt; abelsche gruppe</li>
 </ul>

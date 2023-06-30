@@ -9,50 +9,72 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hausdorff-Abstand als Pseudometrik</h1>
-<div id="outline-container-org26d753b" class="outline-2">
-<h2 id="org26d753b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0d6868e" class="outline-2">
+<h2 id="org0d6868e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230422122759-hausdorff_abstand_als_pseudometrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230422122759-hausdorff_abstand_als_pseudometrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
 Dann ist der Hausdorff-Abstand auf der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230314054402-kompakte_teilmenge.html#ID-5ebcbc0e-2392-4394-beb7-954b7e6d53da">kompakten Teilmenge</a> definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230422122759-hausdorff_abstand_als_pseudometrik_c0279ef49921ef5c57270e0bdae5e1c27e362561.svg" alt="20230422122759-hausdorff_abstand_als_pseudometrik_c0279ef49921ef5c57270e0bdae5e1c27e362561.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_H(A,B)  \coloneqq \inf \{r > 0 \vert A \subseteq B_{r}(B) \land B \subseteq B_{r}(A)\} \in [0,\infty]
+\end{align*}
 <p>
 eine <a href="20221115113143-pseudometrik.html#ID-85960f3d-c84e-4099-ab8f-f7ab99f228f5">Pseudometrik</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc0bf71b" class="outline-2">
-<h2 id="orgc0bf71b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8baa39f" class="outline-2">
+<h2 id="org8baa39f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf9d5175" class="outline-3">
-<h3 id="orgf9d5175"><span class="section-number-3">2.1.</span> <a href="20230224151242-nichtnegativitat_einer_metrik.html#ID-ab691ad2-60ab-4adf-944a-18f1da955cf8">Nichtnegativität einer Metrik</a></h3>
+<div id="outline-container-orgcec0db2" class="outline-3">
+<h3 id="orgcec0db2"><span class="section-number-3">2.1.</span> <a href="20230224151242-nichtnegativitat_einer_metrik.html#ID-ab691ad2-60ab-4adf-944a-18f1da955cf8">Nichtnegativität einer Metrik</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der Definition
 </p>
 </div>
 </div>
-<div id="outline-container-orgf964870" class="outline-3">
-<h3 id="orgf964870"><span class="section-number-3">2.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Semimetrik</a></h3>
+<div id="outline-container-org2fc1e31" class="outline-3">
+<h3 id="org2fc1e31"><span class="section-number-3">2.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Semimetrik</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-folgt aus der Definition (Kommutativität des <img src="file:///home/anton/html/ltximg/20230422122759-hausdorff_abstand_als_pseudometrik_3b2f8e48b3a111783e504702c48dc531c64b08f8.svg" alt="20230422122759-hausdorff_abstand_als_pseudometrik_3b2f8e48b3a111783e504702c48dc531c64b08f8.svg" class="org-svg" />
+folgt aus der Definition (Kommutativität des \(\land\)
 </p>
 </div>
 </div>
-<div id="outline-container-org17fa410" class="outline-3">
-<h3 id="org17fa410"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h3>
+<div id="outline-container-orga913354" class="outline-3">
+<h3 id="orga913354"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 ???

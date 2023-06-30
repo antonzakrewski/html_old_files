@@ -9,70 +9,90 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphie der Matrixen über einem Vektorraumprodukt mit dem Produkt der Matrizen</h1>
-<div id="outline-container-org5fdb578" class="outline-2">
-<h2 id="org5fdb578"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc69eb40" class="outline-2">
+<h2 id="orgc69eb40"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_8b3ad12cf5c79abda946db2ec16bbe4ecb0cabdc.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_8b3ad12cf5c79abda946db2ec16bbe4ecb0cabdc.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> 
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(V_1,V_2,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> 
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f496dbd95ba2e25c8614344ae72e4dbd2d86a43e.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f496dbd95ba2e25c8614344ae72e4dbd2d86a43e.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{Hom}_{K}(V_1 \times V_2, W) \simeq \mathrm{Hom}_{K}(V_1,W) \times \mathrm{Hom}_{K}(V_2,W)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc6df942" class="outline-2">
-<h2 id="orgc6df942"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9506e93" class="outline-2">
+<h2 id="org9506e93"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Der <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_9dfe1b901a663cccc890eb5224b148ef2d30a129.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_9dfe1b901a663cccc890eb5224b148ef2d30a129.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi: (V_1 \times V_2 \rightarrow W) \rightarrow (V_1 \rightarrow W) \times (V_2 \rightarrow W) \\
+f(v_1,v_2) \mapsto f(v_1,0) \times f(0,v_2)
+\end{align*}
 <p>
 Es gilt:
-die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a>, da nach <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_d117e0abeac440db9ceacec4ec3ffe583bf5a3ef.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_d117e0abeac440db9ceacec4ec3ffe583bf5a3ef.svg" class="org-svg" /> ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> ist und damit auch <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_834f4f8cea947b86b9527c9eb454ca42f7ecf206.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_834f4f8cea947b86b9527c9eb454ca42f7ecf206.svg" class="org-svg" />
+die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a>, da nach \(f(v_1,v_2)\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> ist und damit auch \(f(v_1,0), f(0,v_2)\)
 </p>
 </div>
-<div id="outline-container-org2ac4638" class="outline-3">
-<h3 id="org2ac4638"><span class="section-number-3">2.1.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a></h3>
+<div id="outline-container-orgda5868b" class="outline-3">
+<h3 id="orgda5868b"><span class="section-number-3">2.1.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f96cf76927e48a01645d4e6c4d12b40a81f462bc.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_8d06029f2d0284d73ee7ebe119c1c68544bf8090.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_8d06029f2d0284d73ee7ebe119c1c68544bf8090.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_bef54bc3528114d724fa708c2455efa2307d279e.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_bef54bc3528114d724fa708c2455efa2307d279e.svg" class="org-svg" /> 
+Seien \(\alpha \in K\) und \(f,f' \in \mathrm{Hom}_{K}(V_1 \times v_2, W)\) sowie \(v_1 \in V_1, v_2 \in V_2\) 
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_06d8c5e4d8f22db8f53228f7b61746f4e65bb591.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_06d8c5e4d8f22db8f53228f7b61746f4e65bb591.svg" class="org-svg" />
-</span>
+\begin{align*}
+\phi(f + \alpha f')(v_1,v_2) =& (f + \alpha f')(v_1,0) \times (f + \alpha f')(0,v_2)  \\
+=& f(v_1,0) + \alpha f'(v_1,0) \times f(0,v_2) + \alpha f'(0,v_2) \\
+=& f(v_1,0) \times f(0,v_2) + \alpha f'(v_1,0) \times \alpha f'(0,v_2)
+=& \phi(f)(v_1,v_2) + \phi(\alpha f')(v_1,v_2)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1c7aa1d" class="outline-3">
-<h3 id="org1c7aa1d"><span class="section-number-3">2.2.</span> <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a></h3>
+<div id="outline-container-org60b228a" class="outline-3">
+<h3 id="org60b228a"><span class="section-number-3">2.2.</span> <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 nach <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a> ist zu zeigen:
-Sei <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_11a6382d9723e9c118c4990f378561646a39e416.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_11a6382d9723e9c118c4990f378561646a39e416.svg" class="org-svg" />, so folgt <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" class="org-svg" />
-Angenommen <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" class="org-svg" />, so ex. <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_863edb257636393d38268eb1b6c6568506a29822.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_863edb257636393d38268eb1b6c6568506a29822.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f000b6ad1b3367b7e42279a1d9936c8dca7ea61e.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_f000b6ad1b3367b7e42279a1d9936c8dca7ea61e.svg" class="org-svg" />, insbesondere ist <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_3dff7385ac00836e0f02b733eec885d83bfa75a3.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_3dff7385ac00836e0f02b733eec885d83bfa75a3.svg" class="org-svg" />.
-Daraus folgt dann <img src="file:///home/anton/html/ltximg/20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_3dff7385ac00836e0f02b733eec885d83bfa75a3.svg" alt="20230210195212-isomorphie_der_matrixen_uber_einem_vektorraumprodukt_mit_dem_produkt_der_matrizen_3dff7385ac00836e0f02b733eec885d83bfa75a3.svg" class="org-svg" />, und damit &phi;(f) &ne; 0$
+Sei \(\phi(f) = 0\), so folgt \(f = 0\)
+Angenommen \(f \neq 0\), so ex. \(v_1,v_2\) mit \(f(v_1,v_2) = f(v_1,0) + f(0,v_2) \neq 0\), insbesondere ist <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f(v_1,0) \neq 0\).
+Daraus folgt dann \(f(v_1,0) \neq 0\), und damit &phi;(f) &ne; 0$
 </p>
 </div>
 </div>
-<div id="outline-container-orga801083" class="outline-3">
-<h3 id="orga801083"><span class="section-number-3">2.3.</span> <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a></h3>
+<div id="outline-container-orge6b7409" class="outline-3">
+<h3 id="orge6b7409"><span class="section-number-3">2.3.</span> <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Konstruktion eines objekts

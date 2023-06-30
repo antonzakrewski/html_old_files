@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">unbestimmte Integral</h1>
-<div id="outline-container-orgfd995a9" class="outline-2">
-<h2 id="orgfd995a9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2c6f588" class="outline-2">
+<h2 id="org2c6f588"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> der <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20230204194345-unbestimmte_integral_04d4946064be21097261823fe1152c47f12ace52.svg" alt="20230204194345-unbestimmte_integral_04d4946064be21097261823fe1152c47f12ace52.svg" class="org-svg" /> von der Form:
+Die <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilie</a> der <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(I \rightarrow \mathbb{C}\) von der Form:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204194345-unbestimmte_integral_45805da59e02dd04479c15f271d4c37eb47ac8b0.svg" alt="20230204194345-unbestimmte_integral_45805da59e02dd04479c15f271d4c37eb47ac8b0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \mapsto \mathrm{const} + \int_{x_0}^{x} f(u) \mathrm{d}u
+\end{align*}
 <p>
-heißt das unbestimmte Integral von <img src="file:///home/anton/html/ltximg/20230204194345-unbestimmte_integral_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230204194345-unbestimmte_integral_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" />
+heißt das unbestimmte Integral von \(f\)
 </p>
 </div>
 </div>

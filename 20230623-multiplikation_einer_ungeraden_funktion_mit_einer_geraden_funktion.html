@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation einer ungeraden Funktion mit einer geraden Funktion</h1>
-<div id="outline-container-orgeabdb9f" class="outline-2">
-<h2 id="orgeabdb9f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4d2df7b" class="outline-2">
+<h2 id="org4d2df7b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_7e26776421e330f8ead166180bbc4d55817cc44b.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_7e26776421e330f8ead166180bbc4d55817cc44b.svg" class="org-svg" /> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, wobei <img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_a0918ea03dc10a52b6ad72a4a50c1dd4f9ecc55f.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_a0918ea03dc10a52b6ad72a4a50c1dd4f9ecc55f.svg" class="org-svg" /> <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungerade</a> und <img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_4b6fc7795ad6141291fc8330aca8682e324ba072.svg" class="org-svg" /> <a href="20230623-gerade_funktion.html#ID-eb820242-182d-4642-92d1-bd0ed7ef0260">gerade</a>, dann ist
+Sei \(D \subseteq \mathbb{R}\) und \(u,g: D \rightarrow \mathbb{R}\) <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, wobei \(u\) <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungerade</a> und \(g\) <a href="20230623-gerade_funktion.html#ID-eb820242-182d-4642-92d1-bd0ed7ef0260">gerade</a>, dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_840e2ac3c22fbfba0b026ffb8cd4ef9e4a3599cd.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_840e2ac3c22fbfba0b026ffb8cd4ef9e4a3599cd.svg" class="org-svg" />
-</span>
+\begin{align*}
+f \cdot g: D \rightarrow& \mathbb{R} \\
+x \mapsto u(x) \cdot g(x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org14b22a8" class="outline-2">
-<h2 id="org14b22a8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org03810c9" class="outline-2">
+<h2 id="org03810c9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />, so gilt
+Sei \(x \in X\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_065585c875bb1af061683aa43315c939ab297db6.svg" alt="20230623-multiplikation_einer_ungeraden_funktion_mit_einer_geraden_funktion_065585c875bb1af061683aa43315c939ab297db6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(u \cdot g)(x) =& u(x) \cdot g(x) \\
+=& - u(-x) \cdot g(-x) \\
+=& - (u \cdot g)(-x)
+\end{align*}
 </div>
 </div>
 </div>

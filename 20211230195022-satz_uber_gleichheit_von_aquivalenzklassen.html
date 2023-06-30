@@ -9,111 +9,115 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Gleichheit von Äquivalenzklassen</h1>
-<div id="outline-container-org49d2c3f" class="outline-2">
-<h2 id="org49d2c3f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org482896a" class="outline-2">
+<h2 id="org482896a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_0c0e5d8881a565379fb7cd04c1cbe873980876fe.svg" class="org-svg" /> eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> über der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_69b38d53548f5a3b84216ba3d044ad120b9f15e3.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_69b38d53548f5a3b84216ba3d044ad120b9f15e3.svg" class="org-svg" />.
+Sei \(\sim\) eine <a href="20211227225754-aquivalenzrelation_mengenlehre.html#ID-bf83e0aa-4df1-48a5-b910-2837942bdd19">Äquivalenzrelation</a> über der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(M\) mit \(x,y \in M\).
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_159846a4566261165c8f24232259e2dacb63280d.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_159846a4566261165c8f24232259e2dacb63280d.svg" class="org-svg" />
-</span>
+\begin{align*}
+x \sim y \Leftrightarrow [x] = [y] \\
+\lnot (x \sim y) \Leftrightarrow [x] \cap [y] = \emptyset
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7b02af8" class="outline-2">
-<h2 id="org7b02af8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org73631b4" class="outline-2">
+<h2 id="org73631b4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org389490e" class="outline-3">
-<h3 id="org389490e"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_97f9cb2f61121fb920d22e8c0ee4b37b76cc0a75.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_97f9cb2f61121fb920d22e8c0ee4b37b76cc0a75.svg" class="org-svg" /></h3>
+<div id="outline-container-org418623f" class="outline-3">
+<h3 id="org418623f"><span class="section-number-3">2.1.</span> \((x \sim y)\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_1d4507864a5a78f484e0a17ecf858c2771bf12ad.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_1d4507864a5a78f484e0a17ecf858c2771bf12ad.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_2919709507090fee704bdcf2da81a3d14080a2f2.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_2919709507090fee704bdcf2da81a3d14080a2f2.svg" class="org-svg" />
+Sei \(z \in M\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  \(z \sim x\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_4af05100d27f93718ea650b9e561910e7bf3127c.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_4af05100d27f93718ea650b9e561910e7bf3127c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\Rightarrow z \in [x] \\
+x \sim y \Rightarrow z \sim y \\
+\Rightarrow z \in [y]
+\end{align*}
 <p>
 Damit gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_dab2d8f5d7f8a0d6540cd288cb1b6c3586f13c43.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_dab2d8f5d7f8a0d6540cd288cb1b6c3586f13c43.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall z \in [x] : (z \in [y])
+\end{align*}
 <p>
 d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_dec99ae7c32b66027d8f5f7dbc361f39bb6921a1.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_dec99ae7c32b66027d8f5f7dbc361f39bb6921a1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+[x] \subseteq [y]
+\end{align*}
 <p>
 Aufgrund <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_49d1bdc753ccd6a59296732123cb8832f3a25276.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_49d1bdc753ccd6a59296732123cb8832f3a25276.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+[y] \subseteq [x]
+\end{align*}
 <p>
 und somit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_6d14a8343c6a1b76c045701b5ee8d82e2e21dbe8.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_6d14a8343c6a1b76c045701b5ee8d82e2e21dbe8.svg" class="org-svg" />
-</span>
+\begin{align*}
+[x] = [y]
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org7a52be3" class="outline-3">
-<h3 id="org7a52be3"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_c65d0b025713acb34892fcd08208b21be8e4d0ce.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_c65d0b025713acb34892fcd08208b21be8e4d0ce.svg" class="org-svg" /></h3>
+<div id="outline-container-orgb80cd1a" class="outline-3">
+<h3 id="orgb80cd1a"><span class="section-number-3">2.2.</span> \(\lnot (x \sim y)\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>: Annahme es gäbe ein <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_5edf35a6c80b0e63992fb023942dd1fe7f2b4662.svg" class="org-svg" /> sodass <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_67ba5ccc42a25784d4d08100c51ec4831ebaef7b.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_67ba5ccc42a25784d4d08100c51ec4831ebaef7b.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_537dd4df3b046e57b81883334e19a2b01c3c128e.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_537dd4df3b046e57b81883334e19a2b01c3c128e.svg" class="org-svg" />
+<a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>: Annahme es gäbe ein \(z\) sodass \(z \in [x]\) und \(z \in [y]\)
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_d55eddb90fe0039663c357afad7943102d3b04ea.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_d55eddb90fe0039663c357afad7943102d3b04ea.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z \sim x \\
+z \sim y
+\end{align*}
 <p>
 Aufgrund der transitivität gilt somit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_59a3a2601567d5f164bd954b6071f6ff8d5e3688.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_59a3a2601567d5f164bd954b6071f6ff8d5e3688.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \sim y
+\end{align*}
 <p>
-Dies ist ein Widerspruch zur Annahme, <img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_c65d0b025713acb34892fcd08208b21be8e4d0ce.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_c65d0b025713acb34892fcd08208b21be8e4d0ce.svg" class="org-svg" />
+Dies ist ein Widerspruch zur Annahme, \(\lnot (x \sim y)\)
 Somit gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_96136473f8e18201be630b8306befc7ccd1b533b.svg" alt="20211230195022-satz_uber_gleichheit_von_aquivalenzklassen_96136473f8e18201be630b8306befc7ccd1b533b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lnot (\exists z (z \sim x \land z \sim y) \\
+\lnot (\exists z (z \in [x] \land z \in [y]) \\
+\Rightarrow [x] \cap [z] = \emptyset
+\end{align*}
 
 
 <p>

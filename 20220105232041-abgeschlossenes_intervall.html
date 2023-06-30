@@ -9,23 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abgeschlossenes Intervall</h1>
-<div id="outline-container-orgaa74ec7" class="outline-2">
-<h2 id="orgaa74ec7"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org0e5b010" class="outline-2">
+<h2 id="org0e5b010"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20220105232041-abgeschlossenes_intervall_0f87b7c67ce3719ebf4daf62858203e223c63b72.svg" alt="20220105232041-abgeschlossenes_intervall_0f87b7c67ce3719ebf4daf62858203e223c63b72.svg" class="org-svg" /> einer <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">total geordneten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Seien \(a,b \in M\) einer <a href="20221010083632-totalordnung.html#ID-30e940f3-5f30-43e3-acda-3066e8c7e2fd">total geordneten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
 Dann ist das abgeschlossene Intervall definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220105232041-abgeschlossenes_intervall_911fff5cc45c0ddc9cf5adaad5f06ba1d3dbc252.svg" alt="20220105232041-abgeschlossenes_intervall_911fff5cc45c0ddc9cf5adaad5f06ba1d3dbc252.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+[a,b]  \coloneqq 
+    \begin{cases}
+\{x \in \mathbb{R} : a \leq x \leq b\} & \mbox{if } a \leq b  \\
+\{x \in \mathbb{R} : b \leq x \leq a\} & \mbox{if } b \leq a  \\
+    \end{cases}
+\end{align*}
 <p>
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>

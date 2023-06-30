@@ -9,94 +9,104 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Euler-Mascheroni und Harmonische Zahl bzw. der Logarithmus</h1>
-<div id="outline-container-orgac48316" class="outline-2">
-<h2 id="orgac48316"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3053a8d" class="outline-2">
+<h2 id="org3053a8d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Für die <a href="20230327225748-harmonische_zahl.html#ID-a4bfe849-4829-48a0-a660-bcb7c06886f6">Harmonische Zahl der Ordnung 1</a> und den <a href="20220122081509-naturlicher_logarithmus.html#ID-8c4a1c82-dc2b-4368-8236-1cffdb6f6c06">natürlichen Logarithmus</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_e8c6bc928a1e3baf40331d35be32ce0e27bef0db.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_e8c6bc928a1e3baf40331d35be32ce0e27bef0db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left(H_n - \ln(n)\right) = \gamma
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_12140b437744c5f6743e244068d2d92b4b3a15b5.svg" class="org-svg" /> als <a href="20230428083216-euler_mascheroni_konstante.html#ID-5413acf2-40d6-4d73-9e6c-9fb2cbd9303a">Euler-Mascheroni-Konstante</a> 
+mit \(\gamma\) als <a href="20230428083216-euler_mascheroni_konstante.html#ID-5413acf2-40d6-4d73-9e6c-9fb2cbd9303a">Euler-Mascheroni-Konstante</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org53a13c0" class="outline-2">
-<h2 id="org53a13c0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9a9fddf" class="outline-2">
+<h2 id="org9a9fddf"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f8aa911f4382a50aec71f74089cd37f366b9cff7.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f8aa911f4382a50aec71f74089cd37f366b9cff7.svg" class="org-svg" /> gilt
+Für \(k \geq 2\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f7921c05b966c4e3ab49b85737243d645af31502.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f7921c05b966c4e3ab49b85737243d645af31502.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\ln(\frac{k}{k-1}) =& \ln((\frac{k-1}{k})^{-1}) \\
+=& - \ln(1 - \frac{1}{k})
+\end{align*}
 <p>
 Durch Entwicklung als <a href="20220302162755-taylorreihe.html#ID-a4e603aa-2ab3-42af-b185-e357439006bc">Taylorreihe</a> (mit welchem Entwicklungspunkt?) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f7e08b6f1f98894b1b9cd740403f5e64917ae5db.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_f7e08b6f1f98894b1b9cd740403f5e64917ae5db.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+- \ln(1 - \frac{1}{k}) =& \sum_{i=1}^{\infty} \frac{1}{i} k^{-i}
+\end{align*}
 <p>
 Damit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_1549091a6455d832224fe8ac95b9082168e9bf71.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_1549091a6455d832224fe8ac95b9082168e9bf71.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\ln(n) =& \ln(n) - \ln(1) \\
+=& \sum_{k=2}^{n} \ln(\frac{k}{k-1}) \\
+=& \sum_{k=2}^{n} \sum_{i=1}^{\infty} \frac{1}{i} k^i
+\end{align*}
 <p>
 Daraus folgt aus dem <a href="20221217011632-umordnungssatz.html#ID-1d55c766-d343-44d0-b98d-a6f8200083e2">Umordnungssatz</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_8439293e9d43c9351db7b50847103342a3688361.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_8439293e9d43c9351db7b50847103342a3688361.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+=& \sum_{k=2}^{n} \sum_{i=1}^{\infty} \frac{1}{i} k^{-1} \\
+=& \sum_{i=1}^{\infty} \frac{1}{i} \cdot \sum_{k=2}^{n} k^i \\
+=& \frac{1}{1} \cdot \sum_{k=2}^{n} k^i + \sum_{i=2}^{\infty} \frac{1}{i} \sum_{k=2}^{n} k^i
+=& H_{n} - 1 + \sum_{i=2}^{\infty} \frac{1}{i} ( H_n^{(i)} - 1) \\
+\end{align*} 
 <p>
 Somit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_5bf095e0781390c9d8112ed1e3cca9542e8325a1.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_5bf095e0781390c9d8112ed1e3cca9542e8325a1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\ln(n) =& H_n - 1 + \sum_{i=2}^{\infty} \frac{1}{i} (H_n^{(i)} - 1) \\
+H_n - \ln(n) =& 1 - \sum_{i=2}^{\infty} \frac{1}{i} (H_n^{(i)} - 1)
+\end{align*}
 <p>
-Dabei <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>  die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, da <img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ee07955be054b821a0bb3a6b465c9bd0ee20302c.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ee07955be054b821a0bb3a6b465c9bd0ee20302c.svg" class="org-svg" /> und ferner wegen der <a href="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus.html#ID-a446428b-6dc2-4976-95df-6ba716d430aa">Abschätzung der Harmonischen Zahl mit dem natürlichen Logarithmus</a> zusätzlich gilt:
+Dabei <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a>  die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, da \(\frac{1}{i} (H_n^{(i)} - 1) \geq 0\) und ferner wegen der <a href="20230425094105-abschatzung_der_harmonischen_zahl_mit_dem_naturlichen_logarithmus.html#ID-a446428b-6dc2-4976-95df-6ba716d430aa">Abschätzung der Harmonischen Zahl mit dem natürlichen Logarithmus</a> zusätzlich gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ace6e6b75988e3207875511d2df76b85c717f31f.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ace6e6b75988e3207875511d2df76b85c717f31f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+H_n - \ln(n) = 1 - \sum_{i=2}^{\infty} \frac{1}{i} (H_n^{(i)} - 1) \geq& 0 \\
+1 \geq& \sum_{i=2}^{\infty} \frac{1}{i} (H_n^{(i)} - 1)
+\end{align*}
 <p>
 d.h. es gilt die <a href="20221128181402-konvergenz_monotoner_beschrankter_folgen.html#ID-de93d9f0-978c-477a-8f79-25da8007a6aa">Konvergenz monotoner beschränkter Folgen</a>.
 Somit folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ff8f5eb27426d09959fa4b264c09d4f1938bfbb7.svg" alt="20230428083357-euler_mascheroni_und_harmonische_zahl_bzw_der_logarithmus_ff8f5eb27426d09959fa4b264c09d4f1938bfbb7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left( \sum_{i=2}^{\infty} \frac{1}{i} (H_n^{(i)} - 1) \right) =& \sum_{i=2}^{\infty} \frac{1}{i} \lim_{n \to \infty}\left(H_n^{(i)} - 1\right) \\
+=& \sum_{i=2}^{\infty} \frac{1}{i} \left(\mathcal{S}(i) - 1\right)
+\end{align*}
 </div>
 </div>
 </div>

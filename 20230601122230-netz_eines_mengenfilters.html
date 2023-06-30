@@ -9,29 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Netz eines Mengenfilters</h1>
-<div id="outline-container-org2b22a28" class="outline-2">
-<h2 id="org2b22a28"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orgd72e2af" class="outline-2">
+<h2 id="orgd72e2af"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230601122230-netz_eines_mengenfilters_3f8a47b2579f871e82f295eab03c65802105fb3d.svg" alt="20230601122230-netz_eines_mengenfilters_3f8a47b2579f871e82f295eab03c65802105fb3d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\Lambda_F = \{(F,x) \vert F \in \mathcal{F}, x \in F\}
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230601122230-netz_eines_mengenfilters_3899319daf77d9e6e49a447290f406f2902ef3f5.svg" alt="20230601122230-netz_eines_mengenfilters_3899319daf77d9e6e49a447290f406f2902ef3f5.svg" class="org-svg" />
+mit \((F_1,x_1) \leq (F_2, x_2) \Leftrightarrow F_1 \supseteq F_2\)
 und 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230601122230-netz_eines_mengenfilters_1fe639e5eda70d9f6e958de46bb7a54e9ba211b9.svg" alt="20230601122230-netz_eines_mengenfilters_1fe639e5eda70d9f6e958de46bb7a54e9ba211b9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+P: \Lambda_F \rightarrow& X \\
+(F,x) \mapsto& x
+\end{align*}
 </div>
 </div>
 </div>

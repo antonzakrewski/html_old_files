@@ -9,47 +9,71 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit und Existenz des ganzzahligen Anteiils einer reellen Zahl</h1>
-<div id="outline-container-orgb742c3c" class="outline-2">
-<h2 id="orgb742c3c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf46d729" class="outline-2">
+<h2 id="orgf46d729"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_cd841c1b4e41fb9783aaea7683581496039f375d.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_cd841c1b4e41fb9783aaea7683581496039f375d.svg" class="org-svg" />.
-Dann existiert ein eindeutiger <a href="20221103102733-ganzzahliger_anteil_einer_zahl.html#ID-8b0c7c5b-6674-4fe0-9317-956bcc4262a8">ganzzahliger Anteil</a>  <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_a50b985b5301157a5f174c5dfcfce0f1bf970435.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_a50b985b5301157a5f174c5dfcfce0f1bf970435.svg" class="org-svg" />
+Sei \(x \in \mathbb{R}\).
+Dann existiert ein eindeutiger <a href="20221103102733-ganzzahliger_anteil_einer_zahl.html#ID-8b0c7c5b-6674-4fe0-9317-956bcc4262a8">ganzzahliger Anteil</a>  \([x] \in \mathbb{Z}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge1767bc" class="outline-2">
-<h2 id="orge1767bc"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1696d78" class="outline-2">
+<h2 id="org1696d78"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgef0013d" class="outline-3">
-<h3 id="orgef0013d"><span class="section-number-3">2.1.</span> Eindeutigkeit</h3>
+<div id="outline-container-org7d132c3" class="outline-3">
+<h3 id="org7d132c3"><span class="section-number-3">2.1.</span> Eindeutigkeit</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Aus dem <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedischen Axiom</a> folgt, dass ein <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_ba7c391ce85f6f1304f4cbae236a8b0d9be9745c.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_ba7c391ce85f6f1304f4cbae236a8b0d9be9745c.svg" class="org-svg" /> existiert (vgl. Fallunterscheidung)
-Aus der <a href="20221103142030-wohlordnung_der_naturlichen_zahlen_unter_der_großer_kleiner_relation.html#ID-f078c173-7a20-4fc3-a0b7-34e255a5490e">Wohlordnung der natürlichen Zahlen unter der kleiner Relation</a> folgt, dass die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_7279f9d824cddb15eb63425746e64c7c2ea8c3d4.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_7279f9d824cddb15eb63425746e64c7c2ea8c3d4.svg" class="org-svg" /> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> ist und ein <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> enthält.
-Damit folgt <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_a5cd44669b9d8acd54307c6b84f39f2a248f828e.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_a5cd44669b9d8acd54307c6b84f39f2a248f828e.svg" class="org-svg" />, da sonst <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_55f81a507800f4d26193141c4caf6650467a397b.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_55f81a507800f4d26193141c4caf6650467a397b.svg" class="org-svg" /> das Minimum wäre.
-Desweiteren gilt <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_e4fe190e006818f554fa32bc9987e6dfe3461108.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_e4fe190e006818f554fa32bc9987e6dfe3461108.svg" class="org-svg" />
+Aus dem <a href="20220105155640-archimedische_axiom.html#ID-22fde0a3-2b66-4234-8ae3-18f6f23fe0fd">Archimedischen Axiom</a> folgt, dass ein \(-n < a < n\) existiert (vgl. Fallunterscheidung)
+Aus der <a href="20221103142030-wohlordnung_der_naturlichen_zahlen_unter_der_großer_kleiner_relation.html#ID-f078c173-7a20-4fc3-a0b7-34e255a5490e">Wohlordnung der natürlichen Zahlen unter der kleiner Relation</a> folgt, dass die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(\{n' \in \mathbb{N}_0 \vert n - n' \leq a \}\) <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> ist und ein <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> enthält.
+Damit folgt \(n - n' \leq a < n - (n' - 1)\), da sonst \((n' - 1)\) das Minimum wäre.
+Desweiteren gilt \(z  \coloneqq n - n' \in \mathbb{Z}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org30b89e1" class="outline-3">
-<h3 id="org30b89e1"><span class="section-number-3">2.2.</span> Existenz</h3>
+<div id="outline-container-org2451ccf" class="outline-3">
+<h3 id="org2451ccf"><span class="section-number-3">2.2.</span> Existenz</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Aus der <a href="20221103142030-wohlordnung_der_naturlichen_zahlen_unter_der_großer_kleiner_relation.html#ID-f078c173-7a20-4fc3-a0b7-34e255a5490e">Wohlordnung der natürlichen Zahlen unter der größer/kleiner Relation</a> folgt, 
-Für zwei verschiedene zahlen <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_5c813236c0a634abc4ae4a6dd15d8416c144ad48.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_5c813236c0a634abc4ae4a6dd15d8416c144ad48.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_27e46d4c60666d084e9ed0e1ffa83eae4814f148.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_27e46d4c60666d084e9ed0e1ffa83eae4814f148.svg" class="org-svg" /> gilt dann <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_37339b6d8b4f731afbeb666e33a51e5348a0a228.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_37339b6d8b4f731afbeb666e33a51e5348a0a228.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_84528fa75af373b9f652a68c958f59270f955505.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_84528fa75af373b9f652a68c958f59270f955505.svg" class="org-svg" /> und aufgrund der Diskretisierung durch <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_69bb46f4190660c1a27cc7b088dc66fddfc2edd5.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_69bb46f4190660c1a27cc7b088dc66fddfc2edd5.svg" class="org-svg" /> gilt, dass durch subtraktion mit <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" /> aus einem <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_97f1a9b3eae3ba4a4259134f399b658dac70e139.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_97f1a9b3eae3ba4a4259134f399b658dac70e139.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_930e27900b4aa1445c95b5154f49fc563cf56b9e.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_930e27900b4aa1445c95b5154f49fc563cf56b9e.svg" class="org-svg" /> wirdd
+Für zwei verschiedene zahlen \(z,z'\) mit \(z,z' \leq a < z + 1,z' +1\) gilt dann \(z' \leq a < z + 1\) und \(z \leq a < z' + 1\) und aufgrund der Diskretisierung durch \(\mathbb{Z}\) gilt, dass durch subtraktion mit \(1\) aus einem \(<\) ein \(\leq\) wirdd
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_95119ac8f4d5ffea7e398d18981c69b6fe03eb03.svg" alt="20221103141705-satz_uber_die_eindeutigkeit_und_existenz_des_ganzzahligen_anteiils_einer_reellen_zahl_95119ac8f4d5ffea7e398d18981c69b6fe03eb03.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z \leq& z' \\
+z' \leq& z \\
+\Rightarrow z =& z'
+\end{align*}
 </div>
 </div>
 </div>

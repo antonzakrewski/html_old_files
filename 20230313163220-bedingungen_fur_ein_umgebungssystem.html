@@ -9,68 +9,93 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bedingungen für ein Umgebungssystem</h1>
-<div id="outline-container-org81978f0" class="outline-2">
-<h2 id="org81978f0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgade5e83" class="outline-2">
+<h2 id="orgade5e83"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_6e8f3388625e6a4ea334274e0fc7d44ddce25107.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_6e8f3388625e6a4ea334274e0fc7d44ddce25107.svg" class="org-svg" /> ein <a href="20230222170555-umgebungssystem.html#ID-ee740e55-cc2b-4121-9acb-73fead769bb9">Umgebungssystem</a> von <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{U}(x)\) ein <a href="20230222170555-umgebungssystem.html#ID-ee740e55-cc2b-4121-9acb-73fead769bb9">Umgebungssystem</a> von \(x \in X\).
 Dann gilt:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_498a27cb6791366c1848abc1058907a36c7cab90.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_498a27cb6791366c1848abc1058907a36c7cab90.svg" class="org-svg" /></li>
-<li>Für <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_b3b30b4d2a639dc4ea29706b1aa404f29032fc4e.svg" class="org-svg" /></li>
+<li>\(\mathcal{U}(x) \neq \emptyset\)</li>
+<li>Für \(U \in \mathcal{U}(x)\) gilt \(x \in U\)</li>
 <li><a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter Durchschnitt</a></li>
-<li>Für <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_42c71bb9a3e746ac6f5ae44c6a978ec709e5218a.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_42c71bb9a3e746ac6f5ae44c6a978ec709e5218a.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_fbf29fb45d1dca4a4cf7067ec0de7804d8ed9272.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_fbf29fb45d1dca4a4cf7067ec0de7804d8ed9272.svg" class="org-svg" /></li>
-<li>Für <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> existiert ein <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_117325f9ea24669e94432f3b0dba13ea9313d273.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_117325f9ea24669e94432f3b0dba13ea9313d273.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Umgebung aller seiner Punkte</a> ist.</li>
+<li>Für \(U \in \mathcal{U}(x)\) und \(U \subseteq U'\) gilt \(U' \in \mathcal{U}(x)\)</li>
+<li>Für \(U \in \mathcal{U}(x)\) existiert ein \(V \in \mathcal{U}(x)\), so dass \(V\) <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Umgebung aller seiner Punkte</a> ist.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org5de819f" class="outline-2">
-<h2 id="org5de819f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcde8e1b" class="outline-2">
+<h2 id="orgcde8e1b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf42f7bc" class="outline-3">
-<h3 id="orgf42f7bc"><span class="section-number-3">2.1.</span> 1)</h3>
+<div id="outline-container-org6757dda" class="outline-3">
+<h3 id="org6757dda"><span class="section-number-3">2.1.</span> 1)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und damit auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+Nach Annahme ist \(X\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und damit auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\)
 </p>
 </div>
 </div>
-<div id="outline-container-org35fc855" class="outline-3">
-<h3 id="org35fc855"><span class="section-number-3">2.2.</span> 2)</h3>
+<div id="outline-container-orgb8fa8b5" class="outline-3">
+<h3 id="orgb8fa8b5"><span class="section-number-3">2.2.</span> 2)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Folgt nach Definition einer <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org8d92e04" class="outline-3">
-<h3 id="org8d92e04"><span class="section-number-3">2.3.</span> 3)</h3>
+<div id="outline-container-org92282e8" class="outline-3">
+<h3 id="org92282e8"><span class="section-number-3">2.3.</span> 3)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 siehe <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter Durchschnitt</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org33c46bc" class="outline-3">
-<h3 id="org33c46bc"><span class="section-number-3">2.4.</span> 4)</h3>
+<div id="outline-container-org792550b" class="outline-3">
+<h3 id="org792550b"><span class="section-number-3">2.4.</span> 4)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-Nach Annahme existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_6ce580c1f9ae566c3fd878b021bb9e3c4b3f8cad.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_6ce580c1f9ae566c3fd878b021bb9e3c4b3f8cad.svg" class="org-svg" />  mit <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_e12489c8838a95db3ec009871de1f6776850d311.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_e12489c8838a95db3ec009871de1f6776850d311.svg" class="org-svg" />.
-Daraus folgt insbesondere <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_a4fbb61411e959d16de00f79dcddc8b316c754b7.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_a4fbb61411e959d16de00f79dcddc8b316c754b7.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_fb90836c06e866cb305302a4c2af59d2096c1bf8.svg" class="org-svg" /> ist eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+Nach Annahme existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(O \subseteq U\)  mit \(x \in O\).
+Daraus folgt insbesondere \(O \subseteq U'\), d.h. \(U'\) ist eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2428329" class="outline-3">
-<h3 id="org2428329"><span class="section-number-3">2.5.</span> 5)</h3>
+<div id="outline-container-org4e6498a" class="outline-3">
+<h3 id="org4e6498a"><span class="section-number-3">2.5.</span> 5)</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
-Nach Annahme existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_82ec8be178b0f482f9324894efeb9c67ee55a4b1.svg" class="org-svg" /> und wegen <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> für <img src="file:///home/anton/html/ltximg/20230313163220-bedingungen_fur_ein_umgebungssystem_d8b2fa1609ac219dfb84a5a976966d75f7824dc9.svg" alt="20230313163220-bedingungen_fur_ein_umgebungssystem_d8b2fa1609ac219dfb84a5a976966d75f7824dc9.svg" class="org-svg" /> ist
+Nach Annahme existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(V \subseteq U\) und wegen <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">Offenheit und Umgebung aller Punkte</a> folgt, dass \(V\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> für \(y \in V\) ist
 </p>
 </div>
 </div>

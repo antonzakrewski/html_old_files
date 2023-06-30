@@ -9,37 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">small-o und Division</h1>
-<div id="outline-container-org8a2ad63" class="outline-2">
-<h2 id="org8a2ad63"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9ae8cb0" class="outline-2">
+<h2 id="org9ae8cb0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230507170845-small_o_und_bruch_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" alt="20230507170845-small_o_und_bruch_3d7a42bfea11edb3e15d3039cca2bf4d384651f2.svg" class="org-svg" /> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass gilt: <img src="file:///home/anton/html/ltximg/20230507170845-small_o_und_bruch_bc5f8642e90f0f6bbd0ab99b22a342c44eda697b.svg" alt="20230507170845-small_o_und_bruch_bc5f8642e90f0f6bbd0ab99b22a342c44eda697b.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230507170845-small_o_und_bruch_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" alt="20230507170845-small_o_und_bruch_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" class="org-svg" /> 
+Seien \(f,g\) <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass gilt: \(g = o(f)\) mit \(f \neq 0\) 
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507170845-small_o_und_bruch_02707497ef48b1c845887dc43cfb6e509a037a03.svg" alt="20230507170845-small_o_und_bruch_02707497ef48b1c845887dc43cfb6e509a037a03.svg" class="org-svg" />
-</span>
+\begin{align*}
+\frac{1}{f} = o(\frac{1}{g})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3e1bf1e" class="outline-2">
-<h2 id="org3e1bf1e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga9e78d6" class="outline-2">
+<h2 id="orga9e78d6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507170845-small_o_und_bruch_479449399489330fea9c0a825d0650a029507b23.svg" alt="20230507170845-small_o_und_bruch_479449399489330fea9c0a825d0650a029507b23.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n \to \infty}\left(\frac{g}{f}\right) =& \infty
+\Leftrightarrow \lim_{n \to \infty}\left(\frac{\frac{1}{f}}{\frac{1}{g}}\right) =& \infty
+\end{align*}
 </div>
 </div>
 </div>

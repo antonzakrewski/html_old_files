@@ -3,47 +3,68 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Proof by strong induction</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Proof by strong induction</h1>
-<div id="outline-container-org84f88a5" class="outline-2">
-<h2 id="org84f88a5"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-orgb3db74d" class="outline-2">
+<h2 id="orgb3db74d"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_0c5849aa3f85398cf1b21350bb2a19e432aacbab.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_0c5849aa3f85398cf1b21350bb2a19e432aacbab.svg" class="org-svg" /> für beliebiges <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" />  eine <a href="20220821085213-aussage.html#ID-372f5460-a89b-4876-9fbe-71865312af7d">Aussage</a> 
-Dann lässt sich durch folgende zwei Schritte die Gültigkeit der Aussage <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_0c5849aa3f85398cf1b21350bb2a19e432aacbab.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_0c5849aa3f85398cf1b21350bb2a19e432aacbab.svg" class="org-svg" /> für <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" /> mit <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_bf1e84db6e5fbd0ff691d8eb62f5871e78a6d36c.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_bf1e84db6e5fbd0ff691d8eb62f5871e78a6d36c.svg" class="org-svg" /> zeigen
+Sei \(A(n)\) für beliebiges \(n \in \mathbb{N}\)  eine <a href="20220821085213-aussage.html#ID-372f5460-a89b-4876-9fbe-71865312af7d">Aussage</a> 
+Dann lässt sich durch folgende zwei Schritte die Gültigkeit der Aussage \(A(n)\) für \(n \in \mathbb{N}\) mit \(n_0 \leq n\) zeigen
 </p>
 </div>
-<div id="outline-container-org7fd34bd" class="outline-3">
-<h3 id="org7fd34bd"><span class="section-number-3">1.1.</span> Induktionsanfang:</h3>
+<div id="outline-container-orgbcb9281" class="outline-3">
+<h3 id="orgbcb9281"><span class="section-number-3">1.1.</span> Induktionsanfang:</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-<img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_7454cf3c14f9f7389248fb1bd711ee9f8750a523.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_7454cf3c14f9f7389248fb1bd711ee9f8750a523.svg" class="org-svg" /> ist richtig (<img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_3cf5d54f4a7a17207bcc9f4b7a5320e9ef42d8c3.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_3cf5d54f4a7a17207bcc9f4b7a5320e9ef42d8c3.svg" class="org-svg" /> meist <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_4a328c598fc3bd3b1fc6c227d500bb9e56f23a7d.svg" class="org-svg" />)
+\(A(n_0)\) ist richtig (\(n_0\) meist \(0\))
 </p>
 </div>
 </div>
-<div id="outline-container-org052e4cd" class="outline-3">
-<h3 id="org052e4cd"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
+<div id="outline-container-org6eeaea5" class="outline-3">
+<h3 id="org6eeaea5"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
-Für <img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_5207d357080c440efc36fe0667caddc41f78f601.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_5207d357080c440efc36fe0667caddc41f78f601.svg" class="org-svg" /> gilt zu zeigen:
+Für \(n \geq n_0\) gilt zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_e57f4bc31c68094d8848c9c21e5a3ecf3078e3a4.svg" alt="20221024165350-beweis_durch_vollstandige_induktion_mit_starkerer_induktionsvoraussetzung_e57f4bc31c68094d8848c9c21e5a3ecf3078e3a4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\forall n \in \mathbb{N} (\forall n' \in \mathbb{N} (n' \leq n \Rightarrow A(n')) \Rightarrow (A(n) \Rightarrow A(n+1)))
+\end{align*}
 </div>
 </div>
 </div>

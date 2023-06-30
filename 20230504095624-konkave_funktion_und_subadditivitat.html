@@ -9,58 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konkave Funktion und Subadditivität</h1>
-<div id="outline-container-org5a8da03" class="outline-2">
-<h2 id="org5a8da03"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7973f4e" class="outline-2">
+<h2 id="org7973f4e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_3ee22170bf1e936991019f68fd5ec88b5bd092aa.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_3ee22170bf1e936991019f68fd5ec88b5bd092aa.svg" class="org-svg" /> eine <a href="20230421221512-konkave_funktion.html#ID-1e1a03bd-3601-4c61-a751-15efc282eeb8">konkave Funktion</a> mit <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" class="org-svg" />, so ist die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <a href="20221003154322-subadditive_funktion.html#ID-5e32f49f-afef-40c3-9428-997accb28c15">Subadditive Funktion</a>,
+Sei \(f: [0,\infty) \rightarrow \mathbb{R}_{0}^+\) eine <a href="20230421221512-konkave_funktion.html#ID-1e1a03bd-3601-4c61-a751-15efc282eeb8">konkave Funktion</a> mit \(f(0) = 0\), so ist die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <a href="20221003154322-subadditive_funktion.html#ID-5e32f49f-afef-40c3-9428-997accb28c15">Subadditive Funktion</a>,
 </p>
 </div>
 </div>
-<div id="outline-container-org44f9b39" class="outline-2">
-<h2 id="org44f9b39"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgff1199a" class="outline-2">
+<h2 id="orgff1199a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_1c4194ba9692233d8d024fae8a37facc28051e8d.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_1c4194ba9692233d8d024fae8a37facc28051e8d.svg" class="org-svg" /> mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_992b12624eea3e9998ec0c31710034de3208be89.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_992b12624eea3e9998ec0c31710034de3208be89.svg" class="org-svg" />.
-Für <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_9dad6be8b4f2b96f1cb7c760ffbeebba5d09d9dd.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_9dad6be8b4f2b96f1cb7c760ffbeebba5d09d9dd.svg" class="org-svg" /> folgt dann aus der <a href="20230421221439-jensensche_ungleichung_fur_eine_konkave_funktion.html#ID-bf973943-8b1d-4c07-bd41-39a58499a5d3">Jensensche Ungleichung für eine konkave Funktion</a> 
+Seien \(v,w \geq 0\) mit <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(v,w > 0\).
+Für \(t \in [0,1]\) folgt dann aus der <a href="20230421221439-jensensche_ungleichung_fur_eine_konkave_funktion.html#ID-bf973943-8b1d-4c07-bd41-39a58499a5d3">Jensensche Ungleichung für eine konkave Funktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_299e71c7f5d2cbeec7b869b3761f691005a56a73.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_299e71c7f5d2cbeec7b869b3761f691005a56a73.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+t(f(v + w) =& t(f(v + w) + (1 - t) f(0) \\
+\leq& f(t(v+ w) + (1 - t) \cdot 0) \\
+=& f(t(v + w))
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_e9e02ac9ce88affade86a2b602bc2d2c8aa7ccb0.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_e9e02ac9ce88affade86a2b602bc2d2c8aa7ccb0.svg" class="org-svg" />, so folgt
+Sei \(t = \frac{v}{v + w}\), so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_b4ecfddc6d0326700733b48c3c2f17fc10426554.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_b4ecfddc6d0326700733b48c3c2f17fc10426554.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{v}{v+w} f(v + w) \leq f(v)
+\end{align*}
 <p>
 analog auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_d098fc251f002211eee5b921a64210b1aa36883a.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_d098fc251f002211eee5b921a64210b1aa36883a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{w}{v+w} f(v+w) \leq f(w)
+\end{align*}
 <p>
 durhc Addition folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230504095624-konkave_funktion_und_subadditivitat_9e4cc4e4cc20d2009df3471ad640cfd1c76f302b.svg" alt="20230504095624-konkave_funktion_und_subadditivitat_9e4cc4e4cc20d2009df3471ad640cfd1c76f302b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(v + w) \leq f(v) + f(w)
+\end{align*}
 </div>
 </div>
 </div>

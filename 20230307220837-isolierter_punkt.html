@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">isolierter Punkt</h1>
-<div id="outline-container-org63e7df6" class="outline-2">
-<h2 id="org63e7df6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6c1af0d" class="outline-2">
+<h2 id="org6c1af0d"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230307220837-isolierter_punkt_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" alt="20230307220837-isolierter_punkt_20bf203ad63d7a32de6e3fd50ba3b26f567a254a.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-<img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_eb2a2ec0b3bd8198ebd45f4b73a54f1808bd3a8a.svg" alt="20230307220837-isolierter_punkt_eb2a2ec0b3bd8198ebd45f4b73a54f1808bd3a8a.svg" class="org-svg" /> ist ein isolierter Punkt der Menge <img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230307220837-isolierter_punkt_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" />, falls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230307220837-isolierter_punkt_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" /> existiert mit
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(M \subseteq X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+\(x \in M\) ist ein isolierter Punkt der Menge \(M\), falls eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{U}(x)\) existiert mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230307220837-isolierter_punkt_32f4de8e645e6e7047c7fa29d9ca46be345b64d4.svg" alt="20230307220837-isolierter_punkt_32f4de8e645e6e7047c7fa29d9ca46be345b64d4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+U \cap M = \{x\}
+\end{align*}
 </div>
 </div>
 </div>

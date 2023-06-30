@@ -9,111 +9,132 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Hausdorff-Abstand auf den abgeschlossenen, kompakten Mengen als Metrik</h1>
-<div id="outline-container-orgb4b1e3e" class="outline-2">
-<h2 id="orgb4b1e3e"><span class="section-number-2">1.</span> Satz / Definition</h2>
+<div id="outline-container-org4eb6427" class="outline-2">
+<h2 id="org4eb6427"><span class="section-number-2">1.</span> Satz / Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
 dann ist der Hausdorff-Abstand eine <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a> definiert auf der <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossenen</a>, <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakten</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_480a430a4f1432594ba9cc8d95338782325d61a1.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_480a430a4f1432594ba9cc8d95338782325d61a1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+d(A,B) = \mathrm{max}(\sup_{a \in A} \inf_{b \in B} d(a,b), \sup_{b \in B} \inf_{a \in A} d(a,b))
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc9fcdba" class="outline-2">
-<h2 id="orgc9fcdba"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8bbc89b" class="outline-2">
+<h2 id="org8bbc89b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3fe137e" class="outline-3">
-<h3 id="org3fe137e"><span class="section-number-3">2.1.</span> Welldefined</h3>
+<div id="outline-container-org9cf11ec" class="outline-3">
+<h3 id="org9cf11ec"><span class="section-number-3">2.1.</span> Welldefined</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_ebefe7ea4adf07689ee784e552d519d219144ae0.svg" class="org-svg" /> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> sind, ist <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_3e4443faa2f17c743c73567a37215be66368fddf.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_3e4443faa2f17c743c73567a37215be66368fddf.svg" class="org-svg" /> beschränkt (vgl. <a href="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum.html#ID-ce59f04c-0461-4bee-b37d-f4f3f5b3d3fc">Beschränktheit einer kompakten Menge</a>)
-Es gilt nach der Dreiecksungleichung für beliebiges <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_226a6ceeaf08efd81aea70ed62b39f7d970ce757.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_226a6ceeaf08efd81aea70ed62b39f7d970ce757.svg" class="org-svg" /> und für ein festes <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_75fc1964a17b9f15a34df8b6e33ad23f8c808929.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_75fc1964a17b9f15a34df8b6e33ad23f8c808929.svg" class="org-svg" />:
+Da \(A,B\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> sind, ist \(\mathrm{diam}(A), \mathrm{diam}(B)\) beschränkt (vgl. <a href="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum.html#ID-ce59f04c-0461-4bee-b37d-f4f3f5b3d3fc">Beschränktheit einer kompakten Menge</a>)
+Es gilt nach der Dreiecksungleichung für beliebiges \(a \in A, b \in B\) und für ein festes \(a_0 \in A, b_0 \in B\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_54b922ddd36f471b76ea51edab2218650f25dfe6.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_54b922ddd36f471b76ea51edab2218650f25dfe6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+d(a,b) \leq& d(a_0,a) + d(a_0, b_0) + d(b_0,b) \\
+\leq& \mathrm{diam}(A) + \mathrm{diam}(B) + d(a_0,b_0)
+\end{align*}
 <p>
 und Wegen der positiven Definitheit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_df384c711f25c1ad5cd79c145d4a549fb1108321.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_df384c711f25c1ad5cd79c145d4a549fb1108321.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+0 \leq& d(a,b) 
+\end{align*}
 <p>
-Damit ist <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_2e7d9674a47a303cb08ab871be733e31a190c488.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_2e7d9674a47a303cb08ab871be733e31a190c488.svg" class="org-svg" />.
-Somit sind <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a>, <a href="20220718133120-infimum.html#ID-46cb173e-d119-4d6f-82b5-f27511bb0081">Infimum</a> nach <a href="20220717170446-vollstandigkeitsaxiom.html#ID-2772514a-cfc0-4f1c-9762-b5565967613c">Vollständigkeit</a> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> in <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" />
+Damit ist \(d(A,B) \leq \mathrm{diam}(A) + \mathrm{diam}(B) + d(a_0,b_0) \in \mathbb{R}^+_0\).
+Somit sind <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a>, <a href="20220718133120-infimum.html#ID-46cb173e-d119-4d6f-82b5-f27511bb0081">Infimum</a> nach <a href="20220717170446-vollstandigkeitsaxiom.html#ID-2772514a-cfc0-4f1c-9762-b5565967613c">Vollständigkeit</a> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> in \(\mathbb{R}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org57ebeea" class="outline-3">
-<h3 id="org57ebeea"><span class="section-number-3">2.2.</span> Positiv Definit</h3>
+<div id="outline-container-org4645541" class="outline-3">
+<h3 id="org4645541"><span class="section-number-3">2.2.</span> Positiv Definit</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org6fd43e5" class="outline-4">
-<h4 id="org6fd43e5"><span class="section-number-4">2.2.1.</span> Gleich <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_286f0a8d667cb520b10b9a4cd5275dd713d9643f.svg" class="org-svg" /></h4>
+<div id="outline-container-orga5f1759" class="outline-4">
+<h4 id="orga5f1759"><span class="section-number-4">2.2.1.</span> Gleich \(0\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_f4aed903cc887cf4b2edafd02ce08f1d13f9d857.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_f4aed903cc887cf4b2edafd02ce08f1d13f9d857.svg" class="org-svg" /> folgt für beliebiges <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_64e68afdf77772d7488d2d9f8df5cbfb7364bf44.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_64e68afdf77772d7488d2d9f8df5cbfb7364bf44.svg" class="org-svg" />
-Somit folgt <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_93d869a886b8c5536fd60969425b07205b8cfb3b.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_93d869a886b8c5536fd60969425b07205b8cfb3b.svg" class="org-svg" /> und auch <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_b70b9401f0e717dffabbf2a879908c90f3d75a57.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_b70b9401f0e717dffabbf2a879908c90f3d75a57.svg" class="org-svg" />.
+Für \(A = B\) folgt für beliebiges \(a\) auch \(\inf_{a' \in A} d(a,a') = d(a,a) = 0\)
+Somit folgt \(\sup_{a \in A} \inf_{b \in B} d(a,b) = 0\) und auch \(d(A,A) = 0\).
 </p>
 </div>
 </div>
-<div id="outline-container-org15dc350" class="outline-4">
-<h4 id="org15dc350"><span class="section-number-4">2.2.2.</span> Ungleich</h4>
+<div id="outline-container-orgacf6668" class="outline-4">
+<h4 id="orgacf6668"><span class="section-number-4">2.2.2.</span> Ungleich</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_d732c2c5e97460f6a8c6c697f873bac832849047.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_d732c2c5e97460f6a8c6c697f873bac832849047.svg" class="org-svg" />, so existiert <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ein <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_53fcb75c92558697172ddb80fc80a6e00eeff13d.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_53fcb75c92558697172ddb80fc80a6e00eeff13d.svg" class="org-svg" /> und es folgt dann <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_a70003c20d6fc4f9625ec49a480c2b96e0c37874.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_a70003c20d6fc4f9625ec49a480c2b96e0c37874.svg" class="org-svg" /> (vgl. <a href="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge.html#ID-4cec4a2b-75eb-431a-ac92-9c4fe3e8619c">positiver Abstand zu einer Abgeschlosenen Menge</a>)
+Sei \(A \neq B\), so existiert <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ein \(a \in A, a \not\in B\) und es folgt dann \(\sup_{a \in A} \inf_{b \in B} d(a,b) \geq \inf_{b \in B} d(a,b) = d(a,B) > 0\) (vgl. <a href="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge.html#ID-4cec4a2b-75eb-431a-ac92-9c4fe3e8619c">positiver Abstand zu einer Abgeschlosenen Menge</a>)
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org1af6388" class="outline-3">
-<h3 id="org1af6388"><span class="section-number-3">2.3.</span> Symmetrisch</h3>
+<div id="outline-container-orga08ca43" class="outline-3">
+<h3 id="orga08ca43"><span class="section-number-3">2.3.</span> Symmetrisch</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der Symmetrie vom Maximum
 </p>
 </div>
 </div>
-<div id="outline-container-orge33b864" class="outline-3">
-<h3 id="orge33b864"><span class="section-number-3">2.4.</span> dreiecksungleichung</h3>
+<div id="outline-container-org5a8125b" class="outline-3">
+<h3 id="org5a8125b"><span class="section-number-3">2.4.</span> dreiecksungleichung</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_431ed2e3ce9ad70f0a194a2bc87890de27c61026.svg" class="org-svg" /> gegeben, so gilt
+Seien \(A,B,C\) gegeben, so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_2da490ac77bb03a13b2b4cff73670733a1e7fb23.svg" alt="20230428174548-hausdorff_abstand_auf_den_abgeschlossenen_mengen_als_metrik_2da490ac77bb03a13b2b4cff73670733a1e7fb23.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+d(A,B) =& \mathrm{max}(\sup_{a \in A} \inf_{b \in B} d(a,b), \sup_{b \in B} \inf_{a \in A} d(a,b)) \\
+\leq& \mathrm{max}(\sup_{a \in A} \inf_{b \in B,c \in C} d(a,c) + d(c,b), \sup_{b \in B} \inf_{a \in A, c \in C} d(a,c) + d(b,c)) \\
+\leq& \mathrm{max}(
+\sup_{a \in A} (\inf_{c \in C} d(a,c) + \inf_{b \in B, c \in C} d(b,c)),
+\sup_{b \in B} (\inf_{c \in C} d(b,c) + \inf_{a \in A, c \in C} d(b,c))
+) \\
+% \leq& \mathrm{max}(
+% \sup_{a \in A} \inf_{c \in C} d(a,c) + \inf_{b \in B, c \in C} d(b,c),
+% \sup_{b \in B} \inf_{c \in C} d(b,c) + \inf_{a \in A, c \in C} d(b,c)
+% ) \\
+\leq& \mathrm{max}(
+\sup_{a \in A} \inf_{c \in C} d(a,c) + \sup_{c \in C} \inf_{b \in B} d(b,c),
+\sup_{b \in B} \inf_{c \in C} d(b,c) + \sup_{c \in C} \inf_{a \in A} d(b,c)
+) \\
+\leq& \mathrm{max}(
+\sup_{a \in A} \inf_{c \in C} d(a,c), \sup_{c \in C} \inf_{a \in A} d(b,c)) + 
+ \mathrm{max}(\sup_{c \in C} \inf_{b \in B} d(b,c), \sup_{b \in B} \inf_{c \in C} d(b,c)) \\
+=& d(A,C) + d(B,C)
+\end{align*}
 </div>
 </div>
 </div>

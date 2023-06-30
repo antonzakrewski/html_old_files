@@ -9,37 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Neutrales Element - Addition (komplexe Zahlen)</h1>
-<div id="outline-container-orgc67a472" class="outline-2">
-<h2 id="orgc67a472"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgae72178" class="outline-2">
+<h2 id="orgae72178"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutrale Element</a>  für die <a href="20211230230251-addition_komplexe_zahlen.html#ID-61ab3eb5-8a2f-464c-b770-c424f67ffe70">Addition</a> <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahlen</a> ist:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230231427-neutrales_element_addition_komplexe_zahlen_6fc7d0ebd749e4498bedb266a9b0f8d172d7e08d.svg" alt="20211230231427-neutrales_element_addition_komplexe_zahlen_6fc7d0ebd749e4498bedb266a9b0f8d172d7e08d.svg" class="org-svg" />
-</span>
+\begin{align*}
+e  \coloneqq (0,0) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org86cb215" class="outline-2">
-<h2 id="org86cb215"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbac2bad" class="outline-2">
+<h2 id="orgbac2bad"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20211230231427-neutrales_element_addition_komplexe_zahlen_2595e3338835a4905ad358627be8b52fcf79582e.svg" alt="20211230231427-neutrales_element_addition_komplexe_zahlen_2595e3338835a4905ad358627be8b52fcf79582e.svg" class="org-svg" /> eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> mit <img src="file:///home/anton/html/ltximg/20211230231427-neutrales_element_addition_komplexe_zahlen_01f7504a2403d405ba8fb176e06987ece844d70f.svg" alt="20211230231427-neutrales_element_addition_komplexe_zahlen_01f7504a2403d405ba8fb176e06987ece844d70f.svg" class="org-svg" />.
+Sei \(z =& a + b \mathrm{i}\) eine <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahl</a> mit \(a,b \in \mathbb{R}\).
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230231427-neutrales_element_addition_komplexe_zahlen_24b589b7b64fee9d6e869ee98b652d3467be018f.svg" alt="20211230231427-neutrales_element_addition_komplexe_zahlen_24b589b7b64fee9d6e869ee98b652d3467be018f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z + 0 =& a + b \mathrm{i} + 0 \\
+=& a + b \mathrm{i}  \\
+=& z
+\end{align*}
 </div>
 </div>
 </div>

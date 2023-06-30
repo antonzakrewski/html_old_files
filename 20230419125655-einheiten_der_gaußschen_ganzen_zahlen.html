@@ -9,39 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Einheiten der gaußschen ganzen Zahlen</h1>
-<div id="outline-container-org20a28b9" class="outline-2">
-<h2 id="org20a28b9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9a32cdb" class="outline-2">
+<h2 id="org9a32cdb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien die <a href="20221130162103-gaußsche_ganze_zahlen.html#ID-f8690853-647c-4f05-9fc0-d11320762568">Gaußschen ganzen Zahlen</a> gegeben, so ist die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheiten</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419125655-einheiten_der_gaußschen_ganzen_zahlen_d90adbbd0001516d50f534d400423ecd8ab31d17.svg" alt="20230419125655-einheiten_der_gaußschen_ganzen_zahlen_d90adbbd0001516d50f534d400423ecd8ab31d17.svg" class="org-svg" />
-</span>
+\begin{align*}
+Z[\mathrm{i}]^{\times} = \{\pm 1, \pm \mathrm{i}\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgbad39a4" class="outline-2">
-<h2 id="orgbad39a4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgdcf044c" class="outline-2">
+<h2 id="orgdcf044c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230419125655-einheiten_der_gaußschen_ganzen_zahlen_b3be7c57873b85aa42f2b58a4fa8f16922119f08.svg" alt="20230419125655-einheiten_der_gaußschen_ganzen_zahlen_b3be7c57873b85aa42f2b58a4fa8f16922119f08.svg" class="org-svg" />
+Sei \(z = a + b \mathrm{i}\)
 Für das Quadrat des <a href="20210702105843-betrag_komplexe_zahlen.html#ID-38183aff-ed06-49d9-ab85-e95ff3730ddb">komplexen Absolutbetrags</a> folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230419125655-einheiten_der_gaußschen_ganzen_zahlen_3cefa1a79df10ffcd17f0a3987e7fcf7fbdeadf1.svg" alt="20230419125655-einheiten_der_gaußschen_ganzen_zahlen_3cefa1a79df10ffcd17f0a3987e7fcf7fbdeadf1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert z \vert^2 = a^2 + b^2
+\end{align*}
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20230419125655-einheiten_der_gaußschen_ganzen_zahlen_dea8f45129eb72836eabf07e5371d831b84bb203.svg" alt="20230419125655-einheiten_der_gaußschen_ganzen_zahlen_dea8f45129eb72836eabf07e5371d831b84bb203.svg" class="org-svg" /> und 
+Es gilt \(a^2 + b^2 \in \mathbb{N}_0\) und 
 \
 </p>
 </div>

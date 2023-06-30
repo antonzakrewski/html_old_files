@@ -9,39 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Folgenkompaktheit und Vollständigkeit sowie Totalbeschränktheit</h1>
-<div id="outline-container-orgaf92478" class="outline-2">
-<h2 id="orgaf92478"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org693a86e" class="outline-2">
+<h2 id="org693a86e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist <a href="20230511102959-folgenkompaktheit.html#ID-b19c9d55-9683-41a0-b6e4-6fcff1320d2c">folgenkompakt</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständig</a> und <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a></li>
+<li>\(M\) ist <a href="20230511102959-folgenkompaktheit.html#ID-b19c9d55-9683-41a0-b6e4-6fcff1320d2c">folgenkompakt</a></li>
+<li>\(M\) ist <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">Vollständig</a> und <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgde678d1" class="outline-2">
-<h2 id="orgde678d1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd4c3bb4" class="outline-2">
+<h2 id="orgd4c3bb4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3a32017" class="outline-3">
-<h3 id="org3a32017"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-org1a94893" class="outline-3">
+<h3 id="org1a94893"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei eine beliebige <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> gegeben, so existiert ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> und nach der Aussage über eine <a href="20230509102432-cauchy_folge_mit_haufungspunkt_ist_konvergent.html#ID-15ed2050-6a16-4cd2-b8cf-872fa8e20b41">Cauchy-Folge mit Häufungspunkt als konvergente Folge</a> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> die <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, d.h. <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
-Angenommen <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> ist nicht <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a>, so existiert ein <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, so dass <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> nicht durch $&epsilon;$-bälle überdeckt werden kann.
-Dann konstruiert man eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, indem man für <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" /> die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_00b7166f87d1ea445376c36f696e5a1d47fea8b6.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_00b7166f87d1ea445376c36f696e5a1d47fea8b6.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_0972c9a92c1e1eefcaad877c18211deaa442b2c4.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_0972c9a92c1e1eefcaad877c18211deaa442b2c4.svg" class="org-svg" /> betrachtet und einen Punkt außerhalb wählt.
+Sei eine beliebige <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> gegeben, so existiert ein <a href="20220717192337-haufungspunkt.html#ID-7617ceed-71af-470f-8672-a206df3d6488">Häufungspunkt</a> und nach der Aussage über eine <a href="20230509102432-cauchy_folge_mit_haufungspunkt_ist_konvergent.html#ID-15ed2050-6a16-4cd2-b8cf-872fa8e20b41">Cauchy-Folge mit Häufungspunkt als konvergente Folge</a> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> die <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, d.h. \(M\) ist <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
+Angenommen \(M\) ist nicht <a href="20230224182853-totalbeschranktheit.html#ID-c4a7b9de-506a-4e37-bdf2-9df9f97d3ac3">totalbeschränkt</a>, so existiert ein \(\varepsilon > 0\), so dass \(M\) nicht durch $&epsilon;$-bälle überdeckt werden kann.
+Dann konstruiert man eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, indem man für \(a_n\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebungen</a> \(B_{\varepsilon}(a_{i})\) für \(i < n\) betrachtet und einen Punkt außerhalb wählt.
 </p>
 </div>
 </div>
-<div id="outline-container-org589402c" class="outline-3">
-<h3 id="org589402c"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230514221240-folgenkompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_einem_metrischen_ramu_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 3)</h3>
+<div id="outline-container-orgd2f94b9" class="outline-3">
+<h3 id="orgd2f94b9"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus dem Ringschluss aus <a href="20230514221144-kompaktheit_und_vollstandigkeit_und_totalbeschranktheit_in_metrischen_raumen.html#ID-dbe438b0-1b7a-4a21-8249-951e20657963">Kompaktheit bzw. Vollständigkeit und Totalbeschränktheit</a> 

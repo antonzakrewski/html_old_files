@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitungsfunktion (Q11)</h1>
-<div id="outline-container-org522380d" class="outline-2">
-<h2 id="org522380d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd0f1dfd" class="outline-2">
+<h2 id="orgd0f1dfd"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20210217212957-ableitungsfunktion_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20210217212957-ableitungsfunktion_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> eine über dem  <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> I <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
-Dann ist <img src="file:///home/anton/html/ltximg/20210217212957-ableitungsfunktion_03e2050842e11a8d63260a8bed6199fffb32fe7c.svg" alt="20210217212957-ableitungsfunktion_03e2050842e11a8d63260a8bed6199fffb32fe7c.svg" class="org-svg" /> die Ableitungsfunktion zu <img src="file:///home/anton/html/ltximg/20210217212957-ableitungsfunktion_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20210217212957-ableitungsfunktion_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20210217212957-ableitungsfunktion_03e2050842e11a8d63260a8bed6199fffb32fe7c.svg" alt="20210217212957-ableitungsfunktion_03e2050842e11a8d63260a8bed6199fffb32fe7c.svg" class="org-svg" /> ordnet jeder <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a> die zugehörige <a href="20210217184055-lokale_anderungsrate.html#ID-ba796e5f-4ad1-4ec1-b46d-dce14082f201">Lokale Änderungsrate</a> 
+Sei \(f(x)\) eine über dem  <a href="20220401195853-intervall.html#ID-ea9ab8cb-ef38-4c06-bab0-d392820614f3">Intervall</a> I <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>
+Dann ist \(f'(x)\) die Ableitungsfunktion zu \(f(x)\) und \(f'(x)\) ordnet jeder <a href="20220401200213-stelle.html#ID-dbacfec6-5d9b-4d25-9bb9-1e4f56030b2d">Stelle</a> die zugehörige <a href="20210217184055-lokale_anderungsrate.html#ID-ba796e5f-4ad1-4ec1-b46d-dce14082f201">Lokale Änderungsrate</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210217212957-ableitungsfunktion_f716cec7f49182c8d08791fed22f20c2549a7f3d.svg" alt="20210217212957-ableitungsfunktion_f716cec7f49182c8d08791fed22f20c2549a7f3d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f'(x)  \coloneqq \lim_{\delta \to 0}\left( \frac{f(x + \delta) - f(x)}{x}\right) 
+=& \frac{\mathrm{d}f}{\mathrm{d}x}
+\end{align*}
 </div>
 </div>
 </div>

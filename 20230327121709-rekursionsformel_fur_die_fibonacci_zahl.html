@@ -9,74 +9,95 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rekursionsformel für die Fibonacci Zahl</h1>
-<div id="outline-container-org2ed6fd6" class="outline-2">
-<h2 id="org2ed6fd6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc959e29" class="outline-2">
+<h2 id="orgc959e29"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_b1b9a086e5c7edcd9c7dd447363e62023e8f9a55.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_b1b9a086e5c7edcd9c7dd447363e62023e8f9a55.svg" class="org-svg" /> gilt:
+Für \(k,n \in \mathbb{Z}\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_eca6a670fbdff3309e9edfc8f3efd606c57f11c4.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_eca6a670fbdff3309e9edfc8f3efd606c57f11c4.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{n+k} = f_k f_{n+1} + f_{k-1}f_n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdb70c98" class="outline-2">
-<h2 id="orgdb70c98"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8ae4e86" class="outline-2">
+<h2 id="org8ae4e86"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>:
 </p>
 </div>
-<div id="outline-container-org512ed02" class="outline-3">
-<h3 id="org512ed02"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
+<div id="outline-container-orge9afc3c" class="outline-3">
+<h3 id="orge9afc3c"><span class="section-number-3">2.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-für <img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_1a1a0da9c41b8c6007e77fa5b338c649070e31a6.svg" class="org-svg" /> folgt die Aussage durch die <a href="20230327104517-formel_fur_die_negativen_fibonacci_zahlen.html#ID-04b949f6-3849-433a-bfb4-3ed9c1a67a3a">Formel für die negativen Fibonacci Zahlen</a>:
+für \(k = 0\) folgt die Aussage durch die <a href="20230327104517-formel_fur_die_negativen_fibonacci_zahlen.html#ID-04b949f6-3849-433a-bfb4-3ed9c1a67a3a">Formel für die negativen Fibonacci Zahlen</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_80d76ccd1d69ee063ab81a2f5426e9cf5189a658.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_80d76ccd1d69ee063ab81a2f5426e9cf5189a658.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_n =& f_{n + 0}  \\
+=& f_{0} f_{n+1} + f_{-1} f_n \\
+=& 0 \cdot f_{n+1} + 1 f_n \\
+=& f_n
+\end{align*}
 <p>
-fur <img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_97ee607db2e626a0536ee9c3edd459123390ff1a.svg" class="org-svg" /> gilt:
+fur \(k = 1\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_d3a2ad9fe52a1ee40aa0c9a3e91cef8857302918.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_d3a2ad9fe52a1ee40aa0c9a3e91cef8857302918.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{n+1} =& f_{1} f_{n+1} + f_{0} f_{n}\\
+=& 1 f_{n+1} + 0 f_{n}
+=& f_{n+1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org40dcad7" class="outline-3">
-<h3 id="org40dcad7"><span class="section-number-3">2.2.</span> Induktionsschluss</h3>
+<div id="outline-container-orga272428" class="outline-3">
+<h3 id="orga272428"><span class="section-number-3">2.2.</span> Induktionsschluss</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgc354563" class="outline-4">
-<h4 id="orgc354563"><span class="section-number-4">2.2.1.</span> <img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_ea8fb70a604582096a937df2173c44c1b2df7d4f.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_ea8fb70a604582096a937df2173c44c1b2df7d4f.svg" class="org-svg" /></h4>
+<div id="outline-container-org40115cc" class="outline-4">
+<h4 id="org40115cc"><span class="section-number-4">2.2.1.</span> \(k \Rightarrow k + 1\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Es gilt nach Definition:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_a5e41016fb598f92300223034f6ac847988ef39c.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_a5e41016fb598f92300223034f6ac847988ef39c.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_{n+k+1} =& f_{n+k} + f_{n+k-1} \\
+=& f_{k}f_{n+1} + f_{k-1}f_{n} + f_{k-1} f_{n+1} + f_{k-2}f_{n} \\
+=& f_{n} \left(f_{k} + f_{k-1}\right) + f_{n+1} \left(f_{k-1} + f_{k-2} \right)\\
+=& f_{n} f_{k+1} + f_{n+1} f_{k-2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgd0863d5" class="outline-4">
-<h4 id="orgd0863d5"><span class="section-number-4">2.2.2.</span> <img src="file:///home/anton/html/ltximg/20230327121709-rekursionsformel_fur_die_fibonacci_zahl_2d5c1dfd0d6a2ddf5270073804562195f6756de8.svg" alt="20230327121709-rekursionsformel_fur_die_fibonacci_zahl_2d5c1dfd0d6a2ddf5270073804562195f6756de8.svg" class="org-svg" /></h4>
+<div id="outline-container-org5d0a4f2" class="outline-4">
+<h4 id="org5d0a4f2"><span class="section-number-4">2.2.2.</span> \(k \Rightarrow k - 1\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 todo :)

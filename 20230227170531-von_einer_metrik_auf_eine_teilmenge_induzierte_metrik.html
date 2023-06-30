@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>von einer Metrik auf eine Teilmenge induzierte Metrik</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von einer Metrik auf eine Teilmenge induzierte Metrik</h1>
-<div id="outline-container-org3d9556c" class="outline-2">
-<h2 id="org3d9556c"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orgfe5d719" class="outline-2">
+<h2 id="orgfe5d719"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_43dcf6818ee7b3f0be304aa1ebc4d03ac9db9231.svg" alt="20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_43dcf6818ee7b3f0be304aa1ebc4d03ac9db9231.svg" class="org-svg" />, so ist die Beschränkung auf <img src="ltximg/20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_db0fc7b4b22c60f17752b14d53c453675cbc2f8d.svg" alt="20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_db0fc7b4b22c60f17752b14d53c453675cbc2f8d.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und definiert durch:
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(M' \subseteq M\), so ist die Beschränkung auf \(M'\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und definiert durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_aa37418a903ea1c51654cabd8e005d2499e5c647.svg" alt="20230227170531-von_einer_metrik_auf_eine_teilmenge_induzierte_metrik_aa37418a903ea1c51654cabd8e005d2499e5c647.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(M', d_{\vert M'})
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1037f49" class="outline-2">
-<h2 id="org1037f49"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org744793e" class="outline-2">
+<h2 id="org744793e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Vererbung der Eigenschaften einer <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metrik</a>

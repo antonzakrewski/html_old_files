@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Filterstetigkeit</h1>
-<div id="outline-container-orgc74edf5" class="outline-2">
-<h2 id="orgc74edf5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgcd49ba6" class="outline-2">
+<h2 id="orgcd49ba6"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230530205045-filterstetigkeit_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230530205045-filterstetigkeit_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230530205045-filterstetigkeit_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230530205045-filterstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> filterstetig, falls für einen <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" alt="20230530205045-filterstetigkeit_57e5f1ce8a5373d14362f346961476dd6efb57f2.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" alt="20230530205045-filterstetigkeit_a1db9dda85364d957c4bf1085880dcd83dbb8d68.svg" class="org-svg" /> gilt:
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
+Dann ist \(f\) filterstetig, falls für einen <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> \(\mathcal{F}\) mit \(\mathcal{F} \rightarrow x\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_3f1ee99e8d87ad4a68c0bf42f3bbcd919e423111.svg" alt="20230530205045-filterstetigkeit_3f1ee99e8d87ad4a68c0bf42f3bbcd919e423111.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(\mathcal{F}) = \{f[F] \vert F \in \mathcal{F}\} \rightarrow f(x)
+\end{align*}
 <p>
-bzw. <img src="file:///home/anton/html/ltximg/20230530205045-filterstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230530205045-filterstetigkeit_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> ist <a href="20230530205458-fliterstetigkeit_in_einem_punkt.html#ID-7b03593f-6f89-4540-87ab-ca2fef5682dd">filterstetig in allen Punkten</a> 
+bzw. \(f\) ist <a href="20230530205458-fliterstetigkeit_in_einem_punkt.html#ID-7b03593f-6f89-4540-87ab-ca2fef5682dd">filterstetig in allen Punkten</a> 
 </p>
 </div>
 </div>

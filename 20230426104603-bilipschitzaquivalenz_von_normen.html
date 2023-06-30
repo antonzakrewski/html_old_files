@@ -3,31 +3,52 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>bilipschitzäquivalenz von Normen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">bilipschitzäquivalenz von Normen</h1>
-<div id="outline-container-org99e19a1" class="outline-2">
-<h2 id="org99e19a1"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgff8e95f" class="outline-2">
+<h2 id="orgff8e95f"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Zwei <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Normen</a> sind bilipschitzäquivalent, falls die <a href="20230111204631-von_einer_norm_induzierte_metrik.html#ID-84892f7a-017a-4af9-a330-28a0ccc2b172">induzierte Metriken</a> <a href="20230418113734-lipschitz_aquivalente_metriken.html#ID-56e3645d-7a57-4f92-9b09-dba47a55112f">Bilipschitzäquivalent</a> sind, d.h. es exisistiert ein L &ge; 1$ mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230426104603-bilipschitzaquivalenz_von_normen_b61d4e89c1e253cdd6980e0c39d4019af3e86f34.svg" alt="20230426104603-bilipschitzaquivalenz_von_normen_b61d4e89c1e253cdd6980e0c39d4019af3e86f34.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\frac{1}{L} \| \cdot \| \leq \| \cdot \|' \leq L \cdot \| \cdot \|
+\end{align*}
 </div>
 </div>
 </div>

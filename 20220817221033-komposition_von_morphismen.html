@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>composition of morphisms</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">composition of morphisms</h1>
-<div id="outline-container-orgf44fa06" class="outline-2">
-<h2 id="orgf44fa06"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3fa03ab" class="outline-2">
+<h2 id="org3fa03ab"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20220817221033-komposition_von_morphismen_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20220817221033-komposition_von_morphismen_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and <img src="ltximg/20220817221033-komposition_von_morphismen_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20220817221033-komposition_von_morphismen_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" />, <img src="ltximg/20220817221033-komposition_von_morphismen_f3a615d79305718810ee8a6fc0e9dd6d89880252.svg" alt="20220817221033-komposition_von_morphismen_f3a615d79305718810ee8a6fc0e9dd6d89880252.svg" class="org-svg" /> <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> for <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> <img src="ltximg/20220817221033-komposition_von_morphismen_b9f17bb7770f2743fbee7e09604f8965a646e047.svg" alt="20220817221033-komposition_von_morphismen_b9f17bb7770f2743fbee7e09604f8965a646e047.svg" class="org-svg" />.
-Then there exists a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> <img src="ltximg/20220817221033-komposition_von_morphismen_7b2ab7e5ee46f52567509d970e8be6b3f48ec3c0.svg" alt="20220817221033-komposition_von_morphismen_7b2ab7e5ee46f52567509d970e8be6b3f48ec3c0.svg" class="org-svg" />, called the composition of <img src="ltximg/20220817221033-komposition_von_morphismen_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" alt="20220817221033-komposition_von_morphismen_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" class="org-svg" /> with <img src="ltximg/20220817221033-komposition_von_morphismen_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20220817221033-komposition_von_morphismen_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" />. 
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(f: A \rightarrow B\), \(g: B \rightarrow C\) <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a> for <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> \(A,B,C \in \mathrm{Ob}(\mathcal{C})\).
+Then there exists a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(g \circ f: A \rightarrow C\), called the composition of \(g\) with \(f\). 
 </p>
 </div>
 </div>

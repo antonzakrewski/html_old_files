@@ -3,55 +3,82 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beweis: Kreiswinkelsatz: Mittelpunkt innerhalb des Dreiecks</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Kreiswinkelsatz: Mittelpunkt innerhalb des Dreiecks</h1>
-<div id="outline-container-orgad613e9" class="outline-2">
-<h2 id="orgad613e9"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-orgd962d95" class="outline-2">
+<h2 id="orgd962d95"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für <img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_015890043e321648d87c23d17aa5aa00d30b6bf7.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_015890043e321648d87c23d17aa5aa00d30b6bf7.svg" class="org-svg" />:
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(\angle ACB\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_079892455fafcd687c326d2904ebdc66621e3608.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_079892455fafcd687c326d2904ebdc66621e3608.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzpicture}
+\draw[] (0,0) circle (1cm);
+\coordinate (a) at (350:1cm);
+\coordinate (b) at (70:1cm);
+\coordinate (c) at (200:1cm);
+\coordinate (m) at (0,0);
+\node[right] (A) at (a) {A};
+\node[above] (B) at (b) {B};
+\node[left] (C) at (c) {C};
+\draw (a) -- (b) -- (c) -- cycle;
+\node[above] (M) at (m) {M};
+\foreach \n in {a,b,c,i}
+    \node at (\n)[circle, fill, inner sep=1pt]{};
+\draw (m) -- (a);
+\draw (m) -- (b);
+\draw[dashed] (m) -- (c);
+\end{tikzpicture}
 <p>
-Aus den <a href="20220713211715-gleichseitiges_dreieck.html#ID-92e1b22c-ea7d-4b3c-a726-e537569e8740">gleichseitigen Dreiecken</a> <img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_464a2045db650743c55eb3668cbfe89a6414bbd8.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_464a2045db650743c55eb3668cbfe89a6414bbd8.svg" class="org-svg" /> und <img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_702b248dd01e37e0df1ef7eec8bb44b33f6a8e42.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_702b248dd01e37e0df1ef7eec8bb44b33f6a8e42.svg" class="org-svg" /> folgt:
+Aus den <a href="20220713211715-gleichseitiges_dreieck.html#ID-92e1b22c-ea7d-4b3c-a726-e537569e8740">gleichseitigen Dreiecken</a> \(\triangle BCM\) und \(\triangle ACM\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_e6e987849b9df8b0e05ba78a375206b944607e75.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_e6e987849b9df8b0e05ba78a375206b944607e75.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+m\angle CBM =& m\angle MCB \\
+m\angle MAC =& m\angle ACM
+\end{align*}
 <p>
-Für die Dreicke <img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_f2f237ea4b518f68e26436edf052c5ffb90107cf.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_f2f237ea4b518f68e26436edf052c5ffb90107cf.svg" class="org-svg" /> und <img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_5239928ae7a5cb1b1e9a99072880b801f76e2a61.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_5239928ae7a5cb1b1e9a99072880b801f76e2a61.svg" class="org-svg" /> gilt aufgrund der <a href="20220714165140-winkelsumme_im_dreieck.html#ID-b1831f52-647e-4601-b768-9115076908e7">Winkelsumme im Dreieck_</a> 
+Für die Dreicke \(\triangle CBA\) und \(\triangle BMA\) gilt aufgrund der <a href="20220714165140-winkelsumme_im_dreieck.html#ID-b1831f52-647e-4601-b768-9115076908e7">Winkelsumme im Dreieck_</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_f1c46c466a87964784279fa2d4cfa4d02a55263c.svg" alt="20220714003738-beweis_kreiswinkelsatz_mittelpunkt_innerhalb_des_dreiecks_f1c46c466a87964784279fa2d4cfa4d02a55263c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+180^\circ =&  m\angle MBA + m\angle BAM + m\angle AMB \\
+180^\circ =& m\angle MBA + m\angle BAM + m\angle ACB + 2 \cdot (m\angle MCB  + m\angle ACM) \\
+\Rightarrow m\angle AMB =& 2\cdot (m\angle MCB + m\angle ACM) \\
+\Rightarrow m\angle AMB =& 2 \cdot m\angle ACB
+\end{align*}
 </div>
 </div>
 </div>

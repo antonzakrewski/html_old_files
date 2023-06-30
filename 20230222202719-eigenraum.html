@@ -9,22 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eigenraum</h1>
-<div id="outline-container-org0beb70e" class="outline-2">
-<h2 id="org0beb70e"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org337854f" class="outline-2">
+<h2 id="org337854f"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230222202719-eigenraum_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" alt="20230222202719-eigenraum_3ca8f1e77235ef9d7320491f49d8c69947511a7e.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_3806b11f2360e38c0b63222745cf061a7c938236.svg" alt="20230222202719-eigenraum_3806b11f2360e38c0b63222745cf061a7c938236.svg" class="org-svg" /> ein <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a>, so ist der Eigenraum <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_a797599582548ff5a09c6ed2ccd68b764d37d676.svg" alt="20230222202719-eigenraum_a797599582548ff5a09c6ed2ccd68b764d37d676.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230222202719-eigenraum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> zu <img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" alt="20230222202719-eigenraum_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" class="org-svg" /> definiert als <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> von <a href="20230303154720-endomorphismus_fur_den_eigenraum.html#ID-ba3160d5-adca-4e84-9785-0e53ff6077dc">Endomorphismus für den Eigenraum</a>, d.h.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in \mathrm{End}_K(V)\) und \(\alpha \in \sigma(A)\) ein <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a>, so ist der Eigenraum \(V(\alpha)\) von \(A\) zu \(\alpha\) definiert als <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">Kern</a> von <a href="20230303154720-endomorphismus_fur_den_eigenraum.html#ID-ba3160d5-adca-4e84-9785-0e53ff6077dc">Endomorphismus für den Eigenraum</a>, d.h.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222202719-eigenraum_6b1f64ad25608a4b8b0a90dd6f7b6735ecb6efec.svg" alt="20230222202719-eigenraum_6b1f64ad25608a4b8b0a90dd6f7b6735ecb6efec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+V(\alpha) =& \mathrm{ker}(\alpha \mathrm{id}_{V) - A) \\
+=& \{v \in V \vert Av = \alpha v\}
+\end{align*}
 </div>
 </div>
 </div>

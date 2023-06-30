@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Ableitung <img src="file:///home/anton/html/ltximg/20210217214030-ableitung_x_to_y_367271a0641d31fa68a4bd64baa8decaffb52989.svg" alt="20210217214030-ableitung_x_to_y_367271a0641d31fa68a4bd64baa8decaffb52989.svg" class="org-svg" /></h1>
-<div id="outline-container-org71377be" class="outline-2">
-<h2 id="org71377be"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">Ableitung \(x^y\)</h1>
+<div id="outline-container-org28d0624" class="outline-2">
+<h2 id="org28d0624"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210217214030-ableitung_x_to_y_3c3a12b00b0cc6152bc13b9374e3853d108a8433.svg" alt="20210217214030-ableitung_x_to_y_3c3a12b00b0cc6152bc13b9374e3853d108a8433.svg" class="org-svg" />
-</span>
+\begin{align*}
+(x^y)' =& y \cdot x^{y-1}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgf9efc05" class="outline-2">
-<h2 id="orgf9efc05"><span class="section-number-2">2.</span> Beweise</h2>
+<div id="outline-container-org9aea496" class="outline-2">
+<h2 id="org9aea496"><span class="section-number-2">2.</span> Beweise</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li><a href="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n.html#ID-f5cdb973-75d7-4681-9adf-f1984394738f">Beweis: Ableitung <img src="file:///home/anton/html/ltximg/20210217214030-ableitung_x_to_y_011ba759428d206517862e12c5475d49231ae3c6.svg" alt="20210217214030-ableitung_x_to_y_011ba759428d206517862e12c5475d49231ae3c6.svg" class="org-svg" /></a></li>
-<li><a href="20220714165710-beweis_ableitung_x_y_quad_y_in_mathbb_z.html#ID-ed266868-27bb-4489-9f2c-e3bd0c3b6b50">Beweis: Ableitung <img src="file:///home/anton/html/ltximg/20210217214030-ableitung_x_to_y_a6ab78c490d203f8b3e890eb7ac5e61684953d32.svg" alt="20210217214030-ableitung_x_to_y_a6ab78c490d203f8b3e890eb7ac5e61684953d32.svg" class="org-svg" /></a></li>
+<li><a href="20220701074842-beweis_ableitung_x_y_quad_y_in_mathbb_n.html#ID-f5cdb973-75d7-4681-9adf-f1984394738f">Beweis: Ableitung \(x^y \quad y \in \mathbb{N}\)</a></li>
+<li><a href="20220714165710-beweis_ableitung_x_y_quad_y_in_mathbb_z.html#ID-ed266868-27bb-4489-9f2c-e3bd0c3b6b50">Beweis: Ableitung \(x^y \quad y \in \mathbb{Z}\)</a></li>
 </ul>
 </div>
 </div>

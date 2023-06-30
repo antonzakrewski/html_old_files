@@ -3,88 +3,88 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Verallgemeinerter Mittelwertsatz</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verallgemeinerter Mittelwertsatz</h1>
-<div id="outline-container-org043d62e" class="outline-2">
-<h2 id="org043d62e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5b48b3a" class="outline-2">
+<h2 id="org5b48b3a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_3bc755fbf7bcda4e893be66006ce6f15e24146c4.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_3bc755fbf7bcda4e893be66006ce6f15e24146c4.svg" class="org-svg" />  und die auf <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_d12ff107738f1a741ed82478d793ce0075a61440.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_d12ff107738f1a741ed82478d793ce0075a61440.svg" class="org-svg" /> <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_efed234477b95c810c7f2483b4119099e6764bf2.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_efed234477b95c810c7f2483b4119099e6764bf2.svg" class="org-svg" /> sowie <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_fc74a1c8895a244a3a3f6bcd212cf399b5fa5b16.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_fc74a1c8895a244a3a3f6bcd212cf399b5fa5b16.svg" class="org-svg" />  gegeben
-Dann existiert ein <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_38cfbc013a19c5e45e2d75afc52f50f291174131.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_38cfbc013a19c5e45e2d75afc52f50f291174131.svg" class="org-svg" />, so dass gilt
+Sei \([a,b] \subset \overline{\mathbb{R}}\)  und die auf \((a,b)\) <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(f: [a,b] \rightarrow \mathbb{R}\) sowie \(g: \mathbb{R} \rightarrow [a,b]\)  gegeben
+Dann existiert ein \(x_0 \in (a,b)\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_a7973e87187d11c5c252edfb00898811f92b9713.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_a7973e87187d11c5c252edfb00898811f92b9713.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+(f(b) - f(a)) \cdot g'(x_0) = (g(b) - g(a)) \cdot f'(x_0)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3f37cfb" class="outline-2">
-<h2 id="org3f37cfb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org19cf992" class="outline-2">
+<h2 id="org19cf992"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_a255032d41b2798acffe1a671c356d02b4a9ad43.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_a255032d41b2798acffe1a671c356d02b4a9ad43.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+h(x) \coloneqq (f(b) - f(a)) g(x) - (g(b) - g(a)) f(x)
+\end{align*}
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_564aab2a2bcc0610fa835dfad6d800cb9d59abd4.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_564aab2a2bcc0610fa835dfad6d800cb9d59abd4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+h(b) - h(a) =& (f(b) - f(a)) g(b) - (g(b) - g(a)) f(b) - (f(b) - f(a)) g(a) + (g(b) -g(a)) f(a) \\
+=& (f(b)g(b) + f(a)g(b) - f(a)g(a) - f(b)g(b) ) - (f(b)g(a) + g(b)f(a) - f(a)g(a) - g(b)f(a) )\\
+=& 0
+\end{align*}
 <p>
-Daraus folgt <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_a8c1ef59af4f5a244747d62b5563eee9114ab5e3.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_a8c1ef59af4f5a244747d62b5563eee9114ab5e3.svg" class="org-svg" /> und nach dem <a href="20230119175201-satz_von_rolle.html#ID-42d93e12-32ad-4c75-89c8-c3acd258d029">Satz von Rolle</a> existiert ein <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_38cfbc013a19c5e45e2d75afc52f50f291174131.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_38cfbc013a19c5e45e2d75afc52f50f291174131.svg" class="org-svg" />, so dass gilt:
+Daraus folgt \(h(a) = h(b)\) und nach dem <a href="20230119175201-satz_von_rolle.html#ID-42d93e12-32ad-4c75-89c8-c3acd258d029">Satz von Rolle</a> existiert ein \(x_0 \in (a,b)\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_4b934fb712e7b12cdf5198410aed272507001693.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_4b934fb712e7b12cdf5198410aed272507001693.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+h'(x_0) =& f(b) - f(a)g'(x) - (g(b) - g(a))f'(x) \\
+&= 0
+\end{align*}
 <p>
 Daraus folgt auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_7962fc108a5d5f2345dfa42561a8b2b9691b2e32.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_7962fc108a5d5f2345dfa42561a8b2b9691b2e32.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+f(b) - f(a)g'(x) = (g(b) - g(a))f'(x)
+\end{align*}
 
 <p>
-Der <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> folgt für <img src="ltximg/20230123234327-verallgemeinerter_mittelwertsatz_c9bcc52bbe81fe5c805a5d0a8962586af68496b3.svg" alt="20230123234327-verallgemeinerter_mittelwertsatz_c9bcc52bbe81fe5c805a5d0a8962586af68496b3.svg" class="org-svg" />
+Der <a href="20230119175551-mittelwertsatz.html#ID-8ad9f06d-5368-4817-ae5b-b2df03cc511b">Mittelwertsatz</a> folgt für \(g(x) = x\)
 </p>
 </div>
 </div>

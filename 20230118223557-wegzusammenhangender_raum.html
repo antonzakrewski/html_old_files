@@ -3,31 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>wegzusammenhängender Raum (Metrischer Raum)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">wegzusammenhängender Raum (Metrischer Raum)</h1>
-<div id="outline-container-org806ef9d" class="outline-2">
-<h2 id="org806ef9d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgbf4b105" class="outline-2">
+<h2 id="orgbf4b105"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> <img src="ltximg/20230118223557-wegzusammenhangender_raum_fb71dd350ba9e991dc9647554df5d467053a69b0.svg" alt="20230118223557-wegzusammenhangender_raum_fb71dd350ba9e991dc9647554df5d467053a69b0.svg" class="org-svg" />  ist wegzusammenhängend, falls für beliebige <img src="ltximg/20230118223557-wegzusammenhangender_raum_5d2f3de24f4fb713a9d6d9e23807d20324a228d9.svg" alt="20230118223557-wegzusammenhangender_raum_5d2f3de24f4fb713a9d6d9e23807d20324a228d9.svg" class="org-svg" /> eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+Ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> \((X,d)\)  ist wegzusammenhängend, falls für beliebige \(x,y \in X\) eine <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230118223557-wegzusammenhangender_raum_10abb46fa8ceaa320eb661ba17bc57beb095c12e.svg" alt="20230118223557-wegzusammenhangender_raum_10abb46fa8ceaa320eb661ba17bc57beb095c12e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f: [0,1] \rightarrow X \\
+f(0) = x, f(1) = y
+\end{align*}
 <p>
 existiert.
 </p>

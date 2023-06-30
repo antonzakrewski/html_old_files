@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Parameterform in Normalenform (Darstellung einer Ebene)</h1>
-<div id="outline-container-orgc8ca551" class="outline-2">
-<h2 id="orgc8ca551"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6e894c0" class="outline-2">
+<h2 id="org6e894c0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220218125106-parameterform_in_normalenform_darstellung_einer_ebene_0ba233ce35858be58a4a85202493b55c4306d92b.svg" alt="20220218125106-parameterform_in_normalenform_darstellung_einer_ebene_0ba233ce35858be58a4a85202493b55c4306d92b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+E: \vec{X} =& \vec{A} + \lambda \vec{u} + \mu \vec{v} \\
+\Rightarrow E: \vec{X} =& \left(\vec{A}, (\vec{u} \times \vec{v})\right)
+\end{align*}
 <ul class="org-ul">
 <li>Für <a href="20220210092610-ebenengleichung_in_parameterform.html#ID-b4ad407d-6c4f-487e-9d84-46bdcce58db2">Parameterform (Darstellung einer Ebene)</a>:
 <ul class="org-ul">
 <li>Wahl eines Aufpunkt</li>
-<li><a href="20210225213951-kreuzprodukt.html#ID-8a98e3bc-dfba-43c5-819d-8d1c5e4a5a81">Kreuzprodukt</a> der beiden <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> <img src="file:///home/anton/html/ltximg/20220218125106-parameterform_in_normalenform_darstellung_einer_ebene_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20220218125106-parameterform_in_normalenform_darstellung_einer_ebene_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> neuer Vektor als Normalenvektor</li>
+<li><a href="20210225213951-kreuzprodukt.html#ID-8a98e3bc-dfba-43c5-819d-8d1c5e4a5a81">Kreuzprodukt</a> der beiden <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> \(\Rightarrow\) neuer Vektor als Normalenvektor</li>
 </ul></li>
 </ul>
 </div>

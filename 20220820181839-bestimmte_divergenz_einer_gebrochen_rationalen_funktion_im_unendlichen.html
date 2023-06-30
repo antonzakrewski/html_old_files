@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">bestimmte Divergenz einer gebrochen Rationalen Funktion im Unendlichen</h1>
-<div id="outline-container-org6585c61" class="outline-2">
-<h2 id="org6585c61"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgabd5da2" class="outline-2">
+<h2 id="orgabd5da2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_dfb5dcc74361d58fd01b16e216e1a089dd50b6e6.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_dfb5dcc74361d58fd01b16e216e1a089dd50b6e6.svg" class="org-svg" /> eine <a href="20220102212658-definition_gebrochen_rationale_funkttionen.html#ID-1b393d0a-c72b-48ef-93c5-d28b8924d63b">gebrochen rationale Funktion</a> und der <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> des <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Zählerpolynoms</a> <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_b64470f19c3ca0e9de75c8806d4eb77f4ac0a7d4.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_b64470f19c3ca0e9de75c8806d4eb77f4ac0a7d4.svg" class="org-svg" /> größer als der Grad des Nennerpolynoms, so gilt:
+Sei \(f(x) =& \frac{p(x)}{q(x)}\) eine <a href="20220102212658-definition_gebrochen_rationale_funkttionen.html#ID-1b393d0a-c72b-48ef-93c5-d28b8924d63b">gebrochen rationale Funktion</a> und der <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> des <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Zählerpolynoms</a> \(p(x)\) größer als der Grad des Nennerpolynoms, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_528070e3ffd94af4545be5f31cd6facfc11e35b9.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_528070e3ffd94af4545be5f31cd6facfc11e35b9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert\lim_{x \to \infty}\left(f(x)\right)\vert =& \infty \\
+\vert\lim_{x \to -\infty}\left(f(x)\right)\vert =& \infty
+\end{align*}
 <p>
-Das konkrete Vorzeichen (<img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_fba802b53b15e26add548584c662ba0e683a6ac2.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_fba802b53b15e26add548584c662ba0e683a6ac2.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_94696812f8bd0e4e16de8553da9a93241ee9fc99.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_94696812f8bd0e4e16de8553da9a93241ee9fc99.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_327790255ecdf9a011339245f3bf219fd89f1938.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_327790255ecdf9a011339245f3bf219fd89f1938.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_22dc197f58b901af149e39704af6c2dc460dad5b.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_22dc197f58b901af149e39704af6c2dc460dad5b.svg" class="org-svg" />) hängt dabei von <img src="file:///home/anton/html/ltximg/20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_4700087d82095456ac517846fc274a96c583fff9.svg" alt="20220820181839-bestimmte_divergenz_einer_gebrochen_rationalen_funktion_im_unendlichen_4700087d82095456ac517846fc274a96c583fff9.svg" class="org-svg" /> ab
+Das konkrete Vorzeichen (\(+ \infty\), \(- \infty\), \(\pm \inft\), \(\mp \infty\)) hängt dabei von \(f(x)\) ab
 </p>
 </div>
 </div>

@@ -9,59 +9,73 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Automorphismengruppe der endlichen zyklischen Untergruppe</h1>
-<div id="outline-container-org225d275" class="outline-2">
-<h2 id="org225d275"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0293e51" class="outline-2">
+<h2 id="org0293e51"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" class="org-svg" /> mit <a href="20230110165441-ordnung_eines_gruppenelements.html#ID-c88f2185-0bf2-4292-8a15-8ea97181af4f">Ordnung</a> <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_b7e3a34961aa2235919968c168b814206f056848.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_b7e3a34961aa2235919968c168b814206f056848.svg" class="org-svg" />
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(g \in G\) mit <a href="20230110165441-ordnung_eines_gruppenelements.html#ID-c88f2185-0bf2-4292-8a15-8ea97181af4f">Ordnung</a> \(m  \coloneqq \mathrm{ord}(g) < \infty\)
 Dann gilt für die <a href="20230302210538-automorphismengruppe.html#ID-ad2bea99-3395-41e7-84ca-c93a1fc0efab">Automorphismengruppe</a> :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_fc2fc89a6b80ce96dbf7958f108ec8e3933e4780.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_fc2fc89a6b80ce96dbf7958f108ec8e3933e4780.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{Aut}( \langle g\rangle) \simeq \left(\mathbb{Z} / m \mathbb{Z} \right)^{\times}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org200635c" class="outline-2">
-<h2 id="org200635c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8e07a89" class="outline-2">
+<h2 id="org8e07a89"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_fb55848447a5f452a3ef556421861405fb8154f0.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_fb55848447a5f452a3ef556421861405fb8154f0.svg" class="org-svg" /> ein <a href="20220928135903-gruppenautomorphismus.html#ID-bde82a42-2a52-4890-a477-dc738b045a46">Gruppenautomorphismus</a>.
+Sei \(\phi: \langle g\rangle \rightarrow \langle g\rangle\) ein <a href="20220928135903-gruppenautomorphismus.html#ID-bde82a42-2a52-4890-a477-dc738b045a46">Gruppenautomorphismus</a>.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_d394b50f2233f57be59afddeac91e4046d6da0d3.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_d394b50f2233f57be59afddeac91e4046d6da0d3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi(g^{k}) = \phi(g)^{k}
+\end{align*}
 <p>
-also ist <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> eindeutig durch <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_9d3c1610dc8f7236623062853037ddb6504e937a.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_9d3c1610dc8f7236623062853037ddb6504e937a.svg" class="org-svg" /> festgelegt
-Sei <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_ef8390553149ec48c25a7252c8e6c74d217b0d89.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_ef8390553149ec48c25a7252c8e6c74d217b0d89.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_29e5a9ed9bab5c2b29b9d6eecdeb302783ee7fdb.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, folgt <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_d7718db017dd24d16c2db4d56ba2702c87fcfbc7.svg" class="org-svg" />, da sonst für <img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_6dc5d7d7698b19085bdea782a12dddda3aba42c7.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_6dc5d7d7698b19085bdea782a12dddda3aba42c7.svg" class="org-svg" /> gilt:
+also ist \(\phi\) eindeutig durch \(\phi(g)\) festgelegt
+Sei \(\phi(g) = g^{a}\) mit \(a \in \mathbb{Z}\)
+Da \(\phi\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, folgt \(\mathrm{gcd}(a,m) = 1\), da sonst für \(d  \coloneqq \mathrm{gcd}(a,m) > 1\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_1ba1a06c429aa75812446af43e9e90ebabcc02e8.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_1ba1a06c429aa75812446af43e9e90ebabcc02e8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\langle g^{a} \rangle \subseteq \langle g^{d} \rangle \neq \langle g\rangle
+\end{align*}
 
 <p>
 Definiere im folgenden die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_7a45de5dddf84e7321a9a23f001a7e16629e3c0d.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_7a45de5dddf84e7321a9a23f001a7e16629e3c0d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: \mathrm{Aut}( \langle g\rangle) \rightarrow& \left(\mathbb{Z} /m \mathbb{Z} \right)^{\times} \\
+\phi \mapsto \overline{a} = \log_g(\phi(g))
+\end{align*}
 <p>
 Nach der Vorbemerkung ist $&phi;
 </p>
@@ -69,16 +83,14 @@ Nach der Vorbemerkung ist $&phi;
 <p>
 Dann ist die evidente Umkehrabbildung
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_1406cfc156996699acdf35e267f84f190ff8c4cf.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_1406cfc156996699acdf35e267f84f190ff8c4cf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{-1}: (\mathbb{Z} / m \mathbb{Z})^{\times} \rightarrow& \mathrm{Aut}( \langle g\rangle) \\
+\overline{a} \mapsto (g \mapsto g^a)
+\end{align*}
 
 <p>
 Es gilt:
-<img src="file:///home/anton/html/ltximg/20230503130822-automorphismengruppe_der_zyklischen_gruppe_d963b346583ab5943e172b4fd4403c08d44b2a93.svg" alt="20230503130822-automorphismengruppe_der_zyklischen_gruppe_d963b346583ab5943e172b4fd4403c08d44b2a93.svg" class="org-svg" />
+\(\langle g\rangle = \langle g^k\rangle \Leftrightarrow \mathrm{gcd}(k,m) = 1\)
 </p>
 
 <p>

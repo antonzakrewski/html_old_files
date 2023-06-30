@@ -9,103 +9,99 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Cayley-Hamilton</h1>
-<div id="outline-container-org1936a44" class="outline-2">
-<h2 id="org1936a44"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org07dfa3e" class="outline-2">
+<h2 id="org07dfa3e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230222203639-satz_von_cayley_hamilton_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230222203639-satz_von_cayley_hamilton_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> -<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit einem <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphism</a> <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230222203639-satz_von_cayley_hamilton_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_c7ffdb6ff120296458be2120aea730d62e95f8ba.svg" alt="20230222203639-satz_von_cayley_hamilton_c7ffdb6ff120296458be2120aea730d62e95f8ba.svg" class="org-svg" />.
+Sei \(V\) ein \(n\) -<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit einem <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphism</a> \(A\) und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> \(f_A\).
 Dann gilt für den <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_b9cfb46ad71c1dffeedf4e708fb758fe5ea52cfd.svg" alt="20230222203639-satz_von_cayley_hamilton_b9cfb46ad71c1dffeedf4e708fb758fe5ea52cfd.svg" class="org-svg" />
-</span>
+\begin{align*}
+f_A(A) = 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4760947" class="outline-2">
-<h2 id="org4760947"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7b8df65" class="outline-2">
+<h2 id="org7b8df65"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230222203639-satz_von_cayley_hamilton_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> bezüglich einer festen <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>.
-Sei im folgenden <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_38b5ce0276059f3fd2a4f89aa1ac911a0fab1f5a.svg" alt="20230222203639-satz_von_cayley_hamilton_38b5ce0276059f3fd2a4f89aa1ac911a0fab1f5a.svg" class="org-svg" /> die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a>, d.h. es folgt <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_b0917771fbfe48eddf0af5a987aa27533c899271.svg" alt="20230222203639-satz_von_cayley_hamilton_b0917771fbfe48eddf0af5a987aa27533c899271.svg" class="org-svg" />
-Für die <a href="20230118135322-adjunkte_matrix.html#ID-6d0c6d49-b018-49cf-991a-465d7dfe17a1">Adjunkte</a> <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_8f3edbc0fcd62111e3ce43a7b03c7dbeff884211.svg" alt="20230222203639-satz_von_cayley_hamilton_8f3edbc0fcd62111e3ce43a7b03c7dbeff884211.svg" class="org-svg" /> gilt nach der <a href="20230131083334-multiplikation_einer_matrix_mit_der_adjunkte.html#ID-c9ff3ca9-2ea4-44d9-b05d-308524d47dc7">Multiplikation einer Matrix mit der Adjunkte</a> 
+Sei \(A\) die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> bezüglich einer festen <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>.
+Sei im folgenden \(B \coloneqq xE - A\) die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a>, d.h. es folgt \(f_A = \det(xE - A) = \det(B)\)
+Für die <a href="20230118135322-adjunkte_matrix.html#ID-6d0c6d49-b018-49cf-991a-465d7dfe17a1">Adjunkte</a> \(\tilde{B}\) gilt nach der <a href="20230131083334-multiplikation_einer_matrix_mit_der_adjunkte.html#ID-c9ff3ca9-2ea4-44d9-b05d-308524d47dc7">Multiplikation einer Matrix mit der Adjunkte</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_bf6ef464a6caff634f64425b7a082ac77348641c.svg" alt="20230222203639-satz_von_cayley_hamilton_bf6ef464a6caff634f64425b7a082ac77348641c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+B \cdot \tilde{B} =& \det(B)E \\
+=& \det(xE - A)E \\
+=& f_A E
+\end{align*}
 <p>
-Ferner gilt, dass <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_8f3edbc0fcd62111e3ce43a7b03c7dbeff884211.svg" alt="20230222203639-satz_von_cayley_hamilton_8f3edbc0fcd62111e3ce43a7b03c7dbeff884211.svg" class="org-svg" /> Einträge der <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> von Untermatrizen der <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230222203639-satz_von_cayley_hamilton_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" /> besitzt, d.h. damit <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> vom <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> kleiner gleich <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_74d6f8b782205f840fc34377a837b43201d13905.svg" alt="20230222203639-satz_von_cayley_hamilton_74d6f8b782205f840fc34377a837b43201d13905.svg" class="org-svg" />
+Ferner gilt, dass \(\tilde{B}\) Einträge der <a href="20221126201331-determinante.html#ID-eb5c60bd-2e36-4d02-aa16-f58c8e846d07">Determinante</a> von Untermatrizen der <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(n-1\) besitzt, d.h. damit <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynome</a> vom <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> kleiner gleich \(n-1\)
 Daraus erhalten wir eine Darstellung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_8b742e22c31e9fb89d7083673bca0fbb0c98d52d.svg" alt="20230222203639-satz_von_cayley_hamilton_8b742e22c31e9fb89d7083673bca0fbb0c98d52d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\tilde{B} = \sum_{i=0}^{n-1} C_i x^i \vert C_i \in K^{n\times n}
+\end{align*}
 <p>
-Sei ferner <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_19e87cd1459239fd7b6e16765de007f9456d5c2d.svg" alt="20230222203639-satz_von_cayley_hamilton_19e87cd1459239fd7b6e16765de007f9456d5c2d.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_87e75dd3bf6395465015fb47e3cb479db4cfcf63.svg" alt="20230222203639-satz_von_cayley_hamilton_87e75dd3bf6395465015fb47e3cb479db4cfcf63.svg" class="org-svg" />, so erhalten wir wegen <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_7975a9460d43b9d41b7c248250d874bc7d473aba.svg" alt="20230222203639-satz_von_cayley_hamilton_7975a9460d43b9d41b7c248250d874bc7d473aba.svg" class="org-svg" />:
+Sei ferner \(f_A = \sum_{i=0}^{n} a_i x^i\) mit \(a_n = 1\), so erhalten wir wegen \(f_A E = B \tilde{B}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_a098d8359ad6e1345f5ca09b9a19a24f9c616682.svg" alt="20230222203639-satz_von_cayley_hamilton_a098d8359ad6e1345f5ca09b9a19a24f9c616682.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+(\sum_{i=0}^{n} a_i x^i) E =& (xE - A)(\sum_{i=0}^{n-1} C_i x^i)
+\end{align*}
 <p>
 Durch einen Vergleich von Koeffizienten erhalten wir:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_ca824a905246eae3bd44ea08b2b3b6152e63026e.svg" alt="20230222203639-satz_von_cayley_hamilton_ca824a905246eae3bd44ea08b2b3b6152e63026e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+a_0 E =& -A C_0 \\
+a_1E =& C_0 - AC_1 \\
+\vdots& \\
+a_{n-1}E =& C_{n-2} - AC_{n-1} \\
+E =& C_{n-1}
+\end{align*}
 <p>
 Zudem gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_f8cb028ea5621e213f6f5c2514b3f4e0df8da879.svg" alt="20230222203639-satz_von_cayley_hamilton_f8cb028ea5621e213f6f5c2514b3f4e0df8da879.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+f_A(A) =& \sum_{i=0}^{n} a_i A^i \\
+=& \sum_{i=0}^{n} (a_i E) A^i
+\end{align*}
 <p>
-Durch ersetzen der <img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_46aa789e59c6f9319f1df9e28be9e6800025b7c4.svg" alt="20230222203639-satz_von_cayley_hamilton_46aa789e59c6f9319f1df9e28be9e6800025b7c4.svg" class="org-svg" /> durch die Ausdrücke oben erhalten wir eine <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a>:
+Durch ersetzen der \(a_iE\) durch die Ausdrücke oben erhalten wir eine <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230222203639-satz_von_cayley_hamilton_1e06854e54e7ac10bbd34b96793c11b9aef37eb3.svg" alt="20230222203639-satz_von_cayley_hamilton_1e06854e54e7ac10bbd34b96793c11b9aef37eb3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-6
-</span>
-</div>
+\begin{align*}
+f_A(A) =& -AC_0 + A(C_0 - AC_1) + \dots + A^{n-1}(C_{n-2} - AC_{n-1}) + A^nC_{n-1} \\
+=& 0
+\end{align*}
 </div>
 </div>
 </div>

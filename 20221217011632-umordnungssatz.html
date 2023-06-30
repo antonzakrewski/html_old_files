@@ -9,77 +9,85 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Umordnungssatz</h1>
-<div id="outline-container-org363954b" class="outline-2">
-<h2 id="org363954b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org159e6d6" class="outline-2">
+<h2 id="org159e6d6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" alt="20221217011632-umordnungssatz_584c5a06efb8b52a03ff691bbfc806cb3fe29a04.svg" class="org-svg" /> eine <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so ist die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> auch <a href="20221216220945-unbedingte_konvergenz_einer_reihe.html#ID-546ae080-f67b-4e21-86c5-1ee8d43181bb">unbedingt konvergent</a> 
+Sei \(\sum_{n=1}^{\infty} a_n\) eine <a href="20220718130957-absolute_reihe.html#ID-96128527-4a42-424c-b629-68bce48ddccb">absolute konvergente</a> <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, so ist die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> auch <a href="20221216220945-unbedingte_konvergenz_einer_reihe.html#ID-546ae080-f67b-4e21-86c5-1ee8d43181bb">unbedingt konvergent</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgd8b30c8" class="outline-2">
-<h2 id="orgd8b30c8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org64f3e06" class="outline-2">
+<h2 id="org64f3e06"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei die <a href="20221216220908-umordnung_einer_reihe.html#ID-a28ce676-e2d8-4d30-831a-4ad906b92b37">Umordnung</a> <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_e62b90c3bb0cc7ffe8942e936d7ff983388ad661.svg" alt="20221217011632-umordnungssatz_e62b90c3bb0cc7ffe8942e936d7ff983388ad661.svg" class="org-svg" /> beliebig und sei <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221217011632-umordnungssatz_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, dann existiert ein <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_3491aa455174314b379f07f7edfc47897f1512ce.svg" alt="20221217011632-umordnungssatz_3491aa455174314b379f07f7edfc47897f1512ce.svg" class="org-svg" />, so dass gilt:
+Sei die <a href="20221216220908-umordnung_einer_reihe.html#ID-a28ce676-e2d8-4d30-831a-4ad906b92b37">Umordnung</a> \(\sigma\) beliebig und sei \(\varepsilon > 0\), dann existiert ein \(n(\varepsilon) \in \mathbb{N}\), so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_1ab391fa63b61bca0d1d8f1bd8bdb35492f2ff39.svg" alt="20221217011632-umordnungssatz_1ab391fa63b61bca0d1d8f1bd8bdb35492f2ff39.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=n(\varepsilon)}^{\infty} \vert a_n \vert < \varepsilon 
+\end{align*}
 <p>
-Dann folgt, dass ein <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_f79f603cb8e89251f9fa67c3e7a4ce6598c6228b.svg" alt="20221217011632-umordnungssatz_f79f603cb8e89251f9fa67c3e7a4ce6598c6228b.svg" class="org-svg" /> existiert, sodass alle <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20221217011632-umordnungssatz_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_1721b6ca0bea9575db8c2b120a385df953152422.svg" alt="20221217011632-umordnungssatz_1721b6ca0bea9575db8c2b120a385df953152422.svg" class="org-svg" /> als summanden enthalten sind:
+Dann folgt, dass ein \(n'(\varepsilon)\) existiert, sodass alle \(a_n\) mit \(n \leq n(\varepsilon)\) als summanden enthalten sind:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_a5dade5f5ce73f266fc4b5b8caf6db79979f9176.svg" alt="20221217011632-umordnungssatz_a5dade5f5ce73f266fc4b5b8caf6db79979f9176.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sum_{n=1}^{n'(\varepsilon)} \vert a_{\sigma(n)} \vert
+\end{align*}
 <p>
 d.h.:
 </p>
+\begin{align*}
+\sum_{n=1}^{\infty} \vert a_n \vert - \varepsilon <\sum_{n=1}^{n(\varepsilon)} \vert a_n \vert \leq \sum_{n=1}^{n'(\varepsilon)} \vert a_{\sigma(\varepsilon)} \vert < \sum_{n=1}^{\infty} \vert a_n \vert
+\end{align*}
 
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_ce9cd90818a84f04de91913b855789c5ca6dce26.svg" alt="20221217011632-umordnungssatz_ce9cd90818a84f04de91913b855789c5ca6dce26.svg" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_d9df2c772c61c36f09e8c1bd40e924ca306d52bc.svg" alt="20221217011632-umordnungssatz_d9df2c772c61c36f09e8c1bd40e924ca306d52bc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+ \lim_{m \to \infty}\left(\sum_{n=1}^{m} a_{\sigma(n)} - \sum_{n=1}^{m} a_{n} \right) = 0
+\end{align*}
 <p>
 Analog lässt sich zeigen, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_e70e07fbf9ba28148464dd6d261d6087c305648d.svg" alt="20221217011632-umordnungssatz_e70e07fbf9ba28148464dd6d261d6087c305648d.svg" class="org-svg" />
-</span>
+\begin{align*}
+\sum_{n=1}^{\infty} \vert a_{\sigma(n)} \vert =& \sum_{n=1}^{\infty} \vert a_{n} \vert \\
+<& \infty
+\end{align*}
 </div>
-</div>
-<div id="outline-container-orgb5ff6ac" class="outline-3">
-<h3 id="orgb5ff6ac"><span class="section-number-3">2.1.</span> Grenzwert</h3>
+<div id="outline-container-org8599ae9" class="outline-3">
+<h3 id="org8599ae9"><span class="section-number-3">2.1.</span> Grenzwert</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Es gilt zusätzlich
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221217011632-umordnungssatz_186bc3db29fbb60c287f414cc2108f484f2461b6.svg" alt="20221217011632-umordnungssatz_186bc3db29fbb60c287f414cc2108f484f2461b6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert \sum_{n=n'(\varepsilon)}^{\infty} a_{n} \vert\leq \sum_{n=n'(\varepsilon)}^{\infty} \vert a_{n} \vert < \varepsilon
+\end{align*}
 <p>
 d.h. die Abweichung dort ist geringer
 </p>

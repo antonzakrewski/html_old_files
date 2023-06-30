@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>point finite</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">point finite</h1>
-<div id="outline-container-org114a2b2" class="outline-2">
-<h2 id="org114a2b2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org293090a" class="outline-2">
+<h2 id="org293090a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230330231020-punktendliches_mengensystem_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" alt="20230330231020-punktendliches_mengensystem_e2c14a19169411ac3e6df1a2578bf0cf09d347f2.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
-Ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a> <img src="ltximg/20230330231020-punktendliches_mengensystem_577a9d5dc74cf4ae488427a8d8304390490c4429.svg" alt="20230330231020-punktendliches_mengensystem_577a9d5dc74cf4ae488427a8d8304390490c4429.svg" class="org-svg" /> ist punktendlich, falls für <img src="ltximg/20230330231020-punktendliches_mengensystem_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" alt="20230330231020-punktendliches_mengensystem_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" class="org-svg" /> bloß <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <img src="ltximg/20230330231020-punktendliches_mengensystem_fdce42a0491004d9946ee19ec12843bce2f1ec30.svg" alt="20230330231020-punktendliches_mengensystem_fdce42a0491004d9946ee19ec12843bce2f1ec30.svg" class="org-svg" /> existieren mit <img src="ltximg/20230330231020-punktendliches_mengensystem_60dd4fcc5782598221b0db9cb9ae606ac3a587b3.svg" alt="20230330231020-punktendliches_mengensystem_60dd4fcc5782598221b0db9cb9ae606ac3a587b3.svg" class="org-svg" />
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Ein <a href="20220903215807-mengensystem.html#ID-c92b8075-6da5-4f97-a654-ad686fa4163c">Mengensystem</a> \(A := \{A_i \vert i \in I\} \subseteq \mathcal{P}(X)\) ist punktendlich, falls für \(x \in X\) bloß <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele \(A_i\) existieren mit \(x \in A_i\)
 </p>
 </div>
 </div>

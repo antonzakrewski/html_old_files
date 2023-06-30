@@ -9,44 +9,69 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation von Konvergenten Folgen</h1>
-<div id="outline-container-orgfb386bd" class="outline-2">
-<h2 id="orgfb386bd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3feeb80" class="outline-2">
+<h2 id="org3feeb80"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">vollständiger bewerteter Körper</a> (auch für einen integritätsbereich ?) und seien <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_9acec88e3d65db45df66df71122d0f22c0633ab3.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_9acec88e3d65db45df66df71122d0f22c0633ab3.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_2ae319d4cae481bf4cecb66e9fbf544188c87fe2.svg" class="org-svg" />
-Dann ist der Grenzwert von der Folge <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_7135cb28ab3e8b6cea314cd2f964f10f92cdf456.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_7135cb28ab3e8b6cea314cd2f964f10f92cdf456.svg" class="org-svg" /> 
+Sei \(K\) ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">vollständiger bewerteter Körper</a> (auch für einen integritätsbereich ?) und seien \((a_n)_{n \in \mathbb{N}}\) und \((b_n)_{n \in \mathbb{N}}\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> \(a\) und \(b\)
+Dann ist der Grenzwert von der Folge \((a_n \cdot b_n)_{n \in \mathbb{N}} \rightarrow a \cdot b\) 
 </p>
 </div>
 </div>
-<div id="outline-container-orgc0b8b1c" class="outline-2">
-<h2 id="orgc0b8b1c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org79b98e2" class="outline-2">
+<h2 id="org79b98e2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />.
-Es gilt zudem die <a href="20220123201343-beschranktheit_einer_konvergenten_folge.html#ID-c372f1ac-3f24-497b-bea2-7693b6f38bbd">Beschränktheit einer konvergenten Folge</a>, d.h. sei <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_61969310ffaa9636ffc4aa851270cb39fcb37c8e.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_61969310ffaa9636ffc4aa851270cb39fcb37c8e.svg" class="org-svg" />  
-Es folgt dann, dass für  <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_f8b7d3c6acd669fa0c34de7be56732e1e270cb15.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_f8b7d3c6acd669fa0c34de7be56732e1e270cb15.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_ae9f108fb7d879099f387dbb957d96ce995aea4f.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_ae9f108fb7d879099f387dbb957d96ce995aea4f.svg" class="org-svg" /> existiert, so dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_bb0951eab30b4be96f521ee1f4e541e78183bfc6.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_350b4b2239d2c5891f61e9f7b6b488ef373f64a6.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_350b4b2239d2c5891f61e9f7b6b488ef373f64a6.svg" class="org-svg" /> gilt,?
+Sei \(\varepsilon > 0\).
+Es gilt zudem die <a href="20220123201343-beschranktheit_einer_konvergenten_folge.html#ID-c372f1ac-3f24-497b-bea2-7693b6f38bbd">Beschränktheit einer konvergenten Folge</a>, d.h. sei \(s  \coloneqq \mathrm{max}(\sup \vert a_n \vert , \sup \vert a_n ' \vert, 1)\)  
+Es folgt dann, dass für  \(\frac{\varepsilon}{2 \cdot s}\) ein \(m  \coloneqq \mathrm{max}(n( \frac{\varepsilon}{2 \cdot s}), n'( \frac{\varepsilon}{2 \cdot s}))\) existiert, so dass <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(a_n\) und \(k \geq m\) gilt,?
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_d68b5375538e8effc8be1bdc35233e5a6d24ec86.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_d68b5375538e8effc8be1bdc35233e5a6d24ec86.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_k - a \vert < \frac{\varepsilon}{2 \cdot s}
+\end{align*}
 <p>
 Es folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_83fd2ce2f4e98f3f9125d507c6f7aa95a0e3108b.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_83fd2ce2f4e98f3f9125d507c6f7aa95a0e3108b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert a_k a_k' - aa' \vert =& \vert a_k \cdot (a' - a' + a_k' ) - aa' \vert \\
+=& \vert a'( a_k - a) + a_k (a_m' - a') \vert \\
+\leq& \vert a' (a_k - a) \vert + \vert a_k (a_m' - a') \vert \\
+=& \vert a' \vert \cdot \vert (a_k - a) \vert + \vert a_k \vert \cdot \vert (a_m' - a') \vert \\
+<& \vert a' \vert \cdot \frac{\varepsilon}{2 \cdot s} \vert a_k \vert \cdot \frac{\varepsilon}{2 \cdot s} \\
+\leq& \frac{\varepsilon}{2} + \frac{\varepsilon}{2} \\
+=& \varepsilon
+\end{align*}
 <p>
-d.h. <img src="file:///home/anton/html/ltximg/20221124121235-multiplikation_von_konvergenten_folgen_bad04edff897169c12bd650b573fb51e9e4bf88c.svg" alt="20221124121235-multiplikation_von_konvergenten_folgen_bad04edff897169c12bd650b573fb51e9e4bf88c.svg" class="org-svg" /> 
+d.h. \(a_k a_k' \rightarrow aa'\) 
 </p>
 </div>
 </div>

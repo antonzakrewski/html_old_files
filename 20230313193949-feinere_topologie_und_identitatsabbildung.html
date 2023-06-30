@@ -9,43 +9,70 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Feinere Topologie und Identitätsabbildung</h1>
-<div id="outline-container-orge291226" class="outline-2">
-<h2 id="orge291226"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6ada1bc" class="outline-2">
+<h2 id="org6ada1bc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_bf9fa6f74e839414726a8226dfe71026bbdf46fc.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_bf9fa6f74e839414726a8226dfe71026bbdf46fc.svg" class="org-svg" /> <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologien</a> auf <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />.
+Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \((X, \mathcal{T})\) sowie \((X, \mathcal{T}')\) <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologien</a> auf \(X\).
 </p>
 
 <p>
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
-<li>die <a href="20220928131442-identitatsabbildung.html#ID-82204cd3-d2c2-48a7-91fe-4b42e9884bda">Identitätsabbildung</a> <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_41fdfb777bdca5645a0367b38c275087c4281252.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_41fdfb777bdca5645a0367b38c275087c4281252.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_cb73764aa54d9752984c91425754c50d666f3ead.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_cb73764aa54d9752984c91425754c50d666f3ead.svg" class="org-svg" /> ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
-<li><img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> ist eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a> als <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /></li>
+<li>die <a href="20220928131442-identitatsabbildung.html#ID-82204cd3-d2c2-48a7-91fe-4b42e9884bda">Identitätsabbildung</a> \(\mathrm{id}_{} X \rightarrow X\) mit \((X, \mathcal{T}) \rightarrow (X, \mathcal{T}')\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
+<li>\(\mathcal{T}\) ist eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a> als \(\mathcal{T}'\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfd5eab1" class="outline-2">
-<h2 id="orgfd5eab1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbbcfc1f" class="outline-2">
+<h2 id="orgbbcfc1f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7144ec7" class="outline-3">
-<h3 id="org7144ec7"><span class="section-number-3">2.1.</span> a) stetig <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> fein</h3>
+<div id="outline-container-orgb6e06ce" class="outline-3">
+<h3 id="orgb6e06ce"><span class="section-number-3">2.1.</span> a) stetig \(\Rightarrow\) fein</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_da8931cae493b79be29282ce85c19840fb011d43.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_da8931cae493b79be29282ce85c19840fb011d43.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_668219a9e57c746d972bb4e84b960f69eef3db68.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_668219a9e57c746d972bb4e84b960f69eef3db68.svg" class="org-svg" /> und wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigkeit</a> gilt <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_5e8c450a654ea61ec15276a7225da867ab598330.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_5e8c450a654ea61ec15276a7225da867ab598330.svg" class="org-svg" />, d.h. es folgt <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_e6f1b1fb4e6c5e25cdba09313e49e823eea33bf8.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_e6f1b1fb4e6c5e25cdba09313e49e823eea33bf8.svg" class="org-svg" />
+Sei \(A \in \mathcal{T}'\), so ist \(\mathrm{id}_{}^{-1}[A] = A\) und wegen der <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetigkeit</a> gilt \(A \in \mathcal{T}\), d.h. es folgt \(\mathcal{T}' \subseteq \mathcal{T}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9362763" class="outline-3">
-<h3 id="org9362763"><span class="section-number-3">2.2.</span> b) fein <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> stetig</h3>
+<div id="outline-container-orgf55470e" class="outline-3">
+<h3 id="orgf55470e"><span class="section-number-3">2.2.</span> b) fein \(\Rightarrow\) stetig</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_da8931cae493b79be29282ce85c19840fb011d43.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_da8931cae493b79be29282ce85c19840fb011d43.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_668219a9e57c746d972bb4e84b960f69eef3db68.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_668219a9e57c746d972bb4e84b960f69eef3db68.svg" class="org-svg" /> und wegen der <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">Feinheit</a> von <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> folgt auch <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_5e8c450a654ea61ec15276a7225da867ab598330.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_5e8c450a654ea61ec15276a7225da867ab598330.svg" class="org-svg" />, d.h. nach Definition ist <img src="file:///home/anton/html/ltximg/20230313193949-feinere_topologie_und_identitatsabbildung_3481016260af6c40704585019f7e3caf1058ac9a.svg" alt="20230313193949-feinere_topologie_und_identitatsabbildung_3481016260af6c40704585019f7e3caf1058ac9a.svg" class="org-svg" />  <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
+Sei \(A \in \mathcal{T}'\), so ist \(\mathrm{id}_{}^{-1}[A] = A\) und wegen der <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">Feinheit</a> von \(\mathcal{T}\) folgt auch \(A \in \mathcal{T}\), d.h. nach Definition ist \(\mathrm{id}\)  <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> 
 </p>
 </div>
 </div>

@@ -3,48 +3,64 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Summenformel über einem festen oberen Wert des Binomialkoeffizienten</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Summenformel über einem festen oberen Wert des Binomialkoeffizienten</h1>
-<div id="outline-container-org96aa5d3" class="outline-2">
-<h2 id="org96aa5d3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgda5c090" class="outline-2">
+<h2 id="orgda5c090"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" alt="20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_44dc4af8518defa8cc6a3fd8bf907d0e5e3b5c8c.svg" class="org-svg" />, so gilt
+Sei \(n \in \mathbb{N}\), so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_d49e0d38ed12157721e909e2a4d4258a963bc18a.svg" alt="20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_d49e0d38ed12157721e909e2a4d4258a963bc18a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\sum_{k=0}^{n} \binom{n}{k} = 2^n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgef4e8d6" class="outline-2">
-<h2 id="orgef4e8d6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge390eac" class="outline-2">
+<h2 id="orge390eac"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus dem <a href="20220104220747-binomischer_lehrsatz.html#ID-93572b6e-6e51-486b-bf69-476329e57614">Binomischen Lehrsatz</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_737438573e13c0a2a237ca4d23abc3248f90aa72.svg" alt="20230112091211-summenformel_uber_einem_festen_n_des_binomialkoeffizienten_737438573e13c0a2a237ca4d23abc3248f90aa72.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(1 + 1)^n =& \sum_{k=0}^{n} \binom{n}{k} 1^{n-k} \cdot 1^{k} \\
+=& \sum_{k=0}^{n}\binom{n}{k}
+\end{align*}
 
 <p>
 alternativ: <a href="20220108204826-anzahl_an_teilmengen.html#ID-e6725964-ebfe-4c77-8f89-f2b441f3336e">Mächtigkeit der Potenzmenge</a> und summe über die möglichkeit der anzahl der elemente

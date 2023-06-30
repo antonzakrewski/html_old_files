@@ -9,37 +9,64 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Cauchy-Verdichtungssatz</h1>
-<div id="outline-container-org24f4a46" class="outline-2">
-<h2 id="org24f4a46"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org66ec0bf" class="outline-2">
+<h2 id="org66ec0bf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_641005075e3ac55e06098de56080838fa1905c22.svg" alt="20221208103712-cauchy_verdichtungssatz_641005075e3ac55e06098de56080838fa1905c22.svg" class="org-svg" /> eine <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monotone Folge</a>, <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" alt="20221208103712-cauchy_verdichtungssatz_cf807e96425dacebc2ae77db85b6462a8caff3e4.svg" class="org-svg" /> eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_dddf37099746da0835e7f34f9922ebccb40a152f.svg" alt="20221208103712-cauchy_verdichtungssatz_dddf37099746da0835e7f34f9922ebccb40a152f.svg" class="org-svg" /> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_dd2f1e1d1c07a412f9904e8e5fbd927e6a57f584.svg" alt="20221208103712-cauchy_verdichtungssatz_dd2f1e1d1c07a412f9904e8e5fbd927e6a57f584.svg" class="org-svg" /> für ein <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20221208103712-cauchy_verdichtungssatz_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" />  <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
+Sei \((a_i)\) eine <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monotone Folge</a>, \(\sum_{i=1}^{\infty} a_i\) eine <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a>, dann <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(\sum_{k=1}^{\infty} a_k\) <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> die <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> \(\sum_{i=1}^{\infty} a_{(n^i)} \cdot n^{i}\) für ein \(n \in \mathbb{N}\)  <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org90954d3" class="outline-2">
-<h2 id="org90954d3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga84f131" class="outline-2">
+<h2 id="orga84f131"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_641005075e3ac55e06098de56080838fa1905c22.svg" alt="20221208103712-cauchy_verdichtungssatz_641005075e3ac55e06098de56080838fa1905c22.svg" class="org-svg" /> eine <a href="20220105225408-monoton_fallende_folge.html#ID-2f1d7e9c-6c3c-44d9-acd7-f2cb83cc1e87">monoton fallende Folge</a>, dann gilt:
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \((a_i)\) eine <a href="20220105225408-monoton_fallende_folge.html#ID-2f1d7e9c-6c3c-44d9-acd7-f2cb83cc1e87">monoton fallende Folge</a>, dann gilt:
 beweisidee:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_59b8f4753fff1459de6bee34d64518ee5e6924ad.svg" alt="20221208103712-cauchy_verdichtungssatz_59b8f4753fff1459de6bee34d64518ee5e6924ad.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221208103712-cauchy_verdichtungssatz_157d357751eb6714792de898e2c75a0bdbc2db08.svg" alt="20221208103712-cauchy_verdichtungssatz_157d357751eb6714792de898e2c75a0bdbc2db08.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a_i^+ =& 
+\begin{cases}
+a_i^+ & \mbox{if } \exists k \in \mathbb{N} : n^k = i   \\ 
+a^+_{i-1} & \mbox{else } \\ 
+\end{cases}
+\end{align*}
+\begin{align*}
+a_i^- = 
+\begin{cases}
+a_{(n^{k + 1})}^- & \mbox{if } \exists k \in \mathbb{N}  : n^k = i  \\
+a_{i-1}^- & \mbox{else } \\ 
+\end{cases}
+\end{align*}
 </div>
 </div>
 </div>

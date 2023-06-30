@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">geometrische Vielfachheit und algebraische Vielfachheit eines Eigenwerts</h1>
-<div id="outline-container-org6b33745" class="outline-2">
-<h2 id="org6b33745"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9387c2f" class="outline-2">
+<h2 id="org9387c2f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_1b6c422db0b96096bbf6f3059819c189dad0a900.svg" class="org-svg" /> ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> mit <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a> <img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" class="org-svg" />.
-Dann gilt für die <a href="20230303214443-geometrische_vielfachheit_eines_eigenwerts.html#ID-5e8b27fb-6a6b-473d-a512-543f4f13aa74">geometrische Vielfachheit eines Eigenwerts</a> <img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_81f350d83f97d76b12e4e4fb1757a7bac1a926b0.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_81f350d83f97d76b12e4e4fb1757a7bac1a926b0.svg" class="org-svg" /> sowie <a href="20230303165754-vielfachheit_eines_eigenwerts.html#ID-be59473d-7ec4-4fe1-a83e-3f00c1bda553">algebraische Vielfachheit eines Eigenwerts</a> $v(A,<img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_a6b07320160134531ded38388d9f169e0217ccbe.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_a6b07320160134531ded38388d9f169e0217ccbe.svg" class="org-svg" />:
+Sei \(K^n\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in K^{n \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> mit <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwert</a> \(\alpha\).
+Dann gilt für die <a href="20230303214443-geometrische_vielfachheit_eines_eigenwerts.html#ID-5e8b27fb-6a6b-473d-a512-543f4f13aa74">geometrische Vielfachheit eines Eigenwerts</a> \(\mathrm{dim}_{K}V(\alpha)\) sowie <a href="20230303165754-vielfachheit_eines_eigenwerts.html#ID-be59473d-7ec4-4fe1-a83e-3f00c1bda553">algebraische Vielfachheit eines Eigenwerts</a> $v(A,\(\alpha)\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_5f6f4a9594c73028f68cf5df337cc6d3b6010d9d.svg" alt="20230509151709-geometrische_vielfachheit_und_algebraische_vielfachheit_eines_eigenwerts_5f6f4a9594c73028f68cf5df337cc6d3b6010d9d.svg" class="org-svg" />
-</span>
+\begin{align*}
+1 \leq \mathrm{dim}_{K}V(\alpha) \leq v(A,\alpha) \leq n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org3a93e3e" class="outline-2">
-<h2 id="org3a93e3e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge41d85f" class="outline-2">
+<h2 id="orge41d85f"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

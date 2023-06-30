@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Graphhomomorphismus</h1>
-<div id="outline-container-org0bf677d" class="outline-2">
-<h2 id="org0bf677d"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org6857071" class="outline-2">
+<h2 id="org6857071"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_270fcc67baa6d16c79dbd364edc39952c2b4414f.svg" alt="20230327231036-graphhomomorphismus_270fcc67baa6d16c79dbd364edc39952c2b4414f.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_c419abbaecec150fbe8400f2eac7345875204256.svg" alt="20230327231036-graphhomomorphismus_c419abbaecec150fbe8400f2eac7345875204256.svg" class="org-svg" /> <a href="20220904165445-graph.html#ID-2de260cf-41c4-4dec-9ae9-450c507fda60">Graphen</a>.
+Seien \(G = (V_G,E_G)\) und \(H = (V_H,E_H)\) <a href="20220904165445-graph.html#ID-2de260cf-41c4-4dec-9ae9-450c507fda60">Graphen</a>.
 Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_ec5d09bcde84589c4f5f53dc859d4f2c418a746a.svg" alt="20230327231036-graphhomomorphismus_ec5d09bcde84589c4f5f53dc859d4f2c418a746a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: V_G \rightarrow V_H
+\end{align*}
 <p>
-auch geschrieben <img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" alt="20230327231036-graphhomomorphismus_3828e201a9b1b70218240e76e2c0f88c5b52d2b5.svg" class="org-svg" /> ist ein Grhaphomomorphismus, falls für <img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_5d310902d770e4449cd159bfe5e4c9d411e0681c.svg" alt="20230327231036-graphhomomorphismus_5d310902d770e4449cd159bfe5e4c9d411e0681c.svg" class="org-svg" /> folgt:
+auch geschrieben \(f: G \rightarrow H\) ist ein Grhaphomomorphismus, falls für \((v_1,v_2) \in E_G\) folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230327231036-graphhomomorphismus_fb94ae7f627d2d6d33378fb901a4c841b843dd18.svg" alt="20230327231036-graphhomomorphismus_fb94ae7f627d2d6d33378fb901a4c841b843dd18.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(f(v_1),f(v_2)) \in E_H
+\end{align*}
 </div>
 </div>
 </div>

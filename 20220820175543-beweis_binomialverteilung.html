@@ -9,22 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Binomialverteilung</h1>
-<div id="outline-container-orgd4e19c3" class="outline-2">
-<h2 id="orgd4e19c3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1e11a89" class="outline-2">
+<h2 id="org1e11a89"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<img src="file:///home/anton/html/ltximg/20220820175543-beweis_binomialverteilung_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" alt="20220820175543-beweis_binomialverteilung_948627b62bd4867bb2c392901ba500f7b47d7f7d.svg" class="org-svg" />
-B(n,p,k) =&amp; &sdot; p<sup>k</sup> &sdot; (1-p)<sup>n-k</sup>
-* BEweis
+\begin{align*}
+B(n,p,k) =&amp; \binom{n}{k} &sdot; p<sup>k</sup> &sdot; (1-p)<sup>n-k</sup>
+\end{align*}* BEweis
 </p>
 </div>
 </div>
-<div id="outline-container-org7d49bd1" class="outline-2">
-<h2 id="org7d49bd1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org76cf27e" class="outline-2">
+<h2 id="org76cf27e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 todo: über<a href="20211228190529-beweis_durch_vollstandige_induktion_anwendung.html#ID-c3eb7e31-4c0a-4913-954e-f382a9b91fe0">Beweis durch vollständige Induktion: Anwendung</a> 

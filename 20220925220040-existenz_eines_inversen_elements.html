@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines Inversen Elements</h1>
-<div id="outline-container-org3588bd7" class="outline-2">
-<h2 id="org3588bd7"><span class="section-number-2">1.</span> Axiom</h2>
+<div id="outline-container-orgcfbaf9d" class="outline-2">
+<h2 id="orgcfbaf9d"><span class="section-number-2">1.</span> Axiom</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220925220040-existenz_eines_inversen_elements_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" alt="20220925220040-existenz_eines_inversen_elements_7d123e8229ebf853806c2c14c8285bb8d1202894.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  und <img src="file:///home/anton/html/ltximg/20220925220040-existenz_eines_inversen_elements_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" alt="20220925220040-existenz_eines_inversen_elements_8e9e1d04c6574c1a4787ea40e61b583df147aff1.svg" class="org-svg" /> eine <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> mit dem <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutralen Element</a> <img src="file:///home/anton/html/ltximg/20220925220040-existenz_eines_inversen_elements_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" alt="20220925220040-existenz_eines_inversen_elements_95fbae20de6d48ed7fb549e5d26cbb929ca0440b.svg" class="org-svg" />
+Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>  und \(\circ\) eine <a href="20220723085309-verknupfung_mathe.html#ID-03371b0b-4778-4ca8-8e67-9361dd544d83">Verknüpfung</a> mit dem <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutralen Element</a> \(e\)
 Das Axiom ist erfüllt, wenn gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220925220040-existenz_eines_inversen_elements_9872e3c41544e344338e40292ce25d5709c9f172.svg" alt="20220925220040-existenz_eines_inversen_elements_9872e3c41544e344338e40292ce25d5709c9f172.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall a \in M \setminus \{0\} \exists a^{-1} \in M : ( a \circ a^{-1} = a^{-1} \circ a = e)
+\end{align*}
 <p>
 Insbesondere hat das <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a> der <a href="20210618084656-addition.html#ID-d9bb4990-4623-4957-bf16-ff3483acb12c">Addition</a> kein <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">Inverses Element</a> 
 </p>

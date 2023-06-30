@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Offenheit der Vereinigung offener Mengen (metrischer Raum)</h1>
-<div id="outline-container-org3eaeaa5" class="outline-2">
-<h2 id="org3eaeaa5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge6a41ba" class="outline-2">
+<h2 id="orge6a41ba"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
-So folgt, dass <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_55deaeb19480dd16578c31db1f07b9c8df7fafd9.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_55deaeb19480dd16578c31db1f07b9c8df7fafd9.svg" class="org-svg" /> ebenfalls <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> ist.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(O_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>.
+So folgt, dass \(\bigcup_{i \in I} O_i\) ebenfalls <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org60b386c" class="outline-2">
-<h2 id="org60b386c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3704884" class="outline-2">
+<h2 id="org3704884"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_bbefccf6cc0de8d91afa2a9e2c6ff232dda010f8.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_bbefccf6cc0de8d91afa2a9e2c6ff232dda010f8.svg" class="org-svg" />, so 
-Sei <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_4e99de0a16cad8387258e9428e23db97804d21e1.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_4e99de0a16cad8387258e9428e23db97804d21e1.svg" class="org-svg" />, so existiert ein <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_ce67523f65c01f14e7b62d4d3035c5fa81fa0a6e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_4003511ea9724c692cfce9578816a65d5ddba023.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_4003511ea9724c692cfce9578816a65d5ddba023.svg" class="org-svg" />
-Nach Annahme ist <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> und es folgt, dass ein <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" /> existiert mit <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_c8c1ba3fe04f1ebd897333e26a4cf90f972bdde7.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_c8c1ba3fe04f1ebd897333e26a4cf90f972bdde7.svg" class="org-svg" />.
-Damit folgt auch <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_098e5c491d5bbb6a289bdc8bd9c269ed9c15fd82.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_098e5c491d5bbb6a289bdc8bd9c269ed9c15fd82.svg" class="org-svg" /> und folglich ist <img src="file:///home/anton/html/ltximg/20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> 
+Sei \(\bigcup_{i \in } O_i = \emptyset\), so 
+Sei \(x \in \bigcup_{i \in I} = \emptyset\), so existiert ein \(i \in I\) mit \(x \in O_i\)
+Nach Annahme ist \(O_i\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> und es folgt, dass ein \(\varepsilon > 0\) existiert mit \(U_{\varepsilon}(x) \subseteq O_i\).
+Damit folgt auch \(U_{\varepsilon}(x) \subseteq \bigcup_{i \in I} O_i\) und folglich ist \(O_i\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> 
 </p>
 </div>
 </div>

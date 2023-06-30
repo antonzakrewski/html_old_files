@@ -9,37 +9,60 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">ungerade stetige Funktion durch den Ursprung</h1>
-<div id="outline-container-org92a03f2" class="outline-2">
-<h2 id="org92a03f2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb534828" class="outline-2">
+<h2 id="orgb534828"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_255c252569289db4d05dc97b42f87c92d3df61c1.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_255c252569289db4d05dc97b42f87c92d3df61c1.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_da1f24a5fbe94cbdd9588622186de05bf215aad0.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_da1f24a5fbe94cbdd9588622186de05bf215aad0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_daafdfdc459483046ae4bc16127f3ff6dd8824b9.svg" class="org-svg" /> eine <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungerade</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
-Dann gilt <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" class="org-svg" />
+Sei \(D \subseteq \mathbb{R}\) mit \(U_{\varepsilon}(0) \subseteq D\) und \(f: D \rightarrow \mathbb{R}\) eine <a href="20230623-ungerade_funktion.html#ID-21298545-b055-45b8-b3bf-90e39d6fa0ca">ungerade</a>, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
+Dann gilt \(f(0) = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org014c36a" class="outline-2">
-<h2 id="org014c36a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org37c1212" class="outline-2">
+<h2 id="org37c1212"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme der <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">Folgenstetigkeit</a> gilt <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_00ebaec5e12e75b0297709d15f9eee9024198b31.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_00ebaec5e12e75b0297709d15f9eee9024198b31.svg" class="org-svg" />
+Nach Annahme der <a href="20230224175911-folgenstetigkeit_in_topologischen_raumen.html#ID-cd35cb72-6a6c-4944-b774-a795150c9214">Folgenstetigkeit</a> gilt \(\lim_{x \nearrow 0} f(x) = \lim_{x \nearrow 0} f(x)\)
 Desweiteren gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_1eedcdd2357e68f5310032d44c88489c90aa0a59.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_1eedcdd2357e68f5310032d44c88489c90aa0a59.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\lim_{x \searrow 0} f(x) =& \lim_{x \nearrow 0} -f(x) \\
+=& - \lim_{x \nearrow 0} f(x) \\
+\eqqcolon& y
+\end{align*}
 <p>
-Somit folgt aus <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_5a319f947ab889cf5f79b2a82489d179f54f4333.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_5a319f947ab889cf5f79b2a82489d179f54f4333.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230623-ungerade_funktion_durch_den_ursprung_3f49105d069d42ef91e0138c8149aaccaaad2e38.svg" alt="20230623-ungerade_funktion_durch_den_ursprung_3f49105d069d42ef91e0138c8149aaccaaad2e38.svg" class="org-svg" />
+Somit folgt aus \(y = -y\) auch \(y = 0\)
 </p>
 </div>
 </div>

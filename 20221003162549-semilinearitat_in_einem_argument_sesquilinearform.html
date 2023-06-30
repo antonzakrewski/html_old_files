@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Semilinearität in einem Argument</h1>
-<div id="outline-container-org0071bba" class="outline-2">
-<h2 id="org0071bba"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb3a33ee" class="outline-2">
+<h2 id="orgb3a33ee"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_1d020af54d4dd394d7f299130aef599957f30ba9.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_1d020af54d4dd394d7f299130aef599957f30ba9.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> mit der <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermiteschen Sesquilinearform</a> <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_0f80b6b5b7387eadbf204a7909ef229808d2e567.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_0f80b6b5b7387eadbf204a7909ef229808d2e567.svg" class="org-svg" />.
-Es seien <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" />  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a>.
-Dann gilt für eine <a href="20221003155654-sesquilinearform.html#ID-a45e77e2-cb58-46a5-9457-a99ce7b1b279">Sesquilinearform</a> <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_76529468779510cf2f551edbc97e0ba5b48cdbb3.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_76529468779510cf2f551edbc97e0ba5b48cdbb3.svg" class="org-svg" /> mit beliebigen <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_81b9e66a237be4217e0ea005e7c5734d0a23b629.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_a6983a90b57c7d4a9546c6dc5e4d23515104e2fe.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_a6983a90b57c7d4a9546c6dc5e4d23515104e2fe.svg" class="org-svg" /> sowie <img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_fe289bec186056b2b1ebbf5fc69735bca63293f7.svg" class="org-svg" /> 
+Sei \(\mathbb{C}^n\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a> mit der <a href="20221003160915-hermitesche_sesquilinearform.html#ID-f2530251-d424-47ad-909c-6d7357b928f1">Hermiteschen Sesquilinearform</a> \(\langle , \rangle\).
+Es seien \(V,W\)  <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a> über den <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexen Zahlen</a>.
+Dann gilt für eine <a href="20221003155654-sesquilinearform.html#ID-a45e77e2-cb58-46a5-9457-a99ce7b1b279">Sesquilinearform</a> \(S: V \times W \rightarrow \mathbb{C}\) mit beliebigen \(v,v' \in V\) und \(w \in W\) sowie \(a \in \mathbb{C}\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003162549-semilinearitat_in_einem_argument_sesquilinearform_f95ca472e42f4fcb256e4c426b5a14863d2c31a7.svg" alt="20221003162549-semilinearitat_in_einem_argument_sesquilinearform_f95ca472e42f4fcb256e4c426b5a14863d2c31a7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\langle a \cdot v,w \rangle =& \overline{a}\langle v,w\rangle  \\
+\langle v + v',w \rangle =& \langle v,w\rangle + \langle v',w\rangle
+\end{align*}
 <p>
 (vgl. <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a>)
 Alternativ auch umgekehrt für das andere Argument

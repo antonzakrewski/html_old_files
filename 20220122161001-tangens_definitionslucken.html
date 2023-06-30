@@ -9,33 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Tangens - Definitionslücken</h1>
-<div id="outline-container-orgc826d0e" class="outline-2">
-<h2 id="orgc826d0e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2a893c8" class="outline-2">
+<h2 id="org2a893c8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122161001-tangens_definitionslucken_8c45bb21f23c851d7b84424d91d1ba35ebb7ad56.svg" alt="20220122161001-tangens_definitionslucken_8c45bb21f23c851d7b84424d91d1ba35ebb7ad56.svg" class="org-svg" />
-</span>
+\begin{align*}
+f(x)  \coloneqq& \tan{(0.5 \pi + x \cdot \pi)} \\
+\mathbb{D}_{f} =& \mathbb{R} \setminus \mathbb{Z} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2c680ee" class="outline-2">
-<h2 id="org2c680ee"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf7e0322" class="outline-2">
+<h2 id="orgf7e0322"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="20220122162648-division_durch_null.html#ID-040cd49f-94c4-4075-9645-db9c377ffc11">Division durch Null</a></li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220122161001-tangens_definitionslucken_82cbead0f4791a182a25cee833c774de74b53916.svg" alt="20220122161001-tangens_definitionslucken_82cbead0f4791a182a25cee833c774de74b53916.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\tan(x) =& \frac{\sin(x)}{\cos(x)} \\
+\cos(x) = 0 \Leftrightarrow \tan(x) =& \frac{\sin(x)}{0} = undef
+\end{align*}
 </div>
 </div>
 </div>

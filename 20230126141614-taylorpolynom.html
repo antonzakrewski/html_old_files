@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Taylorpolynom</h1>
-<div id="outline-container-orgf76e9af" class="outline-2">
-<h2 id="orgf76e9af"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga625450" class="outline-2">
+<h2 id="orga625450"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_9940b7b40f8efe9314cb6bb683b73ec0c8fd2cc2.svg" alt="20230126141614-taylorpolynom_9940b7b40f8efe9314cb6bb683b73ec0c8fd2cc2.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_a09adf7330e52adacac7ba731660e551623ff25c.svg" alt="20230126141614-taylorpolynom_a09adf7330e52adacac7ba731660e551623ff25c.svg" class="org-svg" /> eine $n$-mal <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> für <img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_09cf4331b70b47748b08145bb917f0e609861089.svg" alt="20230126141614-taylorpolynom_09cf4331b70b47748b08145bb917f0e609861089.svg" class="org-svg" /> (siehe: <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>).
-Dann ist das $n$-te Taylorpolynom von <img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230126141614-taylorpolynom_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> in <img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_ae223dd808316f99d1861ba1350d03009673fb5b.svg" alt="20230126141614-taylorpolynom_ae223dd808316f99d1861ba1350d03009673fb5b.svg" class="org-svg" /> definiert als:
+Sei \(f: (a,b) \rightarrow \mathbb{R}\) für \(a,b \in \overline{\mathbb{R}}\) eine $n$-mal <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> für \(n \in \mathbb{N}\) (siehe: <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>).
+Dann ist das $n$-te Taylorpolynom von \(f\) in \(x_0 \in (a,b)\) definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230126141614-taylorpolynom_f5eeb57d7a501235f347f2c1183b4a07429f9496.svg" alt="20230126141614-taylorpolynom_f5eeb57d7a501235f347f2c1183b4a07429f9496.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+T_{x_0,n}(x) =& \sum_{k=0}^{n} \frac{f^{(k)}(x_0)}{k!} (x - x_0)^k
+\end{align*}
 </div>
 </div>
 </div>

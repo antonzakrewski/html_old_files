@@ -9,25 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvexkombination</h1>
-<div id="outline-container-orgc926658" class="outline-2">
-<h2 id="orgc926658"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org3a09624" class="outline-2">
+<h2 id="org3a09624"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230204211609-konvexkombination_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230204211609-konvexkombination_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>.
-Eine Konvexkombination von <img src="file:///home/anton/html/ltximg/20230204211609-konvexkombination_55a8c2cf6ed59e06bfb5ef0613bf37a99f6bf902.svg" alt="20230204211609-konvexkombination_55a8c2cf6ed59e06bfb5ef0613bf37a99f6bf902.svg" class="org-svg" /> ist ein endliche summe
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">Komplexer</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorraum</a>.
+Eine Konvexkombination von \(C \subseteq V\) ist ein endliche summe
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230204211609-konvexkombination_115e807a1dc280c0e6d9d37b3bbfd3eba6a21cf2.svg" alt="20230204211609-konvexkombination_115e807a1dc280c0e6d9d37b3bbfd3eba6a21cf2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+v = \sum_{i=1}^{n} \lambda_i a_i 
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230204211609-konvexkombination_3a00f13045d886df2c4ab0390e7d32abd3684ac5.svg" alt="20230204211609-konvexkombination_3a00f13045d886df2c4ab0390e7d32abd3684ac5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230204211609-konvexkombination_d1b32ff972c588e14eef7abf5ce053af9a891417.svg" alt="20230204211609-konvexkombination_d1b32ff972c588e14eef7abf5ce053af9a891417.svg" class="org-svg" />
+mit \(\lambda_i \geq 0\) und \(\sum_{i=1}^{n} \lambda_i = 1\)
 </p>
 </div>
 </div>

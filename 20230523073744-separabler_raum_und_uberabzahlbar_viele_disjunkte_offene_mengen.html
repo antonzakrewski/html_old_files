@@ -9,44 +9,68 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Nicht-Separabler Raum und überabzählbar viele disjunkte, offene Mengen</h1>
-<div id="outline-container-org817430a" class="outline-2">
-<h2 id="org817430a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9008133" class="outline-2">
+<h2 id="org9008133"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> nicht <a href="20230307213929-seperabler_raum.html#ID-6e659d10-83a5-4a03-88b7-119feee141fa">separabel</a>, falls <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> existieren
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
+Dann ist \(X\) nicht <a href="20230307213929-seperabler_raum.html#ID-6e659d10-83a5-4a03-88b7-119feee141fa">separabel</a>, falls <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> existieren
 </p>
 </div>
 </div>
-<div id="outline-container-orgd55512e" class="outline-2">
-<h2 id="orgd55512e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6af5c39" class="outline-2">
+<h2 id="org6af5c39"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, und angenommen es existieren <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" />.
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_e7f4f28e86ba2d0bf86dc108dd8441c31ba7cba7.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_e7f4f28e86ba2d0bf86dc108dd8441c31ba7cba7.svg" class="org-svg" /> und da <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> paarweise <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> ist, ist die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
+Sei \(A\) <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dicht</a> in \(X\), und angenommen es existieren <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> viele <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a>, <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(O_i\).
+Nach Annahme gilt \(O_i \cap A \neq \emptyset\) und da \(O_i\) paarweise <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> ist, ist die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_09ef9419d09d5db5a8fca583b7d9e648107cc5bc.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_09ef9419d09d5db5a8fca583b7d9e648107cc5bc.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: A \rightarrow& I \sqcup \{0\} \\
+a \mapsto 
+    \begin{cases}
+    i & \mbox{if } a \in O_i \\
+    0 & \mbox{else } \\  
+    \end{cases}
+\end{align*}
 <p>
-Diese <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist wegen der Disjunktheit der <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> und wegen der <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">Dichtheit</a> eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">Surjektion</a> auf <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" />
+Diese <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist wegen der Disjunktheit der \(O_i\) <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> und wegen der <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">Dichtheit</a> eine <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">Surjektion</a> auf \(I\)
 Damit folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_3b5d8ec10b3d3bef53b3cfe16a742224c26ececb.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_3b5d8ec10b3d3bef53b3cfe16a742224c26ececb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vert A \vert \geq \vert I \vert
+\end{align*}
 <p>
-bzw. dass <img src="file:///home/anton/html/ltximg/20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230523073744-separabler_raum_und_uberabzahlbar_viele_disjunkte_offene_mengen_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> ist
+bzw. dass \(A\) <a href="20211227215849-uberabzahlbar_unendlich.html#ID-9a4cb7c5-90c2-48e3-ad83-d9bcf341b6e9">überabzählbar</a> ist
 </p>
 </div>
 </div>

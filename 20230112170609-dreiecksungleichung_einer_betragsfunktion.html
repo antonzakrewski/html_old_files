@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dreiecksungleichung einer Betragsfunktion</h1>
-<div id="outline-container-org62db62a" class="outline-2">
-<h2 id="org62db62a"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb186c5e" class="outline-2">
+<h2 id="orgb186c5e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230112170609-dreiecksungleichung_einer_betragsfunktion_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" alt="20230112170609-dreiecksungleichung_einer_betragsfunktion_adff42dcd1af9cae86b08c217a763ffc228cfa38.svg" class="org-svg" /> eine <a href="20230112165607-betragsfunktion_in_einem_korper.html#ID-63c090e9-4121-4b95-9def-b1356b686ef1">Betragsfunktion</a> eines <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereichs</a> <img src="file:///home/anton/html/ltximg/20230112170609-dreiecksungleichung_einer_betragsfunktion_042620ed6cbf8773ec46f28e40c5180925767659.svg" alt="20230112170609-dreiecksungleichung_einer_betragsfunktion_042620ed6cbf8773ec46f28e40c5180925767659.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230112170609-dreiecksungleichung_einer_betragsfunktion_bae2a93340874897c57389d23e2cbfe5a73146f4.svg" alt="20230112170609-dreiecksungleichung_einer_betragsfunktion_bae2a93340874897c57389d23e2cbfe5a73146f4.svg" class="org-svg" />
+Sei \(\phi\) eine <a href="20230112165607-betragsfunktion_in_einem_korper.html#ID-63c090e9-4121-4b95-9def-b1356b686ef1">Betragsfunktion</a> eines <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereichs</a> \(D\) und \(x,y \in D\)
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230112170609-dreiecksungleichung_einer_betragsfunktion_c44b617215fe719fc96d6dade5bdba784c8f72e9.svg" alt="20230112170609-dreiecksungleichung_einer_betragsfunktion_c44b617215fe719fc96d6dade5bdba784c8f72e9.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi(x + y) \leq \phi(x) + \phi(y)
+\end{align*}
 </div>
 </div>
 </div>

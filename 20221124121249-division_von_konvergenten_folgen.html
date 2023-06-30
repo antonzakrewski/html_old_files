@@ -9,59 +9,75 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Division von Konvergenten Folgen</h1>
-<div id="outline-container-orgdaccc88" class="outline-2">
-<h2 id="orgdaccc88"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfa0ba1e" class="outline-2">
+<h2 id="orgfa0ba1e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20221124121249-division_von_konvergenten_folgen_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">vollständiger bewerteter Körper</a> und seien <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" alt="20221124121249-division_von_konvergenten_folgen_dadc0aaa38a76c4c2ccfa8f9765596cf54ba7385.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_9acec88e3d65db45df66df71122d0f22c0633ab3.svg" alt="20221124121249-division_von_konvergenten_folgen_9acec88e3d65db45df66df71122d0f22c0633ab3.svg" class="org-svg" /> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" alt="20221124121249-division_von_konvergenten_folgen_18ec91833cceabac6026848616074440af4e7b9c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_10891e8a1277ab2e7f80c24405454229c88fd783.svg" alt="20221124121249-division_von_konvergenten_folgen_10891e8a1277ab2e7f80c24405454229c88fd783.svg" class="org-svg" />
-Dann ist der Grenzwert von der Folge <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_d0b175864ebd6180276174e2e31810208abb1826.svg" alt="20221124121249-division_von_konvergenten_folgen_d0b175864ebd6180276174e2e31810208abb1826.svg" class="org-svg" />
+Sei \(K\) ein <a href="20221124122431-vollstandiger_bewerteter_korper.html#ID-4a97308f-1aa7-4352-be57-80f8fc9984b4">vollständiger bewerteter Körper</a> und seien \((a_n)_{n \in \mathbb{N}}\) und \((b_n)_{n \in \mathbb{N}}\) <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgen</a> mit <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwerten</a> \(a\) und \(b \neq 0\)
+Dann ist der Grenzwert von der Folge \((a_n \cdot (b_n)^{-1})_{n \in \mathbb{N}} \rightarrow a \cdot b^{-1}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgecbd397" class="outline-2">
-<h2 id="orgecbd397"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org38ebedd" class="outline-2">
+<h2 id="org38ebedd"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_c134fb6879018229f2acaee5eecdf4570b832613.svg" alt="20221124121249-division_von_konvergenten_folgen_c134fb6879018229f2acaee5eecdf4570b832613.svg" class="org-svg" />  mit <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_c41e9bb502bdeb2b3561bc9001faa9e02142c3d9.svg" alt="20221124121249-division_von_konvergenten_folgen_c41e9bb502bdeb2b3561bc9001faa9e02142c3d9.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_ee8efa91308ee30dcc723528e64ad6583320daaa.svg" alt="20221124121249-division_von_konvergenten_folgen_ee8efa91308ee30dcc723528e64ad6583320daaa.svg" class="org-svg" />
-Dann gilt, dass ein <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_b6e7c1033cb0189e71181e0af060f535b816fb28.svg" alt="20221124121249-division_von_konvergenten_folgen_b6e7c1033cb0189e71181e0af060f535b816fb28.svg" class="org-svg" /> existiert, so dass für <img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_68d7dbbf053838bf33b14792e6c6656fb18b0853.svg" alt="20221124121249-division_von_konvergenten_folgen_68d7dbbf053838bf33b14792e6c6656fb18b0853.svg" class="org-svg" /> gilt
+Sei \(\varepsilon' > 0\)  mit \(\varepsilon' = \vert b \vert \cdot \varepsilon\) und \(\varepsilon \rightarrow 0^+\)
+Dann gilt, dass ein \(n(\varepsilon)\) existiert, so dass für \(m > n(\varepsilon)\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_f41015fbc92848370d2b06f3afb7b37cc84c3f5e.svg" alt="20221124121249-division_von_konvergenten_folgen_f41015fbc92848370d2b06f3afb7b37cc84c3f5e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+b_n - b < \varepsilon'
+\end{align*}
 <p>
 und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_c314bbe1f4c9f7bc23641f636899030f591cbeec.svg" alt="20221124121249-division_von_konvergenten_folgen_c314bbe1f4c9f7bc23641f636899030f591cbeec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{1}{b_n} - \frac{1}{b} =& \frac{1}{b_n - b + b} - \frac{1}{b} \\
+\vert \frac{1}{b_n - b + b} - \frac{1}{b}\vert \leq& \vert \frac{1}{\pm \varepsilon' + b} - \frac{1}{b} \vert \\
+\leq& \vert  \frac{1 \pm \varepsilon}{b} - \frac{1}{b} \vert \\
+=& \vert \frac{\pm \varepsilon}{b} \vert \rightarrow 0
+\end{align*}
 <p>
 d.h. die Folge
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_1f32e7fed0309e206767b15e872fbe290de9c47c.svg" alt="20221124121249-division_von_konvergenten_folgen_1f32e7fed0309e206767b15e872fbe290de9c47c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{1}{b_n} \rightarrow \frac{1}{b}
+\end{align*}
 <p>
 Daraus folgt dann aus der <a href="20221124121235-multiplikation_von_konvergenten_folgen.html#ID-db9eb570-34d3-4868-865c-9e127aeb3c4e">Multiplikation von Konvergenten Folgen</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221124121249-division_von_konvergenten_folgen_efce276f60765a47ee14986f5449b9d00b6fcd24.svg" alt="20221124121249-division_von_konvergenten_folgen_efce276f60765a47ee14986f5449b9d00b6fcd24.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{a_n}{b_n} \rightarrow \frac{a}{b}
+\end{align*}
 </div>
 </div>
 </div>

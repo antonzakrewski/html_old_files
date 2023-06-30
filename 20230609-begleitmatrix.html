@@ -9,26 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Begleitmatrix</h1>
-<div id="outline-container-orgc5b8453" class="outline-2">
-<h2 id="orgc5b8453"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgfcc588b" class="outline-2">
+<h2 id="orgfcc588b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230609-begleitmatrix_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_a7884967688bb00cf716853d5aad8655852ba868.svg" alt="20230609-begleitmatrix_a7884967688bb00cf716853d5aad8655852ba868.svg" class="org-svg" /> ein <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normiertes</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> vom <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> <img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230609-begleitmatrix_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_d29bc727d2d6105a667f8edf31f8eb13d9b6cadc.svg" alt="20230609-begleitmatrix_d29bc727d2d6105a667f8edf31f8eb13d9b6cadc.svg" class="org-svg" />.
-Dann ist die Begleitmatrix <img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230609-begleitmatrix_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> definiert als
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(g \in K[X]\) ein <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">normiertes</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> vom <a href="20220401194742-grad_polynom.html#ID-38057130-59af-422a-a717-372042339f5c">Grad</a> \(n\) mit \(g(x) = x + \alpha_{n-1} x^{n-1} + ... + \alpha_{1} x + x\).
+Dann ist die Begleitmatrix \(A \in K^{n \times n}\) definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230609-begleitmatrix_155b4d19b02af3c74868ed460446ff35570e539a.svg" alt="20230609-begleitmatrix_155b4d19b02af3c74868ed460446ff35570e539a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+B_g \coloneqq \begin{pmatrix}
+0 &   &   & & - \alpha_0 \\
+1 & 0 &   & & - \alpha_1 \\
+0 & 1 & 0 & & - \alpha_2 \\
+0 &   & \ddots  & & \vdots \\
+0 & 0 & \dots & 1 & - \alpha_{n-1} \\
+ \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

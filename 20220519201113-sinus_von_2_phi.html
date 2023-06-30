@@ -3,45 +3,63 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sinus von 2 phi</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sinus von 2 phi</h1>
-<div id="outline-container-orgc51c46a" class="outline-2">
-<h2 id="orgc51c46a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org362a3f8" class="outline-2">
+<h2 id="org362a3f8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220519201113-sinus_von_2_phi_d46b51a065bedeff9feb36f05aeed0206fa71b3a.svg" alt="20220519201113-sinus_von_2_phi_d46b51a065bedeff9feb36f05aeed0206fa71b3a.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\sin(2\phi) =& 2\cos(\phi)\sin(\phi)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgc4344d8" class="outline-2">
-<h2 id="orgc4344d8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7760c2a" class="outline-2">
+<h2 id="org7760c2a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über die <a href="20220519163317-formel_von_de_moivre.html#ID-07252994-1582-4fde-b546-14e17521b79f">Formel von de Moivre</a> den <a href="20211231000354-imaginarteil.html#ID-8267ad48-49dc-48a8-a7d0-e1b3e1d502fc">Imaginärteil</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220519201113-sinus_von_2_phi_5498c8f626a722712a721f988ea647092d0f6e41.svg" alt="20220519201113-sinus_von_2_phi_5498c8f626a722712a721f988ea647092d0f6e41.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\sin(2\phi) =& Im\left[\cos(2\phi) + i\sin(2\phi\right] \\
+=& Im\left[\left(\cos(\phi) + i\sin(\phi)\right)^2\right] \\
+=& Im\left[\cos^2(\phi) - \sin^2(\phi) + i\left(2\cos(\phi)\sin(\phi)\right)] \\
+=& 2\cos(\phi)\sin(\phi)
+\end{align*}
 </div>
 </div>
 </div>

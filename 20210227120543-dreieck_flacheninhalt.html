@@ -9,49 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dreieck - Flächeninhalt</h1>
-<div id="outline-container-orgafaf2ad" class="outline-2">
-<h2 id="orgafaf2ad"><span class="section-number-2">1.</span> Paralellogram</h2>
+<div id="outline-container-org5c52e92" class="outline-2">
+<h2 id="org5c52e92"><span class="section-number-2">1.</span> Paralellogram</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210227120543-dreieck_flacheninhalt_8b2717fe1d301beecbf0661c0796321a6c4eef56.svg" alt="20210227120543-dreieck_flacheninhalt_8b2717fe1d301beecbf0661c0796321a6c4eef56.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{equation}
+A_{dreieck} = \frac{1}{2} A_{parallelogram}
+\end{equation}
 </div>
-</div>
-<div id="outline-container-org49edcbd" class="outline-3">
-<h3 id="org49edcbd"><span class="section-number-3">1.1.</span> Grundseite</h3>
+<div id="outline-container-orgea3a2be" class="outline-3">
+<h3 id="orgea3a2be"><span class="section-number-3">1.1.</span> Grundseite</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210227120543-dreieck_flacheninhalt_67d0c6fdf57f1129af9a2d0c717ace2f450e94c6.svg" alt="20210227120543-dreieck_flacheninhalt_67d0c6fdf57f1129af9a2d0c717ace2f450e94c6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{equation}
+A = \frac{1}{2} \cdot c_{grundseite} \cdot h
+\end{equation}
 </div>
 </div>
-</div>
-<div id="outline-container-orgceff0c5" class="outline-3">
-<h3 id="orgceff0c5"><span class="section-number-3">1.2.</span> Vektor</h3>
+<div id="outline-container-orga277c78" class="outline-3">
+<h3 id="orga277c78"><span class="section-number-3">1.2.</span> Vektor</h3>
 <div class="outline-text-3" id="text-1-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210227120543-dreieck_flacheninhalt_c7a9f3338c034d1ade2e30a72273028e21cd3345.svg" alt="20210227120543-dreieck_flacheninhalt_c7a9f3338c034d1ade2e30a72273028e21cd3345.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{equation}
+A = \frac{1}{2} \cdot |\vec{a} \times \vec{b}|
+\end{equation}
 </div>
 </div>
 </div>

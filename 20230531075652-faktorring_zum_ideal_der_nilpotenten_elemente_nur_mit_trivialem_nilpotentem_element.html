@@ -3,54 +3,69 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Faktorring zum Ideal der nilpotenten Elemente nur mit trivialem nilpotentem Element</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Faktorring zum Ideal der nilpotenten Elemente nur mit trivialem nilpotentem Element</h1>
-<div id="outline-container-org9846f0f" class="outline-2">
-<h2 id="org9846f0f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb9f75aa" class="outline-2">
+<h2 id="orgb9f75aa"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_d36a85089294cdf077f8d88238989103a2e1b0ec.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_d36a85089294cdf077f8d88238989103a2e1b0ec.svg" class="org-svg" /> das <a href="20230531075602-menge_der_nilpotenten_element_als_ideal.html#ID-603c79c1-6511-45a3-898a-83df20df86ea">Ideal der nilpotenten Elemente</a>.
-Dann ist <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> frei von nichttrivialen <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotenten Elementen</a>.
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(\mathcal{N}\) das <a href="20230531075602-menge_der_nilpotenten_element_als_ideal.html#ID-603c79c1-6511-45a3-898a-83df20df86ea">Ideal der nilpotenten Elemente</a>.
+Dann ist \(R\) frei von nichttrivialen <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotenten Elementen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org35e4538" class="outline-2">
-<h2 id="org35e4538"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd60facf" class="outline-2">
+<h2 id="orgd60facf"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_2ebe3f3f021635cf86e4e7d7e70e00206009146e.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_2ebe3f3f021635cf86e4e7d7e70e00206009146e.svg" class="org-svg" /> mit <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_aa7416505d25af60e9e5e2b96207dfef6fbbb576.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_aa7416505d25af60e9e5e2b96207dfef6fbbb576.svg" class="org-svg" /> <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotent</a>, so existiert ein <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_4d7d056d64fb2f1ead91f16bd5238b392f38832a.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_4d7d056d64fb2f1ead91f16bd5238b392f38832a.svg" class="org-svg" /> mit 
+Sei \(n \in R\) mit \(n + R\) <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotent</a>, so existiert ein \(m \in \mathbb{N}\) mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_77775b634a3f2860bab483141303216782972e24.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_77775b634a3f2860bab483141303216782972e24.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(n + \mathcal{N})^m = 0 + \mathcal{N}
+\end{align*}
 <p>
 Damit folgt dann auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_6b2301030d0450f1e57b0d5b6ec591e1d2cf864d.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_6b2301030d0450f1e57b0d5b6ec591e1d2cf864d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+(n + \mathcal{N})^m = n^m + \mathcal{N} = 0 + \mathcal{N}
+\end{align*}
 <p>
-das heißt <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_743f446429f00ea268ac7bf291411e5c9ccfd69f.svg" class="org-svg" /> ist <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotent</a> in <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> und somit auch <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_6c017482b9046ca095b4d1c2dad462540b348154.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_6c017482b9046ca095b4d1c2dad462540b348154.svg" class="org-svg" /> und damit <img src="ltximg/20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_8bb17dad09134279b40f6e666901cf8ea75f5fb2.svg" alt="20230531075652-faktorring_zum_ideal_der_nilpotenten_elemente_nur_mit_trivialem_nilpotentem_element_8bb17dad09134279b40f6e666901cf8ea75f5fb2.svg" class="org-svg" />
+das heißt \(n\) ist <a href="20230315113206-nilpotent.html#ID-e1be03af-ebb8-42d9-8caa-1fe3a1093c3f">nilpotent</a> in \(R\) und somit auch \(n \in \mathcal{N}\) und damit \(n + \mathcal{N} = 0 + \mathcal{N}\)
 </p>
 </div>
 </div>

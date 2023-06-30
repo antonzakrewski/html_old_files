@@ -9,24 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikation komplexer Zahlen</h1>
-<div id="outline-container-orgfac3550" class="outline-2">
-<h2 id="orgfac3550"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org4c55614" class="outline-2">
+<h2 id="org4c55614"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20211230230303-multiplikation_komplexe_zahlen_b3be7c57873b85aa42f2b58a4fa8f16922119f08.svg" alt="20211230230303-multiplikation_komplexe_zahlen_b3be7c57873b85aa42f2b58a4fa8f16922119f08.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20211230230303-multiplikation_komplexe_zahlen_71cfcaa197cf00f7ef05c8d57675288dca8e2f66.svg" alt="20211230230303-multiplikation_komplexe_zahlen_71cfcaa197cf00f7ef05c8d57675288dca8e2f66.svg" class="org-svg" /> <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexe Zahlen</a>.
+Seien \(z = a + b \mathrm{i}\) und \(z' = a' + b' \mathrm{i}\) <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexe Zahlen</a>.
 Dann ist die <a href="20210618082003-multiplikation.html#ID-040e85c2-7bda-4c97-956d-2c65ab4533e3">Multiplikation</a> folgendermaßen definiert:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211230230303-multiplikation_komplexe_zahlen_0877638364afeecd80b183349f7d0d9dd1785c77.svg" alt="20211230230303-multiplikation_komplexe_zahlen_0877638364afeecd80b183349f7d0d9dd1785c77.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+z \cdot z'  \coloneqq (a,b) \cdot (a',b')  \coloneqq& (aa' - bb', ab' + a'b) \\
+ (a + b \mathrm{i}) \cdot (a' + b' \mathrm{i})  \coloneqq& aa' - bb' + (ab' + a'b)\mathrm{i}
+\end{align*}
 
 <p>
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>

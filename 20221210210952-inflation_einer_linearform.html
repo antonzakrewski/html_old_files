@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Inflation einer Linearform</h1>
-<div id="outline-container-orgc14a228" class="outline-2">
-<h2 id="orgc14a228"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgc71bc47" class="outline-2">
+<h2 id="orgc71bc47"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221210210952-inflation_einer_linearform_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, sei <img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" alt="20221210210952-inflation_einer_linearform_54ae3333f08e4e64a7af7bfd94a864f3dca5017f.svg" class="org-svg" /> ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> und <img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_1110abeb9c0dcd539ba70882d00ca01e89f418af.svg" alt="20221210210952-inflation_einer_linearform_1110abeb9c0dcd539ba70882d00ca01e89f418af.svg" class="org-svg" /> 
-Für <img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_cc58b450a6029f660a3cd7b979e96cbd8977bf3f.svg" alt="20221210210952-inflation_einer_linearform_cc58b450a6029f660a3cd7b979e96cbd8977bf3f.svg" class="org-svg" /> ist die Inflation <img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_a580e3b5e1f5957f24acf70e047b8e323bc39818.svg" alt="20221210210952-inflation_einer_linearform_a580e3b5e1f5957f24acf70e047b8e323bc39818.svg" class="org-svg" /> definiert durch
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a>, sei \(U \subseteq V\) ein <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> und \(f \in V^{*}\) 
+Für \(g \in (V/U)^*\) ist die Inflation \(I: (V/U)^* \rightarrow V*\) definiert durch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221210210952-inflation_einer_linearform_46bf651676fa6feea834df09a0172f993a43ca59.svg" alt="20221210210952-inflation_einer_linearform_46bf651676fa6feea834df09a0172f993a43ca59.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(Ig)(v) =& g(v + U) && v \in V, g \in (V/U)^*
+\end{align*}
 </div>
 </div>
 </div>

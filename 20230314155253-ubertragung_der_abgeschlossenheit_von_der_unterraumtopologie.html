@@ -9,42 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Übertragung der Abgeschlossenheit von der Unterraumtopologie</h1>
-<div id="outline-container-org1006a50" class="outline-2">
-<h2 id="org1006a50"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8db33ea" class="outline-2">
+<h2 id="org8db33ea"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_ad876b5cc130171ba2a73300ebdcaa26ac5e1e42.svg" class="org-svg" />
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(U \subseteq X\)
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li>jede <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_0a8349ac8351c6e9b505595df4604d0ca2e5b562.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_0a8349ac8351c6e9b505595df4604d0ca2e5b562.svg" class="org-svg" /> ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /></li>
+<li>jede <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A\) in der <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">Unterraumtopologie</a> \(\mathcal{T}_U\) ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}\)</li>
+<li>\(U\) ist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org412d038" class="outline-2">
-<h2 id="org412d038"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org212dd56" class="outline-2">
+<h2 id="org212dd56"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3a7a9d9" class="outline-3">
-<h3 id="org3a7a9d9"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org68ffa29" class="outline-3">
+<h3 id="org68ffa29"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-insbesondere ist der ganze Raum <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> in einer <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, d.h. nach Annahme folgt, auch <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_d7cf5e242f233b72dd86769847ea0381eca02f4b.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_d7cf5e242f233b72dd86769847ea0381eca02f4b.svg" class="org-svg" />
+insbesondere ist der ganze Raum \(U\) in einer <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>, d.h. nach Annahme folgt, auch \(X \setminus U \in \mathcal{T}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org33b66fb" class="outline-3">
-<h3 id="org33b66fb"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgd1b59b5" class="outline-3">
+<h3 id="orgd1b59b5"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> und sei <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_0a8349ac8351c6e9b505595df4604d0ca2e5b562.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_0a8349ac8351c6e9b505595df4604d0ca2e5b562.svg" class="org-svg" /> so ist <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_e51118058e5bd8ff66579d3a4d4e3ef380fb1f5e.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_e51118058e5bd8ff66579d3a4d4e3ef380fb1f5e.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Nach defintion existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_02e6acdf8edaf6cb8937ba9cb3c0f367c9386f77.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_02e6acdf8edaf6cb8937ba9cb3c0f367c9386f77.svg" class="org-svg" />, so dass gilt <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_93f5de019a56ebf47898a8bcf987efa7a2ae82aa.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_93f5de019a56ebf47898a8bcf987efa7a2ae82aa.svg" class="org-svg" />
-daraus folgt, dass <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_48ecd9426b5371ae5af5b92596ac5b60fa8c5e21.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_48ecd9426b5371ae5af5b92596ac5b60fa8c5e21.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist und wegen der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit vom Durchschnitt abgeschlossener Mengen</a> ist <img src="file:///home/anton/html/ltximg/20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_713ce47da5a11a5e0eeb70901a0cbb420ee53884.svg" alt="20230314155253-ubertragung_der_abgeschlossenheit_von_der_unterraumtopologie_713ce47da5a11a5e0eeb70901a0cbb420ee53884.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
+Sei \(U\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}\) und sei \(A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> in \(\mathcal{T}_U\) so ist \(B_U  \coloneqq U \setminus A\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
+Nach defintion existiert eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(B \in \mathcal{T}\), so dass gilt \(B_U = B \cap U\)
+daraus folgt, dass \(X \setminus B\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist und wegen der <a href="20221224153324-abgeschlossenheit_vom_durchschnitt.html#ID-1bb320cf-5118-4a33-8390-982ef2fbc2e2">Abgeschlossenheit vom Durchschnitt abgeschlossener Mengen</a> ist \(U \cap  (X \setminus B) = U \setminus B = U \setminus B_U = A\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>
 </p>
 
 <p>

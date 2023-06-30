@@ -9,52 +9,74 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Verknüpfung von Homomorphismen als Homomorphismus</h1>
-<div id="outline-container-orgbbcccd3" class="outline-2">
-<h2 id="orgbbcccd3"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org106545d" class="outline-2">
+<h2 id="org106545d"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_c431cdb70ef878bb7c1f0b4f48fe53289acdb205.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_c431cdb70ef878bb7c1f0b4f48fe53289acdb205.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_fb56c5e6c7c304141012ed417cf0042ceb2357c9.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_fb56c5e6c7c304141012ed417cf0042ceb2357c9.svg" class="org-svg" /> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismen</a> mit <img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_77c36f3064ee847a95263e5cc72ad72406347dd4.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_77c36f3064ee847a95263e5cc72ad72406347dd4.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_5b6441e8202336ca834bc92f0185b5514c65d5e7.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_5b6441e8202336ca834bc92f0185b5514c65d5e7.svg" class="org-svg" />.
-Dann folgt für <img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_74f9e3e9bf63008b314dd46a5e04f36cbc6b4efd.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_74f9e3e9bf63008b314dd46a5e04f36cbc6b4efd.svg" class="org-svg" />
+Seien \(V_1,V_2,V_3\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(f,f',g,g'\) <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismen</a> mit \(f,f': V_1 \rightarrow V_2\), \(g,g': V_2 \rightarrow V_3\).
+Dann folgt für \(a_1 \in V_1\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_5db4f8f631af53f39717fd60fb453f45c21d9153.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_5db4f8f631af53f39717fd60fb453f45c21d9153.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(gf)(a_1) =& g(f(a_1))
+\end{align*}
 <p>
 ein eindeutig definierter <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-org29cf332" class="outline-2">
-<h2 id="org29cf332"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb20c15a" class="outline-2">
+<h2 id="orgb20c15a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org04b505b" class="outline-3">
-<h3 id="org04b505b"><span class="section-number-3">2.1.</span> Homogenität</h3>
+<div id="outline-container-org44ec35d" class="outline-3">
+<h3 id="org44ec35d"><span class="section-number-3">2.1.</span> Homogenität</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_444d7bb5ecb3ead2c705097e401808f519f9acc9.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_444d7bb5ecb3ead2c705097e401808f519f9acc9.svg" class="org-svg" />
-</span>
+\begin{align*}
+(gf)(\alpha a_1) =& g(f(\alpha a_1)) \\
+=& g(\alpha f(a_1)) \\
+=& \alpha g(f(a_1)) \\
+=& \alpha (gf)(a_1)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org17b6f16" class="outline-3">
-<h3 id="org17b6f16"><span class="section-number-3">2.2.</span> Additivität</h3>
+<div id="outline-container-orgf22f184" class="outline-3">
+<h3 id="orgf22f184"><span class="section-number-3">2.2.</span> Additivität</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_38f97e07e1c2623e9b7b39b71332307de6ae16dd.svg" alt="20221125131504-lemma_uber_die_verknupfung_von_homomorphismen_38f97e07e1c2623e9b7b39b71332307de6ae16dd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(gf)(a_1 + a_2) =& g(f(a_1 + a_2)) \\
+=& g(f(a_1) + f(a_2)) \\
+=& g(f(a_1)) + g(f(a_2))  \\
+=& (gf)(a_1) + (gf)(a_2)
+\end{align*}
 </div>
 </div>
 </div>

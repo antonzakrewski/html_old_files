@@ -9,26 +9,47 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dieters identity</h1>
-<div id="outline-container-orgeaed770" class="outline-2">
-<h2 id="orgeaed770"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6a560d3" class="outline-2">
+<h2 id="org6a560d3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-dieters_identity_15cf086dc067cb9cc8eda9e241cecdfb1d60ceb5.svg" alt="20230620-dieters_identity_15cf086dc067cb9cc8eda9e241cecdfb1d60ceb5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+x^n - 1 = (x + 1) \cdot \sum_{i=0}^{n-1} x^i
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdd94d55" class="outline-2">
-<h2 id="orgdd94d55"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8bbe7e4" class="outline-2">
+<h2 id="org8bbe7e4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt als <a href="20220922110852-teleskopsumme.html#ID-bd73c5fe-35ce-4687-aaec-793ff41634f7">Teleskopsumme</a> 

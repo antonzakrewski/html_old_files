@@ -3,34 +3,55 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bijektive Abbildung (Kategorientheorie)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bijektive Abbildung (Kategorientheorie)</h1>
-<div id="outline-container-orgc0f7f3c" class="outline-2">
-<h2 id="orgc0f7f3c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org417374e" class="outline-2">
+<h2 id="org417374e"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_46f9ff5727a22a51a55884c3cf5a8c7131fc77ba.svg" class="org-svg" /> eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a>, <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_ba64bb4054305d82c1d29aea69dfae1776ad72ea.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_ba64bb4054305d82c1d29aea69dfae1776ad72ea.svg" class="org-svg" /> und sei <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" /> ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a>.
-<img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist bijektiv, falls sich jeder <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_dcbecf9eb2a6d71cac1e6e65794ab7046ffb3842.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_dcbecf9eb2a6d71cac1e6e65794ab7046ffb3842.svg" class="org-svg" /> eindeutig über <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> <a href="20230225172453-faktorisierung_eines_morphismus.html#ID-03fc6d28-e9bd-4fa3-8093-a113eaf06a6e">faktorisieren</a> lässt, d.h. es gilt:
+Sei \(\mathcal{C}\) eine <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a>, \(A,B \in \mathrm{Obj}(\mathcal{C})\) und sei \(f: A \rightarrow B\) ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a>.
+\(f\) ist bijektiv, falls sich jeder <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(h: \{0\} \rightarrow B\) eindeutig über \(f\) <a href="20230225172453-faktorisierung_eines_morphismus.html#ID-03fc6d28-e9bd-4fa3-8093-a113eaf06a6e">faktorisieren</a> lässt, d.h. es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_a8531e70e120e530b449cd0f074e968d6dd155a2.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_a8531e70e120e530b449cd0f074e968d6dd155a2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+b = a \circ f
+\end{align*}
 <p>
-für <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_7116a21726e46375bc87da3e2534e155f824a3e6.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_7116a21726e46375bc87da3e2534e155f824a3e6.svg" class="org-svg" /> und ein <img src="ltximg/20230225172642-bijektive_abbildung_kategorientheorie_caaaf845bb9c47806e02de1b97f7fcd86834870a.svg" alt="20230225172642-bijektive_abbildung_kategorientheorie_caaaf845bb9c47806e02de1b97f7fcd86834870a.svg" class="org-svg" />
+für \(a: \{0\} \rightarrow A\) und ein \(b: \{0\} \rightarrow B\)
 </p>
 </div>
 </div>

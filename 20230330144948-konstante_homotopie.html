@@ -9,61 +9,78 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">konstante Homotopie</h1>
-<div id="outline-container-org38d4eb0" class="outline-2">
-<h2 id="org38d4eb0"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org072f840" class="outline-2">
+<h2 id="org072f840"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230330144948-konstante_homotopie_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230330144948-konstante_homotopie_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230330144948-konstante_homotopie_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>.
 Dann ist die konstante <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">Homotopie</a> definiert durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_61dc36200c79333aab34c4091429e7fabd50bd66.svg" alt="20230330144948-konstante_homotopie_61dc36200c79333aab34c4091429e7fabd50bd66.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h(s,x) = f(x)
+\end{align*}
 <p>
 d.h. es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_e282687e34022092261ac3b7dc0ef4a590f93824.svg" alt="20230330144948-konstante_homotopie_e282687e34022092261ac3b7dc0ef4a590f93824.svg" class="org-svg" />
-</span>
+\begin{align*}
+f \simeq f
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4d81908" class="outline-2">
-<h2 id="org4d81908"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5a15cc1" class="outline-2">
+<h2 id="org5a15cc1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgffdeb02" class="outline-3">
-<h3 id="orgffdeb02"><span class="section-number-3">2.1.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
+<div id="outline-container-org7fe585d" class="outline-3">
+<h3 id="org7fe585d"><span class="section-number-3">2.1.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_21cc198b9e978a5e622c549e8e68a78beca749aa.svg" alt="20230330144948-konstante_homotopie_21cc198b9e978a5e622c549e8e68a78beca749aa.svg" class="org-svg" /> eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist nach Annahme <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_8e2c542f7e22c6065093f8071a215b84818dc78b.svg" alt="20230330144948-konstante_homotopie_8e2c542f7e22c6065093f8071a215b84818dc78b.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230330144948-konstante_homotopie_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" />, da <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230330144948-konstante_homotopie_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
-Es gilt <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_81486611aa0f318c3d2cab9142452f6e4e6d0f40.svg" alt="20230330144948-konstante_homotopie_81486611aa0f318c3d2cab9142452f6e4e6d0f40.svg" class="org-svg" />
-Nach der Definition der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> ist <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_9709874fc7993e11a03d3016cc8bbfaa3920edf3.svg" alt="20230330144948-konstante_homotopie_9709874fc7993e11a03d3016cc8bbfaa3920edf3.svg" class="org-svg" /> <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> der Projektionsabbildung für die offene Menge <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_edf3d374e821cfe116da9f50c41d0019e0ed9d63.svg" alt="20230330144948-konstante_homotopie_edf3d374e821cfe116da9f50c41d0019e0ed9d63.svg" class="org-svg" />, d.h. <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_9709874fc7993e11a03d3016cc8bbfaa3920edf3.svg" alt="20230330144948-konstante_homotopie_9709874fc7993e11a03d3016cc8bbfaa3920edf3.svg" class="org-svg" /> ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
-Daraus folgt, dass <img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" alt="20230330144948-konstante_homotopie_620588c1d1c1972801f6d01177c65752ffb9e3c2.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Sei \(O' \subseteq X'\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, so ist nach Annahme \(f^{-1}[O']\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> in \(X\), da \(f\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
+Es gilt \(h^{-1}[O'] = I \times f^{-1}[O']\)
+Nach der Definition der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a> ist \(I \times f^{-1}[O']\) <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> der Projektionsabbildung für die offene Menge \(O'\), d.h. \(I \times f^{-1}[O']\) ist <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
+Daraus folgt, dass \(h\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org7c488ac" class="outline-3">
-<h3 id="org7c488ac"><span class="section-number-3">2.2.</span> Umformung</h3>
+<div id="outline-container-orgf4e103c" class="outline-3">
+<h3 id="orgf4e103c"><span class="section-number-3">2.2.</span> Umformung</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230330144948-konstante_homotopie_cc6b6d175df30dab718aae92c054f0b58bf58f39.svg" alt="20230330144948-konstante_homotopie_cc6b6d175df30dab718aae92c054f0b58bf58f39.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+h(0,x) =& f(x) \\
+h(1,x) =& f(x)
+\end{align*}
 </div>
 </div>
 </div>

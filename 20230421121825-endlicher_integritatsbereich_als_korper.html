@@ -9,40 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">endlicher Integritätsbereich als Körper</h1>
-<div id="outline-container-org7adcd6e" class="outline-2">
-<h2 id="org7adcd6e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org15a39b7" class="outline-2">
+<h2 id="org15a39b7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> mit <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_2e6bfdce6fa0f8526053581dc802c3c2bde6ae9e.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_2e6bfdce6fa0f8526053581dc802c3c2bde6ae9e.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> mit \(\vert R \vert < \infty\), so ist \(R\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org58986ec" class="outline-2">
-<h2 id="org58986ec"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga686ad2" class="outline-2">
+<h2 id="orga686ad2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Zu zeigen ist, dass <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_aa1f48d18138dfd0fa7282aa4887c2dc7ed484ab.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_aa1f48d18138dfd0fa7282aa4887c2dc7ed484ab.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist, d.h. insbesondere dass <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse elemente</a> existieren.
+Zu zeigen ist, dass \(R \setminus \{\}\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist, d.h. insbesondere dass <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse elemente</a> existieren.
 Die anderen Forderungen werden weitervererbt:
-Sei <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_c9070077ba82d1e30a4702df4c1f6caa0c3ff6e3.svg" class="org-svg" />, so ist die verknüpfung <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_41cbeebe1223cefbb849399df4e6c60a6427aec5.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_41cbeebe1223cefbb849399df4e6c60a6427aec5.svg" class="org-svg" /> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>:
-Angenommen sie ist es nicht, so existieren verschiedene <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_7c998d027c503535d4036bdc2b49f9dea4bfbb03.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_7c998d027c503535d4036bdc2b49f9dea4bfbb03.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_530abdd9f14254766b0b06e9a109d77113cea79b.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_530abdd9f14254766b0b06e9a109d77113cea79b.svg" class="org-svg" />
-Daraus folgt dann aber <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_332f11ec814e7f9b1acd1c45953049f26a78bd2a.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_332f11ec814e7f9b1acd1c45953049f26a78bd2a.svg" class="org-svg" /> und 
+Sei \(r \in R \setminus \{0\}\), so ist die verknüpfung \(\cdot_r: a \rightarrow a \cdot r\) <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a>:
+Angenommen sie ist es nicht, so existieren verschiedene \(a,a' \in R \setminus \{0\}\) mit \(a \cdot r = a' \cdot r\)
+Daraus folgt dann aber \(a - a' \neq 0\) und 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_522e302f8012b56eeaf161580939b2f0f9346452.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_522e302f8012b56eeaf161580939b2f0f9346452.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(a - a') \cdot r =0 
+\end{align*}
 <p>
-was ein Widerspruch zur Annnahme ist, <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> wäre ein Integritätsbereich.
+was ein Widerspruch zur Annnahme ist, \(R\) wäre ein Integritätsbereich.
 </p>
 
 <p>
-Aus der <a href="20221022191921-lemma_uber_die_aquivalenz_von_bijektivitat_surjektivitat_und_injektivitat_bei_gleich_machtigen_mengen.html#ID-5fb6982e-e7b5-48be-9fd3-0b3a7a7b4499">Äquivalenz von Bijektivität, Surjektivität und Injektivität bei gleich mächtigen, endlichen Mengen</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_f0fc76867e887a26cbe2a88d2dc2df81ed0c9d50.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_f0fc76867e887a26cbe2a88d2dc2df81ed0c9d50.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, d.h. insbesondere existiert ein Element <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_cd4b14cfc1d0e338e84979623be0ccf126f7c3ab.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_cd4b14cfc1d0e338e84979623be0ccf126f7c3ab.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_acc4556f1c10a9afe0d2af25b9c9d88eee71942e.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_acc4556f1c10a9afe0d2af25b9c9d88eee71942e.svg" class="org-svg" />, alsoo ist <img src="file:///home/anton/html/ltximg/20230421121825-endlicher_integritatsbereich_als_korper_6817683af573100f0618f1af60df679d17ae3f0b.svg" alt="20230421121825-endlicher_integritatsbereich_als_korper_6817683af573100f0618f1af60df679d17ae3f0b.svg" class="org-svg" /> das evidente inverse Element.
+Aus der <a href="20221022191921-lemma_uber_die_aquivalenz_von_bijektivitat_surjektivitat_und_injektivitat_bei_gleich_machtigen_mengen.html#ID-5fb6982e-e7b5-48be-9fd3-0b3a7a7b4499">Äquivalenz von Bijektivität, Surjektivität und Injektivität bei gleich mächtigen, endlichen Mengen</a> folgt, dass \(\cdot_a: R \setminus \{0\} \rightarrow R \setminus \{0\}\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, d.h. insbesondere existiert ein Element \(r' \in R \setminus \{0\}\) mit \(r' \cdot r = 1\), alsoo ist \(r'\) das evidente inverse Element.
 </p>
 </div>
 </div>

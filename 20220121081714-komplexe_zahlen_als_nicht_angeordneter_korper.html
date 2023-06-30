@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Komplexe Zahlen als nicht angeordneter Körper</h1>
-<div id="outline-container-org4a08fa3" class="outline-2">
-<h2 id="org4a08fa3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org543378d" class="outline-2">
+<h2 id="org543378d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexe Zahlen</a> ist kein <a href="20211223090021-angeordneter_korper.html#ID-a7e872ba-98e7-44da-879b-c81c5a28df1e">angeordneter Körper</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org67d7d18" class="outline-2">
-<h2 id="org67d7d18"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5c45d9d" class="outline-2">
+<h2 id="org5c45d9d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Über einen <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:
 Nach der Definition der <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">komplexen Zahlen</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220121081714-komplexe_zahlen_als_nicht_angeordneter_korper_affc84efab7784c44cd615e5532902aff423cab7.svg" alt="20220121081714-komplexe_zahlen_als_nicht_angeordneter_korper_affc84efab7784c44cd615e5532902aff423cab7.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{i}^2 = -1
+\end{align*}
 <p>
-Nach der <a href="20211223084509-trichotomie_axiom.html#ID-3bbaf91e-8f0d-43cf-b6ea-4df88d0c2b3e">Trichotomie</a> gilt, dass $ $ entweder:
+Nach der <a href="20211223084509-trichotomie_axiom.html#ID-3bbaf91e-8f0d-43cf-b6ea-4df88d0c2b3e">Trichotomie</a> gilt, dass $ \mathrm{i}$ entweder:
 </p>
 <ul class="org-ul">
 <li>positiv / negativ -  <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat positiv</a></li>
@@ -43,7 +65,7 @@ Nach der <a href="20211223084509-trichotomie_axiom.html#ID-3bbaf91e-8f0d-43cf-b6
 </ul>
 <p>
 sein muss.
-Damit sind die <a href="20211223084436-anordnungsaxiome.html#ID-87bafb9b-c74f-47e4-9ac2-ef86909a7185">Anordnungsaxiome</a> verletzt und $ $ kann kein <a href="20211223090021-angeordneter_korper.html#ID-a7e872ba-98e7-44da-879b-c81c5a28df1e">Angeordneter Körper</a> sein. 
+Damit sind die <a href="20211223084436-anordnungsaxiome.html#ID-87bafb9b-c74f-47e4-9ac2-ef86909a7185">Anordnungsaxiome</a> verletzt und $ \mathbb{C} $ kann kein <a href="20211223090021-angeordneter_korper.html#ID-a7e872ba-98e7-44da-879b-c81c5a28df1e">Angeordneter Körper</a> sein. 
 <a href="&amp;forster1976analysis">&amp;forster1976analysis</a>
 </p>
 </div>

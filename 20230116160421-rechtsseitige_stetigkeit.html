@@ -3,22 +3,49 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>rechtsseitige Stetigkeit</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">rechtsseitige Stetigkeit</h1>
-<div id="outline-container-org8ff9b18" class="outline-2">
-<h2 id="org8ff9b18"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org109b26b" class="outline-2">
+<h2 id="org109b26b"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230116160421-rechtsseitige_stetigkeit_d89174ceede3b5c0cf7cabc2ba0c191b51935bb8.svg" alt="20230116160421-rechtsseitige_stetigkeit_d89174ceede3b5c0cf7cabc2ba0c191b51935bb8.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230116160421-rechtsseitige_stetigkeit_07d590236e42b4e86221eec69df11541838e8ae3.svg" alt="20230116160421-rechtsseitige_stetigkeit_07d590236e42b4e86221eec69df11541838e8ae3.svg" class="org-svg" /> für <img src="ltximg/20230116160421-rechtsseitige_stetigkeit_fd698978dd232c9cf50bb53344d7ba3eeb63fa96.svg" alt="20230116160421-rechtsseitige_stetigkeit_fd698978dd232c9cf50bb53344d7ba3eeb63fa96.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
-<img src="ltximg/20230116160421-rechtsseitige_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230116160421-rechtsseitige_stetigkeit_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> ist rechtsseitig <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in <img src="ltximg/20230116160421-rechtsseitige_stetigkeit_4117712774bf019e6d140fe26501ccf7c0722ac4.svg" alt="20230116160421-rechtsseitige_stetigkeit_4117712774bf019e6d140fe26501ccf7c0722ac4.svg" class="org-svg" /> falls der <a href="20230116162126-rechtsseitiger_grenzwert.html#ID-eeb9a7f6-7cd6-41c9-a76a-5aaf7fb0d05f">rechtsseitiger Grenzwert</a> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> ist mit dem Wert <img src="ltximg/20230116160421-rechtsseitige_stetigkeit_602d4b8804a481e4fa548d2939cdc31a807c1148.svg" alt="20230116160421-rechtsseitige_stetigkeit_602d4b8804a481e4fa548d2939cdc31a807c1148.svg" class="org-svg" /> übereinstimmt (siehe: <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a>)
+Sei \(M\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(f: D \rightarrow M\) für \(D \subseteq \mathbb{R}\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
+\(f\) ist rechtsseitig <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> in \(x_0 \in \mathbb{R}\) falls der <a href="20230116162126-rechtsseitiger_grenzwert.html#ID-eeb9a7f6-7cd6-41c9-a76a-5aaf7fb0d05f">rechtsseitiger Grenzwert</a> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a> ist mit dem Wert \(f(x_0)\) übereinstimmt (siehe: <a href="20221208094811-folgenstetigkeit.html#ID-934a1a9a-3464-4876-babd-3ece8651719e">Folgenstetigkeit</a>)
 </p>
 </div>
 </div>

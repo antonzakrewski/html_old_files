@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Image Set</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Image Set</h1>
-<div id="outline-container-org9e677b4" class="outline-2">
-<h2 id="org9e677b4"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge7bb8bc" class="outline-2">
+<h2 id="orge7bb8bc"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20211230205458-bild_mengenlehre_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" alt="20211230205458-bild_mengenlehre_394a58d6b5ce55e912db18d2a4048a51647dceac.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="ltximg/20211230205458-bild_mengenlehre_2164758db4f6dd792c920bb01c27da68b7ea3768.svg" alt="20211230205458-bild_mengenlehre_2164758db4f6dd792c920bb01c27da68b7ea3768.svg" class="org-svg" /> 
-Dann ist die Bildmenge <img src="ltximg/20211230205458-bild_mengenlehre_abf03346d24b2f405b1dd3a0a24d4612aa4026b2.svg" alt="20211230205458-bild_mengenlehre_abf03346d24b2f405b1dd3a0a24d4612aa4026b2.svg" class="org-svg" />
+Sei \(f: A \rightarrow B\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(C \subseteq A\) 
+Dann ist die Bildmenge \(F[C] \subseteq B\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211230205458-bild_mengenlehre_2ddcff36893fc527fde3dc41bddcadf25db5ad83.svg" alt="20211230205458-bild_mengenlehre_2ddcff36893fc527fde3dc41bddcadf25db5ad83.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f[C] \coloneqq& \{f(c) \vert c \in C\}
+\end{align*}
 
 
 <p>

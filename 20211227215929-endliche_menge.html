@@ -9,24 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">endliche Menge</h1>
-<div id="outline-container-org12a7f46" class="outline-2">
-<h2 id="org12a7f46"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orge503fa4" class="outline-2">
+<h2 id="orge503fa4"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> <img src="file:///home/anton/html/ltximg/20211227215929-endliche_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20211227215929-endliche_menge_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist endlich, falls gilt:
+Eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(A\) ist endlich, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20211227215929-endliche_menge_aa98886be4652c1479b9bdaec27ec34124e20903.svg" alt="20211227215929-endliche_menge_aa98886be4652c1479b9bdaec27ec34124e20903.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\exists n \in \mathbb{N} (n \geq \vert A\vert)
+\end{align*}
 <p>
-bzw. es existiert eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> von $ \{n &isin; &vert; n &gt; m \} &rarr; A$ für ein festes $m &isin; $
+bzw. es existiert eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> von $ \{n &isin; \mathbb{N} &vert; n &gt; m \} &rarr; A$ für ein festes $m &isin; \mathbb{N} $
 Siehe: <a href="20230519090338-endlich_kategorientheoretisch.html#ID-8e3969ee-a032-4ede-8f3c-33f4d9c070ee">endlich (kategorientheoretisch)</a> 
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>
 </p>

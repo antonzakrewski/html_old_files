@@ -9,30 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Mächtigkeit des Faktorrings zu den ganzen Gaußschen Zahlen</h1>
-<div id="outline-container-org7f61e0b" class="outline-2">
-<h2 id="org7f61e0b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3a12cb1" class="outline-2">
+<h2 id="org3a12cb1"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien die <a href="20221130162103-gaußsche_ganze_zahlen.html#ID-f8690853-647c-4f05-9fc0-d11320762568">Gaußsche ganze Zahlen</a> <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_e5d30a7d9beb41fa11438a6ba29bce9213cc63c7.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_e5d30a7d9beb41fa11438a6ba29bce9213cc63c7.svg" class="org-svg" /> gegeben und ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3f4e6bc541ad446d5a711e18fa9e989ea2008d86.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3f4e6bc541ad446d5a711e18fa9e989ea2008d86.svg" class="org-svg" />.
-Dann existiert ein <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_f7b466cd2e6c16ed2c78a0df60725b131313035c.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_f7b466cd2e6c16ed2c78a0df60725b131313035c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3933c5452dd210ead4dd05e263e53c88f26e9669.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3933c5452dd210ead4dd05e263e53c88f26e9669.svg" class="org-svg" /> und ferner gilt:
+Seien die <a href="20221130162103-gaußsche_ganze_zahlen.html#ID-f8690853-647c-4f05-9fc0-d11320762568">Gaußsche ganze Zahlen</a> \(\mathbb{Z}[\mathrm{i}]\) gegeben und ein <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> \(I \neq \{0\}\).
+Dann existiert ein \(\alpha \in \mathbb{Z}[\mathrm{i}]\) mit \(I = (\alpha)\) und ferner gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_f4f6ee1351774ab64251ad71476f8c5684d8aad6.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_f4f6ee1351774ab64251ad71476f8c5684d8aad6.svg" class="org-svg" />
-</span>
+\begin{align*}
+\vert \mathbb{Z}[\mathrm{i}]/(\alpha) \vert \vert \alpha \vert^2
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5dd7044" class="outline-2">
-<h2 id="org5dd7044"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga5f7064" class="outline-2">
+<h2 id="orga5f7064"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es existiert für <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_7dba7a2b795cb9651a45178dea09d5e65f7f0580.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_3c872f80c8f0ec9a62392b44612d08579e7e13af.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_da81f19cf232eaf62fa2e019ecd578efb4192e1f.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_da81f19cf232eaf62fa2e019ecd578efb4192e1f.svg" class="org-svg" />, da <img src="file:///home/anton/html/ltximg/20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_e5d30a7d9beb41fa11438a6ba29bce9213cc63c7.svg" alt="20230531100302-machtigkeit_des_faktorrings_zu_den_ganzen_gaußschen_zahlen_e5d30a7d9beb41fa11438a6ba29bce9213cc63c7.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> ist (vlg.<a href="20230419133533-gaußschen_ganzen_zahlen_als_hauptidealring.html#ID-5f890938-192e-4c9b-8b5a-c63474b50284">gaußschen ganzen Zahlen als Hauptidealring</a>)
+Es existiert für \(I\) ein \(\alpha\) mit \((\alpha) = I\), da \(\mathbb{Z}[\mathrm{i}]\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> ist (vlg.<a href="20230419133533-gaußschen_ganzen_zahlen_als_hauptidealring.html#ID-5f890938-192e-4c9b-8b5a-c63474b50284">gaußschen ganzen Zahlen als Hauptidealring</a>)
 </p>
 </div>
 </div>

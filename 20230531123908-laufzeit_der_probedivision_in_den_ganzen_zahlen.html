@@ -9,33 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Laufzeit der Probedivision in den ganzen Zahlen</h1>
-<div id="outline-container-org5bc3803" class="outline-2">
-<h2 id="org5bc3803"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org90b2e9a" class="outline-2">
+<h2 id="org90b2e9a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531123908-laufzeit_der_probedivision_in_den_ganzen_zahlen_dede3ec3d728b16283277d28d7322f0777eeb29c.svg" alt="20230531123908-laufzeit_der_probedivision_in_den_ganzen_zahlen_dede3ec3d728b16283277d28d7322f0777eeb29c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+O(\sqrt{N})
+\end{align*}
 <p>
 Dies ist exponentiel bezüglich der Länge der Enigabedaten
 Dabei ist insbesondere die Länge der 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230531123908-laufzeit_der_probedivision_in_den_ganzen_zahlen_692116b4d72098c993af2b2838527b23e0a55818.svg" alt="20230531123908-laufzeit_der_probedivision_in_den_ganzen_zahlen_692116b4d72098c993af2b2838527b23e0a55818.svg" class="org-svg" />
-</span>
+\begin{align*}
+O(\mathrm{e}^{\frac{1}{2} \ln(N)}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2859a5c" class="outline-2">
-<h2 id="org2859a5c"><span class="section-number-2">2.</span> "Beweis"</h2>
+<div id="outline-container-org13e0f9d" class="outline-2">
+<h2 id="org13e0f9d"><span class="section-number-2">2.</span> "Beweis"</h2>
 </div>
 </div>
 <div id="postamble" class="status">

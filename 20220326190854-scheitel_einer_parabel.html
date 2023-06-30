@@ -9,54 +9,76 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Scheitel einer Parabel</h1>
-<div id="outline-container-org2d445b5" class="outline-2">
-<h2 id="org2d445b5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgff7d23f" class="outline-2">
+<h2 id="orgff7d23f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>für eine <a href="20220326190917-parabel.html#ID-a1f140cf-119f-4725-992c-800b70beab5a">Parabel</a> <img src="file:///home/anton/html/ltximg/20220326190854-scheitel_einer_parabel_cf17912427c4f437c9ba9016ffa44ee007e501ce.svg" alt="20220326190854-scheitel_einer_parabel_cf17912427c4f437c9ba9016ffa44ee007e501ce.svg" class="org-svg" /></li>
+<li>für eine <a href="20220326190917-parabel.html#ID-a1f140cf-119f-4725-992c-800b70beab5a">Parabel</a> \(f(x)  \coloneqq ax^2 + bx + c\)</li>
 </ul>
 <p>
 scheitelpunkt bei:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220326190854-scheitel_einer_parabel_fe55f68a0d675e58f030b572ba4c53ce0fd2c003.svg" alt="20220326190854-scheitel_einer_parabel_fe55f68a0d675e58f030b572ba4c53ce0fd2c003.svg" class="org-svg" />
-</span>
+\begin{align*}
+S\left(\frac{-b}{2a} \left\vert f\left(\frac{-b}{2a}\right)\right)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge0cf16d" class="outline-2">
-<h2 id="orge0cf16d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org57f4d0a" class="outline-2">
+<h2 id="org57f4d0a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7b01c86" class="outline-3">
-<h3 id="org7b01c86"><span class="section-number-3">2.1.</span> <a href="20211115125130-quadratische_formel.html#ID-19312e47-2cd6-464f-bdd3-6e416d15d2ed">Quadratische Formel</a></h3>
+<div id="outline-container-org8e1c393" class="outline-3">
+<h3 id="org8e1c393"><span class="section-number-3">2.1.</span> <a href="20211115125130-quadratische_formel.html#ID-19312e47-2cd6-464f-bdd3-6e416d15d2ed">Quadratische Formel</a></h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220326190854-scheitel_einer_parabel_0731070b24ba940ed431276d05d69b73de8e4731.svg" alt="20220326190854-scheitel_einer_parabel_0731070b24ba940ed431276d05d69b73de8e4731.svg" class="org-svg" />
-</span>
+\begin{align*}
+x_1 =& \frac{-b + \sqrt{b^2 - 4ac}}{2a} \\
+x_2 =& \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+x_1 =& x_2 \Rightarrow \sqrt{b^2 - 4ac} = 0 \\
+\Rightarrow x =& \frac{-b}{2a}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org35b49d7" class="outline-3">
-<h3 id="org35b49d7"><span class="section-number-3">2.2.</span> <a href="20210217212957-ableitungsfunktion.html#ID-868ce7d4-5ad4-4475-a5c1-26f943fe851a">Ableitungsfunktion</a></h3>
+<div id="outline-container-org31a8179" class="outline-3">
+<h3 id="org31a8179"><span class="section-number-3">2.2.</span> <a href="20210217212957-ableitungsfunktion.html#ID-868ce7d4-5ad4-4475-a5c1-26f943fe851a">Ableitungsfunktion</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Scheitel als <a href="20210217214109-extrema.html#ID-954eb455-f26c-4653-a105-1a7a71ebc7c6">Extrema</a>:</li>
 </ul>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220326190854-scheitel_einer_parabel_ce0bad0240761eca2eab02397b5437d0b6442277.svg" alt="20220326190854-scheitel_einer_parabel_ce0bad0240761eca2eab02397b5437d0b6442277.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f'(x) =& 2ax + b \\
+=& 0 \\
+2ax =& - b \\
+x =& -\frac{b}{2a}
+\end{align*}
 </div>
 </div>
 </div>

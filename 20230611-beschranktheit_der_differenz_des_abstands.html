@@ -9,36 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beschränktheit der Differenz des Abstands</h1>
-<div id="outline-container-orgf130397" class="outline-2">
-<h2 id="orgf130397"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org98c2377" class="outline-2">
+<h2 id="org98c2377"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230611-beschranktheit_der_differenz_des_abstands_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" alt="20230611-beschranktheit_der_differenz_des_abstands_30f94f5c8910cad27f21d7c87e938a18b5885374.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230611-beschranktheit_der_differenz_des_abstands_1d0f6f773256cd0954de08b7ccbbe6498188af50.svg" alt="20230611-beschranktheit_der_differenz_des_abstands_1d0f6f773256cd0954de08b7ccbbe6498188af50.svg" class="org-svg" />.
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x,x_0 \in M\).
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230611-beschranktheit_der_differenz_des_abstands_36489f357b8511ac59d9ae8d33e8483431a2636f.svg" alt="20230611-beschranktheit_der_differenz_des_abstands_36489f357b8511ac59d9ae8d33e8483431a2636f.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: M \rightarrow& \mathbb{R} \\
+m \mapsto& d(m,x) - d(m,x_0)
+\end{align*}
 <p>
 eine <a href="20230504110222-beschrankte_funktion.html#ID-52e37e84-8cb8-49c4-a730-cb75224c83fc">beschränkte Funktion</a> mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230611-beschranktheit_der_differenz_des_abstands_24a97f8169f4df845d7e0be76f9a2a6027a3e453.svg" alt="20230611-beschranktheit_der_differenz_des_abstands_24a97f8169f4df845d7e0be76f9a2a6027a3e453.svg" class="org-svg" />
-</span>
+\begin{align*}
+d(m,x) - d(m,x_0) \leq d(x,x_0)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1f81114" class="outline-2">
-<h2 id="org1f81114"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbd31ff2" class="outline-2">
+<h2 id="orgbd31ff2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der <a href="20230420132847-umgekehrte_dreiecksungleichung.html#ID-7b5a2782-1ef3-49b0-a51a-c9751470aaeb">umgekehrten Dreiecksungleichung</a> 

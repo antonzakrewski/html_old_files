@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">direktes Produkt von Ringen</h1>
-<div id="outline-container-org5576863" class="outline-2">
-<h2 id="org5576863"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org39d4316" class="outline-2">
+<h2 id="org39d4316"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230118132937-direktes_produkt_von_ringen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230118132937-direktes_produkt_von_ringen_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>, dann ist das <a href="20230118133027-direktes_produkt_algebra.html#ID-cd5fc934-6be0-49ad-8f4b-6706e8ee4971">direktes Produkt (Algebra)</a> definiert als:
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a>, dann ist das <a href="20230118133027-direktes_produkt_algebra.html#ID-cd5fc934-6be0-49ad-8f4b-6706e8ee4971">direktes Produkt (Algebra)</a> definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230118132937-direktes_produkt_von_ringen_979ce029bdf0fdddca85412fefc27077ede8242b.svg" alt="20230118132937-direktes_produkt_von_ringen_979ce029bdf0fdddca85412fefc27077ede8242b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+R^n = \{(r_1,...,r_n) \vert r_i \in R\}
+\end{align*}
 <p>
 mit der komponentenweise definierten Addition und Multiplikation
 </p>

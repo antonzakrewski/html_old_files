@@ -9,82 +9,89 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von einem Element erzeugte Untergruppe einer endlichen Gruppe</h1>
-<div id="outline-container-org1e68f4f" class="outline-2">
-<h2 id="org1e68f4f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5f57d59" class="outline-2">
+<h2 id="org5f57d59"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_44c9cf95ae51c67c6677318de296bcb23189c799.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_44c9cf95ae51c67c6677318de296bcb23189c799.svg" class="org-svg" /> eine <a href="20221023195400-endliche_gruppe.html#ID-74087339-5710-41fb-ac85-6160c00c4671">endliche Gruppe</a> mit der <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Gruppenordnung</a> <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_152fd7db8411930a127c35a83a1cdbd122f7dcbf.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_152fd7db8411930a127c35a83a1cdbd122f7dcbf.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_d02f3f402caf969d9ecb9de86834c840f05e28da.svg" class="org-svg" />
+Sei \((G, \cdot)\) eine <a href="20221023195400-endliche_gruppe.html#ID-74087339-5710-41fb-ac85-6160c00c4671">endliche Gruppe</a> mit der <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Gruppenordnung</a> \(\vert G \vert = n\) und \(a \in G\)
 Dann ist 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_2f1dff56d352fa66fbcf63b305e21a603c43c349.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_2f1dff56d352fa66fbcf63b305e21a603c43c349.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{a^m \vert m \in \{1,...,n\}\} = \{a^m \vert m \in \mathbb{Z} \}
+\end{align*}
 <p>
 <a href="20230111090438-von_einem_element_erzeugte_gruppe.html#ID-93c6dffd-85d3-4ebd-8054-cc342ec9306a">von einem Element erzeugte Untergruppe</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org103b204" class="outline-2">
-<h2 id="org103b204"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7c89e39" class="outline-2">
+<h2 id="org7c89e39"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Zu zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_8a3217f0ea2e662e7a1a27ca83e05f277b5b9175.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_8a3217f0ea2e662e7a1a27ca83e05f277b5b9175.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\{a^m \vert m \in \mathbb{Z} \} \subseteq  \{a^m \vert m \in \{1,...,n\}\}  
+\end{align*}
 <p>
 andere Richtung trivial
 </p>
 
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_c42da0c6ed5f7bedb8ad60885103b6fec1b42139.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_c42da0c6ed5f7bedb8ad60885103b6fec1b42139.svg" class="org-svg" /> die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> mit <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_da7a745c0ce29caef1758c9dedbf216f9150858c.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_da7a745c0ce29caef1758c9dedbf216f9150858c.svg" class="org-svg" />.
-Falls <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, so folgt <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_2e2dcfc5372fd41484ee666845831ed8397bd4d5.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_2e2dcfc5372fd41484ee666845831ed8397bd4d5.svg" class="org-svg" />
-Ansonsten existiert nach <a href="20221028093107-schubfachprinzip.html#ID-d33a1094-3551-47b8-a056-3602e11fa14b">Schubfachprinzip</a> ein Element <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_1dc973bc7fe355b7d82361eaad0ea1508e6f2524.svg" class="org-svg" />, so dass für <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_631922ae0351a7814430afea7180e907f64d20c3.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_631922ae0351a7814430afea7180e907f64d20c3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_bd5ff5ae5700754befcfc4090921cc0b43f1fdc7.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_bd5ff5ae5700754befcfc4090921cc0b43f1fdc7.svg" class="org-svg" /> gitl
+Sei \(f: \{1,..,n\} \rightarrow G\) die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> mit \(m \mapsto a^m\).
+Falls \(f\) <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjektiv</a> ist, so folgt \(\{a^m \vert m \in \mathbb{Z} \} \subseteq G = \{a^m \vert m \in \{1,...,m\}\}\)
+Ansonsten existiert nach <a href="20221028093107-schubfachprinzip.html#ID-d33a1094-3551-47b8-a056-3602e11fa14b">Schubfachprinzip</a> ein Element \(g \in G\), so dass für \(m,m' \in \{1,...,n\}\) und \(m \neq m'\) gitl
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_3db3dd53eea1983bd8c8241fa8738f2c24e53d79.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_3db3dd53eea1983bd8c8241fa8738f2c24e53d79.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a^m = a^{m'}
+\end{align*}
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  <img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_31e89af3ac19a8d30ffd0accb9598c642fe71956.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_31e89af3ac19a8d30ffd0accb9598c642fe71956.svg" class="org-svg" /> , so folgt
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  \(m > m'\) , so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_45bfbfb08c2a414077e38564e2186695efa25e12.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_45bfbfb08c2a414077e38564e2186695efa25e12.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a^{m'} \cdot a^{m-m'} = a^{m'} 
+\end{align*}
 <p>
 aufgrund der <a href="20221209141646-eindeutigkeit_des_neutralen_elements.html#ID-fd0af002-c231-4ad9-834c-60dc331e418a">Eindeutigkeit des Neutralen Elements</a> folgt somit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_a16582405ec4619f0086d9ce98db13a255d5bae3.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_a16582405ec4619f0086d9ce98db13a255d5bae3.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e = a^{m - m'}
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_0183ca7526ba72ae769cec9492fa16dd41cc7a4e.svg" alt="20230111091508-von_einem_element_erzeugte_untergruppe_einer_endlichen_gruppe_0183ca7526ba72ae769cec9492fa16dd41cc7a4e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+k \equiv k' \mod{m - m'} \Rightarrow a^{k} = a^{k'}
+\end{align*}
 </div>
 </div>
 </div>

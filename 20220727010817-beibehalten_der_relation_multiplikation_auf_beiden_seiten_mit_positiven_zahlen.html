@@ -9,30 +9,61 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beibehalten der Relation: Multiplikation auf beiden Seiten mit Positiven Zahlen</h1>
-<div id="outline-container-org1f5d7e0" class="outline-2">
-<h2 id="org1f5d7e0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgae81940" class="outline-2">
+<h2 id="orgae81940"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220727010817-beibehalten_der_relation_multiplikation_auf_beiden_seiten_mit_positiven_zahlen_cb59cfd61da9fa9073af5d8f43ac70d00557c817.svg" alt="20220727010817-beibehalten_der_relation_multiplikation_auf_beiden_seiten_mit_positiven_zahlen_cb59cfd61da9fa9073af5d8f43ac70d00557c817.svg" class="org-svg" />
-</span>
+\begin{align*}
+a >& b \\
+c >& d \\
+a,b,c,d >& 0 \\
+\Rightarrow ac >& bd
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org2ce7c6b" class="outline-2">
-<h2 id="org2ce7c6b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf90748e" class="outline-2">
+<h2 id="orgf90748e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220727010817-beibehalten_der_relation_multiplikation_auf_beiden_seiten_mit_positiven_zahlen_c8c35faed94d2b06801d7030c18e64c9454ab0ad.svg" alt="20220727010817-beibehalten_der_relation_multiplikation_auf_beiden_seiten_mit_positiven_zahlen_c8c35faed94d2b06801d7030c18e64c9454ab0ad.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+a >& b \\
+a - b >& 0 \\
+c \cdot (a - b) >& 0 \\
+ac - bc >& 0 \\
+c > d \\
+c - d > 0 \\
+b \cdot (c - d) >& 0 \\
+ac - bc + bc - bd >& 0 \\
+ac - bd >& 0 \\
+ac >& bd
+\end{align*}
 </div>
 </div>
 </div>

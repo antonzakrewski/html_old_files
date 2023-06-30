@@ -9,127 +9,145 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Dualitätssatz für das Produkt und die Schnittmenge</h1>
-<div id="outline-container-orgaf08375" class="outline-2">
-<h2 id="orgaf08375"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd0afa67" class="outline-2">
+<h2 id="orgd0afa67"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a>  <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> und <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_75c6314a97ad59cd70e3d3f5db0180db86c2e4ad.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_75c6314a97ad59cd70e3d3f5db0180db86c2e4ad.svg" class="org-svg" /> <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorräume</a>.
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a>  <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> und \(U_1,U_2 \subseteq V\) <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorräume</a>.
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_32c2a2d48e1318474110e673a6ad03c86f972da4.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_32c2a2d48e1318474110e673a6ad03c86f972da4.svg" class="org-svg" />
-</span>
+\begin{align*}
+(U_1 + U_2)^{\bot} =& U_1^{\bot} \cap U_2^{\bot} \\
+(U_1 \cap U_2)^{\bot} =& U_1^\bot + U_2^\bot
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb5467d9" class="outline-2">
-<h2 id="orgb5467d9"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfb788a5" class="outline-2">
+<h2 id="orgfb788a5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3f853bd" class="outline-3">
-<h3 id="org3f853bd"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgd07d8f7" class="outline-3">
+<h3 id="orgd07d8f7"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org5e75012" class="outline-4">
-<h4 id="org5e75012"><span class="section-number-4">2.1.1.</span> <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" class="org-svg" /></h4>
+<div id="outline-container-org8da49a1" class="outline-4">
+<h4 id="org8da49a1"><span class="section-number-4">2.1.1.</span> \(\subseteq\)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a2705c9eff0913e4d765442a57a97ae4f3f91aec.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a2705c9eff0913e4d765442a57a97ae4f3f91aec.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_ac93a6b1c87d9c09e71d985b51d5cef33d94ccbf.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_ac93a6b1c87d9c09e71d985b51d5cef33d94ccbf.svg" class="org-svg" /> , so gilt für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cce87c4b3dc998d24e57be01ea939dd4fc706473.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cce87c4b3dc998d24e57be01ea939dd4fc706473.svg" class="org-svg" />:
+Sei \(v = u_1 + u_2 \in U_1 + U_2\) für \(u_1 \in U_1, u_2 \in U_2\) , so gilt für \(f \in (U_1 + U_2)^{\bot}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_1354f9bfe4e74de6edcda9deb78c2621433e16d6.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_1354f9bfe4e74de6edcda9deb78c2621433e16d6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(v) =& f(u_1 + u_2)\\
+=& f(u_1) + f(u_2) \\
+=& 0
+\end{align*}
 <p>
-Insbesondere gilt auch <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_503fab02beb954a3c883542f59e99d97e286cdae.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_503fab02beb954a3c883542f59e99d97e286cdae.svg" class="org-svg" /> weil sonst für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5bff76409c491518f95e99022163490bdfd5e7f4.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5bff76409c491518f95e99022163490bdfd5e7f4.svg" class="org-svg" /> die Annahme <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_625fd7337034e06391d47d66f5b63b1674cd00ec.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_625fd7337034e06391d47d66f5b63b1674cd00ec.svg" class="org-svg" /> verletzt wäre.
-Damit folgt für alle <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_e1ac3798b0ff00b8da26efb9e640bfa8ea33762c.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_e1ac3798b0ff00b8da26efb9e640bfa8ea33762c.svg" class="org-svg" /> und daraus folgt auch <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_f2983a021fe222047bdfea170026e6e4c90d1ac8.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_f2983a021fe222047bdfea170026e6e4c90d1ac8.svg" class="org-svg" />
-Analog für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9001c736c4eec4bb624392f2bc09b0a5a3dcf032.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9001c736c4eec4bb624392f2bc09b0a5a3dcf032.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a963c3ff2c8df9fa51b474042e53ac5d07598479.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a963c3ff2c8df9fa51b474042e53ac5d07598479.svg" class="org-svg" />
+Insbesondere gilt auch <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(f(u_1) = 0\) weil sonst für \(u_2 = 0 \in U_2\) die Annahme \(f(v) = f(u_1) + f(0) = f(u_1) = 0\) verletzt wäre.
+Damit folgt für alle \(u_1 \in U_1: f(u_1) = 0\) und daraus folgt auch \(f \in U_1^{\bot}\)
+Analog für \(u_2 \in U\) und \(f \in U_2^{\bot}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge895170" class="outline-4">
-<h4 id="orge895170"><span class="section-number-4">2.1.2.</span> <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" class="org-svg" /></h4>
+<div id="outline-container-org644f3de" class="outline-4">
+<h4 id="org644f3de"><span class="section-number-4">2.1.2.</span> \(\supseteq\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9d6a83f7c7888c7c9ea3208b129f335263fec1a8.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9d6a83f7c7888c7c9ea3208b129f335263fec1a8.svg" class="org-svg" /> so folgt <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_503fab02beb954a3c883542f59e99d97e286cdae.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_503fab02beb954a3c883542f59e99d97e286cdae.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_d0eb23b4e56f26f5accde1d9f862d8511ae0b66b.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_d0eb23b4e56f26f5accde1d9f862d8511ae0b66b.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5ee5c205703e249669c48f7bcaa3af022ab35bfb.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5ee5c205703e249669c48f7bcaa3af022ab35bfb.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_82ffbe58a6bcaf8b84799290bf4c85b07bd33881.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_82ffbe58a6bcaf8b84799290bf4c85b07bd33881.svg" class="org-svg" />
-Nach <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a> von <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> gilt auch:
+Sei \(f \in U_1^\bot \cap U_2^\bot\) so folgt \(f(u_1) = 0\) und \(f(u_2) = 0\) für \(u_1 \in U_1\) und \(u_2 \in U_2\)
+Nach <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a> von \(f\) gilt auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_3f06c228645ae1572525e69e97f4a1030080e3e2.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_3f06c228645ae1572525e69e97f4a1030080e3e2.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+0 =& f(u_1) + f(u_2) \\
+=& f(u_1 + u_2)
+\end{align*}
 <p>
-und damit <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cce87c4b3dc998d24e57be01ea939dd4fc706473.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cce87c4b3dc998d24e57be01ea939dd4fc706473.svg" class="org-svg" />
+und damit \(f \in (U_1 + U_2)^{\bot}\)
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orge267676" class="outline-3">
-<h3 id="orge267676"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org16f09a7" class="outline-3">
+<h3 id="org16f09a7"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org1c33498" class="outline-4">
-<h4 id="org1c33498"><span class="section-number-4">2.2.1.</span> <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4e6eb2f58b7b5b9f5e15892f346bd795f322cee3.svg" class="org-svg" /> - hässlich</h4>
+<div id="outline-container-org0ddac91" class="outline-4">
+<h4 id="org0ddac91"><span class="section-number-4">2.2.1.</span> \(\subseteq\) - hässlich</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_ed172dd92af65115b4df13fdc39d767f24427830.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_ed172dd92af65115b4df13fdc39d767f24427830.svg" class="org-svg" /> und sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cb9fd29b861053c037d6e15a2ccdc1012edf6e51.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_cb9fd29b861053c037d6e15a2ccdc1012edf6e51.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>  von <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9ec21ac8e582add9092a2d0bfdd6e6d87815e68b.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9ec21ac8e582add9092a2d0bfdd6e6d87815e68b.svg" class="org-svg" />
-Wir wissen, dass wir die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> nach <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Steinitz</a> geeignet durch <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_0e5a2a23615d78a1d15b9f07bf8afaa59113fe78.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_0e5a2a23615d78a1d15b9f07bf8afaa59113fe78.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_c3ee0fdd25e47b964173782163c267dcc3267c59.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_c3ee0fdd25e47b964173782163c267dcc3267c59.svg" class="org-svg" /> und durch <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_bbb5ab517764bd54e8593a6e72156fe96ba44ed9.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_bbb5ab517764bd54e8593a6e72156fe96ba44ed9.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_7d27d0dc99201502db336a579706c247de70e67f.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_7d27d0dc99201502db336a579706c247de70e67f.svg" class="org-svg" /> erweitern können.
-Für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_97f13901cc208e773d01e46c76fb87f26d998664.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_97f13901cc208e773d01e46c76fb87f26d998664.svg" class="org-svg" /> 
+Sei \(f \in (U_1 \cap U_2)^\bot\) und sei \(\{u_1,...,u_k\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>  von \(U_1 \cap U_2\)
+Wir wissen, dass wir die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> nach <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Steinitz</a> geeignet durch \(v_1,...,v_m\) für \(U_1\) und durch \(v_1',...,v_n'\) für \(U_2\) erweitern können.
+Für \(f_1 \in U_1^\bot\) 
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4392eb2980b5d79c2b2548b0cb8aa0b0769f0718.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4392eb2980b5d79c2b2548b0cb8aa0b0769f0718.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_1(u_i) =& 0 \\
+f_1(v_i) =& 0 \\
+f_1(v_i')  \coloneqq& f(v_i') \\
+f_2(v_i)  \coloneqq& f(v_i)
+\end{align*}
 <p>
-Analog auch für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5b25b9a682a68004812a4d655332ffd97efd470c.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5b25b9a682a68004812a4d655332ffd97efd470c.svg" class="org-svg" />.
-Für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4be400a80c7a1ef04722f9b9d4519985f5f8b26d.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_4be400a80c7a1ef04722f9b9d4519985f5f8b26d.svg" class="org-svg" /> setzen wir z.B. <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_425117db8954ec11f95e9976375a406035b50f0c.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_425117db8954ec11f95e9976375a406035b50f0c.svg" class="org-svg" />
+Analog auch für \(f_2 \in U_2^\bot\).
+Für \(v \in V \setminus (U_1 \cup U_2)\) setzen wir z.B. \(f_1(v) = f(v), f_2(v) = 0\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_992da82e800b19c3a40537ca97a61a53ca7b1736.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_992da82e800b19c3a40537ca97a61a53ca7b1736.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(f_1 + f_2)(u_i) =& f_1(u_1) + f_2(u_2) \\
+=& 0 \\
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_434d670a2943f5e593fc4b94a04bf8f2c6a5f2d3.svg" class="org-svg" /> mit der Darstelung <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_2b06035a5de513a044db291865f551343b6a14b9.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_2b06035a5de513a044db291865f551343b6a14b9.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_07f85d51b926e55af59c5fdaeee51633950300a2.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_07f85d51b926e55af59c5fdaeee51633950300a2.svg" class="org-svg" /> (insbesondere existiert eine wegen den Basen)
+Sei \(v \in V\) mit der Darstelung \(v = u_1 + u_2 + v'\) mit \(u_1 \in U_1 \setminus U_2, u_2 \in U_2 \setminus U_1, v' \in V \setminus (U_1 \cup U_2)\) (insbesondere existiert eine wegen den Basen)
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_58e2ca626cb02a34ff7b0b15d0f6fe9155650dcc.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_58e2ca626cb02a34ff7b0b15d0f6fe9155650dcc.svg" class="org-svg" />
-</span>
+\begin{align*}
+(f_1 + f_2)(v) =& (f_1)(u_1 + u_2 + v') + (f_2)(u_1 + u_2 + v')\\
+=& f_1(u_1) + f_1(u_2) + f_1(v') + f_2(u_1) + f_2(u_2) + f_2(v') \\
+=& f(u_2) + f(v') + f(u_1) \\
+=& f(u_1 + u_2 + v')
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org19e4ea6" class="outline-4">
-<h4 id="org19e4ea6"><span class="section-number-4">2.2.2.</span> <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9f2cb3fb9989347bbee8c56d2870b0ed88a673d0.svg" class="org-svg" /></h4>
+<div id="outline-container-org97d3586" class="outline-4">
+<h4 id="org97d3586"><span class="section-number-4">2.2.2.</span> \(\supseteq\)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_c2ec35a54aa4466af6424d6541b39134f939d6c7.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_c2ec35a54aa4466af6424d6541b39134f939d6c7.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_97f13901cc208e773d01e46c76fb87f26d998664.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_97f13901cc208e773d01e46c76fb87f26d998664.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5b25b9a682a68004812a4d655332ffd97efd470c.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_5b25b9a682a68004812a4d655332ffd97efd470c.svg" class="org-svg" />, so folgt für <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_8116631983a1db17d4f4151ff20a24e6848b9e7b.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_8116631983a1db17d4f4151ff20a24e6848b9e7b.svg" class="org-svg" /> :
+Sei \(f = f_1 + f_2 \in U_1^\bot + U_2^\bot\) mit \(f_1 \in U_1^\bot\) und \(f_2 \in U_2^\bot\), so folgt für \(u \in U_1 \cap U_2\) :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_d33b26707c0f32d69bd5110fd6d50b5542e55cfa.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_d33b26707c0f32d69bd5110fd6d50b5542e55cfa.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(u) =& (f_1 + f_2)(u) \\
+=& f_1(u) + f_2(u) \\
+=& 0 + 0 \\
+=& 0
+\end{align*}
 <p>
-Damit folgt auch <img src="file:///home/anton/html/ltximg/20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9c7603a3b6931de8744f43b9867b64176ce733d1.svg" alt="20221226141005-dualitatssatz_fur_das_produkt_und_die_schnittmenge_9c7603a3b6931de8744f43b9867b64176ce733d1.svg" class="org-svg" />
+Damit folgt auch \(f \in (U_1 \cap U_2)^{\bot}\)
 </p>
 </div>
 </div>

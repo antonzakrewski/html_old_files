@@ -3,83 +3,91 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Äquivalente Form der Dreiecksungleichung für Seminormen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Form der Dreiecksungleichung für Seminormen</h1>
-<div id="outline-container-orgc26adcf" class="outline-2">
-<h2 id="orgc26adcf"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org112f00f" class="outline-2">
+<h2 id="org112f00f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_8c8c9db11e82ac1acba8a5bd8b659144418fab4e.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_8c8c9db11e82ac1acba8a5bd8b659144418fab4e.svg" class="org-svg" /> ein <a href="20230224151733-halbnormierter_raum.html#ID-60faba80-fd22-4b9a-bada-c47008cc9c9d">halbnormierter Raum</a>, dann ist äquivalent zur <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a>:
+Sei \((V, \| \cdot \|)\) ein <a href="20230224151733-halbnormierter_raum.html#ID-60faba80-fd22-4b9a-bada-c47008cc9c9d">halbnormierter Raum</a>, dann ist äquivalent zur <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a>:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_c05a0ea49f35938eb10a51cbf45897a65169ff22.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_c05a0ea49f35938eb10a51cbf45897a65169ff22.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\vert \| x \| - \| y \| \vert \leq \| x - y \|
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgb6e43bd" class="outline-2">
-<h2 id="orgb6e43bd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7528510" class="outline-2">
+<h2 id="org7528510"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org41612c7" class="outline-3">
-<h3 id="org41612c7"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org7463493" class="outline-3">
+<h3 id="org7463493"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_6e929579dc7394035dc2490a7cc0ed13bb00700b.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_6e929579dc7394035dc2490a7cc0ed13bb00700b.svg" class="org-svg" /> (sonst multipliziere man mit <img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_086465a858fed04152195893cfdaefc0d0c5e68b.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_086465a858fed04152195893cfdaefc0d0c5e68b.svg" class="org-svg" /> und nutze die <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a>)  
-Man setze <img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_bf6642717cfe7fdf8ea7514766dcb36af51e5331.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_bf6642717cfe7fdf8ea7514766dcb36af51e5331.svg" class="org-svg" /> und <img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_4e3c1712ae3cb2be59565e6bc2515ecfae6cd5ad.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_4e3c1712ae3cb2be59565e6bc2515ecfae6cd5ad.svg" class="org-svg" />, so folgt
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(\| x \| > \| y \|\) (sonst multipliziere man mit \(-1\) und nutze die <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a>)  
+Man setze \(x \coloneqq x' + y'\) und \(y \coloneqq y'\), so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_68f2f4166c620e551599ef267bf36f6e6294d60c.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_68f2f4166c620e551599ef267bf36f6e6294d60c.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+\vert \| x \| - \| y \| \vert =& \| x \| - \| y \| \\
+=& \| x' + y' \| - \| y' \| \leq \| x' + y' - y' \| && \vert + \| y' \| \\
+\| x' + y' \| \leq \|x' \| + \| y' \|
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org139de1f" class="outline-3">
-<h3 id="org139de1f"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org80065e1" class="outline-3">
+<h3 id="org80065e1"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_c34535cb8545c992e93f66734c8141f4bace8cad.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_c34535cb8545c992e93f66734c8141f4bace8cad.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\|x \| = \| x - y + y \| \leq& \| x - y \| + \| y \| && \vert - \| y \| \\
+\| x \| - \| y \| \leq& \| x - y \|
+\end{align*}
 <p>
 Und aus Symmetriegründen folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112093736-aquivalente_form_der_dreiecksungleichng_ccaaef0b297cee45d7eae12a6607e87908e9f616.svg" alt="20230112093736-aquivalente_form_der_dreiecksungleichng_ccaaef0b297cee45d7eae12a6607e87908e9f616.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\| y \| - \| x \| \leq& \|y - x \| \\
+\| y - x \| =& \vert -1 \vert \|x - y \| \\
+=& \|x - y \|
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Offenheit des endlichen Schnitts von offenen Mengen (metrischer Raum)</h1>
-<div id="outline-container-org722abe4" class="outline-2">
-<h2 id="org722abe4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org60b91ba" class="outline-2">
+<h2 id="org60b91ba"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_962d2fb94ab5be3079f91839c4d17186de2ae6db.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_60ae330e0ca515dace1fe170cc0c5758db0adddb.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a>.
-Dann ist der <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_df66e8b8e002496627b70da7c2de0b1100a85674.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_df66e8b8e002496627b70da7c2de0b1100a85674.svg" class="org-svg" /> ebenfalls <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a>.
+Sei \((X,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(O_i\) für \(i \in \{1,...,n\}\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a>.
+Dann ist der <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> \(\bigcap_{i=1}^n O_i\) ebenfalls <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org113d2a1" class="outline-2">
-<h2 id="org113d2a1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6897a02" class="outline-2">
+<h2 id="org6897a02"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_4d5fe9f06c43c7a82b0bfb618b5e867ad0a25904.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_4d5fe9f06c43c7a82b0bfb618b5e867ad0a25904.svg" class="org-svg" />, so existiert für alle <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_d8e307a2019e9af558c0e54bef1829c9d5b25db1.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_d8e307a2019e9af558c0e54bef1829c9d5b25db1.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_f150c47ed3eabef147f12d369f439c5d793fc393.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_f150c47ed3eabef147f12d369f439c5d793fc393.svg" class="org-svg" /> (das minimum der einzelnen
-mit <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_4528bb8b90c7623a7910372c90d2d57ecc9753db.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_4528bb8b90c7623a7910372c90d2d57ecc9753db.svg" class="org-svg" />
-Damit gilt <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_b9cf0760e50f5f432184ccde621588ebc88c1c76.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_b9cf0760e50f5f432184ccde621588ebc88c1c76.svg" class="org-svg" /> für alle <img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_f473792e149cb1eb03aef0f16c51d63a95132254.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_f473792e149cb1eb03aef0f16c51d63a95132254.svg" class="org-svg" /> und damit auch
+Sei \(x \in \bigcap_{i = 1}^n O_i\), so existiert für alle \(i=1,...,k\) ein \(\varepsilon_i > 0\) (das minimum der einzelnen
+mit \(B_{\varepsilon_i}(x) \subseteq O_i\)
+Damit gilt \(B__{\varepsilon_i}(x) \subseteq O_i\) für alle \(i\) und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_844b037944a1710b4021d7a6a09d8460be19a17d.svg" alt="20230227171226-offenheit_des_endlichen_schnitts_von_offenen_mengen_844b037944a1710b4021d7a6a09d8460be19a17d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+B_{\varepsilon_i}(x) \subseteq \bigcap_{i=1}^n O_i
+\end{align*}
 </div>
 </div>
 </div>

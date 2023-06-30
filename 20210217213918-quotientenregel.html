@@ -3,35 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Quotientenregel</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Quotientenregel</h1>
-<div id="outline-container-org1fa6120" class="outline-2">
-<h2 id="org1fa6120"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org32b57df" class="outline-2">
+<h2 id="org32b57df"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sind die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="ltximg/20210217213918-quotientenregel_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" alt="20210217213918-quotientenregel_3f48e0ece34809c93c84b141b4b379dca79a1b36.svg" class="org-svg" /> und <img src="ltximg/20210217213918-quotientenregel_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" alt="20210217213918-quotientenregel_e3775d94688d3601e903237ef92fdeab3c7dfc93.svg" class="org-svg" /> <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a>, so gilt:
+Sind die <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(g\) und \(h\) <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbar</a>, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20210217213918-quotientenregel_01aadcaa51c0a5fb018f7653e746b1c5357cf9a1.svg" alt="20210217213918-quotientenregel_01aadcaa51c0a5fb018f7653e746b1c5357cf9a1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+f(x) \coloneqq& \frac{g(x)}{h(x)} \\
+\Rightarrow f'(x) =& \frac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h(x)^2}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org6a726df" class="outline-2">
-<h2 id="org6a726df"><span class="section-number-2">2.</span> <a href="20220820185204-beweis_quotientenregel.html#ID-71e9c24a-53d5-4bdb-821e-055eae62f4aa">Beweis: Quotientenregel</a></h2>
+<div id="outline-container-org9a58d05" class="outline-2">
+<h2 id="org9a58d05"><span class="section-number-2">2.</span> <a href="20220820185204-beweis_quotientenregel.html#ID-71e9c24a-53d5-4bdb-821e-055eae62f4aa">Beweis: Quotientenregel</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

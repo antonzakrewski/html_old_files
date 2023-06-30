@@ -9,88 +9,99 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Vollständigkeit der Supremumsnorm für einen Vollständigen Raum</h1>
-<div id="outline-container-orge1e4a88" class="outline-2">
-<h2 id="orge1e4a88"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge221ae3" class="outline-2">
+<h2 id="orge221ae3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_c5ec871de4be7e4f061e2c5e082a8b11a1c046cc.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_c5ec871de4be7e4f061e2c5e082a8b11a1c046cc.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachraum</a>.
-Eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_16af11822f434863ff68585288c34c2f02ec03bc.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_16af11822f434863ff68585288c34c2f02ec03bc.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> sie <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">cauchy</a> ist.
+Sei \(M \neq \empytset\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(V\) ein <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachraum</a>.
+Eine <a href="20230110111536-funktionenfolge.html#ID-679d2805-ad6f-4a4e-bcbb-1fbed51e8745">Funktionenfolge</a> \(f_n: M \rightarrow V\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> sie <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">cauchy</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orge990e66" class="outline-2">
-<h2 id="orge990e66"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc82c73d" class="outline-2">
+<h2 id="orgc82c73d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgecdbd86" class="outline-3">
-<h3 id="orgecdbd86"><span class="section-number-3">2.1.</span> a) <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a></h3>
+<div id="outline-container-orgcb331b7" class="outline-3">
+<h3 id="orgcb331b7"><span class="section-number-3">2.1.</span> a) <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> \(\Rightarrow\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" class="org-svg" /> eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so gilt:
+Sei \(f_n\) eine <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a> <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, so gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_6ca930cb4bbde9968db719b916d60a0d87290a80.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_6ca930cb4bbde9968db719b916d60a0d87290a80.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall \varepsilon > 0 \exists n(\varepsilon) \in \mathbb{N}_0 : \forall n,m > n(\varepsilon) : \| f_n - f_m \|_{\infty} < \varepsilon
+\end{align*}
 <p>
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_3f68bcdbae60d038bf8e1000d98192aee8399b51.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_3f68bcdbae60d038bf8e1000d98192aee8399b51.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall \varepsilon > 0 \forall x \in M \exists n(\varepsilon) \in \mathbb{N}_0 : \forall n,m > n(\varepsilon) : \vert f_n(x) - f_m(x) \vert \leq \| f_n - f_m \|_{\infty} < \varepsilon
+\end{align*}
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">vollständig</a> ist, <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_6e943d5a5e5aec44dbfc6667022a5f5edc27cf05.svg" class="org-svg" /> <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweise</a>.
+Da \(V\) <a href="20221124122659-vollstandiger_metrischer_raum.html#ID-d68e391c-415a-49a8-93ce-0b1de559796d">vollständig</a> ist, <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> \(f_n\) <a href="20230110111858-konvergenz_einer_funktionsfolge.html#ID-1865b844-cfea-426e-a811-f7f19bfebadb">punktweise</a>.
 Sei
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_50c3c93f1c8db50eca353cd4a584a7eaaf5c9fc0.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_50c3c93f1c8db50eca353cd4a584a7eaaf5c9fc0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: M \rightarrow& V \\
+x \mapsto& \lim_{n \to \infty}\left(f_n(x)\right) 
+\end{align*}
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, so gilt für fast alle <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_a2f8d453e5c8fa8c94d6f7b64f4e86a5c4d996f9.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_a2f8d453e5c8fa8c94d6f7b64f4e86a5c4d996f9.svg" class="org-svg" /> 
-Dann folgt aus der <a href="20230506130948-stetigkeit_der_norm.html#ID-95077cc6-84d2-4fcc-b765-b2fec0bfffe3">Stetigkeit der Norm</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_ffb2c55e0859094f48eb75b477ace4109bfc570a.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_ffb2c55e0859094f48eb75b477ace4109bfc570a.svg" class="org-svg" />
+Sei \(\varepsilon > 0\), so gilt für fast alle \((m,n) \in \mathbb{N}^2: \| f_m - f_n \|_{\infty} < \varepsilon\) 
+Dann folgt aus der <a href="20230506130948-stetigkeit_der_norm.html#ID-95077cc6-84d2-4fcc-b765-b2fec0bfffe3">Stetigkeit der Norm</a> \(\| \cdot \|_{\infty}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_4b6053c69df33200b70e4ca101302a9aae0a9dd7.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_4b6053c69df33200b70e4ca101302a9aae0a9dd7.svg" class="org-svg" />
-</span>
+\begin{align*}
+\lim_{n \to \infty}\left(\right) \| f_m - f_n \|_{\infty} =& \| f_m - \lim_{n \to \infty }\left(f_n\right) \|_{\infty} \\
+=& \| f_m(x) - f \|_{\infty} < \varepsilon \text{ für fast alle }m
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga22f270" class="outline-3">
-<h3 id="orga22f270"><span class="section-number-3">2.2.</span> b) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a></h3>
+<div id="outline-container-org548d29d" class="outline-3">
+<h3 id="org548d29d"><span class="section-number-3">2.2.</span> b) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">Konvergenz</a> \(\Rightarrow\) <a href="20220105223523-fundamental_folge.html#ID-45b890ea-39cc-4f8c-bf97-4de5c09d772a">Cauchy</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_4b34c50eb0023bc32a9e08b2c6969e1372e58aa7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_b6bad17f9e3f2f295e183344f0e126524a115fc6.svg" class="org-svg" />, so gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> <img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_b85cf51059de1e37588c711211d20e0e3f708c76.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_b85cf51059de1e37588c711211d20e0e3f708c76.svg" class="org-svg" />
+Sei \(f_n \rightarrow f\) und \(\varepsilon > 0\), so gilt für <a href="20221013222501-fast_alle.html#ID-a3da14cb-05c1-4f9e-a68a-a693980f5ede">fast alle</a> \(n,m \in \mathbb{N}:  \| f_m - f \|_{\infty},\| f_n - f \|_{\infty} \leq \frac{\varepsilon}{2}\)
 Daraus folgt 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_0cb9a54d202c21d303d1ada8d0bc64460cd99058.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_0cb9a54d202c21d303d1ada8d0bc64460cd99058.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f_m - f_n \|_{\infty} =& \| f_m - f + f - f_n +  \|_{\infty} \\ 
+\leq& \| f_m - f \| + \| f - f_n \| \\
+<& \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
+\end{align*}
 <p>
 Bzw.:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127071541-cauchyeigenschaft_der_supremumsnorm_010407083dfe45ca16933ceecba8e2cddb168feb.svg" alt="20230127071541-cauchyeigenschaft_der_supremumsnorm_010407083dfe45ca16933ceecba8e2cddb168feb.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\lim_{n,m \to \infty}\left(\| f_m - f_n \|_{\infty}\right) = 0
+\end{align*}
 </div>
 </div>
 </div>

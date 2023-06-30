@@ -9,58 +9,75 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">analytischer Binomischer Lehrsatz</h1>
-<div id="outline-container-org1d5a84a" class="outline-2">
-<h2 id="org1d5a84a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7e819ad" class="outline-2">
+<h2 id="org7e819ad"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_9ef135d73a40adaf63e4fed232324ebccb3975f5.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_53b83d004fad4e849522051ccc4c280f329bda60.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_53b83d004fad4e849522051ccc4c280f329bda60.svg" class="org-svg" />.
+Sei \(r \in \mathbb{R}\) und \(x,y \in \mathbb{C}\).
 Für 
 </p>
 </div>
 </div>
-<div id="outline-container-org263e339" class="outline-2">
-<h2 id="org263e339"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb8a691e" class="outline-2">
+<h2 id="orgb8a691e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbb7bf3e" class="outline-3">
-<h3 id="orgbb7bf3e"><span class="section-number-3">2.1.</span> <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_808b653933a2ab8bd0b85ac14ec066583fece4fe.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_808b653933a2ab8bd0b85ac14ec066583fece4fe.svg" class="org-svg" /></h3>
+<div id="outline-container-org528c278" class="outline-3">
+<h3 id="org528c278"><span class="section-number-3">2.1.</span> \(r \not\in \mathbb{N}_0\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Wir zeigen:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_1b154d9ad8e16b34562b1f3563a9a7df5f5aa9e5.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_1b154d9ad8e16b34562b1f3563a9a7df5f5aa9e5.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(z)  \coloneqq (1 + z)^r = \sum_{k \in \mathbb{Z}}^{} \binom{r}{k} z^k
+\end{align*}
 
 <p>
-für <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_1212c6dd004d2f1863592c3fe4526e03d1ceebce.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_1212c6dd004d2f1863592c3fe4526e03d1ceebce.svg" class="org-svg" />
+für \(\vert z \vert < 1\)
 h
-Die allgemeine Aussage folgt dann mit <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_235e17de64aa183a0ddf9c2a993c8f482bf204c4.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_235e17de64aa183a0ddf9c2a993c8f482bf204c4.svg" class="org-svg" />
+Die allgemeine Aussage folgt dann mit \((x + y)^r = y^r (1 + \frac{x}{y})^r = y^r f(\frac{x}{y})\)
 Es gilt für die $k$-te Ableitung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_9ade090d8618ac906726f4b086547a57208f62e4.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_9ade090d8618ac906726f4b086547a57208f62e4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f^{k}(z) = r^{\underline{k}} (1 + z)^{(r-k)}
+\end{align*}
 
 <p>
 durch die <a href="20221113211059-taylor_entwicklung.html#ID-7b85a0ab-5403-47a3-9bb5-d419697bb4a6">Taylor-Entwicklung</a> folgt dann:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_b7959df2ccd95da11d0aa07922a6854e7a9e0e81.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_b7959df2ccd95da11d0aa07922a6854e7a9e0e81.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(z) =& \sum_{k \in \mathbb{N}_0} \frac{f^{(k)}(0)}{k!} z^k \\
+=& \sum_{k \in \mathbb{N}_0}^{} \binom{r}{k} z^k 
+\end{align*}
 
 <p>
 nach dem <a href="20221209211448-quotientenkriterium.html#ID-adb3497e-3bf1-464c-b5e1-292f8dc459cb">Quotientenkriterium</a> folgt dann, d
@@ -68,16 +85,16 @@ nach dem <a href="20221209211448-quotientenkriterium.html#ID-adb3497e-3bf1-464c-
 </div>
 </div>
 
-<div id="outline-container-orgc7ffda9" class="outline-3">
-<h3 id="orgc7ffda9"><span class="section-number-3">2.2.</span> <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_89c94a31ec383c86f428445a28692cec9a3c84b2.svg" class="org-svg" /></h3>
+<div id="outline-container-org2ffa401" class="outline-3">
+<h3 id="org2ffa401"><span class="section-number-3">2.2.</span> \(n \in \mathbb{N}_0\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 siehe: <a href="20220104220747-binomischer_lehrsatz.html#ID-93572b6e-6e51-486b-bf69-476329e57614">Binomischer Lehrsatz</a> 
 </p>
 
 <p>
-alternativ: argument über <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a> für <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_6906de0fdb3a9be5fa0f0bde84373ceac07d9f20.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_6906de0fdb3a9be5fa0f0bde84373ceac07d9f20.svg" class="org-svg" />
-Für <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_98baa2778dfc532e9c4424683367a93818cd5ef8.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_98baa2778dfc532e9c4424683367a93818cd5ef8.svg" class="org-svg" /> wieder stetigkeit in <img src="file:///home/anton/html/ltximg/20230425084202-allgemeiner_binomischer_lehrsatz_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" alt="20230425084202-allgemeiner_binomischer_lehrsatz_66bf66ea0da254d36d632c34338ad6a252d0c66d.svg" class="org-svg" />
+alternativ: argument über <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a> für \(\vert \frac{x}{y} \vert < 1\)
+Für \(\vert \frac{x}{y} \vert = 1\) wieder stetigkeit in \(x\)
 </p>
 </div>
 </div>

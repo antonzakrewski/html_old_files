@@ -9,81 +9,101 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Supremumsnorm der Funktion und der Ableitung auf dem Funktionenraum</h1>
-<div id="outline-container-orgb7c7d1a" class="outline-2">
-<h2 id="orgb7c7d1a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org505d45e" class="outline-2">
+<h2 id="org505d45e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> der <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle Vektorraum</a> der <a href="20220720130658-beschranktheit_einer_funktion.html#ID-94c52ff2-aac4-4fd1-9d7c-8095d0147e5c">beschränkten</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> <a href="20220720130658-beschranktheit_einer_funktion.html#ID-94c52ff2-aac4-4fd1-9d7c-8095d0147e5c">beschränkt</a> ist.
+Sei \(V\) der <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle Vektorraum</a> der <a href="20220720130658-beschranktheit_einer_funktion.html#ID-94c52ff2-aac4-4fd1-9d7c-8095d0147e5c">beschränkten</a>, <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so dass die <a href="20230118224205-ableitung.html#ID-162033bf-f6b9-49d6-a75b-07c444a70de4">Ableitung</a> <a href="20220720130658-beschranktheit_einer_funktion.html#ID-94c52ff2-aac4-4fd1-9d7c-8095d0147e5c">beschränkt</a> ist.
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_1554d77500f0656c50a898cc9b87cb6acd74b771.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_1554d77500f0656c50a898cc9b87cb6acd74b771.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| f \|_{\infty'}  \coloneqq& \| f \|_{\infty} + \| f' \|_{\infty}
+\end{align*}
 <p>
 eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> (siehe: <a href="20230428182820-supremumsnorm_auf_der_menge_der_beschrankten_funktionen.html#ID-8d9a2901-44e3-417d-91e1-95718087326b">Supremumsnorm auf der Menge der beschränkten Funktionen</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-orgfe195ea" class="outline-2">
-<h2 id="orgfe195ea"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org42799b8" class="outline-2">
+<h2 id="org42799b8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5b6b2be" class="outline-3">
-<h3 id="org5b6b2be"><span class="section-number-3">2.1.</span> <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
+<div id="outline-container-orgf13ddb3" class="outline-3">
+<h3 id="orgf13ddb3"><span class="section-number-3">2.1.</span> <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Für <img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_dbdc7be29f1ca9344eaa1f9ad6b049bdeeb4c6ae.svg" class="org-svg" /> gilt:
+Für \(f = 0\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_a725221e0956ea4e99e6089ac8c240ccaefcc46b.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_a725221e0956ea4e99e6089ac8c240ccaefcc46b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| 0 \|_{\infty'} =& \| 0 \|_{\infty} + \| 0' \|_{\infty} \\
+=& \| 0 \|_{\infty} + \| 0 \|_{\infty} \\
+=& 0
+\end{align*}
 <p>
-Ferner gilt, da die allgemeine Supremumsnorm eine Norm ist, auch <img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_4c3ab23d958dfe83e6dc4be50bb201bffe714f34.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_4c3ab23d958dfe83e6dc4be50bb201bffe714f34.svg" class="org-svg" />, \| f \|<sub>$&infin;</sub> &ge; 0$, d.h. wir erhalten für <img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_930ff1de5083ff351bba521f4b768d6a2c2ea078.svg" class="org-svg" /> folgende Abschätzung:
+Ferner gilt, da die allgemeine Supremumsnorm eine Norm ist, auch \(\| f' \|_{\infty} \geq 0\), \| f \|<sub>$&infin;</sub> &ge; 0$, d.h. wir erhalten für \(f \neq 0\) folgende Abschätzung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_3893ab004fd8652a3623eb5cd33dff3931d175de.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_3893ab004fd8652a3623eb5cd33dff3931d175de.svg" class="org-svg" />
-</span>
+\begin{align*}
+\| f \|_{\infty'} =& \| f \|_{\infty} + \| f' \|_{\infty} \\
+\| f \|_{\infty} + \| f' \|_{\infty} \geq& \| f \|_{\infty'} > 0 \\
+\| f \|_{\infty'} >& 0
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org58f4f72" class="outline-3">
-<h3 id="org58f4f72"><span class="section-number-3">2.2.</span> <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
+<div id="outline-container-org74bfce2" class="outline-3">
+<h3 id="org74bfce2"><span class="section-number-3">2.2.</span> <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Folgt aus den jeweiligen Dreiecksungleichung der allgemeinen Supremumsnorm und der <a href="20221015041614-ableitung_der_summe_zweier_funktionen.html#ID-1f316f3f-fc1f-431b-afd1-0a60c8cc29ed">Summenregel</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_601f0ee653af43755d6d4989cc7fba7a0165ffe1.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_601f0ee653af43755d6d4989cc7fba7a0165ffe1.svg" class="org-svg" />
-</span>
+\begin{align*}
+\| f_1 + f_2 \|_{\infty'} =& \| f_1 +  f_2 \|_{\infty} + \| (f_1 + f_2)' \|_{\infty} \\
+=& \| f_1 +  f_2 \|_{\infty} + \| f_1' + f_2' \|_{\infty} \\
+\leq& \| f_1 \|_{\infty} + \| f_2 \|_{\infty} + \| f_1' \|_{\infty} + \| f_1' \|_{\infty}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orged74d00" class="outline-3">
-<h3 id="orged74d00"><span class="section-number-3">2.3.</span> <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
+<div id="outline-container-org1f55c67" class="outline-3">
+<h3 id="org1f55c67"><span class="section-number-3">2.3.</span> <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der <a href="20230118171223-faktorregel.html#ID-e0391322-9748-4256-9faa-9b65bcad4e76">Faktorregel</a> und der absoluten Homogenität der Supremumsnorm
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_8c36cd74fe27faa4cff4fa65b7d54be0f32bfdfd.svg" alt="20230428181738-supremumsnorm_der_funktion_und_der_ableitung_auf_dem_funktionenraum_einer_beschrankten_menge_8c36cd74fe27faa4cff4fa65b7d54be0f32bfdfd.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| \lambda f \|_{\infty} =& \| \lambda f \|_{\infty} + \| (\lambda f)' \|_{\infty} \\
+=& \vert \lambda \vert \| f \|_{\infty} + \| \lambda f' \|_{\infty} \\
+=& \vert \lambda \vert \| f \|_{\infty} + \vert \lambda \vert \| f' \|_{\infty} \\
+=& \vert \lambda \vert \cdot \left(\| f \|_{\infty} + \| f' \|_{\infty} \right)
+=& \vert \lambda \vert \cdot 
+\end{align*}
 </div>
 </div>
 </div>

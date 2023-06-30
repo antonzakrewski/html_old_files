@@ -3,32 +3,59 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>stetige Injektion auf einen Hausdorff-Raums als Hasudorff-Raum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">stetige Injektion auf einen Hausdorff-Raums als Hasudorff-Raum</h1>
-<div id="outline-container-org60a92be" class="outline-2">
-<h2 id="org60a92be"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org19ee397" class="outline-2">
+<h2 id="org19ee397"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> und <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_2d01aefbbb129ad83455f5d4022d2f5c80c2f2e7.svg" class="org-svg" /> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_f241430db1804ed5a53fd101a3800a403c7509bf.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_f241430db1804ed5a53fd101a3800a403c7509bf.svg" class="org-svg" /> ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> und <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_c82d2255660923a56723d14ed9fa9a2ba4a36c9c.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektion</a>.
-Dann ist <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> ebenfalls ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a>
+Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a>, \(X'\) ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> und \(f: X \rightarrow X'\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektion</a>.
+Dann ist \(X\) ebenfalls ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org85447fa" class="outline-2">
-<h2 id="org85447fa"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd2d99d8" class="outline-2">
+<h2 id="orgd2d99d8"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" class="org-svg" /> mit <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />, so gilt wegen der <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektivität</a> <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_fd50b1861a5201db20753af8f300dd0cf2a637d4.svg" class="org-svg" />
-Nach Annahme existieren<a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a>, <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_a12d63451258faffc0c2515556b57d3379c197e6.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_a12d63451258faffc0c2515556b57d3379c197e6.svg" class="org-svg" />.
-Wegen der Charakterisierung der Stetigkeit anhand des <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilds von Umgebungen unter stetigen Abbildungen</a>, folgt, dass <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_989d3dabe24b2f79cd2b4d800400df6d81684253.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_989d3dabe24b2f79cd2b4d800400df6d81684253.svg" class="org-svg" /> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von <img src="ltximg/20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_dabf14014e6835296287791b651231dc1df8e4c0.svg" alt="20230523081048-urbild_einer_stetigen_injektion_eines_hausdorff_raums_dabf14014e6835296287791b651231dc1df8e4c0.svg" class="org-svg" /> sind.
+Seien \(x,y \in X\) mit \(x \neq y\), so gilt wegen der <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">Injektivität</a> \(f(x) \neq f(y)\)
+Nach Annahme existieren<a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkte</a>, <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_x',U_y' \subseteq X'\).
+Wegen der Charakterisierung der Stetigkeit anhand des <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilds von Umgebungen unter stetigen Abbildungen</a>, folgt, dass \(f^{-1}[U_x'], f^{-1}[U_y']\) <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> von \(x,y\) sind.
 Dabei zusätzlich sind diese wegen der <a href="20220929184114-rechtseindeutige_relation.html#ID-c7365363-d56a-4677-b74b-d9d7546bb9b2">Rechtseindeutigkeit</a> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a>.
 </p>
 </div>

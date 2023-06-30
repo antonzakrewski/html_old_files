@@ -3,94 +3,113 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Multiplikationsregeln Quaternionen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Multiplikationsregeln Quaternionen</h1>
-<div id="outline-container-orgf7b7437" class="outline-2">
-<h2 id="orgf7b7437"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3236e35" class="outline-2">
+<h2 id="org3236e35"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 für die <a href="20211230225918-quaternion.html#ID-3f46036d-daf8-4b3f-a79a-31c4b070e907">Quaternionen</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304154833-multiplikationsregeln_quaternionen_9c0c1bf5afd6e4ba6ff38fff5d8c8858bddf43c0.svg" alt="20220304154833-multiplikationsregeln_quaternionen_9c0c1bf5afd6e4ba6ff38fff5d8c8858bddf43c0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\mathrm{i}\mathrm{j} =& \mathrm{k} \\
+\mathrm{j}\mathrm{k} =& \mathrm{i} \\
+\mathrm{k} \mathrm{i} =& \mathrm{j}
+\end{align*}
 <p>
 und 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304154833-multiplikationsregeln_quaternionen_3bba856f54849398315dd86128e107ad912cd7f7.svg" alt="20220304154833-multiplikationsregeln_quaternionen_3bba856f54849398315dd86128e107ad912cd7f7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+\mathrm{j}\mathrm{i} =& -\mathrm{k} \\
+\mathrm{k}\mathrm{j} =& -\mathrm{i} \\
+\mathrm{i} \mathrm{k} =& -\mathrm{j}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org338534c" class="outline-2">
-<h2 id="org338534c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org162af16" class="outline-2">
+<h2 id="org162af16"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org4a8b875" class="outline-3">
-<h3 id="org4a8b875"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgc34dadd" class="outline-3">
+<h3 id="orgc34dadd"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Es gilt wegen der <a href="20230110140436-kommutativitat_von_1_ring.html#ID-2c91e9e2-f63f-43c3-9981-55a685e486fa">Kommutativität von -1</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304154833-multiplikationsregeln_quaternionen_3f9ab953e94e3e64ee48a8503f8950afbf028b01.svg" alt="20220304154833-multiplikationsregeln_quaternionen_3f9ab953e94e3e64ee48a8503f8950afbf028b01.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\mathrm{i}\mathrm{j}\mathrm{k} =& -1 \\
+\mathrm{i} \cdot \mathrm{i} \mathrm{j}\mathrm{k} =& - \mathrm{i} \\
+- \mathrm{j}\mathrm{k} =& - \mathrm{i} \\
+\mathrm{j}\mathrm{k} =& \mathrm{i} \\
+\mathrm{i}\mathrm{j}\mathrm{k} =& -1 \\
+\mathrm{i}\mathrm{j}\mathrm{k}\mathrm{k} =& -\mathrm{k}\\
+\mathrm{i}\mathrm{j} \cdot (-1) =& - \mathrm{k} \\
+\mathrm{i}\mathrm{j} =& \mathrm{k}
+\end{align*}
 
 <p>
 Desweiteren gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304154833-multiplikationsregeln_quaternionen_50088ac4fe837e397b76dcb52e1e3d92ee1b5d1b.svg" alt="20220304154833-multiplikationsregeln_quaternionen_50088ac4fe837e397b76dcb52e1e3d92ee1b5d1b.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
+\begin{align*}
+\mathrm{j}\mathrm{k} =& \mathrm{i} \\
+\mathrm{j}\mathrm{j}\mathrm{k}\mathrm{i} =& \mathrm{j} \mathrm{i}\mathrm{i} \\
+(-1) \cdot \mathrm{k}\mathrm{i} =& \mathrm{j} (-1) \\
+\mathrm{k}\mathrm{i} =& \mathrm{j}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga0d855a" class="outline-3">
-<h3 id="orga0d855a"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org8e71afc" class="outline-3">
+<h3 id="org8e71afc"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220304154833-multiplikationsregeln_quaternionen_0d37e048d31ac7381a83b763ab8281546d94523d.svg" alt="20220304154833-multiplikationsregeln_quaternionen_0d37e048d31ac7381a83b763ab8281546d94523d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\mathrm{i}\mathrm{j} =& \mathrm{k} \\
+\mathrm{i}\mathrm{i}\mathrm{j} =& \mathrm{i}\mathrm{k} \\
+- \mathrm{j} =& \mathrm{i}\mathrm{k} \\
+\mathrm{j}\mathrm{k} =& \mathrm{i} \\
+\mathrm{j}\mathrm{j}\mathrm{k} =& \mathrm{j}\mathrm{i} \\
+-\mathrm{k} =& \mathrm{j}\mathrm{i} \\
+\mathrm{k}\mathrm{i} =& \mathrm{j} \\
+\mathrm{k}\mathrm{k}\mathrm{i} =& \mathrm{k}\mathrm{j}\\
+-\mathrm{i} =& \mathrm{k}\mathrm{j}
+\end{align*}
 </div>
 </div>
 </div>

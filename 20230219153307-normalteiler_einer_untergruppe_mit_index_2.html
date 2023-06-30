@@ -9,42 +9,62 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Normalteiler einer Untergruppe mit Index 2</h1>
-<div id="outline-container-org8caf514" class="outline-2">
-<h2 id="org8caf514"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd9b5b2f" class="outline-2">
+<h2 id="orgd9b5b2f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_f1c59fbbf59de81faec900509995469a44f99e9e.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_f1c59fbbf59de81faec900509995469a44f99e9e.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> mit einer <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_eb357386301413d397b6f3252bfdd7093451c043.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_eb357386301413d397b6f3252bfdd7093451c043.svg" class="org-svg" /> und <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index</a> <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_d386195bb1fece8d1fea7f25f39d23bde506a647.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_d386195bb1fece8d1fea7f25f39d23bde506a647.svg" class="org-svg" />
-Dann gilt: <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_99f773bd1b2f4262acb804bd701e88f6b3020b93.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_99f773bd1b2f4262acb804bd701e88f6b3020b93.svg" class="org-svg" />
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> mit einer <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> \(U\) und <a href="20221023184358-index_gruppentheorie.html#ID-f06e3f56-1c1b-4e9d-b5b1-3e9a25fdb500">Index</a> \(2\)
+Dann gilt: \(U \trianglelefteq G\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgd237e98" class="outline-2">
-<h2 id="orgd237e98"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc55721f" class="outline-2">
+<h2 id="orgc55721f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_0bc40fd2707e87d316371f64bfa8fcc1636caa11.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_0bc40fd2707e87d316371f64bfa8fcc1636caa11.svg" class="org-svg" />, sonst trivial.
+Sei \(g \not \in U\), sonst trivial.
 Dann folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_7169c1a1a4117d787ffa916dc942296a13346417.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_7169c1a1a4117d787ffa916dc942296a13346417.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+gU = Ug \neq U
+\end{align*}
 <p>
-weil  für <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_b350d64239ad571b9cebf4ae8d0dd20c9de55d7a.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_b350d64239ad571b9cebf4ae8d0dd20c9de55d7a.svg" class="org-svg" /> ein Widerspruch zur Annahme <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_4a03a9cc37fa1441412e32242e07e9a478dc4884.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_4a03a9cc37fa1441412e32242e07e9a478dc4884.svg" class="org-svg" /> entstünde und keine dritte Nebenklasse existiert
-Damit folgt, dass für beliebiges <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_ce0752fac620361fc81260f583f7cf83df255adc.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_ce0752fac620361fc81260f583f7cf83df255adc.svg" class="org-svg" /> ein <img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_9e65eb47b30bdb7ff58026ab7bb0cea846968a60.svg" class="org-svg" /> existiert mit
+weil  für \(g \cdot 1^{-1}, 1^{-1} \cdot g \in U\) ein Widerspruch zur Annahme \(g \in U\) entstünde und keine dritte Nebenklasse existiert
+Damit folgt, dass für beliebiges \(u \in U\) ein \(u' \in U\) existiert mit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230219153307-normalteiler_einer_untergruppe_mit_index_2_a6779be993ac8ef1f051a3e951c3dffe2c0e30a4.svg" alt="20230219153307-normalteiler_einer_untergruppe_mit_index_2_a6779be993ac8ef1f051a3e951c3dffe2c0e30a4.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+g \cdot u =& u' \cdot g \vert g^{-1} \\
+g \cdot u \cdot g^{-1} = u' \in U
+\end{align*}
 </div>
 </div>
 </div>

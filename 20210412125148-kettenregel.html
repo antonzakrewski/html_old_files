@@ -9,30 +9,53 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel (Q11)</h1>
-<div id="outline-container-org31d7722" class="outline-2">
-<h2 id="org31d7722"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org093658c" class="outline-2">
+<h2 id="org093658c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Bei der Verkettung der <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> <img src="file:///home/anton/html/ltximg/20210412125148-kettenregel_04bfc7fb9753cf2d723358455c37c3d1b2da45f3.svg" alt="20210412125148-kettenregel_04bfc7fb9753cf2d723358455c37c3d1b2da45f3.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20210412125148-kettenregel_55b0b21ab5e6056fe47222ef1789597aed5ab7da.svg" alt="20210412125148-kettenregel_55b0b21ab5e6056fe47222ef1789597aed5ab7da.svg" class="org-svg" /> gilt:
+Bei der Verkettung der <a href="20210217184102-differenzierbarkeit.html#ID-3a5a92c4-2d28-46ae-91f9-92603797aa69">differenzierbaren</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> \(u(x)\) und \(v(x)\) gilt:
 </p>
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20210412125148-kettenregel_66fa8c0afa5605bb54fb23fa0e536b60666ad358.svg" alt="20210412125148-kettenregel_66fa8c0afa5605bb54fb23fa0e536b60666ad358.svg" class="org-svg" />
-</span>
+\begin{align*}
+f(x) =& u(v(x)) \\
+ \Rightarrow f'(x) =& u'(v(x)) \cdot v'(x)
+\end{align*}
+</div>
+<div id="outline-container-org6b48b25" class="outline-3">
+<h3 id="org6b48b25"><span class="section-number-3">1.1.</span> <a href="20220402202848-ketttenregel_mehrere_kompositionen.html#ID-3ab25e89-31d6-4b91-9256-b856bef68fe2">Kettenregel - mehrere Kompositionen</a></h3>
 </div>
 </div>
-<div id="outline-container-org8900424" class="outline-3">
-<h3 id="org8900424"><span class="section-number-3">1.1.</span> <a href="20220402202848-ketttenregel_mehrere_kompositionen.html#ID-3ab25e89-31d6-4b91-9256-b856bef68fe2">Kettenregel - mehrere Kompositionen</a></h3>
-</div>
-</div>
-<div id="outline-container-orge9aa4f4" class="outline-2">
-<h2 id="orge9aa4f4"><span class="section-number-2">2.</span> <a href="20220402204902-beweis_kettenregel.html#ID-e6a9b3d5-bb70-440e-a91a-81d46db44f29">Beweis: Kettenregel</a></h2>
+<div id="outline-container-org364a7cd" class="outline-2">
+<h2 id="org364a7cd"><span class="section-number-2">2.</span> <a href="20220402204902-beweis_kettenregel.html#ID-e6a9b3d5-bb70-440e-a91a-81d46db44f29">Beweis: Kettenregel</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">

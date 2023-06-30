@@ -9,24 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">unzusammenhängender Raum und stetige Abbildung auf einen diskreten Raum</h1>
-<div id="outline-container-orge023314" class="outline-2">
-<h2 id="orge023314"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgeb479f2" class="outline-2">
+<h2 id="orgeb479f2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230308124816-unzusammenhangender_raum_und_stetige_abbildung_auf_einen_diskreten_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230308124816-unzusammenhangender_raum_und_stetige_abbildung_auf_einen_diskreten_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, so ist <img src="file:///home/anton/html/ltximg/20230308124816-unzusammenhangender_raum_und_stetige_abbildung_auf_einen_diskreten_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230308124816-unzusammenhangender_raum_und_stetige_abbildung_auf_einen_diskreten_raum_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> <a href="20230308122703-unzusammenhangender_raum.html#ID-3d0d0333-8bcf-4fc8-90c5-f6a7e8e185cc">unzusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> eine nicht-<a href="20220719122726-konstante_funktion.html#ID-4a0bb447-823e-4fbc-8a8f-4e2bb6c15e04">konstante</a> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> auf einen <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskreten</a> Raum Punkten existiert.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, so ist \(X\) <a href="20230308122703-unzusammenhangender_raum.html#ID-3d0d0333-8bcf-4fc8-90c5-f6a7e8e185cc">unzusammenhängend</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> eine nicht-<a href="20220719122726-konstante_funktion.html#ID-4a0bb447-823e-4fbc-8a8f-4e2bb6c15e04">konstante</a> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> auf einen <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskreten</a> Raum Punkten existiert.
 </p>
 </div>
 </div>
-<div id="outline-container-org5ce4da3" class="outline-2">
-<h2 id="org5ce4da3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb46f6d4" class="outline-2">
+<h2 id="orgb46f6d4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org80c932f" class="outline-3">
-<h3 id="org80c932f"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgd47de4f" class="outline-3">
+<h3 id="orgd47de4f"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Man wähle die beiden <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkten</a> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a> <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">Vereinigungen</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offener Mengen</a> aus und bilde eine auf den ersten und die andere auf den zweiten Punkt ab.
@@ -34,8 +59,8 @@ Nach
 </p>
 </div>
 </div>
-<div id="outline-container-org04a930c" class="outline-3">
-<h3 id="org04a930c"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9244a2e" class="outline-3">
+<h3 id="org9244a2e"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Man wähle alle bis auf einen Punkt (dieser punkt soll ein <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeres</a> <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> besitzen) aus, <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">vereinige</a> diese und nach der <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit gegenüber Vereinigung</a> reduziert man den Fall auf zwei <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene Mengen</a>.

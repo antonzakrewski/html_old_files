@@ -3,31 +3,55 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Erststufige Tableauxregeln</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Erststufige Tableauxregeln</h1>
-<div id="outline-container-orgefbb2e1" class="outline-2">
-<h2 id="orgefbb2e1"><span class="section-number-2">1.</span> </h2>
+<div id="outline-container-orgaa6f5d1" class="outline-2">
+<h2 id="orgaa6f5d1"><span class="section-number-2">1.</span> </h2>
 <div class="outline-text-2" id="text-1">
 <p>
 zusätzlich zu <a href="20230102161033-tableauxregeln_der_aussagenlogik.html#ID-55e11330-0ce0-433f-8f4d-fe1bde162700">Tableauxregeln der Aussagenlogik</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230102161005-erststufige_tableauxregeln_905f9b4e71580f1725c9bd4234ac1654b0b80b2f.svg" alt="20230102161005-erststufige_tableauxregeln_905f9b4e71580f1725c9bd4234ac1654b0b80b2f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\lnot \exists x A \Rightarrow \forall  x \lnot A \\
+\lnot \forall x A \Rightarrow \exists x \lnot A \\
+\forall x A \Rightarrow A_x(a) && a\text{ beliebige Konstante auf dem Zweig} \\
+\exists x A \Rightarrow A_x(c) && c\text{ konstante, die nicht auf dem Zwieg liegt}
+\end{align*}
 </div>
 </div>
 </div>

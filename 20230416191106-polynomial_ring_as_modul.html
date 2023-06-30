@@ -9,20 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">polynomial ring as modul</h1>
-<div id="outline-container-org8cee584" class="outline-2">
-<h2 id="org8cee584"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-org8220968" class="outline-2">
+<h2 id="org8220968"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="file:///home/anton/html/ltximg/20230416191106-polynomial_ring_as_modul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230416191106-polynomial_ring_as_modul_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, then the <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">polynomial ring</a> <img src="file:///home/anton/html/ltximg/20230416191106-polynomial_ring_as_modul_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" alt="20230416191106-polynomial_ring_as_modul_bae253fb1b52010452ca075c9e15c5d437cbbac6.svg" class="org-svg" /> is an <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">modul</a>.
+Let \(R\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, then the <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">polynomial ring</a> \(R[X]\) is an <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">modul</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org6991e7c" class="outline-2">
-<h2 id="org6991e7c"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-org27de62c" class="outline-2">
+<h2 id="org27de62c"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 follows from <a href="20230303170343-ring_als_modul.html#ID-2c3b05e5-a5e9-4331-81bc-5d24d8c81648">Ring als Modul</a> and <a href="20221228202226-polynomring_als_ring.html#ID-df7711fc-7f0d-4868-999a-fdd9683b23ca">Polynomring als Ring</a> 

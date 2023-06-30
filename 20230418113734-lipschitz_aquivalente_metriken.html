@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Bilipschitz-äquivalente Metriken</h1>
-<div id="outline-container-org133e71e" class="outline-2">
-<h2 id="org133e71e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org9f5e0b8" class="outline-2">
+<h2 id="org9f5e0b8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_f3668a2c47be7820a054571476911998b0051404.svg" alt="20230418113734-lipschitz_aquivalente_metriken_f3668a2c47be7820a054571476911998b0051404.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
-Zwei <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metriken</a> <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_e35f899005b14c934ca7bae5188da8a81c97357b.svg" alt="20230418113734-lipschitz_aquivalente_metriken_e35f899005b14c934ca7bae5188da8a81c97357b.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_654bdbe1cbc07f4d6f1be47660d6a8de7c7d5c87.svg" alt="20230418113734-lipschitz_aquivalente_metriken_654bdbe1cbc07f4d6f1be47660d6a8de7c7d5c87.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_bce2136a493ed2d08ab0a089c953434a4a980c2e.svg" alt="20230418113734-lipschitz_aquivalente_metriken_bce2136a493ed2d08ab0a089c953434a4a980c2e.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_7d76be31c894da80d90cc3b8b83c9d216cb0760e.svg" alt="20230418113734-lipschitz_aquivalente_metriken_7d76be31c894da80d90cc3b8b83c9d216cb0760e.svg" class="org-svg" /> sind Bilipschitz-äquivalent, falls eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a>` <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_e2875febc6ab60a64858f15f07ec528496a2838c.svg" alt="20230418113734-lipschitz_aquivalente_metriken_e2875febc6ab60a64858f15f07ec528496a2838c.svg" class="org-svg" /> sowie eine Konstante <img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_6c887a5a703330f71359a4ba9a34b50c7dd5ae0e.svg" alt="20230418113734-lipschitz_aquivalente_metriken_6c887a5a703330f71359a4ba9a34b50c7dd5ae0e.svg" class="org-svg" /> existiert mit:
+Seien \(M_1,M_2\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>.
+Zwei <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metriken</a> \(d_1\) auf \(M_1\) bzw. \(d_2\) auf \(M_2\) sind Bilipschitz-äquivalent, falls eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a>` \(f: M_1 \rightarrow M_2\) sowie eine Konstante \(L \geq 1\) existiert mit:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230418113734-lipschitz_aquivalente_metriken_c33c813775ad6ad72adf83050c398cd4834cbe43.svg" alt="20230418113734-lipschitz_aquivalente_metriken_c33c813775ad6ad72adf83050c398cd4834cbe43.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall m,n \in M: \frac{1}{L} \cdot d_1(m,n) \leq d_2(f(m),f(n)) \leq L \cdot d_1(m,n)
+\end{align*}
 <p>
 siehe auch <a href="20230418114238-bilipschitzaquivalenz_als_aquivalenzrelation.html#ID-b0cada80-ceb6-4a27-b397-b1b653dae24f">Bilipschitzäquivalenz als Äquivalenzrelation</a> 
 </p>

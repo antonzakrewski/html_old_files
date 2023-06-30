@@ -9,32 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Redundanz: Reflexivität einer Äquivalenzrelation (Mengenlehre)</h1>
-<div id="outline-container-org418986f" class="outline-2">
-<h2 id="org418986f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2af15a2" class="outline-2">
+<h2 id="org2af15a2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Aus der <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a> und <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a> folgt die <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexivität</a> mit der Annahme dass ein <img src="file:///home/anton/html/ltximg/20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_98a477f6fc058a8fe1d6ff81feaaef68ad7c59a1.svg" alt="20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_98a477f6fc058a8fe1d6ff81feaaef68ad7c59a1.svg" class="org-svg" />
+Aus der <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a> und <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a> folgt die <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexivität</a> mit der Annahme dass ein \(\exists y : x \sim y\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7a21d5e" class="outline-2">
-<h2 id="org7a21d5e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org119e889" class="outline-2">
+<h2 id="org119e889"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_aa4630bcbd2f1968ae68585e246860bae286c611.svg" alt="20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_aa4630bcbd2f1968ae68585e246860bae286c611.svg" class="org-svg" />
-Aus der Symmetrie folgt <img src="file:///home/anton/html/ltximg/20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_20d4780b47ba74909cde46ec0bbb370a5a9b96e7.svg" alt="20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_20d4780b47ba74909cde46ec0bbb370a5a9b96e7.svg" class="org-svg" />
+Sei \(x \sim y\)
+Aus der Symmetrie folgt \(y \sim x\)
 Durch Transitivität folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_c267230e3d3d440a5369e905a145a6321448608e.svg" alt="20220911115644-redundanz_reflexivitat_einer_relation_mengenlehre_c267230e3d3d440a5369e905a145a6321448608e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+x \sim y \land y \sim x \Rightarrow x \sim x
+\end{align*}
 </div>
 </div>
 </div>

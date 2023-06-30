@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Preimage</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Preimage</h1>
-<div id="outline-container-orgfba378a" class="outline-2">
-<h2 id="orgfba378a"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgd1f04ae" class="outline-2">
+<h2 id="orgd1f04ae"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20211230205442-urbild_mengenlehre_b85df24f8857bec46b90583def851b135724a2d9.svg" alt="20211230205442-urbild_mengenlehre_b85df24f8857bec46b90583def851b135724a2d9.svg" class="org-svg" /> eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und <img src="ltximg/20211230205442-urbild_mengenlehre_4af278f6867da739db6ebb21052003fcd4cf8746.svg" alt="20211230205442-urbild_mengenlehre_4af278f6867da739db6ebb21052003fcd4cf8746.svg" class="org-svg" /> eine <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bildmenge</a> 
-die zugehörige <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> <img src="ltximg/20211230205442-urbild_mengenlehre_696e6491a3732cf2f270c4d524be12bddf6caecc.svg" alt="20211230205442-urbild_mengenlehre_696e6491a3732cf2f270c4d524be12bddf6caecc.svg" class="org-svg" /> heißt Urbild.
+Sei \(f: X \rightarrow Y\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> und \(M \subseteq B\) eine <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bildmenge</a> 
+die zugehörige <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(U \subseteq X\) heißt Urbild.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20211230205442-urbild_mengenlehre_2efefbb7f450fb843aaf0f9c485446a8a46e0c6f.svg" alt="20211230205442-urbild_mengenlehre_2efefbb7f450fb843aaf0f9c485446a8a46e0c6f.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+f^{-1}[M] =& \{x \in X \vert f(x) \in M\}
+\end{align*}
 
 <p>
 <a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>

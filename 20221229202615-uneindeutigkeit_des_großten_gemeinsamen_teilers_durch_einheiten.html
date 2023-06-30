@@ -3,78 +3,85 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Uneindeutigkeit des größten gemeinsamen Teilers durch Einheiten</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Uneindeutigkeit des größten gemeinsamen Teilers durch Einheiten</h1>
-<div id="outline-container-org8676bf7" class="outline-2">
-<h2 id="org8676bf7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6d870bf" class="outline-2">
+<h2 id="org6d870bf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_f4789101c274e444da4ce3c96e7bc607281737dc.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_f4789101c274e444da4ce3c96e7bc607281737dc.svg" class="org-svg" />.
-Sei <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_97fc6616092bc561492821b31642daa9b515699b.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_97fc6616092bc561492821b31642daa9b515699b.svg" class="org-svg" /> ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> und <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_8b0d4f19fa90d5d1db1f0dfc2490f161b66c3de6.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_8b0d4f19fa90d5d1db1f0dfc2490f161b66c3de6.svg" class="org-svg" /> (<a href="20221226125820-menge_der_einheiten_als_gruppe.html#ID-49f0dc7a-5b14-45e3-bfa7-20a7eba79d30">Menge der Einheiten als Gruppe</a>)
-Dann gilt auch, dass <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_e0217ee774ef9a98dfcdbd545fb7faa90300769f.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_e0217ee774ef9a98dfcdbd545fb7faa90300769f.svg" class="org-svg" /> ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(x_1,...,x_n \in R\).
+Sei \(d\) ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> und \(e \in R^{\times}\) (<a href="20221226125820-menge_der_einheiten_als_gruppe.html#ID-49f0dc7a-5b14-45e3-bfa7-20a7eba79d30">Menge der Einheiten als Gruppe</a>)
+Dann gilt auch, dass \(ed\) ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-orge4fda4e" class="outline-2">
-<h2 id="orge4fda4e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org58401a7" class="outline-2">
+<h2 id="org58401a7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Da <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_8b0d4f19fa90d5d1db1f0dfc2490f161b66c3de6.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_8b0d4f19fa90d5d1db1f0dfc2490f161b66c3de6.svg" class="org-svg" /> ist, folgt:
+Da \(e \in R^{\times}\) ist, folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_c04d9550cb13e5c8030661d8b00f50b5166eec0e.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_c04d9550cb13e5c8030661d8b00f50b5166eec0e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+d \mid ed
+\end{align*}
 <p>
 wegen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_0a1e6aac669f27d969ffd90ab1434f5648a8c69d.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_0a1e6aac669f27d969ffd90ab1434f5648a8c69d.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+d =& e d \vert \cdot e^{-1} \\
+e^{-1} d =& d \\
+d =& e^{-1} d
+\end{align*}
 <p>
-Zudem gilt <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_737a7a65e4fd5b4496817945a0aac246f1520c51.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_737a7a65e4fd5b4496817945a0aac246f1520c51.svg" class="org-svg" />:
-Sei <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_e3291032815b4ee76ecdbede8f1b22acda3eabd4.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_e3291032815b4ee76ecdbede8f1b22acda3eabd4.svg" class="org-svg" />, dann folgt für <img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_f080901cbc550ba15b949bc57c16a83238c73a14.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_f080901cbc550ba15b949bc57c16a83238c73a14.svg" class="org-svg" />
+Zudem gilt \(ed \mid x_i\):
+Sei \(y \cdot d = x_i\), dann folgt für \(y' = y \cdot e^{-1}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_80bc3b412a8657b3947b8144b80623fcf62e60bc.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_80bc3b412a8657b3947b8144b80623fcf62e60bc.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+y' \cdot ed =& y \cdot e^{-1} \cdot e \cdot d \\
+=& y \cdot d  \\
+=& x_i
+\end{align*}
 <p>
 Das heißt auch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_fdee3d51a0aed7c363b458e34c32f64064083bf0.svg" alt="20221229202615-uneindeutigkeit_des_großten_gemeinsamen_teilers_durch_einheiten_fdee3d51a0aed7c363b458e34c32f64064083bf0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+ed \mid x_i
+\end{align*}
 </div>
 </div>
 </div>

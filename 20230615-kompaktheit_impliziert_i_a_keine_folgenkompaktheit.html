@@ -9,24 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kompaktheit impliziert i.A. keine Folgenkompaktheit</h1>
-<div id="outline-container-orgd6597ad" class="outline-2">
-<h2 id="orgd6597ad"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org75867fd" class="outline-2">
+<h2 id="org75867fd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakter</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann ist <img src="file:///home/anton/html/ltximg/20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> i.A. kein <a href="20230511102959-folgenkompaktheit.html#ID-b19c9d55-9683-41a0-b6e4-6fcff1320d2c">folgenkompakter</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> 
+Sei \((X, \mathcal{T})\) ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakter</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>, dann ist \(X\) i.A. kein <a href="20230511102959-folgenkompaktheit.html#ID-b19c9d55-9683-41a0-b6e4-6fcff1320d2c">folgenkompakter</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org100225a" class="outline-2">
-<h2 id="org100225a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgffaae41" class="outline-2">
+<h2 id="orgffaae41"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei der <a href="20230516130001-ordinalzahlraum.html#ID-feecbe63-d781-4889-bcc2-a397ee92d98b">Ordinalzahlraum</a> der <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbaren</a> <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">Ordinalzahlen</a> und eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_fe6cd0c83fe586ca5edbf51c65d9fc21564c9863.svg" alt="20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_fe6cd0c83fe586ca5edbf51c65d9fc21564c9863.svg" class="org-svg" /> gegeben
-Dann sei <img src="file:///home/anton/html/ltximg/20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_41578322d788b17d33b3d039f1a8f1d71b25a56d.svg" alt="20230615-kompaktheit_impliziert_i_a_keine_folgenkompaktheit_41578322d788b17d33b3d039f1a8f1d71b25a56d.svg" class="org-svg" /> das <a href="20230603121320-supremum_of_an_ordinal.html#ID-f61f2c3e-d770-424e-8ebc-990177f6745c">supremum</a> 
+Sei der <a href="20230516130001-ordinalzahlraum.html#ID-feecbe63-d781-4889-bcc2-a397ee92d98b">Ordinalzahlraum</a> der <a href="20220903164044-abzahlbar.html#ID-96f3063e-a99a-4c33-93c2-5c9f99f15717">abzählbaren</a> <a href="20230516130028-ordinalzahl.html#ID-f638eb2b-0e4a-40c1-aac6-d3518403288b">Ordinalzahlen</a> und eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \(\alpha_n\) gegeben
+Dann sei \(\beta \coloneqq \sup \alpha_n\) das <a href="20230603121320-supremum_of_an_ordinal.html#ID-f61f2c3e-d770-424e-8ebc-990177f6745c">supremum</a> 
 </p>
 </div>
 </div>

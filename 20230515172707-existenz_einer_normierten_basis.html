@@ -9,42 +9,63 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer normierten Basis</h1>
-<div id="outline-container-orgcdb2e62" class="outline-2">
-<h2 id="orgcdb2e62"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9b10226" class="outline-2">
+<h2 id="org9b10226"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-sei <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_ce69e92aef2fd036dfc9454f3051eb8fc5003776.svg" alt="20230515172707-existenz_einer_normierten_basis_ce69e92aef2fd036dfc9454f3051eb8fc5003776.svg" class="org-svg" /> ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter</a>, <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> mit einer Basis <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_5b1f2a6fa6323a44db7ef6cc65e5320699c860f7.svg" alt="20230515172707-existenz_einer_normierten_basis_5b1f2a6fa6323a44db7ef6cc65e5320699c860f7.svg" class="org-svg" />.
-Dann existiert eine normierte Basis <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_bab725414d13efa9ebb3f8221057f7d5dfe03728.svg" alt="20230515172707-existenz_einer_normierten_basis_bab725414d13efa9ebb3f8221057f7d5dfe03728.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_cee2269bd594bfb79e4a66a0c66c8a0f6bb07e02.svg" alt="20230515172707-existenz_einer_normierten_basis_cee2269bd594bfb79e4a66a0c66c8a0f6bb07e02.svg" class="org-svg" />.
+sei \((V,\| \cdot \|_V)\) ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter</a>, <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> mit einer Basis \(v_i \in V\).
+Dann existiert eine normierte Basis \(e_i \in V\) mit \(\| e_i \|_V = 1\).
 </p>
 </div>
 </div>
-<div id="outline-container-org5575c85" class="outline-2">
-<h2 id="org5575c85"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org92ad9b7" class="outline-2">
+<h2 id="org92ad9b7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt durch:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_52a551fa8eb634f03a5861112bf83c36765fa20b.svg" alt="20230515172707-existenz_einer_normierten_basis_52a551fa8eb634f03a5861112bf83c36765fa20b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+e_i  \coloneqq \frac{1}{\| v_i \|_V} \cdot v_i
+\end{align*}
 <p>
 Es gilt dann wegen der <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absoluten Homogenität einer Norm</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_8a652d6765e649dd63bc196c02efde3cb3d31056.svg" alt="20230515172707-existenz_einer_normierten_basis_8a652d6765e649dd63bc196c02efde3cb3d31056.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| e_i \|_V =& \| \frac{1}{\| v_i \|_V} v_i \| \\
+=& \frac{1}{\| v_i \|} \cdot \| v_i \| \\
+=& 1
+\end{align*}
 <p>
-Ferner ist <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" alt="20230515172707-existenz_einer_normierten_basis_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" class="org-svg" /> eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>, da <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" alt="20230515172707-existenz_einer_normierten_basis_349075d38daa2bc3e9b71491a4fbbcc70b04c5d9.svg" class="org-svg" /> die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_beca644912e8ad7a1f00905b72ca078b44549831.svg" alt="20230515172707-existenz_einer_normierten_basis_beca644912e8ad7a1f00905b72ca078b44549831.svg" class="org-svg" /> erzeugt und analog gilt <img src="file:///home/anton/html/ltximg/20230515172707-existenz_einer_normierten_basis_6c7085a9f8dbaaa3c2692e0c040799d9407d89c8.svg" alt="20230515172707-existenz_einer_normierten_basis_6c7085a9f8dbaaa3c2692e0c040799d9407d89c8.svg" class="org-svg" /> 
+Ferner ist \(e_i\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>, da \(e_i\) die <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> \(v_i\) erzeugt und analog gilt \(\sum_{i \in I} \alpha_i e_i = \sum_{i \in I} (\alpha_i \cdot \frac{1}{\| v_i \|_V}) v_i = 0 \implies \alpha_i = 0\) 
 </p>
 </div>
 </div>

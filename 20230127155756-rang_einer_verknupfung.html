@@ -9,54 +9,67 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Rang einer Verknüpfung kleiner gleich dem Minimum</h1>
-<div id="outline-container-org05ef47a" class="outline-2">
-<h2 id="org05ef47a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org23424a4" class="outline-2">
+<h2 id="org23424a4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_e84202f9a95f52909282768df6011d187e082cb0.svg" alt="20230127155756-rang_einer_verknupfung_e84202f9a95f52909282768df6011d187e082cb0.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_ace1d3d61b16c1ab35bd7bb641b2e5fcc9f5d4c8.svg" alt="20230127155756-rang_einer_verknupfung_ace1d3d61b16c1ab35bd7bb641b2e5fcc9f5d4c8.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_f35ee6d509576fee4a0cddc8372d46169ad7b8e7.svg" alt="20230127155756-rang_einer_verknupfung_f35ee6d509576fee4a0cddc8372d46169ad7b8e7.svg" class="org-svg" /> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>, so dass <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_1354c9bce5f91322c6c1bb81599288043d8a79c7.svg" alt="20230127155756-rang_einer_verknupfung_1354c9bce5f91322c6c1bb81599288043d8a79c7.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_20a05423e3274b582cdaf805336aa5d2f7bf850d.svg" alt="20230127155756-rang_einer_verknupfung_20a05423e3274b582cdaf805336aa5d2f7bf850d.svg" class="org-svg" /> <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> sind.
+Seien \(U,V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(\psi: U \rightarrow V\), \(\phi: V \rightarrow W\) <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>, so dass \(\mathrm{rank}(\psi)\) oder \(\mathrm{rank}(\phi)\) <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> sind.
 Dann gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_8f1b64a1ccd69540665e546416a8af641bcfd91b.svg" alt="20230127155756-rang_einer_verknupfung_8f1b64a1ccd69540665e546416a8af641bcfd91b.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{rank}(\phi \circ \psi) \leq \mathrm{min}(\mathrm{rank}(\phi), \mathrm{rank}(\psi))
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org06a934a" class="outline-2">
-<h2 id="org06a934a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4e0a521" class="outline-2">
+<h2 id="org4e0a521"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Es gilt <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_e9eb3bd54d5405472ed80e5b4388e1afe5a3edcd.svg" alt="20230127155756-rang_einer_verknupfung_e9eb3bd54d5405472ed80e5b4388e1afe5a3edcd.svg" class="org-svg" /> und damit <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_f63f459f149e43793cb95c5c130fd5dadb177bae.svg" alt="20230127155756-rang_einer_verknupfung_f63f459f149e43793cb95c5c130fd5dadb177bae.svg" class="org-svg" />
-Sei <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_df25345d99925f529de520758d8e19be94426079.svg" alt="20230127155756-rang_einer_verknupfung_df25345d99925f529de520758d8e19be94426079.svg" class="org-svg" />, so folgt nach dem <a href="20230123044300-rangsatz.html#ID-2e30f05f-ed0c-4a47-86e3-5d6e3330d830">Rangsatz</a> wegen dem <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>.
+Es gilt \(\mathrm{Im}(\phi \circ \psi) = \mathrm{Im}(\phi_{\vert \mathrm{Im}(\psi)}) \subseteq \mathrm{Im}(\phi)\) und damit \(\mathrm{rank}(\phi \circ \psi) \leq \mathrm{rank}(\phi)\)
+Sei \(\mathrm{rank}(\psi) < \infty\), so folgt nach dem <a href="20230123044300-rangsatz.html#ID-2e30f05f-ed0c-4a47-86e3-5d6e3330d830">Rangsatz</a> wegen dem <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_a30a3baa3ec42d7984b3ea1580f87762fc16245d.svg" alt="20230127155756-rang_einer_verknupfung_a30a3baa3ec42d7984b3ea1580f87762fc16245d.svg" class="org-svg" />
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_4f3f133930a8566786013c8d9e4abd6e46345d5b.svg" alt="20230127155756-rang_einer_verknupfung_4f3f133930a8566786013c8d9e4abd6e46345d5b.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\phi_{\vert \mathrm{Im}(\psi)}: \mathrm{Im}(\psi) \rightarrow \mathrm{Im}(\phi_{\vert \mathrm{Im}(\psi)})
+\end{align*}
+\begin{align*}
+\mathrm{dim}_{K}(\mathrm{Im}(\psi)) =& \mathrm{dim}_{K}(\mathrm{Im}(\phi_{\vert \mathrm{Im}(\psi)})) + \mathrm{dim}_{K}(\mathrm{ker}_K(\phi_{\vert \mathrm{Im}(\psi)}))
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_504c1f537637684c44624ba9ee7e00ab30842db3.svg" alt="20230127155756-rang_einer_verknupfung_504c1f537637684c44624ba9ee7e00ab30842db3.svg" class="org-svg" />
+mit \(\mathrm{dim}_{K}(\mathrm{ker}(\phi_{\vert Im(\psi)}) \geq 0\)
 und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230127155756-rang_einer_verknupfung_7a825a9c979b33d7b4a2a7e468cff93210cd140a.svg" alt="20230127155756-rang_einer_verknupfung_7a825a9c979b33d7b4a2a7e468cff93210cd140a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{dim}_{K}(\mathrm{Im}(\phi_{\vert \mathrm{Im}(\psi)})) \leq \mathrm{dim}_{K}(\mathrm{Im}(\psi))
+\end{align*}
 </div>
 </div>
 </div>

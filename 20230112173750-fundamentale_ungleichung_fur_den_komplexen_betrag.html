@@ -3,94 +3,95 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>fundamentale Ungleichung für den komplexen Betrag</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">fundamentale Ungleichung für den komplexen Betrag</h1>
-<div id="outline-container-orga54b127" class="outline-2">
-<h2 id="orga54b127"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgef81bf8" class="outline-2">
+<h2 id="orgef81bf8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_15f7d6fc43c1c13f7fe0cbbd0b8892d990a22602.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_15f7d6fc43c1c13f7fe0cbbd0b8892d990a22602.svg" class="org-svg" />.
+Sei \(z \in \mathbb{C}\).
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_c8df51447554cee4eb2701228bfdcc184606d817.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_c8df51447554cee4eb2701228bfdcc184606d817.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\mathrm{max}(\vert \mathrm{Re}(z) \vert, \vert \mathrm{Im}(z) \vert) \leq \vert z \vert \leq \vert \mathrm{Re}(z) \vert + \vert \mathrm{Im}(z)\vert
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org148e3ce" class="outline-2">
-<h2 id="org148e3ce"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6b18271" class="outline-2">
+<h2 id="org6b18271"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_f88a2abe83d99bec99691ab8fab383fff3c280cc.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_f88a2abe83d99bec99691ab8fab383fff3c280cc.svg" class="org-svg" />, dann gilt:
+Sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(\vert \mathrm{Re}(z) \vert \geq \vert \mathrm{Im}(z) \vert\), dann gilt:
 </p>
 </div>
-<div id="outline-container-orgc86a517" class="outline-3">
-<h3 id="orgc86a517"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgd0ccf75" class="outline-3">
+<h3 id="orgd0ccf75"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_7a23b5321b825b99b35aa8b164fc98558f6d907e.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_7a23b5321b825b99b35aa8b164fc98558f6d907e.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+\vert \mathrm{Re}(z) \vert =& \sqrt{ \mathrm{Re}(z)^2 } \\
+ \leq& \sqrt{ \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2} \\
+=& \vert z \vert 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge0fb62d" class="outline-3">
-<h3 id="orge0fb62d"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9e29fb2" class="outline-3">
+<h3 id="org9e29fb2"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_68e4c4172d6f58389533f1f38efab5dfc1502fe3.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_68e4c4172d6f58389533f1f38efab5dfc1502fe3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\sqrt{ \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2 } \leq& \sqrt{ \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2 + 2 \cdot \vert \mathrm{Re}(z) \mathrm{Im}(z) \vert} \\
+=& \sqrt{ \left( \vert \mathrm{Re}(z) \vert + \vert \mathrm{Im}(z) \vert \right)^2 } \\
+=& \vert \mathrm{Re}(z) \vert + \vert \mathrm{Im}(z) \vert 
+\end{align*}
 
 
 
 <p>
 Folgt aus:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_1983f08660848ae6f26db6f883759257aea933f3.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_1983f08660848ae6f26db6f883759257aea933f3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+z = \mathrm{Re}(z) + \mathrm{Im}(z)
+\end{align*}
 <p>
 und den Ungleichungen
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_c67a90a0e026a2554b046caa0283f26120390542.svg" alt="20230112173750-fundamentale_ungleichung_fur_den_komplexen_betrag_c67a90a0e026a2554b046caa0283f26120390542.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\vert \mathrm{Re}(z) + \mathrm{Im}(z) \vert \leq \vert \mathrm{Re}(z) \vert + \vert \mathrm{Im}(z) \vert
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,49 +3,67 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beweis: Bestimmung eines Einheitsvektors</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Bestimmung eines Einheitsvektors</h1>
-<div id="outline-container-org8ae3563" class="outline-2">
-<h2 id="org8ae3563"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb3af367" class="outline-2">
+<h2 id="orgb3af367"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221005104226-beweis_bestimmung_des_einheitsvektors_50dd1a876b10774c11a253a02fc225cbaae5c104.svg" alt="20221005104226-beweis_bestimmung_des_einheitsvektors_50dd1a876b10774c11a253a02fc225cbaae5c104.svg" class="org-svg" /> ein <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> in einem <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierten Raum</a>.
-Dann ist der zugehörige <a href="20221005095728-einheitsvektor.html#ID-dfdf1608-364e-4b7e-b235-e8fd0355ea13">Einheitsvektor</a> für <img src="ltximg/20221005104226-beweis_bestimmung_des_einheitsvektors_50dd1a876b10774c11a253a02fc225cbaae5c104.svg" alt="20221005104226-beweis_bestimmung_des_einheitsvektors_50dd1a876b10774c11a253a02fc225cbaae5c104.svg" class="org-svg" /> 
+Sei \(v\) ein <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a> in einem <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierten Raum</a>.
+Dann ist der zugehörige <a href="20221005095728-einheitsvektor.html#ID-dfdf1608-364e-4b7e-b235-e8fd0355ea13">Einheitsvektor</a> für \(v\) 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221005104226-beweis_bestimmung_des_einheitsvektors_0e6db8caf319b87dd296bdcf2d17fc6b016f35ae.svg" alt="20221005104226-beweis_bestimmung_des_einheitsvektors_0e6db8caf319b87dd296bdcf2d17fc6b016f35ae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\hat{v} =& \frac{v}{\| v \|}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org16020a1" class="outline-2">
-<h2 id="org16020a1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgbc489f6" class="outline-2">
+<h2 id="orgbc489f6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Aufgrund der <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absoluten Homogenität einer Norm</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221005104226-beweis_bestimmung_des_einheitsvektors_a9361d27ec3533c77acea8ffce38cb19d03f01e5.svg" alt="20221005104226-beweis_bestimmung_des_einheitsvektors_a9361d27ec3533c77acea8ffce38cb19d03f01e5.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\| \hat{v} \| =& \| \frac{v}{\| v \|} \| \\
+=& \| \frac{1}{\| v \|} \cdot v \| \\ 
+=& \left\vert \frac{1}{\| v \|} \right\vert \cdot \| v \| \\
+=& 1
+\end{align*}
 </div>
 </div>
 </div>

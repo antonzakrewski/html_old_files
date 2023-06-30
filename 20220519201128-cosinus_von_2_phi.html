@@ -9,33 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Cosinus von 2 phi</h1>
-<div id="outline-container-orgea90c95" class="outline-2">
-<h2 id="orgea90c95"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfbe6b5e" class="outline-2">
+<h2 id="orgfbe6b5e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220519201128-cosinus_von_2_phi_aa372ca2d78259c833350b35857ef79e460bcfeb.svg" alt="20220519201128-cosinus_von_2_phi_aa372ca2d78259c833350b35857ef79e460bcfeb.svg" class="org-svg" />
-</span>
+\begin{align*}
+\cos(2\phi) =& \cos^2(\phi) - \sin^2(\phi)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org1b16c9f" class="outline-2">
-<h2 id="org1b16c9f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc05223e" class="outline-2">
+<h2 id="orgc05223e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über die <a href="20220519163317-formel_von_de_moivre.html#ID-07252994-1582-4fde-b546-14e17521b79f">Formel von de Moivre</a> den <a href="20211231000331-realteil.html#ID-c669a4ac-f9b2-4b06-8575-41633f0d096c">Realteil</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220519201128-cosinus_von_2_phi_10ffab705e09ac31e4ea1a71b2189a1b3b724115.svg" alt="20220519201128-cosinus_von_2_phi_10ffab705e09ac31e4ea1a71b2189a1b3b724115.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\sin(2\phi) =& Re\left[\cos(2\phi) + i\sin(2\phi\right] \\
+=& Re\left[\left(\cos(\phi) + i\sin(\phi)\right)^2\right] \\
+=& Re\left[\cos^2(\phi) - \sin^2(\phi) + i\left(2\cos(\phi)\sin(\phi)\right)] \\
+=& 2\cos(\phi)\sin(\phi)
+\end{align*}
 </div>
 </div>
 </div>

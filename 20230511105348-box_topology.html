@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Box-Topology</h1>
-<div id="outline-container-org8016e59" class="outline-2">
-<h2 id="org8016e59"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb1402f5" class="outline-2">
+<h2 id="orgb1402f5"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230511105348-box_topology_65613c68ef8ce69b1d81ab74890fafecda162238.svg" alt="20230511105348-box_topology_65613c68ef8ce69b1d81ab74890fafecda162238.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a>, dann ist die Box-Topology auf dem <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">kartesischen Produkt</a> <img src="file:///home/anton/html/ltximg/20230511105348-box_topology_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" alt="20230511105348-box_topology_3c0f1db18c96684ccedb35894e6068b98a29d950.svg" class="org-svg" /> definiert als:
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a>, dann ist die Box-Topology auf dem <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">kartesischen Produkt</a> \(X  \coloneqq \prod X_i\) definiert als:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230511105348-box_topology_19511788bec7f041fd25534e3aa5441af3a76b3d.svg" alt="20230511105348-box_topology_19511788bec7f041fd25534e3aa5441af3a76b3d.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathcal{B}  \coloneqq \{\prod_{i\in I} O_i \vert O_i \in \mathcal{T}_i\}
+\end{align*}
 </div>
 </div>
 </div>

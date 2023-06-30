@@ -9,82 +9,100 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">post office metric</h1>
-<div id="outline-container-org92d3dcb" class="outline-2">
-<h2 id="org92d3dcb"><span class="section-number-2">1.</span> Definition / Proposition</h2>
+<div id="outline-container-org3844baf" class="outline-2">
+<h2 id="org3844baf"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-The post office metrik <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_4cf91f8889d017969c440f0c1bd96fccd3f38501.svg" alt="20230421084810-post_office_metric_4cf91f8889d017969c440f0c1bd96fccd3f38501.svg" class="org-svg" /> on <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_2f67bee86f8145970100994892d7384b33d20bf1.svg" alt="20230421084810-post_office_metric_2f67bee86f8145970100994892d7384b33d20bf1.svg" class="org-svg" /> is defined as:
+The post office metrik \(d_P\) on \(\mathbb{R}^2\) is defined as:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_eb271ca8ffe9ec27800a311ab50afbbaef0f6a81.svg" alt="20230421084810-post_office_metric_eb271ca8ffe9ec27800a311ab50afbbaef0f6a81.svg" class="org-svg" />
-</span>
+\begin{align*}
+d_P(x,y)  \coloneqq 
+    \begin{cases}
+    0 & \mbox{if } x = y \\
+    d_P(0,x) + d_P(0,y)  & \mbox{else } \\  
+    \end{cases}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org83af3ab" class="outline-2">
-<h2 id="org83af3ab"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgfa5c3de" class="outline-2">
+<h2 id="orgfa5c3de"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc579bef" class="outline-3">
-<h3 id="orgc579bef"><span class="section-number-3">2.1.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h3>
+<div id="outline-container-org8552a59" class="outline-3">
+<h3 id="org8552a59"><span class="section-number-3">2.1.</span> <a href="20220716173729-positive_definiertheit_metrik.html#ID-e43ab828-0a7a-459b-90b8-a07e717b8ab1">Positive Definitheit (Metrik)</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Es gilt für <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />:
+Es gilt für \(x \neq y\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_25f1b3cc4936f621efe4c79d7d33db5a808d9085.svg" alt="20230421084810-post_office_metric_25f1b3cc4936f621efe4c79d7d33db5a808d9085.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_P(x,y) = d_2(x,0) + d_2(y,0) \geq 0
+\end{align*}
 <p>
-Zudem gilt <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_179b1c0f1496087c2643edf14f1521c94b19f363.svg" alt="20230421084810-post_office_metric_179b1c0f1496087c2643edf14f1521c94b19f363.svg" class="org-svg" />, das heißt unsere Abbildung ist definit
-Sei <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />, dann ist oBdA <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_8e025385c9034a65950abcd44a6c763325261d8e.svg" alt="20230421084810-post_office_metric_8e025385c9034a65950abcd44a6c763325261d8e.svg" class="org-svg" /> und es folgt:
+Zudem gilt \(d_P(x,x) = 0 \geq 0\), das heißt unsere Abbildung ist definit
+Sei \(x \neq y\), dann ist oBdA \(x \neq 0\) und es folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_552ea151f11491b866d4bf148a332b6ba3bbca75.svg" alt="20230421084810-post_office_metric_552ea151f11491b866d4bf148a332b6ba3bbca75.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_P(x,y) = d_2(x,0) + d_2(y,0) \geq d_2(x,0) > 0
+\end{align*}
 <p>
 Gleichheit folgt aus i)
 </p>
 </div>
 </div>
-<div id="outline-container-org9c0e413" class="outline-3">
-<h3 id="org9c0e413"><span class="section-number-3">2.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h3>
+<div id="outline-container-org5604da0" class="outline-3">
+<h3 id="org5604da0"><span class="section-number-3">2.2.</span> <a href="20220716173740-symmetrie_einer_metrik.html#ID-cafdfd5e-6eaf-42ad-9742-16c91f4ac8c3">Symmetrie einer Metrik</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei oBdA <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />, sonst gilt <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_5df31a516c7a346112d6947c00986eea219d652b.svg" alt="20230421084810-post_office_metric_5df31a516c7a346112d6947c00986eea219d652b.svg" class="org-svg" />
-Aus der Kommutativität von <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" alt="20230421084810-post_office_metric_7a97467c88f4c52e3c59f813a5a98676c0921a9c.svg" class="org-svg" /> und Symmetrie von <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_bce2136a493ed2d08ab0a089c953434a4a980c2e.svg" alt="20230421084810-post_office_metric_bce2136a493ed2d08ab0a089c953434a4a980c2e.svg" class="org-svg" /> als metrik folgt
+Sei oBdA \(x \neq y\), sonst gilt \(d(x,y) = 0 = d(y,x)\)
+Aus der Kommutativität von \(\mathbb{R}\) und Symmetrie von \(d_2\) als metrik folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_2dc0a6e814fd81650a94ca655e9189c60df3444c.svg" alt="20230421084810-post_office_metric_2dc0a6e814fd81650a94ca655e9189c60df3444c.svg" class="org-svg" />
-</span>
+\begin{align*}
+d_P(x,y) =& d_2(x,0) + d_2(y,0) \\
+=& d_2(0,y) + d_2(0,x) \\
+=& d_P(y,x)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orgdc02011" class="outline-3">
-<h3 id="orgdc02011"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung (Metrik)</a></h3>
+<div id="outline-container-org83da169" class="outline-3">
+<h3 id="org83da169"><span class="section-number-3">2.3.</span> <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung (Metrik)</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei oBdA <img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" alt="20230421084810-post_office_metric_61863dd1b9215c2be6b0403e4e8c45a3fc6f013b.svg" class="org-svg" />, sonst folgt die Ungleichung aus der Positiven Definitheit
+Sei oBdA \(x \neq y\), sonst folgt die Ungleichung aus der Positiven Definitheit
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230421084810-post_office_metric_11b09c2bdedad20b755f1ab51faf94c0a7ef79b1.svg" alt="20230421084810-post_office_metric_11b09c2bdedad20b755f1ab51faf94c0a7ef79b1.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+d_P(x,y) =& d_2(x,0) + d_2(y,0) \\
+\leq& d_2(x,0) + d_2(z,0) + d_2(y,0) + d_2(z,0) \\
+=& d_P(x,z) + d_P(z,y)
+\end{align*}
 </div>
 </div>
 </div>

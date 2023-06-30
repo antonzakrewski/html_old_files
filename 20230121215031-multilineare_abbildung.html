@@ -9,32 +9,51 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">multilineare Abbildung</h1>
-<div id="outline-container-orgdbc4ff9" class="outline-2">
-<h2 id="orgdbc4ff9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org93b6dce" class="outline-2">
+<h2 id="org93b6dce"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230121215031-multilineare_abbildung_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer,</a> <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer Ring</a> und <img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_21bb61fb44768e3a4d5e2b89c49559d2c78366e8.svg" alt="20230121215031-multilineare_abbildung_21bb61fb44768e3a4d5e2b89c49559d2c78366e8.svg" class="org-svg" /> <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a> über <img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230121215031-multilineare_abbildung_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> 
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer,</a> <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer Ring</a> und \(E_i\) <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a> über \(R\) 
 Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_04cd7a034c5c92bb9dafe6ef5a972818c0c596c6.svg" alt="20230121215031-multilineare_abbildung_04cd7a034c5c92bb9dafe6ef5a972818c0c596c6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f: E_1 \times ... \times E_n \rightarrow R^k
+\end{align*}
 <p>
-ist ein multilineare Abbildung, falls für <img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_36eac30c7177903f716c771fc0d86478e2e1b5a8.svg" alt="20230121215031-multilineare_abbildung_36eac30c7177903f716c771fc0d86478e2e1b5a8.svg" class="org-svg" /> gilt
+ist ein multilineare Abbildung, falls für \(z_i,z_i' \in E_i\) gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230121215031-multilineare_abbildung_04864164bae2e6695e9bfa7e9106b2e5fd755492.svg" alt="20230121215031-multilineare_abbildung_04864164bae2e6695e9bfa7e9106b2e5fd755492.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(z_1,...,r \cdot z_j + r' \cdot z_j',...,z_n) = r \cdot f(z_1,...,z_j,...,z_n) + r' \cdot f(z_1,...,z_j',...,z_n) + 
+\end{align*}
 </div>
 </div>
 </div>

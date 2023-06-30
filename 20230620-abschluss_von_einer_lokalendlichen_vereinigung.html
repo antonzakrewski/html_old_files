@@ -9,49 +9,70 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss von einer lokalendlichen Vereinigung</h1>
-<div id="outline-container-org96fd0c0" class="outline-2">
-<h2 id="org96fd0c0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgb36d798" class="outline-2">
+<h2 id="orgb36d798"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230620-abschluss_von_einer_lokalendlichen_vereinigung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230620-abschluss_von_einer_lokalendlichen_vereinigung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230620-abschluss_von_einer_lokalendlichen_vereinigung_64dcc6e59e6320f3320078a462d5c8e38561c7ad.svg" alt="20230620-abschluss_von_einer_lokalendlichen_vereinigung_64dcc6e59e6320f3320078a462d5c8e38561c7ad.svg" class="org-svg" /> eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliches Mengensystem</a>, so gilt
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(V_i\) eine <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendliches Mengensystem</a>, so gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-abschluss_von_einer_lokalendlichen_vereinigung_f7fefeb64ac75cdec83ff0aa5bf14572598a9fa9.svg" alt="20230620-abschluss_von_einer_lokalendlichen_vereinigung_f7fefeb64ac75cdec83ff0aa5bf14572598a9fa9.svg" class="org-svg" />
-</span>
+\begin{align*}
+\bigcup_{i \in I} \overline{V_i} = \overline{\bigcup_{i \in I} V_i}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org5eb5eb7" class="outline-2">
-<h2 id="org5eb5eb7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge55b6e9" class="outline-2">
+<h2 id="orge55b6e9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf20569e" class="outline-3">
-<h3 id="orgf20569e"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org5c2d9a0" class="outline-3">
+<h3 id="org5c2d9a0"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus <a href="20230620-vereinigung_von_abschlussen_als_teilmenge_des_abschlusses_der_vereinigung.html#ID-7bd671d7-5fb7-466b-a5b8-c2080f89cefe">Vereinigung von Abschlüssen als Teilmenge des Abschlusses der Vereinigung</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org4603258" class="outline-3">
-<h3 id="org4603258"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org8f926ba" class="outline-3">
+<h3 id="org8f926ba"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus der <a href="20230320164315-abschluss_einer_abgeschlossenen_menge.html#ID-275ba11a-1a8d-4765-aff0-7e0f96e085a2">Abschluss einer abgeschlossenen Menge</a> und <a href="20230330211447-abgeschlossenheit_der_lokalendlichen_vereinigung_von_abgeschlossenen_mengen.html#ID-d91ee469-6ef9-47f0-aa68-071f1e2a6b3f">Abgeschlossenheit der lokalendlichen Vereinigung von abgeschlossenen Mengen</a> sowie <a href="20230501154737-monotonie_der_abbildung_auf_den_abschluss.html#ID-e2837218-b134-4e53-bb6a-fb1acf3f5450">Monotonie der Abbildung auf den Abschluss</a> 
 Da gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-abschluss_von_einer_lokalendlichen_vereinigung_38e178f06686c932b5693c85c8965b233b5bf514.svg" alt="20230620-abschluss_von_einer_lokalendlichen_vereinigung_38e178f06686c932b5693c85c8965b233b5bf514.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\bigcup_{i \in I} V_i \subseteq& \bigcup_{i \in I} \overline{V_i} \\
+\mathrm{cl}\bigcup_{i \in I} V_i \subseteq& \mathrm{cl}(\bigcup_{i \in I} \overline{V_i}) \\
+=& \bigcup_{i \in I} \overline{V_i}
+\end{align*}
 </div>
 </div>
 </div>

@@ -3,44 +3,65 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>abgeschlossener Ball</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">abgeschlossener Ball</h1>
-<div id="outline-container-orgc7ea4b7" class="outline-2">
-<h2 id="orgc7ea4b7"><span class="section-number-2">1.</span> Satz / Definition</h2>
+<div id="outline-container-org8496466" class="outline-2">
+<h2 id="org8496466"><span class="section-number-2">1.</span> Satz / Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230422114730-abgeschlossener_ball_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20230422114730-abgeschlossener_ball_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und <img src="ltximg/20230422114730-abgeschlossener_ball_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" alt="20230422114730-abgeschlossener_ball_5c2af84437a7f306f419910bc8fc35ad95948a5b.svg" class="org-svg" />
+Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(x \in X\)
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230422114730-abgeschlossener_ball_6b34368d068feae5a30ece65cb38d7bacd43e6c6.svg" alt="20230422114730-abgeschlossener_ball_6b34368d068feae5a30ece65cb38d7bacd43e6c6.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+B_{r}[x] \coloneqq \{m \in M \vert d(x,m) \leq r \}
+\end{align*}
 <p>
 Der <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> Ball
 </p>
 </div>
 </div>
-<div id="outline-container-orgd6b942d" class="outline-2">
-<h2 id="orgd6b942d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd4873c0" class="outline-2">
+<h2 id="orgd4873c0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Wir zeigen, dass das Komplement <img src="ltximg/20230422114730-abgeschlossener_ball_2f5f996d65b461d80cdcd8195780e24ac6facdad.svg" alt="20230422114730-abgeschlossener_ball_2f5f996d65b461d80cdcd8195780e24ac6facdad.svg" class="org-svg" /> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, da es <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">aller Punkte</a> ist.
-Sei <img src="ltximg/20230422114730-abgeschlossener_ball_bc67fe671694abe85ae204bda2876e291db22981.svg" alt="20230422114730-abgeschlossener_ball_bc67fe671694abe85ae204bda2876e291db22981.svg" class="org-svg" />, so gilt <img src="ltximg/20230422114730-abgeschlossener_ball_0282cd89df5aeec36338d93e8c74536828f226aa.svg" alt="20230422114730-abgeschlossener_ball_0282cd89df5aeec36338d93e8c74536828f226aa.svg" class="org-svg" /> und für <img src="ltximg/20230422114730-abgeschlossener_ball_ddd69ebdf7664158be777cccff15792dc01f45c8.svg" alt="20230422114730-abgeschlossener_ball_ddd69ebdf7664158be777cccff15792dc01f45c8.svg" class="org-svg" /> folgt wegen der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung (Metrik)</a>, dass die Bälle <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> sind.
-Damit konstruiert man für jeden Punkt <img src="ltximg/20230422114730-abgeschlossener_ball_bc67fe671694abe85ae204bda2876e291db22981.svg" alt="20230422114730-abgeschlossener_ball_bc67fe671694abe85ae204bda2876e291db22981.svg" class="org-svg" /> eine derartige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> und vereinigt diese dann.
+Wir zeigen, dass das Komplement \(A \coloneqq  M \setminus B_{r}[x]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist, da es <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <a href="20230222170300-offenheit_und_umgebung_aller_punkte.html#ID-a6a5b663-7773-4622-9bfa-8b870e5e381f">aller Punkte</a> ist.
+Sei \(z \in A\), so gilt \(d(z,m) > r\) und für \(\delta \coloneqq \frac{1}{2} \cdot \left(r - d(z,m) \right)\) folgt wegen der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung (Metrik)</a>, dass die Bälle <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> sind.
+Damit konstruiert man für jeden Punkt \(z \in A\) eine derartige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> und vereinigt diese dann.
 </p>
 </div>
 </div>

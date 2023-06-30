@@ -9,23 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Sesquilinearform</h1>
-<div id="outline-container-orgacbb1f9" class="outline-2">
-<h2 id="orgacbb1f9"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org140c0df" class="outline-2">
+<h2 id="org140c0df"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Es seien <img src="file:///home/anton/html/ltximg/20221003155654-sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20221003155654-sesquilinearform_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexe</a> K-<a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
+Es seien \(V,W\) <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reelle</a> oder <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexe</a> K-<a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräume</a>.
 Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221003155654-sesquilinearform_2243729f2b90c3ed81610d1509ab75c9366ce2e0.svg" alt="20221003155654-sesquilinearform_2243729f2b90c3ed81610d1509ab75c9366ce2e0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+S: V \times W \rightarrow& \mathbb{C} \\
+(v,w) \mapsto& \langle v,w \rangle
+\end{align*}
 <p>
 heißt Sesquilinearform, wenn gilt:
 </p>

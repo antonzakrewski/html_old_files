@@ -9,27 +9,52 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der stetigen Funktionen nicht folgenkompakt</h1>
-<div id="outline-container-org4bc955a" class="outline-2">
-<h2 id="org4bc955a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8e9d029" class="outline-2">
+<h2 id="org8e9d029"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Der <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a> <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_99a067818b1e1d553c74c57ce652baf3e75e5550.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_99a067818b1e1d553c74c57ce652baf3e75e5550.svg" class="org-svg" /> ist nicht <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompak</a> 
+Der <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a> \((\mathcal{C}^0([0,1]), \| \cdot \|_{\infty})\) ist nicht <a href="20230111165807-folgenkompaktheit.html#ID-dcf938c9-3686-445e-a189-28af997f174a">folgenkompak</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgd9acf60" class="outline-2">
-<h2 id="orgd9acf60"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org14d801f" class="outline-2">
+<h2 id="org14d801f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Betrachten wir die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_8f01e6ee2d19c8b963bd5c7a4f324d3306260443.svg" class="org-svg" /> mit $f<sub>n</sub>(x) x<sup>n</sup>$$
-Es gilt <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_0ecbdae001e4a2a126329c6c3361c913f23a91f7.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_0ecbdae001e4a2a126329c6c3361c913f23a91f7.svg" class="org-svg" />, d.h. die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> ist <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkt</a>.
-Anegnommen sei <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_74ab746242a66966436ee38a461b073a2571f992.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_74ab746242a66966436ee38a461b073a2571f992.svg" class="org-svg" /> ein <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a>, dann gilt wegen <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_748e017537296436cc2fd965119adadb30a24779.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_748e017537296436cc2fd965119adadb30a24779.svg" class="org-svg" /> auch <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_484d16272df337d303d77c9b19a96e3febf800b0.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_484d16272df337d303d77c9b19a96e3febf800b0.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_db866202ad39c037fac9e8132608cc7f4023e6fb.svg" class="org-svg" />
-Da <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, existiert nach dem <a href="20220719233717-zwischenwertsatz.html#ID-f17f7890-df11-47cf-81d3-ab463e3219ff">Zwischenwertsatz</a> auch ein <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_dc8986718b5cb6c943c2e6111197ff2a87d22bc6.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_dc8986718b5cb6c943c2e6111197ff2a87d22bc6.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_9bcc540ae6f83f1a42a7a3297adfbca4b1668700.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_9bcc540ae6f83f1a42a7a3297adfbca4b1668700.svg" class="org-svg" />.
-Gleichzeitig aber gilt <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_7624badc7c799496f6387e939700c3c7a6ed7f0a.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_7624badc7c799496f6387e939700c3c7a6ed7f0a.svg" class="org-svg" />, d.h. für <img src="file:///home/anton/html/ltximg/20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_ac31ce75cdbcba249c22fce51bb62d1094c26a1e.svg" alt="20230505190458-menge_der_stetigen_funktionen_auf_einem_abgeschlossenen_intervall_erfullt_nicht_bolzano_weierstraß_ac31ce75cdbcba249c22fce51bb62d1094c26a1e.svg" class="org-svg" /> <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> das nicht, Widerspruch.
+Betrachten wir die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \((f_n)_{n \in \mathbb{N}}\) mit $f<sub>n</sub>(x)  \coloneqq x<sup>n</sup>$$
+Es gilt \(\| f_n \|_{\infty} = 1\), d.h. die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> ist <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkt</a>.
+Anegnommen sei \(f \in \mathcal{C}^0([0,1])\) ein <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a>, dann gilt wegen \(1^n = 1, 0^n = 0\) auch \(f(1) = 1\) bzw. \(f(0) = 0\)
+Da \(f\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> ist, existiert nach dem <a href="20220719233717-zwischenwertsatz.html#ID-f17f7890-df11-47cf-81d3-ab463e3219ff">Zwischenwertsatz</a> auch ein \(x_0 \in (0,1)\) mit \(f(x_0) = 0.5\).
+Gleichzeitig aber gilt \(\| f - f_n \| \geq \vert f(x_0) - f_n(x_0) \vert = \vert 0.5 - (x_0)^n \vert \rightarrow 0.5 > 0\), d.h. für \(\varepsilon = \frac{1}{2}\) <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergiert</a> das nicht, Widerspruch.
 </p>
 </div>
 </div>

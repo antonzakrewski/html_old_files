@@ -3,35 +3,56 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Produkthalbmetrik</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Produkthalbmetrik</h1>
-<div id="outline-container-org029be6b" class="outline-2">
-<h2 id="org029be6b"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org3177e77" class="outline-2">
+<h2 id="org3177e77"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230228164953-produkthalbmetrik_8ad54257052aeee45abd92cf9e77a67919eccff8.svg" alt="20230228164953-produkthalbmetrik_8ad54257052aeee45abd92cf9e77a67919eccff8.svg" class="org-svg" /> für <img src="ltximg/20230228164953-produkthalbmetrik_ce5275234f50e211823512671650e52ebc895a9a.svg" alt="20230228164953-produkthalbmetrik_ce5275234f50e211823512671650e52ebc895a9a.svg" class="org-svg" /> <a href="20221115113143-pseudometrik.html#ID-85960f3d-c84e-4099-ab8f-f7ab99f228f5">Semimetriken</a>, so wird die Produkthalbmetrik auf dem <a href="20211226220618-kartesische_produkt.html#ID-0dd71736-db78-4510-8588-7811037d0796">Kartesisches Produkt</a> <img src="ltximg/20230228164953-produkthalbmetrik_d76d13e9ae8e2d8ca789dcb6e54afd69074c97a4.svg" alt="20230228164953-produkthalbmetrik_d76d13e9ae8e2d8ca789dcb6e54afd69074c97a4.svg" class="org-svg" /> definiert durchd
+Sei \((M_i,d_i)\) für \(i \in \{1,...,n\}\) <a href="20221115113143-pseudometrik.html#ID-85960f3d-c84e-4099-ab8f-f7ab99f228f5">Semimetriken</a>, so wird die Produkthalbmetrik auf dem <a href="20211226220618-kartesische_produkt.html#ID-0dd71736-db78-4510-8588-7811037d0796">Kartesisches Produkt</a> \(M = M_1 \times ... \times M_n\) definiert durchd
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230228164953-produkthalbmetrik_23e49aca68400d8f6c08e3edea0535f61ffb81a4.svg" alt="20230228164953-produkthalbmetrik_23e49aca68400d8f6c08e3edea0535f61ffb81a4.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+d((x_1,...,x_n),(y_1,...,y_n)) \coloneqq \mathrm{max} d_i(x_i,y_i)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orga62577a" class="outline-2">
-<h2 id="orga62577a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2ae1f56" class="outline-2">
+<h2 id="org2ae1f56"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

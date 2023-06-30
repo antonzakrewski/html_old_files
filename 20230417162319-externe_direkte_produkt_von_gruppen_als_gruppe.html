@@ -9,63 +9,84 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">externe direkte Produkt von Gruppen als Gruppe</h1>
-<div id="outline-container-org62ad524" class="outline-2">
-<h2 id="org62ad524"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org25b4919" class="outline-2">
+<h2 id="org25b4919"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_630f9fb6909aa349aed21a6d93cb40245de2f8c6.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_630f9fb6909aa349aed21a6d93cb40245de2f8c6.svg" class="org-svg" /> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a>, so bildet das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">direktes Produkt</a> <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_a96be3f4dfde9fc0982bdadcfdbd0dc0398ff258.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_a96be3f4dfde9fc0982bdadcfdbd0dc0398ff258.svg" class="org-svg" /> wieder mittels komponentenweise definierter verknüpfung einer <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> 
+Seien \(G_i\) <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a>, so bildet das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">direktes Produkt</a> \(\prod_{i \in I} G_i\) wieder mittels komponentenweise definierter verknüpfung einer <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org093bb9b" class="outline-2">
-<h2 id="org093bb9b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3da42b5" class="outline-2">
+<h2 id="org3da42b5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org57bbcfb" class="outline-3">
-<h3 id="org57bbcfb"><span class="section-number-3">2.1.</span> <a href="20220105120621-allgemeines_assoziativgesetz.html#ID-c1522f4c-e063-49e5-8bfb-8e40c2caa5d0">Allgemeines Assoziativgesetz</a></h3>
+<div id="outline-container-org338494d" class="outline-3">
+<h3 id="org338494d"><span class="section-number-3">2.1.</span> <a href="20220105120621-allgemeines_assoziativgesetz.html#ID-c1522f4c-e063-49e5-8bfb-8e40c2caa5d0">Allgemeines Assoziativgesetz</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_9278b1d999b8079bf276a6b70a73e15cbb9824a4.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_9278b1d999b8079bf276a6b70a73e15cbb9824a4.svg" class="org-svg" />.
+Seien \((x_i)_{i \in I},(y_i)_{i \in I},(z_i)_{i \in I} \in \prod_{i \in I}\).
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_8e704c630fb89d9d08a1a5a03010b32f6ed69598.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_8e704c630fb89d9d08a1a5a03010b32f6ed69598.svg" class="org-svg" />
-</span>
+\begin{align*}
+(x_i)_{i \in I} \cdot ((y_i)_{i \in I} \cdot (z_i)_{i \in I}) =& (x_i)_{i \in I} \cdot (y_i \cdot z_i)_{i \in I} \\
+=& (x_i \cdot (y_i \cdot z_i))_{i \in I} \\
+=& ((x_i \cdot y_i) \cdot z_i)_{i \in I} \\
+=& ((x_i)_{i \in I} \cdot (y_i)_{i \in I}) \cdot (z_i)_{i \in I}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org0040d09" class="outline-3">
-<h3 id="org0040d09"><span class="section-number-3">2.2.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutral element</a></h3>
+<div id="outline-container-org23faa2c" class="outline-3">
+<h3 id="org23faa2c"><span class="section-number-3">2.2.</span> <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">neutral element</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_b352a55322e3af99088cbefa0c0ed0a8ee9cec3c.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_b352a55322e3af99088cbefa0c0ed0a8ee9cec3c.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_7a85c4ff613dd8a0eb6c1f615a9010fdf86d0a9a.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_7a85c4ff613dd8a0eb6c1f615a9010fdf86d0a9a.svg" class="org-svg" />:
+Sei \((x_i)_{i \in I} \in \prod_{i \in I}^{} G_i\), so gilt für \((1)_{i \in I}\):
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_d553aa20d7b88069dbe25b8eeff640906e9c961e.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_d553aa20d7b88069dbe25b8eeff640906e9c961e.svg" class="org-svg" />
-</span>
+\begin{align*}
+(x_i)_{i \in I} \cdot (1)_{i \in i} =& (x_i \cdot 1)_{i \in I} \\
+=& (x_i)_{i \in I}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org34efc52" class="outline-3">
-<h3 id="org34efc52"><span class="section-number-3">2.3.</span> <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse element</a></h3>
+<div id="outline-container-org865b51b" class="outline-3">
+<h3 id="org865b51b"><span class="section-number-3">2.3.</span> <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse element</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_80fff9e8ee64e180ffe993dcf37e2fcf4da64c97.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_80fff9e8ee64e180ffe993dcf37e2fcf4da64c97.svg" class="org-svg" />, so gilt für <img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_3628e6a2fe9e27a0002ad1b8b931944a51ace963.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_3628e6a2fe9e27a0002ad1b8b931944a51ace963.svg" class="org-svg" /> :
+Sei \((x_i)_{i \in I} \in \prod_{i \in I} G_i\), so gilt für \((x_i^{-1})_{i \in I} \in \prod_{i \in I}^{} G_i\) :
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_db89c35083cab244886b233400bfc23d78b2bf0c.svg" alt="20230417162319-externe_direkte_produkt_von_gruppen_als_gruppe_db89c35083cab244886b233400bfc23d78b2bf0c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(x_i)_{i \in I} \cdot (x_i^{-1})_{i \in I} =& (x_i \cdot x_i^{-1})_{i \in I} \\
+=& (1)_{i \in I}
+\end{align*}
 </div>
 </div>
 </div>

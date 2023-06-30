@@ -9,50 +9,77 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Diagonalisierbarkeit und Jordansche Normalform</h1>
-<div id="outline-container-org43ce860" class="outline-2">
-<h2 id="org43ce860"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd1c84cd" class="outline-2">
+<h2 id="orgd1c84cd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_f3896b67f52e96c29de71ff71995d8151e4da9f5.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_708e63875045d7d804d38a439434cb1c36bf6506.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_708e63875045d7d804d38a439434cb1c36bf6506.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> mit <a href="20230616-jordan_normalform.html#ID-11cb2029-895b-4516-a321-37d302675feb">Jordan-Normalform</a> <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" class="org-svg" />.
+Sei \(V \simeq K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> über einem <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) und \(A \in V\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> mit <a href="20230616-jordan_normalform.html#ID-11cb2029-895b-4516-a321-37d302675feb">Jordan-Normalform</a> \(J\).
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a></li>
-<li>Jeder <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a> hat Rahmengröße <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_5a30d1b654f36ebe0e782d7991c8495a0398af5b.svg" class="org-svg" /></li>
-<li><img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" class="org-svg" /> ist eine <a href="20230508150838-diagonalmatrix.html#ID-67a3d409-7f5e-4767-ae97-b3dc496dd3bd">Diagonalmatrix</a></li>
+<li>\(A\) ist <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a></li>
+<li>Jeder <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a> hat Rahmengröße \(1\)</li>
+<li>\(J\) ist eine <a href="20230508150838-diagonalmatrix.html#ID-67a3d409-7f5e-4767-ae97-b3dc496dd3bd">Diagonalmatrix</a></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org6a9e8a4" class="outline-2">
-<h2 id="org6a9e8a4"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6e8c327" class="outline-2">
+<h2 id="org6e8c327"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0c19de6" class="outline-3">
-<h3 id="org0c19de6"><span class="section-number-3">2.1.</span> 1) <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 2)</h3>
+<div id="outline-container-orgbb59b9c" class="outline-3">
+<h3 id="orgbb59b9c"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Angenommen es existiert ein <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a> mit <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_929b17aa69483492b4a35854bb2618449a095cff.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_929b17aa69483492b4a35854bb2618449a095cff.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_304b752f3e83ef648d78bc67c5b0abf02623f012.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_304b752f3e83ef648d78bc67c5b0abf02623f012.svg" class="org-svg" />, so ist <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_eff2b971441ee111082cb723b6994a595e016d36.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_eff2b971441ee111082cb723b6994a595e016d36.svg" class="org-svg" /> ein <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a> von <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_929b17aa69483492b4a35854bb2618449a095cff.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_929b17aa69483492b4a35854bb2618449a095cff.svg" class="org-svg" />.
-Es folgt für den Elementarteiler <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_65e3278fd33fc09abd0e9f090c059c574f09d095.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_65e3278fd33fc09abd0e9f090c059c574f09d095.svg" class="org-svg" /> aber auch <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_ab7ab1849a551d3f6629dd00c2abcb7ddfbbb975.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_ab7ab1849a551d3f6629dd00c2abcb7ddfbbb975.svg" class="org-svg" /> (vgl. <a href="20230619-minimalpolynom_und_elementarteiler.html#ID-fda3ae15-7565-47ee-8e03-c8f6530a049f">Minimalpolynom und Elementarteiler</a>), d.h. nach der <a href="20230509153917-diagonalisierbarkeit_und_zerfallen_des_minimalpolynoms.html#ID-2d49dd32-2436-4fce-a6d7-b931286ec3bd">Diagonalisierbarkeit und Zerfallen des Minimalpolynoms in paarweise teilerfremde Faktoren</a> folgt, dass <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> nicht <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> ist, Widerspruch 
+Angenommen es existiert ein <a href="20230616-jordanblock.html#ID-2e7d45d8-6ab4-4e1a-80b6-1af69fc7808c">Jordanblock</a> mit \(J(\alpha,e)\) und \(e \geq 1\), so ist \((x - \alpha)^{e}\) ein <a href="20230608-elementarteiler.html#ID-5a0af13d-e134-4b63-96f8-19f9a128e3cf">Elementarteiler</a> von \(J(\alpha,e)\).
+Es folgt für den Elementarteiler \((x - \alpha)^{e} \mid \varepsilon_n\) aber auch \(\mu_A(x) = \varepsilon_n\) (vgl. <a href="20230619-minimalpolynom_und_elementarteiler.html#ID-fda3ae15-7565-47ee-8e03-c8f6530a049f">Minimalpolynom und Elementarteiler</a>), d.h. nach der <a href="20230509153917-diagonalisierbarkeit_und_zerfallen_des_minimalpolynoms.html#ID-2d49dd32-2436-4fce-a6d7-b931286ec3bd">Diagonalisierbarkeit und Zerfallen des Minimalpolynoms in paarweise teilerfremde Faktoren</a> folgt, dass \(A\) nicht <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> ist, Widerspruch 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcbc7a2e" class="outline-3">
-<h3 id="orgcbc7a2e"><span class="section-number-3">2.2.</span> 2) <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 3)</h3>
+<div id="outline-container-org2242953" class="outline-3">
+<h3 id="org2242953"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Da <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_0a5858dc75e4543388a45b8243ede9c2d062bc23.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_0a5858dc75e4543388a45b8243ede9c2d062bc23.svg" class="org-svg" /> gilt, folgt das durch einsetzen in die JNF
+Da \(J(\alpha,1) = \begin{pmatrix} \alpha \end{pmatrix}\) gilt, folgt das durch einsetzen in die JNF
 </p>
 </div>
 </div>
-<div id="outline-container-orgb739530" class="outline-3">
-<h3 id="orgb739530"><span class="section-number-3">2.3.</span> 3) <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_3c4cbd5f2b7980e356a91a51bde9246ed0372a15.svg" class="org-svg" /> 1)</h3>
+<div id="outline-container-orge76217e" class="outline-3">
+<h3 id="orge76217e"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Da nach Annahme <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_050f6b703ab27df4608de90884ebff4425ab958b.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_050f6b703ab27df4608de90884ebff4425ab958b.svg" class="org-svg" /> gilt, folgt auch, dass <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> mit Dartstellung <img src="file:///home/anton/html/ltximg/20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" alt="20230616-diagonalisierbarkeit_und_jordansche_normalform_810c71627aa476b6a534101ddf7cc34912e24733.svg" class="org-svg" />
+Da nach Annahme \(J \simeq A\) gilt, folgt auch, dass \(A\) <a href="20230222202527-diagonalisierbarer_endomorphismus.html#ID-57f0f0cd-6af1-46ac-b845-8f6fc78092b6">diagonalisierbar</a> mit Dartstellung \(J\)
 </p>
 </div>
 </div>

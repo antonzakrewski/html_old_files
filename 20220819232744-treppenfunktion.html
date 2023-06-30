@@ -9,31 +9,54 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Treppenfunktion</h1>
-<div id="outline-container-org7097d4f" class="outline-2">
-<h2 id="org7097d4f"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org282e547" class="outline-2">
+<h2 id="org282e547"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="file:///home/anton/html/ltximg/20220819232744-treppenfunktion_83a30fe66b645048943178d35fb6ccb929c019e6.svg" alt="20220819232744-treppenfunktion_83a30fe66b645048943178d35fb6ccb929c019e6.svg" class="org-svg" /> heißt treppenfunktion, falls sie als <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a>
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: \mathbb{R} \rightarrow \mathbb{R}\) heißt treppenfunktion, falls sie als <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220107122959-linearkombination.html#ID-5c5d77fa-325c-4762-9327-9000a960ed88">Linearkombination</a>
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220819232744-treppenfunktion_1a751eb935734ec82b7bf21cf83caab0ee28cbda.svg" alt="20220819232744-treppenfunktion_1a751eb935734ec82b7bf21cf83caab0ee28cbda.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f(x) = \sum_{i=1}^{n} \alpha_i f_i(x)
+\end{align*}
 <p>
-mit <img src="file:///home/anton/html/ltximg/20220819232744-treppenfunktion_02bcaf05f2680361233b3aede6e241ab673fa498.svg" alt="20220819232744-treppenfunktion_02bcaf05f2680361233b3aede6e241ab673fa498.svg" class="org-svg" /> und
+mit \(\alpha_i \in \mathbb{R}\) und
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220819232744-treppenfunktion_7b945c1dc0fe3b427b62b793865d00c7fe5c04b6.svg" alt="20220819232744-treppenfunktion_7b945c1dc0fe3b427b62b793865d00c7fe5c04b6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+f_i(x) = 
+\begin{cases}
+1 & \mbox{if } x \in [a_i,b_i) \\
+0 & \mbox{else } \\ 
+\end{cases}
+\end{align*}
 <p>
 dargestellt werden kann
 </p>

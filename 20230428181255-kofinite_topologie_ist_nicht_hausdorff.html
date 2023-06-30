@@ -9,31 +9,55 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kofinite Topologie auf einer unendlichen Menge ist nicht Hausdorff</h1>
-<div id="outline-container-org6bfd68f" class="outline-2">
-<h2 id="org6bfd68f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfaee754" class="outline-2">
+<h2 id="orgfaee754"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> eine <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendliche</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist die <a href="20230207074108-finite_closed_topology.html#ID-faed368d-25e5-4118-b24c-807a634c9771">kofinite topology</a> <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_5a1e56317f25e9fa8800469d6d2cb91d183975bc.svg" class="org-svg" /> auf <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_a2777167e4537a2f240eaccb41b1d49941f02fc3.svg" class="org-svg" /> nicht <a href="20221121111614-hausdorff_eigenschaft.html#ID-b56a8f09-1803-4d74-8301-4c755a2fa59d">Hausdorff</a> 
+Sei \(X\) eine <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendliche</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>, dann ist die <a href="20230207074108-finite_closed_topology.html#ID-faed368d-25e5-4118-b24c-807a634c9771">kofinite topology</a> \(\mathcal{T}\) auf \(X\) nicht <a href="20221121111614-hausdorff_eigenschaft.html#ID-b56a8f09-1803-4d74-8301-4c755a2fa59d">Hausdorff</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orga119fd3" class="outline-2">
-<h2 id="orga119fd3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb9abf85" class="outline-2">
+<h2 id="orgb9abf85"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_671c1537e82f3758393cc27d7e348cc61ff5c83e.svg" class="org-svg" /> verschidene Punkte und <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_2b9504b182155f79fbe1764b406d61f44c4b0880.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_2b9504b182155f79fbe1764b406d61f44c4b0880.svg" class="org-svg" /> <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit <img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_db1f7d09baad90395b586b5f9f913a4e85c954b8.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_db1f7d09baad90395b586b5f9f913a4e85c954b8.svg" class="org-svg" />
+Seien \(x,y \in X\) verschidene Punkte und \(M_x,M_y \subseteq X\) <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjunkt</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> mit \(x \in M_x, y \in M_y\)
 Dann folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230428181255-kofinite_topologie_ist_nicht_hausdorff_28a7f2605361095b1fe1734a17f9dfbb8a2c7d2c.svg" alt="20230428181255-kofinite_topologie_ist_nicht_hausdorff_28a7f2605361095b1fe1734a17f9dfbb8a2c7d2c.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+M_x \cap M_y =& \emptyset \\
+X \setminus \left(M_x \cap M_y\right) =& X \\
+X \setminus M_x \cup X \setminus M_y =& X
+\end{align*}
 <p>
 Aus dem <a href="20221028093107-schubfachprinzip.html#ID-d33a1094-3551-47b8-a056-3602e11fa14b">Schubfachprinzip</a> folgt, dass mind. eine der beiden <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <a href="20220820184356-unendlich.html#ID-661166ce-8c11-4fac-8763-2c6d4f06b839">unendlich</a> sein muss, d.h. auch insbesondere keine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und damit auch keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> 
 </p>

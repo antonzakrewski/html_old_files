@@ -9,60 +9,79 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von einer Einheit erzeugtes Ideal und triviales Ideal</h1>
-<div id="outline-container-org3d96d8a" class="outline-2">
-<h2 id="org3d96d8a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org31789c9" class="outline-2">
+<h2 id="org31789c9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_b8406e916dac479d198be2d4aae6409e2cd31a7d.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_b8406e916dac479d198be2d4aae6409e2cd31a7d.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> und \(d \in R\)
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
 <ul class="org-ul">
-<li><img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> ist eine <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheit</a></li>
-<li>für das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">erzeugte Ideal</a> von <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> gilt <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c3d73c15f4a8525f9084aea36815ae5133c9a246.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c3d73c15f4a8525f9084aea36815ae5133c9a246.svg" class="org-svg" /></li>
+<li>\(d\) ist eine <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheit</a></li>
+<li>für das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">erzeugte Ideal</a> von \(d\) gilt \((d) = R\)</li>
 </ul>
 <p>
-Dann gilt für das von <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">erzeugtes Ideal</a> <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c3d73c15f4a8525f9084aea36815ae5133c9a246.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c3d73c15f4a8525f9084aea36815ae5133c9a246.svg" class="org-svg" />
+Dann gilt für das von \(d\) <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">erzeugtes Ideal</a> \((d) = R\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb79a372" class="outline-2">
-<h2 id="orgb79a372"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org70f2c77" class="outline-2">
+<h2 id="org70f2c77"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgf424ec7" class="outline-3">
-<h3 id="orgf424ec7"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org2ef6e0c" class="outline-3">
+<h3 id="org2ef6e0c"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_282fa7ebf2d11ca4b895ea493535df17cb3f7db3.svg" class="org-svg" /> beliebig.
-Nach Annahme existiert ein <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_5e201e5796bde50b303f2147e15486927c4ffdb1.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_5e201e5796bde50b303f2147e15486927c4ffdb1.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_662685d276a1316c8ae758d322dd02b2aa8d164c.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_662685d276a1316c8ae758d322dd02b2aa8d164c.svg" class="org-svg" />
+Sei \(r \in R\) beliebig.
+Nach Annahme existiert ein \(d' \in R\) mit \(d' \cdot d = 1\)
 Daraus folgt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_9e015e4197c7b3ba20d32a0c7d6cfdbc8dc9c14a.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_9e015e4197c7b3ba20d32a0c7d6cfdbc8dc9c14a.svg" class="org-svg" />
-</span>
+\begin{align*}
+r = (r \cdot d') \cdot d \in (d)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org09efea4" class="outline-3">
-<h3 id="org09efea4"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org13ae5b5" class="outline-3">
+<h3 id="org13ae5b5"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Nach Annahme gilt <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_98ca7ba20a0fdffdb04950353509ceacf968f60c.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_98ca7ba20a0fdffdb04950353509ceacf968f60c.svg" class="org-svg" />, d.h. es existiert ein <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_7973b312a19d02aad13c7d0af016401c98bd0325.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_7973b312a19d02aad13c7d0af016401c98bd0325.svg" class="org-svg" /> so dass gilt:
+Nach Annahme gilt \(1 \in (d)\), d.h. es existiert ein \(d^{-1} \in R\) so dass gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_929fc87c9058947913fb72fa372319ea5a305b66.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_929fc87c9058947913fb72fa372319ea5a305b66.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+1 = d^{-1} \cdot d \in (d) = R
+\end{align*}
 <p>
-Damit ist <img src="file:///home/anton/html/ltximg/20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230314174015-von_einer_einheit_erzeugtes_ideal_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> eine <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheit</a>
+Damit ist \(d\) eine <a href="20221226125808-einheit_ring.html#ID-a3b1e1af-c3e3-433c-a4dd-2ee2c6e1d69a">Einheit</a>
 </p>
 </div>
 </div>

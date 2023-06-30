@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">group homomorphism</h1>
-<div id="outline-container-org3247561" class="outline-2">
-<h2 id="org3247561"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgc23ae8a" class="outline-2">
+<h2 id="orgc23ae8a"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Gegeben seien zwei <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> <img src="file:///home/anton/html/ltximg/20220928134932-gruppenhomomorphismus_4e6c72e512f4601506c5043a972a8e3a26340220.svg" alt="20220928134932-gruppenhomomorphismus_4e6c72e512f4601506c5043a972a8e3a26340220.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20220928134932-gruppenhomomorphismus_98a0f6639a4a36196798779162b4865d05ad1223.svg" alt="20220928134932-gruppenhomomorphismus_98a0f6639a4a36196798779162b4865d05ad1223.svg" class="org-svg" />.
-Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20220928134932-gruppenhomomorphismus_d8881dc39eca2bb5c22c9c39b528533c566b2da2.svg" alt="20220928134932-gruppenhomomorphismus_d8881dc39eca2bb5c22c9c39b528533c566b2da2.svg" class="org-svg" /> heißt Gruppenhomorphismus, falls gilt:
+Gegeben seien zwei <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> \((G, \circ)\) und \((H, *)\).
+Eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(\phi: G \rightarrow H\) heißt Gruppenhomorphismus, falls gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220928134932-gruppenhomomorphismus_ded8bb4940740d7795f73804c3f7f0af8ca54023.svg" alt="20220928134932-gruppenhomomorphismus_ded8bb4940740d7795f73804c3f7f0af8ca54023.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\forall g_1 \in G \forall g_2 \in G : (\phi(g_1) * \phi(g_2) = \phi(g_1 \circ g_2))
+\end{align*}
 </div>
 </div>
 </div>

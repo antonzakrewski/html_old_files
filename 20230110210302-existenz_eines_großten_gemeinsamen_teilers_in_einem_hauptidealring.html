@@ -9,41 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines größten gemeinsamen Teilers in einem Hauptidealring</h1>
-<div id="outline-container-org1762d68" class="outline-2">
-<h2 id="org1762d68"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org41549e3" class="outline-2">
+<h2 id="org41549e3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_7298c7e6acabdc2a6e7a5b9303732bcdcc33d56e.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_7298c7e6acabdc2a6e7a5b9303732bcdcc33d56e.svg" class="org-svg" /> elemente aus <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c2ec7b1dc4e597d4eb034267106940f88b6d92d2.svg" class="org-svg" />.
-Dann existiert ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> von <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_2e7c4f8670e3c71ec32893307048af7628563db2.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_2e7c4f8670e3c71ec32893307048af7628563db2.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und \(x_1,..,x_n\) elemente aus \(R\).
+Dann existiert ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> von \(x_1,...,x_n\)
 </p>
 </div>
 </div>
-<div id="outline-container-org450960e" class="outline-2">
-<h2 id="org450960e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org75a96b2" class="outline-2">
+<h2 id="org75a96b2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">erzeugte Ideal</a> <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_aaccfea0c6543e791676b434009f9164753be874.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_aaccfea0c6543e791676b434009f9164753be874.svg" class="org-svg" /> ist nach Annahme ein <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">Hauptideal</a> und wird damit von einem <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_b8406e916dac479d198be2d4aae6409e2cd31a7d.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_b8406e916dac479d198be2d4aae6409e2cd31a7d.svg" class="org-svg" /> erzeugt, d.h. <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_eb4f8e9c9651628ddf192518d0ab3b6d13e691fe.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_eb4f8e9c9651628ddf192518d0ab3b6d13e691fe.svg" class="org-svg" />
-Wir zeigen, dass <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_c03a1b9a5fa36a40a569388759495684b3c6f745.svg" class="org-svg" /> ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist:
+Das <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">erzeugte Ideal</a> \((x_1,...,x_n)\) ist nach Annahme ein <a href="20221130163614-hauptideal.html#ID-753ccf8e-7022-43b7-af18-0d3e1db9bcdb">Hauptideal</a> und wird damit von einem \(d \in R\) erzeugt, d.h. \((d) = (x_1,...,x_n)\)
+Wir zeigen, dass \(d\) ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> ist:
 </p>
 </div>
-<div id="outline-container-org758ead3" class="outline-3">
-<h3 id="org758ead3"><span class="section-number-3">2.1.</span> teiler</h3>
+<div id="outline-container-org87087fe" class="outline-3">
+<h3 id="org87087fe"><span class="section-number-3">2.1.</span> teiler</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_ab590d2cd7032e2780828d228f6a6e2a5541c558.svg" class="org-svg" /> beliebig, so folgt <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_38422b040101d434244dc81702508cd9d28b92fa.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_38422b040101d434244dc81702508cd9d28b92fa.svg" class="org-svg" /> und damit existiert eine Darstellung <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_f5f5fd3ca1a97904302755c21038b53515b24502.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_f5f5fd3ca1a97904302755c21038b53515b24502.svg" class="org-svg" />
+Sei \(x_i\) beliebig, so folgt \(x_1 \in (x_1,...,x_n) = (d)\) und damit existiert eine Darstellung \(r \cdot d = x_i\)
 </p>
 </div>
 </div>
-<div id="outline-container-org1beec68" class="outline-3">
-<h3 id="org1beec68"><span class="section-number-3">2.2.</span> größter</h3>
+<div id="outline-container-orga22beec" class="outline-3">
+<h3 id="orga22beec"><span class="section-number-3">2.2.</span> größter</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_ccc3ea44a734f6a2fbe5857701137e76ce4827ca.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_ccc3ea44a734f6a2fbe5857701137e76ce4827ca.svg" class="org-svg" /> für <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_03904e4dad17dc222631a11236e4a7332fd68b6a.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_320f1684c3d85918910dc1913a71848a31c29d02.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_320f1684c3d85918910dc1913a71848a31c29d02.svg" class="org-svg" />, so existiert durch Anwendung des Distributivgesetzes eine Darstellung <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_0799353219455a5168d56858026cc62c6b3b337f.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_0799353219455a5168d56858026cc62c6b3b337f.svg" class="org-svg" />.
-Daraus folgt <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_6128606230b9519a717a311d9b7ca53c3ef94106.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_6128606230b9519a717a311d9b7ca53c3ef94106.svg" class="org-svg" /> und aus der Aussage über <a href="20230419134552-teilbarkeit_und_ideale.html#ID-917c642d-db0b-44e5-9155-19aa05c362ae">Teilbarkeit und Ideale</a> folgt dann <img src="file:///home/anton/html/ltximg/20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_7b0aece64f658212741bb77ae4420a9eb69fa546.svg" alt="20230110210302-existenz_eines_großten_gemeinsamen_teilers_in_einem_hauptidealring_7b0aece64f658212741bb77ae4420a9eb69fa546.svg" class="org-svg" />
+Sei \(d' \mid x_i\) für \(i \in \{1,...,n\}\) und \(a \in (x_1,...,x_n)\), so existiert durch Anwendung des Distributivgesetzes eine Darstellung \(r \cdot d' = a\).
+Daraus folgt \((d) \subseteq (d')\) und aus der Aussage über <a href="20230419134552-teilbarkeit_und_ideale.html#ID-917c642d-db0b-44e5-9155-19aa05c362ae">Teilbarkeit und Ideale</a> folgt dann \(d' \mid d\)
 </p>
 </div>
 </div>

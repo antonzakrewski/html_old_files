@@ -9,82 +9,104 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Surjektivität und Injektivität der dualen Abbildung</h1>
-<div id="outline-container-orgfafcb34" class="outline-2">
-<h2 id="orgfafcb34"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfa55a50" class="outline-2">
+<h2 id="orgfa55a50"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_3d44da477e5f69f1e204c4642711d95096ff4d77.svg" class="org-svg" /> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und sei <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_4c237c02e911fbf8d039cf649b36b7217d06e571.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_4c237c02e911fbf8d039cf649b36b7217d06e571.svg" class="org-svg" />
-und sei <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_601bbdab45abbf1a60b084ead4dc8b9b17e6dc31.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_601bbdab45abbf1a60b084ead4dc8b9b17e6dc31.svg" class="org-svg" />
+Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und sei \(A \in \mathrm{Hom}_{K}(V,W)\)
+und sei \(\mathrm{dim}_{K}(W) < \infty\)
 Dann folgt:
 </p>
 <ol class="org-ol">
-<li><img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist</li>
-<li><img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>.</li>
-<li><img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ist <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">iso</a>.</li>
+<li>\(A\) ist ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(A^*\) ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist</li>
+<li>\(A\) ist ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(A^*\) ein <a href="20230303151705-vektorraumepimorphismus.html#ID-76bd1cc2-7338-461c-9c43-48c24c80037c">Epimorphismus</a>.</li>
+<li>\(A\) ist <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a>, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(A^*\) <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">iso</a>.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf622456" class="outline-2">
-<h2 id="orgf622456"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8a40839" class="outline-2">
+<h2 id="org8a40839"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7ce7588" class="outline-3">
-<h3 id="org7ce7588"><span class="section-number-3">2.1.</span> 1)</h3>
+<div id="outline-container-orgbbc8fbf" class="outline-3">
+<h3 id="orgbbc8fbf"><span class="section-number-3">2.1.</span> 1)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org9538d02" class="outline-4">
-<h4 id="org9538d02"><span class="section-number-4">2.1.1.</span> a)</h4>
+<div id="outline-container-orga02fa9b" class="outline-4">
+<h4 id="orga02fa9b"><span class="section-number-4">2.1.1.</span> a)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>, so gilt <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ca455153894121c16031fddc844a440caa787547.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ca455153894121c16031fddc844a440caa787547.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_5cd122acccb009bb46b900bb9d83cea1c876bfae.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_5cd122acccb009bb46b900bb9d83cea1c876bfae.svg" class="org-svg" /> (siehe: <a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>)
-Nach der <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a> folgt, dass <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist.
+Sei \(A\) ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>, so gilt \(\mathrm{im}(A) = W\) und \(\mathrm{ker}(A^*) = \mathrm{im}(A)^{\bot} = W^{\bot} = \{0\}\) (siehe: <a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>)
+Nach der <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">Äquivalenz von einem Monomorphismus und einem minimalen Kern</a> folgt, dass \(A^*\) ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-org0491c3c" class="outline-4">
-<h4 id="org0491c3c"><span class="section-number-4">2.1.2.</span> b)</h4>
+<div id="outline-container-org463f478" class="outline-4">
+<h4 id="org463f478"><span class="section-number-4">2.1.2.</span> b)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, dann gilt <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_e8e6c0a6b16ee9e0ce6a28ff38ba72898740ff25.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_e8e6c0a6b16ee9e0ce6a28ff38ba72898740ff25.svg" class="org-svg" /> (<a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>) und nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gitl:
+Sei \(A^*\) ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, dann gilt \(\{0\} = \mathrm{ker}(A) = \mathrm{im}(A^*)^{\bot}\) (<a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>) und nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gitl:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_becbaf8e32e1876a3399a078636c797f860ca590.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_becbaf8e32e1876a3399a078636c797f860ca590.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{im}(A) =& \mathrm{im}(A)^{\bot}^{\top} \\
+=& \{0\}^{\top} \\
+=& W
+\end{align*}
 </div>
 </div>
 </div>
-</div>
-<div id="outline-container-orgbca3430" class="outline-3">
-<h3 id="orgbca3430"><span class="section-number-3">2.2.</span> 2)</h3>
+<div id="outline-container-org8b8c643" class="outline-3">
+<h3 id="org8b8c643"><span class="section-number-3">2.2.</span> 2)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, dann ist <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_e8e6c0a6b16ee9e0ce6a28ff38ba72898740ff25.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_e8e6c0a6b16ee9e0ce6a28ff38ba72898740ff25.svg" class="org-svg" /> (siehe: <a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>) und nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gilt:
+Sei \(A\) ein <a href="20230303151658-vektorraummonomorphismus.html#ID-f0288756-d404-4cf9-8f45-508ac443d32c">Monomorphismus</a>, dann ist \(\{0\} = \mathrm{ker}(A) = \mathrm{im}(A^*)^{\bot}\) (siehe: <a href="20221226154416-satz_uber_den_kern_und_das_bild_der_dualen_abbildung.html#ID-6efa21b1-4f01-4a8c-86f1-ab313f4c0876">Kern und Bild der dualen Abbildung</a>) und nach <a href="20221227084404-dualitatssatz_fur_die_annullierung.html#ID-80388466-a535-44e2-9099-77a8a30b7182">Dualitätssatz für die Annullierung</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_41804c80ee038b506897d7c340166e0081c654f8.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_41804c80ee038b506897d7c340166e0081c654f8.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\mathrm{im}(A^*) =& \mathrm{im}(A^*)^{\top}^{\bot} \\
+=& \{0\}^{\bot} \\
+=& V^*
+\end{align*}
 <p>
-Ist <img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_ee4a95af5cc5d43b6fdd3b2c630dbadd083a9443.svg" class="org-svg" /> ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>, so folgt
+Ist \(A^*\) ein <a href="20220819135905-epimorphismus.html#ID-ad206194-a416-4910-a5c4-d72528ae5ba0">Epimorphismus</a>, so folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_a1462a71837e854edec64c3dd3809d24cdad68de.svg" alt="20221226154549-satz_uber_surjektivitat_und_injektivitat_der_dualen_abbildung_a1462a71837e854edec64c3dd3809d24cdad68de.svg" class="org-svg" />
-</span>
+\begin{align*}
+\mathrm{ker}(A) =& \mathrm{im}(A^*){\bot} \\
+=& (V^*)^\bot \\
+=& \{0\}
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org4637c3c" class="outline-3">
-<h3 id="org4637c3c"><span class="section-number-3">2.3.</span> 3)</h3>
+<div id="outline-container-orgf22c91d" class="outline-3">
+<h3 id="orgf22c91d"><span class="section-number-3">2.3.</span> 3)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Folgt aus 1) und 2)

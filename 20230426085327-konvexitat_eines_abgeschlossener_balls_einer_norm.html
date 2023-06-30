@@ -9,32 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Konvexität eines Balls in einem Normierten Raum</h1>
-<div id="outline-container-orgdcff9e2" class="outline-2">
-<h2 id="orgdcff9e2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8890381" class="outline-2">
+<h2 id="org8890381"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_9dc50c71766545d1ca490790a99a01759229f08c.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_9dc50c71766545d1ca490790a99a01759229f08c.svg" class="org-svg" /> oder <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_1d020af54d4dd394d7f299130aef599957f30ba9.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_1d020af54d4dd394d7f299130aef599957f30ba9.svg" class="org-svg" /> gegeben, so ist ein <a href="20230422114730-abgeschlossener_ball.html#ID-f08b45bd-f778-4858-948e-77c15e566788">abgeschlossener</a> / <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">offener Ball</a> <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_bf32e290ab93689811c892497bbdc104a802206a.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_bf32e290ab93689811c892497bbdc104a802206a.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_4215cb617a3dde28ee9fe9c96cf741821c2282c1.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_4215cb617a3dde28ee9fe9c96cf741821c2282c1.svg" class="org-svg" /> <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvex</a> 
+Sei \(\mathbb{R}^n\) oder \(\mathbb{C}^n\) gegeben, so ist ein <a href="20230422114730-abgeschlossener_ball.html#ID-f08b45bd-f778-4858-948e-77c15e566788">abgeschlossener</a> / <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">offener Ball</a> \(B_{r}[x]\) bzw. \(B_{r}(x)\) <a href="20230204200620-konvexitat_in_ℝ_2.html#ID-27959893-bbe1-4150-9b4c-09a7cd91abd1">konvex</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgd28e5f8" class="outline-2">
-<h2 id="orgd28e5f8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org36e87db" class="outline-2">
+<h2 id="org36e87db"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_d6b34063a507d8dd16c6fd6202559e18fd39b877.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_d6b34063a507d8dd16c6fd6202559e18fd39b877.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_9dad6be8b4f2b96f1cb7c760ffbeebba5d09d9dd.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_9dad6be8b4f2b96f1cb7c760ffbeebba5d09d9dd.svg" class="org-svg" />, so folgt aus der <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a> 
+Seien \(v,w \in B_{r}\) und \(t \in [0,1]\), so folgt aus der <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_7cd6bf6b750de8684e0f9b696275ed247bbdd5d0.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_7cd6bf6b750de8684e0f9b696275ed247bbdd5d0.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\| (1 - t) v + t w - x \| =& \| (1 - t) (v - x) + t (w - x) \|  \\
+ \leq& (1 - t) \| v - x \| + t \cdot \| w - x \| \\
+\leq& r
+\end{align*}
 <p>
-mit und mit kleiner <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_97cf6035b9a737ac8555d4a71933564c1c816dda.svg" class="org-svg" /> falls <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_00459fa425e3d584ef071c9807259dc239d270f2.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_00459fa425e3d584ef071c9807259dc239d270f2.svg" class="org-svg" />, d.h. auch für <img src="file:///home/anton/html/ltximg/20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_4215cb617a3dde28ee9fe9c96cf741821c2282c1.svg" alt="20230426085327-konvexitat_eines_abgeschlossener_balls_einer_norm_4215cb617a3dde28ee9fe9c96cf741821c2282c1.svg" class="org-svg" /> gültig.
+mit und mit kleiner \(r\) falls \(\|v - x\|,\|w - x\| < r\), d.h. auch für \(B_{r}(x)\) gültig.
 </p>
 </div>
 </div>

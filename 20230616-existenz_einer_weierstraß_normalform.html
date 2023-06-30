@@ -9,31 +9,57 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Weierstraß-Normalform</h1>
-<div id="outline-container-org6c7d385" class="outline-2">
-<h2 id="org6c7d385"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3ae3a37" class="outline-2">
+<h2 id="org3ae3a37"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_weierstraß_normalform_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" alt="20230616-existenz_einer_weierstraß_normalform_3b6b4fc3dc7fe2168235b485e513350715d67cdb.svg" class="org-svg" /> ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_weierstraß_normalform_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230616-existenz_einer_weierstraß_normalform_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
+Sei \(K^{n \times n}\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A \in K^{n \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a>.
 Dann existiert eine <a href="20230614-weierstraß_normalform.html#ID-6bad4ce2-5a0d-445c-9640-f06b97a563b1">Weierstraß-Normalform</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org7bc4059" class="outline-2">
-<h2 id="org7bc4059"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2f5cfa7" class="outline-2">
+<h2 id="org2f5cfa7"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für die <a href="20230608-invariantenteiler.html#ID-78a0a142-4f01-4717-8840-7e474a781be0">Invariantenteiler</a> <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_weierstraß_normalform_c0b805e22903dd1087fc44e0c1cc9854e37cb06e.svg" alt="20230616-existenz_einer_weierstraß_normalform_c0b805e22903dd1087fc44e0c1cc9854e37cb06e.svg" class="org-svg" /> von der <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> <img src="file:///home/anton/html/ltximg/20230616-existenz_einer_weierstraß_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230616-existenz_einer_weierstraß_normalform_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> folgt, dass
+Für die <a href="20230608-invariantenteiler.html#ID-78a0a142-4f01-4717-8840-7e474a781be0">Invariantenteiler</a> \(h_1,...,h_r\) von der <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> \(A\) folgt, dass
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230616-existenz_einer_weierstraß_normalform_cfa9391ffbe4aeace8a6723002b1ed87970344a6.svg" alt="20230616-existenz_einer_weierstraß_normalform_cfa9391ffbe4aeace8a6723002b1ed87970344a6.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+A \simeq \begin{pmatrix}
+B_{h_1} & & \\
+& \vdots & \\
+& & B_{h_r} \\
+ \end{pmatrix} 
+\end{align*}
 </div>
 </div>
 </div>

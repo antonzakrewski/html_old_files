@@ -9,105 +9,107 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">von einem Skalarprodukt induzierte Norm</h1>
-<div id="outline-container-org7c76e8d" class="outline-2">
-<h2 id="org7c76e8d"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orgcd56e50" class="outline-2">
+<h2 id="orgcd56e50"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" /> ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> oder ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> sowie
+Sei \(V\) ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> oder ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> sowie
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_772a8e69cc3b34e56d77c9fd4b9907e6c57527a1.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_772a8e69cc3b34e56d77c9fd4b9907e6c57527a1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(\cdot,\cdot): V \times V \rightarrow& \mathbb{C} \\ 
+\end{align*}
 <p>
-ein <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Skalarprodukt</a> auf <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_8535b857df90175e5ad14269aa951d65ae680a6b.svg" class="org-svg" />
+ein <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Skalarprodukt</a> auf \(V\)
 Dann ist
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_51a6b72c67b5a12e1b3fdc49ffa7f12fafe80919.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_51a6b72c67b5a12e1b3fdc49ffa7f12fafe80919.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+\| v \| = \sqrt{\langle v, v\rangle}
+\end{align*}
 <p>
 eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-f1f245833425">Norm</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org8526c93" class="outline-2">
-<h2 id="org8526c93"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2c5001e" class="outline-2">
+<h2 id="org2c5001e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd349031" class="outline-3">
-<h3 id="orgd349031"><span class="section-number-3">2.1.</span> a) <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
+<div id="outline-container-org880b9cb" class="outline-3">
+<h3 id="org880b9cb"><span class="section-number-3">2.1.</span> a) <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20221030153017-positiv_definit_des_skalarprodukt.html#ID-3d15453c-97da-4a6a-b4c4-d39b7f76d913">Positiven Definitheit eines Skalarprodukts</a>:
-Sei <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_f92e3f6a0a4864d264158373b82476e30edf2882.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_f92e3f6a0a4864d264158373b82476e30edf2882.svg" class="org-svg" />, so folgt <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_fa2b2752b83175ac4c2720ac064fca113e7a89bb.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_fa2b2752b83175ac4c2720ac064fca113e7a89bb.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_4271e62b1976dd770c57c0904fa4bda38d23f8c7.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_4271e62b1976dd770c57c0904fa4bda38d23f8c7.svg" class="org-svg" />.
-sei <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_893e1377d38fedc556cd57e91b46d68c06b426e9.svg" class="org-svg" />, so folgt auch <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_d6f17f2b2d423a01281da91cae8a80f30c0388c6.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_d6f17f2b2d423a01281da91cae8a80f30c0388c6.svg" class="org-svg" /> und damit auch <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_6b29c6bd17c470283fcb4815208a65d9a163b527.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_6b29c6bd17c470283fcb4815208a65d9a163b527.svg" class="org-svg" />
+Sei \(v = 0\), so folgt \((v,v) = 0\) und damit auch \(\| v \| = 0\).
+sei \(v \neq 0\), so folgt auch \((v,v) > 0\) und damit auch \(\|v \| > 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org84c26ec" class="outline-3">
-<h3 id="org84c26ec"><span class="section-number-3">2.2.</span> b) <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
+<div id="outline-container-org7deebcc" class="outline-3">
+<h3 id="org7deebcc"><span class="section-number-3">2.2.</span> b) <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_8c84faabc635b510a518973e35b0ea64cffe7984.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_8c84faabc635b510a518973e35b0ea64cffe7984.svg" class="org-svg" />, so gilt <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_2b2dbb78ca50e1cb255acbf220c902f679856bd2.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_2b2dbb78ca50e1cb255acbf220c902f679856bd2.svg" class="org-svg" /> und damit auch
+Sei \(v' = \alpha v\), so gilt \((v',v') = (\alpha v, \alpha v) = \alpha \cdot (v, \alpha v) = \alpha \cdot \overline{\alpha} (v,v)\) und damit auch
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_b9c6e7a4a2522a6997c2a0e65d7101b5eca883db.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_b9c6e7a4a2522a6997c2a0e65d7101b5eca883db.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\| \alpha v \| = \sqrt{ \vert \alpha \vert^2} \cdot \| v \| \\
+=& \vert \alpha \vert \cdot \| v \|
+\end{align*}
 <p>
 (vgl. <a href="20230621-komplexe_konjugation_und_norm.html#ID-80e345dc-62ac-42f3-a9ee-1aabb52db2e1">komplexe konjugation und Norm</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-org5e3ebe1" class="outline-3">
-<h3 id="org5e3ebe1"><span class="section-number-3">2.3.</span> c) <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
+<div id="outline-container-org5b7a32d" class="outline-3">
+<h3 id="org5b7a32d"><span class="section-number-3">2.3.</span> c) <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Es gilt für <img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_e192778817f3ad46a44304a2025d4bc00d2a0d55.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_e192778817f3ad46a44304a2025d4bc00d2a0d55.svg" class="org-svg" />
+Es gilt für \(\| v_1 + v_2 \|\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_53199e99a9b3462d322ff0bf6497d9126db7b0f1.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_53199e99a9b3462d322ff0bf6497d9126db7b0f1.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\| v_1 + v_2 \|^2 =& (v_1 + v_2, v_1 + v_2) \\
+=& \|v_1 \|^2 + \|v_2 \|^2 + (v_1,v_2) + (v_2,v_1) \\
+=& \| v_1 \|^2 + \|v_2 \|^2 + (v_1,v_2) + \overline{(v_1,v_2)}  \\
+=& \| v_1 \|^2 + \|v_2 \|^2 + 2 \mathrm{Re}((v_1,v_2)) \\
+\leq& \| v_1 \|^2 + \| v_2 \|^2 + 2 \| (v_1, v_2) \|
+\end{align*}
 <p>
-Wegen $ &vert; (z) &vert; &le; \| z \|$
+Wegen $ &vert; \mathrm{Re}(z) &vert; &le; \| z \|$
 nach der <a href="20230223222633-cauchy_schwarz_ungleichung.html#ID-fa0b3dd9-8f8a-48e6-8cb1-f71fad800e37">Cauchy-Schwarz Ungleichung</a> folgt dann
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230223222320-von_einem_skalarprodukt_induzierte_norm_02ed0e38313ae122ea1baf54e4f7342c31927c65.svg" alt="20230223222320-von_einem_skalarprodukt_induzierte_norm_02ed0e38313ae122ea1baf54e4f7342c31927c65.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\| v_1 \|^2 + 2 \| v_1 \| \| v_2 \| + \| v_2 \|^2 =& (\| v_1 \| + \| v_2 \|)^{2}
+\end{align*}
 </div>
 </div>
 </div>

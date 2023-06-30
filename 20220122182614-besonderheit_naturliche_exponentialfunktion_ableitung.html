@@ -3,31 +3,54 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Besonderheit: Natürliche Exponentialfunktion (Ableitung)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Besonderheit: Natürliche Exponentialfunktion (Ableitung)</h1>
-<div id="outline-container-orge738905" class="outline-2">
-<h2 id="orge738905"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0fa04a2" class="outline-2">
+<h2 id="org0fa04a2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das <a href="20210930091512-integral.html#ID-f3a07c0b-aa43-48f8-b163-4e32f8b6e348">Integral</a> bzw. die <a href="20210217213630-stammfunktion.html#ID-06e86b82-155a-47b9-ac35-31f9c5adf948">Stammfunktion</a> und die <a href="20210217212957-ableitungsfunktion.html#ID-868ce7d4-5ad4-4475-a5c1-26f943fe851a">Ableitung</a> sind gleich die <a href="20220122182159-naturliche_exponentialfunktion.html#ID-2fb538a3-0b69-40b1-bc67-fec75957b15d">natürliche Exponentialfunktion</a> selbst (abgesehen von etwaiger Verschiebung).
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20220122182614-besonderheit_naturliche_exponentialfunktion_ableitung_27a307f151b72fb845341ad2fb35ce7314414143.svg" alt="20220122182614-besonderheit_naturliche_exponentialfunktion_ableitung_27a307f151b72fb845341ad2fb35ce7314414143.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+\int e^x =& e^x + c \\
+\int_{-\infty}^{x} =& e^x \\
+(e^x)' =& e^x
+\end{align*}
 </div>
 </div>
 </div>

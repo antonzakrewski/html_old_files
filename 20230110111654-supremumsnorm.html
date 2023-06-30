@@ -3,36 +3,57 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Supremumsnorm</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Supremumsnorm</h1>
-<div id="outline-container-orge172af8" class="outline-2">
-<h2 id="orge172af8"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf1aba25" class="outline-2">
+<h2 id="orgf1aba25"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230110111654-supremumsnorm_2553ba05c20cc8bfb73cfe4cb65a3cda70c23b41.svg" alt="20230110111654-supremumsnorm_2553ba05c20cc8bfb73cfe4cb65a3cda70c23b41.svg" class="org-svg" /> eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und <img src="ltximg/20230110111654-supremumsnorm_e681085258c60ca3c9fda6bb1c8aca7aa23755fc.svg" alt="20230110111654-supremumsnorm_e681085258c60ca3c9fda6bb1c8aca7aa23755fc.svg" class="org-svg" /> ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>, sowie <img src="ltximg/20230110111654-supremumsnorm_854dde7805184d15729c654add161d4fc4fd036c.svg" alt="20230110111654-supremumsnorm_854dde7805184d15729c654add161d4fc4fd036c.svg" class="org-svg" /> eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> <img src="ltximg/20230110111654-supremumsnorm_c530e5dd574c9bd326b1b5d2d34be66f4ce32674.svg" alt="20230110111654-supremumsnorm_c530e5dd574c9bd326b1b5d2d34be66f4ce32674.svg" class="org-svg" />
+Sei \(D \neq \emptyset\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \((C, \| \cdot \|_{C})\) ein <a href="20221003143917-normierter_raum.html#ID-250c7843-ade4-44e9-9d45-05423ddaa1d8">normierter Raum</a>, sowie \(f\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: D \rightarrow C\)
 Dann ist die Supremumsnorm für die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20220720130658-beschranktheit_einer_funktion.html#ID-94c52ff2-aac4-4fd1-9d7c-8095d0147e5c">beschränkten</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> definiert als
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230110111654-supremumsnorm_513ced64c6904ecccf18ec3e55d15ce79b3159df.svg" alt="20230110111654-supremumsnorm_513ced64c6904ecccf18ec3e55d15ce79b3159df.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
+\begin{align*}
+\| \cdot \|_{\infty} :=& \sup_{z \in D} \| f(z) \|_{C} 
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-orge90ce89" class="outline-2">
-<h2 id="orge90ce89"><span class="section-number-2">2.</span> </h2>
+<div id="outline-container-org0f5d201" class="outline-2">
+<h2 id="org0f5d201"><span class="section-number-2">2.</span> </h2>
 </div>
 </div>
 <div id="postamble" class="status">

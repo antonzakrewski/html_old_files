@@ -3,56 +3,71 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>größter gemeinsamer Teiler in einem Ideal eines Hauptidealrings</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">größter gemeinsamer Teiler in einem Ideal eines Hauptidealrings</h1>
-<div id="outline-container-org34fa1f7" class="outline-2">
-<h2 id="org34fa1f7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6838fcf" class="outline-2">
+<h2 id="org6838fcf"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und für <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f4789101c274e444da4ce3c96e7bc607281737dc.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f4789101c274e444da4ce3c96e7bc607281737dc.svg" class="org-svg" /> sei <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_876006a42a6db18338a80b34fecc370bec5f57f7.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_876006a42a6db18338a80b34fecc370bec5f57f7.svg" class="org-svg" /> das von <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">den Elementen erzeugte Ideal</a>.
-Dann existiert ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_3049dd757a966950c7836e2e158436df42ef61dc.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_3049dd757a966950c7836e2e158436df42ef61dc.svg" class="org-svg" /> so dass gilt <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_1ec1ecc3f0bcd9d1b00734ab70763f265429af27.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_1ec1ecc3f0bcd9d1b00734ab70763f265429af27.svg" class="org-svg" />
+Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und für \(x_1,...,x_n \in R\) sei \((x_1,...,x_n)\) das von <a href="20221229203933-von_elementen_erzeugte_hauptideal.html#ID-bd140f14-cad5-47f2-877f-23eb74ac441d">den Elementen erzeugte Ideal</a>.
+Dann existiert ein <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c206-515e-44af-8ff5-e332312a896a">größter gemeinsamer Teiler</a> \(d = \mathrm{ggT}(x_1,...,x_n)\) so dass gilt \((x_1,...,x_n) = (d)\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgb1d6b81" class="outline-2">
-<h2 id="orgb1d6b81"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org78710a5" class="outline-2">
+<h2 id="org78710a5"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Nach Annahme ist <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a>, d.h. es existiert ein <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_97fc6616092bc561492821b31642daa9b515699b.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_97fc6616092bc561492821b31642daa9b515699b.svg" class="org-svg" />, welches das <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> erzeugt.
-Da <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_7e6d59de0e23cd0217b11b41865d3f7a11c4fc8d.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_7e6d59de0e23cd0217b11b41865d3f7a11c4fc8d.svg" class="org-svg" /> ist, existiert ein <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_027644ad04d154b4e8655c6c45fbd6e9a78f4e87.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_027644ad04d154b4e8655c6c45fbd6e9a78f4e87.svg" class="org-svg" />, so dass gilt
+Nach Annahme ist \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a>, d.h. es existiert ein \(d\), welches das <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> erzeugt.
+Da \(x_i \in (d)\) ist, existiert ein \(r_i \in R\), so dass gilt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_79f488c9ccf0582b69ae998b4b8d2d2faffc18c3.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_79f488c9ccf0582b69ae998b4b8d2d2faffc18c3.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+r_i \cdot d = x_i
+\end{align*}
 <p>
-daraus folgt <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_3d207785bd41dff3c1fce211aecd4dea6f229ce6.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_3d207785bd41dff3c1fce211aecd4dea6f229ce6.svg" class="org-svg" />
-Angenommen es existiert ein <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f00969735338f3c925d14abe5caea39417999a0b.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f00969735338f3c925d14abe5caea39417999a0b.svg" class="org-svg" /> mit <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_87072bbf1fc2e8db9f7e21d438d02e30468b785a.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_87072bbf1fc2e8db9f7e21d438d02e30468b785a.svg" class="org-svg" /> für <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6d0ea46d597fc9d116a4b29a0b2167da5ed19c31.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_6d0ea46d597fc9d116a4b29a0b2167da5ed19c31.svg" class="org-svg" />, so existiert jeweils ein <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_b5981dafd8c93b2097589a196375423636cfdf5f.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_b5981dafd8c93b2097589a196375423636cfdf5f.svg" class="org-svg" /> mit <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_fcd0f0f34a74776d05d60de972dac052621d00a3.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_fcd0f0f34a74776d05d60de972dac052621d00a3.svg" class="org-svg" />
-Da <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f4bd2bb5184558e8dafcb6a4083fa5e2cb4b6ebd.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_f4bd2bb5184558e8dafcb6a4083fa5e2cb4b6ebd.svg" class="org-svg" /> existieren <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_21be732d197fc98333ab9ad3363cc7487de96ed7.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_21be732d197fc98333ab9ad3363cc7487de96ed7.svg" class="org-svg" /> mit <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_2ab06577598cedd1b55b96c00896a6def73c84b2.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_2ab06577598cedd1b55b96c00896a6def73c84b2.svg" class="org-svg" />
-Daraus folgt <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_52f435bb5ee8e2c7afe70777ec2db53853368a31.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_52f435bb5ee8e2c7afe70777ec2db53853368a31.svg" class="org-svg" />, d.h. <img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_bcd9ba594bb704351c270ab4fad7a0189753490f.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_bcd9ba594bb704351c270ab4fad7a0189753490f.svg" class="org-svg" /> und somit folgt
+daraus folgt \(d \mid x_i\)
+Angenommen es existiert ein \(c \in R\) mit \(c \mid x_i\) für \(\forall i \in \{1,...,n\}\), so existiert jeweils ein \(s_i \in R\) mit \(x_i = s_i \cdot c\)
+Da \(d \in (d) = (x_1,...,x_n)\) existieren \(t_i \in R\) mit \(d = \sum_{i=1}^{n} t_i x_i\)
+Daraus folgt \(d = \sum_{i=1}^{n} t_i x_i = \sum_{i=1}^{n} t_i s_i c = c \cdot \sum_{i=1}^{n} t_i s_i\), d.h. \(c \mid d\) und somit folgt
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_243c45fd9b11bf11b78dfcbcec0a100e9803b0f0.svg" alt="20230314172426-großter_gemeinsamer_teiler_in_einem_ideal_eines_hauptidealrings_243c45fd9b11bf11b78dfcbcec0a100e9803b0f0.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
-</div>
+\begin{align*}
+d = \mathrm{ggT}(x_1,..,x_n)
+\end{align*}
 </div>
 </div>
 </div>

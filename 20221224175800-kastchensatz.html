@@ -3,82 +3,81 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kästchensatz</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Kästchensatz</h1>
-<div id="outline-container-org0219a65" class="outline-2">
-<h2 id="org0219a65"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9ad597f" class="outline-2">
+<h2 id="org9ad597f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="ltximg/20221224175800-kastchensatz_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" alt="20221224175800-kastchensatz_6f915f7ff19209ab551ec28c9c29a8ce52aa74d4.svg" class="org-svg" /> ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und <img src="ltximg/20221224175800-kastchensatz_678d86feba6a92788e9ebe7a050a9a59ccfab5ef.svg" alt="20221224175800-kastchensatz_678d86feba6a92788e9ebe7a050a9a59ccfab5ef.svg" class="org-svg" />.
-Dann gilt für die <img src="ltximg/20221224175800-kastchensatz_f37a64f02cff0d48ec283b435719c7b0635f637d.svg" alt="20221224175800-kastchensatz_f37a64f02cff0d48ec283b435719c7b0635f637d.svg" class="org-svg" /> <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> 
+Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \(B \in R^{m \times m}, C \in R^{n \times n}, D \in R^{n \times m}\).
+Dann gilt für die \((m+n) \times (m+n)\) <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224175800-kastchensatz_0677062b739b6603e0ef05bf1745560e5bab9817.svg" alt="20221224175800-kastchensatz_0677062b739b6603e0ef05bf1745560e5bab9817.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224175800-kastchensatz_f4b42795e6372d96026039c95f7312f3afce4a10.svg" alt="20221224175800-kastchensatz_f4b42795e6372d96026039c95f7312f3afce4a10.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-2
-</span>
+\begin{align*}
+A =& \begin{pmatrix} B & 0 \\ D & C \end{pmatrix} 
+\end{align*}
+\begin{align*}
+\mathrm{det}(A) =& \mathrm{det}(B)\mathrm{det}(C)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org8ca9473" class="outline-2">
-<h2 id="org8ca9473"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1c66c05" class="outline-2">
+<h2 id="org1c66c05"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt die Darstellung:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224175800-kastchensatz_525907ae849038bf5fee5de453ba46d3ffe77bc7.svg" alt="20221224175800-kastchensatz_525907ae849038bf5fee5de453ba46d3ffe77bc7.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-3
-</span>
-</div>
+\begin{align*}
+\begin{pmatrix} B & 0 \\ D & C \end{pmatrix} =& \begin{pmatrix} B & 0 \\ D & E_n \end{pmatrix} \begin{pmatrix} E_m & 0 \\ 0 & C \end{pmatrix} 
+\end{align*}
 <p>
 Da gilt:<a href="20230121224355-erweiterte_matrix_und_determinante.html#ID-a1ad0b22-e357-4579-8124-533584c529b8">mit Einheitsmatrix erweiterte Matrix und deren Determinante</a>.
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224175800-kastchensatz_e243a96ecb430725635c11b0e41d324182953c29.svg" alt="20221224175800-kastchensatz_e243a96ecb430725635c11b0e41d324182953c29.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-4
-</span>
-</div>
+\begin{align*}
+\det\begin{pmatrix} B & 0 \\ D & E_n \end{pmatrix} =& \det(B)\\
+\det\begin{pmatrix} E_m & 0 \\ 0 & C \end{pmatrix} =& \det(C)
+\end{align*}
 <p>
 Somit folgt aus dem <a href="20221224180209-multiplikativitat_der_determinante.html#ID-3755c9f1-a210-4ed2-981d-efabc6596635">Determinantenproduktsatz</a>:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20221224175800-kastchensatz_b48815032c41aedb0b9d5e6d5a2b3c4bb684d275.svg" alt="20221224175800-kastchensatz_b48815032c41aedb0b9d5e6d5a2b3c4bb684d275.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-5
-</span>
-</div>
+\begin{align*}
+\det \begin{pmatrix} B & 0 \\ D & 8 \end{pmatrix} =& \det \left( \begin{pmatrix} B & 0 \\ D & E_n \end{pmatrix} \begin{pmatrix} E_m & 0 \\ 0 & C \end{pmatrix} \right)\\
+=& \det(B) \cdot \det(C)
+\end{align*}
 </div>
 </div>
 </div>

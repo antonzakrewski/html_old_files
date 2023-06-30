@@ -9,35 +9,56 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">stetige Fortsetzung auf Ein-Punkt-Kompaktifizierten Räumen</h1>
-<div id="outline-container-orga64657b" class="outline-2">
-<h2 id="orga64657b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org602a386" class="outline-2">
+<h2 id="org602a386"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_46714ee494aa56936443be7a2665b7b17ead4ce7.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_549ef832452186a7de6b651c8890117b703a24a4.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_549ef832452186a7de6b651c8890117b703a24a4.svg" class="org-svg" /> <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakte</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a00f1697b4e4395dc0d73fab039a18db32840334.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a00f1697b4e4395dc0d73fab039a18db32840334.svg" class="org-svg" /> eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> auf den <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a2f59088d9ed9adf743abf30f02209901f077d78.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a2f59088d9ed9adf743abf30f02209901f077d78.svg" class="org-svg" />
-Seien ferner <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_3ca4fd2c6f71bf17209b542e09f875401aa165c2.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_3ca4fd2c6f71bf17209b542e09f875401aa165c2.svg" class="org-svg" /> die <a href="20230615-alexandroff_kompaktifizierung.html#ID-f633d162-1540-43ff-bb3e-8db5d0be3365">Alexandroff-Kompaktifizierung</a> so existiert eine <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung einer Abbildung</a> <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_471873a094634c40f813ac65965fb537db55cdfa.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_471873a094634c40f813ac65965fb537db55cdfa.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_d464d92afa89d8b731171441fd49e8c7a096df14.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_d464d92afa89d8b731171441fd49e8c7a096df14.svg" class="org-svg" /> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_a06f995d4e46925389e2808f85e5da331e3e5f3c.svg" class="org-svg" /> eine <a href="20230620-eigentliche_abbildung.html#ID-73b83cff-1036-4c11-8e82-74ce9931aa00">eigentliche Abbildung</a> ist.
+Seien \((X, \mathcal{T}_X)\) und \((Y, \mathcal{T}_Y)\) <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakte</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow Y\) eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> auf den <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-Raum</a> \(Y\)
+Seien ferner \(X',Y'\) die <a href="20230615-alexandroff_kompaktifizierung.html#ID-f633d162-1540-43ff-bb3e-8db5d0be3365">Alexandroff-Kompaktifizierung</a> so existiert eine <a href="20230116155456-stetige_fortsetzung_einer_funktion.html#ID-083c1b2a-35f7-4a75-9b08-91f6cf82e612">stetige Fortsetzung einer Abbildung</a> \(F: X' \rightarrow Y'\) mit \(F(\infty_x) = F(\infty_y)\) <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(f\) eine <a href="20230620-eigentliche_abbildung.html#ID-73b83cff-1036-4c11-8e82-74ce9931aa00">eigentliche Abbildung</a> ist.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcb57d3b" class="outline-2">
-<h2 id="orgcb57d3b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3699bdc" class="outline-2">
+<h2 id="org3699bdc"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_7659a651d2a794c1609d84bbc97d46395c5901a2.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_7659a651d2a794c1609d84bbc97d46395c5901a2.svg" class="org-svg" />  <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_e4cdd5595713433bbb69f523563f6921796349fa.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_e4cdd5595713433bbb69f523563f6921796349fa.svg" class="org-svg" />, dann existiert ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompaktes</a> <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_7234636eb96a2f21f547c149c39c8620c9a457ca.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_7234636eb96a2f21f547c149c39c8620c9a457ca.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_0abae117d4bce51b9e90f970be93bdfc7f998ba7.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_0abae117d4bce51b9e90f970be93bdfc7f998ba7.svg" class="org-svg" />
+Sei \(U \subseteq Y'\)  <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit \(\infty \in U\), dann existiert ein <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompaktes</a> \(K \subseteq Y\) mit \(U = Y' \setminus K\)
 Nach der Aussage über das <a href="20230228120202-komplement_des_urbilds.html#ID-5a1d2f09-7dcf-42cd-ac7c-53c9d515fa6d">Komplement des Urbilds</a> gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_66cd62f16f4ed57700242c7db2422c63320061f2.svg" alt="20230620-stetige_fortsetzung_auf_einpunktkompaktifizierten_raumen_66cd62f16f4ed57700242c7db2422c63320061f2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+X' \setminus f^{-1}[K] = f^{-1}[Y' \setminus K}
+\end{align*}
 <p>
 Nach der <a href="20230511112904-abgeschlossenheit_von_kompakten_mengen.html#ID-77b86d0c-e901-449a-9147-602be657eae5">Abgeschlossenheit von kompakten Mengen in Hausdorff Räumen</a> ist 
 </p>

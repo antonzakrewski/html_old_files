@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">B-Adische Darstellung der ganzen Zahlen</h1>
-<div id="outline-container-org3a6d283" class="outline-2">
-<h2 id="org3a6d283"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org09c640c" class="outline-2">
+<h2 id="org09c640c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230507214107-b_adische_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" alt="20230507214107-b_adische_darstellung_der_ganzen_zahlen_34bce3dfb283c9e138dd2c3a2b65a2061ecc11b0.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230507214107-b_adische_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" alt="20230507214107-b_adische_darstellung_der_ganzen_zahlen_02b29f0332a0f884f66ff9af6452f79595e9693c.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230507214107-b_adische_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" alt="20230507214107-b_adische_darstellung_der_ganzen_zahlen_061cdf8b8e9e09a0f294dff12256ef6553aa006b.svg" class="org-svg" />
-Dann ist für geeignete Koeffizienten <img src="file:///home/anton/html/ltximg/20230507214107-b_adische_darstellung_der_ganzen_zahlen_ce6aa85ee58847db6ebeebcc2743c8a30109e758.svg" alt="20230507214107-b_adische_darstellung_der_ganzen_zahlen_ce6aa85ee58847db6ebeebcc2743c8a30109e758.svg" class="org-svg" />
+Sei \(B \geq 3\) und \(a < 0 < b\) mit \(\vert \{a,...,b\} \vert = B\)
+Dann ist für geeignete Koeffizienten \((x_i)_{i \in \mathbb{N}_0}\)
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230507214107-b_adische_darstellung_der_ganzen_zahlen_db0f93026e5bee30f71ddd41600baf587ff499ba.svg" alt="20230507214107-b_adische_darstellung_der_ganzen_zahlen_db0f93026e5bee30f71ddd41600baf587ff499ba.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+k =& \sum_{i=0}^{\infty} x_i B^i
+\end{align*}
 <p>
 die B-Adische Darstellung
 siehe:

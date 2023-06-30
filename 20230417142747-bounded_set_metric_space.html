@@ -3,32 +3,53 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>bounded set (metric space)</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">bounded set (metric space)</h1>
-<div id="outline-container-org03e9ce5" class="outline-2">
-<h2 id="org03e9ce5"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgfd23092" class="outline-2">
+<h2 id="orgfd23092"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let <img src="ltximg/20230417142747-bounded_set_metric_space_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" alt="20230417142747-bounded_set_metric_space_88cdfd2ff89d5df26334d0d22a756d65c8e73ef6.svg" class="org-svg" /> be a <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metric space</a>.
-A <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subset</a> <img src="ltximg/20230417142747-bounded_set_metric_space_cb604e29dd9cf944cc4f964b91e70e26f2006d4c.svg" alt="20230417142747-bounded_set_metric_space_cb604e29dd9cf944cc4f964b91e70e26f2006d4c.svg" class="org-svg" /> is bounded, if there exists an <img src="ltximg/20230417142747-bounded_set_metric_space_3517b2929844586aa3810d7490d4b5b0b3f29628.svg" alt="20230417142747-bounded_set_metric_space_3517b2929844586aa3810d7490d4b5b0b3f29628.svg" class="org-svg" /> such that for each <img src="ltximg/20230417142747-bounded_set_metric_space_f6ae182abbd75302a92ee53ba80755f25d792a0b.svg" alt="20230417142747-bounded_set_metric_space_f6ae182abbd75302a92ee53ba80755f25d792a0b.svg" class="org-svg" /> following holds true:
+Let \((M,d)\) be a <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metric space</a>.
+A <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subset</a> \(S \subseteq M\) is bounded, if there exists an \(r \in \mathbb{R}\) such that for each \(s,s' \in S\) following holds true:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="ltximg/20230417142747-bounded_set_metric_space_d19d2ed4badc16fa1fad46414ce4db91461968ae.svg" alt="20230417142747-bounded_set_metric_space_d19d2ed4badc16fa1fad46414ce4db91461968ae.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+d(s,s') < r
+\end{align*}
 </div>
 </div>
 </div>

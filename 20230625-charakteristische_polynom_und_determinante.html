@@ -9,37 +9,105 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakteristische Polynom und Determinante</h1>
-<div id="outline-container-orge83c9ad" class="outline-2">
-<h2 id="orge83c9ad"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1f875ab" class="outline-2">
+<h2 id="org1f875ab"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230625-charakteristische_polynom_und_determinante_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" alt="20230625-charakteristische_polynom_und_determinante_e6fb87d503b9eb91ddb115251cc34c9f906cbee7.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="file:///home/anton/html/ltximg/20230625-charakteristische_polynom_und_determinante_1e982af5abc9cd18413d7907dc37e502417305a4.svg" alt="20230625-charakteristische_polynom_und_determinante_1e982af5abc9cd18413d7907dc37e502417305a4.svg" class="org-svg" /> eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a>.
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(A \in K^{n \times n}\) eine <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">matrix</a>.
 Dann gilt für das <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristische Polynom</a>   
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230625-charakteristische_polynom_und_determinante_6b5fed1c64604a58165830a8d53827b2d239f6ae.svg" alt="20230625-charakteristische_polynom_und_determinante_6b5fed1c64604a58165830a8d53827b2d239f6ae.svg" class="org-svg" />
-</span>
+\begin{align*}
+\chi_A(x) = x^n + ... + (-1)^n \mathrm{det}(A)
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org54022f8" class="outline-2">
-<h2 id="org54022f8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8b7319d" class="outline-2">
+<h2 id="org8b7319d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt duch sukzessive Anwendung der <a href="20230121215031-multilineare_abbildung.html#ID-cb913b22-e3ec-42c8-9049-9228735bbed4">Multilinearität</a> 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230625-charakteristische_polynom_und_determinante_c258b13a13aacdbc392839c2da3cc62b312eea0a.svg" alt="20230625-charakteristische_polynom_und_determinante_c258b13a13aacdbc392839c2da3cc62b312eea0a.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+=& \det \begin{pmatrix}
+ x - \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n} \\
+- \alpha_{2,1} & x - \alpha_{2,2} & \dots & - \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+- \alpha_{n,1} & - \alpha_{n,2} & \dots & x - \alpha_{n,n} \\
+\end{pmatrix} \\
+=& 
+\det \begin{pmatrix}
+ x  & 0 & \dots & 0 \\
+- \alpha_{2,1} & x - \alpha_{2,2} & \dots & - \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+- \alpha_{n,1} & - \alpha_{n,2} & \dots & x - \alpha_{n,n} \\
+\end{pmatrix} 
++ 
+\det \begin{pmatrix}
+- \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n} \\
+0 & x 0 & \dots & 0 \\
+\vdots & \vdots & \vdots & \ddots \\
+- \alpha_{n,1} & - \alpha_{n,2} & \dots & x - \alpha_{n,n} \\
+\end{pmatrix} 
++ ... \\
++&
+\det \begin{pmatrix}
+ - \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n} \\
+- \alpha_{2,1} & - \alpha_{2,2} & \dots & - \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+0 & 0 & \dots & x \\
+\end{pmatrix} 
++
+\det \begin{pmatrix}
+- \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n} \\
+- \alpha_{2,1} & - \alpha_{2,2} & \dots & - \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+- \alpha_{n,1} & - \alpha_{n,2} & \dots & - \alpha_{n,n} \\
+\end{pmatrix} \\
+=& x^n + ... + 
+\det \begin{pmatrix}
+- \alpha_{1,1} & - \alpha_{1,2} & \dots & -\alpha_{1,n} \\
+- \alpha_{2,1} & - \alpha_{2,2} & \dots & - \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+- \alpha_{n,1} & - \alpha_{n,2} & \dots & - \alpha_{n,n} \\
+\end{pmatrix} \\
+=& x^n + ... + (-1)^{n}
+\det \begin{pmatrix}
+ \alpha_{1,1} &  \alpha_{1,2} & \dots & \alpha_{1,n} \\
+ \alpha_{2,1} &  \alpha_{2,2} & \dots &  \alpha_{2,n} \\
+\vdots & \vdots & \vdots & \ddots \\
+ \alpha_{n,1} &  \alpha_{n,2} & \dots &  \alpha_{n,n} \\
+\end{pmatrix} \\
+=& x^n + ... + (-1)^{n} \det(A)
+\end{align*}
 </div>
 </div>
 </div>

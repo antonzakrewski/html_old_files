@@ -9,27 +9,49 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Alternierende Gruppe als Normalteiler</h1>
-<div id="outline-container-orgf902936" class="outline-2">
-<h2 id="orgf902936"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org74f01cd" class="outline-2">
+<h2 id="org74f01cd"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20221225142055-alternierende_gruppe_als_normalteiler_d77687f6d7b5dfc4ccf76c56598a877ea710010c.svg" alt="20221225142055-alternierende_gruppe_als_normalteiler_d77687f6d7b5dfc4ccf76c56598a877ea710010c.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20221225142055-alternierende_gruppe_als_normalteiler_099a77d93774599efe238754757ea80bf0afcb7c.svg" alt="20221225142055-alternierende_gruppe_als_normalteiler_099a77d93774599efe238754757ea80bf0afcb7c.svg" class="org-svg" /> die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und <img src="file:///home/anton/html/ltximg/20221225142055-alternierende_gruppe_als_normalteiler_dda898ae99ea1c012eca182db39e6f89994815c4.svg" alt="20221225142055-alternierende_gruppe_als_normalteiler_dda898ae99ea1c012eca182db39e6f89994815c4.svg" class="org-svg" /> die <a href="20221225141902-alternieredne_gruppe.html#ID-d4aeb80b-33a1-4ae6-a923-8437f50d7cf3">Alternierende Gruppe</a>.
+Sei \(n \geq 2\), \(S_n\) die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a> und \(A_n\) die <a href="20221225141902-alternieredne_gruppe.html#ID-d4aeb80b-33a1-4ae6-a923-8437f50d7cf3">Alternierende Gruppe</a>.
 dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221225142055-alternierende_gruppe_als_normalteiler_22daa9895edea9b12e646dbd988a7e8b14b4c773.svg" alt="20221225142055-alternierende_gruppe_als_normalteiler_22daa9895edea9b12e646dbd988a7e8b14b4c773.svg" class="org-svg" />
-</span>
+\begin{align*}
+A_n \trianglelefteq S_n
+\end{align*}
 </div>
 </div>
-</div>
-<div id="outline-container-org10bbe8d" class="outline-2">
-<h2 id="org10bbe8d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8c0b098" class="outline-2">
+<h2 id="org8c0b098"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Konstruktion und <a href="20221210195102-lemma_uber_den_kern_eines_gruppenhomomorphismus_als_normalteiler.html#ID-fa59cf1e-73d8-40c8-809f-77cc9605bbe2">Lemma über den Kern eines Gruppenhomomorphismus als Normalteiler</a> 

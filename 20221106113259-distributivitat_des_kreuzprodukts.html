@@ -9,46 +9,66 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Distributivität des Kreuzprodukts</h1>
-<div id="outline-container-org70da8b2" class="outline-2">
-<h2 id="org70da8b2"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-org72db89e" class="outline-2">
+<h2 id="org72db89e"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Für das <a href="20210225213951-kreuzprodukt.html#ID-8a98e3bc-dfba-43c5-819d-8d1c5e4a5a81">Kreuzprodukt</a> und <img src="file:///home/anton/html/ltximg/20221106113259-distributivitat_des_kreuzprodukts_cf766940847c65f1b666e179e139374919236bf0.svg" alt="20221106113259-distributivitat_des_kreuzprodukts_cf766940847c65f1b666e179e139374919236bf0.svg" class="org-svg" /> gilt:
+Für das <a href="20210225213951-kreuzprodukt.html#ID-8a98e3bc-dfba-43c5-819d-8d1c5e4a5a81">Kreuzprodukt</a> und \(\vec{a},\vec{b},\vec{c} \in \mathbb{R}^3\) gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106113259-distributivitat_des_kreuzprodukts_3e768d6a89b950a0b0095d491b33523cc9fc5bab.svg" alt="20221106113259-distributivitat_des_kreuzprodukts_3e768d6a89b950a0b0095d491b33523cc9fc5bab.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\vec{a} + \vec{b}) \times \vec{c} =& \vec{a} \times \vec{c} + \vec{b} \times \vec{c} 
+\end{align*}
 </div>
 </div>
 
-<div id="outline-container-orgfc7dafd" class="outline-2">
-<h2 id="orgfc7dafd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc905405" class="outline-2">
+<h2 id="orgc905405"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Seien
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106113259-distributivitat_des_kreuzprodukts_5512177ae8133df0569763c2882e839c4fca704e.svg" alt="20221106113259-distributivitat_des_kreuzprodukts_5512177ae8133df0569763c2882e839c4fca704e.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\vec{a} =& \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}  \\
+\vec{b} =& \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}  \\
+\vec{c} =& \begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix} 
+\end{align*}
 <p>
 Dann gilt:
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106113259-distributivitat_des_kreuzprodukts_22fea398678860450ff6cbe36f14e03cf7f4b559.svg" alt="20221106113259-distributivitat_des_kreuzprodukts_22fea398678860450ff6cbe36f14e03cf7f4b559.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+(\vec{a} + \vec{b}) \times \vec{c} =& \begin{pmatrix} (a_2 + b_2) \cdot c_3 - (a_3 + b_3) \cdot c_2 \\ (a_3 + b_3) \cdot c_1 - (a_1 + b_1) \cdot c_3 \\ (a_1 + b_1) \cdot c_2 - (a_2 + b_2) \cdot c_1 \end{pmatrix}  \\
+=& \begin{pmatrix} a_2c_3 - a_3c_2 \\ a_3c_1 - a_1c_3 \\ a_1c_2 - a_2c_1  \end{pmatrix} +  \begin{pmatrix} b_2c_3 - b_3c_2 \\ b_3c_1 - b_1c_3 \\ b_1c_2 - b_2c_1  \end{pmatrix} \\
+=& \vec{a} \times \vec{c} + \vec{b} \times \vec{c}
+\end{align*}
 </div>
 </div>
 </div>

@@ -9,21 +9,46 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Filtrierung von Umgebungen einer abgeschlossenen Menge in einem T4 Raum</h1>
-<div id="outline-container-org71e97c5" class="outline-2">
-<h2 id="org71e97c5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgabec88f" class="outline-2">
+<h2 id="orgabec88f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4</a>-<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Dann existiert für eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_16522993cf25e7c19758da00e0bb7640b10cf581.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_16522993cf25e7c19758da00e0bb7640b10cf581.svg" class="org-svg" /> von <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_984de4200c842fdbac8fd40a2a02731df811045b.svg" class="org-svg" /> eine <a href="20230605-filtration.html#ID-936d9bbe-e350-4775-a8b5-a9fd489ee465">Filtrierung</a> von <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_2762f6bb82878574bcf0fa2362d7acdc16df9532.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230605-stapeln_von_umgebungen_in_einem_t4_raum_973008e20e3419bc4996af9cde0a4782fa0b3bd8.svg" alt="20230605-stapeln_von_umgebungen_in_einem_t4_raum_973008e20e3419bc4996af9cde0a4782fa0b3bd8.svg" class="org-svg" />, welche 
+Sei \((X, \mathcal{T})\) ein <a href="20230522175136-t4_raum.html#ID-77ba69ea-9fa2-44a3-b922-2031bbb40d8d">T4</a>-<a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Dann existiert für eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U_A\) von \(A\) eine <a href="20230605-filtration.html#ID-936d9bbe-e350-4775-a8b5-a9fd489ee465">Filtrierung</a> von <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(U_i\) mit \(U_a \supseteq U_1\), welche 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcf021c8" class="outline-2">
-<h2 id="orgcf021c8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7c52b30" class="outline-2">
+<h2 id="org7c52b30"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt durch:

@@ -9,25 +9,50 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">lokalendliche Überdeckung impliziert punktendliche Überdeckung</h1>
-<div id="outline-container-orgc3b5a1b" class="outline-2">
-<h2 id="orgc3b5a1b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org7c31b2b" class="outline-2">
+<h2 id="org7c31b2b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_c9034571446a33f6c8dcd374b1f304165db25f1e.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_c9034571446a33f6c8dcd374b1f304165db25f1e.svg" class="org-svg" /> eine <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">lokalendliche Überdeckung</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_3add6517cb09d5811ae41c97791712e5c3d99e08.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_3add6517cb09d5811ae41c97791712e5c3d99e08.svg" class="org-svg" /> auch eine <a href="20230330231212-punktendliche_uberdeckung.html#ID-5627b50b-30ed-4bd1-8eff-65b46729b8c7">punktendliche Überdeckung</a>.
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((A_i)_{i \in I}\) eine <a href="20230330201224-lokalendliche_uberdeckung.html#ID-3d3c4568-277e-490d-a949-43ec881fd2ff">lokalendliche Überdeckung</a>.
+Dann ist \((A_i)\) auch eine <a href="20230330231212-punktendliche_uberdeckung.html#ID-5627b50b-30ed-4bd1-8eff-65b46729b8c7">punktendliche Überdeckung</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org06e07a7" class="outline-2">
-<h2 id="org06e07a7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd973853" class="outline-2">
+<h2 id="orgd973853"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" />, so existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_19e19f6e9979c9bb56e627418221844b747fff74.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_19e19f6e9979c9bb56e627418221844b747fff74.svg" class="org-svg" />, so dass bloß für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" /> gilt: <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_38281dd48622d38b0c166ab9c6aa3b33f972d0d6.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_38281dd48622d38b0c166ab9c6aa3b33f972d0d6.svg" class="org-svg" />
-Wegen <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_e22b0069b7777b79e8e570a79213a5d03bbc87c0.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_e22b0069b7777b79e8e570a79213a5d03bbc87c0.svg" class="org-svg" /> folgt dabei insbesondere auch, dass bloß <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <img src="file:///home/anton/html/ltximg/20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" alt="20230330231737-lokalendliche_uberdeckung_impliziert_punktendliche_uberdeckung_caf039c332c87a5044fe8a7c496e637852a67ca0.svg" class="org-svg" /> diese schneiden können.
+Sei \(x \in X\), so existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{U}(x)\), so dass bloß für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele \(A_i\) gilt: \(A_i \cap U \neq \emptyset\)
+Wegen \(\{x\} \subseteq U\) folgt dabei insbesondere auch, dass bloß <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele \(A_i\) diese schneiden können.
 </p>
 </div>
 </div>

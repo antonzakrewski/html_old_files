@@ -9,36 +9,58 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">feinere Topologie und T3a</h1>
-<div id="outline-container-org40265d7" class="outline-2">
-<h2 id="org40265d7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org43d9b75" class="outline-2">
+<h2 id="org43d9b75"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_987fd6a698b4971b162b0650342c979868277460.svg" alt="20230613-feinere_topologie_und_t3a_987fd6a698b4971b162b0650342c979868277460.svg" class="org-svg" /> ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_623f9ef40ef2d4932964f5028515cb40d6280c07.svg" alt="20230613-feinere_topologie_und_t3a_623f9ef40ef2d4932964f5028515cb40d6280c07.svg" class="org-svg" /> eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a>.
-Dann ist <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" alt="20230613-feinere_topologie_und_t3a_16bf0c5616c731e5de214703329c9d7da9e6fd64.svg" class="org-svg" /> ebenfalls ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-Raum</a> 
+Sei \((X, \mathcal{T})\) ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a> und \(\mathcal{T}' \supseteq \mathcal{T}\) eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a>.
+Dann ist \(\mathcal{T}'\) ebenfalls ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">Tychonoff-Raum</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org840e81f" class="outline-2">
-<h2 id="org840e81f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc973034" class="outline-2">
+<h2 id="orgc973034"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" alt="20230613-feinere_topologie_und_t3a_d1600c250cdcbf6afddfa8150717bf4eb72d710c.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" alt="20230613-feinere_topologie_und_t3a_bf4d12b861f9c1ff11455b4825fb3629e2a3daac.svg" class="org-svg" /> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Dann existiert nach Annahme eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_292f214c9aefcd7c8ad4f87dd384c4aad9ae5f3e.svg" alt="20230613-feinere_topologie_und_t3a_292f214c9aefcd7c8ad4f87dd384c4aad9ae5f3e.svg" class="org-svg" /> mit <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_1ded263327df86adf02b4ac641136e2acc8fbdff.svg" alt="20230613-feinere_topologie_und_t3a_1ded263327df86adf02b4ac641136e2acc8fbdff.svg" class="org-svg" />
-Nach der Aussage über eine <a href="20230313193949-feinere_topologie_und_identitatsabbildung.html#ID-90ffe82e-f945-4229-8bbb-59caedb1c535">Feinere Topologie und Identitätsabbildung</a> ist <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_44b333edda81164109e92e98dd27d79bb9c8b2ed.svg" alt="20230613-feinere_topologie_und_t3a_44b333edda81164109e92e98dd27d79bb9c8b2ed.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und somit ist <img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_072743b275f590abd2e996879bea4939e8a1cfe6.svg" alt="20230613-feinere_topologie_und_t3a_072743b275f590abd2e996879bea4939e8a1cfe6.svg" class="org-svg" /> als <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Komposition stetiger Abbildungen</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> mit 
+Sei \(x \in X\) und \(A \subseteq X\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
+Dann existiert nach Annahme eine <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(f: (X, \mathcal{T}) \rightarrow [0,1]\) mit \(f[A] = \{0\}, f(x) = 1\)
+Nach der Aussage über eine <a href="20230313193949-feinere_topologie_und_identitatsabbildung.html#ID-90ffe82e-f945-4229-8bbb-59caedb1c535">Feinere Topologie und Identitätsabbildung</a> ist \(\mathrm{id}: \mathcal{T}' \rightarrow \mathcal{T}\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> und somit ist \(f \circ \mathrm{id}\) als <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">Komposition stetiger Abbildungen</a> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> mit 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20230613-feinere_topologie_und_t3a_7b23181ee80a9edf034add7ccc81c3b217a24f30.svg" alt="20230613-feinere_topologie_und_t3a_7b23181ee80a9edf034add7ccc81c3b217a24f30.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{align*}
+(f \circ \mathrm{id})[A] =& \{0\} \\
+(f \circ \mathrm{id})(x) =& 1 
+\end{align*}
 </div>
 </div>
 </div>

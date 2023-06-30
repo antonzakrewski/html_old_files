@@ -9,22 +9,44 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Partielle Ableitung</h1>
-<div id="outline-container-orgc12f4a9" class="outline-2">
-<h2 id="orgc12f4a9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org5253feb" class="outline-2">
+<h2 id="org5253feb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Eine <a href="20220303084346-partielle_ableitung.html#ID-67ecd811-2335-4fe1-8693-87bf407cb057">Partielle Ableitung</a> in ist die <a href="20220303084101-richtungsableitung.html#ID-4bf38220-c604-4253-a2eb-7579626f53ac">Richtungsableitung</a> in Richtung eines Standardbasisvektors 
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220303084346-partielle_ableitung_87f5dabb314db6c467c7383889f6891f36026eaf.svg" alt="20220303084346-partielle_ableitung_87f5dabb314db6c467c7383889f6891f36026eaf.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{\partial F}{\partial x_i}(x)  \coloneqq (\partial_{e_i} F)(x) \in \mathrm{Hom}_{\mathbb{R}}(\mathbb{R}, \mathbb{R}^m)
+\end{align*}
 </div>
 </div>
 </div>

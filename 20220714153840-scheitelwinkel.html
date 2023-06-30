@@ -9,12 +9,37 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Scheitelwinkel</h1>
-<div id="outline-container-org5b280d0" class="outline-2">
-<h2 id="org5b280d0"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd2bc7e0" class="outline-2">
+<h2 id="orgd2bc7e0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien zwei sich schneidende Geraden g,h gegeben.
@@ -22,29 +47,37 @@ Dann sind zwei gegenüberliegende Winkel gleich groß
 </p>
 </div>
 </div>
-<div id="outline-container-org958b82e" class="outline-2">
-<h2 id="org958b82e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org63160f0" class="outline-2">
+<h2 id="org63160f0"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714153840-scheitelwinkel_8b776c38d9b748358a07d600a7f19fda14e695b2.svg" alt="20220714153840-scheitelwinkel_8b776c38d9b748358a07d600a7f19fda14e695b2.svg" class="org-svg" />
-</span>
-<span class="equation-label">
-1
-</span>
-</div>
+\begin{tikzpicture}
+\coordinate (g1) at (-3,2);
+\coordinate (g2) at (3,-2);
+\coordinate (h1) at (3,2) ;
+\coordinate (h2) at (-3,-2) ;
+\path[name path=p1] (g1) -- (g2);
+\path[name path=p2] (h1) -- (h2) ;
+\path[name intersections={of=p1 and p2, by=I}];
+% \draw[] (g1) -- (I) -- (h2) pic [draw=blue, "$\alpha$", angle radius=1.1cm] {angle=g1--I--h2} ;
+% \draw[] (g1) -- (I) -- (h1) pic [draw=green, "$\alpha'$", angle radius=1cm] {angle=h1--I--g1} ;
+% \draw[] (g2) -- (I) -- (h1) pic [draw=green, "$\alpha'$", angle radius=1cm] {angle=h1--I--g1} ;
+\draw[] (g1) -- (g2);
+\draw[] (h1) -- (h2);
+\draw[]
+   pic ["$\beta $", draw, angle radius=1.1cm,] {angle=g1--I--h2 } 
+   pic ["$\alpha $", draw, angle radius=0.9cm,] {angle=h2--I--g2 } 
+   pic ["$\alpha' $", draw, angle radius=1cm,] {angle=h1--I--g1 } ;
+\end{tikzpicture}
 
 
 <p>
 <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> über den Winkel einer Gerade
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20220714153840-scheitelwinkel_df5576e0bfbcafc76be0e45c5feb46d9c69a23ec.svg" alt="20220714153840-scheitelwinkel_df5576e0bfbcafc76be0e45c5feb46d9c69a23ec.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+180^\circ =& \alpha + \beta \\
+180^\circ =& \alpha' + \beta \\
+\Rightarrow \alpha =& \alpha'
+\end{align*}
 </div>
 </div>
 </div>

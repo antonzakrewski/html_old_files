@@ -9,23 +9,45 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Berechnung der Parallelen Komponente</h1>
-<div id="outline-container-org49a5450" class="outline-2">
-<h2 id="org49a5450"><span class="section-number-2">1.</span> Theorem</h2>
+<div id="outline-container-org9f9a366" class="outline-2">
+<h2 id="org9f9a366"><span class="section-number-2">1.</span> Theorem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien <img src="file:///home/anton/html/ltximg/20221106172347-berechnung_der_parallelen_komponente_20a99e68a7620721f1c027bc2bf042ad0c43275e.svg" alt="20221106172347-berechnung_der_parallelen_komponente_20a99e68a7620721f1c027bc2bf042ad0c43275e.svg" class="org-svg" /> <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a>
+Seien \(a, b\) <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektoren</a>
 Dann ist die parallele Komponente
 </p>
-
-<div class="equation-container">
-<span class="equation">
-<img src="file:///home/anton/html/ltximg/20221106172347-berechnung_der_parallelen_komponente_80abe5b21b2f22044124d19e5bf6cf763b455c16.svg" alt="20221106172347-berechnung_der_parallelen_komponente_80abe5b21b2f22044124d19e5bf6cf763b455c16.svg" class="org-svg" />
-</span>
-</div>
+\begin{align*}
+\frac{a \circ b}{\| b \|^2} \cdot b
+\end{align*}
 </div>
 </div>
 </div>
