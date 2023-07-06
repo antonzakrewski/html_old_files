@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineare Approximation</h1>
-<div id="outline-container-orgaeb1262" class="outline-2">
-<h2 id="orgaeb1262"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgaf38922" class="outline-2">
+<h2 id="orgaf38922"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(M,N\) <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und \(f: M \rightarrow N\) eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> 
@@ -52,7 +50,7 @@ f(x) \approx& f(x_0) + f'(x_0) \cdot (x - x_0) \\
 f(x) =& f(x_0) + f'(x_0) \cdot (x - x_0) + r(x)
 \end{align*}
 <p>
-mit dem <a href="20230116165512-restglied.html#ID-c026cee3-ddb3-4b3f-9651-259b312e4b3e">Restglied</a> \(r(x) \coloneqq s(x) - s(x_0)(x - x_0)\)
+mit dem <a href="20230116165512-restglied.html#ID-c026cee3-ddb3-4b3f-9651-259b312e4b3e">Restglied</a> \(r(x)  \coloneqq s(x) - s(x_0)(x - x_0)\)
 </p>
 </div>
 </div>

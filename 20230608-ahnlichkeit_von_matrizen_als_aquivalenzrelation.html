@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Ähnlichkeit von Matrizen als Äquivalenzrelation</h1>
-<div id="outline-container-org38ece1b" class="outline-2">
-<h2 id="org38ece1b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgf95fe3e" class="outline-2">
+<h2 id="orgf95fe3e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> \(R\) und \(A,B \in R^{n \times n}\) <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrizen</a>.
@@ -49,12 +47,12 @@ Dann ist die <a href="20230608-aquivalente_matrizen.html#ID-f05c96d0-f2e4-46e4-a
 </p>
 </div>
 </div>
-<div id="outline-container-org6b6f790" class="outline-2">
-<h2 id="org6b6f790"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org270d8da" class="outline-2">
+<h2 id="org270d8da"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfb1e47b" class="outline-3">
-<h3 id="orgfb1e47b"><span class="section-number-3">2.1.</span> symmetrie</h3>
+<div id="outline-container-org6b7b89e" class="outline-3">
+<h3 id="org6b7b89e"><span class="section-number-3">2.1.</span> symmetrie</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(B = S^{-1} \cdot A \cdot S\), so folgt durch Multiplikation mit \(S,S^{-1}\)
@@ -64,16 +62,16 @@ S \cdot B \cdot S^{-1} =& A
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org82a63e4" class="outline-3">
-<h3 id="org82a63e4"><span class="section-number-3">2.2.</span> reflexivität</h3>
+<div id="outline-container-org17cd151" class="outline-3">
+<h3 id="org17cd151"><span class="section-number-3">2.2.</span> reflexivität</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt \(A = E \cdot A \cdot E\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9476f63" class="outline-3">
-<h3 id="org9476f63"><span class="section-number-3">2.3.</span> transitivität</h3>
+<div id="outline-container-orga10cb61" class="outline-3">
+<h3 id="orga10cb61"><span class="section-number-3">2.3.</span> transitivität</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Seien \(A,B,C\) gegeben mit 

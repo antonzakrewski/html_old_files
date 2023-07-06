@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,31 +38,31 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Vereinigung von beliebig vielen Mengen beim Urbild</h1>
-<div id="outline-container-orga9798b9" class="outline-2">
-<h2 id="orga9798b9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbc3034d" class="outline-2">
+<h2 id="orgbc3034d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(f: X \rightarrow Y\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und \(y_i \subseteq Y\) eine beliebige <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> und \(x_i \coloneqq f^{-1}[y_i]\), so folgt:
+Sei \(f: X \rightarrow Y\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> und \(y_i \subseteq Y\) eine beliebige <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> und \(x_i  \coloneqq f^{-1}[y_i]\), so folgt:
 </p>
 \begin{align*}
 f^{-1} \left [\bigcup_{i \in I} y_i \right] = \bigcup_{i \in I} x_i
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org9d920e6" class="outline-2">
-<h2 id="org9d920e6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf459d9c" class="outline-2">
+<h2 id="orgf459d9c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb8574ba" class="outline-3">
-<h3 id="orgb8574ba"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org2197252" class="outline-3">
+<h3 id="org2197252"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(x \in f^{-1}\left [ \bigcup_{i \in I} y_i \right]\), so existiert ein \(y \in \bigcup_{i \in I} y_i\) mit \(x \in f^{-1}(y)\) und damit auch \(y \in y_j\)  bzw. \(x \in x_j\) und damit auch \(x \in \bigcup_{i \in I} x_i\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2f6175d" class="outline-3">
-<h3 id="org2f6175d"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgfc8bb45" class="outline-3">
+<h3 id="orgfc8bb45"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(x \in \bigcup_{i \in I} x_i\), so existiert ein \(x_j\) mit \(x \in x_j\)

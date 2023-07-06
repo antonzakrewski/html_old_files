@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Allgemeine Distributivgesetz für Vereinigung und Schnitt</h1>
-<div id="outline-container-org3b8f51c" class="outline-2">
-<h2 id="org3b8f51c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org2c24fa4" class="outline-2">
+<h2 id="org2c24fa4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(A_i \subseteq M\) bzw. \(B_j \subseteq M\) <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Mengenfamilien</a>.
@@ -52,12 +50,12 @@ Dann gilt:
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgc13c964" class="outline-2">
-<h2 id="orgc13c964"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0a8bf20" class="outline-2">
+<h2 id="org0a8bf20"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org123ddf2" class="outline-3">
-<h3 id="org123ddf2"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org7319a66" class="outline-3">
+<h3 id="org7319a66"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(a \in \bigcup_{i \in I} A_i \cap \bigcup_{j \in J} B_j\), so existieren \(i \in I\) bzw. \(j \in J\) mit \(a \in A_i, a \in B_j\)
@@ -65,8 +63,8 @@ Damit folgt \(a \in A_i \cap B_j \subseteq \bigcup_{(i,j) \in I \times J} A_i \c
 </p>
 </div>
 </div>
-<div id="outline-container-orga010212" class="outline-3">
-<h3 id="orga010212"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgf8ca160" class="outline-3">
+<h3 id="orgf8ca160"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(a \in \bigcup_{(i,j) \in I \times J} A_i \cap B_j\), so existiert ein \((i,j) \in I \times J\) mit \(a \in A_i \cap B_j\).

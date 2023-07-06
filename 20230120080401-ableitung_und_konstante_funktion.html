@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung und konstante Funktion</h1>
-<div id="outline-container-org696943f" class="outline-2">
-<h2 id="org696943f"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orged225f4" class="outline-2">
+<h2 id="orged225f4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(f: I \rightarrow \mathbb{R}\) eine <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> über einem <a href="20220105232221-offenes_intervall.html#ID-ff9b0b3b-6225-430d-8b42-196a1257791d">Offenem Intervall</a> \(I\), so folgt, dass folgende Aussagen äquivalent sind:
@@ -51,22 +49,22 @@ f'(0) = 0 \Leftrightarrow f(x) = c
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgb14a5f7" class="outline-2">
-<h2 id="orgb14a5f7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb1cc435" class="outline-2">
+<h2 id="orgb1cc435"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org6d6dc0d" class="outline-3">
-<h3 id="org6d6dc0d"><span class="section-number-3">2.1.</span> \(\Leftarrow\)</h3>
+<div id="outline-container-org7c7f898" class="outline-3">
+<h3 id="org7c7f898"><span class="section-number-3">2.1.</span> \(\Leftarrow\)</h3>
 <div class="outline-text-3" id="text-2-1">
 \begin{align*}
-f'(x) \coloneqq& \lim_{\delta \to 0}\left(\frac{f(x + \delta) - f(x)}{\delta}\right) \\
+f'(x)  \coloneqq& \lim_{\delta \to 0}\left(\frac{f(x + \delta) - f(x)}{\delta}\right) \\
 =& \lim_{\delta \to 0}\left(\frac{0}{\delta}\right) \\
 =& 0
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org07c9d43" class="outline-3">
-<h3 id="org07c9d43"><span class="section-number-3">2.2.</span> \(\Rightarrow\)</h3>
+<div id="outline-container-org2bbfd43" class="outline-3">
+<h3 id="org2bbfd43"><span class="section-number-3">2.2.</span> \(\Rightarrow\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Nach der <a href="20230120074734-monotonie_einer_funktion_und_deren_ableitung.html#ID-a2ac5ab8-447c-445a-ae38-e15dea3f5454">Monotonie einer Funktion und deren Ableitung</a> folgt:

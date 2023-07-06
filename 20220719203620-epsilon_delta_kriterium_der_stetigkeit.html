@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Epsilon-Delta Kriterium der Stetigkeit</h1>
-<div id="outline-container-org517589c" class="outline-2">
-<h2 id="org517589c"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5bdc176" class="outline-2">
+<h2 id="org5bdc176"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(M,N\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Räume</a> und sei \(f: M \rightarrow N\) eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
@@ -52,8 +50,8 @@ Seien \(M,N\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc
 Für jedes \(\varepsilon > 0\) gibt es ein \(\delta > 0\), so dass gilt: \(\vert x - x_0\vert < \delta \Rightarrow \vert f(x) - f(x_0)\vert < \varepsilon\)
 </p>
 </div>
-<div id="outline-container-org84178a9" class="outline-3">
-<h3 id="org84178a9"><span class="section-number-3">1.1.</span> Formale</h3>
+<div id="outline-container-orge03923b" class="outline-3">
+<h3 id="orge03923b"><span class="section-number-3">1.1.</span> Formale</h3>
 <div class="outline-text-3" id="text-1-1">
 \begin{align*}
 \forall \varepsilon >0\,\exists \delta >0\,\forall x\in M:|x-x_{0}|<\delta \implies |f(x)-f(x_{0})|<\varepsilon

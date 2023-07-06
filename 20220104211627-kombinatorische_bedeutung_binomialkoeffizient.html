@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,31 +38,31 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Kombinatorische Bedeutung: Binomialkoeffizient</h1>
-<div id="outline-container-org17256f7" class="outline-2">
-<h2 id="org17256f7"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4c969af" class="outline-2">
+<h2 id="org4c969af"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Anzahl der k-<a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">elementigen</a> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> einer n-<a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">elementigen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist \(\binom{n}{k}\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7338461" class="outline-2">
-<h2 id="org7338461"><span class="section-number-2">2.</span> <a href="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent.html#ID-49075170-19e6-4307-b34d-3374eced6f78">Beweis: Kombinatorische Bedeutung Binomialkoeffizent</a></h2>
+<div id="outline-container-orge73d4d7" class="outline-2">
+<h2 id="orge73d4d7"><span class="section-number-2">2.</span> <a href="20220104212653-beweis_kombinatorische_bedeutung_binomialkoeffizent.html#ID-49075170-19e6-4307-b34d-3374eced6f78">Beweis: Kombinatorische Bedeutung Binomialkoeffizent</a></h2>
 </div>
-<div id="outline-container-orge518926" class="outline-2">
-<h2 id="orge518926"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-org8ed7f6a" class="outline-2">
+<h2 id="org8ed7f6a"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org1c696fa" class="outline-3">
-<h3 id="org1c696fa"><span class="section-number-3">3.1.</span> durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">vollständige Induktion</a></h3>
+<div id="outline-container-orgf940c0e" class="outline-3">
+<h3 id="orgf940c0e"><span class="section-number-3">3.1.</span> durch <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">vollständige Induktion</a></h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-orgfee1851" class="outline-4">
-<h4 id="orgfee1851"><span class="section-number-4">3.1.1.</span> Induktionsanfang</h4>
+<div id="outline-container-orga8e99e4" class="outline-4">
+<h4 id="orga8e99e4"><span class="section-number-4">3.1.1.</span> Induktionsanfang</h4>
 <div class="outline-text-4" id="text-3-1-1">
 </div>
-<div id="outline-container-org3a15b48" class="outline-5">
-<h5 id="org3a15b48"><span class="section-number-5">3.1.1.1.</span> Leere Menge</h5>
+<div id="outline-container-org075fb35" class="outline-5">
+<h5 id="org075fb35"><span class="section-number-5">3.1.1.1.</span> Leere Menge</h5>
 <div class="outline-text-5" id="text-3-1-1-1">
 <ul class="org-ul">
 <li>bloß <a href="20211226215449-leere_menge.html#ID-abf22513-8cde-4019-8690-8b02edd4337d">Leere Menge</a> als (nicht-echte) <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a></li>
@@ -77,7 +75,7 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org8cf337e"></a>Einelementige Menge<br />
+<li><a id="orgd65f8f4"></a>Einelementige Menge<br />
 <div class="outline-text-6" id="text-3-1-1-1-1">
 <ul class="org-ul">
 <li><a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>  von \(\{A_1\}\):
@@ -90,8 +88,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 </li>
 </ol>
 </div>
-<div id="outline-container-org530e02d" class="outline-5">
-<h5 id="org530e02d"><span class="section-number-5">3.1.1.2.</span> k</h5>
+<div id="outline-container-orge5266c7" class="outline-5">
+<h5 id="orge5266c7"><span class="section-number-5">3.1.1.2.</span> k</h5>
 <div class="outline-text-5" id="text-3-1-1-2">
 <p>
 Triviale Fälle
@@ -106,8 +104,8 @@ Triviale Fälle
 </div>
 </div>
 
-<div id="outline-container-org99bac22" class="outline-4">
-<h4 id="org99bac22"><span class="section-number-4">3.1.2.</span> Induktionsschritt</h4>
+<div id="outline-container-org53ef839" class="outline-4">
+<h4 id="org53ef839"><span class="section-number-4">3.1.2.</span> Induktionsschritt</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 über <a href="20220106222835-binomialkoeffizient_hilfssatz.html#ID-3f28b90e-18b5-420b-88e8-2794157bc002">Binomialkoeffizient - Hilfssatz</a>
@@ -136,8 +134,8 @@ Annahme:
 </div>
 </div>
 
-<div id="outline-container-org269ad64" class="outline-3">
-<h3 id="org269ad64"><span class="section-number-3">3.2.</span> Alternativ</h3>
+<div id="outline-container-orga904517" class="outline-3">
+<h3 id="orga904517"><span class="section-number-3">3.2.</span> Alternativ</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 TODO aus Königsberger

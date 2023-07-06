@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierung von einer metrisch induzierten, feineren Topologie</h1>
-<div id="outline-container-org604dcfa" class="outline-2">
-<h2 id="org604dcfa"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc6f05e6" class="outline-2">
+<h2 id="orgc6f05e6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(M\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(d,d'\) <a href="20220716173517-metrik.html#ID-0aa21afc-5f24-4618-a61e-e5ebf2e9640c">Metriken</a> auf \(M\).
@@ -53,15 +51,15 @@ Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-097
 </ul>
 </div>
 </div>
-<div id="outline-container-org640e935" class="outline-2">
-<h2 id="org640e935"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org10c91c9" class="outline-2">
+<h2 id="org10c91c9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(\mathcal{T}\) die von \(d\) und \(\mathcal{T}'\) die von \(d'\) <a href="20230222171645-von_einer_metrik_induzierte_topologie.html#ID-69ce8957-4373-4cbd-ae36-9da730675f0d">induzierte Topologie</a> 
 </p>
 </div>
-<div id="outline-container-org6a3bde0" class="outline-3">
-<h3 id="org6a3bde0"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org4f2a60e" class="outline-3">
+<h3 id="org4f2a60e"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(O \in \mathcal{T}\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a>, so existiert für \(o \in O\) ein \(\varepsilon > 0\), so dass \(B_{\varepsilon, d}(o) \subseteq O\).
@@ -76,12 +74,12 @@ d.h. \(O\) ist auch in \(\mathcal{T}'\) offen
 </p>
 </div>
 </div>
-<div id="outline-container-orgdbbdf64" class="outline-3">
-<h3 id="orgdbbdf64"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgd984901" class="outline-3">
+<h3 id="orgd984901"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(\mathcal{T} \subseteq \mathcal{T}'\) und \(m \in M, \varepsilon > 0\).
-Es folgt, dass \(O \coloneqq B_{\varepsilon,d}(m)\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> in \(\mathcal{T}\) ist und damit auch in \(\mathcal{T}'\), d.h. für alle \(o \in O\) &#x2013; und damit insbesondere für \(m \in M\) &#x2013; existiert ein \(r > 0\), so dass \(B_{r,d'}(m) \subseteq B_{\varepsilon,d}(m)\)
+Es folgt, dass \(O  \coloneqq B_{\varepsilon,d}(m)\) <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offen</a> in \(\mathcal{T}\) ist und damit auch in \(\mathcal{T}'\), d.h. für alle \(o \in O\) &#x2013; und damit insbesondere für \(m \in M\) &#x2013; existiert ein \(r > 0\), so dass \(B_{r,d'}(m) \subseteq B_{\varepsilon,d}(m)\)
 </p>
 </div>
 </div>

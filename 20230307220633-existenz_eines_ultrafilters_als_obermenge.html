@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz eines Ultrafilters als Obermenge</h1>
-<div id="outline-container-org48d2214" class="outline-2">
-<h2 id="org48d2214"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1793af9" class="outline-2">
+<h2 id="org1793af9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> und \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> auf \(X\).
@@ -50,20 +48,20 @@ Dabei wird das <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f86-a
 </p>
 </div>
 </div>
-<div id="outline-container-orgb644024" class="outline-2">
-<h2 id="orgb644024"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org3a3b721" class="outline-2">
+<h2 id="org3a3b721"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Betrachten wir die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> 
 </p>
 \begin{align*}
-\mathcal{U} \coloneqq \{\mathcal{F}' \subseteq \mathcal{P}(X) \vert \mathcal{F} \subseteq \mathcal{F}, \mathcal{F}' \text{ ist ein Filter }\}
+\mathcal{U}  \coloneqq \{\mathcal{F}' \subseteq \mathcal{P}(X) \vert \mathcal{F} \subseteq \mathcal{F}, \mathcal{F}' \text{ ist ein Filter }\}
 \end{align*}
 <p>
 Diese <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> ist <a href="20220817224852-halbordnung.html#ID-b8039fe5-626d-4ba3-93c7-71167141f163">partiell geordnet</a> bezüglich <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Inklusion</a>, <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a> wegen \(\mathcal{F}\) und für eine <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">Kette</a> \(\mathcal{F}_i\) mit \(\mathcal{F}_i \subseteq \mathcal{F}_{i+1}\) gilt, dass \(\mathcal{G}\) eine <a href="20220719121744-obere_schranke.html#ID-ee2b7319-ce49-43b1-9303-b954bbb45a6b">obere Schranke</a> ist mit
 </p>
 \begin{align*}
-\mathcal{G} \coloneqq \bigcup_{n \in \mathbb{N}}  \mathcal{F}_{n}
+\mathcal{G}  \coloneqq \bigcup_{n \in \mathbb{N}}  \mathcal{F}_{n}
 \end{align*}
 <p>
 Siehe: <a href="20230525125331-vereinigung_von_einer_kette_von_mengenfiltern_als_mengenfilter.html#ID-aa0b760d-0e6e-4a79-9996-26af4a3659cb">Vereinigung von einer Kette von Mengenfiltern als Mengenfilter</a> 

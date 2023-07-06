@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Hausdorff-Abstand auf den abgeschlossenen, kompakten Mengen als Metrik</h1>
-<div id="outline-container-org4eb6427" class="outline-2">
-<h2 id="org4eb6427"><span class="section-number-2">1.</span> Satz / Definition</h2>
+<div id="outline-container-orgb4b1e3e" class="outline-2">
+<h2 id="orgb4b1e3e"><span class="section-number-2">1.</span> Satz / Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a>.
@@ -52,12 +50,12 @@ d(A,B) = \mathrm{max}(\sup_{a \in A} \inf_{b \in B} d(a,b), \sup_{b \in B} \inf_
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org8bbc89b" class="outline-2">
-<h2 id="org8bbc89b"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc9fcdba" class="outline-2">
+<h2 id="orgc9fcdba"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org9cf11ec" class="outline-3">
-<h3 id="org9cf11ec"><span class="section-number-3">2.1.</span> Welldefined</h3>
+<div id="outline-container-org3fe137e" class="outline-3">
+<h3 id="org3fe137e"><span class="section-number-3">2.1.</span> Welldefined</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Da \(A,B\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> sind, ist \(\mathrm{diam}(A), \mathrm{diam}(B)\) beschränkt (vgl. <a href="20230511112800-beschranktheit_einer_kompakten_menge_in_einem_metrischen_raum.html#ID-ce59f04c-0461-4bee-b37d-f4f3f5b3d3fc">Beschränktheit einer kompakten Menge</a>)
@@ -79,12 +77,12 @@ Somit sind <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b0
 </p>
 </div>
 </div>
-<div id="outline-container-org4645541" class="outline-3">
-<h3 id="org4645541"><span class="section-number-3">2.2.</span> Positiv Definit</h3>
+<div id="outline-container-org57ebeea" class="outline-3">
+<h3 id="org57ebeea"><span class="section-number-3">2.2.</span> Positiv Definit</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orga5f1759" class="outline-4">
-<h4 id="orga5f1759"><span class="section-number-4">2.2.1.</span> Gleich \(0\)</h4>
+<div id="outline-container-org6fd43e5" class="outline-4">
+<h4 id="org6fd43e5"><span class="section-number-4">2.2.1.</span> Gleich \(0\)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Für \(A = B\) folgt für beliebiges \(a\) auch \(\inf_{a' \in A} d(a,a') = d(a,a) = 0\)
@@ -92,8 +90,8 @@ Somit folgt \(\sup_{a \in A} \inf_{b \in B} d(a,b) = 0\) und auch \(d(A,A) = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgacf6668" class="outline-4">
-<h4 id="orgacf6668"><span class="section-number-4">2.2.2.</span> Ungleich</h4>
+<div id="outline-container-org15dc350" class="outline-4">
+<h4 id="org15dc350"><span class="section-number-4">2.2.2.</span> Ungleich</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Sei \(A \neq B\), so existiert <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> ein \(a \in A, a \not\in B\) und es folgt dann \(\sup_{a \in A} \inf_{b \in B} d(a,b) \geq \inf_{b \in B} d(a,b) = d(a,B) > 0\) (vgl. <a href="20230320163744-positiver_abstand_zu_einer_abgeschlosenen_menge.html#ID-4cec4a2b-75eb-431a-ac92-9c4fe3e8619c">positiver Abstand zu einer Abgeschlosenen Menge</a>)
@@ -101,16 +99,16 @@ Sei \(A \neq B\), so existiert <a href="20220306182550-o_b_d_a.html#ID-e58125c9-
 </div>
 </div>
 </div>
-<div id="outline-container-orga08ca43" class="outline-3">
-<h3 id="orga08ca43"><span class="section-number-3">2.3.</span> Symmetrisch</h3>
+<div id="outline-container-org1af6388" class="outline-3">
+<h3 id="org1af6388"><span class="section-number-3">2.3.</span> Symmetrisch</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der Symmetrie vom Maximum
 </p>
 </div>
 </div>
-<div id="outline-container-org5a8125b" class="outline-3">
-<h3 id="org5a8125b"><span class="section-number-3">2.4.</span> dreiecksungleichung</h3>
+<div id="outline-container-orge33b864" class="outline-3">
+<h3 id="orge33b864"><span class="section-number-3">2.4.</span> dreiecksungleichung</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Seien \(A,B,C\) gegeben, so gilt

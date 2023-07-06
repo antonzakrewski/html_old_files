@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Entfernen eines Punktes des euklidischen Raums nicht homeomorph zum euklidischen Raum</h1>
-<div id="outline-container-org529d74a" class="outline-2">
-<h2 id="org529d74a"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0d2e649" class="outline-2">
+<h2 id="org0d2e649"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(\mathbb{R}^n\) mit der Standardtopologie und \(n > 1\) gegeben, dann gilt für \(a \in \mathbb{R}^n\):
@@ -51,12 +49,12 @@ Sei \(\mathbb{R}^n\) mit der Standardtopologie und \(n > 1\) gegeben, dann gilt 
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgdfa9db2" class="outline-2">
-<h2 id="orgdfa9db2"><span class="section-number-2">2.</span> Beweis - sehr messsy :(</h2>
+<div id="outline-container-org4f2a3ff" class="outline-2">
+<h2 id="org4f2a3ff"><span class="section-number-2">2.</span> Beweis - sehr messsy :(</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org27071f4" class="outline-3">
-<h3 id="org27071f4"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org92fb124" class="outline-3">
+<h3 id="org92fb124"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Angenommen es existiere ein <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a> \(f: \mathbb{R}^n \setminus 0 \rightarrow \mathbb{R}^n\)
@@ -70,11 +68,11 @@ $
 </p>
 </div>
 </div>
-<div id="outline-container-org63589c3" class="outline-3">
-<h3 id="org63589c3"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org2689d54" class="outline-3">
+<h3 id="org2689d54"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Da die <a href="20230413003915-einheitssphare.html#ID-5ad34a63-284c-4eec-919d-9a5a67d6b1ee">Einheitssphäre</a> \(S \coloneqq S_1(a) \setminus \{a\}\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist, ist auch damit auch das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> \(f[S_1(a) \setminus a]\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> und insbesondere <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">beschränkt</a> mit \(\mathrm{diam}(\lambda)\).
+Da die <a href="20230413003915-einheitssphare.html#ID-5ad34a63-284c-4eec-919d-9a5a67d6b1ee">Einheitssphäre</a> \(S  \coloneqq S_1(a) \setminus \{a\}\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist, ist auch damit auch das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> \(f[S_1(a) \setminus a]\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> und insbesondere <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">beschränkt</a> mit \(\mathrm{diam}(\lambda)\).
 Da zudem \(X \setminus B_1[a]\) nicht <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist, ist auch das <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> \(f[X \setminus B_1[a]\) nicht <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>, d.h. das äußere von \(X \setminus B_1[a]\) bildet nicht auf die Beschränkte <a href="20230525114518-pfadkomponente.html#ID-3295510f-254c-4af2-a40d-2374ef5c9929">Pfadkomponente</a> von \(\mathbb{R}^n \setminus f[S]\) ab - insbesondere muss auf genau eine Pfadkomponente abgebildet werden, da diese unter stetigen Abbildungen erhalten werden.
 Sei \(z \in f[X \setminus B_1[a] \setminus \{a\}]\)
 Dies ist aber ein Widerspruch, da nach a) ein \(x_n\) existiert, so dass \(d(f(x_n),f[S])\) hinreichend groß ist und damit auch ein <a href="20230308142118-weg.html#ID-7c6527d3-2217-4c14-85ab-d1545b889ba8">Weg</a> von \(x_n\) nach \(z\) durch Faktorisierung über \(f^{-1}\).

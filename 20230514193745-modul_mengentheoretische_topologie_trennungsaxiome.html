@@ -9,22 +9,20 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Modul: mengentheoretische Topologie - Trennungsaxiome</h1>
-<div id="outline-container-orgcfe3b52" class="outline-2">
-<h2 id="orgcfe3b52"><span class="section-number-2">1.</span> Aspekte</h2>
+<div id="outline-container-org883ba8c" class="outline-2">
+<h2 id="org883ba8c"><span class="section-number-2">1.</span> Aspekte</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org068339d" class="outline-3">
-<h3 id="org068339d"><span class="section-number-3">1.1.</span> Liste</h3>
+<div id="outline-container-org6af1e90" class="outline-3">
+<h3 id="org6af1e90"><span class="section-number-3">1.1.</span> Liste</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li><a href="20230227195003-t0_raum.html#ID-d6e07759-ca3c-4719-883b-6adf2b193256">T0-Raum</a></li>
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orge292eb9" class="outline-3">
-<h3 id="orge292eb9"><span class="section-number-3">1.2.</span> <a href="20230604-trennungseigenschaften_metrischer_raume.html#ID-6a500745-c29c-4a5d-a7e7-e9cd5478df67">Trennungseigenschaften metrischer Räume</a></h3>
+<div id="outline-container-orge4ceb9e" class="outline-3">
+<h3 id="orge4ceb9e"><span class="section-number-3">1.2.</span> <a href="20230604-trennungseigenschaften_metrischer_raume.html#ID-6a500745-c29c-4a5d-a7e7-e9cd5478df67">Trennungseigenschaften metrischer Räume</a></h3>
 </div>
-<div id="outline-container-org9b15ec6" class="outline-3">
-<h3 id="org9b15ec6"><span class="section-number-3">1.3.</span> Implikationen</h3>
+<div id="outline-container-orgbcd5f25" class="outline-3">
+<h3 id="orgbcd5f25"><span class="section-number-3">1.3.</span> Implikationen</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="20230207113438-aquivalente_charakterisierungen_eines_t1_raums.html#ID-54d65fd2-2a08-416e-b73a-cd9730e17129">Äquivalente Charakterisierungen eines T1-Raums</a></li>
@@ -58,8 +56,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org31ceef8" class="outline-3">
-<h3 id="org31ceef8"><span class="section-number-3">1.4.</span> anderes</h3>
+<div id="outline-container-org45997c5" class="outline-3">
+<h3 id="org45997c5"><span class="section-number-3">1.4.</span> anderes</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li><a href="20230522084214-einbettung_in_eine_produkttopologie.html#ID-8c24f3eb-24bd-4e92-999b-e1cf8d5b0f2b">Einbettung eines geeigneten topologischen Raums in eine Produkttopologie</a></li>
@@ -67,8 +65,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orgabcdeaf" class="outline-3">
-<h3 id="orgabcdeaf"><span class="section-number-3">1.5.</span> vererbung</h3>
+<div id="outline-container-orgd60ff45" class="outline-3">
+<h3 id="orgd60ff45"><span class="section-number-3">1.5.</span> vererbung</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
 <li><a href="20230525102150-vererbung_von_t0_eigenschaft.html#ID-9865371a-760d-4a82-b474-58528586c618">Vererbung von T0-Eigenschaft</a></li>
@@ -84,8 +82,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org6b15c9e" class="outline-3">
-<h3 id="org6b15c9e"><span class="section-number-3">1.6.</span> produkt</h3>
+<div id="outline-container-org4069472" class="outline-3">
+<h3 id="org4069472"><span class="section-number-3">1.6.</span> produkt</h3>
 <div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
 <li><a href="20230525102327-produkt_von_t0_raumen_als_t0_raum.html#ID-15729986-2045-4328-b95e-eca0be41b8cb">Produkt von T0-Räumen als T0-Raum</a></li>
@@ -95,17 +93,18 @@ tex: {packages: {'[+]': ['mathtools']}}
 <li><a href="20230525102420-produkt_von_t3a_raumen_als_t3a_raum.html#ID-c359628a-c9f2-457f-8961-8fa8b4dcc156">Produkt von T3a-Räumen als T3a-Raum</a></li>
 <li><a href="20230525102601-sorgenfrey_ebene_als_produkt_von_normalen_raumen_nicht_normal.html#ID-3e50359b-4bd7-4ca5-bd1b-aa61895b2b58">Produkt von normalen Räumen i.A. nicht normal</a></li>
 <li><a href="20230604-produkt_von_t4_raumen_i_a_nicht_t4.html#ID-8e273060-cb86-4825-adef-80340b73561f">Produkt von T4 Räumen i.A. nicht T4</a></li>
+<li><a href="20230525102601-sorgenfrey_ebene_als_produkt_von_normalen_raumen_nicht_normal.html#ID-3e50359b-4bd7-4ca5-bd1b-aa61895b2b58">Produkt von normalen Räumen i.A. nicht normal</a></li>
 <li><a href="20230525093653-injektion_von_den_offenen_mengen_auf_den_schnitt_mit_einer_dichten_teilmenge.html#ID-14745ab9-b5cd-4898-bbb4-205cc15d6354">Injektion von den offenen Mengen auf den Schnitt mit einer dichten Teilmenge</a></li>
 <li><a href="20230527083342-diskrete_teilmenge_machtiger_als_dichte_teilmenge_und_normaler_raum.html#ID-d60c2c4c-f389-462a-9c43-affcce51947d">diskrete Teilmenge mächtiger als dichte Teilmenge und normaler Raum</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4fa05a0" class="outline-3">
-<h3 id="org4fa05a0"><span class="section-number-3">1.7.</span> andere</h3>
+<div id="outline-container-orgd84abde" class="outline-3">
+<h3 id="orgd84abde"><span class="section-number-3">1.7.</span> andere</h3>
 <div class="outline-text-3" id="text-1-7">
 <ul class="org-ul">
-<li><a href="20230525121731-quotiententopologie_und_t1_raum.html#ID-11828c41-bdcc-4df6-832c-b00bc210e6dd">Quotiententopologie und T1-Raum</a></li>
-<li><a href="20230525121839-quotinetentopologie_und_hausdorff_eigenschaft.html#ID-0ce0fc23-33af-492e-a5ec-8f06ed168b29">Quotiententopologie und Hausdorff-Eigenschaft</a></li>
+<li><a href="20230525121731-quotiententopologie_und_t1_raum.html#ID-11828c41-bdcc-4df6-832c-b00bc210e6dd">Quotiententopologie und T1-Raum</a> - idk ?</li>
+<li><a href="20230525121839-quotinetentopologie_und_hausdorff_eigenschaft.html#ID-0ce0fc23-33af-492e-a5ec-8f06ed168b29">Quotiententopologie und Hausdorff-Eigenschaft</a> - idk ?</li>
 <li></li>
 
 <li></li>
@@ -120,8 +119,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org3539473" class="outline-3">
-<h3 id="org3539473"><span class="section-number-3">1.8.</span> Konstruktion von Abbildungen</h3>
+<div id="outline-container-orgb0202a7" class="outline-3">
+<h3 id="orgb0202a7"><span class="section-number-3">1.8.</span> Konstruktion von Abbildungen</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
 <li><a href="20230309100938-urysohnsches_lemma.html#ID-289a9c8b-1a5b-493a-bd59-936e07abd336">Urysohnsches Lemma</a></li>

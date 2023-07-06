@@ -5,15 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>hausdorffsche lokalkompaktheit und kleinere kompakte Umgebungen</title>
+<title>hausdorffsche Lokalkompaktheit und kleinere kompakte Umgebungen</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -39,58 +37,23 @@ tex: {packages: {'[+]': ['mathtools']}}
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">hausdorffsche lokalkompaktheit und kleinere kompakte Umgebungen</h1>
-<div id="outline-container-org12403d9" class="outline-2">
-<h2 id="org12403d9"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">hausdorffsche Lokalkompaktheit und kleinere kompakte Umgebungen</h1>
+<div id="outline-container-org24558a6" class="outline-2">
+<h2 id="org24558a6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20221122074811-hausdorff_raum.html#ID-f49f9b47-9f16-456f-837f-7b9656c46aba">Hausdorff-</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li>\(X\) ist <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a></li>
+<li>\(X\) ist <a href="20230705-strongly_locally_compact_space.html#ID-8c73dd5e-6919-48b0-ad92-bb1bc6353386">locally relative compact</a></li>
 <li>für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) von \(x\) existiert eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K\) von \(x\) mit \(K \subseteq U\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orga2a3166" class="outline-2">
-<h2 id="orga2a3166"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge0a2b55" class="outline-2">
+<h2 id="orge0a2b55"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-orga03cdbe" class="outline-3">
-<h3 id="orga03cdbe"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-Sei eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K\) sowie eine beliebige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) - <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> - gegeben.
-</p>
-</div>
-<div id="outline-container-org2a0fdd7" class="outline-4">
-<h4 id="org2a0fdd7"><span class="section-number-4">2.1.1.</span> \(\partial U \neq \emptyset\)</h4>
-<div class="outline-text-4" id="text-2-1-1">
-<p>
-Dann ist \(\partial (U \cap K)\) als <a href="20230222175154-rand_in_einer_topologie.html#ID-64116a9b-5bef-479f-8df7-b8edd8d49baa">Rand</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und damit <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> (vgl. <a href="20230606-aquivalente_charakterisierungen_eines_kompakten_raums.html#ID-fc901357-bff9-40fb-a460-d1a20ce81368">Kompaktheit und kompaktheit der abgeschlossenen Mengen</a>, <a href="20230305165431-rand_als_abgeschlossene_menge.html#ID-caf191d6-2835-4d86-9a51-006f0bfa5d68">Rand als abgeschlossene Menge</a>)
-Nach der <a href="20230617-trennung_von_kompakten_mengen_von_einem_punkt_in_einem_hausdorff_raum.html#ID-668cbb11-0dda-40fd-8dd9-24d0393f4bca">Trennung von kompakten Mengen von einem Punkt in einem Hausdorff-Raum</a> existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U'\) von \(\partial (U \cap K)\).
-</p>
-</div>
-</div>
-<div id="outline-container-orgdf8888d" class="outline-4">
-<h4 id="orgdf8888d"><span class="section-number-4">2.1.2.</span> \(\partial U = \emptyset\)</h4>
-<div class="outline-text-4" id="text-2-1-2">
-<p>
-Sei \(\partial U = \emptyset\), dann ist \(U\) <a href="20230207075730-clopen_set.html#ID-f8defda0-b0fc-49cb-ab4f-21c64be93fe5">clopen</a> (vgl. <a href="20230506202612-clopen_set_und_rand.html#ID-2d66a6c0-25d5-4ddb-a7a4-8449eae8169d">Clopen set und Rand</a>) und insbesondere <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
-Nach Annahme existiert eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K\) und aus der <a href="20230617-kompaktheit_des_schnitts_einer_kompakten_menge_mit_abgeschlossenen_mengen.html#ID-0ad37b54-e481-4fbf-88db-fd2ed7bc734f">Kompaktheit des Schnitts einer Kompakten Menge mit abgeschlossenen Mengen</a> ist \(U \cap K\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.
-Nach der <a href="20230222170745-abgeschlossenheit_des_umgebunggsystems_unter_durchschnitt.html#ID-1f498475-e454-4b98-9d9a-59716b58d5aa">Abgeschlossenheit des Umgebungssystems unter endlichem Durchschnitt</a> ist \(U \cap K\) auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org5e58922" class="outline-3">
-<h3 id="org5e58922"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-folgt, indem man z.B. \(X\) als <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) wählt und automatisch eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U'\) erhält
-</p>
-</div>
 </div>
 </div>
 </div>

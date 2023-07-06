@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Umkehrsatz</h1>
-<div id="outline-container-org24ac4f1" class="outline-2">
-<h2 id="org24ac4f1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8f8d1d7" class="outline-2">
+<h2 id="org8f8d1d7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(F: M \rightarrow N\) eine \(\mathcal{C}^k, k \geq 1\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">differenzierbare</a>  <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> (vgl. <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a>) von <a href="20221113224914-mannigfaltigkeit.html#ID-635e5ff5-f006-46bf-891a-869ae972d6e6">Mannigfaltigkeiten</a> und \(p \in M\).
@@ -53,16 +51,16 @@ Sei \(F: M \rightarrow N\) eine \(\mathcal{C}^k, k \geq 1\) <a href="20230601102
 </ol>
 </div>
 </div>
-<div id="outline-container-org2499b07" class="outline-2">
-<h2 id="org2499b07"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org70f1ec9" class="outline-2">
+<h2 id="org70f1ec9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org63c4c08" class="outline-3">
-<h3 id="org63c4c08"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-org44d9dc9" class="outline-3">
+<h3 id="org44d9dc9"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org61e8ae4" class="outline-4">
-<h4 id="org61e8ae4"><span class="section-number-4">2.1.1.</span> Schritt 1)</h4>
+<div id="outline-container-orga5236fe" class="outline-4">
+<h4 id="orga5236fe"><span class="section-number-4">2.1.1.</span> Schritt 1)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 vergleiche \(F\) nahe \(p\) mit einer Linearisierung in \(p\).
@@ -72,7 +70,7 @@ Für die <a href="20230629-affine_abbildung.html#ID-48332dc2-165a-4c8b-9d3f-5409
 A(x) = F(p) + \mathrm{d}F_p(x - p) 
 \end{align*}
 <p>
-Sei im folgenden \(L \coloneqq d F_p \in \mathrm{Aut}(M)\)
+Sei im folgenden \(L  \coloneqq d F_p \in \mathrm{Aut}(M)\)
 </p>
 
 <p>
@@ -132,8 +130,8 @@ damit ist \(f\) lokal <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e
 </p>
 </div>
 </div>
-<div id="outline-container-org8aa178f" class="outline-4">
-<h4 id="org8aa178f"><span class="section-number-4">2.1.2.</span> Schritt 2)</h4>
+<div id="outline-container-orga2ca05d" class="outline-4">
+<h4 id="orga2ca05d"><span class="section-number-4">2.1.2.</span> Schritt 2)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 D.h. lösen einer gleichung:
@@ -192,8 +190,8 @@ besser, falls
 
 
 
-<div id="outline-container-orgafe8d83" class="outline-3">
-<h3 id="orgafe8d83"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
+<div id="outline-container-org7ff8bc6" class="outline-3">
+<h3 id="org7ff8bc6"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus der Aussage über einen <a href="20230629-lokaler_diffeomorphismus_und_differential_als_isomorphismus.html#ID-e15278a4-ebb5-4a1c-91ef-16b73c941dc6">lokaler Diffeomorphismus und Differential als Isomorphismus</a>

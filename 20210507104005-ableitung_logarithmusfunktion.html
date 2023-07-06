@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,16 +38,16 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Ableitung Logarithmusfunktion</h1>
-<div id="outline-container-org673458d" class="outline-2">
-<h2 id="org673458d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge2e0b35" class="outline-2">
+<h2 id="orge2e0b35"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 \begin{equation}
 f(x) = \log_a(x) \Rightarrow f'(x) = \frac{1}{\ln{a} \cdot x}
 \end{equation}
 </div>
 </div>
-<div id="outline-container-org25987b6" class="outline-2">
-<h2 id="org25987b6"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org5ab77d2" class="outline-2">
+<h2 id="org5ab77d2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über die Anwendung der <a href="20210412125148-kettenregel.html#ID-2a4a6de8-4c4d-45bc-97f3-de18cfd2aac7">Kettenregel</a> und <a href="20211121134413-ableitung_exponentialfunktion.html#ID-37b13ba9-4b00-4576-ab98-9b5e4002cefc">Ableitung Exponentialfunktion</a> 
@@ -62,8 +60,8 @@ a^{\log_{a}(x)} =& x && \vert \frac{\mathrm{d}}{\mathrm{d}x} \\
 (\log_{a}(x))' =& \frac{1}{\ln(a) \cdot x} 
 \end{align*}
 </div>
-<div id="outline-container-orgff51250" class="outline-3">
-<h3 id="orgff51250"><span class="section-number-3">2.1.</span> Alternativ</h3>
+<div id="outline-container-org548cbfa" class="outline-3">
+<h3 id="org548cbfa"><span class="section-number-3">2.1.</span> Alternativ</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 über <a href="20220122083018-logarithmus_produkt_ausklammern.html#ID-134efe4c-e7c8-4c8f-9259-6c52e1033fea">Produkt ausklammern beim Logarithmus</a> und <a href="20220122082215-logarithmus_exponenten_ausklammern.html#ID-0c5fd494-1c44-438d-9439-212632000ff6">Ausklammern des Exponenten beim Logarithmus</a> und <a href="20220705164459-definition_eulersche_zahl_uber_grenzwert_der_ableitung.html#ID-3e901213-f395-4279-bde5-d0a8099c7eb0">Definition: Eulersche Zahl über Grenzwert der Ableitung</a> 

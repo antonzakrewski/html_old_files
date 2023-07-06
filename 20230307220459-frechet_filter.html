@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,30 +38,30 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Frechet-Filter</h1>
-<div id="outline-container-org716841a" class="outline-2">
-<h2 id="org716841a"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-orge8dbf95" class="outline-2">
+<h2 id="orge8dbf95"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Der Frechet-Filter ist durch die <a href="20230307220152-filterbasis.html#ID-b663b997-58b1-4959-89ec-725ed853a062">Filterbasis</a>
 </p>
 \begin{align*}
-\mathcal{B} \coloneqq \{(a, \infty) \vert a \in \mathbb{R}\}
+\mathcal{B}  \coloneqq \{(a, \infty) \vert a \in \mathbb{R}\}
 \end{align*}
 <p>
 definiert
 </p>
 </div>
 </div>
-<div id="outline-container-org517a66f" class="outline-2">
-<h2 id="org517a66f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge015661" class="outline-2">
+<h2 id="orge015661"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5131c9a" class="outline-3">
-<h3 id="org5131c9a"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
+<div id="outline-container-org75d545a" class="outline-3">
+<h3 id="org75d545a"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(F,F' \in \mathcal{B}\), so existieren \(a,a' \in \mathbb{R}\) mit \((a,\infty) = F, (a',\infty) = F'\)
-Für den <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> folgt dann für \(m \coloneqq \mathrm{max}(a,a')\)
+Für den <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitt</a> folgt dann für \(m  \coloneqq \mathrm{max}(a,a')\)
 </p>
 \begin{align*}
 (a, \infty)  \cap (a', \infty) = (m, \infty)

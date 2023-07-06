@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,14 +38,14 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Charakteristik (Algebra)</h1>
-<div id="outline-container-orgd9a6168" class="outline-2">
-<h2 id="orgd9a6168"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org5587f1c" class="outline-2">
+<h2 id="org5587f1c"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer Ring</a>, dann ist die Charakteristik \(\chi(K)\) ist definiert als:
 </p>
 \begin{align*}
-\chi(R) \coloneqq 
+\chi(R)  \coloneqq 
 \begin{cases}
 \mathrm{min}(m \in \mathbb{N} \vert \sum_{n=1}^{m} 1 = 0) & \mbox{if } \exists m : \sum_{n=1}^{m} = 0 \\
 0 & \mbox{else }  \\ 

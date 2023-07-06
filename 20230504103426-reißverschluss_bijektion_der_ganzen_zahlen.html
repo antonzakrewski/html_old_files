@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Reißverschluss-Bijektion der ganzen Zahlen</h1>
-<div id="outline-container-orgfbb25b1" class="outline-2">
-<h2 id="orgfbb25b1"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org46c48d8" class="outline-2">
+<h2 id="org46c48d8"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien ganze Zahlen \(a < 0 < b\) mit \(B \coloneqq \{a,...,0,...,b\}\) geben.
+Seien ganze Zahlen \(a < 0 < b\) mit \(B  \coloneqq \{a,...,0,...,b\}\) geben.
 Dann ist die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> bezüglich der <a href="20230507214107-b_adische_darstellung_der_ganzen_zahlen.html#ID-22e3300e-8b53-46ca-b394-f06e32f46dcf">B-Adischen Darstellung der ganzen Zahlen</a> 
 </p>
 \begin{align*}
@@ -56,12 +54,12 @@ eine <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589
 </p>
 </div>
 </div>
-<div id="outline-container-org65f097e" class="outline-2">
-<h2 id="org65f097e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org1217a05" class="outline-2">
+<h2 id="org1217a05"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org021aa29" class="outline-3">
-<h3 id="org021aa29"><span class="section-number-3">2.1.</span> Bijektion</h3>
+<div id="outline-container-orgd367809" class="outline-3">
+<h3 id="orgd367809"><span class="section-number-3">2.1.</span> Bijektion</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Da die $B$-Adische Darstellung der ganzen Zahlen <a href="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4e1bfde5-0693-45b4-9d0f-f29724e60ef1">eindeutig</a> ist und <a href="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4626d58f-b16e-4f7f-bcc2-3da5f8bb1bb6">existiert</a>, ist die Abbildung \(R\) <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a>.
@@ -70,7 +68,7 @@ Zusätzlich existiert die evidente, wieder wohldefinierte, <a href="202209272135
 \begin{align*}
 R^{-1}: \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} \\
 (\sum_{j=0}^{\infty} z_{2j} B^j, \sum_{j=0}^{\infty} y_{2j+1} B^j) \mapsto \sum_{i=0}^{\infty} x_i B^i \\
-x_i \coloneqq 
+x_i  \coloneqq 
     \begin{cases}
     z_{\frac{1}{2}i} & \mbox{if } i \equiv 0 \mod{2} \\
     y_{\frac{1}{2}(i+1)} & \mbox{else } 
@@ -78,8 +76,8 @@ x_i \coloneqq
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org68b4a30" class="outline-3">
-<h3 id="org68b4a30"><span class="section-number-3">2.2.</span> <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a></h3>
+<div id="outline-container-orgfdda001" class="outline-3">
+<h3 id="orgfdda001"><span class="section-number-3">2.2.</span> <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismus</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt aus der <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskreten Topologie</a> von \(\mathbb{Z} \times \mathbb{Z}, \mathbb{Z}\) und der <a href="20230227184616-charakterisierung_der_diskreten_topologie_anhand_der_stetigkeit.html#ID-11444ebf-4239-4bb1-8a5f-baad267831d7">Charakterisierung der diskreten Topologie anhand der Stetigkeit</a>.

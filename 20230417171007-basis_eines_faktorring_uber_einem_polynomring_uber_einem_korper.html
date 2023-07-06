@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,13 +38,13 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Basis eines Faktorring über einem Polynomring über einem Körper</h1>
-<div id="outline-container-org03a2b89" class="outline-2">
-<h2 id="org03a2b89"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9f39971" class="outline-2">
+<h2 id="org9f39971"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(K[X]\) der <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-87ba-85383825403f">Polynomring</a> über \(K\).
 Für ein <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynom</a> \(f \in K[X]\), das von \(f\) <a href="20230107195525-von_einem_element_erzeugtes_ideal.html#ID-7dff979b-85fb-4ad2-843b-c92e2df6590b">erzeugte</a> <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">Ideal</a> \(fK[X]\) und den <a href="20221226124933-faktorring_als_ring.html#ID-962fcfae-e109-473c-b507-9f3c29140b4b">Faktorring</a> \(K[X] / f K[X]\) als <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> gilt:
-Für \(n \coloneqq \mathrm{deg}(f)\) ist
+Für \(n  \coloneqq \mathrm{deg}(f)\) ist
 </p>
 \begin{align*}
 \{x^j + I \vert j = 0,1,...,n-1\} \subseteq K[X]/f K[X]
@@ -56,12 +54,12 @@ eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a1
 </p>
 </div>
 </div>
-<div id="outline-container-org3727cd5" class="outline-2">
-<h2 id="org3727cd5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb9ebbc2" class="outline-2">
+<h2 id="orgb9ebbc2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3d0dc6d" class="outline-3">
-<h3 id="org3d0dc6d"><span class="section-number-3">2.1.</span> Erzeugendensystem</h3>
+<div id="outline-container-org7c15c0b" class="outline-3">
+<h3 id="org7c15c0b"><span class="section-number-3">2.1.</span> Erzeugendensystem</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(g \in K[X]\), so folgt nach <a href="20221226010611-division_mit_rest_uber_polynome.html#ID-442ee103-8922-4f8e-864f-7e540dd7e5a7">Division mit Rest</a>, dass eine Darstellung:
@@ -75,8 +73,8 @@ Damit folgt somit \(g + I = r + I\), d.h. die <a href="20211008171333-menge.html
 </p>
 </div>
 </div>
-<div id="outline-container-orgd744382" class="outline-3">
-<h3 id="orgd744382"><span class="section-number-3">2.2.</span> Lineare Unabhängigkeit</h3>
+<div id="outline-container-org28aee3a" class="outline-3">
+<h3 id="org28aee3a"><span class="section-number-3">2.2.</span> Lineare Unabhängigkeit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei

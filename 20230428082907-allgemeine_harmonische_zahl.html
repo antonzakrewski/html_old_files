@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,21 +38,21 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">allgemeine Harmonische Zahl</h1>
-<div id="outline-container-orgbb305b6" class="outline-2">
-<h2 id="orgbb305b6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgb819693" class="outline-2">
+<h2 id="orgb819693"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(r \in \mathbb{N}\), dann ist die $n$-te Harmonische Zahl der Ordnung \(r\) definiert als:
+Sei \(r \in \mathbb{N}\), dann ist die \(n\)-te Harmonische Zahl der Ordnung \(r\) definiert als:
 </p>
 \begin{align*}
-H_{n}^{(r)} \coloneqq \sum_{k =1}^{n} k^{-r} 
+H_{n}^{(r)}  \coloneqq \sum_{k =1}^{n} k^{-r} 
 \end{align*}
 
 <p>
 Der <a href="20211120130127-grenzwert.html#ID-c9d16981-08f6-40ca-af81-22b5db6f06df">Grenzwert</a> der <a href="20211222222904-reihe_mathe.html#ID-ae236532-f177-4c70-806b-a1be965ef5e4">Reihe</a> für \(r \geq 2\) ist definiert durch
 </p>
 \begin{align*}
-\zeta(r) \coloneqq& \sum_{k=1}^{\infty} k^{-r} \\
+\zeta(r)  \coloneqq& \sum_{k=1}^{\infty} k^{-r} \\
 =& \lim_{n \to \infty}\left(H_{n}^{(r)}\right) 
 \end{align*}
 </div>

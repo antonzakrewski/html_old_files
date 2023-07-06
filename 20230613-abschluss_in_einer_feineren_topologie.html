@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss in einer feineren Topologie</h1>
-<div id="outline-container-orgff055d4" class="outline-2">
-<h2 id="orgff055d4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga6bc52d" class="outline-2">
+<h2 id="orga6bc52d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{T}'\) eine <a href="20230227185527-feinere_topologie.html#ID-38a15a0c-913a-425c-b5d0-457bf916adcd">feinere Topologie</a>.
@@ -52,8 +50,8 @@ Dann gilt für ein \(A \subseteq X\)
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgffb1998" class="outline-2">
-<h2 id="orgffb1998"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7bd0f04" class="outline-2">
+<h2 id="org7bd0f04"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(x \not\in \mathrm{cl}_{\mathcal{T}}(A)\), so existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> - <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> - \(O \in \mathcal{T}\) von \(x\) mit \(U \cap A \neq \emptyset\).

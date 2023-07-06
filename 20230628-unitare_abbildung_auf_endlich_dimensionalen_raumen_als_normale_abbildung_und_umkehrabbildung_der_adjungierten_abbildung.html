@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>unitäre Endomorphismus auf endlich dimensionalen Räumen als normale Abbildung und Umkehrabbildung der Adjungierten Abbildung</title>
+<title>unitäre Endomorphismus und Umkehrabbildung der Adjungierten Abbildung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,33 +37,63 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">unitäre Endomorphismus auf endlich dimensionalen Räumen als normale Abbildung und Umkehrabbildung der Adjungierten Abbildung</h1>
-<div id="outline-container-org8829161" class="outline-2">
-<h2 id="org8829161"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">unitäre Endomorphismus und Umkehrabbildung der Adjungierten Abbildung</h1>
+<div id="outline-container-orgdb774f7" class="outline-2">
+<h2 id="orgdb774f7"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(U \in \mathrm{End}_{}(V)\).
+Sei \(V\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(U \in \mathrm{End}_{}(V)\).
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
 <li>\(U\) ist eine <a href="20230628-unitare_abbildung.html#ID-cf245337-af79-469e-b2eb-16f58d3c9f70">unitäre Abbildung</a></li>
 <li>\(U\) ist <a href="20220926093948-umkehrbarkeit.html#ID-6598aa2c-c26d-4984-95a7-68ee8edd829c">invertierbar</a> mit \(U^* = U^{-1}\) (siehe: <a href="20230623-adjungierte_abbildung.html#ID-056e5a29-654d-4425-9266-70839a36a082">Adjungierte Abbildung</a>)</li>
-<li>\(U^*\) existiert mit \(U^{*}U = UU^* = \mathrm{id}_{}\)</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgecdf6c3" class="outline-2">
-<h2 id="orgecdf6c3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0f6a20a" class="outline-2">
+<h2 id="org0f6a20a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org41fee22" class="outline-3">
-<h3 id="org41fee22"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-orgabf8cc0" class="outline-3">
+<h3 id="orgabf8cc0"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Nach Annahme gilt für \(v,w \in V\)
+</p>
+\begin{align*}
+(v,w) =& (Av, Aw) \\
+=& (v, A^*A w) 
+\end{align*}
+<p>
+Und damit auch
+</p>
+\begin{align*}
+(v, (A^* A - \mathrm{id}) w)) =& 0
+\end{align*}
+<p>
+Nach der Aussage über das <a href="20230624-skalarprodukt_und_nulleintrag.html#ID-5019b9bd-6c4e-4eb8-9858-4b9bc161ae41">Skalarprodukt und einen Nulleintrag</a> folgt somit, da \(w \in V\) beliebig war auch
+</p>
+\begin{align*}
+A^* A = \mathrm{id}
+\end{align*}
+<p>
+und damit \(A^{-1} = A^*\)
+</p>
 </div>
-<div id="outline-container-orgc7c8f18" class="outline-3">
-<h3 id="orgc7c8f18"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
 </div>
-<div id="outline-container-org467b4f6" class="outline-3">
-<h3 id="org467b4f6"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
+<div id="outline-container-orgbd73837" class="outline-3">
+<h3 id="orgbd73837"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Nach Annahme gilt für \(v,w \in V\)
+</p>
+\begin{align*}
+(v,w) =& (\mathrm{id}  v,w) \\
+=& (U^* \circ U v, w) \\
+=& (U v, U w) \\
+\end{align*}
+</div>
 </div>
 </div>
 </div>

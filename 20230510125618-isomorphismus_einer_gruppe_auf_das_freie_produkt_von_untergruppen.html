@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphismus einer abelschen Gruppe auf das freie Produkt von Untergruppen</h1>
-<div id="outline-container-org1acb4d9" class="outline-2">
-<h2 id="org1acb4d9"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9eb129a" class="outline-2">
+<h2 id="org9eb129a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien \(G_1,...,G_r\) <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit paarweise &lt;teilerfremden&gt; &lt;ordnungen&gt; \(m_i \coloneqq \vert G_i \vert\).
+Seien \(G_1,...,G_r\) <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit paarweise &lt;teilerfremden&gt; &lt;ordnungen&gt; \(m_i  \coloneqq \vert G_i \vert\).
 Sei \(G\) <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> und \(\vert G \vert = m = \prod m_i\).
 Dann ist 
 </p>
@@ -57,15 +55,15 @@ ein <a href="20220928135729-gruppenisomorphsimus.html#ID-a0a02292-8a0b-4dc8-a2a8
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc8dfa7" class="outline-2">
-<h2 id="orgfc8dfa7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9e8c662" class="outline-2">
+<h2 id="org9e8c662"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3bf3c11" class="outline-3">
-<h3 id="org3bf3c11"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">homomorphismus</a></h3>
+<div id="outline-container-org45cd565" class="outline-3">
+<h3 id="org45cd565"><span class="section-number-3">2.1.</span> <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">homomorphismus</a></h3>
 </div>
-<div id="outline-container-org2fd9fd7" class="outline-3">
-<h3 id="org2fd9fd7"><span class="section-number-3">2.2.</span> <a href="20230318172340-gruppenmonomorphismus.html#ID-60ad1bff-6346-4f3b-b9b3-6e7aff5f4870">monomorphism</a></h3>
+<div id="outline-container-orgd28c51a" class="outline-3">
+<h3 id="orgd28c51a"><span class="section-number-3">2.2.</span> <a href="20230318172340-gruppenmonomorphismus.html#ID-60ad1bff-6346-4f3b-b9b3-6e7aff5f4870">monomorphism</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 &lt;kern und mono&gt;
@@ -74,7 +72,7 @@ Dmit existieren $&nu;, &mu; &isin; \(\mathbb{Z}\) mit \(1 = \nu m_1 + \mu m_2 \c
 Daraus folgt:
 </p>
 \begin{align*}
-M \coloneqq 10- \mu m_1 = \mu m_2 \cdot ... m_r
+M  \coloneqq 10- \mu m_1 = \mu m_2 \cdot ... m_r
 \end{align*}
 <p>
 Damit folgt:
@@ -89,8 +87,8 @@ Analog für \(i \neq 1\)
 </div>
 
 
-<div id="outline-container-orga67f8f9" class="outline-3">
-<h3 id="orga67f8f9"><span class="section-number-3">2.3.</span> <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">epimorphism</a></h3>
+<div id="outline-container-org9b2fbec" class="outline-3">
+<h3 id="org9b2fbec"><span class="section-number-3">2.3.</span> <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">epimorphism</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 folgt aus der &lt;äquvalenz injektiv surjektiv endlich&gt;

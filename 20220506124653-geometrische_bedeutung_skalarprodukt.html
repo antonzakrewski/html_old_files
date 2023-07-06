@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,20 +38,20 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Geometrische Bedeutung: Skalarprodukt</h1>
-<div id="outline-container-org2408b24" class="outline-2">
-<h2 id="org2408b24"><span class="section-number-2">1.</span> Theorie</h2>
+<div id="outline-container-orgb5b9952" class="outline-2">
+<h2 id="orgb5b9952"><span class="section-number-2">1.</span> Theorie</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Das Skalarprodukt ist ein Maß, wie "stark" zwei <a href="20210217215228-vektor.html#ID-be50263b-d29c-41c5-9909-2f5e106dc49c">Vektor</a>  in die gleiche Richtung zeigen
 </p>
 </div>
 </div>
-<div id="outline-container-orga2ff2f6" class="outline-2">
-<h2 id="orga2ff2f6"><span class="section-number-2">2.</span> Begründung</h2>
+<div id="outline-container-orgf2c5e36" class="outline-2">
+<h2 id="orgf2c5e36"><span class="section-number-2">2.</span> Begründung</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org23d5357" class="outline-3">
-<h3 id="org23d5357"><span class="section-number-3">2.1.</span> Lemma</h3>
+<div id="outline-container-orgd2b3e47" class="outline-3">
+<h3 id="orgd2b3e47"><span class="section-number-3">2.1.</span> Lemma</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><a href="20220506172706-distributivgesetz_skalarprodukt.html#ID-5af215dd-0015-4a2a-9563-902cb9cacbb5">Distributivgesetz: Skalarprodukt</a></li>
@@ -61,8 +59,8 @@ Das Skalarprodukt ist ein Maß, wie "stark" zwei <a href="20210217215228-vektor.
 </ul>
 </div>
 </div>
-<div id="outline-container-org3ba4908" class="outline-3">
-<h3 id="org3ba4908"><span class="section-number-3">2.2.</span> Umformung</h3>
+<div id="outline-container-org7303af3" class="outline-3">
+<h3 id="org7303af3"><span class="section-number-3">2.2.</span> Umformung</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Aufteilung eines Vektors in 2 Komponenten:
@@ -73,7 +71,7 @@ Aufteilung eines Vektors in 2 Komponenten:
 </ul>
 \begin{align*}
 \vec{b} \circ \vec{a_{orth}} =& 0 \\
-\vec{a} \coloneqq& \vec{a_{tan}} + \vec{a_{orth}} \\
+\vec{a}  \coloneqq& \vec{a_{tan}} + \vec{a_{orth}} \\
 \vec{b} \circ \vec{a} =& \vec{b} \circ (\vec{a_{tan}}) + \vec{a_{orth}})  \\
 =& \vec{b} \circ \vec{a_{tan}} + \vec{b} \circ \vec{a_{orth}} \\
 =& \vec{b} \circ \vec{a_{tan}} 

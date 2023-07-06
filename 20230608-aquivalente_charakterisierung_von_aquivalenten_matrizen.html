@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">äquivalente Charakterisierung von ähnlichen Matrizen</h1>
-<div id="outline-container-org691c881" class="outline-2">
-<h2 id="org691c881"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org95760f4" class="outline-2">
+<h2 id="org95760f4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(A,B \in K^{n \times n} \simeq \mathrm{End}_{K}(V)\).
@@ -57,12 +55,12 @@ Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae
 </ol>
 </div>
 </div>
-<div id="outline-container-org57fe088" class="outline-2">
-<h2 id="org57fe088"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb911b34" class="outline-2">
+<h2 id="orgb911b34"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org55063ca" class="outline-3">
-<h3 id="org55063ca"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div id="outline-container-org025f81a" class="outline-3">
+<h3 id="org025f81a"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(B = S^{-1} A S\) für ein \(S \in \mathrm{GL}_{n}(K)\).
@@ -78,8 +76,8 @@ g(x \cdot v) =& g(Av) \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgf010544" class="outline-3">
-<h3 id="orgf010544"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div id="outline-container-orgc675609" class="outline-3">
+<h3 id="orgc675609"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(g: V_A \rightarrow V_B\) ein Modul<a href="20230303170548-modulisomorphismus.html#ID-808e406f-ac3b-433c-a704-4f83909ef60d">isomorphismus</a> von $K[X]-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a>,  so ist \(g\) insbesondere auch ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus</a> von \(K\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">Vektorräumen</a>.
@@ -97,8 +95,8 @@ Daraus folgt \(A \sim B\)
 </p>
 </div>
 </div>
-<div id="outline-container-org923eff6" class="outline-3">
-<h3 id="org923eff6"><span class="section-number-3">2.3.</span> 2) \(\implies\) 3)</h3>
+<div id="outline-container-orga38b08a" class="outline-3">
+<h3 id="orga38b08a"><span class="section-number-3">2.3.</span> 2) \(\implies\) 3)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Sei \(K[x]^n/ \langle M_A(x)\rangle\) und \(V_A\) gegeben
@@ -177,8 +175,8 @@ folgt die Behauptung aus dem <a href="20221224180209-multiplikativitat_der_deter
 </p>
 </div>
 </div>
-<div id="outline-container-org3c2ce8f" class="outline-3">
-<h3 id="org3c2ce8f"><span class="section-number-3">2.4.</span> restlich</h3>
+<div id="outline-container-org41e421e" class="outline-3">
+<h3 id="org41e421e"><span class="section-number-3">2.4.</span> restlich</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 die Restlichen aussagen sind äquivalente Umformungen des Elementarteilersatzes

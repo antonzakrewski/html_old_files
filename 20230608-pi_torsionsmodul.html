@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,15 +38,15 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">pi-Torsionsmodul</h1>
-<div id="outline-container-org023afcf" class="outline-2">
-<h2 id="org023afcf"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orga180ef7" class="outline-2">
+<h2 id="orga180ef7"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(R\) ein <a href="20221227223925-hauptidealring.html#ID-41717608-2c65-435a-aca7-549eff5b4ca2">Hauptidealring</a> und \(M\) ein $R$-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> sowie \(\pi\) ein <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreduzibles</a> Element 
 Dann ist
 </p>
 \begin{align*}
-T_{\pi}(M) \coloneqq \{m \in M \vert \exists n \in \mathbb{N} : \pi^n \cdot m = 0 \}
+T_{\pi}(M)  \coloneqq \{m \in M \vert \exists n \in \mathbb{N} : \pi^n \cdot m = 0 \}
 \end{align*}
 <p>
 das $&pi;$-Torsionsmodul von \(M\)

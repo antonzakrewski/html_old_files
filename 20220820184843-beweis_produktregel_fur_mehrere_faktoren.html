@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Produktregel für mehrere Faktoren</h1>
-<div id="outline-container-org4593659" class="outline-2">
-<h2 id="org4593659"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbfbdbc0" class="outline-2">
+<h2 id="orgbfbdbc0"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 \begin{align*}
 \left(\prod_{i=1}^k f_k(x)\right)' =& \sum_{i=1}^k\left(\frac{f_i'(x)}{f_i(x)} \cdot \prod_{j=1}^k f_j(x)\right)
@@ -50,8 +48,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a>
 </p>
 </div>
-<div id="outline-container-org6b8c679" class="outline-3">
-<h3 id="org6b8c679"><span class="section-number-3">1.1.</span> Induktionsanfang</h3>
+<div id="outline-container-orgecb0130" class="outline-3">
+<h3 id="orgecb0130"><span class="section-number-3">1.1.</span> Induktionsanfang</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>siehe: <a href="20220401202407-beweis_produktregel.html#ID-4be5c492-8fe6-44b1-9dd8-d4ef721426f1">Beweis: Produktregel</a></li>
@@ -63,12 +61,12 @@ tex: {packages: {'[+]': ['mathtools']}}
  \end{align*}
 </div>
 </div>
-<div id="outline-container-org76f3b5c" class="outline-3">
-<h3 id="org76f3b5c"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
+<div id="outline-container-orgdd19efb" class="outline-3">
+<h3 id="orgdd19efb"><span class="section-number-3">1.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-1-2">
 \begin{align*}
-f_a(x) \coloneqq& \prod_{i=1}^k f_k(x) \\
-f_a'(x) \coloneqq& \sum_{i=1}^k \frac{f_i'(x)}{f_i(x)} \cdot \prod_{j=1}^k f_j(x) \\
+f_a(x)  \coloneqq& \prod_{i=1}^k f_k(x) \\
+f_a'(x)  \coloneqq& \sum_{i=1}^k \frac{f_i'(x)}{f_i(x)} \cdot \prod_{j=1}^k f_j(x) \\
 \prod_{i=1}^{k+1} f_k(x) =& \left(\prod_{i=1}^{k}f_k(x)\right) \cdot f_{k+1}(x) \\
 =& f_a(x) \cdot f_{k+1}(x) \\
 \left(\prod_{i=1}^{k+1} f_k(x)\right)' =& \left(f_a(x) \cdot f_{k+1}(x)\right)' \\

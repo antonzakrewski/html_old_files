@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Produkt endlich vieler lokalkompakter Räume als lokalkompakter Raum</h1>
-<div id="outline-container-org4c03cf2" class="outline-2">
-<h2 id="org4c03cf2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgfe52f89" class="outline-2">
+<h2 id="orgfe52f89"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \((X_i, \mathcal{T}_i)\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X \coloneqq \prod_{i=1}^{n} X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a> <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X  \coloneqq \prod_{i=1}^{n} X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
@@ -53,12 +51,12 @@ Sei \((X_i, \mathcal{T}_i)\) eine <a href="20211227215929-endliche_menge.html#ID
 </ol>
 </div>
 </div>
-<div id="outline-container-org36f0087" class="outline-2">
-<h2 id="org36f0087"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org793d641" class="outline-2">
+<h2 id="org793d641"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org859f63e" class="outline-3">
-<h3 id="org859f63e"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div id="outline-container-orgd5341d3" class="outline-3">
+<h3 id="orgd5341d3"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \((x_1,...,x_n) \in X\), so existiert für \(x_i \in X_i\) nach Annahme eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K_i\).
@@ -66,12 +64,12 @@ Damit ist \(\prod_{i=1}^{n} K_i\) eine <a href="20221002201955-umgebung_topologi
 </p>
 </div>
 </div>
-<div id="outline-container-org97853fd" class="outline-3">
-<h3 id="org97853fd"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div id="outline-container-org82a1582" class="outline-3">
+<h3 id="org82a1582"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(x_i \in X_i\) und \(X\) <a href="20230227205457-lokalkompakter_raum.html#ID-114308bd-ddf7-46e0-a7bc-82623eb4aa0e">lokalkompakt</a>.
-Dann wähle man beliebige \(x_j\) für \(j \in \{1,...,n\} \setminus \{i\}\) und setze \(x \coloneqq (x_i)_{1 \leq i \leq n}\)
+Dann wähle man beliebige \(x_j\) für \(j \in \{1,...,n\} \setminus \{i\}\) und setze \(x  \coloneqq (x_i)_{1 \leq i \leq n}\)
 nach Annahme existiert eine <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(K\) von \(x\) und wegen der <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Kompaktheit des Bildes einer kompakten Menge</a> ist \(\pi_i[K]\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a>.
 Zudem ist \(\pi_i\) <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">als Projektion eine offene Abbildung</a> und <a href="20230621-offene_abbildungen_erhalten_umgebungen.html#ID-84115188-b519-4386-aa3f-09b20f839d0b">erhält als solche Umgebungen</a>.
 Damit ist \(\pi_i[K]\) die gesuchte <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakte</a> <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x_i\)

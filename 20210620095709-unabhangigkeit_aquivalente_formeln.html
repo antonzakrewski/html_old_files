@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,39 +38,39 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Unabhängigkeit zweier Variablen: äquivalente Formeln</h1>
-<div id="outline-container-org4664c88" class="outline-2">
-<h2 id="org4664c88"><span class="section-number-2">1.</span> Schnittmenge und einzelne Wahrscheinlichkeiten</h2>
+<div id="outline-container-orgbbcb79a" class="outline-2">
+<h2 id="orgbbcb79a"><span class="section-number-2">1.</span> Schnittmenge und einzelne Wahrscheinlichkeiten</h2>
 <div class="outline-text-2" id="text-1">
 \begin{equation}
 P(B\cap S) = P(B) \cdot P(S)
 \end{equation}
 </div>
 </div>
-<div id="outline-container-orgfcb7009" class="outline-2">
-<h2 id="orgfcb7009"><span class="section-number-2">2.</span> Einzelne bedingte Wahrscheinlichkeiten</h2>
+<div id="outline-container-orgbad95b0" class="outline-2">
+<h2 id="orgbad95b0"><span class="section-number-2">2.</span> Einzelne bedingte Wahrscheinlichkeiten</h2>
 <div class="outline-text-2" id="text-2">
 \begin{equation}
 P_B(A) = P_{\bar{B}(A)
 \end{equation}
 </div>
-<div id="outline-container-org27ce48b" class="outline-3">
-<h3 id="org27ce48b"><span class="section-number-3">2.1.</span> Beweis</h3>
+<div id="outline-container-org57b973a" class="outline-3">
+<h3 id="org57b973a"><span class="section-number-3">2.1.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org152ef97" class="outline-4">
-<h4 id="org152ef97"><span class="section-number-4">2.1.1.</span> Lemma</h4>
+<div id="outline-container-org9244641" class="outline-4">
+<h4 id="org9244641"><span class="section-number-4">2.1.1.</span> Lemma</h4>
 <div class="outline-text-4" id="text-2-1-1">
 \begin{align*}
 B = P(A \cap B) \dot\cup (\bar{A} \cap B) \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgd96e127" class="outline-4">
-<h4 id="orgd96e127"><span class="section-number-4">2.1.2.</span> Umformung</h4>
+<div id="outline-container-org64bc696" class="outline-4">
+<h4 id="org64bc696"><span class="section-number-4">2.1.2.</span> Umformung</h4>
 <div class="outline-text-4" id="text-2-1-2">
 </div>
-<div id="outline-container-org989441d" class="outline-5">
-<h5 id="org989441d"><span class="section-number-5">2.1.2.1.</span> a)</h5>
+<div id="outline-container-orgccf951a" class="outline-5">
+<h5 id="orgccf951a"><span class="section-number-5">2.1.2.1.</span> a)</h5>
 <div class="outline-text-5" id="text-2-1-2-1">
  \begin{align*}
  B = P(A \cap B) \dot\cup (\bar{A} \cap B) \\
@@ -81,8 +79,8 @@ P(\bar{A} \cap B) = P(B) - P(A \cap B)
  \end{align*}
 </div>
 </div>
-<div id="outline-container-org0efb565" class="outline-5">
-<h5 id="org0efb565"><span class="section-number-5">2.1.2.2.</span> b)</h5>
+<div id="outline-container-orge74b641" class="outline-5">
+<h5 id="orge74b641"><span class="section-number-5">2.1.2.2.</span> b)</h5>
 <div class="outline-text-5" id="text-2-1-2-2">
 \begin{equation}
 P_A(b) = P_{\bar(A}}(B) \Leftrightarrow \\
@@ -96,8 +94,8 @@ P(A \cap B) = P(A) \cdot P(B)
 </div>
 </div>
 </div>
-<div id="outline-container-orga0eb785" class="outline-3">
-<h3 id="orga0eb785"><span class="section-number-3">2.2.</span> Veranschaulicht</h3>
+<div id="outline-container-org6bb0f89" class="outline-3">
+<h3 id="org6bb0f89"><span class="section-number-3">2.2.</span> Veranschaulicht</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>egal welches vorherige ereignis B:
@@ -108,15 +106,15 @@ P(A \cap B) = P(A) \cdot P(B)
 </div>
 </div>
 </div>
-<div id="outline-container-org27aa11f" class="outline-2">
-<h2 id="org27aa11f"><span class="section-number-2">3.</span> bedingte Wahrscheinlichkeit und aggregierte Wahrscheinlichkeit</h2>
+<div id="outline-container-orgf5adaac" class="outline-2">
+<h2 id="orgf5adaac"><span class="section-number-2">3.</span> bedingte Wahrscheinlichkeit und aggregierte Wahrscheinlichkeit</h2>
 <div class="outline-text-2" id="text-3">
 \begin{equation}
 P_B(A) = P(A) \\
 \end{equation}
 </div>
-<div id="outline-container-orgfcd1589" class="outline-3">
-<h3 id="orgfcd1589"><span class="section-number-3">3.1.</span> Beweis</h3>
+<div id="outline-container-org2efcaed" class="outline-3">
+<h3 id="org2efcaed"><span class="section-number-3">3.1.</span> Beweis</h3>
 <div class="outline-text-3" id="text-3-1">
 \begin{align*}
 P_B(A) = P(A) \\
@@ -124,8 +122,8 @@ P_B(A) = P(A) \\
 P(B \cap A) = P(A) \cdot P(B) \\
 \end{align*}
 </div>
-<div id="outline-container-orge5bdf4f" class="outline-4">
-<h4 id="orge5bdf4f"><span class="section-number-4">3.1.1.</span> Veranschaulichung</h4>
+<div id="outline-container-orgfa1b78f" class="outline-4">
+<h4 id="orgfa1b78f"><span class="section-number-4">3.1.1.</span> Veranschaulichung</h4>
 </div>
 </div>
 </div>

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Lineare Unabhängigkeit einer orthogonalen Menge</h1>
-<div id="outline-container-org0cfb1c6" class="outline-2">
-<h2 id="org0cfb1c6"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org75202d3" class="outline-2">
+<h2 id="org75202d3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> oder ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> und \((\cdot, \cdot)\) ein <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Skalarprodukt</a> auf \(V\).
@@ -49,14 +47,14 @@ Sei \(M \subseteq V\) eine <a href="20230303172844-orthogonale_menge.html#ID-07e
 </p>
 </div>
 </div>
-<div id="outline-container-org69407a5" class="outline-2">
-<h2 id="org69407a5"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orged7fda1" class="outline-2">
+<h2 id="orged7fda1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Seine \(v_1,...,v_n \in M\) paarweise verschieden und
 </p>
 \begin{align*}
-v \coloneqq \sum_{i=1}^{n} \alpha_i v_i = 0
+v  \coloneqq \sum_{i=1}^{n} \alpha_i v_i = 0
 \end{align*}
 <p>
 Dann gilt

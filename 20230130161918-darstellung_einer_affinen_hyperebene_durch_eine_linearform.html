@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Darstellung einer affinen Hyperebene durch eine Linearform</h1>
-<div id="outline-container-org56a9b60" class="outline-2">
-<h2 id="org56a9b60"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org34c8deb" class="outline-2">
+<h2 id="org34c8deb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit <a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">Dimension</a> \(n\) und  \(H = a + U\) eine <a href="20230108202541-affine_hyperebene.html#ID-3810c8b1-0a6d-41a2-8949-2a78a1c82e69">affine Hyperebene</a>, so existiert eine <a href="20221210210542-linearform_auf_einen_vektorraum.html#ID-ff5ee6ab-92fd-4721-b7ac-3dc0a075989e">Linearform</a> \(f: V \rightarrow K\), so dass gilt
@@ -51,8 +49,8 @@ H = H_{f, \alpha}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orge4238cb" class="outline-2">
-<h2 id="orge4238cb"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2a1e3ad" class="outline-2">
+<h2 id="org2a1e3ad"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(\{v_1,...,v_{n-1}\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(U\), sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(a \not\in U\), d.h. \(\{v_1,...,v_{n-1}\}\) ist mit \(a\) durch <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Steinitz</a> erweiterbar zu einer <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> von \(V\).

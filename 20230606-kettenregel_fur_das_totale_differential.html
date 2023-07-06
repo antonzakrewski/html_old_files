@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Kettenregel für das totale Differential</h1>
-<div id="outline-container-orgaa0d66e" class="outline-2">
-<h2 id="orgaa0d66e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd3ef447" class="outline-2">
+<h2 id="orgd3ef447"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(U \subseteq \mathbb{R}^n\) und \(V \subseteq \mathbb{R}^m\) gegeben und <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> sowie \(F: U \rightarrow V\) und \(G: V \rightarrow \mathbb{R}^k\) <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass \(F\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in \(x_0\) und \(G\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> in \(F(x_0)\) ist.
@@ -52,12 +50,12 @@ Dann ist \(G \circ F\) <a href="20230601102558-totale_differenzierbarkeit.html#I
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org1aefff1" class="outline-2">
-<h2 id="org1aefff1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfd26591" class="outline-2">
+<h2 id="orgfd26591"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org58747df" class="outline-3">
-<h3 id="org58747df"><span class="section-number-3">2.1.</span> Umformungen</h3>
+<div id="outline-container-org3ecc77b" class="outline-3">
+<h3 id="org3ecc77b"><span class="section-number-3">2.1.</span> Umformungen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach Annahme sei
@@ -87,8 +85,8 @@ G(F(x_0)) + \mathrm{d} G_{F(x_0)}(F(x) - F(x_0)) + r_{G,F(x_0)}(F(x)) =& G(F(x_0
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgd01e247" class="outline-3">
-<h3 id="orgd01e247"><span class="section-number-3">2.2.</span> abschätzung des Restglieds</h3>
+<div id="outline-container-org9e8f4a3" class="outline-3">
+<h3 id="org9e8f4a3"><span class="section-number-3">2.2.</span> abschätzung des Restglieds</h3>
 <div class="outline-text-3" id="text-2-2">
 \begin{align*}
 \| \mathrm{d} G_{F(x_0)}(r_{F,x_0}(x)) \| \leq& \| d G_{F(x_0)} \| \cdot \| r_{F,x_0}(x) \| \\

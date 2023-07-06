@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,22 +38,22 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Logarithmus: Basiswechsel</h1>
-<div id="outline-container-org533810c" class="outline-2">
-<h2 id="org533810c"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org76df8ab" class="outline-2">
+<h2 id="org76df8ab"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 \begin{align*}
 \log_a(b) = \frac{\log_c(b)}{\log_c(a)}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org04d71de" class="outline-2">
-<h2 id="org04d71de"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgfc4a933" class="outline-2">
+<h2 id="orgfc4a933"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 über <a href="20220122082215-logarithmus_exponenten_ausklammern.html#ID-0c5fd494-1c44-438d-9439-212632000ff6">das Ausklammern von Exponenten</a> 
 </p>
 \begin{align*}
-x \coloneqq& \log_a(b)  \\
+x  \coloneqq& \log_a(b)  \\
 \Rightarrow a^x =& b \\
 a^x =& b && \vert \log_c() \\
 \log_c(a^x) =& \log_c(b) \\

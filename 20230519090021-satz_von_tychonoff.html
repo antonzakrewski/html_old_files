@@ -38,8 +38,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Tychonoff</h1>
-<div id="outline-container-org4d35aa2" class="outline-2">
-<h2 id="org4d35aa2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1d5434b" class="outline-2">
+<h2 id="org1d5434b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a>.
@@ -55,46 +55,22 @@ unter Annahme des <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f8
 </p>
 </div>
 </div>
-<div id="outline-container-org3b44ef0" class="outline-2">
-<h2 id="org3b44ef0"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaa61384" class="outline-2">
+<h2 id="orgaa61384"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org90090dc" class="outline-3">
-<h3 id="org90090dc"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgae490d5" class="outline-3">
+<h3 id="orgae490d5"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-sei \(\mathcal{S} = \{\pi_i^{-1}[U_i] \vert U_i \in \mathcal{T}_i\}\) eine <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasis</a> von \(X\).
-Sei \(V_j\) eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> mit <a href="20211226213342-element_mengenlehre.html#ID-2ae7720e-1f94-4213-bbd8-76f8cec5e927">Elementen</a> aus \(\mathcal{S}\) ohne <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlicher</a> <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckung</a>.
-Dann existiert für alle \(\lambda \in I\) ein \(x_\lambda \in X_\lambda\), so dass \(\pi_{\lambda}^{-1}[x_\lambda]\) nur durch <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(V_i\) überdeckt wird.
-Anmerkung \(\pi_{\lambda}^{-1}[x_\lambda]\) wird durhc endlich viele Zylindermengen überdeckt.
-</p>
-</div>
-<div id="outline-container-org9d80bb1" class="outline-4">
-<h4 id="org9d80bb1"><span class="section-number-4">2.1.1.</span> Annahme 1</h4>
-<div class="outline-text-4" id="text-2-1-1">
-<p>
-Dann steckt \(\pi_{\lambda}^{-1}[x_{\lambda}]\) genau in einer der Zylindermengen \(\pi_{\lambda}^{-1}[x_\lambda]\)
-Angenommen nicht, diese endliche menge überdeckt ganz \(X\), Widerspruch zur Annahme
+Sei \(\mathcal{F}\) ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a> auf \(X\), so ist wegen der Aussage über den <a href="20230616-bildfilter_eines_ultarfilters_einer_stetigen_surjektion_als_ultrafilters.html#ID-6b39c4d9-9bbf-4a35-9659-0b837180dee6">Bildfilter eines Ultarfilters einer stetigen Surjektion als Ultrafilters</a> \(\pi_i[\mathcal{F}]\) ebenfalls ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a>.
+Nach der <a href="20230606-aquivalente_charakterisierungen_eines_kompakten_raums.html#ID-fc901357-bff9-40fb-a460-d1a20ce81368">Kompaktheit und konvergenz eines Ultrafilters</a> <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">konvergiert</a> \(\pi_i[\mathcal{F}]\) und somit nach der <a href="20230703-konvergenz_eines_filters_und_konvergenz_der_projektionsfilter.html#ID-4715a050-8996-4e43-82ed-458225dd5d5d">Konvergenz eines Filters und Konvergenz der Projektionsfilter</a> auch.
+Damit konvergiert \(\mathcal{F}\) und somit ist \(X\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a>.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org1d6b232" class="outline-4">
-<h4 id="org1d6b232"><span class="section-number-4">2.1.2.</span> Annahme 2</h4>
-<div class="outline-text-4" id="text-2-1-2">
-<p>
-Jedes \(\pi_{\lambda}^{-1}[x_\lambda]\) wird durch endlich viele \(V_j\) überdeckt.
-Dann steckt \(\pi_{\lambda}^{-1}[x_\lambda]\) steckt ganz in einem \(V_j\).
-</p>
-
-<p>
-Nach <a href="20230524073002-alexander_s_compactness_theorem.html#ID-83497edf-46c0-4979-8058-32628e01bf3a">Alexander's Compactness Theorem</a> ist somit auch \(X\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> 
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orgad2ef10" class="outline-3">
-<h3 id="orgad2ef10"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org2dcdde1" class="outline-3">
+<h3 id="org2dcdde1"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Es gilt \(\pi_i[X] = X_i\) und nach der <a href="20230112110346-kompaktheit_des_bildes_einer_kompakten_menge_einer_stetigen_funktion.html#ID-a2b585a8-d9b6-4663-be20-3eea36a6495a">Kompaktheit des Bildes einer kompakten Menge einer stetigen Funktion</a> folgt, dass \(X_i\) <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakt</a> ist.

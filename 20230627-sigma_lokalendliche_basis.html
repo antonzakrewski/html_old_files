@@ -9,18 +9,43 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">sigma lokalendliche Basis</h1>
-<div id="outline-container-org951ab29" class="outline-2">
-<h2 id="org951ab29"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgf0fcb36" class="outline-2">
+<h2 id="orgf0fcb36"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{B}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>.
+Dann ist \(\mathcal{B}\) eine sigma-lokalendliche Basis, falls \(\mathcal{B}\) <a href="20230627-sigma_lokalendlich.html#ID-a2cf2bf5-51e9-4a37-9281-de5d9c2f8b4f">sigma lokalendlich</a> ist.
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

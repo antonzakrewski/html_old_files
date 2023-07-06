@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Vereinigung von einer Kette von Gruppen als Gruppe</h1>
-<div id="outline-container-org6cebc37" class="outline-2">
-<h2 id="org6cebc37"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9b42953" class="outline-2">
+<h2 id="org9b42953"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(U_i\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit \(U_i \subseteq U_{i+1}\)
@@ -55,27 +53,27 @@ ebenfalls eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d
 </p>
 </div>
 </div>
-<div id="outline-container-org198c156" class="outline-2">
-<h2 id="org198c156"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgde000a1" class="outline-2">
+<h2 id="orgde000a1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 nach dem <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a> ist zu zeigen:
 </p>
 </div>
-<div id="outline-container-org52ec00d" class="outline-3">
-<h3 id="org52ec00d"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
+<div id="outline-container-org7f03035" class="outline-3">
+<h3 id="org7f03035"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus \(e \in U_i\), da \(U_i\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist
 </p>
 </div>
 </div>
-<div id="outline-container-org45439fc" class="outline-3">
-<h3 id="org45439fc"><span class="section-number-3">2.2.</span> abgeschlossenheit</h3>
+<div id="outline-container-org32d5f4a" class="outline-3">
+<h3 id="org32d5f4a"><span class="section-number-3">2.2.</span> abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 seien \(g,g' \in \bigcup_{i=1}^{\infty} U_i\), so existieren \(n,n'\) mit \(g \in U_n, g' \in U_{n'}\)
-Man wähle \(m \coloneqq \mathrm{max}(n,n')\) und es folgt nach Annahme \(g,g' \in U_m\).
+Man wähle \(m  \coloneqq \mathrm{max}(n,n')\) und es folgt nach Annahme \(g,g' \in U_m\).
 Da U<sub>m</sub>$ eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist, folgt \(g \cdot g'^{-1} \in U_m\) und damit ist das kriteum erfüllt.
 </p>
 </div>

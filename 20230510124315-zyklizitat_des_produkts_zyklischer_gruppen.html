@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,12 +38,12 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Zyklizität des Produkts endlicher zyklischer Gruppen</h1>
-<div id="outline-container-org3ffdb78" class="outline-2">
-<h2 id="org3ffdb78"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org8172cf9" class="outline-2">
+<h2 id="org8172cf9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(G_1,...,G_r\) <a href="20230127191852-zyklische_gruppe.html#ID-dce4ae88-c1e1-4fcc-aa58-ea917d0e197f">zyklische</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppen</a> der <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlichen</a> <a href="20221225213606-ordnung_gruppe.html#ID-fb68b5de-9a0c-4c45-8ee9-eb232370ed2e">Ordnung</a> \(m_1,...,m_r \in \mathbb{N}_0\).
-Sei \(G \coloneqq \prod_{i=1}^r G_i\) das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">Direktes Produkt</a>.
+Sei \(G  \coloneqq \prod_{i=1}^r G_i\) das <a href="20221227225321-direktes_produkt.html#ID-342c22a0-c9fa-487a-a497-8a146a49363b">Direktes Produkt</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ul class="org-ul">
@@ -54,15 +52,15 @@ Sei \(G \coloneqq \prod_{i=1}^r G_i\) das <a href="20221227225321-direktes_produ
 </ul>
 </div>
 </div>
-<div id="outline-container-org8f4b60e" class="outline-2">
-<h2 id="org8f4b60e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org819423c" class="outline-2">
+<h2 id="org819423c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org73bc992" class="outline-3">
-<h3 id="org73bc992"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orga84f332" class="outline-3">
+<h3 id="orga84f332"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei \(x \coloneqq (x_1,...,x_r)\) ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">erzeuger</a>, d.h. \(\mathrm{ord}(x) = \prod_{i=1}^r m\)
+Sei \(x  \coloneqq (x_1,...,x_r)\) ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">erzeuger</a>, d.h. \(\mathrm{ord}(x) = \prod_{i=1}^r m\)
 Angenommen \(d = \mathrm{gcd}(m_i,m_j) > 1\) o.E. \(i = 1,j = 2\)
 Dann folgt \(x^{\frac{m}{d}} = 1\), ein widerspruch, dann
 </p>
@@ -72,11 +70,11 @@ Dann folgt \(x^{\frac{m}{d}} = 1\), ein widerspruch, dann
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org2efa5ff" class="outline-3">
-<h3 id="org2efa5ff"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org7aaca1e" class="outline-3">
+<h3 id="org7aaca1e"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei \(x \coloneqq \left(x_1,...,x_r\right)\), wobei \(\langle x_i\rangle = G_i\).
+Sei \(x  \coloneqq \left(x_1,...,x_r\right)\), wobei \(\langle x_i\rangle = G_i\).
 klar: \(x^m = 1\), d.h. es folgt \(\mathrm{ord}(x) \mid m\)
 Andererseits \(m_i \mid \mathrm{ord}(x)\) für alle \(i\)
 </p>

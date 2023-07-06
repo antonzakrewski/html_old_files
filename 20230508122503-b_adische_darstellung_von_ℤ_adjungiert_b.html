@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">B-Adische Darstellung von ℤ adjungiert B<sup>-1</sup></h1>
-<div id="outline-container-orgf5699d3" class="outline-2">
-<h2 id="orgf5699d3"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbe2231a" class="outline-2">
+<h2 id="orgbe2231a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(B \geq 3\) und \(a < 0 < b\) mit \(\vert \{a,...,b\} \vert = B\).
@@ -52,8 +50,8 @@ Dann existiert für \(k \in \mathbb{Z}[\frac{1}{B}]\) eine eindeutige Darstellun
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org5e135b7" class="outline-2">
-<h2 id="org5e135b7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org99ffa8f" class="outline-2">
+<h2 id="org99ffa8f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(k \in \mathbb{Z}[\frac{1}{B}]\), so existiert ein \(m \in \mathbb{N}_0\) und ein \(a \in \mathbb{Z}\), so dass gilt:
@@ -62,7 +60,7 @@ Sei \(k \in \mathbb{Z}[\frac{1}{B}]\), so existiert ein \(m \in \mathbb{N}_0\) u
 k = \frac{a}{B^m}
 \end{align*}
 <p>
-Nach Annahme <a href="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4626d58f-b16e-4f7f-bcc2-3da5f8bb1bb6">existiert</a> eine <a href="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4e1bfde5-0693-45b4-9d0f-f29724e60ef1">eindeutige</a> Darstellung von \(a = \sum_{i \in \mathbb{Z}} x_i B^i\) und durch einen Indexshift von \(x_i\) auf \(x_{i+m}\) und \(x_{i - m} \coloneqq 0\) für \(i < 0\) folgt:
+Nach Annahme <a href="20230507224927-existenz_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4626d58f-b16e-4f7f-bcc2-3da5f8bb1bb6">existiert</a> eine <a href="20230507224950-eindeutigkeit_der_b_adischen_darstellung_der_ganzen_zahlen.html#ID-4e1bfde5-0693-45b4-9d0f-f29724e60ef1">eindeutige</a> Darstellung von \(a = \sum_{i \in \mathbb{Z}} x_i B^i\) und durch einen Indexshift von \(x_i\) auf \(x_{i+m}\) und \(x_{i - m}  \coloneqq 0\) für \(i < 0\) folgt:
 </p>
 \begin{align*}
 \sum_{i \in \mathbb{Z}} x_{i+m} B^i =& \sum_{i \in \mathbb{Z}} x_{i} B^{i-m} \\ 

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Cayley-Hamilton</h1>
-<div id="outline-container-org07dfa3e" class="outline-2">
-<h2 id="org07dfa3e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1936a44" class="outline-2">
+<h2 id="org1936a44"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(V\) ein \(n\) -<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit einem <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphism</a> \(A\) und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> \(f_A\).
+Sei \(V\) ein \(n\)-<a href="20220102135318-dimension.html#ID-3e484fb0-c9a8-485a-999b-4f0052bd13e4">dimensionaler</a> <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> mit einem <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Endomorphism</a> \(A\) und <a href="20230222202847-charakteristische_polynom.html#ID-dd44aea9-79be-473f-90e3-e2d6c67a41ae">charakteristischem Polynom</a> \(f_A\).
 Dann gilt für den <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a>
 </p>
 \begin{align*}
@@ -52,12 +50,12 @@ f_A(A) = 0
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org7b8df65" class="outline-2">
-<h2 id="org7b8df65"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4760947" class="outline-2">
+<h2 id="org4760947"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(A\) die <a href="20220303181007-matrix.html#ID-3234cd94-0d93-470b-a319-75288f97326e">Matrix</a> bezüglich einer festen <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a>.
-Sei im folgenden \(B \coloneqq xE - A\) die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a>, d.h. es folgt \(f_A = \det(xE - A) = \det(B)\)
+Sei im folgenden \(B  \coloneqq xE - A\) die <a href="20230608-charakteristische_matrix.html#ID-62d08ada-fc7a-43eb-8029-8794d9d03e52">charakteristische Matrix</a>, d.h. es folgt \(f_A = \det(xE - A) = \det(B)\)
 Für die <a href="20230118135322-adjunkte_matrix.html#ID-6d0c6d49-b018-49cf-991a-465d7dfe17a1">Adjunkte</a> \(\tilde{B}\) gilt nach der <a href="20230131083334-multiplikation_einer_matrix_mit_der_adjunkte.html#ID-c9ff3ca9-2ea4-44d9-b05d-308524d47dc7">Multiplikation einer Matrix mit der Adjunkte</a> 
 </p>
 \begin{align*}

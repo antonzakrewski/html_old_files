@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,15 +38,15 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Fehlerabschätzung für eine Fixpunktiteration (Banachscher Fixpunktsatz)</h1>
-<div id="outline-container-org7053860" class="outline-2">
-<h2 id="org7053860"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org88b57d3" class="outline-2">
+<h2 id="org88b57d3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(f: M \rightarrow M\) eine <a href="20230224182235-kontraktion.html#ID-51a3c508-415d-48a3-aab7-199035efc584">strikte Kontraktion</a> mit <a href="20221222102430-lipschitzkonstante.html#ID-fefaf440-f71c-45e7-b68a-1f6c6ccdce52">Lipschitzkonstante</a> \(L < 1\) auf einem <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischen Raum</a> \(M\).
 Sei ferner \(m_0 \in M\) und 
 </p>
 \begin{align*}
-m_i \coloneqq f^{(i)}(m_0)
+m_i  \coloneqq f^{(i)}(m_0)
 \end{align*}
 <p>
 die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a>, welche durch Iteration entsteht.
@@ -59,8 +57,8 @@ d(m_n,m) \leq& \frac{L^n}{1 - L} \cdot d(m_0,m)
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org13e532e" class="outline-2">
-<h2 id="org13e532e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcc8b358" class="outline-2">
+<h2 id="orgcc8b358"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Es gilt

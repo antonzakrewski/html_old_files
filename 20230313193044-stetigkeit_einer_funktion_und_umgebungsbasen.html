@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit einer Abbildung in einem Punkt und Umgebungsbasen</h1>
-<div id="outline-container-org6e74b62" class="outline-2">
-<h2 id="org6e74b62"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgbc07b2e" class="outline-2">
+<h2 id="orgbc07b2e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
@@ -56,20 +54,20 @@ Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-097
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgd2dabe7" class="outline-2">
-<h2 id="orgd2dabe7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd5e674d" class="outline-2">
+<h2 id="orgd5e674d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org83746ef" class="outline-3">
-<h3 id="org83746ef"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-orgdfd2140" class="outline-3">
+<h3 id="orgdfd2140"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach Konstruktion ist \(V\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, ebenso wie \(U\), d.h. es ist bloß ein spezialfall von der Definition der <a href="20230227185804-stetigkeit_in_einem_punkt_topologie.html#ID-415665d1-cda9-465e-87f0-9def9ccacd53">Stetigkeit in einem Punkt</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org37f4267" class="outline-3">
-<h3 id="org37f4267"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org7cae6e5" class="outline-3">
+<h3 id="org7cae6e5"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei eine beliebige <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(V \in \mathcal{U}(f(x))\) gegeben, so existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(V' \subseteq V\) mti \(V' \in \mathcal{B}(f(x))\) und nach Annahme dann auch eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{B}(x)\), so dass gilt:

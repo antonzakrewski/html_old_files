@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,15 +38,15 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristische Matrix</h1>
-<div id="outline-container-org72612d6" class="outline-2">
-<h2 id="org72612d6"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-orgcc9b9c8" class="outline-2">
+<h2 id="orgcc9b9c8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(R\) ein <a href="20221013221933-unitarer_ring.html#ID-37a82460-b5bf-49e0-9b91-5bd03c778f19">unitärer</a>, <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer Ring</a> und \(A \in R^{n \times n}\) ein <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> von einem <a href="20230222205257-freier_modul.html#ID-f31e26dc-9f62-4ff2-81db-88cd88c22229">freien</a> <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Modul</a> \(M \simeq R^n\)
 Dann ist die charakteristische Matrix von \(A\) definiert als <a href="20230303170543-modulendomorphismus.html#ID-aaf585e5-45c4-42bb-a746-dd1a179db8bb">Modulendomorphism</a> auf dem <a href="20230314183441-vektorraum_als_modul_uber_dem_polynomkorper.html#ID-85e871e9-02b2-4380-87d7-48b528972860">Modul über dem Polynomring</a> \(R[X]\) durch:
 </p>
 \begin{align*}
-M_A(x) \coloneqq xE - A \in M_n(R[x])
+M_A(x)  \coloneqq xE - A \in M_n(R[x])
 \end{align*}
 </div>
 </div>

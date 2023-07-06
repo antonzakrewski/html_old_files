@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,31 +38,31 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Subspace topology</h1>
-<div id="outline-container-orga4bd1fe" class="outline-2">
-<h2 id="orga4bd1fe"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org27c51b6" class="outline-2">
+<h2 id="org27c51b6"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> $(X, \mathcal{T})$geben, mit einer <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(U \subseteq X\), so ist die Unterraumtopologie auf \(\mathcal{T}\) definiert als:
 </p>
 \begin{align*}
-\mathcal{T}_U \coloneqq \{O \cap U \vert O \in \mathcal{T}\}
+\mathcal{T}_U  \coloneqq \{O \cap U \vert O \in \mathcal{T}\}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgca7aae8" class="outline-2">
-<h2 id="orgca7aae8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgaf20a49" class="outline-2">
+<h2 id="orgaf20a49"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc4e4486" class="outline-3">
-<h3 id="orgc4e4486"><span class="section-number-3">2.1.</span> triviale Mengen</h3>
+<div id="outline-container-org94d2ffb" class="outline-3">
+<h3 id="org94d2ffb"><span class="section-number-3">2.1.</span> triviale Mengen</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 \(\emptyset, O \in \mathcal{T}_U\) folgt aus \(\emptyset = O \cap \emptyset\) und \(O = O \cap X\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2a57957" class="outline-3">
-<h3 id="org2a57957"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
+<div id="outline-container-orgc42fda3" class="outline-3">
+<h3 id="orgc42fda3"><span class="section-number-3">2.2.</span> Abgeschlossenheit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Seien \(O_i = O \cap U_i \in \mathcal{T}_U\), so gilt für:

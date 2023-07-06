@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Determinante mit kommutativen Matrizen</h1>
-<div id="outline-container-org0c15870" class="outline-2">
-<h2 id="org0c15870"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4c74db2" class="outline-2">
+<h2 id="org4c74db2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(A,B,C,D \in K^{n \times n}\), so dass gilt \(AC = CA\)
@@ -55,8 +53,8 @@ Dann gilt
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org6b6aa40" class="outline-2">
-<h2 id="org6b6aa40"><span class="section-number-2">2.</span> Bewesi</h2>
+<div id="outline-container-org2d3a927" class="outline-2">
+<h2 id="org2d3a927"><span class="section-number-2">2.</span> Bewesi</h2>
 <div class="outline-text-2" id="text-2">
 \begin{align*}
 \begin{pmatrix} E_n & 0 \\ -C & A \end{pmatrix} \begin{pmatrix} A & B \\ C & D \end{pmatrix} =& \begin{pmatrix} A & B \\ 0 & AD - CB \end{pmatrix} 

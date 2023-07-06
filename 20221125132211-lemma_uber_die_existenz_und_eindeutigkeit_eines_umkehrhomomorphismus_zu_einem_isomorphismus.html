@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz und Eindeutigkeit eines Umkehrhomomorphismus zu einem Vektorraumisomorphismus</h1>
-<div id="outline-container-org2eaed54" class="outline-2">
-<h2 id="org2eaed54"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-org5692c07" class="outline-2">
+<h2 id="org5692c07"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(f \in \mathrm{Hom}_K(V_1,V_2)\) ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Vektorraumisomorphismus.</a>
@@ -56,16 +54,16 @@ Zusätzlich folgt:
 </p>
 </div>
 </div>
-<div id="outline-container-org8bd7a58" class="outline-2">
-<h2 id="org8bd7a58"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org44f09f6" class="outline-2">
+<h2 id="org44f09f6"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 nach dem <a href="20220104114031-satz_uber_die_invertierbarkeit_bijektiver_abbildungen.html#ID-103a1e68-fab8-4c82-846c-f2aca167fadc">Satz über die Umkehrbarkeit bijektiver Abbildungen</a> folgt, dass eine Umkehrfunktion existiert.
 Zu zeigen: \(g\) ist ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>
 </p>
 </div>
-<div id="outline-container-org414725e" class="outline-3">
-<h3 id="org414725e"><span class="section-number-3">2.1.</span> Additikvität</h3>
+<div id="outline-container-orge259a56" class="outline-3">
+<h3 id="orge259a56"><span class="section-number-3">2.1.</span> Additikvität</h3>
 <div class="outline-text-3" id="text-2-1">
 \begin{align*}
 f(g(a_2 + a_2')) =& fg(a_2 + a_2') \\
@@ -83,8 +81,8 @@ g(a_2 + a_2') = g(a_2) + g(a_2')
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgda7dd05" class="outline-3">
-<h3 id="orgda7dd05"><span class="section-number-3">2.2.</span> Homogenität</h3>
+<div id="outline-container-org5318581" class="outline-3">
+<h3 id="org5318581"><span class="section-number-3">2.2.</span> Homogenität</h3>
 <div class="outline-text-3" id="text-2-2">
 \begin{align*}
 f(g(\alpha a_2)) =& (fg)(\alpha a_2) \\

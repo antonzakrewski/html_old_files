@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Zusammenhang und endliche Kette von einer überlappenden Überdeckung</h1>
-<div id="outline-container-org950c7f4" class="outline-2">
-<h2 id="org950c7f4"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9cb4725" class="outline-2">
+<h2 id="org9cb4725"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> mit einer beliebigen <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlichen</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> \(\bigcup_{i=1}^n O_i = X\) von <a href="20230118223336-zusammenhangender_raum.html#ID-bcc53507-bc5a-46d4-bd83-53e504f62b9d">zusammenhängenden Mengen</a>.
@@ -53,12 +51,12 @@ Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-
 </ul>
 </div>
 </div>
-<div id="outline-container-org6fa5208" class="outline-2">
-<h2 id="org6fa5208"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org088b716" class="outline-2">
+<h2 id="org088b716"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org086f4e9" class="outline-3">
-<h3 id="org086f4e9"><span class="section-number-3">2.1.</span> a) kette \(\Rightarrow\)</h3>
+<div id="outline-container-org6bcc59b" class="outline-3">
+<h3 id="org6bcc59b"><span class="section-number-3">2.1.</span> a) kette \(\Rightarrow\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="20210305204929-beweis_durch_gegenbeispiel.html#ID-82f7f698-c489-4630-b2a1-ec7a6228b374">Beweis durch Kontraposition</a>:
@@ -67,8 +65,8 @@ Damit folgt, dass für \(a \in O_1, b \in O_2\) keine kette existiert, da der <a
 </p>
 </div>
 </div>
-<div id="outline-container-org3d9f087" class="outline-3">
-<h3 id="org3d9f087"><span class="section-number-3">2.2.</span> b) zusammenhang \(\Rightarrow\)</h3>
+<div id="outline-container-org4dfd5d9" class="outline-3">
+<h3 id="org4dfd5d9"><span class="section-number-3">2.2.</span> b) zusammenhang \(\Rightarrow\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Seien \(a,b \in X\) und \(\bigcup_{i=1}^n O_i = X\) eine <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endliche</a>, <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a> von zusammenhängenden Mengen.
@@ -78,24 +76,24 @@ Dann definieren wir die <a href="20211227225754-aquivalenzrelation_mengenlehre.h
 a \sim b :\Leftrightarrow \text{ existiert eine endliche Kette, welche diese Verbindet}
 \end{align*}
 </div>
-<div id="outline-container-org276e1a7" class="outline-4">
-<h4 id="org276e1a7"><span class="section-number-4">2.2.1.</span> reflexiv</h4>
+<div id="outline-container-org68b0351" class="outline-4">
+<h4 id="org68b0351"><span class="section-number-4">2.2.1.</span> reflexiv</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Folgt aus der Kette \(O_1\)
 </p>
 </div>
 </div>
-<div id="outline-container-org92b12c4" class="outline-4">
-<h4 id="org92b12c4"><span class="section-number-4">2.2.2.</span> symmetrisch</h4>
+<div id="outline-container-org8cca3ab" class="outline-4">
+<h4 id="org8cca3ab"><span class="section-number-4">2.2.2.</span> symmetrisch</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Folgt durch Spiegeln der Indizes
 </p>
 </div>
 </div>
-<div id="outline-container-org6f133d0" class="outline-4">
-<h4 id="org6f133d0"><span class="section-number-4">2.2.3.</span> transitiv</h4>
+<div id="outline-container-org25bfbc1" class="outline-4">
+<h4 id="org25bfbc1"><span class="section-number-4">2.2.3.</span> transitiv</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
 Folgt durch Aneinanderreihen von Ketten

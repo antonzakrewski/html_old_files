@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Abstand zu einer Menge und Abstand zum Abschluss</h1>
-<div id="outline-container-org0dc837b" class="outline-2">
-<h2 id="org0dc837b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org05e4fe6" class="outline-2">
+<h2 id="org05e4fe6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((M,d)\) ein <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrischer Raum</a> und \(A \subseteq M\).
@@ -52,12 +50,12 @@ d(\cdot, A) = d(\cdot, \overline{A})
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgc692d71" class="outline-2">
-<h2 id="orgc692d71"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgf68ab54" class="outline-2">
+<h2 id="orgf68ab54"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgaf4b6cd" class="outline-3">
-<h3 id="orgaf4b6cd"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org610c54a" class="outline-3">
+<h3 id="org610c54a"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Für \(x \in M\) gilt wegen \(A \subseteq \overline{A}\)
@@ -69,8 +67,8 @@ d(x,A) =& \inf \{d(x,a) \vert a \in A\} \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orga188f84" class="outline-3">
-<h3 id="orga188f84"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-org9848ead" class="outline-3">
+<h3 id="org9848ead"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(a \in \overline{A}\), so existiert eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> \(a_i \rightarrow a\).

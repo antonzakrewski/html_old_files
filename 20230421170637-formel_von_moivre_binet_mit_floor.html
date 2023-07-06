@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,23 +38,23 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Formel von Moivre-Binet mit Floor</h1>
-<div id="outline-container-orgf82fa74" class="outline-2">
-<h2 id="orgf82fa74"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orge6bf3fe" class="outline-2">
+<h2 id="orge6bf3fe"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Es gilt für die $n$-te Fibonacci Zahl mit \(n \in \mathbb{N}\):
+Es gilt für die \(n\)-te Fibonacci Zahl mit \(n \in \mathbb{N}\):
 </p>
 \begin{align*}
 F_n = \mathrm{floor}( \frac{\phi^n}{\sqrt{5}} + \frac{1}{2})
 \end{align*}
 <p>
-für \(\phi \coloneqq \frac{1 + \sqrt{5}}{2}\)
+für \(\phi  \coloneqq \frac{1 + \sqrt{5}}{2}\)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5241a22" class="outline-2">
-<h2 id="org5241a22"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6d89fee" class="outline-2">
+<h2 id="org6d89fee"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt aus der <a href="20230327103744-formel_von_moivre_binet.html#ID-de2875e2-9af4-4043-8e7b-b63aae60a976">Formel von Moivre-Binet</a> und der Beschränktheit von $\frac{1}{\phi}<sup>n</sup>$a und geeigneten abschätzungen :)

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Konjugation als Gruppenautomorphismus</h1>
-<div id="outline-container-org8a44010" class="outline-2">
-<h2 id="org8a44010"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9f84fdc" class="outline-2">
+<h2 id="org9f84fdc"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> mit \(a \in G\) und sei \(f_a\) die <a href="20221210184513-konjugation_gruppe.html#ID-9c1eef3e-e33c-4393-a65a-20a5ac69663d">Konjugation (Gruppe)</a> mit \(a\).
@@ -49,12 +47,12 @@ Dann ist \(f_a\) ein <a href="20220928135903-gruppenautomorphismus.html#ID-bde82
 </p>
 </div>
 </div>
-<div id="outline-container-org9316267" class="outline-2">
-<h2 id="org9316267"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7343b05" class="outline-2">
+<h2 id="org7343b05"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org937b550" class="outline-3">
-<h3 id="org937b550"><span class="section-number-3">2.1.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a></h3>
+<div id="outline-container-orgbf04616" class="outline-3">
+<h3 id="orgbf04616"><span class="section-number-3">2.1.</span> <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphie</a></h3>
 <div class="outline-text-3" id="text-2-1">
 \begin{align*}
 f_{a}(g_1)f_{a}(g_2) =& a^{-1}g_1aa^{-1}g_2a \\
@@ -63,8 +61,8 @@ f_{a}(g_1)f_{a}(g_2) =& a^{-1}g_1aa^{-1}g_2a \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgca2541e" class="outline-3">
-<h3 id="orgca2541e"><span class="section-number-3">2.2.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a></h3>
+<div id="outline-container-orgf0d4bcb" class="outline-3">
+<h3 id="orgf0d4bcb"><span class="section-number-3">2.2.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">Bijektion</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 für \(a\) existiert ein eindeutiges <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverses Element</a> \(a^{-1}\), für \(a^{-1}\) ist das inverse element \((a^{-1})^{-1} = a\) (siehe:<a href="20221231101637-eindeutigkeit_des_inversen_elements_einer_gruppe.html#ID-3e68110e-84e0-4c01-a8c1-62d1ba24b022">Eindeutigkeit des inversen Elements einer Gruppe</a>)

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,11 +38,11 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Homeomorphie von einem Faktor eines Produktraums und dem Unteraum des Faktors</h1>
-<div id="outline-container-org76b1162" class="outline-2">
-<h2 id="org76b1162"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga25a819" class="outline-2">
+<h2 id="orga25a819"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X \coloneqq \prod_{i \in I} X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X  \coloneqq \prod_{i \in I} X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
 Dann gilt für ein beliebiges \(X_j\) und \(a_i \in X_i\) mit \(i \neq j\):
 </p>
 \begin{align*}
@@ -52,8 +50,8 @@ X_j \simeq X_j \times \prod_{i \neq j} \{a_j\}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orga37ec74" class="outline-2">
-<h2 id="orga37ec74"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org95ae5d9" class="outline-2">
+<h2 id="org95ae5d9"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Die evidente <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> ist:
@@ -63,14 +61,14 @@ f: X_j \rightarrow& X_j \times \prod_{i \neq j} \{a_j\} \\
 x_j \mapsto& (a_i) \times (x_j)
 \end{align*}
 </div>
-<div id="outline-container-orgb3c3659" class="outline-3">
-<h3 id="orgb3c3659"><span class="section-number-3">2.1.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiv</a></h3>
+<div id="outline-container-org70b6d1e" class="outline-3">
+<h3 id="org70b6d1e"><span class="section-number-3">2.1.</span> <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiv</a></h3>
 </div>
-<div id="outline-container-org73702dd" class="outline-3">
-<h3 id="org73702dd"><span class="section-number-3">2.2.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
+<div id="outline-container-orgc746f08" class="outline-3">
+<h3 id="orgc746f08"><span class="section-number-3">2.2.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></h3>
 </div>
-<div id="outline-container-org764c1c8" class="outline-3">
-<h3 id="org764c1c8"><span class="section-number-3">2.3.</span> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></h3>
+<div id="outline-container-orga2a2cf5" class="outline-3">
+<h3 id="orga2a2cf5"><span class="section-number-3">2.3.</span> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a></h3>
 </div>
 </div>
 </div>

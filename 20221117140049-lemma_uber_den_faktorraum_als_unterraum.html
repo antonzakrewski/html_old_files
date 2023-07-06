@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Faktorraum als Unterraum</h1>
-<div id="outline-container-orgc908913" class="outline-2">
-<h2 id="orgc908913"><span class="section-number-2">1.</span> Lemma</h2>
+<div id="outline-container-orge3d252b" class="outline-2">
+<h2 id="orge3d252b"><span class="section-number-2">1.</span> Lemma</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(U \subseteq V\) ein linearer <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Unterraum</a>.
@@ -53,12 +51,12 @@ Dann ist der <a href="20220911121731-faktorraum.html#ID-d2c3fc95-35f3-4882-8c30-
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org3a8f19f" class="outline-2">
-<h2 id="org3a8f19f"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org562693d" class="outline-2">
+<h2 id="org562693d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc2f22cf" class="outline-3">
-<h3 id="orgc2f22cf"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> für die Addition</h3>
+<div id="outline-container-org49c6432" class="outline-3">
+<h3 id="org49c6432"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> für die Addition</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(a_1 + U = a_1' + U\) und \(a_2 + U = a_2' + U\), so folgt nach Definition des <a href="20220911121731-faktorraum.html#ID-d2c3fc95-35f3-4882-8c30-06959d0b1f79">Faktorraums</a> 
@@ -75,8 +73,8 @@ Daraus folgt:
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org5e08a6e" class="outline-3">
-<h3 id="org5e08a6e"><span class="section-number-3">2.2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> für die Skalarmultiplikation</h3>
+<div id="outline-container-orgd8da2bc" class="outline-3">
+<h3 id="orgd8da2bc"><span class="section-number-3">2.2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">Wohldefiniertheit</a> für die Skalarmultiplikation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(a_1 + U = a_2 + U\) , d.h. \(a_1 - a_2 = u \in U\)
@@ -84,8 +82,8 @@ Daraus folgt \(\alpha(a_1 - a_2) = \alpha u \in U\) und damti auch \(\alpha a_1 
 </p>
 </div>
 </div>
-<div id="outline-container-orge42f632" class="outline-3">
-<h3 id="orge42f632"><span class="section-number-3">2.3.</span> Inverses</h3>
+<div id="outline-container-org8fed5a0" class="outline-3">
+<h3 id="org8fed5a0"><span class="section-number-3">2.3.</span> Inverses</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Folgt für \(a + U\) und \(-a + U\):
@@ -95,8 +93,8 @@ a + U + (-a) + U =& U
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org2534fc3" class="outline-3">
-<h3 id="org2534fc3"><span class="section-number-3">2.4.</span> Distributivgesetz</h3>
+<div id="outline-container-org2bcf028" class="outline-3">
+<h3 id="org2bcf028"><span class="section-number-3">2.4.</span> Distributivgesetz</h3>
 <div class="outline-text-3" id="text-2-4">
 \begin{align*}
 \alpha \cdot (a + U + a' + U) =& \alpha ((a + a') + U) \\

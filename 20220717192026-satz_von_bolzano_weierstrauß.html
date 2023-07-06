@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,27 +38,27 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Satz von Bolzano-Weierstraß</h1>
-<div id="outline-container-org05040db" class="outline-2">
-<h2 id="org05040db"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org9f2728b" class="outline-2">
+<h2 id="org9f2728b"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Jede <a href="20220123200843-beschranktheit_einer_folge.html#ID-77f6a16a-9a94-40d9-aca9-919bb4f8998f">beschränkte Folge</a> \(a_n\) <a href="20210702104546-komplexe_zahlen.html#ID-ca121ea4-6b83-47aa-a6f1-31a6e0d0667d">Komplexer Zahlen</a> besitzt eine <a href="20220105153330-konvergenz_einer_folge.html#ID-63fa4879-51cf-4ad6-8be5-0e9e10d29726">konvergente</a> <a href="20220717191708-teilfogle.html#ID-133bb3cb-5829-417d-a264-b95b6e343f41">Teilfolge</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgb1bf536" class="outline-2">
-<h2 id="orgb1bf536"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org437dc85" class="outline-2">
+<h2 id="org437dc85"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org6bc6e77" class="outline-3">
-<h3 id="org6bc6e77"><span class="section-number-3">2.1.</span> Für \(\mathbb{R}\)</h3>
+<div id="outline-container-org68850e7" class="outline-3">
+<h3 id="org68850e7"><span class="section-number-3">2.1.</span> Für \(\mathbb{R}\)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach dem <a href="20220717170446-vollstandigkeitsaxiom.html#ID-2772514a-cfc0-4f1c-9762-b5565967613c">Vollständigkeitsaxiom</a> (bzw. hier <a href="20221112154250-supremumsaxiom.html#ID-d844b9e7-b58a-484d-9fa5-4b2fed37cf66">Supremumsaxiom</a>) seien
 </p>
 \begin{align*}
-(s_n) \coloneqq \inf_{k \leq n}\{a_k\} \\
-(S_n) \coloneqq \sup_{k \leq n}\{a_k\}
+(s_n)  \coloneqq \inf_{k \leq n}\{a_k\} \\
+(S_n)  \coloneqq \sup_{k \leq n}\{a_k\}
 \end{align*}
 <p>
 Da \(a_n\) beschränkt ist, folgt auch, dass \((s_n)\) beschränkt ist und aus der Konstruktion (<a href="20221212093325-monotonie_einer_folge_von_suprema_infima.html#ID-6b4f82cc-6c1b-44bb-9fc6-ad693eba5cbf">Monotonie einer Folge von Suprema/Infima</a>)  auch <a href="20220105225318-monotone_folgen.html#ID-2a3124bd-9477-44c0-a80b-997cd4cb8940">monoton</a>.
@@ -68,8 +66,8 @@ Daraus folgt aufgrund der <a href="20221128181402-konvergenz_monotoner_beschrank
 </p>
 </div>
 </div>
-<div id="outline-container-org735dcc2" class="outline-3">
-<h3 id="org735dcc2"><span class="section-number-3">2.2.</span> Für \(\mathbb{C}\)</h3>
+<div id="outline-container-org337fd22" class="outline-3">
+<h3 id="org337fd22"><span class="section-number-3">2.2.</span> Für \(\mathbb{C}\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \((a_n)\) beschränkt, dann folgt aus der <a href="20220716173747-dreiecksungleichung_metrik.html#ID-e5ef5ef6-266f-4486-aa97-9ba2093531fe">Dreiecksungleichung</a> 
@@ -85,8 +83,8 @@ siehe:
 </p>
 </div>
 </div>
-<div id="outline-container-org7396e46" class="outline-3">
-<h3 id="org7396e46"><span class="section-number-3">2.3.</span> schönere beweisskizze</h3>
+<div id="outline-container-org064e319" class="outline-3">
+<h3 id="org064e319"><span class="section-number-3">2.3.</span> schönere beweisskizze</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>halbieren der intervalle: für zukünftige folgenglieder</li>

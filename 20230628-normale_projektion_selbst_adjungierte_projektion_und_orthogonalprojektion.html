@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">normale Projektion, selbst-adjungierte Projektion und Orthogonalprojektion</h1>
-<div id="outline-container-orgfecbc6b" class="outline-2">
-<h2 id="orgfecbc6b"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org29a33f3" class="outline-2">
+<h2 id="org29a33f3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a> <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(P: V \rightarrow V\) ein <a href="20230303151710-vektorraumendomorphismus.html#ID-ecd3affd-0dbf-4f53-8c43-79af608c67e9">Vektorraumendomorphismus</a> und <a href="20230628-projektion.html#ID-23da86e5-dc06-470a-b6b8-a9564f520047">Projektion</a>.
@@ -54,12 +52,12 @@ Sei \(V\) ein <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-47779
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd066a51" class="outline-2">
-<h2 id="orgd066a51"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2c8c08e" class="outline-2">
+<h2 id="org2c8c08e"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org36615b0" class="outline-3">
-<h3 id="org36615b0"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org57ded41" class="outline-3">
+<h3 id="org57ded41"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach der Aussage über einen <a href="20230628-normale_matrix_und_induzierte_norm.html#ID-2bbd9b5a-a941-44fa-9a59-7bdeb4b601ee">normaler Endomorphismus und Norm</a> gilt für \(v' \in V\)
@@ -68,7 +66,7 @@ Nach der Aussage über einen <a href="20230628-normale_matrix_und_induzierte_nor
 \| P v' \| = \| P^* v' \|
 \end{align*}
 <p>
-Sei \(v' \coloneqq v - P(v)\).
+Sei \(v'  \coloneqq v - P(v)\).
 Es folgt
 </p>
 \begin{align*}
@@ -102,6 +100,29 @@ P = P^{**} \\
 =& P^* P \\
 =& P^*
 \end{align*}
+</div>
+</div>
+<div id="outline-container-orge147757" class="outline-3">
+<h3 id="orge147757"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Nach Annahme gilt für beliebige \(v,v' \in V\)
+</p>
+\begin{align*}
+(Pv, v') =& (v, Pv')
+\end{align*}
+<p>
+Somit ist \(v'\) <a href="20230303172844-orthogonale_menge.html#ID-07ebca84-e55a-4e58-81c8-d65cedf69820">orthogonal</a> zu \(Pv\) <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(Pv'\) orthogonal zu \(v\) ist.
+Damit folgt, dass \(v'\) orthogonal zu \(\mathrm{im}(P)\) ist, <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(P v'\) orthogonal zu \(V\) ist.
+</p>
+</div>
+</div>
+<div id="outline-container-org580b0e8" class="outline-3">
+<h3 id="org580b0e8"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+folgt aus der Aussage <a href="20230703-idempotente_abbildung_als_selbstadjungierte_abbildung_und_orthogonalitat_vom_kern_und_bild.html#ID-103c2dd0-1efe-4462-b813-754c23b21177">Idempotente Abbildung als Selbstadjungierte Abbildung und Orthogonalität vom Kern und Bild</a> 
+</p>
 </div>
 </div>
 </div>

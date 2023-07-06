@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Stetigkeit in einem Punkt und Filterstetigkeit in einem Punkt</h1>
-<div id="outline-container-org4a64027" class="outline-2">
-<h2 id="org4a64027"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org047f0f6" class="outline-2">
+<h2 id="org047f0f6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(x \in X\) ein Punkt sowie \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
@@ -53,26 +51,26 @@ Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-to
 </ul>
 </div>
 </div>
-<div id="outline-container-org02b37f1" class="outline-2">
-<h2 id="org02b37f1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgcc05004" class="outline-2">
+<h2 id="orgcc05004"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org473ed86" class="outline-3">
-<h3 id="org473ed86"><span class="section-number-3">2.1.</span> a)</h3>
+<div id="outline-container-org6e33191" class="outline-3">
+<h3 id="org6e33191"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei \(U_f\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(x)\), so ist \(U \coloneqq f^{-1}[U_f]\) nach der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
+Sei \(U_f\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(x)\), so ist \(U  \coloneqq f^{-1}[U_f]\) nach der Aussage über <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>.
 Nach Annahme der <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">Konvergenz eines Filters</a> gilt \(\mathcal{U}(x) \subseteq \mathcal{F}\) und somit auch \(U \in \mathcal{F}\).
 Daraus folgt \(U_f = f[U] \in \mathcal{F}\) bzw. da \(U_f\) beliebig war auch \(f[\mathcal{F}] \rightarrow f(x)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org62846f0" class="outline-3">
-<h3 id="org62846f0"><span class="section-number-3">2.2.</span> b)</h3>
+<div id="outline-container-orgb9cfbed" class="outline-3">
+<h3 id="orgb9cfbed"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(f[\mathcal{F}] \rightarrow f(x)\) für einen beliebigen <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> \(\mathcal{F} \rightarrow x\).
-Sei \(\mathcal{F} \coloneqq \{F \in \mathcal{U}(x)\}\) (siehe: <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>).
+Sei \(\mathcal{F}  \coloneqq \{F \in \mathcal{U}(x)\}\) (siehe: <a href="20230211132320-umgebungsbasis.html#ID-24c84114-5d59-4fa3-87fb-10baabcc5faa">Umgebungsbasis</a>).
 Es gilt \(\mathcal{F} \rightarrow x\) und nach Annahme \(f[\mathcal{F}] \rightarrow f(x)\).
 Sei \(U_f \subseteq X'\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a>, so gilt nach Annahme auch \(U_f \in f[\mathcal{F}]\).
 Damit existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U'\) von \(x\) mit \(f[U'] = U_f\).

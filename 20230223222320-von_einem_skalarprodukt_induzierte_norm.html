@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">von einem Skalarprodukt induzierte Norm</h1>
-<div id="outline-container-orgcd56e50" class="outline-2">
-<h2 id="orgcd56e50"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org7c76e8d" class="outline-2">
+<h2 id="org7c76e8d"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(V\) ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd-4abc-86b6-2706f358a79f">komplexer Vektorraum</a> oder ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller Vektorraum</a> sowie
@@ -61,12 +59,12 @@ eine <a href="20220920053006-norm_eines_vektors.html#ID-445db843-5369-48de-a31f-
 </p>
 </div>
 </div>
-<div id="outline-container-org2c5001e" class="outline-2">
-<h2 id="org2c5001e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org8526c93" class="outline-2">
+<h2 id="org8526c93"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org880b9cb" class="outline-3">
-<h3 id="org880b9cb"><span class="section-number-3">2.1.</span> a) <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
+<div id="outline-container-org1a0e035" class="outline-3">
+<h3 id="org1a0e035"><span class="section-number-3">2.1.</span> a) <a href="20221003143637-definitheit_einer_norm.html#ID-4d9c9a0a-1c0e-4a9b-83cc-2d08342c47d0">Positive Definitheit einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20221030153017-positiv_definit_des_skalarprodukt.html#ID-3d15453c-97da-4a6a-b4c4-d39b7f76d913">Positiven Definitheit eines Skalarprodukts</a>:
@@ -75,8 +73,8 @@ sei \(v \neq 0\), so folgt auch \((v,v) > 0\) und damit auch \(\|v \| > 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7deebcc" class="outline-3">
-<h3 id="org7deebcc"><span class="section-number-3">2.2.</span> b) <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
+<div id="outline-container-org39c99dc" class="outline-3">
+<h3 id="org39c99dc"><span class="section-number-3">2.2.</span> b) <a href="20221003133838-absolute_homogenitat_norm.html#ID-a67174d6-2370-4505-99a9-90fc848e2c5b">absolute Homogenität einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(v' = \alpha v\), so gilt \((v',v') = (\alpha v, \alpha v) = \alpha \cdot (v, \alpha v) = \alpha \cdot \overline{\alpha} (v,v)\) und damit auch
@@ -90,8 +88,8 @@ Sei \(v' = \alpha v\), so gilt \((v',v') = (\alpha v, \alpha v) = \alpha \cdot (
 </p>
 </div>
 </div>
-<div id="outline-container-org5b7a32d" class="outline-3">
-<h3 id="org5b7a32d"><span class="section-number-3">2.3.</span> c) <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
+<div id="outline-container-orga363059" class="outline-3">
+<h3 id="orga363059"><span class="section-number-3">2.3.</span> c) <a href="20221003143707-dreiecksungleichung_einer_norm.html#ID-ab6dc42a-e937-4409-8dce-39b5925205dd">Dreiecksungleichung einer Norm</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Es gilt für \(\| v_1 + v_2 \|\)

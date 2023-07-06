@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Division mit Rest über Polynomen über einem Körper</h1>
-<div id="outline-container-org3bc76ce" class="outline-2">
-<h2 id="org3bc76ce"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgaa17631" class="outline-2">
+<h2 id="orgaa17631"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(f,g \in K[x]\) mit \(g \neq 0\).
@@ -53,27 +51,27 @@ f =& gh + r  \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org9ad07f3" class="outline-2">
-<h2 id="org9ad07f3"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgab2a80a" class="outline-2">
+<h2 id="orgab2a80a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd19c015" class="outline-3">
-<h3 id="orgd19c015"><span class="section-number-3">2.1.</span> Existenz</h3>
+<div id="outline-container-orgac4b3c2" class="outline-3">
+<h3 id="orgac4b3c2"><span class="section-number-3">2.1.</span> Existenz</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orge854763" class="outline-4">
-<h4 id="orge854763"><span class="section-number-4">2.1.1.</span> \(\mathrm{deg}(f) < \mathrm{deg}(g)\)</h4>
+<div id="outline-container-org6c8fa19" class="outline-4">
+<h4 id="org6c8fa19"><span class="section-number-4">2.1.1.</span> \(\mathrm{deg}(f) < \mathrm{deg}(g)\)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 Setze \(h = 0\) und \(r = f\)
 </p>
 </div>
 </div>
-<div id="outline-container-org3cb2a5e" class="outline-4">
-<h4 id="org3cb2a5e"><span class="section-number-4">2.1.2.</span> \(\mathrm{deg}(f) \geq \mathrm{deg}(g)\)</h4>
+<div id="outline-container-org791b46a" class="outline-4">
+<h4 id="org791b46a"><span class="section-number-4">2.1.2.</span> \(\mathrm{deg}(f) \geq \mathrm{deg}(g)\)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
-Sei \(f \coloneqq \sum_{j=0}^{m} a_j x^j\) und \(g \coloneqq \sum_{k=0}^{n} b_k x^{m - n}\) mit \(m \geq n\)
+Sei \(f  \coloneqq \sum_{j=0}^{m} a_j x^j\) und \(g  \coloneqq \sum_{k=0}^{n} b_k x^{m - n}\) mit \(m \geq n\)
 Dann sei
 </p>
 \begin{align*}
@@ -84,8 +82,8 @@ Es folgt \(\mathrm{deg}(f_1) \leq m - 1\)
 <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> :
 </p>
 </div>
-<div id="outline-container-org77abf03" class="outline-5">
-<h5 id="org77abf03"><span class="section-number-5">2.1.2.1.</span> Induktionsanfang</h5>
+<div id="outline-container-orgb6550c8" class="outline-5">
+<h5 id="orgb6550c8"><span class="section-number-5">2.1.2.1.</span> Induktionsanfang</h5>
 <div class="outline-text-5" id="text-2-1-2-1">
 <p>
 Sei \(m = 0\), so folgt \(f = a_0 \neq 0\) und nach Annahme auch \(g = b_0 \neq 0\)
@@ -93,13 +91,13 @@ Dann sei \(hh = b_0^{-1} a_0\) und \(r = 0\)
 </p>
 </div>
 </div>
-<div id="outline-container-org650d254" class="outline-5">
-<h5 id="org650d254"><span class="section-number-5">2.1.2.2.</span> Induktionsschritt</h5>
+<div id="outline-container-orgdeee367" class="outline-5">
+<h5 id="orgdeee367"><span class="section-number-5">2.1.2.2.</span> Induktionsschritt</h5>
 </div>
 </div>
 </div>
-<div id="outline-container-org5cc9c30" class="outline-3">
-<h3 id="org5cc9c30"><span class="section-number-3">2.2.</span> Eindeutigkeit</h3>
+<div id="outline-container-orgbead06e" class="outline-3">
+<h3 id="orgbead06e"><span class="section-number-3">2.2.</span> Eindeutigkeit</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(f = h_2g + r_2 = h_1 g + r_1\) mit \(\mathrm{deg}(r_1), \mathrm{deg}(r_2) < \mathrm{deg}(g)\), so folgt für

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Inverse Element (Quadratischer Zahlkörper)</h1>
-<div id="outline-container-orga69c989" class="outline-2">
-<h2 id="orga69c989"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org632b9b3" class="outline-2">
+<h2 id="org632b9b3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 \begin{align*}
 \alpha^{-1} =& \frac{\alpha'}{N(\alpha)} \\
@@ -49,14 +47,14 @@ tex: {packages: {'[+]': ['mathtools']}}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgea438fd" class="outline-2">
-<h2 id="orgea438fd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgba18093" class="outline-2">
+<h2 id="orgba18093"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 siehe: <a href="20220723093646-norm_quadratischer_zahlkorper.html#ID-cb3ff899-a02c-4c75-bd76-5e7e4c62014b">Norm (Quadratischer Zahlkörper)</a> 
 </p>
 \begin{align*}
-N(\alpha) \coloneqq& \alpha \cdot \alpha' \\
+N(\alpha)  \coloneqq& \alpha \cdot \alpha' \\
 \Rightarrow \alpha \cdot \frac{\alpha'}{N(\alpha)} =& \frac{N(\alpha)}{N(\alpha)} \\
 =& 1
 \end{align*}

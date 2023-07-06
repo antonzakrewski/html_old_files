@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Abschluss als Obermenge</h1>
-<div id="outline-container-orgcadf692" class="outline-2">
-<h2 id="orgcadf692"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgc0a075a" class="outline-2">
+<h2 id="orgc0a075a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(A \subseteq X\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> so gilt für den <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>:
@@ -51,8 +49,8 @@ A \subseteq \mathcal{A}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org62327ab" class="outline-2">
-<h2 id="org62327ab"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org197e1a1" class="outline-2">
+<h2 id="org197e1a1"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(x \in A\), so folgt, dass für jede <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U \in \mathcal{U}(x) \Rightarrow x \in U\)  und damit auch \(x \in U \cap A\), d.h. \(x \in \overline{A}\)

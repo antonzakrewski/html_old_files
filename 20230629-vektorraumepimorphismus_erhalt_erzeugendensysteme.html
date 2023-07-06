@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Vektorraumepimorphismus erhält Erzeugendensysteme</h1>
-<div id="outline-container-org3c2700d" class="outline-2">
-<h2 id="org3c2700d"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org15c19eb" class="outline-2">
+<h2 id="org15c19eb"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorräume</a> und \(\varphi: V \rightarrow W\) ein <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a>.
@@ -54,20 +52,20 @@ Seien \(V,W\) <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb
 </ol>
 </div>
 </div>
-<div id="outline-container-org1b9838d" class="outline-2">
-<h2 id="org1b9838d"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orga149d23" class="outline-2">
+<h2 id="orga149d23"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga83a3d4" class="outline-3">
-<h3 id="orga83a3d4"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-org15553f8" class="outline-3">
+<h3 id="org15553f8"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 trivial
 </p>
 </div>
 </div>
-<div id="outline-container-org0bf7d09" class="outline-3">
-<h3 id="org0bf7d09"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
+<div id="outline-container-org0105194" class="outline-3">
+<h3 id="org0105194"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 3)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">Erzeugendensystem</a> \(M\) gegeben, so dass \(\varphi[M] = \{b_i\}\) ein <a href="20230501171545-erzeugendensystem_gruppe.html#ID-9878d24c-fa34-47cb-8f2b-1a04380f5325">Erzeugendensystem</a> von \(W\) ist.
@@ -82,8 +80,8 @@ somit folgt für
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgc369662" class="outline-3">
-<h3 id="orgc369662"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
+<div id="outline-container-orgbcb2605" class="outline-3">
+<h3 id="orgbcb2605"><span class="section-number-3">2.3.</span> 3) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Sei \(w \in W\), so existiert nach Annahme ein \(v \in V\) mit \(\varphi(v) = w\).

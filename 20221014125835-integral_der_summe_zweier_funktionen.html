@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,15 +38,15 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Integral der Summe zweier Funktionen</h1>
-<div id="outline-container-org9d8fa2e" class="outline-2">
-<h2 id="org9d8fa2e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org4b0e680" class="outline-2">
+<h2 id="org4b0e680"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 einschränkung intervall fehlend
 Seien \(h\) und \(g\) <a href="20221004081717-riemann_integrierbar.html#ID-72604220-5110-45f1-985f-f7077d1ce8cd">Riemann integrierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> und \(f\) definiert als
 </p>
 \begin{align*}
-f(x) \coloneqq h(x) + g(x)
+f(x)  \coloneqq h(x) + g(x)
 \end{align*}
 <p>
 Dann gilt:
@@ -58,14 +56,14 @@ Dann gilt:
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org181fc3a" class="outline-2">
-<h2 id="org181fc3a"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org45fc389" class="outline-2">
+<h2 id="org45fc389"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Seien \(G(x)\) sowie \(H(x)\) <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktionen</a> von \(g(x)\) bzw. \(h(x)\) und sei \(F(x)\) definiert als
 </p>
 \begin{align*}
-F(x) \coloneqq g(x) + h(x)
+F(x)  \coloneqq g(x) + h(x)
 \end{align*}
 <p>
 Nach der <a href="20221015040823-ableitung_der_summe_mehrerer_funktionen.html#ID-a9651a91-439e-454c-8f7a-104635cd66e6">Ableitung der Summe mehrerer Funktionen</a> ist \(F(x)\) selbst eine <a href="20221014123755-stammfunktion.html#ID-14e5eab8-30c3-4028-94ed-a40b17e90c87">Stammfunktion</a> von \(f(x)\):

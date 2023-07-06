@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,16 +38,16 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Beweis: Logarithmus: Ausklammern eines Produkts</h1>
-<div id="outline-container-org0f155a0" class="outline-2">
-<h2 id="org0f155a0"><span class="section-number-2">1.</span> Beweis</h2>
+<div id="outline-container-org6a103af" class="outline-2">
+<h2 id="org6a103af"><span class="section-number-2">1.</span> Beweis</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgd41f7f3" class="outline-3">
-<h3 id="orgd41f7f3"><span class="section-number-3">1.1.</span> Produkt</h3>
+<div id="outline-container-org1821b0b" class="outline-3">
+<h3 id="org1821b0b"><span class="section-number-3">1.1.</span> Produkt</h3>
 <div class="outline-text-3" id="text-1-1">
 \begin{align*}
-x \coloneqq& \log_a(b) \Rightarrow a^x = b \\
-y \coloneqq& \log_a(c) \Rightarrow a^y = c \\
+x  \coloneqq& \log_a(b) \Rightarrow a^x = b \\
+y  \coloneqq& \log_a(c) \Rightarrow a^y = c \\
 \Rightarrow a^x \cdot a^y =& b \cdot c \Rightarrow a^{x + y} = b \cdot c \\
 \Rightarrow \log_a(b \cdot c) =& \log_a(a^{x+y}) \\
 =& x + y \\
@@ -57,14 +55,14 @@ y \coloneqq& \log_a(c) \Rightarrow a^y = c \\
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org07fc836" class="outline-3">
-<h3 id="org07fc836"><span class="section-number-3">1.2.</span> Bruch</h3>
+<div id="outline-container-org2a7abf4" class="outline-3">
+<h3 id="org2a7abf4"><span class="section-number-3">1.2.</span> Bruch</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 über das <a href="20220122082215-logarithmus_exponenten_ausklammern.html#ID-0c5fd494-1c44-438d-9439-212632000ff6">Ausklammern eines Exponenten</a> 
 </p>
 \begin{align*}
-c_2 \coloneqq& \frac{1}{c} \\
+c_2  \coloneqq& \frac{1}{c} \\
 \log_a(b \cdot c_2) =& \log_a(b \cdot c^{-1}) = \log_a\left(\frac{b}{c}\right)  \\
 \log_a(b \cdot c_2) =& \log_a(b) + \log_a(c_2) \\
 =& \log_a(b) + \log_a(c^{-1}) \\

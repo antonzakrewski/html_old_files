@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Potenzreihenentwicklung um beliebige Punkte in der Konvergenzscheibe</h1>
-<div id="outline-container-org1139e0e" class="outline-2">
-<h2 id="org1139e0e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org0abce0f" class="outline-2">
+<h2 id="org0abce0f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(\sum_{n=0}^{\infty} a_n \cdot z^n\) eine <a href="20221204223941-potenzreihe.html#ID-dab65874-6741-4bba-97fe-d305f01190aa">Potenzreihe</a> in \(\mathbb{C}\) mit <a href="20221221125942-konvergenzradius.html#ID-ed39dc3e-08d0-4b04-bfa2-e3b0bc367301">Konvergenzradius</a> \(R\) und <a href="20221221125938-konvergenzscheibe.html#ID-dbec4606-587e-4457-b2e0-d9c028c5385d">Konvergenzscheibe</a> \(D_{R}(0)\).
@@ -54,12 +52,12 @@ Sei \(z_0 \in D_{R}(0)\), dann existiert eine <a href="20211222222916-folge_math
 Insbesondere gilt für \(b_n\):
 </p>
 \begin{align*}
-b_k \coloneqq \sum_{n=0}^{\infty} \binom{n}{k} a_n \cdot z_0^{n-k}
+b_k  \coloneqq \sum_{n=0}^{\infty} \binom{n}{k} a_n \cdot z_0^{n-k}
 \end{align*}
 </div>
 </div>
-<div id="outline-container-orgdc792c1" class="outline-2">
-<h2 id="orgdc792c1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2f0d860" class="outline-2">
+<h2 id="org2f0d860"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">

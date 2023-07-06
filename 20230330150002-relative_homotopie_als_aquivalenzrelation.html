@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">relative Homotopie als Äquivalenzrelation</h1>
-<div id="outline-container-org8c147be" class="outline-2">
-<h2 id="org8c147be"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgca66d6a" class="outline-2">
+<h2 id="orgca66d6a"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(A \subseteq X\)
@@ -49,20 +47,20 @@ Dann ist die <a href="20230330144151-relative_homotopie.html#ID-69e06161-ad5b-48
 </p>
 </div>
 </div>
-<div id="outline-container-orgc407bdd" class="outline-2">
-<h2 id="orgc407bdd"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org9600f98" class="outline-2">
+<h2 id="org9600f98"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org390620d" class="outline-3">
-<h3 id="org390620d"><span class="section-number-3">2.1.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexiv</a></h3>
+<div id="outline-container-org7f29fb7" class="outline-3">
+<h3 id="org7f29fb7"><span class="section-number-3">2.1.</span> <a href="20220929192418-reflexive_relation.html#ID-a6016d54-aefb-460f-9da3-37388a9a4941">Reflexiv</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus der <a href="20230330144948-konstante_homotopie.html#ID-ed4c6850-3160-40d8-ac70-f9698096b38b">konstanten Homotopie</a>; 
 </p>
 </div>
 </div>
-<div id="outline-container-org919e434" class="outline-3">
-<h3 id="org919e434"><span class="section-number-3">2.2.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
+<div id="outline-container-orgc28350a" class="outline-3">
+<h3 id="orgc28350a"><span class="section-number-3">2.2.</span> <a href="20220929191559-symmetrische_relation.html#ID-ecd19bf0-673a-47ba-b40f-3331655ff473">Symmetrie</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(h: I \times X \rightarrow X'\) eine <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">Homotopieabbildung</a> mit \(f \overset{h}{\simeq} f'\), so ist \(h'(s,x) = h((1-s),x)\) ebenfalls eine Homotopieabbildung mit \(f' \overset{h'}{\simeq} f\):
@@ -73,8 +71,8 @@ Sei \(((a,b),O) \in I \times X\) <a href="20221002145641-offene_menge_in_einem_t
 </p>
 </div>
 </div>
-<div id="outline-container-orgec6b5c0" class="outline-3">
-<h3 id="orgec6b5c0"><span class="section-number-3">2.3.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
+<div id="outline-container-org2a06df8" class="outline-3">
+<h3 id="org2a06df8"><span class="section-number-3">2.3.</span> <a href="20220929192405-transitive_relation.html#ID-b1ee8b48-b51c-4099-b1c8-27dd3e757e0b">Transitivität</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Seien \(f_1,f_2,f_3: X \rightarrow X'\) <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a>, so dass \(f_1 \overset{h_1}{\simeq} f_2\) und \(f_2 \overset{h_2}{\simeq} f_3\) gilt.

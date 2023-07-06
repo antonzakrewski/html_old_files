@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Äquivalente Charakterisierungen eines kompakten Raums</h1>
-<div id="outline-container-orgcc0b081" class="outline-2">
-<h2 id="orgcc0b081"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orgd4cc851" class="outline-2">
+<h2 id="orgd4cc851"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a>.
@@ -55,16 +53,16 @@ Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-
 </ol>
 </div>
 </div>
-<div id="outline-container-org86f90d1" class="outline-2">
-<h2 id="org86f90d1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org554a5d2" class="outline-2">
+<h2 id="org554a5d2"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8af0b55" class="outline-3">
-<h3 id="org8af0b55"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-org37154ed" class="outline-3">
+<h3 id="org37154ed"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 folgt aus den <a href="20220821114446-de_morgansche_gesetze_mengenlehre.html#ID-f77ff6f9-47e1-445a-9e2b-91b44efcaadc">De Morgansche Gesetze (Mengenlehre)</a>
-Sei \(\bigcap_{i = 1}^{n} A_i = \emptyset\), so ist \(U_i \coloneqq X \setminus A_i\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a> von \(X\).
+Sei \(\bigcap_{i = 1}^{n} A_i = \emptyset\), so ist \(U_i  \coloneqq X \setminus A_i\) eine <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">Überdeckung</a> von \(X\).
 Nach Annahme existieren <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele mit \(\bigcup_{i=1}^n U_i = X\) und es folgt
 </p>
 \begin{align*}
@@ -76,16 +74,16 @@ Nach Annahme existieren <a href="20211227215929-endliche_menge.html#ID-53523a13-
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org6dc00df" class="outline-3">
-<h3 id="org6dc00df"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
+<div id="outline-container-orgc3be03e" class="outline-3">
+<h3 id="orgc3be03e"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 folgt analog aus den <a href="20220821114446-de_morgansche_gesetze_mengenlehre.html#ID-f77ff6f9-47e1-445a-9e2b-91b44efcaadc">De Morgansche Gesetze (Mengenlehre)</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgb75461e" class="outline-3">
-<h3 id="orgb75461e"><span class="section-number-3">2.3.</span> 2) \(\Rightarrow\) 3)</h3>
+<div id="outline-container-orgc7ecbc0" class="outline-3">
+<h3 id="orgc7ecbc0"><span class="section-number-3">2.3.</span> 2) \(\Rightarrow\) 3)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Angenommen es existiert kein <a href="20230307221042-beruhrpunkt_eines_filters.html#ID-d373da8b-d760-4a1b-a108-4f126d59215f">Häufungspunkt</a>, dann gilt
@@ -99,8 +97,8 @@ dies ist aber ein Widerspruch zur Konstruktion eines <a href="20230306233743-men
 </p>
 </div>
 </div>
-<div id="outline-container-org3dbb468" class="outline-3">
-<h3 id="org3dbb468"><span class="section-number-3">2.4.</span> 3) \(\Rightarrow\) 4)</h3>
+<div id="outline-container-org4ba9110" class="outline-3">
+<h3 id="org4ba9110"><span class="section-number-3">2.4.</span> 3) \(\Rightarrow\) 4)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Sei \(F\) ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a>.
@@ -110,8 +108,8 @@ Da aber \(\mathcal{F}\) ein <a href="20230306234012-ultrafilter.html#ID-88624d50
 </p>
 </div>
 </div>
-<div id="outline-container-org8b35fab" class="outline-3">
-<h3 id="org8b35fab"><span class="section-number-3">2.5.</span> 4) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-orgc47e0e0" class="outline-3">
+<h3 id="orgc47e0e0"><span class="section-number-3">2.5.</span> 4) \(\Rightarrow\) 2)</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Sei \(A_i\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossener</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>  mit \(\bigcap_{i} A_i = \emptyset\).

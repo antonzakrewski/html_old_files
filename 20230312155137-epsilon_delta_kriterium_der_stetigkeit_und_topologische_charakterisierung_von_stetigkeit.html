@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Epsilon-Delta Kriterium der Stetigkeit und topologische Charakterisierung von Stetigkeit</h1>
-<div id="outline-container-orge961ad8" class="outline-2">
-<h2 id="orge961ad8"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org570e7b3" class="outline-2">
+<h2 id="org570e7b3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Seien \(X,Y\) <a href="20221002145259-metrischer_raum.html#ID-6b95a0b5-83e0-43cc-830f-05b416769fe1">metrische Räume</a> und \(f: X \rightarrow Y\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
@@ -53,12 +51,12 @@ Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-097
 </ul>
 </div>
 </div>
-<div id="outline-container-org5dc9a76" class="outline-2">
-<h2 id="org5dc9a76"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org2acca19" class="outline-2">
+<h2 id="org2acca19"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org53aaaf6" class="outline-3">
-<h3 id="org53aaaf6"><span class="section-number-3">2.1.</span> a) epsilon-delta \(\Rightarrow\) topologisch</h3>
+<div id="outline-container-orgebf445a" class="outline-3">
+<h3 id="orgebf445a"><span class="section-number-3">2.1.</span> a) epsilon-delta \(\Rightarrow\) topologisch</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sei \(x \in X\) und \(\varepsilon > 0\) beliebig, so existiert ein \(\delta > 0\), so dass gilt:
@@ -74,11 +72,11 @@ Nach der Charakterisierung einer <a href="20230112104451-stetigkeit_topologie.ht
 </p>
 </div>
 </div>
-<div id="outline-container-org6bf1e54" class="outline-3">
-<h3 id="org6bf1e54"><span class="section-number-3">2.2.</span> b) topologisch</h3>
+<div id="outline-container-org24e6d75" class="outline-3">
+<h3 id="org24e6d75"><span class="section-number-3">2.2.</span> b) topologisch</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei \(\varepsilon > 0\), so ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(U \coloneqq f^{-1}[U_{\varepsilon}(x)]\) nach Annahme <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit \(x \in U\)
+Sei \(\varepsilon > 0\), so ist das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(U  \coloneqq f^{-1}[U_{\varepsilon}(x)]\) nach Annahme <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit \(x \in U\)
 Damit existiert nach Konstruktion ein \(\delta > 0\), so dass gilt \(B_{\delta}(x) \subseteq U_{\varepsilon}(x)\) und es folgt \(f[B_{\delta}(x)] \subseteq U_{\varepsilon}(x)\)
 </p>
 </div>

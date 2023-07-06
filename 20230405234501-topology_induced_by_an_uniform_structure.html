@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Topology induced by an uniform structure</h1>
-<div id="outline-container-org43f5e13" class="outline-2">
-<h2 id="org43f5e13"><span class="section-number-2">1.</span> Definition / proposition</h2>
+<div id="outline-container-org9484a88" class="outline-2">
+<h2 id="org9484a88"><span class="section-number-2">1.</span> Definition / proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Let \((X, \Phi)\) be a <a href="20230405231220-uniform_space.html#ID-2968af6c-25f2-4ad4-b884-84e76895a183">uniform space</a>, then the induced <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">topology</a> by the <a href="20230405231607-uniform_structure.html#ID-22331a0e-55ad-4240-9ad1-80ebdbfa9e20">uniform structure</a> is defined as:
@@ -54,12 +52,12 @@ see: <a href="20230406000819-set_of_relatives_relation.html#ID-718ca628-14a9-42d
 </p>
 </div>
 </div>
-<div id="outline-container-org3676ac8" class="outline-2">
-<h2 id="org3676ac8"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgf76865b" class="outline-2">
+<h2 id="orgf76865b"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5b050be" class="outline-3">
-<h3 id="org5b050be"><span class="section-number-3">2.1.</span> <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
+<div id="outline-container-org686982c" class="outline-3">
+<h3 id="org686982c"><span class="section-number-3">2.1.</span> <a href="20221002151243-mengen_in_einer_topologie.html#ID-834b564b-1a94-473e-8e8e-a3204cdbf879">trivial sets in a topology</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 \(\emptyset \in \mathcal{T}\) as \(V[\emptyset] = \emptyset\);
@@ -67,8 +65,8 @@ see: <a href="20230406000819-set_of_relatives_relation.html#ID-718ca628-14a9-42d
 </p>
 </div>
 </div>
-<div id="outline-container-org3f5611c" class="outline-3">
-<h3 id="org3f5611c"><span class="section-number-3">2.2.</span> <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Openness of a union of open sets</a></h3>
+<div id="outline-container-org6a93fe4" class="outline-3">
+<h3 id="org6a93fe4"><span class="section-number-3">2.2.</span> <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Openness of a union of open sets</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Let \(O_i\) be a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a>.
@@ -76,8 +74,8 @@ Then we conclude, that for every \(x \in \bigcup_{i \in I} O_i\) there exists a 
 </p>
 </div>
 </div>
-<div id="outline-container-org4d28f5e" class="outline-3">
-<h3 id="org4d28f5e"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a></h3>
+<div id="outline-container-orgc808e00" class="outline-3">
+<h3 id="orgc808e00"><span class="section-number-3">2.3.</span> <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Openness of a finite intersection of open sets</a></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Let \(O_1,O_2\) be <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> sets and \(x \in O_1 \cap O_2\).

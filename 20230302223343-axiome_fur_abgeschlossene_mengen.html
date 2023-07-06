@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Axiome für abgeschlossene Mengen</h1>
-<div id="outline-container-orgcd2a867" class="outline-2">
-<h2 id="orgcd2a867"><span class="section-number-2">1.</span> Definition / Satz</h2>
+<div id="outline-container-org51f06c6" class="outline-2">
+<h2 id="org51f06c6"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> ist ein Paar \((X, \mathcal{T}')\) mit \(\mathcal{T}' \subseteq \mathcal{P}(X)\), so dass für eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> \(A_i\) bzw. für <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlich</a> viele <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(A_1,...,A_n \in \mathcal{T}'\) gilt:
@@ -56,12 +54,12 @@ Analog ist eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1
 </p>
 </div>
 </div>
-<div id="outline-container-org44b59c8" class="outline-2">
-<h2 id="org44b59c8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org7368d1b" class="outline-2">
+<h2 id="org7368d1b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga82a031" class="outline-3">
-<h3 id="orga82a031"><span class="section-number-3">2.1.</span> <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> \(\Rightarrow\) abgeschlossene Menge</h3>
+<div id="outline-container-org976b738" class="outline-3">
+<h3 id="org976b738"><span class="section-number-3">2.1.</span> <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a> \(\Rightarrow\) abgeschlossene Menge</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Folgt aus:
@@ -72,12 +70,12 @@ Folgt aus:
 </ul>
 </div>
 </div>
-<div id="outline-container-org1d6a491" class="outline-3">
-<h3 id="org1d6a491"><span class="section-number-3">2.2.</span> abgeschlossene menge \(\Rightarrow\) <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a></h3>
+<div id="outline-container-orgd52d8e2" class="outline-3">
+<h3 id="orgd52d8e2"><span class="section-number-3">2.2.</span> abgeschlossene menge \(\Rightarrow\) <a href="20220930230520-topologie_auf_einer_menge.html#ID-1ced2edb-806d-4fb8-ada3-ca97b7ea1d10">Topologie</a></h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgab5823f" class="outline-4">
-<h4 id="orgab5823f"><span class="section-number-4">2.2.1.</span> a) <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit gegenüber Vereinigung (Topologie)</a></h4>
+<div id="outline-container-org3faa2ea" class="outline-4">
+<h4 id="org3faa2ea"><span class="section-number-4">2.2.1.</span> a) <a href="20221002144355-abgeschlossenheit_gegenuber_vereinigung_topologie.html#ID-05b0c7bf-2407-4963-9c14-63deb190d8a9">Abgeschlossenheit gegenüber Vereinigung (Topologie)</a></h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Seien \(O_i\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so ist \(X \setminus O_i\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a>.
@@ -99,8 +97,8 @@ Was zu zeigen war.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc67fc80" class="outline-4">
-<h4 id="orgc67fc80"><span class="section-number-4">2.2.2.</span> b) <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten (Topologie)</a></h4>
+<div id="outline-container-org7364885" class="outline-4">
+<h4 id="org7364885"><span class="section-number-4">2.2.2.</span> b) <a href="20221002144436-abgeschlossenheit_gegenuber_schnitten_topologie.html#ID-12083782-9ff4-46b9-9b75-6be9b008d6cb">Abgeschlossenheit gegenüber endlichen Schnitten (Topologie)</a></h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Seien \(O_1,...,O_n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a>, so ist \(X \setminus O_i\) für \(i \in \{1,...,n\}\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> ist.

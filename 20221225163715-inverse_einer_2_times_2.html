@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Inverse einer \(2 \times 2\) Matrix</h1>
-<div id="outline-container-org2cea89e" class="outline-2">
-<h2 id="org2cea89e"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org540c233" class="outline-2">
+<h2 id="org540c233"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(A =& \begin{pmatrix} \alpha_{11} & \alpha_{12} \\ \alpha_{21} & \alpha_{22} \end{pmatrix}  \in K^{2 \times 2}\)  
@@ -56,12 +54,12 @@ mit \(d = \mathrm{det}(A)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org0b4102c" class="outline-2">
-<h2 id="org0b4102c"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org6554c4d" class="outline-2">
+<h2 id="org6554c4d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd39a5ad" class="outline-3">
-<h3 id="orgd39a5ad"><span class="section-number-3">2.1.</span> rechtsinvers</h3>
+<div id="outline-container-orge3e1751" class="outline-3">
+<h3 id="orge3e1751"><span class="section-number-3">2.1.</span> rechtsinvers</h3>
 <div class="outline-text-3" id="text-2-1">
 \begin{align*}
 A \cdot A^{-1} =& \frac{1}{d} \cdot \begin{pmatrix} \alpha_{11} \alpha_{22} -\alpha_{12} \alpha_{21} & -\alpha_{11} \alpha_{12} + \alpha_{12} \alpha_{11} \\
@@ -76,8 +74,8 @@ andere Richtung:
 </div>
 </div>
 
-<div id="outline-container-org03e9398" class="outline-3">
-<h3 id="org03e9398"><span class="section-number-3">2.2.</span> linksinvers</h3>
+<div id="outline-container-orgfe008ea" class="outline-3">
+<h3 id="orgfe008ea"><span class="section-number-3">2.2.</span> linksinvers</h3>
 <div class="outline-text-3" id="text-2-2">
 \begin{align*}
 \mathrm{det}(A^{-1}) =& \frac{1}{d^2} \cdot \left( \alpha_{22} \alpha_{11} - \alpha_{12} \alpha_{21} \right) \\

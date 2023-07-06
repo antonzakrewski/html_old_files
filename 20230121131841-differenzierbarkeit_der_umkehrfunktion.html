@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,8 +38,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">Differenzierbarkeit der Umkehrfunktion</h1>
-<div id="outline-container-org5da0000" class="outline-2">
-<h2 id="org5da0000"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org6d9e3a6" class="outline-2">
+<h2 id="org6d9e3a6"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(f: D \rightarrow C\) mit \(D, C \subseteq \mathbb{R}\) eine in \(x \in D\) <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbare</a>, <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektive</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>.
@@ -49,8 +47,8 @@ Dann ist \(f^{-}:C \rightarrow D\) <a href="20230116163008-differenzierbarkeit.h
 </p>
 </div>
 </div>
-<div id="outline-container-org7d51321" class="outline-2">
-<h2 id="org7d51321"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge5fedae" class="outline-2">
+<h2 id="orge5fedae"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 \begin{align*}
 f'(x) =& \lim_{\delta \to 0}\left(\frac{f(x+\delta) - f(x)}{\delta}\right)  \\

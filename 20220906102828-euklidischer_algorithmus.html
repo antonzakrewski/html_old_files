@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -40,12 +38,12 @@ tex: {packages: {'[+]': ['mathtools']}}
 <body>
 <div id="content" class="content">
 <h1 class="title">euklidischer Algorithmus</h1>
-<div id="outline-container-orga7f2de2" class="outline-2">
-<h2 id="orga7f2de2"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org46357ad" class="outline-2">
+<h2 id="org46357ad"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(R\) ein <a href="20221226132415-euklidischer_ring.html#ID-4b723c79-698b-40cf-ad6e-1b20de1300a9">euklidischer Ring</a> 
-Sei \(r_0 \coloneqq a\), \(r_1 \coloneqq b\) so liefert der Algorithmus: 
+Sei \(r_0  \coloneqq a\), \(r_1  \coloneqq b\) so liefert der Algorithmus: 
 </p>
 \begin{align*}
 r_0 =& r_1 \cdot q_1 + r_2 \\
@@ -61,12 +59,12 @@ Dann ist der <a href="20220906095223-großter_gemeinsamer_teiler.html#ID-d299c20
 </p>
 </div>
 </div>
-<div id="outline-container-org599fa20" class="outline-2">
-<h2 id="org599fa20"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgb48ab6f" class="outline-2">
+<h2 id="orgb48ab6f"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfbeed9c" class="outline-3">
-<h3 id="orgfbeed9c"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
+<div id="outline-container-org94a5bd5" class="outline-3">
+<h3 id="org94a5bd5"><span class="section-number-3">2.1.</span> <a href="20221226125415-teiler.html#ID-aa16749d-beb2-4276-9c41-c128635ccd4c">Teiler</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 \(r_{n}\) teilt \(r_{n-1}\).
@@ -75,8 +73,8 @@ Analog für \(r_{n-3},...,r_0\) und damit auch \(r_{0} = a, r_1 = b\)
 </p>
 </div>
 </div>
-<div id="outline-container-org521929e" class="outline-3">
-<h3 id="org521929e"><span class="section-number-3">2.2.</span> größter Teiler</h3>
+<div id="outline-container-org15d04e9" class="outline-3">
+<h3 id="org15d04e9"><span class="section-number-3">2.2.</span> größter Teiler</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Sei \(g \in R\) mit \(g \mid a, g \mid b\), so gilt \(g \mid r_0, g \mid r_1\).
