@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>direkte Produkt von Moduln</title>
+<title>Spiegelung von Punkten mit gleicher Norm</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,18 +37,29 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">direkte Produkt von Moduln</h1>
-<div id="outline-container-org6333a8e" class="outline-2">
-<h2 id="org6333a8e"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">Spiegelung von Punkten mit gleicher Norm</h1>
+<div id="outline-container-orgb92d068" class="outline-2">
+<h2 id="orgb92d068"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \((M_i)_{i \in I}\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a>.
-Dann ist das direkte Produkt definiert als kartesische Produkt \(\prod_{i \in I} M_i\)
+Sei \(V\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a> <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(v,w \in V\) mit $\| v \| = \| w \|.
+Dann gilt für die <a href="20230710-spiegelung_einer_reellen_vektorraumsa.html#ID-abc81686-2f89-4321-8e3f-24a7594e874e">Spiegelung</a> \(s_{u - v}(v) = u\) 
 </p>
-
+</div>
+</div>
+<div id="outline-container-org5910971" class="outline-2">
+<h2 id="org5910971"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
 <p>
-Dabei ist die <a href="20221106145934-vektoraddition.html#ID-c6777ed8-3226-470d-b58c-471165f21783">Vektoraddition</a> und die <a href="20221106150206-skalarmultiplikation.html#ID-de889a87-12eb-4fc5-b2b8-08b71c449885">Skalarmultiplikation</a> komponentenweise definiert.
+Nach Annahme, Konstruktion, Symmetrie und nach der <a href="20221003093414-skalarprodukt.html#ID-edd2aca6-e8ec-4a59-9b4a-879e89845014">Multilinearität</a> gilt durch Rechnen
 </p>
+\begin{align*}
+s_{u - v}(v) =& v - 2\frac{\langle u - v, v\rangle}{ \langle u-v, u -v\rangle} (u - v)  \\
+=& v - 2 \frac{ \langle u, v\rangle - \langle v,v\rangle}{ \langle u,u\rangle + \langle -v, -v\rangle - 2 \langle u, v\rangle} \\
+=& v + \frac{ 2 \langle v,v\rangle - 2 \langle u,v \rangle}{2 \langle v, v\rangle - 2 \langle u, v\rangle} (u - v)\\
+=&  v+ (u - v) \\
+=& u
+\end{align*}
 </div>
 </div>
 </div>

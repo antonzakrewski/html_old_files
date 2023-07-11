@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>selbstadjungierte Abbildung und symmetrische Matrix</title>
+<title>lokalendliche Überdeckung und topologische Summe</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,30 +37,40 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">selbstadjungierte Abbildung und symmetrische Matrix</h1>
-<div id="outline-container-org1f9b6a5" class="outline-2">
-<h2 id="org1f9b6a5"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">lokalendliche Überdeckung und topologische Summe</h1>
+<div id="outline-container-orgd7e182c" class="outline-2">
+<h2 id="orgd7e182c"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(V \simeq \mathbb{R}^{n}\) ein <a href="20230204210438-reeller_vektorraum.html#ID-47c426f6-4f34-402a-8c78-5ef0c3b88ce9">reeller</a>, <a href="20221109121525-endlich_erzeugter_vektorraum.html#ID-477797e9-4b4d-4886-9606-6e1c5f378a4f">endlich erzeugter</a>  <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-b0a3-116c78ef7c7b">Prähilbertraum</a> und \(A \in \mathbb{R}^{n \times n}\) eine <a href="20230626-symmetrische_matrix.html#ID-bd9b88d8-cc80-4c54-ad93-f75e68d1695b">symmetrische Matrix</a>.
+Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \((U_{j,i})_{j}\) <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckungen</a> sowie \(\coprod_{i \in I} X_i\) die <a href="20230303000539-topologische_summe.html#ID-7c03dcbb-604d-4d61-9d6d-2d50e50aa5a6">topologische Summe</a>.
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
-<li>\(A\) ist <a href="20230303174217-selbstadjungierter_endomorphismus.html#ID-31005da0-e759-49d6-aabd-ce153e2574ea">Selbstadjungiert</a></li>
-<li>\(A\) ist eine <a href="20230626-symmetrische_matrix.html#ID-bd9b88d8-cc80-4c54-ad93-f75e68d1695b">symmetrische Matrix</a></li>
+<li>\((U_{j,i})_{j}\) ist <a href="20230330211854-lokalendliches_mengensystem.html#ID-bffd65a2-1765-486c-b04c-fb57dc333680">lokalendlich</a> für beliebiges \(i \in I\)</li>
+<li>Die gesamte <a href="20230227163531-uberdeckung.html#ID-804615a8-2307-4f8e-8f51-f4be70e817b3">Überdeckung</a> von \(U_{j,i}\) für \(j,i\) ist lokalendlich</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org6c28ee7" class="outline-2">
-<h2 id="org6c28ee7"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org127a08a" class="outline-2">
+<h2 id="org127a08a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0e3b018" class="outline-3">
+<h3 id="org0e3b018"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
-folgt aus
+Sei \(x \in \coprod_{i \in I} X_i\), so existiert nach Annahme genau ein \(X_i\) mit \(x \in X_i\).
+In diesem \(X_i\) existiert nach Annahme ein 
 </p>
-<ul class="org-ul">
-<li><a href="20230704-symmetrische_matrix_als_hermitesche_matrix.html#ID-5fcb4678-0dd1-4220-baee-98e667f81e2c">symmetrische Matrix als hermitesche Matrix</a></li>
-<li><a href="20230628-selbst_adjungierte_abbildung_und_hermitesche_matrix.html#ID-2ca3d4e2-a8e2-44b9-b032-e829c605491c">selbst-adjungierte Abbildung und hermitesche Matrix</a></li>
-</ul>
+</div>
+</div>
+<div id="outline-container-org73ce67a" class="outline-3">
+<h3 id="org73ce67a"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+klar
+</p>
+</div>
 </div>
 </div>
 </div>

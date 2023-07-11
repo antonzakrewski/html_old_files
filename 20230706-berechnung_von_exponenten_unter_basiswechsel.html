@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>direkte Produkt von Moduln</title>
+<title>Berechnung von Exponenten unter Basiswechsel</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,18 +37,53 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">direkte Produkt von Moduln</h1>
-<div id="outline-container-org6333a8e" class="outline-2">
-<h2 id="org6333a8e"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">Berechnung von Exponenten unter Basiswechsel</h1>
+<div id="outline-container-org20af8ed" class="outline-2">
+<h2 id="org20af8ed"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(R\) ein <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">Ring</a> und \((M_i)_{i \in I}\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">Moduln</a>.
-Dann ist das direkte Produkt definiert als kartesische Produkt \(\prod_{i \in I} M_i\)
+Sei \(V\) ein <a href="20220305210813-vektorraum.html#ID-ba2cd4b5-75e3-43c3-8ccb-d6ede91fab65">K-Vektorraum</a> und \(A,B \in \mathrm{End}_{K}(V)\), so dass gilt ein <a href="20230227153105-vektorraumisomorphismus.html#ID-27b6dd7a-30ae-4eb8-b5c4-e1a268344d2e">Isomorphismus</a> \(S\) existiert mit 
 </p>
+\begin{align*}
+A = S \cdot B \cdot S^{-1}
+\end{align*}
 
 <p>
-Dabei ist die <a href="20221106145934-vektoraddition.html#ID-c6777ed8-3226-470d-b58c-471165f21783">Vektoraddition</a> und die <a href="20221106150206-skalarmultiplikation.html#ID-de889a87-12eb-4fc5-b2b8-08b71c449885">Skalarmultiplikation</a> komponentenweise definiert.
+Dann gilt für \(m \in \mathbb{N}_0\)
 </p>
+\begin{align*}
+A^m =& S B^m S^{-1}
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org7c6e9ec" class="outline-2">
+<h2 id="org7c6e9ec"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a> 
+</p>
+</div>
+<div id="outline-container-org342a572" class="outline-3">
+<h3 id="org342a572"><span class="section-number-3">2.1.</span> IA</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+für \(m = 1\) folgt es aus der Annahme
+Folgt für \(m = 0\) durch $A<sup>0</sup> = \mathrm{id} = S &circ; \mathrm{id}<sub>nil</sub> &circ; S<sup>-1</sup>
+</p>
+</div>
+</div>
+<div id="outline-container-org236f53d" class="outline-3">
+<h3 id="org236f53d"><span class="section-number-3">2.2.</span> IS</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Es gilt nach Annahme
+</p>
+\begin{align*}
+A^{m+1} =& A^m A \\
+=&  S B^m S^{-1} S B S^{-1} \\
+=& S B^{m+1} S^{-1}
+\end{align*}
+</div>
 </div>
 </div>
 </div>
