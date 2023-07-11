@@ -13,6 +13,27 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -21,12 +42,34 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org2f6dee2"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei $
+Seien \(U,V,W\) <a href="20221124132702-banachraum.html#ID-43ef125e-d9bb-454f-9427-4d3d8426893a">Banachräume</a> und \(\langle \cdot, \cdot \rangle: U \times V \rightarrow W\) eine <a href="20230224164810-bilinearform.html#ID-48e29c9d-7941-405a-a653-1f728c298928">Bilinearform</a>.
+Seien \(F: U \rightarrow W, G: V \rightarrow W\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a>, so gilt dann für das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> 
 </p>
+\begin{align*}
+\mathrm{d} \langle G(x), F(y)\rangle = 
+\end{align*}
 </div>
 </div>
 <div id="outline-container-org76f4a2f" class="outline-2">
 <h2 id="org76f4a2f"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Abschätzung mit Produkt richtig ? Operatornorm verwendend
+Es gilt für \(x_0,y_0\):
+</p>
+\begin{align*}
+\langle G(x), F(y)\rangle =& \langle G(x_0) + \mathrm{d}_{x_0} G  (x - x_0)  + o(\| x - x_0\|), F(y_0) +  \mathrm{d}_{y_0} F (y - y_0)  + o(\| y - y_0\|)\rangle \\
+=& \langle G(x_0), F(y_0)\rangle + \langle \mathrm{d}_{x_0} G (x - x_0) , F(y_0)\rangle + \langle G(x_0), \mathrm{d}_{y_0} F (y - y_0)  \rangle + \langle  G(x_0) +  \mathrm{d}_{x_0} G (x - x_0) + o(\| x - x_0\|) ,o(\| y - y_0) \rangle + \langle o(\| x - x_0 \|),  F(y_0) + \mathrm{d}_{y_0} F (y - y_0)  + o(\| y - y_0\|)\rangle \\
+=& \langle G(x_0), F(y_0)\rangle + \langle \mathrm{d}_{x_0} G(x - x_0) ,  F(y_0)\rangle + \langle G(x_0), \mathrm{d}_{y_0} F (y - y_0)  \rangle + o(\| (x,y) - (x_0,y_0) \|) \\
+\end{align*}
+
+<p>
+Damit auch
+</p>
+\begin{align*}
+\mathrm{d}_{(x_0,y_0)} \langle G, F\rangle =&  \langle \mathrm{d}_{x_0} G(x - x_0) ,  F(y_0)\rangle + \langle G(x_0), \mathrm{d}_{y_0} F (y - y_0)  \rangle 
+\end{align*}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

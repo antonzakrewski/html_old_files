@@ -13,15 +13,67 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Existenz einer Stone-Cech Kompaktifizierung für einen vollständig regulären Raum</h1>
 <div id="outline-container-org689125f" class="outline-2">
 <h2 id="org689125f"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \((X, \mathcal{T})\) ein <a href="20230516123520-vollstandig_regularer_raum.html#ID-a8f365a8-a0b0-48d0-80fb-d137167a8c0c">vollständig regulärer</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">Raum</a>, so existiert eine <a href="20230706-stone_cech_kompaktifizierung.html#ID-6f6f4e00-b064-4b53-80a4-11d8a47db113">Stone-Cech-Kompaktifizierung</a>.
+</p>
+</div>
 </div>
 <div id="outline-container-orgc77d681" class="outline-2">
 <h2 id="orgc77d681"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org94915a1" class="outline-3">
+<h3 id="org94915a1"><span class="section-number-3">2.1.</span> Topologischer Raum</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Man wähle die <a href="20230516125659-einbettung_eines_vollstandig_regularen_raums_in_eine_produkttopologie.html#ID-eb178180-ffc5-479d-9b7c-c6ca89be579f">Einbettung eines vollständig regulären Raums in eine Produkttopologie</a>.
+</p>
+\begin{align*}
+f: X \rightarrow \prod_{\varphi \in C(X)} I \\
+\end{align*}
+
+<p>
+Nach dem <a href="20230519090021-satz_von_tychonoff.html#ID-30c83690-820b-4f4f-ac1b-5019fde136a9">Satz von Tychonoff</a> ist \(\prod_{\varphi \in C(X)} I\) ein <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkt</a> <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">Kompakter</a> Räume und damit auch Kompakt; ebenso als <a href="20230517212415-produkt_von_hausdorff_raumen_als_hausdorff_raum.html#ID-11849ef0-9371-436f-a215-b736d98f5d95">Produkt von Hausdorff-Räumen auch ein Hausdorff-Raum</a>.
+Zudem ist \(\overline{f[X]}\) <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">abgeschlossen</a> und damit Kompakt (vgl. <a href="20230511112853-abgeschlossene_mengen_kompakter_raume_sind_kompakt.html#ID-2b714bee-6153-4623-8e5a-6c46e87e3474">Abgeschlossene Mengen kompakter Räume sind kompakt</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-orgadad05f" class="outline-3">
+<h3 id="orgadad05f"><span class="section-number-3">2.2.</span> Abbildung</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+komisches kategorientheorie rechnen
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

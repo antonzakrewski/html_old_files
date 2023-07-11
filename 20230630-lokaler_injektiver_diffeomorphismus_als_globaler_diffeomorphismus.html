@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>lokaler, injektiver Diffeomorphismus als globaler Diffeomorphismus</title>
+<title>lokaler, injektiver Diffeomorphismus als globaler Diffeomorphismus auf das Bild</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,12 +13,57 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">lokaler, injektiver Diffeomorphismus als globaler Diffeomorphismus</h1>
+<h1 class="title">lokaler, injektiver Diffeomorphismus als globaler Diffeomorphismus auf das Bild</h1>
 <div id="outline-container-org313193c" class="outline-2">
 <h2 id="org313193c"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(U \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(F: U \rightarrow \mathbb{R}^m\) ein <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiver</a> <a href="20230629-lokaler_diffeomorphismus.html#ID-89715700-4bab-4518-b978-9bf66cff1ab1">lokaler Diffeomorphismus</a>.
+Dann ist 
+</p>
+\begin{align*}
+F_{\vert U} = f: U \rightarrow f[U]
+\end{align*}
+<p>
+ein <a href="20230301205440-diffeomorphismus.html#ID-573a56f9-0240-4c4a-a241-ee598afdd9f5">Diffeomorphismus</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org81e8c0c" class="outline-2">
+<h2 id="org81e8c0c"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Nach der Aussage über einen <a href="20230630-lokaler_diffeomorphismus_als_offene_abbildung.html#ID-38820c64-6ebf-4f3b-a10b-022dedb292c7">lokaler Diffeomorphismus als offene Abbildung</a> folgt, dass \(f[U]\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist.
+Nach Konstruktion ist \(f\) <a href="20211230211412-bijektivitat.html#ID-3d1c4c92-bf37-4557-980b-787589b9c3f6">bijektiv</a>, d.h. die Umkehrabbildung \(f^{-1}\) ist <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">wohldefiniert</a>.
+Sei \(y \in f[U]\) gegeben, so existiert ein eindeutiges \(x \in U\) mit \(x = f^{-1}(y)\).
+Nach Annahme existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(O_x\) von \(x\), so dass \(f[O_x] \rightarrow f[O_x]\) ein <a href="20230301205440-diffeomorphismus.html#ID-573a56f9-0240-4c4a-a241-ee598afdd9f5">Diffeomorphismus</a> ist.
+Damit folgt aber auch, dass \(f^{-1}\) im Punkt \(y\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> ist.
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

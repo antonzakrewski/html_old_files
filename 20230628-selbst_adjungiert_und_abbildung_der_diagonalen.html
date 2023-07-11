@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>selbst-adjungiert und Abbildung der Diagonalen auf die Reellen Zahlen für einen komplexen Vektorraum</title>
+<title>Selbstadjungiert und Abbildung der Diagonalen auf die Reellen Zahlen für einen komplexen Vektorraum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,7 +37,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">selbst-adjungiert und Abbildung der Diagonalen auf die Reellen Zahlen für einen komplexen Vektorraum</h1>
+<h1 class="title">Selbstadjungiert und Abbildung der Diagonalen auf die Reellen Zahlen für einen komplexen Vektorraum</h1>
 <div id="outline-container-org5bd001d" class="outline-2">
 <h2 id="org5bd001d"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
@@ -55,8 +55,8 @@ Sei \(V\) ein <a href="20230204210448-komplexer_vektorraum.html#ID-b1836b1a-a3bd
 <h2 id="org5679496"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org236fdca" class="outline-3">
-<h3 id="org236fdca"><span class="section-number-3">2.1.</span> 1) \(\Rightarrow\) 2)</h3>
+<div id="outline-container-orgb4e24fc" class="outline-3">
+<h3 id="orgb4e24fc"><span class="section-number-3">2.1.</span> 1) \(implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Nach der <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermitesche Symmetrie</a> gilt:
@@ -70,29 +70,75 @@ und damit auch \(\langle Av, v\rangle \in \mathbb{R}\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7e74fd1" class="outline-3">
-<h3 id="org7e74fd1"><span class="section-number-3">2.2.</span> 2) \(\Rightarrow\) 1)</h3>
+<div id="outline-container-orgd107bfa" class="outline-3">
+<h3 id="orgd107bfa"><span class="section-number-3">2.2.</span> 2) \(implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Seien \(v_1,v_2 \in V\), so gilt
+Seien \(v,w \in V\) beliebig, so ist zu zeigen:
 </p>
 \begin{align*}
-(A(v_1 + v_2), v_1 + v_2) =& (Av_1, v_1) + (A v_1, v_2) + (A v_2, v_1) + (A v_2,v_2) 
-(Av_1, v_2) + (A v_2, v_1) \in& \mathbb{R}
+(Aw,v) = (w,Av)
 \end{align*}
 <p>
-Es folgt somit: \((A v_1, v_2) + (A v_2, v_1) \in \mathbb{R}\)
+Seien \(v,w \in V\), so gilt
 </p>
 \begin{align*}
-(A(v_1 + \mathrm{i} v_2), v_1 + \mathrm{i} v_2) =& (Av_1, v_1) + (A v_1, \mathrm{i} v_2) + ( \mathrm{i} A v_2, v_1) + (\mathrm{i} A v_2, \mathrm{i} v_2)  \\
-=& (A v_1, v_1) - (Av_2,v_2) + \mathrm{i} (A v_1, v_2) + \mathrm{i} (A v_2, v_1) \\
-\mathrm{i} (A v_1, v_2) + \mathrm{i} (A v_2, v_1)  \in& \mathbb{R}
+(A(v + w), v + w) =& (Av, v) + (A v, w) + (A w, v) + (A w,w) 
+(Av, w) + (A w, v) \in& \mathbb{R}
 \end{align*}
 <p>
-Aufgrund der  <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexe Konjugation</a> als <a href="20230628-komplexe_konjugation_als_isomorphismus.html#ID-c89d0c56-829c-47f5-a6da-6119e850a1a1">komplexe Konjugation als Automorphismus</a> folgt somit
+Es folgt somit: \((A v, w) + (A w, v) \in \mathbb{R}\)
 </p>
 \begin{align*}
-\overline{(Av_1, v_2) + (A v_2, v_1)} = \overline{ (Av_1, v_2)} + \overline{(A v_2, v_1)}
+(A(v + \mathrm{i} w), v + \mathrm{i} w) =& (Av, v) + (A v, \mathrm{i} w) + ( \mathrm{i} A w, v) + (\mathrm{i} A w, \mathrm{i} w)  \\
+=& (A v, v) - (Aw,w) + \overline{\mathrm{i}} (A v, w) + \mathrm{i} (A w, v) \\
+=& (A v, v) - (Aw,w) - (A v, w) + \mathrm{i} (A w, v) \\
+- \mathrm{i} (A v, w) + \mathrm{i} (A w, v)  \in& \mathbb{R}
+\end{align*}
+<p>
+Aufgrund der <a href="20220225202137-komplex_konjugierte_zahl.html#ID-f0e37c88-f2da-4790-9aca-11a30e3329af">Komplexen Konjugation</a> <a href="20230628-komplexe_konjugation_als_isomorphismus.html#ID-c89d0c56-829c-47f5-a6da-6119e850a1a1">als Automorphismus</a> und Identität auf \(\mathbb{R}\), sowie <a href="20221003160335-hermitesche_symmetrie.html#ID-4c13f123-ee5e-42a5-8fa5-f5362c997806">Hermiteschen Symmetrie</a>  folgt somit
+</p>
+\begin{align*}
+(Av, w) + (A w, v) =& \overline{(Av, w) + (A w, v)} \\
+=& \overline{ (Av, w)} + \overline{(A w, v)} \\
+=& (v, Aw) + (w, Av)
+\end{align*}
+<p>
+bzw.
+</p>
+\begin{align*}
+(Av, w) + (A w, v) =& (v, Aw) + (w, Av)
+\end{align*}
+
+<p>
+Analog folgt
+</p>
+\begin{align*}
+- \mathrm{i}  (A v, w) + \mathrm{i} (A w, v) =& \overline{- \mathrm{i}  (A v, w) + \mathrm{i} (A w, v) } \\
+=& \overline{- \mathrm{i}  (A v, w)} +  \overline{\mathrm{i} (A w, v) } \\
+=& \overline{- \mathrm{i}} \overline{(Av, w)} + \overline{i} \overline{(Aw, v)} \\
+=& \mathrm{i} (w, Av) - \mathrm{i} (v, Aw)
+\end{align*}
+<p>
+Damit folgt durch Multiplikation mit \(\mathrm{i}\)
+</p>
+\begin{align*}
+- \mathrm{i}  (A v, w) + \mathrm{i} (A w, v) =& \mathrm{i} (w, Av) - \mathrm{i} (v, Aw) \vert \cdot \mathrm{i} \\
+(Av,w) - (Aw,v) =& (v,Aw) - (w, Av)
+\end{align*}
+
+<p>
+Durch Addition der beiden Seiten folgt
+</p>
+\begin{align*}
+(Av, w) + (A w, v) - (Av,w) + (Aw,v) =& (v, Aw) + (w, Av) - (v,Aw) + (w, Av) \\
+2(Aw, v) =& 2(w, Av)
+\end{align*}
+<p>
+Damit folgt auch
+</p>
+\begin{align*}
+(Aw, v) =& (w, Av)
 \end{align*}
 </div>
 </div>

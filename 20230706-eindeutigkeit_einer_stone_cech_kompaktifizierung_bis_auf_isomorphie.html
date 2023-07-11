@@ -13,15 +13,64 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Eindeutigkeit einer Stone-Cech Kompaktifizierung bis auf Isomorphie</h1>
 <div id="outline-container-org793a4dd" class="outline-2">
 <h2 id="org793a4dd"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Die <a href="20230706-stone_cech_kompaktifizierung.html#ID-6f6f4e00-b064-4b53-80a4-11d8a47db113">Stone-Cech-Kompaktifizierung</a> ist eindeutig bis auf <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">Isomorphie</a> 
+</p>
+</div>
 </div>
 <div id="outline-container-org9c51233" class="outline-2">
 <h2 id="org9c51233"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \((\beta X, \iota), (\beta'X, \iota')\) Stone-Cech-Kompaktifizierungen.
+Dann gilt
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+X \arrow[hookrightarrow, ]{rr}{\iota} \arrow[hookrightarrow, ]{rd}{\iota'} \arrow[hookrightarrow, ]{dd}{\iota}&  & \beta X \arrow[swap]{ld}{\exists! f} \arrow[bend left]{ddll}{f' \circ f} \\
+& \beta' X \arrow[swap]{ld}{\exists! f'} & \\
+ \beta X & & 
+\end{tikzcd}
+\end{displaymath}
+
+<p>
+Damit gilt
+</p>
+\begin{align*}
+\iota =  f' \circ f \circ \iota
+\end{align*}
+<p>
+bzw. auch, dass \(f' \circ f\) auf einem <a href="20221124232157-dichte_menge_topologie.html#ID-921fe319-4945-4303-a9a5-3723804e0737">dichten</a> <a href="20221224140013-bildmenge.html#ID-def6ffac-1c21-427b-bacf-7b8580f5d7dd">Bild</a> \(\iota[X]\) festgelegt sind und nach der <a href="20230331172342-dense_map_in_a_hausdorff_space.html#ID-cf93c6db-3299-4e7b-b6d8-af224c40b3ca">Einschränkung einer stetigen Abbildung in einem Hausdorff Raum auf eine Dichte Teilmenge</a>, folgt, dass \(f' \circ f\) eindeutig festgelegt durch \(f' \circ f = \mathrm{id}_{\beta X}\)
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

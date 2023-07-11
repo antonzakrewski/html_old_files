@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stone Cech-Kompaktifizierung als extremal unzusammenhängender Raum</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Stone Cech-Kompaktifizierung als extremal unzusammenhängender Raum</h1>
+<div id="outline-container-orgba72502" class="outline-2">
+<h2 id="orgba72502"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \((X, \mathcal{T})\) ein <a href="20221002144647-diskrete_topologie.html#ID-c9466868-60fd-4b1f-ae1c-1bf7606f3ec7">diskreter</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\beta X\) die <a href="20230706-stone_cech_kompaktifizierung.html#ID-6f6f4e00-b064-4b53-80a4-11d8a47db113">Stone-Cech-Kompaktifizierung</a>.
+Dann ist \(\beta X\) <a href="20230706-extremal_unzusammenhangender_raum.html#ID-09800e1a-3df3-4bb9-8d21-5884aa4c17f4">extremal unzusammenhängender Raum</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org863e450" class="outline-2">
+<h2 id="org863e450"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei \(U' \subseteq \beta X\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(U \coloneqq \beta^{-1}[U']\).
+Für die <a href="20220904105434-indikatorfunktion.html#ID-7450fc8a-f222-471f-a02c-1f31cf92e100">Indikatorfunktion</a> \(f_U: X \rightarrow \{0,1\}\), <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> nach der <a href="20230227184616-charakterisierung_der_diskreten_topologie_anhand_der_stetigkeit.html#ID-11444ebf-4239-4bb1-8a5f-baad267831d7">Charakterisierung der diskreten Topologie anhand der Stetigkeit</a>,  existiert eine eindeutige <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetige</a>  <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> \(\beta f: \beta X \rightarrow \{0,1\}\).
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+X \arrow[hookrightarrow, ]{r}{\beta} \arrow[]{rd}{f_U} &  \beta X \arrow[]{d}{\beta f} \\
+& \{0,1}
+\end{tikzcd}
+\end{displaymath}
+<p>
+Zudem gilt nach der Aussage über eine <a href="20230708-abbildung_mit_dichtem_bild_und_abschluss_des_urbilds.html#ID-137b13b9-19db-41eb-b1ac-f5074afac9fe">Abbildung mit dichtem Bild und Abschluss des Urbilds einer offenen Menge</a> 
+</p>
+\begin{align*}
+U' \subseteq \overline{\beta U} 
+\end{align*}
+<p>
+Ferner gilt nach dem <a href="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen.html#ID-1b328ebc-2c0d-43c4-8581-da0f9579c217">Bild des Abschlusses unter stetigen Abbildungen</a> auch
+</p>
+\begin{align*}
+(\beta f)[\overline{\beta U}] \subseteq \overline{\{0\}} = \{0\}
+\end{align*}
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>
