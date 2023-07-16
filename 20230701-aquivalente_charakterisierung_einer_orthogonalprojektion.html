@@ -48,6 +48,7 @@ Sei \(V\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-
 <ol class="org-ol">
 <li>\(P\) ist die <a href="20230628-orthogonalprojektion.html#ID-49dcf74d-6fab-460d-a38b-d05aa50e429e">Orthogonalprojektion</a> auf \(U\)</li>
 <li>für alle \(u \in U\) gilt \(\langle P(v) - v, u\rangle = 0\)</li>
+<li>\(\mathrm{ker}(p) = U^{\bot}\)</li>
 </ol>
 </div>
 </div>
@@ -55,16 +56,44 @@ Sei \(V\) ein <a href="20230105092710-prahilbertraum.html#ID-c83705a9-fdd0-441f-
 <h2 id="org91d5950"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgdb2aeea" class="outline-3">
-<h3 id="orgdb2aeea"><span class="section-number-3">2.1.</span> 1) \(implies\) 2)</h3>
+<div id="outline-container-orgf98c84d" class="outline-3">
+<h3 id="orgf98c84d"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei \(v \in U = \mathrm{im}(P)\), so existiert ein \(v' \in V\) mit \(P(v') = v\).
+Sei \(v = u' + w\) mit \(w \in U^{\bot}\), so folgt
+</p>
+\begin{align*}
+\langle P(v) - v, u\rangle =& \langle u' - u' - w, u\rangle \\
+=& - \langle w,u\rangle \\
+=& 0
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org65f51bd" class="outline-3">
+<h3 id="org65f51bd"><span class="section-number-3">2.2.</span> 2) \(\implies\) 3)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Sei \(v \in \mathrm{ker}(p)\), so gilt \(v = v - p(v) \in U^{\bot}\).
+Ferner gilt für \(v \in U^{\bot}\) auch nach Annahme \(v - p(v) \in U^{\bot}\) und damit auch \(p(v) \in U^{\bot}\).
+Da \(\mathrm{im}(P) = U\) gilt, folgt \(p(v) \in U \cap U^{\bot} = \{0\}\) ( <a href="20230303173841-direkte_summe_durch_das_orthogonales_komplement.html#ID-72951b29-8e86-44f7-8d0e-84d1874fec42">Direkte Summe durch das orthogonale Komplement in endlich dimensionalen Vektorräumen</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgef206ac" class="outline-3">
-<h3 id="orgef206ac"><span class="section-number-3">2.2.</span> 2) \(implies\) 1)</h3>
+<div id="outline-container-org8527180" class="outline-3">
+<h3 id="org8527180"><span class="section-number-3">2.3.</span> 3) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Sei \(v = u + w\) für \(u \in U\) und \(w \in U^{\bot}\), so gilt
+</p>
+\begin{align*}
+p(v) =& p(u) + p(w) \\
+=& p(u) \\
+=& u
+\end{align*}
+<p>
+wegen der <a href="20230701-projektion_und_einschrankung_auf_das_bild_als_identitat.html#ID-6f1d6b8a-893c-4d51-8981-171fb4036efa">Projektion und Einschränkung auf das Bild als Identität</a> 
+</p>
+</div>
 </div>
 </div>
 </div>

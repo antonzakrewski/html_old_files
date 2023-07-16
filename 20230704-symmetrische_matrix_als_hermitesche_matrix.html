@@ -13,15 +13,51 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">symmetrische Matrix als hermitesche Matrix</h1>
 <div id="outline-container-org8d78a70" class="outline-2">
 <h2 id="org8d78a70"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(\mathbb{R}^n\) ein <a href="20230228165413-reeller_prahilbertraum.html#ID-66cc8c4c-9182-4e8c-be37-06075fc56a2d">reeller Prähilbertraum</a> und \(A \in \mathbb{R}^{n \times n}\) eine <a href="20230626-symmetrische_matrix.html#ID-bd9b88d8-cc80-4c54-ad93-f75e68d1695b">symmetrische Matrix</a>.
+Dann ist \(A\) eine  <a href="20230628-hermitesche_matrix.html#ID-e47ba7ed-3d20-4b44-b9a6-b2a323c6d5ef">hermitesche Matrix</a>.
+</p>
+</div>
 </div>
 <div id="outline-container-org7887fc8" class="outline-2">
 <h2 id="org7887fc8"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Es gilt
+</p>
+\begin{align*}
+\overline{A}^t =& A^t \\
+=& A
+\end{align*}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

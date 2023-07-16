@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Stone Cech-Kompaktifizierung als extremal unzusammenhängender Raum</title>
+<title>Stone Cech-Kompaktifizierung eines diskreten Raums als extremal unzusammenhängender Raum</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,7 +37,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Stone Cech-Kompaktifizierung als extremal unzusammenhängender Raum</h1>
+<h1 class="title">Stone Cech-Kompaktifizierung eines diskreten Raums als extremal unzusammenhängender Raum</h1>
 <div id="outline-container-orgba72502" class="outline-2">
 <h2 id="orgba72502"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
@@ -57,14 +57,14 @@ Für die <a href="20220904105434-indikatorfunktion.html#ID-7450fc8a-f222-471f-a0
 \begin{displaymath}
 \begin{tikzcd}
 X \arrow[hookrightarrow, ]{r}{\beta} \arrow[]{rd}{f_U} &  \beta X \arrow[]{d}{\beta f} \\
-& \{0,1}
+& \{0,1\}
 \end{tikzcd}
 \end{displaymath}
 <p>
 Zudem gilt nach der Aussage über eine <a href="20230708-abbildung_mit_dichtem_bild_und_abschluss_des_urbilds.html#ID-137b13b9-19db-41eb-b1ac-f5074afac9fe">Abbildung mit dichtem Bild und Abschluss des Urbilds einer offenen Menge</a> 
 </p>
 \begin{align*}
-U' \subseteq \overline{\beta U} 
+U' \subseteq \overline{\beta [U]} 
 \end{align*}
 <p>
 Ferner gilt nach dem <a href="20230312160220-bild_des_abschlusses_unter_stetigen_funktionen.html#ID-1b328ebc-2c0d-43c4-8581-da0f9579c217">Bild des Abschlusses unter stetigen Abbildungen</a> auch
@@ -72,6 +72,11 @@ Ferner gilt nach dem <a href="20230312160220-bild_des_abschlusses_unter_stetigen
 \begin{align*}
 (\beta f)[\overline{\beta U}] \subseteq \overline{\{0\}} = \{0\}
 \end{align*}
+
+<p>
+Sei \(0 \coloneqq (\beta f)^{-1}[0]\), so ist \(A \coloneqq 0 \setminus \overline{\beta [U]}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> (vgl. <a href="20230330212948-komplement_einer_abgeschlossenen_und_offenen_menge.html#ID-443ec431-b5d9-49af-93c0-172f5d49556b">Komplement einer abgeschlossenen und offenen Menge</a>) und es gilt \(f_U[X \setminus U] = 1\), d.h. \(\beta [X \setminus U] \cap A = \emptyset\).
+Ferner gilt nach Konstruktion \(\beta [U] \cap A = \emptyset\), d.h. es folgt für \(x \in A\) auch \(a \not\in \overline{\beta [X]}\), d.h. wegen der Dichtheit auch \(A = \emptyset\)
+</p>
 </div>
 </div>
 </div>
