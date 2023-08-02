@@ -13,6 +13,27 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -21,10 +42,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org8b0439f"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei $
+Sei \(V \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und 
+</p>
+\begin{align*}
+V \times V \rightarrow \mathbb{R}
+\end{align*}
+<p>
+eine <a href="20230604-quadratische_form.html#ID-1c68a22f-54cc-48fc-9791-2f41df8be73c">quadratische Form</a>.
+Dann ist 
 </p>
 </div>
 </div>
+
 <div id="outline-container-org405038b" class="outline-2">
 <h2 id="org405038b"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">

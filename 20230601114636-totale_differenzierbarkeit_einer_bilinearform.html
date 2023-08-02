@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>totale Differenzierbarkeit einer Bilinearform</title>
+<title>totale Differenzierbarkeit einer Bilinearen Abbildung</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,13 +13,44 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">totale Differenzierbarkeit einer Bilinearform</h1>
+<h1 class="title">totale Differenzierbarkeit einer Bilinearen Abbildung</h1>
 <div id="outline-container-org5c8be2d" class="outline-2">
 <h2 id="org5c8be2d"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(V \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und \(\varphi: V \times V \rightarrow \mathbb{R}^m\) eine <a href="20221003210458-bilineare_abbildung.html#ID-4a5036f7-358f-484f-88aa-638a29f2e1f7">bilineare Abbildung</a>.
+Dann ist \(\varphi\) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> mit
+</p>
+\begin{align*}
+\mathrm{d}_{v_1,v_2} \varphi = \varphi(\cdot, v_2) + \varphi(v_1, \cdot)
+\end{align*}
 </div>
+</div>
+
 <div id="outline-container-org69bc318" class="outline-2">
 <h2 id="org69bc318"><span class="section-number-2">2.</span> Beweis</h2>
 </div>

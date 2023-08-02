@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Quotientenkörper über einem Ring</title>
+<title>Quotient Fied</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,13 +37,26 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Quotientenkörper über einem Ring</h1>
+<h1 class="title">Quotient Fied</h1>
 <div id="outline-container-org1126ec0" class="outline-2">
 <h2 id="org1126ec0"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a>, <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integritätsbereich</a> <a href="20230112165803-nullring.html#ID-638f0759-37dc-472c-bb27-7cfccbd3c550">Nullring</a> 
+Sei \(R\) ein <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">kommutativer</a>, <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">integritätsbereich</a> verschieden vom <a href="20230112165803-nullring.html#ID-638f0759-37dc-472c-bb27-7cfccbd3c550">Nullring</a>.
+Dann ist der Quotientenkörper \(Q(R)\) definiert als <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> mit einem <a href="20230301165850-ringmonomorphismus.html#ID-f893fb26-272b-41b0-8943-52596b2804ba">Ringmonomorphismus</a> \(\iota: R \rightarrow Q(R)\), so dass für jeden <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> \(K\) und <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> \(\varphi: R \rightarrow K\) ein eindeutiger <a href="20221111202851-korperhomomorphismus.html#ID-a701a50b-3b23-4b2c-802f-0a65299ac479">Körperhomomorphismus</a>
 </p>
+\begin{align*}
+\psi: Q(R) \rightarrow K
+\end{align*}
+<p>
+so dass folgende Diagramm kommutiert
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+R \arrow[]{rd}{\varphi}\arrow[]{r}{\iota} & Q(R) \arrow[]{d}{\exists! \psi}\\
+& K
+\end{tikzcd}
+\end{displaymath}
 </div>
 </div>
 </div>

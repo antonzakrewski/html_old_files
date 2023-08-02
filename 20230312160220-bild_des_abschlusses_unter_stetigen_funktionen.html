@@ -45,18 +45,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 Seien \((X, \mathcal{T})\) und \((X', \mathcal{T}')\) <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologische Räume</a> und \(f: X \rightarrow X'\) eine <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a>.
 Dann sind folgende Aussagen <a href="20211223095559-aquivalenz_logik.html#ID-0971f793-e700-48dd-8722-d13a018f4b87">äquivalent</a>:
 </p>
-<ul class="org-ul">
+<ol class="org-ol">
 <li>\(f\) ist <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a></li>
 <li>Für eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(A \subseteq X\) gilt: \(f[\overline{A}] \subseteq \overline{f[A]}\) (siehe: <a href="20230222175426-abschluss_in_einer_topologie.html#ID-9134c61c-5ec6-4cd6-8928-9ef53b6bfd37">Abschluss</a>)</li>
-</ul>
+</ol>
 </div>
 </div>
 <div id="outline-container-orgf6f376a" class="outline-2">
 <h2 id="orgf6f376a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbfa44d5" class="outline-3">
-<h3 id="orgbfa44d5"><span class="section-number-3">2.1.</span> a) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a> \(\Rightarrow\)</h3>
+<div id="outline-container-org05c6a9c" class="outline-3">
+<h3 id="org05c6a9c"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:
@@ -67,14 +67,14 @@ D.h. es existiert eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-
 f(a) \not\in \overline{f[A]}
 \end{align*}
 <p>
-Da <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss abgeschlossen</a> ist, folgt dass \(X' \setminus \overline{f[A]}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(a)\)
+Da der <a href="20230303085437-abschluss_als_abgeschlossene_menge.html#ID-ba425d08-fac9-4027-8362-8ade42166188">Abschluss abgeschlossen</a> ist, folgt dass \(X' \setminus \overline{f[A]}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist und damit eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(f(a)\)
 Dabei ist aber \(X \setminus \overline{A}\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> mit \(a \not\in X' \setminus \overline{A}\).
 Damit folgt, dass das <a href="20211230205442-urbild_mengenlehre.html#ID-55e63f0f-4499-43f1-af07-5c56577a9c73">Urbild</a> \(f^{-1}[X' \setminus \overline{f[A]}]\) keine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> ist, d.h. <a href="20230312160241-umgebung_unter_stetigen_abbildungen.html#ID-c6f80ab6-d1da-404e-af9e-fd1b9d40f1fe">Urbilder von Umgebungen unter stetigen Abbildungen</a> ist verletzt
 </p>
 </div>
 </div>
-<div id="outline-container-org77ad6e1" class="outline-3">
-<h3 id="org77ad6e1"><span class="section-number-3">2.2.</span> b) \(\Rightarrow\) stetig</h3>
+<div id="outline-container-org94c761f" class="outline-3">
+<h3 id="org94c761f"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 <a href="20210305204939-beweis_durch_widerspruch.html#ID-ee659788-c975-494a-aef0-85087f3db839">Beweis durch Widerspruch</a>:

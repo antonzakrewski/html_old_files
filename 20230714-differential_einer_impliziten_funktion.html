@@ -42,22 +42,46 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org99f5cb3"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(\phi: \mathbb{R}^n \rightarrow \mathbb{R}^m\) eine <a href="20230708-implizite_funktion.html#ID-ec745d29-88aa-4b98-ac86-047e0bf7ba10">implizite Funktion</a> für \(F: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^l\) und
+Sei \(\varphi: \mathbb{R}^n \rightarrow \mathbb{R}^m\) eine <a href="20230708-implizite_funktion.html#ID-ec745d29-88aa-4b98-ac86-047e0bf7ba10">implizite Funktion</a> für \(F: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^l\) und
 </p>
 \begin{align*}
-F(x,\phi(x)) = \mathrm{const}
+F(x,\varphi(x)) = \mathrm{const}
 \end{align*}
 <p>
 Dann gilt für das <a href="20221113224442-totales_differential.html#ID-9361fe82-74cf-489a-8551-9da7453a92b7">totale Differential</a> von \(F\):
 </p>
 \begin{align*}
-\mathrm{d} \varphi_x = - ( \mathrm{d} F_{x, \phi(x)}_{\vert \mathbb{R}^m \times \{0\}})^{-1} \circ \mathrm{d} F_{(x, \phi(x))}_{\vert \mathbb{R}^n \times \{0\}}
+\mathrm{d} \varphi_x = - ( \mathrm{d} F_{x, \varphi(x)}_{\vert \mathbb{R}^m \times \{0\}})^{-1} \circ \mathrm{d} F_{(x, \varphi(x))}_{\vert \mathbb{R}^n \times \{0\}}
 \end{align*}
 </div>
 </div>
-
 <div id="outline-container-org2aa0cbf" class="outline-2">
 <h2 id="org2aa0cbf"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Es gilt
+</p>
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}x} F(x,\varphi(x)) = 0
+\end{align*}
+<p>
+somit folgt nach der <a href="20230606-kettenregel_fur_das_totale_differential.html#ID-8b45d9e9-87fb-42ce-a53c-b1aca5fac3e5">Kettenregel für das totale Differential</a> 
+</p>
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}x} F(x,\varphi(x)) =& \mathrm{d} F_{(x,\varphi(x))} \circ \frac{\mathrm{d}}{\mathrm{d}x} (x, \varphi(x)) \\
+=& \mathrm{d} F_{(x,\varphi(x))} \circ \frac{\mathrm{d}}{\mathrm{d}x} (x, \varphi(x)) \\
+=& \mathrm{d} F_{(x,\varphi(x))} \circ (1, \mathrm{d}_x \varphi ) \\
+=& \mathrm{d} F_{(x,\varphi(x))} \circ (1, 0) + \mathrm{d} F_{(x,\varphi(x))} \circ (0, \mathrm{d}_x \varphi ) \\
+\end{align*}
+<p>
+Damit gilt, da \(\mathrm{d}_{(x, \varphi(x))}\) invertierbar ist, auch
+</p>
+\begin{align*}
+0 =& \mathrm{d}_{(x,\varphi(x))} F_{(1,0)} + \mathrm{d}_{(x,\varphi(x))} F \circ (0, \mathrm{d}_x \varphi ) \\
+- \mathrm{d}_{(x, \varphi(x))} F_{(1,0)} \circ (\mathrm{d}_{(x, \varphi(x))} F_{(0, \varphi(x))})^{-1} =& (0, \mathrm{d}_x \varphi) \\
+=& \mathrm{d}_x \varphi
+\end{align*}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
