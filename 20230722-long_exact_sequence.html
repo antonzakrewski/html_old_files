@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>long exact sequence</title>
+<title>long exact sequence of groups</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,12 +13,51 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">long exact sequence</h1>
+<h1 class="title">long exact sequence of groups</h1>
 <div id="outline-container-org1c2f9ff" class="outline-2">
 <h2 id="org1c2f9ff"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(G_i\) be <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">groups</a> and \(\varphi_i: G_i \rightarrow G_{i+1}\) <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">homomorphisms</a> for \(i \in \mathbb{Z}\).
+A long exact sequence is a sequence of the form
+</p>
+\begin{align*}
+... G_{i-1} \underrightarrow{\varphi_{i-1}} G_{i} G_i \underrightarrow{\varphi_i} G_{i+1} \underrightarrow{\varphi_{i+1}} G_{i+2}
+\end{align*}
+<p>
+such that for any \(i \in \mathbb{Z}\), the sequnce
+</p>
+\begin{align*}
+G_{i-1} \underrightarrow{\varphi_{i-1}} G_i \underrightarrow{\varphi_{i}} G_{i+1}
+\end{align*}
+<p>
+is <a href="20230722-exact_group_homomorphisms.html#ID-aa569635-5f4a-4c4a-9e9b-af9c577e377d">exact</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

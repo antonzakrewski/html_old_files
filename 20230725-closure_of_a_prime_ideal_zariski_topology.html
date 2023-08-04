@@ -13,11 +13,61 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">closure of a prime ideal (zariski topology)</h1>
-
+<div id="outline-container-org43a3721" class="outline-2">
+<h2 id="org43a3721"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(A\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, \(\mathfrak{p} \in \mathrm{Spec}(A)\) a <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">prime ideal</a> and \(\mathrm{Spec}(A)\) equipped with the <a href="20230725-zariski_topology.html#ID-1535e0f9-be74-4d53-9ca1-c88439a2a34b">Zariski topology</a>.
+Then
+</p>
+\begin{align*}
+\overline{ \{\mathfrak{p}\}} = V(\mathfrak{p})
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org0b6d466" class="outline-2">
+<h2 id="org0b6d466"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+By characterization of the <a href="20230222175746-abschluss_als_kleinste_abgeschlossene_menge.html#ID-ece59b8c-3cad-4e6f-9dd4-63d68892e3dc">closure as smallest closed set</a> we get
+</p>
+\begin{align*}
+\overline{ \{\mathfrak{p}\}} = \bigcap_{T \subseteq \mathfrak{p}} V(T)
+\end{align*}
+<p>
+Therefore we get by applying <a href="20230725-spectrum_and_intersection.html#ID-c14d8e32-c1c6-48e7-9fb7-e69e714cc6c3">vanishing set of a union</a>
+</p>
+\begin{align*}
+\bigcap_{T \subseteq \mathfrak{p}}(V(T)) =& V(\bigcup_{T \subseteq \mathfrak{p}} T) \\
+=& V(\mathfrak{p})
+\end{align*}
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>

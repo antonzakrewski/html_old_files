@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>radical of an ideal as preimage of the projection to the quotient ring</title>
+<title>radical of an ideal as preimage of the nilradal for the projection to the quotient ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,15 +13,51 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">radical of an ideal as preimage of the projection to the quotient ring</h1>
+<h1 class="title">radical of an ideal as preimage of the nilradal for the projection to the quotient ring</h1>
 <div id="outline-container-org79ac304" class="outline-2">
 <h2 id="org79ac304"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(A\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, \(\mathfrak{a}\) an <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> and \(\pi: A \rightarrow A/\mathfrak{a}\) the canonical <a href="20230628-projektion.html#ID-23da86e5-dc06-470a-b6b8-a9564f520047">projection</a> (see: <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">quotient ring</a>)
+Then 
+</p>
+\begin{align*}
+\sqrt{a} = \pi^{-1}[\mathcal{N}_{A/\mathfrak{a}}
+\end{align*}
+</div>
 </div>
 <div id="outline-container-org5f3c506" class="outline-2">
 <h2 id="org5f3c506"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Suppose \(a + \mathfrak{a} \in \mathcal{N}_{A/\mathfrak{a}}\), then this is equivalent to  \(\exists n \in \mathbb{N}: (a + \mathfrak{a})^{n} = a^n + \mathfrak{a} = 0 + \mathfrak{a}\).
+Hence a<sup>n</sup> &isin; \(\mathfrak{a}\) and by assumption \(a \in \pi^{-1}[a + \mathfrak{a}]\) or \(a \in \sqrt{\mathfrak{a}}\)
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

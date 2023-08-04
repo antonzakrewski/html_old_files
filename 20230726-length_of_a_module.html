@@ -13,12 +13,45 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">length of a module</h1>
 <div id="outline-container-org3e8d4a2" class="outline-2">
 <h2 id="org3e8d4a2"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a> and \(M\) an \(R\)-<a href="20221208074234-module.html#ID-0454c8db-8258-4105-8661-a34a1047663e">module</a>.
+Then the length \(l(M)\) of \(M\) is defined as
+</p>
+\begin{align*}
+l(M) \coloneqq \inf \{n \in \mathbb{N} \vert \exists \text{composition series with lenght } m\}
+\end{align*}
+<p>
+see: <a href="20230726-length_of_a_chain_of_modules.html#ID-bcdd2b06-2f37-42ec-aae7-98c1b7701f5b">length of a chain of submodules</a>, <a href="20230726-composition_series.html#ID-bb2a9dbf-be6c-4185-a9bc-5107282850ad">composition series</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
