@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>mixed charakteristic of a local ring</title>
+<title>mixed charakteristic</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,11 +13,47 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">mixed charakteristic of a local ring</h1>
-
+<h1 class="title">mixed charakteristic</h1>
+<div id="outline-container-org133a38f" class="outline-2">
+<h2 id="org133a38f"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>.
+Then \(R\) is said to be of mixed characteristic if there exists an <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> \(I\) such that
+</p>
+\begin{align*}
+\mathrm{char}(R) =& 0 \\
+\mathrm{char}(R/I) \neq 0
+\end{align*}
+<p>
+see: <a href="20221030164602-charakteristik_eines_korpers.html#ID-857e2abc-6f76-404f-bf65-6822c05d6bd3">Characteristic</a>, <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">quotient ring</a> 
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>

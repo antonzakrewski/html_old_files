@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>von neumann regular ring as reduced ring</title>
+<title>von Neumann regular ring as reduced ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,11 +13,57 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">von neumann regular ring as reduced ring</h1>
-
+<h1 class="title">von Neumann regular ring as reduced ring</h1>
+<div id="outline-container-orgc3e5b77" class="outline-2">
+<h2 id="orgc3e5b77"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R\) be a <a href="20230803-von_neumann_regular_ring.html#ID-2eb3bab2-7439-4dbd-ae53-951096e2956e">von Neumann regular ring</a>.
+Then \(R\) is <a href="20230725-reduced_ring.html#ID-1480b16c-0de6-4614-9ae9-a70abea088a9">reduced</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org20cf153" class="outline-2">
+<h2 id="org20cf153"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Suppose there exists an \(a \in R\) such that \(a^n = 0\).
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">w.l.o.g.</a> let \(n = 2\) - e.g. by taking \(a' \coloneqq a^{\mathrm{ceil}(\frac{n}{2})}\) then we conclude
+</p>
+\begin{align*}
+a =& a^2 \cdot x \\
+=& 0 \cdot x \\
+=& 0
+\end{align*}
+<p>
+for all \(x \in R\) and hence \(a = 0\)
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>

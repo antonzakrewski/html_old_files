@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>localization as functor</title>
+<title>localization functor</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,13 +13,60 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">localization as functor</h1>
+<h1 class="title">localization functor</h1>
+<div id="outline-container-orgffa88df" class="outline-2">
+<h2 id="orgffa88df"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-of a module ?
+Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, \(S \subseteq R\) <a href="20230724-multiplicatively_closed_set.html#ID-d3df0441-9f2f-476f-b18e-d513ae149906">multiplicatively closed</a> and \(\mathrm{RMod}\) the <a href="20230225170152-kategorie_mod.html#ID-15b21b3a-18bb-4d60-a716-c69681d7222d">category</a> of <a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">modules</a> over \(R\).
+Then the <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> 
 </p>
+\begin{align*}
+F: \mathrm{RMod} \rightarrow& \mathrm{S^{-1}RMod} \\
+M \mapsto& S^{-1}M \\
+(f: M \rightarrow N) \mapsto& (S^{-1}f: S^{-1}M \rightarrow S^{-1}N)
+\end{align*}
+<p>
+is a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org2bccb04" class="outline-2">
+<h2 id="org2bccb04"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+corollary of:
+</p>
+<ul class="org-ul">
+<li><a href="20230811-localization_of_a_module_homomorphism.html#ID-4b5a83c4-9c33-4228-a527-d81d50d57362">localization of a module homomorphism</a></li>
+<li><a href="20230811-localization_of_a_composition_of_module_homomorphisms.html#ID-3273bc33-576e-452b-831a-5a849ec92a34">localization of a composition of module homomorphisms</a></li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>

@@ -13,11 +13,54 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">image of a von neumann regular ring as von neumann regular ring</h1>
-
+<div id="outline-container-orga3630f8" class="outline-2">
+<h2 id="orga3630f8"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R,R'\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">rings</a>, \(\varphi: R \rightarrow R'\) a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a> and \(R\) a <a href="20230803-von_neumann_regular_ring.html#ID-2eb3bab2-7439-4dbd-ae53-951096e2956e">von Neumann regular ring</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org958a5fb" class="outline-2">
+<h2 id="org958a5fb"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+corollary of:
+</p>
+<ul class="org-ul">
+<li><a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a></li>
+<li><a href="20230811-quotient_ring_of_a_von_neumann_regular_ring_as_von_neumann_regular_ring.html#ID-239b6323-2924-4236-97f3-b94f37e4ae60">quotient ring of a von neumann regular ring as von neumann regular ring</a></li>
+</ul>
+\begin{align*}
+R/\mathrm{ker}(\varphi) \simeq \mathrm{im}(\varphi) \subseteq R'
+\end{align*}
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>

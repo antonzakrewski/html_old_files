@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,21 +21,24 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org94403cb"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, \(S^{-1}R\) a <a href="20230724-localization_of_a_ring.html#ID-0b26fdfb-9d28-4981-acde-2ea1ea96837d">localization</a> along \(S \subseteq R\), \(\varphi: R \rightarrow S^{-1}R\) the canonical <a href="20230725-ring_homomorphism_for_a_localization.html#ID-1017e369-625a-4847-a695-7d4e3ff73ade">ring homomorphism for a localization</a> and
+Let <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_dcfcbcefef99c03104cfe35429da478d5b10fa9b.svg" alt="20230724-universal_property_of_a_localization_dcfcbcefef99c03104cfe35429da478d5b10fa9b.svg" class="org-svg" /> be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_b89b439b374f446e22d2d25d71f06d76ddba137d.svg" alt="20230724-universal_property_of_a_localization_b89b439b374f446e22d2d25d71f06d76ddba137d.svg" class="org-svg" /> a <a href="20230724-localization_of_a_ring.html#ID-0b26fdfb-9d28-4981-acde-2ea1ea96837d">localization</a> along <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_c210bf14c36d1828588d08a18da323366135936b.svg" alt="20230724-universal_property_of_a_localization_c210bf14c36d1828588d08a18da323366135936b.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_352c8cd0bb1368fd1aedab5841d91d601146ac33.svg" alt="20230724-universal_property_of_a_localization_352c8cd0bb1368fd1aedab5841d91d601146ac33.svg" class="org-svg" /> the canonical <a href="20230725-ring_homomorphism_for_a_localization.html#ID-1017e369-625a-4847-a695-7d4e3ff73ade">ring homomorphism for a localization</a> and
 </p>
-\begin{align*}
-\psi: R \rightarrow R'
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_073bf4462de29251374d56bcc2e14f8219a0aa3c.svg" alt="20230724-universal_property_of_a_localization_073bf4462de29251374d56bcc2e14f8219a0aa3c.svg" class="org-svg" />
+</span>
+</div>
 <p>
-a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ringhomomorphism</a>, such that \(\psi(S) \subseteq (R')^{\times}\)
-Then there exists a unique <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a> \(f: S^{-1}R \rightarrow R'\) such that
+a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ringhomomorphism</a>, such that <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_f9f6e05a658eef8f098dde6379b079e50f3b4e22.svg" alt="20230724-universal_property_of_a_localization_f9f6e05a658eef8f098dde6379b079e50f3b4e22.svg" class="org-svg" />
+Then there exists a unique <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a> <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_d3b813a6f57e45ded4824a1b9e349ec5bd1de93a.svg" alt="20230724-universal_property_of_a_localization_d3b813a6f57e45ded4824a1b9e349ec5bd1de93a.svg" class="org-svg" /> such that
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-R  \arrow[]{rd}{\psi} \arrow[]{r}{\varphi} & S^{-1}R \arrow[]{d}{\exists! f}\\
-& R'
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_4fe8ae705a698b91526bff0c592eba8702923a4c.svg" alt="20230724-universal_property_of_a_localization_4fe8ae705a698b91526bff0c592eba8702923a4c.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-org087c661" class="outline-2">
@@ -65,9 +47,99 @@ R  \arrow[]{rd}{\psi} \arrow[]{r}{\varphi} & S^{-1}R \arrow[]{d}{\exists! f}\\
 </div>
 <div id="outline-container-org9f848c7" class="outline-3">
 <h3 id="org9f848c7"><span class="section-number-3">2.1.</span> uniqueness</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Let <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_6df0a60e7d04cf9822e6a4a99b680bbee8b57f97.svg" alt="20230724-universal_property_of_a_localization_6df0a60e7d04cf9822e6a4a99b680bbee8b57f97.svg" class="org-svg" />, then for <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_92f638979db92e9153a39d13badbe736e09f1a6d.svg" alt="20230724-universal_property_of_a_localization_92f638979db92e9153a39d13badbe736e09f1a6d.svg" class="org-svg" /> we get by <a href="20230725-cancelling_in_a_localization.html#ID-3a87634c-a96e-484f-92c0-1ee4070a064e">cancelling in a localization</a> 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_7c9922273eec7a0f4e577c7be6704c427304f232.svg" alt="20230724-universal_property_of_a_localization_7c9922273eec7a0f4e577c7be6704c427304f232.svg" class="org-svg" />
+</span>
+</div>
+<p>
+hence <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_20a1ecb7ef379fb49275a8c0063474a74c98b691.svg" alt="20230724-universal_property_of_a_localization_20a1ecb7ef379fb49275a8c0063474a74c98b691.svg" class="org-svg" />
+</p>
+
+<p>
+Thus the map is - if existent - uniquely defined by
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_e07bf40768096c4ee36f14944a9c87e7005b909c.svg" alt="20230724-universal_property_of_a_localization_e07bf40768096c4ee36f14944a9c87e7005b909c.svg" class="org-svg" />
+</span>
+</div>
+</div>
 </div>
 <div id="outline-container-org85eaef4" class="outline-3">
 <h3 id="org85eaef4"><span class="section-number-3">2.2.</span> existence</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org7b11448" class="outline-4">
+<h4 id="org7b11448"><span class="section-number-4">2.2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> map</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+Let <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_98d749b57a7f1dd646cf140d94dce4b3f88bba71.svg" alt="20230724-universal_property_of_a_localization_98d749b57a7f1dd646cf140d94dce4b3f88bba71.svg" class="org-svg" />, then by construction there exists an <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_6df0a60e7d04cf9822e6a4a99b680bbee8b57f97.svg" alt="20230724-universal_property_of_a_localization_6df0a60e7d04cf9822e6a4a99b680bbee8b57f97.svg" class="org-svg" /> such that
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_4cdc27cfacb64d854e0be1fedc0e5848831947db.svg" alt="20230724-universal_property_of_a_localization_4cdc27cfacb64d854e0be1fedc0e5848831947db.svg" class="org-svg" />
+</span>
+</div>
+<p>
+Therefore applying <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_b21e45fa8e0ef0017e84eae7b5a652b219350ccf.svg" alt="20230724-universal_property_of_a_localization_b21e45fa8e0ef0017e84eae7b5a652b219350ccf.svg" class="org-svg" /> 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_f00f9a84e082e1fc448a7fae208415326f44b55a.svg" alt="20230724-universal_property_of_a_localization_f00f9a84e082e1fc448a7fae208415326f44b55a.svg" class="org-svg" />
+</span>
+</div>
+<p>
+By assumption <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_be0695440a65ff8eba58d5314c0b7299ae2f959a.svg" alt="20230724-universal_property_of_a_localization_be0695440a65ff8eba58d5314c0b7299ae2f959a.svg" class="org-svg" /> hence since <a href="20230423224858-einheit_und_nullteiler.html#ID-2dab0c61-fa50-4755-a1b6-0294e5b02d2f">units are no zero divisor</a> we conclude, that
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_42236f1157284f57a563c358b8fedcab2d1a5f4c.svg" alt="20230724-universal_property_of_a_localization_42236f1157284f57a563c358b8fedcab2d1a5f4c.svg" class="org-svg" />
+</span>
+</div>
+<p>
+Furthermore, by assumption there exist <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse elements</a> <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_c553328d30e7bf5f9b496c4bba46c6f1f940c24c.svg" alt="20230724-universal_property_of_a_localization_c553328d30e7bf5f9b496c4bba46c6f1f940c24c.svg" class="org-svg" />, hence
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_e01a93435a0acfc088575c7361d7012bd32bc7a4.svg" alt="20230724-universal_property_of_a_localization_e01a93435a0acfc088575c7361d7012bd32bc7a4.svg" class="org-svg" />
+</span>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbb002f3" class="outline-4">
+<h4 id="orgbb002f3"><span class="section-number-4">2.2.2.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ringhomomorphism</a></h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+Let <img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_2361261a3973ef1a6afa62e6635037d3e93dbcd4.svg" alt="20230724-universal_property_of_a_localization_2361261a3973ef1a6afa62e6635037d3e93dbcd4.svg" class="org-svg" />, then
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_65dd7f15cb01157129128be918d6b123c34dceb2.svg" alt="20230724-universal_property_of_a_localization_65dd7f15cb01157129128be918d6b123c34dceb2.svg" class="org-svg" />
+</span>
+</div>
+<p>
+or  
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230724-universal_property_of_a_localization_91006da39a8a9ffb4051608db95cfb7ffc198737.svg" alt="20230724-universal_property_of_a_localization_91006da39a8a9ffb4051608db95cfb7ffc198737.svg" class="org-svg" />
+</span>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

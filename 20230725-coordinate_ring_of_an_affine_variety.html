@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>coordinate ring of an affine variety</title>
+<title>coordinate ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,12 +13,45 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">coordinate ring of an affine variety</h1>
+<h1 class="title">coordinate ring</h1>
 <div id="outline-container-org5be0275" class="outline-2">
 <h2 id="org5be0275"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(K\) be a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, \(\mathbb{A}_{K}^n\) the <a href="20230725-affine_space_over_a_field.html#ID-10df971c-c815-41df-b913-6d2255d56a66">affine space</a> and \(V \subseteq \mathbb{A}_K^n\) an <a href="20230725-affine_subvariety.html#ID-04756e33-0844-4970-90a8-870d4401d9cf">affine subvariety</a>.
+Then the coordinate Ring \(\mathcal{O}(V)\) is defined as the <a href="20221226124908-faktorring.html#ID-302f063f-b9f6-4806-b78a-47d210d78bcb">quotient ring</a> 
+</p>
+\begin{align*}
+\mathcal{O}(V) \coloneqq K[X_1,...,X_n]/\mathcal{I}(V)
+\end{align*}
+<p>
+with \(\mathcal{I}(V)\) as <a href="20230725-vanishing_ideal.html#ID-fadecab8-e770-4049-9226-525ea11f5cbc">vanishing ideal</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

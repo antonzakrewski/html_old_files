@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>localization along the unit group</title>
+<title>localization along the unit group isomorphic to ring</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,7 +37,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">localization along the unit group</h1>
+<h1 class="title">localization along the unit group isomorphic to ring</h1>
 <div id="outline-container-orgc5b4602" class="outline-2">
 <h2 id="orgc5b4602"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
@@ -52,6 +52,56 @@ S^{-1} R \simeq R
 </div>
 <div id="outline-container-org8c4a986" class="outline-2">
 <h2 id="org8c4a986"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let
+</p>
+\begin{align*}
+\varphi: R \rightarrow& S^{-1}R \\
+r \mapsto& \frac{r}{1}
+\end{align*}
+<p>
+the canonical <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> 
+</p>
+</div>
+<div id="outline-container-org9d8b7ef" class="outline-3">
+<h3 id="org9d8b7ef"><span class="section-number-3">2.1.</span> <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injective</a></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">minimal kernel and monomorphism</a> 
+Suppose \(r \in \mathrm{ker}(\varphi)\)
+Since \(s \in S\) is a <a href="20230423224858-einheit_und_nullteiler.html#ID-2dab0c61-fa50-4755-a1b6-0294e5b02d2f">unit and hence not a zero divisor</a>, we get
+</p>
+\begin{align*}
+s \cdot (1 \cdot r - 1 \cdot 0) =& s \cdot r \\
+=& 0
+\end{align*}
+<p>
+or equivalently \(r = 0\).
+</p>
+</div>
+</div>
+<div id="outline-container-org6f9124b" class="outline-3">
+<h3 id="org6f9124b"><span class="section-number-3">2.2.</span> <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjective</a></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Let \(\frac{r}{s} \in S^{-1}R\) for an \(s \in S\).
+Then there exists an \(s^{-1}\) and hence 
+</p>
+\begin{align*}
+\varphi(r \cdot s^{-1}) =& \frac{r \cdot s^{-1}}{1} \\
+=& \frac{r}{s}
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org4bc451f" class="outline-3">
+<h3 id="org4bc451f"><span class="section-number-3">2.3.</span> <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a></h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+follows from the construction of \(S^{-1}R\)
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

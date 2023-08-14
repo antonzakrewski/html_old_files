@@ -13,11 +13,65 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">finitely generated algebra over a field as jacobson ring</h1>
-
+<div id="outline-container-orgee27db9" class="outline-2">
+<h2 id="orgee27db9"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(K\) be a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">field</a>, \(A\) a <a href="20230731-finitely_generated_a_algebra.html#ID-20861333-797d-4ab1-9ad5-375661f357fc">finitely generated K-Algebra</a>.
+Then \(A\) is a <a href="20230725-jacobson_ring.html#ID-b17f8891-8d7b-454c-9c22-773ed8d942e1">Jacobson ring</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-orga4ba5ad" class="outline-2">
+<h2 id="orga4ba5ad"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+let \(\mathfrak{p}\) be a <a href="20230329081717-primideal.html#ID-a8ae10f5-3b84-4fab-9e76-b006780ccc7f">prime ideal</a>.
+Then
+</p>
+\begin{align*}
+\mathfrak{p} \subseteq \bigcap_{\mathfrak{m} \in \mathrm{Spec}_{\mathrm{max}}(A) \vert \mathfrak{p} \subseteq \mathfrak{m}} \mathfrak{m} \\
+\end{align*}
+<p>
+furthermore, the <a href="20230802-image_of_a_maximal_ideals_for_algebras_over_a_field_as_maximal_ideal.html#ID-4177cd5f-680d-45b3-b096-6c522803d16b">preimages of a maximal ideals for algebras over a field are maximal ideals</a>, hence applying \(\pi: A \rightarrow A[X]\) we get
+</p>
+\begin{align*}
+\bigcap_{\mathfrak{m} \in \mathrm{Spec}_{\mathrm{max}}(A) \vert \mathfrak{p} \subseteq \mathfrak{m}} \mathfrak{m} \subseteq& \bigcap_{\mathfrak{p} \in \mathrm{Spec}_{\mathrm{rab}}(A)  \vert \mathfrak{a} \subseteq \mathfrak{p}} \\
+\end{align*}
+<p>
+At last, applying <a href="20230731-radical_of_an_ideal_and_intersection_of_rabinowitsch_spectrum.html#ID-0b5e4afc-8f2b-403e-9a6d-6600b53ee1a5">radical of an ideal and intersection of rabinowitsch spectrum</a> and <a href="20230803-prime_ideal_as_radical_ideal.html#ID-cdc998f1-5ce7-4e7a-8d82-6fe890cb6fbd">prime ideal as radical ideal</a> we get
+</p>
+\begin{align*}
+\subseteq \mathfrak{m}} \mathfrak{m} \subseteq& \bigcap_{\mathfrak{p} \in \mathrm{Spec}_{\mathrm{rab}}(A)  \vert \mathfrak{a} \subseteq \mathfrak{p}} =& \sqrt{\mathfrak{p}} \\
+=& \mathfrak{p}
+\end{align*}
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anton Zakrewski</p>
