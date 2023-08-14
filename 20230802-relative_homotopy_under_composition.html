@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,61 +21,68 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgd6d8ef9"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \((X, \mathcal{T}_X)\), \((Y, \mathcal{T}_Y)\) and \((Z, \mathcal{T}_Z)\) be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a> \(A \subseteq X\), \(B \subseteq Y\), \(f_0,f_1: X \rightarrow Y\) and \(g_0,g_1: Y \rightarrow Z\) <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> such that
+Let <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_a049622371e29a539cb11361c2f2fba3b0d6f5e5.svg" alt="20230802-relative_homotopy_under_composition_a049622371e29a539cb11361c2f2fba3b0d6f5e5.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_5b333f1dbd130adebed5d9cdb56ee28e2a2dd124.svg" alt="20230802-relative_homotopy_under_composition_5b333f1dbd130adebed5d9cdb56ee28e2a2dd124.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_819eefb28087f310a1225cb2e788ef88209028d7.svg" alt="20230802-relative_homotopy_under_composition_819eefb28087f310a1225cb2e788ef88209028d7.svg" class="org-svg" /> be <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a> <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_4d1ca8d87c3041b4035e321081e01ae4a989b4b4.svg" alt="20230802-relative_homotopy_under_composition_4d1ca8d87c3041b4035e321081e01ae4a989b4b4.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_2836f93135b7e646d1bebc2f078efed98f2b128a.svg" alt="20230802-relative_homotopy_under_composition_2836f93135b7e646d1bebc2f078efed98f2b128a.svg" class="org-svg" />, <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_c463137266b449f4917921533a664d786c550cf6.svg" alt="20230802-relative_homotopy_under_composition_c463137266b449f4917921533a664d786c550cf6.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_6e72f8eb814813671323f5d78262502ede1f8d0d.svg" alt="20230802-relative_homotopy_under_composition_6e72f8eb814813671323f5d78262502ede1f8d0d.svg" class="org-svg" /> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> such that
 </p>
-\begin{align*}
-f_0 \simeq& f_1 \mathrm{rel} A \\
-g_0 \simeq& g_1 \mathrm{rel} B 
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_2c7b39921d39409ff47766b5c6efc6e57288d40d.svg" alt="20230802-relative_homotopy_under_composition_2c7b39921d39409ff47766b5c6efc6e57288d40d.svg" class="org-svg" />
+</span>
+</div>
 <p>
-and \(f_0[A] \subseteq B\)
+and <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_78d7b8cb4e58357b498fcafd545e34d8b98fd013.svg" alt="20230802-relative_homotopy_under_composition_78d7b8cb4e58357b498fcafd545e34d8b98fd013.svg" class="org-svg" />
 Then
 </p>
-\begin{align*}
-g_0 \circ f_0 \simeq g_1 \simeq f_1 \mathrm{rel} A
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_f4006b9f24cadf4ca183b3a29ba85d35c81b9dcd.svg" alt="20230802-relative_homotopy_under_composition_f4006b9f24cadf4ca183b3a29ba85d35c81b9dcd.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgb338aac" class="outline-2">
 <h2 id="orgb338aac"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-By assumption, there exist <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">homotopies</a> \(h: I \times X \rightarrow Y\) and \(h': I \times Y \rightarrow Z\) such that \(h(s,a) = f_0(a), h'(s,b) = g_0(b)\) for \(s \in [0,1]\)
+By assumption, there exist <a href="20230302094002-homotopie.html#ID-6a641a53-1525-433d-a03c-aafd3b9db463">homotopies</a> <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_7b3689b0ad8471bd89d31e5cd02fd409a0050bf7.svg" alt="20230802-relative_homotopy_under_composition_7b3689b0ad8471bd89d31e5cd02fd409a0050bf7.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_8cc7516a20cdad3b9d48e3f07623cae128a58518.svg" alt="20230802-relative_homotopy_under_composition_8cc7516a20cdad3b9d48e3f07623cae128a58518.svg" class="org-svg" /> such that <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_7edf61506f0dc6b25460710f71baf97bf487ad53.svg" alt="20230802-relative_homotopy_under_composition_7edf61506f0dc6b25460710f71baf97bf487ad53.svg" class="org-svg" /> for <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_de151df6b05433c5b5529acf47b709ea53f9598f.svg" alt="20230802-relative_homotopy_under_composition_de151df6b05433c5b5529acf47b709ea53f9598f.svg" class="org-svg" />
 Then we define
 </p>
-\begin{align*}
-\overline{h}: I \times X \rightarrow& Z \\
-s,x \mapsto& h'(s,h(s,x))
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_d2d5b62d5ce17f138692489a2795ca520ec51190.svg" alt="20230802-relative_homotopy_under_composition_d2d5b62d5ce17f138692489a2795ca520ec51190.svg" class="org-svg" />
+</span>
+</div>
 <p>
 the <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> is as a <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">composition of continous maps</a> itself <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> (see: <a href="20230330175318-stetigkeit_der_diagonalabbildung.html#ID-86ecdc3b-5047-4f60-a5d5-0ad93568c1df">Stetigkeit der Diagonalabbildung</a>)
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-I \times X \arrow[]{r}{\Delta \times \mathrm{id}} I \times (I \times X) \arrow[]{r}{\mathrm{id} \times h} I \times Y \arrow[]{r}{h'} Z
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_27b53f6a3135a30e7ea551a3a21f34552151f313.svg" alt="20230802-relative_homotopy_under_composition_27b53f6a3135a30e7ea551a3a21f34552151f313.svg" class="org-svg" />
+</span>
+</div>
 
 <p>
 Furthermore
 </p>
-\begin{align*}
-\overline{h}(0,x) =& h'(0,h(0,x)) \\
-=& h'(0,f_0(x)) \\
-=& g_0(f_0(x)) \\
-\overline{h}(1,x) =& h'(1,h(1,x)) \\
-=& h'(1,f_1(x)) \\
-=& g_1(f_1(x))
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_03d454657ddcc03953c458802956c8c2c361e52f.svg" alt="20230802-relative_homotopy_under_composition_03d454657ddcc03953c458802956c8c2c361e52f.svg" class="org-svg" />
+</span>
+</div>
 
 <p>
-Let \(a \in A\) and \(s \in [0,1]\) then since \(f(a) \in B\), we conclude
+Let <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_8dd8da015e78ad48c9e66c8694c5a9533da4d650.svg" alt="20230802-relative_homotopy_under_composition_8dd8da015e78ad48c9e66c8694c5a9533da4d650.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_de151df6b05433c5b5529acf47b709ea53f9598f.svg" alt="20230802-relative_homotopy_under_composition_de151df6b05433c5b5529acf47b709ea53f9598f.svg" class="org-svg" /> then since <img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_f929897361e044f6c64008c7196d180452cdbb5f.svg" alt="20230802-relative_homotopy_under_composition_f929897361e044f6c64008c7196d180452cdbb5f.svg" class="org-svg" />, we conclude
 </p>
-\begin{align*}
-\overline{h}(s,a) =& h'(s,h(s,a)) \\
-=& h'(s,f_0(a)) \\
-=& g_0(f_0(a))
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230802-relative_homotopy_under_composition_3522e3b795711185033a9619e9a9f537276ed3f6.svg" alt="20230802-relative_homotopy_under_composition_3522e3b795711185033a9619e9a9f537276ed3f6.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

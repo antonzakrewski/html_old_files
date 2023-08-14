@@ -46,8 +46,36 @@ Let \(K\) be a <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-a
 Then
 </p>
 \begin{align*}
-V(f_1,...,f_k) =& \bigcap_{i = 1}^k V(f_1)
+V((f_1,...,f_k)) =& \bigcap_{i = 1}^k V(f_i)
 \end{align*}
+</div>
+</div>
+<div id="outline-container-org92f4256" class="outline-2">
+<h2 id="org92f4256"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgc25dfad" class="outline-3">
+<h3 id="orgc25dfad"><span class="section-number-3">2.1.</span> \(\subseteq\)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Let \(a \in \mathbb{A}_K^n\) such that \(a \in V((f_1,...,f_k))\), then for each <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">polynomial</a> \(f \in V((f_1,...,f_k))\) - <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">w.l.o.g.</a> \(f(x) = \sum_{i=1}^{k} k_i f_k(x)\) - we get \(f(a) = 0\).
+Therefore, by choosing \(k_j = \delta_{i,j}\)  we get \(f_k(x) = \sum_{i=1}^{k} \delta_{i,j} f_k(x)\) and hence \(f_k(a) = 0\).
+Therefore \(a \in \V(f_i)\) for \(i \in I\) or 
+</p>
+\begin{align*}
+a \in \bigcap_{i = 1}^k V(f_i)
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orgbcf4057" class="outline-3">
+<h3 id="orgbcf4057"><span class="section-number-3">2.2.</span> \(\supseteq\)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Let \(a \in \mathbb{A}_K^n\) such that \(a \in \bigcap_{i=1}^k V(f_1)\).
+Suppose \(f \in V((f_1,...,f_k))\), then <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">w.l.o.g.</a> \(f(x) = \sum_{i=1}^{k} k_i f_k(x)\) for \(k_i \in K\) and hence \(f(a) = 0\)
+Therefore \(f \in V((f_1,...,f_k))\)
+</p>
+</div>
 </div>
 </div>
 </div>
