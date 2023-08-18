@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>restriction of an exact sequence</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">restriction of an exact sequence</h1>
+<div id="outline-container-orgc3a74fd" class="outline-2">
+<h2 id="orgc3a74fd"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+let
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+0 \arrow[]{r}{}& A_1 \arrow[]{r}{\varphi_1}& A_2 \arrow[]{r}{\varphi_2} & A_3 \arrow[]{r}{} & 0
+\end{tikzcd}
+\end{displaymath}
+<p>
+be a <a href="20230722-short_exact_sequence.html#ID-7b01038e-f4c1-4e1e-ad52-a0c6a18008f3">short exact sequence of groups</a> and \(A_i' \subseteq A_i\) as well as
+</p>
+\begin{align*}
+\varphi_i': A_i' \rightarrow A_{i+1}' \\
+a \mapsto \varphi_i(a)
+\end{align*}
+<p>
+for \(i \in \{1,2,3\}\) the <a href="20221026162005-einschrankung_abbildung.html#ID-c9f04287-e549-4811-8538-f4a3c521866f">restriction</a> - assuming it is <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> 
+<a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
+</p>
+<ol class="org-ol">
+<li>the induced sequence by \(\varphi_i': A_i \rightarrow A_{i+1}\) is exact</li>
+<li>\(\mathrm{ker}(\varphi_{i+1}') \subseteq \mathrm{im}(\varphi_i')\)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga25d063" class="outline-2">
+<h2 id="orga25d063"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org98f3278" class="outline-3">
+<h3 id="org98f3278"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+special case
+</p>
+</div>
+</div>
+<div id="outline-container-orge31f47a" class="outline-3">
+<h3 id="orge31f47a"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+by assumption, 
+</p>
+\begin{align*}
+\varphi_{i+1} \circ \varphi_i = 0
+\end{align*}
+<p>
+hence
+</p>
+\begin{align*}
+\varphi_{i+1}' \circ \varphi_{i}' = 0
+\end{align*}
+<p>
+or \(\mathrm{im}(\varphi_{i}) \subseteq \mathrm{ker}(\varphi_{i+1}')\)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

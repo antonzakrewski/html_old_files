@@ -13,6 +13,27 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -22,7 +43,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <div class="outline-text-2" id="text-1">
 <p>
 todo - salvage latex
+Für zwei Vektoren \(\vec{a}  \coloneqq \begin{pmatrix} a_x \\ a_y \\ a_z \end{pmatrix}\) und \(\vec{b} \coloneqq \begin{pmatrix} b_x \\ b_y \\ b_z \end{pmatrix}\) ist das Skalarprodukt folgendermaßen definiert:
 </p>
+\begin{align*}
+\vec{a} \circ \vec{b} =& a_x b_x + a_y b_y + a_z b_z 
+\end{align*}
 </div>
 </div>
 <div id="outline-container-orgcb06598" class="outline-2">

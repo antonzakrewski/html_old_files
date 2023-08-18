@@ -57,9 +57,46 @@ Let \(A\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4
 </div>
 <div id="outline-container-orgc73b6be" class="outline-3">
 <h3 id="orgc73b6be"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Let \(f,g \in A [ [ X ] ] \setminus \{0\}\).
+Then there exist minimal \(r,s \in \mathbb{N}\) such that
+</p>
+\begin{align*}
+f =& \alpha_r \cdot X^r + \alpha_{r+1} X^{r+1} + ... \\
+g =& \beta_{s} \cdot X^s + \beta_{s+1} X^{s+1} + ... 
+\end{align*}
+<p>
+with \(\alpha_{r}, \beta_{s} \neq 0\).
+Hence
+</p>
+\begin{align*}
+f \cdot g = \alpha_{r} \beta_{s} \cdot X^{r+s} + r
+\end{align*}
+<p>
+with \(\pi_{r+s}(r) = 0\).
+Since \(\alpha_r, \beta_{s} \neq 0\) and \(A\) is an <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">Integral domain</a>, we conclude that \(\alpha_{r} \cdot \beta_{s} \neq 0\) and hence
+</p>
+\begin{align*}
+f \cdot g \neq 0
+\end{align*}
+</div>
 </div>
 <div id="outline-container-orgc1346ee" class="outline-3">
 <h3 id="orgc1346ee"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Let
+</p>
+\begin{align*}
+\varphi: A \rightarrowtail A[ [ X] ] \\
+a \mapsto (a,0,0,...)
+\end{align*}
+<p>
+be the cananonical embedding.
+Then the statement is a corollary of <a href="20230727-injektive_morphism_and_integral_domain.html#ID-baea2327-5851-4708-8815-1664b2818ff2">monomorphism and integral domain</a>
+</p>
+</div>
 </div>
 </div>
 </div>

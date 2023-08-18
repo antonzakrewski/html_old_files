@@ -13,12 +13,83 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Ideals under localization</h1>
 <div id="outline-container-orgcd4dbd5" class="outline-2">
 <h2 id="orgcd4dbd5"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(A\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, \(\mathfrak{a} \subseteq A\) an <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideal</a> and \(S \subseteq A\) <a href="20230724-multiplicatively_closed_set.html#ID-d3df0441-9f2f-476f-b18e-d513ae149906">multiplicatively closed set</a>.
+Then
+</p>
+\begin{align*}
+S^{-1}\mathfrak{a} \coloneqq \{\frac{a}{s} \vert a \in \mathfrak{a}, s \in S \} \subseteq S^{-1}A
+\end{align*}
+<p>
+is an ideal
+</p>
+</div>
+</div>
+<div id="outline-container-orgee209bf" class="outline-2">
+<h2 id="orgee209bf"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4ad22ff" class="outline-3">
+<h3 id="org4ad22ff"><span class="section-number-3">2.1.</span> additive group</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+&lt;<a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a>&gt;
+Let \(\frac{a_1}{s_1}, -\frac{a_2}{s_2} \in S^{-1}\mathfrak{a}\), then
+</p>
+\begin{align*}
+\frac{a_1}{s_1} - \frac{a_2}{s_2} =& \frac{a_1 \cdot s_2}{s_1 \cdot s_2} - \frac{a_2 \cdot s_1}{s_2 \cdot s_1} \\
+=& \frac{a_1 \cdot s_2 - a_2 \cdot s_1}{s_1 \cdot s_2}
+\end{align*}
+<p>
+where \(s_1 \cdot s_2 \in S\) and \(a_1 \cdot s_2 - a_2 \cdot s_1 \in \mathfrak{a}\), hence
+</p>
+\begin{align*}
+\frac{a_1}{s_1} -\frac{a_2}{s_2} \in S^{-1}\mathfrak{a}
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org11d307f" class="outline-3">
+<h3 id="org11d307f"><span class="section-number-3">2.2.</span> multiplicatively closed</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Let \(\frac{r}{s'} \in S^{-1}R\), then 
+</p>
+\begin{align*}
+\frac{r}{s'} \cdot \frac{a}{s} = \frac{r \cdot a}{s' \cdot s}
+\end{align*}
+<p>
+and since \(\mathfrak{a}, S\) are multiplicatively closed, we get \(r \cdot a \in \mathfrak{a}, s \cdot s' \in S\).
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

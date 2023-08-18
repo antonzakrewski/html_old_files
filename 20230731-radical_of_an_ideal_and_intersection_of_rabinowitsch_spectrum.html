@@ -13,16 +13,46 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">radical of an ideal and intersection of rabinowitsch spectrum</h1>
 <div id="outline-container-org237ef04" class="outline-2">
 <h2 id="org237ef04"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(A\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a>, \(\mathfrak{a} \subseteq A\) a <a href="20230427200359-echtes_ideal.html#ID-fa54a328-b081-4a6c-9106-4348783138df">strict ideal</a>, then it holds for the <a href="20230725-radical_of_an_ideal.html#ID-a5fd42b5-ba84-4c7e-8a5b-e36101a7fa1e">radical</a> 
+</p>
+\begin{align*}
+\sqrt{\mathfrak{a}} = \bigcap_{\mathfrak{m} \in \mathrm{Spec}_{\mathrm{rab}}(A) \vert \mathfrak{a} \subseteq \mathfrak{m}} \mathfrak{m}
+\end{align*}
 </div>
-
+</div>
 <div id="outline-container-orgf21fa03" class="outline-2">
 <h2 id="orgf21fa03"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

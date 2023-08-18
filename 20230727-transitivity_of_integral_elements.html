@@ -13,12 +13,58 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">transitivity of integral elements</h1>
-<div id="outline-container-orge8ff0f2" class="outline-2">
-<h2 id="orge8ff0f2"><span class="section-number-2">1.</span> </h2>
+<div id="outline-container-org1c3b579" class="outline-2">
+<h2 id="org1c3b579"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(A \subseteq B \subseteq C\) be <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">rings</a>, and \(\alpha \in C\), such that \(\alpha\) is an <a href="20230726-integral_element_over_a_subring.html#ID-73648315-aa1e-4e87-a5e8-ce378a8a8015">integral element</a> over \(B\), i.e. there exist \(\beta_0,...,\beta_{n-1} \in B\) with
+</p>
+\begin{align*}
+0 =& \alpha^n + \sum_{i=0}^{n-1} \beta_i \alpha^i
+\end{align*}
+<p>
+where \(\beta_0,...,\beta_{n-1}\) are integral over \(A\).
+</p>
+
+<p>
+Then \(\alpha\) is integral over \(A\)
+</p>
+</div>
+</div>
+<div id="outline-container-org2fa328e" class="outline-2">
+<h2 id="org2fa328e"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+By assumption, \(B' \coloneqq A[\beta_0,...,\beta_{n-1}]\) is a <a href="20230531104455-endlich_erzeugter_modul.html#ID-b8bbecb1-a067-40a2-a8c8-3c4119252b18">finitely generated module</a> over \(A\).
+Therefore, \(B'[\alpha]\) is also finitely generated over \(A\) with \(\alpha \in B'[\alpha]\) (see: <a href="20230726-integral_element_and_finitely_generated_module.html#ID-81c164f8-22c6-4947-a098-e7dbd596b979">integral element and finitely generated module</a>)
+Thus \(\alpha\) is integral over \(A\)
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

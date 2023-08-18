@@ -38,22 +38,53 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <body>
 <div id="content" class="content">
 <h1 class="title">Grenzwert einer gebrochen rationalen Funktion für \(x \rightarrow \pm \infty\)</h1>
-<div id="outline-container-org9096d0b" class="outline-2">
-<h2 id="org9096d0b"><span class="section-number-2">1.</span> Arten</h2>
+<div id="outline-container-org3c3faef" class="outline-2">
+<h2 id="org3c3faef"><span class="section-number-2">1.</span> Klassifikation</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ist der Zählergrad so groß wie der Nennergrad, so gilt:
+Sei
 </p>
 \begin{align*}
-\lim_{x \to \infty}\left(f(x)\right) =& \vert a \vert \\
-\lim_{x \to -\infty}\left(f(x)\right) =& \vert a \vert
+f =& \frac{\sum_{i=0}^{n} \alpha_i X^i}{\sum_{i=0}^{m} \beta_i X^i}
+=& \frac{\alpha_n X^n + \alpha_{n-1} X^{n-1} + ... + \alpha_0}{ \beta_m X^m + \beta_{m-1} X^{m-1} + ... + \beta_0}
+\end{align*}
+<p>
+eine <a href="20220102212658-definition_gebrochen_rationale_funkttionen.html#ID-1b393d0a-c72b-48ef-93c5-d28b8924d63b">gebrochen rationale Funktion</a>, so treten folgende Möglichkeiten auf <a href="20230815-grad_eines_polynoms_11.html#ID-6b02f550-357f-45a8-906e-b12546bfd987">Grad eines Polynoms</a> 
+</p>
+</div>
+<div id="outline-container-orgc350f35" class="outline-3">
+<h3 id="orgc350f35"><span class="section-number-3">1.1.</span> Zählergrad gleich Nennergrad</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Ist der Zählergrad so groß wie der Nennergrad, d.h. \(n = m\), so gilt:
+</p>
+\begin{align*}
+\lim_{x \to \infty}\left(f(x)\right) =& \frac{\alpha_n}{\beta_n} \\
+\lim_{x \to -\infty}\left(f(x)\right) =& \frac{\alpha_n}{\beta_n}
 \end{align*}
 </div>
-<div id="outline-container-org11cb923" class="outline-4">
-<h4 id="org11cb923"><span class="section-number-4">1.0.1.</span> 0</h4>
-<div class="outline-text-4" id="text-1-0-1">
+</div>
+<div id="outline-container-org6a01a44" class="outline-3">
+<h3 id="org6a01a44"><span class="section-number-3">1.2.</span> Zählergrad größer als Nennergrad</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
-Ist der Nennergrad größer als der Zählergrad, so gilt    
+Ist der Zählergrad größer als der Nennergrad, d.h. \(n > m\), so gilt:
+</p>
+\begin{align*}
+\lim_{x \to \infty}\left(f(x)\right) =& \mathrm{sgn}(\alpha_n) \infty \\
+\lim_{x \to -\infty}\left(f(x)\right) =& \mathrm{sgn}(-\alpha_n) \infty
+\end{align*}
+<p>
+Wobei \(\mathrm{sgn}(\alpha_n)\) das Vorzeichen von \(\alpha_n\) beschreibt.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8ac750" class="outline-3">
+<h3 id="orgd8ac750"><span class="section-number-3">1.3.</span> Zählergrad kleiner als Nennergrad</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Ist der Nennergrad größer als der Zählergrad, d.h. \(n < m\), so gilt:
 </p>
 \begin{align*}
 \lim_{x \to \infty}\left(f(x)\right) =& 0 \\

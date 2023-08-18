@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>exact functor preserves epimorphisms</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">exact functor preserves epimorphisms</h1>
+<div id="outline-container-org304285e" class="outline-2">
+<h2 id="org304285e"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(F: \mathrm{Ab} \rightarrow \mathrm{Ab}\) be an <a href="20230726-exact_functor.html#ID-9541d8fb-ddba-43d6-941a-32b3b3bd7086">exact functor</a> such that \(F(0) = 0\) and \(\varphi: G \rightarrow H\) an <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">epimorphism</a> for <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">groups</a> \(G,H\)
+Then \(F(\varphi)\) is also an epimorphism
+</p>
+</div>
+</div>
+<div id="outline-container-org1e77956" class="outline-2">
+<h2 id="org1e77956"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Consider the sequnce
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+& G \arrow[]{r}{\varphi} & H \arrow[]{r}{} & 0
+\end{tikzcd}
+\end{displaymath}
+<p>
+It is <a href="20230722-exact_group_homomorphisms.html#ID-aa569635-5f4a-4c4a-9e9b-af9c577e377d">exact</a> at \(H\) (cf. <a href="20230724-exact_sequence_and_monomorphism.html#ID-2d122ce4-5d0f-4c82-8b6b-cb3d53b42d87">exact sequence and monomorphism</a>), hence by assumption
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+ F(G) \arrow[]{r}{F(\varphi)} & F(H) \arrow[]{r}{} & F(0) 
+\end{tikzcd}
+\end{displaymath}
+<p>
+is exact at \(F(H)\), thus \(F(\varphi)\) is an epimorphism
+</p>
+
+<p>
+braucht man \(F(0) = 0\), oder folgt das ?
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

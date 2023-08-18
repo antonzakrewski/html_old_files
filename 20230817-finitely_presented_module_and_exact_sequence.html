@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>finitely presented module and exact sequence</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">finitely presented module and exact sequence</h1>
+<div id="outline-container-orgdb6d844" class="outline-2">
+<h2 id="orgdb6d844"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R\) be a <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a> and \(M\) an \(R\)-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">module</a>.
+<a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
+</p>
+<ol class="org-ol">
+<li>\(M\) is <a href="20230801-finitely_presented_module.html#ID-7ccb4638-bc9e-414e-a304-75a46e1f34f5">finitely presented</a></li>
+<li>there exist \(n,m \in \mathbb{N}\) and a <a href="20230804-short_exact_sequence_of_modules.html#ID-9dcfe0f4-2da6-48d4-b57b-d95e26d40b78">short exact sequence of modules</a></li>
+</ol>
+\begin{displaymath}
+\begin{tikzcd}
+R^n \arrow[]{r}{\psi} & R^m \arrow[]{r}{\varphi} & M & 0
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-orged6ffc6" class="outline-2">
+<h2 id="orged6ffc6"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgdb79dea" class="outline-3">
+<h3 id="orgdb79dea"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+by assumption, there exists an <a href="20230303170514-modulepimorphismus.html#ID-8658ea5e-6f26-4544-a083-aec8a247284f">epimorphism</a>
+</p>
+\begin{align*}
+\varphi: R^m \twoheadrightarrow& M
+\end{align*}
+<p>
+where \(\mathrm{ker}(\varphi)\) is finitely generated.
+Hence there exists another module epimorphism
+</p>
+\begin{align*}
+\psi: R^n \twoheadrightarrow \mathrm{ker}(\psi)
+\end{align*}
+<p>
+thus
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+R^n \arrow[]{r}{\psi} & R^m \arrow[]{r}{\varphi} & M & 0
+\end{tikzcd}
+\end{displaymath}
+<p>
+is exact
+</p>
+</div>
+</div>
+<div id="outline-container-orge299b6a" class="outline-3">
+<h3 id="orge299b6a"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orga0b6db7" class="outline-4">
+<h4 id="orga0b6db7"><span class="section-number-4">2.2.1.</span> \(M\) is finitely generated</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+By Assumption, \(\mathrm{im}(\varphi) = \mathrm{ker}(0) = M\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgbebac6e" class="outline-4">
+<h4 id="orgbebac6e"><span class="section-number-4">2.2.2.</span> the <a href="20221111200152-kern_algebra.html#ID-438e68de-0603-419c-8b21-5cb3b4add3a1">kernel</a> is finitely generated</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+By Assumption, \(\mathrm{im}(\psi) = \mathrm{ker}(\varphi)\) 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>
