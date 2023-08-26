@@ -13,12 +13,61 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">localization of a module</h1>
-<div id="outline-container-orgc30eb7d" class="outline-2">
-<h2 id="orgc30eb7d"><span class="section-number-2">1.</span> Proposition</h2>
+<div id="outline-container-org163bc2b" class="outline-2">
+<h2 id="org163bc2b"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative</a> <a href="20220920130524-ring_algebra.html#ID-ac7d56fc-0f56-4037-9010-38c358f79490">ring</a>, \(M\) an \(R\)-<a href="20221228203055-modul.html#ID-ac8be9d7-cfe7-4c79-b3b1-7e35780c8f57">module</a> and \(S \subseteq R\) a <a href="20230724-multiplicatively_closed_set.html#ID-d3df0441-9f2f-476f-b18e-d513ae149906">multiplicatively closed set</a>.
+Then the localization of \(R\) is defined as
+</p>
+\begin{align*}
+S^{-1} R \coloneqq R \times S/ ~
+\end{align*}
+<p>
+with
+</p>
+\begin{align*}
+(m,s_1) \sim (n,s_2) :\Leftrightarrow \exists s : s(m s_2 - n s_1) = 0
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org8fb48ac" class="outline-2">
+<h2 id="org8fb48ac"><span class="section-number-2">2.</span> see:</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+analogue to 
+</p>
+
+<ul class="org-ul">
+<li><a href="20230724-localization_of_a_ring_as_ring.html#ID-6dd2d9cc-e441-4e3c-8a89-afab3b335539">localization of a ring as ring</a></li>
+<li><a href="20230724-equivalence_relation_of_a_localization_of_a_ring.html#ID-47966eec-b179-4e04-85c2-e57a21c88f3f">equivalence relation of a localization of a ring</a></li>
+</ul>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
