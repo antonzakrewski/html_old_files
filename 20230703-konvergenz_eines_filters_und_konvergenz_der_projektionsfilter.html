@@ -43,7 +43,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X_i, \mathcal{T}_i)\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Räume</a> und \(X \coloneqq \prod_{i \in I} X_i\) das <a href="20221224141628-allgemeine_kartesische_produkt.html#ID-1fa0c762-e1d2-4ee7-8212-15395a725dd9">allgemeine kartesische Produkt</a> mit der <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">Produkttopologie</a>.
-Sei \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> auf \(X\).
+Sei \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-1224-4298-a83b-c35e5e580a49">Mengenfilter</a> auf \(X\) in <a href="20220817142257-zermelo_fraenkel_choice_mengenlehre.html#ID-66762cd8-3b40-47bd-bed8-91eaa3ad15fa">ZFC</a> 
 <a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
 </p>
 <ol class="org-ol">
@@ -60,7 +60,7 @@ Sei \(\mathcal{F}\) ein <a href="20230306233743-mengenfilter.html#ID-b48f4cbe-12
 <h3 id="orgb154ef2"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei nach Annahme \(\pi_i[\mathcal{F}] \rightarrow x_i\), so sei \(x \coloneqq (x_i)_{i \in I}\).
+Sei nach Annahme \(\pi_i[\mathcal{F}] \rightarrow x_i\), so sei \(x \coloneqq (x_i)_{i \in I}\) - hier wird das <a href="20220817142613-auswahlaxiom.html#ID-0fac098f-bed6-4f86-a90b-7a269c9fd21e">Axiom of choice</a> angenommen, da aus einer beliebigen <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleeren</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> eine Auswahlfunktion angenommen wird.
 Sei \(U \subesteq X\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(x\), so sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> \(U = O_1 \times O_2 \times ... \times O_n \prod_{i \neq 1,2,...,n} X_i\) mit <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebungen</a> \(O_i \subseteq X_i\) von \(x_i\).
 Nach Annahme existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(O_i \in \pi_i[\mathcal{F}]\) und somit nach Konstruktion auch eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> $O<sub>i</sub> &times; &#x2026;$, <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> wegen der abgeschlossenheit gegenüber <a href="20221206134155-obermenge.html#ID-cde60332-c343-46aa-a2c4-90186f32d6de">Obermengen</a> eines Filters als \(O_j \times \prod_{i \in I} X_j \eqqcolon Y_j\).
 Damit folgt nach der Abgeschlossenheit gegenüber <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">endlichen</a> <a href="20230317161158-allgemeiner_schnitt.html#ID-d7547939-8d3f-48f8-b2fd-cfb5734ae78f">Durchschnitten</a>, dass \(U = \bigcap_{i = 1}^n Y_i \in \mathcal{F}\) gilt, d.h. \(\mathcal{F} \rightarrow x\).

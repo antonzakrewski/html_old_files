@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vereinigung von einer Kette von Gruppen als Gruppe</title>
+<title>union of a chain of groups as group</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -37,44 +37,33 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Vereinigung von einer Kette von Gruppen als Gruppe</h1>
-<div id="outline-container-org9b42953" class="outline-2">
-<h2 id="org9b42953"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">union of a chain of groups as group</h1>
+<div id="outline-container-orga71254f" class="outline-2">
+<h2 id="orga71254f"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(U_i\) eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> von <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit \(U_i \subseteq U_{i+1}\)
-Dann ist
-</p>
-\begin{align*}
-\bigcup_{i = 1}^{\infty} U_i
-\end{align*}
-<p>
-ebenfalls eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> 
+Let $G<sub>1</sub> \subseteq G<sub>2</sub> \subseteq G<sub>3</sub> &#x2026; $ be a <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">chain</a> of <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">groups</a>.
+Then \(G \coloneqq \bigcup_{n \in \mathbb{N}} G_n\) is also a group
 </p>
 </div>
 </div>
-<div id="outline-container-orgde000a1" class="outline-2">
-<h2 id="orgde000a1"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orge5ef5d0" class="outline-2">
+<h2 id="orge5ef5d0"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
-<p>
-nach dem <a href="20221023183201-kriterium_fur_eine_untergruppe.html#ID-b15853e8-4de4-4318-9060-5fc9b4225f25">Kriterium für eine Untergruppe</a> ist zu zeigen:
-</p>
 </div>
-<div id="outline-container-org7f03035" class="outline-3">
-<h3 id="org7f03035"><span class="section-number-3">2.1.</span> <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a></h3>
+<div id="outline-container-orgd5bd2c3" class="outline-3">
+<h3 id="orgd5bd2c3"><span class="section-number-3">2.1.</span> <a href="20210702075710-monoid.html#ID-ebccfd45-6c4b-4a93-818a-8f6848600874">monoid</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-folgt aus \(e \in U_i\), da \(U_i\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist
+cf. <a href="20230825-union_of_a_chain_of_monoids_as_monoid.html#ID-bdff3897-11a9-4546-a87d-bd74863e39b8">union of a chain of monoids as monoid</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-org32d5f4a" class="outline-3">
-<h3 id="org32d5f4a"><span class="section-number-3">2.2.</span> abgeschlossenheit</h3>
+<div id="outline-container-orga8d62cf" class="outline-3">
+<h3 id="orga8d62cf"><span class="section-number-3">2.2.</span> <a href="20211218210712-inverses_element.html#ID-f9edb7bd-9975-4606-9f12-698118b3d992">inverse element</a></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-seien \(g,g' \in \bigcup_{i=1}^{\infty} U_i\), so existieren \(n,n'\) mit \(g \in U_n, g' \in U_{n'}\)
-Man wähle \(m  \coloneqq \mathrm{max}(n,n')\) und es folgt nach Annahme \(g,g' \in U_m\).
-Da U<sub>m</sub>$ eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> ist, folgt \(g \cdot g'^{-1} \in U_m\) und damit ist das kriteum erfüllt.
+Let \(g_1 \in G\), then by assumption there exists a \(G_i\) such that \(g_1 \in G_i\) and hence \(g_1^{-1} \in G_i \subseteq G\)
 </p>
 </div>
 </div>
