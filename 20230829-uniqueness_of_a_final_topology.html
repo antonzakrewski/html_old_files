@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>uniqueness of a final topology</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">uniqueness of a final topology</h1>
+<div id="outline-container-org41a8ea1" class="outline-2">
+<h2 id="org41a8ea1"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(X\) be a <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>, \((X_i,\mathcal{T}_i)\) be a <a href="20220819181756-klasse_mengenlehre.html#ID-998a9e01-e369-490b-bb26-657678f61d7a">class</a> of <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a> and \(f_i: X_i \rightarrow X\) be a <a href="20220819181756-klasse_mengenlehre.html#ID-998a9e01-e369-490b-bb26-657678f61d7a">class</a> of <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>-theoretic <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">maps</a> 
+Then the <a href="20230224180620-finaltopologie.html#ID-089a51e7-dbea-4600-a1ce-6e758f44ee49">final topology</a> is unique.
+</p>
+</div>
+</div>
+<div id="outline-container-org38fadf0" class="outline-2">
+<h2 id="org38fadf0"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Suppose \((X, \mathcal{T})\) and \((X, \mathcal{T}')\) are final topologies
+Then, since \(f_i: (X_i, \mathcal{T}_i) \rightarrow (X,\mathcal{T}')\) is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a>, we conclude that \(\mathrm{id}_{X}: (X, \mathcal{T}) \rightarrow (X,\mathcal{T}')\) is by universal property also continuous
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+X_i \arrow[]{rd}{f_i} \arrow[]{r}{f_i} & (X, \mathcal{T}) \arrow[]{r}{\mathrm{id}_{X}}\\
+& (X,\mathcal{T}') \\
+\end{tikzcd}
+\end{displaymath}
+<p>
+Hence by reasons of symmetrie, we get \(\mathcal{T} \subseteq \mathcal{T}', \mathcal{T}' \subseteq \mathcal{T}\) (see: <a href="20230313193949-feinere_topologie_und_identitatsabbildung.html#ID-90ffe82e-f945-4229-8bbb-59caedb1c535">Feinere Topologie und Identitätsabbildung</a>) and hence \(\mathcal{T} = \mathcal{T}'\)
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>
