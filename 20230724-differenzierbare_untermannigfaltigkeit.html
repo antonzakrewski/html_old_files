@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,21 +53,19 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgc873fe8"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(M \subseteq \mathbb{R}^n\) eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a>, \(p \in M\) und \(U \subseteq \mathbb{R}^n\) eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> von \(p\) sowie \(V \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>.
-Dann ist \(M\) in \(p\) eine $d$-Dimensionale differenzierbare Untermannigfaltigkeit von der <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">Differentiationsklasse</a> \(\mathcal{C}^k\), falls ein <a href="20230629-differentiationsklasse_eines_diffeomorphismus.html#ID-0f6af854-4674-4e89-ad2f-6710cc164ce6">C<sup>k</sup> Diffeomorphismus</a> 
+Sei \(M, (\varphi_i, U_i)\) eine \(n\)-mal (stetig) <a href="20230723-differenzierbare_mannigfaltigkeit.html#ID-805c972a-cf4f-4229-a4dc-b6755639f890">differenzierbare Mannigfaltigkeit</a>, dann ist eine <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">Teilmenge</a> \(N \subseteq M\) eine \(n\)-mal (stetig), \(k\)-dimensionale <a href="20230724-differenzierbare_untermannigfaltigkeit.html#ID-b55677da-62d6-4676-b4a9-f07c1797c96d">differenzierbare Untermannigfaltigkeit</a>, falls \(N\) eine \(k\)-dimensionale <a href="20230724-untermannigfaltigkeit.html#ID-4cbfea3f-6f77-453a-b018-e39f14e31af2">Untermannigfaltigkeit</a> ist.
+</p>
+</div>
+</div>
+<div id="outline-container-org0cdc67c" class="outline-2">
+<h2 id="org0cdc67c"><span class="section-number-2">2.</span> Explizit</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Für jeden Punkt \(p \in N\) existiert eine <a href="20230723-karte_mannigfaltigkeit.html#ID-ba69f262-31e8-4d80-b2b1-d9e270e32a08">Karte</a> \((\varphi_i, U_i)\) mit \(p \in U_i\), so dass \(\varphi_i\) und die <a href="20220927213528-umkehrabbildung.html#ID-6852cd17-4614-4655-ad66-85727c75b0f5">Umkehrabbildung</a> jeweils \(n\)-mal (stetig) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">total differenzierbar</a> ist und ferner gilt
 </p>
 \begin{align*}
-K: U \rightarrow V
+\varphi[U_i \cap N] = \mathbb{R}^{k} \times \{0\}^{n-k} \cap V
 \end{align*}
-<p>
-existiert, so dass 
-</p>
-\begin{align*}
-K(M \cap U) = ( \mathbb{R}^d \times \{0\}) \cap V
-\end{align*}
-<p>
-gilt
-</p>
 </div>
 </div>
 </div>

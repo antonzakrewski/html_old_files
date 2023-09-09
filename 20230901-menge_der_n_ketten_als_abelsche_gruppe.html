@@ -13,33 +13,44 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Menge der n-Ketten als abelsche Gruppe</h1>
-<div id="outline-container-orga8d98cd" class="outline-2">
-<h2 id="orga8d98cd"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org1f3dfe9" class="outline-2">
+<h2 id="org1f3dfe9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(C_n(X)\) die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20230901-i_kette_topology.html#ID-8d08bd27-b7a6-4a75-b50c-12b033ae1da4">singulären n-Ketten</a>.
@@ -50,8 +61,8 @@ Dann ist \(C_n(X)\) eine <a href="20211008174655-abelsche_gruppe.html#ID-7281c9c
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org35b7745" class="outline-2">
-<h2 id="org35b7745"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgc702a9a" class="outline-2">
+<h2 id="orgc702a9a"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 folgt aus der Konstruktion

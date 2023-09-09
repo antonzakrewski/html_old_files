@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,8 +53,27 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgbdd22da"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: U \rightarrow \mathbb{C}\) mit \(U \subseteq \mathbb{C}\) ist holomorph, falls   
+Eine <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a> \(f: U \rightarrow \mathbb{C}\) mit \(U \subseteq \mathbb{C}\), <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> ist holomorph, falls für \(z_0 \in U\) eine <a href="20230116165325-lineare_approximation.html#ID-0f49911a-2de3-4f8d-81fb-c56c79742c72">Lineare Approximation</a> \(f'(z_0) \in \mathrm{Hom}_{\mathbb{C}}(\mathbb{C},\mathbb{C})\), d.h. <a href="20221119162741-vektorraumhomomorphismus.html#ID-863f0f55-054c-413e-9cf4-2c2704ea5b14">Homomorphismus</a> mit <a href="20230601102959-sublineare_abbildung.html#ID-ec8d52d7-f25e-4b21-895c-f2059db3a79c">sublinearem</a> <a href="20230116165512-restglied.html#ID-c026cee3-ddb3-4b3f-9651-259b312e4b3e">Restglied</a> existiert, d.h.
 </p>
+\begin{align*}
+f(z) = f(z_0) + f'(z_0) (z - z_0) + o(z - z_0)
+\end{align*}
+
+<p>
+Alternativ:
+</p>
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4a11df9" class="outline-2">
+<h2 id="org4a11df9"><span class="section-number-2">2.</span> Alternativ</h2>
+<div class="outline-text-2" id="text-2">
+\begin{align*}
+f'(z_0) \coloneqq \lim_{z \to z_0}\left(\frac{f(z) - f(z_0)}{z - z_0}\right) 
+\end{align*}
 </div>
 </div>
 </div>

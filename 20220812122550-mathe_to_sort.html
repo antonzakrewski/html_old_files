@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -125,7 +136,6 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li><a href="20220316082322-totale_ableitung.html#ID-1dcf742f-2828-4755-8e86-f2f485130306">Totale Ableitung</a></li>
 <li><a href="20220304175547-addition_restklassenring.html#ID-f7204516-9b48-4048-b89c-2dfbbfdf4572">Addition: Restklassenring</a></li>
 <li><a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">Komposition von Abbildungen</a></li>
-<li><a href="20220719122726-konstante_funktion.html#ID-4a0bb447-823e-4fbc-8a8f-4e2bb6c15e04">Konstante Funktion</a></li>
 <li><a href="20220519202838-allgemeine_berechnung_sinus_cosinus_durch_die_formel_von_de_moivre.html#ID-5bbbfd70-8d48-4578-8026-8561357e4db9">Allgemeine Berechnung: Sinus/Cosinus durch die Formel von de moivre</a></li>
 <li><a href="20211219082144-godelscher_unvollstandigkeitssatz.html#ID-15860e60-f320-48b3-a8f9-3e72c6efc5c7">Gödelscher Unvollständigkeitssatz</a></li>
 <li><a href="20211230231427-neutrales_element_addition_komplexe_zahlen.html#ID-bc503728-8d50-4ecb-9546-2f1f6a140bef">Neutrales Element - Addition (komplexe Zahlen)</a></li>

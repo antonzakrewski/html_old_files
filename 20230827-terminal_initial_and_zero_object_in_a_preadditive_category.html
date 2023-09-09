@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -59,23 +70,66 @@ Let \(\mathcal{C}\) be a <a href="20230827-ab_enriched_category.html#ID-464e7983
 <h2 id="orgeeeeac4"><span class="section-number-2">2.</span> Proof</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org21b4bbe" class="outline-3">
-<h3 id="org21b4bbe"><span class="section-number-3">2.1.</span> 1) \(\implies\) 3)</h3>
-</div>
-<div id="outline-container-orgf993617" class="outline-3">
-<h3 id="orgf993617"><span class="section-number-3">2.2.</span> 2) \(\implies\) 3)</h3>
-</div>
-<div id="outline-container-org0e59668" class="outline-3">
-<h3 id="org0e59668"><span class="section-number-3">2.3.</span> 3) \(\implies\) 1)</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org50c8f9a" class="outline-3">
+<h3 id="org50c8f9a"><span class="section-number-3">2.1.</span> 1), 2) \(\implies\) 3)</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
-Definitions
+By assumption of being initial/terminal and construction of a category, there exists only one <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(\mathrm{id}_{A} = 0\).
+Hence \(\mathrm{Hom}_{\mathcal{C}}(A,A)\) is the trivial <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelian</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">group</a>.
+</p>
+
+<p>
+Suppose \(B \in \mathrm{Ob}(\mathcal{C})\), then
+</p>
+</div>
+<div id="outline-container-org21b4bbe" class="outline-4">
+<h4 id="org21b4bbe"><span class="section-number-4">2.1.1.</span> 1) \(\implies\) 3)</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+for \(f \in \mathrm{Hom}_{\mathcal{C}}(A,B)\) and the <a href="20230801-tensor_product.html#ID-42c4ecff-8f9a-40cf-bebc-70569ded24bf">tensor product</a> 
+</p>
+\begin{align*}
+C: \mathrm{Hom}_{\mathcal{C}}(A,A) \times \mathrm{Hom}_{\mathcal{C}}(A,B) \rightarrow \mathrm{Hom}_{\mathcal{C}}(A,B)
+\end{align*}
+<p>
+we get
+</p>
+\begin{align*}
+f =& \\
+=& f \circ \mathrm{id}_{A} =& C(0,f) \\
+=& 0 \\
+\end{align*}
+<p>
+Therefore the morphism is unique and by construction of the trivial map also exists
 </p>
 </div>
 </div>
-<div id="outline-container-org815f899" class="outline-3">
-<h3 id="org815f899"><span class="section-number-3">2.4.</span> 3) \(\implies\) 2)</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-orgf993617" class="outline-4">
+<h4 id="orgf993617"><span class="section-number-4">2.1.2.</span> 2) \(\implies\) 3)</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+for \(f \in \mathrm{Hom}_{\mathcal{C}}(B,A)\) and the <a href="20230801-tensor_product.html#ID-42c4ecff-8f9a-40cf-bebc-70569ded24bf">tensor product</a> 
+</p>
+\begin{align*}
+C: \mathrm{Hom}_{\mathcal{C}}(B,A) \times \mathrm{Hom}_{\mathcal{C}}(B,B) \rightarrow \mathrm{Hom}_{\mathcal{C}}(B,A)
+\end{align*}
+<p>
+we get
+</p>
+\begin{align*}
+f =& \mathrm{id}_{A} \circ f \\
+=& C(f,0) \\
+=& 0
+\end{align*}
+<p>
+Therefore the morphism is unique and by construction of the trivial map also exists
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org09d2b6b" class="outline-3">
+<h3 id="org09d2b6b"><span class="section-number-3">2.2.</span> 3) \(\implies\) 1), 2)</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 Definitions
 </p>

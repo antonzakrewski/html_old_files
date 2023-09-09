@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>differenzierbar Atlas</title>
+<title>differenzierbarer Atlas</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -48,30 +48,21 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">differenzierbar Atlas</h1>
+<h1 class="title">differenzierbarer Atlas</h1>
+
 <div id="outline-container-org0149bb3" class="outline-2">
 <h2 id="org0149bb3"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Ein \(k\) mal (stetig) differenzierbarer Atlas auf einer \(n\)-dimensionalen <a href="20221113224914-mannigfaltigkeit.html#ID-635e5ff5-f006-46bf-891a-869ae972d6e6">topologischen Mannigfaltigkeit</a> \(M\) ist eine <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offene Überdeckung</a>
+Sei \(M\) eine <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topologischer Raum</a> und \(\mathcal{A}\) ein <a href="20230723-atlas.html#ID-1218bd8a-ff65-4137-98a0-e4373b3f063a">Atlas</a>.
+Dann ist \(\mathcal{A}\) ein \(k\)-mal (stetig) differenzierbarer Atlas, falls für <a href="20230723-karte_mannigfaltigkeit.html#ID-ba69f262-31e8-4d80-b2b1-d9e270e32a08">Karten</a> \(\varphi_i: \varphi_i^{-1}[U_i] \rightarrow U_i\) und \(\varphi_j: \varphi_j^{-1}[U_j] \rightarrow U_j\) der <a href="20230723-kartenwechsel.html#ID-7d55f547-a007-4ddc-ab85-8ded233d9967">Kartenwechsel</a> 
 </p>
 \begin{align*}
-M = \bigcup_{i \in I} U_i
+\varphi_{ij}: \varphi_{i}^{-1}[U_i \cap U_j] \rightarrow \varphi_{j}[U_i \cap U_j]
 \end{align*}
 <p>
-zusammen mit <a href="20230127080110-homeomorphismus.html#ID-9f615f4b-b7b4-4dd6-a222-b9ec170e4390">Homeomorphismen</a> 
-</p>
-\begin{align*}
-\varphi_i: U_i \rightarrow V_i \subseteq \mathbb{R}^n
-\end{align*}
-<p>
-so dass für alle \(i,j \in I\) die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildung</a> 
-</p>
-\begin{align*}
-\varphi_j \circ \varphi_i^{-1}: \varphi_i[U_i \cap U_j] \rightarrow& \varphi_j[U_i \cap U_j]
-\end{align*}
-<p>
-und die dazugehörige umkehrabbildung jeweils \(n\)-mal (<a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetig</a>) <a href="20230601102558-totale_differenzierbarkeit.html#ID-2bdfcfac-76de-4f04-b2c7-6eca0297c586">differenzierbarer</a> <a href="20230301205440-diffeomorphismus.html#ID-573a56f9-0240-4c4a-a241-ee598afdd9f5">Diffeomorphismen</a> sind.
+ein <a href="20230629-differentiationsklasse_eines_diffeomorphismus.html#ID-0f6af854-4674-4e89-ad2f-6710cc164ce6">C<sup>k</sup> Diffeomorphismus</a> ist.
+Dabei sind \(\varphi_{i}^{-1}[U_i \cap U_j], \varphi_j^{-1}[U_i \cap U_j] \subseteq \mathbb{R}^n\) <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>
 </p>
 </div>
 </div>
