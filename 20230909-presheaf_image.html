@@ -53,12 +53,36 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgde0fd00"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{A}\) be an <a href="20230827-abelian_category.html#ID-9003af72-f684-4897-b096-c1d8a681c624">abelian</a> <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, \(\mathcal{F}_1,\mathcal{F}_2\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">A-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> on a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> \((X, \mathcal{T}_X)\) and \(\varphi: \mathcal{F}_1 \rightarrow \mathcal{F}_2\) a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a>
+Let \(\mathcal{A}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, such that <a href="20230914-image_category_theory.html#ID-9f56547e-0ace-4cbe-8410-f13eb5a15cf5">images</a> exist, \(\mathcal{F}_1,\mathcal{F}_2\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">A-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> on a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> \((X, \mathcal{T}_X)\) and \(\varphi: \mathcal{F}_1 \rightarrow \mathcal{F}_2\) a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a>
 Then the presheaf image of \(\varphi\) is defined as <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> with 
 </p>
 \begin{align*}
-U \mapsto \mathrm{im}(\varphi[U])
+\mathrm{im}(\varphi)(U) \coloneqq \mathrm{im}(\varphi_U)
 \end{align*}
+<p>
+and the induced restriction
+</p>
+\begin{align*}
+
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orgedd8bcb" class="outline-2">
+<h2 id="orgedd8bcb"><span class="section-number-2">2.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+compatibility of restrictions - if the restrictinos exist - is inherited
+</p>
+
+<p>
+to show that \(\mathrm{res}_{\mathrm{im},U,V}: \mathrm{im}(U) \rightarrow \mathrm{im}()\) exists
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(U) \arrow[]{d}{\mathrm{res}} \arrow[bend left]{rr}{\varphi} \arrow[]{r}{e_U}& \mathrm{im}(\varphi) \arrow[hookrightarrow]{r}{m} & \mathcal{G}(U)   \arrow[]{d}{\mathrm{res}} \\
+\mathcal{F}(V) \arrow[bend right]{rr}{\varphi} \arrow[]{r}{e_V}& \mathrm{im}(\varphi) \arrow[hookrightarrow, ]{r}{m'}& \mathcal{G}(V)
+\end{tikzcd}
+\end{displaymath}
 </div>
 </div>
 </div>

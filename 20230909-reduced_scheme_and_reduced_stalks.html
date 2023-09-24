@@ -13,14 +13,58 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">reduced scheme and reduced stalks</h1>
 <div id="outline-container-orgac73984" class="outline-2">
 <h2 id="orgac73984"><span class="section-number-2">1.</span> Proposition</h2>
-</div>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \((X, \mathcal{O}_X, O_i)\) be a <a href="20230826-scheme.html#ID-02a5d15c-2ea4-4f01-b18f-8027595b7d12">scheme</a>.
+</p>
 
+<p>
+<a href="20230509170507-tfae.html#ID-d57bdf4a-ea91-4793-bfd9-931877d57b57">TFAE</a>:
+</p>
+<ol class="org-ol">
+<li>\((X, \mathcal{O}_X)\) is a <a href="20230909-reduced_scheme.html#ID-a6ede6e2-e81f-461b-b2bc-ffec04a028ab">reduced scheme</a></li>
+<li>each <a href="20230825-stalk.html#ID-6fcbbbf4-984b-401a-840b-c614a03bd6a7">stalk</a> \(\mathcal{O}_p\) is a <a href="20230725-reduced_ring.html#ID-1480b16c-0de6-4614-9ae9-a70abea088a9">reduced ring</a></li>
+</ol>
+</div>
+</div>
 <div id="outline-container-org06300d2" class="outline-2">
 <h2 id="org06300d2"><span class="section-number-2">2.</span> Proof</h2>
 </div>

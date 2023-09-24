@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -52,10 +63,14 @@ Dann existiert in <a href="20220817142257-zermelo_fraenkel_choice_mengenlehre.ht
 <div class="outline-text-2" id="text-2">
 <p>
 Die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> der <a href="20221224121300-teiluberdeckung.html#ID-592bb00c-d4d2-4853-a393-ef6977c82437">Teilüberdeckungen</a> ist <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a>, da \(O_i\) eine triviale Teilüberdeckung ist.
-Sei \(O_n\) eine <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">Kette</a> von Teilüberdeckungen bezüglich der <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Inklusion</a> als <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">als Halbordnung</a>.
+Sei \(O_n\) eine <a href="20230222205150-kette.html#ID-0b38d50a-42b8-4d13-9f40-0248f887ca7d">Kette</a> von Teilüberdeckungen bezüglich der <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Inklusion</a> als <a href="20230315000706-teilmengenrelation_als_halbordnung.html#ID-11e55b3d-c787-41c6-a086-11617ba7a6bb">Halbordnung</a>.
 Dann ist \(\bigcap_{n \in \mathbb{N}} O_n\) eine untere Schranke.
 Sei \(p \not\in \bigcap_{n \in \mathbb{N}} O_n\), so existiert ein \(n \in \mathbb{N}\) mit \(p \not\in O_i \forall i \in I\).
 Damit ist \(O_n\) 
+</p>
+
+<p>
+ist das i.a. richtig ?
 </p>
 
 <p>

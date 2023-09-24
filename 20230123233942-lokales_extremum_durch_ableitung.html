@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -43,7 +54,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <div class="outline-text-2" id="text-1">
 <p>
 Sei \(f: (a,b) \rightarrow \mathbb{R}\) mit \((a,b) \subseteq \mathbb{R}\) <a href="20230123233223-differentiationsklasse.html#ID-7ef674b2-958d-4fa2-af99-dc7188f4acce">zweimal</a> <a href="20230116163008-differenzierbarkeit.html#ID-dd7eef4e-04f7-4614-a343-a1f16a7fd0f7">differenzierbar</a> und sei für \(x_0 \in (a,b)\) \(f'(x_0) = 0\) und \(f''(x_0) \neq 0\)
-Dann ist \(f(x_0)\) ein <a href="20230123234139-isolierter_extremwert.html#ID-08cf28d3-55c3-421f-85ec-c0de04db7245">isoliertes</a> <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> für \(f''(x_0) > 0\) und ein  <a href="20230123234139-isolierter_extremwert.html#ID-08cf28d3-55c3-421f-85ec-c0de04db7245">isoliertes</a> <a href="20221103092141-maximum.html#ID-abf0481b-fe94-4bef-a0d3-fbb5c498364b">Maximum</a> für $f''(x<sub>0</sub>) &lt; 0wa
+Dann ist \(f(x_0)\) ein <a href="20230123234139-isolierter_extremwert.html#ID-08cf28d3-55c3-421f-85ec-c0de04db7245">isoliertes</a> <a href="20221103092136-minimum.html#ID-41ccfaba-7b48-4dac-bfda-de7f127aabe6">Minimum</a> für \(f''(x_0) > 0\) und ein  <a href="20230123234139-isolierter_extremwert.html#ID-08cf28d3-55c3-421f-85ec-c0de04db7245">isoliertes</a> <a href="20221103092141-maximum.html#ID-abf0481b-fe94-4bef-a0d3-fbb5c498364b">Maximum</a> für \(f''(x_0) < 0\)
 </p>
 </div>
 </div>

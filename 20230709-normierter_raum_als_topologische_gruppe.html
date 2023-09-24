@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -49,6 +60,19 @@ Dann ist \((V,+)\) eine <a href="20230226210828-topologische_gruppe.html#ID-0aa2
 </div>
 <div id="outline-container-orgd98a83f" class="outline-2">
 <h2 id="orgd98a83f"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org993db7e" class="outline-3">
+<h3 id="org993db7e"><span class="section-number-3">2.1.</span> a)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<a href="20230228172435-gleichmaßige_stetigkeit_der_addition.html#ID-8358c2f6-8b9c-46d2-a01d-a98daf920964">gleichmäßige Stetigkeit der Addition auf einem halbnormierten Raum</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org41f34fe" class="outline-3">
+<h3 id="org41f34fe"><span class="section-number-3">2.2.</span> b)</h3>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

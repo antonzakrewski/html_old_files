@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>isomorphism of sheaves and isomorphism of stalks</title>
+<title>isomorphism of presheaves induces isomorphism of stalks</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,20 +13,68 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">isomorphism of sheaves and isomorphism of stalks</h1>
+<h1 class="title">isomorphism of presheaves induces isomorphism of stalks</h1>
 <div id="outline-container-orgfd677ca" class="outline-2">
 <h2 id="orgfd677ca"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let 
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(\mathcal{F},\mathcal{G}\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">V-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheafs</a> for a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> \(\mathcal{V}\) with <a href="20230825-stalk.html#ID-6fcbbbf4-984b-401a-840b-c614a03bd6a7">stalks</a> \(\mathcal{F}_p,\mathcal{G}_p\) at a point \(p \in X\).
+Suppose \(f: \mathcal{F} \rightarrow \mathcal{G}\) is a <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorphism</a> <a href="20230826-morphism_of_presheafs.html#ID-ed9790a3-3f6c-4ed6-b876-8600f9a86de0">of presheaves</a>, then \(f\) induces an <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorphism</a> \(f^*: \mathcal{F}_p \rightarrow \mathcal{G}_p\)
 </p>
 </div>
 </div>
 <div id="outline-container-org25c6273" class="outline-2">
 <h2 id="org25c6273"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Follows from <a href="20230909-morphism_of_presheafs_and_morphism_on_the_stalks.html#ID-6cb36fd4-94bb-4b47-9621-8fe87fcab546">morphism of presheaves induces morphism on the stalks</a>:
+by Assumption, \(f\) and \(f^{-1}\) induce unique $f<sup>*</sup>, f<sup>-1</sup>^, such that the induced <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagrams</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commute</a>.
+Hence
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(U) \arrow[bend right]{rd}{} \arrow[bend right]{rdd}{} \arrow[bend right]{rddd}{} \arrow[]{rr}{\mathrm{res}} && \mathcal{F}(V) \arrow[bend left]{ld}{} \arrow[bend left]{ldd}{} \arrow[bend left]{lddd}{}\\
+& \mathcal{F}_p \arrow[bend right, swap]{dd}{\mathrm{id}} \arrow[]{d}{f^*} & \\
+& \mathcal{G}_p \arrow[]{d}{f^{-1}^*} & \\
+& \mathcal{F}_p & 
+\end{tikzcd}
+\end{displaymath}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

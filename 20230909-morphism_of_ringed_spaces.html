@@ -13,12 +13,50 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">morphism of ringed spaces</h1>
 <div id="outline-container-org4804c44" class="outline-2">
 <h2 id="org4804c44"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \((X,\mathcal{O}_X), (Y, \mathcal{O}_Y)\) be <a href="20230825-ringed_space.html#ID-58bbaf4e-7310-4524-8008-513e209f798d">ringed spaces</a> 
+A morphism \(f: (X,\mathcal{O}_X) \rightarrow (Y,\mathcal{O}_Y)\) of ringed spaces is a pair \((f^*,f^#)\), where \(f^': X \rightarrow Y\) is a <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> and \(f^#: \mathcal{O}_X \rightarrow \mathcal{O}_Y\) is a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheaves</a> in the <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> <a href="20230225170135-kategorie_ring.html#ID-fa4634e9-174f-42f5-8e08-0e6d676130d7">category Ring</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

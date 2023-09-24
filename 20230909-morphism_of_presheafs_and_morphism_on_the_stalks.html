@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>morphism of presheafs and morphism on the stalks</title>
+<title>morphism of presheaves induces morphism on the stalks</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -48,17 +48,66 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">morphism of presheafs and morphism on the stalks</h1>
+<h1 class="title">morphism of presheaves induces morphism on the stalks</h1>
 <div id="outline-container-orgce50f2f" class="outline-2">
 <h2 id="orgce50f2f"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> 
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(\mathcal{F},\mathcal{G}\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">V-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheafs</a> for a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> \(\mathcal{V}\) with <a href="20230825-stalk.html#ID-6fcbbbf4-984b-401a-840b-c614a03bd6a7">stalks</a> \(\mathcal{F}_p,\mathcal{G}_p\) at a point \(p \in X\).
+Suppose \(f: \mathcal{F} \rightarrow \mathcal{G}\) is a <a href="20230826-morphism_of_presheafs.html#ID-ed9790a3-3f6c-4ed6-b876-8600f9a86de0">morphism of presheaves</a> 
+Then \(f\) induces a unique <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> \(f: \mathcal{F}_p \rightarrow \mathcal{G}_p\)
 </p>
 </div>
 </div>
 <div id="outline-container-orgb29cdd1" class="outline-2">
 <h2 id="orgb29cdd1"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let \(U \subseteq V \subseteq X\), with \(p \in U,V\) then it induces a unique <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(V) \arrow[]{rr}{\mathrm{res}} \arrow[]{rd}{\varphi_V} & &  \mathcal{F}(U) \arrow[]{ld}{\varphi_V}\\
+& \mathcal{F}_p & 
+\end{tikzcd}
+\end{displaymath}
+<p>
+Furthermore, we get following <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commuting</a> <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(V) \arrow[bend right]{dd}{f} \arrow[]{rr}{\mathrm{res}} \arrow[swap]{rd}{\varphi_V} & &  \mathcal{F}(U) \arrow[bend left]{dd}{f} \arrow[]{ld}{\varphi_U}\\
+& \mathcal{F}_p & \\
+\mathcal{G}(U) \arrow[]{rr}{\mathrm{res}} & & \mathcal{G}(V) \\
+& \mathcal{G}_p & 
+\end{tikzcd}
+\end{displaymath}
+<p>
+where by \(f\) being a <a href="20230826-morphism_of_presheafs.html#ID-ed9790a3-3f6c-4ed6-b876-8600f9a86de0">morphism of presheafs</a>, we it follows by definition, that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(V) \arrow[]{d}{f} \arrow[]{r}{\mathrm{res}}& \mathcal{F}(U) \arrow[]{d}{f}\\
+\mathcal{G}(V) \arrow[]{r}{\mathrm{res}}& \mathcal{G}(U) 
+\end{tikzcd}
+\end{displaymath}
+<p>
+Therefore, by definition of \(\mathcal{G}_p\) we conculde, that
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(V) \arrow[swap, bend right=90, thick]{ddr}{f \circ \psi_{V}} \arrow[]{d}{f} \arrow[thick]{rr}{\mathrm{res}}&  & \mathcal{F}(U) \arrow[bend left=90, thick]{ddl}{f \circ \psi_{U}} \arrow[]{d}{f}\\
+\mathcal{G}(V) \arrow[]{rd}{\psi_V} \arrow[]{rr}{\mathrm{res}}& &  \mathcal{G}(U) \arrow[]{ld}{\psi_U} \\
+& \mathcal{G}_p & 
+\end{tikzcd}
+\end{displaymath}
+<p>
+commutes, hence by universal property of \(\mathcal{F}_p\), there exists a unique <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a>
+</p>
+\begin{align*}
+f^*: \mathcal{F}_p \rightarrow \mathcal{G}_p
+\end{align*}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

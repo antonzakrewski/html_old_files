@@ -13,12 +13,59 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">presheaf cokernel</h1>
 <div id="outline-container-org7a162fd" class="outline-2">
 <h2 id="org7a162fd"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(\mathcal{A}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, such that <a href="20230827-cokernel_category_theory.html#ID-3e52d31a-b97e-454b-b565-4ae3d2b26482">cokernel</a> exist, \(\mathcal{F}_1,\mathcal{F}_2\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">A-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> on a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> \((X, \mathcal{T}_X)\) and \(\varphi: \mathcal{F}_1 \rightarrow \mathcal{F}_2\) a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a>
+Then the presheaf cokernel of \(\varphi\) is defined as <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> with 
+</p>
+\begin{align*}
+\mathrm{coker}(\varphi)(U) \coloneqq \mathrm{coker(\varphi_U)
+\end{align*}
+<p>
+and the induced restriction
+</p>
+</div>
+</div>
+<div id="outline-container-orgd39d23d" class="outline-2">
+<h2 id="orgd39d23d"><span class="section-number-2">2.</span> Proof</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -13,12 +13,80 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">sheafification</h1>
-<div id="outline-container-org31e201e" class="outline-2">
-<h2 id="org31e201e"><span class="section-number-2">1.</span> Definition</h2>
+<div id="outline-container-org2c291ad" class="outline-2">
+<h2 id="org2c291ad"><span class="section-number-2">1.</span> Definition / Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(\mathcal{V}\) a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> and \(\mathcal{F}\) a <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">V-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a>.
+Then the sheafification is defined as <a href="20230825-sheaf.html#ID-e25c21b0-0380-4bb6-95e6-867026f82aca">sheaf</a> \(\mathcal{F}^+\) and a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a> \(\theta: \mathcal{F} \rightarrow \mathcal{F}^+\) satisfying following <a href="20230404185319-universal_property.html#ID-97334d2a-9fb2-4542-9d53-144c4f4cb4d6">universal property</a>:
+For each Sheaf \(G\) and morphism \(\varphi: \mathcal{F} \rightarrow \mathcal{G}\) there exists a unique morphism \(\psi: \mathcal{F}^{+} \rightarrow \mathcal{G}\) such that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F} \arrow[]{rd}{\varphi}\arrow[]{r}{\theta}& \arrow[dashed]{d}{\exists! \psi} \mathcal{F}^+ \\
+& \mathcal{G}
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-org5e8fec5" class="outline-2">
+<h2 id="org5e8fec5"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org123651e" class="outline-3">
+<h3 id="org123651e"><span class="section-number-3">2.1.</span> uniqueness</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Follows from 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F} \arrow[]{r}{\theta} \arrow[]{rd}{\theta'} \arrow[]{rdd}{\theta} & \mathcal{F}^+ \arrow[bend left]{dd}{\mathrm{id} } \arrow[dashed, swap]{d}{\exists! \psi}\\
+& \mathcal{G} \arrow[swap, dashed]{d}{\exists! \psi'} \\
+& \mathcal{F}^+
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-org0c29ce9" class="outline-3">
+<h3 id="org0c29ce9"><span class="section-number-3">2.2.</span> existence</h3>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
