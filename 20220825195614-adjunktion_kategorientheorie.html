@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Adjunktion (Kategorientheorie)</title>
+<title>adjoint</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,31 +13,42 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Adjunktion (Kategorientheorie)</h1>
+<h1 class="title">adjoint</h1>
 <div id="outline-container-orgc1610d2" class="outline-2">
 <h2 id="orgc1610d2"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
@@ -52,6 +63,26 @@ mit der Eigenschaft, dass es für <a href="20220818170642-objekt_kategorie.html#
 </p>
 \begin{align*}
 \lambda:{\mathrm{Hom}}_{\mathbf{D}}(L C,D)\cong{\mathrm{Hom}}_{\mathbf{C}}(C,R D)
+\end{align*}
+
+<p>
+see:
+</p>
+<ul class="org-ul">
+<li><a href="20220831221344-linksadjungierte.html#ID-1e87e6b9-24df-41fb-bc1b-d35cfd2eaa7f">left adjoint</a></li>
+<li><a href="20220831221352-rechtsadjungierte.html#ID-9d92e651-1d26-4e9b-a0b9-32a09ca84328">right adjoint</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0abc89f" class="outline-2">
+<h2 id="org0abc89f"><span class="section-number-2">2.</span> Alternative</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(\mathcal{L}: \mathcal{C} \rightarrow \mathcal{D}\) and \(\mathcal{R}: \mathcal{D} \rightarrow \mathcal{C}\) 
+If there exists a <a href="20230404122456-natural_isomorphism.html#ID-0977f626-bc15-4197-93bd-092d014c8270">natural isomorphism</a> 
+</p>
+\begin{align*}
+\mathrm{Hom}_{\mathcal{D}}(L(-), -) \simeq \mathrm{Hom}_{\mathcal{C}}(-, \mathcal{R}(-))
 \end{align*}
 </div>
 </div>

@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,7 +53,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgf538068"><span class="section-number-2">1.</span> Defintion</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(f: \mathbb{R}^n \rightarrow \mathbb{R}^m\) eine <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so ist die Jacobi Matrix im Punkt \(a \in \mathbb{R}^n\) definiert als
+Sei \(f: \mathbb{R}^m \rightarrow \mathbb{R}^n\) eine <a href="20230301042854-partielle_differenzierbarkeit.html#ID-9f248317-772f-4539-9de2-b23ab30004e9">partiell differenzierbare</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktion</a>, so ist die Jacobi Matrix im Punkt \(a \in \mathbb{R}^n\) definiert als
 </p>
 \begin{align*}
 J_f(a) \coloneqq&

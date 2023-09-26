@@ -13,16 +13,106 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">direct limit of rings</h1>
 <div id="outline-container-orgfd2b2a7" class="outline-2">
 <h2 id="orgfd2b2a7"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(\mathcal{J}\) be a <a href="20230804-filtered_category.html#ID-8cad168f-0afe-4e46-863e-64ca03b4f920">filtered category</a> and \(F: \mathcal{J} \Rightarrow \mathrm{Ring}\) be a <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a>.
+Then the <a href="20230804-filtered_limit.html#ID-35b9e3f0-b5d0-41c4-94ac-6bd183d66ee3">direct limit</a> of \(\mathcal{J}\) is <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorphic</a> to
+</p>
+\begin{align*}
+\coprod R_i / \sim
+\end{align*}
+<p>
+where for \(r_i \in R_i, r_j \in R_j\) it holds
+</p>
+\begin{align*}
+r_i \sim r_j :\Leftrightarrow \exists k : \varphi_{i,k}(r_i) = \varphi_{j,k}(r_j)
+\end{align*}
+<p>
+and addition resp. multiplication is defined as
+</p>
+\begin{align*}
+[r_i] \cdot [r_j] =& [ \varphi_{i,k}(r_i) \cdot \varphi_{i,k}(r_j)] \\
+[r_i] + [r_j] =& [ \varphi_{i,k}(r_i) + \varphi_{i,k}(r_j)] \\
+\end{align*}
 </div>
-
+</div>
 <div id="outline-container-org711eda4" class="outline-2">
 <h2 id="org711eda4"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org2dc01ed" class="outline-3">
+<h3 id="org2dc01ed"><span class="section-number-3">2.1.</span> <a href="20210702075710-monoid.html#ID-ebccfd45-6c4b-4a93-818a-8f6848600874">monoid</a></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+consequence of <a href="20230918-direct_limit_of_monoids.html#ID-39d27a0d-b0f2-4de4-b9db-ac08228b5d64">direct limit of monoids</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org8dcd756" class="outline-3">
+<h3 id="org8dcd756"><span class="section-number-3">2.2.</span> <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelian</a> <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">group</a></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+consequence of <a href="20230911-direct_limit_of_abelian_groups.html#ID-e8477c7b-4ac3-4b31-bad9-7c7a4c406671">direct limit of abelian groups</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgbdfb7df" class="outline-3">
+<h3 id="orgbdfb7df"><span class="section-number-3">2.3.</span> distributivity</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Let \(r_i,r_j,r_l\), <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">w.l.o.g.</a> with \(k\) as upper bound for \(i,j,k\) (see: welldefinedsness), it follows that
+</p>
+\begin{align*}
+[r_i] \cdot \left( [r_j] + [r_l] \right) =& [r_i] \cdot \left([\varphi_{j,k}(r_j) + \varphi_{l,k}(r_l)]\right) \\
+=& [\varphi_{i,k}(r_i) \cdot \left(\varphi_{j,k}(r_j) + \varphi_{l,k}(r_l)\right)] \\
+=& [\varphi_{i,k}(r_i) \cdot \varphi_{j,k}(r_j) + \varphi_{i,k}(r_i) \cdot \varphi_{l,k}(r_l)] \\
+=& [\varphi_{i,k}(r_i) \cdot \varphi_{j,k}(r_j)] + [ \varphi_{i,k}(r_i) \cdot \varphi_{l,k}(r_l)]  \\
+=& [\varphi_{i,k}(r_i)] \cdot [\varphi_{j,k}(r_j)] + [ \varphi_{i,k}(r_i)] \cdot [\varphi_{l,k}(r_l)]  \\
+=& [r_i] \cdot [r_j] + [r_i] \cdot [r_l]
+\end{align*}
+<p>
+and analog for the other side
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
