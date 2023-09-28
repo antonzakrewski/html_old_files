@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -44,18 +23,22 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <p>
 Let
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-... & A_0 \arrow[]{r}{d_1}& A_1 \arrow[]{r}{d_2} & A_2 \arrow[]{r}{}& ...
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230814-chain_cohomology_group_142804bb311558a73c3e37c83efe54b9cf6b309e.svg" alt="20230814-chain_cohomology_group_142804bb311558a73c3e37c83efe54b9cf6b309e.svg" class="org-svg" />
+</span>
+</div>
 <p>
 be a <a href="20230814-cochain_complex.html#ID-8b85815b-360f-4a77-bebf-8f9b7457fa1b">cochain complex</a>.
 Then the $n$-th cohomology group is defined as as <a href="20221210201536-faktorgruppe.html#ID-37068c77-35dd-45c0-8051-01704f97222c">quotient group</a> 
 </p>
-\begin{align*}
-H_n \coloneqq \mathrm{ker}(d_n) / \mathrm{im}(d_{n+1})
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230814-chain_cohomology_group_8ae8db865fba66366bdf806e8378f9e0564e5e94.svg" alt="20230814-chain_cohomology_group_8ae8db865fba66366bdf806e8378f9e0564e5e94.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

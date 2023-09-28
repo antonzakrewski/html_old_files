@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -50,8 +61,8 @@ Dann gilt für die <a href="20230709-externe_direkte_summe_von_gruppen.html#ID-c
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org35d8b08" class="outline-2">
-<h2 id="org35d8b08"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-orgd35533c" class="outline-2">
+<h2 id="orgd35533c"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Folgt aus dem <a href="20220928135729-gruppenisomorphsimus.html#ID-a0a02292-8a0b-4dc8-a2a8-1d592e5cb95b">Gruppenisomorphsimus</a>
@@ -74,8 +85,8 @@ nachrechnen von:
 <h3 id="org12a4e43"><span class="section-number-3">2.3.</span> <a href="20230222204703-modulhomomorphismus.html#ID-bb388d52-298a-4714-b290-80d9ab79eb2e">homomorphism</a></h3>
 </div>
 </div>
-<div id="outline-container-orgd35533c" class="outline-2">
-<h2 id="orgd35533c"><span class="section-number-2">3.</span> Beweis</h2>
+<div id="outline-container-org895b5a3" class="outline-2">
+<h2 id="org895b5a3"><span class="section-number-2">3.</span> Beweis</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 analog zu <a href="20230709-assoziativitat_der_summe_von_faktormoduln.html#ID-8eed4830-53c1-4248-8c2d-23c8296a038a">Assoziativität der externen Summe von Faktormoduln</a> 

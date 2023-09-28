@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,18 +21,24 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgde0fd00"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{A}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, such that <a href="20230914-image_category_theory.html#ID-9f56547e-0ace-4cbe-8410-f13eb5a15cf5">images</a> exist, \(\mathcal{F}_1,\mathcal{F}_2\) <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">A-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> on a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> \((X, \mathcal{T}_X)\) and \(\varphi: \mathcal{F}_1 \rightarrow \mathcal{F}_2\) a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a>
-Then the presheaf image of \(\varphi\) is defined as <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> with 
+Let <img src="ltximg/20230909-presheaf_image_1be44afdddc85e0ca834e42c467366571f86df60.svg" alt="20230909-presheaf_image_1be44afdddc85e0ca834e42c467366571f86df60.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, such that <a href="20230914-image_category_theory.html#ID-9f56547e-0ace-4cbe-8410-f13eb5a15cf5">images</a> exist, <img src="ltximg/20230909-presheaf_image_a282051ed5ef1fa09b98daadc8fc7328f8a2edba.svg" alt="20230909-presheaf_image_a282051ed5ef1fa09b98daadc8fc7328f8a2edba.svg" class="org-svg" /> <a href="20230818-v_valued_presheaf.html#ID-0b3df3a6-6fbc-4d13-bce5-3199c201cd8f">A-valued</a> <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> on a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> <img src="ltximg/20230909-presheaf_image_73566a25e5bd778928c8c0d8c19ac5f220463619.svg" alt="20230909-presheaf_image_73566a25e5bd778928c8c0d8c19ac5f220463619.svg" class="org-svg" /> and <img src="ltximg/20230909-presheaf_image_37c10fd91c262f8de02ca2f19cd8c2435aa955a1.svg" alt="20230909-presheaf_image_37c10fd91c262f8de02ca2f19cd8c2435aa955a1.svg" class="org-svg" /> a <a href="20230826-morphism_of_sheafs.html#ID-47f39e2b-dfcb-414c-aeaf-ac8479b0ea2f">morphism of sheafs</a>
+Then the presheaf image of <img src="ltximg/20230909-presheaf_image_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" alt="20230909-presheaf_image_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" class="org-svg" /> is defined as <a href="20230603-presheaf_of_sets.html#ID-d49e3c63-1428-4b98-9f00-238ae7770cbf">presheaf</a> with 
 </p>
-\begin{align*}
-\mathrm{im}(\varphi)(U) \coloneqq \mathrm{im}(\varphi_U)
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230909-presheaf_image_462736b1adbaf351d7247ca3dcca29d08a39dba6.svg" alt="20230909-presheaf_image_462736b1adbaf351d7247ca3dcca29d08a39dba6.svg" class="org-svg" />
+</span>
+</div>
 <p>
 and the induced restriction
 </p>
-\begin{align*}
 
-\end{align*}
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230909-presheaf_image_2bc64a8aea5cfda286a1aa63da02ae74b7a96096.svg" alt="20230909-presheaf_image_2bc64a8aea5cfda286a1aa63da02ae74b7a96096.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgedd8bcb" class="outline-2">
@@ -75,14 +49,14 @@ compatibility of restrictions - if the restrictinos exist - is inherited
 </p>
 
 <p>
-to show that \(\mathrm{res}_{\mathrm{im},U,V}: \mathrm{im}(U) \rightarrow \mathrm{im}()\) exists
+to show that <img src="ltximg/20230909-presheaf_image_1dc3e871e5923eefd884b86e0aa8649a6f4ef33e.svg" alt="20230909-presheaf_image_1dc3e871e5923eefd884b86e0aa8649a6f4ef33e.svg" class="org-svg" /> exists
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-\mathcal{F}(U) \arrow[]{d}{\mathrm{res}} \arrow[bend left]{rr}{\varphi} \arrow[]{r}{e_U}& \mathrm{im}(\varphi) \arrow[hookrightarrow]{r}{m} & \mathcal{G}(U)   \arrow[]{d}{\mathrm{res}} \\
-\mathcal{F}(V) \arrow[bend right]{rr}{\varphi} \arrow[]{r}{e_V}& \mathrm{im}(\varphi) \arrow[hookrightarrow, ]{r}{m'}& \mathcal{G}(V)
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230909-presheaf_image_eb6a99c209a7ca9305f92fdbacc4306279881463.svg" alt="20230909-presheaf_image_eb6a99c209a7ca9305f92fdbacc4306279881463.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -44,14 +23,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <p>
 A double complex is a <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commuting</a> <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> of the form
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-& \vdots \arrow[]{d}{} & \vdots \arrow[]{d}{} & \\
-...  \arrow[]{r}{} &   \arrow[]{d}{}  A_{n,m} \arrow[]{r}{} &  \arrow[]{d}{}  A_{n-1,m} \arrow[]{r}{} & ... \\
-...  \arrow[]{r}{} & \arrow[]{d}{}  A_{n,m} \arrow[]{r}{} & A_{n-1,m} \arrow[]{r}{} \arrow[]{d}{} & ... \\
-&  \vdots & \vdots & \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230813-double_complex_10550bde29aa63d60689369c107ea860f937666f.svg" alt="20230813-double_complex_10550bde29aa63d60689369c107ea860f937666f.svg" class="org-svg" />
+</span>
+</div>
 <p>
 such that each each row and each column is a <a href="20230813-complex.html#ID-0c86be9f-50c2-46fb-8459-dbe167aaea30">complex (homological algebra)</a> 
 </p>

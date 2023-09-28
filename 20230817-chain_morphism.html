@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -44,22 +23,22 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <p>
 Let
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-... \arrow[]{r}{} & A_{n+1} \arrow[]{r}{d_{n+1}} & A_{n} \arrow[]{r}{d_{n}} & A_{n-1} & ... \\
-... \arrow[]{r}{} & B_{n+1} \arrow[]{r}{d_{n+1}}' & B_{n} \arrow[]{r}{d_{n}'} & B_{n-1} & ...
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230817-chain_morphism_ec494912dba61ee01489e860c00347ec1c655d64.svg" alt="20230817-chain_morphism_ec494912dba61ee01489e860c00347ec1c655d64.svg" class="org-svg" />
+</span>
+</div>
 <p>
 be <a href="20230802-chain_complex.html#ID-e4c10be9-3796-4aff-9579-5cc0b5f47e36">chain complexes</a> 
-A chain morphism is a collection of morphisms \(f_n: A_{n} \rightarrow B_n\) such that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
+A chain morphism is a collection of morphisms <img src="ltximg/20230817-chain_morphism_0fc5795e2317ed8e69270a41f018d14361eada1e.svg" alt="20230817-chain_morphism_0fc5795e2317ed8e69270a41f018d14361eada1e.svg" class="org-svg" /> such that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-... \arrow[]{r}{} & A_{n+1} \arrow[]{d}{f_{n+1}} \arrow[]{r}{d_{n+1}} & A_{n} \arrow[]{d}{f_n} \arrow[]{r}{d_{n}} & A_{n-1} \arrow[]{d}{f_{n-1}} & ... \\
-... \arrow[]{r}{} & B_{n+1} \arrow[]{r}{d_{n+1}}' & B_{n} \arrow[]{r}{d_{n}'} & B_{n-1} & ...
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20230817-chain_morphism_46f676e53895aa1c142f2b23fe79cd7457cf0862.svg" alt="20230817-chain_morphism_46f676e53895aa1c142f2b23fe79cd7457cf0862.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

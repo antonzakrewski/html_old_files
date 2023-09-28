@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -47,8 +58,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </div>
 </div>
 
-<div id="outline-container-org458fdc8" class="outline-2">
-<h2 id="org458fdc8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4024626" class="outline-2">
+<h2 id="org4024626"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 <div id="outline-container-orgb372ddf" class="outline-3">
@@ -61,8 +72,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </ul>
 </div>
 </div>
-<div id="outline-container-org00de4b7" class="outline-3">
-<h3 id="org00de4b7"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div id="outline-container-org458fdc8" class="outline-3">
+<h3 id="org458fdc8"><span class="section-number-3">2.2.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-2">
 \begin{align*}
 \cos(\theta)' =& \lim_{\varepsilon \to 0}\left(\frac{\cos(\theta + \varepsilon)-\cos(\theta)}{\varepsilon}\right) \\
