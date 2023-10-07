@@ -56,14 +56,22 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 Let \(\mathcal{C}\) be a <a href="20230225165858-lokal_kleine_kategorie.html#ID-29f14fa2-ae57-46d2-8e23-3f2924bc1ebe">locally small category</a> <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, then the hom functor is defined as <a href="20230402214828-bifunctor.html#ID-69efbb38-0e95-47d1-9389-336799ad5cff">bifunctor</a> 
 </p>
 \begin{align*}
-\mathrm{Hom}_{\mathcal{C}}(-,-): \mathcal{C}^{\mathrm{op}} \times \mathcal{C} \rightarrow \mathrm{Set}
+\mathrm{Hom}_{\mathcal{C}}(-,-): \mathcal{C}^{\mathrm{op}} \times \mathcal{C} \rightarrow& \mathrm{Set} \\
 (A,B) \mapsto& \mathrm{Hom}_{\mathcal{C}}(A,B) \\
-(f: A' \rightarrow A,g^{\mathrm{op}}: B \rightarrow B') \mapsto (q: A \rightarrow B \mapsto g \circ q \circ f)
+(f: A' \rightarrow A,g^{\mathrm{op}}: B \rightarrow B') \mapsto& (q: A \rightarrow B \mapsto g \circ q \circ f)
 \end{align*}
-
 <p>
 see also:
 </p>
+
+\begin{displaymath}
+\begin{tikzcd}
+A \arrow[Rightarrow]{r}{} & A' \\
+B \arrow[]{u}{} \arrow[Rightarrow]{r}{} & B \arrow[]{u}{}
+\end{tikzcd}
+\end{displaymath}
+
+
 <ul class="org-ul">
 <li><a href="20230902-covariant_hom_functor_of_points.html#ID-c4e8849e-c055-49ed-9de1-b488d13d0dcf">covariant hom functor of points</a></li>
 <li><a href="20230403222857-contravariant_hom_functor.html#ID-9a5969b2-314a-45b2-88d2-693b5a9ae96e">contravariant hom-functor</a></li>

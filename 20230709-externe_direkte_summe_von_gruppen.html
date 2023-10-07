@@ -13,12 +13,59 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">direct sum of groups</h1>
 <div id="outline-container-org7cedc98" class="outline-2">
 <h2 id="org7cedc98"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(G_i\) be <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">groups</a>, then the direct sum of \(G_i\) is defined as the <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>
+</p>
+\begin{align*}
+\{ (g_i) \in \prod_{i \in I} G_i \vert g_i = 1 \text{ almost all }i \in I\}
+\end{align*}
+<p>
+with componentwise operation
+</p>
+
+<p>
+see: <a href="20231004-direct_sum_as_categorical_coproduct_of_abelian_groups.html#ID-76dafbcd-464c-4c85-8777-04c63a5d8b86">direct sum as categorical coproduct of abelian groups</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

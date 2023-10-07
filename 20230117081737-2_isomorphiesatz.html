@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,7 +53,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orge26ca5e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(G\) ein <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(H \trianglelefteq G\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in \(G\) sowie \(H \supseteq N \trianglelefteq G\) eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> von \(H\).
+Sei \(G\) ein <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(H,N \trianglelefteq G\) <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in \(G\) mit \(N \subseteq H\)
 Dann gilt
 </p>
 \begin{align*}
@@ -52,6 +63,22 @@ Dann gilt
 </div>
 <div id="outline-container-org14fa54d" class="outline-2">
 <h2 id="org14fa54d"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+For den <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">Gruppenhomomorphismus</a>
+</p>
+\begin{align*}
+\varphi: G/N \rightarrow& G/H \\
+gN \mapsto& gH
+\end{align*}
+<p>
+gilt \(\mathrm{im}(\varphi) = G/H\) und \(gN \in \mathrm{ker}(\varphi) \Leftrightarrow g \in H\), d.h. \(\mathrm{ker}(\varphi) = H/N\).
+Damit folgt aus dem <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a> 
+</p>
+\begin{align*}
+(G/N)/(H/N) \simeq G/H
+\end{align*}
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

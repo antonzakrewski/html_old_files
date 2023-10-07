@@ -13,20 +13,62 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">charakteristik eines unitären Unterrings</h1>
-<div id="outline-container-orgd1f41b2" class="outline-2">
-<h2 id="orgd1f41b2"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-orga20eaac" class="outline-2">
+<h2 id="orga20eaac"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei 
+Let \(R,S\) be <a href="20221226125648-integritatsbereich.html#ID-d39ae041-9db9-423e-8655-20e929ceaf48">integral domains</a> such that \(R \subseteq S\).
+Then for the <a href="20221030164602-charakteristik_eines_korpers.html#ID-857e2abc-6f76-404f-bf65-6822c05d6bd3">Characteristic</a> it holds, that
+</p>
+\begin{align*}
+\mathrm{char}(R) = \mathrm{char}(S)
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org3772605" class="outline-2">
+<h2 id="org3772605"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+By assumption, \(1 \in R, S\), and hence \(\sum_{i=1}^{n} 1_R = 0 \Leftrightarrow \sum_{i=1}^{n} 1_S = 0\).
+Therefore \(\mathrm{char}(R) = \mathrm{char}(S)\)
 </p>
 </div>
-</div>
-<div id="outline-container-org5e745f9" class="outline-2">
-<h2 id="org5e745f9"><span class="section-number-2">2.</span> Beweis</h2>
 </div>
 </div>
 <div id="postamble" class="status">
