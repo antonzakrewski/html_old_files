@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,20 +21,23 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org4a0470a"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(A,B\) be <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative rings</a>, \(\mathfrak{a} \subseteq A, \mathfrak{b} \subseteq B\) be <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideals</a> and \(\varphi: A \rightarrow B\) a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a> such that
+Let <img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_1e18da7bab90f3a5ce307494ab633c1883391f73.svg" alt="20230822-induced_ring_homomorphism_for_quotients_1e18da7bab90f3a5ce307494ab633c1883391f73.svg" class="org-svg" /> be <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative rings</a>, <img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_c89e13a51441f8d03f92dacbb758009f26a8a031.svg" alt="20230822-induced_ring_homomorphism_for_quotients_c89e13a51441f8d03f92dacbb758009f26a8a031.svg" class="org-svg" /> be <a href="20221130163324-ideal_algebra.html#ID-f2c82320-35f7-47b4-8f53-0daa904668b2">ideals</a> and <img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_32421e6bfc81593cb8d2b34ba5ef05494b37ba9d.svg" alt="20230822-induced_ring_homomorphism_for_quotients_32421e6bfc81593cb8d2b34ba5ef05494b37ba9d.svg" class="org-svg" /> a <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">homomorphism</a> such that
 </p>
-\begin{align*}
 
-\end{align*}
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_2bc64a8aea5cfda286a1aa63da02ae74b7a96096.svg" alt="20230822-induced_ring_homomorphism_for_quotients_2bc64a8aea5cfda286a1aa63da02ae74b7a96096.svg" class="org-svg" />
+</span>
+</div>
 <p>
-Then there exists a (unique ?) <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> \(\psi: A/\mathfrak{a} \rightarrow B/\mathfrak{b}\) such that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
+Then there exists a (unique ?) <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">map</a> <img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_2e80d1d2e7d7f4d6a992bea01681c6bb360f6737.svg" alt="20230822-induced_ring_homomorphism_for_quotients_2e80d1d2e7d7f4d6a992bea01681c6bb360f6737.svg" class="org-svg" /> such that following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-A \arrow[]{r}{\varphi} \arrow[]{d}{\pi_{\mathfrak{a}}}& B \arrow[]{d}{\pi_{\mathfrak{b}}} \\
-A/\mathfrak{a} \arrow[]{r}{\psi}& B/\mathfrak{b} \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230822-induced_ring_homomorphism_for_quotients_ee4b72b48498a95e517249a9855726841742c4b2.svg" alt="20230822-induced_ring_homomorphism_for_quotients_ee4b72b48498a95e517249a9855726841742c4b2.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgb188b5a" class="outline-2">

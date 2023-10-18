@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -67,7 +78,7 @@ corollary of <a href="20230824-well_founded_set_implies_no_infinite_descending_c
 <h3 id="org3060887"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-corollary of <a href="20221102164835-zorn_s_lemma.html#ID-a6ae3d3e-e921-4166-bbe3-ec079a55a766">Zorn's Lemma</a>, as every <a href="20230222205154-induktive_kette.html#ID-fae75338-a090-491a-9f68-eb8f727929f7">inductive chain</a> 
+corollary of <a href="20220817195600-lemma_von_zorn.html#ID-8afc287e-b64f-49e8-9479-83cedc5e7f0a">Zorn's lemma</a>, as every <a href="20230222205154-induktive_kette.html#ID-fae75338-a090-491a-9f68-eb8f727929f7">inductive chain</a> 
 </p>
 </div>
 </div>

@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -49,8 +60,8 @@ Sei eine <a href="20211123085219-binomialverteilung.html#ID-0c209e31-9b5f-4881-9
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org1ecbbb8" class="outline-2">
-<h2 id="org1ecbbb8"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org0cc50a4" class="outline-2">
+<h2 id="org0cc50a4"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 <div id="outline-container-orgf1ad7f2" class="outline-3">
@@ -61,8 +72,8 @@ Sei eine <a href="20211123085219-binomialverteilung.html#ID-0c209e31-9b5f-4881-9
 </ul>
 </div>
 </div>
-<div id="outline-container-org45eadae" class="outline-3">
-<h3 id="org45eadae"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div id="outline-container-org1ecbbb8" class="outline-3">
+<h3 id="org1ecbbb8"><span class="section-number-3">2.2.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Betrachtung der <a href="20211221082504-bernoulli_kette.html#ID-21266f90-2582-423d-8c35-d74a3548f0fb">Bernoulli-Kette</a></li>

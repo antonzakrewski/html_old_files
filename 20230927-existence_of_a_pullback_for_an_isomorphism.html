@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Existence of a pullback for an isomorphism</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Existence of a pullback for an isomorphism</h1>
+<div id="outline-container-orgbd99696" class="outline-2">
+<h2 id="orgbd99696"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, \(S,X,Y \in \mathrm{Ob}(\mathcal{C})\) <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> and
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+& X \arrow[]{r}{f}\\
+S \arrow[]{r}{g}& Y \\
+\end{tikzcd}
+\end{displaymath}
+<p>
+a <a href="20230924-span_category_theory.html#ID-94564c8f-0bea-4b81-af3f-59a782bc1e91">span</a>.
+Then the <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullback</a> exists and is
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+S \arrow[]{d}{\mathrm{id}_{S}}\arrow[]{r}{f^{-1} \circ g} & X \arrow[]{r}{f}\\
+S \arrow[]{r}{g} & Y \\ 
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-orgc2adbc0" class="outline-2">
+<h2 id="orgc2adbc0"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org020d345" class="outline-3">
+<h3 id="org020d345"><span class="section-number-3">2.1.</span> commuting</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+follows from
+</p>
+\begin{align*}
+g \circ \mathrm{id}_{S} =& g \\
+=& \mathrm{id}_{Y} \circ g \\
+ =& f \circ f^{-1} \circ g 
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orge227999" class="outline-3">
+<h3 id="orge227999"><span class="section-number-3">2.2.</span> universal property</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Suppose there exists an object and a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+P \arrow[bend left]{rrd}{\beta} \arrow[bend right]{rdd}{\alpha}& & \\
+&  S \arrow[]{d}{\mathrm{id}_{S}} \arrow[]{r}{f^{-1} \circ g} & X \arrow[]{d}{f}  \\
+& S \arrow[]{r}{g} & Y 
+\end{tikzcd}
+\end{displaymath}
+<p>
+Then for 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+P \arrow[dashed]{rd}{\alpha} \arrow[bend left]{rrd}{\beta} \arrow[bend right]{rdd}{\alpha}& & \\
+&  S \arrow[]{d}{\mathrm{id}_{S}} \arrow[]{r}{f^{-1} \circ g} & X \arrow[]{d}{f}  \\
+& S \arrow[]{r}{g} & Y 
+\end{tikzcd}
+\end{displaymath}
+<p>
+it follows, that 
+</p>
+\begin{align*}
+g \circ \alpha = f \circ f^{-1} \circ g \circ \alpha
+\end{align*}
+</div>
+<div id="outline-container-orgc4fe01a" class="outline-4">
+<h4 id="orgc4fe01a"><span class="section-number-4">2.2.1.</span> uniqueness (?)</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+By Assumption, there exists a right-inverse \(f^{-1}\).
+Therefore, by commutativity we get
+</p>
+\begin{align*}
+g \circ \alpha =& f \circ \beta \\
+(f^{-1} \circ g) \circ \alpha =& \beta 
+\end{align*}
+<p>
+Hence todo: <a href="https://math.stackexchange.com/questions/3675182/if-one-vertical-arrow-in-a-pullback-is-an-iso-then-so-is-the-other">https://math.stackexchange.com/questions/3675182/if-one-vertical-arrow-in-a-pullback-is-an-iso-then-so-is-the-other</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

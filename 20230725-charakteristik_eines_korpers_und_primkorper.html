@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -59,8 +70,10 @@ Dann gilt
 <div class="outline-text-2" id="text-2">
 <p>
 Sei \(\varphi: \mathbb{Z} \rightarrow K\) der <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">Ringhomomorphismus</a> induziert durch \(\varphi(1) = 1_K\)
+Wir wissen, dass die Charakteristik invariant unter <a href="20230227130935-unterring.html#ID-157d533b-1650-499e-be1d-341b1fa8fa15">Unterringen</a> (vgl. <a href="20230722-charakteristik_eines_unitaren_unterrings.html#ID-c1a79c83-d86d-4e3a-b619-385029eaeb7c">charakteristik eines unitären Unterrings</a>) ist, d.h. \(\Leftarrow\) folgt dadurch
 </p>
 </div>
+
 <div id="outline-container-orgba0dfbe" class="outline-3">
 <h3 id="orgba0dfbe"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
@@ -68,7 +81,7 @@ Sei \(\varphi: \mathbb{Z} \rightarrow K\) der <a href="20221226010233-ringhomomo
 Nach dem <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a> gilt
 </p>
 \begin{align*}
-\mathbb{Z} / p \mathbb{Z} \simeq \varphi(\mathbb{Z})
+\mathbb{Z} / p \mathbb{Z} \simeq \varphi[\mathbb{Z}] = \mathrm{im}(\varphi)
 \end{align*}
 </div>
 </div>
@@ -77,6 +90,27 @@ Nach dem <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c
 <div class="outline-text-3" id="text-2-2">
 <p>
 Nach der Charakterisierung <a href="20221117113054-lemma_uber_die_aquivalenz_von_einem_monomorphismus_und_einem_minimalen_kern.html#ID-a7df72cc-6dd4-456c-aad8-2622472e7b0c">eines Monomorphismus und trivialen Kerns</a> folgt, dass \(\varphi: \mathbb{Z} \rightarrow K\) <a href="20211230211328-injektivitat.html#ID-717f77ad-8b6e-47b2-a15d-f47a0b5a1237">injektiv</a> ist.
+Nach <a href="20230811-universal_property_of_a_quotient_field.html#ID-50483bcb-18a3-4789-a84d-87ac2d957eec">universeller Eigenschaft eines Quotientenkörpers</a> folgt, dass ein <a href="20221111202851-korperhomomorphismus.html#ID-a701a50b-3b23-4b2c-802f-0a65299ac479">körper-homomorphismus</a> \(\psi: \mathbb{Q} \rightarrow K\) existiert mit 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathbb{Z} \arrow[]{r}{\iota} \arrow[]{rd}{\varphi} & \mathbb{Q} \arrow[]{d}{\psi} \\
+& K'
+\end{tikzcd}
+\end{displaymath}
+<p>
+Es folgt aus dem <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a>, da \(\mathbb{Q}/\mathrm{ker}(\psi) \simeq \mathbb{Q}\) gilt
+</p>
+\begin{align*}
+\mathbb{Q} \simeq \mathrm{im}(\psi) \subseteq K'
+\end{align*}
+<p>
+somit folgt wegen \(\mathbb{Q} \subseteq K\) als unterkörper auch \(P = \mathbb{Q}\)
+</p>
+
+
+<p>
+hässliche argumentation :(
 </p>
 </div>
 </div>

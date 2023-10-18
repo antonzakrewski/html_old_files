@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,34 +21,33 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org3af3879"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, \(A,B,C \in \mathrm{Ob}(\mathcal{C})\) such that the <a href="20230404161607-categorical_coproduct.html#ID-25822c41-825b-480b-b8a6-eeb904ca5649">categorical coproduct</a> \(B \sqcup C\) exists.
+Let <img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_9ef5799a7c892fe4667f19120ba927ab454172fa.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_9ef5799a7c892fe4667f19120ba927ab454172fa.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, <img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_aa5bdb132f9dfd136747fc34c01d7c2d31f31091.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_aa5bdb132f9dfd136747fc34c01d7c2d31f31091.svg" class="org-svg" /> such that the <a href="20230404161607-categorical_coproduct.html#ID-25822c41-825b-480b-b8a6-eeb904ca5649">categorical coproduct</a> <img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_547a86b8db9a61ed768f9e5555654c46111c2368.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_547a86b8db9a61ed768f9e5555654c46111c2368.svg" class="org-svg" /> exists.
 For a <a href="20230924-cospan.html#ID-9c907b4c-4027-4157-a0fb-7da0f702b3bf">cospan</a> 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-A \arrow[]{r}{f} \arrow[]{d}{} & B \\
-C & \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_53637daa0967a604cd3472d531536cc2a10d80b2.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_53637daa0967a604cd3472d531536cc2a10d80b2.svg" class="org-svg" />
+</span>
+</div>
 <p>
 the <a href="20230806-pushforward.html#ID-a4141d87-68ee-4337-8f80-997a6d4b4091">pushout</a> is the <a href="20230804-coequalizer.html#ID-d3115a7d-90e1-453f-a6c2-3209ee1f5be7">coequalizer</a> for the coproduct
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-& B \arrow[dashed]{d}{\iota_1} &  \\
-A \arrow[bend left, dashed]{ru}{f} \arrow[dashed, swap, bend right]{rd}{g} \arrow[shift left=.75ex]{r}{\iota_1 \circ f} \arrow[shift right=.75ex, swap]{r}{\iota_2 \circ g} & B \sqcup C \arrow[]{r}{h}& B \sqcup_{A} C \\
-& C \arrow[swap, dashed]{u}{\iota_2}& \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_96ddf95bdc2ca8dfe9b3517eddab413d41745363.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_96ddf95bdc2ca8dfe9b3517eddab413d41745363.svg" class="org-svg" />
+</span>
+</div>
 <p>
 instead of
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-A \arrow[]{rd}{h} \arrow[]{r}{f} \arrow[swap]{d}{g} & B \arrow[]{d}{} \\
-C \arrow[]{r}{} & B \sqcup_A C\\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230928-pushout_as_coequalizer_of_a_coproduct_2ce7ab52e763e04969227d1c87c866a28aa7e9cd.svg" alt="20230928-pushout_as_coequalizer_of_a_coproduct_2ce7ab52e763e04969227d1c87c866a28aa7e9cd.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-org9cb0f68" class="outline-2">

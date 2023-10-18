@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,7 +21,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org2509263"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \((X_i, \mathcal{T}_i)\) be a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>.
+Let <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_150c5458068bb069183bd793eebadc94494b5229.svg" alt="20230926-product_topology_as_categorical_product_150c5458068bb069183bd793eebadc94494b5229.svg" class="org-svg" /> be a <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">family</a> of <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological spaces</a>.
 Then the <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aaed-1abb1cd6df9f">product topology</a> is the <a href="20230404141718-categorical_product.html#ID-c6b25f4e-7486-4399-bea3-ace8da2a18c9">categorical product</a> in the <a href="20230225170221-kategorie_top.html#ID-55f8744f-3e21-4c41-889f-06a52add975b">category Top</a> 
 </p>
 </div>
@@ -68,22 +36,24 @@ Then the <a href="20230211133152-produkttopologie.html#ID-32030f19-ac2a-4c46-aae
 <p>
 Let 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-Y \arrow[]{d}{\varphi} & \arrow[]{rd}{\pi_i \circ \varphi}
-\prod_{i \in I} X_i \arrow[]{r}{\pi_i}& X_i 
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_4387a41b3d17492572575ec493c578109c000413.svg" alt="20230926-product_topology_as_categorical_product_4387a41b3d17492572575ec493c578109c000413.svg" class="org-svg" />
+</span>
+</div>
 <p>
-By the statement about <a href="20230313234248-produkttopologie_als_grobste_topologie_fur_stetige_projektionen.html#ID-a6f851d9-e856-4fd2-b3a4-112ec329bc05">the product topology as coarsest topology for a continuous projection</a>, it follows, that \(\pi_i\) is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a>, hence a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a>.
+By the statement about <a href="20230313234248-produkttopologie_als_grobste_topologie_fur_stetige_projektionen.html#ID-a6f851d9-e856-4fd2-b3a4-112ec329bc05">the product topology as coarsest topology for a continuous projection</a>, it follows, that <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_05e84b38cfee75525259c0299073d3c8afde9e55.svg" alt="20230926-product_topology_as_categorical_product_05e84b38cfee75525259c0299073d3c8afde9e55.svg" class="org-svg" /> is <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a>, hence a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a>.
 Furthermore, let
 </p>
-\begin{align*}
-\varphi: Y \rightarrow& \prod_{i \in I} X_i \\
-Y \mapsto (\pi_i \circ \varphi(y))_i
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_05fb033ad84d504ee24d8f3b239d78041ddc6811.svg" alt="20230926-product_topology_as_categorical_product_05fb033ad84d504ee24d8f3b239d78041ddc6811.svg" class="org-svg" />
+</span>
+</div>
 <p>
-By universal property, since every \(\pi_i \circ \varphi\) is continuous, it follows, that \(\varphi\) is continuous, hence again a morphism
+By universal property, since every <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" alt="20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" class="org-svg" /> is continuous, it follows, that <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" alt="20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" class="org-svg" /> is continuous, hence again a morphism
 </p>
 </div>
 </div>
@@ -91,22 +61,22 @@ By universal property, since every \(\pi_i \circ \varphi\) is continuous, it fol
 <h3 id="org0a5b4a9"><span class="section-number-3">2.2.</span> categorical product as product topology</h3>
 <div class="outline-text-3" id="text-2-2">
 <ol class="org-ol">
-<li>\(\pi_i \circ \varphi\) is continuous \(\implies \varphi\) is continuous</li>
+<li><img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" alt="20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" class="org-svg" /> is continuous <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_98243c0ebf1d2dba2d5c1720369c5d83246d2b5c.svg" alt="20230926-product_topology_as_categorical_product_98243c0ebf1d2dba2d5c1720369c5d83246d2b5c.svg" class="org-svg" /> is continuous</li>
 </ol>
 <p>
 By assumption, there exists a unique <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a>, making this <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> commute
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-Y \arrow[]{rd}{\pi_i \circ \varphi} \arrow[swap]{d}{\exists! \psi}& \\
-\prod X_i \arrow[swap]{r}{\pi_i} & X_i
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_c12dcee115cc0a888f27c6809bec92deb1f43625.svg" alt="20230926-product_topology_as_categorical_product_c12dcee115cc0a888f27c6809bec92deb1f43625.svg" class="org-svg" />
+</span>
+</div>
 <p>
-By uniqueness, we conclude, that the set theoretic map is \(\varphi = \psi\) and since it is a morphism, \(\varphi\) is continuous
+By uniqueness, we conclude, that the set theoretic map is <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_cd74ef5f4f54e4d6884bc0a24f61f0df211326c3.svg" alt="20230926-product_topology_as_categorical_product_cd74ef5f4f54e4d6884bc0a24f61f0df211326c3.svg" class="org-svg" /> and since it is a morphism, <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" alt="20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" class="org-svg" /> is continuous
 </p>
 <ol class="org-ol">
-<li>\(\varphi\) is continuous is continuous \(\implies\) \(\pi_i \circ \varphi\)</li>
+<li><img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" alt="20230926-product_topology_as_categorical_product_8ca1ec6f583b1ccc336cdeb5e0df04e51ef81e1c.svg" class="org-svg" /> is continuous is continuous <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_cf570ee5bb7d16b98fa3f461ac281539cd0b4c7d.svg" alt="20230926-product_topology_as_categorical_product_cf570ee5bb7d16b98fa3f461ac281539cd0b4c7d.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" alt="20230926-product_topology_as_categorical_product_921ba8a9371c7827c02a447105420bd37e2eb12f.svg" class="org-svg" /></li>
 </ol>
 <p>
 follows from <a href="20230211130603-verknupfung_stetiger_funktionen_topologisch.html#ID-38904452-396a-414e-97f8-6a26807e8626">composition of continuous maps</a> 
