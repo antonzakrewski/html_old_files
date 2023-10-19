@@ -13,27 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,14 +21,71 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org7bd86ca"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und \(N\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in \(G\) und \(H\) eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a>.
-Dann ist das <a href="20230117120023-komplexprodukt.html#ID-9ca01308-96d4-4f1e-9f7a-6133740f159c">Komplexprodukt</a> \(HN\)  \coloneqq \(\{hn \vert h \in H, n \in N\}\) eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a> von \(G\).
-Zusätzlich ist \(N\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in \(HN\) und die <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> \(H \cap N\) ist ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in \(H\)
-Es gilt ferner:
+Sei <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" alt="20230117081746-1_isomorphiesatz_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" class="org-svg" /> eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a> und <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_dd17db0f72ea26ad7bd3db8f16206a27407c86fe.svg" alt="20230117081746-1_isomorphiesatz_dd17db0f72ea26ad7bd3db8f16206a27407c86fe.svg" class="org-svg" /> ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> in <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" alt="20230117081746-1_isomorphiesatz_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" class="org-svg" /> und <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_8a2d07fa33cc8250a9858df8b713f762427453ae.svg" alt="20230117081746-1_isomorphiesatz_8a2d07fa33cc8250a9858df8b713f762427453ae.svg" class="org-svg" /> eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a>.
 </p>
-\begin{align*}
-H / (H \cap N) \simeq HN / N
-\end{align*}
+
+<p>
+Dann gilt für das <a href="20230117120023-komplexprodukt.html#ID-9ca01308-96d4-4f1e-9f7a-6133740f159c">Komplexprodukt</a> <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_a2bb6afe489f0e4b46643f1e897763bfba37fe0a.svg" alt="20230117081746-1_isomorphiesatz_a2bb6afe489f0e4b46643f1e897763bfba37fe0a.svg" class="org-svg" /> 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_1bff0c2c7c9563d6c94d0de090dde232a2464d3b.svg" alt="20230117081746-1_isomorphiesatz_1bff0c2c7c9563d6c94d0de090dde232a2464d3b.svg" class="org-svg" />
+</span>
+</div>
+</div>
+</div>
+<div id="outline-container-org8acef32" class="outline-2">
+<h2 id="org8acef32"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Für die <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">gruppen-homomorphismen</a>
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_dc3ca4203a6a7dbf15f205c5f83843693918f98c.svg" alt="20230117081746-1_isomorphiesatz_dc3ca4203a6a7dbf15f205c5f83843693918f98c.svg" class="org-svg" />
+</span>
+</div>
+<p>
+und
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_371a3671d1bfe1b9197856d4b7032e89014d1c84.svg" alt="20230117081746-1_isomorphiesatz_371a3671d1bfe1b9197856d4b7032e89014d1c84.svg" class="org-svg" />
+</span>
+</div>
+<p>
+ist die <a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">Komposition</a> 
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_42381addcb77c71bfdf583d5e769519db910ce57.svg" alt="20230117081746-1_isomorphiesatz_42381addcb77c71bfdf583d5e769519db910ce57.svg" class="org-svg" />
+</span>
+</div>
+<p>
+ebenfalls ein Gruppenhomomorphismus
+Nach dem <a href="20221224172932-homomorphiesatz_fur_gruppen.html#ID-b6c0c2a4-18ea-42b9-a13c-cc9e4a1c08a7">Homomorphiesatz für Gruppen</a> gilt auch
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_00299834670a6843d8e209e19ebeae3822349c4a.svg" alt="20230117081746-1_isomorphiesatz_00299834670a6843d8e209e19ebeae3822349c4a.svg" class="org-svg" />
+</span>
+</div>
+<p>
+wobei <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_74287ab403ecd8d96e97ab32b9430db67381d585.svg" alt="20230117081746-1_isomorphiesatz_74287ab403ecd8d96e97ab32b9430db67381d585.svg" class="org-svg" />, da für <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_4b433cb89ce728a9245cb1bd9682b573294065cf.svg" alt="20230117081746-1_isomorphiesatz_4b433cb89ce728a9245cb1bd9682b573294065cf.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_5e5b68ff529a7ad53743140755c890b36adfa99e.svg" alt="20230117081746-1_isomorphiesatz_5e5b68ff529a7ad53743140755c890b36adfa99e.svg" class="org-svg" /> gilt
+Für den Kern folgt <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_2c8df070a364a2f8e2e282a5069420307ee29f43.svg" alt="20230117081746-1_isomorphiesatz_2c8df070a364a2f8e2e282a5069420307ee29f43.svg" class="org-svg" /> bzw. <img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_4a089f6b4eb878f484cf0bc7638d8c1c1f4a0b70.svg" alt="20230117081746-1_isomorphiesatz_4a089f6b4eb878f484cf0bc7638d8c1c1f4a0b70.svg" class="org-svg" />.
+Damit folgt
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230117081746-1_isomorphiesatz_1bff0c2c7c9563d6c94d0de090dde232a2464d3b.svg" alt="20230117081746-1_isomorphiesatz_1bff0c2c7c9563d6c94d0de090dde232a2464d3b.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

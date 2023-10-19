@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -42,12 +53,46 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orga513af4"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei <a href="20230225170140-kategorie_cring.html#ID-bc232c14-ca9c-476c-8b94-67f3d8781a26">category CRing</a> \(\mathrm{CRing}\) gegeben, dann ist \(\mathbb{Z}\) das <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a> 
+Let \(\mathrm{CRing}\) be the <a href="20230225170140-kategorie_cring.html#ID-bc232c14-ca9c-476c-8b94-67f3d8781a26">category of Commutative Rings</a>, then the <a href="20210702104458-ganze_zahlen.html#ID-179209f5-5cb0-426c-b035-470f9b3935a8">integers</a> \(\mathbb{Z}\) are the <a href="20220825145505-initiales_objekt.html#ID-7ad29aa1-f819-4a5b-8ef9-24c92a84802f">initial object</a>.
 </p>
 </div>
 </div>
 <div id="outline-container-org5d70e56" class="outline-2">
 <h2 id="org5d70e56"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let \(R\) be a <a href="20221210204906-kommutativer_ring.html#ID-b92b4078-28f6-4371-87ba-aa9b950ff823">commutative ring</a> with \(1_R \in R\).
+</p>
+</div>
+<div id="outline-container-org768a668" class="outline-3">
+<h3 id="org768a668"><span class="section-number-3">2.1.</span> Existence</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Let
+</p>
+\begin{align*}
+\varphi: \mathbb{Z} \rightarrow& R \\
+1 \mapsto& 1_R \\
+n \mapsto& \sum_{i=1}^{n} (\mathrm{sgn}(n) 1)
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orgdd1d8f5" class="outline-3">
+<h3 id="orgdd1d8f5"><span class="section-number-3">2.2.</span> Unique</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Suppose \(\varphi, \psi: \mathbb{Z}  \rightarrow R\) are ring homomorphism.
+Then by assumption \(\varphi(1) = \psi(1) = 1_R\)
+Hence for \(n \in \mathbb{Z}\) we conclude, that
+</p>
+\begin{align*}
+\varphi(n) =& \varphi(\sum_{i=1}^{n} \mathrm{sgn}(n) 1) \\
+=& \sum_{i=1}^{n} \mathrm{sgn}(n) 1 \\
+=& \psi(\sum_{i=1}^{n} \mathrm{sgn}(n) 1) \\
+=& \psi(n)
+\end{align*}
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

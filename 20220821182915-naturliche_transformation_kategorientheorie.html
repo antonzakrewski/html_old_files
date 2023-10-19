@@ -49,26 +49,27 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <body>
 <div id="content" class="content">
 <h1 class="title">natural transformation</h1>
+
 <div id="outline-container-orgff1a308" class="outline-2">
 <h2 id="orgff1a308"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Seien \(\mathbf{C}\), \(\mathbf{D}\) <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorien</a> mit den <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">Funktoren</a> \(F, G: \mathbf{C} \rightarrow \mathbf{D}\) 
-Dann ist ein <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">Morphismus</a> \(\theta: F \rightarrow G\) der <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> \(\mathbf{Fun(C,D)}\) aller <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">Funktoren</a> \(F: \mathbf{C} \rightarrow \mathbf{D}\)  eine natürliche Transformation
-Insbesondere gilt, dass die Struktur der <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">Kategorie</a> \(\mathbf{Fun(C,D)}\) erhalten bleibt, d.h. sei:
+Let \(\mathcal{C}, \mathcal{D}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(\mathcal{F}, \mathcal{G}s \mathcal{C} \rightarrow \mathcal{D}\) a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a>.
+Then a natural transformation \(\eta\) assigns to each <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">object</a> \(A \in \mathcal{C}\) a 
 </p>
 \begin{align*}
-\theta_{\mathbf{C}}:& FC \rightarrow GC \\
-\theta_{\mathbf{C'}}:& FC' \rightarrow GC' \\
-Ff:& FC \rightarrow FC' \\
-Gf:& GC \rightarrow GC'
+\eta: \mathcal{F} \Rightarrow& \mathcal{G} \\
+A \mapsto& f_A \in \mathrm{Hom}_{\mathcal{D}}(\mathcal{F}(X), \mathcal{G}(X))
 \end{align*}
 <p>
-Dann gilt:
+such that for each \(A,B \in \mathcal{C}\) following <a href="20220821183856-diagramm_kategorientheorie.html#ID-ad9d3642-913a-4374-8605-52121d00b349">diagram</a> <a href="20220824224824-kommutierendes_diagramm.html#ID-968cc45b-2492-4495-b9e3-261866c0901d">commutes</a> 
 </p>
-\begin{align*}
-\theta_{C} \circ G_{f} =& F_{f} \circ \theta_{C'}
-\end{align*}
+\begin{displaymath}
+\begin{tikzcd}
+A \arrow[]{d}{f} & & \mathcal{F}(A) \arrow[]{d}{\mathcal{F}(f)} \arrow[]{r}{\alpha_A} & \mathcal{G}(A) \arrow[]{d}{\mathcal{G}(f)}\\
+B & & \mathcal{F}(B) \arrow[]{r}{\alpha_B} & \mathcal{G}(B) 
+\end{tikzcd}
+\end{displaymath}
 </div>
 </div>
 </div>

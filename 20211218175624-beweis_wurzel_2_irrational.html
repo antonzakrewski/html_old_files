@@ -3,13 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-07-15 Sa 23:46 -->
+<!-- 2023-10-19 Do 03:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Irrationalität von Wurzel 2</title>
 <meta name="author" content="anton" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
@@ -194,27 +193,38 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -229,8 +239,8 @@
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org9e5a22e" class="outline-2">
-<h2 id="org9e5a22e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org4545608" class="outline-2">
+<h2 id="org4545608"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 <div id="outline-container-org52f448f" class="outline-3">
@@ -241,8 +251,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org085a2dd" class="outline-3">
-<h3 id="org085a2dd"><span class="section-number-3">2.2.</span> Beweis</h3>
+<div id="outline-container-org9e5a22e" class="outline-3">
+<h3 id="org9e5a22e"><span class="section-number-3">2.2.</span> Beweis</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Annahme: \(\sqrt{2}\) ließe sich vollständig gekürzt als \(\frac{p}{q}\) schreiben</li>
@@ -262,7 +272,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: anton</p>
-<p class="date">Created: 2023-07-15 Sa 23:46</p>
+<p class="date">Created: 2023-10-19 Do 03:33</p>
 </div>
 </body>
 </html>

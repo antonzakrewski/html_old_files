@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -88,8 +99,8 @@ Sei \(A \subseteq X\), so ist \(A\) das inverse Element, da gilt:
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org66c7982" class="outline-4">
-<h4 id="org66c7982"><span class="section-number-4">2.2.3.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
+<div id="outline-container-org02893d0" class="outline-4">
+<h4 id="org02893d0"><span class="section-number-4">2.2.3.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
 folgt aus der <a href="20230526081118-assoziativitat_von_der_symmetrischen_differenz.html#ID-f1fe9786-aebd-4bdd-a40a-8a51d750f511">Assoziativität von der symmetrischen Differenz</a> (todo)
@@ -112,8 +123,8 @@ A \cap X = A
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org02893d0" class="outline-4">
-<h4 id="org02893d0"><span class="section-number-4">2.3.2.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
+<div id="outline-container-org6e4eba7" class="outline-4">
+<h4 id="org6e4eba7"><span class="section-number-4">2.3.2.</span> <a href="20211008171532-assoziativgesetz.html#ID-124778f2-ef98-469b-8664-7777bb4bff01">assoziativ</a></h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 folgt aus der <a href="20221209102252-assoziativitat_von_vereinigungen.html#ID-dd91fa12-a801-47eb-86d8-8cbd2ca33161">Assoziativität von Schnitten</a>

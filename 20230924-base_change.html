@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,29 +21,34 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org5acc115"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> such that <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullbacks</a> exist and \(f \in \mathrm{Hom}_{\mathcal{C}}(X,Y)\)
-Then the base change for \(f\) is the induced <a href="20220830173327-kontravarianter_funktor.html#ID-88bd5800-bc2d-4ad5-81d2-90240d062847">contravariant functor</a> between the <a href="20230510092709-slice_category.html#ID-1e81c30c-0f74-4f7c-bf95-400bc8889156">slice categories</a> 
+Let <img src="file:///home/anton/html/ltximg/20230924-base_change_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" alt="20230924-base_change_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> such that <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullbacks</a> exist and <img src="file:///home/anton/html/ltximg/20230924-base_change_978798cc02ff726bf9969eead9aed8b04a35f8cc.svg" alt="20230924-base_change_978798cc02ff726bf9969eead9aed8b04a35f8cc.svg" class="org-svg" />
+Then the base change for <img src="file:///home/anton/html/ltximg/20230924-base_change_2bdfe474f3c962721cd2b40fd43ea8cebdbd3c39.svg" alt="20230924-base_change_2bdfe474f3c962721cd2b40fd43ea8cebdbd3c39.svg" class="org-svg" /> is the induced <a href="20220830173327-kontravarianter_funktor.html#ID-88bd5800-bc2d-4ad5-81d2-90240d062847">contravariant functor</a> between the <a href="20230510092709-slice_category.html#ID-1e81c30c-0f74-4f7c-bf95-400bc8889156">slice categories</a> 
 </p>
-\begin{align*}
-f^*: \mathcal{C}/Y \rightarrow \mathcal{C}/X
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230924-base_change_c51565775f76650d0359acba4cf972b13937fe47.svg" alt="20230924-base_change_c51565775f76650d0359acba4cf972b13937fe47.svg" class="org-svg" />
+</span>
+</div>
 <p>
 given by 
 </p>
 
-\begin{align*}
-f^*: \mathrm{Hom}_{\mathcal{C}}(A,Y) \mapsto& \mathrm{Hom}_{\mathcal{C}}(A,X) \\
-(p: A \rightarrow Y) \mapsto& (p: X \times_{f,p} \rightarrow X)
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230924-base_change_23d8851f9bb31eff20f8f15de78ddc74dc4e761f.svg" alt="20230924-base_change_23d8851f9bb31eff20f8f15de78ddc74dc4e761f.svg" class="org-svg" />
+</span>
+</div>
 <p>
 for the <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullback</a> 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-X \times_{f,p} A \arrow[swap]{d}{p^*} \arrow[]{r}{} &  A \arrow[]{d}{p} \\
-X \arrow[]{r}{f} & Y \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230924-base_change_3b1e8605631775009655dd1c605c622be9b255eb.svg" alt="20230924-base_change_3b1e8605631775009655dd1c605c622be9b255eb.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgbc045a8" class="outline-2">

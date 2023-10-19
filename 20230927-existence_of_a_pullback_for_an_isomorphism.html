@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,24 +21,24 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orgbd99696"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{C}\) be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, \(S,X,Y \in \mathrm{Ob}(\mathcal{C})\) <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> and
+Let <img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" class="org-svg" /> be a <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, <img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_c14bbc3f751725c930d65f8159210edb4b7c6cae.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_c14bbc3f751725c930d65f8159210edb4b7c6cae.svg" class="org-svg" /> <a href="20220818170642-objekt_kategorie.html#ID-69e99ef2-fd8e-4268-a03a-b4a4f2c3cd74">objects</a> and
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-& X \arrow[]{r}{f}\\
-S \arrow[]{r}{g}& Y \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_fe93e93caa11186b364ca6b0f422cdf38d07e7e6.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_fe93e93caa11186b364ca6b0f422cdf38d07e7e6.svg" class="org-svg" />
+</span>
+</div>
 <p>
 a <a href="20230924-span_category_theory.html#ID-94564c8f-0bea-4b81-af3f-59a782bc1e91">span</a>.
 Then the <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullback</a> exists and is
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-S \arrow[]{d}{\mathrm{id}_{S}}\arrow[]{r}{f^{-1} \circ g} & X \arrow[]{r}{f}\\
-S \arrow[]{r}{g} & Y \\ 
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_a84944875790d31c8c8c7e234abc6ba0d571c953.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_a84944875790d31c8c8c7e234abc6ba0d571c953.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgc2adbc0" class="outline-2">
@@ -83,11 +51,12 @@ S \arrow[]{r}{g} & Y \\
 <p>
 follows from
 </p>
-\begin{align*}
-g \circ \mathrm{id}_{S} =& g \\
-=& \mathrm{id}_{Y} \circ g \\
- =& f \circ f^{-1} \circ g 
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_28ac708b6b9cc11f5a8449f1b3b18a29ac9975db.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_28ac708b6b9cc11f5a8449f1b3b18a29ac9975db.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orge227999" class="outline-3">
@@ -96,41 +65,44 @@ g \circ \mathrm{id}_{S} =& g \\
 <p>
 Suppose there exists an object and a <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-P \arrow[bend left]{rrd}{\beta} \arrow[bend right]{rdd}{\alpha}& & \\
-&  S \arrow[]{d}{\mathrm{id}_{S}} \arrow[]{r}{f^{-1} \circ g} & X \arrow[]{d}{f}  \\
-& S \arrow[]{r}{g} & Y 
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_14c34aba6cd1a177ca24fade1061dddaad2d6de8.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_14c34aba6cd1a177ca24fade1061dddaad2d6de8.svg" class="org-svg" />
+</span>
+</div>
 <p>
 Then for 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-P \arrow[dashed]{rd}{\alpha} \arrow[bend left]{rrd}{\beta} \arrow[bend right]{rdd}{\alpha}& & \\
-&  S \arrow[]{d}{\mathrm{id}_{S}} \arrow[]{r}{f^{-1} \circ g} & X \arrow[]{d}{f}  \\
-& S \arrow[]{r}{g} & Y 
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_ee625549d40b09e56f4e12a04d40179c514c5874.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_ee625549d40b09e56f4e12a04d40179c514c5874.svg" class="org-svg" />
+</span>
+</div>
 <p>
 it follows, that 
 </p>
-\begin{align*}
-g \circ \alpha = f \circ f^{-1} \circ g \circ \alpha
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_7232cbeb8b8dd9d111b1596c89a62e5f5da360db.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_7232cbeb8b8dd9d111b1596c89a62e5f5da360db.svg" class="org-svg" />
+</span>
+</div>
 </div>
 <div id="outline-container-orgc4fe01a" class="outline-4">
 <h4 id="orgc4fe01a"><span class="section-number-4">2.2.1.</span> uniqueness (?)</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-By Assumption, there exists a right-inverse \(f^{-1}\).
+By Assumption, there exists a right-inverse <img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_db59d39d3f90fa6563d78110231f1f162f229c3e.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_db59d39d3f90fa6563d78110231f1f162f229c3e.svg" class="org-svg" />.
 Therefore, by commutativity we get
 </p>
-\begin{align*}
-g \circ \alpha =& f \circ \beta \\
-(f^{-1} \circ g) \circ \alpha =& \beta 
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230927-existence_of_a_pullback_for_an_isomorphism_2b59d4201712c52baeb3cfec70fc1099d07d0a71.svg" alt="20230927-existence_of_a_pullback_for_an_isomorphism_2b59d4201712c52baeb3cfec70fc1099d07d0a71.svg" class="org-svg" />
+</span>
+</div>
 <p>
 Hence todo: <a href="https://math.stackexchange.com/questions/3675182/if-one-vertical-arrow-in-a-pullback-is-an-iso-then-so-is-the-other">https://math.stackexchange.com/questions/3675182/if-one-vertical-arrow-in-a-pullback-is-an-iso-then-so-is-the-other</a>
 </p>

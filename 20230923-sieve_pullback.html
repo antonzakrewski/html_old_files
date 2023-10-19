@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,26 +21,29 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="orga6293fb"><span class="section-number-2">1.</span> Definition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{C}\) be a <a href="20220819181004-kleine_kategorie.html#ID-3c3f1c0d-53ad-476e-810a-756acd885263">small</a> <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, \(f \in \mathrm{Hom}_{\mathcal{C}}(Y,X)\) \(S \in \mathrm{Sieve}(X)\) a sieve.
+Let <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" alt="20230923-sieve_pullback_6ad7a3fffb5604498c8f8c872f4049edea61f487.svg" class="org-svg" /> be a <a href="20220819181004-kleine_kategorie.html#ID-3c3f1c0d-53ad-476e-810a-756acd885263">small</a> <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a>, <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_49d559eaffcdba50f62274ee3b7eafe0f0f7c43c.svg" alt="20230923-sieve_pullback_49d559eaffcdba50f62274ee3b7eafe0f0f7c43c.svg" class="org-svg" /> <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_e2881be2801912df42af2d48594936812c4dce26.svg" alt="20230923-sieve_pullback_e2881be2801912df42af2d48594936812c4dce26.svg" class="org-svg" /> a sieve.
 Then the &lt;sieve pullback&gt; is defined as <a href="20230806-pullback.html#ID-730c4312-492d-4b9c-a347-9281309d3e6f">pullback</a> in the <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">category</a> <a href="20230603-cat_psh_c.html#ID-df54941f-1571-4856-a214-711cd39db373">presheaves</a> on 
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-f^*(S) \arrow[]{r}{} \arrow[]{d}{} & (S: \mathcal{C} \rightarrow \mathrm{Hom}_{\mathcal{C}}(-,\mathcal{C})) \arrow[]{d}{X}\\
-\mathrm{Hom}_{\mathcal{C}}(-,Y) \arrow[]{r}{\circ f} & \mathrm{Hom}_{\mathcal{C}}(-,X)\\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_59cf49fa40ace144bff9f0d53261956c7a231c39.svg" alt="20230923-sieve_pullback_59cf49fa40ace144bff9f0d53261956c7a231c39.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-org8ddc15b" class="outline-2">
 <h2 id="org8ddc15b"><span class="section-number-2">2.</span> Concretely</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-for \(f: Y \rightarrow X\) and \(S \in \mathrm{Sieve4X)\) and \(Z \in \mathrm{Ob}(\mathcal{C})\) we have
+for <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_189abd022848698bf8ae0fd80a7a3a382b031076.svg" alt="20230923-sieve_pullback_189abd022848698bf8ae0fd80a7a3a382b031076.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_4faabb63639d97bfe0072e12465f1909086e5b12.svg" alt="20230923-sieve_pullback_4faabb63639d97bfe0072e12465f1909086e5b12.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_c32792acaedd9f4d31a35056f74455d5be9af887.svg" alt="20230923-sieve_pullback_c32792acaedd9f4d31a35056f74455d5be9af887.svg" class="org-svg" /> we have
 </p>
-\begin{align*}
-f^*(S)(Z) = \{\alpha: Z \rightarrow Y \vert f \circ \alpha \in S(Z)\}
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230923-sieve_pullback_ae662d16374f69787af96a12fbb3a0c2b8c1ecc9.svg" alt="20230923-sieve_pullback_ae662d16374f69787af96a12fbb3a0c2b8c1ecc9.svg" class="org-svg" />
+</span>
+</div>
 
 <p>
 grothendieck topo

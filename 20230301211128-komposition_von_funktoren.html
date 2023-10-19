@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>composition of functors</title>
+<title>composition of functors as functor</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -48,13 +48,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">composition of functors</h1>
-<div id="outline-container-orgf725924" class="outline-2">
-<h2 id="orgf725924"><span class="section-number-2">1.</span> Definition</h2>
+<h1 class="title">composition of functors as functor</h1>
+<div id="outline-container-org7b1ee2b" class="outline-2">
+<h2 id="org7b1ee2b"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Let \(\mathcal{C}, \mathcal{D}, \mathcal{E}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(F: \mathcal{C} \rightarrow \mathcal{D}\) and \(G: \mathcal{D} \rightarrow \mathcal{E}\) be <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functors</a>.
-Then there exists a composition \(G \circ F\) defined by:
+Then the composition \(G \circ F\) defined by:
 </p>
 \begin{align*}
 (G \circ F)(A) =& G(F(A)) \\
@@ -62,8 +62,12 @@ Then there exists a composition \(G \circ F\) defined by:
 \end{align*}
 <p>
 for \(A \in \mathcal{C}\) and \(f \in \mathrm{Mor}(\mathcal{C}\)
+is also a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> \(G \circ F: \mathcal{C} \rightarrow \mathcal{E}\)
 </p>
 </div>
+</div>
+<div id="outline-container-org7c12327" class="outline-2">
+<h2 id="org7c12327"><span class="section-number-2">2.</span> proof</h2>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -59,6 +59,58 @@ Sei \(X\) eine <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1d
 </div>
 <div id="outline-container-org69ddfde" class="outline-2">
 <h2 id="org69ddfde"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei
+</p>
+\begin{align*}
+\mathcal{T} \coloneqq& \{ \bigcup_{i \in I} A_i \vert A_i = \bigcap_{j = 1}^n S_{j,i}, S_{j,i} \in \mathcal{S}\}
+\end{align*}
+</div>
+<div id="outline-container-orgd014ec3" class="outline-3">
+<h3 id="orgd014ec3"><span class="section-number-3">2.1.</span> triviale mengen</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>\(\emptyset\) folgt aus der leeren Vereinigung</li>
+<li>\(X\) folgt aus \(\bigcap_{i \in \emptyset} S_i\) oder der Bedingung für eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3ab1335" class="outline-3">
+<h3 id="org3ab1335"><span class="section-number-3">2.2.</span> endlicher schnitt</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a> für \(n = 2\), der allgemeine fall folgt durch Induktion:
+Nach dem <a href="20230324121812-allgemeine_distributivgesetz_fur_vereinigung_und_schnitt.html#ID-2365d754-a288-4146-9866-3d818afa661b">Allgemeinen Distributivgesetz für Vereinigung und Schnitt</a> gilt
+</p>
+\begin{align*}
+\left(\bigcup_{i \in I} A_i \right) \cap \left(\bigcup_{j \in J} B_j\right) = \bigcup_{(i,j) \in I \times J} A_i \cap B_j
+\end{align*}
+<p>
+wobei \(A_i \cap B_j = \bigcap_{l = 1}^n S_l \bigcap_{k = 1}^m S_k\) ein endlicher Schnitt ist
+</p>
+</div>
+</div>
+<div id="outline-container-org49b9783" class="outline-3">
+<h3 id="org49b9783"><span class="section-number-3">2.3.</span> beliebige Vereinigung</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+folgt aus der Konstruktion
+</p>
+\begin{align*}
+\bigcup_{j \in J} \bigcup_{i \in I} A_i^j =& \bigcup_{(i,j) \in I \times J} A_i^j 
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org7c339ef" class="outline-3">
+<h3 id="org7c339ef"><span class="section-number-3">2.4.</span> bedingung als subbasis</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Nach Konstruktion ist die erzeugte <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">basis</a> \(\mathcal{B}\) abgeschlossen gegenüber endlichen Schnitten, damit insbesondere auch pseudo-abgeschlossen als basis
+Ferner ist jede <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> in \(\mathcal{T}\) vereinigung oder endlicher schnitt einer basismenge und zudem ist \(\mathcal{S} \subseteq \mathcal{T}\)
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

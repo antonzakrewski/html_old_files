@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>maximale Anzahl an Fortsetzungen für eine einfache algebraische Körpererweiterung</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">maximale Anzahl an Fortsetzungen für eine einfache algebraische Körpererweiterung</h1>
+<div id="outline-container-org5f48500" class="outline-2">
+<h2 id="org5f48500"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, \(K' = K(\alpha)\) eine <a href="20230722-einfache_korpererweiterung.html#ID-1f5901ba-7187-46a1-95fa-c01ebba7ed29">einfache</a>, <a href="20230722-algebraische_korpererweiterung.html#ID-434e42fe-1036-44f2-86e7-9dd391760e46">algebraische Körpererweiterung</a> und \(\sigma: K \rightarrow L\) ein <a href="20221111202851-korperhomomorphismus.html#ID-a701a50b-3b23-4b2c-802f-0a65299ac479">Körper homomorphismus</a> für einen weiteren Körper \(L\).
+Dann existieren maximal \([K(\alpha) : K]\) viele <a href="20231018-fortsetzung_auf_einer_korpererweiterung.html#ID-87f34c12-20f8-4bed-af51-35d9546680db">Fortsetzungen</a> von \(\sigma\) auf \(K'\) (siehe: <a href="20230722-grad_einer_korpererweiterung.html#ID-33c15990-df05-43a4-bfb7-ed9d17d629a5">Grad einer Körpererweiterung</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-org1a83774" class="outline-2">
+<h2 id="org1a83774"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Sei \(f\) das <a href="20230723-minimalpolynom_eines_algebraischen_elements.html#ID-e76a1f34-1911-4281-a969-5abea577522a">Minimalpolynom</a> von \(\alpha\) mit \(\mathrm{deg}(f) = [K(\alpha) : K] = n\) (vgl. <a href="20231004-grad_der_algebraischen_korpererweiterung_und_grad_des_minimalpolynom.html#ID-9277f9d3-05d7-4b89-bf3d-c8e961f7dea9">Grad der algebraischen Körpererweiterung und Grad des Minimalpolynom</a>)
+</p>
+
+<p>
+Dann folgt aus <a href="20231018-zeros_and_the_induced_ring_homomorphism_for_the_polynomial_rings.html#ID-9426fc09-ba85-40be-bbe6-df4e84e31069">zeros and the induced ring homomorphism for the polynomial rings</a>, dass für eine Fortsetzung \(\sigma'\)
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+K \arrow[]{r}{\iota} \arrow[]{rr}{\sigma}& K' \arrow[]{r}{\sigma'} & L \\
+K[X] & K'[X] & L \\
+\end{tikzcd}
+\end{displaymath}
+<p>
+auch für den <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> 
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

@@ -58,8 +58,28 @@ Then for the <a href="20220825194828-funktorkategorie.html#ID-39ebe96a-b96d-4a11
 </p>
 \begin{align*}
 \mathrm{colim}: \mathcal{C}^\mathcal{J} \rightarrow& A \\
-(\mathcal{F}: \mathcal{J} \rightarrow \mathcal{C}) \mapsto& \mathrm{colim}_{\mathcal{F}}
+(\mathcal{F}: \mathcal{J} \rightarrow \mathcal{C}) \mapsto& \mathrm{colim}_{\mathcal{F}} \\
+(\eta: \mathcal{F} \Rightarrow \mathcal{G}) \mapsto& \left(\eta': \mathrm{colim}_{\mathcal{F}} \rightarrow \mathrm{colim}_{\mathcal{G}} \right)
 \end{align*}
+<p>
+where \(\eta'\) is the <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> induced by the universal property
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\mathcal{F}(A) \arrow[swap]{dd}{\eta(A)} \arrow[]{rr}{\mathcal{F}(f)} \arrow[swap]{rd}{\pi_{\mathcal{F(A)}}} & & \mathcal{F}(B) \arrow[]{dd}{\eta(B)} \arrow[]{ld}{\pi_{\mathcal{F}(B)}}\\
+& \mathrm{colim}(\mathcal{F}) \arrow[dashed]{dd}{\exists! \eta'}& \\
+\mathcal{G}(A) \arrow[swap]{rd}{\pi_{\mathcal{G}(A)}}& & \mathcal{G}(B) \arrow[]{ld}{\pi_{\mathcal{G}(B)}}\\
+& \mathrm{colim}(\mathcal{G}) & 
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-org7747711" class="outline-2">
+<h2 id="org7747711"><span class="section-number-2">2.</span> Proofsketch</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+functorial property follows from the uniqueness of the mediating morphism \(\eta'\)
+</p>
 </div>
 </div>
 </div>

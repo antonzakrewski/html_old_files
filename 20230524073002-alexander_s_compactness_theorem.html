@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -69,7 +80,7 @@ Daraus folgt die Aussage als Spezialfall
 <h3 id="org044fcb6"><span class="section-number-3">2.2.</span> b) 2 \(\Rightarrow\) 3</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<a href="20221102164835-zorn_s_lemma.html#ID-a6ae3d3e-e921-4166-bbe3-ec079a55a766">Zorn's Lemma</a>
+<a href="20220817195600-lemma_von_zorn.html#ID-8afc287e-b64f-49e8-9479-83cedc5e7f0a">Zorn's lemma</a> 
 Angenommen \(X\) ist nicht <a href="20230121142600-kompaktheit_topologie.html#ID-58037a78-9969-4077-ad91-ce5e70c6c32c">kompakt</a>, so existiert ein <a href="20230306234012-ultrafilter.html#ID-88624d50-ad13-4c2a-ad1a-a1ed607768e9">Ultrafilter</a> \(\mathcal{F}\), welcher nicht <a href="20230307211224-konvergenz_eines_filters.html#ID-719f368e-8b03-43e9-8932-1245f724206b">konvergiert</a>.
 d.h. für alle \(y \in X\) existiert eine <a href="20221002201955-umgebung_topologie.html#ID-9c77942e-5bf5-407a-b958-6f1c7651c1ec">Umgebung</a> \(U\) von \(y\), mit \(U \not\in \mathcal{F}\).
 Lägen alle <a href="20230211131537-subbasis_einer_topologie.html#ID-9d1f4366-7535-41ca-bb72-967675fb06ab">Subbasismengen</a>, die \(y\) enthalten in \(\mathcal{F}\), dann läge auch \(U_x\) in \(\mathcal{F}\) nach Annahme der Abgeschlossenheit gegenüber endlichem Durchschnitt im Filter.

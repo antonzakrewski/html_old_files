@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,31 +21,36 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org53afe0a"><span class="section-number-2">1.</span> Definition / Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(M\) eine stetig <a href="20230723-differenzierbare_mannigfaltigkeit.html#ID-805c972a-cf4f-4229-a4dc-b6755639f890">reell differenzierbare Mannigfaltigkeit</a>.
-Dann ist das Tangentialbündel \(TM\) definiert als <a href="20230903-konstruktion_von_vektorbundel_durch_verklebung.html#ID-cd7a6c44-b04b-4fd0-9c75-9452d41f671a">Verklebekonstruktion</a> mit
+Sei <img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_1e81ee45caa28448b93b8458cd0f73474d96c70e.svg" alt="20230903-tangentialbundel_1e81ee45caa28448b93b8458cd0f73474d96c70e.svg" class="org-svg" /> eine stetig <a href="20230723-differenzierbare_mannigfaltigkeit.html#ID-805c972a-cf4f-4229-a4dc-b6755639f890">reell differenzierbare Mannigfaltigkeit</a>.
+Dann ist das Tangentialbündel <img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_9dc2395c0732cdd9fe55dcfb7f8479855d34e061.svg" alt="20230903-tangentialbundel_9dc2395c0732cdd9fe55dcfb7f8479855d34e061.svg" class="org-svg" /> definiert als <a href="20230903-konstruktion_von_vektorbundel_durch_verklebung.html#ID-cd7a6c44-b04b-4fd0-9c75-9452d41f671a">Verklebekonstruktion</a> mit
 </p>
 <ol class="org-ol">
-<li>den <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> \(U_i\) aus der <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offenen Überdeckung</a> der <a href="20230723-karte_mannigfaltigkeit.html#ID-ba69f262-31e8-4d80-b2b1-d9e270e32a08">Karten</a></li>
+<li>den <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offenen</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Mengen</a> <img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_9ba5019e955fdf275124c1072a6b790f16f2cbf9.svg" alt="20230903-tangentialbundel_9ba5019e955fdf275124c1072a6b790f16f2cbf9.svg" class="org-svg" /> aus der <a href="20221125072633-offene_uberdeckung.html#ID-f64293ce-3838-4f49-b45d-07666123c2c9">offenen Überdeckung</a> der <a href="20230723-karte_mannigfaltigkeit.html#ID-ba69f262-31e8-4d80-b2b1-d9e270e32a08">Karten</a></li>
 </ol>
-\begin{align*}
-\varphi_i: U_i \rightarrow V_i \subseteq \mathbb{R}^n
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_5766504f5f517c1a8022e1fb04ae8fd9e81cf389.svg" alt="20230903-tangentialbundel_5766504f5f517c1a8022e1fb04ae8fd9e81cf389.svg" class="org-svg" />
+</span>
+</div>
 <ol class="org-ol">
 <li>der Übergangsfunktion</li>
 </ol>
-\begin{align*}
-\psi_{ij}: U_i \cap U_j \rightarrow& \mathrm{GL}(n, \mathbb{R}) \\
-p \mapsto& \mathrm{d}( \varphi_i \circ \varphi_j^{-1})_{\varphi_j(p)}
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_95bbb77c9f19e993399c6a068248910fbbc85818.svg" alt="20230903-tangentialbundel_95bbb77c9f19e993399c6a068248910fbbc85818.svg" class="org-svg" />
+</span>
+</div>
 <p>
 zu
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-\varphi_{j}(U_i \cap U_j) \arrow[]{rr}{\varphi_i \circ \varphi_j^{-1}} & & \varphi_i(U_i \cap U_j) \\
-& \arrow[]{lu}{\varphi_j}U_i \cap U_j \arrow[]{ru}{\varphi_i}& 
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_f42d9e7194125a9e393298b37a20277e00e35633.svg" alt="20230903-tangentialbundel_f42d9e7194125a9e393298b37a20277e00e35633.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-org58967b3" class="outline-2">
@@ -101,17 +74,18 @@ folgt durch
 <p>
 folgt durch anwendung der &lt;mehrdimensionalen kettenregel&gt; 
 </p>
-\begin{align*}
-d(\varphi_i \circ \varphi_j^{-1})_{\varphi_j(p)} \cdot d(\varphi_j \circ \varphi_k^{-1})_{\varphi_k(p)} =& ...
 
-=& d(\varphi_i \circ \varphi_k^{-1})_{\varphi_k(p)}
-\end{align*}
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230903-tangentialbundel_b64e35f50539b84a68e01a17069a57f2f8722c8c.svg" alt="20230903-tangentialbundel_b64e35f50539b84a68e01a17069a57f2f8722c8c.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>
 
 <div id="outline-container-orgea48534" class="outline-4">
-<h4 id="orgea48534"><span class="section-number-4">2.1.2.</span> abbildung auf $\mathrm{GL}(n,\mathbb{R})</h4>
+<h4 id="orgea48534"><span class="section-number-4">2.1.2.</span> abbildung auf $(n,)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 folgt durch die Forderung als <a href="20230301205440-diffeomorphismus.html#ID-573a56f9-0240-4c4a-a241-ee598afdd9f5">Diffeomorphismus</a> 

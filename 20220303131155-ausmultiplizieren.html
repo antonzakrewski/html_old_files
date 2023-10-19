@@ -13,27 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -55,8 +66,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li><a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">Beweis durch vollständige Induktion</a></li>
 </ul>
 </div>
-<div id="outline-container-orgeedaea8" class="outline-3">
-<h3 id="orgeedaea8"><span class="section-number-3">2.1.</span> IA</h3>
+<div id="outline-container-org22f3b7a" class="outline-3">
+<h3 id="org22f3b7a"><span class="section-number-3">2.1.</span> IA</h3>
 <div class="outline-text-3" id="text-2-1">
 \begin{align*}
 (a_1) (b_1) =& a_1b_1 \\
@@ -66,8 +77,8 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org22f3b7a" class="outline-3">
-<h3 id="org22f3b7a"><span class="section-number-3">2.2.</span> IA</h3>
+<div id="outline-container-orge0c3d31" class="outline-3">
+<h3 id="orge0c3d31"><span class="section-number-3">2.2.</span> IA</h3>
 <div class="outline-text-3" id="text-2-2">
 \begin{align*}
 (a_1 + ... + a_n)(b_1 + ... + b_{k} + b_{k+1}) =& \sum_{i=1}^n a_i)(\sum_{j=1}^{k} + b_{k+1}) \\
