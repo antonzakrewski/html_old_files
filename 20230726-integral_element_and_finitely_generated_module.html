@@ -70,7 +70,7 @@ Let \(A \subseteq B\) be <a href="20221210204906-kommutativer_ring.html#ID-b92b4
 <h3 id="org235f0e6"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-by assumption, there exists a <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">polynomial</a> \(f: \sum_{i=0}^{n} \alpha_i X^i\) such that \(\varphi_{\alpha}(f) = f(\alpha) = 0\) (see: <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">evaluation homomorphism</a>)
+by assumption, there exists a <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">monic</a> <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">polynomial</a> \(f: \sum_{i=0}^{n} \alpha_i X^i\) such that \(\varphi_{\alpha}(f) = f(\alpha) = 0\) (see: <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">evaluation homomorphism</a>)
 Therefore,
 </p>
 \begin{align*}
@@ -91,10 +91,38 @@ Therefore
 =& \alpha \sum_{i=0}^{m-1} \lambda_i \alpha^i \\
 =& \sum_{i=0}^{m-1} \lambda_i \alpha^{i+1} \in \langle 1,...,\alpha^m\rangle
 \end{align*}
+
+<p>
+???
+tl;dr: <a href="20230722-division_mit_rest_uber_polynomen_fur_eine_einheit.html#ID-60d904bd-2e73-4e2c-8e79-651b7e8255c6">Division mit Rest über Polynomen für eine Einheit</a> - weil monic
+</p>
 </div>
 </div>
 <div id="outline-container-org7028b26" class="outline-3">
 <h3 id="org7028b26"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+By assumption, there exist <a href="20211227215929-endliche_menge.html#ID-53523a13-c374-4332-a2d9-c49f03558e4d">finitely</a> many generators \(f_1,...,f_n \in A[\alpha]\).
+Let \(m = \mathrm{max}(\mathrm{deg}(f_i))\), then \(\alpha^0,...,\alpha^m\) each generate \(f_1,...,f_n\) and thus generate \(A[\alpha]\).
+Furthermore, for \(\alpha^{m+1}\) there exists a generation
+</p>
+\begin{align*}
+\alpha^{m+1} =& \sum_{i=0}^{m} \lambda_{i} \alpha^i \\
+\alpha^{m+1} - \sum_{i=0}^{m} \lambda_{i} \alpha^i =& 0
+\end{align*}
+<p>
+thus we conclude, that for
+</p>
+\begin{align*}
+f = X^{m+1} - \sum_{i=0}^{m} \lambda_{i} X^i
+\end{align*}
+<p>
+is a <a href="20221226010524-normiertes_polynom.html#ID-f17a0f11-0953-4728-91a6-9a81df943813">monic polynomial</a> with
+</p>
+\begin{align*}
+f(\alpha) = 0
+\end{align*}
+</div>
 </div>
 </div>
 </div>

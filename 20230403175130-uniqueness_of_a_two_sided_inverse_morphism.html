@@ -62,13 +62,15 @@ Then there exists a unique inverse <a href="20220817164827-morphismus.html#ID-7e
 <h2 id="orgcc6213a"><span class="section-number-2">2.</span> proof</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Existence is covered by definition.
-Let \(f^{-1}, f^{-1}'\) be inverse <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphisms</a>.
-Then:
+By assumption, there exists a left-inverse \(f_l^{-1}\) and a right-inverse \(f_r^{-1}\)
+Let \(f_l^{-1}\) be a left-inverse and \(f_r^{-1}\) a right-inverse:
+Then we conclude that
 </p>
 \begin{align*}
-f^{-1} =& f^{-1} \circ \mathrm{id}_{B} \\
-=& f^{-1} \circ 
+f_l^{-1} =& f_l^{-1} \circ \mathrm{id}_{B} \\
+=& f_{l}^{-1} \circ f \circ f_r^{-1} \\
+=& \mathrm{id}_{A}  \circ f_r^{-1} \\
+=& f_r^{-1}
 \end{align*}
 </div>
 </div>

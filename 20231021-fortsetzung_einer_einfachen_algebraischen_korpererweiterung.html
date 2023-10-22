@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fortsetzung einer einfachen, algebraischen Körpererweiterung</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Fortsetzung einer einfachen, algebraischen Körpererweiterung</h1>
+<div id="outline-container-orgd8387e0" class="outline-2">
+<h2 id="orgd8387e0"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(F\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, \(F(\alpha) \supsetneq F\) eine <a href="20230722-algebraische_korpererweiterung.html#ID-434e42fe-1036-44f2-86e7-9dd391760e46">algebraische Körpererweiterung</a> mit <a href="20230723-minimalpolynom_eines_algebraischen_elements.html#ID-e76a1f34-1911-4281-a969-5abea577522a">Minimalpolynom</a> \(f \in F[X]\) sowie \(L\) ein Körper mit einem <a href="20221111202851-korperhomomorphismus.html#ID-a701a50b-3b23-4b2c-802f-0a65299ac479">körper homomorphism</a>
+</p>
+\begin{align*}
+\iota_L: F \rightarrow L
+\end{align*}
+<p>
+Falls \(\beta \in L\) eine <a href="20220320113706-nullstelle.html#ID-b094e637-5f3c-42a2-a2c2-ae73bbbe29a2">Nullstelle</a> von \(\iota(f) \in L[X]\) ist (vgl. <a href="20231018-induced_ring_homomorphism_for_the_polynomial_rings.html#ID-e9c37e86-b1de-44eb-ad75-9720c025d10b">induced ring homomorphism for the polynomial rings</a>), dann exisiert genau eine <a href="20231018-fortsetzung_auf_einer_korpererweiterung.html#ID-87f34c12-20f8-4bed-af51-35d9546680db">Fortsetzung</a> 
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+F \arrow[]{rd}{\iota_L} \arrow[]{r}{\iota} & F(\alpha) \arrow[dashed]{d}{\exists! \varphi}\\
+& L 
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+<div id="outline-container-orgd3303f4" class="outline-2">
+<h2 id="orgd3303f4"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5427fc6" class="outline-3">
+<h3 id="org5427fc6"><span class="section-number-3">2.1.</span> Eindeutigkeit</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sei \(f \in F(\alpha)\), so gilt \(f = \sum_{i=0}^{n} \lambda_i \alpha^i\).
+Damit ist \(\varphi\) eindeutig durch \(\varphi(\alpha)\) bestimmt
+vgl. <a href="20231021-einfache_algebraische_korpererweiterung_gegeben_durch_polynomring.html#ID-b3565697-366d-42a6-90b3-71d332ba2e15">endlich erzeugte algebraische Körpererweiterung gegeben durch Polynomring</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-orga420249" class="outline-3">
+<h3 id="orga420249"><span class="section-number-3">2.2.</span> Existenz</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Für den <a href="20221226010643-einsetzungshomomorphismus.html#ID-714a456e-dcd8-4e03-906b-2b497bf77766">Einsetzungshomomorphismus</a> \(\varphi_{\alpha}: F[X] \rightarrow F[\alpha]\), folgt nach Annahme, dass \(\mathrm{ker}(\varphi) = (f)\) (vgl. <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a>)
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+& F[X] \arrow[]{d}{\pi} \arrow[twoheadrightarrow,]{ld}{\varphi_{\alpha}}  \\
+F[\alpha] & \arrow[dashed]{l}{\exists! \overline{\varphi}} F[X]/(f) \\
+\end{tikzcd}
+\end{displaymath}
+
+<p>
+Für den Einsetzungshomomorphismus \(\psi_{\beta}: K[X] \rightarrow L\) gilt nach Annahme auch \(f \in \mathrm{ker}(\psi_{\beta})\) bzw. \((f) \subseteq \mathrm{ker}(\psi_{\beta})\)
+Nach der Version <a href="20231021-fundamental_theorem_on_ring_homomorphism_by_universal_property.html#ID-d41e3df8-71cf-433a-ac18-d96dd8240af8">fundamental theorem on ring homomorphism by universal Property</a> existiert folglich ein eindeutiger ringhomomorphismus \(\overline{\psi}\)
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+\arrow[]{d}{\pi} \arrow[]{rd}{\psi_{\beta}}&  \\
+F[X]/(f) \arrow[swap, dashed]{r}{\exists! \overline{\psi}} & L\\
+\end{tikzcd}
+\end{displaymath}
+
+<p>
+Damit erhalten wir einen Ring-Homomorphismus
+</p>
+\begin{align*}
+\overline{\psi} \circ \overline{\varphi}^{-1}: F[\alpha] \rightarrow L
+\end{align*}
+<p>
+bzw.
+</p>
+
+\begin{displaymath}
+\begin{tikzcd}
+& F[X] \arrow[]{d}{\pi} \arrow[twoheadrightarrow,]{ld}{\varphi_{\alpha}}  \arrow[]{rd}{\psi_{\beta}} & \\ 
+F[\alpha] & \arrow[dashed]{l}{\exists! \overline{\varphi}} F[X]/(f) \arrow[swap, dashed]{r}{\exists! \overline{\psi}} & L\\
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

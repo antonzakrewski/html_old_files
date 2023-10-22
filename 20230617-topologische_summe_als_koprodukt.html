@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>topologische Summe als Koprodukt</title>
+<title>topological sum as coproduct</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -13,20 +13,68 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">topologische Summe als Koprodukt</h1>
-<div id="outline-container-orgeb640dc" class="outline-2">
-<h2 id="orgeb640dc"><span class="section-number-2">1.</span> Satz</h2>
+<h1 class="title">topological sum as coproduct</h1>
+<div id="outline-container-org24cf219" class="outline-2">
+<h2 id="org24cf219"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Die <a href="20230303000539-topologische_summe.html#ID-7c03dcbb-604d-4d61-9d6d-2d50e50aa5a6">topologische Summe</a> ist das <a href="20230404161607-categorical_coproduct.html#ID-25822c41-825b-480b-b8a6-eeb904ca5649">kategorische Koprodukt</a>.
+the <a href="20230303000539-topologische_summe.html#ID-7c03dcbb-604d-4d61-9d6d-2d50e50aa5a6">topological sum</a> is the <a href="20230404161607-categorical_coproduct.html#ID-25822c41-825b-480b-b8a6-eeb904ca5649">categorical coproduct</a> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgfb7ba6e" class="outline-2">
-<h2 id="orgfb7ba6e"><span class="section-number-2">2.</span> Beweis</h2>
+<div id="outline-container-org159d514" class="outline-2">
+<h2 id="org159d514"><span class="section-number-2">2.</span> Proofsketch</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+the inclusion
+</p>
+\begin{align*}
+\iota: X_i \rightarrowtail \bigsqcup X_i
+\end{align*}
+<p>
+satisfy the universal property of a coproduct:
+</p>
+
+<p>
+the settheoretic <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">maps</a>  is induced by the fact, that the <a href="20231020-disjoint_union_as_categorical_coproduct.html#ID-b2f91fec-9ae8-40db-b9de-257f83ef3e35">disjoint union is the categorical coproduct</a> in <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">set</a>.
+Furthermore, those maps are <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> by &lt;<a href="20230515195750-einschrankung_einer_stetigen_abbildung_als_stetige_abbildung.html#ID-1afa10bb-de7f-4315-bf07-1966ed96afe0">Einschränkung einer stetigen Abbildung als stetige Abbildung</a>&gt;, hence it is a <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a> <a href="20220817164827-morphismus.html#ID-7e72e390-edd9-4dec-a7cc-f04d2c37dcbc">morphism</a> 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

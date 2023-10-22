@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,16 +21,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org7b1ee2b"><span class="section-number-2">1.</span> Definition / Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\mathcal{C}, \mathcal{D}, \mathcal{E}\) be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and \(F: \mathcal{C} \rightarrow \mathcal{D}\) and \(G: \mathcal{D} \rightarrow \mathcal{E}\) be <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functors</a>.
-Then the composition \(G \circ F\) defined by:
+Let <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_326b518258ba3cbff00e1ff980eb9e5f978e194f.svg" alt="20230301211128-komposition_von_funktoren_326b518258ba3cbff00e1ff980eb9e5f978e194f.svg" class="org-svg" /> be <a href="20220816130308-kategorie_mathe.html#ID-3d36aefb-cedf-48b8-8031-adac2a4f2d3d">categories</a> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_7865974caaa4606ae3f51a15d772a945a6164e16.svg" alt="20230301211128-komposition_von_funktoren_7865974caaa4606ae3f51a15d772a945a6164e16.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_00821713c0525f81362b4ff2e43cb42b9ddc3c3c.svg" alt="20230301211128-komposition_von_funktoren_00821713c0525f81362b4ff2e43cb42b9ddc3c3c.svg" class="org-svg" /> be <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functors</a>.
+Then the composition <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_e27273d49147ad84b85672a6f1726c7d98042995.svg" alt="20230301211128-komposition_von_funktoren_e27273d49147ad84b85672a6f1726c7d98042995.svg" class="org-svg" /> defined by:
 </p>
-\begin{align*}
-(G \circ F)(A) =& G(F(A)) \\
-(G \circ F)(f) =& G(F(f))
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_ac02427fb13868cffebc022b5c310d0e2f39e365.svg" alt="20230301211128-komposition_von_funktoren_ac02427fb13868cffebc022b5c310d0e2f39e365.svg" class="org-svg" />
+</span>
+</div>
 <p>
-for \(A \in \mathcal{C}\) and \(f \in \mathrm{Mor}(\mathcal{C}\)
-is also a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> \(G \circ F: \mathcal{C} \rightarrow \mathcal{E}\)
+for <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_44c4613f111c5d95eac470b2ea151d7455edb410.svg" alt="20230301211128-komposition_von_funktoren_44c4613f111c5d95eac470b2ea151d7455edb410.svg" class="org-svg" /> and <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_6d3af573a94f2a8c326324f60fe7dc5b937b8881.svg" alt="20230301211128-komposition_von_funktoren_6d3af573a94f2a8c326324f60fe7dc5b937b8881.svg" class="org-svg" />
+is also a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-be83-5d7dafaa12d2">functor</a> <img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_b26bd4c0d5b4f09371aecbdc3b15d066e2f1d194.svg" alt="20230301211128-komposition_von_funktoren_b26bd4c0d5b4f09371aecbdc3b15d066e2f1d194.svg" class="org-svg" />
 </p>
 </div>
 </div>
@@ -72,12 +42,12 @@ is also a <a href="20220821181056-funktor_kategorie.html#ID-31c2e5e6-98c4-4ed8-b
 <p>
 follows from the commutativity of the following diagram
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-A \arrow[]{d}{f} \arrow[]{r}{\mathcal{F}} & \arrow[]{d}{\mathcal{F}(f)}  F(A) \arrow[]{r}{\mathcal{G}} & G(F(A)) \arrow[]{d}{\mathcal{G}(\mathcal{F}(f))} \\
-B \arrow[]{r}{\mathcal{F}} & F(B) \arrow[]{r}{\mathcal{G}} & G(F(B))
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///home/anton/html/ltximg/20230301211128-komposition_von_funktoren_a5cfd5fd1e3d0a4edc9af5d2c56052fd50fc553b.svg" alt="20230301211128-komposition_von_funktoren_a5cfd5fd1e3d0a4edc9af5d2c56052fd50fc553b.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>
