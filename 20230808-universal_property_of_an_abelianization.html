@@ -13,16 +13,80 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Universal property of an Abelianization</h1>
 <div id="outline-container-orgbafc57b" class="outline-2">
 <h2 id="orgbafc57b"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(G\) be a <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">group</a>, \(A\) an <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelian</a> group and \(G/[G,G]\) the <a href="20230808-abelianization.html#ID-9328ee6e-513f-4bfd-a651-1a5021fab238">Abelianization</a>.
+Then for \(\varphi: G \rightarrow A\), there exists a unique <a href="20220928134932-gruppenhomomorphismus.html#ID-7d86b4b2-8f83-4da4-b1ef-08c3d37aa417">group-homomorphism</a>
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+G \arrow[]{rd}{\varphi} \arrow[]{r}{\pi}& G/[G,G] \arrow[dashed]{d}{\exists! \psi}\\
+& A \\
+\end{tikzcd}
+\end{displaymath}
 </div>
-
+</div>
 <div id="outline-container-org31be635" class="outline-2">
 <h2 id="org31be635"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+by 
+</p>
+<ul class="org-ul">
+<li><a href="20231016-fundamental_theorem_on_group_homomorphism_by_universal_property.html#ID-3b80e944-2384-4144-95c9-4d2701b60340">fundamental theorem on group homomorphism by universal property</a></li>
+</ul>
+
+\begin{align*}
+\varphi([g,h]) =& \varphi(g h g^{-1} h^{-1}) \\
+=& \varphi(g) \cdot \varphi(h) \cdot \varphi(g^{-1}) \cdot \varphi(h^{-1}) \\
+=& \varphi(g) \cdot \varphi(h) \cdot \varphi(g)^{-1} \cdot \varphi(h)^{-1} \\
+=& \varphi(g) \cdot  \varphi(g)^{-1} \varphi(h) \cdot \cdot \varphi(h)^{-1} \\
+=& e \cdot e \\
+=& e
+\end{align*}
+
+<p>
+Nach annahme wird die <a href="20230808-kommutatorgruppe.html#ID-06a85ad0-3007-4ec7-8478-52f45f7cd091">commutator subgroup</a> von elementen der Form \([g,h]\) erzeugt, d.h. für jedes Element 
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

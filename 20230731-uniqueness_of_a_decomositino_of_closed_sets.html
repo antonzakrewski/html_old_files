@@ -70,12 +70,55 @@ Y =& \bigcup_{i = 1}^n Y_i \\
 \end{align*}
 <p>
 <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">w.l.o.g.</a> we may assume, that \(Y_i \not\subseteq Y_j, X_k \not\subseteq X_l\) for \(i \neq j, k \neq l\).
-Then \(X_1 = \bigcup_{i=1}^n (X_1 \cap Y_i)\) so the <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreducibility</a> of \(X_1\) implies after renaming \(Y_i\) \(X_1 \subseteq Y_1\)
-Likewise for \(Y_1 \subseteq X_k\), hence \(Y_1 = X_k \eqqcolon X_k\).
+Then \(X_1 = \bigcup_{i=1}^n (X_1 \cap Y_i)\) so the <a href="20221226125836-irreduzibles_element.html#ID-0cc3140d-cb4c-48a2-8cb6-2d9801e34db0">irreducibility</a> of \(X_1\) implies after renaming \(Y_i\), that \(X_1 \subseteq Y_1\).
 </p>
 
 <p>
-Furthermore, \(\bigcup_{i=2}^n Y_i \supseteq \overline{Y \setminus Y_1}\) and by <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">induction</a>, we conclude that \(Y_i = X_i\).
+Thus we conclude
+</p>
+\begin{align*}
+(\bigcup_{i=1}^n Y_i) \setminus X_1 =& (\bigcup_{i=1}^n Y_i \setminus X_1) \subseteq& \bigcup_{i=2}^n Y_i \\
+(\bigcup_{i=1}^n X_i) \setminus X_1 =& (\bigcup_{i=1}^n X_i \setminus X_1)\subseteq& \bigcup_{i=2}^n X_i
+\end{align*}
+<p>
+Furthermore, by <a href="20230305124527-abschluss_einer_teilmenge.html#ID-31866533-a3f7-4168-aa7e-4625b41b4790">closure of a subset</a>, we conclude that
+</p>
+\begin{align*}
+\overline{(\bigcup_{i=1}^n Y_i \setminus X_i)} \subseteq& \overline{\bigcup_{i=2}^n X_i}
+\end{align*}
+<p>
+By <a href="20230302231225-abschluss_von_einer_vereinigung.html#ID-0bfc0a83-013b-4392-96b6-4572628bb9e5">Abschluss von einer endlichen Vereinigung</a> we get
+</p>
+\begin{align*}
+\overline{(\bigcup_{i=1}^n Y_i \setminus X_i)} =& \bigcup_{i=1}^n \overline{(Y_i \setminus X_i)} \subseteq \bigcup_{i=2}^{n} Y_i
+\end{align*}
+<p>
+where \(Y_i \setminus X_i\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> in the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a> of \(Y_i\) and hence by <a href="20230822-irreducible_space_and_nonempty_intersection_of_open_sets.html#ID-ec5689ac-dce6-4311-bd94-f3c09e33714b">denseness of an open set in an irreducible space</a>, we conclude that
+</p>
+\begin{align*}
+\bigcup_{i=1}^n \overline{(Y_i \setminus X_1} =& \emptyset \cup \bigcup_{i=2}^n \overline{Y_i \setminus X_1} \\
+=& \bigcup_{i=2}^n Y_i
+\end{align*}
+<p>
+and analoguosly 
+</p>
+\begin{align*}
+\bigcup_{i=1}^n \overline{X_i \setminus X_1} =& \bigcup_{i=2}^n X_i
+\end{align*}
+
+<p>
+Thus it follows, that
+</p>
+\begin{align*}
+\bigcup_{i=2}^n Y_i = \overline{\bigcup_{i=1}^n Y_i \setminus X_1} \\
+=& \overline{\bigcup_{i=1}^n X_i \setminus X_1 } \\
+=& \bigcup_{i=2}^n X_i
+\end{align*}
+
+<p>
+Hence by <a href="20210305204948-beweis_durch_vollstandige_induktion.html#ID-c79953c3-855e-432d-9321-047dd5decac8">induction</a>, we conclude that \(Y_i \subseteq X_i\) for suitable \(i \in \{1,...,n\}\).
+Symmetry of the argument also provides us with \(X_i \subseteq Y_j\) for suitable \(i,j\).
+Thus by assumption of maximality of an irreducible component, it follows, that \(X_i = X_j\) or \(X_i = Y_i\)
 </p>
 </div>
 </div>

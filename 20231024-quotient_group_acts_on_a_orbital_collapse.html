@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>quotient group acts on a orbital collapse</title>
+<title>quotient group acts on the orbital collapse</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -48,9 +48,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">quotient group acts on a orbital collapse</h1>
-<div id="outline-container-orgb6010a5" class="outline-2">
-<h2 id="orgb6010a5"><span class="section-number-2">1.</span> Proposition</h2>
+<h1 class="title">quotient group acts on the orbital collapse</h1>
+<div id="outline-container-org3499267" class="outline-2">
+<h2 id="org3499267"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, \(G\) a <a href="20230226210828-topologische_gruppe.html#ID-0aa20bcb-5c3d-4d06-aeee-e61b46a46e48">topological group</a> and \(\triangle: G \times X \rightarrow X\) a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
@@ -62,8 +62,94 @@ Then for a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org50c7492" class="outline-2">
-<h2 id="org50c7492"><span class="section-number-2">2.</span> Proof</h2>
+<div id="outline-container-orgdee9099" class="outline-2">
+<h2 id="orgdee9099"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orge6128e7" class="outline-3">
+<h3 id="orge6128e7"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Suppose there exist \(g,g' \in G\) and \(x,x' \in X\) such that
+</p>
+\begin{align*}
+gH =& g'H \\
+[x] =& [x']
+\end{align*}
+<p>
+Then there exist \(h_g,h_x\) such that
+</p>
+\begin{align*}
+g \cdot h_g =& g' \\
+h_x \triangleleft x =& x'
+\end{align*}
+<p>
+Then we get
+</p>
+\begin{align*}
+g'H \triangle' [x'] =& g \cdot h_g H triangle [h_x \cdot x] \\
+=& [g \cdot h_g \cdot h_x \cdot x]
+\end{align*}
+<p>
+Let \(h \coloneqq h_g \cdot h_x\).
+Since <a href="20221210184658-konjugation_als_gruppenautomorphismus.html#ID-c7875082-7fa8-4e5c-9d18-24de646cfe37">conjugation is a group automorphism</a> and \(H\) is a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">normal subgroup</a>, we conclude that there exists an \(h'\) such that 
+</p>
+\begin{align*}
+g^{-1} \cdot h' \cdot g = h
+\end{align*}
+<p>
+thus 
+</p>
+\begin{align*}
+[g \cdot h \cdot x] =& [g \cdot g^{-1} \cdot h' \cdot g \cdot x] \\
+=& [h' \cdot g \cdot x]
+\end{align*}
+<p>
+and by construction, 
+</p>
+\begin{align*}
+h' \cdot (g \cdot x) =& (h' \cdot g \cdot x)
+\end{align*}
+<p>
+Thus
+</p>
+\begin{align*}
+[h' \cdot g \cdot x] =& [g \cdot x]
+\end{align*}
+<p>
+Or equivalently
+</p>
+\begin{align*}
+[g'x] = [g \cdot x]
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org5e9b31f" class="outline-3">
+<h3 id="org5e9b31f"><span class="section-number-3">2.2.</span> <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+By welldefinedness, this diagram commutes
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+G \times X \arrow[]{d}{\pi_{H^2}} \arrow[]{r}{\triangle}& X \arrow[]{d}{\pi_{H}} \\
+(G \times X)/H^2 \arrow[]{r}{\triangle'}& X/H
+\end{tikzcd}
+\end{displaymath}
+<p>
+By construction of a <a href="20230223230317-quotiententopologie.html#ID-593cff5a-5f97-433d-b2d9-20f3aba02006">quotient topology</a>, \(\triangle'\) is continuous <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">if and only if</a> $\triangle &circ; &pi;<sub>H</sub>{<sup>2</sup>} =  &pi;<sub>H</sub> &circ; \triangle $ is continuous, where \(\triangle \circ \pi_H\) is continuous as <a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">composition</a> of continuous maps.
+</p>
+
+<p>
+Furthermore, by universal property of a quotient topology \((G \times X)/H^2\), the (pseudo-)identity from \(G \times X\) to \((G \times X)/H^2\) is continuous
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+G \times X \arrow[bend left]{rr}{}  & G/H \times X/H \arrow[]{r}{} & (G\times X)/H^2
+\end{tikzcd}
+\end{displaymath}
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -13,16 +13,77 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">projection to the orbits as open map</h1>
 <div id="outline-container-org38e2fe5" class="outline-2">
 <h2 id="org38e2fe5"><span class="section-number-2">1.</span> Proposition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let \(\triangle: G \times X \rightarrow X\) be a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
+Then the projection map
+</p>
+\begin{align*}
+\pi: X \rightarrow X/G
+\end{align*}
+<p>
+for the <a href="20231020-collapse_to_the_orbits.html#ID-b36cf21d-25c3-4826-b00f-4a77b3a82d51">orbital collapse</a> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
+</p>
 </div>
-
+</div>
 <div id="outline-container-orgc0de879" class="outline-2">
 <h2 id="orgc0de879"><span class="section-number-2">2.</span> Proof</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Consider
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+X \times G \arrow[]{r}{\varphi} \arrow[]{d}{\pi_1}& X \arrow[]{r}{\pi_{G}} & X/G \\
+X \arrow[]{d}{\pi_G}  & & \\
+X/G & & \\
+\end{tikzcd}
+\end{displaymath}
+
+<p>
+Let \(O \subseteq X\) be open.
+Then the preimage \(\varphi^{-1}[O]\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>, and since the <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">projection</a> is an <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">open map</a>, \(\pi_1[\varphi^{-1}[O]]\) is open.
+Furthermore, \((\pi_G^{-1} \circ \pi_G \circ \pi_1 \circ \varphi^{-1})[O] = (\pi_1 \circ \varphi^{-1})[O]\), as \(\pi_G\) is <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjective</a> and \(\varphi^{-1}[O]\) maximal with respect to the <a href="20221221173558-orbit_gruppentheorie.html#ID-73c744de-33e1-4ea7-9b28-815229e1b186">orbits</a>.
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">

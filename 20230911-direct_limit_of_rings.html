@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>direct limit of rings</title>
+<title>filtered colimit of rings</title>
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -48,7 +48,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">direct limit of rings</h1>
+<h1 class="title">filtered colimit of rings</h1>
 <div id="outline-container-orgfd2b2a7" class="outline-2">
 <h2 id="orgfd2b2a7"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
@@ -111,6 +111,28 @@ Let \(r_i,r_j,r_l\), <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-
 <p>
 and analog for the other side
 </p>
+</div>
+</div>
+<div id="outline-container-org5603789" class="outline-3">
+<h3 id="org5603789"><span class="section-number-3">2.4.</span> universal property</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Follows from
+</p>
+\begin{displaymath}
+\begin{tikzcd}
+R_j  \arrow[]{rdd}{\psi_{j}}\arrow[]{rd}{\phi_{j}} \arrow[]{rr}{\phi_{j,l}} & & R_l \arrow[]{ld}{\pi_{l}} \arrow[]{ld}{\psi_l}\\
+& \coprod R_i / \sim \arrow[dashed]{d}{\exists! \varphi_{S}}& \\
+& S & \\
+\end{tikzcd}
+\end{displaymath}
+<p>
+where
+</p>
+\begin{align*}
+\varphi_S: \coprod R_i / \sim \rightarrow& S \\
+[a_j] \mapsto& \psi_j(a_j)
+\end{align*}
 </div>
 </div>
 </div>
