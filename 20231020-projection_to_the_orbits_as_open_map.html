@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,12 +21,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org38e2fe5"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \(\triangle: G \times X \rightarrow X\) be a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
+Let <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_ed83dc10bf5462cb75b2a3db76b5cd32b21bb65b.svg" alt="20231020-projection_to_the_orbits_as_open_map_ed83dc10bf5462cb75b2a3db76b5cd32b21bb65b.svg" class="org-svg" /> be a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
 Then the projection map
 </p>
-\begin{align*}
-\pi: X \rightarrow X/G
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231020-projection_to_the_orbits_as_open_map_86b1334adcf7132a6a5fa5dfb5e90a91dfb7d60b.svg" alt="20231020-projection_to_the_orbits_as_open_map_86b1334adcf7132a6a5fa5dfb5e90a91dfb7d60b.svg" class="org-svg" />
+</span>
+</div>
 <p>
 for the <a href="20231020-collapse_to_the_orbits.html#ID-b36cf21d-25c3-4826-b00f-4a77b3a82d51">orbital collapse</a> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>
 </p>
@@ -70,18 +41,17 @@ for the <a href="20231020-collapse_to_the_orbits.html#ID-b36cf21d-25c3-4826-b00f
 <p>
 Consider
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-X \times G \arrow[]{r}{\varphi} \arrow[]{d}{\pi_1}& X \arrow[]{r}{\pi_{G}} & X/G \\
-X \arrow[]{d}{\pi_G}  & & \\
-X/G & & \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231020-projection_to_the_orbits_as_open_map_9d608c6e3ac478877f47469f00c8ad99643d2fdc.svg" alt="20231020-projection_to_the_orbits_as_open_map_9d608c6e3ac478877f47469f00c8ad99643d2fdc.svg" class="org-svg" />
+</span>
+</div>
 
 <p>
-Let \(O \subseteq X\) be open.
-Then the preimage \(\varphi^{-1}[O]\) is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>, and since the <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">projection</a> is an <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">open map</a>, \(\pi_1[\varphi^{-1}[O]]\) is open.
-Furthermore, \((\pi_G^{-1} \circ \pi_G \circ \pi_1 \circ \varphi^{-1})[O] = (\pi_1 \circ \varphi^{-1})[O]\), as \(\pi_G\) is <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjective</a> and \(\varphi^{-1}[O]\) maximal with respect to the <a href="20221221173558-orbit_gruppentheorie.html#ID-73c744de-33e1-4ea7-9b28-815229e1b186">orbits</a>.
+Let <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_8cda0b2dc9866f424b487cdb37cf0f46b947f368.svg" alt="20231020-projection_to_the_orbits_as_open_map_8cda0b2dc9866f424b487cdb37cf0f46b947f368.svg" class="org-svg" /> be open.
+Then the preimage <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_4675b9b61c63b0a1439241d6d7454d10e1eb08d9.svg" alt="20231020-projection_to_the_orbits_as_open_map_4675b9b61c63b0a1439241d6d7454d10e1eb08d9.svg" class="org-svg" /> is <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a>, and since the <a href="20230313230709-projektioni_von_einer_produkttopologie_als_stetig_offene_abbildung.html#ID-6b558892-f635-4c73-9b71-56962a218519">projection</a> is an <a href="20230227190111-offene_abbildung_topologie.html#ID-b42a4b40-0d77-444c-8385-4bfbb0e44c52">open map</a>, <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_80a6b551bb70f4057cfd50ee574e60fb31d59ac5.svg" alt="20231020-projection_to_the_orbits_as_open_map_80a6b551bb70f4057cfd50ee574e60fb31d59ac5.svg" class="org-svg" /> is open.
+Furthermore, <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_25a4f782692cb988c327506840ad7b5d62a2eedf.svg" alt="20231020-projection_to_the_orbits_as_open_map_25a4f782692cb988c327506840ad7b5d62a2eedf.svg" class="org-svg" />, as <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_2537d06c374fc59ccf77ed8509ee9e991d906881.svg" alt="20231020-projection_to_the_orbits_as_open_map_2537d06c374fc59ccf77ed8509ee9e991d906881.svg" class="org-svg" /> is <a href="20211230211341-surjektivitat.html#ID-f5a216d1-718b-43fa-89a8-01783cf1a290">surjective</a> and <img src="ltximg/20231020-projection_to_the_orbits_as_open_map_4675b9b61c63b0a1439241d6d7454d10e1eb08d9.svg" alt="20231020-projection_to_the_orbits_as_open_map_4675b9b61c63b0a1439241d6d7454d10e1eb08d9.svg" class="org-svg" /> maximal with respect to the <a href="20221221173558-orbit_gruppentheorie.html#ID-73c744de-33e1-4ea7-9b28-815229e1b186">orbits</a>.
 </p>
 </div>
 </div>

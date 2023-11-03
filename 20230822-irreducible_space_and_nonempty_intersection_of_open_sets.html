@@ -72,17 +72,53 @@ Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID
 </div>
 <div id="outline-container-org86719f6" class="outline-3">
 <h3 id="org86719f6"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Suppose there exist <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nonempty</a> <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">open</a> sets \(O_1,O_2 \subseteq X\) with \(O_1 \cap O_2 = \emptyset\).
+Then we get \(X \setminus O_1, X \setminus O_2 \neq X\) and furthermore by <a href="20220821114446-de_morgansche_gesetze_mengenlehre.html#ID-f77ff6f9-47e1-445a-9e2b-91b44efcaadc">de morgan</a> 
+</p>
+\begin{align*}
+X =& X \setminus \emptyset \\
+=& X \setminus (O_1 \cap O_2) \\
+=& X \setminus O_1 \cup X \setminus O_2
+\end{align*}
+<p>
+where \(X \setminus O_1, X \setminus O_2\) are <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a>
+Thus \(X\) is reducible
+</p>
 </div>
-<div id="outline-container-org929f91e" class="outline-3">
-<h3 id="org929f91e"><span class="section-number-3">2.2.</span> 2) \(\implies\) 3)</h3>
+</div>
+
+<div id="outline-container-orga67f09d" class="outline-3">
+<h3 id="orga67f09d"><span class="section-number-3">2.2.</span> 2) \(\implies\) 3), 3) \(\implies\) 2)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-definition
+equivalent definitions
 </p>
 </div>
 </div>
 <div id="outline-container-org966cc83" class="outline-3">
 <h3 id="org966cc83"><span class="section-number-3">2.3.</span> 3) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Suppose \(X\) is reducible, then there exist <a href="20221125122314-abgeschlossene_menge_topologie.html#ID-16e941fe-25c3-4e8b-9417-03ca5616c1df">closed</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">sets</a> \(A_1,A_2 \subsetneq X\) with
+</p>
+\begin{align*}
+A_1 \cup A_2 = X
+\end{align*}
+<p>
+Therefore, by de morgan we conclude, that
+</p>
+\begin{align*}
+\emptyset =& X \setminus X \\
+=& X \setminus (A_1 \cup A_2) \\
+=& X \setminus A_1 \cap X \setminus A_2 \\
+\end{align*}
+<p>
+where \(O_1 \coloneqq X \setminus A_1\) and \(O_2 \coloneqq X \setminus A_2\) are <a href="20211226220255-disjunkte_mengen.html#ID-2000e1f4-7e9e-45f9-91ed-16ded8a15190">disjoint</a>.
+Thus \(O_2 \not\subseteq \overline{O_1}\) and hence \(\overline{O_1} \neq X\)
+</p>
+</div>
 </div>
 </div>
 </div>

@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,12 +21,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org33b6c81"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und \(L,L'\) <a href="20230825-algebraic_closure.html#ID-764140fd-a4fc-4df7-a27e-a4373da7a514">algebraische Abschlüsse</a> von \(K\).
+Sei <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a> und <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_19039aa6274180bfb945a33105f87cbb5c64a1f2.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_19039aa6274180bfb945a33105f87cbb5c64a1f2.svg" class="org-svg" /> <a href="20230825-algebraic_closure.html#ID-764140fd-a4fc-4df7-a27e-a4373da7a514">algebraische Abschlüsse</a> von <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" class="org-svg" />.
 Dann existiert ein i.A. nicht kanonischer <a href="20230227144027-korperisomorphismus.html#ID-7e819739-31a0-4913-b4da-ff5fc5027068">Körperisomorphismus</a>
 </p>
-\begin{align*}
-\varphi: L \rightarrow L'
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_533a2a70bc2b12c359f04c4a275f76419865fb52.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_533a2a70bc2b12c359f04c4a275f76419865fb52.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgd133894" class="outline-2">
@@ -67,31 +38,34 @@ Dann existiert ein i.A. nicht kanonischer <a href="20230227144027-korperisomorph
 <p>
 Seien
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-K \arrow[]{r}{\iota_L} \arrow[]{rd}{\iota_{L'}}& L \\
-& L' \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_3d8e6aeafea9a1f2e1b4786588fa18bbd3abadfc.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_3d8e6aeafea9a1f2e1b4786588fa18bbd3abadfc.svg" class="org-svg" />
+</span>
+</div>
 <p>
 gegeben.
-Dann existiert nach dem <a href="20230805-fortsetzungssatz.html#ID-af23331d-05db-4aa9-b635-a1ccb64a8f9a">Fortsetzungssatz für Körpererweiterungen</a> ein <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ring-homomorphismus</a> \(\psi\)
+Dann existiert nach dem <a href="20230805-fortsetzungssatz.html#ID-af23331d-05db-4aa9-b635-a1ccb64a8f9a">Fortsetzungssatz für Körpererweiterungen</a> ein <a href="20221226010233-ringhomomorphismus.html#ID-136298f7-3132-4bd7-934f-0eefaa48fcf9">ring-homomorphismus</a> <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_25e408ffed890dc740298b1e6fcfda4edf56b739.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_25e408ffed890dc740298b1e6fcfda4edf56b739.svg" class="org-svg" />
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-K \arrow[]{r}{\iota_L} \arrow[]{rd}{\iota_{L'}}& L \arrow[dashed]{d}{\exists \psi}\\
-& L' \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_ee8fcd9348b4d8ca3a5836a83730400a3b4967c6.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_ee8fcd9348b4d8ca3a5836a83730400a3b4967c6.svg" class="org-svg" />
+</span>
+</div>
 <p>
-Dann ist \(\psi(K)\) ein <a href="20221030194246-unterkorper.html#ID-c079c4e2-b231-44e5-8e6c-108fca7a87fb">Unterkörper</a> und nahc <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a> <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a> zu \(K/\mathrm{ker}(\psi) = K/0 \simeq K\) (vgl. <a href="20231021-bild_eines_korper_als_unterkorper.html#ID-d3cdaa35-f46b-4436-b703-790bd5b42434">Bild eines Körper als Unterkörper</a>, <a href="20230227132159-korperhomomomorphismus_als_monomorphismus.html#ID-84a740e3-e0f2-48ce-81e7-23cfab375b18">Körperhomomomorphismus als Monomorphismus</a>)
-Damit ist \(\psi(K)\) <a href="20221017154133-algebraischer_abschluss.html#ID-ec785259-c20d-4d7a-af35-a0904d20d7b6">algebraisch abgeschlossen</a>  und wegen der minimalität (vgl. <a href="20231021-algebraischer_abschluss_als_minimal_algebraisch_abgeschlossener_korper.html#ID-02e86c6c-5304-4ae8-a467-66aa03e3083b">algebraischer abschluss als minimal algebraisch abgeschlossener Körper</a>) gilt
+Dann ist <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_fc5b5444dafd8d1414ba119ed32ee3dd8ddc5ec7.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_fc5b5444dafd8d1414ba119ed32ee3dd8ddc5ec7.svg" class="org-svg" /> ein <a href="20221030194246-unterkorper.html#ID-c079c4e2-b231-44e5-8e6c-108fca7a87fb">Unterkörper</a> und nahc <a href="20221226125039-homomorphiesatz_fur_ringe.html#ID-755e30b6-bd5c-4c03-9e0f-29bb432fa474">Homomorphiesatz für Ringe</a> <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">iso</a> zu <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_dca5b24d93063ea99e6736582258337d30816ad3.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_dca5b24d93063ea99e6736582258337d30816ad3.svg" class="org-svg" /> (vgl. <a href="20231021-bild_eines_korper_als_unterkorper.html#ID-d3cdaa35-f46b-4436-b703-790bd5b42434">Bild eines Körper als Unterkörper</a>, <a href="20230227132159-korperhomomomorphismus_als_monomorphismus.html#ID-84a740e3-e0f2-48ce-81e7-23cfab375b18">Körperhomomomorphismus als Monomorphismus</a>)
+Damit ist <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_fc5b5444dafd8d1414ba119ed32ee3dd8ddc5ec7.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_fc5b5444dafd8d1414ba119ed32ee3dd8ddc5ec7.svg" class="org-svg" /> <a href="20221017154133-algebraischer_abschluss.html#ID-ec785259-c20d-4d7a-af35-a0904d20d7b6">algebraisch abgeschlossen</a>  und wegen der minimalität (vgl. <a href="20231021-algebraischer_abschluss_als_minimal_algebraisch_abgeschlossener_korper.html#ID-02e86c6c-5304-4ae8-a467-66aa03e3083b">algebraischer abschluss als minimal algebraisch abgeschlossener Körper</a>) gilt
 </p>
-\begin{align*}
-\psi(K) = K'
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_8a911e42f63919feff1c24f87e220618fb4532e0.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_8a911e42f63919feff1c24f87e220618fb4532e0.svg" class="org-svg" />
+</span>
+</div>
 <p>
-Damit ist \(\psi\) ein <a href="20230227144027-korperisomorphismus.html#ID-7e819739-31a0-4913-b4da-ff5fc5027068">körper-isomorphismus</a>
+Damit ist <img src="ltximg/20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_25e408ffed890dc740298b1e6fcfda4edf56b739.svg" alt="20231007-uniqueness_up_to_non_canonical_isomorphism_of_an_algebraic_closure_25e408ffed890dc740298b1e6fcfda4edf56b739.svg" class="org-svg" /> ein <a href="20230227144027-korperisomorphismus.html#ID-7e819739-31a0-4913-b4da-ff5fc5027068">körper-isomorphismus</a>
 </p>
 </div>
 </div>

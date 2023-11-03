@@ -13,67 +13,38 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Isomorphie von Zerfällungskörpern</h1>
-<div id="outline-container-org33223d5" class="outline-2">
-<h2 id="org33223d5"><span class="section-number-2">1.</span> Satz</h2>
+<div id="outline-container-org3f0891e" class="outline-2">
+<h2 id="org3f0891e"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, \(\mathfrak{F} \subseteq K[X]\) eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von nichtkonstanten <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynomen</a> und \(L_1,L_2\) <a href="20230723-zerfallungskorper.html#ID-4e827de3-231e-4dfc-8a60-60227e9ca3e8">Zerfällungskörper</a> von \(\mathfrak{F}\)
-Dann sind \(L_1,L_2\) <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorph</a> 
+Sei <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" alt="20231021-isomorphie_von_zerfallungskorpern_e668ca73a0081af4c51ae9344bf757c58f0d59bf.svg" class="org-svg" /> ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae33-b421251bbb1e">Körper</a>, <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_10b67286367d624308d7af62b0467ed9189b65ea.svg" alt="20231021-isomorphie_von_zerfallungskorpern_10b67286367d624308d7af62b0467ed9189b65ea.svg" class="org-svg" /> eine <a href="20220823154734-mengenfamilie.html#ID-d5f647a4-b9c9-406e-82fc-ceeaacb27fd9">Familie</a> von nichtkonstanten <a href="20220102212857-definition_polynom.html#ID-a2f108fc-4631-45ea-bf8c-70182b7714f9">Polynomen</a> und <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_23f5556406ff33292e81b366c1aa070834c709ab.svg" alt="20231021-isomorphie_von_zerfallungskorpern_23f5556406ff33292e81b366c1aa070834c709ab.svg" class="org-svg" /> <a href="20230723-zerfallungskorper.html#ID-4e827de3-231e-4dfc-8a60-60227e9ca3e8">Zerfällungskörper</a> von <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_4246f570472065fe572566ccb7e102bbcdace53f.svg" alt="20231021-isomorphie_von_zerfallungskorpern_4246f570472065fe572566ccb7e102bbcdace53f.svg" class="org-svg" />
+Dann sind <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_23f5556406ff33292e81b366c1aa070834c709ab.svg" alt="20231021-isomorphie_von_zerfallungskorpern_23f5556406ff33292e81b366c1aa070834c709ab.svg" class="org-svg" /> <a href="20220817230532-isomorphismus_kategorientheorie.html#ID-8f539991-82c2-4cb3-a303-965a60282db5">isomorph</a> 
 </p>
-\begin{align*}
-L_1 \simeq L_2
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_3545ec083c70b13e75ca917f6647402149b70585.svg" alt="20231021-isomorphie_von_zerfallungskorpern_3545ec083c70b13e75ca917f6647402149b70585.svg" class="org-svg" />
+</span>
 </div>
 </div>
-<div id="outline-container-org00308ef" class="outline-2">
-<h2 id="org00308ef"><span class="section-number-2">2.</span> Beweis</h2>
+</div>
+<div id="outline-container-orgb6d0a0d" class="outline-2">
+<h2 id="orgb6d0a0d"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Sei \(\overline{L}\) ein <a href="20230825-algebraic_closure.html#ID-764140fd-a4fc-4df7-a27e-a4373da7a514">Algebraischer Abschluss</a> von \(L_2\) (vgl. <a href="20230725-existenz_eines_algebraischen_abschlusses.html#ID-307b7477-bcc4-4667-b311-e820540f73b9">existence of an algebraic closure</a>).
+Sei <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_adddb9573a41207b3e2c16e925370e8c0baa350a.svg" alt="20231021-isomorphie_von_zerfallungskorpern_adddb9573a41207b3e2c16e925370e8c0baa350a.svg" class="org-svg" /> ein <a href="20230825-algebraic_closure.html#ID-764140fd-a4fc-4df7-a27e-a4373da7a514">Algebraischer Abschluss</a> von <img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_5b7b7a972dd8bfb71931937cc458c47a9b0ba892.svg" alt="20231021-isomorphie_von_zerfallungskorpern_5b7b7a972dd8bfb71931937cc458c47a9b0ba892.svg" class="org-svg" /> (vgl. <a href="20230725-existenz_eines_algebraischen_abschlusses.html#ID-307b7477-bcc4-4667-b311-e820540f73b9">existence of an algebraic closure</a>).
 Dann gilt
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-K \arrow[]{rd}{\iota_{L_2}} \arrow[]{r}{\iota_{L_1}} & & \\
-& L_2 \arrow[]{r}{\overline{\iota}}& \overline{L_2} \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231021-isomorphie_von_zerfallungskorpern_937d15d0ec0dabfd8693eb5ff91fc23e6839cd91.svg" alt="20231021-isomorphie_von_zerfallungskorpern_937d15d0ec0dabfd8693eb5ff91fc23e6839cd91.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>

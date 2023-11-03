@@ -77,7 +77,7 @@ für \(P\) <a href="20230102152428-atomare_formel.html#ID-3b5cf9ae-53b7-40ff-8e1
 \begin{align*}
 \| P \| + 1 =& 1 + 1 \\
 =& 2 \\
-=z 2^{1} \\
+=& 2^{1} \\
 \leq& 2^{\vert P \vert + 1} 
 \end{align*}
 </div>
@@ -86,7 +86,7 @@ für \(P\) <a href="20230102152428-atomare_formel.html#ID-3b5cf9ae-53b7-40ff-8e1
 <h3 id="orgdea1c89"><span class="section-number-3">2.2.</span> Induktionsschritt</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei \(\circ \in \{ \rightarrow, \land, \lor\}\) und \(\box \in \{\exists, \forall\}\)
+Sei \(\circ \in \{ \rightarrow, \land, \lor\}\) und \(\square \in \{\exists, \forall\}\)
 </p>
 </div>
 <div id="outline-container-orgd4db78f" class="outline-4">
@@ -112,16 +112,16 @@ Nach Annahme gilt
 Es gilt
 </p>
 \begin{align*}
-\| \box_x A \| + 1 =& \| A \| + 1 + 1 \\
+\| \square_x A \| + 1 =& \| A \| + 1 + 1 \\
 =& \| A \| + 2 \\
 \leq& 2^{\vert A \vert + 1} + 2 \\
-=& 2^{\vert \box_x A \vert} + 2
+=& 2^{\vert \square_x A \vert} + 2
 \end{align*}
 <p>
-und wegen \(2^{\vert A \vert + 1} \leq 2\) auch
+und wegen \(2^{\vert A \vert + 1} \geq 2\) auch
 </p>
 \begin{align*}
- 2^{\vert \box_x A \vert} + 2 \leq 2^{\vert \box_x A \vert + 1}
+ 2^{\vert \square_x A \vert} + 2 \leq 2^{\vert \square_x A \vert + 1}
 \end{align*}
 </div>
 </div>

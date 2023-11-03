@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,12 +21,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org4bfaec9"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and \(B \subseteq A \subseteq X\) <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subsets</a> with the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
+Let <img src="ltximg/20231024-cancelling_and_collapse_973413851c50f93d97ba746f970c40ba74625b29.svg" alt="20231024-cancelling_and_collapse_973413851c50f93d97ba746f970c40ba74625b29.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a> and <img src="ltximg/20231024-cancelling_and_collapse_0737dcaa7fc397b432b2a697711d11a8b8c266c9.svg" alt="20231024-cancelling_and_collapse_0737dcaa7fc397b432b2a697711d11a8b8c266c9.svg" class="org-svg" /> <a href="20211226213416-teilmenge.html#ID-6a977d06-68e6-4711-b15a-ce63378d53a8">subsets</a> with the <a href="20230211132940-unterraumtopologie.html#ID-e38ab938-b4e6-4094-98a1-4a8dec808b54">subspace topology</a>.
 Then for the <a href="20230604-kollaps_eines_topologischen_raums.html#ID-a6c84a23-6bfe-4089-b94e-bae9c0cf25a9">topological collapse</a>, it holds that
 </p>
-\begin{align*}
-(X /B)/(A / B) \simeq (X/A)
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-cancelling_and_collapse_e6ade79049970b7e0dc66e9b48c2fcacea42f1ac.svg" alt="20231024-cancelling_and_collapse_e6ade79049970b7e0dc66e9b48c2fcacea42f1ac.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgcdae362" class="outline-2">
@@ -67,28 +38,34 @@ Then for the <a href="20230604-kollaps_eines_topologischen_raums.html#ID-a6c84a2
 <p>
 Let 
 </p>
-\begin{align*}
-\varphi: (X/B)/(A/B) \rightarrow& (X/A) \\
-[x] \mapsto& [x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-cancelling_and_collapse_e566f9a4f07e22e3fa03d7fc03155e84f5f6a7ac.svg" alt="20231024-cancelling_and_collapse_e566f9a4f07e22e3fa03d7fc03155e84f5f6a7ac.svg" class="org-svg" />
+</span>
+</div>
 </div>
 <div id="outline-container-org5edd44d" class="outline-3">
 <h3 id="org5edd44d"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-follows from \(B \subseteq A\)
+follows from <img src="ltximg/20231024-cancelling_and_collapse_7c1246e601f0875768212874495434a76b3e39b5.svg" alt="20231024-cancelling_and_collapse_7c1246e601f0875768212874495434a76b3e39b5.svg" class="org-svg" />
 </p>
 </div>
 </div>
 <div id="outline-container-orge98df47" class="outline-3">
 <h3 id="orge98df47"><span class="section-number-3">2.2.</span> continuos</h3>
 <div class="outline-text-3" id="text-2-2">
-\begin{displaymath}
-\begin{tikzcd}
-X \arrow[]{d}{} \arrow[]{r}{}& X/B \arrow[]{r}{}& \arrow[]{lld}{\varphi} (X/B)/(A/B) \\
-X/A \arrow[]{urr}{\varphi^{-1}} & & \\
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-cancelling_and_collapse_69a3dac6d57468aa3776c6ebc02a82d9cf221a4b.svg" alt="20231024-cancelling_and_collapse_69a3dac6d57468aa3776c6ebc02a82d9cf221a4b.svg" class="org-svg" />
+</span>
+</div>
+
+<p>
+definition of <a href="20230224180620-finaltopologie.html#ID-089a51e7-dbea-4600-a1ce-6e758f44ee49">final topology</a>
+</p>
 </div>
 </div>
 </div>

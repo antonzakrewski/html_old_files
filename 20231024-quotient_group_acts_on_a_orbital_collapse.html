@@ -13,38 +13,6 @@
 <script type="text/javascript" id="MathJax-script" defer
 src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -53,13 +21,15 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org3499267"><span class="section-number-2">1.</span> Proposition</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Let \((X, \mathcal{T})\) be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, \(G\) a <a href="20230226210828-topologische_gruppe.html#ID-0aa20bcb-5c3d-4d06-aeee-e61b46a46e48">topological group</a> and \(\triangle: G \times X \rightarrow X\) a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
-Then for a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">normal subgroup</a> \(H \trianglelefteq G\) there exists a canonical, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20230501095041-gruppenwirkung.html#ID-e8246fd3-cb62-4245-9ef1-59bc0326501a">Group Action</a> 
+Let <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_973413851c50f93d97ba746f970c40ba74625b29.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_973413851c50f93d97ba746f970c40ba74625b29.svg" class="org-svg" /> be a <a href="20220930231339-topologischer_raum.html#ID-86282c25-e748-45cd-bb85-553fdd7415f4">topological space</a>, <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_a77544f9bbe385bb51fdf25b0d05feb315694bb8.svg" class="org-svg" /> a <a href="20230226210828-topologische_gruppe.html#ID-0aa20bcb-5c3d-4d06-aeee-e61b46a46e48">topological group</a> and <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_ed83dc10bf5462cb75b2a3db76b5cd32b21bb65b.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_ed83dc10bf5462cb75b2a3db76b5cd32b21bb65b.svg" class="org-svg" /> a <a href="20231020-topological_group_action.html#ID-38e7118c-8f31-4e4f-b958-9af22f05af15">topological group action</a>.
+Then for a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">normal subgroup</a> <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_92baf130e14426ebeab61006a7fc6141c1cae7a9.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_92baf130e14426ebeab61006a7fc6141c1cae7a9.svg" class="org-svg" /> there exists a canonical, <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">continuous</a> <a href="20230501095041-gruppenwirkung.html#ID-e8246fd3-cb62-4245-9ef1-59bc0326501a">Group Action</a> 
 </p>
-\begin{align*}
-\triangle': G/H \times X/H \rightarrow& X/H
-(g + H),[x] \mapsto [g \cdot x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_95e9144d1271086d31865d113410db2c42077b13.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_95e9144d1271086d31865d113410db2c42077b13.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-orgdee9099" class="outline-2">
@@ -70,58 +40,78 @@ Then for a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-
 <h3 id="orge6128e7"><span class="section-number-3">2.1.</span> <a href="20220304105106-wohldefiniert_mathe.html#ID-81e35048-a75d-47ae-ada1-99f600ac072f">welldefined</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Suppose there exist \(g,g' \in G\) and \(x,x' \in X\) such that
+Suppose there exist <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_05844d1e5073a4fab1fb8fdb3933eaf7814980c5.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_05844d1e5073a4fab1fb8fdb3933eaf7814980c5.svg" class="org-svg" /> and <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_d806afe2692eb8344362c23aa11187c0f821456f.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_d806afe2692eb8344362c23aa11187c0f821456f.svg" class="org-svg" /> such that
 </p>
-\begin{align*}
-gH =& g'H \\
-[x] =& [x']
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_c76ef1221edd06ac1e5d6d09ef23f70e6106755f.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_c76ef1221edd06ac1e5d6d09ef23f70e6106755f.svg" class="org-svg" />
+</span>
+</div>
 <p>
-Then there exist \(h_g,h_x\) such that
+Then there exist <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_e4cfed248d7333bdb9d72af8cae77d28abd09d67.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_e4cfed248d7333bdb9d72af8cae77d28abd09d67.svg" class="org-svg" /> such that
 </p>
-\begin{align*}
-g \cdot h_g =& g' \\
-h_x \triangleleft x =& x'
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_b31ccc4ea514f3ddc18ad4e22fa44cce14a0d3ec.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_b31ccc4ea514f3ddc18ad4e22fa44cce14a0d3ec.svg" class="org-svg" />
+</span>
+</div>
 <p>
 Then we get
 </p>
-\begin{align*}
-g'H \triangle' [x'] =& g \cdot h_g H triangle [h_x \cdot x] \\
-=& [g \cdot h_g \cdot h_x \cdot x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_ab4366f2dfd72d45af91e83d6c698ed97b420e60.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_ab4366f2dfd72d45af91e83d6c698ed97b420e60.svg" class="org-svg" />
+</span>
+</div>
 <p>
-Let \(h \coloneqq h_g \cdot h_x\).
-Since <a href="20221210184658-konjugation_als_gruppenautomorphismus.html#ID-c7875082-7fa8-4e5c-9d18-24de646cfe37">conjugation is a group automorphism</a> and \(H\) is a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">normal subgroup</a>, we conclude that there exists an \(h'\) such that 
+Let <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_709dea6e542fdf4e3d59d8202ae0879b1af4a24f.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_709dea6e542fdf4e3d59d8202ae0879b1af4a24f.svg" class="org-svg" />.
+Since <a href="20221210184658-konjugation_als_gruppenautomorphismus.html#ID-c7875082-7fa8-4e5c-9d18-24de646cfe37">conjugation is a group automorphism</a> and <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_8a2d07fa33cc8250a9858df8b713f762427453ae.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_8a2d07fa33cc8250a9858df8b713f762427453ae.svg" class="org-svg" /> is a <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">normal subgroup</a>, we conclude that there exists an <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_fa243cc2cac545147c0dc02a2295b92f0984cd34.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_fa243cc2cac545147c0dc02a2295b92f0984cd34.svg" class="org-svg" /> such that 
 </p>
-\begin{align*}
-g^{-1} \cdot h' \cdot g = h
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_f00e534ae60f57f8739fbd1dc5ae03901f6e3499.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_f00e534ae60f57f8739fbd1dc5ae03901f6e3499.svg" class="org-svg" />
+</span>
+</div>
 <p>
 thus 
 </p>
-\begin{align*}
-[g \cdot h \cdot x] =& [g \cdot g^{-1} \cdot h' \cdot g \cdot x] \\
-=& [h' \cdot g \cdot x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_a288f93c100e7b5b25cdc2a06ac5225f690ebe3b.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_a288f93c100e7b5b25cdc2a06ac5225f690ebe3b.svg" class="org-svg" />
+</span>
+</div>
 <p>
 and by construction, 
 </p>
-\begin{align*}
-h' \cdot (g \cdot x) =& (h' \cdot g \cdot x)
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_036d5236b23314cf7eb4867c0f31207874670ff3.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_036d5236b23314cf7eb4867c0f31207874670ff3.svg" class="org-svg" />
+</span>
+</div>
 <p>
 Thus
 </p>
-\begin{align*}
-[h' \cdot g \cdot x] =& [g \cdot x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_07d9602335454229b2022fe15e507d84a9d606df.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_07d9602335454229b2022fe15e507d84a9d606df.svg" class="org-svg" />
+</span>
+</div>
 <p>
 Or equivalently
 </p>
-\begin{align*}
-[g'x] = [g \cdot x]
-\end{align*}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_807144b050dedc1127adf3a87607e68224dbcae8.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_807144b050dedc1127adf3a87607e68224dbcae8.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 <div id="outline-container-org5e9b31f" class="outline-3">
@@ -130,24 +120,25 @@ Or equivalently
 <p>
 By welldefinedness, this diagram commutes
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-G \times X \arrow[]{d}{\pi_{H^2}} \arrow[]{r}{\triangle}& X \arrow[]{d}{\pi_{H}} \\
-(G \times X)/H^2 \arrow[]{r}{\triangle'}& X/H
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_cd9149fed31919779006ba0ce024ff46843244d5.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_cd9149fed31919779006ba0ce024ff46843244d5.svg" class="org-svg" />
+</span>
+</div>
 <p>
-By construction of a <a href="20230223230317-quotiententopologie.html#ID-593cff5a-5f97-433d-b2d9-20f3aba02006">quotient topology</a>, \(\triangle'\) is continuous <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">if and only if</a> $\triangle &circ; &pi;<sub>H</sub>{<sup>2</sup>} =  &pi;<sub>H</sub> &circ; \triangle $ is continuous, where \(\triangle \circ \pi_H\) is continuous as <a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">composition</a> of continuous maps.
+By construction of a <a href="20230223230317-quotiententopologie.html#ID-593cff5a-5f97-433d-b2d9-20f3aba02006">quotient topology</a>, <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_69ea475ca3f11a6733b52eeffa6e3b3e703d0655.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_69ea475ca3f11a6733b52eeffa6e3b3e703d0655.svg" class="org-svg" /> is continuous <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">if and only if</a> $&circ; &pi;<sub>H</sub>{<sup>2</sup>} =  &pi;<sub>H</sub> &circ; $ is continuous, where <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_f21151061387d518751149f11bbae4770adb1d93.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_f21151061387d518751149f11bbae4770adb1d93.svg" class="org-svg" /> is continuous as <a href="20220104114218-komposition.html#ID-7dbdf503-309d-418b-8b3d-5c2fe27bbfeb">composition</a> of continuous maps.
 </p>
 
 <p>
-Furthermore, by universal property of a quotient topology \((G \times X)/H^2\), the (pseudo-)identity from \(G \times X\) to \((G \times X)/H^2\) is continuous
+Furthermore, by universal property of a quotient topology <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_98ced4aa83c75c821c86d1d9f425cd2a4fc10731.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_98ced4aa83c75c821c86d1d9f425cd2a4fc10731.svg" class="org-svg" />, the (pseudo-)identity from <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_9482131d5e8e585e195ef844be6ec4cf6e539063.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_9482131d5e8e585e195ef844be6ec4cf6e539063.svg" class="org-svg" /> to <img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_98ced4aa83c75c821c86d1d9f425cd2a4fc10731.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_98ced4aa83c75c821c86d1d9f425cd2a4fc10731.svg" class="org-svg" /> is continuous
 </p>
-\begin{displaymath}
-\begin{tikzcd}
-G \times X \arrow[bend left]{rr}{}  & G/H \times X/H \arrow[]{r}{} & (G\times X)/H^2
-\end{tikzcd}
-\end{displaymath}
+
+<div class="equation-container">
+<span class="equation">
+<img src="ltximg/20231024-quotient_group_acts_on_a_orbital_collapse_38f1d45557dc9f6c8948441ee236d94013384165.svg" alt="20231024-quotient_group_acts_on_a_orbital_collapse_38f1d45557dc9f6c8948441ee236d94013384165.svg" class="org-svg" />
+</span>
+</div>
 </div>
 </div>
 </div>
