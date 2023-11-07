@@ -53,7 +53,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <h2 id="org5509105"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, \(N \trianglelefteq G\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> sowie \(H_1 \subseteq H_2 \subseteq G\) eine <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppe</a>, sowie \(\varphi: G \rightarrow G/N\) der kanonische <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">gruppenepimorphism</a>
+Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-982a-6623378f4b4f">Gruppe</a>, \(N \trianglelefteq G\) ein <a href="20221210192900-normalteiler.html#ID-f971f946-d0ca-444a-a450-efbef237a278">Normalteiler</a> sowie \(H_1 \subseteq H_2 \subseteq G\) <a href="20220911122242-untergruppe.html#ID-ded4020a-b34f-4433-9d64-2afa33a552d8">Untergruppen</a> mit \(N \subseteq H_1 \subsetq H_2\), sowie \(\varphi: G \rightarrow G/N\) der kanonische <a href="20230227150008-gruppenepimorphismus.html#ID-9ec8e70b-1e87-4e63-8903-0573d1fa57a5">gruppenepimorphism</a>
 </p>
 
 <p>
@@ -61,7 +61,7 @@ Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-9
 </p>
 <ol class="org-ol">
 <li>\(H_1 \trianglelefteq H_2\)</li>
-<li>\(\pi[H_1] \trianglelefteq \pi[H_2]\)</li>
+<li>\(\pi[H_1] = H_1/N \trianglelefteq H_2 /N \pi[H_2]\)</li>
 </ol>
 </div>
 </div>
@@ -71,9 +71,46 @@ Sei \(G\) eine <a href="20220723085230-gruppe_mathe.html#ID-b6023bc8-458a-44e4-9
 </div>
 <div id="outline-container-orgb97a8c7" class="outline-3">
 <h3 id="orgb97a8c7"><span class="section-number-3">2.1.</span> 1) \(\implies\) 2)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sei \(h_2 N \in H_2/N\).
+Dann gilt für \(h_1 N \in H_1/N\):
+</p>
+\begin{align*}
+(h_2 N) \cdot (h_1 N) \cdot (h_2^{-1} N) =& (h_2 \cdot h_1 \cdot h_2^{-1}) N
+\end{align*}
+<p>
+wobei nach Annahme \(h_2 \cdot h_1 \cdot h_2^{-1} \in H_1\) gilt, damit auch
+</p>
+\begin{align*}
+(h_2 \cdot h_1 \cdot h_2^{-1}) \in H_2/N
+\end{align*}
+</div>
 </div>
 <div id="outline-container-orgad82b5c" class="outline-3">
 <h3 id="orgad82b5c"><span class="section-number-3">2.2.</span> 2) \(\implies\) 1)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Sei \(h_2 \in H_2, h_1 \in H_1\).
+Dann gilt für \(h_2 \cdot h_1 \cdot h_2^{-1}\):
+</p>
+\begin{align*}
+(h_2 N) \cdot (h_1 N) \cdot (h_2^{-1}N) =& (h_2 \cdot h_1 \cdot h_2^{-1}) \in H_1 N
+\end{align*}
+<p>
+damit existiert ein \(h \in H_1\) und ein \(n \in N\) mit
+</p>
+\begin{align*}
+h N =& (h_2 \cdot h_1 \cdot h_2^{-1}) N \\
+h =& (h_2 \cdot h_1 \cdot h_2^{-1}) \cdot n
+\end{align*}
+<p>
+wobei wegen \(n \in N \subseteq H_1\) auch aufgrund der Abgeschlossenheit gilt
+</p>
+\begin{align*}
+h_2 \cdot h_1 \cdot h_2^{-1} =& (h_2 \cdot h_1 \cdot h_2^{-1} \cdot n ) \cdot n^{-1} \in H_1
+\end{align*}
+</div>
 </div>
 </div>
 </div>

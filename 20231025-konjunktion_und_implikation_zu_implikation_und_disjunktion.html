@@ -67,48 +67,44 @@ innerhalb der <a href="20231016-minimal_logic.html#ID-271addb9-7f20-4b4d-9ebd-6c
 <div id="outline-container-org3680575" class="outline-3">
 <h3 id="org3680575"><span class="section-number-3">2.1.</span> a)</h3>
 <div class="outline-text-3" id="text-2-1">
-\begin{displaymath}
 \begin{prooftree}
-\hypo{[w: (A \lor B) \rightarrow C]}
+\hypo{[w: $(A \lor B) \rightarrow C$]}
 \hypo{[u: A]}
 \hypo{[v: B]}
-\infer2{(A \lor B)}
-\infer2[ \rightarrow^-]{C}
-\infer1[ \rightarrow^+ u]{A \rightarrow C}
-\hypo{[w: (A \lor B) \rightarrow C]}
+\infer2{$(A \lor B)$}
+\infer2[ $\rightarrow^-$]{C}
+\infer1[ $\rightarrow^+$ u]{$A \rightarrow C$}
+\hypo{[w: $(A \lor B) \rightarrow C$]}
 \hypo{[u: A]}
 \hypo{[v: B]}
-\infer2{(A \lor B)}
-\infer2[ \rightarrow^-]{C}
-\infer1[ \rightarrow^+ v]{ B \rightarrow C}
-\infer2[ \rightarrow \land]{(B \rightarrow C) \land (A \rightarrow C)}
-\infer1[ \rightarrow^- ]{(A \lor B) \rightarrow C \rightarrow (B \rightarrow C) \land (A \rightarrow C)}
+\infer2{$(A \lor B)$}
+\infer2[ $\rightarrow^-$]{C}
+\infer1[ $\rightarrow^+$ v]{ $B \rightarrow C$}
+\infer2[ $\land^+$]{$(B \rightarrow C) \land (A \rightarrow C)$}
+\infer1[ $\rightarrow^-$ ]{$(A \lor B) \rightarrow C \rightarrow (B \rightarrow C) \land (A \rightarrow C)$}
 \end{prooftree}
-\end{displaymath}
 </div>
 </div>
 <div id="outline-container-orgadf1bf9" class="outline-3">
 <h3 id="orgadf1bf9"><span class="section-number-3">2.2.</span> b)</h3>
 <div class="outline-text-3" id="text-2-2">
-\begin{displaymath}
 \begin{prooftree}
-\hypo{w: [(A \rightarrow C) \land (A \rightarrow B)]}
-\hypo{[z: A \lor B]}
+\hypo{[w: $(A \rightarrow C) \land (A \rightarrow B)$]}
+\hypo{[z: $A \lor B$]}
 
-\hypo{[v: A \rightarrow C]}
+\hypo{[v: $A \rightarrow C$]}
 \hypo{[v': A]}
-\infer2[ \rightarrow^-]{C}
+\infer2[ $\rightarrow^-$]{C}
 
-\hypo{[v: B \rightarrow C]}
+\hypo{[v: $B \rightarrow C$]}
 \hypo{[v': B]}
-\infer2[ \rightarrow^-]{C}
+\infer2[$ \rightarrow^-$]{C}
 
-\infer3[ \lor^- v', u']{C}
-\infer1[ \rightarrow^+ z]{ (A \lor B) \rightarrow C}
-\infer2[\land^{-} v,u]{C}
-\infer1[ \rightarrow^+ w]{ (A \rightarrow C) \land (A \rightarrow B) \rightarrow (A \lor B) \rightarrow C}
+\infer3[$ \lor^-$ v', u']{C}
+\infer1[$ \rightarrow^+$ z]{ $(A \lor B) \rightarrow C$}
+\infer2[$\land^{-}$ v,u]{C}
+\infer1[$ \rightarrow^+$ w]{$ (A \rightarrow C) \land (A \rightarrow B) \rightarrow (A \lor B) \rightarrow C$}
 \end{prooftree}
-\end{displaymath}
 </div>
 </div>
 </div>

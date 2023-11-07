@@ -61,7 +61,7 @@ Sei \(K\) ein <a href="20211218210351-korper_mathe.html#ID-a602197a-6116-40b3-ae
 </p>
 <ol class="org-ol">
 <li>\(G\) ist eine <a href="20231030-grobner_basis.html#ID-1743b7a4-d1c8-4e3e-96c0-6c2b208fdb47">gröbner basis</a></li>
-<li>für alle \(i,j \in \{1,...,n\}\) ist der Divisionsrest vom <a href="20231102-s_polynom.html#ID-8c85941a-bbde-4634-bd03-21f8275a7783">S-Polynom</a> \(S(g_i,g_j)\) unter Division von \(g_1,...,g_n\) gleich Null</li>
+<li>für alle \(i,j \in \{1,...,n\}\) ist der Divisionsrest vom <a href="20231102-s_polynom.html#ID-8c85941a-bbde-4634-bd03-21f8275a7783">S-Polynom</a> \(S(g_i,g_j)\) unter Division von \(g_1,...,g_n\) gleich Null (in beliebiger Reihenfolge)</li>
 </ol>
 </div>
 </div>
@@ -224,10 +224,40 @@ für schreckliche <a href="20220102212857-definition_polynom.html#ID-a2f108fc-46
 Außerdem gilt beim <a href="20231030-euklidischer_algorithmus_in_mehreren_variablen.html#ID-7732d500-1a32-4796-933e-da2fa5e2d906">Euklidischen Algorithmus in mehreren Variablen</a>  für den Multigrad
 </p>
 \begin{align*}
-\mathrm{multideg}(\alpha_{i,j,l}, g_i) \leq \mathrm{multideg}(S(g_{j}, g_l))
+\mathrm{multideg}(\alpha_{i,j,l} \circ g_i) \leq \mathrm{multideg}(S(g_{j}, g_l))
 \end{align*}
 <p>
 für alle \(i\)
+</p>
+
+<p>
+Durch multiplikation mit \(x^{\delta - \gamma_{j,l}}\) erhalten wir
+</p>
+\begin{align*}
+S(g_j,g_l) =& \sum_{i=1}^{s} \alpha_{i,i,jl} g_i && \vert \cdot x^{\delta - \gamma_{j,l}} \\
+X^{\delta - \gamma_{j,l}} S(g_j,g_l) =& \sum_{i=1}^{s} X^{\delta - \gamma{j,l}} \cdot \alpha_{i,j,l} \cdot g_i
+\end{align*}
+<p>
+aufgrund der verträglichkeit von monomordnungen mit Multiplikation gilt
+</p>
+\begin{align*}
+\mathrm{multdeg}(x^{\delta - \gamma_{j,l}} \cdot \alpha_{i,j,l}) \cdot g_{i}) \leq \mathrm{multdeg}(x^{\delta - \gamma_{j,l}} S(g_{j}, g_l)) = \mathrm{multdeg}(S(f_j, f_l)) \leq \delta
+\end{align*}
+
+<p>
+Alles Einsetzen ergibt
+</p>
+\begin{align*}
+\sum_{m_i = \delta}^{} \mathrm{LT}(h_i) g_i =& \sum_{j,l} c_{j,l} x^{\delta - \gamma_{j,l}} S(g_j,g_l) \\
+=& \sum_{j,l} c_{j,l} (\sum_{i=1}^{s} x^{\delta - \gamma_{j,l}} \cdot \alpha_{i,j,l} g_i) \\
+=& \sum_{i=1}^{s} \tilde{h_i}g_i
+\end{align*}
+<p>
+für \(c_{j,l} \in K\) und \(\tilde{h_i} = \sum_{j,l} c_{j,l} \cdot x^{\delta - \gamma_{i,j,l}} \alpha_{i,j,l}\) und \(\mathrm{multdeg}(\tilde{h_i} \cdot g_i) < \delta\)
+</p>
+
+<p>
+Dies ist ein Widerspruch zur Minimalität des Multigrads 
 </p>
 </div>
 </div>
